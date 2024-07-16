@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e51d",
+  "name": {
+    "en": "The function fills the object with the properties",
+    "ru": "Функция заполняет объект свойствами"
+  },
+  "instruction": {
+    "en": "Write a function `roomProperties` that takes three parameters: `width`, `height`, `length`.\n\nThe function should return an object with properties `width`, `height` and `length` that will be equal to the corresponding arguments.\n\nExamples of running the function are:\n```javascript\nroomProperties(10, 20, 30); // { width: 10, height: 20, length: 30 }\nroomProperties(5, 10, 15); // { width: 5, height: 10, length: 15 }\n```\n\nSimilar function:\n```javascript\nfunction carProperties(model, year, color) {\n  return {\n    model,\n    year,\n    color,\n  };\n}",
+    "ru": "Напишите функцию `roomProperties`, которая принимает три параметра: `width`, `height`, `length`.\n\nФункция должна возвращать объект со свойствами `width`, `height` и `length`, которые будут равны соответствующим аргументам.\n\nПримеры запуска функции:\n```javascript\nroomProperties(10, 20, 30); // { width: 10, height: 20, length: 30 }\nroomProperties(5, 10, 15); // { width: 5, height: 10, length: 15 }\n```\n\nПохожая функция:\n```javascript\nfunction carProperties(model, year, color) {\n  return {\n    model,\n    year,\n    color,\n  };\n}"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function roomProperties(width, height, length) {\n  return {\n    width,\n    height,\n    length,\n  };\n}",
+  "openTest": "it('Created function roomProperties', () => {\n  expect(roomProperties).to.be.a('function');\n});\n\nit('roomProperties(10, 20, 30) return { width: 10, height: 20, length: 30 }', () => {\n  expect(roomProperties(10, 20, 30)).eql({ width: 10, height: 20, length: 30 });\n});\n\nit('roomProperties(5, 10, 15) return { width: 5, height: 10, length: 15 }', () => {\n  expect(roomProperties(5, 10, 15)).eql({ width: 5, height: 10, length: 15 });\n});\n\nit('roomProperties(1, 2, 3) return { width: 1, height: 2, length: 3 }', () => {\n  expect(roomProperties(1, 2, 3)).eql({ width: 1, height: 2, length: 3 });\n});\n\nit('roomProperties(0, 0, 0) return { width: 0, height: 0, length: 0 }', () => {\n  expect(roomProperties(0, 0, 0)).eql({ width: 0, height: 0, length: 0 });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

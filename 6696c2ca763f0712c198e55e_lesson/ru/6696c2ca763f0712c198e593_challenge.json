@@ -1,0 +1,5 @@
+{
+  "name": "Функция возвращает объект с одним свойством",
+  "instruction": "Напишите функцию `createPerson`, которая принимает один параметр: `name` (строку).\n\nФункция должна возвращать объект с одним свойством, где `userName` — это ключ, и полученная строка `name` — значение.\n\nПримеры запуска функции:\n```javascript\ncreatePerson('Alice'); // {userName: 'Alice'}\ncreatePerson('George'); // {userName: 'George'}\ncreatePerson('Mary Alice'); // {userName: 'Mary Alice'}\n```",
+  "instructions": {}
+}

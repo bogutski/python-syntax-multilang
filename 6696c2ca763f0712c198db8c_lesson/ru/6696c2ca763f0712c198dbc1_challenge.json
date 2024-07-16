@@ -1,0 +1,6 @@
+{
+  "name": "Имя переменной в стиле camelCase",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-7.png)\n\nТребуется создать переменную без присваивания ей значения с использованием ключевого слова `let`, в которой будет храниться ожидаемый результат.\n\nИсправьте имя переменной, чтобы имя было записано в стиле `camelCase`.",
+  "instructions": {},
+  "hint": "```javascript\nlet expectedResult;\n```"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Purchasing coffee for the office for a month",
+  "instruction": "In the month there are 20 working days.\n\nOn average, each employee uses 100 grams of coffee per day.\n\nCoffee is sold in packs of 1 kg.\n\nWrite a function `coffeeForOffice` that takes the parameters:\n* `price` - price for 1 kg of coffee\n* `employees` - number of employees in the office\n\nThe function should return a string in the following format:\n`You need to buy 7 kg of coffee. Price: $123`\n\nExamples of function calls:\n```javascript\ncoffeeForOffice(10, 5) // 'You need to buy 10 kg of coffee. Price: $100'\ncoffeeForOffice(15, 15) // 'You need to buy 30 kg of coffee. Price: $450'\ncoffeeForOffice(25, 30) // 'You need to buy 60 kg of coffee. Price: $1500'\n```",
+  "instructions": {}
+}

@@ -1,0 +1,5 @@
+{
+  "name": "How many times does the string occur in the array?",
+  "instruction": "The function `countEachEl` takes an array of strings.\n\nThe function should return the number of occurrences of each element in the array as an object.\n\nIf the array is empty, the function should return the string `Array is empty`.\n\nExamples of function execution:\n```javascript\ncountEachEl([\"hello\", \"js\"]); // {hello: 1, js: 1}\ncountEachEl([\"hello\", \"js\", \"hello\"]); // {hello: 2, js: 1}\ncountEachEl([]); // 'Array is empty'\n```",
+  "instructions": {}
+}

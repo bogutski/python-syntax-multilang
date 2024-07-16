@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dc8f",
+  "name": {
+    "en": "Weird McDonald's signature.",
+    "ru": "Странная подпись МакДональда"
+  },
+  "instruction": {
+    "en": "Farmer Benjamin McDonald disliked his long name and signed his name only with the first letter,\nfollowed by an exclamation point.\n\nCreate a `name` variable and assign it the value of any name.\nCreate a variable `sign` and assign it the value of the first letter of the name, after which add an exclamation mark.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst name = 'Moscow';\nconst shortName = name[0] + '.';\n```",
+    "ru": "Фермер Benjamin McDonald очень не любил свое длинное имя и подписывался только первой буквой,\nпосле которой обязательно ставил восклицательный знак.\n\nСоздайте переменную `name` и присвойте ей значение любого имени.\nСоздайте переменную `sign`, присвойте ей значение первой буквы имени, после которой добавьте восклицательный знак.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst name = 'Moscow';\nconst shortName = name[0] + '.';\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const name = 'Benjamin McDonald';\nconst sign = name[0] + '!';",
+  "openTest": "it('Variable `name` exists and has a value', () => {\n  expect(name).not.undefined;\n});\n\nit('Variable `name` is a string', () => {\n  expect(name).a('string');\n});\n\nit('Variable `ign` exists and has a value', () => {\n  expect(sign).not.undefined;\n});\n\nit('Variable `sign` is a string', () => {\n  expect(sign).a('string');\n});\n\nit('Variable `ign` is correct', () => {\n  const expected = name[0] + '!';\n  expect(sign).equal(expected);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst name = 'Benjamin McDonald';\nconst sign = name[0] + '!';\n```",
+    "ru": "```javascript\nconst name = 'Benjamin McDonald';\nconst sign = name[0] + '!';\n```"
+  }
+}

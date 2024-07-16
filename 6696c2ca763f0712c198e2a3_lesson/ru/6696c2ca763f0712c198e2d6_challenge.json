@@ -1,0 +1,5 @@
+{
+  "name": "Сколько полных килограммов в заданном количестве граммов",
+  "instruction": "Напишите функцию `howManyKilograms`, которая принимает одно число – количество граммов и возвращает количество полных килограммов, которые можно получить из этого количества граммов.\n\nЧисла могут быть целыми или дробными.\n\nПримеры запуска функции:\n```javascript\n\nhowManyKilograms(700) // 0\nhowManyKilograms(1000) // 1\nhowManyKilograms(1001) // 1\nhowManyKilograms(1002) // 1\nhowManyKilograms(10003) // 10\nhowManyKilograms(14555) // 14\n```",
+  "instructions": {}
+}

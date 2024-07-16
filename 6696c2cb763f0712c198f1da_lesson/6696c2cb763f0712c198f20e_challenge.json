@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f20e",
+  "name": {
+    "en": "",
+    "ru": "Разделить массив пополам"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `splitArrayInTwo` должна принимать массив, разделять его на 2 подмассива и возвращать вложенный массив, содержащий оба подмассива.\n\nВходной массив должен быть разделен пополам на равные части, если он содержит четное количество элементов.\nЕсли массив содержит нечетное количество элементов, то первый подмассив должен содержать дополнительный элемент.\nЕсли массив пустой, то функция должна вернуть сообщение `\"Array is empty\"`.\n\nЗадача должна быть решена с помощью цикла `for` и метода `push`.\n\nПодсказки:\n1) для нахождения середины массива используйте функцию `Math.round()`.\n2) можно использовать 2 цикла `for` для заполнения подмассивов: в первом цикле заполнять первый подмассив, двигаясь от первого элемента входного массива до середины, во втором цикле заполнять второй подмассив, двигаясь от середины входного массива до последнего элемента.\n\nПримеры запуска функции:\n```javascript\nsplitArrayInTwo([1, 2, 3, 4, 5, 6]) // [[1, 2, 3], [4, 5, 6]]\nsplitArrayInTwo([10, 20, 30, 40, 50]) // [[10, 20, 30], [40, 50]]\nsplitArrayInTwo([]) // \"Array is empty\"\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function splitArrayInTwo(array) {\n  if (array.length === 0) {\n    return \"Array is empty\";\n  }\n\n  const middle = Math.round(array.length / 2);\n\n  const firstHalf = [];\n  const secondHalf = [];\n\n  for (let i = 0; i < middle; i++) {\n    firstHalf.push(array[i]);\n  }\n\n  for (let i = middle; i < array.length; i++) {\n    secondHalf.push(array[i]);\n  }\n\n  return [firstHalf, secondHalf];\n}",
+  "openTest": "it('Created function splitArrayInTwo', () => {\n  expect(splitArrayInTwo).to.be.a('function');\n});\n\nit('Function splitArrayInTwo should not include method slice()', () => {\n  expect(splitArrayInTwo.toString()).to.not.include('.slice(');\n});\n\nit('Function splitArrayInTwo should not include method splice()', () => {\n  expect(splitArrayInTwo.toString()).to.not.include('.splice(');\n});\n\nit('splitArrayInTwo([1, 2, 3, 4, 5, 6]) should return [[1, 2, 3], [4, 5, 6]]', () => {\n  expect(splitArrayInTwo([1, 2, 3, 4, 5, 6])).to.deep.equal([[1, 2, 3], [4, 5, 6]]);\n});\n\nit('splitArrayInTwo([10, 20, 30, 40, 50]) should return [[10, 20, 30], [40, 50]]', () => {\n  expect(splitArrayInTwo([10, 20, 30, 40, 50])).to.deep.equal([[10, 20, 30], [40, 50]]);\n});\n\nit('splitArrayInTwo([]) should return \"Array is empty\"', () => {\n  expect(splitArrayInTwo([])).to.equal(\"Array is empty\");\n});\n\nit('splitArrayInTwo([1]) should return [[1], []]', () => {\n  expect(splitArrayInTwo([1])).to.deep.equal([[1], []]);\n});\n\nit('splitArrayInTwo([1, 2]) should return [[1], [2]]', () => {\n  expect(splitArrayInTwo([1, 2])).to.deep.equal([[1], [2]]);\n});\n\nit('splitArrayInTwo([-1, 25.6, -303.00234, true, \"\", 99999, \"test - test\", [1,2,3]]) should return [[-1, 25.6, -303.00234, true], [\"\", 99999, \"test - test\", [1,2,3]]]', () => {\n  expect(splitArrayInTwo([-1, 25.6, -303.00234, true, \"\", 99999, \"test - test\", [1, 2, 3]])).to.deep.equal([[-1, 25.6, -303.00234, true], [\"\", 99999, \"test - test\", [1, 2, 3]]]);\n});\n\nit('splitArrayInTwo([true, \"222\", false]) should return [[true, \"222\"], [false]]', () => {\n  expect(splitArrayInTwo([true, \"222\", false])).to.deep.equal([[true, \"222\"], [false]]);\n});\n\nit('splitArrayInTwo([11,22,33,44,55,66,77,88,99,100]) should return [[11,22,33,44,55], [66,77,88,99,100]]', () => {\n  expect(splitArrayInTwo([11, 22, 33, 44, 55, 66, 77, 88, 99, 100])).to.deep.equal([[11, 22, 33, 44, 55], [66, 77, 88, 99, 100]]);\n});\n\nit('splitArrayInTwo([11,22,33,44,55,66,77]) should return [[11,22,33,44], [55,66,77]]', () => {\n  expect(splitArrayInTwo([11, 22, 33, 44, 55, 66, 77])).to.deep.equal([[11, 22, 33, 44], [55, 66, 77]]);\n});\n\nit('splitArrayInTwo([11,22,33,44,55,66,77,88,99]) should return [[11,22,33,44,55], [66,77,88,99]]', () => {\n  expect(splitArrayInTwo([11, 22, 33, 44, 55, 66, 77, 88, 99])).to.deep.equal([[11, 22, 33, 44, 55], [66, 77, 88, 99]]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

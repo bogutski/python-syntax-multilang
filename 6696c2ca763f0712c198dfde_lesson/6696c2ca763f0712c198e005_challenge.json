@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e005",
+  "name": {
+    "en": "Variables and functions. Room volume",
+    "ru": "Переменные и функции. Объем комнаты"
+  },
+  "instruction": {
+    "en": "You can create and use variables inside and outside functions.\n\nNow we are going to create a function that counts the volume of a room.\n\nThe height of the room is always the same - 10 feet, the width and length of the room will be different.\n\nCreate a function `roomVolume` with two parameters `width` and `length`.\n\nInside the function, create a variable `height` and give it a value of 10. Use the keyword `const`.\n\nInside the function, create a variable `volume` and assign it the value of the product of the variables `width`, `length` and `height`. Use the keyword `const`.\n\nReturn the value of the variable `volume` from the function.\n\nA similar example:\n```javascript\nfunction totalPrice(quantity, price) {\n  const tax = 1.08;\n  const total = quantity * price * tax;\n  return total;\n}\n```\n\nFollow the code formatting rules.\n\nIndentation, spaces, semicolons must be the same as in the example above.",
+    "ru": "Вы можете создавать и использовать переменные внутри и вне функций.\n\nСейчас мы с вами создадим функцию, которая будет считать объем комнаты.\n\nВысота комнаты всегда одинаковая - 10 футов, ширина и длина комнаты будут разными.\n\nСоздайте функцию `roomVolume` с двумя параметрами `width` и `length`.\n\nВнутри функции создайте переменную `height` и присвойте ей значение 10. Используйте ключевое слово `const`.\n\nВнутри функции создайте переменную `volume` и присвойте ей значение произведения переменных `width`, `length` и `height`. Используйте ключевое слово `const`.\n\nВерните значение переменной `volume` из функции.\n\nПохожий пример:\n```javascript\nfunction totalPrice(quantity, price) {\n  const tax = 1.08;\n  const total = quantity * price * tax;\n  return total;\n}\n```\n\nПридерживайтесь правил форматирования кода.\n\nОтступы, пробелы, точки с запятой должны быть такими же, как в примере выше."
+  },
+  "initialSolution": "fun!",
+  "completedSolution": "function roomVolume(width, length) {\n  const height = 10;\n  const volume = width * length * height;\n  return volume;\n}",
+  "openTest": "it('Created function roomVolume', () => {\n  expect(roomVolume).to.be.a('function');\n});\n\nit('Function roomVolume has two parameters', () => {\n  expect(roomVolume.length).to.be.equal(2);\n});\n\nit('Function roomVolume returns a number', () => {\n  expect(roomVolume(10, 10)).to.be.a('number');\n});\n\nit('Function roomVolume returns correct value', () => {\n  expect(roomVolume(10, 10)).to.be.equal(1000);\n});\n\nit('Function roomVolume returns correct value', () => {\n  expect(roomVolume(5, 5)).to.be.equal(250);\n});\n\nit('Function roomVolume contains variable height', () => {\n  expect(roomVolume.toString().includes('const height')).to.be.equal(true);\n});\n\nit('Function roomVolume contains variable volume', () => {\n  expect(roomVolume.toString().includes('const volume')).to.be.equal(true);\n});\n\nit('Function roomVolume has two parameters width, length', () => {\n  // function to string and then to array of arguments\n  const args = roomVolume.toString().match(/\\(([^)]*)\\)/)[1].split(',').map(arg => arg.trim());\n  expect(args).to.be.eql(['width', 'length']);\n});\n\nit('Function roomVolume has right formatting', () => {\n  expect(roomVolume.toString().includes('const height = 10;')).to.be.equal(true);\n  expect(roomVolume.toString().includes('const volume = width * length * height;')).to.be.equal(true);\n  expect(roomVolume.toString().includes('return volume;')).to.be.equal(true);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

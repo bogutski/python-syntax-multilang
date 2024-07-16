@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2cb763f0712c198f770",
+  "name": {
+    "ru": "Array.prototype.includes() – содержит ли массив искомый элемент",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f771",
+      "name": {
+        "ru": "Что возвращает метод Array.prototype.includes()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f772",
+          "name": {
+            "ru": "Индекс элемента, если он найден.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f773",
+          "name": {
+            "ru": "true, если элемент найден, иначе false.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f774",
+          "name": {
+            "ru": "Сам элемент, если он найден.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f775",
+          "name": {
+            "ru": "Ничего из перечисленного.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f776",
+      "name": {
+        "ru": "Какой параметр можно использовать в методе includes(), чтобы начать поиск не с начала массива?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f777",
+          "name": {
+            "ru": "startSearch",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f778",
+          "name": {
+            "ru": "startIndex",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f779",
+          "name": {
+            "ru": "fromIndex",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f77a",
+          "name": {
+            "ru": "beginIndex",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f77b",
+      "name": {
+        "ru": "Какой результат вернет вызов?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n['apple', 'banana', 'mango'].includes('Banana')\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f77c",
+          "name": {
+            "ru": "true",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f77d",
+          "name": {
+            "ru": "false",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f77e",
+          "name": {
+            "ru": "Ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f77f",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f780",
+      "name": {
+        "ru": "Что будет, если в метод includes() не передать аргументы?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f781",
+          "name": {
+            "ru": "Вернется undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f782",
+          "name": {
+            "ru": "Возникнет ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f783",
+          "name": {
+            "ru": "Вернется false",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f784",
+          "name": {
+            "ru": "Вернется true",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f785",
+      "name": {
+        "ru": "Какое значение вернёт следующий код?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n['1', '2', '3'].includes(3)\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f786",
+          "name": {
+            "ru": "true",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f787",
+          "name": {
+            "ru": "false",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f788",
+          "name": {
+            "ru": "Ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f789",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f78a",
+      "name": {
+        "ru": "Как includes() сравнивает элементы в массиве?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f78b",
+          "name": {
+            "ru": "Использует оператор ==",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f78c",
+          "name": {
+            "ru": "Использует оператор ===",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f78d",
+          "name": {
+            "ru": "Сравнивает только значения",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f78e",
+          "name": {
+            "ru": "Сравнивает только типы",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f78f",
+      "name": {
+        "ru": "Что вернёт следующий код?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n['apple', 'banana', 'cherry'].includes('apple', 1)\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f790",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f791",
+          "name": {
+            "ru": "Ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f792",
+          "name": {
+            "ru": "false",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f793",
+          "name": {
+            "ru": "true",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f794",
+      "name": {
+        "ru": "Если массив пуст, что вернёт?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n[].includes(anyValue)\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f795",
+          "name": {
+            "ru": "false",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f796",
+          "name": {
+            "ru": "true",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f797",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f798",
+          "name": {
+            "ru": "Ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f799",
+      "name": {
+        "ru": "Можно ли использовать includes() для поиска в массиве объектов?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f79a",
+          "name": {
+            "ru": "Да, если объекты идентичны",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f79b",
+          "name": {
+            "ru": "Нет, так как объекты сравниваются по ссылке",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f79c",
+          "name": {
+            "ru": "Да, всегда",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f79d",
+          "name": {
+            "ru": "Зависит от содержимого объектов",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f79e",
+      "name": {
+        "ru": "Что вернет следующий код?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n[false, NaN, null, undefined].includes()\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f79f",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7a0",
+          "name": {
+            "ru": "false",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7a1",
+          "name": {
+            "ru": "Ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7a2",
+          "name": {
+            "ru": "true",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

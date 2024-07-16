@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e51c",
+  "name": {
+    "en": "The function returns an empty object",
+    "ru": "Функция возвращает пустой объект"
+  },
+  "instruction": {
+    "en": "Write a function `emptyObject` that returns an empty object.\n\nEmpty object `{}`\n\nAn empty object has no properties.",
+    "ru": "Напишите функцию `emptyObject`, которая возвращает пустой объект.\n\nПустой объект `{}`\n\nУ пустого объекта нет свойств."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function emptyObject() {\n  return {};\n}",
+  "openTest": "it('Created function emptyObject', () => {\n  expect(emptyObject).to.be.a('function');\n});\n\nit('Function returns empty object', () => {\n  expect(emptyObject()).to.be.an('object').that.is.empty;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

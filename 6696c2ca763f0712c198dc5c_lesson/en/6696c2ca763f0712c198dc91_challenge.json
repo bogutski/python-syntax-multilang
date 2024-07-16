@@ -1,0 +1,6 @@
+{
+  "name": "Date in US format",
+  "instruction": "Create a `month` variable and assign any number between 1 and 12 to it.\n\nCreate a second variable `day` and assign any number from 1 to 31 to it.\n\nCreate a third variable `year` and assign any four-digit number to it.\n\nCreate a fourth variable `date` that will combine the first three variables into a single string\n(make sure that all variables are separated from each other by a \"/\" character).\n\nAn example of a date in US format is `mm/dd/yyyyy` (month/day/year).\n\nCreate a fifth variable `dateLength`, which will show the length of the `date` variable.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst hours = 5;\nconst minutes = 30;\nconst seconds = 50;\nconst combinedString = hours + ':' + minutes + ':' + seconds;\nconst lengthOfCombinedString = combinedString.length;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst month = 1;\nconst day = 24;\nconst year = 2020;\nconst date = month + '/' + day + '/' + year;\nconst dateLength = date.length;\n```"
+}

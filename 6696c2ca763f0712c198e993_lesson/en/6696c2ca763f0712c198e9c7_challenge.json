@@ -1,0 +1,4 @@
+{
+  "name": "The arithmetic mean of the even numbers in the array. Method continue",
+  "instruction": "The `evenAvr` function takes an array of numbers `arr` as a parameter and returns the arithmetic mean of the even numbers in the array.\n\nThis problem can be solved with if, but use the `continue` method to skip the odd numbers.\n\nThe solution will be checked using the `continue` method.\n\nAn example of running a function:\n```javascript\nevenAvr([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // 6\nevenAvr([1, 3, 5, 7, 9]) // 0\n```"
+}

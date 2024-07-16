@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f28b",
+  "name": {
+    "en": "Boolean values",
+    "ru": "Булевые значения"
+  },
+  "instruction": {
+    "en": "Write a function `allBoolean` that takes an array with elements of one and/or different data types.\n\nThe function should return `true` if all elements of the array are of type `boolean`, otherwise return `false`.\n\nIf the array is empty, return the string `'Array is empty'`.\n\nExamples of function execution:\n```javascript\nallBoolean([1, true, 3, false, 5]); // false\nallBoolean([true, false, true]);    // true\nallBoolean([true, undefined, NaN]); // false\nallBoolean([0 < 5, false, 9 <= 1]); // true\nallBoolean([]);                     // 'Array is empty'\n```",
+    "ru": "Напишите функцию `allBoolean`, которая принимает массив с элементами одного и/или разных типов данных.\n\nФункция должна вернуть `true`, если все элементы массива имеют тип `boolean`, иначе вернуть `false`.\n\nЕсли массив пустой, то вернуть строку `'Array is empty'`.\n\n\nПримеры запуска функции:\n```javascript\nallBoolean([1, true, 3, false, 5]); // false\nallBoolean([true, false, true]);    // true\nallBoolean([true, undefined, NaN]); // false\nallBoolean([0 < 5, false, 9 <= 1]); // true\nallBoolean([]);                     // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function allBoolean(arr){\n  if(!arr.length) return 'Array is empty';\n  for(let i = 0; i < arr.length; i++){\n    if(typeof arr[i] !== 'boolean') return false;\n  }\n  return true;\n}",
+  "openTest": "it('Created function allBoolean', () => {\n  expect(allBoolean).to.be.a('function');\n});\n\nit(\"allBoolean([1, true, 3, false, 5]) should return false\", () => {\n  expect(allBoolean([1, true, 3, false, 5])).to.be.false;\n});\n\nit(\"allBoolean([true, false, true]) should return true\", () => {\n  expect(allBoolean([true, false, true])).to.be.true;\n});\n\nit(\"allBoolean([true, false, undefined, null]) should return false\", () => {\n  expect(allBoolean([true, false, undefined, null])).to.be.false;\n});\n\nit(\"allBoolean([NaN, 1, 2, 3]) should return false\", () => {\n  expect(allBoolean([NaN, 1, 2, 3])).to.be.false;\n});\n\nit(\"allBoolean([false, 25 + 5 === 30, true, typeof 100 === 'number']) should return true\", () => {\n  expect(allBoolean([false, 25 + 5 === 30, true, typeof 100 === 'number'])).to.be.true;\n});\n\nit(\"allBoolean([5 < 6]) should return true\", () => {\n  expect(allBoolean([5 < 6])).to.be.true;\n});\n\nit(\"allBoolean([]) should return 'Array is empty'\", () => {\n  expect(allBoolean([])).to.be.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

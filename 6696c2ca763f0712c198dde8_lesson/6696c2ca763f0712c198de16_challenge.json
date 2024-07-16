@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de16",
+  "name": {
+    "en": "How much does Santa weigh?",
+    "ru": "Сколько весит Санта?"
+  },
+  "instruction": {
+    "en": "Every year on Christmas, the North American Aerospace Defense Command (NORAD) tracks Santa Claus using its advanced surveillance technology, and then shares this important information in real-time using the NORAD Santa Tracker.\n\nBased on flight profile data collected over 50 years of radar and satellite monitoring, NORAD concludes that Santa is likely around 5 feet 7 inches tall and weighs about 260 pounds (before cookies).\nFind Santa's weight in kilograms, if 1 pound = 0.453592 kg.\n\nTo solve the problem:\n\nSet the variable `pound` and assign it the value 0.453592.\n\nSet the variable `weight` and assign it the value 260 (weight in pounds).\n\nSet the variable `weightKg`, in which you calculate Santa's weight in kilograms.\n\n(Note: 1 pound = 0.453592 kg)\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst km = 1000;                // 1 km = 1000 m\nconst distInKm = 25;            // distance traveled in km\nconst distInMeters = distInKm * km; // distance in meters\n```",
+    "ru": "Каждый год на Рождество Североамериканское Командование воздушно-космической обороны (NORAD)\nотслеживает Санта-Клауса с помощью своей передовой технологии наблюдения,\nа затем делится этой важной информацией в режиме реального времени с помощью трекера NORAD Santa Tracker.\n\nОсновываясь на данных профиля полета, собранных более чем за 50 лет радарного и спутникового слежения,\nNORAD делает вывод, что Санта, вероятно, имеет рост около 5 футов 7 дюймов в высоту и\nвесит около 260 фунтов (до печенья).\nНайдите вес Санты в килограммах, если 1 фунт = 0.453592 кг.\n\nДля решения задачи:\n\nЗадайте переменную `pound` и присвойте ей значение 0.453592.\n\nЗадайте переменную `weight` и присвойте ей значение 260 (вес в фунтах).\n\nЗадайте переменную `weightKg`, в которой вычислите вес Санты в килограммах.\n\n(Замечание: 1 фунт = 0.453592 кг)\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst km = 1000;                // 1 км = 1000 м\nconst distInKm = 25;            // пройденное расстояние в км\nconst distInMeters = distInKm * km; // расстояние в метрах\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const pound = 0.453592;\nconst weight = 260;\nconst weightKg = weight * pound;",
+  "openTest": "it('variable type `pound` - number', () => {\n  expect(pound).a('number');\n});\n\nit('variable type `weight` - number', () => {\n  expect(weight).a('number');\n});\n\nit('variable type `weightKg` - number', () => {\n  expect(weightKg).a('number');\n});\n\nit('Variable `pound` contains a value', () => {\n  expect(pound).not.undefined;\n});\n\nit('The `weight` variable contains a value', () => {\n  expect(weight).not.undefined;\n});\n\nit('Variable `weightKg` contains a value', () => {\n  expect(weightKg).not.undefined;\n});\n\nit('Variable `pound` contains a valid value', () => {\n  expect(pound).equal(0.453592);\n});\nit('The `weight` variable contains a valid value', () => {\n  expect(weight).equal(260);\n});\n\nit('Variable `weightKg` contains the correct value', () => {\n  expect(weightKg).equal(weight * pound);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst pound = 0.453592;\nconst weight = 260;\nconst weightKg = weight * pound;\n```",
+    "ru": "```javascript\nconst pound = 0.453592;\nconst weight = 260;\nconst weightKg = weight * pound;\n```"
+  }
+}

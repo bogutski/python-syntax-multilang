@@ -1,0 +1,5 @@
+{
+  "name": "The function finds the arithmetic mean of five numbers",
+  "instruction": "Write a function `averageFromFiveNumbers` that takes five parameters and returns the arithmetic mean of the five numbers.",
+  "instructions": {}
+}

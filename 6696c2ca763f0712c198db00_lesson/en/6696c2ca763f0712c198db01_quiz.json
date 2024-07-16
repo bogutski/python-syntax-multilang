@@ -1,0 +1,142 @@
+{
+  "name": "Lecture Questions First Hello World Program",
+  "questions": {
+    "0": {
+      "name": "Did you manage to open the sandbox https://play.localcoding.us?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "1": {
+      "name": "Were you able to open the developer console in your browser?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "2": {
+      "name": "Were you able to enter the console.log('Hello World') command in the sandbox?",
+      "variants": {
+        "0": {
+          "name": "Yes. It all worked out."
+        },
+        "1": {
+          "name": "No. It didn't work."
+        }
+      }
+    },
+    "3": {
+      "name": "Single quotes are used to indicate:",
+      "variants": {
+        "0": {
+          "name": "Numbers, for example, 1, 2, 3"
+        },
+        "1": {
+          "name": "Text. A string, e.g. 'Hello World'."
+        },
+        "2": {
+          "name": "You don't have to use quotation marks."
+        }
+      }
+    },
+    "4": {
+      "name": "It is preferable to use single quotes to denote text",
+      "variants": {
+        "0": {
+          "name": "No"
+        },
+        "1": {
+          "name": "Yes"
+        }
+      }
+    },
+    "5": {
+      "name": "The console.log('5 - 2') command will output to the console:",
+      "variants": {
+        "0": {
+          "name": "Number 3"
+        },
+        "1": {
+          "name": "text '5 - 2'"
+        },
+        "2": {
+          "name": "Text '3'"
+        },
+        "3": {
+          "name": "Outputs an error"
+        }
+      }
+    },
+    "6": {
+      "name": "The console.log(5 - 2) command will output to the console:",
+      "variants": {
+        "0": {
+          "name": "Line '3'."
+        },
+        "1": {
+          "name": "Number 3"
+        },
+        "2": {
+          "name": "Text '5 - 2'"
+        },
+        "3": {
+          "name": "It will give out an error"
+        }
+      }
+    },
+    "7": {
+      "name": "The consol.log('5 - 2') command will output to the console:",
+      "variants": {
+        "0": {
+          "name": "Number 3"
+        },
+        "1": {
+          "name": "Line '5 - 2'"
+        },
+        "2": {
+          "name": "Line '3'."
+        },
+        "3": {
+          "name": "It will give out an error"
+        }
+      }
+    },
+    "8": {
+      "name": "Why doesn't console.log('5 * 2') print the number 10?",
+      "variants": {
+        "0": {
+          "name": "You have to use double quotation marks"
+        },
+        "1": {
+          "name": "You don't need quotation marks."
+        },
+        "2": {
+          "name": "Error in writing the console.log command"
+        }
+      }
+    },
+    "9": {
+      "name": "We put a semicolon at the end of the command in order to:",
+      "variants": {
+        "0": {
+          "name": "Show that the command is finished"
+        },
+        "1": {
+          "name": "To avoid mistakes"
+        },
+        "2": {
+          "name": "To shorten the text"
+        }
+      }
+    }
+  }
+}

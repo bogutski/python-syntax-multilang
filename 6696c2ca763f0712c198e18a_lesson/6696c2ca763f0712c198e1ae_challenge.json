@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e1ae",
+  "name": {
+    "en": "Security guard in a nightclub",
+    "ru": "Охранник в ночном клубе"
+  },
+  "instruction": {
+    "en": "Write a function `clubGuard` that takes the age of the club visitor.\n\n* If the visitor is 21 or older, we return the string `Welcome to the club!`.\n* Otherwise return the string `You are not allowed to enter the club!`",
+    "ru": "Напиши функцию `clubGuard`, которая принимает возраст посетителя клуба.\n\n* Если посетителю  21 год и старше, то возвращаем строку `Welcome to the club!`\n* Иначе возвращаем строку `You are not allowed to enter the club!`"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function clubGuard(age) {\n  return age >= 21 ? 'Welcome to the club!' : 'You are not allowed to enter the club!';\n}",
+  "openTest": "it('Created function clubGuard', () => {\n  expect(clubGuard).to.be.a('function');\n});\n\nit('clubGuard(22) returns \"Welcome to the club!\"', () => {\n  expect(clubGuard(22)).to.equal('Welcome to the club!');\n});\n\nit('clubGuard(21) returns \"Welcome to the club!\"', () => {\n  expect(clubGuard(21)).to.equal('Welcome to the club!');\n});\n\nit('clubGuard(20) returns \"You are not allowed to enter the club!\"', () => {\n  expect(clubGuard(20)).to.equal('You are not allowed to enter the club!');\n});\n\nit('clubGuard(0) returns \"You are not allowed to enter the club!\"', () => {\n  expect(clubGuard(0)).to.equal('You are not allowed to enter the club!');\n});\n\nit('clubGuard(-1) returns \"You are not allowed to enter the club!\"', () => {\n  expect(clubGuard(-1)).to.equal('You are not allowed to enter the club!');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

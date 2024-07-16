@@ -1,0 +1,4 @@
+{
+  "name": "\"I am studying JS programming\"",
+  "instruction": "Выведите в консоль фразу \"I am studying JS programming\".\nДля этого напечатайте команду:\n```\nconsole.log('I am studying JS programming');\n```\n"
+}

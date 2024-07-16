@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ddad",
+  "name": {
+    "en": "Define and display the object type in the console",
+    "ru": "Определите и выведите в консоль тип объекта"
+  },
+  "instruction": {
+    "en": "We haven't gotten past that type yet. All in good time. Just write and observe what can be in the console when `typeof` works.\n\nJust one line.\n\nWrite the command `console.log(typeof {a: 1, b: 2});`\n\nBraces, colons, commas.\n\nObserve spaces and punctuation marks. End with a semicolon.",
+    "ru": "Мы этот тип еще не проходили. Всему свое время. Просто пишите и наблюдайте, что может быть в консоли при работе `typeof`.\n\nТолько одна строка.\n\nНапишите команду `console.log(typeof {a: 1, b: 2});`\n\nФигурные скобки, двоеточия, запятые.\n\nСоблюдайте пробелы и знаки пунктуации. В конце точка с запятой."
+  },
+  "initialSolution": "",
+  "completedSolution": "console.log(typeof {a: 1, b: 2});",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal",
+  "hint": {
+    "en": "```javascript\nconsole.log(typeof {a: 1, b: 2});\n```",
+    "ru": "```javascript\nconsole.log(typeof {a: 1, b: 2});\n```"
+  }
+}

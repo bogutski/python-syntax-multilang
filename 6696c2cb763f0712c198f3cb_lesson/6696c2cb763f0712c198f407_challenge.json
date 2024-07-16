@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f407",
+  "name": {
+    "en": "/*",
+    "ru": "Перемещение элементов между массивами"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `moveElements`, которая принимает два массива (firstArray и secondArray) и число N.\n\nФункция должна удалить последние `N` элементов из `secondArray` и добавить эти элементы в начало `firstArray`.\n\nВ конце функция возвращает объект с двумя ключами: `FirstArray` и `SecondArray`, значения которых — это измененные массивы.\n\nЕсли `N` меньше либо равно нулю, массивы должны остаться без изменений.\n\n\nПример запуска функции:\n```javascript\nmoveElements(['a', 'b'], ['c', 'd', 'e'], 3); // { FirstArray: ['c', 'd', 'e', 'a', 'b'], SecondArray: [] }\nmoveElements([1, 2], [3, 4, 5, 6], 2); // { FirstArray: [5, 6, 1, 2], SecondArray: [3, 4] }\nmoveElements([], [10, 20, 30], 1); // { FirstArray: [30], SecondArray: [10, 20] }\nmoveElements([1, 2, 3], [], 2); // { FirstArray: [1, 2, 3], SecondArray: [] }\n```"
+  },
+  "initialSolution": "function moveElements(){\n\n}",
+  "completedSolution": "function moveElements(arr1, arr2, n) {\n  if(n <= 0) return {FirstArray: arr1, SecondArray: arr2};\n  else{\n    const elements = arr2.splice(-n)\n    arr1.splice(0, 0, ...elements)\n\n    return {FirstArray: arr1, SecondArray: arr2};\n  }\n}",
+  "openTest": "it('Created function moveElements', () => {\n  expect(moveElements).to.be.a('function');\n});\n\nit('Function moveElements should include methods splice()', () => {\n  const res = moveElements.toString()\n  expect(res).to.include('.splice(')\n});\n\nit(\"moveElements([1, 2], [3, 4, 5, 6], 2) should correctly move elements\", () => {\n  expect(moveElements([1, 2], [3, 4, 5, 6], 2)).to.deep.equal({ FirstArray: [5, 6, 1, 2], SecondArray: [3, 4] });\n});\n\nit(\"moveElements(['a', 'b'], ['c', 'd', 'e'], 3) should move all elements from second to first array\", () => {\n  expect(moveElements(['a', 'b'], ['c', 'd', 'e'], 3)).to.deep.equal({ FirstArray: ['c', 'd', 'e', 'a', 'b'], SecondArray: [] });\n});\n\nit(\"moveElements([], [10, 20, 30], 1) should handle empty first array\", () => {\n  expect(moveElements([], [10, 20, 30], 1)).to.deep.equal({ FirstArray: [30], SecondArray: [10, 20] });\n});\n\nit(\"moveElements([1, 2, 3], [], 2) should return the first array unchanged if the second array is empty\", () => {\n  expect(moveElements([1, 2, 3], [], 2)).to.deep.equal({ FirstArray: [1, 2, 3], SecondArray: [] });\n});\n\nit(\"should handle the case when N is greater than the length of the second array\", () => {\n  expect(moveElements([1, 2], [3, 4], 3)).to.deep.equal({ FirstArray: [3, 4, 1, 2], SecondArray: [] });\n});\n\nit(\"should return both arrays unchanged when N is 0\", () => {\n  expect(moveElements([1, 2], [3, 4], 0)).to.deep.equal({ FirstArray: [1, 2], SecondArray: [3, 4] });\n});\n\nit(\"should correctly handle moving elements when N is 0, keeping both arrays unchanged\", () => {\n  let firstArray = [1, 2, 3];\n  let secondArray = [4, 5, 6];\n  let result = moveElements(firstArray, secondArray, 0);\n  expect(result.FirstArray).to.deep.equal([1, 2, 3]);\n  expect(result.SecondArray).to.deep.equal([4, 5, 6]);\n});\n\nit(\"should correctly handle negative N by not moving any elements and keeping both arrays unchanged\", () => {\n  let firstArray = ['a', 'b'];\n  let secondArray = ['c', 'd', 'e'];\n  let result = moveElements(firstArray, secondArray, -2);\n  expect(result.FirstArray).to.deep.equal(['a', 'b']);\n  expect(result.SecondArray).to.deep.equal(['c', 'd', 'e']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

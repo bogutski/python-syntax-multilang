@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e7b4",
+  "name": {
+    "en": "Swap the first and nth elements of the array",
+    "ru": "Поменять первый и n-ый элементы массива местами"
+  },
+  "instruction": {
+    "en": "Write a function `switchElem` that takes two parameters, an array and a number.\n\nAn array of arbitrary length that can contain any values.\n\nThe number is the sequence number of the element in the array (not to be confused with the element index).\n\nSwap the first and the nth elements of the array.\n\nThe function should return the changed array.\n\nExample of running the function:\n```ja\nswitchElem([1, 2, 3, 4, 5], 3) // [3, 2, 1, 4, 5]\nswitchElem([1, 2, 3, 4, 5, ['a', 'b', 'c']], 6) // [['a', 'b', 'c'], 2, 3, 4, 5, 1]\nswitchElem(['a', 2, true, 4, '5', false, 113, 'k'], 7) // [113, 2, true, 4, '5', false, 'a', 'k']\n```",
+    "ru": "Напишите функцию `switchElem`, которая принимает два параметра - массив и число.\n\nМассив произвольной длины, в котором могут быть любые значения.\n\nЧисло - это порядковый номер элемента в массиве (не путать с индексом элемента).\n\nПоменяйте местами первый и n-ый элементы массива.\n\nФункция должна вернуть изменённый массив.\n\nПример запуска функции:\n```javascript\nswitchElem([1, 2, 3, 4, 5], 3) // [3, 2, 1, 4, 5]\nswitchElem([1, 2, 3, 4, 5, ['a', 'b', 'c']], 6) // [['a', 'b', 'c'], 2, 3, 4, 5, 1]\nswitchElem(['a', 2, true, 4, '5', false, 113, 'k'], 7) // [113, 2, true, 4, '5', false, 'a', 'k']\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function switchElem(arr, num) {\n  let element = arr[0]\n  console.log(element)\n  arr[0] = arr[num - 1]\n  arr[num - 1] = element\n  return arr\n}",
+  "openTest": "it('Created function switchElem', () => {\n  expect(switchElem).to.be.a('function');\n});\n\nit(\"switchElem([1, 2, 3, 4, 5], 3) should return [3, 2, 1, 4, 5]\", () => {\n  expect(switchElem([1, 2, 3, 4, 5], 3)).to.deep.equal([3, 2, 1, 4, 5]);\n});\n\nit(\"switchElem([1, 2, 3, 4, 5, ['a', 'b', 'c']], 6) should return [['a', 'b', 'c'], 2, 3, 4, 5, 1]\", () => {\n  expect(switchElem([1, 2, 3, 4, 5, ['a', 'b', 'c']], 6)).to.deep.equal([['a', 'b', 'c'], 2, 3, 4, 5, 1]);\n});\n\nit(\"switchElem(['a', 2, true, 4, '5', false, 113, 'k'], 7) should return [113, 2, true, 4, '5', false, 'a', 'k']\", () => {\n  expect(switchElem(['a', 2, true, 4, '5', false, 113, 'k'], 7)).to.deep.equal([113, 2, true, 4, '5', false, 'a', 'k']);\n});\n\nit(\"switchElem(['a', [2, true, 4], 5, 7, 13, 8], 2) should return [[2, true, 4], 'a', 5, 7, 13, 8]\", () => {\n  expect(switchElem(['a', [2, true, 4], 5, 7, 13, 8], 2)).to.deep.equal([[2, true, 4], 'a', 5, 7, 13, 8]);\n});\n\nit(\"switchElem(['a', [2, true, 4], '5', false, 113, 'k'], 6) should return ['k', [2, true, 4], '5', false, 113, 'a']\", () => {\n  expect(switchElem(['a', [2, true, 4], '5', false, 113, 'k'], 6)).to.deep.equal(['k', [2, true, 4], '5', false, 113, 'a']);\n});\n\nit(\"switchElem([['a', 2], true, 4, '5', false, 113, 'k'], 3) should return [4, true, ['a', 2], '5', false, 113, 'k']\", () => {\n  expect(switchElem([['a', 2], true, 4, '5', false, 113, 'k'], 3)).to.deep.equal([4, true, ['a', 2], '5', false, 113, 'k']);\n});\n\nit(\"switchElem([['a', 2], true, 4, '5', [false, 113], 'k'], 5) should return [[false, 113], true, 4, '5', ['a', 2], 'k']\", () => {\n  expect(switchElem([['a', 2], true, 4, '5', [false, 113], 'k'], 5)).to.deep.equal([[false, 113], true, 4, '5', ['a', 2], 'k']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

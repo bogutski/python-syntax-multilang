@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec29",
+  "name": {
+    "en": "Array with string and element indices",
+    "ru": "Массив со строкой и индексами элементов"
+  },
+  "instruction": {
+    "en": "The `stringAndElIndexes` function takes a string and an element.\n\nCorrect the function to return an array in which:\n\n* The first element is the original string from which the given element is removed,\n\n* All other elements are indexes of elements that were deleted from the original string\n\n\nFor example, string `apple` and element `p`, the function should return array `['ale', 1, 2]`.\n\nIn case of an empty string the function should return an empty array.\n\nThere are 5 errors in the code. From the `for` loop to the last `if` condition, everything is fine.\n\nTry to figure it out and rewrite the code yourself.\n\n\nExamples of running a function:\n```javascript\nstringAndElIndexes('apple', 'a'); // ['pple', 0]\nstringAndElIndexes('Hello World', 'o'); // ['Hell Wrld', 4, 7]\nstringAndElIndexes('', ''); // []\n```",
+    "ru": "Функция `stringAndElIndexes` принимает строку и элемент.\n\nИсправьте функцию, чтобы она возвращала массив, в котором:\n\n* Первый элемент - это оригинальная строка, из которой удалён заданный элемент,\n\n* Все остальные элементы - это индексы элементов, которые были удалены из оригинальной строки\n\n\nНапример, строка `apple` и элемент `p`, функция должна вернуть массив `['ale', 1, 2]`.\n\nВ случае пустой строки функция должна вернуть пустой массив.\n\nВ коде есть 5 ошибок. От цикла `for` до последней условия `if` - всё в порядке.\n\nПопытайтесь разобраться и переписать код самостоятельно.\n\n\nПримеры запуска функции:\n```javascript\nstringAndElIndexes('apple', 'a'); // ['pple', 0]\nstringAndElIndexes('Hello World', 'o'); // ['Hell Wrld', 4, 7]\nstringAndElIndexes('', ''); // []\n```"
+  },
+  "initialSolution": "function stringAndElIndexes(){\n  arr = [];\n  newString = '';\n  for (let i = 0; i < string.length; i++){\n    if(string[i] === el){\n      arr.push(i);\n    } else {\n      newString += string[i];\n    }\n  }\n  if(newString.length !==0) {\n    arr.unshift(newString);\n  }\n  arr;\n}",
+  "completedSolution": "function stringAndElIndexes(string, el){\n  const arr = [];\n  let newString = '';\n  for (let i = 0; i < string.length; i++){\n    if(string[i] === el)arr.push(i);\n    else newString += string[i];\n  }\n  if(newString.length !==0) arr.unshift(newString);\n  return arr;\n}",
+  "openTest": "it('Created function stringAndElIndexes', () => {\n  expect(stringAndElIndexes).to.be.a('function');\n});\n\nit(\"stringAndElIndexes('Hello World', 'o') should return ['Hell Wrld', 4, 7]\", () => {\n  expect(stringAndElIndexes('Hello World', 'o')).to.deep.equal(['Hell Wrld', 4, 7]);\n});\n\nit(\"stringAndElIndexes('Hello World', 'l') should return ['Heo Word', 2, 3, 9]\", () => {\n  expect(stringAndElIndexes('Hello World', 'l')).to.deep.equal(['Heo Word', 2, 3, 9]);\n});\n\nit(\"stringAndElIndexes('Hello World', '') should return ['Hello World']\", () => {\n  expect(stringAndElIndexes('Hello World', '')).to.deep.equal(['Hello World']);\n});\n\nit(\"stringAndElIndexes('', 'w') should return []\", () => {\n  expect(stringAndElIndexes('', 'w')).to.deep.equal([]);\n});\n\nit(\"stringAndElIndexes('', '') should return []\", () => {\n  expect(stringAndElIndexes('', '')).to.deep.equal([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

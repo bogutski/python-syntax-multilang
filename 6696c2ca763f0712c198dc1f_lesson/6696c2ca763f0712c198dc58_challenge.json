@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dc58",
+  "name": {
+    "en": "Help a farmer to find the area of the plot",
+    "ru": "Помогите фермеру найти площадь участка"
+  },
+  "instruction": {
+    "en": "A farmer has a square plot of land. He has built a fence around the plot and measured its length.\nThe farmer wants to buy seeds for planting, but he needs to know the area of the plot to calculate the number of seeds needed.\nHelp the farmer find the area of the square plot if the length of the fence around the plot is known.\n\nCreate a variable `length` and assign it an arbitrary number from 1 to 1000 (the length of the fence).\n\nCreate a `side` variable and assign it an expression to calculate the side of the square.\n\nCreate a variable ``square` and assign it an expression to calculate the area of a square with side `side`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst x = 2;\nconst y = x ** 2;\n```",
+    "ru": "Фермер имеет квадратный участок земли. Он построил ограду вокруг участка и измерил ее длину.\nФермер хочет купить семян для посадки, но, чтобы рассчитать необходимое количество семян, ему надо знать площадь участка.\nПомогите фермеру найти площадь квадратного участка, если известна длина ограды вокруг этого участка.\n\nСоздайте переменную `length` и присвойте ей произвольное число от 1 до 1000 (длина ограды).\n\nСоздайте переменную `side` и присвойте ей выражение для вычисления стороны квадрата.\n\nСоздайте переменную `square` и присвойте ей выражение для вычисления площади квадрата со стороной `side`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst x = 2;\nconst y = x ** 2;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const length = 600;\nconst side = length / 4;\nconst square = side ** 2;",
+  "openTest": "it('should variable `length` has a value', () => {\n  expect(length).not.undefined;\n});\n\nit('should variable `length` be a number', () => {\n  expect(length).a('number');\n});\n\nit('should variable `length` be in range from 1 to 1000', () => {\n  expect(length >= 1 && length <= 1000).to.be.true;\n});\n\nit('should variable `side` has a value', () => {\n  expect(side).not.undefined;\n});\n\nit('should variable `side` be a number', () => {\n  expect(side).a('number');\n});\n\nit('should variable `side` has correct value', () => {\n  expect(side).equal(length / 4);\n});\n\nit('should variable ``square` has a value', () => {\n  expect(square).not.undefined;\n});\n\nit('should variable `square` to be a number', () => {\n  expect(square).a('number');\n});\n\nit('should variable `square` equal `side * side` ', () => {\n  expect(side ** 2).equal(square);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst length = 600;\nconst side = length / 4;\nconst square = side ** 2;\n```",
+    "ru": "```javascript\nconst length = 600;\nconst side = length / 4;\nconst square = side ** 2;\n```"
+  }
+}

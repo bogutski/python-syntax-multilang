@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f196",
+  "name": {
+    "en": "",
+    "ru": "Симметричны ли массивы?"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `areTwoArraysSymmetrical`, которая принимает два массива и возвращает `true`, если они симметричны, и `false` в противном случае.\n\nЧто бы два массива были симметричны, их длина должна быть одинаковой, а элементы расположены в обратном порядке.\n\nНапример: `[1, 2, 3]` и `[3, 2, 1]` - симметричны. `[1, 2, 3]` и `[3, 2, 4]` - не симметричны.\n\n\nПример запуска функции:\n```javascript\nareTwoArraysSymmetrical([10, 20, 30], [30, 20, 10]);       // true\nareTwoArraysSymmetrical(['a', 'b', 'c'], ['c', 'b', 'd']); // false\nareTwoArraysSymmetrical([1, 2, 3, 4, 5], [5, 4, 3]);       // false\nareTwoArraysSymmetrical([], []);                           // true\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function areTwoArraysSymmetrical(arr1, arr2){\n  if (arr1.length !== arr2.length) return false;\n  for (let i = 0; i < arr1.length; i++){\n    if (arr1[i] !== arr2[arr2.length - 1 - i]) return false;\n  }\n  return true;\n}",
+  "openTest": "it('Created function areTwoArraysSymmetrical', () => {\n  expect(areTwoArraysSymmetrical).to.be.a('function');\n});\n\nit(\"Function areTwoArraysSymmetrical does not include 'reverse' method\", () => {\n  expect(areTwoArraysSymmetrical.toString()).to.not.include('reverse');\n});\n\nit(\"Function areTwoArraysSymmetrical does not include 'join' method\", () => {\n  expect(areTwoArraysSymmetrical.toString()).to.not.include('join');\n});\n\nit(\"areTwoArraysSymmetrical([1, 2, 3], [3, 2, 1]) should return true\", () => {\n  expect(areTwoArraysSymmetrical([1, 2, 3], [3, 2, 1])).to.equal(true);\n});\n\nit(\"areTwoArraysSymmetrical([1, 2, 3], [4, 2, 1]) should return false\", () => {\n  expect(areTwoArraysSymmetrical([1, 2, 3], [4, 2, 1])).to.equal(false);\n});\n\nit(\"areTwoArraysSymmetrical([150, true, 'hello'], ['hello', true, 150]) should return true\", () => {\n  expect(areTwoArraysSymmetrical([150, true, 'hello'], ['hello', true, 150])).to.equal(true);\n});\n\nit(\"areTwoArraysSymmetrical(['567', true, 'hello'], ['hello', false, 567]) should return false\", () => {\n  expect(areTwoArraysSymmetrical(['567', true, 'hello'], ['hello', false, 567])).to.equal(false);\n});\n\nit(\"areTwoArraysSymmetrical(['hello', 'world', 'js'], ['js', 'World', 'hello']) should return false\", () => {\n  expect(areTwoArraysSymmetrical(['hello', 'world', 'js'], ['js', 'World', 'hello'])).to.equal(false);\n});\n\nit(\"areTwoArraysSymmetrical(['hello', 'world', 'js'], ['js', 'hello']) should return false\", () => {\n  expect(areTwoArraysSymmetrical(['hello', 'world', 'js'], ['js', 'hello'])).to.equal(false);\n});\n\nit(\"areTwoArraysSymmetrical([], []) should return true\", () => {\n  expect(areTwoArraysSymmetrical([], [])).to.equal(true);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

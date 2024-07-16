@@ -1,0 +1,6 @@
+{
+  "name": "Переменная с логическим значением",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-4.png)\n\nСоздайте переменную с именем `isRainy` c использованием ключевого слова `const` и присвойте ей логическое значение `true`.",
+  "instructions": {},
+  "hint": "```javascript\nconst isRainy = true;\n```"
+}

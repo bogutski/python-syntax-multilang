@@ -1,0 +1,179 @@
+{
+  "name": "Reverse the line",
+  "questions": {
+    "0": {
+      "name": "Select the correct version of the result of the code run below",
+      "description": "```javascript\nconst str = 'PASV';\nlet rev = '';\nfor(let i = 0; i < str.length; i++){\n  rev = str[i] + rev;\n};\nconsole.log(rev);\n```",
+      "variants": {
+        "0": {
+          "name": "'VSAP'"
+        },
+        "1": {
+          "name": "'PASV'"
+        },
+        "2": {
+          "name": "'V,S,A,P'"
+        },
+        "3": {
+          "name": "'P A S V'"
+        }
+      }
+    },
+    "1": {
+      "name": "Is it correct that the result of the code below is 'tpircS avaJ'?",
+      "description": "```javascript\nconst str = 'Java Script';\nlet rev = '';\nfor(let i = 0; i < str.length; i++){\n  rev += str[i];\n};\nconsole.log(rev);\n```",
+      "variants": {
+        "0": {
+          "name": "Right, the result is 'tpircS avaJ'."
+        },
+        "1": {
+          "name": "No, the result is 'Java Script'"
+        }
+      }
+    },
+    "2": {
+      "name": "Select the correct for loop completion for the code below to make the 'Coding' string become 'gnidoC'",
+      "description": "```javascript\nconst str = 'Coding';\nlet rev = '';\nfor(let i = ???; i ???; i??){\n  rev ???;\n};\nconsole.log(rev);\n```",
+      "variants": {
+        "0": {
+          "name": "for(let i = 0; i < str.length; i++){\n  rev += str[i];\n};"
+        },
+        "1": {
+          "name": "for(let i = 0; i < str.length; i++){\n  rev = str[i] + rev;\n};"
+        },
+        "2": {
+          "name": "for(let i = str.length - 1; i >= 0; i--){\n  rev = str[i] + rev;\n};"
+        },
+        "3": {
+          "name": "for(let i = str.length - 1; i >= 0; i--){\n  rev += str[i];\n};"
+        }
+      }
+    },
+    "3": {
+      "name": "What will be output to the console after executing the code below?",
+      "description": "```javascript\nconst str = 'Lemon';\nlet rev = '';\nfor(let i = str.length - 1; i >= 0; i--){\n  rev = str[i] + rev;\n};\nconsole.log(rev);\n```",
+      "variants": {
+        "0": {
+          "name": "'Lemon'"
+        },
+        "1": {
+          "name": "'nemoL'"
+        },
+        "2": {
+          "name": "Nemol"
+        },
+        "3": {
+          "name": "L e m o n"
+        }
+      }
+    },
+    "4": {
+      "name": "Choose the correct option for converting a number to a string",
+      "description": "```javascript\nconst num = 123;\n```",
+      "variants": {
+        "0": {
+          "name": "const numToStr = String(num);"
+        },
+        "1": {
+          "name": "const numToStr = num + '';"
+        },
+        "2": {
+          "name": "const numToStr = num.toString();"
+        },
+        "3": {
+          "name": "const numToStr = 'num';"
+        }
+      }
+    },
+    "5": {
+      "name": "Select the correct option for converting a string to a number",
+      "description": "```javascript\nconst num = '123';\n```",
+      "variants": {
+        "0": {
+          "name": "const numToStr = Number(num);"
+        },
+        "1": {
+          "name": "const numToStr = num+;"
+        },
+        "2": {
+          "name": "const numToStr = number(num);"
+        },
+        "3": {
+          "name": "const numToStr = +num;"
+        }
+      }
+    },
+    "6": {
+      "name": "Select the correct option for the result of the code execution below",
+      "description": "```javascript\nconst num = 123;\nconst str = num + '';\nlet rev = '';\nfor(let i = str.length - 1; i >= 0; i--){\n  rev += str[i];\n};\nconsole.log(+rev);\n```",
+      "variants": {
+        "0": {
+          "name": "321"
+        },
+        "1": {
+          "name": "123"
+        },
+        "2": {
+          "name": "'321'"
+        },
+        "3": {
+          "name": "'123'"
+        }
+      }
+    },
+    "7": {
+      "name": "Is it true that the result of the code below is 007?",
+      "description": "```javascript\nconst num = 700;\nconst numToStr = num + '';\nlet rev = ''; \nfor(let i = numToStr.length - 1; i >= 0; i--){\n  rev += numToStr[i];\n};\nconsole.log(+rev);\n```",
+      "variants": {
+        "0": {
+          "name": "Yes, the result will be 007"
+        },
+        "1": {
+          "name": "No, the result will be '007'"
+        },
+        "2": {
+          "name": "No, the result will be 7"
+        },
+        "3": {
+          "name": "No, the result will be a '7'"
+        }
+      }
+    },
+    "8": {
+      "name": "Select the correct result of the code execution below",
+      "description": "```javascript\nconst num = '700';\nlet rev = ''; \nfor(let i = num.length - 1; i >= 0; i--){\n  rev += num[i];\n};\nconsole.log(rev);\n```",
+      "variants": {
+        "0": {
+          "name": "007"
+        },
+        "1": {
+          "name": "700"
+        },
+        "2": {
+          "name": "'700'"
+        },
+        "3": {
+          "name": "'007'"
+        }
+      }
+    },
+    "9": {
+      "name": "Choose the correct sequence of what happens in the rev variable",
+      "description": "```javascript\nconst str = 'Do it';\nlet rev = str.split('').reverse().join(''); \nconsole.log(rev);\n```",
+      "variants": {
+        "0": {
+          "name": "['D', 'o', ' ', 'i', 't']\n['t', 'i', ' ', 'o', 'D']\n'ti oD'"
+        },
+        "1": {
+          "name": "['t', 'i', ' ', 'o', 'D']\n['D', 'o', ' ', 'i', 't']\n'ti oD'"
+        },
+        "2": {
+          "name": "'ti oD'\n['D', 'o', ' ', 'i', 't']\n['t', 'i', ' ', 'o', 'D']"
+        },
+        "3": {
+          "name": "['D', 'o', ' ', 'i', 't']\n['D', 'o', ' ', 'i', 't']\n'ti oD'"
+        }
+      }
+    }
+  }
+}

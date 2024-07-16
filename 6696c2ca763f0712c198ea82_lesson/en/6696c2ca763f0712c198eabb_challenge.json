@@ -1,0 +1,4 @@
+{
+  "name": "The sum of all positive even 3-digit numbers of the array",
+  "instruction": "Write a function `sumEvenPositive3digitNum` that takes one parametre - an array.\n\nThe array is of arbitrary length and consists of positive and negative integers.\n\nThe function should return the sum of all positive even 3-digit numbers in the array.\n\nAn example of running the function:\n```javascript\nsumEvenPositive3digitNum([100, 200, 300, 400]) // 100 + 200 + 300 + 400 = 1000\nsumEvenPositive3digitNum([101, 203, 305, 407]) // 0\nsumEvenPositive3digitNum([2, 20, 200, 300, -400, 40]) // 200 + 300 = 500\n```"
+}

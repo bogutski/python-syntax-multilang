@@ -1,0 +1,1 @@
+# Array.prototype.shift() – удаляет первый элемент массива language: es

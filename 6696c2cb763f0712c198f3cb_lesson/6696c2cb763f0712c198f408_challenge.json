@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f408",
+  "name": {
+    "en": "/*",
+    "ru": "Гибкое добавление и удаление в массиве"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `flexibleSplice`, которая принимает четыре параметра:\n\n* массив `arr`,\n* число `startIndex` для определения начальной позиции изменений в массиве,\n* число `deleteCount` для указания количества удаляемых элементов,\n* элемент `newElement`, который нужно добавить.\n\nФункция должна обрабатывать следующие условия:\n\n* Если `startIndex` не указан или выходит за пределы массива, `newElement` должен быть добавлен в конец массива.\n* Если `deleteCount` не указан, из массива ничего не удаляется.\n* Если `newElement` не указан, в массив добавляется 'undefined'.\n\nФункция возвращает модифицированный массив.\n\n\nПример запуска функции:\n```javascript\nflexibleSplice(['x', 'y', 'z'], 1, 0); // [ 'x', undefined, 'y', 'z' ]\nflexibleSplice(['x', 'y'], -1, 1, 'z');  // [ 'x', 'z' ]\nflexibleSplice([10, 20, 30], 3, 0, 40);  // [ 10, 20, 30, 40 ]\nflexibleSplice([1, 2, 3, 4], 2, 1, 'a'); // [ 1, 2, 'a', 4 ]\nflexibleSplice(['apple', 'banana', 'cherry'], 1, 1); // [ 'apple', undefined, 'cherry' ]\n```"
+  },
+  "initialSolution": "function flexibleSplice(){\n\n}",
+  "completedSolution": "function flexibleSplice(arr, start = arr.length, deleteCount = 0, el) {\n  arr.splice(start, deleteCount, el)\n\n  return arr;\n}",
+  "openTest": "it('Created function flexibleSplice', () => {\n  expect(flexibleSplice).to.be.a('function');\n});\n\nit('Function flexibleSplice should include methods splice()', () => {\n  const res = flexibleSplice.toString()\n  expect(res).to.include('.splice(')\n});\n\nit(\"flexibleSplice([1, 2, 3, 4], 2, 1, 'a') should correctly modify the array\", () => {\n  expect(flexibleSplice([1, 2, 3, 4], 2, 1, 'a')).to.deep.equal([1, 2, 'a', 4]);\n});\n\nit(\"flexibleSplice(['apple', 'banana', 'cherry'], 1, 1) should return ['apple', undefined, 'cherry']\", () => {\n  expect(flexibleSplice(['apple', 'banana', 'cherry'], 1, 1)).to.deep.equal(['apple', undefined, 'cherry']);\n});\n\nit(\"flexibleSplice([10, 20, 30], 3, 0, 40) should add an element at the end\", () => {\n  expect(flexibleSplice([10, 20, 30], 3, 0, 40)).to.deep.equal([10, 20, 30, 40]);\n});\n\nit(\"flexibleSplice(['x', 'y'], -1, 1, 'z') should correctly handle negative start indices\", () => {\n  expect(flexibleSplice(['x', 'y'], -1, 1, 'z')).to.deep.equal(['x', 'z']);\n});\n\nit(\"flexibleSplice(['x', 'y', 'z'], 1, 0) should add undefined when el is not provided\", () => {\n  expect(flexibleSplice(['x', 'y', 'z'], 1, 0)).to.deep.equal(['x', undefined, 'y', 'z']);\n});\n\nit(\"flexibleSplice(['a', 'b', 'c'], 0, 1) should return [undefined, 'b', 'c']\", () => {\n  expect(flexibleSplice(['a', 'b', 'c'], 0, 1)).to.deep.equal([undefined, 'b', 'c']);\n});\n\nit(\"flexibleSplice(['d', 'e', 'f'], 2, 0, 'g') should insert 'g' before the last element\", () => {\n  expect(flexibleSplice(['d', 'e', 'f'], 2, 0, 'g')).to.deep.equal(['d', 'e', 'g', 'f']);\n});\n\nit(\"flexibleSplice(['a', 'b', 'c', 'd'], 1, 2) should return ['a', undefined, 'd']\", () => {\n  expect(flexibleSplice(['a', 'b', 'c', 'd'], 1, 2)).to.deep.equal(['a', undefined, 'd']);\n});\n\nit(\"flexibleSplice([10, 20, 30], 0, 3, 40) should replace all elements with a new one\", () => {\n  expect(flexibleSplice([10, 20, 30], 0, 3, 40)).to.deep.equal([40]);\n});\n\nit(\"flexibleSplice(['hello', 'world'], 2, 0, 'goodbye') should add 'goodbye' at the end when start index is equal to array length\", () => {\n  expect(flexibleSplice(['hello', 'world'], 2, 0, 'goodbye')).to.deep.equal(['hello', 'world', 'goodbye']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

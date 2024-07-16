@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df20",
+  "name": {
+    "en": "Correct errors in the `greeting` function",
+    "ru": "Исправьте ошибки в функции `greeting`"
+  },
+  "instruction": {
+    "en": "You got the code of novice programmers.\n\nThey wanted to write a `greeting` function, but something went wrong.\n\nCorrect the mistakes.",
+    "ru": "Вам достался код начинающих программистов.\n\nОни хотели написать функцию `greeting`, но что-то пошло не так.\n\nИсправьте ошибки."
+  },
+  "initialSolution": "fyntion greting; {}[]",
+  "completedSolution": "function greeting() {}",
+  "openTest": "it('Created function greeting', () => {\n  expect(greeting).to.be.a('function');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

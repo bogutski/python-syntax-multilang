@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f383",
+  "name": {
+    "en": "/*",
+    "ru": "Удаление и возврат последнего элемента массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `removeAndReturnLast`, которая удаляет последний элемент из переданного массива и возвращает удаленный элемент.\n\nЕсли массив изначально пустой, функция должна возвращать null.\n\nПример запуска функции:\n```javascript\nremoveAndReturnLast([1, 2, 3]); // 3\nremoveAndReturnLast([1, 2, 3, 4, 5]); // 5\nremoveAndReturnLast(['bananas', 'apple', 'strawberry']); // 'strawberry'\nremoveAndReturnLast([])); // null\n```"
+  },
+  "initialSolution": "function removeAndReturnLast(){\n\n}",
+  "completedSolution": "function removeAndReturnLast(arr){\n  if(!arr.length) return null\n  return arr.pop()\n}",
+  "openTest": "it('Created function removeAndReturnLast', () => {\n  expect(removeAndReturnLast).to.be.a('function');\n});\n\nit(\"removeAndReturnLast([]) should return null\", () => {\n  expect(removeAndReturnLast([])).to.equal(null);\n});\n\nit(\"removeAndReturnLast([100, 0, 5555, 795, 1]) should return 1\", () => {\n  expect(removeAndReturnLast([100, 0, 5555, 795, 1])).to.equal(1);\n});\n\nit(\"Should modify the original array by removing the last element\", () => {\n  let arr = [1, 2, 3];\n  removeAndReturnLast(arr);\n  expect(arr).to.deep.equal([1, 2]);\n});\n\nit(\"removeAndReturnLast(['a', 'b', 'c']) should return 'c'\", () => {\n  expect(removeAndReturnLast(['a', 'b', 'c'])).to.equal('c');\n});\n\nit(\"removeAndReturnLast(['single']) should return 'single'\", () => {\n  expect(removeAndReturnLast(['single'])).to.equal('single');\n});\n\nit(\"removeAndReturnLast([true, 'string', 42]) should return 42\", () => {\n  expect(removeAndReturnLast([true, 'string', 42])).to.equal(42);\n});\n\nit(\"Should return the last element without affecting preceding elements\", () => {\n  let arr = [1, 'two', 3.0];\n  removeAndReturnLast(arr);\n  expect(arr).to.deep.equal([1, 'two']);\n});\n\nit(\"Should handle array with null elements correctly\", () => {\n  expect(removeAndReturnLast([null, null, null])).to.equal(null);\n});\n\nit(\"Should not throw an error for arrays containing undefined elements\", () => {\n  expect(() => removeAndReturnLast([undefined, undefined, undefined])).to.not.throw();\n  expect(removeAndReturnLast([undefined, undefined, undefined])).to.equal(undefined);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

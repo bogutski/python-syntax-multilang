@@ -1,0 +1,6 @@
+{
+  "name": "Print in the console the string with double quotes Hello JavaScript",
+  "instruction": "Only one line. Observe spaces and punctuation marks. A semicolon at the end. Double quotes. Write the command `console.log(\"Hello JavaScript\");`",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log(\"Hello JavaScript\");\n```"
+}

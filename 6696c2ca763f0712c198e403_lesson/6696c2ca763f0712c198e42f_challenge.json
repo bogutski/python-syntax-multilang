@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e42f",
+  "name": {
+    "en": "Translate line to lower case",
+    "ru": "Перевести строку в нижний регистр"
+  },
+  "instruction": {
+    "en": "Write a function `allLower` that takes a string and returns the same string, but in lower case.\n\n```javascript\nallLower('Hello') // 'hello'\nallLower('Hello World') // 'hello world'\nallLower('AAA') // 'aaa'\nallLower('AAA aaa') // 'aaa aaa'\n```",
+    "ru": "Напишите функцию `allLower`, которая принимает строку и возвращает эту же строку, но в нижнем регистре.\n\nПримеры запуска функции:\n```javascript\nallLower('Hello') // 'hello'\nallLower('Hello World') // 'hello world'\nallLower('AAA') // 'aaa'\nallLower('AAA aaa') // 'aaa aaa'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function allLower(str) {\n  return str.toLowerCase();\n}",
+  "openTest": "it('Created function allLower', () => {\n  expect(allLower).to.be.a('function');\n});\n\nit('allLower(\"Hello\") should return \"hello\"', () => {\n  expect(allLower('Hello')).to.equal('hello');\n});\n\nit('allLower(\"Hello World\") should return \"hello world\"', () => {\n  expect(allLower('Hello World')).to.equal('hello world');\n});\n\nit('allLower(\"AAA\") should return \"aaa\"', () => {\n  expect(allLower('AAA')).to.equal('aaa');\n});\n\nit('allLower(\"AAA aaa\") should return \"aaa aaa\"', () => {\n  expect(allLower('AAA aaa')).to.equal('aaa aaa');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

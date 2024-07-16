@@ -1,0 +1,5 @@
+{
+  "name": "Одинаковые ссылки на объекты",
+  "instruction": "Создайте функцию `isSameReference`.\n\nПараметры функции:\n* `obj1` – объект\n* `obj2` – объект\n\nЕсли `obj1` и `obj2` ссылаются на один и тот же объект, то функция должна вернуть `true`, иначе `false`.\n\nПример запуска функции:\n```javascript\nconst obj = { a: 1 };\nisSameReference(obj, obj); // true\n\nconst obj1 = { a: 1 };\nconst obj2 = { a: 1 };\nisSameReference(obj1, obj2); // false\n\nconst obj1 = { a: 1 };\nconst obj2 = obj1;\nisSameReference(obj1, obj2); // true\n```\n\nВам помогут эти примеры:\n```javascript\nconst obj1 = { a: 1 };\nconst obj2 = { a: 1 };\nconsole.log(obj1 === obj2); // false\n\nconst obj1 = { a: 1 };\nconst obj2 = obj1;\nconsole.log(obj1 === obj2); // true\n\nconst obj1 = { a: 1 };\nconst obj2 = obj1;\nconsole.log(obj1 === obj2); // true\n```",
+  "instructions": {}
+}

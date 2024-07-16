@@ -1,0 +1,5 @@
+{
+  "name": "Count the number of occurrences of a given digit in a string\n",
+  "instruction": "Write a `countDigit` function that accepts two string arguments:\n- a string of arbitrary length composed of various characters (including digits)\n- a 1-character long string containing a digit from 0 to 9\n\nYou need to count how many times a given digit occurs in the string and return this number.\n\nExamples of function calls:\n\n```javascript\ncountDigit('123456789', '1'); // 1\ncountDigit('Total price: 33.3$', '3'); // 3\ncountDigit('Time is up!', '5'); // 0\ncountDigit('', '9'); // 0\n```",
+  "instructions": {}
+}

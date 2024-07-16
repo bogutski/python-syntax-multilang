@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ed53",
+  "name": {
+    "en": "Count the number of words in the string",
+    "ru": "Посчитать количество слов в строке"
+  },
+  "instruction": {
+    "en": "Write a function `countWords` that takes a string and returns the number of words in the string.\n\nThe string may contain spaces at the beginning and at the end.\n\nNumbers and characters count as words too.\n\nIf the string is empty or contains only spaces, the function should return - 0.\n\nExamples of how to execute the function:\n```javascript\ncountWords('Hello') // 1\ncountWords(' Hello ') // 1\ncountWords('Hello World') // 2\ncountWords('') // 0\n```",
+    "ru": "Напишите функцию `countWords`, которая принимает строку и возвращает количество слов в строке.\n\nСтрока может содержать пробелы в начале и в конце.\n\nЧисла и знаки тоже считаются за слова.\n\nЕсли строка пустая или содержит одни пробелы, то функция должна вернуть - 0.\n\nПримеры запуска функции:\n```javascript\ncountWords('Hello') // 1\ncountWords(' Hello  ') // 1\ncountWords('Hello  World') // 2\ncountWords('') // 0\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function countWords(str){\n  let count = 0;\n  str = str.trim();\n  if(str.length === 0) return count;\n  str = ' ' + str;\n  for (let i = 0; i < str.length; i++){\n    if(str[i] === ' ' && str[i+1] !== ' ')count++;\n  }\n  return count;\n}",
+  "openTest": "it(\"countWords is a function\", () => {\n  expect(countWords).to.be.a('function');\n})\nit(\"countWords('string') should return 1\", () =>{\n  expect(countWords('string')).equal(1);\n});\nit(\"countWords('one  two ') should return 2\", () =>{\n  expect(countWords('one  two ')).equal(2);\n});\nit(\"countWords('  string ') should return 1\", () =>{\n  expect(countWords('  string ')).equal(1);\n});\nit(\"countWords('how many words are here?') should return 5\", () =>{\n  expect(countWords(' how many   words are here?')).equal(5);\n});\nit(\"countWords('') should return 0\", () =>{\n  expect(countWords('')).equal(0);\n});\nit(\"countWords(' ') should return 0\", () =>{\n  expect(countWords(' ')).equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

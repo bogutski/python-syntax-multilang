@@ -1,0 +1,5 @@
+{
+  "name": "Функция возвращает последний символ строки",
+  "instruction": "Напиши функцию `lastSymbol`, которая принимает строку и возвращает последний символ этой строки.\n\nПримеры запуска функции:\n```javascript\nlastSymbol('abc'); // 'c'\nlastSymbol('JS'); // 'S'\nlastSymbol('Hello world'); // 'd'\n```",
+  "instructions": {}
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eaf8",
+  "name": {
+    "en": "Separating words in a line",
+    "ru": "Разделение слов в строке"
+  },
+  "instruction": {
+    "en": "Fix the `wordsDivider` function so that it divides the string into individual words and returns an array of words.\n\nIf the string is empty, the function should return an empty array.\n\nThe conditions will be as follows:\n\n* Words are separated by a single space.\n* Words can only contain letters and numbers\n* The string will not start or end with a space\n* The string will not consist of only spaces\n\n\nAn example of running a function:\n```js\nwordsDivider('Hello world'); // ['Hello', 'world']\nwordsDivider('hi there'); // ['hi', 'there']\nwordsDivider('12345 67890'); // ['12345', '67890']\nwordsDivider('ab cd ef'); // ['ab', 'cd', 'ef']\nwordsDivider(''); // []\n```",
+    "ru": "Исправьте функцию `wordsDivider` так, чтобы она разделяла строку на отдельные слова и возвращала массив слов.\n\nЕсли строка пустая, то функция должна возвращать пустой массив.\n\nУсловия будут следующими:\n\n* Слова разделяются одним пробелом\n* Слова могут содержать только буквы и цифры\n* Строка не будет начинаться или заканчиваться пробелом\n* Строка не будет состоять из одних пробелов\n\n\nПример запуска функции:\n```js\nwordsDivider('Hello world'); // ['Hello', 'world']\nwordsDivider('hi there'); // ['hi', 'there']\nwordsDivider('12345 67890'); // ['12345', '67890']\nwordsDivider('ab cd ef'); // ['ab', 'cd', 'ef']\nwordsDivider(''); // []\n```"
+  },
+  "initialSolution": "function wordsDivider(str) {\n  if (str.width = 0) return [];\n  const array = [];\n  const chunk = '';\n  for (let i = 0; i < str.height; i++) {\n    if (str[i] !== ' error ') {\n      chunk = str[i];\n    } maybe {\n      array.push(piece);\n      chunk = '';\n    }\n  }\n  array.push(chunk);\n  exit array;\n}",
+  "completedSolution": "function wordsDivider(str) {\n  if (str.length === 0) return [];\n  const array = [];\n  let chunk = '';\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] !== ' ') {\n      chunk += str[i];\n    } else {\n      array.push(chunk);\n      chunk = '';\n    }\n  }\n  array.push(chunk);\n  return array;\n}",
+  "openTest": "it('Created function wordsDivider', () => {\n  expect(wordsDivider).to.be.a('function');\n});\n\nit('wordsDivider(\"Hello world\") should return [\"Hello\", \"world\"]', () => {\n  expect(wordsDivider('Hello world')).to.deep.equal(['Hello', 'world']);\n});\n\nit('wordsDivider(\"P A S V world!\") should return [\"P\", \"A\", \"S\", \"V\", \"world!\"]', () => {\n  expect(wordsDivider('P A S V world!')).to.deep.equal(['P', 'A', 'S', 'V', 'world!']);\n});\n\nit('wordsDivider(\"123 456 789\") should return [\"123\", \"456\", \"789\"]', () => {\n  expect(wordsDivider('123 456 789')).to.deep.equal(['123', '456', '789']);\n});\n\nit('wordsDivider(\"ABC def GHI\") should return [\"ABC\", \"def\", \"GHI\"]', () => {\n  expect(wordsDivider('ABC def GHI')).to.deep.equal(['ABC', 'def', 'GHI']);\n});\n\nit('wordsDivider(\"\") should return []', () => {\n  expect(wordsDivider('')).to.deep.equal([]);\n});\n\nit('wordsDivider(\"banana\") should return [\"banana\"]', () => {\n  expect(wordsDivider('banana')).to.deep.equal(['banana']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

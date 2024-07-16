@@ -1,0 +1,4 @@
+{
+  "name": "The area of a triangle by its three sides",
+  "instruction": "Knowing the lengths of the three sides of the triangle, you can find the area of the triangle using Heron's formula:\n\n```\ns = (p * (p - a) * (p - b) * (p - c)) ** 0.5\n```\n\nwhere `p` is the semiperimeter of triangle equal to half of the sum of lengths of three sides of triangle, `a`, `b`, `c` are lengths of sides of triangle.\n\n`** 0.5` is the extraction of the square root.\n\nLet the function called `triangleArea` take three parameters - the lengths of the sides of the triangle.\n\nThe function should return the area of the triangle."
+}

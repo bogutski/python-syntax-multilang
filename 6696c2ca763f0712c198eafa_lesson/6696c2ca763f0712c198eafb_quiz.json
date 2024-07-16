@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198eafb",
+  "name": {
+    "ru": "Преобразовать массив в строку",
+    "en": "Convert an array to a string",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198eafc",
+      "name": {
+        "ru": "Массив можно перевести в строку с помощью метода join. Какой правильный синтаксис данной команды",
+        "en": "An array can be translated to a string using the join method. What is the correct syntax of this command",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eafd",
+          "name": {
+            "ru": "join()",
+            "en": "join()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eafe",
+          "name": {
+            "ru": "join.arrayToString(разделитель)",
+            "en": "join.arrayToString(separator)",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaff",
+          "name": {
+            "ru": "array.join(разделитель)",
+            "en": "array.join(separator)",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb00",
+          "name": {
+            "ru": "array.join.toString",
+            "en": "array.join.toString",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb01",
+      "name": {
+        "ru": "Методы split и join можно использовать для преобразования строки в массив и обратно",
+        "en": "The split and join methods can be used to convert a string to an array and vice versa",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb02",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb03",
+          "name": {
+            "ru": "Нет, оба метода работают только с массивами",
+            "en": "No, both methods only work with arrays",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb04",
+          "name": {
+            "ru": "Утверждение верно, split работает со строкой, а join с массивом",
+            "en": "The statement is true, split works with a string and join works with an array",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb05",
+          "name": {
+            "ru": "Утверждение неверно, split работает с массивом, а join со строкой",
+            "en": "The statement is incorrect, split works with an array and join works with a string",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb06",
+      "name": {
+        "ru": "Работает ли код ниже правильно?",
+        "en": "Does the code below work correctly?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nconst str = arr.join();\nconsole.log(str);\n// '1,2,3,4,5'\n```",
+        "en": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nconst str = arr.join();\nconsole.log(str);\n// '1,2,3,4,5'\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb07",
+          "name": {
+            "ru": "Нет, вместо запятых должны быть точки с запятой",
+            "en": "No, there should be semicolons instead of commas",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb08",
+          "name": {
+            "ru": "Да, код работает правильно",
+            "en": "Yes, the code is working correctly",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb09",
+          "name": {
+            "ru": "Нет, не задан разделитель",
+            "en": "No, no delimiter is specified",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb0a",
+          "name": {
+            "ru": "Нет, вместо запятых должны быть пробелы",
+            "en": "No, there should be spaces instead of commas",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb0b",
+      "name": {
+        "ru": "Есть ли ограничения у метода join?",
+        "en": "Is there any limitation to the join method?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb0c",
+          "name": {
+            "ru": "Нет, его можно всегда использовать для преобразования всего массива в строку",
+            "en": "No, you can always use it to convert the entire array to a string",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb0d",
+          "name": {
+            "ru": "Да, если в массиве есть объекты, то метод join не сработает",
+            "en": "Yes, if there are objects in the array, the join method will not work",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb0e",
+          "name": {
+            "ru": "Да, если из массива надо вывести определённые элементы, то join не подходит",
+            "en": "Yes, if you want to output certain elements from an array, join is not suitable",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb0f",
+          "name": {
+            "ru": "Да, если в массиве есть специальные знаки (например, кавычки), то join не сработает",
+            "en": "Yes, if there are special characters in the array (for example, quotes), then join will not work",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb10",
+      "name": {
+        "ru": "Какой результат получится в результате выполнения кода ниже?",
+        "en": "What is the result of executing the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nlet str = '';\nfor(let i = 0; i < arr.length; i++){\n if(arr[i] % 2 === 0) str += arr[i]\n}\nconsole.log(str);\n```",
+        "en": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nlet str = '';\nfor(let i = 0; i < arr.length; i++){\n if(arr[i] % 2 === 0) str += arr[i]\n}\nconsole.log(str);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb11",
+          "name": {
+            "ru": "'2, 4'",
+            "en": "'2, 4'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb12",
+          "name": {
+            "ru": "'1, 3, 5'",
+            "en": "'1, 3, 5'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb13",
+          "name": {
+            "ru": "'24'",
+            "en": "'24'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb14",
+          "name": {
+            "ru": "'2 4'",
+            "en": "'2 4'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb15",
+      "name": {
+        "ru": "Какой результат получится в результате выполнения кода ниже?",
+        "en": "What is the result of executing the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nlet str = '';\nfor(let i = 0; i < arr.length; i++){\n str = arr[i] + ', ' + str;\n}\nconsole.log(str);\n```",
+        "en": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nlet str = '';\nfor(let i = 0; i < arr.length; i++){\n str = arr[i] + ', ' + str;\n}\nconsole.log(str);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb16",
+          "name": {
+            "ru": "'1, 2, 3, 4, 5 '",
+            "en": "'1, 2, 3, 4, 5 '",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb17",
+          "name": {
+            "ru": "'5 4 3 2 1'",
+            "en": "'5 4 3 2 1'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb18",
+          "name": {
+            "ru": "1 2 3 4 5",
+            "en": "1 2 3 4 5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb19",
+          "name": {
+            "ru": "'5, 4, 3, 2, 1, '",
+            "en": "'5, 4, 3, 2, 1, '",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb1a",
+      "name": {
+        "ru": "Какое тело цикл даст результат `I study JavaScript`?'",
+        "en": "Which loop body will produce the result `I study JavaScript'?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript \nconst arr = ['I', 'study', 'JavaScript'];\n let str = '' \nfor (let i = 0; i < arr.length; i++) {\n // ваш код\n}\nconsole.log(str.trim())\n```\n",
+        "en": "```javascript \nconst arr = ['I', 'study', 'JavaScript'];\n let str = '' \nfor (let i = 0; i < arr.length; i++) {\n // ваш код\n}\nconsole.log(str.trim())\n```\n",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb1b",
+          "name": {
+            "ru": "console.log(arr.join(' '))",
+            "en": "console.log(arr.join(' '))",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb1c",
+          "name": {
+            "ru": "str += arr[i] + ' '",
+            "en": "str += arr[i] + ' '",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb1d",
+          "name": {
+            "ru": "str += arr[i] + ' ' + str;",
+            "en": "str += arr[i] + ' ' + str;",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb1e",
+          "name": {
+            "ru": "str =str + ' ' +  arr[i];",
+            "en": "str =str + ' ' +  arr[i];",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb1f",
+      "name": {
+        "ru": "Можно ли с помощью циклов получить строку '24' из массива [1, 2, 3, 4, 5]?",
+        "en": "Can we use loops to get the string '24' from the array [1, 2, 3, 4, 5]?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb20",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb21",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb22",
+      "name": {
+        "ru": "Какое условие надо добавить в цикл чтобы получить результат '1 2 3 4 5'?",
+        "en": "Which condition should be added to the loop to get the result '1 2 3 4 4 5'?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [10, 20, 30, 40, 50];\nlet str = '';\nfor(let i = 0; i < arr.length; i++){\n // ваш код\n}\nconsole.log(str);\n```\n",
+        "en": "```javascript\nconst arr = [10, 20, 30, 40, 50];\nlet str = '';\nfor(let i = 0; i < arr.length; i++){\n // ваш код\n}\nconsole.log(str);\n```\n",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb23",
+          "name": {
+            "ru": "str += arr[i] / 10 + ' ';",
+            "en": "str += arr[i] / 10 + ' ';",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb24",
+          "name": {
+            "ru": "arr[i] = arr[i] / 10; str += arr[i] + ' ';",
+            "en": "arr[i] = arr[i] / 10; str += arr[i] + ' ';",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb25",
+          "name": {
+            "ru": "str += arr[i] % 10 + ' '",
+            "en": "str += arr[i] % 10 + ' '",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb26",
+          "name": {
+            "ru": "все варианты выше неверны",
+            "en": "all the options above are wrong",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb27",
+      "name": {
+        "ru": "Можно ли из массива `arr=['hello', 23, 'false', 'true', 15]` вывести только числовые элементы в виде строки",
+        "en": "Is it possible to output only numeric elements as a string from the array `arr=['hello', 23, 'false', 'true', 15]`",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb28",
+          "name": {
+            "ru": "Нет, числа выводятся только в виде чисел",
+            "en": "No, the numbers are only output as numbers",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb29",
+          "name": {
+            "ru": "Нет, нельзя из массива вычленить только числа",
+            "en": "No, you can't extract only numbers from an array",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb2a",
+          "name": {
+            "ru": "Да, строка может показывать любой результат, включая только числа",
+            "en": "Yes, the string can show any result, including only numbers",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb2b",
+          "name": {
+            "ru": "Да, но на каждое число будет своя строка",
+            "en": "Yes, but there will be a different string for each number",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Repeat depending on the evenness of the string length",
+  "instruction": "Write a function `repeatString` that takes a string.\n\nHave the function take the first character of the string, convert it to uppercase, and repeat it.\n\nIf the length of the string is even, repeat it 3 times, if it is odd, repeat it 2 times.\n\nThe parity of the string length can be checked with the `%` operator (the remainder of division).\n\nEven number when divided by `2` gives remainder `0`, odd number gives remainder `1`.\n\nExamples of running the function:\n```javascript\nrepeatString('abc'); // 'AA'\nrepeatString('abcd'); // 'AAA'\n```"
+}

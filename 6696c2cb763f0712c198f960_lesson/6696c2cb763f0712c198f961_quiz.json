@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2cb763f0712c198f961",
+  "name": {
+    "ru": "Практика по решению задач с кодинг-интервью",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f962",
+      "name": {
+        "ru": "Что будет выведено в консоль?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconsole.log(typeof null);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f963",
+          "name": {
+            "ru": "boolean",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f964",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f965",
+          "name": {
+            "ru": "object",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f966",
+          "name": {
+            "ru": "null",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f967",
+      "name": {
+        "ru": "Какое значение будет у переменной x после выполнения следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet x;\nx = 2 + '2';\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f968",
+          "name": {
+            "ru": "4",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f969",
+          "name": {
+            "ru": "22",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f96a",
+          "name": {
+            "ru": "'4'",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f96b",
+          "name": {
+            "ru": "'22'",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f96c",
+      "name": {
+        "ru": "Какое значение будет у переменной result после выполнения следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet result = '5' - 3;\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f96d",
+          "name": {
+            "ru": "'2'",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f96e",
+          "name": {
+            "ru": "2",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f96f",
+          "name": {
+            "ru": "'8'",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f970",
+          "name": {
+            "ru": "Будет ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f971",
+      "name": {
+        "ru": "Какой метод используется для удаления первого элемента в массиве?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f972",
+          "name": {
+            "ru": "push",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f973",
+          "name": {
+            "ru": "pop",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f974",
+          "name": {
+            "ru": "shift",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f975",
+          "name": {
+            "ru": "unshift",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f976",
+      "name": {
+        "ru": "Что будет выведено в консоль?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet obj = { a: 1 };\nlet copy = obj;\ncopy.a = 2;\nconsole.log(obj.a);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f977",
+          "name": {
+            "ru": "1",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f978",
+          "name": {
+            "ru": "2",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f979",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f97a",
+          "name": {
+            "ru": "Будет ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f97b",
+      "name": {
+        "ru": "Какой метод используется для удаления последнего элемента массива?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f97c",
+          "name": {
+            "ru": "pop",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f97d",
+          "name": {
+            "ru": "push",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f97e",
+          "name": {
+            "ru": "shift",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f97f",
+          "name": {
+            "ru": "unshift",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f980",
+      "name": {
+        "ru": "Что будет выведено в консоль?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet arr = [1, 2, 3, 4, 5];\nconsole.log(arr.slice(2, 4));\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f981",
+          "name": {
+            "ru": "[1, 2, 3, 4]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f982",
+          "name": {
+            "ru": "[3, 4, 5]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f983",
+          "name": {
+            "ru": "[3, 4]",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f984",
+          "name": {
+            "ru": "[2, 3, 4]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f985",
+      "name": {
+        "ru": "Что будет выведено в консоль?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet a = [1, 2, 3];\nlet b = [...a];\nb.push(4);\nconsole.log(a);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f986",
+          "name": {
+            "ru": "[1, 2, 3]",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f987",
+          "name": {
+            "ru": "[1, 2, 3, 4]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f988",
+          "name": {
+            "ru": "[4, 1, 2, 3]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f989",
+          "name": {
+            "ru": "[1, 2, 4]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f98a",
+      "name": {
+        "ru": "Что вернет метод map при выполнении следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet arr = [1, 2, 3];\nlet newArr = arr.map(x => {\n    if(x % 2) return x * 2\n    else return x - 2;\n});\nconsole.log(newArr);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f98b",
+          "name": {
+            "ru": "[-1, 0, 1]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f98c",
+          "name": {
+            "ru": "[2, 4, 6]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f98d",
+          "name": {
+            "ru": "[2, 0, 6]",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f98e",
+          "name": {
+            "ru": "[-1, 4, 1]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f98f",
+      "name": {
+        "ru": "Что произойдет при выполнении следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet a = {name: 'Alice'};\nlet b = {name: 'Alice'};\nconsole.log(a === b);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f990",
+          "name": {
+            "ru": "true",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f991",
+          "name": {
+            "ru": "false",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f992",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f993",
+          "name": {
+            "ru": "Будет ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

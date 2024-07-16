@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df54",
+  "name": {
+    "en": "Two functions are called inside a third function",
+    "ru": "Две функции вызываются внутри третьей функции"
+  },
+  "instruction": {
+    "en": "Write the first function `positiveNumber` that returns the number 123.\nWrite the second function `negativeNumber` that returns the number -321.\n\nWrite a third function `sum` that returns the sum of the two numbers that the `positiveNumber` and `negativeNumber` functions return.\n\nThere should be no problem creating the first two functions.\n\nA fundamentally similar example:\n\n```js\nfunction getFirstNumber() {\n  return 1\n}\n\nfunction getSecondNumber() {\n  return 2\n}\n\nfunction calculation() {\n  return getFirstNumber() * getSecondNumber()\n}\n```",
+    "ru": "Напиши первую функцию `positiveNumber`, которая возвращает число 123.\nНапиши вторую функцию `negativeNumber`, которая возвращает число -321.\n\nНапиши третью функцию `sum`, которая возвращает сумму двух чисел, которые возвращает функции `positiveNumber` и `negativeNumber`.\n\nС созданием первых двух функций возникнуть сложностей не должно.\n\nПринципиально похожий пример:\n\n```js\nfunction getFirstNumber() {\n  return 1\n}\n\nfunction getSecondNumber() {\n  return 2\n}\n\nfunction calculation() {\n  return getFirstNumber() * getSecondNumber()\n}\n```"
+  },
+  "initialSolution": "fun here",
+  "completedSolution": "function positiveNumber() {\n  return 123;\n}\n\nfunction negativeNumber() {\n  return -321;\n}\n\nfunction sum() {\n  return positiveNumber() + negativeNumber();\n}",
+  "openTest": "it('Created function positiveNumber', () => {\n  expect(positiveNumber).to.be.a('function');\n});\n\nit('Created function negativeNumber', () => {\n  expect(positiveNumber).to.be.a('function');\n});\n\nit('Created function sum', () => {\n  expect(sum).to.be.a('function');\n});\n\nit('Function positiveNumber returns correct result', () => {\n  expect(positiveNumber()).eq(123);\n});\n\nit('Function negativeNumber returns correct result', () => {\n  expect(negativeNumber()).eq(-321);\n});\n\nit('Function sum returns correct result', () => {\n  expect(sum()).eq(-198);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

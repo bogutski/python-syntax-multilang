@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2cb763f0712c198f7ec",
+  "name": {
+    "ru": "Array.prototype.lastIndexOf() – индекс искомого элемента, начиная с конца массива",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f7ed",
+      "name": {
+        "ru": "Что возвращает метод Array.prototype.lastIndexOf(), если элемент не найден в массиве?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f7ee",
+          "name": {
+            "ru": "0",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7ef",
+          "name": {
+            "ru": "-1",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7f0",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7f1",
+          "name": {
+            "ru": "null",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f7f2",
+      "name": {
+        "ru": "Какой результат вернет следующий код?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n['apple', 'banana', 'mango', 'banana'].lastIndexOf('banana')\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f7f3",
+          "name": {
+            "ru": "0",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7f4",
+          "name": {
+            "ru": "1",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7f5",
+          "name": {
+            "ru": "2",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7f6",
+          "name": {
+            "ru": "3",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f7f7",
+      "name": {
+        "ru": "Какой тип сравнения используется в методе lastIndexOf()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f7f8",
+          "name": {
+            "ru": "Лексикографическое сравнение",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7f9",
+          "name": {
+            "ru": "Битовое сравнение",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7fa",
+          "name": {
+            "ru": "Не строгое равенство (==)",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7fb",
+          "name": {
+            "ru": "Строгое равенство (===)",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f7fc",
+      "name": {
+        "ru": "Какой результат вернет следующий код?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n[1, 2, 3, 2, 2].lastIndexOf(2, 2)\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f7fd",
+          "name": {
+            "ru": "-1",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7fe",
+          "name": {
+            "ru": "1",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f7ff",
+          "name": {
+            "ru": "3",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f800",
+          "name": {
+            "ru": "4",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f801",
+      "name": {
+        "ru": "Какой результат вернет метод lastIndexOf(), если массив содержит несколько экземпляров искомого элемента?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f802",
+          "name": {
+            "ru": "Индекс первого вхождения элемента",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f803",
+          "name": {
+            "ru": "Массив всех индексов вхождений элемента",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f804",
+          "name": {
+            "ru": "Индекс последнего вхождения элемента",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f805",
+          "name": {
+            "ru": "-1",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f806",
+      "name": {
+        "ru": "Какой результат вернет следующий код?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n[NaN, 1, NaN, 2, 3].lastIndexOf(NaN)\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f807",
+          "name": {
+            "ru": "0",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f808",
+          "name": {
+            "ru": "-1",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f809",
+          "name": {
+            "ru": "2",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f80a",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f80b",
+      "name": {
+        "ru": "Какой результат вернет следующий код?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n['x', 'y', 'z'].lastIndexOf('y', -2)\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f80c",
+          "name": {
+            "ru": "1",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f80d",
+          "name": {
+            "ru": "-1",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f80e",
+          "name": {
+            "ru": "2",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f80f",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f810",
+      "name": {
+        "ru": "Что произойдет, если fromIndex в методе lastIndexOf() больше или равен длине массива?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f811",
+          "name": {
+            "ru": "Будет выброшена ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f812",
+          "name": {
+            "ru": "Поиск начнется с конца массива",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f813",
+          "name": {
+            "ru": "Метод вернет -1",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f814",
+          "name": {
+            "ru": "Метод вернет 0",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f815",
+      "name": {
+        "ru": "Как метод lastIndexOf() обрабатывает поиск строк с разным регистром?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f816",
+          "name": {
+            "ru": "Сравнивает без учета регистра",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f817",
+          "name": {
+            "ru": "Сравнивает с учетом регистра",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f818",
+          "name": {
+            "ru": "Преобразует все строки в нижний регистр перед сравнением",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f819",
+          "name": {
+            "ru": "Преобразует все строки в верхний регистр перед сравнением",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f81a",
+      "name": {
+        "ru": "Как метод lastIndexOf() обрабатывает поиск числа 0 и -0?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f81b",
+          "name": {
+            "ru": "Считает их одинаковыми",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f81c",
+          "name": {
+            "ru": "Считает их разными",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f81d",
+          "name": {
+            "ru": "Всегда возвращает -1",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f81e",
+          "name": {
+            "ru": "Преобразует их в null",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

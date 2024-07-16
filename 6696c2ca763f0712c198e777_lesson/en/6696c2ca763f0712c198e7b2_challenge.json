@@ -1,0 +1,4 @@
+{
+  "name": "Changing or repeating an element of an array",
+  "instruction": "Write a function `repeatOrChange` that takes two parameters, an array and an element.\n\nThe array is of arbitrary length and consists of strings.\n\nAn element is a string.\n\nIf there is an element in the array, it must be repeated inside the string 5 times.\n\nFor example, if the sought element is `Ma` and it is in the array, it must change to `MaMaMaMaMa`.\n\nIf the element is not in the array, assign the value of the searched element to the first element.\n\nThe function should return the changed array.\n\nAn example of running the function:\n\n```javascript\nrepeatOrChange(['a', 'ho', 'c'], 'ho') // ['a', 'hohohohoho', 'c']\nrepeatOrChange(['a', 'b', 'c'], 'car') // ['car', 'b', 'c']\nrepeatOrChange(['2', '08', '35', '173'], '2') // ['22222', '08', '35', '173']\nrepeatOrChange(['2', '9', '35', '173'], '08') // ['08', '9', '35', '173']\n```"
+}

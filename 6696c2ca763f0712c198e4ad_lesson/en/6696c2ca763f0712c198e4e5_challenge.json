@@ -1,0 +1,4 @@
+{
+  "name": "Found or not found",
+  "instruction": "Write a function `isContains` that takes two parameters: a string and a substring.\n\nThe function should return `true` if the substring is found in the string, and `false` otherwise.\n\nThe search should be case insensitive.\n\nExamples:\n```javascript\nisContains('Hello', 'll'); // true\nisContains('Hello', 'lL'); // true\nisContains('Hello', 'LL'); // true\nisContains('Example', 'ex'); // true\nisContains('Example', 'Ex'); // true\nisContains('MOUSE', 'mou'); // true\nisContains('MOUSE', 'mOu'); // true\nisContains('MOUSE', 'mU'); // false\n```"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Name of the magazine",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-9.png)\n\nThe name of this American magazine literally translates to \"tumbleweed\" or \"rolling stone\".\n\nCreate a variable `americanMagazine` and assign it the value `'Rolling Stone'`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst popularAuthor = 'Stephen King';\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst americanMagazine = 'Rolling Stone';\n```"
+}

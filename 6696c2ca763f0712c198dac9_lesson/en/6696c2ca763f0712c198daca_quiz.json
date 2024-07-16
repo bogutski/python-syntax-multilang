@@ -1,0 +1,73 @@
+{
+  "questions": {
+    "0": {
+      "name": "The goal of the JavaScript Syntax course is",
+      "variants": {
+        "0": {
+          "name": "Learning the basics of programming"
+        },
+        "1": {
+          "name": "Learning the basic principles of testing"
+        }
+      }
+    },
+    "1": {
+      "name": "To go to the next lesson",
+      "variants": {
+        "0": {
+          "name": "You must successfully complete the test"
+        },
+        "1": {
+          "name": "You can skip the test "
+        }
+      }
+    },
+    "2": {
+      "name": "You can take the test",
+      "variants": {
+        "0": {
+          "name": "Only once."
+        },
+        "1": {
+          "name": "Twice."
+        },
+        "2": {
+          "name": "As many times as it takes to successfully complete"
+        }
+      }
+    },
+    "3": {
+      "name": "I understand that during the lecture it is desirable: to repeat the code shown on the screen, to pay attention to the code of errors that occur during the execution of programs",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "4": {
+      "name": "After passing the test ",
+      "variants": {
+        "0": {
+          "name": "you can see the mistakes you've made"
+        },
+        "1": {
+          "name": "retest"
+        },
+        "2": {
+          "name": "you can read more information and perform the test again"
+        },
+        "3": {
+          "name": "revise the lecture for a better understanding of the material and perform the test again"
+        },
+        "4": {
+          "name": "nothing can be fixed"
+        }
+      }
+    }
+  },
+  "description": "Summary of the JavaScript Syntax course",
+  "name": "JS Syntax. About the course"
+}

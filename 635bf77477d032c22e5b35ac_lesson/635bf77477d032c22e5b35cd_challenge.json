@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35cd",
+  "name": {
+    "ru": "Присвойте переменной `str` значение 'Hello'",
+    "en": "Assign value 'Hello' to the `str` variable",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Создайте переменную с именем `str`. \nИспользуйте ключевое слово` let`.\nПрисвойте значение - строку `Hello`.\nДля этого напечатайте команду:\n```\nlet str = 'Hello';\n```",
+    "en": "Create a variable named `str`. \nUse the keyword `let`.\nAssign a value - the string `Hello`.\nTo do this, type the command:\n```\nlet str = 'Hello';\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "let str = 'Hello';",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "equal"
+}

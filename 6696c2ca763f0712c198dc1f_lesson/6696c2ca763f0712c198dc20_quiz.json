@@ -1,0 +1,476 @@
+{
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198dc21",
+      "name": {
+        "ru": "Выберите вариант(ы), где в переменную присвоено число.",
+        "en": "Select the option(s) where a number is assigned to the variable.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc22",
+          "name": {
+            "ru": "let a = 23;",
+            "en": "let a = 23;",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc23",
+          "name": {
+            "ru": "let a = '5';",
+            "en": "let a = '5';",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc24",
+          "name": {
+            "ru": "let a = 72.99999;",
+            "en": "let a = 72.99999;",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc25",
+          "name": {
+            "ru": "let a = NaN;",
+            "en": "let a = NaN;",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc26",
+      "name": {
+        "ru": "В JavaScript существует числовое значение бесконечность.",
+        "en": "There is a numeric value of infinity in JavaScript.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc27",
+          "name": {
+            "ru": "да",
+            "en": "yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc28",
+          "name": {
+            "ru": "нет",
+            "en": "no",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc29",
+      "name": {
+        "ru": "В JavaScript при делении положительного числа на ноль в ответ выдается",
+        "en": "In JavaScript, dividing a positive number by zero will return",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc2a",
+          "name": {
+            "ru": "error",
+            "en": "error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc2b",
+          "name": {
+            "ru": "NaN",
+            "en": "NaN",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc2c",
+          "name": {
+            "ru": "Infinity",
+            "en": "Infinity",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc2d",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc2e",
+      "name": {
+        "ru": "В JavaScript, если математическая операция не может быть совершена, в ответ выдается",
+        "en": "In JavaScript, if a mathematical operation cannot be performed, the response is",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc2f",
+          "name": {
+            "ru": "error",
+            "en": "error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc30",
+          "name": {
+            "ru": "NaN",
+            "en": "NaN",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc31",
+          "name": {
+            "ru": "Infinity",
+            "en": "Infinity",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc32",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc33",
+      "name": {
+        "ru": "Выберите вариант(ы), где в переменную присвоено число.",
+        "en": "Select the option(s) where a number is assigned to the variable.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc34",
+          "name": {
+            "ru": "let a = 'Infinity';",
+            "en": "let a = 'Infinity';",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc35",
+          "name": {
+            "ru": "let a = -Infinity;",
+            "en": "let a = -Infinity;",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc36",
+          "name": {
+            "ru": "let a = 0;",
+            "en": "let a = 0;",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc37",
+          "name": {
+            "ru": "let a = null;",
+            "en": "let a = null;",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc38",
+      "name": {
+        "ru": "Значение NaN используется для",
+        "en": "The NaN value is used for",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc39",
+          "name": {
+            "ru": "обозначения бесконечности",
+            "en": "infinity symbols",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc3a",
+          "name": {
+            "ru": "преобразования данных в число",
+            "en": "to convert data to a number",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc3b",
+          "name": {
+            "ru": "обозначения математической ошибки",
+            "en": "mathematical error symbol",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc3c",
+          "name": {
+            "ru": "красоты кода",
+            "en": "code beauty",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc3d",
+      "name": {
+        "ru": "Чему равно значение переменной a в примере ниже?",
+        "en": "What is the value of the variable a in the example below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet a = 2 * 'word';\n```",
+        "en": "```javascript\nlet a = 2 * 'word';\n```",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc3e",
+          "name": {
+            "ru": "2word",
+            "en": "2word",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc3f",
+          "name": {
+            "ru": "'2word'",
+            "en": "'2word'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc40",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc41",
+          "name": {
+            "ru": "NaN",
+            "en": "NaN",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc42",
+      "name": {
+        "ru": "Чему равно значение переменной a в примере ниже?",
+        "en": "What is the value of the variable a in the example below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet a = -2 / 0;\n```",
+        "en": "```javascript\nlet a = -2 / 0;\n```",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc43",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc44",
+          "name": {
+            "ru": "NaN",
+            "en": "NaN",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc45",
+          "name": {
+            "ru": "Infinity",
+            "en": "Infinity",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc46",
+          "name": {
+            "ru": "-Infinity",
+            "en": "-Infinity",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc47",
+      "name": {
+        "ru": "Чему равно значение переменной a в примере ниже?",
+        "en": "What is the value of the variable a in the example below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet a = 3 + NaN;\n```",
+        "en": "```javascript\nlet a = 3 + NaN;\n```",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc48",
+          "name": {
+            "ru": "error",
+            "en": "error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc49",
+          "name": {
+            "ru": "3NaN",
+            "en": "3NaN",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc4a",
+          "name": {
+            "ru": "NaN",
+            "en": "NaN",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc4b",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc4c",
+      "name": {
+        "ru": "Никакие математические операции в JavaScript не могут привести к ошибке или «обрушить» программу.",
+        "en": "No mathematical operations in JavaScript can cause an error or \"crash\" the program.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc4d",
+          "name": {
+            "ru": "это утверждение верно",
+            "en": "this statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc4e",
+          "name": {
+            "ru": "неверно",
+            "en": "this statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": false,
+  "_id": "6696c2ca763f0712c198dc20",
+  "description": {
+    "ru": "",
+    "en": "",
+    "es": ""
+  },
+  "name": {
+    "ru": "JS Syntax. Тип \"number\" (Число)",
+    "en": "JS Syntax. Type \"number\"",
+    "es": ""
+  }
+}

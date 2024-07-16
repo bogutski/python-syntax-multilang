@@ -1,0 +1,4 @@
+{
+  "name": "Number of letters in upper case",
+  "instruction": "Write a function `numOfUpperCase` that takes a string and returns the number of uppercase characters.\n\nThe string will contain only letters, no spaces, numbers or special characters.\n\nIf the string contains no uppercase characters or is empty, the function should return 0.\n\nExamples of how to run the function:\n```javascript\nnumOfUpperCase('Hi') // 1\nnumOfUpperCase('blue') // 0\nnumOfUpperCase('') // 0\n```"
+}

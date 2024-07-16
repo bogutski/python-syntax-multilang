@@ -1,0 +1,6 @@
+{
+  "name": "Correct errors in the code. Strange assignment",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-1.png)\n\nYou need to write a command that assigns the variable `a`\nthe value of `18` using the keyword `let`.\n\nCorrect the errors in the above code.",
+  "instructions": {},
+  "hint": "```javascript\nlet a = 18;\n```"
+}

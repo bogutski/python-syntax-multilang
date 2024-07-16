@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2ca763f0712c198f002",
+  "name": {
+    "ru": "Поиск максимального/минимального числа в массиве",
+    "en": "Finding the maximum/minimum number in an array",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198f003",
+      "name": {
+        "ru": "Какой число в массиве ниже является минимальным и максимальным?",
+        "en": "Which number in the array below is the minimum and maximum?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [-5, -8, -17, -33]\n```",
+        "en": "```javascript\nconst arr = [-5, -8, -17, -33]\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198f004",
+          "name": {
+            "ru": "-33 минимальное, -5 максимальное",
+            "en": "-33 minimum, -5 maximum",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198f005",
+          "name": {
+            "ru": "-5 минимальное, -33 максимальное",
+            "en": "-5 minimum, -33 maximum",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f006",
+          "name": {
+            "ru": "-33 минимальное, undefined максимальное",
+            "en": "-33 minimum, undefined maximum",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f007",
+          "name": {
+            "ru": "-33 минимальное, -17 максимальное",
+            "en": "-33 minimum, -17 maximum",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198f008",
+      "name": {
+        "ru": "Выберите верный результат запуска кода ниже",
+        "en": "Select the correct result of running the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [-1, -3, -5, 0];\nlet min = arr[0];\nfor (let i = 1; i < arr.length; i++) {\n    if (arr[i] < min) {\n        min = arr[i];\n    }\n}\nconsole.log(min);\n```",
+        "en": "```javascript\nconst arr = [-1, -3, -5, 0];\nlet min = arr[0];\nfor (let i = 1; i < arr.length; i++) {\n    if (arr[i] < min) {\n        min = arr[i];\n    }\n}\nconsole.log(min);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198f009",
+          "name": {
+            "ru": "-1",
+            "en": "-1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f00a",
+          "name": {
+            "ru": "-3",
+            "en": "-3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f00b",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f00c",
+          "name": {
+            "ru": "-5",
+            "en": "-5",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198f00d",
+      "name": {
+        "ru": "Что получится в результате запуска кода ниже?",
+        "en": "What is the result of running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [7.3, 7.5, 7.7, 7.4, 7];\nlet max = arr[0];\nfor (let i = 1; i < arr.length; i++) {\n    if (arr[i] > max) {\n        max = arr[i];\n    }\n}\nconsole.log(max); \n```",
+        "en": "```javascript\nconst arr = [7.3, 7.5, 7.7, 7.4, 7];\nlet max = arr[0];\nfor (let i = 1; i < arr.length; i++) {\n    if (arr[i] > max) {\n        max = arr[i];\n    }\n}\nconsole.log(max); \n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198f00e",
+          "name": {
+            "ru": "7",
+            "en": "7",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f00f",
+          "name": {
+            "ru": "7.7",
+            "en": "7.7",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198f010",
+          "name": {
+            "ru": "7.5",
+            "en": "7.5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f011",
+          "name": {
+            "ru": "7.3",
+            "en": "7.3",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198f012",
+      "name": {
+        "ru": "Верно ли, что результатом запуска кода ниже будет [5.1, 5.7]?",
+        "en": "Is it true that the result of running the code below is [5.1, 5.7]?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction minAndMax(arr){\n    let min = arr[0];\n    let max = arr[0];\n    for (let i = 1; i < arr.length; i++) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([5.7, 5.1, 5.6, 5.3, 5, 5.5]));\n```",
+        "en": "```javascript\nfunction minAndMax(arr){\n    let min = arr[0];\n    let max = arr[0];\n    for (let i = 1; i < arr.length; i++) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([5.7, 5.1, 5.6, 5.3, 5, 5.5]));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198f013",
+          "name": {
+            "ru": "Нет, результатом будет [5.1, 5.3]",
+            "en": "No, the result will be [5.1, 5.3]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f014",
+          "name": {
+            "ru": "Да, результатом будет [5.1, 5.7]",
+            "en": "Yes, the result will be [5.1, 5.7]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f015",
+          "name": {
+            "ru": "Нет, результатом будет [5, 5.7]",
+            "en": "No, the result will be [5, 5.7]",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198f016",
+          "name": {
+            "ru": "Нет, результатом будет [5.1, 5]",
+            "en": "No, the result will be [5.1, 5]",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198f017",
+      "name": {
+        "ru": "Почему результатом запуска кода ниже будет [-5, 17], а не [-7, 20]?",
+        "en": "Why would the result of running the code below be [-5, 17] and not [-7, 20]?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction minAndMax(arr){\n    let min = arr[0];\n    let max = arr[0];\n    for (let i = 1; i < arr.length; i++) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([-5, 17, [-7, 20], -3, 13]));\n```",
+        "en": "```javascript\nfunction minAndMax(arr){\n    let min = arr[0];\n    let max = arr[0];\n    for (let i = 1; i < arr.length; i++) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([-5, 17, [-7, 20], -3, 13]));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198f018",
+          "name": {
+            "ru": "Потому что в массиве есть вложенный массив, в который цикл не заходит",
+            "en": "Because there is a nested array in the array, which the loop does not go into",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198f019",
+          "name": {
+            "ru": "Результатом будет [-7, 20], цикл проходит по всем элементам массива, включая вложенные массивы",
+            "en": "The result is [-7, 20], the loop goes through all elements of the array, including nested arrays",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f01a",
+          "name": {
+            "ru": "Потому что -5 является минимальным числом, а 17 максимальным",
+            "en": "Because -5 is the minimum number and 17 is the maximum number",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f01b",
+          "name": {
+            "ru": "Потому что в коде есть условие, чтобы игнорировать вложенные массивы",
+            "en": "Because there is a condition in the code to ignore nested arrays",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198f01c",
+      "name": {
+        "ru": "Каким будет результат, если пройтись по массиву справа налево как в коде ниже?",
+        "en": "What will be the result if we go through the array from right to left as in the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [23, 12, 41];\nlet max = arr[arr.length - 1];\nfor (let i = arr.length - 1; i >= 0; i--) {\n    if (arr[i] > max) {\n        max = arr[i];\n    }\n}\nconsole.log(max);\n```",
+        "en": "```javascript\nconst arr = [23, 12, 41];\nlet max = arr[arr.length - 1];\nfor (let i = arr.length - 1; i >= 0; i--) {\n    if (arr[i] > max) {\n        max = arr[i];\n    }\n}\nconsole.log(max);\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198f01d",
+          "name": {
+            "ru": "Таким же, как и при прохождении по массиву слева направо",
+            "en": "The same as when traversing the array from left to right",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198f01e",
+          "name": {
+            "ru": "Результатом будет 41",
+            "en": "The result will be 41",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198f01f",
+          "name": {
+            "ru": "При прохождении по массиву справа налево, цифры переворачиваются. Результатом будет 32",
+            "en": "As you traverse the array from right to left, the digits are flipped. The result is 32",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f020",
+          "name": {
+            "ru": "Результатом будет -3.5",
+            "en": "The result will be -3.5",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198f021",
+      "name": {
+        "ru": "Выберите верный результат сравнения прохождения по одному и тому же массиву слева направо и наоборот\nпри поиске минимального числа (смотреть код ниже)",
+        "en": "Choose the correct result of comparing traversing the same array from left to right and vice versa\nwhen searching for the minimum number (see code below)",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [-1, -3, -5, 0];\nlet min1 = arr[0];\nlet min2 = arr[arr.length - 1];\nfor (let i = 1; i < arr.length; i++){\n    if (arr[i] < min1) {\n        min1 = arr[i];\n    }\n}\nfor (let i = arr.length - 1; i >= 0; i--){\n    if (arr[i] < min2) {\n        min2 = arr[i];\n    }\n}\nconsole.log(min1 === min2);\n```",
+        "en": "```javascript\nconst arr = [-1, -3, -5, 0];\nlet min1 = arr[0];\nlet min2 = arr[arr.length - 1];\nfor (let i = 1; i < arr.length; i++){\n    if (arr[i] < min1) {\n        min1 = arr[i];\n    }\n}\nfor (let i = arr.length - 1; i >= 0; i--){\n    if (arr[i] < min2) {\n        min2 = arr[i];\n    }\n}\nconsole.log(min1 === min2);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198f022",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f023",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198f024",
+          "name": {
+            "ru": "-5",
+            "en": "-5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f025",
+          "name": {
+            "ru": "error",
+            "en": "error",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198f026",
+      "name": {
+        "ru": "Что получится в результате запуска кода ниже?",
+        "en": "What is the result of running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction minAndMax(arr){\n    let min = arr[arr.length - 1];\n    let max = arr[arr.length - 1];\n    for (let i = arr.length - 1; i >= 0; i--) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([-5, -13, 77, 91, 11]));\n```",
+        "en": "```javascript\nfunction minAndMax(arr){\n    let min = arr[arr.length - 1];\n    let max = arr[arr.length - 1];\n    for (let i = arr.length - 1; i >= 0; i--) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([-5, -13, 77, 91, 11]));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198f027",
+          "name": {
+            "ru": "[91, -13]",
+            "en": "[91, -13]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f028",
+          "name": {
+            "ru": "[11, 91]",
+            "en": "[11, 91]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f029",
+          "name": {
+            "ru": "[-13, -5]",
+            "en": "[-13, -5]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f02a",
+          "name": {
+            "ru": "[-13, 91]",
+            "en": "[-13, 91]",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198f02b",
+      "name": {
+        "ru": "При шаге 1 в цикле for, результат будет [-25, 100]. Каким будет результат при шаге 2 в коде ниже?",
+        "en": "In step 1 in the for loop, the result will be [-25, 100]. What will be the result at step 2 in the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```function minAndMax(arr){\n    let min = arr[0];\n    let max = arr[0];\n    for (let i = 1; i < arr.length; i += 2) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([5, -25, 14, 69, 100]));\n```",
+        "en": "```function minAndMax(arr){\n    let min = arr[0];\n    let max = arr[0];\n    for (let i = 1; i < arr.length; i += 2) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([5, -25, 14, 69, 100]));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198f02c",
+          "name": {
+            "ru": "[-25, 100]",
+            "en": "[-25, 100]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f02d",
+          "name": {
+            "ru": "[-25, 69]",
+            "en": "[-25, 69]",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198f02e",
+          "name": {
+            "ru": "[5, 100]",
+            "en": "[5, 100]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f02f",
+          "name": {
+            "ru": "[5, 69]",
+            "en": "[5, 69]",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198f030",
+      "name": {
+        "ru": "Выберите верный результат запуска кода ниже",
+        "en": "Select the correct result of running the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction minAndMax(arr){\n    let min = arr[0];\n    let max = arr[0];\n    for (let i = 1; i < arr.length; i++) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([7]));\n\n```",
+        "en": "```javascript\nfunction minAndMax(arr){\n    let min = arr[0];\n    let max = arr[0];\n    for (let i = 1; i < arr.length; i++) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([7]));\n\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198f031",
+          "name": {
+            "ru": "[7]",
+            "en": "[7]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f032",
+          "name": {
+            "ru": "[7, 7]",
+            "en": "[7, 7]",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198f033",
+          "name": {
+            "ru": "[7, undefined]",
+            "en": "[7, undefined].",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198f034",
+          "name": {
+            "ru": "[undefined, 7]",
+            "en": "[undefined, 7].",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

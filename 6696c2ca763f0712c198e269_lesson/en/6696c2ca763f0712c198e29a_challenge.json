@@ -1,0 +1,4 @@
+{
+  "name": "How many offices does an office need to accommodate employees?",
+  "instruction": "Write a function named `officeRooms` that takes parameters:\n- `roomSeats` - number of seats in one office\n- `numberEmployees` - number of office employees\n\nWhat is the number of rooms enough to accommodate employees?\n\nThe function should return the smallest number of rooms needed to accommodate employees.\n\nExamples:\n```javascript\nofficeRooms(5, 9) // 2\nofficeRooms(5, 10) // 2\nofficeRooms(5, 11) // 3\nofficeRooms(5, 14) // 3\n```"
+}

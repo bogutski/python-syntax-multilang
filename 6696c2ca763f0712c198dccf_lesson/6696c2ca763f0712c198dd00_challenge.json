@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd00",
+  "name": {
+    "en": "A non-strict equality of two numbers (==). Can a string be equal to a number?",
+    "ru": "Нестрогое равенство двух чисел (==). Может ли строка быть равна числу?"
+  },
+  "instruction": {
+    "en": "When comparing values of different types, JavaScript converts each of them to a number.\nThe loose equality operator `==` checks for value equality.\nIf `a` and `b` have the same value but different types, the result of `a == b` comparison is `true`.\nFor example, `'25' == 25; (true)`.\n\nCreate a variable named `a` and assign it the value of the string `'100'`.\nCreate a variable named `b` and assign it the value of the number `100`.\nCreate a variable named `isAEqualsB` and assign it the result of the loose equality comparison of variables `a` and `b`.\nThe variable `isAEqualsB` should have the value `true` if `a == b`, and `false` otherwise.\n\nHere is an example that is conceptually similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst x = '2';\nconst y = 2;\nconst comparison = x == y;\n```",
+    "ru": "При сравнении значений разных типов JavaScript приводит каждое из них к числу.\nОператор нестрогого равенства `==` проверяет равенство значений.\nЕсли `a` и `b` имеют одинаковые значения и разные типы, то результат сравнения `a == b` возвращает `true`.\nНапример, `'25' == 25; (true)`.\n\nСоздайте переменную с именем `a` и присвойте ей значение строки `'100'`.\nСоздайте переменную с именем `b` и присвойте ей значение числа `100`.\nСоздайте переменную с именем `isAEqualsB` и присвойте ей результат нестрогого равенства переменных `a` и `b`.\nПеременная `isAEqualsB` должна принимать значение `true`, если `a == b`, и `false` в противном случае.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst x = '2';\nconst y = 2;\nconst comparison = x == y;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const a = '100';\nconst b = 100;\nconst isAEqualsB = a == b;",
+  "openTest": "it('Variable `a ` exists and has a value', () => {\n  expect(a).not.undefined;\n});\n\nit('Variable `a` has type `string`', () => {\n  expect(a).a('string');\n});\n\nit('Variable `a` has value `100', () => {\n  expect(a).equal('100');\n});\nit('Variable `b` exists and has a value', () => {\n  expect(b).not.undefined;\n});\n\nit('Variable `b` has type `number`', () => {\n  expect(b).a('number');\n});\n\nit('Variable `b` is not NaN', () => {\n  expect(isNaN(b)).false;\n});\n\nit('Variable `b` has value 100', () => {\n  expect(b).equal(100);\n});\n\nit('Variable `isAEqualsB` exists and has a value', () => {\n  expect(isAEqualsB).not.undefined;\n});\n\nit('Variable `isAEqualsB` has type `boolean`', () => {\n  expect(isAEqualsB).a('boolean');\n});\n\nit('Variable `isAEqualsB` has value a==b', () => {\n  expect(isAEqualsB).equal(a == b);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst a = '100';\nconst b = 100;\nconst isAEqualsB = a == b;\n```",
+    "ru": "```javascript\nconst a = '100';\nconst b = 100;\nconst isAEqualsB = a == b;\n```"
+  }
+}

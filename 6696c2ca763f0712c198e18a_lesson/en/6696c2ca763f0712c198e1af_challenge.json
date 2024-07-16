@@ -1,0 +1,4 @@
+{
+  "name": "Distribution of children by grade at school by age",
+  "instruction": "Write a function `getSchoolClass` that helps you assign children to classes in the school by age.\n\nThe function takes the age of the child and returns the number of the class the child should be in.\n\n* If the age is less than 6 years old, it returns the string `Kindergarten`.\n* If the age is between 6 and 7 years old, we return the string `1st grade`.\n* If the age is between 7 and 8 years old, the string `2nd grade` is returned.\n* If age 8 to 9, return the string `3rd grade`.\n* If age 9 and up, return the string `4th grade or higher`.\n\nA similar example:\n```javascript\nfunction getLevel(altitude) {\nif (altitude < 1000) {\nreturn 'low level';\n} else if (altitude < 5000) {\nreturn 'mid level';\n} else {\nreturn 'high level';\n}\n}\n```"
+}

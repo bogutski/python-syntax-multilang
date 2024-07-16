@@ -1,0 +1,174 @@
+{
+  "name": "Get numbers from a string",
+  "questions": {
+    "0": {
+      "name": "What are the differences in finding digits and numbers in a string?",
+      "variants": {
+        "0": {
+          "name": "There are no differences, numbers and digits are searched for in the same way"
+        },
+        "1": {
+          "name": "For numbers, you need to use an accumulator to assemble the digits into a number"
+        },
+        "2": {
+          "name": "You need fewer checks and actions to find the numbers"
+        },
+        "3": {
+          "name": "You need fewer checks and actions to find numbers"
+        }
+      }
+    },
+    "1": {
+      "name": "Is it possible to find all the numbers in a string, without using methods?",
+      "variants": {
+        "0": {
+          "name": "No, you have to use the methods"
+        },
+        "1": {
+          "name": "Yes, only loops can be used"
+        }
+      }
+    },
+    "2": {
+      "name": "What does the `includes()` method do?",
+      "variants": {
+        "0": {
+          "name": "Checks the string for errors"
+        },
+        "1": {
+          "name": "Checks if there are numbers in the string"
+        },
+        "2": {
+          "name": "Checks if there are letters in the string"
+        },
+        "3": {
+          "name": "Checks if there is an element in the string that was passed to the method"
+        }
+      }
+    },
+    "3": {
+      "name": "What does the `includes()` method return?",
+      "variants": {
+        "0": {
+          "name": "null"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "undefined"
+        },
+        "3": {
+          "name": "true"
+        }
+      }
+    },
+    "4": {
+      "name": "Is it possible to replace the `includes()` method with `indexOf()`?",
+      "variants": {
+        "0": {
+          "name": "No, they work differently"
+        },
+        "1": {
+          "name": "Yes, they perform the same function"
+        },
+        "2": {
+          "name": "Yes, they serve different functions, but they can be substituted for each other"
+        },
+        "3": {
+          "name": "No, they serve different functions and cannot be substituted for each other"
+        }
+      }
+    },
+    "5": {
+      "name": "What will the following code return?",
+      "description": "const str = '0 H1ello 23!' \nconst numbers = '0123456789'; \nconst arrOfNumbers = []; \nfor(let i = 0; i < str.length; i++){ \n    for(let j = 0; j < numbers.length; j++){ \n        if(str[i] === numbers[j]) arrOfNumbers.push(str[i]); \n    } \n} \nconsole.log(arrOfNumbers);",
+      "variants": {
+        "0": {
+          "name": "Error"
+        },
+        "1": {
+          "name": "['0', '1', '2', '3']"
+        },
+        "2": {
+          "name": "['0123']"
+        },
+        "3": {
+          "name": "['0', '1', '23']"
+        }
+      }
+    },
+    "6": {
+      "name": "What will the following code return?",
+      "description": "const string = '55 Java 012 Script 777' \nconst numbers = '0123456789' \nconst arr = [] \nfor(let i = 0; i < string.length; i++){ \n    if(!numbers.includes(string[i])) arr.push(string[i]) \n} \nconsole.log(arr)",
+      "variants": {
+        "0": {
+          "name": "['55', '012', '777']"
+        },
+        "1": {
+          "name": "['5', '5', '0', '1', '2', '7', '7', '7']"
+        },
+        "2": {
+          "name": "['J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']"
+        },
+        "3": {
+          "name": "[' ', 'J', 'a', 'v', 'a', ' ', ' ', 'S', 'c', 'r', 'i', 'p', 't', ' ']"
+        }
+      }
+    },
+    "7": {
+      "name": "What will the following code return?",
+      "description": "const str = '22Programming 78 world 8!369'; \nconst numbers = '0123456789'; \n\nconst arr = []; \nlet acc = ''; \n\nfor(let i = 0; i < str.length; i++){ \n    if(numbers.includes(str[i]) && i === str.length - 1) { \n        acc += str[i]; \n        arr.push(acc); \n    } else if(numbers.includes(str[i])) { \n        acc += str[i]; \n    } else if( acc !== '') { \n        arr.push(acc); \n        acc = ''; \n    } \n} \n\nconsole.log(arr);",
+      "variants": {
+        "0": {
+          "name": "['22', '78', '8', '369']"
+        },
+        "1": {
+          "name": "['2', '2', '7', '8', '8', '3', '6', '9' ]"
+        },
+        "2": {
+          "name": "['Programming', 'world', '!']"
+        },
+        "3": {
+          "name": "['22Programming', '78', 'world', '8!369']"
+        }
+      }
+    },
+    "8": {
+      "name": "What will the following code return?",
+      "description": "const str = '5He88llo 009-87-65 world3!4'; \n const numbers = '0123456789'; \n const arr = []; \n let acc = ''; \n for(let i = 0; i &lt; str.length; i++){ \n    if(numbers.includes(str[i]) === false) acc += str[i]; \n     else if(acc !== ''){ \n         arr.push(acc); \n         acc = ''; \n     } \n     if(i === str.length - 1 &amp;&amp; acc !== '') arr.push(+acc); \n } \n console.log(arr);",
+      "variants": {
+        "0": {
+          "name": "['5', '8', '8', '0', '0', '9', '8', '7', '6', '5', '3', '4']"
+        },
+        "1": {
+          "name": "[NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN]"
+        },
+        "2": {
+          "name": "['5', '88', '009', '87', '65', '3', '4']"
+        },
+        "3": {
+          "name": "[ 'He', 'llo ', '-', '-', 'world', '!' ]"
+        }
+      }
+    },
+    "9": {
+      "name": "Will the following code find all the numbers in the string?",
+      "description": "const str = '1 2 3 abc 55 was?99'; \nconst numbers = '0123456789'; \nconst arr = []; \nlet acc = ''; \nfor(let i = 0; i < str.length; i++){ \n   if(numbers.includes(str[i])) acc += str[i]; \n    else if(acc !== ''){ \n        arr.push(+acc); \n        acc = ''; \n    } \n} \nconsole.log(arr);",
+      "variants": {
+        "0": {
+          "name": "Yes, it will: [1, 2, 3, 55, 99]"
+        },
+        "1": {
+          "name": "No, it'll return everything but numbers"
+        },
+        "2": {
+          "name": "No, it will return: ['1', '2', '3', '5', '5', '9', '9']"
+        },
+        "3": {
+          "name": "Yes, he will: [1, 2, 3, 55]"
+        }
+      }
+    }
+  }
+}

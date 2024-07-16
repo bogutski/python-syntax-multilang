@@ -1,0 +1,4 @@
+{
+  "name": "Character case-sensitive line reversal",
+  "instruction": "Fix the `deepReverse` function so that it flips the string case-sensitive.\n\nFor example, if the string `Hello` was passed to the function, it should return `Olleh`. The capital letter is left at index `0`.\n\nThere are only 3 errors made in the example. The `for` loop and the code inside it are without errors for you to work through and understand.\n\nTry to work out and understand each step of the code.\n\n\nAn example of running a function:\n```js\ndeepReverse('Hello'); // 'Olleh'\ndeepReverse('BANana'); // 'ANAnab'\ndeepReverse('appLE'); // 'elpPA'\n```"
+}

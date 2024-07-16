@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e773",
+  "name": {
+    "en": "Find the key of an object in an array.",
+    "ru": "Найти ключ объекта в массиве."
+  },
+  "instruction": {
+    "en": "The `findKey` function takes 3 parameters:\n* `array` - array\n* `object` - object\n* `key` - object key\n\nYou need to find the `value` by the `key` in the `object` object and check if it is in the `array` array.\n\nIf so, return the string `there is ${value} in array`.\n\nIf not, return the string `there is no ${value} in array`.\n\nExamples of running a function:\n```javascript\nfindKey(['lemon', 'apple', 'banana'], {fruit: 'apple'}, 'fruit') // 'there is apple in array'\nfindKey(['lemon', 'apple', 'banana'], {fruit: 'orange'}, 'fruit') // 'there is no orange in array'\n```",
+    "ru": "Функция `findKey` принимает 3 параметра:\n* `array` - массив\n* `object` - объект\n* `key` - ключ объекта\n\nНеобходимо найти `value` по ключу `key` в объекте `object` и проверить есть ли оно в массиве `array`.\n\nЕсли есть, то вернуть строку `There is ${value} in array`.\n\nЕсли нет, то вернуть строку `There is no ${value} in array`.\n\nПримеры запуска функции:\n```javascript\nfindKey(['lemon', 'apple', 'banana'], {fruit: 'apple'}, 'fruit') // 'There is apple in array'\nfindKey(['lemon', 'apple', 'banana'], {fruit: 'orange'}, 'fruit') // 'There is no orange in array'\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function findKey(array, object, key) {\n    const result = object[key];\n    if (array.includes(result)) {\n        return `There is ${result} in array`\n    } else {\n        return `There is no ${result} in array`\n    }\n}",
+  "openTest": "it('Created function findKey', () => {\n    expect(findKey).to.be.a('function');\n});\n\nit('findKey([1, 2, 3, 4, 5], {key: 3}, \"key\") should return \"There is 3 in array\"', () => {\n    expect(findKey([1, 2, 3, 4, 5], {key: 3}, \"key\")).eql\n    (\"There is 3 in array\");\n});\n\nit('findKey([1, 2, 3, 4, 5], {key: 6}, \"key\") should return \"There is no 6 in array\"', () => {\n    expect(findKey([1, 2, 3, 4, 5], {key: 6}, \"key\")).eql\n    (\"There is no 6 in array\");\n});\nit('findKey([1, 2, 3, 4, 5], {sum: 6}, \"sum\") should return \"There is no 6 in array\"', () => {\n    expect(findKey([1, 2, 3, 4, 5], {sum: 6}, \"sum\")).eql\n    (\"There is no 6 in array\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

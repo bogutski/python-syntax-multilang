@@ -1,0 +1,5 @@
+{
+  "name": "Подсчитать количество типов элементов в массиве",
+  "instruction": "Напишите функцию `countElementTypes`, которая принимает массив элементов произвольного типа.\n\nФункция должна вернуть объект, в котором указано сколько элементов каждого типа было в массиве.\n\nНапример, для массива `['a', 'b', 1, 2, 3, true]` функция должна вернуть `{string: 2, number: 3, boolean: 1}`.\n\nЕсли массив пустой, то функция должна вернуть строку `'Array has no elements'`.\n\n\nПримеры запуска функции:\n```javascript\ncountElementTypes([])                           // 'Array has no elements'\ncountElementTypes([[], {}])                     // {object: 2}\ncountElementTypes([1, 2, 3, 4, 5])              // {number: 5}\ncountElementTypes(['a', 'b', 'c', 1, 2, 3])     // {string: 3, number: 3}\ncountElementTypes(['a', true, null, undefined]) // {string: 1, boolean: 1, object: 1, undefined: 1}\n```",
+  "instructions": {}
+}

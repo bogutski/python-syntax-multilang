@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dea9",
+  "name": {
+    "en": "Is the number an even number?",
+    "ru": "Является ли число четным?"
+  },
+  "instruction": {
+    "en": "Given number num. Is the number even?\n\nCreate a variable `num` and assign it a value of any positive number.\nCreate a variable `isEven` and assign it the result of comparing the remainder of dividing the number `num` by 2 with zero.\nThat is, if the number `num` is even, then the value of the variable `isEven` will be true.\nIf the number `num` is odd, then the value of the variable `isEven` will be false.\n\nLet's provide an example that is essentially similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst number = 90;\nconst isNumberEven = number % 2 === 0; // true\n```",
+    "ru": "Дано число num. Верно ли, что число четное?\n\nСоздайте переменную `num` и присвойте ей значения произвольного положительного числа.\nСоздайте переменную `isEven` и присвойте ей результат сравнения остатка от деления числа `num` на 2 с нулём.\nТ.е. если число `num` - четное, то значение переменной `isEven` будет равно true.\nЕсли число `num` - нечетное, то значение переменной `isEven` будет равно false.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst number = 90;\nconst isNumberEven = number % 2 === 0; // true\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const num = 19;\nconst isEven = num % 2 === 0;",
+  "openTest": "it('Variable `num` exists and has a value', () => {\n  expect(num).not.undefined;\n});\n\nit('Variable `num` has a numeric type', () => {\n  expect(num).a('number');\n});\n\nit('Variable `num` is not NaN', () => {\n  expect(isNaN(num)).false;\n});\n\nit('Variable `num` is a non-negative number', () => {\n  expect(num >= 0).to.be.true;\n});\n\nit('Variable `isEven` is a value', () => {\n  expect(isEven).not.undefined;\n});\n\nit('Variable `isEven` has a boolean type', () => {\n  expect(isEven).a('boolean');\n});\n\nit('The `isEven` variable is computed correctly', () => {\n  expect(isEven).equal(num % 2 === 0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst num = 19;\nconst isEven = num % 2 === 0;\n```",
+    "ru": "```javascript\nconst num = 19;\nconst isEven = num % 2 === 0;\n```"
+  }
+}

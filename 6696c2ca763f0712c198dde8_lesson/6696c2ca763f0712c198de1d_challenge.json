@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de1d",
+  "name": {
+    "en": "Binary plus - merging of lines",
+    "ru": "Бинарный плюс - слияние строк"
+  },
+  "instruction": {
+    "en": "Set the variable `century` and assign it the value of the string `'20'`.\n\nSet the variable `years` and assign it the value of the string `'22'`.\n\nSet the variable `date` and assign it the result of merging the variables `century` and `years`.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst redBalls = '13';\nconst greenBalls = '15';\nconst balls = redBalls + greenBalls;\n```",
+    "ru": "Задайте переменную `century` и присвойте ей значение строки `'20'`.\n\nЗадайте переменную `years` и присвойте ей значение строки `'22'`.\n\nЗадайте переменную `date` и присвойте ей результат слияния переменных `century` и `years`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst redBalls = '13';\nconst greenBalls = '15';\nconst balls = redBalls + greenBalls;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const century = '20';\nconst years = '22';\nconst date = century + years;",
+  "openTest": "it('The `century` variable contains a value', () => {\n  expect(century).not.undefined;\n});\n\nit('the variable type `century` is a string', () => {\n  expect(century).a('string');\n});\n\nit('the variable `century` has the correct value', () => {\n  expect(century).equal('20');\n});\n\nit('The `years` variable has a value', () => {\n  expect(years).not.undefined;\n});\n\nit('the variable type `years` is a string', () => {\n  expect(years).a('string');\n});\n\nit('the variable `years` has the correct value', () => {\n  expect(years).equal('22');\n});\n\nit('The `date` variable has a value', () => {\n  expect(date).not.undefined;\n});\n\nit('the variable type `date` is a string', () => {\n  expect(date).a('string');\n});\n\nit('the variable `date` has the correct value', () => {\n  expect(date).equal('2022');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst century = '20';\nconst years = '22';\nconst date = century + years;\n```",
+    "ru": "```javascript\nconst century = '20';\nconst years = '22';\nconst date = century + years;\n```"
+  }
+}

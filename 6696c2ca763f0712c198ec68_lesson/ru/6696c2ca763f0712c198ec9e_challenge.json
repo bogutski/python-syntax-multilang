@@ -1,0 +1,5 @@
+{
+  "name": "Посчитать количество согласных букв в строке",
+  "instruction": "Функция `countOnlyConsonant` принимает строку и должна вернуть количество согласных букв в строке.\n\nСтрока содержит только строчные буквы и не содержит пробелы.\n\nПример запуска функции:\n```javascript\ncountOnlyConsonant('abc') // 2\ncountOnlyConsonant('aeiou') // 0\n```",
+  "instructions": {}
+}

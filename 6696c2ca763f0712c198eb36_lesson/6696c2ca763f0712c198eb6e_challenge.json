@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eb6e",
+  "name": {
+    "en": "Checking strings for equality",
+    "ru": "Проверка строк на равенство"
+  },
+  "instruction": {
+    "en": "Write a function `reverseAndCompare` that takes two strings `str1` and `str2` as arguments.\n\nThe function should reverse the string `str1` and compare it with `str2`.\n\n\nThe comparison must follow the following rules:\n\n* The reversed string must be converted to uppercase and compared to `str2`, if they are equal, the function must return the string 'Strings are equal with uppercase'.\n\n* The reversed string must be converted to lowercase and compared to `str2`, if they are equal, the function must return the string 'Strings are equal with lowercase'.\n\n* If the strings are not equal, the function should return the string 'Strings are not equal'.\n\n\nExamples of running the function:\n```javascript\nreverseAndCompare('Hello', 'olleh'); // 'Strings are equal with lowercase'\nreverseAndCompare('Hello', 'OLLEH'); // 'Strings are equal with uppercase'\nreverseAndCompare('abc', 'dfg'); // 'Strings are not equal'\n```",
+    "ru": "Напишите функцию `reverseAndCompare`, которая принимает две строки `str1` и `str2` в качестве аргументов.\n\nФункция должна перевернуть строку `str1` и сравнить ее с `str2`.\n\n\nСравнение должно происходить по следующим правилам:\n\n* Перевернутая строка должна быть приведена к верхнему регистру и сравнена с `str2`, если они равны, то функция должна вернуть строку `Strings are equal with uppercase`.\n\n* Перевернутая строка должна быть приведена к нижнему регистру и сравнена с `str2`, если они равны, то функция должна вернуть строку `Strings are equal with lowercase`.\n\n* Если строки не равны, то функция должна вернуть строку `Strings are not equal`.\n\n\nПримеры запуска функции:\n```javascript\nreverseAndCompare('Hello', 'olleh'); // 'Strings are equal with lowercase'\nreverseAndCompare('Hello', 'OLLEH'); // 'Strings are equal with uppercase'\nreverseAndCompare('abc', 'dfg'); // 'Strings are not equal'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseAndCompare(str1, str2) {\n  let reversed = '';\n  for (let i = str1.length - 1; i >= 0; i--) {\n    reversed += str1[i];\n  }\n  if(reversed.toUpperCase() === str2) return 'Strings are equal with uppercase';\n  else if(reversed.toLowerCase() === str2) return 'Strings are equal with lowercase';\n  else return 'Strings are not equal';\n}",
+  "openTest": "it('Created function reverseAndCompare', () => {\n  expect(reverseAndCompare).to.be.a('function');\n});\n\nit(\"reverseAndCompare('Hello', 'olleh') should return 'Strings are equal with lowercase'\", () => {\n  expect(reverseAndCompare('Hello', 'olleh')).to.equal('Strings are equal with lowercase');\n});\n\nit(\"reverseAndCompare('Hello', 'OLLEH') should return 'Strings are equal with uppercase'\", () => {\n  expect(reverseAndCompare('Hello', 'OLLEH')).to.equal('Strings are equal with uppercase');\n});\n\nit(\"reverseAndCompare('Hello', 'hello') should return 'Strings are not equal'\", () => {\n  expect(reverseAndCompare('Hello', 'hello')).to.equal('Strings are not equal');\n});\n\nit(\"reverseAndCompare('ananas', 'sanAna') should return 'Strings are not equal'\", () => {\n  expect(reverseAndCompare('ananas', 'sanAna')).to.equal('Strings are not equal');\n});\n\nit(\"reverseAndCompare('hi', 'hey') should return 'Strings are not equal'\", () => {\n  expect(reverseAndCompare('hi', 'hey')).to.equal('Strings are not equal');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

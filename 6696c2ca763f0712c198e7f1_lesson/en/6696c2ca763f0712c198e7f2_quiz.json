@@ -1,0 +1,158 @@
+{
+  "name": "Removing elements from an array",
+  "questions": {
+    "0": {
+      "name": "Choose the correct methods of removing elements from an array",
+      "variants": {
+        "0": {
+          "name": "pop()"
+        },
+        "1": {
+          "name": "shift()"
+        },
+        "2": {
+          "name": "splice()"
+        },
+        "3": {
+          "name": "unshift()"
+        }
+      }
+    },
+    "1": {
+      "name": "What the pop() and shift() methods take as arguments",
+      "variants": {
+        "0": {
+          "name": "Index of the element to be deleted"
+        },
+        "1": {
+          "name": "They don't accept anything."
+        },
+        "2": {
+          "name": "The value of the element to be deleted"
+        },
+        "3": {
+          "name": "Index and value of the element to be deleted"
+        }
+      }
+    },
+    "2": {
+      "name": "The pop() method removes one element at the end of the array, and the shift() method removes one element at the beginning of the array",
+      "variants": {
+        "0": {
+          "name": "This statement is true"
+        },
+        "1": {
+          "name": "This statement is incorrect"
+        }
+      }
+    },
+    "3": {
+      "name": "How many elements will be removed at the beginning and at the end of the array below?",
+      "description": "```javascript\nconst animals = ['hors', 'cat', 'dog', 'cow', 'duck', 'goat'];\nanimals.pop();\nanimals.shift();\nanimals.shift();\n```",
+      "variants": {
+        "0": {
+          "name": "3 elements at the beginning of the array will be deleted"
+        },
+        "1": {
+          "name": "2 elements at the end of the array and 1 element at the beginning of the array will be deleted"
+        },
+        "2": {
+          "name": "2 elements at the beginning of the array and 1 element at the end of the array will be deleted"
+        },
+        "3": {
+          "name": "3 elements at the end of the array will be deleted"
+        }
+      }
+    },
+    "4": {
+      "name": "The splice() method changes the contents of the array by deleting existing elements and/or adding new elements",
+      "variants": {
+        "0": {
+          "name": "This statement is true"
+        },
+        "1": {
+          "name": "This statement is incorrect"
+        }
+      }
+    },
+    "5": {
+      "name": "What is passed to the first argument of the splice() method?",
+      "variants": {
+        "0": {
+          "name": "The index from which the array starts to change"
+        },
+        "1": {
+          "name": "Values of elements to be added to the array"
+        },
+        "2": {
+          "name": "The number of elements to be removed from the array."
+        },
+        "3": {
+          "name": "Nothing is transmitted"
+        }
+      }
+    },
+    "6": {
+      "name": "What is passed to the second argument of the splice() method?",
+      "variants": {
+        "0": {
+          "name": "The index from which the array starts to change"
+        },
+        "1": {
+          "name": "The number of elements to be removed from the array. If the argument is 0, the elements are not deleted."
+        },
+        "2": {
+          "name": "The values of the elements to be added to the array."
+        },
+        "3": {
+          "name": "Nothing is transmitted"
+        }
+      }
+    },
+    "7": {
+      "name": "What is passed to the third argument of the splice() method?",
+      "variants": {
+        "0": {
+          "name": "Indexes of elements to be removed from the array"
+        },
+        "1": {
+          "name": "The value(s) to be added to the array"
+        },
+        "2": {
+          "name": "The number of elements to be removed from the array."
+        },
+        "3": {
+          "name": "The index from which the array starts to change"
+        }
+      }
+    },
+    "8": {
+      "name": "What does the splice() method return?",
+      "variants": {
+        "0": {
+          "name": "Indexes of deleted items"
+        },
+        "1": {
+          "name": "true or false"
+        },
+        "2": {
+          "name": "Modified array"
+        },
+        "3": {
+          "name": "Array with deleted elements"
+        }
+      }
+    },
+    "9": {
+      "name": "After executing the splice() method, the length of the array will change",
+      "variants": {
+        "0": {
+          "name": "This statement is correct"
+        },
+        "1": {
+          "name": "This statement is incorrect"
+        }
+      }
+    }
+  }
+}

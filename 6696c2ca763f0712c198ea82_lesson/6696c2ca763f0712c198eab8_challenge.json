@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eab8",
+  "name": {
+    "en": "The sum of all even numbers in the array",
+    "ru": "Сумма всех чётных чисел в массиве"
+  },
+  "instruction": {
+    "en": "Write a function `sumEven` that takes one parameter, an array.\n\nThe array is of arbitrary length and consists only of positive or negative integers.\n\nThe function should return the sum of all even numbers in the array.\n\nAn example of running the function:\n```javascript\nsumEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // 2 + 4 + 6 + 8 + 10 = 30\nsumEven([1, -2, 3, 4, 5, -6, 7, 8, 9]) // (-2) + 4 + (-6) + 8 = 4\n```",
+    "ru": "Напишите функцию `sumEven`, которая принимает один параметр - массив.\n\nМассив произвольной длины и состоит только из целых положительных или отрицательных чисел.\n\nФункция должна вернуть сумму всех чётных чисел, находящихся в массиве.\n\nПример запуска функции:\n```javascript\nsumEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // 2 + 4 + 6 + 8 + 10 = 30\nsumEven([1, -2, 3, 4, 5, -6, 7, 8, 9]) // (-2) + 4 + (-6) + 8 = 4\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sumEven(arr) {\n  let sum = 0;\n  for (let i = 0; i < arr.length; i++) {\n    if (arr[i] % 2 === 0) {\n      sum += arr[i]\n    }\n  }\n  return sum\n}",
+  "openTest": "it('Created function sumEven', () => {\n  expect(sumEven).to.be.a('function');\n});\n\nit('sumEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) should return 30', () => {\n  expect(sumEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).to.be.equal(30);\n});\n\nit('sumEven([1, -2, 3, 4, 5, -6, 7, 8, 9]) should return 4', () => {\n  expect(sumEven([1, -2, 3, 4, 5, -6, 7, 8, 9])).to.be.equal(4);\n});\n\nit('sumEven([1, 3, 5, 7, 9]) should return 0', () => {\n  expect(sumEven([1, 3, 5, 7, 9])).to.be.equal(0);\n});\n\nit('sumEven([-2, -4, -6, -8]) should return -20', () => {\n  expect(sumEven([-2, -4, -6, -8])).to.be.equal(-20);\n});\n\nit('sumEven([]) should return 0', () => {\n  expect(sumEven([])).to.be.equal(0);\n});\n\nit('sumEven([33, 105, 50, 11]) should return 50', () => {\n  expect(sumEven([33, 105, 50, 11])).to.be.equal(50);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

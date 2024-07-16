@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35cb",
+  "name": {
+    "ru": "Присвойте переменной name значение 'Alice'",
+    "en": "Assign the value 'Alice' to the name variable",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Создайте переменную с именем `name`. Используйте ключевое слово `const`. Присвойте значение – строку `Alice`.\n\nДля этого напечатайте команду:\n```\nconst name = 'Alice';\n```",
+    "en": "Create a variable named `name`. Use keyword `const`. Assign a value - the string `Alice`.\n\nTo do this, type the command:\n```\nconst name = 'Alice';\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "const name = 'Alice';",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "equal"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ed13",
+  "name": {
+    "en": "Count the number of occurrences of a given digit in a string",
+    "ru": "Сколько цифр в строке?"
+  },
+  "instruction": {
+    "en": "The `countDigits` function accepts a string and returns the number of digits in the string.\nThe string can include any characters and be of arbitrary length.\nFor example, for the string `abc123` the function should return `3`.\n\nTo solve the problem, you can use the conversion of a character into a number using the `Number` function or the `+` operator and check the resulting value for `isNaN`.\n\n`isNaN()` is a `JavaScript` function that returns `true` if the value passed to it is not a number, and `false` if the value is a number.\n\nNote that such a check will not work for a space, because `Number(' ')` will return `0' and `isNaN(0)` will return `false', so you must check for a space separately.\n\nHere is an example of checking if a character is a digit:\n\n```javascript\nconst str = '1 a 2';\nfor (let i = 0; i < str.length; i++) {\nconst num = Number(str[i]);\nif (str[i]!==' ' && !isNaN(num)) {\nconsole.log(str[i]+' is a digit');\n} else {\nconsole.log(str[i]+' is not a digit');\n}\n}\n// '1 is a digit'\n// ' is not a digit'\n// 'a is not a digit'\n// ' is not a digit'\n// '2 is a digit'\n```\n\nExamples of function calls:\n\n```javascript\ncountDigits('abc123'); // 3\ncountDigits('a b c'); // 0\ncountDigits('123'); // 3\ncountDigits(''); // 0\n```",
+    "ru": "Функция `countDigits` принимает строку и возвращает количество цифр в строке.\nСтрока может включать в себя любые символы и быть произвольной длины.\nНапример, для строки `abc123` функция должна вернуть `3`.\n\nДля решения задачи можно использовать преобразование символа в число с помощью функции `Number` или оператора `+` и проверку полученного значения на `isNaN`.\n\n`isNaN()` - функция `JavaScript`, которая возвращает `true`, если переданное в нее значение не является числом, и `false`, если значение является числом.\n\nНужно иметь в виду, что подобная проверка не сработает для пробела, так как `Number(' ')` вернет `0`, а `isNaN(0)` вернет `false`, поэтому на пробел нужно проверять отдельно.\n\nПример проверки является ли символ цифрой:\n\n```javascript\nconst str = '1 a 2';\nfor (let i = 0; i < str.length; i++) {\n  const num = Number(str[i]);\n  if (str[i]!==' ' && !isNaN(num)) {\n    console.log(str[i]+' is a digit');\n  } else {\n    console.log(str[i]+' is not a digit');\n  }\n}\n// '1 is a digit'\n// '  is not a digit'\n// 'a is not a digit'\n// '  is not a digit'\n// '2 is a digit'\n```\n\nПримеры вызова функции:\n\n```javascript\ncountDigits('abc123'); // 3\ncountDigits('a b c'); // 0\ncountDigits('123'); // 3\ncountDigits(''); // 0\n```"
+  },
+  "initialSolution": "function c",
+  "completedSolution": "function countDigits(str) {\n  let count = 0;\n  for (let i = 0; i < str.length; i++) {\n    const num = Number(str[i]);\n    if (str[i]!==' ' && !isNaN(num)) {\n      count++;\n    }\n  }\n  return count;\n}",
+  "openTest": "it('Created function countDigits', () => {\n  expect(countDigits).to.be.a('function');\n});\n\nit('countDigits(\"abc123\") should return 3', () => {\n  expect(countDigits('abc123')).to.be.equal(3);\n});\n\nit('countDigits(\"abc\") should return 0', () => {\n  expect(countDigits('abc')).to.be.equal(0);\n});\n\nit('countDigits(\"One, two, three!\") should return 0', () => {\n  expect(countDigits('One, two, three!')).to.be.equal(0);\n});\n\nit('countDigits(\"123 minus 1 equals 122.\") should return 7', () => {\n  expect(countDigits('123 minus 1 equals 122.')).to.be.equal(7);\n});\n\nit('countDigits(\" que55 query215 9e09r 78 \") should return 10', () => {\n  expect(countDigits(' que55 query215 9e09r 78 ')).to.be.equal(10);\n});\n\nit('countDigits(\"12345\") should return 5', () => {\n  expect(countDigits('12345')).to.be.equal(5);\n});\n\nit('countDigits(\"12 34 505 607 708 809 900\") should return 19', () => {\n  expect(countDigits('12 34 505 607 708 809 900')).to.be.equal(19);\n});\n\nit('countDigits(\"1\") should return 1', () => {\n  expect(countDigits('1')).to.be.equal(1);\n});\n\nit('countDigits(\"I\") should return 0', () => {\n  expect(countDigits('I')).to.be.equal(0);\n});\n\nit('countDigits(\"\") should return 0', () => {\n  expect(countDigits('')).to.be.equal(0);\n});\n\nit('countDigits(\"12.34-56 7<8 3 % 2 = 1 9<0;\") should return 13', () => {\n  expect(countDigits('12.34-56 7<8 3 % 2 = 1 9<0;')).to.be.equal(13);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

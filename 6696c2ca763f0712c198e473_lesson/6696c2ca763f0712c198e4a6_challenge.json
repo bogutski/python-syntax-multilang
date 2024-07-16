@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e4a6",
+  "name": {
+    "en": "Email cleanup",
+    "ru": "Очистка емейла"
+  },
+  "instruction": {
+    "en": "Site users enter their email into the form. But sometimes they enter it with spaces at the beginning and at the end. For example, `' SomeEmail@GmAiL.COM '`\n\nWe need to run the email through a function that removes spaces at the beginning and end of the string and causes it to be lowercase - `someemail@gmail.com`\n\nWrite a function `clearEmail` that takes a string and returns it without spaces at the beginning and end and lowercase.\n\nIf the string is empty after removing spaces, the function should return `Empty email`.\n\nAn example of running the function:\n```javascript\nclearEmail(' exaMPLe@emaIl.COM '); // 'example@email.com'\nclearEmail(' '); // 'Empty email'\n```",
+    "ru": "Пользователи сайта вводят свой емейл в форму. Но иногда они вводят его с пробелами в начале и в конце. Например, `'  SomeEmail@GmAiL.COM  '`\n\nНужно пропустить емейл через функцию, которая удаляет пробелы в начале и в конце строки и приводит ее к нижнему регистру – `someemail@gmail.com`\n\nНапишите функцию `clearEmail`, которая принимает строку и возвращает ее без пробелов в начале и в конце, а также в нижнем регистре.\n\nЕсли после удаления пробелов строка пустая, то функция должна вернуть `Empty email`.\n\nПример запуска функции:\n```javascript\nclearEmail(' exaMPLe@emaIl.COM   '); // 'example@email.com'\nclearEmail('    '); // 'Empty email'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function clearEmail(email) {\n  if (email.trim() === '') return 'Empty email';\n  return email.trim().toLowerCase();\n}",
+  "openTest": "it('Created function clearEmail', () => {\n  expect(clearEmail).to.be.a('function');\n});\n\nit('clearEmail(\"  exaMPLe@emaIl.COM   \") should return \"example@email.com\"', () => {\n  expect(clearEmail('  exaMPLe@emaIl.COM   ')).to.be.equal('example@email.com');\n});\n\nit('clearEmail(\" qweQWE@qweQWE.com   \") should return \"qweqwe@qweqwe.com\"', () => {\n  expect(clearEmail(' qweQWE@qweQWE.com   ')).to.be.equal('qweqwe@qweqwe.com');\n});\n\nit('clearEmail(\" tyui \") should return \"tyui\"', () => {\n  expect(clearEmail(' tyui ')).to.be.equal('tyui');\n});\n\nit('clearEmail(\"    \") should return \"Empty email\"', () => {\n  expect(clearEmail('    ')).to.be.equal('Empty email');\n});\n\nit('clearEmail(\"\") should return \"Empty email\"', () => {\n  expect(clearEmail('')).to.be.equal('Empty email');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

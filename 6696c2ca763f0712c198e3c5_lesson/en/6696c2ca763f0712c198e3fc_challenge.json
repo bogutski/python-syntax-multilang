@@ -1,0 +1,4 @@
+{
+  "name": "True if the first character of the string is equal to the last one",
+  "instruction": "Write a function `firstAndLastEqual` that takes a string and returns `true` if the first character of the string is equal to the last character, and `false` otherwise.\n\nExamples of running the function:\n```javascript\nfirstAndLastEqual('abc'); // false\nfirstAndLastEqual('a'); // true\nfirstAndLastEqual('aa'); // true\nfirstAndLastEqual('JS'); // false\nfirstAndLastEqual('J-SJ'); // true\n```"
+}

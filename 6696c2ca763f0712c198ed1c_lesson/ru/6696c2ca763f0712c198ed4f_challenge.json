@@ -1,0 +1,5 @@
+{
+  "name": "Посчитать количество знаков в строке",
+  "instruction": "Напишите функцию `countSigns`, которая принимает две строки:\n\n* `str` - строка с текстом.\n\n* `sign` - знак, который нужно найти. Знаки могут быть такие: `'!', '?', '.', ','`.\n\nФункция должна вернуть количество найденных `sign` в строке.\n\nПримеры запуска функции:\n\n```javascript\ncountSigns('Hello, World!', ',');  // 1\ncountSigns('What is your name? Alice?', '?');  // 2\ncountSigns('Omg! The food is terrible!', '!') // 2\n```",
+  "instructions": {}
+}

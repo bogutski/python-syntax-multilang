@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f537",
+  "name": {
+    "en": "/*",
+    "ru": "Инициализация массива нулями"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Создайте функцию `initializeZeros`, которая принимает один аргумент: размер массива `size`.\n\nФункция должна возвращать новый массив указанного размера, заполненный нулями, используя метод `fill()`.\n\n\nПримеры Запуска Функции:\n```javascript\ninitializeZeros(3); // [ 0, 0, 0 ]\ninitializeZeros(5); // [ 0, 0, 0, 0, 0 ]\ninitializeZeros(0); // []\n```"
+  },
+  "initialSolution": "function initializeZeros(){\n\n}",
+  "completedSolution": "function initializeZeros(n) {\n  return new Array(n).fill(0);\n}",
+  "openTest": "it('Created function initializeZeros', () => {\n  expect(initializeZeros).to.be.a('function');\n});\n\nit('Function initializeZeros should include method fill()', () => {\n  const res = initializeZeros.toString()\n  expect(res).to.include('.fill(')\n});\n\nit(\"initializeZeros(3) should return [0, 0, 0]\", function() {\n  expect(initializeZeros(3)).to.deep.equal([0, 0, 0]);\n});\n\nit(\"initializeZeros(5) should return [0, 0, 0, 0, 0]\", function() {\n  expect(initializeZeros(5)).to.deep.equal([0, 0, 0, 0, 0]);\n});\n\nit(\"initializeZeros(1) should return [0]\", function() {\n  expect(initializeZeros(1)).to.deep.equal([0]);\n});\n\nit(\"initializeZeros(0) should return an empty array\", function() {\n  expect(initializeZeros(0)).to.deep.equal([]);\n});\n\nit(\"initializeZeros(4) should return an array of length 4\", function() {\n  const result = initializeZeros(4);\n  expect(result.length).to.equal(4);\n  expect(result.every(val => val === 0)).to.be.true;\n});\n\nit(\"initializeZeros(2) array elements should all be 0\", function() {\n  const result = initializeZeros(2);\n  const allZeros = result.every(val => val === 0);\n  expect(allZeros).to.be.true;\n});\n\nit(\"initializeZeros(7) should not contain any element other than 0\", function() {\n  expect(initializeZeros(7)).to.satisfy(arr => arr.every(num => num === 0));\n});\n\nit(\"initializeZeros(6) should be an array with all elements set to 0\", function() {\n  const zeros = initializeZeros(6);\n  expect(zeros).to.deep.equal(new Array(6).fill(0));\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

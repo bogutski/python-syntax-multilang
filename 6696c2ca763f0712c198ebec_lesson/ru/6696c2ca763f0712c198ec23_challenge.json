@@ -1,0 +1,5 @@
+{
+  "name": "Количество вхождений двух элементов в строку",
+  "instruction": "Напишите функцию `numberOfOccurrencesBothEl`, которая принимает строку и два элемента: `el1`, `el2`.\n\nФункция должна вернуть строку, в которой будет указано количество вхождений каждого элемента в строку.\n\nНапример, если передать в функцию строку `Hello` и элементы `l` и `o`, то функция должна вернуть строку `First element: 2, second element: 1`.\n\nЕсли элементов нет в строке, то функция должна вернуть строку `First element: 0, second element: 0`.\n\nСтрока и элементы могут быть в любом регистре. Перед циклом приведите строку и элементы к одному регистру.\n\n\nПримеры запуска функции:\n```javascript\nnumberOfOccurrencesBothEl('Hello World', 'l', 'o'); // 'First element: 3, second element: 2'\nnumberOfOccurrencesBothEl('AbC', 't', 'y'); // 'First element: 0, second element: 0'\nnumberOfOccurrencesBothEl('LOCAL coding', 'l', 'c'); // 'First element: 2, second element: 2'\nnumberOfOccurrencesBothEl('blue red', 'R', 'G'); // 'First element: 1, second element: 0'\n```",
+  "instructions": {}
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Checking for the presence of an element in an array. Fruits",
+  "instruction": "The `list` function takes two parameters:\n* `fruits` - array of strings\n* `key` - string\n\nThe function should return `true` if `key` is in the `fruits` array and `false` otherwise.\n\nAn example of running the function:\n``` javascript\nlist(['apple', 'banana', 'orange'], 'apple') // true\n\nlist(['apple', 'banana', 'orange'], 'pear') // false\n```"
+}

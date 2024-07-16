@@ -1,0 +1,166 @@
+{
+  "name": "Objects in JavaScript",
+  "questions": {
+    "0": {
+      "name": "What is an object?",
+      "variants": {
+        "0": {
+          "name": "It is a place to store strings and numbers without the ability to access a specific element."
+        },
+        "1": {
+          "name": "This is a collection of properties where a property is a `key: value` pair."
+        },
+        "2": {
+          "name": "This is a function that returns different values depending on the key."
+        },
+        "3": {
+          "name": "This is a data structure that stores information in the form of a list."
+        }
+      }
+    },
+    "1": {
+      "name": "What brackets are used to create an object?",
+      "variants": {
+        "0": {
+          "name": "let obj = [key: value, key1: value1]"
+        },
+        "1": {
+          "name": "let obj = {key: value, key1: value1}"
+        },
+        "2": {
+          "name": "let obj = (key: value, key1: value1)"
+        },
+        "3": {
+          "name": "let obj = <key: value, key1: value1> "
+        }
+      }
+    },
+    "2": {
+      "name": "What is an object property?",
+      "variants": {
+        "0": {
+          "name": "is a function declared inside an object"
+        },
+        "1": {
+          "name": "is a unique object identifier"
+        },
+        "2": {
+          "name": "is a key-value pair"
+        },
+        "3": {
+          "name": "is a string that contains the name of the object"
+        }
+      }
+    },
+    "3": {
+      "name": "Can I use the same keys in an object?",
+      "variants": {
+        "0": {
+          "name": "Yes, you can."
+        },
+        "1": {
+          "name": "No, you can't."
+        }
+      }
+    },
+    "4": {
+      "name": "What type of data can be a value of an object property?",
+      "variants": {
+        "0": {
+          "name": "Only primitive data can be of value."
+        },
+        "1": {
+          "name": "The value can be any type of data in JavaScript, including another object."
+        },
+        "2": {
+          "name": "The value can only be other objects."
+        },
+        "3": {
+          "name": "Values can be something unique - something that is not repeated in a given object."
+        }
+      }
+    },
+    "5": {
+      "name": "Which object contains an error?",
+      "variants": {
+        "0": {
+          "name": "const obj = { name: 'Lilu', age: 34 }"
+        },
+        "1": {
+          "name": "const obj = { name: 34, age: 'Lilu' }"
+        },
+        "2": {
+          "name": "const obj = { age: 34, age: 'Lilu' }"
+        },
+        "3": {
+          "name": "const obj = { age: 34, age1: 34 }"
+        }
+      }
+    },
+    "6": {
+      "name": "Can values be repeated in an object?",
+      "variants": {
+        "0": {
+          "name": "No, they can't."
+        },
+        "1": {
+          "name": "Yes, they can."
+        },
+        "2": {
+          "name": "It depends on the situation."
+        }
+      }
+    },
+    "7": {
+      "name": "What type of data can keys be in an object?",
+      "variants": {
+        "0": {
+          "name": "only strings"
+        },
+        "1": {
+          "name": "only numbers"
+        },
+        "2": {
+          "name": "boolean values only"
+        },
+        "3": {
+          "name": "any data types, including other objects"
+        }
+      }
+    },
+    "8": {
+      "name": "Which of the following is the correct syntax for creating an object?",
+      "variants": {
+        "0": {
+          "name": "let object = {key: value,}"
+        },
+        "1": {
+          "name": "let object = {key = value}"
+        },
+        "2": {
+          "name": "let object = [key: value]"
+        },
+        "3": {
+          "name": "let object = {key: value}"
+        }
+      }
+    },
+    "9": {
+      "name": "Write a function that takes a name and age and returns an object with these properties.",
+      "variants": {
+        "0": {
+          "name": "function createPerson(name) { return { name, age: 54 } }"
+        },
+        "1": {
+          "name": "function makePerson(name, age) { return ' name, age ' }"
+        },
+        "2": {
+          "name": "function createPersonObject(name, age) { return { name: name, age: age } }"
+        },
+        "3": {
+          "name": "function makePersonObject(name, age) { return { name: age } }"
+        }
+      }
+    }
+  }
+}

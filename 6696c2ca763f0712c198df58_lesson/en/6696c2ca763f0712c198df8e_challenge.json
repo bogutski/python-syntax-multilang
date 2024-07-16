@@ -1,0 +1,4 @@
+{
+  "name": "Calculate shipping costs for a group of customers",
+  "instruction": "Write a function `deliveryCost` that returns the shipping cost for each member.\n\nThe function takes parameters:\n* `distance` - distance in miles\n* `weight` - weight in pounds\n* `mileCost` - cost per mile in dollars\n* `participants` - number of participants\n\nParticipants share the cost of delivery equally.\n\nThe function should return the shipping cost in dollars.\n\nUse weight and distance to calculate the total shipping cost.\n\nThe shipping cost is calculated by the formula:\n\n`Total shipping cost = weight * distance * cost per mile\n\nDivide the total shipping cost by the number of participants."
+}

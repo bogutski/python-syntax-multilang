@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198deaf",
+  "name": {
+    "en": "The last digit of the number",
+    "ru": "Последняя цифра числа"
+  },
+  "instruction": {
+    "en": "Given a number. Get its last digit.\n\nTo solve the problem:\nCreate a variable `num` and assign it a value of any non-negative number.\n\nCreate a variable `lastDigit` and assign it an expression that allows you to get the last digit of the number `num` (use the modulo operation to find the remainder of dividing the number by 10).\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst number = 456;\nconst a = number % 10; \n// the last digit of the number is equal to the remainder of dividing the number by 10\n```",
+    "ru": "Дано число. Получите его последнюю цифру.\n\nДля решения задачи:\nСоздайте переменную `num` и присвойте ей значение любого неотрицательного числа.\n\nСоздайте переменную `lastDigit` и присвойте ей выражение, позволяющее получить последнюю цифру числа `num` (используйте операцию нахождения остатка от деления числа на 10).\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst number = 456;\nconst a = number % 10; \n// последняя цифра числа равна остатку от деления числа на 10\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const num = 34;\nconst lastDigit = num % 10;",
+  "openTest": "it('Variable `num` exists and has a value', () => {\n  expect(num).not.undefined;\n});\n\nit('Variable `num` has a numeric type', () => {\n  expect(num).a('number');\n});\n\nit('Variable `num` is not NaN', () => {\n  expect(isNaN(num)).false;\n});\n\nit('Variable `num` is a non-negative number', () => {\n  expect(num >= 0).to.be.true;\n});\n\nit('Variable `lastDigit` is a value', () => {\n  expect(lastDigit).not.undefined;\n});\n\nit('Variable `lastDigit` has a numeric type', () => {\n  expect(lastDigit).a('number');\n});\n\nit('The `lastDigit` variable is not NaN', () => {\n  expect(isNaN(lastDigit)).false;\n});\n\nit('The `lastDigit` variable is calculated correctly', () => {\n  expect(lastDigit).equal(num % 10);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst num = 34;\nconst lastDigit = num % 10;\n```",
+    "ru": "```javascript\nconst num = 34;\nconst lastDigit = num % 10;\n```"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "name": "The result of the function into another function",
+  "questions": {
+    "0": {
+      "name": "Functions can take various values as arguments, including those from another function.",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "1": {
+      "name": "In the expression const result = sum(1, 2) + sum(3, 4) the function sum is called twice and returns two values, which are then added together.",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "2": {
+      "name": "Choose the correct options for the expression const result = sum(sum(2, 3), sum(5, 0))",
+      "variants": {
+        "0": {
+          "name": "The sum function is called four times"
+        },
+        "1": {
+          "name": "The sum function is called twice"
+        },
+        "2": {
+          "name": "The sum function is called three times"
+        },
+        "3": {
+          "name": "The code is written with an error"
+        }
+      }
+    },
+    "3": {
+      "name": "Choose the correct options for the expression const result = sum(sum(2, 3), sum(5, 0))",
+      "variants": {
+        "0": {
+          "name": "The external sum function is performed first, and then the internal"
+        },
+        "1": {
+          "name": "The function sum(2, 3) is executed first, then sum(5, 0), then sum with the results of the first two calls"
+        },
+        "2": {
+          "name": "All functions are called simultaneously"
+        }
+      }
+    },
+    "4": {
+      "name": "Select code variants that work without errors. Try to determine without running",
+      "variants": {
+        "0": {
+          "name": "function sum(a = 1, b = 1) { return a + b; }; const result = sum(sum(sum(), sum()), sum(2, 3))"
+        },
+        "1": {
+          "name": "function sum(a = 1, b = 1) { return a }; const result = sum(sum(sum(), sum()), sum(2, 3))"
+        },
+        "2": {
+          "name": "function add(n = 1) { return n + 1 }; const result = add(add(add(add())))"
+        },
+        "3": {
+          "name": "function add(n = 1) { return n + 1 }; const result = add(add(add(add()))"
+        }
+      }
+    },
+    "5": {
+      "name": "You can call other functions within a function and get the result of their work",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "6": {
+      "name": "Each function must have return",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "7": {
+      "name": "When writing function code, you can use variables declared outside the function",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "8": {
+      "name": "When a function is called, it can change the values of variables declared outside the function",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "9": {
+      "name": "The result of a function can be saved in a variable and then used as an argument for another function",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    }
+  }
+}

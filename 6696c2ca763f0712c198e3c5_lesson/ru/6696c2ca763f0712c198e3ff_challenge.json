@@ -1,0 +1,5 @@
+{
+  "name": "Вернуть символ из строки по его порядковому номеру",
+  "instruction": "Напишите функцию `getByPosition`, которая принимает строку и порядковый номер символа в этой строке и возвращает этот символ.\n\nПримеры запуска функции:\n```javascript\ngetByPosition('abc', 1); // 'a'\ngetByPosition('abc', 2); // 'b'\ngetByPosition('abc', 3); // 'c'\n```",
+  "instructions": {}
+}

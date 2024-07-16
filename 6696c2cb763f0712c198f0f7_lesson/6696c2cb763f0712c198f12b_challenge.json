@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f12b",
+  "name": {
+    "en": "",
+    "ru": "Удалить дубликаты"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `deleteDuplicate` принимает массив `arr` и возвращает новый массив, в котором удалены все дубликаты из массива `arr`.\n\nНе используйте метод `splice` для решения этой задачи.\n\nПример запуска функции:\n```javascript\ndeleteDuplicate([1, 2, 3, 3, 4, 5, 5, 6]) // [1, 2, 3, 4, 5, 6]\ndeleteDuplicate([1, 1, 1, 1, 1, 1, 1, 1]) // [1]\ndeleteDuplicate([]) // []\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function deleteDuplicate(arr) {\n  let result = [];\n  for (let i = 0; i < arr.length; i++) {\n    if (!result.includes(arr[i])) {\n      result.push(arr[i]);\n    }\n  }\n  return result\n}",
+  "openTest": "it('Created function deleteDuplicate', () => {\n  expect(deleteDuplicate).to.be.a('function');\n});\n\nit('deleteDuplicate does not include statement splice', () => {\n  expect(deleteDuplicate.toString()).to.not.contain('splice');\n});\n\nit('deleteDuplicate([1, 2, 3, 3, 4, 5, 5, 6]) returns [1, 2, 3, 4, 5, 6]', () => {\n  expect(deleteDuplicate([1, 2, 3, 3, 4, 5, 5, 6])).to.deep.equal([1, 2, 3, 4, 5, 6]);\n});\n\nit('deleteDuplicate([1, 1, 1, 1, 1, 1, 1, 1]) returns [1]', () => {\n  expect(deleteDuplicate([1, 1, 1, 1, 1, 1, 1, 1])).to.deep.equal([1]);\n});\n\nit('deleteDuplicate([1, 2, 3, 4, 5, 6, 7, 8]) returns [1, 2, 3, 4, 5, 6, 7, 8]', () => {\n  expect(deleteDuplicate([1, 2, 3, 4, 5, 6, 7, 8])).to.deep.equal([1, 2, 3, 4, 5, 6, 7, 8]);\n});\n\nit('deleteDuplicate([\"\"]) returns [\"\"]', () => {\n  expect(deleteDuplicate([\"\"])).to.deep.equal([\"\"]);\n});\n\nit('deleteDuplicate([]) returns []', () => {\n  expect(deleteDuplicate([])).to.deep.equal([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

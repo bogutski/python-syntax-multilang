@@ -1,0 +1,169 @@
+{
+  "name": "Creating an array. Length property",
+  "questions": {
+    "0": {
+      "name": "Choose the correct option to create an array",
+      "variants": {
+        "0": {
+          "name": "const arr = [1, 2, 3];"
+        },
+        "1": {
+          "name": "const arr = (1, 2, 3);"
+        },
+        "2": {
+          "name": "const arr = {1, 2, 3};"
+        },
+        "3": {
+          "name": "const arr = {1: 1, 2: 2, 3: 3};"
+        }
+      }
+    },
+    "1": {
+      "name": "What is the name of the data that is stored in the array?",
+      "variants": {
+        "0": {
+          "name": "properties"
+        },
+        "1": {
+          "name": "items"
+        },
+        "2": {
+          "name": "data"
+        },
+        "3": {
+          "name": "links"
+        }
+      }
+    },
+    "2": {
+      "name": "Which digit starts the numbering of the array elements?",
+      "variants": {
+        "0": {
+          "name": "1"
+        },
+        "1": {
+          "name": "-1"
+        },
+        "2": {
+          "name": "0"
+        },
+        "3": {
+          "name": "2"
+        }
+      }
+    },
+    "3": {
+      "name": "Choose the correct way to divide the array elements",
+      "variants": {
+        "0": {
+          "name": "blank"
+        },
+        "1": {
+          "name": "colon"
+        },
+        "2": {
+          "name": "comma"
+        },
+        "3": {
+          "name": "semicolon"
+        }
+      }
+    },
+    "4": {
+      "name": "The array can contain:",
+      "variants": {
+        "0": {
+          "name": "lines"
+        },
+        "1": {
+          "name": "numbers"
+        },
+        "2": {
+          "name": "objects"
+        },
+        "3": {
+          "name": "arrays"
+        }
+      }
+    },
+    "5": {
+      "name": "To determine the length of an array, use the property:",
+      "variants": {
+        "0": {
+          "name": "lenght"
+        },
+        "1": {
+          "name": "lenght()"
+        },
+        "2": {
+          "name": "length"
+        },
+        "3": {
+          "name": "length()"
+        }
+      }
+    },
+    "6": {
+      "name": "Choose the correct way to determine the length of the array arr",
+      "variants": {
+        "0": {
+          "name": "arr.lenght"
+        },
+        "1": {
+          "name": "arr.length()"
+        },
+        "2": {
+          "name": "arr.length"
+        },
+        "3": {
+          "name": "arr.lenght()"
+        }
+      }
+    },
+    "7": {
+      "name": "What is the length of the array? const arr = ['a', 'b', 'c', 'd', 'e'];",
+      "variants": {
+        "0": {
+          "name": "4"
+        },
+        "1": {
+          "name": "5"
+        },
+        "2": {
+          "name": "6"
+        },
+        "3": {
+          "name": "7"
+        }
+      }
+    },
+    "8": {
+      "name": "What is the length of the array? const arr = ['a', 'b', 'c', 'd', [1, 2, 3, 4, 5]];",
+      "variants": {
+        "0": {
+          "name": "5"
+        },
+        "1": {
+          "name": "9"
+        },
+        "2": {
+          "name": "4"
+        },
+        "3": {
+          "name": "8"
+        }
+      }
+    },
+    "9": {
+      "name": "An array is an ordered data type",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    }
+  }
+}

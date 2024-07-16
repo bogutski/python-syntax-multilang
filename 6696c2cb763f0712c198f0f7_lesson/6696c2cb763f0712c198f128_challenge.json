@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f128",
+  "name": {
+    "en": "Remove duplicates from the array",
+    "ru": "Удалить из массива дубликаты"
+  },
+  "instruction": {
+    "en": "The `cleanDuplicates` function takes an array and returns an array with no duplicates.\n\nExamples of how to run the function:\n```javascript\ncleanDuplicates([1, 2, 3, 3, 3, 2, 2, 1, 4]) // [1, 2, 3, 4]\ncleanDuplicates([1]) // [1]\n```",
+    "ru": "Функция `cleanDuplicates` принимает массив и возвращает массив без дубликатов.\n\nПримеры запуска функции:\n```javascript\ncleanDuplicates([1, 2, 3, 3, 2, 1, 4]) // [1, 2, 3, 4]\ncleanDuplicates([1]) // [1]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function cleanDuplicates(arr) {\n  let result = [];\n  for (let i = 0; i < arr.length; i++) {\n    if (!result.includes(arr[i])) {\n      result.push(arr[i]);\n    }\n  }\n  return result;\n}",
+  "openTest": "it('Created function cleanDuplicates', () => {\n  expect(cleanDuplicates).to.be.a('function');\n});\n\nit('cleanDuplicates([1, 2, 3, 3, 2, 1, 4]) should return [1, 2, 3, 4]', () => {\n  expect(cleanDuplicates([1, 2, 3, 3, 2, 1, 4])).to.deep.equal([1, 2, 3, 4]);\n});\n\nit('cleanDuplicates([1, 2, 3, 3, 2, 1, 4, 4, 4, 4]) should return [1, 2, 3, 4]', () => {\n  expect(cleanDuplicates([1, 2, 3, 3, 2, 1, 4, 4, 4, 4])).to.deep.equal([1, 2, 3, 4]);\n});\n\nit('cleanDuplicates([1] should return [1]', () => {\n  expect(cleanDuplicates([1])).to.deep.equal([1]);\n});\n\nit('cleanDuplicates([]) should return []', () => {\n  expect(cleanDuplicates([])).to.deep.equal([]);\n});\n\nit('cleanDuplicates([1, 1, 1, 1, 1, 1, 1]) should return [1]', () => {\n  expect(cleanDuplicates([1, 1, 1, 1, 1, 1, 1])).to.deep.equal([1]);\n});\n\nit('cleanDuplicates([true, true, true, true]) should return [true]', () => {\n  expect(cleanDuplicates([true, true, true, true])).to.deep.equal([true]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

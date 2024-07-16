@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2ca763f0712c198f07c",
+  "name": {
+    "ru": "Удвоить каждый элемент массива, если это число",
+    "en": "Double each element of the array if it is a number",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f07d",
+      "name": {
+        "ru": "Какие элементы в массиве ниже имеют тип данных Number?",
+        "en": "Which elements in the array below have the data type Number?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [{}, 2, '4', NaN, -8, Infinity, 16, true, 'NaN', null];\n```",
+        "en": "```javascript\nconst arr = [{}, 2, '4', NaN, -8, Infinity, 16, true, 'NaN', null];\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f07e",
+          "name": {
+            "ru": "2, NaN, -8, Infinity, 16",
+            "en": "2, NaN, -8, Infinity, 16",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f07f",
+          "name": {
+            "ru": "2-й, 3-й, 5-й и 7-й элементы массива",
+            "en": "2nd, 3rd, 5th and 7th elements of the array",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f080",
+          "name": {
+            "ru": "2, '4', NaN, -8, 16, 'NaN'",
+            "en": "2, '4', NaN, -8, 16, 'NaN'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f081",
+          "name": {
+            "ru": "2-й, 4-й, 5-й, 6-й и 7-й элементы массива",
+            "en": "2nd, 4th, 5th, 6th and 7th elements of the array",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f082",
+      "name": {
+        "ru": "Что означает условие if в коде ниже?",
+        "en": "What does the if clause in the code below mean?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = ['2 + 3', 5, NaN, -2, true, 1.3];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n}\n```",
+        "en": "```javascript\nconst arr = ['2 + 3', 5, NaN, -2, true, 1.3];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f083",
+          "name": {
+            "ru": "Если тип данных элемента массива - число или является NaN",
+            "en": "If the data type of an array element is a number or is NaN",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f084",
+          "name": {
+            "ru": "Если тип данных элемента массива - число или он не NaN",
+            "en": "If the data type of an array element is a number or it is not NaN",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f085",
+          "name": {
+            "ru": "Если тип данных элемента массива - число и он не NaN",
+            "en": "If the data type of an array element is a number and it is not NaN",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f086",
+          "name": {
+            "ru": "Если тип данных элемента массива - число и является NaN",
+            "en": "If the data type of an array element is a number and is NaN",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f087",
+      "name": {
+        "ru": "Что выведет в консоль запуск кода ниже?",
+        "en": "What will running the code below output to the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = ['2 + 3', 5, NaN, -2, true, 1.3];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n  console.log(arr[i]);\n}\n```",
+        "en": "```javascript\nconst arr = ['2 + 3', 5, NaN, -2, true, 1.3];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n  console.log(arr[i]);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f088",
+          "name": {
+            "ru": "2 3 5 -2 1.3",
+            "en": "2 3 5 -2 1.3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f089",
+          "name": {
+            "ru": "5 NaN -2 1.3",
+            "en": "5 NaN -2 1.3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f08a",
+          "name": {
+            "ru": "5 -2 1.3",
+            "en": "5 -2 1.3",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f08b",
+          "name": {
+            "ru": "2 3 5 1.3",
+            "en": "2 3 5 1.3",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f08c",
+      "name": {
+        "ru": "Выберите верный результат запуска кода ниже",
+        "en": "Select the correct result of running the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [NaN, 15, 'one', 201, 7, -13];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n  console.log(i);\n}\n```",
+        "en": "```javascript\nconst arr = [NaN, 15, 'one', 201, 7, -13];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n  console.log(i);\n}\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f08d",
+          "name": {
+            "ru": "15 201 7 -13",
+            "en": "15 201 7 -13",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f08e",
+          "name": {
+            "ru": "В консоль выведутся индексы всех элементов кроме NaN",
+            "en": "The console will display the indices of all elements except NaN",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f08f",
+          "name": {
+            "ru": "В консоль выведутся индексы элементов, которые являются числами и не являются NaN",
+            "en": "The console will print the indices of elements that are numbers and are not NaN",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f090",
+          "name": {
+            "ru": "1 3 4 5",
+            "en": "1 3 4 5",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f091",
+      "name": {
+        "ru": "Что надо написать вместо ???, чтобы числовые элементы массива увеличились в 2 раза?",
+        "en": "What should I write instead of ??? to make the numeric elements of the array increase by 2 times?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [NaN, 15, 'one', 201, 7, -13];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n  ???;\n}\n```",
+        "en": "```javascript\nconst arr = [NaN, 15, 'one', 201, 7, -13];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n  ???;\n}\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f092",
+          "name": {
+            "ru": "arr[i] = arr[i] * 2;",
+            "en": "arr[i] = arr[i] * 2;",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f093",
+          "name": {
+            "ru": "arr[i] *= 2;",
+            "en": "arr[i] *= 2;",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f094",
+          "name": {
+            "ru": "arr[i] = arr[i] * arr[i];",
+            "en": "arr[i] = arr[i] * arr[i];",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f095",
+          "name": {
+            "ru": "arr[i] = arr[i] ** 2;",
+            "en": "arr[i] = arr[i] ** 2;",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f096",
+      "name": {
+        "ru": "Что получится в результате запуска кода ниже, если пройтись по массиву в обратном порядке?",
+        "en": "What is the result of running the code below if you go through the array in reverse order?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [2, -4, 8];\nfor(let i = arr.length - 1; i >= 0; i--) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n    arr[i] = arr[i] * 2;\n}\nconsole.log(arr);\n```",
+        "en": "```javascript\nconst arr = [2, -4, 8];\nfor(let i = arr.length - 1; i >= 0; i--) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n    arr[i] = arr[i] * 2;\n}\nconsole.log(arr);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f097",
+          "name": {
+            "ru": "[4, 8, 16]",
+            "en": "[4, 8, 16]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f098",
+          "name": {
+            "ru": "[4, -8, 16]",
+            "en": "[4, -8, 16]",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f099",
+          "name": {
+            "ru": "[16, -8, 4]",
+            "en": "[16, -8, 4]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f09a",
+          "name": {
+            "ru": "[16, 8, 4]",
+            "en": "[16, 8, 4]",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f09b",
+      "name": {
+        "ru": "Верно ли, что результатом запуска кода ниже будет [20, 'two', 50, -10, NaN, 22, 0]?",
+        "en": "Is it correct that the result of running the code below is [20, 'two', 50, -10, NaN, 22, 0]?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [10, 'two', 25, -5, NaN, 11, 0];\nfor(let i = 0; i < arr.length; i += 2) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n  arr[i] *= 2;\n}\nconsole.log(arr);\n```",
+        "en": "```javascript\nconst arr = [10, 'two', 25, -5, NaN, 11, 0];\nfor(let i = 0; i < arr.length; i += 2) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n  arr[i] *= 2;\n}\nconsole.log(arr);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f09c",
+          "name": {
+            "ru": "Неверно, результатом будет [20, 'two', 50, -5, NaN, 11, 0]",
+            "en": "Incorrect, the result is [20, 'two', 50, -5, NaN, 11, 0]",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f09d",
+          "name": {
+            "ru": "Верно, результатом будет [20, 'two', 50, -10, NaN, 22, 0]",
+            "en": "Right, the result is [20, 'two', 50, -10, NaN, 22, 0]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f09e",
+          "name": {
+            "ru": "Неверно, результатом будет [20, 'two', 50, -5, NaN, 11, 2]",
+            "en": "Incorrect, the result is [20, 'two', 50, -5, NaN, 11, 2]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f09f",
+          "name": {
+            "ru": "Неверно, результатом будет [10, 'two', 50, -10, NaN, 22, 0]",
+            "en": "Incorrect, the result is [10, 'two', 50, -10, NaN, 22, 0]",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f0a0",
+      "name": {
+        "ru": "Что выведет в консоль запуск код ниже?",
+        "en": "What will running the code below output to the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [20, 50, 3, 100];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n  arr[i] *= -2;\n}\nconsole.log(arr);\n```",
+        "en": "```javascript\nconst arr = [20, 50, 3, 100];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n  arr[i] *= -2;\n}\nconsole.log(arr);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f0a1",
+          "name": {
+            "ru": "[-40, 50, -6, 100]",
+            "en": "[-40, 50, -6, 100]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f0a2",
+          "name": {
+            "ru": "[40, 100, 6, 200]",
+            "en": "[40, 100, 6, 200]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f0a3",
+          "name": {
+            "ru": "[-40, -100, -6, -200]",
+            "en": "[-40, -100, -6, -200]",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f0a4",
+          "name": {
+            "ru": "[20, -100, 3, -200]",
+            "en": "[20, -100, 3, -200]",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f0a5",
+      "name": {
+        "ru": "Выберите верный результат запуска кода ниже",
+        "en": "Select the correct result of running the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [-2, 0, -3, 100, Infinity];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n  arr[i] *= -2;\n}\nconsole.log(arr);\n```",
+        "en": "```javascript\nconst arr = [-2, 0, -3, 100, Infinity];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]))\n  arr[i] *= -2;\n}\nconsole.log(arr);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f0a6",
+          "name": {
+            "ru": "[4, 0, 6, -200, Infinity]",
+            "en": "[4, 0, 6, -200, Infinity]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f0a7",
+          "name": {
+            "ru": "[4, -2, 6, -200, Infinity]",
+            "en": "[4, -2, 6, -200, Infinity]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f0a8",
+          "name": {
+            "ru": "[4, 0, 6, -200, -Infinity]",
+            "en": "[4, 0, 6, -200, -Infinity]",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f0a9",
+          "name": {
+            "ru": "[4, 0, 6, 200, Infinity]",
+            "en": "[4, 0, 6, 200, Infinity]",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f0aa",
+      "name": {
+        "ru": "Верно ли, что результатом запуска кода ниже будет [NaN, 4, 0, 6, -Infinity]?",
+        "en": "Is it correct that the result of running the code below is [NaN, 4, 0, 6, -Infinity]?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [NaN, -2, 0, -3, Infinity];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]) && arr[i] !== Infinity)\n  arr[i] *= -2;\n}\nconsole.log(arr);\n```",
+        "en": "```javascript\nconst arr = [NaN, -2, 0, -3, Infinity];\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]) && arr[i] !== Infinity)\n  arr[i] *= -2;\n}\nconsole.log(arr);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f0ab",
+          "name": {
+            "ru": "Верно, результатом будет [NaN, 4, 0, 6, -Infinity]",
+            "en": "Correct, the result is [NaN, 4, 0, 6, -Infinity]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f0ac",
+          "name": {
+            "ru": "Неверно, результатом будет [NaN, -4, 0, -6, Infinity]",
+            "en": "Incorrect, the result is [NaN, -4, 0, -6, Infinity]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f0ad",
+          "name": {
+            "ru": "Неверно, результатом будет [NaN, 4, -2, 6, Infinity]",
+            "en": "Incorrect, the result is [NaN, 4, -2, 6, Infinity]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f0ae",
+          "name": {
+            "ru": "Неверно, результатом будет [NaN, 4, 0, 6, Infinity]",
+            "en": "Incorrect, the result is [NaN, 4, 0, 6, Infinity]",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

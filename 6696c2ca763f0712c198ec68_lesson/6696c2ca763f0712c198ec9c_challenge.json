@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec9c",
+  "name": {
+    "en": "Count the vowels",
+    "ru": "Посчитать гласные"
+  },
+  "instruction": {
+    "en": "The `countVowels` function takes a string and returns the number of vowels in the string.\n\nThe string consists of lowercase letters only.\n\nExamples of running the function:\n```javascript\ncountVowels(\"hello\") // 2\ncountVowels(\"why\") // 0\n```",
+    "ru": "Функция `countVowels` принимает строку и возвращает количество гласных букв в строке.\n\nСтрока состоит только из строчных букв.\n\nПримеры запуска функции:\n```javascript\ncountVowels(\"hello\") // 2\ncountVowels(\"why\") // 0\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function countVowels(str) {\n  let vowel = 0;\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] === 'e' || str[i] === 'u' || str[i] === 'i' || str[i] === 'o' || str[i] === 'a') {\n      vowel += 1\n    }\n  }\n  return vowel\n}",
+  "openTest": "it('Created function countVowels', () => {\n  expect(countVowels).to.be.a('function');\n});\n\nit('countVowels(\"hello\") returns 2', () => {\n  expect(countVowels(\"hello\")).to.equal(2);\n});\n\nit('countVowels(\"why\") returns 0', () => {\n  expect(countVowels(\"why\")).to.equal(0);\n});\n\nit('countVowels(\"mississippi\") returns 4', () => {\n  expect(countVowels(\"mississippi\")).to.equal(4);\n});\n\nit('countVowels(\"aaaaa\") returns 5', () => {\n  expect(countVowels(\"aaaaa\")).to.equal(5);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

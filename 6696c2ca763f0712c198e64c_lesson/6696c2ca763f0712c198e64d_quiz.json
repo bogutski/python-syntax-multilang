@@ -1,0 +1,478 @@
+{
+  "_id": "6696c2ca763f0712c198e64d",
+  "name": {
+    "ru": "Ссылочный тип данных. Копирование объектов",
+    "en": "Reference data type. Copying objects",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e64e",
+      "name": {
+        "ru": "К какому типу данных относится объект?",
+        "en": "What type of data does the object belong to?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e64f",
+          "name": {
+            "ru": "Примитивный тип данных",
+            "en": "Primitive data type",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e650",
+          "name": {
+            "ru": "Ссылочный тип данных",
+            "en": "Reference data type",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e651",
+      "name": {
+        "ru": "Объекты хранятся и копируются 'по ссылке'",
+        "en": "Objects are stored and copied 'by reference'",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e652",
+          "name": {
+            "ru": "Утверждение верное",
+            "en": "The statement is correct",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e653",
+          "name": {
+            "ru": "Утверждение не верное",
+            "en": "The statement is incorrect",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e654",
+      "name": {
+        "ru": "Что хранит в себе переменная, которой присвоен объект",
+        "en": "What does the variable to which the object is assigned store?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e655",
+          "name": {
+            "ru": "Сам объект",
+            "en": "The object itself",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e656",
+          "name": {
+            "ru": "Свойства объекта",
+            "en": "Object Properties",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e657",
+          "name": {
+            "ru": "Ссылку на объект",
+            "en": "An object reference",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e658",
+          "name": {
+            "ru": "Значения свойств объекта",
+            "en": "The values of the object properties",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e659",
+      "name": {
+        "ru": "При присваивании объекта user в другую переменную, происходит:",
+        "en": "When you assign a user object to another variable, it happens:",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n const user = {name: 'Alex', age: 35};\n const user2 = user;\n```",
+        "en": "```javascript\n const user = {name: 'Alex', age: 35};\n const user2 = user;\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e65a",
+          "name": {
+            "ru": "Копирование всего объекта в новую переменную",
+            "en": "Copying the whole object into a new variable",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e65b",
+          "name": {
+            "ru": "Объект перезаписывается в новую переменную",
+            "en": "The object is overwritten with a new variable",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e65c",
+          "name": {
+            "ru": "В новую переменную записывается только ссылка на объект",
+            "en": "Only a reference to the object is written to the new variable",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e65d",
+          "name": {
+            "ru": "Создается новый объект с таким же названием",
+            "en": "A new object with the same name is created",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e65e",
+      "name": {
+        "ru": "Как правильно скопировать один объект в другой?",
+        "en": "How to properly copy one object into another?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e65f",
+          "name": {
+            "ru": "Копировать каждое свойства одного объекта в другой",
+            "en": "Copy each property of one object into another",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e660",
+          "name": {
+            "ru": "Скопировать ссылку одного объекта в другой через оператор присваивания",
+            "en": "Copy a reference from one object to another using the assignment operator",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e661",
+      "name": {
+        "ru": "console.log({} === {}); Что выведет в консоль и почему?",
+        "en": "console.log({} === {}); What will the console display and why?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e662",
+          "name": {
+            "ru": "true, потому что оба объекта пустые",
+            "en": "true, because both objects are empty",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e663",
+          "name": {
+            "ru": "false, потому что сравниваются ссылки на объекты",
+            "en": "false, because object references are compared",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e664",
+          "name": {
+            "ru": "false, потому что сравниваются пустые объекты",
+            "en": "false, because empty objects are compared",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e665",
+          "name": {
+            "ru": "true, потому что ссылки на объекты одинаковые",
+            "en": "true, because the object references are the same",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e666",
+      "name": {
+        "ru": "Что хранится в ссылочных типах данных?",
+        "en": "What is stored in reference data types?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e667",
+          "name": {
+            "ru": "Непосредственно их данные",
+            "en": "Directly their data",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e668",
+          "name": {
+            "ru": "Тип передаваемых данных",
+            "en": "Type of transmitted data",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e669",
+          "name": {
+            "ru": "Ссылка на их данные",
+            "en": "Link to their data",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e66a",
+          "name": {
+            "ru": "Примитивные типы данных",
+            "en": "Primitive data types",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e66b",
+      "name": {
+        "ru": "Выберите правильный способ копирования объекта circle со свойствами radius и color в объект oval",
+        "en": "Choose the correct way to copy a circle object with radius and color properties to an oval object",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e66c",
+          "name": {
+            "ru": "const oval = circle;",
+            "en": "const oval = circle;",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e66d",
+          "name": {
+            "ru": "const circle = oval;",
+            "en": "const circle = oval;",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e66e",
+          "name": {
+            "ru": "oval.radius = circle.radius; oval.color = circle.color;",
+            "en": "oval.radius = circle.radius; oval.color = circle.color;",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e66f",
+          "name": {
+            "ru": "const oval = circle.radius;",
+            "en": "const oval = circle.radius;",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e670",
+      "name": {
+        "ru": "const school = {students: 150}; Что записано в переменную?",
+        "en": "const school = {students: 150}; What is written in the variable?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e671",
+          "name": {
+            "ru": "Ссылка на объект school",
+            "en": "Link to school object",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e672",
+          "name": {
+            "ru": "Объект school",
+            "en": "The object of the school",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e673",
+          "name": {
+            "ru": "Свойства объекта school",
+            "en": "School object properties",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e674",
+          "name": {
+            "ru": "Значение свойства students объекта school",
+            "en": "The value of the students property of the school object",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e675",
+      "name": {
+        "ru": "const school = {students: 150}; const college = school; Что записано в переменную college?",
+        "en": "const school = {students: 150}; const college = school; What is written in the college variable?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e676",
+          "name": {
+            "ru": "Значения свойства students объекта school",
+            "en": "Values of the students school object property",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e677",
+          "name": {
+            "ru": "Ссылка на объект school",
+            "en": "Link to school object",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e678",
+          "name": {
+            "ru": "Свойства объекта school",
+            "en": "School object properties",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e679",
+          "name": {
+            "ru": "Все варианты верны",
+            "en": "All options are correct",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

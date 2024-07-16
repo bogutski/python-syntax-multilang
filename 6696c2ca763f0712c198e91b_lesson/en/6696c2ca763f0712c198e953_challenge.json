@@ -1,0 +1,4 @@
+{
+  "name": "Limiting string length",
+  "instruction": "Write a function `limitedLength` that takes two arguments:\n\n* `string` - a string,\n* `num` - the number of characters, which is always less than the length of `string`.\n\nThe function should take the first `num` characters from the string `string` and return a new string.\n\nExamples of running the function:\n```javascript\nlimitedLength('123456', 3); // '123'\nlimitedLength('abc', 1); // 'a'\nlimitedLength('abc', 0); // ''\n```"
+}

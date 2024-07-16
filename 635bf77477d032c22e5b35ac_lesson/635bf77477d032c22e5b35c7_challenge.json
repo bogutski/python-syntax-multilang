@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35c7",
+  "name": {
+    "ru": "Присвойте переменной isChild значение false",
+    "en": "Assign false value to the isChild variable",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Создайте переменную с именем `isChild`.\nИспользуйте ключевое слово` const`.\nПрисвойте ей логическое значение `false`.\n\nДля этого напечатайте команду:\n```\nconst isChild = false;\n```",
+    "en": "Create a variable named `isChild`.\nUse the keyword ` const`.\nAssign a boolean value `false` to it.\n\nTo do this, type the command:\n```\nconst isChild = false;\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "const isChild = false;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

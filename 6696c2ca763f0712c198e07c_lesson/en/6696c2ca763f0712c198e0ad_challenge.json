@@ -1,0 +1,4 @@
+{
+  "name": "Travel time in space. Miles",
+  "instruction": "The spaceship flies at a speed of `27,000` kilometers per hour.\n\nWrite a function `getSpaceTripTime` that takes as a parameter the distance in miles\nand returns the time in minutes it takes the ship to travel that distance.\n\nThere are `1609` meters in one mile.\n\nTo solve this problem do the following. Observe the order of operations:\n\n1. Translate kilometers per hour into miles per hour by dividing `27,000` by `1.609`.\n2. Find how many hours it will take to cover the distance by dividing the distance in miles by the speed in miles per hour.\nFind how many minutes it will take to cover the distance by multiplying the time in hours by `60`.\n4. Return the result.\n\nExamples:\n```javascript.\ngetSpaceTripTime(10000); // 35.75555555555555\ngetSpaceTripTime(20000); // 71.5111111111111\ngetSpaceTripTime(30000); // 107.26666666666667\n```"
+}

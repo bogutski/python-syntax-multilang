@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df4f",
+  "name": {
+    "en": "Funny dog",
+    "ru": "Весёлая собака"
+  },
+  "instruction": {
+    "en": "Write a function dog() that returns the string 'Bark!'",
+    "ru": "Напишите функцию function dog(), которая возвращает строку 'Bark!'"
+  },
+  "initialSolution": "function bark(){\n  return 'Dog!';\n}",
+  "completedSolution": "function dog() {\n  return 'Bark!';\n}",
+  "openTest": "it('Created function ', () => {\n  expect(dog).to.be.a('function');\n});\n\nit('Function returns correct result', () => {\n  expect(dog()).eq('Bark!');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Cube edge",
+  "instruction": "Find the edge of a cube if its volume is known.\n\nSet variable `volume` and give it a value of an arbitrary non-negative number (volume of the cube).\nDefine a variable `edge` in which calculate the edge of the cube (the cube root of the volume, or volume to the power of 1/3).\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n```\nconst v = 27;\nconst a = v ** (1/3);\n```"
+}

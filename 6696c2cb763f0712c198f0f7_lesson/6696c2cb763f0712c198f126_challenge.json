@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f126",
+  "name": {
+    "en": "",
+    "ru": "Удалить дубликаты из массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `noDuplicates` принимает массив и возвращает массив без дубликатов.\n\nДля проверки наличия элемента в массиве используйте объект и метод `splice` для удаления дубликата.\n\nПример запуска функции:\n```javascript\nnoDuplicates([1, 2, 2, 2, 5]) // [1, 2, 5]\nnoDuplicates([1]) // [1]\nnoDuplicates([\"a1\", \"a1\", 1, 1, \"1\", \"1\"]) // [\"a1\", 1]\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function noDuplicates(array) {\n  const obj = {};\n  for (let i = 0; i < array.length; i++) {\n    if(!obj[array[i]]) {\n      obj[array[i]] = 1;\n    } else {array.splice(i, 1); i--}\n  }\n  return array\n}",
+  "openTest": "it('Created function noDuplicates', () => {\n  expect(noDuplicates).to.be.a('function');\n});\n\nit('noDuplicates includes statement splice', () => {\n  expect(noDuplicates.toString()).to.include('splice');\n});\nit('noDuplicates([1, 2, 2, 2, 5]) should return [1, 2, 5]', () => {\n  expect(noDuplicates([1, 2, 2, 2, 5])).to.deep.equal([1, 2, 5]);\n});\n\nit('noDuplicates([1, 2, 2, 2, 5, 5, 5, 5]) should return [1, 2, 5]', () => {\n  expect(noDuplicates([1, 2, 2, 2, 5, 5, 5, 5])).to.deep.equal([1, 2, 5]);\n});\n\nit('noDuplicates([]) should return []', () => {\n  expect(noDuplicates([])).to.deep.equal([]);\n});\n\nit('noDuplicates([1]) should return [1]', () => {\n  expect(noDuplicates([1])).to.deep.equal([1]);\n});\n\nit('noDuplicates([\"a1\", \"a1\", 1, 1, \"1\", \"1\"]) should return [\"a1\", 1]', () => {\n  expect(noDuplicates([\"a1\", \"a1\", 1, 1, \"1\", \"1\"])).to.deep.equal([\"a1\", 1]);\n});\n\nit('noDuplicates([\"\", \"\"]) should return [\"\"]', () => {\n  expect(noDuplicates([\"\", \"\"])).to.deep.equal([\"\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

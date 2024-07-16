@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f578",
+  "name": {
+    "en": "/*",
+    "ru": "Объединение и сглаживание массивов с фильтрацией"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `combineFlattenFilter`, которая принимает три аргумента: два массива `array1` и `array2` с возможными подмассивами, и функцию `predicate` для фильтрации.\n\nФункция должна сначала объединить два массива, затем \"выпрямить\" их на один уровень, и после этого отфильтровать результат, используя заданную функцию `predicate`.\n\nВозвращаемый массив должен содержать только те элементы, которые удовлетворяют условию функции `predicate`.\n\n\nПримеры Запуска Функции:\n```javascript\ncombineFlattenFilter([1, 2, [3]], [4, [5, 6]], x => x > 3); // [4, 5, 6]\ncombineFlattenFilter([null, undefined], [NaN, 0], x => x !== null); // [undefined, NaN, 0]\ncombineFlattenFilter([[10], 20], [[30], [40, 50]], x => x % 10 === 0); // [10, 20, 30, 40, 50]\ncombineFlattenFilter(['apple', ['banana']], ['cherry', ['date']], x => x.startsWith('b')); // ['banana']\n```"
+  },
+  "initialSolution": "function combineFlattenFilter(){\n\n}",
+  "completedSolution": "function combineFlattenFilter(arr1, arr2, isTrue) {\n  const combinedAndFlatten = [...arr1, ...arr2].flat(Infinity)\n  let result = []\n\n  for(let el of combinedAndFlatten){\n    if(isTrue(el)) result.push(el)\n  }\n\n  return result;\n}",
+  "openTest": "it('Created function combineFlattenFilter', () => {\n  expect(combineFlattenFilter).to.be.a('function');\n});\n\nit('Function combineFlattenFilter should include method flat()', () => {\n  const res = combineFlattenFilter.toString()\n  expect(res).to.include('.flat(')\n});\n\nit(\"combineFlattenFilter([1, 2, [3]], [4, [5, 6]], x => x > 3) should return [4, 5, 6]\", function() {\n  expect(combineFlattenFilter([1, 2, [3]], [4, [5, 6]], x => x > 3)).to.deep.equal([4, 5, 6]);\n});\n\nit(\"combineFlattenFilter(['apple', ['banana']], ['cherry', ['date']], x => x.startsWith('b')) should return ['banana']\", function() {\n  expect(combineFlattenFilter(['apple', ['banana']], ['cherry', ['date']], x => x.startsWith('b'))).to.deep.equal(['banana']);\n});\n\nit(\"combineFlattenFilter([[10], 20], [[30], [40, 50]], x => x % 10 === 0) should return [10, 20, 30, 40, 50]\", function() {\n  expect(combineFlattenFilter([[10], 20], [[30], [40, 50]], x => x % 10 === 0)).to.deep.equal([10, 20, 30, 40, 50]);\n});\n\nit(\"combineFlattenFilter([], [], x => x !== undefined) should return an empty array\", function() {\n  expect(combineFlattenFilter([], [], x => x !== undefined)).to.deep.equal([]);\n});\n\nit(\"combineFlattenFilter([null, undefined], [NaN, 0], x => x !== null) should return [undefined, NaN, 0]\", function() {\n  expect(combineFlattenFilter([null, undefined], [NaN, 0], x => x !== null)).to.deep.equal([undefined, NaN, 0]);\n});\n\nit(\"combineFlattenFilter(['one', ['two']], [['three']], x => typeof x === 'string') should return ['one', 'two', 'three']\", function() {\n  expect(combineFlattenFilter(['one', ['two']], [['three']], x => typeof x === 'string')).to.deep.equal(['one', 'two', 'three']);\n});\n\nit(\"combineFlattenFilter([['yes', 'no'], ['maybe']], [['always']], x => x.length > 2) should return ['yes', 'maybe', 'always']\", function() {\n  expect(combineFlattenFilter([['yes', 'no'], ['maybe']], [['always']], x => x.length > 2)).to.deep.equal(['yes', 'maybe', 'always']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Separating words in a line",
+  "instruction": "Fix the `wordsDivider` function so that it divides the string into individual words and returns an array of words.\n\nIf the string is empty, the function should return an empty array.\n\nThe conditions will be as follows:\n\n* Words are separated by a single space.\n* Words can only contain letters and numbers\n* The string will not start or end with a space\n* The string will not consist of only spaces\n\n\nAn example of running a function:\n```js\nwordsDivider('Hello world'); // ['Hello', 'world']\nwordsDivider('hi there'); // ['hi', 'there']\nwordsDivider('12345 67890'); // ['12345', '67890']\nwordsDivider('ab cd ef'); // ['ab', 'cd', 'ef']\nwordsDivider(''); // []\n```"
+}

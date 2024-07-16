@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ddab",
+  "name": {
+    "en": "Define and output to the console the type true",
+    "ru": "Определите и выведите в консоль тип true"
+  },
+  "instruction": {
+    "en": "We haven't gone through this type yet. All in good time. Just write and observe what may be in the console when `typeof` works.\n\nOnly one line.\n\nWrite the command `console.log(typeof true);`\n\nObserve spaces and punctuation marks. A semicolon at the end.",
+    "ru": "Мы этот тип еще не проходили. Всему свое время. Просто пишите и наблюдайте, что может быть в консоли при работе `typeof`.\n\nТолько одна строка.\n\nНапишите команду `console.log(typeof true);`\n\nСоблюдайте пробелы и знаки пунктуации. В конце точка с запятой."
+  },
+  "initialSolution": "",
+  "completedSolution": "console.log(typeof true);",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal",
+  "hint": {
+    "en": "```javascript\nconsole.log(typeof true);\n```",
+    "ru": "```javascript\nconsole.log(typeof true);\n```"
+  }
+}

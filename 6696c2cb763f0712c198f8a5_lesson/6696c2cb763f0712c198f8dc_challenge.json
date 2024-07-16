@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f8dc",
+  "name": {
+    "en": "/*",
+    "ru": "Проверка на равную длину строк"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `areAllStringsSameLength`, которая принимает массив.\n\nФункция возвращает `true`, если все строки в массиве имеют одинаковую длину (игнорируя элементы, которые не являются строками), и `false` в противном случае.\n\n\nПримеры запуска функции:\n```javascript\nareAllStringsSameLength(['test', 'abcd', 'efgh']); // true\nareAllStringsSameLength(['hello', 55, 'world', 0, 10, 'js']);    // false\nareAllStringsSameLength(['123', null, '456', '789', undefined]); // true\nareAllStringsSameLength([[1, 2, 3], 'a', false, 'bb', true, 'ccc', {}]); // false\n```"
+  },
+  "initialSolution": "function areAllStringsSameLength(){\n\n}",
+  "completedSolution": "function areAllStringsSameLength(arr) {\n  let len\n  return arr.every(str => {\n    if(typeof str !== 'string') return true\n    else {\n      if(len === undefined) len = str.length\n      else if(str.length !== len) return false\n    }\n    return true\n  });\n}",
+  "openTest": "it('Created function areAllStringsSameLength', () => {\n  expect(areAllStringsSameLength).to.be.a('function');\n});\n\nit('areAllStringsSameLength([\"test\", \"abcd\", \"efgh\"]) should return true', function() {\n  expect(areAllStringsSameLength([\"test\", \"abcd\", \"efgh\"])).to.equal(true);\n});\n\nit('areAllStringsSameLength([\"hello\", 55, \"world\", 0, 10, \"js\"]) should return false', function() {\n  expect(areAllStringsSameLength([\"hello\", 55, \"world\", 0, 10, \"js\"])).to.equal(false);\n});\n\nit('areAllStringsSameLength([\"123\", null, \"456\", \"789\", undefined]) should return true', function() {\n  expect(areAllStringsSameLength([\"123\", null, \"456\", \"789\", undefined])).to.equal(true);\n});\n\nit('areAllStringsSameLength([[1, 2, 3], \"a\", false, \"bb\", true, \"ccc\", {}]) should return false', function() {\n  expect(areAllStringsSameLength([[1, 2, 3], \"a\", false, \"bb\", true, \"ccc\", {}])).to.equal(false);\n});\n\nit('areAllStringsSameLength([\"same\", \"size\", \"test\"]) should return true', function() {\n  expect(areAllStringsSameLength([\"same\", \"size\", \"test\"])).to.equal(true);\n});\n\nit('areAllStringsSameLength([\"different\", \"sizes\"]) should return false', function() {\n  expect(areAllStringsSameLength([\"different\", \"sizes\"])).to.equal(false);\n});\n\nit('areAllStringsSameLength([\"abc\", \"def\", \"ghi\"]) should return true', function() {\n  expect(areAllStringsSameLength([\"abc\", \"def\", \"ghi\"])).to.equal(true);\n});\n\nit('areAllStringsSameLength([]) should return true', function() {\n  expect(areAllStringsSameLength([])).to.equal(true);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

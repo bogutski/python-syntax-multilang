@@ -1,0 +1,4 @@
+{
+  "name": "Round up the largest of the three numbers",
+  "instruction": "Write a function `maxOfThree` that takes three numbers and returns the largest rounded number.\n\nThe name of the function parameters can be anything.\n\nExamples of running the function:\n```javascript.\nmaxOfThree(1.45, 2.12, 0.99) // 3\nmaxOfThree(1.45, 7.12, 2.99) // 8\nmaxOfThree(25, 24.2, 19.9) // 25\nmaxOfThree(0.1, 0.2, 0.3) // 1\n```"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Посчитать количество пробелов",
+  "instruction": "Напишите функцию `numberOfSpaces`, которая принимает строку и возвращает количество пробелов в ней.\n\n```javascript\nnumberOfSpaces('Hello, World!');  // 1;\nnumberOfSpaces(' You look young. How old  are you?');  // 8;\nnumberOfSpaces('end'); // 0\n```",
+  "instructions": {}
+}

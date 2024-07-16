@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f918",
+  "name": {
+    "en": "/*",
+    "ru": "Проверка на наличие строк длиной больше 5 символов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `hasLongWords`, которая принимает массив строк и возвращает `true`, если в массиве есть хотя бы одна строка длиной больше `5` символов, и `false` в противном случае.\n\n\nПримеры запуска функции:\n```javascript\nhasLongWords(['a', 'bb', 'ccc']); // false\nhasLongWords(['cat', 'dog', 'rat']); // false\nhasLongWords(['apple', 'banana', 'cherry']); // true\nhasLongWords(['elephant', 'tiger', 'lion']); // true\n```"
+  },
+  "initialSolution": "function hasLongWords(){\n\n}",
+  "completedSolution": "function hasLongWords(arr) {\n  return arr.some(str => str.length > 5);\n}",
+  "openTest": "it('Created function hasLongWords', () => {\n  expect(hasLongWords).to.be.a('function');\n});\n\nit(\"Function hasLongWords should include some method\", () => {\n  const result = hasLongWords.toString();\n  expect(result).to.include('.some(');\n});\n\nit('hasLongWords([\"apple\", \"banana\", \"cherry\"]) should return true', function() {\n  expect(hasLongWords([\"apple\", \"banana\", \"cherry\"])).to.equal(true);\n});\n\nit('hasLongWords([\"cat\", \"dog\", \"rat\"]) should return false', function() {\n  expect(hasLongWords([\"cat\", \"dog\", \"rat\"])).to.equal(false);\n});\n\nit('hasLongWords([\"elephant\", \"tiger\", \"lion\"]) should return true', function() {\n  expect(hasLongWords([\"elephant\", \"tiger\", \"lion\"])).to.equal(true);\n});\n\nit('hasLongWords([\"a\", \"bb\", \"ccc\"]) should return false', function() {\n  expect(hasLongWords([\"a\", \"bb\", \"ccc\"])).to.equal(false);\n});\n\nit('hasLongWords([\"small\", \"tiny\", \"short\"]) should return false', function() {\n  expect(hasLongWords([\"small\", \"tiny\", \"short\"])).to.equal(false);\n});\n\nit('hasLongWords([\"short\", \"minuscule\", \"brief\"]) should return true', function() {\n  expect(hasLongWords([\"short\", \"minuscule\", \"brief\"])).to.equal(true);\n});\n\nit('hasLongWords([\"\"]) should return false', function() {\n  expect(hasLongWords([\"\"])).to.equal(false);\n});\n\nit('hasLongWords([\"a\", \"ab\", \"abc\", \"abcd\", \"abcde\", \"abcdef\"]) should return true', function() {\n  expect(hasLongWords([\"a\", \"ab\", \"abc\", \"abcd\", \"abcde\", \"abcdef\"])).to.equal(true);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

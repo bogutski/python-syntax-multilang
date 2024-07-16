@@ -1,0 +1,5 @@
+{
+  "name": "Проверка массива на симметричность с использованием методов",
+  "instruction": "Исправьте функцию `isArraySymmetrical`, которая принимает массив с числами и строками.\n\nФункция должна вернуть `true`, если массив симметричный и `false`, если нет.\n\nВ данной задаче были использованы методы `join`, `reverse` и `toLowerCase`.\n\nВ этой задаче 3 ошибки, исправьте их и перепишите код самостоятельно.\n\n\nПримеры запуска функции:\n```javascript\nisArraySymmetrical(['a', 'b', 'c', 'c', 'b', 'a']); // true\nisArraySymmetrical(['A', 'b', 'c', 'b', 'o']);      // false\nisArraySymmetrical(['A', 'a', 'd', 'b']);           // false\nisArraySymmetrical([]);                             // 'Array is empty'\n```",
+  "instructions": {}
+}

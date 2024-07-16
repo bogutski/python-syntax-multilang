@@ -1,0 +1,5 @@
+{
+  "name": "Convert kilometers to miles",
+  "instruction": "Write a function `kmToMile` that takes as its argument the number of kilometers and returns the number of miles.\n\nOne mile has `1.60934` kilometers.\n\nExamples:\n```javascript.\nkmToMile(1); // 0.6213727366498067\nkmToMile(2); // 1.2427454732996135\nkmToMile(3); // 1.8641182099494202\n```",
+  "instructions": {}
+}

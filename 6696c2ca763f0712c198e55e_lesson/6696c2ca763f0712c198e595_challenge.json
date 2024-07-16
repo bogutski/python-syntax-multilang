@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e595",
+  "name": {
+    "en": "Filtering users by email",
+    "ru": "Фильтрация пользователей по электронной почте"
+  },
+  "instruction": {
+    "en": "Write a function `usersFilter`.\n\nThe function accepts an object with the user `user`.\n\nThe `user` object has properties:\n\n* `name` - user name, string;\n* `city` - city, string;\n* `phone` - phone number, string;\n* `email` - email, string. Can be absent.\n\nIf property `email` is present in object `user` and it is not equal to empty string then a function must return `true`, otherwise `false`.\n\nAn example of running the function:\n```javascript\nusersFilter({name: 'Marcus', city: 'Tel Aviv', phone: '5641234567', email: 'marcuscus2@bien.org'}); // true\nusersFilter({name: 'Lola', city: 'Paris', phone: '123456-7890', email: ''}); // false\nusersFilter({name: 'Garry', city: 'San Francisco', phone: '987-654-3210'}); // false\n```",
+    "ru": "Напишите функцию `usersFilter`.\n\nФункция принимает объект с пользователем `user`.\n\nОбъект `user` имеет свойства:\n\n* `name` - имя пользователя, строка;\n* `city` - город, строка;\n* `phone` - номер телефона, строка;\n* `email` - электронная почта, строка. Может отсутствовать.\n\nЕсли свойство `email` присутствует в объекте `user` и оно не  равно пустой строке, то  функция должна вернуть `true`, иначе `false`.\n\nПример запуска функции:\n```javascript\nusersFilter({name: 'Marcus', city: 'Tel Aviv', phone: '5641234567', email: 'marcuscus2@bien.org'}); // true\nusersFilter({name: 'Lola', city: 'Paris', phone: '123456-7890', email: ''}); // false\nusersFilter({name: 'Garry', city: 'San Francisco', phone: '987-654-3210'}); // false\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function usersFilter(user) {\n  return user.hasOwnProperty('email') && user['email'] !== '';\n}",
+  "openTest": "it('Created function `usersFilter`', () => {\n  expect(usersFilter).be.a('function');\n});\n\nit(\"usersFilter({name: 'John', city: 'London', phone: '312-443-8945'}) should return false\", () => {\n  expect(\n    usersFilter({\n      name: 'John',\n      city: 'London',\n      phone: '312-443-8945',\n    }),\n  ).eq(false);\n});\n\nit(\"usersFilter({name: 'Mary', city: 'Sidney', phone: '745-1550301', email: 'simply-maria@qmail.com'}) should return true\", () => {\n  expect(\n    usersFilter({\n      name: 'Mary',\n      city: 'Sidney',\n      phone: '745-1550301',\n      email: 'simply-maria@qmail.com',\n    }),\n  ).eq(true);\n});\n\nit(\"usersFilter({name: 'Samantha', city: 'Santa Barbara', phone: '987-214-4973', email: ''}) should return false\", () => {\n  expect(\n    usersFilter({\n      name: 'Samantha',\n      city: 'Santa Barbara',\n      phone: '987-214-4973',\n      email: '',\n    }),\n  ).eq(false);\n});\n\nit(\"usersFilter({name: 'Boris', city: 'REYKJAVIK', phone: '546-187-5926'}) should return false\", () => {\n  expect(\n    usersFilter({\n      name: 'Boris',\n      city: 'REYKJAVIK',\n      phone: '546-187-5926',\n    }),\n  ).eq(false);\n});\n\nit(\"usersFilter({name: 'Robert', city: 'Oakland', phone: '7639148577', email: 'ironman@dotnet.com'}) should return true\", () => {\n  expect(\n    usersFilter({\n      name: 'Robert',\n      city: 'Oakland',\n      phone: '7639148577',\n      email: 'ironman@dotnet.com',\n    }),\n  ).eq(true);\n});\n\nit(\"usersFilter({name: 'Veronica', city: 'Tokio', phone: '435-964-0474', email: 'nikki-v@nihao.jp'}) should return true\", () => {\n  expect(\n    usersFilter({\n      name: 'Veronica',\n      city: 'Tokio',\n      phone: '435-964-0474',\n      email: 'nikki-v@nihao.jp',\n    }),\n  ).eq(true);\n});\n\nit(\"usersFilter({name: 'Kumar', city: 'Deli', phone: '554-303-8940', email: ''}) should return false\", () => {\n  expect(\n    usersFilter({\n      name: 'Kumar',\n      city: 'Deli',\n      phone: '554-303-8940',\n      email: '',\n    }),\n  ).eq(false);\n});\n\nit(\"usersFilter({name: 'Bilbo', city: 'Shire', phone: '777-777-7777'}) should return false\", () => {\n  expect(\n    usersFilter({\n      name: 'Bilbo',\n      city: 'Shire',\n      phone: '777-777-7777',\n    }),\n  ).eq(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

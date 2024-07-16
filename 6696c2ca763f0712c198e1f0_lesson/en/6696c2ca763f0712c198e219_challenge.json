@@ -1,0 +1,4 @@
+{
+  "name": "Equality and Inequality Comparison",
+  "instruction": "Create a variable named `n1` and give it a value of number 1.\n\nCreate a variable named `n2` and give it the value string '1'.\n\nCreate a variable named `isStrictEqual` and assign to it the result of a comparison (strict equality) of the variable `n1`\nand variable `n2`.\n\nCreate a variable `isEqual` and assign to it the result of a comparison (non-strict equality) of the variable `n1`\nand variable `n2`.\n\nCreate a variable `isStrictNotEqual` and assign to it the result of a comparison (strict inequality) of the variable `n1`\nand variable `n2`.\n\nCreate a variable `isNotEqual` and assign to it the result of a comparison (non-strict inequality) of the variable `n1`\nand variable `n2`."
+}

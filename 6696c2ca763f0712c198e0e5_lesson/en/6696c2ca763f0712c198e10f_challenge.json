@@ -1,0 +1,4 @@
+{
+  "name": "Formula for calculating the time value of money",
+  "instruction": "Money loses its value over time.\n\nFor example, if you get $1,000 today, that money will be worth less in a year than it is today.\n\nThis has to do with inflation. That is, the fact that the prices of goods and services rise over time.\n\nThere is a formula for calculating the time value of money.\n\nThe formula looks like this: `FV = PV * (1 + i / 100) ^ n`, where\nFV is the future value of money,\nPV - current value of money, currentValue\ni - interest rate, interestRate\nn - number of years, years\n\nThe `^ n' in the formula means to a degree.\n\nWrite a function `calculateFutureValue` that takes 3 parameters: `currentValue`, `interestRate` and `years` and returns the future value of money.\n\nExamples:\n```javascript\nwithalculateFutureValue(1000, 10, 1) // 1100\nwithalculateFutureValue(1000, 10, 2) // 1210.0000000000002\nwithalculateFutureValue(1000, 4, 3) // 1061.6"
+}

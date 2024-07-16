@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f5b2",
+  "name": {
+    "en": "/*",
+    "ru": "Сглаживание массива массивов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `flattenArrays`, которая принимает массив массивов и возвращает один массив, содержащий все элементы вложенных массивов.\n\n\nПример запуска функции:\n```javascript\nflattenArrays([[1, 2], [3, 4], [5, 6]]); // [1, 2, 3, 4, 5, 6]\nflattenArrays([['a', 'b'], ['c', 'd'], ['e', 'f']]); // ['a', 'b', 'c', 'd', 'e', 'f']\n```"
+  },
+  "initialSolution": "function flattenArrays(){\n\n}",
+  "completedSolution": "function flattenArrays(arr) {\n  return arr.flatMap(array => array);\n}",
+  "openTest": "it('Created function flattenArrays', () => {\n  expect(flattenArrays).to.be.a('function');\n});\n\nit('Function flattenArrays should include method flatMap()', () => {\n  const res = flattenArrays.toString()\n  expect(res).to.include('.flatMap(')\n});\n\nit('should flatten an array of integer arrays', () => {\n  expect(flattenArrays([[1, 2], [3, 4], [5, 6]])).to.deep.equal([1, 2, 3, 4, 5, 6]);\n});\n\nit('should flatten an array of string arrays', () => {\n  expect(flattenArrays([['a', 'b'], ['c', 'd'], ['e', 'f']])).to.deep.equal(['a', 'b', 'c', 'd', 'e', 'f']);\n});\n\nit('should return an empty array if the input is an empty array', () => {\n  expect(flattenArrays([])).to.deep.equal([]);\n});\n\nit('should handle arrays with different lengths', () => {\n  expect(flattenArrays([[1, 2], [3], [4, 5, 6]])).to.deep.equal([1, 2, 3, 4, 5, 6]);\n});\n\nit('should return an empty array if all nested arrays are empty', () => {\n  expect(flattenArrays([[], [], []])).to.deep.equal([]);\n});\n\nit('should handle arrays containing empty arrays', () => {\n  expect(flattenArrays([[1, 2], [], [3, 4]])).to.deep.equal([1, 2, 3, 4]);\n});\n\nit('should handle nested empty arrays within non-empty arrays', () => {\n  expect(flattenArrays([[], [1, 2], [], [3, 4], []])).to.deep.equal([1, 2, 3, 4]);\n});\n\nit('should handle single-element arrays', () => {\n  expect(flattenArrays([[1], [2], [3], [4], [5]])).to.deep.equal([1, 2, 3, 4, 5]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

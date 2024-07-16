@@ -1,0 +1,200 @@
+{
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198dd22",
+      "name": {
+        "ru": "Null – это специальный тип данных, который имеет смысл \"ничего\" или \"значение неизвестно\".",
+        "en": "Null is a special data type that has the meaning of \"nothing\" or \"value unknown\".",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dd23",
+          "name": {
+            "ru": "это утверждение верно",
+            "en": "this statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dd24",
+          "name": {
+            "ru": "неверно",
+            "en": "this statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dd25",
+      "name": {
+        "ru": "Значение null равно == само себе и не равно ничему другому.",
+        "en": "The value null equals == itself and is not equal to anything else.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dd26",
+          "name": {
+            "ru": "это утверждение верно",
+            "en": "this statement is true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dd27",
+          "name": {
+            "ru": "неверно",
+            "en": "this statement is false",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dd28",
+      "name": {
+        "ru": "Чему равен ниже приведенный пример?",
+        "en": "What does the example below equal?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nnull + 1 = ?\n```",
+        "en": "```javascript\nnull + 1 = ?\n```",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dd29",
+          "name": {
+            "ru": "null",
+            "en": "null",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dd2a",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dd2b",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dd2c",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dd2d",
+      "name": {
+        "ru": "Какой результат даст пример ниже?",
+        "en": "What is the result of the example below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconsole.log(null == undefined);\n```",
+        "en": "```javascript\nconsole.log(null == undefined);\n```",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dd2e",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dd2f",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dd30",
+      "name": {
+        "ru": "Какой результат даст пример ниже?",
+        "en": "What is the result of the example below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconsole.log(null === undefined);\n```",
+        "en": "```javascript\nconsole.log(null === undefined);\n```",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dd31",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dd32",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": false,
+  "_id": "6696c2ca763f0712c198dd21",
+  "description": {
+    "ru": "",
+    "en": "",
+    "es": ""
+  },
+  "name": {
+    "ru": "JS Syntax. Тип \"Null\"",
+    "en": "JS Syntax. Type \"Null\"",
+    "es": ""
+  }
+}

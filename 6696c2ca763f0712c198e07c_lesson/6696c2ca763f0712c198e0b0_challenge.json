@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e0b0",
+  "name": {
+    "en": "Currency exchange office. Exchange margin",
+    "ru": "Пункт обмена валюты. Маржинальность обмена"
+  },
+  "instruction": {
+    "en": "The currency exchange point accepts two parameters:\n* `buyRate` - purchase rate\n* `sellRate` - selling rate\n\nFunction name: `exchangeRateMargin`\n\nWhen exchanging currency, the exchange point must pay a 2% tax on each transaction.\n\nThat is, the final exchange margin is 2% less.\n\nThe function should return the final currency exchange margin in percentage with the tax deducted.\n\nExamples:\n```javascript\nexchangeRateMargin(100, 110); // 7.090909090909092\nexchangeRateMargin(100, 120); // 14.666666666666664\nexchangeRateMargin(100, 130); // 21.076923076923077\nexchangeRateMargin(50, 70); // 26.57142857142857\n```\n\nUse the formula to calculate:\n`(sellRate - buyRate) / sellRate * 100 - 2`",
+    "ru": "Пункт обмена валюты принимает два параметра:\n* `buyRate` – курс покупки\n* `sellRate` – курс продажи\n\nНазвание функции: `exchangeRateMargin`\n\nПри обмене валюты, пункт обмена должен платить налог 2% с каждой сделки.\n\nТо есть итоговая маржинальность обмена на 2% меньше.\n\nФункция должна возвращать итоговую маржинальность обмена валюты в процентах с вычетом налога.\n\nПримеры:\n```javascript\nexchangeRateMargin(100, 110); // 8.90909090909091\nexchangeRateMargin(100, 120); // 16.333333333333332\nexchangeRateMargin(100, 130); // 22.615384615384617\nexchangeRateMargin(50, 70);   // 28\n```\n\nДля расчета используйте формулу:\n`(sellRate - buyRate) / sellRate * (100 - 2)`"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function exchangeRateMargin(buyRate, sellRate) {\n  return (sellRate - buyRate) / sellRate * (100 - 2);\n}",
+  "openTest": "it('Created function exchangeRateMargin', () => {\n  expect(exchangeRateMargin).to.be.a('function');\n});\n\nit('exchangeRateMargin(100, 110) should return 8.90909090909091', () => {\n  expect(exchangeRateMargin(100, 110)).to.be.equal(8.90909090909091);\n});\n\nit('exchangeRateMargin(100, 120) should return 16.333333333333332', () => {\n  expect(exchangeRateMargin(100, 120)).to.be.equal(16.333333333333332);\n});\n\nit('exchangeRateMargin(100, 130) should return 22.615384615384617', () => {\n  expect(exchangeRateMargin(100, 130)).to.be.equal(22.615384615384617);\n});\n\nit('exchangeRateMargin(50, 70) should return 28', () => {\n  expect(exchangeRateMargin(50, 70)).to.be.equal(28);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

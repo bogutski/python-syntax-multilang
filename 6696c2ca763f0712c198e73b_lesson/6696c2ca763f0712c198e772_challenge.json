@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e772",
+  "name": {
+    "en": "The sequence number of an element. Arrays",
+    "ru": "Порядковый номер элемента. Массивы"
+  },
+  "instruction": {
+    "en": "The elementNumber function must accept two parameters:\n* arr - string array\n* str - string\n\nBring the string `str` to lowercase and remove all spaces.\n\nYou need to determine whether the given string is contained in the array and return its sequence number of the element. The sequence number is not equal to the element index.\n\nIf the string is not contained in the array, return the string 'Not found'.\n\n```javascript\nelementNumber(['one', 'two', 'three'], 'Two'); // 2\nelementNumber(['one', 'two', 'three'], ' four'); // 'Not found'\n```",
+    "ru": "Функция `elementNumber` должна принимать два параметра:\n* `arr` - массив строк\n* `str` - строка\n\nСтроку `str` привезти к нижнему регистру и удалить все пробелы.\n\nНеобходимо определить содержится ли данная строка в массиве и вернуть ее порядковый номер элемента. Порядковый номер не равен индексу элемента.\n\nЕсли строка не содержится в массиве, то вернуть строку `Not found`.\n\n```javascript\nelementNumber(['one', 'two', 'three'], 'Two'); // 2\nelementNumber(['one', 'two', 'three'], '  four'); // 'Not found'\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function elementNumber(arr, str) {\n    str = str.trim().toLowerCase();\n    if (arr.includes(str)) {\n        return arr.indexOf(str) + 1;\n    }\n    return 'Not found';\n}",
+  "openTest": "it('Created function elementNumber', () => {\n    expect(elementNumber).to.be.a('function');\n});\n\nit(`elementNumber(['one', 'two', 'three'], 'Two') should return 2`, () => {\n    expect(elementNumber(['one', 'two', 'three'], 'Two')).eql(2);\n});\n\nit(`elementNumber(['bedroom', 'living room', 'kitchen'], 'Living Room ') should return 2`, () => {\n    expect(elementNumber(['bedroom', 'living room', 'kitchen'], 'Living Room ')).eql(2);\n});\n\nit(`elementNumber(['bedroom', 'living room', 'kitchen'], 'bedroom') should return 1`, () => {\n    expect(elementNumber(['bedroom', 'living room', 'kitchen'], 'bedroom')).eql(1);\n});\n\nit(`elementNumber(['dog', 'rabbit', 'cat'], 'horse') should return \"Not found\"`, () => {\n    expect(elementNumber(['dog', 'rabbit', 'cat'], 'horse')).eql('Not found');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

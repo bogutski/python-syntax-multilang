@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ea7a",
+  "name": {
+    "en": "The sum of positive numbers from n1 to n2",
+    "ru": "Сумма положительных чисел от n1 до n2"
+  },
+  "instruction": {
+    "en": "Write a function `sumOfPositive` that takes two numbers `n1` and `n2` and returns the sum of all positive numbers from `n1` to `n2` inclusive.\n\n`n1` is always less than or equal to `n2`.\n\nExamples of running the function:\n```javascript\nsumOfPositive(1, 10) // 55\nsumOfPositive(-15, 15) // 120\nsumOfPositive(0, 0) // 0\n```",
+    "ru": "Напишите функцию `sumOfPositive`, которая принимает два числа `n1` и `n2` и возвращает сумму всех положительных чисел от `n1` до `n2` включительно.\n\n`n1` всегда меньше или равно `n2`.\n\nПримеры запуска функции:\n```javascript\nsumOfPositive(1, 10) // 55\nsumOfPositive(-15, 15) // 120\nsumOfPositive(0, 0) // 0\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sumOfPositive(n1, n2) {\n  if(n2 <= 0) return 0;\n  if(n1 < 0) n1 = 1;\n  let sum = 0;\n  for (let i = n1; i <= n2; i++) {\n    sum += i;\n  }\n  return sum;\n}",
+  "openTest": "it('Created function sumOfPositive', () => {\n  expect(sumOfPositive).to.be.a('function');\n});\n\nit('sumOfPositive(1, 10) should return 55', () => {\n  expect(sumOfPositive(1, 10)).to.equal(55);\n});\n\nit('sumOfPositive(-15, 15) should return 120', () => {\n  expect(sumOfPositive(-15, 15)).to.equal(120);\n});\n\nit('sumOfPositive(0, 0) should return 0', () => {\n  expect(sumOfPositive(0, 0)).to.equal(0);\n});\n\nit('sumOfPositive(-50, -31) should return 0', () => {\n  expect(sumOfPositive(-50, -31)).to.equal(0);\n});\n\nit('sumOfPositive(8000, 8044) should return 360990', () => {\n  expect(sumOfPositive(8000, 8044)).to.equal(360990);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

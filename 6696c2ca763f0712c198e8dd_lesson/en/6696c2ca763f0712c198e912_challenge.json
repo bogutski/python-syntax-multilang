@@ -1,0 +1,4 @@
+{
+  "name": "Checking an array for a string",
+  "instruction": "Write a function `isString` that takes an array and returns:\n\n * true if the array has at least one element of type `string`,\n * false if there are no strings in the array.\n\nAn example of running the function:\n```javascript\nisString([1,2,3,4,5,'6',7,8,9,10]) // true\nisString([10,20,30,40,50]) // false\n```"
+}

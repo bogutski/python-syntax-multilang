@@ -1,0 +1,4 @@
+{
+  "name": "The function multiplies the sum by 3 if the numbers are not equal",
+  "instruction": "Write a function `sumTriple` that takes two arguments a and b (numbers).\nIn the body of the function, determine whether the two arguments are equal.\nIf they are not equal, return triple their sum; if they are equal, return their sum.\n\nExamples:\n- The `sumTriple(2, 6)` function should return 24, since the numbers are not equal, and so return the tripled sum of 3 * (2 + 6);\n- The function `sumTriple(2, 2)` should return 4, since the numbers are equal, so just the sum of 2 + 2 is returned."
+}

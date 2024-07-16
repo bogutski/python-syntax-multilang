@@ -1,0 +1,6 @@
+{
+  "name": "Сравните undefined и null",
+  "instruction": "Обычно `undefined` используется для проверок, была ли переменная назначена.\nСпециальное значение `null` означает «ничего», «пусто» или «значение намеренно отсутствует».\n\nСоздайте переменную с именем `home` и присвойте ей значение `undefined`.\nСоздайте переменную с именем `money` и присвойте ей значение `null`.\nСоздайте переменную с именем `isNullEqualsUndefined` и присвойте ей результат строгого равенства переменных `home` и `money`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet salary = undefined;\nlet job = null;\nlet comparison = salary === job;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet home = undefined;\nlet money = null;\nconst isNullEqualsUndefined = home === money;\n```"
+}

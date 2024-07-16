@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f28a",
+  "name": {
+    "en": "Checking array element types",
+    "ru": "Проверка типов элементов массива"
+  },
+  "instruction": {
+    "en": "Write a `areAllElTypesTheSame` function that accepts an array with elements of the same and/or different data types.\n\nThe function should return `true` if all elements of the array have the same data type, and `false` if different.\n\nIf the array is empty, return the string `'Array is empty'`.\n\n\nExamples of how to run the function:\n```javascript\nareAllElTypesTheSame([1, 2, 3]); // true\nareAllElTypesTheSame(['3', '4', '5']); // true\nareAllElTypesTheSame(['2', 3, '4', 5]); // false\nareAllElTypesTheSame([undefined, false, null]); // false\nareAllElTypesTheSame([]); // 'Array is empty'\n```",
+    "ru": "Напишите функцию `areAllElTypesTheSame`, которая принимает массив с элементами одного и/или разных типов данных.\n\nФункция должна вернуть `true`, если все элементы массива имеют один и тот же тип данных, и `false` - если разные.\n\nЕсли массив пустой, то вернуть строку `'Array is empty'`.\n\n\nПримеры запуска функции:\n```javascript\nareAllElTypesTheSame([1, 2, 3]);                // true\nareAllElTypesTheSame(['3', '4', '5']);          // true\nareAllElTypesTheSame(['2', 3, '4', 5]);         // false\nareAllElTypesTheSame([undefined, false, null]); // false\nareAllElTypesTheSame([]);                       // 'Array is empty'\n```"
+  },
+  "initialSolution": "function areAllElTypesTheSame(arr)",
+  "completedSolution": "function areAllElTypesTheSame(arr){\n  if(!arr.length) return 'Array is empty';\n  const typeOfFirstEl= typeof arr[0]\n  for(let i = 1; i < arr.length; i++){\n    if(typeof arr[i] !== typeOfFirstEl) return false;\n  }\n  return true;\n}",
+  "openTest": "it('Created function areAllElTypesTheSame', () => {\n  expect(areAllElTypesTheSame).to.be.a('function');\n});\n\nit(\"areAllElTypesTheSame([1, 2, 3, 4, 5]) should return true\", () => {\n  expect(areAllElTypesTheSame([1, 2, 3, 4, 5])).to.be.true;\n});\n\nit(\"areAllElTypesTheSame(['1', '2', '3', '4', '5']) should return true\", () => {\n  expect(areAllElTypesTheSame(['1', '2', '3', '4', '5'])).to.be.true;\n});\n\nit(\"areAllElTypesTheSame([1, '2', 3, '4', 5]) should return false\", () => {\n  expect(areAllElTypesTheSame([1, '2', 3, '4', 5])).to.be.false;\n});\n\nit(\"areAllElTypesTheSame([NaN, 1, 2, 3]) should return true\", () => {\n  expect(areAllElTypesTheSame([NaN, 1, 2, 3])).to.be.true;\n});\n\nit(\"areAllElTypesTheSame([undefined, 25, true, 'string']) should return false\", () => {\n  expect(areAllElTypesTheSame([undefined, 25, true, 'string'])).to.be.false;\n});\n\nit(\"areAllElTypesTheSame([null, null, null, 'null']) should return false\", () => {\n  expect(areAllElTypesTheSame([null, null, null, 'null'])).to.be.false;\n});\n\nit(\"areAllElTypesTheSame([]) should return 'Array is empty'\", () => {\n  expect(areAllElTypesTheSame([])).to.be.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

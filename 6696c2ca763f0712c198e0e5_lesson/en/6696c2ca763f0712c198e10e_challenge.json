@@ -1,0 +1,4 @@
+{
+  "name": "Calculate cylinder volume",
+  "instruction": "Create a function `PI` that returns the number 3.14.\n\nCreate a function `powerOfTwo` that takes a number and returns the square of that number.\n\nCreate a function `cylinderVolume` that takes two numbers: the radius and the height of a cylinder.\n\nThe function should return the volume of the cylinder, calculated using the formula: `PI() * powerOfTwo(r) * h`, where\n\n`PI()` is the function which returns the number 3.14,\n`powerOfTwo(r)` is a function which returns the square of the number `r`,\n`h` is the height of the cylinder."
+}

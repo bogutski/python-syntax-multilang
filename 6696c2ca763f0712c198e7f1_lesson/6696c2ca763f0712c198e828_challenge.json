@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e828",
+  "name": {
+    "en": "If there is an element, double it",
+    "ru": "Если есть элемент - удвоить его"
+  },
+  "instruction": {
+    "en": "The `findAndDouble` function takes three arrays and the number `number`.\n\nIf the number `number` is in the array, double it.\n\nIf the number `number` occurs more than once, double only the first occurrence.\n\nIf the number `number` does not occur, add its doubled value to the end of the array.\n\nThese conditions apply to all three arrays.\n\nReturn the array of three arrays.\n\nExamples of running a function:\n```javascript\nfindAndDouble([1, 2, 3], [2, 5, 1], [7, 8, 9], 2) // [[1, 4, 3], [4, 5, 1], [7, 8, 9, 4]]\nfindAndDouble([1, 2, 1], [0, 2, 0], [1, 2, 3], 1) // [[2, 2, 1], [0, 2, 0, 2], [2, 2, 3]]\n```",
+    "ru": "Функция `findAndDouble` принимает три массива и число `number`.\n\nЕсли число `number` есть в массиве, то удвойте его.\n\nЕсли число `number` встречается несколько раз, то удвойте только первое вхождение.\n\nЕсли число `number` не встречается, то добавьте его удвоенное значение в конец массива.\n\nЭти условия относятся ко всем трем массивам.\n\nВерните массив из трех массивов.\n\nПримеры запуска функции:\n```javascript\nfindAndDouble([1, 2, 3], [2, 5, 1], [7, 8, 9], 2) // [[1, 4, 3], [4, 5, 1], [7, 8, 9, 4]]\nfindAndDouble([1, 2, 1], [0, 2, 0], [1, 2, 3], 1) // [[2, 2, 1], [0, 2, 0, 2], [2, 2, 3]]\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function findAndDouble(arr1, arr2, arr3, num) {\n\n  if (arr1.includes(num)) {\n    arr1.splice(arr1.indexOf(num), 1, num * 2)\n  } else {\n    arr1.push(num * 2)\n  }\n  if (arr2.includes(num)) {\n    arr2.splice(arr2.indexOf(num), 1, num * 2)\n  } else {\n    arr2.push(num * 2)\n  }\n  if (arr3.includes(num)) {\n    arr3.splice(arr3.indexOf(num), 1, num * 2)\n  } else {\n    arr3.push(num * 2)\n  }\n  return [arr1, arr2, arr3]\n\n}",
+  "openTest": "it('Created function findAndDouble', () => {\n  expect(findAndDouble).to.be.a('function');\n});\n\nit('findAndDouble([1, 2, 3], [2, 5, 1], [7, 8, 9], 2) should return [[1, 4, 3], [4, 5, 1], [7, 8, 9, 4]]', () => {\n  expect(findAndDouble([1, 2, 3], [2, 5, 1], [7, 8, 9], 2)).to.eql([[1, 4, 3], [4, 5, 1], [7, 8, 9, 4]]);\n});\n\nit('findAndDouble([1, 2, 1], [0, 2, 0], [1, 2, 3], 1) should return [[2, 2, 1], [0, 2, 0, 2], [2, 2, 3]]', () => {\n  expect(findAndDouble([1, 2, 1], [0, 2, 0], [1, 2, 3], 1)).to.eql([[2, 2, 1], [0, 2, 0, 2], [2, 2, 3]]);\n});\n\nit('findAndDouble([1, 2, 3], [2, 5, 1], [7, 8, 9], 5) should return [[1, 2, 3, 10], [2, 10, 1], [7, 8, 9, 10]]', () => {\n  expect(findAndDouble([1, 2, 3], [2, 5, 1], [7, 8, 9], 5)).to.eql([[1, 2, 3, 10], [2, 10, 1], [7, 8, 9, 10]]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

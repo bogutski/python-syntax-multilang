@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2cb763f0712c198f449",
+  "name": {
+    "ru": "Array.prototype.map() – преобразует каждый элемент массива по условию",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f44a",
+      "name": {
+        "ru": "Что делает метод map()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f44b",
+          "name": {
+            "ru": "Изменяет исходный массив",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f44c",
+          "name": {
+            "ru": "Создаёт новый массив на основе результатов вызова функции для каждого элемента",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f44d",
+          "name": {
+            "ru": "Удаляет элементы из массива, которые не соответствуют условию",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f44e",
+          "name": {
+            "ru": " Ничего не делает с массивом, просто возвращает его копию",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f44f",
+      "name": {
+        "ru": "Может ли метод map() изменять исходный массив?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f450",
+          "name": {
+            "ru": "Да",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f451",
+          "name": {
+            "ru": "Нет",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f452",
+          "name": {
+            "ru": "Только если ему передан второй аргумент",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f453",
+          "name": {
+            "ru": "Только в строгом режиме JavaScript",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f454",
+      "name": {
+        "ru": "Какой из следующих кодов правильно удваивает каждый элемент массива?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f455",
+          "name": {
+            "ru": "```javascript\nconst doubled = arr.map(n => n * 2);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f456",
+          "name": {
+            "ru": "```javascript\nconst doubled = arr.map(n => {n * 2});\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f457",
+          "name": {
+            "ru": "```javascript\nconst doubled = arr.map(n => return n * 2);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f458",
+          "name": {
+            "ru": "```javascript\nconst doubled = arr.forEach(n => n * 2);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f459",
+      "name": {
+        "ru": "Какие аргументы принимает функция обратного вызова, передаваемая в метод map()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f45a",
+          "name": {
+            "ru": "Только текущий элемент",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f45b",
+          "name": {
+            "ru": "Текущий элемент и его индекс",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f45c",
+          "name": {
+            "ru": "Текущий элемент, его индекс и исходный массив",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f45d",
+          "name": {
+            "ru": "Текущий элемент и исходный массив",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f45e",
+      "name": {
+        "ru": "Можно ли использовать thisArg в методе map()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f45f",
+          "name": {
+            "ru": "Да, для указания контекста this функции обратного вызова",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f460",
+          "name": {
+            "ru": "Нет, это не поддерживается в map()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f461",
+          "name": {
+            "ru": "Да, но только в стрелочных функциях",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f462",
+          "name": {
+            "ru": "Да, если функция обратного вызова определена внутри объекта",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f463",
+      "name": {
+        "ru": "Какой из этих вариантов правильно добавляет индекс к каждому элементу массива?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f464",
+          "name": {
+            "ru": "```javascript\nconst withIndex = arr.map((index, el) => el + ': ' + index);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f465",
+          "name": {
+            "ru": "```javascript\nconst withIndex = arr.map((el) => el + ': ' + this.index);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f466",
+          "name": {
+            "ru": "```javascript\nconst withIndex = arr.map(index => el + ': ' + index);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f467",
+          "name": {
+            "ru": "```javascript\nconst withIndex = arr.map((el, index) => el + ': ' + index);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f468",
+      "name": {
+        "ru": "Может ли map() работать с массивами разных типов данных?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f469",
+          "name": {
+            "ru": "Да, без ограничений",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f46a",
+          "name": {
+            "ru": "Нет, только с числовыми массивами",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f46b",
+          "name": {
+            "ru": "Да, но результатом всегда будет массив строк",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f46c",
+          "name": {
+            "ru": "Нет, только с массивами строк",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f46d",
+      "name": {
+        "ru": "Что произойдет, если функция обратного вызова в map() не возвращает значение?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f46e",
+          "name": {
+            "ru": "Все элементы в новом массиве будут null",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f46f",
+          "name": {
+            "ru": "Исходный массив будет возвращён без изменений",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f470",
+          "name": {
+            "ru": "В новом массиве будет undefined для каждого элемента",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f471",
+          "name": {
+            "ru": "Произойдёт ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f472",
+      "name": {
+        "ru": "Какой из следующих кодов правильно преобразует массив строк в массив длин этих строк?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f473",
+          "name": {
+            "ru": "```javascript\nconst lengths = strings.map(string => string.length());\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f474",
+          "name": {
+            "ru": "```javascript\nconst lengths = strings.map(string => length(string));\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f475",
+          "name": {
+            "ru": "```javascript\nconst lengths = strings.map(string => string.length);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f476",
+          "name": {
+            "ru": "```javascript\nconst lengths = strings.forEach(string => string.length);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f477",
+      "name": {
+        "ru": "Можно ли использовать map() для удаления некоторых элементов из массива?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f478",
+          "name": {
+            "ru": "Да, удаляя элементы, которые не соответствуют условиям",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f479",
+          "name": {
+            "ru": "Да, но это приведет к появлению undefined в новом массиве",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f47a",
+          "name": {
+            "ru": "Нет, для удаления элементов следует использовать filter()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f47b",
+          "name": {
+            "ru": "Нет, map() преобразует каждый элемент и не может удалять элементы",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

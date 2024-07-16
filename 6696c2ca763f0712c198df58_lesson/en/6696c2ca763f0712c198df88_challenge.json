@@ -1,0 +1,5 @@
+{
+  "name": "The arithmetic mean of the three numbers",
+  "instruction": "Create a function `average` that finds the arithmetic mean of the three numbers `n1`, `n2` and `n3` that are\nits parameters.",
+  "instructions": {}
+}

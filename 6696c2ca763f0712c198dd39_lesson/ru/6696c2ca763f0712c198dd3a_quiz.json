@@ -1,0 +1,177 @@
+{
+  "questions": {
+    "0": {
+      "name": "Выберите переменные которые содержат тип данных `string`",
+      "variants": {
+        "0": {
+          "name": "const a = '1';"
+        },
+        "1": {
+          "name": "const b = \"number\";"
+        },
+        "2": {
+          "name": "const _ = 'null';"
+        },
+        "3": {
+          "name": "const  c = 'NaN';"
+        },
+        "4": {
+          "name": "const what = 2 + '2';"
+        },
+        "5": {
+          "name": "const realString = undefined;"
+        }
+      }
+    },
+    "1": {
+      "name": "Выберите переменные которые содержат тип данных `number`",
+      "variants": {
+        "0": {
+          "name": "const num = 1;"
+        },
+        "1": {
+          "name": "const notANumber = NaN;"
+        },
+        "2": {
+          "name": "const i = Infinity;"
+        },
+        "3": {
+          "name": "const trueNumber = '1000';"
+        }
+      }
+    },
+    "2": {
+      "name": "Логический тип данных Boolean предполагает только 2 возможных состояния",
+      "variants": {
+        "0": {
+          "name": "Утверждение верно"
+        },
+        "1": {
+          "name": "Утверждение неверно"
+        }
+      }
+    },
+    "3": {
+      "name": "null – это тип данных в JS",
+      "variants": {
+        "0": {
+          "name": "Да"
+        },
+        "1": {
+          "name": "Нет"
+        }
+      }
+    },
+    "4": {
+      "name": "undefined – это тип данных в JS",
+      "variants": {
+        "0": {
+          "name": "Да"
+        },
+        "1": {
+          "name": "Нет"
+        }
+      }
+    },
+    "5": {
+      "name": "При проверке с помощью оператора `typeof` null определяется как",
+      "variants": {
+        "0": {
+          "name": "null"
+        },
+        "1": {
+          "name": "undefined"
+        },
+        "2": {
+          "name": "object"
+        },
+        "3": {
+          "name": "number"
+        },
+        "4": {
+          "name": "typeof error"
+        }
+      }
+    },
+    "6": {
+      "name": "Тип данных `null ` может быть только в одном значении – `null`",
+      "variants": {
+        "0": {
+          "name": "Верно"
+        },
+        "1": {
+          "name": "Неверно"
+        }
+      }
+    },
+    "7": {
+      "name": "Что вернет сравнение `null == undefined`",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        }
+      }
+    },
+    "8": {
+      "name": "Что вернет сравнение `null === undefined`",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        }
+      }
+    },
+    "9": {
+      "name": "В JS при создании переменной нужно указать ее тип",
+      "variants": {
+        "0": {
+          "name": "JS динамически-типизированный язык и не нужно указывать тип явно"
+        },
+        "1": {
+          "name": "JS требует указания типа"
+        }
+      }
+    },
+    "10": {
+      "name": "Укажите типы данных в языке Java Script:",
+      "variants": {
+        "0": {
+          "name": "number"
+        },
+        "1": {
+          "name": "bigint"
+        },
+        "2": {
+          "name": "string"
+        },
+        "3": {
+          "name": "null"
+        },
+        "4": {
+          "name": "undefined"
+        },
+        "5": {
+          "name": "boolean"
+        },
+        "6": {
+          "name": "object"
+        },
+        "7": {
+          "name": "symbol"
+        },
+        "8": {
+          "name": "NaN"
+        },
+        "9": {
+          "name": "infinity"
+        }
+      }
+    }
+  },
+  "name": "JS Syntax. Типы данных: 5 из 8-ми"
+}

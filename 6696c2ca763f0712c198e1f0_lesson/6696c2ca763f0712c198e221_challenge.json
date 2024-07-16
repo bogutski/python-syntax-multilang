@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e221",
+  "name": {
+    "en": "Is the number a fractional number",
+    "ru": "Является ли число дробным"
+  },
+  "instruction": {
+    "en": "To check if a number is an integer the `%` (remainder of division) operator is used.\n\nIf the remainder of division by 1 is zero, the number is an integer. If the remainder of division by 1 is not zero, then the number is a fractional number.\n\nExample:\n```javascript\nconsole.log(10 % 1); // 0\nconsole.log(10.5 % 1); // 0.5\n```\n\nCreate a function `isFloat` that takes a single parameter - a number.\n\nThe function should return `true` if the number is fractional, and `false` if not.",
+    "ru": "Для проверки является ли число целым используется оператор `%` (остаток от деления).\n\nЕсли остаток от деления на 1 равен нулю, то число является целым. Если остаток от деления на 1 не равен нулю, то число является дробным.\n\nПример:\n```javascript\nconsole.log(10 % 1); // 0\nconsole.log(10.5 % 1); // 0.5\n```\n\nСоздайте функцию `isFloat`, которая принимает один параметр - число.\n\nФункция должна вернуть `true`, если число является дробным, и `false` если нет."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isFloat(num) {\n  return num % 1 !== 0;\n}",
+  "openTest": "it('Created function isFloat', () => {\n  expect(isFloat).to.be.a('function');\n});\n\nit('isFloat(10) should return false', () => {\n  expect(isFloat(10)).to.be.false;\n});\n\nit('isFloat(10.5) should return true', () => {\n  expect(isFloat(10.5)).to.be.true;\n});\n\nit('isFloat(0) should return false', () => {\n  expect(isFloat(0)).to.be.false;\n});\n\nit('isFloat(-10) should return false', () => {\n  expect(isFloat(-10)).to.be.false;\n});\n\nit('isFloat(-11.5) should return true', () => {\n  expect(isFloat(-11.5)).to.be.true;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

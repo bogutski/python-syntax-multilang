@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e774",
+  "name": {
+    "en": "If an array contains a number and its square?",
+    "ru": "Если в массиве число и его квадрат?"
+  },
+  "instruction": {
+    "en": "The function `searchDouble` takes two parameters:\n* `arr` - array of numbers\n* `number` - number\n\nIt is necessary to determine whether the array contains the number `number` and its square.\n\nIf it contains both numbers, the function should return `true`, otherwise `false`.\n\n```javascript\nsearchDouble([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2); // true\nsearchDouble([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5); // false\n```",
+    "ru": "Функция `searchDouble` принимает два параметра:\n* `arr` - массив чисел\n* `number` - число\n\nНеобходимо определить содержится ли в массиве число `number` и его квадрат.\n\nЕсли содержится оба числа, то функция должна вернуть `true`, иначе `false`.\n\n```javascript\nsearchDouble([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2); // true\nsearchDouble([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5); // false\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function searchDouble(arr, number) {\n    const el1 = arr.indexOf(number);\n    const el2 = arr.indexOf(number ** 2);\n    if (el1 !== -1 && el2 !== -1) {\n        return true;\n    } return false;\n\n\n}",
+  "openTest": "it('Created function searchDouble', () => {\n    expect(searchDouble).to.be.a('function');\n});\n\n\nit(`searchDouble([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2) should return true`, () => {\n    expect(searchDouble([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2)).to.be.true;\n});\n\nit(`searchDouble([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5) should return false`, () => {\n    expect(searchDouble([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5)).to.be.false;\n});\n\nit(`searchDouble([10, 20, 30, 40, 50, 40, 30, 20, 10, 100], 10) should return true`, () => {\n    expect(searchDouble([10, 20, 30, 40, 50, 40, 30, 20, 10, 100], 10)).to.be.true;\n});\n\nit(`searchDouble([10, 20, 30, 40, 50, 40, 30, 20, 10, 100], 100) should return false`, () => {\n    expect(searchDouble([10, 20, 30, 40, 50, 40, 30, 20, 10, 100], 100)).to.be.false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

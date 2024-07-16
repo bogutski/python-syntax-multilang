@@ -1,0 +1,5 @@
+{
+  "name": "Count the number of occurrences of each element in the string",
+  "instruction": "Write a function `countEachEl` that takes 1 parameter, a string.\n\nThe string consists of any number of letters/words in lower or upper case.\n\nThe function should return an object in which the keys are letters from the string and the values are the number of their occurrences in the string.\n\nAn example of running the function is:\n```javascript\ncountEachEl('Anna'); // {A: 1, a: 1, n: 2}\nconsole.log(countEachEl('DEIfied')); // {D: 1, d: 1, E: 1, e: 1, f: 1, I: 1, i: 1}\nconsole.log(countEachEl('')); // {}\ncountEachEl('4 you'); // { : 1, 4: 1, o: 1, u: 1, y: 1}\n```",
+  "instructions": {}
+}

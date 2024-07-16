@@ -1,0 +1,5 @@
+{
+  "name": "Округление до ближайшего следующего четного числа",
+  "instruction": "Напишите функцию `roundToNearestEven`, которая принимает одно число и возвращает это число, округленное до ближайшего четного числа.\n\nЧисла могут быть целыми или дробными.\n\nПосмотрите примеры, чтобы понять, как должна работать функция.\n```javascript\nroundToNearestEven(0) // 0\nroundToNearestEven(0.1) // 2\n\nroundToNearestEven(1) // 2\nroundToNearestEven(1.1) // 2\n\nroundToNearestEven(2) // 2\nroundToNearestEven(2.1) // 4\n\nroundToNearestEven(3) // 4\nroundToNearestEven(3.1) // 4\n\nroundToNearestEven(4) // 4\nroundToNearestEven(4.1) // 6",
+  "instructions": {}
+}

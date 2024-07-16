@@ -1,0 +1,6 @@
+{
+  "name": "The variable with the name of the Oscar winner",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-13.png)\n\nCreate a variable `oscarWinner` with the name of the Oscar winner and assign it the value `'Leonardo Di Caprio'`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst grammyWinner = 'Lady Gaga';\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst oscarWinner = 'Leonardo Di Caprio';\n```"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "How many times does the element occur in the string",
+  "instruction": "Write a function `stringOfOccurrences` that takes a string and an element.\n\nThe function should count the number of occurrences of the element in the string and return another string:\n\nFor example:\n```javascript\nstringOfOccurrences('abcabcabc', 'a')\n```\n* If element `a` occurs in the string 3 times, the function should return the string: ``The element \"a\" occurs in the string 3 times'``.\n* If the element does not occur or no parameter is passed, the function should return a string: `'There is no such element in the string'`\n\nAll elements will be passed in the same case.\n\n\nExamples of running a function:\n```javascript\nstringOfOccurrences('abcabcabc', 'a') // 'The element \"a\" occurs in the string 3 times'\nstringOfOccurrences('apple', 'w') // 'There is no such element in the string'\nstringOfOccurrences('', 'p') // 'There is no such element in the string'\n```"
+}

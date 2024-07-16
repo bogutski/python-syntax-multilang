@@ -1,0 +1,4 @@
+{
+  "name": "The string contains only lower case",
+  "instruction": "Write a function `isAllLower` that takes 1 parameter - a string.\n\nThe function should return `true` if the string contains only lowercase characters, and `false` otherwise.\n\nExamples of running the function:\n```javascript\nisAllLower('abc') // true\nisAllLower('aBc') // false\nisAllLower('abc123') // true\nisAllLower('abc 123') // true\nisAllLower(') // true\n```\n\nTo solve the problem, convert the string to lower case and compare it to the original string.\n\nIf they are equal, then the string contains only lowercase characters."
+}

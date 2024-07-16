@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f824",
+  "name": {
+    "en": "/*",
+    "ru": "Найти последний индекс элемента в массиве объектов по значению свойства"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findLastIndexByProperty`, которая принимает массив объектов (всегда только одно свойство) и значение свойства.\n\nФункция должна вернуть индекс последнего объекта в массиве, у которого значение свойства равно заданному значению.\n\nЕсли такой объект не найден, функция должна вернуть строку `Not found`.\n\n\nПримеры запуска функции:\n```javascript\nfindLastIndexByProperty([{age: 25}, {age: 30}, {age: 35}, {age: 30}], 30); // 3\nfindLastIndexByProperty([{status: 'active'}, {status: 'inactive'}, {status: 'active'}], 'active'); // 2\nfindLastIndexByProperty([{name: 'Alice'}, {name: 'Bob'}, {name: 'Charlie'}, {name: 'Bob'}], 'Bob'); // 3\nfindLastIndexByProperty([{type: 'fruit'}, {type: 'vegetable'}, {type: 'fruit'}], 'meat'); // \"Not found\"\n```"
+  },
+  "initialSolution": "function findLastIndexByProperty(){\n\n}",
+  "completedSolution": "function findLastIndexByProperty(arr, value) {\n  const onlyValues =arr.map(obj => Object.values(obj)).flat()\n  const result = onlyValues.lastIndexOf(value)\n  return result !== -1 ? result : 'Not found';\n}",
+  "openTest": "it('Created function findLastIndexByProperty', () => {\n  expect(findLastIndexByProperty).to.be.a('function');\n});\n\nit('findLastIndexByProperty([{name: \"Alice\"}, {name: \"Bob\"}, {name: \"Charlie\"}, {name: \"Bob\"}], \"Bob\") should return 3', function() {\n  expect(findLastIndexByProperty([{name: \"Alice\"}, {name: \"Bob\"}, {name: \"Charlie\"}, {name: \"Bob\"}], \"Bob\")).to.equal(3);\n});\n\nit('findLastIndexByProperty([{age: 25}, {age: 30}, {age: 35}, {age: 30}], 30) should return 3', function() {\n  expect(findLastIndexByProperty([{age: 25}, {age: 30}, {age: 35}, {age: 30}], 30)).to.equal(3);\n});\n\nit('findLastIndexByProperty([{type: \"fruit\"}, {type: \"vegetable\"}, {type: \"fruit\"}], \"meat\") should return \"Not found\"', function() {\n  expect(findLastIndexByProperty([{type: \"fruit\"}, {type: \"vegetable\"}, {type: \"fruit\"}], \"meat\")).to.equal(\"Not found\");\n});\n\nit('findLastIndexByProperty([{status: \"active\"}, {status: \"inactive\"}, {status: \"active\"}], \"active\") should return 2', function() {\n  expect(findLastIndexByProperty([{status: \"active\"}, {status: \"inactive\"}, {status: \"active\"}], \"active\")).to.equal(2);\n});\n\nit('findLastIndexByProperty([{color: \"red\"}, {color: \"green\"}, {color: \"blue\"}], \"green\") should return 1', function() {\n  expect(findLastIndexByProperty([{color: \"red\"}, {color: \"green\"}, {color: \"blue\"}], \"green\")).to.equal(1);\n});\n\nit('findLastIndexByProperty([{height: 150}, {height: 160}, {height: 150}], 150) should return 2', function() {\n  expect(findLastIndexByProperty([{height: 150}, {height: 160}, {height: 150}], 150)).to.equal(2);\n});\n\nit('findLastIndexByProperty([], \"anything\") should return \"Not found\"', function() {\n  expect(findLastIndexByProperty([], \"anything\")).to.equal(\"Not found\");\n});\n\nit('findLastIndexByProperty([{category: \"A\"}, {category: \"B\"}, {category: \"A\"}], \"A\") should return 2', function() {\n  expect(findLastIndexByProperty([{category: \"A\"}, {category: \"B\"}, {category: \"A\"}], \"A\")).to.equal(2);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

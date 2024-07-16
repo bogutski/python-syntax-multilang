@@ -1,0 +1,4 @@
+{
+  "name": "Delete all rows from the array. The continue method",
+  "instruction": "The `deleteString` function takes an array as a parameter.\n\nThe array can contain numbers and strings.\n\nYou need to remove all elements that are not numbers from the array. Use the `continue` method to skip loop iteration.\n\nThe solution will check for the use of the `continue` method.\n\nThe function should return the updated array.\n\nHint:\nAfter an element is removed from an array, the length of the array is reduced by 1. Therefore it is necessary to decrease the index by 1, so as not to miss an element.\n\nAn example of running a function:\n```javascript\ndeleteString([1, 'a', 'b', 2, 'c', 3]); // [1, 2, 3]\ndeleteString([1, 2, 3, false]); // [1, 2, 3]\n```"
+}

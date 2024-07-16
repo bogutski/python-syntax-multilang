@@ -1,0 +1,5 @@
+{
+  "name": "Список покупок",
+  "instruction": "Нужно написать функцию `shoppingList`, которая принимает массив `items`.\n\nКаждый элемент массива - это строка с названием продукта, который нужно купить.\n\nФункция должна возвращать отформатированную строку со списком продуктов, разделенных символами переноса строки `\\n`.\n\nСтрока должна начинаться с фразы - `Shopping list:`.\n\nПеред каждым элементом списка нужно поставить символ переноса строки `\\n` и дефис `-`.\n\nСтрока \"Shopping list:\\n-milk\\n-eggs\\n-bread\" - это пример отформатированной строки.\n\nОна будет выведена на консоль в следующем виде:\n\n\"Shopping list:\n-milk\n-eggs\n-bread\"\n\nПримеры вызова функции:\n\n```javascript\nshoppingList(['milk', 'eggs', 'bread']); // \"Shopping list:\\n-milk\\n-eggs\\n-bread\"\nshoppingList(['apples']); // \"Shopping list:\\n-apples\"\nshoppingList([]); // \"Shopping list:\"\n```",
+  "instructions": {}
+}

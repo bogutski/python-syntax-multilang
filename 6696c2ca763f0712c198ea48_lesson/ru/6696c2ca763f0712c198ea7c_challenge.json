@@ -1,0 +1,5 @@
+{
+  "name": "Сумма всех чисел, если не встретился ноль",
+  "instruction": "Напишите функцию `allButZero`, которая принимает два числа `n1` и `n2` и возвращает сумму всех чисел между `n1` и\n`n2`, включительно.\n\nЕсли в диапазоне между `n1` и `n2` встретился ноль, то функция должна вернуть строку `'Invalid input'`.\n\nПримеры запуска функции:\n```javascript\nallButZero(1, 5) // 15\nallButZero(-5, 5) // Invalid input\nallButZero(0, 5) // Invalid input\nallButZero(-25, -5) // -315\n```",
+  "instructions": {}
+}

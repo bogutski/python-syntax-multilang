@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f72e",
+  "name": {
+    "en": "/*",
+    "ru": "Поиск уникального целого числа"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findUniqueInteger`, которая принимает массив целых чисел.\n\nФункция должна вернуть первое уникальное целое число из массива, то есть такое число, которое не имеет своего отрицательного эквивалента в массиве.\n\nЕсли такого числа нет, функция должна вернуть `No unique integers`.\n\n\nПример запуска функции:\n```javascript\nfindUniqueInteger([-3, 1, 2, 3, -1, -4, -2]); // Вывод: -4\nfindUniqueInteger([1, -1, 2, -2, 3, 3]); // Вывод: 3\nfindUniqueInteger([5, -5, 8, -8]); // Вывод: \"No unique integers\"\n```"
+  },
+  "initialSolution": "function findUniqueInteger(){\n\n}",
+  "completedSolution": "function findUniqueInteger(numbers) {\n  for(let n of numbers){\n    if(numbers.find(el => el === -n) === undefined) return n\n  }\n\n  return 'No unique integers';\n}",
+  "openTest": "it('Created function findUniqueInteger', () => {\n  expect(findUniqueInteger).to.be.a('function');\n});\n\nit(\"findUniqueInteger([-3, 1, 2, 3, -1, -4, -2]) should return -4\", () => {\n  expect(findUniqueInteger([-3, 1, 2, 3, -1, -4, -2])).to.equal(-4);\n});\n\nit(\"findUniqueInteger([1, -1, 2, -2, 3, 3]) should return 3\", () => {\n  expect(findUniqueInteger([1, -1, 2, -2, 3, 3])).to.equal(3);\n});\n\nit(\"findUniqueInteger([5, -5, 8, -8]) should return 'No unique integers'\", () => {\n  expect(findUniqueInteger([5, -5, 8, -8])).to.equal(\"No unique integers\");\n});\n\nit(\"findUniqueInteger([-1, -2, -3, -4, -5]) should return -1\", () => {\n  expect(findUniqueInteger([-1, -2, -3, -4, -5])).to.equal(-1);\n});\n\nit(\"findUniqueInteger([1, 2, 3, 4, 5]) should return 1\", () => {\n  expect(findUniqueInteger([1, 2, 3, 4, 5])).to.equal(1);\n});\n\nit(\"findUniqueInteger([5, 1, -1, 2, -2, 3, -3, 4, -4]) should return 5\", () => {\n  expect(findUniqueInteger([5, 1, -1, 2, -2, 3, -3, 4, -4])).to.equal(5);\n});\n\nit(\"findUniqueInteger([1, -1, 2, -2, 3, 3, 4, 4, 5, 5]) should return 3\", () => {\n  expect(findUniqueInteger([1, -1, 2, -2, 3, 3, 4, 4, 5, 5])).to.equal(3);\n});\n\nit(\"findUniqueInteger([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]) should return 'No unique integers'\", () => {\n  expect(findUniqueInteger([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])).to.equal('No unique integers');\n});\n\nit(\"findUniqueInteger([1, 2, 3, 4, 5, -1, -2, -3, -4, -5]) should return 'No unique integers'\", () => {\n  expect(findUniqueInteger([1, 2, 3, 4, 5, -1, -2, -3, -4, -5])).to.equal('No unique integers');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

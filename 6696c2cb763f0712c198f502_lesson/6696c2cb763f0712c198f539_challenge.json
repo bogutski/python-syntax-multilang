@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f539",
+  "name": {
+    "en": "/*",
+    "ru": "Заполнение массива альтернативными значениями"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `fillArrayAlternatingValues`, которая принимает три аргумента: размер массива `size`, значение для четных индексов `evenValue`, и значение для нечетных индексов `oddValue`.\n\nФункция должна создать и вернуть массив размером `size`, где каждый элемент с четным индексом заполнен значением `evenValue`, а с нечетным индексом — `oddValue`, используя метод `Array.prototype.fill()` и `Array.prototype.map()`.\n\n\nПримеры запуска функции:\n```javascript\nfillArrayAlternatingValues(5, 'even', 'odd'); // ['even', 'odd', 'even', 'odd', 'even']\nfillArrayAlternatingValues(4, 0, 1); // [0, 1, 0, 1]\nfillArrayAlternatingValues(3, true, false); // [true, false, true]\n```"
+  },
+  "initialSolution": "function fillArrayAlternatingValues(){\n\n}",
+  "completedSolution": "function fillArrayAlternatingValues(size, even, odd) {\n  return new Array(size).fill(null).map((_, index) => index % 2 ? odd : even);\n}",
+  "openTest": "it('Created function fillArrayAlternatingValues', () => {\n  expect(fillArrayAlternatingValues).to.be.a('function');\n});\n\nit('Function fillArrayAlternatingValues should include method map()', () => {\n  const res = fillArrayAlternatingValues.toString()\n  expect(res).to.include('.map(')\n});\n\nit(\"fillArrayAlternatingValues(5, 'even', 'odd') should return ['even', 'odd', 'even', 'odd', 'even']\", function() {\n  expect(fillArrayAlternatingValues(5, 'even', 'odd')).to.deep.equal(['even', 'odd', 'even', 'odd', 'even']);\n});\n\nit(\"fillArrayAlternatingValues(4, 0, 1) should return [0, 1, 0, 1]\", function() {\n  expect(fillArrayAlternatingValues(4, 0, 1)).to.deep.equal([0, 1, 0, 1]);\n});\n\nit(\"fillArrayAlternatingValues(3, true, false) should return [true, false, true]\", function() {\n  expect(fillArrayAlternatingValues(3, true, false)).to.deep.equal([true, false, true]);\n});\n\nit(\"fillArrayAlternatingValues(2, 'first', 'second') should return ['first', 'second']\", function() {\n  expect(fillArrayAlternatingValues(2, 'first', 'second')).to.deep.equal(['first', 'second']);\n});\n\nit(\"fillArrayAlternatingValues(1, 'only', 'none') should return ['only']\", function() {\n  expect(fillArrayAlternatingValues(1, 'only', 'none')).to.deep.equal(['only']);\n});\n\nit(\"fillArrayAlternatingValues(0, 'empty', 'void') should return an empty array\", function() {\n  expect(fillArrayAlternatingValues(0, 'empty', 'void')).to.deep.equal([]);\n});\n\nit(\"fillArrayAlternatingValues(6, 2, 3) should return [2, 3, 2, 3, 2, 3]\", function() {\n  expect(fillArrayAlternatingValues(6, 2, 3)).to.deep.equal([2, 3, 2, 3, 2, 3]);\n});\n\nit(\"fillArrayAlternatingValues(7, 'left', 'right') should end with 'left'\", function() {\n  const array = fillArrayAlternatingValues(7, 'left', 'right');\n  expect(array[array.length - 1]).to.equal('left');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

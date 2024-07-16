@@ -1,0 +1,6 @@
+{
+  "name": "Comment out the program line",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-10.png)\n\nComment out the program line.",
+  "instructions": {},
+  "hint": "```javascript\n//console.log('Everything will be fine!');\n```"
+}

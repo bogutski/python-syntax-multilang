@@ -1,0 +1,5 @@
+{
+  "name": "Boolean values",
+  "instruction": "Write a function `allBoolean` that takes an array with elements of one and/or different data types.\n\nThe function should return `true` if all elements of the array are of type `boolean`, otherwise return `false`.\n\nIf the array is empty, return the string `'Array is empty'`.\n\nExamples of function execution:\n```javascript\nallBoolean([1, true, 3, false, 5]); // false\nallBoolean([true, false, true]);    // true\nallBoolean([true, undefined, NaN]); // false\nallBoolean([0 < 5, false, 9 <= 1]); // true\nallBoolean([]);                     // 'Array is empty'\n```",
+  "instructions": {}
+}

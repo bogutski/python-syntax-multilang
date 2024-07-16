@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ee48",
+  "name": {
+    "en": "",
+    "ru": "Добавьте новое слово в строку вместо первого слова"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `addNewWord` принимает два параметра:\n\n* `str` - строка, фраза которую надо изменить\n* `newFirstWord` - строка, новое первое слово\n\nФункция должна вернуть строку, в которой первое слово заменено на новое первое слово `newFirstWord`, при этом предудущее первое слово станет последним.\n\nПервое слово может быть разделено с остальной частью строки пробелом, запятой, вопросительным или восклицательным знаком.\n\nВ строку `str` приходит более двух слов.\n\nПример запуска функции:\n```javascript\naddNewWord(\"Alice? My name is\", \"John\"); // \"John? My name is Alice\"\naddNewWord(\"strong? It makes me\", \"Difficult\"); // \"Difficult? It makes me strong\"\n```\nАлгоритм решения:\n1. создайте переменную `exceptFirstWord` и присваивайте ей значение пустой строки\n2. создайте переменную `firstWord` и присваивайте ей значение пустой строки\n3. создайте цикл, который перебирает все символы строки `str`\n4. пока символ не является пробелом, запятой, вопросительным или восклицательным знаком, то\n5. добавьте значение данного символа к переменной `firstWord`\n6. сделайте цикл, который перебирает все символы строки `str` начиная с индекса, равного длине `firstWord` и\n7. добавьте значение данного символа к переменной `exceptFirstWord`\n8. верните строку, состоящую из `newFirstWord`, `exceptFirstWord` и `firstWord`\n9. Будьте внимательны с пробелами\n\nИспользуйте только циклы для решения этой задачи."
+  },
+  "initialSolution": "function",
+  "completedSolution": "function addNewWord(str, newFirstWord) {\n  let exceptFirstWord = '';\n  let firstWord = '';\n  for (let i = 0; i < str.length; i++) {\n    if (' ,!?'.includes(str[i])===false) {\n      firstWord += str[i]}\n    else break;\n    }\n  for (let j = firstWord.length; j < str.length; j++) {\n      exceptFirstWord += str[j];\n  }\n  return newFirstWord + exceptFirstWord + ' ' + firstWord;\n}",
+  "openTest": "it('Created function addNewWord', () => {\n  expect(addNewWord).to.be.a('function');\n});\n\nit('function addNewWord not includes statement substring', () => {\n  expect(addNewWord.toString().includes('substring')).to.be.equal(false);\n});\n\nit('function addNewWord not includes statement slice', () => {\n  expect(addNewWord.toString().includes('slice')).to.be.equal(false);\n});\n\nit('addNewWord(\"Alice? My name is\", \"John\") returns \"John? My name is Alice\"', () => {\n  expect(addNewWord('Alice? My name is', 'John')).to.be.equal('John? My name is Alice');\n});\n\nit('addNewWord(\"John, my name is\", \"Hello\") returns \"Hello, my name is John\"', () => {\n  expect(addNewWord('John, my name is', 'Hello')).to.be.equal('Hello, my name is John');\n});\n\nit('addNewWord(\"JavaScript? I know\", \"Student\") returns \"Student?, I know JavaScript\"', () => {\n  expect(addNewWord('JavaScript? I know', 'Student')).to.be.equal('Student? I know JavaScript');\n});\n\nit('addNewWord(\"easy will find job very\", \"I\") returns \"I will find job very easy\"', () => {\n  expect(addNewWord('easy will find job very', 'I')).to.be.equal('I will find job very easy');\n});\n\nit('addNewWord(\"strong? It makes me\", \"Difficult\") returns \"Difficult? It makes me strong\"', () => {\n  expect(addNewWord('strong? It makes me', 'Difficult')).to.be.equal('Difficult? It makes me strong');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

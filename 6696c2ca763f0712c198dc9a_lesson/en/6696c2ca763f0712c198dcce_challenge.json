@@ -1,0 +1,6 @@
+{
+  "name": "Output the expression 40 * 100 / 10 to the console",
+  "instruction": "Only one line. Observe spaces and punctuation marks. A semicolon at the end.\n```javascript\nconsole.log(40 * 100 / 10);\n```\n\nMultiplication in JavaScript is denoted by `*`, division by `/`.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log(40 * 100 / 10);\n```"
+}

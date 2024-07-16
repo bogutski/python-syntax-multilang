@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dfc6",
+  "name": {
+    "en": "Day of the week and date",
+    "ru": "День недели и дата"
+  },
+  "instruction": {
+    "en": "Create a function `getDayOfWeek` that takes 2 parameters: day `day` and date `date` as a string, for example `'01.01.2018'`.\n\nThe function should return a string like `'Today is Monday, 01.01.2018'`.\n\nSet the parameters to the default values as an empty string.",
+    "ru": "Создайте функцию `getDayOfWeek`, которая принимает 2 параметра: день недели `day` и дату `date` в виде строки, например `'01.01.2018'`.\n\nФункция должна вернуть строку вида `'Today is Monday, 01.01.2018'`.\n\nЗадайте параметрам значения по умолчанию в виде пустой строки."
+  },
+  "initialSolution": "function () {\n  return\n}",
+  "completedSolution": "function getDayOfWeek(day = '', date = '') {\n  return 'Today is ' + day + ', ' + date;\n}",
+  "openTest": "it('Created function getDayOfWeek', () => {\n  expect(getDayOfWeek).to.be.a('function');\n});\n\nit('Function returns correct result for arguments `Monday, 01.01.2018`', () => {\n  expect(getDayOfWeek('Monday', '01.01.2018')).eq('Today is Monday, 01.01.2018');\n});\n\nit('Function returns correct result for arguments `Sunday, 31.12.2017`', () => {\n  expect(getDayOfWeek('Sunday', '31.12.2017')).eq('Today is Sunday, 31.12.2017');\n});\n\nit('Function returns correct result for arguments `Friday, 13.10.2017`', () => {\n  expect(getDayOfWeek('Friday', '13.10.2017')).eq('Today is Friday, 13.10.2017');\n});\n\nit('Function returns correct result for arguments `Wednesday, 31.10.2017`', () => {\n  expect(getDayOfWeek('Wednesday', '31.10.2017')).eq('Today is Wednesday, 31.10.2017');\n});\n\nit('Function returns correct result for arguments `Tuesday, 15.11.2022`', () => {\n  expect(getDayOfWeek('Tuesday', '15.11.2022')).eq('Today is Tuesday, 15.11.2022');\n});\n\nit('Function returns correct result for arguments `Saturday, 19.02.2022`', () => {\n  expect(getDayOfWeek('Saturday', '19.02.2022')).eq('Today is Saturday, 19.02.2022');\n});\n\nit('Function returns correct result if no arguments are passed', () => {\n  expect(getDayOfWeek()).eq('Today is , ');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

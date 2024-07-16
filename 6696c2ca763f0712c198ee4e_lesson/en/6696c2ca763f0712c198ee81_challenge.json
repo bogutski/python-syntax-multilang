@@ -1,0 +1,5 @@
+{
+  "name": "Flip the word except the last character",
+  "instruction": "Write a function `reverseExceptLast` that takes a string and returns an inverted string, except for the last character.\n\nIf the string is empty, the function should return an empty string.\n\n\nExamples of running the function:\n```javascript\nreverseExceptLast('tpircSavaJ!'); // 'JavaScript!'\nreverseExceptLast('ananab?'); // 'banana?'\nreverseExceptLast('hello.'); // 'olleh.'\nreverseExceptLast('25$'); // '52$'\nreverseExceptLast(''); // ''\n```",
+  "instructions": {}
+}

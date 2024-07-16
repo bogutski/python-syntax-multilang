@@ -1,0 +1,4 @@
+{
+  "name": "Split an array into two arrays",
+  "instruction": "The `splitArray` function takes an array that can contain numbers and/or strings.\n\nThe array consists of an even number of elements or can be empty.\n\nYou need to return an array consisting of two elements - arrays:\n* divide the original array into 2 arrays of equal length\n\nUse the `splice` array method to perform this task.\n\nAn example of running the function:\n```javascript\nlet colors = ['white', 'red', 'orange', 'green', 'blue', 'violet']\nlet half = colors.splice(0, colors.length/2);\nconsole.log([half, colors]) // [['white', 'red', 'orange'] ['green', 'blue', 'violet']]\n\nnumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); // [[1, 2, 3, 4, 5] [6, 7, 8, 9, 10]]\n```"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f919",
+  "name": {
+    "en": "/*",
+    "ru": "Проверка на наличие объекта с определенным свойством"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `hasObjectWithProperty`, которая принимает массив объектов и строку (имя свойства).\n\nФункция должна возвращать `true`, если в массиве есть хотя бы один объект с указанным свойством, и `false` в противном случае.\n\n\nПримеры запуска функции:\n```javascript\nhasObjectWithProperty([{a: 1}, {b: 2}, {c: 3}], 'b'); // true\nhasObjectWithProperty([{a: 1}, {b: 2}, {c: 3}], 'd'); // false\nhasObjectWithProperty([{name: 'Alice'}, {age: 25}, {city: 'London'}], 'age'); // true\nhasObjectWithProperty([{name: 'Alice'}, {age: 25}, {city: 'London'}], 'country'); // false\n```"
+  },
+  "initialSolution": "function hasObjectWithProperty(){\n\n}",
+  "completedSolution": "function hasObjectWithProperty(arr, key) {\n  return arr.some(obj => obj.hasOwnProperty(key));\n}",
+  "openTest": "it('Created function hasObjectWithProperty', () => {\n  expect(hasObjectWithProperty).to.be.a('function');\n});\n\nit(\"Function hasObjectWithProperty should include some method\", () => {\n  const result = hasObjectWithProperty.toString();\n  expect(result).to.include('.some(');\n});\n\nit('hasObjectWithProperty([{a: 1}, {b: 2}, {c: 3}], \"b\") should return true', function() {\n  expect(hasObjectWithProperty([{a: 1}, {b: 2}, {c: 3}], \"b\")).to.equal(true);\n});\n\nit('hasObjectWithProperty([{a: 1}, {b: 2}, {c: 3}], \"d\") should return false', function() {\n  expect(hasObjectWithProperty([{a: 1}, {b: 2}, {c: 3}], \"d\")).to.equal(false);\n});\n\nit('hasObjectWithProperty([{name: \"Alice\"}, {age: 25}, {city: \"London\"}], \"age\") should return true', function() {\n  expect(hasObjectWithProperty([{name: \"Alice\"}, {age: 25}, {city: \"London\"}], \"age\")).to.equal(true);\n});\n\nit('hasObjectWithProperty([{name: \"Alice\"}, {age: 25}, {city: \"London\"}], \"country\") should return false', function() {\n  expect(hasObjectWithProperty([{name: \"Alice\"}, {age: 25}, {city: \"London\"}], \"country\")).to.equal(false);\n});\n\nit('hasObjectWithProperty([{a: 1}, {b: 2}, {c: 3}], \"a\") should return true', function() {\n  expect(hasObjectWithProperty([{a: 1}, {b: 2}, {c: 3}], \"a\")).to.equal(true);\n});\n\nit('hasObjectWithProperty([{x: 10}, {y: 20}, {z: 30}], \"x\") should return true', function() {\n  expect(hasObjectWithProperty([{x: 10}, {y: 20}, {z: 30}], \"x\")).to.equal(true);\n});\n\nit('hasObjectWithProperty([{x: 10}, {y: 20}, {z: 30}], \"w\") should return false', function() {\n  expect(hasObjectWithProperty([{x: 10}, {y: 20}, {z: 30}], \"w\")).to.equal(false);\n});\n\nit('hasObjectWithProperty([{name: \"Bob\"}, {age: 30}, {city: \"New York\"}], \"city\") should return true', function() {\n  expect(hasObjectWithProperty([{name: \"Bob\"}, {age: 30}, {city: \"New York\"}], \"city\")).to.equal(true);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

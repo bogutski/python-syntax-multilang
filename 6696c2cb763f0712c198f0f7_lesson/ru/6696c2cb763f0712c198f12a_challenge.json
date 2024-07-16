@@ -1,0 +1,5 @@
+{
+  "name": "Удалить дубликат по id",
+  "instruction": "Функция `onlyUnique` принимает массив объектов.\n\nОбъекты в массиве имеют вид:\n*id,\n*title,\n*class,\n\nЕсли объекты имеют одинаковый `id`, то они считаются одинаковыми даже если остальные свойства объекта отличаются и дубликат необходимо удалить.\n\nПервое вхождение объекта (id) считается уникальным.\n\nФункция должна вернуть массив объектов, в котором не будет дубликатов.\n\nПримеры запуска функции:\n```javascript\nonlyUnique([{id: 2342, title: 'Sherlock Holmes', class: 'detective'}, {id: 2342, title: 'The lost Word', class: 'fantastic'}, {id: 3453, title: 'The lost Word', class: 'fantastic'}])\n//[{id: 2342, title: 'Sherlock Holmes', class: 'detective'}, {id: 3453, title: 'The lost Word', class: 'fantastic'}]\n```",
+  "instructions": {}
+}

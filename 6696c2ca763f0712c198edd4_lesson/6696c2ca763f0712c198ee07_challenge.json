@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ee07",
+  "name": {
+    "en": "",
+    "ru": "Массив имен"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "В массиве имен некоторые имена написаны неправильно - начинаются со строчных букв вместо заглавных.\nНекоторые имена записаны только заглавными буквами или смешанными строчными и заглавными буквами.\n\nНапишите функцию `fixNames`, которая принимает массив имен и исправляет их.\nЕсли в массиве встречаются пустые строки, они должны остаться пустыми.\n\nФункция должна возвращать измененный массив, в котором все имена написаны строчными буквами и начинаются с заглавной буквы.\n\n\nПримеры вызова функции:\n```javascript\nfixNames(['john', 'JACOB', 'aNN', 'schmidt']); // ['John', 'Jacob', 'Ann', 'Schmidt'];\nfixNames(['', 'conNer', '']);                  // ['','Conner','']\nfixNames([]);                                  // [];\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function fixNames(names) {\n  for (let i = 0; i < names.length; i += 1) {\n    if (names[i] === '') continue;\n    const name = names[i];\n    let newName = name[0].toUpperCase();\n    for (let j = 1; j < name.length; j += 1) {\n      newName += name[j].toLowerCase();\n    }\n    names[i] = newName;\n  }\n  return names;\n}",
+  "openTest": "it('Created function fixNames', () => {\n  expect(fixNames).to.be.a('function');\n});\n\nit('fixNames([\"john\", \"JACOB\", \"aNN\", \"schmidt\"]) should return [\"John\", \"Jacob\", \"Ann\", \"Schmidt\"]', () => {\n  expect(fixNames(['john', 'JACOB', 'aNN', 'schmidt'])).to.deep.equal(['John', 'Jacob', 'Ann', 'Schmidt']);\n});\n\nit('fixNames([]) should return []', () => {\n  expect(fixNames([])).to.deep.equal([]);\n});\n\nit('fixNames([\"emy\", \"aLiCe\", \"Linda\", \"anTHonY\", \"peteR\",\"BETH\", \"bob\"]) should return [\"Emy\", \"Alice\", \"Linda\", \"Anthony\", \"Peter\", \"Beth\", \"Bob\"]', () => {\n  expect(fixNames(['emy', 'aLiCe', 'Linda', 'anTHonY', 'peteR', 'BETH', 'bob'])).to.deep.equal(['Emy', 'Alice', 'Linda', 'Anthony', 'Peter', 'Beth', 'Bob']);\n});\n\nit('fixNames([\"\"]) should return [\"\"]', () => {\n  expect(fixNames([''])).to.deep.equal(['']);\n});\n\nit('fixNames([\"PAM\", \"conner\"]) should return [\"Pam\", \"Conner\"]', () => {\n  expect(fixNames(['PAM', 'conner'])).to.deep.equal(['Pam', 'Conner']);\n});\n\nit('fixNames([\"paM\", \"conNER\"]) should return [\"Pam\", \"Conner\"]', () => {\n  expect(fixNames(['paM', 'conNER'])).to.deep.equal(['Pam', 'Conner']);\n});\n\nit('fixNames([\"\", \"conNer\", \"\"]) should return [\"\",\"Conner\",\"\"]', () => {\n  expect(fixNames(['', 'conNer', ''])).to.deep.equal(['','Conner','']);\n});\n\nit('fixNames([ \"eLizaBetH\"]) should return [\"Elizabeth\"]', () => {\n  expect(fixNames(['eLizaBetH'])).to.deep.equal(['Elizabeth']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

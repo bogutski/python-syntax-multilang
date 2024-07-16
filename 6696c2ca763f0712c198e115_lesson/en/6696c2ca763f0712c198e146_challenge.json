@@ -1,0 +1,5 @@
+{
+  "name": "Variable isTrue with value true",
+  "instruction": "Create a variable `isTrue` that is equal to `true`.",
+  "instructions": {}
+}

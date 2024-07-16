@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db49",
+  "name": {
+    "en": "Assign an empty string to the str variable",
+    "ru": "Присвойте переменной str значение пустой строки"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-8.png)\n\nCreate a variable named `str`.\nUse the `const` keyword.\nAssign the value of the empty string `''`.\n\nA fundamentally similar example:\n```javascript\nconst string = '';\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-8.png)\n\nСоздайте переменную с именем `str`.\nИспользуйте ключевое слово `const`.\nПрисвойте значение пустой строки `''`.\n\nПринципиально похожий пример:\n```javascript\nconst string = '';\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const str = '';",
+  "openTest": "it('the variable str exists', () => {\n  expect(str).not.undefined;\n});\n\nit('the variable str is a string', () => {\n  expect(typeof str).eql('string');\n});\n\nit('the variable str is an empty string', () => {\n  expect(str).eql('');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst str = '';\n```",
+    "ru": "```javascript\nconst str = '';\n```"
+  }
+}

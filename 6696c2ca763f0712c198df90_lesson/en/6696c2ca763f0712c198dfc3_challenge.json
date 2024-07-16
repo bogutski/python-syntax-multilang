@@ -1,0 +1,4 @@
+{
+  "name": "Greeting function with default parameter",
+  "instruction": "Create a function `greet` that takes the name `name` and returns a string like `'Hello, name!'`.\n\nIf no parameter is given, the function should return the string `'Hello, guest!'`.\n\nHere is an example that is fundamentally similar to what you need to do. Adapt it to the requirements of the task:\n```javascript\nfunction message(user = 'Unknown'){\n  return 'You got message form, ' + name;\n}\n```"
+}

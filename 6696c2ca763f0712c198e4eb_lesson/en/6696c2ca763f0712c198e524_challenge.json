@@ -1,0 +1,4 @@
+{
+  "name": "Triple nesting of objects",
+  "instruction": "Write a function `tripleNestedObject` that takes one parameter: `param`. The parameter is any value.\n\nAn example will help you understand what you need to do:\n\n```javascript\ntripleNestedObject(5); // { first: { second: { third: { param: 5 } } } }\ntripleNestedObject('hello'); // { first: { second: { third: { param: 'hello' } } } }\n```\n\nThe function should return an object that has three nested properties `first`, ``second`, `third`. Each of these properties must be an object."
+}

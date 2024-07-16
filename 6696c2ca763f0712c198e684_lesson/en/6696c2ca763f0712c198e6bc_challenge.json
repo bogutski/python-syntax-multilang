@@ -1,0 +1,4 @@
+{
+  "name": "Changing client information. Objects",
+  "instruction": "The `clientInfo` function takes three parameters:\n* `obj` - object.\n* `key` - a string with the name of the key.\n* `value` - the value to be checked, can be of any type.\n\nCheck the presence of property `key` in the object `obj`.\n\nIf the `obj` object contains the `key` property, replace the existing value of this property with `value`.\nIf the `obj` object does not contain the `key` property, then add this property with the value of `value`.\n\nThe function should return the `obj` object with the changed properties.\n\nAn example of running the function:\n```javascript\nhasProperty({ name: \"Helen\", lastName: \"Rock\", age: 15 }, \"lastName\", \"Cash\") // {name: \"Helen\", lastName: \"Cash\", age: 15}\nhasProperty({ name: \"Helen\", lastName: \"Rock\", age: 15 }, \"country\", \"USA\") // {name: \"Helen\", lastName: \"Rock\", age: 15, country: USA}\n```"
+}

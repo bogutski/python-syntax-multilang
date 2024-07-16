@@ -1,0 +1,4 @@
+{
+  "name": "Correct an error in the function for calculating the volume of a parallelepiped",
+  "instruction": "We know that the volume of a parallelepiped is calculated by the formula `V = a * b * c`, where `a`, `b` and `c` are the lengths of the edges of the parallelepiped.\n\nCorrect the error in the function `getVolume` so that it returns the correct result.\nIf no argument is passed in the function, consider it equal to 1"
+}

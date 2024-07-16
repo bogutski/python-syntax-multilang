@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e0a8",
+  "name": {
+    "en": "Convert miles to kilometers",
+    "ru": "Конвертировать мили в километры"
+  },
+  "instruction": {
+    "en": "Write a function `mileToKm` that takes as its argument the number of miles and returns the number of kilometers.\n\nOne mile has `1.60934` kilometers.\n\nExamples:\n```javascript.\nmileToKm(1); // 1.60934\nmileToKm(2); // 3.21868\nmileToKm(3); // 4.82802\n```",
+    "ru": "Напиши функцию `mileToKm`, которая принимает в качестве аргумента число миль и возвращает число километров.\n\nВ одной миле `1.60934` километра.\n\nПримеры:\n```javascript\nmileToKm(1); // 1.60934\nmileToKm(2); // 3.21868\nmileToKm(3); // 4.82802\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function mileToKm(mile) {\n  return mile * 1.60934;\n}",
+  "openTest": "it('Created function mileToKm', () => {\n  expect(mileToKm).to.be.a('function');\n});\n\nit('mileToKm(1) should return 1.60934', () => {\n  expect(mileToKm(1)).to.be.equal(1.60934);\n});\n\nit('mileToKm(2) should return 3.21868', () => {\n  expect(mileToKm(2)).to.be.equal(3.21868);\n});\n\nit('mileToKm(3) should return 4.82802', () => {\n  expect(mileToKm(3)).to.be.equal(4.82802);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

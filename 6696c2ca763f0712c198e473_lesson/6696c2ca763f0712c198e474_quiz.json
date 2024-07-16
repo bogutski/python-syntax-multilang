@@ -1,0 +1,496 @@
+{
+  "_id": "6696c2ca763f0712c198e474",
+  "name": {
+    "ru": "Метод trim(), trimStart(), trimEnd()",
+    "en": "Method trim(), trimStart(), trimEnd()",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e475",
+      "name": {
+        "ru": "Какой метод позволяет удалить пробелы в начале и конце строки одновременно?",
+        "en": "Which method removes spaces at the beginning and end of a line at the same time?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e476",
+          "name": {
+            "ru": "slice()",
+            "en": "slice()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e477",
+          "name": {
+            "ru": "trim()",
+            "en": "trim()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e478",
+          "name": {
+            "ru": "trimStart()",
+            "en": "trimStart()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e479",
+          "name": {
+            "ru": "trimEnd()",
+            "en": "trimEnd()",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e47a",
+      "name": {
+        "ru": "Изменяется ли значение исходной строки после применения методов trim(), trimStart(), trimEnd()?",
+        "en": "Does the value of the original string change after applying the trim(), trimStart(), and trimEnd() methods?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e47b",
+          "name": {
+            "ru": "Да. Методы trim(), trimStart(), trimEnd() изменяют исходную строку",
+            "en": "Yes. The trim(), trimStart(), and trimEnd() methods change the original string",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e47c",
+          "name": {
+            "ru": "Нет. Методы trim(), trimStart(), trimEnd() возвращают новую строку, а не изменяют исходную",
+            "en": "No. The trim(), trimStart(), and trimEnd() methods return a new string, not change the original string",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e47d",
+      "name": {
+        "ru": "Дана строка const str = ' I like JS   '. Укажите вариант, в котором код работает правильно",
+        "en": "Given string const str = ' I like JS '. Specify the variant when the code works correctly",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e47e",
+          "name": {
+            "ru": "console.log(str.trim().length); // 9",
+            "en": "console.log(str.trim().length); // 9",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e47f",
+          "name": {
+            "ru": "console.log(str.trim()); // 'I like JS'",
+            "en": "console.log(str.trim()); // 'I like JS'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e480",
+          "name": {
+            "ru": "console.log(str.trim()); // 'IlikeJS'",
+            "en": "console.log(str.trim()); // 'IlikeJS'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e481",
+      "name": {
+        "ru": "Метод, который позволяет убрать пробелы в начале строки, называется",
+        "en": "The method that allows you to remove spaces at the beginning of a line is called",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e482",
+          "name": {
+            "ru": "trimStart()",
+            "en": "trimStart()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e483",
+          "name": {
+            "ru": "trimBegin()",
+            "en": "trimBegin()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e484",
+          "name": {
+            "ru": "trimRight()",
+            "en": "trimRight()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e485",
+          "name": {
+            "ru": "trimLeft()",
+            "en": "trimLeft()",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e486",
+      "name": {
+        "ru": "Выберите варианты когда метод trim() может удалить пробелы в середине строки?",
+        "en": "Select options when the trim() method can remove spaces in the middle of a line?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e487",
+          "name": {
+            "ru": "str.trim()",
+            "en": "str.trim()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e488",
+          "name": {
+            "ru": "str.trimAll()",
+            "en": "str.trimAll()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e489",
+          "name": {
+            "ru": "str.trim(' ')",
+            "en": "str.trim(' ')",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e48a",
+          "name": {
+            "ru": "Варианта не существует",
+            "en": "There is no option",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e48b",
+      "name": {
+        "ru": "Какой метод удаляет пробелы в конце строки?",
+        "en": "Which method removes spaces at the end of a line?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e48c",
+          "name": {
+            "ru": "trimLeft()",
+            "en": "trimLeft()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e48d",
+          "name": {
+            "ru": "trimStart()",
+            "en": "trimStart()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e48e",
+          "name": {
+            "ru": "trimRight()",
+            "en": "trimRight()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e48f",
+          "name": {
+            "ru": "trimEnd()",
+            "en": "trimEnd()",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e490",
+      "name": {
+        "ru": "Укажите, чему будет равна длина строки const str = ' PASV ' после применения метода trimEnd()",
+        "en": "Specify what the string length const str = ' PASV ' will be after applying the trimEnd() method",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e491",
+          "name": {
+            "ru": "4",
+            "en": "4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e492",
+          "name": {
+            "ru": "5",
+            "en": "5",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e493",
+          "name": {
+            "ru": "6",
+            "en": "6",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e494",
+      "name": {
+        "ru": "Что выведет в консоль выражение console.log('  I like JavaScript   .'.trim());",
+        "en": "What the console.log(' I like JavaScript .'.trim()) expression will output to the console;",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e495",
+          "name": {
+            "ru": "'I like JavaScript   .'",
+            "en": "'I like JavaScript   .'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e496",
+          "name": {
+            "ru": "'I like JavaScript'",
+            "en": "'I like JavaScript'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e497",
+          "name": {
+            "ru": "Выведет ошибку",
+            "en": "Outputs an error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e498",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e499",
+      "name": {
+        "ru": "Сколько пробелов будет удалено в строке let str = '  development   ' после применения метода trimStart()?",
+        "en": "How many spaces will be removed from the string let str = ' development ' after applying the trimStart() method?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e49a",
+          "name": {
+            "ru": "Все",
+            "en": "All",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e49b",
+          "name": {
+            "ru": "Все с правой стороны",
+            "en": "All on the right side",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e49c",
+          "name": {
+            "ru": "Все с левой стороны",
+            "en": "All on the left side",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e49d",
+          "name": {
+            "ru": "Ни одного",
+            "en": "None.",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e49e",
+      "name": {
+        "ru": "Укажите метод, который удаляет пробелы внутри строки",
+        "en": "Specify the method that removes spaces within a string",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e49f",
+          "name": {
+            "ru": "trim()",
+            "en": "trim()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e4a0",
+          "name": {
+            "ru": "trimStart()",
+            "en": "trimStart()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e4a1",
+          "name": {
+            "ru": "trimEnd()",
+            "en": "trimEnd()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e4a2",
+          "name": {
+            "ru": "Ни один из вышеперечисленных",
+            "en": "None of the above",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

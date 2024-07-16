@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f2cc",
+  "name": {
+    "en": "Count the number of occurrences of each number in the array",
+    "ru": "Посчитать количество вхождений каждого числа массива"
+  },
+  "instruction": {
+    "en": "The function `countEachNumberElement` accepts an array with different data types.\n\nIt is necessary to count the occurrences of each number in the array and return the result as an object.\n\nIf there are no numbers in the array, return the string `No numbers in array`.\n\nIf the array is empty, return the string \"Array is empty\".\n\nExample of function execution:\n```javascript\ncountEachNumberElement([1, 2, 3, 4, 5, \"hello\", \"js\"]) // {1: 1, 2: 1, 3: 1, 4: 1, 5: 1}\ncountEachNumberElement([\"hello\", \"js\", \"practice\"]) // \"No numbers in array\"\ncountEachNumberElement([]) // \"Array is empty\"\n```\n\nHint: To check if an object contains numbers, you can use the `Object.keys()` method and `typeof` to check the length of the array.",
+    "ru": "Функция `countEachNumberElement` принимает массив c разными типами данных\n\nНеобходимо посчитать количество вхождений каждого числа в массиве и вернуть результат в виде объекта.\n\nЕсли в массиве нет чисел, то вернуть строку `No numbers in array`\n\nЕсли массив пустой, то вернуть строку \"Array is empty\"\n\nПример запуска функции:\n```javascript\ncountEachNumberElement([1, 2, 3, 4, 5, \"hello\", \"js\"]) // {1: 1, 2: 1, 3: 1, 4: 1, 5: 1}\ncountEachNumberElement([\"hello\", \"js\", \"practice\"]) // \"No numbers in array\"\ncountEachNumberElement([]) // \"Array is empty\"\n```\n\nПодсказка: для проверки содержит ли объект числа, можно воспользоваться методом `Object.keys()`  и `typeof` и проверить длину массива"
+  },
+  "initialSolution": "function countEachNumberElement",
+  "completedSolution": "function countEachNumberElement(arr) {\n  if (!arr.length) return \"Array is empty\"\n  let result = {};\n  for (let i = 0; i < arr.length; i++) {\n    if (typeof arr[i] === 'number') {\n      if (!result[arr[i]]) {\n        result[arr[i]] = 1;\n      } else {\n        result[arr[i]] += 1;\n      }\n    }\n  }\n  if (Object.keys(result).length === 0) return \"No numbers in array\";\n  return result;\n}",
+  "openTest": "it('Created function countEachNumberElement', () => {\n  expect(countEachNumberElement).to.be.a('function');\n});\n\nit('countEachNumberElement([1, 2, 3, 4, 5, \"hello\", \"js\"]) should return {1: 1, 2: 1, 3: 1, 4: 1, 5: 1}', () => {\n  expect(countEachNumberElement([1, 2, 3, 4, 5, \"hello\", \"js\"])).to.deep.equal({1: 1, 2: 1, 3: 1, 4: 1, 5: 1});\n});\n\nit('countEachNumberElement([1, 2, 3, 4, 5, \"hello\", \"js\", 1, 2, 3, 4, 5]) should return {1: 2, 2: 2, 3: 2, 4: 2, 5: 2}', () => {\n  expect(countEachNumberElement([1, 2, 3, 4, 5, \"hello\", \"js\", 1, 2, 3, 4, 5])).to.deep.equal({\n    1: 2,\n    2: 2,\n    3: 2,\n    4: 2,\n    5: 2\n  });\n});\n\nit('countEachNumberElement([\"hello\", \"js\", \"practice\"]) should return \"No numbers in array\"', () => {\n  expect(countEachNumberElement([\"hello\", \"js\", \"practice\"])).to.deep.equal(\"No numbers in array\");\n});\n\nit('countEachNumberElement([]) should return \"Array is empty\"', () => {\n  expect(countEachNumberElement([])).to.deep.equal(\"Array is empty\");\n});\n\nit('countEachNumberElement([true, true, false, \"1\", \"number\"]) should return \"No numbers in array\"', () => {\n  expect(countEachNumberElement([true, true, false, \"1\", \"number\"])).to.deep.equal(\"No numbers in array\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eca3",
+  "name": {
+    "en": "Break down the word into letters",
+    "ru": "Разберите слово на буквы"
+  },
+  "instruction": {
+    "en": "The function `specTheWord` takes a string.\nThe string consists only of lowercase letters and does not contain spaces.\n\n The function returns an object with 4 properties:\n\n* `vowel` - the string containing all vowel letters from the source string\n* `vowelCount` - number of vowels in the input string\n* `consonant` - a string containing all consonants from the source string\n* `consonantCount` - number of consonant letters in the source string\n\nAn example of the function start:\n```javascript\nspecTheWord(\"hello\") // {vowel: \"eo\", vowelCount: 2, consonant: \"hll\", consonantCount: 3}\n```",
+    "ru": "Функция `specTheWord` принимает строку.\nСтрока состоит только из строчных букв и не содержит пробелы.\n\n Функция возвращает объект с 4 свойствами:\n\n* `vowel` - строка, содержащая все гласные буквы из исходной строки\n* `vowelCount` - количество гласных букв в исходной строке\n* `consonant` - строка, содержащая все согласные буквы из исходной строки\n* `consonantCount` - количество согласных букв в исходной строке\n\nПример запуска функции:\n```javascript\nspecTheWord(\"hello\") // {vowel: \"eo\", vowelCount: 2, consonant: \"hll\", consonantCount: 3}\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function specTheWord(str) {\n  const vowels = 'aeiou'\n  let vowel = \"\";\n  let vowelCount = 0;\n  let consonant = \"\";\n  let consonantCount = 0;\n  for (let i = 0; i < str.length; i++) {\n    if (vowels.includes(str[i])) {\n      vowel += str[i];\n      vowelCount++;\n    } else {\n      consonant += str[i];\n      consonantCount++;\n    }\n  }\n  return {\n    vowel,\n    vowelCount,\n    consonant,\n    consonantCount\n  }\n}",
+  "openTest": "it('Created function specTheWord', () => {\n  expect(specTheWord).to.be.a('function');\n});\n\nit('specTheWord(\"hello\") returns {vowel: \"eo\", vowelCount: 2, consonant: \"hll\", consonantCount: 3}', () => {\n  expect(specTheWord(\"hello\")).to.deep.equal({vowel: \"eo\", vowelCount: 2, consonant: \"hll\", consonantCount: 3});\n});\n\nit('specTheWord(\"js\") returns {vowel: \"\", vowelCount: 0, consonant: \"js\", consonantCount: 2}', () => {\n  expect(specTheWord(\"js\")).to.deep.equal({vowel: \"\", vowelCount: 0, consonant: \"js\", consonantCount: 2});\n});\n\nit('specTheWord(\"javascript\") returns {vowel: \"aai\", vowelCount: 3, consonant: \"jvscrpt\", consonantCount: 7}', () => {\n  expect(specTheWord(\"javascript\")).to.deep.equal({\n    vowel: \"aai\",\n    vowelCount: 3,\n    consonant: \"jvscrpt\",\n    consonantCount: 7\n  });\n});\n\nit('specTheWord(\"\") returns {vowel: \"\", vowelCount: 0, consonant: \"\", consonantCount: 0}', () => {\n  expect(specTheWord(\"\")).to.deep.equal({vowel: \"\", vowelCount: 0, consonant: \"\", consonantCount: 0});\n});\n\nit('specTheWord(\"a\") returns {vowel: \"a\", vowelCount: 1, consonant: \"\", consonantCount: 0}', () => {\n  expect(specTheWord(\"a\")).to.deep.equal({vowel: \"a\", vowelCount: 1, consonant: \"\", consonantCount: 0});\n});\n\nit('specTheWord(\"aeiou\") returns {vowel: \"aeiou\", vowelCount: 5, consonant: \"\", consonantCount: 0}', () => {\n  expect(specTheWord(\"aeiou\")).to.deep.equal({vowel: \"aeiou\", vowelCount: 5, consonant: \"\", consonantCount: 0});\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

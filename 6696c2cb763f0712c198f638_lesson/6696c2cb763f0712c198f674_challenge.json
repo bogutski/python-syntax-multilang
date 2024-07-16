@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f674",
+  "name": {
+    "en": "/*",
+    "ru": "Объединение и обращение массива с удалением дубликатов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `mergeReverseUnique`, которая принимает массив подмассивов любых типов данных.\n\nФункция должна сначала сгруппировать все элементы подмассивов в один массив, удалить из него все дублирующиеся элементы, а затем развернуть порядок элементов и вернуть новый массив.\n\nМетод `Set` использовать нельзя.\n\n\nПримеры запуска функции:\n```javascript\nmergeReverseUnique([[1, 2, 3], [3, 4, 5], [6, 7]]); // [7, 6, 5, 4, 3, 2, 1]\nmergeReverseUnique([['a', 'b'], ['c', 'd', 'e'], ['e', 'f']]); // ['f', 'e', 'd', 'c', 'b', 'a']\nmergeReverseUnique([[1, 2], [2, 3], [3, 4]]); // [4, 3, 2, 1]\n```"
+  },
+  "initialSolution": "function mergeReverseUnique(){\n\n}",
+  "completedSolution": "function mergeReverseUnique(array) {\n  const result = []\n\n  array.flat().forEach((el, i, arr) => {\n    if(arr.indexOf(el, i + 1) === -1) result.push(el)\n  })\n\n  return result.reverse();\n}",
+  "openTest": "it('Created function mergeReverseUnique', () => {\n  expect(mergeReverseUnique).to.be.a('function');\n});\n\nit(\"Original array should not be modified\", () => {\n  const array  = [[1, 2, 3], [3, 4, 5], [6, 7]];\n  mergeReverseUnique(array)\n  expect(array).to.deep.equal([[1, 2, 3], [3, 4, 5], [6, 7]]);\n});\n\nit(\"mergeReverseUnique should have the reverse method\", () => {\n  const result = mergeReverseUnique.toString();\n  expect(result).to.include('.reverse()');\n});\n\nit(\"mergeReverseUnique should not have the Set method\", () => {\n  const result = mergeReverseUnique.toString();\n  expect(result).to.not.include('new Set(');\n});\n\nit(\"mergeReverseUnique([[1, 2, 3], [3, 4, 5], [6, 7]]) should return [7, 6, 5, 4, 3, 2, 1]\", () => {\n  expect(mergeReverseUnique([[1, 2, 3], [3, 4, 5], [6, 7]])).to.deep.equal([7, 6, 5, 4, 3, 2, 1]);\n});\n\nit(\"mergeReverseUnique([['a', 'b'], ['c', 'd', 'e'], ['e', 'f']]) should return ['f', 'e', 'd', 'c', 'b', 'a']\", () => {\n  expect(mergeReverseUnique([['a', 'b'], ['c', 'd', 'e'], ['e', 'f']])).to.deep.equal(['f', 'e', 'd', 'c', 'b', 'a']);\n});\n\nit(\"mergeReverseUnique([[1, 2], [2, 3], [3, 4]]) should return [4, 3, 2, 1]\", () => {\n  expect(mergeReverseUnique([[1, 2], [2, 3], [3, 4]])).to.deep.equal([4, 3, 2, 1]);\n});\n\nit(\"mergeReverseUnique([]) should return an empty array\", () => {\n  expect(mergeReverseUnique([])).to.deep.equal([]);\n});\n\nit(\"mergeReverseUnique([[1], [1], [1]]) should return [1]\", () => {\n  expect(mergeReverseUnique([[1], [1], [1]])).to.deep.equal([1]);\n});\n\nit(\"mergeReverseUnique([[true, false], [false, true]]) should return [true, false]\", () => {\n  expect(mergeReverseUnique([[true, false], [false, true]])).to.deep.equal([true, false]);\n});\n\nit(\"mergeReverseUnique([['hello', 'world'], ['world', 'test']]) should return ['test', 'world', 'hello']\", () => {\n  expect(mergeReverseUnique([['hello', 'world'], ['world', 'test']])).to.deep.equal(['test', 'world', 'hello']);\n});\n\nit(\"mergeReverseUnique([[null, undefined, null], [undefined]]) should return [undefined, null]\", () => {\n  expect(mergeReverseUnique([[null, undefined, null], [undefined]])).to.deep.equal([undefined, null]);\n});\n\nit(\"mergeReverseUnique([[1, 2, 3], [3, 4, 5], [5, 6, 7], [7, 8, 9]]) should return [9, 8, 7, 6, 5, 4, 3, 2, 1]\", () => {\n  expect(mergeReverseUnique([[1, 2, 3], [3, 4, 5], [5, 6, 7], [7, 8, 9]])).to.deep.equal([9, 8, 7, 6, 5, 4, 3, 2, 1]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

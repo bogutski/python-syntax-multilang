@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e0ab",
+  "name": {
+    "en": "Convert feet to meters",
+    "ru": "Конвертировать футы в метры"
+  },
+  "instruction": {
+    "en": "Write a function `footToMeter` that takes as its argument the number of feet and returns the number of meters.\n\nThere are `0.3048` meters in one foot.\n\nExamples:\n```javascript\nfootToMeter(1); // 0.3048\nfootToMeter(2); // 0.6096\nfootToMeter(3); // 0.9144000000000001\n```",
+    "ru": "Напиши функцию `footToMeter`, которая принимает в качестве аргумента число футов и возвращает число метров.\n\nВ одном футе `0.3048` метра.\n\nПримеры:\n```javascript\nfootToMeter(1); // 0.3048\nfootToMeter(2); // 0.6096\nfootToMeter(3); // 0.9144000000000001\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function footToMeter(foot) {\n  return foot * 0.3048;\n}",
+  "openTest": "it('Created function footToMeter', () => {\n  expect(footToMeter).to.be.a('function');\n});\n\nit('footToMeter(1) should return 0.3048', () => {\n  expect(footToMeter(1)).to.be.equal(0.3048);\n});\n\nit('footToMeter(2) should return 0.6096', () => {\n  expect(footToMeter(2)).to.be.equal(0.6096);\n});\n\nit('footToMeter(3) should return 0.9144', () => {\n  expect(footToMeter(3)).to.be.equal(0.9144000000000001);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e265",
+  "name": {
+    "en": "Three administrators on the site",
+    "ru": "Три администратора на сайте"
+  },
+  "instruction": {
+    "en": "There are three administrators on the site. Each of them has his own email and his own password.\n\nThe function should return `true` only if the user is an administrator.\n\nWrite a function `isAdmin` that takes two parameters: `email` and `password`.\n\nThe function should return `true` if:\n* `email` is `admin@pasv.us` and `password` is `12345`\n* Or `email` equals `admin2@pasv.us` and `password` equals `12345_`\n* or `email` equals `admin3@pasv.us` and `password` equals `12345__`\n\nIn all other cases the function should return `false`.",
+    "ru": "Есть 3 администратора на сайте. Каждый из них имеет свой email и свой пароль.\n\nФункция должна возвращать `true` только в том случае, если пользователь является администратором.\n\nНапишите функцию `isAdmin`, которая принимает два параметра: `email` и `password`.\n\nФункция должна возвращать `true`, если:\n* `email` равен `admin@pasv.us` и `password` равен `12345`\n* или `email` равен `admin2@pasv.us` и `password` равен `12345_`\n* или `email` равен `admin3@pasv.us` и `password` равен `12345__`\n\nВо всех остальных случаях функция должна возвращать `false`."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isAdmin(email, password) {\n  if (email === 'admin@pasv.us' && password === '12345') {\n    return true;\n  }\n\n  if (email === 'admin2@pasv.us' && password === '12345_') {\n    return true;\n  }\n\n  if (email === 'admin3@pasv.us' && password === '12345__') {\n    return true;\n  }\n\n  return false;\n\n}",
+  "openTest": "it('Created function isAdmin', () => {\n  expect(isAdmin).to.be.a('function');\n});\n\nit('isAdmin(\"admin@pasv.us\", \"12345\") returns true', () => {\n  expect(isAdmin('admin@pasv.us', '12345')).to.be.equal(true);\n});\n\nit('isAdmin(\"admin2@pasv.us\", \"12345_\") returns true', () => {\n  expect(isAdmin('admin2@pasv.us', '12345_')).to.be.equal(true);\n});\n\nit('isAdmin(\"admin3@pasv.us\", \"12345__\") returns true', () => {\n  expect(isAdmin('admin3@pasv.us', '12345__')).to.be.equal(true);\n});\n\nit('isAdmin(\"superadmin3@pasv.us\", \"12345__\") returns false', () => {\n  expect(isAdmin('superadmin3@pasv.us', '12345__')).to.be.equal(false);\n});\n\nit('isAdmin(\"qwe@qwe.qwe\", \"12345__\") returns false', () => {\n  expect(isAdmin('qwe@qwe.qwe', '12345__')).to.be.equal(false);\n});\n\nit('isAdmin(\"admin@pasv.us\", \"123\") returns false', () => {\n  expect(isAdmin('admin@pasv.us', '123')).to.be.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

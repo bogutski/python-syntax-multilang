@@ -1,0 +1,157 @@
+{
+  "name": "Доступ к свойствам объекта\n",
+  "questions": {
+    "0": {
+      "name": "const person = { name: 'John', age: 30 }. Как получить доступ к свойству name?",
+      "variants": {
+        "0": {
+          "name": "person.name"
+        },
+        "1": {
+          "name": "person[0]"
+        },
+        "2": {
+          "name": "person['name']"
+        },
+        "3": {
+          "name": "name"
+        }
+      }
+    },
+    "1": {
+      "name": "const person = { name: 'John', age: 30 }. Как получить доступ к свойству age?",
+      "variants": {
+        "0": {
+          "name": "person,age"
+        },
+        "1": {
+          "name": "person[1]"
+        },
+        "2": {
+          "name": "person['age']"
+        },
+        "3": {
+          "name": "person.age"
+        }
+      }
+    },
+    "2": {
+      "name": "const person = { person: 'person' }. Допустимо ли такое объявление?",
+      "variants": {
+        "0": {
+          "name": "Да. Переменная person будет содержать объект с одним свойством person, равное строке 'person'"
+        },
+        "1": {
+          "name": "Нет. Такое объявление недопустимо"
+        }
+      }
+    },
+    "3": {
+      "name": "const room = { width: 10, height: 20 }. Как вычислить площадь комнаты?",
+      "variants": {
+        "0": {
+          "name": "room.width * room.height"
+        },
+        "1": {
+          "name": "room.width + room.height"
+        },
+        "2": {
+          "name": "room[width] * room[height]"
+        },
+        "3": {
+          "name": "room['width'] * room['height']"
+        }
+      }
+    },
+    "4": {
+      "name": "const person = { name: 'John', address: { city: 'New York', country: 'USA' } }. Как получить доступ к свойству country?",
+      "variants": {
+        "0": {
+          "name": "person.country"
+        },
+        "1": {
+          "name": "person.address.country"
+        },
+        "2": {
+          "name": "person['address']['country']"
+        },
+        "3": {
+          "name": "person.address['country']"
+        }
+      }
+    },
+    "5": {
+      "name": "const person = { 130 }. Допустимо ли такое объявление?",
+      "variants": {
+        "0": {
+          "name": "Да. Переменная person будет содержать объект с одним свойством 130"
+        },
+        "1": {
+          "name": "Нет. Такое объявление недопустимо"
+        }
+      }
+    },
+    "6": {
+      "name": "const person = { 130: 130 }. Допустимо ли такое объявление?",
+      "variants": {
+        "0": {
+          "name": "Да. Переменная person будет содержать объект с ключом 130 и значением 130"
+        },
+        "1": {
+          "name": "Нет. Такое объявление недопустимо"
+        }
+      }
+    },
+    "7": {
+      "name": "const person = { 130: 'a130b' }. Для доступа к значению свойства 130 используется:",
+      "variants": {
+        "0": {
+          "name": "person.130"
+        },
+        "1": {
+          "name": "person['130']"
+        },
+        "2": {
+          "name": "person[130]"
+        },
+        "3": {
+          "name": "person[0]"
+        }
+      }
+    },
+    "8": {
+      "name": "const person = { 'person-name': 'John' }. Для доступа к значению свойства 'person-name' используется:",
+      "variants": {
+        "0": {
+          "name": "person.person-name"
+        },
+        "1": {
+          "name": "person['person-name']"
+        },
+        "2": {
+          "name": "person[person-name]"
+        },
+        "3": {
+          "name": "person.'person-name'"
+        }
+      }
+    },
+    "9": {
+      "name": "const person = { personName: 'John' }. Для доступа к значению свойства 'personName' используется:",
+      "variants": {
+        "0": {
+          "name": "person.personName"
+        },
+        "1": {
+          "name": "person['personName']"
+        },
+        "2": {
+          "name": "person[personName]"
+        },
+        "3": {
+          "name": "person.'personName'"
+        }
+      }
+    }
+  }
+}

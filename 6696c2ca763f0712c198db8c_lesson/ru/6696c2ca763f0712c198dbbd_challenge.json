@@ -1,0 +1,6 @@
+{
+  "name": "Потребители напитка \"7 Up\"",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-3.png)\n\nТребуется создать переменную для хранения количества потребителей напитка \"7 Up\".\n\nСоздайте переменную с использованием ключевого слова `let` без присваивания значения переменной.\n\nВыберите верное и наиболее понятное имя для создания переменной из следующего списка:\n`kolichestvo`, `number`, `7Up`, `7UpTotal`, `totalNumberOf7UpConsumers`, `7UpConsumersTotal`.",
+  "instructions": {},
+  "hint": "```javascript\nlet totalNumberOf7UpConsumers;\n```"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e29b",
+  "name": {
+    "en": "Paying for your purchases with $5 banknotes",
+    "ru": "Оплата покупки банкнотами по $5"
+  },
+  "instruction": {
+    "en": "The buyer has only $5 banknotes in the store.\nLet's write a function that takes the purchase amount and returns the minimum number of bills to pay.\n\nThe function name: `numberOfBanknotes`. The name of the parameter is up to you.\n\n\nExamples of the function call:\n```javascript\nnumberOfBanknotes(5) // 1\nnumberOfBanknotes(5.10) // 2\nnumberOfBanknotes(5.80) // 2\nnumberOfBanknotes(10) // 2\nnumberOfBanknotes(10.10) // 3\nnumberOfBanknotes(12.75) // 3\n```",
+    "ru": "У покупателя в магазине есть только банкноты по $5.\nНапишем функцию, которая принимает сумму покупки и возвращает минимальное количество банкнот для оплаты.\n\nНазвание функции: `numberOfBanknotes`. Название параметра определите сами.\n\n\nПримеры вызова функции:\n```javascript\nnumberOfBanknotes(5) // 1\nnumberOfBanknotes(5.10) // 2\nnumberOfBanknotes(5.80) // 2\nnumberOfBanknotes(10) // 2\nnumberOfBanknotes(10.10) // 3\nnumberOfBanknotes(12.75) // 3\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function numberOfBanknotes(cost) {\n  return Math.ceil(cost / 5);\n}",
+  "openTest": "it('Created function numberOfBanknotes', () => {\n  expect(numberOfBanknotes).to.be.a('function');\n});\n\nit('numberOfBanknotes(3) should return 1', () => {\n  expect(numberOfBanknotes(3)).to.equal(1);\n});\n\nit('numberOfBanknotes(4.60) should return 1', () => {\n  expect(numberOfBanknotes(4.6)).to.equal(1);\n});\n\nit('numberOfBanknotes(5) should return 1', () => {\n  expect(numberOfBanknotes(5)).to.equal(1);\n});\n\nit('numberOfBanknotes(5.10) should return 2', () => {\n  expect(numberOfBanknotes(5.1)).to.equal(2);\n});\n\nit('numberOfBanknotes(5.80) should return 2', () => {\n  expect(numberOfBanknotes(5.8)).to.equal(2);\n});\n\nit('numberOfBanknotes(10) should return 2', () => {\n  expect(numberOfBanknotes(10)).to.equal(2);\n});\n\nit('numberOfBanknotes(10.10) should return 3', () => {\n  expect(numberOfBanknotes(10.1)).to.equal(3);\n});\n\nit('numberOfBanknotes(12.75) should return 3', () => {\n  expect(numberOfBanknotes(12.75)).to.equal(3);\n});\n\nit('numberOfBanknotes(15) should return 3', () => {\n  expect(numberOfBanknotes(15)).to.equal(3);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

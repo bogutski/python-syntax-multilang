@@ -1,0 +1,5 @@
+{
+  "name": "Найти ключ объекта в массиве.",
+  "instruction": "Функция `findKey` принимает 3 параметра:\n* `array` - массив\n* `object` - объект\n* `key` - ключ объекта\n\nНеобходимо найти `value` по ключу `key` в объекте `object` и проверить есть ли оно в массиве `array`.\n\nЕсли есть, то вернуть строку `There is ${value} in array`.\n\nЕсли нет, то вернуть строку `There is no ${value} in array`.\n\nПримеры запуска функции:\n```javascript\nfindKey(['lemon', 'apple', 'banana'], {fruit: 'apple'}, 'fruit') // 'There is apple in array'\nfindKey(['lemon', 'apple', 'banana'], {fruit: 'orange'}, 'fruit') // 'There is no orange in array'\n```",
+  "instructions": {}
+}

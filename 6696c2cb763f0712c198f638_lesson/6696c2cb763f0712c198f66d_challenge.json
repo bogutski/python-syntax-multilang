@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f66d",
+  "name": {
+    "en": "/*",
+    "ru": "Создание обратного копирования массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `createReversedCopy`, которая принимает массив любых типов данных.\n\nФункция возвращает новый массив, в котором элементы следуют в обратном порядке по сравнению с исходным.\n\nВажно, чтобы исходный массив не изменялся. Функция должна использовать оператор развертывания для копирования элементов исходного массива.\n\n\nПримеры запуска функции:\n```javascript\ncreateReversedCopy([1, 2, 3, 4, 5]); // [5, 4, 3, 2, 1]\ncreateReversedCopy(['a', 'b', 'c']); // ['c', 'b', 'a']\ncreateReversedCopy([]); // []\n```"
+  },
+  "initialSolution": "function createReversedCopy(){\n\n}",
+  "completedSolution": "function createReversedCopy(arr) {\n  return [...arr].reverse();\n}",
+  "openTest": "it('Created function createReversedCopy', () => {\n  expect(createReversedCopy).to.be.a('function');\n});\n\nit(\"createReversedCopy([1, 2, 3, 4, 5]) should return [5, 4, 3, 2, 1]\", () => {\n  expect(createReversedCopy([1, 2, 3, 4, 5])).to.deep.equal([5, 4, 3, 2, 1]);\n});\n\nit(\"createReversedCopy(['a', 'b', 'c']) should return ['c', 'b', 'a']\", () => {\n  expect(createReversedCopy(['a', 'b', 'c'])).to.deep.equal(['c', 'b', 'a']);\n});\n\nit(\"createReversedCopy([]) should return an empty array\", () => {\n  expect(createReversedCopy([])).to.deep.equal([]);\n});\n\nit(\"createReversedCopy([1]) should return [1]\", () => {\n  expect(createReversedCopy([1])).to.deep.equal([1]);\n});\n\nit(\"createReversedCopy([1, 2]) should return [2, 1]\", () => {\n  expect(createReversedCopy([1, 2])).to.deep.equal([2, 1]);\n});\n\nit(\"createReversedCopy(['Hello', 'world']) should return ['world', 'Hello']\", () => {\n  expect(createReversedCopy(['Hello', 'world'])).to.deep.equal(['world', 'Hello']);\n});\n\nit(\"createReversedCopy([null, undefined, '']) should return ['', undefined, null]\", () => {\n  expect(createReversedCopy([null, undefined, ''])).to.deep.equal(['', undefined, null]);\n});\n\nit(\"createReversedCopy([true, false, true]) should return [true, false, true]\", () => {\n  expect(createReversedCopy([true, false, true])).to.deep.equal([true, false, true]);\n});\n\nit(\"original array should not be modified\", () => {\n  const numbers = [1, 2, 3, 4, 5];\n  createReversedCopy(numbers)\n  expect(numbers).to.deep.equal([1, 2, 3, 4, 5]);\n});\n\nit(\"createReversedCopy should use the spread operator for array copying\", () => {\n  const result = createReversedCopy.toString();\n  expect(result).to.include('...');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

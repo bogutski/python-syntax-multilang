@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db86",
+  "name": {
+    "en": "Correct errors in the code. Variable weather",
+    "ru": "Исправьте ошибки в коде. Переменная weather"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-3.png)\nYou need to write a command that assigns the value of string `'Sunny day'` to the `weather` variable using the `const` keyword.\n\nCorrect the errors in the above code.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-3.png)\n\nТребуется написать команду, которая присваивает переменной `weather` значение строки `'Sunny day'` с использованием ключевого слова `const`.\n\nИсправьте ошибки в приведенном коде."
+  },
+  "initialSolution": "Const weather = Sunny day",
+  "completedSolution": "const weather = 'Sunny day';",
+  "openTest": "it('Variable weather is defined', () => {\n  expect (weather).not.to.be.undefined;\n});\n\nit('Variable weather is a string', () => {\n  expect (weather).to.be.a('string');\n});\n\nit('Variable weather is equal to \"Sunny day\"', () => {\n  expect (weather).to.be.equal('Sunny day');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst weather = 'Sunny day';\n```",
+    "ru": "```javascript\nconst weather = 'Sunny day';\n```"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e98f",
+  "name": {
+    "en": "Correct the error in the code",
+    "ru": "Исправьте ошибку в коде"
+  },
+  "instruction": {
+    "en": "The function `stopCountAtEl` takes 2 parameters: the string `str` and the character `el`.\n\nThe function returns the number of characters in the string `str`.\n\nIf there is an uppercase or lowercase character `el` in the string `str` it stops counting.\n\nCorrect the errors in the code so that the function works correctly.\n\nAn example of running the function:\n```javascript\nstopCountAtEl('ftgjkfdttfjRhKl', 'r') // 11\nstopCountAtEl('rftgjkffjR', 'R') // 0\nstopCountAtEl('rftgjkffjR', 'W') // 10\n```",
+    "ru": "Функция `stopCountAtEl` принимает 2 параметра: строку `str` и символ `el`.\n\nФункция возвращает количество символов в строке `str`.\n\nЕсли в строке `str` встречается символ `el` в верхнем или нижнем регистре, подсчёт прекращается.\n\nИсправьте ошибки в коде, чтобы функция работала правильно.\n\nПример запуска функции:\n```javascript\nstopCountAtEl('ftgjkfdttfjRhKl', 'r') // 11\nstopCountAtEl('rftgjkffjR', 'R') // 0\nstopCountAtEl('rftgjkffjR', 'W') // 10\n```"
+  },
+  "initialSolution": "function stopсountAtEl(str, el) {\n  let count = 0;\n  for (let i = el; i < str.length; i++) {\n    if (str[i] = el.toUpperCase && str[i] = el.toLowerCase) break.el;\n    count++\n  }\n  return str\n}",
+  "completedSolution": "function stopCountAtEl(str, el) {\n  let count = 0;\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] === el.toUpperCase() || str[i] === el.toLowerCase()) break;\n    count++\n  }\n  return count\n}",
+  "openTest": "it('Created function stopCountAtEl', () => {\n  expect(stopCountAtEl).to.be.a('function');\n});\n\nit(\"stopCountAtEl('ftgjkfdttfjRhKl', 'r') should return 11\", () => {\n  expect(stopCountAtEl('ftgjkfdttfjRhKl', 'r')).to.equal(11);\n});\n\nit(\"stopCountAtEl('rftgjkffjR', 'R') should return 0\", () => {\n  expect(stopCountAtEl('rftgjkffjR', 'R')).to.equal(0);\n});\n\nit(\"stopCountAtEl('rftgjkffjR', 'W') should return 10\", () => {\n  expect(stopCountAtEl('rftgjkffjR', 'W')).to.equal(10);\n});\n\nit(\"stopCountAtEl('rftgjkfdttfjRhKl bgf', ' ') should return 16\", () => {\n  expect(stopCountAtEl('rftgjkfdttfjRhKl bgf', ' ')).to.equal(16);\n});\n\nit(\"stopCountAtEl('rftgjkfdttfjRhKlbgf', '') should return 19\", () => {\n  expect(stopCountAtEl('rftgjkfdttfjRhKlbgf', '')).to.equal(19);\n});\n\nit(\"stopCountAtEl('', 'T') should return 0\", () => {\n  expect(stopCountAtEl('', 'T')).to.equal(0);\n});\n\nit(\"stopCountAtEl('rtg 3 kfdhKlbgf', '3') should return 4\", () => {\n  expect(stopCountAtEl('rtg 3 kfdhKlbgf', '3')).to.equal(4);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

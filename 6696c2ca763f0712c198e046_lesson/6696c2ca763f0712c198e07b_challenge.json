@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e07b",
+  "name": {
+    "en": "Calculate the discounted price",
+    "ru": "Вычислить цену со скидкой"
+  },
+  "instruction": {
+    "en": "Write a function `receiptMessage` that takes parameters:\n- `price` - price of the product\n- `quantity` - quantity of goods\n- `discount` - discount in percent\n\nThe function must return the string ` Price per item: $ <price>. Quantity of items: <quantity>. Discount: <discount> %. Total price: $ <totalPrice> ` where ` <price> `, ` <quantity> `, ` <discount> ` and ` <totalPrice> ` are parameter values.\n\nAn example of function call:\n``` javascript\nreceiptMessage(10, 4, 10); // Price per item: $10. Quantity of items: 4. Discount: 10%. Total price: $36.\nreceiptMessage(20, 3, 25); // Price per item: $20. Quantity of items: 3. Discount: 25%. Total price: $45.\n```\n\nCreate a variable `totalPrice` inside the function using the `const` operator and assign it the value for calculating the discounted price.\n\nAn example to help:\n```javascript\nconst price = 10;\nconst quantity = 4;\nconst discount = 10;\nconsole.log('Price: $' + price + '. Quantity: ' + quantity + '. Discount: ' + discount + '%. Total price: $' + price * quantity * (1 - discount / 100) + '.');\n```",
+    "ru": "Напиши функцию `receiptMessage`, которая принимает параметры:\n- `price` - цена товара\n- `quantity` - количество товара\n- `discount` - скидка в процентах\n\nФункция должна возвращать строку `Price per item: $<price>. Quantity of items: <quantity>. Discount: <discount>%. Total price: $<totalPrice>.`, где `<price>`, `<quantity>`, `<discount>` и `<totalPrice>` - значения параметров.\n\nПример вызова функции:\n```javascript\nreceiptMessage(10, 4, 10); // Price per item: $10. Quantity of items: 4. Discount: 10%. Total price: $36.\nreceiptMessage(20, 3, 25); // Price per item: $20. Quantity of items: 3. Discount: 25%. Total price: $45.\n```\n\nСоздайте внутри функции переменную `totalPrice` c помощью оператора `const` и присвойте ей значение вычисления цены со скидкой.\n\nПример для помощи:\n```javascript\nconst price = 10;\nconst quantity = 4;\nconst discount = 10;\nconsole.log('Price: $' + price + '. Quantity: ' + quantity + '. Discount: ' + discount + '%. Total price: $' + price * quantity * (1 - discount / 100) + '.');\n```"
+  },
+  "initialSolution": "function sum",
+  "completedSolution": "function receiptMessage(price, quantity, discount) {\n  const totalPrice = price * quantity * (1 - discount / 100);\n  return 'Price per item: $' + price + '. Quantity of items: ' + quantity + '. Discount: ' + discount + '%. Total price: $' + totalPrice + '.';\n}",
+  "openTest": "it('Created function receiptMessage', () => {\n  expect(receiptMessage).to.be.a('function');\n});\n\nit('Function returns correct result for arguments `10, 4, 10`', () => {\n  expect(receiptMessage(10, 4, 10)).eq('Price per item: $10. Quantity of items: 4. Discount: 10%. Total price: $36.');\n});\n\nit('Function returns correct result for arguments `20, 3, 25`', () => {\n  expect(receiptMessage(20, 3, 25)).eq('Price per item: $20. Quantity of items: 3. Discount: 25%. Total price: $45.');\n});\n\nit('Function returns correct result for arguments `100, 1, 0`', () => {\n  expect(receiptMessage(100, 1, 0)).eq('Price per item: $100. Quantity of items: 1. Discount: 0%. Total price: $100.');\n});\n\nit('Function contains `const totalPrice =`', () => {\n  expect(receiptMessage.toString()).contains('const totalPrice =');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "Sum of numbers in the array",
+  "questions": {
+    "0": {
+      "name": "Select the correct variant of the NaN data type",
+      "variants": {
+        "0": {
+          "name": "'string'"
+        },
+        "1": {
+          "name": "'number'."
+        },
+        "2": {
+          "name": "'boolean'"
+        },
+        "3": {
+          "name": "'object'"
+        }
+      }
+    },
+    "1": {
+      "name": "What does the Number.isNaN() method define?",
+      "variants": {
+        "0": {
+          "name": "Is the transferred value NaN"
+        },
+        "1": {
+          "name": "Whether the passed value is a number"
+        },
+        "2": {
+          "name": "Whether the passed value is a string"
+        },
+        "3": {
+          "name": "Whether the passed value is null"
+        }
+      }
+    },
+    "2": {
+      "name": "What will be the result of executing the code below?",
+      "description": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nfor(let i = 0; i < arr.length; i++) {\n  console.log(arr[i]);\n}\nfor(let i = arr.length - 1; i >= 0; i--) {\n  console.log(arr[i]);\n}\n```",
+      "variants": {
+        "0": {
+          "name": "5 4 3 2 1\n1 2 3 4 5"
+        },
+        "1": {
+          "name": "The first and second cycles will traverse the array from left to right"
+        },
+        "2": {
+          "name": "1 2 3 4 5\n5 4 3 2 1"
+        },
+        "3": {
+          "name": "The first loop will traverse the array from left to right, the second from right to left"
+        }
+      }
+    },
+    "3": {
+      "name": "What is the result of running the code below?",
+      "description": "```javascript\nconst arr = [2, 4, 6];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  console.log(`${acc} + ${arr[i]} = ${acc + arr[i]}`);\n  acc += arr[i];\n}\n```",
+      "variants": {
+        "0": {
+          "name": "'2 + 2 = 4'\n'4 + 4 = 8'\n'8 + 6 = 14'"
+        },
+        "1": {
+          "name": "'0 + 2 = 2'\n'2 + 4 = 6'\n'6 + 6 = 12'"
+        },
+        "2": {
+          "name": "2 6 12"
+        },
+        "3": {
+          "name": "2 4 6"
+        }
+      }
+    },
+    "4": {
+      "name": "Is it true that the sum of the elements of the same array from left to right and from right to left is the same?\nand the result of the code below is true?",
+      "description": "```javascript\nconst arr = [1, 3, -7];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  acc += arr[i];\n}\nlet acc2 = 0;\nfor(let i = arr.length - 1; i >= 0; i--) {\n  acc2 += arr[i];\n}\nconsole.log(acc === acc2);\n```",
+      "variants": {
+        "0": {
+          "name": "No, the sum of elements from left to right and from right to left will be different, the result of the code will be false"
+        },
+        "1": {
+          "name": "Yes, the sum of elements from left to right and from right to left is the same, the result of the code will be true"
+        }
+      }
+    },
+    "5": {
+      "name": "What happens if the array contains strings in addition to numbers and what is the result for the code below?",
+      "description": "```javascript\nconst arr = [400, 4, ' error'];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  acc += arr[i];\n}\nconsole.log(acc)\n```",
+      "variants": {
+        "0": {
+          "name": "A concatenation will occur. The result will be '4004 error'"
+        },
+        "1": {
+          "name": "The rows will not be counted, but all numbers in the array will add up. The result will be a 404"
+        },
+        "2": {
+          "name": "The numbers up to the string will be added together and then concatenation will occur. The result will be a '404 error'"
+        },
+        "3": {
+          "name": "Adding numbers in this case is impossible. The result is NaN"
+        }
+      }
+    },
+    "6": {
+      "name": "Why would the result of the code below be '0error 4004'?",
+      "description": "```javascript\nconst arr = ['error ', 400, 4];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  acc += arr[i];\n}\nconsole.log(acc)\n```",
+      "variants": {
+        "0": {
+          "name": "The first element of the array is a string, adding a string and a number results in concatenation,\nand 0 at the beginning of the resulting string is the initial value of the variable acc"
+        },
+        "1": {
+          "name": "The result is 'error 4004' because the first element of the array is a string, and adding strings results in concatenation"
+        },
+        "2": {
+          "name": "The result will be 'error 404'. The numbers at the end of the array will be stacked, and joining the string will result in concatenation"
+        },
+        "3": {
+          "name": "The result will be 404. The string will not be counted, but all numbers in the array will add up"
+        }
+      }
+    },
+    "7": {
+      "name": "Is it true that the result of the code below is 111?",
+      "description": "```javascript\nconst arr = [1, 10, 100, NaN];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  acc += arr[i];\n}\nconsole.log(acc)\n```",
+      "variants": {
+        "0": {
+          "name": "Correct, the result will be 111. NaN does not participate in the calculations, and all numbers in the array will add up"
+        },
+        "1": {
+          "name": "Incorrect, the result is NaN. Adding numbers with NaN results in NaN"
+        }
+      }
+    },
+    "8": {
+      "name": "Is the code below correct and the result of the work is 111?",
+      "description": "```javascript\nconst arr = [1, 10, 100, NaN];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number') acc += arr[i];\n}\nconsole.log(acc)\n```",
+      "variants": {
+        "0": {
+          "name": "No, the result is NaN because the NaN data type is number, and adding numbers with NaN results in NaN"
+        },
+        "1": {
+          "name": "Correct, the result is 111. The if clause inside the loop excludes NaN from calculations"
+        }
+      }
+    },
+    "9": {
+      "name": "Choose the correct option to fix the if condition inside the loop below so that the result is -222",
+      "description": "```javascript\nconst arr = [-2, -20, -200, NaN];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number') acc += arr[i];\n}\nconsole.log(acc)\n```",
+      "variants": {
+        "0": {
+          "name": "if(!Number.isNaN(i))"
+        },
+        "1": {
+          "name": "if(Number.isNaN(+arr[i]))"
+        },
+        "2": {
+          "name": "if(!Number.isNaN(+arr[i]))"
+        },
+        "3": {
+          "name": "if(!Number.isNaN(arr[i]))"
+        }
+      }
+    }
+  }
+}

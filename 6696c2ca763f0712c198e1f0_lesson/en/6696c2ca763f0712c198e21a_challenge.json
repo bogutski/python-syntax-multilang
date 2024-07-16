@@ -1,0 +1,4 @@
+{
+  "name": "Equal, if strictly equal",
+  "instruction": "Write a function `showIsEqual` that takes two arguments `a` and `b`.\n\nIn the body of the function, determine if the arguments are strictly equal.\n\nIf strictly equal, return `Equal`, if not, return `Not Equal`."
+}

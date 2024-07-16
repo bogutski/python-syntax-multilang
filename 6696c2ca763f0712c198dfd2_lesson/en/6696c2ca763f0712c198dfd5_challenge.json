@@ -1,0 +1,4 @@
+{
+  "name": "Two functions return strings. Tasks",
+  "instruction": "Write two functions.\n\nRequirements for the function 1:\n1. The function must be called `task1`;\n2. The function must return the string `'Learn JS'`;\n\nRequirements for function 2:\n1. The function must be called `task2`;\n2. The function must return the string `'Learn HTML'`;"
+}

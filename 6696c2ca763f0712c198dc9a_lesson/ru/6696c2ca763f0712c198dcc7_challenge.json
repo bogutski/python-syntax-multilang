@@ -1,0 +1,6 @@
+{
+  "name": "Выведите в консоли строку с двойными кавычками Hello JavaScript",
+  "instruction": "Только одна строка. Соблюдайте пробелы и знаки пунктуации.\n\nВ конце точка с запятой. Двойные кавычки.\n\nНапишите команду `console.log(\"Hello JavaScript\");`",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log(\"Hello JavaScript\");\n```"
+}

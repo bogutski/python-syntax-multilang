@@ -1,0 +1,4 @@
+{
+  "name": "Format the name on the nameplate",
+  "instruction": "You need to create nameplates for all employees of the company in the same format.\n\nWrite a function `formatName` that takes two strings with first name and last name\n\nLet the function return a string with the format `JOHNSON E.`.\n\nLook at the examples.\n\nAn example of running a function:\n```javascript\nformatName('johnson', 'edwin'); // 'JOHNSON E.'\nformatName('JOHNSON', 'EDWIN'); // 'JOHNSON E.'\nformatName(' johnson ', ' edwin '); // 'JOHNSON E.'\n```\n\nThe input can be in any case and can also contain spaces at the beginning and at the end of the string."
+}

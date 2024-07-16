@@ -1,0 +1,5 @@
+{
+  "name": "Additional store earnings when rounded up",
+  "instruction": "On each receipt, the store rounds the total amount up to the nearest whole number.\n\nWrite a function `roundProfit`. Function parameters:\n* `totalAmount` - the total amount of the receipt;\n\nThe function should return `true` if the store made more than 60 cents on rounding, and `false` otherwise.\n\nFunction execution examples:\n```javascript\nroundProfit(10.10) // true\nroundProfit(10.50) // false\nroundProfit(10.90) // false\nroundProfit(11.35) // true\n```",
+  "instructions": {}
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Positive integers from array to string",
+  "instruction": "The function `stringOfPositiveIntegers` takes an array of numbers.\n\nThe function should return a string containing only positive integers from the array, separated by semicolons `;`.\n\nThe string must begin and end with parentheses: `(` and `)` respectively.\n\nTo check if a number is an integer, you can use the fact that when you divide an integer by 1, the remainder of the division must be zero.\n\nWhen writing numbers in a string, you must add a space before each number and a semicolon after the number.\n\nExamples of running a function:\n\n```javascript\nstringOfPositiveIntegers([1, 2, 3, 4, 5]); // '( 1; 2; 3; 4; 5;)'\nstringOfPositiveIntegers([-11, 2.56, 3, -4.7, 5.01, -60, 71, 0, 9, 1000]); // '( 3; 71; 9; 1000;)'\nstringOfPositiveIntegers([1.01, -2.2, 3.3, 0,-5.5]); // '()'\nstringOfPositiveIntegers([]); // '()'\n```"
+}

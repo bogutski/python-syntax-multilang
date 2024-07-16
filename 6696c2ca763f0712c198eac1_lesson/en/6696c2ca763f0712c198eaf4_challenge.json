@@ -1,0 +1,4 @@
+{
+  "name": "Changing the case of letters in a string",
+  "instruction": "Write a function `reverseLettersCase` that takes a string and returns an array.\n\nThe array must contain letters from the string, reversed case.\n\nIf there are spaces in the string, they must be skipped and must not go into the array.\n\nOnly letters and spaces will be passed in the string.\n\nAn example of running a function:\n```js\nreverseLettersCase('a a a B B B'); // [ 'A', 'A', 'A', 'b', 'b', 'b' ]\nreverseLettersCase(' AbCd EfGh '); // [ 'a', 'B', 'c', 'D', 'e', 'F', 'g', 'H' ]\nreverseLettersCase(''); // []\nreverseLettersCase(' '); // []\n```"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Define the type of special value null",
+  "instruction": "Create a variable named `empty` and assign it the value `null`.\nCreate a variable named `typeOfEmpty` and assign it the type of the variable `empty`.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst money = null;\nconst type = typeof money;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst empty = null;\nconst typeOfEmpty = typeof empty;\n```"
+}

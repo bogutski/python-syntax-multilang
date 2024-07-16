@@ -1,0 +1,4 @@
+{
+  "name": "The indices of the first and last occurrence. Arrays",
+  "instruction": "The `search` function takes the following parameters:\n* `array` - array of strings\n* `str` - string\n\nYou need to find the first and last occurrence of string `str` in array `array`.\n\nIf there is one occurrence, then return the index of this occurrence.\n\nIf there are two occurrences then return array of two indexes `[indexFirst, indexLast]`.\n\nIf the string is not found in this array, return `str is not found`, where `str` is the string we were looking for.\n\nExamples of running the function:\n```javascript\nsearch(['one', 'two', 'three', 'two', 'one'], 'two'); // [1, 3]\nsearch(['one', 'two', 'three', 'two', 'one'], 'three'); // 2\nsearch(['one', 'two', 'three', 'two', 'one'], 'four'); // 'four is not found'\n```"
+}

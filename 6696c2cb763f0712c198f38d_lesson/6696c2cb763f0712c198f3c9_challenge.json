@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f3c9",
+  "name": {
+    "en": "/*",
+    "ru": "Разделение массива на чётные и нечётные числа"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `splitEvenOdd`, которая принимает массив чисел.\n\nФункция должна создать два новых массива: один для чётных чисел и другой для нечётных.\n\nИспользуйте метод `shift()` для последовательного извлечения элементов из начала исходного массива и распределите их по двум новым массивам в зависимости от чётности.\n\nФункция должна возвращать объект с двумя ключами: `even` для массива чётных чисел и `odd` для массива нечётных чисел.\n\n\nПример запуска функции:\n```javascript\nsplitEvenOdd([12, 34, 55, 78, 91]); // { even: [ 12, 34, 78 ], odd: [ 55, 91 ] }\nsplitEvenOdd([1, 2, 3, 4, 5, 6]);   // { even: [ 2, 4, 6 ], odd: [ 1, 3, 5 ] }\nsplitEvenOdd([]); // { even: [], odd: [] }\n```"
+  },
+  "initialSolution": "function splitEvenOdd(){\n\n}",
+  "completedSolution": "function splitEvenOdd(arr) {\n  const even = []\n  const odd = []\n\n  while(arr.length){\n    const el = arr.shift()\n\n    if(el % 2 === 0) even.push(el)\n    else odd.push(el)\n  }\n\n  return {even, odd};\n}",
+  "openTest": "it('Created function splitEvenOdd', () => {\n  expect(splitEvenOdd).to.be.a('function');\n});\n\nit('Function splitEvenOdd should include method shift()', () => {\n  const res = splitEvenOdd.toString()\n  expect(res).to.include('.shift()')\n});\n\nit(\"splitEvenOdd([1, 2, 3, 4, 5, 6]) should return { even: [2, 4, 6], odd: [1, 3, 5] }\", () => {\n  expect(splitEvenOdd([1, 2, 3, 4, 5, 6])).to.deep.equal({ even: [2, 4, 6], odd: [1, 3, 5] });\n});\n\nit(\"splitEvenOdd([12, 34, 55, 78, 91]) should return { even: [12, 34, 78], odd: [55, 91] }\", () => {\n  expect(splitEvenOdd([12, 34, 55, 78, 91])).to.deep.equal({ even: [12, 34, 78], odd: [55, 91] });\n});\n\nit(\"splitEvenOdd([]) should return { even: [], odd: [] } for an empty input array\", () => {\n  expect(splitEvenOdd([])).to.deep.equal({ even: [], odd: [] });\n});\n\nit(\"splitEvenOdd([0, 1, 5, 8, 14]) should return { even: [0, 8, 14], odd: [1, 5] }\", () => {\n  expect(splitEvenOdd([0, 1, 5, 8, 14])).to.deep.equal({ even: [0, 8, 14], odd: [1, 5] });\n});\n\nit(\"splitEvenOdd([2, 4, 6, 8]) should return { even: [2, 4, 6, 8], odd: [] } when all numbers are even\", () => {\n  expect(splitEvenOdd([2, 4, 6, 8])).to.deep.equal({ even: [2, 4, 6, 8], odd: [] });\n});\n\nit(\"splitEvenOdd([1, 3, 5, 7]) should return { even: [], odd: [1, 3, 5, 7] } when all numbers are odd\", () => {\n  expect(splitEvenOdd([1, 3, 5, 7])).to.deep.equal({ even: [], odd: [1, 3, 5, 7] });\n});\n\nit(\"splitEvenOdd([-1, -2, -3, -4]) should return { even: [-2, -4], odd: [-1, -3] } for negative numbers\", () => {\n  expect(splitEvenOdd([-1, -2, -3, -4])).to.deep.equal({ even: [-2, -4], odd: [-1, -3] });\n});\n\nit(\"splitEvenOdd([0]) should return { even: [0], odd: [] } since 0 is considered even\", () => {\n  expect(splitEvenOdd([0])).to.deep.equal({ even: [0], odd: [] });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

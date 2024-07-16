@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dfbd",
+  "name": {
+    "en": "Sum of three numbers with default parameters",
+    "ru": "Сумма трех чисел с параметрами по умолчанию"
+  },
+  "instruction": {
+    "en": "Correct and complete the code so that the `sum` function takes three numbers and returns their sum.\n\nIf any of the numbers is not specified, it is considered to be zero.\n\nExamples:\n```\nsum(1, 2, 3) will return 6\nsum(1, 2) will return 3\nsum(1) will return 1\nsum() will return 0\n```",
+    "ru": "Исправьте и дополните код, чтобы функция `sum` принимала три числа и возвращала их сумму.\n\nЕсли какое-то из чисел не указано, то оно считается равным нулю.\n\nПримеры:\n```\nsum(1, 2, 3) вернет 6\nsum(1, 2) вернет 3\nsum(1) вернет 1\nsum() вернет 0\n```"
+  },
+  "initialSolution": "function sum(a, a, a){\n\n}",
+  "completedSolution": "function sum(n1 = 0 , n2 = 0, n3 = 0) {\n  return n1 + n2 + n3;\n}",
+  "openTest": "it('Created function sum', () => {\n  expect(sum).to.be.a('function');\n});\n\nit('Function returns correct result for arguments `1, 1, 1', () => {\n  expect(sum(1, 1, 1)).eq(3);\n});\n\nit('Function returns correct result for arguments `1, 1`', () => {\n  expect(sum(1, 1)).eq(2);\n});\n\nit('Function returns correct result for arguments `1`', () => {\n  expect(sum(1)).eq(1);\n});\n\nit('The function returns the correct result without arguments', () => {\n  expect(sum()).eq(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

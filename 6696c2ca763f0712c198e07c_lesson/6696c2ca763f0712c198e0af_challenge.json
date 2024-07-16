@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e0af",
+  "name": {
+    "en": "Calculation of percentage gain or loss on sale",
+    "ru": "Расчет процентной прибыли или убытка от продажи"
+  },
+  "instruction": {
+    "en": "The `saleMargin` function takes two parameters as input:\n `costPrice` - purchase price and `salePrice` - sale price.\n\nThe function should return the percentage gain or loss of the sale as a number.\n\nExamples:\n```javascript\nsaleMargin(100, 200); // 100\nsaleMargin(100, 150); // 50\nsaleMargin(10, 100); // 900\n```\n\nUse the formula: `(salePrice - costPrice) / costPrice * 100`\n\nExample:\n\nLet's say you bought an item for $100 and sold it for $120.\n\nThen: (salePrice - costPrice) / costPrice * 100 = (120 - 100) / 100 * 100 = 20%.\n\nYou have made a profit of 20% of the cost of the product for the seller.\n\nIf you had sold the product for $90, the result would have been:\n\n(salePrice - costPrice) / costPrice * 100 = (90 - 100) / 100 * 100 = -10%\n\nYou would have lost 10% of the value of the product to the seller, that is, you would have suffered a loss.",
+    "ru": "На вход функция `saleMargin` принимает два параметра:\n `costPrice` – цена закупки и `salePrice` – цена продажи.\n\nФункция должна возвращать процентную прибыль или убыток от продажи в процентах в виде числа.\n\nПримеры:\n```javascript\nsaleMargin(100, 200); // 100\nsaleMargin(100, 150); // 50\nsaleMargin(10, 100); // 900\n```\n\nИспользуйте формулу: `(salePrice - costPrice) / costPrice * 100`\n\nПример:\n\nДопустим, вы купили товар за 100 долларов, а продали его за 120 долларов.\n\nТогда: `(salePrice - costPrice) / costPrice * 100 = (120 - 100) / 100 * 100 = 20%`\n\nВы получили прибыль в размере 20% от стоимости товара для продавца.\n\nЕсли бы вы продали товар за 90 долларов, то результат был бы:\n\n`(salePrice - costPrice) / costPrice * 100 = (90 - 100) / 100 * 100 = -10%`\n\nВы потеряли бы 10% от стоимости товара для продавца, то есть понесли убыток."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function saleMargin(costPrice, salePrice) {\n  return ((salePrice - costPrice) / costPrice) * 100;\n}",
+  "openTest": "it('Created function saleMargin', () => {\n  expect(saleMargin).to.be.a('function');\n});\n\nit('saleMargin(100, 200) should return 100', () => {\n  expect(saleMargin(100, 200)).to.be.equal(100);\n});\n\nit('saleMargin(100, 150) should return 50', () => {\n  expect(saleMargin(100, 150)).to.be.equal(50);\n});\n\nit('saleMargin(10, 100) should return 900', () => {\n  expect(saleMargin(10, 100)).to.be.equal(900);\n});\n\nit('saleMargin(100, 10) should return -90', () => {\n  expect(saleMargin(100, 10)).to.be.equal(-90);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

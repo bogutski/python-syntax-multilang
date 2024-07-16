@@ -1,0 +1,5 @@
+{
+  "name": "Reverse only the middle element of the array",
+  "instruction": "Write a function `reverseOnlyMiddle` that takes an array of strings.\n\nThe function should return a new array:\n\n* All elements except the middle one should remain unchanged.\n\n* The string in the middle of the array should be reversed.\n\nThe array will always have an odd number of elements.\n\nUse the function `Math.floor(arr.length / 2)` to find the index of the middle element.\n\nIf the array is empty, return the string `'Array is empty'`.\n\n\nExamples of function calls:\n```javascript\nreverseOnlyMiddle(['123', '456', '789']);          // ['123', '654', '789']\nreverseOnlyMiddle(['123', 'abc', 'def']);          // ['123', 'cba', 'def']\nreverseOnlyMiddle(['12', '34', '56', '78', '90']); // ['12', '34', '65', '78', '90']\nreverseOnlyMiddle(['drow']);                       // ['word']\nreverseOnlyMiddle([]);                             // 'Array is empty'\n```",
+  "instructions": {}
+}

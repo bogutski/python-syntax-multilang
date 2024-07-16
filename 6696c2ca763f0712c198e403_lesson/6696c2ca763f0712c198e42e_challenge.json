@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e42e",
+  "name": {
+    "en": "Translate string to uppercase",
+    "ru": "Перевести строку в верхний регистр"
+  },
+  "instruction": {
+    "en": "Write a function `allUpper` that takes a string and returns the same string, but in uppercase.\n\nExamples of running the function:\n```javascript\nallUpper('Hello') // 'HELLO'\nallUpper('Hello World') // 'HELLO WORLD'\nallUpper('aaa') // 'AAA'\n```",
+    "ru": "Напишите функцию `allUpper`, которая принимает строку и возвращает эту же строку, но в верхнем регистре.\n\nПримеры запуска функции:\n```javascript\nallUpper('Hello') // 'HELLO'\nallUpper('Hello World') // 'HELLO WORLD'\nallUpper('aaa') // 'AAA'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function allUpper(str) {\n  return str.toUpperCase();\n}",
+  "openTest": "it('Created function allUpper', () => {\n  expect(allUpper).to.be.a('function');\n});\n\nit('allUpper(\"Hello\") should return \"HELLO\"', () => {\n  expect(allUpper('Hello')).to.equal('HELLO');\n});\n\nit('allUpper(\"Hello World\") should return \"HELLO WORLD\"', () => {\n  expect(allUpper('Hello World')).to.equal('HELLO WORLD');\n});\n\nit('allUpper(\"aaa\") should return \"AAA\"', () => {\n  expect(allUpper('aaa')).to.equal('AAA');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

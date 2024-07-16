@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e38f",
+  "name": {
+    "en": "Kelvin Color Temperature",
+    "ru": "Температура цвета по Кельвину"
+  },
+  "instruction": {
+    "en": "Light has a temperature, which is measured in Kelvin. The higher the temperature, the bluer the glow.\n\nWrite a function `kelvinToColor` that takes one parameter, the temperature in Kelvin.\n\nThe function should return a string that describes the color of the glow.\n\nExamples of running the function:\n```javascript\nkelvinToColor(2000); // '2000K - Warm'\nkelvinToColor(3000); // '3000K - Soft white'\nkelvinToColor(4500); // '4500K - White'\nkelvinToColor(6500); // '6500K - Cool white'\nkelvinToColor(8000); // '8000K - Cold'\n```\n\n* Up to 2000 Kelvin - `Warm`\n* 2000 - 2999 Kelvin - `Soft white`\n* 3000 - 4499 Kelvin - `White`\n* 4500 - 6499 Kelvin - `Cool white`\n* From 6500 - `Cold`",
+    "ru": "У света есть температура, которая измеряется в Кельвинах. Чем выше температура, тем синее свечение.\n\nНапишите функцию `kelvinToColor`, которая принимает один параметр - температуру в Кельвинах.\n\nФункция должна возвращать строку, которая описывает цвет свечения.\n\nПримеры запуска функции:\n```javascript\nkelvinToColor(2000); // '2000K - Warm'\nkelvinToColor(3000); // '3000K - Soft white'\nkelvinToColor(4500); // '4500K - White'\nkelvinToColor(6500); // '6500K - Cool white'\nkelvinToColor(8000); // '8000K - Cold'\n```\n\n* До 2000 Кельвинов - `Warm`\n* 2000 - 2999 Кельвинов - `Soft white`\n* 3000 - 4499 Кельвинов - `White`\n* 4500 - 6499 Кельвинов - `Cool white`\n* от 6500 - `Cold`"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function kelvinToColor(kelvin) {\n  if (kelvin < 2000) return `${kelvin}K - Warm`;\n  if (kelvin < 3000) return `${kelvin}K - Soft white`;\n  if (kelvin < 4500) return `${kelvin}K - White`;\n  if (kelvin < 6500) return `${kelvin}K - Cool white`;\n  return `${kelvin}K - Cold`;\n}",
+  "openTest": "it('Created function kelvinToColor', () => {\n  expect(kelvinToColor).to.be.a('function');\n});\n\nit('kelvinToColor(1500) should return \"1500K - Warm\"', () => {\n  expect(kelvinToColor(1500)).to.equal('1500K - Warm');\n});\n\nit('kelvinToColor(2000) should return \"2000K - Soft white\"', () => {\n  expect(kelvinToColor(2000)).to.equal('2000K - Soft white');\n});\n\nit('kelvinToColor(2001) should return \"2001K - Soft white\"', () => {\n  expect(kelvinToColor(2001)).to.equal('2001K - Soft white');\n});\n\nit('kelvinToColor(2999) should return \"2999K - Soft white\"', () => {\n  expect(kelvinToColor(2999)).to.equal('2999K - Soft white');\n});\n\nit('kelvinToColor(3000) should return \"3000K - White\"', () => {\n  expect(kelvinToColor(3000)).to.equal('3000K - White');\n});\n\nit('kelvinToColor(3001) should return \"3001K - White\"', () => {\n  expect(kelvinToColor(3001)).to.equal('3001K - White');\n});\n\nit('kelvinToColor(4499) should return \"4499K - White\"', () => {\n  expect(kelvinToColor(4499)).to.equal('4499K - White');\n});\n\nit('kelvinToColor(4500) should return \"4500K - Cool white\"', () => {\n  expect(kelvinToColor(4500)).to.equal('4500K - Cool white');\n});\n\nit('kelvinToColor(4501) should return \"4501K - Cool white\"', () => {\n  expect(kelvinToColor(4501)).to.equal('4501K - Cool white');\n});\n\nit('kelvinToColor(6499) should return \"6499K - Cool white\"', () => {\n  expect(kelvinToColor(6499)).to.equal('6499K - Cool white');\n});\n\nit('kelvinToColor(6500) should return \"6500K - Cold\"', () => {\n  expect(kelvinToColor(6500)).to.equal('6500K - Cold');\n});\n\nit('kelvinToColor(6501) should return \"6501K - Cold\"', () => {\n  expect(kelvinToColor(6501)).to.equal('6501K - Cold');\n});\n\nit('kelvinToColor(8000) should return \"8000K - Cold\"', () => {\n  expect(kelvinToColor(8000)).to.equal('8000K - Cold');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

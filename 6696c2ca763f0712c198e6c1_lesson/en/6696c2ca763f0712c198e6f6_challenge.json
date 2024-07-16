@@ -1,0 +1,4 @@
+{
+  "name": "The average length of the four arrays",
+  "instruction": "Write a function `averageLength` that takes four parameters:\n* `arr1` - array of elements,\n* `arr2` - array of elements,\n* `arr3` - array of elements,\n* `arr4` - array of elements.\n\nThe function should return the average length of the arrays rounded to the nearest integer.\n\nUse the method `Math.round()` for rounding.\n\nAn example of running the function:\n```javascript\naverageLength([1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5, 6]);\n// 5\n```\n\nSimilar example:\n```javascript\nfunction averageString(str1, str2, str3) {\nconst average = (str1.length + str2.length + str3.length) / 3;\nreturn Math.round(average);\n}\n```"
+}

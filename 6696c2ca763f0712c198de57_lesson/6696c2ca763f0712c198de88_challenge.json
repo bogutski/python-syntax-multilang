@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de88",
+  "name": {
+    "en": "Cuboid volume",
+    "ru": "Объем кубоида"
+  },
+  "instruction": {
+    "en": "Bob needs a quick way to calculate the volume of a cuboid with three values: length, width, and height of the cuboid.\n\nWrite a program to help Bob with this calculation.\n\nCreate variables with the names: `length`, `width`, and `height`. Assign them values: 5, 7, and 12 respectively.\n\nCreate a variable with the name `volumeOfCuboid`, assign it a value that calculates the volume of the cuboid.\n\nHere is an example that is essentially similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst first = 15;\nconst second = 20;\nconst third = 10;\nconst volume = first * second * third;\n```",
+    "ru": "Бобу нужен быстрый способ вычислить объем кубоида с тремя значениями: длина, ширина и высота кубоида.\n\nНапишите программу, чтобы помочь Бобу в этом расчете.\n\nСоздайте переменные с названиями: `length`, `width` и `height`. Присвойте им значения: 5, 7 и 12 соответственно.\n\nСоздайте переменную с названием `volumeOfCuboid`, присвойте ей значение, которое вычисляет объем кубоида.\n\nПриведем пример, который принципиально похож на то что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst first = 15;\nconst second = 20;\nconst third = 10;\nconst volume = first * second * third;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const length = 5;\nconst width = 7;\nconst height = 12;\nconst volumeOfCuboid = length * width * height;",
+  "openTest": "it('Variable `length` contains a value', () => {\n  expect(length).not.undefined;\n});\n\nit('Variable `length` contains data type number', () => {\n  expect(length).a('number');\n});\n\nit('Variable `length` contains value 5 ', () => {\n  expect(length).equal(5);\n});\n\nit('The variable `width` contains a value ', () => {\n  expect(width).not.undefined;\n});\n\nit('Variable `width` contains data type number', () => {\n  expect(width).a('number');\n});\n\nit('Variable `width` contains value 7 ', () => {\n  expect(width).equal(7);\n});\n\nit('Variable `height` contains a value ', () => {\n  expect(height).not.undefined;\n});\n\nit('Variable `height` contains data type number', () => {\n  expect(height).a('number');\n});\n\nit('The `height` variable contains a value of 12 ', () => {\n  expect(height).equal(12);\n});\n\nit('The variable `volumeOfCuboid` contains a value ', () => {\n  expect(volumeOfCuboid).not.undefined;\n});\n\nit('Variable `volumeOfCuboid` contains data type number', () => {\n  expect(volumeOfCuboid).a('number');\n});\n\nit('Variable `volumeOfCuboid` contains value 420', () => {\n  expect(volumeOfCuboid).equal(420);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst length = 5;\nconst width = 7;\nconst height = 12;\nconst volumeOfCuboid = length * width * height;\n```",
+    "ru": "```javascript\nconst length = 5;\nconst width = 7;\nconst height = 12;\nconst volumeOfCuboid = length * width * height;\n```"
+  }
+}

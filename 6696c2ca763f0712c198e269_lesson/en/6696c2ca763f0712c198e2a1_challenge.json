@@ -1,0 +1,4 @@
+{
+  "name": "Rounded area of the circle",
+  "instruction": "Write a function `roundCircleArea` that takes one parameter, the radius of the circle, and returns its area rounded up.\n\nThe numbers can be integers or fractions. Choose the name of the function parameter yourself.\n\nThe value of `π` in JavaScript can be obtained as follows: `Math.PI`.\n\n```javascript\nconst square = Math.PI * radius ** 2;\n```\n\nExamples of function calls:\n```javascript\nroundCircleArea(1) // 4\nroundCircleArea(1.5) // 7\nroundCircleArea(2) // 13\n```"
+}

@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35cf",
+  "name": {
+    "ru": "Присвойте переменной a значение 10",
+    "en": "Assign value 10 to the variable a",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Создайте переменную с именем `a`. Используйте ключевое слово` let`. Присвойте значение - число `10`.\nДля этого напечатайте команду:\n```\nlet a = 10;\n```",
+    "en": "Create a variable named `a`. Use keyword `let`. Assign a value - the number `10`.\nTo do this, type the command:\n```\nlet a = 10;\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "let a = 10;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "equal"
+}

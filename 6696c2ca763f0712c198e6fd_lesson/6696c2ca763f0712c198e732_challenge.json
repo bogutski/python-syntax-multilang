@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e732",
+  "name": {
+    "en": "Multiplication of array elements",
+    "ru": "Умножение элементов массива"
+  },
+  "instruction": {
+    "en": "Write a function `mult` that takes one parameter, an array.\n\nThe array contains only positive or negative integers.\n\nThe function should return the product of the first and the last element of the array.\n\nAn example of running the function:\n```javascript\nmult([1, 2, 3, 4, 5]); // 5\nmult([1, 2, 3, 4, 5, 6]); // 6\n```\n\nUse the example `arr[arr.length - 1]` to get the last element of the array.",
+    "ru": "Напишите функцию `mult`, которая принимает один параметр - массив.\n\nМассив содержит только целые положительные или отрицательные числа.\n\nФункция должна вернуть произведение первого и последнего элемента массива.\n\nПример запуска функции:\n```javascript\nmult([1, 2, 3, 4, 5]); // 5\nmult([1, 2, 3, 4, 5, 6]); // 6\n```\n\nДля получения последнего элемента массива используйте пример `arr[arr.length - 1]`"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function mult(numbers){\n  return numbers[0] * numbers[numbers.length - 1];\n}",
+  "openTest": "it('Created function mult', () => {\n    expect(mult).to.be.a('function');\n});\n\nit('mult([1, 2, 3, 4, 5]) should return 5', () => {\n    expect(mult([1, 2, 3, 4, 5])).to.be.equal(5);\n});\n\nit('mult([10, 2, 3, 4, 5, -6]) should return -60', () => {\n    expect(mult([10, 2, 3, 4, 5, -6])).to.be.equal(-60);\n});\n\nit('mult([3, 4, 5, 6, 7]) should return 21', () => {\n    expect(mult([3, 4, 5, 6, 7])).to.be.equal(21);\n});\n\nit('mult([2, 3, 4, 5, 6, 7, 8]) should return 16', () => {\n    expect(mult([2, 3, 4, 5, 6, 7, 8])).to.be.equal(16);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

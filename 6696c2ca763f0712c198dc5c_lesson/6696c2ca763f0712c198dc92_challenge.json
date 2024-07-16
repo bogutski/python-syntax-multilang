@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dc92",
+  "name": {
+    "en": "How many letters are in the name of the famous volcano?",
+    "ru": "Сколько букв содержится в названии знаменитого вулкана?"
+  },
+  "instruction": {
+    "en": "Create a variable `volcanoName` and assign it the value `'Eyjafjallajokull'`.\n\nCreate a `strLength` variable and use the length property to get the length of the string contained in the `volcanoName` variable.\n\nAs a result, you will know how many letters the name of the famous Icelandic volcano contains.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task.\n```javascript\nconst mountainName = `Hvannadalshnukur`; // the highest mountain in Iceland\nconst strLength = mountainName.length; // 16",
+    "ru": "Создайте переменную `volcanoName` и присвойте ей значение `'Eyjafjallajokull'`.\n\nСоздайте переменную `strLength` и при помощи свойства length получите длину строки, содержащейся в переменной `volcanoName`.\n\nВ результате вы узнаете, какое количество букв содержит название знаменитого исландского вулкана.\n\nПриведем пример, который принципиально похож на то что нужно сделать,\nно адаптируйте его к требованиям задачи.\n```javascript\nconst mountainName = `Hvannadalshnukur`; // самая высокая гора в Исландии\nconst strLength = mountainName.length; // 16"
+  },
+  "initialSolution": "",
+  "completedSolution": "const volcanoName = 'Eyjafjallajokull';\nconst strLength = volcanoName.length;",
+  "openTest": "it('Variable `volcanoName` is not `undefined`', () => {\n  expect(volcanoName).not.undefined;\n});\n\nit('Variable `volcanoName` contains data type `string`', () => {\n  expect(volcanoName).a('string');\n});\n\nit('Variable `volcanoName` contains value `Eyjafjallajokull`', () => {\n  expect(volcanoName).eq('Eyjafjallajokull');\n});\n\nit('Variable `strLength` is not `undefined`', () => {\n  expect(strLength).not.undefined;\n});\n\nit('Variable `strLength` contains data type `number`', () => {\n  expect(strLength).a('number');\n});\n\nit('Variable `strLength` is 16', () => {\n  expect(strLength).eq(16);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst volcanoName = 'Eyjafjallajokull';\nconst strLength = volcanoName.length;\n```",
+    "ru": "```javascript\nconst volcanoName = 'Eyjafjallajokull';\nconst strLength = volcanoName.length;\n```"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "The longest word in the array",
+  "instruction": "Write a function `theLongestWord` that takes an array and should return the number of characters of the longest word in it.\n\nThe output of the function should look like this: `The longest word has 'wordLength' length'.\n\nIf all the words are the same size, the function should return the length of the first element in the array.\n\nIf the array is empty, the function should return `\"No words found\"`.\n\nExamples of running the function:\n```javascript\ntheLongestWord(['The', 'longest', 'word']) // 'The longest word has 7 length'\ntheLongestWord(['Karl', 'John', 'Hugo']) // 'The longest word has 4 length'\ntheLongestWord([]) // 'No words found'\n```"
+}

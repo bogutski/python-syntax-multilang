@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e6bb",
+  "name": {
+    "en": "Is there a property in the object?",
+    "ru": "Имеется ли свойство в объекте?"
+  },
+  "instruction": {
+    "en": "The `hasProperty` function takes two parameters:\n* `obj` - object to check;\n* `key` - the string, the key to be checked.\n\nThe function must return `true` if the object contains a key, and `false` if not.\n\nAn example of running the function:\n```javascript\nhasProperty({ name: \"Helen\", lastName: \"Rock\" }, \"lastName\") // true\n```",
+    "ru": "Функция `hasProperty` принимает два параметра:\n* `obj` – объект, который необходимо проверить;\n* `key` – строка, ключ, который необходимо проверить.\n\nФункция должна вернуть `true`, если объект содержит ключ, и `false`, если нет.\n\nПример запуска функции:\n```javascript\nhasProperty({ name: \"Helen\", lastName: \"Rock\" }, \"lastName\")  // true\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function hasProperty(obj, key){\n  return key in obj\n}",
+  "openTest": "it('Created function hasProperty', () => {\n  expect(hasProperty).to.be.a('function');\n});\n\nit(\"The function includes the `in` operator\", () => {\n  expect(hasProperty.toString()).to.include(\" in \");\n});\n\nit(`hasProperty({ name: \"Helen\", lastName: \"Rock\" }, \"lastName\")  // true`, () => {\n  expect(hasProperty({ name: \"Helen\", lastName: \"Rock\" }, \"lastName\")).eq(true);\n});\n\nit(`hasProperty({ name: \"Helen\", lastName: \"Rock\" }, \"age\")  // false`, () => {\n    expect(hasProperty({ name: \"Helen\", lastName: \"Rock\" }, \"age\")).eq(false);\n});\n\nit(`hasProperty({ name: \"Jonny\", lastName: \"Cash\" }, \"name\")  // true`, () => {\n    expect(hasProperty({ name: \"Jonny\", lastName: \"Cash\" }, \"name\")).eq(true);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

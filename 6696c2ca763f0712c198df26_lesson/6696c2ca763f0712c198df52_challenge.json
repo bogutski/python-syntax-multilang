@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df52",
+  "name": {
+    "en": "The answer to the ultimate question of life, the universe, and everything",
+    "ru": "Ответ на главный вопрос жизни, вселенной и всего такого"
+  },
+  "instruction": {
+    "en": "Write a function `answerAboutUniverse` that returns the answer to the ultimate question of life, the universe and everything.\n\nThe function should return the string `42`.",
+    "ru": "Напиши функцию `answerAboutUniverse`, которая возвращает ответ на главный вопрос жизни, вселенной и всего такого.\n\nФункция должна возвращать строку `42`."
+  },
+  "initialSolution": "fun here",
+  "completedSolution": "function answerAboutUniverse() {\n  return '42'\n}",
+  "openTest": "it('Created function answerAboutUniverse', () => {\n  expect(answerAboutUniverse).to.be.a('function');\n});\n\nit('Function returns correct result', () => {\n  expect(answerAboutUniverse()).eq('42');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

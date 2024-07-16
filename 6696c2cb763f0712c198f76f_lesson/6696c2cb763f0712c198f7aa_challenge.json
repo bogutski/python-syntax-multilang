@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f7aa",
+  "name": {
+    "en": "/*",
+    "ru": "Проверка наличия числа в строковом представлении массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `checkNumberInStringArray`, которая принимает массив строк и число.\n\nФункция должна преобразовать каждую строку массива, чтобы сохранить только числовые символы, и затем проверить, содержится ли число (в строковом виде) в любом элементе массива с помощью метода `includes()`.\n\nФункция должна вернуть объект вида: `{newArr: modified array, includes: boolean}`.\n\n\nПримеры запуска функции:\n```javascript\nconsole.log(checkNumberInStringArray([\"abc123\", \"456def\", \"789ghi\"], 123));\n// { newArr: [\"123\", \"456\", \"789\"], includes: true }\n\nconsole.log(checkNumberInStringArray([\"hello42\", \"world\", \"number99\"], 42));\n// { newArr: [\"42\", \"\", \"99\"], includes: true }\n\nconsole.log(checkNumberInStringArray([\"one1\", \"two2\", \"three3\"], 4));\n// { newArr: [\"1\", \"2\", \"3\"], includes: false }\n```"
+  },
+  "initialSolution": "function checkNumberInStringArray(){\n\n}",
+  "completedSolution": "function checkNumberInStringArray(arr, num) {\n  const onlyIntegers = string => {\n    let result = ''\n    for(let letter of string){\n      if(Number.isInteger(+letter)) result += letter\n    }\n    return result\n  }\n\n  const newArr = arr.map(str => onlyIntegers(str))\n  return {newArr, includes: newArr.includes(num.toString())};\n}",
+  "openTest": "it('Created function checkNumberInStringArray', () => {\n  expect(checkNumberInStringArray).to.be.a('function');\n});\n\nit(\"Function checkNumberInStringArray should include includes method\", () => {\n  const result = checkNumberInStringArray.toString();\n  expect(result).to.include('.includes(');\n});\n\nit('checkNumberInStringArray([\"abc123\", \"456def\", \"789ghi\"], 123) should return {newArr: [\"123\", \"456\", \"789\"], includes: true}', function() {\n  expect(checkNumberInStringArray([\"abc123\", \"456def\", \"789ghi\"], 123)).to.deep.equal({\n    newArr: [\"123\", \"456\", \"789\"],\n    includes: true\n  });\n});\n\nit('checkNumberInStringArray([\"hello42\", \"world\", \"number99\"], 42) should return {newArr: [\"42\", \"\", \"99\"], includes: true}', function() {\n  expect(checkNumberInStringArray([\"hello42\", \"world\", \"number99\"], 42)).to.deep.equal({\n    newArr: [\"42\", \"\", \"99\"],\n    includes: true\n  });\n});\n\nit('checkNumberInStringArray([\"one1\", \"two2\", \"three3\"], 4) should return {newArr: [\"1\", \"2\", \"3\"], includes: false}', function() {\n  expect(checkNumberInStringArray([\"one1\", \"two2\", \"three3\"], 4)).to.deep.equal({\n    newArr: [\"1\", \"2\", \"3\"],\n    includes: false\n  });\n});\n\nit('checkNumberInStringArray([\"apple1\", \"banana22\", \"cherry333\"], 22) should return {newArr: [\"1\", \"22\", \"333\"], includes: true}', function() {\n  expect(checkNumberInStringArray([\"apple1\", \"banana22\", \"cherry333\"], 22)).to.deep.equal({\n    newArr: [\"1\", \"22\", \"333\"],\n    includes: true\n  });\n});\n\nit('checkNumberInStringArray([\"cat123\", \"dog456\", \"bird789\"], 456) should return {newArr: [\"123\", \"456\", \"789\"], includes: true}', function() {\n  expect(checkNumberInStringArray([\"cat123\", \"dog456\", \"bird789\"], 456)).to.deep.equal({\n    newArr: [\"123\", \"456\", \"789\"],\n    includes: true\n  });\n});\n\nit('checkNumberInStringArray([\"no1\", \"no2\", \"no3\"], 5) should return {newArr: [\"1\", \"2\", \"3\"], includes: false}', function() {\n  expect(checkNumberInStringArray([\"no1\", \"no2\", \"no3\"], 5)).to.deep.equal({\n    newArr: [\"1\", \"2\", \"3\"],\n    includes: false\n  });\n});\n\nit('checkNumberInStringArray([\"item100\", \"item200\", \"item300\"], 200) should return {newArr: [\"100\", \"200\", \"300\"], includes: true}', function() {\n  expect(checkNumberInStringArray([\"item100\", \"item200\", \"item300\"], 200)).to.deep.equal({\n    newArr: [\"100\", \"200\", \"300\"],\n    includes: true\n  });\n});\n\nit('checkNumberInStringArray([\"value123\", \"value456\", \"value789\"], 321) should return {newArr: [\"123\", \"456\", \"789\"], includes: false}', function() {\n  expect(checkNumberInStringArray([\"value123\", \"value456\", \"value789\"], 321)).to.deep.equal({\n    newArr: [\"123\", \"456\", \"789\"],\n    includes: false\n  });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

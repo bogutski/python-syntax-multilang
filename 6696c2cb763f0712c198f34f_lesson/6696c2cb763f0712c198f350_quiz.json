@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2cb763f0712c198f350",
+  "name": {
+    "ru": "Array.prototype.pop() – удаляет последний элемент массива",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f351",
+      "name": {
+        "ru": "Что делает метод pop()",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f352",
+          "name": {
+            "ru": "Добавляет элемент в начало массива",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f353",
+          "name": {
+            "ru": "Удаляет первый элемент из массива",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f354",
+          "name": {
+            "ru": "Удаляет последний элемент из массива и возвращает его",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f355",
+          "name": {
+            "ru": "Возвращает последний элемент массива без его удаления",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f356",
+      "name": {
+        "ru": "Что вернет метод pop() при вызове на пустом массиве?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f357",
+          "name": {
+            "ru": "null",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f358",
+          "name": {
+            "ru": "0",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f359",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f35a",
+          "name": {
+            "ru": "[]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f35b",
+      "name": {
+        "ru": "Какой код правильно удаляет последний элемент массива fruits и сохраняет его в переменной lastFruit?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f35c",
+          "name": {
+            "ru": "```javascript\nlet lastFruit = fruits.shift();\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f35d",
+          "name": {
+            "ru": "```javascript\nlet lastFruit = fruits.pop();\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f35e",
+          "name": {
+            "ru": "```javascript\nlet lastFruit = fruits.push();\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f35f",
+          "name": {
+            "ru": "```javascript\nlet lastFruit = fruits; fruits.pop();\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f360",
+      "name": {
+        "ru": "Может ли метод pop() удалить более одного элемента за раз?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f361",
+          "name": {
+            "ru": "Да, если указать количество удаляемых элементов",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f362",
+          "name": {
+            "ru": "Да, если вызвать его в цикле",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f363",
+          "name": {
+            "ru": "Да, если передать в него индекс удаляемого элемента",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f364",
+          "name": {
+            "ru": "Нет, метод всегда удаляет только последний элемент",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f365",
+      "name": {
+        "ru": "Какой будет последний индекс элемент массива после выполнения метода pop() на массиве из 5 элементов?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f366",
+          "name": {
+            "ru": "5",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f367",
+          "name": {
+            "ru": "4",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f368",
+          "name": {
+            "ru": "3",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f369",
+          "name": {
+            "ru": "6",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f36a",
+      "name": {
+        "ru": "Что произойдет после выполнения кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n[].pop();\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f36b",
+          "name": {
+            "ru": "Возникнет ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f36c",
+          "name": {
+            "ru": "Массив изменится и станет [undefined]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f36d",
+          "name": {
+            "ru": "Ничего, массив останется пустым",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f36e",
+          "name": {
+            "ru": "Массив изменится и станет [null]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f36f",
+      "name": {
+        "ru": "Какой метод является противоположностью метода pop()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f370",
+          "name": {
+            "ru": "shift()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f371",
+          "name": {
+            "ru": "unshift()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f372",
+          "name": {
+            "ru": "splice()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f373",
+          "name": {
+            "ru": "push()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f374",
+      "name": {
+        "ru": "Какая будет конечная длина массива после выполнения следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n[1, 2, 3, 4].pop().pop().pop();\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f375",
+          "name": {
+            "ru": "1",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f376",
+          "name": {
+            "ru": "2",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f377",
+          "name": {
+            "ru": "3",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f378",
+          "name": {
+            "ru": "Этот код вызовет ошибку",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f379",
+      "name": {
+        "ru": "Что вернет следующий код?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconsole.log(['a', 'b', 'c'].pop());\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f37a",
+          "name": {
+            "ru": "['a', 'b']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f37b",
+          "name": {
+            "ru": "['a', 'c']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f37c",
+          "name": {
+            "ru": "2",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f37d",
+          "name": {
+            "ru": "'c'",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f37e",
+      "name": {
+        "ru": "Какое значение будет в переменной firstElement после выполнения следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet array = [10, 20, 30];\nlet lastElement = array.unshift(array.pop());\nlet firstElement = array[0];\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f37f",
+          "name": {
+            "ru": "0",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f380",
+          "name": {
+            "ru": "10",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f381",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f382",
+          "name": {
+            "ru": "30",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

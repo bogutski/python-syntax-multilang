@@ -1,0 +1,5 @@
+{
+  "name": "Добавьте свойство в объект",
+  "instruction": "Напишите функцию `addProperty`, которая принимает три параметра:\n* `obj` - объект\n* `key` - ключ\n* `value` - значение\n\nФункция должна добавить в объект новое свойство с ключом `key` и значением `value`.\n\nФункция должна вернуть обновленный объект.\n\nПример запуска функции:\n```javascript\naddProperty({ name: \"Mike\" }, \"age\", 45);      // { name: \"Mike\", age: 45 }\naddProperty({ car: \"BMW\" }, \"year\", 2020);     // { car: \"BMW\", year: 2020 }\n```\n\nАналогичный пример:\n```javascript\nfunction addField(car, fieldKey, fieldValue) {\n  car[fieldKey] = fieldValue;\n  return car;\n}\n\nconsole.log(addField({ car: \"BMW\" }, \"year\", 2020)); // { car: \"BMW\", year: 2020 }\n```",
+  "instructions": {}
+}

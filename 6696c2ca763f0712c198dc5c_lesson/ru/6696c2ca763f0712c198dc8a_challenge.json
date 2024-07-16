@@ -1,0 +1,6 @@
+{
+  "name": "Пустая строка",
+  "instruction": "Создайте переменную с именем `empty` и присвойте ей значение пустой строки `''`.\nСоздайте переменную с именем `emptyLength` и присвойте ей значение длины строки `empty`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst address = '';\nconst addressLength = address.length;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst empty = '';\nconst emptyLength = empty.length;\n```"
+}

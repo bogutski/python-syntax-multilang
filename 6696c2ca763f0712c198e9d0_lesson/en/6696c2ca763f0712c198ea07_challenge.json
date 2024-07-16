@@ -1,0 +1,4 @@
+{
+  "name": "Even vs. odd numbers",
+  "instruction": "Write a function `evenVsOdd` that takes two numbers `num1` and `num2`.\n\nCreate two variables `sumOfOdd` and `sumOfEven` to store the sum of odd and even numbers, respectively.\n\nCreate a loop that goes through the numbers from `num1` to `num2` inclusive and sums them into the `sumOfOdd` and `sumOfEven` variables.\n\nAfter the loop ends, compare the sums of even and odd numbers and return the string:\n\n* 'Sum of even win' - if the sum of even numbers is greater,\n* 'Sum of odd win' - if the sum of odd numbers is greater,\n* 'Draw' - if the sums are equal.\n\nExamples of function call:\n```javascript\nevenVsOdd(1, 11); // 'Sum of odd win'\nevenVsOdd(1, 12); // 'Sum of even win'\nevenVsOdd(-10, 10); // 'Draw'\n```"
+}

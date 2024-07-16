@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198dcd1",
+      "name": {
+        "ru": "Какие значения может принимать тип данных Boolean?",
+        "en": "What values can the Boolean data type take?",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcd2",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcd3",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcd4",
+          "name": {
+            "ru": "null",
+            "en": "null",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcd5",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dcd6",
+      "name": {
+        "ru": "Boolean используют для хранения значений типа \"да/нет\".",
+        "en": "Boolean is used to store \"yes/no\" values.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcd7",
+          "name": {
+            "ru": "это утверждение верно",
+            "en": "this statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcd8",
+          "name": {
+            "ru": "неверно",
+            "en": "this statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dcd9",
+      "name": {
+        "ru": "Выберите значения, которые дадут результат true.",
+        "en": "Select the values that will give the result true.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcda",
+          "name": {
+            "ru": "123 > 122",
+            "en": "123 > 122",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcdb",
+          "name": {
+            "ru": "'2' === 2",
+            "en": "'2' === 2",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcdc",
+          "name": {
+            "ru": "'a' + 'b' === 'ab'",
+            "en": "'a' + 'b' === 'ab'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcdd",
+          "name": {
+            "ru": "null === 0",
+            "en": "null === 0",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dcde",
+      "name": {
+        "ru": "Выберите значения, которые дадут результат false.",
+        "en": "Select the values that will give the result false.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcdf",
+          "name": {
+            "ru": "'10' === '9' + '1'",
+            "en": "'10' === '9' + '1'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dce0",
+          "name": {
+            "ru": "12 % 2 === 0",
+            "en": "12 % 2 === 0",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dce1",
+          "name": {
+            "ru": "null + 0 === null",
+            "en": "null + 0 === null",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dce2",
+          "name": {
+            "ru": "typeof '1' === 'string'",
+            "en": "typeof '1' === 'string'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dce3",
+      "name": {
+        "ru": "Операторы сравнения возвращают логические значения true (истина) и false (ложь).",
+        "en": "Comparison operators return boolean values true and false.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dce4",
+          "name": {
+            "ru": "да",
+            "en": "yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dce5",
+          "name": {
+            "ru": "нет",
+            "en": "no",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dce6",
+      "name": {
+        "ru": "Что вернет console.log(0.5 == '0.5')?",
+        "en": "What will console.log(0.5 !== '0.5') return?",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dce7",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dce8",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dce9",
+      "name": {
+        "ru": "Оператор `===` сравнивает...",
+        "en": "The !== operator is used to compare equality of ",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcea",
+          "name": {
+            "ru": "только значения",
+            "en": "values only",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dceb",
+          "name": {
+            "ru": "типы и значения",
+            "en": "types and values",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcec",
+          "name": {
+            "ru": "только типы",
+            "en": "types only",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dced",
+      "name": {
+        "ru": "Выберите варианты, где результат сравнения true.",
+        "en": "Select the options where the result of the comparison is true.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcee",
+          "name": {
+            "ru": "1 + 1 == '2'",
+            "en": "1 + 1 == '2'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcef",
+          "name": {
+            "ru": "'Example' == 'example'",
+            "en": "\"Example\" == 'example'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcf0",
+          "name": {
+            "ru": "true == false",
+            "en": "true == false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcf1",
+          "name": {
+            "ru": "true == true",
+            "en": "true == true",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dcf2",
+      "name": {
+        "ru": "Выберите вариант, где результат сравнения false.",
+        "en": "Select the option where the comparison result is false.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcf3",
+          "name": {
+            "ru": "true == 1",
+            "en": "true == 1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcf4",
+          "name": {
+            "ru": "0 == false",
+            "en": "0 == false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcf5",
+          "name": {
+            "ru": "false === 0",
+            "en": "false === 0",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcf6",
+          "name": {
+            "ru": "'A' === 'A'",
+            "en": "'A' === 'A'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dcf7",
+      "name": {
+        "ru": "Выберите варианты, где результат сравнения true.",
+        "en": "Select the options where the result of the comparison is true.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcf8",
+          "name": {
+            "ru": "2 > 1",
+            "en": "2 > 1",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcf9",
+          "name": {
+            "ru": "2 == 1",
+            "en": "2 == 1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcfa",
+          "name": {
+            "ru": "'10' == 1 + 4 + 5",
+            "en": "'10' == 1 + 4 + 5",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcfb",
+          "name": {
+            "ru": "2 < 1",
+            "en": "2 < 1",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": false,
+  "_id": "6696c2ca763f0712c198dcd0",
+  "description": {
+    "ru": "",
+    "en": "",
+    "es": ""
+  },
+  "name": {
+    "ru": "JS Syntax. Тип \"boolean\" (Логический тип данных)",
+    "en": "JS Syntax. Type \"boolean\"",
+    "es": ""
+  }
+}

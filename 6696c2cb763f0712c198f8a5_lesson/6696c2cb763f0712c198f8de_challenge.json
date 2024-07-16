@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f8de",
+  "name": {
+    "en": "/*",
+    "ru": "Проверка вложенных массивов на наличие отрицательных чисел"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `areAllSubArraysNonNegative`, которая принимает массив.\n\nФункция должна проверить только каждый подмассив на наличие негативных числ. Если негативные числа не были найдены, внутри подмассива, то функция возвращает строку вида: `No negative in subArrays` и 'Negative number was found' - в обратном случае.\n\n\nПримеры запуска функции:\n```javascript\nareAllSubArraysNonNegative([[1, 2, 3], [-4, 5, 6], [7, 8, 9]]); // 'Negative number was found'\nareAllSubArraysNonNegative([true, [6, 7, 8], 1, undefined, 4, 22, false]); // 'No negative in subArrays'\nareAllSubArraysNonNegative([[1, 2, 3], NaN, ['Hello JS'], -7, [7, 8, 9], 10]); // 'No negative in subArrays'\nareAllSubArraysNonNegative([-5, [1, NaN, 2, 3], null, 1, [4, 5, 6], [7, 8, 9]]); // 'No negative in subArrays'\n```"
+  },
+  "initialSolution": "function areAllSubArraysNonNegative(){\n\n}",
+  "completedSolution": "function areAllSubArraysNonNegative(arr) {\n  const result = arr.every(el => {\n\n    if(Array.isArray(el)){\n\n      for(let num of el){\n        if(typeof num === 'number' && !isNaN(num)){\n          if(num < 0) return false\n        }\n      }\n\n    }\n\n    return true\n  })\n\n  return result ? 'No negative in subArrays': 'Negative number was found';\n}",
+  "openTest": "it('Created function areAllSubArraysNonNegative', () => {\n  expect(areAllSubArraysNonNegative).to.be.a('function');\n});\n\nit('areAllSubArraysNonNegative([-5, [1, NaN, 2, 3], null, 1, [4, 5, 6], [7, 8, 9]]) should return \"No negative in subArrays\"', function() {\n  expect(areAllSubArraysNonNegative([-5, [1, NaN, 2, 3], null, 1, [4, 5, 6], [7, 8, 9]])).to.equal('No negative in subArrays');\n});\n\nit('areAllSubArraysNonNegative([[1, 2, 3], [-4, 5, 6], [7, 8, 9]]) should return \"Negative number was found\"', function() {\n  expect(areAllSubArraysNonNegative([[1, 2, 3], [-4, 5, 6], [7, 8, 9]])).to.equal('Negative number was found');\n});\n\nit('areAllSubArraysNonNegative([true, [6, 7, 8], 1, undefined, 4, 22, false]) should return \"No negative in subArrays\"', function() {\n  expect(areAllSubArraysNonNegative([true, [6, 7, 8], 1, undefined, 4, 22, false])).to.equal('No negative in subArrays');\n});\n\nit('areAllSubArraysNonNegative([[1, 2, 3], NaN, [\"Hello JS\"], -7, [7, 8, 9], 10]) should return \"No negative in subArrays\"', function() {\n  expect(areAllSubArraysNonNegative([[1, 2, 3], NaN, [\"Hello JS\"], -7, [7, 8, 9], 10])).to.equal('No negative in subArrays');\n});\n\nit('areAllSubArraysNonNegative([[], [0, 0, 0], [1, 2, 3]]) should return \"No negative in subArrays\"', function() {\n  expect(areAllSubArraysNonNegative([[], [0, 0, 0], [1, 2, 3]])).to.equal('No negative in subArrays');\n});\n\nit('areAllSubArraysNonNegative([[1, 2, -3], [4, 5, 6], [7, 8, 9]]) should return \"Negative number was found\"', function() {\n  expect(areAllSubArraysNonNegative([[1, 2, -3], [4, 5, 6], [7, 8, 9]])).to.equal('Negative number was found');\n});\n\nit('areAllSubArraysNonNegative([[0, 1, 2], [3, 4, 5], [6, 7, 8], []]) should return \"No negative in subArrays\"', function() {\n  expect(areAllSubArraysNonNegative([[0, 1, 2], [3, 4, 5], [6, 7, 8], []])).to.equal('No negative in subArrays');\n});\n\nit('areAllSubArraysNonNegative([1, 2, 3, 4, 5, [], [NaN, undefined, false, null], null]) should return \"No negative in subArrays\"', function() {\n  expect(areAllSubArraysNonNegative([1, 2, 3, 4, 5, [], [NaN, undefined, false, null], null])).to.equal('No negative in subArrays');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

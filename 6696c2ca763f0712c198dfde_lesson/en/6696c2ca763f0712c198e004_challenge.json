@@ -1,0 +1,4 @@
+{
+  "name": "Create variables to calculate the area of the rectangle",
+  "instruction": "Create a variable `width` with the const keyword and give it a value of 10.\nCreate a variable `height` with the const keyword and give it a value of 20.\nCreate a variable `area` with the const keyword and give it the value of the product of the variables `width` and `height`.\n\nA similar example:\n```javascript\nconst a = 10;\nconst b = 20;\nconst c = a * b;\n```"
+}

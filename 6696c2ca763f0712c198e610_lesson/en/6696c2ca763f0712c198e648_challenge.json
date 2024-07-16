@@ -1,0 +1,4 @@
+{
+  "name": "Replacing the zip code. Objects.",
+  "instruction": "The `clientInfo` function takes two parameters:\n* `address` - object containing information about the address\n* `postalCode` - postal code, string\n\nThe object `address` has the following structure:\n* `flat` - apartment number, string\n* `city` - city, line\n* `country` - country, line.\n\nWe do not need the `flat` property, but the object is missing a postal code. We need to fix the object: remove the property\n`flat` and add a property `postalCode` with value `postalCode`.\n\nThe function should return the changed `address` object\n\nAn example of running the function:\n```javascript\nclientInfo({\nflat: '35',\ncity: 'London',\ncountry: 'Great Britain'},\n'NW1 6XE') //\n{city: 'London',\ncountry: 'Great Britain',\npostalCode: 'NW1 6XE'}\n```"
+}

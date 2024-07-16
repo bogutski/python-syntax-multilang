@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f6ae",
+  "name": {
+    "en": "/*",
+    "ru": "Агрегация и инверсия данных"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `aggregateAndReverse`, которая принимает массив объектов, каждый из которых содержит ключи `id` и `value`.\n\nФункция должна возвращать новый массив, состоящий из значений `value`, умноженных на их `id`, и массив должен быть в обратном порядке.\n\nИспользуйте метод `toReversed()` для инвертирования.\n\n\nПримеры запуска функции:\n```javascript\nconst data = [{id: 1, value: 10}, {id: 2, value: 20}, {id: 3, value: 30}];\nconsole.log(aggregateAndReverse(data)); // [90, 40, 10]\n\nconst moreData = [{id: 1, value: 5}, {id: 2, value: 10}, {id: 3, value: 15}];\nconsole.log(aggregateAndReverse(moreData)); // [45, 20, 5]\n\nconsole.log(aggregateAndReverse([])); // []\n```"
+  },
+  "initialSolution": "function aggregateAndReverse(){\n\n}",
+  "completedSolution": "function aggregateAndReverse(array) {\n  const res = array.map(({id, value}) => id * value)\n  return res.toReversed();\n}",
+  "openTest": "Array.prototype.toReversed = function(){\n  return this.slice().reverse()\n}\n\nit('Created function aggregateAndReverse', () => {\n  expect(aggregateAndReverse).to.be.a('function');\n});\n\nit(\"Function aggregateAndReverse() should include toReversed method\", () => {\n  const result = aggregateAndReverse.toString();\n  expect(result).to.include('.toReversed()');\n});\n\nit(\"Function aggregateAndReverse() should not modify the original array\", () => {\n  let originalArray = [{id: 1, value: 10}, {id: 2, value: 20}];\n  aggregateAndReverse(originalArray);\n  expect(originalArray).to.deep.equal([{id: 1, value: 10}, {id: 2, value: 20}]);\n});\n\nit(\"aggregateAndReverse([{id: 1, value: 10}, {id: 2, value: 20}, {id: 3, value: 30}]) should return [90, 40, 10]\", () => {\n  expect(aggregateAndReverse([{id: 1, value: 10}, {id: 2, value: 20}, {id: 3, value: 30}])).to.deep.equal([90, 40, 10]);\n});\n\nit(\"aggregateAndReverse([{id: 1, value: 5}, {id: 2, value: 10}, {id: 3, value: 15}]) should return [45, 20, 5]\", () => {\n  expect(aggregateAndReverse([{id: 1, value: 5}, {id: 2, value: 10}, {id: 3, value: 15}])).to.deep.equal([45, 20, 5]);\n});\n\nit(\"aggregateAndReverse([]) should return []\", () => {\n  expect(aggregateAndReverse([])).to.deep.equal([]);\n});\n\nit(\"aggregateAndReverse([{id: 5, value: 100}]) should return [500]\", () => {\n  expect(aggregateAndReverse([{id: 5, value: 100}])).to.deep.equal([500]);\n});\n\nit(\"aggregateAndReverse([{id: 1, value: 1}, {id: 2, value: 2}, {id: 3, value: 3}, {id: 4, value: 4}]) should return [16, 9, 4, 1]\", () => {\n  expect(aggregateAndReverse([{id: 1, value: 1}, {id: 2, value: 2}, {id: 3, value: 3}, {id: 4, value: 4}])).to.deep.equal([16, 9, 4, 1]);\n});\n\nit(\"aggregateAndReverse([{id: 2, value: 0}, {id: 3, value: 10}]) should return [30, 0]\", () => {\n  expect(aggregateAndReverse([{id: 2, value: 0}, {id: 3, value: 10}])).to.deep.equal([30, 0]);\n});\n\nit(\"aggregateAndReverse([{id: 0, value: 5}, {id: 0, value: 10}]) should return [0, 0]\", () => {\n  expect(aggregateAndReverse([{id: 0, value: 5}, {id: 0, value: 10}])).to.deep.equal([0, 0]);\n});\n\nit(\"aggregateAndReverse([{id: 1, value: 5}, {id: 2, value: 10}, {id: 2, value: 15}]) should return [30, 20, 5]\", () => {\n  expect(aggregateAndReverse([{id: 1, value: 5}, {id: 2, value: 10}, {id: 2, value: 15}])).to.deep.equal([30, 20, 5]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

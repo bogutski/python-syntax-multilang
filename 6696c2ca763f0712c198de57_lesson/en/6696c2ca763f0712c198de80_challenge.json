@@ -1,0 +1,6 @@
+{
+  "name": "The price of apples",
+  "instruction": "It is known that 'a' kg of apples costs b dollars. Find out how much 1 kg of apples costs.\n\nSet the variable `weight` and assign it a value of any non-negative number (the weight of apples).\nSet the variable `cost` and assign it a value of any non-negative number (the cost of apples).\nSet the variable `price`, in which you calculate the price of 1 kg of apples.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst amount = 10;\nconst money = 1000;\nconst price = money / amount;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst weight = 5;\nconst cost = 10;\nconst price = cost / weight;\n```"
+}

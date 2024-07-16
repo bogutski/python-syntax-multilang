@@ -1,0 +1,4 @@
+{
+  "name": "Rounding up the purchase amount.",
+  "instruction": "Write a function named `roundTotal` that takes a single parameter - a number.\n\nThis number represents the amount of the purchase.\n\nName the parameter as you see fit.\n\nLet the function return the number rounded up."
+}

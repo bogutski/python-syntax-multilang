@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f862",
+  "name": {
+    "en": "/*",
+    "ru": "Найти индекс первого объекта с определенной комбинацией свойств"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findIndexByProperties`, которая принимает массив объектов и объект с целевыми значениями свойств.\n\nФункция должна вернуть индекс первого объекта в массиве, который содержит все указанные свойства и значения.\n\nЕсли такой объект не найден, функция должна вернуть строку `Object not found`.\n\n\nПримеры запуска функции:\n```javascript\nconsole.log(findIndexByProperties(\n    [{name: 'Alice', age: 25}, {name: 'Bob', age: 30}, {name: 'Charlie', age: 35}],\n    {name: 'Bob', age: 30}\n));\n// Вывод: 1\n\nconsole.log(findIndexByProperties(\n    [{name: 'Alice', age: 25}, {name: 'Bob', age: 30}, {name: 'Charlie', age: 35}],\n    {name: 'Alice'}\n));\n// Вывод: 0\n\nconsole.log(findIndexByProperties(\n    [{name: 'Alice', age: 25}, {name: 'Bob', age: 30}, {name: 'Charlie', age: 35}],\n    {age: 35}\n));\n// Вывод: 2\n\nconsole.log(findIndexByProperties(\n    [{name: 'Alice', age: 25}, {name: 'Bob', age: 30}, {name: 'Charlie', age: 35}],\n    {name: 'David'}\n));\n// Вывод: \"Object not found\"\n```"
+  },
+  "initialSolution": "function findIndexByProperties(){\n\n}",
+  "completedSolution": "function findIndexByProperties(arr, object) {\n  const arrayOfKeys = Object.keys(object)\n  const res = arr.findIndex(obj => {\n    return arrayOfKeys.every(key => object[key] === obj[key])\n  })\n\n  return res !== -1 ? res : 'Object not found';\n}",
+  "openTest": "it('Created function findIndexByProperties', () => {\n  expect(findIndexByProperties).to.be.a('function');\n});\n\nit('findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {name: \"Bob\", age: 30}) should return 1', function() {\n  expect(findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {name: \"Bob\", age: 30})).to.equal(1);\n});\n\nit('findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {name: \"Alice\"}) should return 0', function() {\n  expect(findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {name: \"Alice\"})).to.equal(0);\n});\n\nit('findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {age: 35}) should return 2', function() {\n  expect(findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {age: 35})).to.equal(2);\n});\n\nit('findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {name: \"David\"}) should return \"Object not found\"', function() {\n  expect(findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {name: \"David\"})).to.equal(\"Object not found\");\n});\n\nit('findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {name: \"Charlie\", age: 35}) should return 2', function() {\n  expect(findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {name: \"Charlie\", age: 35})).to.equal(2);\n});\n\nit('findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {name: \"Alice\", age: 25}) should return 0', function() {\n  expect(findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {name: \"Alice\", age: 25})).to.equal(0);\n});\n\nit('findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {age: 30}) should return 1', function() {\n  expect(findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {age: 30})).to.equal(1);\n});\n\nit('findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {name: \"Bob\", age: 35}) should return \"Object not found\"', function() {\n  expect(findIndexByProperties([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Charlie\", age: 35}], {name: \"Bob\", age: 35})).to.equal(\"Object not found\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

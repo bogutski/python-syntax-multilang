@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e862",
+  "name": {
+    "en": "How do I copy an array?",
+    "ru": "Как скопировать массив?"
+  },
+  "instruction": {
+    "en": "Write a function `waysToCopy` that takes an array with one element and returns a copy of that array.\n\nThe array will come in two kinds:\n\n* An array with a primitive data type\n```javascript\narray = [ 10 ]\narray = [ 'HI' ]\narray = [ false ]\n```\n* Array with object\n```javascript\narray = [ {name: 'John'} ]\n```\n\n\nIf the data type of the first element of the array is primitive:\n* Create a new array by copying the old one using the `slice` method\n\nIf the data type of the first array element is an object:\n* Create a new array by copying the old one with the `JSON.stringify` and `JSON.parse` methods.\n\n\nYou cannot return the original array because array references will be checked for equality.\n\nAn example of running the function:\n```javascript\nwaysToCopy([ 10 ]); // => use slice method\nwaysToCopy([ {name: 'John'} ]); // => use JSON.stringify and JSON.parse\n```",
+    "ru": "Напишите функцию `waysToCopy`, которая принимает массив с одним элементом и возвращает копию этого массива.\n\nМассив будет приходить двух видов:\n\n* Массив с примитивным типом данных\n```javascript\narray = [ 10 ]\narray = [ 'HI' ]\narray = [ false ]\n```\n* Массив с объектом\n```javascript\narray = [ {name: 'John'} ]\n```\n\n\nЕсли тип данных первого элемента массива - примитивный:\n* Создайте новый массив, скопировав старый, с помощью метода `slice`\n\nЕсли тип данных первого элемента массива - объект:\n* Создайте новый массив, скопировав старый, с помощью метода `JSON.stringify` и `JSON.parse`\n\n\nВернуть оригинальный массив нельзя, так как ссылка на массивы будет проверяться на равенство.\n\nПример запуска функции:\n```javascript\nwaysToCopy([ 10 ]); // => используем метод slice\nwaysToCopy([ {name: 'John'} ]); // => используем метод JSON.stringify и JSON.parse\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function waysToCopy(array){\n  if (typeof array[0] !== 'object') {\n    return array.slice()\n  } else {\n    return JSON.parse(JSON.stringify(array))\n  }\n}",
+  "openTest": "it('Created function waysToCopy', () => {\n  expect(waysToCopy).to.be.a('function');\n});\n\nit('waysToCopy([ 100 ]) should return [ 10 ]', () => {\n  expect(waysToCopy([ 10 ])).to.eql([ 10 ]);\n});\n\nit(\"waysToCopy([ 'Hello' ]) should return [ 'Hello' ]\", () => {\n  expect(waysToCopy([ 'Hello' ])).to.eql([ 'Hello' ]);\n});\n\nit(\"waysToCopy([ true ]) should return [ true ]\", () => {\n  expect(waysToCopy([ true ])).to.eql([ true ]);\n});\nit('waysToCopy([ {name: \"Mike\"} ]) should return [ {name: \"Mike\"} ]', () => {\n  expect(waysToCopy([ {name: \"Mike\"} ])).to.eql([ {name: \"Mike\"} ]);\n});\n\nit(\"waysToCopy([ {name: 'Alice'} ]) should return [ {name: 'Alice'} ]\", () => {\n  expect(waysToCopy([ {name: 'Alice'} ])).to.eql([ {name: 'Alice'} ]);\n});\n\nit(\"waysToCopy([ 25 ]) should return [ 25 ]\", () => {\n  const array = [ 25 ];\n  expect(waysToCopy(array) === array).to.be.false;\n});\n\nit(\"waysToCopy([ {name: 'Jake'} ]) should return [ {name: 'Jake'} ]\", () => {\n  const array = [ {name: 'Jake'} ];\n  expect(waysToCopy(array) === array).to.be.false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Compare arrays using the object",
+  "instruction": "The function `checkArray1` takes two arrays `arr1` and `arr2`.\n\nThe function should return `true` if all elements of array `arr2` are contained in array `arr1`, otherwise return `false`.\n\nIf the arrays are empty, then return the string 'Nothing to check'.\n\nTo solve this task, we will use a `for` loop and an object.\n\nFix the code so that the function works correctly.\n\nExample function calls:\ncheckArray1([1, 2, 3, 10, 20, 1], [1, 2, 3, 1]) // true\ncheckArray1([1, 2, 3, 10, 20, 1], [1, 2, 3, 1, 4]) // false\ncheckArray1([1, 2, 3, 10, 20, 1], []) // true\ncheckArray1([], [1, 2, 3, 1]) // false\ncheckArray1([], []) // 'Nothing to check'",
+  "instructions": {}
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Пирожки для бабушки",
+  "instruction": "Серый Волк отобрал у Красной Шапочки пирожки, которые она несла для бабушки.\nОн ел по 5 пирожков в день на протяжении 3-х дней.\nСколько было пирожков изначально?\n\nСоздайте переменную `cakesPerDay` и присвойте ей значение 5.\n\nСоздайте переменную `days` и присвойте ей значение 3.\n\nСоздайте переменную `originalCakes` и посчитайте сколько было пирожков изначально.\n\nПриведем пример, который принципиально похож на то, что нужно сделать.\nАдаптируйте его к требованиям задачи.\n\n```javascript\nconst dumplingsPerDay = 7;\nconst days = 4;\nconst originalDumplings = dumplingsPerDay * days;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst cakesPerDay = 5;\nconst days = 3;\nconst originalCakes = cakesPerDay * days;\n```"
+}

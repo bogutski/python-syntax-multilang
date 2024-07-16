@@ -1,0 +1,5 @@
+{
+  "name": "Сумма чисел от n1 до n2",
+  "instruction": "Напишите функцию `sumFromN1ToN2`, которая принимает два числа `num1` и `num2` и возвращает сумму всех чисел от `num1` до `num2` включительно.\n\nПримеры запуска функции:\n```javascript\nsumFromN1ToN2(0, 0) // 0\nsumFromN1ToN2(1, 10) // 55\nsumFromN1ToN2(10, 50) // 1230\n```",
+  "instructions": {}
+}

@@ -1,0 +1,177 @@
+{
+  "name": "Turn over every word in the line",
+  "questions": {
+    "0": {
+      "name": "For the row below, the elements should flip but remain at the same indices. Select the correct variant of the resulting row.",
+      "description": "```javascript\nconst str = '41 + 52 = 93';\n```",
+      "variants": {
+        "0": {
+          "name": "'93 = 52 + 41'"
+        },
+        "1": {
+          "name": "'14 + 25 = 39'"
+        },
+        "2": {
+          "name": "'39 = 25 + 14'"
+        },
+        "3": {
+          "name": "'25 + 14 = 39'"
+        }
+      }
+    },
+    "1": {
+      "name": "What should be written instead of ??? below to get 'wolf' as a result?",
+      "description": "```javascript\nconst str = 'flow';\n  let res = '';\n  for(let i = ?; i < ?????; i??){\n    res ???;\n  }\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "for(let i = 0; i < str.length; i++){ \n    res = str[i] + res;\n  }"
+        },
+        "1": {
+          "name": "for(let i = str.length - 1; i >= 0; i--){\n    res += str[i];\n  }"
+        },
+        "2": {
+          "name": "for(let i = 0; i < str.length; i++){\n    res += str[i];\n  }"
+        },
+        "3": {
+          "name": "for(let i = str.length - 1; i >= 0; i--){\n    res = str[i] + str;\n  }"
+        }
+      }
+    },
+    "2": {
+      "name": "Is it true that you can use a function in code before it is declared?",
+      "variants": {
+        "0": {
+          "name": "That's right, it's called 'feature surfacing'"
+        },
+        "1": {
+          "name": "Incorrect, the code will not work"
+        },
+        "2": {
+          "name": "That's right, it's called 'hoisting'"
+        },
+        "3": {
+          "name": "Incorrect, a function can only be used after it has been declared"
+        }
+      }
+    },
+    "3": {
+      "name": "Select the correct version of the result of the code run below",
+      "description": "```javascript\nconst str = '123 + 234 = 357';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "'321 + 432 = 753'"
+        },
+        "1": {
+          "name": "'357 = 234 + 123'"
+        },
+        "2": {
+          "name": "'753 = 432 + 321'"
+        },
+        "3": {
+          "name": "'123 + 234 = 357'"
+        }
+      }
+    },
+    "4": {
+      "name": "What is the purpose of clearing the `word` variable inside the `for` loop, which accumulates the words found?",
+      "description": "```javascript\nconst str = '123 + 234 = 357';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "To prevent memory overload"
+        },
+        "1": {
+          "name": "To prevent concatenation of all subsequent found words with those already passed to `res`"
+        },
+        "2": {
+          "name": "To prevent concatenation of all subsequent words found with words already passed in `word`"
+        },
+        "3": {
+          "name": "To prevent an endless cycle"
+        }
+      }
+    },
+    "5": {
+      "name": "Is it correct that the result of the code below will be 'sub rats drawer'?",
+      "description": "```javascript\nconst str = 'bus star reward';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "No, the result is 'drawer rats sub'."
+        },
+        "1": {
+          "name": "No, the result will be 'reward star bus'"
+        },
+        "2": {
+          "name": "No, the result is 'drawer star sub'."
+        },
+        "3": {
+          "name": "Yes, the result is 'sub rats drawer'."
+        }
+      }
+    },
+    "6": {
+      "name": "Does what case the letters are written in affect when flipping a word?",
+      "variants": {
+        "0": {
+          "name": "No, it doesn't, but the case of each letter will remain the same unless the word has been reduced to the same case"
+        },
+        "1": {
+          "name": "Yes, if the letters are not brought to the same case, the word will flip part way through"
+        }
+      }
+    },
+    "7": {
+      "name": "What will be output to the console when the code below is executed?",
+      "description": "```javascript\nconst str = 'NadiA saw a doG';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "'AidaN was a God'"
+        },
+        "1": {
+          "name": "'AidaN was a goD'"
+        },
+        "2": {
+          "name": "'God a was AidaN'"
+        },
+        "3": {
+          "name": "'NadiA was a God'"
+        }
+      }
+    },
+    "8": {
+      "name": "Is it correct that the result of the code below is 'desserts LIVE'?",
+      "description": "```javascript\nconst str = 'LIVE stressed';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "Yes, the result will be 'desserts LIVE'."
+        },
+        "1": {
+          "name": "No, the result will be 'evil desserts'."
+        },
+        "2": {
+          "name": "No, the result is 'EVIL desserts'."
+        },
+        "3": {
+          "name": "No, the result is 'desserts EVIL'."
+        }
+      }
+    },
+    "9": {
+      "name": "Select the correct result of running the code below",
+      "description": "```javascript\nconst str = '12 pans 23 nuts';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n",
+      "variants": {
+        "0": {
+          "name": "'21 snap 32 stun'"
+        },
+        "1": {
+          "name": "'12 snap 23 stun'"
+        },
+        "2": {
+          "name": "'stun 32 snap 21'"
+        },
+        "3": {
+          "name": "'stun 21 snap 32"
+        }
+      }
+    }
+  }
+}

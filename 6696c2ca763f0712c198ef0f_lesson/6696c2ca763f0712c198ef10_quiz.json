@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2ca763f0712c198ef10",
+  "name": {
+    "ru": "Перебор массива",
+    "en": "Array search",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198ef11",
+      "name": {
+        "ru": "Чему равен индекс первого элемента массива?",
+        "en": "What is the index of the first element of the array?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef12",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef13",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef14",
+          "name": {
+            "ru": "arr.length",
+            "en": "arr.length",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef15",
+          "name": {
+            "ru": "arr.length - 1",
+            "en": "arr.length - 1",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ef16",
+      "name": {
+        "ru": "Чему равен индекс последнего элемента для массива ниже?",
+        "en": "What is the index of the last element for the array below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [1, 'a', null, NaN, true];\n```",
+        "en": "```javascript\nconst arr = [1, 'a', null, NaN, true];\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef17",
+          "name": {
+            "ru": "5",
+            "en": "5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef18",
+          "name": {
+            "ru": "arr.length - 1",
+            "en": "arr.length - 1",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef19",
+          "name": {
+            "ru": "arr.length",
+            "en": "arr.length",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef1a",
+          "name": {
+            "ru": "4",
+            "en": "4",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ef1b",
+      "name": {
+        "ru": "Верно ли, что в консоль, в коде ниже, будут выведены индексы элементов массива?",
+        "en": "Is it correct that the indexes of the array elements will be printed to the console, in the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [5, 'plus', 'three', '=', NaN];\nfor(let i = 0; i < arr.length; i++){\n  console.log(i);\n}\n```",
+        "en": "```javascript\nconst arr = [5, 'plus', 'three', '=', NaN];\nfor(let i = 0; i < arr.length; i++){\n  console.log(i);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef1c",
+          "name": {
+            "ru": "Нет, в консоль будут выведены значения элементов массива",
+            "en": "No, the values of the array elements will be printed to the console",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef1d",
+          "name": {
+            "ru": "Да, в консоль будут выведены индексы элементов массива",
+            "en": "Yes, the indexes of the array elements will be printed to the console",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef1e",
+          "name": {
+            "ru": "Нет, в консоль будут выведены значения и индексы элементов массива",
+            "en": "No, the values and indices of the array elements will be printed to the console",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef1f",
+          "name": {
+            "ru": "Нет, в консоль будет выведено количество элементов массива",
+            "en": "No, the number of array elements will be printed to the console",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ef20",
+      "name": {
+        "ru": "Что получится в результате запуска кода ниже?",
+        "en": "What is the result of running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [5, 'plus', 'three', '=', NaN];\nfor(let i = arr.length - 1; i >= 0; i--){\n  console.log(i);\n}\n```",
+        "en": "```javascript\nconst arr = [5, 'plus', 'three', '=', NaN];\nfor(let i = arr.length - 1; i >= 0; i--){\n  console.log(i);\n}\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef21",
+          "name": {
+            "ru": "В консоль будут выведены индексы элементов массива в обратном порядке",
+            "en": "The indices of the array elements will be printed to the console in reverse order",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef22",
+          "name": {
+            "ru": "0 1 2 3 4",
+            "en": "0 1 2 3 4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef23",
+          "name": {
+            "ru": "В консоль будут выведены индексы элементов массива от первого элемента до последнего",
+            "en": "The indexes of array elements from the first element to the last element will be displayed in the console",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef24",
+          "name": {
+            "ru": "4 3 2 1 0",
+            "en": "4 3 2 1 0",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ef25",
+      "name": {
+        "ru": "Как надо изменить шаг в цикле for ниже, чтобы результатом запуска кода было ['P', 'S']?",
+        "en": "How should I change the step in the for loop below so that the result of running the code is ['P', 'S']?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction iterateOverArr(arr){\n  let array = [];\n  for(let i = 0; i < arr.length; i++){\n   array.push(arr[i]);\n}\n  return array;\n}\nconsole.log(iterateOverArr(['P', 'A', 'S', 'V']));\n```",
+        "en": "```javascript\nfunction iterateOverArr(arr){\n  let array = [];\n  for(let i = 0; i < arr.length; i++){\n   array.push(arr[i]);\n}\n  return array;\n}\nconsole.log(iterateOverArr(['P', 'A', 'S', 'V']));\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef26",
+          "name": {
+            "ru": "i++2",
+            "en": "i++2",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef27",
+          "name": {
+            "ru": "i = i + 2",
+            "en": "i = i + 2",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef28",
+          "name": {
+            "ru": "i += 2",
+            "en": "i += 2",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef29",
+          "name": {
+            "ru": "i -= 2",
+            "en": "i -= 2",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ef2a",
+      "name": {
+        "ru": "Как надо изменить условия цикла for ниже, чтобы результатом запуска кода было ['A', 'V']?",
+        "en": "How should I modify the for loop conditions below so that the result of running the code is ['A', 'V']?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction iterateOverArr(arr){\n  let array = [];\n  for(let i = 0; i < arr.length; i++){\n   array.push(arr[i]);\n}\n  return array;\n}\nconsole.log(iterateOverArr(['P', 'A', 'S', 'V']));\n```",
+        "en": "```javascript\nfunction iterateOverArr(arr){\n  let array = [];\n  for(let i = 0; i < arr.length; i++){\n   array.push(arr[i]);\n}\n  return array;\n}\nconsole.log(iterateOverArr(['P', 'A', 'S', 'V']));\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef2b",
+          "name": {
+            "ru": "(let i = 1; i < arr.length; i+=2)",
+            "en": "(let i = 1; i < arr.length; i+=2)",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef2c",
+          "name": {
+            "ru": "(let i = 1; i < arr.length; i = i + 2)",
+            "en": "(let i = 1; i < arr.length; i = i + 2)",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef2d",
+          "name": {
+            "ru": "(let i = 1; i < arr.length; i++)",
+            "en": "(let i = 1; i < arr.length; i++)",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef2e",
+          "name": {
+            "ru": "(let i = 0; i < arr.length; i+=2)",
+            "en": "(let i = 0; i < arr.length; i+=2)",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ef2f",
+      "name": {
+        "ru": "Что будет выведено в консоль после запуска кода ниже?",
+        "en": "What will be output to the console after running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = ['P', 'A', 'S', 'V', [1, 'inner array']];\nfor(let i = 0; i < arr.length; i++){\n  console.log(i);\n}\n```",
+        "en": "```javascript\nconst arr = ['P', 'A', 'S', 'V', [1, 'inner array']];\nfor(let i = 0; i < arr.length; i++){\n  console.log(i);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef30",
+          "name": {
+            "ru": "0 1 2 3 4",
+            "en": "0 1 2 3 4",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef31",
+          "name": {
+            "ru": "0 1 2 3 4 5",
+            "en": "0 1 2 3 4 5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef32",
+          "name": {
+            "ru": "1 2 3 4 5",
+            "en": "1 2 3 4 5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef33",
+          "name": {
+            "ru": "1 2 3 4 5 6",
+            "en": "1 2 3 4 5 6",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ef34",
+      "name": {
+        "ru": "Верно ли, что результатом запуска кода ниже будет 'V' 'S'?",
+        "en": "Is it correct that the result of running the code below is 'V' 'S'?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = ['P', 'A', 'S', 'V'];\nfor(let i = arr.length - 1; i >= 0 ; i-=2){\n  console.log(i);\n}\n```",
+        "en": "```javascript\nconst arr = ['P', 'A', 'S', 'V'];\nfor(let i = arr.length - 1; i >= 0 ; i-=2){\n  console.log(i);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef35",
+          "name": {
+            "ru": "Да, верно, результат будет 'V' 'S'",
+            "en": "Yes, that's right, the result will be 'V' 'S'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef36",
+          "name": {
+            "ru": "Нет, неверно, результат будет 1 3",
+            "en": "No, wrong, the result will be 1 3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef37",
+          "name": {
+            "ru": "Нет, неверно, результат будет 3 1",
+            "en": "No, wrong, the result will be 3 1",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef38",
+          "name": {
+            "ru": "Нет, не верно, результат будет 'S' 'V'",
+            "en": "No, that's not correct, the result will be 'S' 'V'.",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ef39",
+      "name": {
+        "ru": "Выберите верный результат запуска кода ниже",
+        "en": "Select the correct result of running the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = ['P', 'A', 'S', 'V'];\nlet forward = '';\nlet back = '';\nfor(let i = 0; i < arr.length; i+=2){\n  forward += arr[i];\n}\nfor(let i = arr.length - 1; i >= 0 ; i-=2){\n  back += arr[i];\n}\nconsole.log(forward, back, forward === back);\n```",
+        "en": "```javascript\nconst arr = ['P', 'A', 'S', 'V'];\nlet forward = '';\nlet back = '';\nfor(let i = 0; i < arr.length; i+=2){\n  forward += arr[i];\n}\nfor(let i = arr.length - 1; i >= 0 ; i-=2){\n  back += arr[i];\n}\nconsole.log(forward, back, forward === back);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef3a",
+          "name": {
+            "ru": "'PS' 'VA' false",
+            "en": "'PS' 'VA' false",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef3b",
+          "name": {
+            "ru": "'PS' 'PS' true",
+            "en": "'PS' 'PS' true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef3c",
+          "name": {
+            "ru": "'VA' 'VA' true",
+            "en": "'VA' 'VA' true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef3d",
+          "name": {
+            "ru": "'VA' 'PS' false",
+            "en": "'VA' 'PS' false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ef3e",
+      "name": {
+        "ru": "Что выведется в консоль в результате запуска кода ниже?",
+        "en": "What will be output to the console as a result of running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = ['P', 'A', 'S', 'V'];\nconst obj = {};\nfor(let i = 0; i < arr.length; i++){\n  obj[i] = arr[i];\n}\nconsole.log(obj);\n```",
+        "en": "```javascript\nconst arr = ['P', 'A', 'S', 'V'];\nconst obj = {};\nfor(let i = 0; i < arr.length; i++){\n  obj[i] = arr[i];\n}\nconsole.log(obj);\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef3f",
+          "name": {
+            "ru": "Объект, в котором ключи - это индексы массива, а значения - значения элементов массива",
+            "en": "An object where keys are array indices and values are array element values",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef40",
+          "name": {
+            "ru": "{1: 'P', 2: 'A', 3: 'S', 4: 'V'}",
+            "en": "{1: 'P', 2: 'A', 3: 'S', 4: 'V'}",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef41",
+          "name": {
+            "ru": "{0: 'P', 1: 'A', 2: 'S', 3: 'V'}",
+            "en": "{0: 'P', 1: 'A', 2: 'S', 3: 'V'}",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef42",
+          "name": {
+            "ru": "Объект, в котором ключи - это значения элементов массива, а значения - это индексы массива",
+            "en": "An object in which the keys are the values of the array elements and the values are the array indexes",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

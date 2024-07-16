@@ -1,0 +1,4 @@
+{
+  "name": "Convert string to array",
+  "instruction": "Write a function `stringToArray` that takes a string and returns an array of characters from that string.\n\nOnly strings will be passed into the function.\n\nIn case of an empty string, the function should return an empty array.\n\nExamples of running the function:\n```javascript\nstringToArray('hello'); // ['h', 'e', 'l', 'l', 'o']\nstringToArray('123456'); // ['1', '2', '3', '4', '5', '6']\nstringToArray(''); // []\n```"
+}

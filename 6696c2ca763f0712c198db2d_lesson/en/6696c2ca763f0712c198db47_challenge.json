@@ -1,0 +1,6 @@
+{
+  "name": "Creating a variable without a value",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-6.png)\n\nYou can create a variable without assigning a value to it.\n\nCreate a variable named `phoneNumber` without assigning any value to it.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nlet age;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet phoneNumber;\n```"
+}

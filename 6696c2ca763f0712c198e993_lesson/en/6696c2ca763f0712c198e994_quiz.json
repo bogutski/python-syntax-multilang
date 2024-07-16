@@ -1,0 +1,174 @@
+{
+  "name": "Skip iteration. continue",
+  "questions": {
+    "0": {
+      "name": "Select the correct statement",
+      "variants": {
+        "0": {
+          "name": "The continue instruction interrupts the entire loop when a certain condition occurs"
+        },
+        "1": {
+          "name": "The continue instruction interrupts the current loop iteration when a certain condition is met"
+        },
+        "2": {
+          "name": "The continue instruction executes the loop only once"
+        },
+        "3": {
+          "name": "The continue instruction will continue the loop regardless of any conditions"
+        }
+      }
+    },
+    "1": {
+      "name": "Choose the correct way to write a continue instruction in a loop",
+      "variants": {
+        "0": {
+          "name": "continue()"
+        },
+        "1": {
+          "name": "Continue"
+        },
+        "2": {
+          "name": "contineu"
+        },
+        "3": {
+          "name": "continue"
+        }
+      }
+    },
+    "2": {
+      "name": "Select the correct option, which will return the console",
+      "description": "```javascript\n const arr = [1, '2', 3, 4, 'zero']\n for (let i = 0; i < arr.length; i++) {\n   if (typeof arr[i] === 'string') {\n     continue;\n   }\n   console.log(arr[i]);\n }\n```",
+      "variants": {
+        "0": {
+          "name": "1, 3, 4"
+        },
+        "1": {
+          "name": "1, 2, 3, 4"
+        },
+        "2": {
+          "name": "'2', 'zero'"
+        },
+        "3": {
+          "name": "error"
+        }
+      }
+    },
+    "3": {
+      "name": "What are the continue and break instructions used for?",
+      "variants": {
+        "0": {
+          "name": "These instructions allow you to break the loop and skip iteration at a certain point"
+        },
+        "1": {
+          "name": "These instructions allow you to skip certain iterations of the loop"
+        },
+        "2": {
+          "name": "These instructions allow you to control loops and output only certain results"
+        },
+        "3": {
+          "name": "The continue and break directives are used only in infinite loops"
+        }
+      }
+    },
+    "4": {
+      "name": "Continue is",
+      "variants": {
+        "0": {
+          "name": "Method"
+        },
+        "1": {
+          "name": "Instruction"
+        },
+        "2": {
+          "name": "Operator"
+        },
+        "3": {
+          "name": "Cycle"
+        }
+      }
+    },
+    "5": {
+      "name": "Continue and break can be used in one loop",
+      "variants": {
+        "0": {
+          "name": "This statement is true"
+        },
+        "1": {
+          "name": "This statement is incorrect"
+        }
+      }
+    },
+    "6": {
+      "name": "What will the following code return?",
+      "description": "```javascript\nconst str='hi, JavaScript Here!';\nlet acc='';\nfor(let i=0; i<str.length; i++){\n  if(str[i]===str[i].toUpperCase()){\n    continue;\n  }\n acc += str[i]\n console.log(acc);\n}\n```",
+      "variants": {
+        "0": {
+          "name": "JSH"
+        },
+        "1": {
+          "name": "hiavacriptere"
+        },
+        "2": {
+          "name": "hi, avacript ere!"
+        },
+        "3": {
+          "name": ", JS H!"
+        }
+      }
+    },
+    "7": {
+      "name": "What will the following code return?",
+      "description": "```javascript\nconst str='hi, JavaScript Here!';\nlet acc='';\nfor(let i=0; i<str.length; i++){\n  if(str[i]!==str[i].toLowerCase()){\n    continue;\n  }\n acc += str[i]\n console.log(acc);\n}\n```",
+      "variants": {
+        "0": {
+          "name": "JSH"
+        },
+        "1": {
+          "name": "hiavacriptere"
+        },
+        "2": {
+          "name": "hi, avacript ere!"
+        },
+        "3": {
+          "name": ", JS H!"
+        }
+      }
+    },
+    "8": {
+      "name": "What indexes will the following code return?",
+      "description": "```javascript\nconst str = 'What a day!';\nfor(let i=str.length-1; i>=0; i--){\n  if(str[i] === ' '){\n    continue;\n  }\n  console.log(i);\n}\n```",
+      "variants": {
+        "0": {
+          "name": "6 4"
+        },
+        "1": {
+          "name": "0 1 2 3 5 7 8 9 10"
+        },
+        "2": {
+          "name": "10 9 8 7 5 3 2 1 0"
+        },
+        "3": {
+          "name": "4 6"
+        }
+      }
+    },
+    "9": {
+      "name": "What will the following code output?",
+      "description": "```javascript\nlet str = 'A Busy Bee';\nlet count = 0;\nfor(let i = 0; i < str.length; i++){\n if(str[i] === ' ') continue; \n if(str[i] === 'e') break; \n  count++;\n}\nconsole.log(count);\n```",
+      "variants": {
+        "0": {
+          "name": "8"
+        },
+        "1": {
+          "name": "2"
+        },
+        "2": {
+          "name": "9"
+        },
+        "3": {
+          "name": "6"
+        }
+      }
+    }
+  }
+}

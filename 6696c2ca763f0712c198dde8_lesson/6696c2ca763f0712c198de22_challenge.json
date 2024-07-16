@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de22",
+  "name": {
+    "en": "How many boys are in the class?",
+    "ru": "Сколько мальчиков в классе?"
+  },
+  "instruction": {
+    "en": "In the class, there are 30 children. One-third of all the children are girls.\n\nCreate a variable `kids` with a value of 30.\nCreate a variable `girls` in which you calculate the number of girls in the class.\nCreate a variable `boys` in which you calculate the number of boys in the class.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst a = 30;\nconst b = a / 3;\nconst c = a - b ;\n```",
+    "ru": "В классе 30 детей. Третья часть из всех детей - девочки.\n\nСоздайте переменную `kids` со значением 30 .\nСоздайте переменную `girls`, в которой вычислите количество девочек в классе.\nСоздайте переменную `boys`, в которой вычислите количество мальчиков в классе.\n\nПриведем пример, который принципиально похож на то что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst a = 30;\nconst b = a / 3;\nconst c = a - b ;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const kids = 30;\nconst girls = kids / 3;\nconst boys = kids - girls;",
+  "openTest": "it('The `kids` variable exists and has a value', () => {\n  expect(kids).not.undefined;\n});\n\nit('The `kids` variable contains a number', () => {\n  expect(kids).a('number');\n});\n\nit('The `kids` variable contains a value', () => {\n  expect(kids).eq(30);\n});\n\nit('The `girls` variable exists and has a value', () => {\n  expect(girls).not.undefined;\n});\n\nit('Variable `girls` contains a number', () => {\n  expect(girls).a('number');\n});\n\nit('Variable `girls` contains a value', () => {\n  expect(girls).eq(kids / 3);\n});\n\nit('The `boys` variable exists and has a value', () => {\n  expect(boys).not.undefined;\n});\n\nit('Variable `boys` contains a number', () => {\n  expect(boys).a('number');\n});\n\nit('Variable `boys` contains a value', () => {\n  expect(boys).eq(kids - girls);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst kids = 30;\nconst girls = kids / 3;\nconst boys = kids - girls;\n```",
+    "ru": "```javascript\nconst kids = 30;\nconst girls = kids / 3;\nconst boys = kids - girls;\n```"
+  }
+}

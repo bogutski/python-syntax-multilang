@@ -1,0 +1,4 @@
+{
+  "name": "Round off the area of the circle to the smaller side",
+  "instruction": "Write a function `roundArea` that takes one parameter - the diameter of the circle, a number.\n\nThe function should return the area of the circle rounded down.\n\nYou should use the constant `Math.PI` in the calculations.\n\nIf the rounded value is 0, the function should return 1."
+}

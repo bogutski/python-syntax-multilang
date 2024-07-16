@@ -1,0 +1,6 @@
+{
+  "name": "Increase by 1",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-2.png)\n\nWhen we count something, we add one to some quantity that we already have.\nFor example, you counted the number of chairs in all the rooms, and the number of chairs is 11.\nBut when you went to the balcony, you saw one more chair. So you add 1 to the number of chairs you have,\n and the result is 12.\n\nCreate a variable `count` and assign it the value 11.\n\nThen write a command that increases the value of the `count` variable by 1.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nlet a = 5;\na = a + 1;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet count = 11;\ncount = count + 1;\n```"
+}

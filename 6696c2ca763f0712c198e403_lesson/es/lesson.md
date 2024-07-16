@@ -1,0 +1,1 @@
+# Изменение регистра. Методы toUpperCase, toLowerCase language: es

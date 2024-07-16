@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f387",
+  "name": {
+    "en": "/*",
+    "ru": "Очистка массива от \"ложных\" значений"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `filterFalsyValues`, которая принимает массив с различными типами данных.\n\nФункция возвращает новый массив, из которого удалены все \"ложные\" значения (false, null, undefined, 0, \"\", и NaN).\n\nВ решении этой задачи используйте метод `pop()` для последовательного удаления элементов из исходного массива до тех пор, пока не будут проверены все элементы.\n\nВ конце, верните массив только с \"истинными\" значениями.\n\nВажно: функция должна сохранить порядок \"истинных\" элементов, как в исходном массиве.\n\nПример запуска функции:\n```javascript\nfilterFalsyValues([7, \"ate\", \"\", false, 9]); // [ 7, 'ate', 9 ]\nfilterFalsyValues([\"\", \"0\", 0, false, null, undefined, NaN, \"NaN\"]); // [ '0', 'NaN' ]\nfilterFalsyValues([false, null, 0, NaN, undefined, \"\"]); // []\n```"
+  },
+  "initialSolution": "function filterFalsyValues(){\n\n}",
+  "completedSolution": "function filterFalsyValues(arr){\n  let res = []\n\n  for(let i = arr.length - 1; i >= 0; i--){\n    const el = arr.pop()\n\n    if(el) res.unshift(el)\n  }\n\n  return res\n}",
+  "openTest": "it('Created function filterFalsyValues', () => {\n  expect(filterFalsyValues).to.be.a('function');\n});\n\nit(\"filterFalsyValues([0, 1, false, 2, '', 3]) should return [1, 2, 3]\", () => {\n  expect(filterFalsyValues([0, 1, false, 2, '', 3])).to.deep.equal([1, 2, 3]);\n});\n\nit(\"filterFalsyValues([false, null, 0, NaN, undefined, '']) should return []\", () => {\n  expect(filterFalsyValues([false, null, 0, NaN, undefined, \"\"])).to.deep.equal([]);\n});\n\nit(\"filterFalsyValues(['hello', 42, true, [], {}]) should return ['hello', 42, true, [], {}]\", () => {\n  expect(filterFalsyValues(['hello', 42, true, [], {}])).to.deep.equal(['hello', 42, true, [], {}]);\n});\n\nit(\"filterFalsyValues(['', 'text', 0, 4, false, 'another']) should return ['text', 4, 'another']\", () => {\n  expect(filterFalsyValues(['', 'text', 0, 4, false, 'another'])).to.deep.equal(['text', 4, 'another']);\n});\n\nit(\"filterFalsyValues([0, 0, 0, 'yes', false]) should return ['yes']\", () => {\n  expect(filterFalsyValues([0, 0, 0, 'yes', false])).to.deep.equal(['yes']);\n});\n\nit(\"filterFalsyValues([0]) should return []\", () => {\n  expect(filterFalsyValues([0])).to.deep.equal([]);\n});\n\nit(\"filterFalsyValues([]) should return []\", () => {\n  expect(filterFalsyValues([])).to.deep.equal([]);\n});\n\nit(\"filterFalsyValues([[], 0, null, [1, 2], undefined]) should return [[], [1, 2]]\", () => {\n  expect(filterFalsyValues([[], 0, null, [1, 2], undefined])).to.deep.equal([[], [1, 2]]);\n});\n\nit(\"filterFalsyValues([-1, 0, 1, 2]) should return [-1, 1, 2]\", () => {\n  expect(filterFalsyValues([-1, 0, 1, 2])).to.deep.equal([-1, 1, 2]);\n});\n\nit(\"filterFalsyValues should include method pop()\", () => {\n  const str = filterFalsyValues.toString()\n  expect(str).to.include('.pop()');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

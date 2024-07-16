@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f19b",
+  "name": {
+    "en": "",
+    "ru": "Найти булевые и строковые значения в массиве и проверить массив на симметричность"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `isArraySymmetrical`, которая принимает массив с разными типами данных.\n\nФункция должна выбрать только `булевые` и `строковые` значения из массива и записать их в новый массив.\n\nПосле чего проверить является ли новый массив симметричным (одинаковым с начала и с конца).\n\n* Если в массиве нет `булевых` или `строковых` значений, то вернуть строку `'There are no boolean or string in the array'`.\n* Если массив пустой, то вернуть строку `'Array is empty'`.\n\n\nПримеры запуска функции:\n```javascript\nisArraySymmetrical([false, 123, 'test', 4784, false]);                // true\nisArraySymmetrical([undefined, NaN, true, 'undefined']);              // false\nisArraySymmetrical([10 > 5, 30, false, 40, 40, false, 30, 20, true]); // true\nisArraySymmetrical([true, false, 'test', false, true]);               // true\nisArraySymmetrical([undefined, NaN, null]);                           // 'There ara no boolean or string in the array'\nisArraySymmetrical([]);                                               // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isArraySymmetrical(arr){\n  if(!arr.length) return 'Array is empty';\n  const newArr = [];\n\n  for(let i = 0; i < arr.length; i++){\n    if(typeof arr[i] === 'boolean' || typeof arr[i] === 'string') newArr.push(arr[i]);\n  }\n\n  if(!newArr.length) return 'There are no boolean or string in the array';\n\n  for(let i = 0; i < newArr.length / 2; i++){\n    if(newArr[i] !== newArr[newArr.length - 1 - i]) return false\n  }\n\n  return true;\n}",
+  "openTest": "it('Created function isArraySymmetrical', () => {\n  expect(isArraySymmetrical).to.be.a('function');\n});\n\nit(\"Function isArraySymmetrical does not include 'reverse' method\", () => {\n  expect(isArraySymmetrical.toString()).to.not.include('reverse');\n});\n\nit(\"Function isArraySymmetrical does not include 'join' method\", () => {\n  expect(isArraySymmetrical.toString()).to.not.include('join');\n});\n\nit(\"isArraySymmetrical([true, false, 123, 'test', 123, false, true]) should return true\", () => {\n  expect(isArraySymmetrical([true, false, 123, 'test', 123, false, true])).to.be.true;\n});\n\nit(\"isArraySymmetrical([2, 1, 0, 'test', 2, 'should', 6, 'BE', 0, 'FALSE', 2]) should return false\", () => {\n  expect(isArraySymmetrical([2, 1, 0, 'test', 2, 'should', 6, 'BE', 0, 'FALSE', 2])).to.be.false;\n});\n\nit(\"isArraySymmetrical([undefined, NaN, true, 'undefined', NaN, true]) should return true\", () => {\n  expect(isArraySymmetrical([undefined, NaN, true, 'undefined', NaN, true])).to.be.true;\n});\n\nit(\"isArraySymmetrical(['10', 20 > 5, 30, true,40, 50, 40, false, 30, 20, true, 10 < 25, '10']) should return true\", () => {\n  expect(isArraySymmetrical(['10', 20 > 5, 30, true,40, 50, 40, false, 30, 20, true, 10 < 25, '10'])).to.be.true;\n});\n\nit(\"isArraySymmetrical([null, 123, undefined, NaN, 9, 0, 1]) should return 'There are no boolean or string in the array'\", () => {\n  expect(isArraySymmetrical([null, 123, undefined, NaN, 9, 0, 1])).to.equal('There are no boolean or string in the array');\n});\n\nit(\"isArraySymmetrical([]) should return 'Array is empty'\", () => {\n  expect(isArraySymmetrical([])).to.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

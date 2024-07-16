@@ -1,0 +1,4 @@
+{
+  "name": "Defining a function argument type with a default parameter",
+  "instruction": "Write a function `defineTypeArg` that takes 1 parameter `arg` and returns its type.\nIf no argument is passed, the function should return a string `'string'`.\n\nExamples:\n  * the `defineTypeArg(1)` function should return `'number'`;\n  * The `defineTypeArg('1')` function should return `'string'`;\n  * The `defineTypeArg()` function must return `'string'`;"
+}

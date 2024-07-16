@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f38b",
+  "name": {
+    "en": "/*",
+    "ru": "Разделение массива на положительные и отрицательные числа"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `splitPositivesAndNegatives`, которая принимает массив чисел.\n\nФункция должна создать два новых массива: один для положительных чисел (включая ноль), а другой для отрицательных.\n\nИспользуйте метод `pop()` для извлечения элементов из исходного массива и методы `push()` для добавления элементов в соответствующие новые массивы.\n\nФункция должна возвращать объект с двумя свойствами: `positives` и `negatives`, каждое из которых ссылается на соответствующий массив.\n\nЕсли в исходном массиве нет положительных или отрицательных чисел, соответствующий массив должен быть пустым.\n\n\nПример запуска функции:\n```javascript\nsplitPositivesAndNegatives([3, -1, 0, -3, 5, -2]);// { positives: [ 5, 0, 3 ], negatives: [ -2, -3, -1 ] }\nsplitPositivesAndNegatives([-5, -4, -3]);   // { positives: [], negatives: [ -3, -4, -5 ] }\nsplitPositivesAndNegatives([1, 2, 3]);  // { positives: [ 3, 2, 1 ], negatives: [] }\nsplitPositivesAndNegatives([]);   // { positives: [], negatives: [] }\n```"
+  },
+  "initialSolution": "function splitPositivesAndNegatives(){\n\n}",
+  "completedSolution": "function splitPositivesAndNegatives(arr) {\n  let pos = []\n  let neg = []\n\n  while(arr.length > 0){\n    const num = arr.pop()\n    num < 0 ? neg.push(num) : pos.push(num)\n  }\n\n  return {positives: pos, negatives: neg};\n}",
+  "openTest": "it('Created function splitPositivesAndNegatives', () => {\n  expect(splitPositivesAndNegatives).to.be.a('function');\n});\n\nit('Function splitPositivesAndNegatives includes methods pop() and push()', () => {\n  const result = splitPositivesAndNegatives.toString()\n  expect(result).to.include('.pop()')\n  expect(result).to.include('.push(')\n});\n\nit(\"splitPositivesAndNegatives([3, -1, 0, -3, 5, -2]) should return {'negatives': [-2, -3, -1], 'positives': [5, 0, 3]}\", () => {\n  expect(splitPositivesAndNegatives([3, -1, 0, -3, 5, -2])).to.deep.equal({'negatives': [-2, -3, -1], 'positives': [5, 0, 3]});\n});\n\nit(\"splitPositivesAndNegatives([-5, -4, -3]) should return {positives: [], negatives: [-3, -4, -5]}\", () => {\n  expect(splitPositivesAndNegatives([-5, -4, -3])).to.deep.equal({positives: [], negatives: [-3, -4, -5]});\n});\n\nit(\"splitPositivesAndNegatives([1, 2, 3]) should return {positives: [3, 2, 1], negatives: []}\", () => {\n  expect(splitPositivesAndNegatives([1, 2, 3])).to.deep.equal({positives: [3, 2, 1], negatives: []});\n});\n\nit(\"should handle an empty array\", () => {\n  expect(splitPositivesAndNegatives([])).to.deep.equal({positives: [], negatives: []});\n});\n\nit(\"splitPositivesAndNegatives([-2, 0, 2]) should return {positives: [2, 0], negatives: [-2]}\", () => {\n  expect(splitPositivesAndNegatives([-2, 0, 2])).to.deep.equal({positives: [2, 0], negatives: [-2]});\n});\n\nit(\"should correctly identify single positive number as positive\", () => {\n  expect(splitPositivesAndNegatives([100])).to.deep.equal({positives: [100], negatives: []});\n});\n\nit(\"should correctly identify single negative number as negative\", () => {\n  expect(splitPositivesAndNegatives([-100])).to.deep.equal({positives: [], negatives: [-100]});\n});\n\nit(\"should correctly handle array with mixed positive and negative numbers including zero\", () => {\n  expect(splitPositivesAndNegatives([0, -1, 1, -2, 2, -3, 3])).to.deep.equal({positives: [3, 2, 1, 0], negatives: [-3, -2, -1]});\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

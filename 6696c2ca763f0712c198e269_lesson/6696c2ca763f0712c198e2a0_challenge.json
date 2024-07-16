@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e2a0",
+  "name": {
+    "en": "Round up the largest of the three numbers",
+    "ru": "Округлить вверх наибольшее из трех чисел"
+  },
+  "instruction": {
+    "en": "Write a function `maxOfThree` that takes three numbers and returns the largest rounded number.\n\nThe name of the function parameters can be anything.\n\nExamples of running the function:\n```javascript.\nmaxOfThree(1.45, 2.12, 0.99) // 3\nmaxOfThree(1.45, 7.12, 2.99) // 8\nmaxOfThree(25, 24.2, 19.9) // 25\nmaxOfThree(0.1, 0.2, 0.3) // 1\n```",
+    "ru": "Напишите функцию `maxOfThree`, которая принимает три числа и возвращает наибольшее из них округленное в большую сторону.\n\nНазвание параметров функции может быть любым.\n\nПримеры запуска функции:\n```javascript\nmaxOfThree(1.45, 2.12, 0.99) // 3\nmaxOfThree(1.45, 7.12, 2.99) // 8\nmaxOfThree(25, 24.2, 19.9) // 25\nmaxOfThree(0.1, 0.2, 0.3) // 1\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function maxOfThree(n1, n2, n3){\n  if(n1 > n2 && n1 > n3) return Math.ceil(n1)\n  if(n2 > n1 && n2 > n3) return Math.ceil(n2)\n  if(n3 > n1 && n3 > n2) return Math.ceil(n3)\n}",
+  "openTest": "it('Created function maxOfThree', () => {\n  expect(maxOfThree).to.be.a('function');\n});\n\nit('Function maxOfThree does not include method Math.max', () => {\n  expect(maxOfThree.toString()).to.not.include('Math.max');\n});\n\nit('maxOfThree(1.45, 2.12, 0.99) should return 3', () => {\n  expect(maxOfThree(1.45, 2.12, 0.99)).to.equal(3);\n});\n\nit('maxOfThree(1.45, 7.12, 2.99) should return 8', () => {\n  expect(maxOfThree(1.45, 7.12, 2.99)).to.equal(8);\n});\n\nit('maxOfThree(25, 24.2, 19.9) should return 25', () => {\n  expect(maxOfThree(25, 24.2, 19.9)).to.equal(25);\n});\n\nit('maxOfThree(0.1, 0.2, 0.3) should return 1', () => {\n  expect(maxOfThree(0.1, 0.2, 0.3)).to.equal(1);\n});\n\nit('maxOfThree(10.1, 12.2, 9.3) should return 1', () => {\n  expect(maxOfThree(10.1, 12.2, 9.3)).to.equal(13);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

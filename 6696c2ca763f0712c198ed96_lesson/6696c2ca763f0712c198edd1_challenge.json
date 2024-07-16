@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198edd1",
+  "name": {
+    "en": "",
+    "ru": "Удалить дубликаты слов независимо от регистра и знаков препинания"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `deleteDuplicates` принимает строку и возвращает строку, в которой удалены все повторяющиеся слова.\n\nСлова могут быть написаны в разных регистрах, но считаются одинаковыми, поэтому надо привести все слова к нижнему регистру.\n\nСлова могут содержать знаки препинания, `!?.,;:` которые не надо учитывать при сравнении.\n\nНапример:\n```javascript\nconst str= 'Hello, Hello! Hello?';\n```\nДанная строка содержит дубликаты слова `hello`, хотя у каждого слова разный знак препинания.\nРезультатом получения такой строки должно быть `hello`.\n\nСлова в новой строке должны быть разделены пробелом.\n\nПримеры запуска функции:\n```javascript\ndeleteDuplicates('Hello, world!'); // 'hello world'\ndeleteDuplicates('Hello, world! Hello! world?'); // 'hello world'\ndeleteDuplicates('a, b c a d! d? d t'); // 'a b c d t'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function deleteDuplicates(str) {\n  str = str.toLowerCase();\n  let result = '';\n  const symbols = '!?.,;:'\n  let word = '';\n  const obj = {};\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] !== ' ' && symbols.includes(str[i]) === false) word += str[i];\n\n    if (str[i] === ' ' || i === str.length - 1) {\n      if (word && !obj[word]) {\n        obj[word] = 1;\n\n        if (result) result += ' ' + word;\n        else result = word;\n      }\n      word = '';\n    }\n  }\n  return result\n}",
+  "openTest": "it('Created function deleteDuplicates', () => {\n  expect(deleteDuplicates).to.be.a('function');\n});\n\nit('deleteDuplicates(\"Hello, world!\") should return \"hello world\"', () => {\n  expect(deleteDuplicates('Hello, world!')).to.equal('hello world');\n});\n\nit('deleteDuplicates(\"Hello, world! Hello! world?\") should return \"hello world\"', () => {\n  expect(deleteDuplicates('Hello, world! Hello! world?')).to.equal('hello world');\n});\n\nit('deleteDuplicates(\"a, b c a d! d? d t\") should return \"a b c d t\"', () => {\n  expect(deleteDuplicates('a, b c a d! d? d t')).to.equal('a b c d t');\n});\n\nit('deleteDuplicates(\"\") should return \"\"', () => {\n  expect(deleteDuplicates('')).to.equal('');\n});\n\nit('deleteDuplicates(\"Hello, Hello! HELLO?\") should return \"hello\"', () => {\n  expect(deleteDuplicates('Hello, Hello! HELLO?')).to.equal('hello');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

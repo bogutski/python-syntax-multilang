@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f483",
+  "name": {
+    "en": "/*",
+    "ru": "Нормализация имен пользователей"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `normalizeUserNames`, которая принимает массив строк, представляющих имена пользователей в различных форматах, и возвращает новый массив, содержащий нормализованные имена.\n\nВсе имена должны быть преобразованы к нижнему регистру, и каждое слово в имени должно начинаться с заглавной буквы.\n\nИспользуйте метод `map()` для этого преобразования.\n\nВ каждой строке будет не больше 2 слов.\n\n\nПример запуска функции:\n\n```javascript\nnormalizeUserNames(['alice cooper', 'BOB MARLEY', 'charLie CHAPLIN']); // [ 'Alice Cooper', 'Bob Marley', 'Charlie Chaplin' ]\nnormalizeUserNames(['two words', 'WORD HERE', 'one']); // [ 'Two Words', 'Words Here', 'One' ]\n```"
+  },
+  "initialSolution": "function normalizeUserNames(){\n\n}",
+  "completedSolution": "function normalizeUserNames(arr) {\n  return arr.map(str => {\n\n    let index = str.indexOf(' ')\n    let res = ''\n\n    for(let i = 0; i < str.length; i++){\n      if(i === 0 || i === index + 1) res += str[i].toUpperCase()\n      else res += str[i].toLowerCase()\n    }\n\n    return res\n  });\n}",
+  "openTest": "it('Created function normalizeUserNames', () => {\n  expect(normalizeUserNames).to.be.a('function');\n});\n\nit('Function normalizeUserNames should include method map()', () => {\n  const res = normalizeUserNames.toString()\n  expect(res).to.include('.map(')\n});\n\nit(\"normalizeUserNames(['alice cooper', 'BOB MARLEY', 'charLie CHAPLIN']) should return ['Alice Cooper', 'Bob Marley', 'Charlie Chaplin']\", () => {\n  expect(normalizeUserNames([\"alice cooper\", \"BOB MARLEY\", \"charLie CHAPLIN\"])).to.deep.equal([\"Alice Cooper\", \"Bob Marley\", \"Charlie Chaplin\"]);\n});\n\nit(\"normalizeUserNames(['jAnE DOE', 'john SMITH']) should return ['Jane Doe', 'John Smith']\", () => {\n  expect(normalizeUserNames([\"jAnE DOE\", \"john SMITH\"])).to.deep.equal([\"Jane Doe\", \"John Smith\"]);\n});\n\nit(\"normalizeUserNames([]) should return []\", () => {\n  expect(normalizeUserNames([])).to.deep.equal([]);\n});\n\nit(\"normalizeUserNames(['SINGLENAME']) should return ['Singlename']\", () => {\n  expect(normalizeUserNames([\"SINGLENAME\"])).to.deep.equal([\"Singlename\"]);\n});\n\nit(\"normalizeUserNames(['two words', 'WORDS HERE', 'one']) should return ['Two Words', 'Words Here', 'One']\", () => {\n  expect(normalizeUserNames(['two words', 'WORDS HERE', 'one'])).to.deep.equal(['Two Words', 'Words Here', 'One']);\n});\n\nit(\"normalizeUserNames(['eLoN musK', 'mark ZUCKERBERG', 'jeff BEZOS']) should return ['Elon Musk', 'Mark Zuckerberg', 'Jeff Bezos']\", () => {\n  expect(normalizeUserNames([\"eLoN musK\", \"mark ZUCKERBERG\", \"jeff BEZOS\"])).to.deep.equal([\"Elon Musk\", \"Mark Zuckerberg\", \"Jeff Bezos\"]);\n});\n\nit(\"normalizeUserNames(['steveJOBS']) should return ['Stevejobs']\", () => {\n  expect(normalizeUserNames([\"steveJOBS\"])).to.deep.equal([\"Stevejobs\"]);\n});\n\nit(\"normalizeUserNames(['sATOSHI Nakamoto', 'vITALIK Buterin']) should return ['Satoshi Nakamoto', 'Vitalik Buterin']\", () => {\n  expect(normalizeUserNames([\"sATOSHI Nakamoto\", \"vITALIK Buterin\"])).to.deep.equal([\"Satoshi Nakamoto\", \"Vitalik Buterin\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Array comparison",
+  "instruction": "The function `compareArrays` takes two arrays.\n\nIt is necessary to check if the first array contains all the elements of the second array.\n\nThe second array contains any number of unique elements.\n\nIf it does, the function should return `true`, if not, `false`.\n\nFix the errors in the code so that the function works correctly.\n\nThe errors can only be in the syntax.\n\nExample function calls:\n```javascript\ncompareArrays([1, 2, 3], [1, 2, 3]) // true\ncompareArrays([1, 2, 4, 14, 5, 13], [1, 2, 3, 4]) // false\ncompareArrays([1, 2, 3], [1, 2, 3, 4]) // false\n```",
+  "instructions": {}
+}

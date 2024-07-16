@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e3ff",
+  "name": {
+    "en": "",
+    "ru": "Вернуть символ из строки по его порядковому номеру"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `getByPosition`, которая принимает строку и порядковый номер символа в этой строке и возвращает этот символ.\n\nПримеры запуска функции:\n```javascript\ngetByPosition('abc', 1); // 'a'\ngetByPosition('abc', 2); // 'b'\ngetByPosition('abc', 3); // 'c'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function getByPosition(str, position) {\n  return str[position - 1];\n}",
+  "openTest": "it('Created function getByPosition', () => {\n  expect(getByPosition).to.be.a('function');\n});\n\nit('getByPosition(\"abc\", 1) should return \"a\"', () => {\n  expect(getByPosition('abc', 1)).to.equal('a');\n});\n\nit('getByPosition(\"abc\", 2) should return \"b\"', () => {\n  expect(getByPosition('abc', 2)).to.equal('b');\n});\n\nit('getByPosition(\"abc\", 3) should return \"c\"', () => {\n  expect(getByPosition('abc', 3)).to.equal('c');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

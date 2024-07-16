@@ -1,0 +1,6 @@
+{
+  "name": "Что получится, если к null прибавить число?",
+  "instruction": "\"Null - это пустота. А если что-то прибавить к пустоте, получишь то, что прибавлял...\" (из \"Сказки о цифрах\")\n\nСоздайте переменную с именем `empty` и присвойте ей значение `null`.\nСоздайте переменную с именем `number` и присвойте ей значение произвольного числа.\nСоздайте переменную с именем `sum` и присвойте ей сумму переменных `empty` и `number`.\nСоздайте переменную с именем `typeOfSum` и присвойте ей значение типа переменной `sum`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst money = null;\nconst extra = 1000;\nconst result = money + extra;\nconst type = typeof result;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst empty = null;\nconst number = 1;\nconst sum = empty + number;\nconst typeOfSum = typeof sum;\n```"
+}

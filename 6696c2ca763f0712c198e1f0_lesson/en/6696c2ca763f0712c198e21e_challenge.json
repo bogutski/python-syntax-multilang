@@ -1,0 +1,4 @@
+{
+  "name": "Code greeting",
+  "instruction": "Create a function named `spyGreeting` that takes a single parameter `phrase`.\n\nIf the `phrase` parameter is equal to the string 'So beautiful day!', the function should return the string 'Hello, Mr. Bond!'\n\nIn all other cases the function should return the string 'Hi there!'."
+}

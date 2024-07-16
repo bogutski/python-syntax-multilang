@@ -1,0 +1,172 @@
+{
+  "name": "Index search. The indexOf, lastIndexOf methods",
+  "questions": {
+    "0": {
+      "name": "The indexOf() method",
+      "variants": {
+        "0": {
+          "name": "Searches the index of the element with the specified value from the beginning of the string"
+        },
+        "1": {
+          "name": "Searches the element with the specified value from the end of the string"
+        },
+        "2": {
+          "name": "Always returns -1"
+        }
+      }
+    },
+    "1": {
+      "name": "The lastIndexOf() method",
+      "variants": {
+        "0": {
+          "name": "Searches the element with the specified value from the beginning of the string"
+        },
+        "1": {
+          "name": "Searches the element with the specified value from the end of the string"
+        },
+        "2": {
+          "name": "Randomly searching for an element"
+        },
+        "3": {
+          "name": "Always returns -1"
+        }
+      }
+    },
+    "2": {
+      "name": "If the element was not found, the indexOf() and lastIndexOf() methods:",
+      "variants": {
+        "0": {
+          "name": "Returns an error"
+        },
+        "1": {
+          "name": "Returns -1"
+        },
+        "2": {
+          "name": "Returns 0"
+        },
+        "3": {
+          "name": "Returns the same string"
+        }
+      }
+    },
+    "3": {
+      "name": "The first argument of the indexOf() and lastIndexOf() methods is:",
+      "variants": {
+        "0": {
+          "name": "Array or string index"
+        },
+        "1": {
+          "name": "Number of repetitions"
+        },
+        "2": {
+          "name": "The argument that determines the brute-force method"
+        },
+        "3": {
+          "name": "The value you're looking for"
+        }
+      }
+    },
+    "4": {
+      "name": "The second argument of the indexOf() and lastIndexOf() methods is:",
+      "variants": {
+        "0": {
+          "name": "Line index from which the search starts"
+        },
+        "1": {
+          "name": "The value you're looking for"
+        },
+        "2": {
+          "name": "Number of repetitions"
+        },
+        "3": {
+          "name": "Element separator"
+        }
+      }
+    },
+    "5": {
+      "name": "If you do not specify the second argument in the indexOf() and lastIndexOf() methods, then:",
+      "variants": {
+        "0": {
+          "name": "Returns an error"
+        },
+        "1": {
+          "name": "The methods will incorrectly return the answer"
+        },
+        "2": {
+          "name": "The second argument is optional. it defines the index of the array from which the search should start"
+        },
+        "3": {
+          "name": "Methods will return -1"
+        }
+      }
+    },
+    "6": {
+      "name": "const message = 'Welcome'; console.log(message.indexOf('W')); What is the result?",
+      "variants": {
+        "0": {
+          "name": "0"
+        },
+        "1": {
+          "name": "1"
+        },
+        "2": {
+          "name": "2"
+        },
+        "3": {
+          "name": "7"
+        }
+      }
+    },
+    "7": {
+      "name": "const message = 'Welcome'; console.log(message.indexOf('m')); What is the result?",
+      "variants": {
+        "0": {
+          "name": "7"
+        },
+        "1": {
+          "name": "5"
+        },
+        "2": {
+          "name": "0"
+        },
+        "3": {
+          "name": "13"
+        }
+      }
+    },
+    "8": {
+      "name": "const message = 'Welcome'; console.log(message.lastIndexOf(-1)); What is the result?",
+      "variants": {
+        "0": {
+          "name": "e"
+        },
+        "1": {
+          "name": "Error"
+        },
+        "2": {
+          "name": "l"
+        },
+        "3": {
+          "name": "-1"
+        }
+      }
+    },
+    "9": {
+      "name": "Choose the correct statement:",
+      "variants": {
+        "0": {
+          "name": "The longer the string, the longer the method will work"
+        },
+        "1": {
+          "name": "The shorter the string, the longer the method will work"
+        },
+        "2": {
+          "name": "Method speed does not depend on line size"
+        },
+        "3": {
+          "name": "The method does not work for strings"
+        }
+      }
+    }
+  }
+}

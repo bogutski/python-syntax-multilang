@@ -1,0 +1,5 @@
+{
+  "name": "Вычислите скидку на два товара",
+  "instruction": "Напишите функцию `discountOfTwo`, которая вычислит дисконт на два товара.\n\nФункция принимает 4 параметра: `priceProduct1`, `priceProduct2`, `discountProduct1`, `discountProduct2`.\n\nСкидки указаны в процентах.\n\nФункция должна вернуть только сумму дисконта на оба товара.\n\nПримеры:\n```javascript\ndiscountOfTwo(100, 200, 10, 10) // 30\ndiscountOfTwo(100, 200, 10, 20) // 50\ndiscountOfTwo(100, 200, 20, 10) // 40\n```",
+  "instructions": {}
+}

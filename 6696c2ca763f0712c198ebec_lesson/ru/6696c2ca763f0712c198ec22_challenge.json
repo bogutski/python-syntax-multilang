@@ -1,0 +1,5 @@
+{
+  "name": "Количество вхождений символа в строку с учетом регистра",
+  "instruction": "Напишите функцию `lowerAndUpperCase`, которая принимает строку и символ и возвращает количество вхождений символа в строку с учетом регистра.\n\nДля подсчета количества вхождений используйте две проверки:\n* на равенство символа в нижнем регистре\n* на равенство символа в верхнем регистре.\n\nПример проверки:\n```javascript\nif(string[i] === el.toLowerCase()) countLowerCase++;\nif(string[i] === el.toUpperCase()) countUpperCase++;\n```\n\nФункция должна возвращать строку вида: `Number of lowercase is ${countLowerCase} and uppercase is ${countUpperCase}`.\n\nСтрока и элемент всегда будут переданы в функцию, не нужно проверять их наличие.\n\n```javascript\nlowerAndUpperCase('Hello World!', 'l');  // 'Number of lowercase is 3 and uppercase is 0'\nlowerAndUpperCase('Hello WORLD!', 'o');  // 'Number of lowercase is 1 and uppercase is 1'\nlowerAndUpperCase('APPLE', 'p');         // 'Number of lowercase is 0 and uppercase is 2'\n```",
+  "instructions": {}
+}

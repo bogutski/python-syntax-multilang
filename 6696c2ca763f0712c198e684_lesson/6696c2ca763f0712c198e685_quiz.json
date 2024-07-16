@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198e685",
+  "name": {
+    "ru": "Задания на комбинирования всего, что мы знаем",
+    "en": "Tasks to combine everything we know",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e686",
+      "name": {
+        "ru": "Какое ключевое слово используется при создании переменной?",
+        "en": "What keyword is used when creating a variable?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e687",
+          "name": {
+            "ru": "const",
+            "en": "const",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e688",
+          "name": {
+            "ru": "lat",
+            "en": "lat",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e689",
+          "name": {
+            "ru": "let",
+            "en": "let",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e68a",
+          "name": {
+            "ru": "console",
+            "en": "console",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e68b",
+      "name": {
+        "ru": "Что выведется в консоль? console.log(typeof (7 >= 7));",
+        "en": "What is output to the console? console.log(typeof (7 >= 7));",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e68c",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e68d",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e68e",
+          "name": {
+            "ru": "number",
+            "en": "number",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e68f",
+          "name": {
+            "ru": "boolean",
+            "en": "boolean",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e690",
+      "name": {
+        "ru": "Что используется для проверки нескольких условий задачи?",
+        "en": "What is used to test multiple problem conditions?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e691",
+          "name": {
+            "ru": "else if",
+            "en": "else if",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e692",
+          "name": {
+            "ru": "else for",
+            "en": "else for",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e693",
+          "name": {
+            "ru": "if if",
+            "en": "if if",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e694",
+          "name": {
+            "ru": "if all",
+            "en": "if all",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e695",
+      "name": {
+        "ru": "Выберите верный вариант приоритета выполнения логических операторов (И) && и (ИЛИ) ||",
+        "en": "Choose the correct option for the execution priority of the logical operators (AND) && and (OR) ||",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e696",
+          "name": {
+            "ru": "Первым выполнится оператор (ИЛИ) ||, а затем (И) &&",
+            "en": "The (OR) operator || will be executed first, followed by (AND) &&",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e697",
+          "name": {
+            "ru": "Первым выполнится оператор (И) &&, а затем (ИЛИ) ||",
+            "en": "The (AND) && operator will be executed first, followed by (OR) ||",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e698",
+      "name": {
+        "ru": "Какое свойство возвращает количество символов в строке?",
+        "en": "Which property returns the number of characters in the string?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e699",
+          "name": {
+            "ru": "lenght",
+            "en": "lenght",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e69a",
+          "name": {
+            "ru": "length",
+            "en": "length",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e69b",
+          "name": {
+            "ru": "lenghts",
+            "en": "lenghts",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e69c",
+          "name": {
+            "ru": "langth",
+            "en": "langth",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e69d",
+      "name": {
+        "ru": "Выберите верный вариант обращения к первому элементу строки str.",
+        "en": "Choose the correct way to refer to the first element of str.",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e69e",
+          "name": {
+            "ru": "str(1)",
+            "en": "str(1)",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e69f",
+          "name": {
+            "ru": "str{0}",
+            "en": "str{0}",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6a0",
+          "name": {
+            "ru": "str[0]",
+            "en": "str[0]",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6a1",
+          "name": {
+            "ru": "str[1]",
+            "en": "str[1]",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6a2",
+      "name": {
+        "ru": "Какой метод удаляет пробелы в начале и в конце строки?",
+        "en": "Which method removes spaces at the beginning and at the end of a line?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6a3",
+          "name": {
+            "ru": "trim()",
+            "en": "trim()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6a4",
+          "name": {
+            "ru": "trimStart()",
+            "en": "trimStart()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6a5",
+          "name": {
+            "ru": "trimEnd()",
+            "en": "trimEnd()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6a6",
+          "name": {
+            "ru": "использование trimStart() и trimEnd() вместе",
+            "en": "Using trimStart() and trimEnd() together",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6a7",
+      "name": {
+        "ru": "Что случится если удалить все свойства из объекта?",
+        "en": "What happens if I delete all the properties from an object?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6a8",
+          "name": {
+            "ru": "Удаление всех свойств из объекта невозможно",
+            "en": "It is not possible to remove all properties from an object",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6a9",
+          "name": {
+            "ru": "Удалится сам объект",
+            "en": "The object itself will be deleted",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6aa",
+          "name": {
+            "ru": "Объект останется пустым",
+            "en": "The object will remain empty",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6ab",
+          "name": {
+            "ru": "Последнее свойство не удалится",
+            "en": "The last property will not be deleted",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6ac",
+      "name": {
+        "ru": "Что представляет из себя свойство объекта?",
+        "en": "What is an object property?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6ad",
+          "name": {
+            "ru": "Пара ключ-значение",
+            "en": "Key-value pair",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6ae",
+          "name": {
+            "ru": "Пара значение-ключ",
+            "en": "Value-key pair",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6af",
+          "name": {
+            "ru": "Пара ключ-свойство",
+            "en": "Key-property pair",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6b0",
+          "name": {
+            "ru": "Пара название-значение",
+            "en": "Name-value pair",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6b1",
+      "name": {
+        "ru": "Что проверяет метод hasOwnProperty() в объекте?",
+        "en": "What does the hasOwnProperty() method check in the object?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6b2",
+          "name": {
+            "ru": "Есть ли у объекта искомое свойство",
+            "en": "Does the object have the property you are looking for",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6b3",
+          "name": {
+            "ru": "Есть ли у объекта вложенный объект",
+            "en": "Does the object have a nested object",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6b4",
+          "name": {
+            "ru": "Существование объекта",
+            "en": "Existence of an object",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6b5",
+          "name": {
+            "ru": "Что удалено в объекте",
+            "en": "What is deleted in the object",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

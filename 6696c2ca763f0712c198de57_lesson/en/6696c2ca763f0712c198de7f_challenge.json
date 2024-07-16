@@ -1,0 +1,6 @@
+{
+  "name": "Wall surface area",
+  "instruction": "Student Vasily decided to renovate the room and wallpaper it. But before buying the wallpaper, you first need to find out the total area of the walls (excluding the area of windows and doors).\nVasily measured the dimensions of the room: a - length, b - width, h - height.\nWrite a sequence of commands to find the surface area of the walls.\n\nSet variables `a`, `b`, `h` and assign them the values of arbitrary non-negative numbers.\n\nSet variable `area` and assign it the value of the expression for calculating the area of the walls.\n(In the room, there are 2 walls with an area of `a*h` and two walls with an area of `b*h`).\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst size1 = 10;\nconst size2 = 5;\nconst height = 3;\nconst s = (size1 * height + size2 * height) * 2;\n\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst a = 5;\nconst b = 10;\nconst h = 3;\nconst area = 2 * a * h + 2 * b * h;\n```"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "A string of numbers from 0 to n",
+  "instruction": "Write a function `fromZeroToN` that takes a number `n` and returns a string consisting of numbers from `0` to `n` inclusive.\n\nExamples of running the function:\n```javascript\nfromZeroToN(0) // '0'\nfromZeroToN(5) // '012345'\nfromZeroToN(10) // '012345678910'\n```"
+}

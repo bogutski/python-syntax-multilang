@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e0ad",
+  "name": {
+    "en": "Travel time in space. Miles",
+    "ru": "Время передвижения в космосе. Мили"
+  },
+  "instruction": {
+    "en": "The spaceship flies at a speed of `27,000` kilometers per hour.\n\nWrite a function `getSpaceTripTime` that takes as a parameter the distance in miles\nand returns the time in minutes it takes the ship to travel that distance.\n\nThere are `1609` meters in one mile.\n\nTo solve this problem do the following. Observe the order of operations:\n\n1. Translate kilometers per hour into miles per hour by dividing `27,000` by `1.609`.\n2. Find how many hours it will take to cover the distance by dividing the distance in miles by the speed in miles per hour.\nFind how many minutes it will take to cover the distance by multiplying the time in hours by `60`.\n4. Return the result.\n\nExamples:\n```javascript.\ngetSpaceTripTime(10000); // 35.75555555555555\ngetSpaceTripTime(20000); // 71.5111111111111\ngetSpaceTripTime(30000); // 107.26666666666667\n```",
+    "ru": "Космический корабль летит со скоростью `27 000` километров в час.\n\nНапиши функцию `getSpaceTripTime`, которая принимает в качестве параметра расстояние в милях\nи возвращает время в минутах, за которое корабль преодолеет это расстояние.\n\nВ одной миле `1609` метров.\n\nЧтобы решить эту задачу делай следующее. Соблюдайте порядок действий:\n\n1. Переведи километры в час в мили в час, разделив `27 000` на `1.609`.\n2. Найдем сколько часов займет преодоление расстояния, разделив расстояние в милях на скорость в милях в час.\n3. Найдем сколько минут займет преодоление расстояния, умножив время в часах на `60`.\n4. Верните полученный результат.\n\nПримеры:\n```javascript\ngetSpaceTripTime(10000); // 35.75555555555555\ngetSpaceTripTime(20000); // 71.5111111111111\ngetSpaceTripTime(30000); // 107.26666666666667\n```"
+  },
+  "initialSolution": "function space",
+  "completedSolution": "function getSpaceTripTime(miles) {\n  const mph = 27000 / 1.609;\n  const hours = miles / mph;\n  const minutes = hours * 60;\n  return minutes;\n}",
+  "openTest": "it('Created function getSpaceTripTime', () => {\n  expect(getSpaceTripTime).to.be.a('function');\n});\n\nit('getSpaceTripTime(10000) should return 35.75555555555555', () => {\n  expect(getSpaceTripTime(10000)).to.be.equal(35.75555555555555);\n});\n\nit('getSpaceTripTime(20000) should return 71.5111111111111', () => {\n  expect(getSpaceTripTime(20000)).to.be.equal(71.5111111111111);\n});\n\nit('getSpaceTripTime(30000) should return 107.26666666666667', () => {\n  expect(getSpaceTripTime(30000)).to.be.equal(107.26666666666667);\n});\n\nit('getSpaceTripTime(43452) should return 155.36504', () => {\n  expect(getSpaceTripTime(43452)).to.be.equal(155.36504);\n} );",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

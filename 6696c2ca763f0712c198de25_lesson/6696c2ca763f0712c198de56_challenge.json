@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de56",
+  "name": {
+    "en": "Doesn't the sum change by changing the places of the terms?",
+    "ru": "От перемены мест слагаемых сумма не меняется?"
+  },
+  "instruction": {
+    "en": "Set the variable `a` and assign it the value of the string `'2'`.\nSet the variable `b` and assign it the value of the string `'3'`.\n\nSet the variable `aPlusB` and assign it the result of merging the variables `a` and `b`.\nSet the variable `bPlusA` and assign it the result of merging the variables `b` and `a`.\n\nSet the variable `isEqual` and assign it the result of comparing the variables `aPlusB` and `bPlusA`.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst x = '1';\nconst y = '2';\nconst sum1 = x + y;\nconst sum2 = y + x;\nconst comparison = sum1 === sum2;\n```",
+    "ru": "Задайте переменную `a` и присвойте ей значение строки `'2'`.\nЗадайте переменную `b` и присвойте ей значение строки `'3'`.\n\nЗадайте переменную `aPlusB` и присвойте ей результат слияния переменных `a` и `b`.\nЗадайте переменную `bPlusA` и присвойте ей результат слияния переменных `b` и `a`.\n\nЗадайте переменную `isEqual` и присвойте ей результат сравнения переменных `aPlusB` и `bPlusA`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst x = '1';\nconst y = '2';\nconst sum1 = x + y;\nconst sum2 = y + x;\nconst comparison = sum1 === sum2;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const a = '2';\nconst b = '3';\nconst aPlusB = a + b;\nconst bPlusA = b + a;\nconst isEqual = aPlusB === bPlusA;",
+  "openTest": "it('Variable `a` contains a value', () => {\n  expect(a).not.undefined;\n});\n\nit('the variable type `a` is string', () => {\n  expect(a).a('string');\n});\n\nit('the variable `a` has the correct value', () => {\n  expect(a).equal('2');\n});\n\nit('Variable `b` has a value', () => {\n  expect(b).not.undefined;\n});\n\nit('the variable type `b` is a string', () => {\n  expect(b).a('string');\n});\n\nit('the variable `b` has the correct value', () => {\n  expect(b).equal('3');\n});\n\nit('Variable `aPlusB` has a value', () => {\n  expect(aPlusB).not.undefined;\n});\n\nit('the variable type `aPlusB` is string', () => {\n  expect(aPlusB).a('string');\n});\n\nit('the variable `aPlusB` has the correct value', () => {\n  expect(aPlusB).equal('23');\n});\n\nit('Variable `bPlusA` has a value', () => {\n  expect(bPlusA).not.undefined;\n});\n\nit('the variable type `bPlusA` is a string', () => {\n  expect(bPlusA).a('string');\n});\n\nit('the variable `bPlusA` has the correct value', () => {\n  expect(bPlusA).equal('32');\n});\n\nit('The `isEqual` variable has a value', () => {\n  expect(isEqual).not.undefined;\n});\n\nit('the variable type `isEqual` - boolean', () => {\n  expect(isEqual).a('boolean');\n});\n\nit('the variable `isEqual` has the correct value', () => {\n  expect(isEqual).equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst a = '2';\nconst b = '3';\nconst aPlusB = a + b;\nconst bPlusA = b + a;\nconst isEqual = aPlusB === bPlusA;\n```",
+    "ru": "```javascript\nconst a = '2';\nconst b = '3';\nconst aPlusB = a + b;\nconst bPlusA = b + a;\nconst isEqual = aPlusB === bPlusA;\n```"
+  }
+}

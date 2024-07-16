@@ -1,0 +1,5 @@
+{
+  "name": "Перевернуть каждую строку в массиве",
+  "instruction": "Исправьте функцию `reverseStringInArray`, которая принимает массив строк и возвращает массив перевернутых строк.\n\nКаждая строка должна остаться на своем месте в массиве.\n\nВ функции сделано всего три ошибки. Цикл и всё что внутри без ошибок.\n\nРазберите каждую строку и попытайтесь понять, что она делает.\n\nПример запуска функции:\n```js\nreverseStringInArray(['blue', 'red']);                   // [ 'eulb', 'der' ]\nreverseStringInArray(['abc', 'def', 'ghi', 'jkl']);      // [ 'cba', 'fed', 'ihg', 'lkj' ]\nreverseStringInArray(['hello', 'programming' ,'world']); // [ 'olleh', 'gnimmargorp', 'dlrow' ]\n```",
+  "instructions": {}
+}

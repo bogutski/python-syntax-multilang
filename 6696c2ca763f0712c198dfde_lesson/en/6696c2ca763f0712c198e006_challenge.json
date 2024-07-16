@@ -1,0 +1,4 @@
+{
+  "name": "Variable outside the function. Calculate the area of the circle",
+  "instruction": "Let's get acquainted with variables that are created outside of functions.\n\nAnd at the same time we will remind you how the area of a circle is counted.\n\nCreate a variable `PI` and set it to `3.14`.\n\nThen create a function `circleArea` with one parameter `radius`.\n\nInside the function, create a variable `area` and assign it the value of the product of the variables `PI` and `radius` squared.\n\nReturn the value of the variable `area`.\n\nA similar example:\n```javascript\nconst TAX = 1.01;\n\nfunction totalCost(price) {\n  return price * TAX ** 2;\n}\n```\n\nTo square it, use the `**` operator."
+}

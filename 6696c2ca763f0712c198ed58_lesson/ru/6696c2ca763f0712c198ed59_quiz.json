@@ -1,0 +1,185 @@
+{
+  "name": "Удалить из строки все символы дубликаты",
+  "questions": {
+    "0": {
+      "name": "Выберите верный вариант результата запуска кода ниже",
+      "description": "```javascript\nconst str = 'Mary plays';\nlet res = '';\nconst symbols = {};\nfor (let i = 0; i < str.length; i++) {\n  if (!symbols[str[i]]) {\n    symbols[str[i]] = 1;\n    res += str[i];\n  }\n}\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "'Mr plays'"
+        },
+        "1": {
+          "name": "'Mary pls'"
+        },
+        "2": {
+          "name": "'Marypls'"
+        },
+        "3": {
+          "name": "'Mar plys'"
+        }
+      }
+    },
+    "1": {
+      "name": "Что выведется в консоль при запуске кода ниже?",
+      "description": "```javascript\nconst str = 'madam';\nlet res = '';\nconst symbols = {};\nfor (let i = 0; i < str.length; i++) {\n  if (!symbols[str[i]]) {\n    symbols[str[i]] = 1;\n    res += str[i];\n  }\n}\nconsole.log(symbols)\n```",
+      "variants": {
+        "0": {
+          "name": "{a: 2, d: 1, m: 2}"
+        },
+        "1": {
+          "name": "'mad'"
+        },
+        "2": {
+          "name": "{a: 1, d: 1, m: 1}"
+        },
+        "3": {
+          "name": "'dam'"
+        }
+      }
+    },
+    "2": {
+      "name": "Верно ли, что результатом запуска кода ниже будет `'Easy APie'`",
+      "description": "```javascript\nconst str = 'Easy As Pie';\nlet res = '';\nconst symbols = {};\nfor (let i = 0; i < str.length; i++) {\n  if (!symbols[str[i]]) {\n    symbols[str[i]] = 1;\n    res += str[i];\n  }\n}\nconsole.log(res)\n```",
+      "variants": {
+        "0": {
+          "name": "Да, результатом будет 'Easy APie'"
+        },
+        "1": {
+          "name": "Нет, результатом будет 'Easy A Pie'"
+        },
+        "2": {
+          "name": "Нет, результатом будет 'EasyAPie'"
+        },
+        "3": {
+          "name": "Нет, результатом будет 'easy apie'"
+        }
+      }
+    },
+    "3": {
+      "name": "Что надо добавить в коде ниже, чтобы поиск не был чувствителен к регистру?",
+      "description": "```javascript\nlet str = 'Easy As Pie';\nlet res = '';\nconst symbols = {};\nfor (let i = 0; i < str.length; i++) {\n  if (!symbols[str[i]]) {\n    symbols[str[i]] = 1;\n    res += str[i];\n  }\n}\nconsole.log(res)\n```",
+      "variants": {
+        "0": {
+          "name": "После создания переменной str, перевести ее в верхий регистр str = str.toUpperCase();"
+        },
+        "1": {
+          "name": "После создания переменной str, перевести ее в нижний регистр str === str.toLowerCase();"
+        },
+        "2": {
+          "name": "После создания переменной res, перевести ее в нижний регистр res = res.toLowerCase();"
+        },
+        "3": {
+          "name": "После создания переменной str, перевести ее в нижний регистр str = str.toLowerCase();"
+        }
+      }
+    },
+    "4": {
+      "name": "Выберите верный вариант запуска кода ниже",
+      "description": "```javascript\nlet str = 'Madam';\nstr = str.toLowerCase();\nlet res = '';\nconst symbols = {};\nfor (let i = 0; i < str.length; i++) {\n  if (!symbols[str[i]]) {\n    symbols[str[i]] = 1;\n    res += str[i];\n  }\n}\nconsole.log(res)\n```",
+      "variants": {
+        "0": {
+          "name": "'MAD'"
+        },
+        "1": {
+          "name": "'mad'"
+        },
+        "2": {
+          "name": "'dam'"
+        },
+        "3": {
+          "name": "'DAM'"
+        }
+      }
+    },
+    "5": {
+      "name": "Что получится в результате запуска кода ниже?",
+      "description": "```javascript\nconst str = '0 + 100 plus 200 = 300';\nlet res = '';\nconst symbols = {};\nfor (let i = 0; i < str.length; i++) {\n  if (!symbols[str[i]]) {\n    symbols[str[i]] = 1;\n    res += str[i];\n  }\n}\nconsole.log(res)\n```",
+      "variants": {
+        "0": {
+          "name": "'0 + 1 plus 2 = 3'"
+        },
+        "1": {
+          "name": "'0+1plus2=3'"
+        },
+        "2": {
+          "name": "'0 +1plus2=3'"
+        },
+        "3": {
+          "name": "'0 +10plus20=30'"
+        }
+      }
+    },
+    "6": {
+      "name": "Выберите верный вариант результата запуска кода ниже",
+      "description": "```javascript\nconst arr = ['a', 'aB', 'ABC'];\nlet res = '';\nconst symbols = {};\nfor(let i = 0; i < arr.length; i++){\n    for(let j = 0; j < arr[i].length; j++){\n      if (!symbols[arr[i][j]]) {\n        symbols[arr[i][j]] = 1;\n        res += arr[i][j];\n  }\n }\n}\nconsole.log(res)\n```",
+      "variants": {
+        "0": {
+          "name": "'aBAC'"
+        },
+        "1": {
+          "name": "'aBC'"
+        },
+        "2": {
+          "name": "'ABC'"
+        },
+        "3": {
+          "name": "'abc'"
+        }
+      }
+    },
+    "7": {
+      "name": "Верно ли, что результатом запуска кода будет 102 (тип данных number)?",
+      "description": "```javascript\nconst arr = ['102', '120', '201'];\nlet res = '';\nconst symbols = {};\nfor(let i = 0; i < arr.length; i++){\n    for(let j = 0; j < arr[i].length; j++){\n      if (!symbols[arr[i][j]]) {\n        symbols[arr[i][j]] = 1;\n        res += arr[i][j];\n  }\n }\n}\nconsole.log(res)\n```",
+      "variants": {
+        "0": {
+          "name": "Нет, результатом будет 201 (тип данных number)"
+        },
+        "1": {
+          "name": "Нет, результатом будет 120 (тип данных number)"
+        },
+        "2": {
+          "name": "Нет, результатом будет '120' (тип данных string)"
+        },
+        "3": {
+          "name": "Нет, результатом будет '102' (тип данных string)"
+        }
+      }
+    },
+    "8": {
+      "name": "Как получить число -759 (тип данных number) в результате запуска кода ниже?",
+      "description": "```javascript\nconst arr = ['-75', '-59', '-975'];\nlet res = '';\nconst symbols = {};\nfor(let i = 0; i < arr.length; i++){\n    for(let j = 0; j < arr[i].length; j++){\n      if (!symbols[arr[i][j]]) {\n        symbols[arr[i][j]] = 1;\n        res += arr[i][j];\n  }\n }\n}\nconsole.log(res)\n```",
+      "variants": {
+        "0": {
+          "name": "console.log(Number.res)"
+        },
+        "1": {
+          "name": "console.log(Number(res))"
+        },
+        "2": {
+          "name": "console.log(+res)"
+        },
+        "3": {
+          "name": "console.log(++res)"
+        }
+      }
+    },
+    "9": {
+      "name": "Что выведется в консоли внутри кода ниже?",
+      "description": "```javascript\nconst arr = ['1', '31', '173'];\nlet res = '';\nconst symbols = {};\nfor(let i = 0; i < arr.length; i++){\n    for(let j = 0; j < arr[i].length; j++){\n      if (!symbols[arr[i][j]]) {\n        symbols[arr[i][j]] = 1;\n        console.log(res += arr[i][j]);\n  }\n }\n}\n```",
+      "variants": {
+        "0": {
+          "name": "'1' '13' '137'"
+        },
+        "1": {
+          "name": "'137'"
+        },
+        "2": {
+          "name": "137"
+        },
+        "3": {
+          "name": "'1, 13, 137'"
+        }
+      }
+    }
+  }
+}

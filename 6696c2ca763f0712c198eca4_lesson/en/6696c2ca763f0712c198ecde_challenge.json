@@ -1,0 +1,4 @@
+{
+  "name": "Splitting a string into letters and characters",
+  "instruction": "Write a function `lettersAndSymbols` that takes a string and returns an array of two strings.\n\nThe first string contains only letters, the second contains only symbols, including spaces.\n\nThe letters can be in any case.\n\n\nExamples of running the function:\n```javascript\nlettersAndSymbols('Hello World!') // ['HelloWorld', ' !']\nlettersAndSymbols('!J%a^Va') // ['JaVa', '!%^']\nlettersAndSymbols('banana') // ['banana', '']\nlettersAndSymbols('') // ['', '']\n```"
+}

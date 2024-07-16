@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f7a9",
+  "name": {
+    "en": "/*",
+    "ru": "Проверка наличия значений в объекте"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `checkObjectValues`, которая принимает объект и два значения.\n\nФункция должна преобразовать объект в массив его значений и затем проверить, содержатся ли оба значения в массиве.\n\nФункция должна вернуть соответствующее сообщение:\n\n* Если оба значения содержатся в массиве: `Object includes both values`,\n* Если оба значения НЕ содержатся в массиве: `Object is missing both values`,\n* Если массив содержатся только первое значение: `Object includes only first value: <first_value>`,\n* Если массив содержатся только второе значение: `Object includes only second value: <second_value>`.\n\n\nПримеры запуска функции:\n```javascript\ncheckObjectValues({ name: 'Alice', age: 25, isStudent: true }, 'Alice', true));\n// Object includes both values\n\ncheckObjectValues({ name: 'Bob', age: 30, isStudent: false }, 'Alice', true));\n// Object is missing both values\n\ncheckObjectValues({ name: 'Charlie', age: 35, isStudent: true }, 'Charlie', false));\n// Object includes only first value: Charlie\n\ncheckObjectValues({ name: 'Dave', age: 40, isStudent: false }, 'Alice', false));\n// Object includes only second value: false\n```"
+  },
+  "initialSolution": "function checkObjectValues(){\n\n}",
+  "completedSolution": "function checkObjectValues(object, value1, value2) {\n  const toArray = Object.values(object)\n  if(toArray.includes(value1) && toArray.includes(value2)) return `Object includes both values`\n  else if(toArray.includes(value1)) return `Object includes only first value: ${value1}`\n  else if(toArray.includes(value2)) return `Object includes only second value: ${value2}`\n  else return 'Object is missing both values';\n}",
+  "openTest": "it('Created function checkObjectValues', () => {\n  expect(checkObjectValues).to.be.a('function');\n});\n\nit(\"Function checkObjectValues should include includes method\", () => {\n  const result = checkObjectValues.toString();\n  expect(result).to.include('.includes(');\n});\n\nit('checkObjectValues({ name: \"Alice\", age: 25, isStudent: true }, \"Alice\", true) should return \"Object includes both values\"', function() {\n  expect(checkObjectValues({ name: \"Alice\", age: 25, isStudent: true }, \"Alice\", true)).to.equal(\"Object includes both values\");\n});\n\nit('checkObjectValues({ name: \"Bob\", age: 30, isStudent: false }, \"Alice\", true) should return \"Object is missing both values\"', function() {\n  expect(checkObjectValues({ name: \"Bob\", age: 30, isStudent: false }, \"Alice\", true)).to.equal(\"Object is missing both values\");\n});\n\nit('checkObjectValues({ name: \"Charlie\", age: 35, isStudent: true }, \"Charlie\", false) should return \"Object includes only first value: Charlie\"', function() {\n  expect(checkObjectValues({ name: \"Charlie\", age: 35, isStudent: true }, \"Charlie\", false)).to.equal(\"Object includes only first value: Charlie\");\n});\n\nit('checkObjectValues({ name: \"Dave\", age: 40, isStudent: false }, \"Alice\", false) should return \"Object includes only second value: false\"', function() {\n  expect(checkObjectValues({ name: \"Dave\", age: 40, isStudent: false }, \"Alice\", false)).to.equal(\"Object includes only second value: false\");\n});\n\nit('checkObjectValues({ name: \"Eve\", age: 45, isStudent: false }, \"Eve\", true) should return \"Object includes only first value: Eve\"', function() {\n  expect(checkObjectValues({ name: \"Eve\", age: 45, isStudent: false }, \"Eve\", true)).to.equal(\"Object includes only first value: Eve\");\n});\n\nit('checkObjectValues({ name: \"Frank\", age: 50, isStudent: true }, \"Frank\", 50) should return \"Object includes both values\"', function() {\n  expect(checkObjectValues({ name: \"Frank\", age: 50, isStudent: true }, \"Frank\", 50)).to.equal(\"Object includes both values\");\n});\n\nit('checkObjectValues({ name: \"Grace\", age: 55, isStudent: true }, \"Grace\", false) should return \"Object includes only first value: Grace\"', function() {\n  expect(checkObjectValues({ name: \"Grace\", age: 55, isStudent: true }, \"Grace\", false)).to.equal(\"Object includes only first value: Grace\");\n});\n\nit('checkObjectValues({ name: \"Henry\", age: 60, isStudent: false }, \"John\", true) should return \"Object is missing both values\"', function() {\n  expect(checkObjectValues({ name: \"Henry\", age: 60, isStudent: false }, \"John\", true)).to.equal(\"Object is missing both values\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

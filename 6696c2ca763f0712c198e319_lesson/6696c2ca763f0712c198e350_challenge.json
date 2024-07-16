@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e350",
+  "name": {
+    "en": "Determine how many characters are in the number",
+    "ru": "Определить сколько знаков в числе"
+  },
+  "instruction": {
+    "en": "* The number `5.456` has 1 decimal place.\n* The number `45.46` has 2 decimal places.\n* The numbers `782` and `357.01` have 3 decimal places.\n\nWrite a function `countSigns` that takes a number and returns the number of decimal places.\n\nExamples of how to run the function:\n```javascript\ncountSigns(1.234); // 1\ncountSigns(1.2); // 1\ncountSigns(9.99); // 1\ncountSigns(99.99); // 2\ncountSigns(100); // 3\ncountSigns(1000); // 4\n```\n\nConvert a number to a string:\n```javascript\nconst number = 10.034;\nnumber.toString(); // '10.034'\n```\n\nHint. To solve the problem, you can use the `Math.floor()` method to discard the fractional part of the number.\n\nThen convert the number to a string using the `toFixed(0)` or `toString()` methods.\n\nThe number of decimal places in the number will be equal to the length of the resulting string, which you can find out using the `length` string property.",
+    "ru": "* Число `5.456` имеет 1 знак до запятой.\n* Число `45.46` имеет 2 знака до запятой.\n* Числа `782` и `357.01` имеют 3 знака до запятой.\n\nНапишите функцию `countSigns`, которая принимает число и возвращает количество знаков до запятой.\n\nПримеры запуска функции:\n```javascript\ncountSigns(1.234); // 1\ncountSigns(1.2); // 1\ncountSigns(9.99); // 1\ncountSigns(99.99); // 2\ncountSigns(100); // 3\ncountSigns(1000); // 4\n```\n\nПреобразование числа в строку:\n```javascript\nconst number = 10.034;\nnumber.toString(); // '10.034'\n```\n\nПодсказка. Для решения задачи можно использовать метод `Math.floor()`, чтобы отбросить дробную часть числа.\n\nЗатем преобразовать число в строку с помощью методов `toFixed(0)` или `toString()`.\n\nКоличество знаков до запятой в числе будет равно длине полученной строки, которую можно узнать, воспользовавшись свойством строки `length`."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "const countSigns = n => Math.floor(n).toFixed(0).length;",
+  "openTest": "it('Created function countSigns', () => {\n  expect(countSigns).to.be.a('function');\n});\n\nit('countSigns(1.234) should return 1', () => {\n  expect(countSigns(1.234)).to.equal(1);\n});\n\nit('countSigns(1.2) should return 1', () => {\n  expect(countSigns(1.2)).to.equal(1);\n});\n\nit('countSigns(9.99) should return 1', () => {\n  expect(countSigns(9.99)).to.equal(1);\n});\n\nit('countSigns(99.99) should return 2', () => {\n  expect(countSigns(99.99)).to.equal(2);\n});\n\nit('countSigns(100) should return 3', () => {\n  expect(countSigns(100)).to.equal(3);\n});\n\nit('countSigns(1000) should return 4', () => {\n  expect(countSigns(1000)).to.equal(4);\n});\n\nit('countSigns(10000) should return 5', () => {\n  expect(countSigns(10000)).to.equal(5);\n});\n\nit('countSigns(987789) should return 6', () => {\n  expect(countSigns(987789)).to.equal(6);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

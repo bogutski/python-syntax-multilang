@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd6d",
+  "name": {
+    "en": "Cost of balls",
+    "ru": "Стоимость мячей"
+  },
+  "instruction": {
+    "en": "Let's assume you bought 6 balls at a price of $7 each.\nYou need to obtain a string of the following form: `The cost of 6 balls is equal to 42 dollars`.\nBut the number 6 and the expression to obtain the result (42) should be \"embedded\" in the string using `${...}`.\n\nCreate a variable `price` and assign it a value of an arbitrary number (the cost of one ball).\nCreate a variable `count` and assign it a value of an arbitrary number (the number of balls).\nCreate a variable named `message` and assign it a string value using backticks,\ncontaining the text `The cost of XX balls is equal to YY dollars`,\nwhere XX and YY are expressions obtained using `${...}`.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the task requirements:\n```javascript\nconst weight = 5;\nconst amount = 8;\nlet result = `Total weight of ${amount} watermelons is equal to ${weight*amount} pounds`;\n// the console will output the string: \"Total weight of 8 watermelons is equal to 40 pounds\"\n```",
+    "ru": "Предположим, вы купили в магазине 6 мячей по цене $7/шт.\nНадо получить строку следующего вида: `The cost of 6 balls is equal to 42 dollars`.\nНо число 6 и выражение для получения результата (42) надо \"встроить\" в строку при помощи `${…}`.\n\nСоздайте переменную `price`, присвойте ей значение произвольного числа (стоимость одного мяча).\nСоздайте переменную `count` и присвойте ей значение произвольного числа (количество мячей).\nСоздайте переменную с именем `message` и присвойте ей значение строки c использованием обратных кавычек,\nсодержащую текст `The cost of XX balls is equal to YY dollars`,\nгде XX, YY - выражения полученные при помощи ${…}.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst weight = 5;\nconst amount = 8;\nlet result = `Total weight of ${amount} watermelons is equal to ${weight*amount} pounds`;\n// в консоль будет выведена строка: \"Total weight of 8 watermelons is equal to 40 pounds\"\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const price = 7;\nconst count = 6;\nconst message = `The cost of ${count} balls is equal to ${price * count} dollars`;",
+  "openTest": "it('The `price` variable exists and has a value', () => {\n  expect(price).not.undefined;\n});\n\nit('The `price` variable is a number', () => {\n  expect(price).a('number');\n});\n\nit('Variable `price` is not a NaN', () => {\n  expect(isNaN(price)).false;\n});\n\nit('Variable `count` exists and has a value', () => {\n  expect(count).not.undefined;\n});\n\nit('Variable `count` is a number', () => {\n  expect(count).a('number');\n});\n\nit('Variable `count` is not a NaN', () => {\n  expect(isNaN(count)).false;\n});\n\nit('The variable `message` exists and has a value', () => {\n  expect(message).not.undefined;\n});\n\nit('The `message` variable is a string', () => {\n  expect(message).a('string');\n});\n\nit('The `message` variable has a valid value', () => {\n  expect(message).equal(\n    `The cost of ${count} balls is equal to ${price * count} dollars`,\n  );\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst price = 7;\nconst count = 6;\nconst message = `The cost of ${count} balls is equal to ${price * count} dollars`;\n```",
+    "ru": "```javascript\nconst price = 7;\nconst count = 6;\nconst message = `The cost of ${count} balls is equal to ${price * count} dollars`;\n```"
+  }
+}

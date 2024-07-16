@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198e73c",
+  "name": {
+    "ru": "Проверка наличия элемента в массиве",
+    "en": "Checking for an element in an array",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e73d",
+      "name": {
+        "ru": "Выберите метод(ы), позволяющий(е) выяснить наличие элемента в массиве",
+        "en": "Choose the method(s) to find out if an element exists in the array",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e73e",
+          "name": {
+            "ru": "includes()",
+            "en": "includes()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e73f",
+          "name": {
+            "ru": "indexOf()",
+            "en": "indexOf()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e740",
+          "name": {
+            "ru": "lastIndexOf()",
+            "en": "lastIndexOf()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e741",
+          "name": {
+            "ru": "firstIndexOf()",
+            "en": "firstIndexOf()",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e742",
+      "name": {
+        "ru": "Что возвращает метод includes()?",
+        "en": "What does the includes() method return?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e743",
+          "name": {
+            "ru": "true или false",
+            "en": "true or false",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e744",
+          "name": {
+            "ru": "Индекс элемента",
+            "en": "Item index",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e745",
+          "name": {
+            "ru": "Элемент массива",
+            "en": "Array element",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e746",
+          "name": {
+            "ru": "Количество вхождений элемента в массив",
+            "en": "Number of occurrences of an element in the array",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e747",
+      "name": {
+        "ru": "Что возвращает метод indexOf()?",
+        "en": "What does the indexOf() method return?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e748",
+          "name": {
+            "ru": "true или false",
+            "en": "true or false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e749",
+          "name": {
+            "ru": "Индекс первого вхождения в массив указанного элемента",
+            "en": "The index of the first occurrence of the specified element in the array",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e74a",
+          "name": {
+            "ru": "Индексы всех вхождений в массив указанного элемента",
+            "en": "The indices of all occurrences of the specified element in the array",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e74b",
+          "name": {
+            "ru": "Значение указанного элемента",
+            "en": "The value of the specified element",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e74c",
+      "name": {
+        "ru": "Что возвращает метод lastIndexOf()?",
+        "en": "What does the lastIndexOf() method return?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e74d",
+          "name": {
+            "ru": "Индекс последнего вхождения в массив указанного элемента",
+            "en": "The index of the last occurrence of the specified element in the array",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e74e",
+          "name": {
+            "ru": "true или false",
+            "en": "true or false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e74f",
+          "name": {
+            "ru": "Индекс первого вхождения в массив указанного элемента",
+            "en": "The index of the first occurrence of the specified element in the array",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e750",
+          "name": {
+            "ru": "Значение указанного элемента",
+            "en": "The value of the specified element",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e751",
+      "name": {
+        "ru": "Что возвращают методы indexOf() и lastIndexOf(), если элемент не найден в массиве?",
+        "en": "What do the indexOf() and lastIndexOf() methods return if an element is not found in the array?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e752",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e753",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e754",
+          "name": {
+            "ru": "-1",
+            "en": "-1",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e755",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e756",
+      "name": {
+        "ru": "Выберите верный синтаксис методов indexOf() и lastIndexOf()",
+        "en": "Choose the correct syntax for indexOf() and lastIndexOf() methods",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e757",
+          "name": {
+            "ru": "indexOf(fromIndex, searchElement), lastIndexOf(fromIndex, searchElement)",
+            "en": "indexOf(fromIndex, searchElement), lastIndexOf(fromIndex, searchElement)",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e758",
+          "name": {
+            "ru": "indexOf(searchElement, fromIndex), lastIndexOf(searchElement, fromIndex)",
+            "en": "indexOf(searchElement, fromIndex), lastIndexOf(searchElement, fromIndex)",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e759",
+      "name": {
+        "ru": "Что передаётся в параметр searchElement в методах indexOf() и lastIndexOf()?",
+        "en": "What is passed to the searchElement parameter in the indexOf() and lastIndexOf() methods?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e75a",
+          "name": {
+            "ru": "В этот параметр передается индекс элемента, который нужно найти",
+            "en": "This parameter takes the index of the element you want to find",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e75b",
+          "name": {
+            "ru": "В этот параметр передается значение элемента, который нужно найти",
+            "en": "The value of the element to be found is passed to this parameter",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e75c",
+          "name": {
+            "ru": "В этот параметр передается индекс элемента, с которого нужно начинать поиск",
+            "en": "This parameter contains the index of the element from which you want to start the search",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e75d",
+          "name": {
+            "ru": "В этот параметр передается индекс, который надо найти",
+            "en": "The index to be found is passed to this parameter",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e75e",
+      "name": {
+        "ru": "Что передаётся в параметр fromIndex в методах indexOf() и lastIndexOf()?",
+        "en": "What is passed to the fromIndex parameter in the indexOf() and lastIndexOf() methods?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e75f",
+          "name": {
+            "ru": "В этот параметр передается индекс элемента, с которого нужно начинать поиск",
+            "en": "This parameter contains the index of the element from which you want to start the search",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e760",
+          "name": {
+            "ru": "В этот параметр передается значение элемента, который нужно найти",
+            "en": "The value of the element to be found is passed to this parameter",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e761",
+          "name": {
+            "ru": "В этот параметр передается индекс элемента, который нужно найти",
+            "en": "This parameter takes the index of the element you want to find",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e762",
+          "name": {
+            "ru": "В этот параметр передаётся индекс, который надо найти",
+            "en": "The index to be found is passed to this parameter",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e763",
+      "name": {
+        "ru": "Что означает если метод indexOf() и lastIndexOf() вернули одинаковое число?",
+        "en": "What does it mean if the indexOf() and lastIndexOf() methods return the same number?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e764",
+          "name": {
+            "ru": "Значение элемента уникально и не повторяется в массиве",
+            "en": "The value of the element is unique and is not repeated in the array",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e765",
+          "name": {
+            "ru": "Значение элемента повторяется в массиве ровно 2 раза",
+            "en": "The element value is repeated in the array exactly 2 times",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e766",
+          "name": {
+            "ru": "Значение элемента встречается в массиве только 1 раз",
+            "en": "The value of an element occurs only once in the array",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e767",
+          "name": {
+            "ru": "Значение элемента повторяется в массиве более 2 раз",
+            "en": "An element value is repeated more than 2 times in the array",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e768",
+      "name": {
+        "ru": "Что означает если метод indexOf() и lastIndexOf() вернули разные числа?",
+        "en": "What does it mean if the indexOf() and lastIndexOf() methods return different numbers?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e769",
+          "name": {
+            "ru": "Значение элемента повторяется в массиве 2 раз или более",
+            "en": "The element value is repeated 2 or more times in the array",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e76a",
+          "name": {
+            "ru": "Значение элемента уникально и не повторяется в массиве",
+            "en": "The value of the element is unique and is not repeated in the array",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e76b",
+          "name": {
+            "ru": "Значение элемента встречается в массиве только 1 раз",
+            "en": "The value of an element occurs only once in the array",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e76c",
+          "name": {
+            "ru": "Значение элемента повторяется в массиве меньше 2 раз",
+            "en": "The value of an element repeats less than 2 times in the array",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

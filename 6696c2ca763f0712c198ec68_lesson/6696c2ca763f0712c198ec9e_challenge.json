@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec9e",
+  "name": {
+    "en": "Count the number of consonant letters in the line",
+    "ru": "Посчитать количество согласных букв в строке"
+  },
+  "instruction": {
+    "en": "The `countOnlyConsonant` function accepts a string and should return the number of consonants in the string.\n\nThe string contains only lowercase letters and does not contain spaces.\n\nAn example of running the function:\n```javascript\ncountOnlyConsonant('abc') // 2\ncountOnlyConsonant('aeiou') // 0\n```",
+    "ru": "Функция `countOnlyConsonant` принимает строку и должна вернуть количество согласных букв в строке.\n\nСтрока содержит только строчные буквы и не содержит пробелы.\n\nПример запуска функции:\n```javascript\ncountOnlyConsonant('abc') // 2\ncountOnlyConsonant('aeiou') // 0\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function countOnlyConsonant(str) {\n  let count = 0;\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] !== 'a' && str[i] !== 'e' && str[i] !== 'i' && str[i] !== 'o' && str[i] !== 'u') {\n      count = count + 1\n    }\n  }\n  return count\n}",
+  "openTest": "it('Created function countOnlyConsonant', () => {\n  expect(countOnlyConsonant).to.be.a('function');\n});\n\nit('countOnlyConsonant(\"a\") returns 0', () => {\n  expect(countOnlyConsonant('a')).eql(0);\n});\n\nit('countOnlyConsonant(\"b\") returns 1', () => {\n  expect(countOnlyConsonant('b')).eql(1);\n});\n\nit('countOnlyConsonant(\"ab\") returns 1', () => {\n  expect(countOnlyConsonant('ab')).eql(1);\n});\n\nit('countOnlyConsonant(\"abc\") returns 2', () => {\n  expect(countOnlyConsonant('abc')).eql(2);\n});\n\nit('countOnlyConsonant(\"aeiou\") returns 0', () => {\n  expect(countOnlyConsonant('aeiou')).eql(0);\n});\n\nit('countOnlyConsonant(\"\") returns 0', () => {\n  expect(countOnlyConsonant('')).eql(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

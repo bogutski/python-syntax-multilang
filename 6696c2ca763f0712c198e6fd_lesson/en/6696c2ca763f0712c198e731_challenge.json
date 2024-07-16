@@ -1,0 +1,4 @@
+{
+  "name": "Concatenation of array elements",
+  "instruction": "Write a function `compoundWord` that takes one parameter - `array`.\n\nThe array contains 2 elements - strings.\nFor example: `['foot', 'ball']`\n\nThe function should return the union of the array elements.\n\nAn example of running the function:\n```javascript\ncompoundWord(['make', 'up']); // 'makeup'\n```\n\nA similar example with numbers:\n```javascript\nfunction addNum(numbers) {\nreturn numbers[0] + numbers[1] + numbers[2];\n}\n\nconsole.log(addNum([1, 12, 23])); // 36\nconsole.log(addNum([10, 20, 30])); // 60\n```"
+}

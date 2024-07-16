@@ -1,0 +1,124 @@
+{
+  "name": "Creating and calling a function",
+  "questions": {
+    "0": {
+      "name": "The keyword that is used to create the function",
+      "variants": {
+        "0": {
+          "name": "hello"
+        },
+        "1": {
+          "name": "function"
+        },
+        "2": {
+          "name": "parentheses ()"
+        },
+        "3": {
+          "name": "curly brackets {}"
+        }
+      }
+    },
+    "1": {
+      "name": "The function name must be unique within the program",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "2": {
+      "name": "() - brackets, in which the function parameters are listed",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "3": {
+      "name": "{} - curly brackets, denote the boundaries of the function body",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "4": {
+      "name": "The use of the function keyword in a function declaration is called",
+      "variants": {
+        "0": {
+          "name": "Declaration of Function"
+        },
+        "1": {
+          "name": "Functional expression"
+        },
+        "2": {
+          "name": "There is no name for it."
+        }
+      }
+    },
+    "5": {
+      "name": "The function can be called by specifying its name. The case is not important",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "6": {
+      "name": "The function name should reflect its purpose",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "7": {
+      "name": "A function declared with the function keyword can be called before it is declared",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "8": {
+      "name": "The function name can start with a number",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "9": {
+      "name": "You can use spaces in function names",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    }
+  }
+}

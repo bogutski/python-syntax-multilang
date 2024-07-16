@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e29e",
+  "name": {
+    "en": "Additional store earnings when rounded up",
+    "ru": "Дополнительный заработок магазина при округлении в большую сторону"
+  },
+  "instruction": {
+    "en": "On each receipt, the store rounds the total amount up to the nearest whole number.\n\nWrite a function `roundProfit`. Function parameters:\n* `totalAmount` - the total amount of the receipt;\n\nThe function should return `true` if the store made more than 60 cents on rounding, and `false` otherwise.\n\nFunction execution examples:\n```javascript\nroundProfit(10.10) // true\nroundProfit(10.50) // false\nroundProfit(10.90) // false\nroundProfit(11.35) // true\n```",
+    "ru": "На каждом чеке магазин округляет итоговую сумму в большую сторону до ближайшего целого числа.\n\nНапишите функцию `roundProfit`. Параметры функции:\n* `totalAmount` – итоговая сумма чека;\n\nФункция должна возвращать `true`, если магазин заработал на округлении больше 60 центов, и `false` в противном случае.\n\nПримеры запуска функции:\n```javascript\nroundProfit(10.10) // true\nroundProfit(10.50) // false\nroundProfit(10.90) // false\nroundProfit(11.35) // true\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function roundProfit(totalAmount) {\n  return Math.ceil(totalAmount) - totalAmount > 0.6;\n}",
+  "openTest": "it('Created function roundProfit', () => {\n  expect(roundProfit).to.be.a('function');\n});\n\nit('roundProfit(10.10) should return true', () => {\n  expect(roundProfit(10.1)).to.equal(true);\n});\n\nit('roundProfit(10.50) should return false', () => {\n  expect(roundProfit(10.5)).to.equal(false);\n});\n\nit('roundProfit(10.90) should return false', () => {\n  expect(roundProfit(10.9)).to.equal(false);\n});\n\nit('roundProfit(11.35) should return true', () => {\n  expect(roundProfit(11.35)).to.equal(true);\n});\n\nit('roundProfit(11.60) should return false', () => {\n  expect(roundProfit(11.6)).to.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

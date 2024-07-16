@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e731",
+  "name": {
+    "en": "Concatenation of array elements",
+    "ru": "Конкатенация элементов массива"
+  },
+  "instruction": {
+    "en": "Write a function `compoundWord` that takes one parameter - `array`.\n\nThe array contains 2 elements - strings.\nFor example: `['foot', 'ball']`\n\nThe function should return the union of the array elements.\n\nAn example of running the function:\n```javascript\ncompoundWord(['make', 'up']); // 'makeup'\n```\n\nA similar example with numbers:\n```javascript\nfunction addNum(numbers) {\nreturn numbers[0] + numbers[1] + numbers[2];\n}\n\nconsole.log(addNum([1, 12, 23])); // 36\nconsole.log(addNum([10, 20, 30])); // 60\n```",
+    "ru": "Напишите функцию `compoundWord`, которая принимает один параметр - массив.\n\nМассив содержит 2 элемента - строки.\nНапример: `['foot', 'ball']`\n\nФункция должна вернуть объединение элементов массива.\n\nПример запуска функции:\n```javascript\ncompoundWord(['make', 'up']); // 'makeup'\n```\n\nПохожий пример c числами:\n```javascript\nfunction addNum(numbers) {\n  return numbers[0] + numbers[1] + numbers[2];\n}\n\nconsole.log(addNum([1, 12, 23])); // 36\nconsole.log(addNum([10, 20, 30])); // 60\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function compoundWord(merger) {\n  return merger[0] + merger[1];\n}",
+  "openTest": "it('Created function compoundWord', () => {\n  expect(compoundWord).to.be.a('function');\n});\n\nit('Function compoundWord returns correct value', () => {\n  expect(compoundWord(['make', 'up'])).to.be.equal('makeup');\n});\n\nit('Function compoundWord returns correct value', () => {\n  expect(compoundWord(['brain', 'storm'])).to.be.equal('brainstorm');\n});\n\nit('Function compoundWord returns correct value', () => {\n  expect(compoundWord(['air', 'plane'])).to.be.equal('airplane');\n});\n\nit('Function compoundWord returns correct value', () => {\n  expect(compoundWord(['foot', 'ball'])).to.be.equal('football');\n});\n\nit('Function compoundWord returns correct value', () => {\n  expect(compoundWord(['dragon', 'fly'])).to.be.equal('dragonfly');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

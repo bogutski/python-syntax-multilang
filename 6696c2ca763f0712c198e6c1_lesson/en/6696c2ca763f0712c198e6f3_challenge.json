@@ -1,0 +1,4 @@
+{
+  "name": "Find the length of the array",
+  "instruction": "Write a function `arrayLength` that takes one parameter:\n* array - array of elements.\n\nUsing the `length` property, find the length of the array.\n\nThe function should return a number that is equal to the length of the array.\n\nAn example of running the function:\n```javascript\narrayLength([1, 2, 3]) //3\n```\n\nA similar example:\n```javascript\nstrLength('Hello, world!');// 13\n```"
+}

@@ -1,0 +1,154 @@
+{
+  "name": "Mathematical operators. NaN",
+  "questions": {
+    "0": {
+      "name": "The operator is used to add numbers",
+      "variants": {
+        "0": {
+          "name": "+"
+        },
+        "1": {
+          "name": "x"
+        },
+        "2": {
+          "name": "plus"
+        },
+        "3": {
+          "name": "add"
+        }
+      }
+    },
+    "1": {
+      "name": "The operator is used to multiply numbers",
+      "variants": {
+        "0": {
+          "name": "x"
+        },
+        "1": {
+          "name": "**"
+        },
+        "2": {
+          "name": "*"
+        },
+        "3": {
+          "name": "multiply"
+        }
+      }
+    },
+    "2": {
+      "name": "The % operator is used to",
+      "variants": {
+        "0": {
+          "name": "calculating the remainder of a division"
+        },
+        "1": {
+          "name": "calculating the percentage of a number"
+        },
+        "2": {
+          "name": "dividing numbers"
+        }
+      }
+    },
+    "3": {
+      "name": "Calculate the square root of 9",
+      "variants": {
+        "0": {
+          "name": "9 * 0.5"
+        },
+        "1": {
+          "name": "9 ** 0.5"
+        },
+        "2": {
+          "name": "0.5 * 9"
+        },
+        "3": {
+          "name": "(9)2"
+        }
+      }
+    },
+    "4": {
+      "name": "Select the true options about NaN",
+      "variants": {
+        "0": {
+          "name": "NaN – Not a Number"
+        },
+        "1": {
+          "name": "console.log(typeof NaN) will print the number"
+        },
+        "2": {
+          "name": "NaN is a mistake"
+        },
+        "3": {
+          "name": "console.log(2 * 'hello') will print NaN"
+        }
+      }
+    },
+    "5": {
+      "name": "Is it true that NaN can be obtained as the result of a division operation by 0. For example 5 / 0.",
+      "variants": {
+        "0": {
+          "name": "You get NaN"
+        },
+        "1": {
+          "name": "You get Infinity"
+        },
+        "2": {
+          "name": "You get 0"
+        },
+        "3": {
+          "name": "Error"
+        }
+      }
+    },
+    "6": {
+      "name": "What will console.log(typeof typeof 1) print?",
+      "variants": {
+        "0": {
+          "name": "string"
+        },
+        "1": {
+          "name": "number"
+        }
+      }
+    },
+    "7": {
+      "name": "Infinity represents infinity.",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "8": {
+      "name": "What will console.log(typeof 'NaN') print?",
+      "variants": {
+        "0": {
+          "name": "number"
+        },
+        "1": {
+          "name": "string"
+        },
+        "2": {
+          "name": "NaN"
+        },
+        "3": {
+          "name": "boolean"
+        }
+      }
+    },
+    "9": {
+      "name": "The priority of the multiplication and division operators is higher than that of the addition and subtraction operators.",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    }
+  }
+}

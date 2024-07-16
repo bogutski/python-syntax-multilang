@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e29f",
+  "name": {
+    "en": "Rounding the average value upwards.",
+    "ru": "Округление среднего значения в большую сторону."
+  },
+  "instruction": {
+    "en": "Write a function `roundAverageUp` that takes three numbers and returns their average, rounded up.\n\nThe numbers can be integers or fractions.\n\nExamples of running the function:\n```javascript\nroundAverageUp(1, 2, 3) // 2\nroundAverageUp(1, 2, 4) // 3\nroundAverageUp(1, 2, 5) // 3\nroundAverageUp(1, 2, 6) // 3\n```",
+    "ru": "Напишите функцию `roundAverageUp`, которая принимает три числа и возвращает их среднее значение, округленное в большую сторону.\n\nЧисла могут быть целыми или дробными.\n\nПримеры запуска функции:\n```javascript\nroundAverageUp(1, 2, 3) // 2\nroundAverageUp(1, 2, 4) // 3\nroundAverageUp(1, 2, 5) // 3\nroundAverageUp(1, 2, 6) // 3\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function roundAverageUp(n1, n2, n3) {\n  return Math.ceil((n1 + n2 + n3) / 3);\n}",
+  "openTest": "it('Created function roundAverageUp', () => {\n  expect(roundAverageUp).to.be.a('function');\n});\n\nit('roundAverageUp(1, 2, 3) should return 2', () => {\n  expect(roundAverageUp(1, 2, 3)).to.equal(2);\n});\n\nit('roundAverageUp(1, 2, 4) should return 3', () => {\n  expect(roundAverageUp(1, 2, 4)).to.equal(3);\n});\n\nit('roundAverageUp(1, 2, 5) should return 3', () => {\n  expect(roundAverageUp(1, 2, 5)).to.equal(3);\n});\n\nit('roundAverageUp(1, 2, 6) should return 3', () => {\n  expect(roundAverageUp(1, 2, 6)).to.equal(3);\n});\n\nit('roundAverageUp(1, 2, 7) should return 4', () => {\n  expect(roundAverageUp(1, 2, 7)).to.equal(4);\n});\n\nit('roundAverageUp(1.3, 2.4, 8.5) should return 5', () => {\n  expect(roundAverageUp(1.3, 2.4, 8.5)).to.equal(5);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

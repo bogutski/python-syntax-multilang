@@ -1,0 +1,439 @@
+{
+  "_id": "6696c2ca763f0712c198de58",
+  "description": {
+    "ru": "",
+    "en": "",
+    "es": ""
+  },
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198de59",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Выберите оператор с самым низким приоритетом среди перечисленных ниже.",
+        "en": "Select the operator with the lowest priority among those listed below.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "бинарный плюс",
+            "en": "binary plus",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de5a"
+        },
+        {
+          "name": {
+            "ru": "унарный плюс",
+            "en": "unary plus",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de5b"
+        },
+        {
+          "name": {
+            "ru": "присваивание",
+            "en": "assignment",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198de5c"
+        },
+        {
+          "name": {
+            "ru": "умножение",
+            "en": "multiplication",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de5d"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198de5e",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Выберите оператор с самым высоким приоритетом среди перечисленных ниже.",
+        "en": "Select the operator with the highest priority among those listed below.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "присваивание",
+            "en": "assignment",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de5f"
+        },
+        {
+          "name": {
+            "ru": "деление",
+            "en": "division",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de60"
+        },
+        {
+          "name": {
+            "ru": "группировка",
+            "en": "grouping",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198de61"
+        },
+        {
+          "name": {
+            "ru": "унарный минус",
+            "en": "unary minus",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de62"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198de63",
+      "description": {
+        "ru": "```\nlet a = 2 * (2 + 1);\n```",
+        "en": "```\nlet a = 2 * (2 + 1);\n```",
+        "es": ""
+      },
+      "name": {
+        "ru": "Выберите оператор, который выполнится ПОСЛЕДНИМ в примере ниже.",
+        "en": "Select the operator that will be executed LAST in the example below.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "=",
+            "en": "=",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198de64"
+        },
+        {
+          "name": {
+            "ru": "*",
+            "en": "*",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de65"
+        },
+        {
+          "name": {
+            "ru": "( )",
+            "en": "( )",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de66"
+        },
+        {
+          "name": {
+            "ru": "+",
+            "en": "+",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de67"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198de68",
+      "description": {
+        "ru": "```\nlet a = -3 * 5 + 4;\n```",
+        "en": "```\nlet a = -3 * 5 + 4;\n```",
+        "es": ""
+      },
+      "name": {
+        "ru": "Выберите оператор, который выполнится ПЕРВЫМ в примере ниже.",
+        "en": "Select the operator that will be executed FIRST in the example below.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "=",
+            "en": "=",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de69"
+        },
+        {
+          "name": {
+            "ru": "-",
+            "en": "-",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198de6a"
+        },
+        {
+          "name": {
+            "ru": "*",
+            "en": "*",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de6b"
+        },
+        {
+          "name": {
+            "ru": "+",
+            "en": "+",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de6c"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198de6d",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Записи   x += y   и   x = x + y   равносильны.",
+        "en": "The entries x += y and x = x + y are equivalent.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "да",
+            "en": "yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198de6e"
+        },
+        {
+          "name": {
+            "ru": "нет",
+            "en": "no",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de6f"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198de70",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Записи x -= y и x = x - y равносильны.",
+        "en": "The entries x -= y and x = x - y are equivalent.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "да",
+            "en": "yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198de71"
+        },
+        {
+          "name": {
+            "ru": "нет",
+            "en": "no",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de72"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198de73",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Записи   x *= y   и   x = x * y   равносильны.",
+        "en": "The entries x *= y and x = x * y are equivalent.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "да",
+            "en": "yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198de74"
+        },
+        {
+          "name": {
+            "ru": "нет",
+            "en": "no",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de75"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198de76",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Записи   x /= y   и   x = x % y   равносильны.",
+        "en": "The entries x /= y and x = x % y are equivalent.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "да",
+            "en": "yes",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de77"
+        },
+        {
+          "name": {
+            "ru": "нет",
+            "en": "no",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198de78"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198de79",
+      "description": {
+        "ru": "```\nlet a;\nlet b = 2;\nlet c = 3 - (a = b + 1);\n```",
+        "en": "```\nlet a;\nlet b = 2;\nlet c = 3 - (a = b + 1);\n```",
+        "es": ""
+      },
+      "name": {
+        "ru": "Указанная ниже запись корректна в JavaScript и выдаст числовой результат.",
+        "en": "The entry below is valid in JavaScript and will return a numeric result.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "да",
+            "en": "yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198de7a"
+        },
+        {
+          "name": {
+            "ru": "нет",
+            "en": "no",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de7b"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198de7c",
+      "description": {
+        "ru": "```\nlet c = 3 - (a = d + 3);\n```",
+        "en": "```\nlet c = 3 - (a = d + 3);\n```",
+        "es": ""
+      },
+      "name": {
+        "ru": "Указанная ниже запись корректна в JavaScript и выдаст числовой результат.",
+        "en": "The entry below is valid in JavaScript and will return a numeric result.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "да",
+            "en": "yes",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198de7d"
+        },
+        {
+          "name": {
+            "ru": "нет",
+            "en": "no",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198de7e"
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": false,
+  "name": {
+    "ru": "JS Syntax. Приоритет выполнения операций",
+    "en": "JS Syntax. Priority of operations execution",
+    "es": ""
+  }
+}

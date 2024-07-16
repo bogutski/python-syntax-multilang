@@ -1,0 +1,6 @@
+{
+  "name": "Elvis Presley",
+  "instruction": "Создайте переменную `firstName` и присвойте ей значение `'Elvis'`.\n\nСоздайте переменную `lastName` и присвойте ей значение `'Presley'`.\n\nСоздайте переменную `name` и присвойте ей результат конкатенации переменных `firstName` и `lastName` с пробелом между ними.\n\nПриведем пример, который принципиально похож на то, что нужно сделать.\nАдаптируйте его к требованиям задачи.\n\n```javascript\nconst firstName = 'Barack';\nconst lastName = 'Obama';\nconst name = firstName + ' ' + lastName;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst firstName = 'Elvis';\nconst lastName = 'Presley';\nconst name = firstName + ' ' + lastName;\n```"
+}

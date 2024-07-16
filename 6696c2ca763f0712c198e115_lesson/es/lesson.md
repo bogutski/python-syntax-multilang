@@ -1,0 +1,1 @@
+# Логический тип данных boolean language: es

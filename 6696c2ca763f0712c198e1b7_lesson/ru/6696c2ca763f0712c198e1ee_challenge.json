@@ -1,0 +1,5 @@
+{
+  "name": "От нуля до 10 числа в слова",
+  "instruction": "Напишите функцию `numToWord`, которая принимает число и возвращает его словесное представление.\n\nТолько для чисел от 0 до 10.\n\nНапример:\n```javascript\nnumToWord(0) // 'zero'\nnumToWord(1) // 'one'\nnumToWord(2) // 'two'\nnumToWord(3) // 'three'\nnumToWord(4) // 'four'\nnumToWord(5) // 'five'\nnumToWord(6) // 'six'\nnumToWord(7) // 'seven'\nnumToWord(8) // 'eight'\nnumToWord(9) // 'nine'\nnumToWord(10) // 'ten'\n\nnumToWord(11) // 11\nnumToWord(20) // 20\nnumToWord(-1) // -1\n```\n\nЕсли число не входит в диапазон от 0 до 10, то функция должна вернуть это число.\n\nДля решения этой задачи вам поможет сравнение:\n```javascript\nfunction words(num) {\n  if(num === -1) return 'minus one';\n  if(num === 11) return 'eleven';\n  if(num === 20) return 'twenty';\n  return num;\n}\n```",
+  "instructions": {}
+}

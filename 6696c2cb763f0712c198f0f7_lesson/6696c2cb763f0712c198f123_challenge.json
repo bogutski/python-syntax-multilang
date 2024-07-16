@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f123",
+  "name": {
+    "en": "",
+    "ru": "Удаление дубликатов из массива с помощью `splice`"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Давайте решим похожую на предыдущую задачу, но с помощью метода `splice`.\n\nФункция `deleteDuplicate` должна принимать массив чисел и строк и возвращать массив без дубликатов.\n\nНеобходимо исправить пунктуационные ошибки в коде, чтобы функция работала правильно.\n\nПопробуйте понять этот код и повторить его самостоятельно.\n\nПримеры запуска функции:\n```javascript\ndeleteDuplicate([\"hello\", \"hello\", \"js\", \"JavaScript\"]) // [\"hello\", \"js\", \"JavaScript\"]\ndeleteDuplicate([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]) // [1]\n```"
+  },
+  "initialSolution": "function deleteDuplicate(array) {\n  for (let i = 0, i < array.length, i++) {\n    for (let j = i + 1, j < array.length, j++) {\n      if (array[i] === array[j]) {\n        array.splice(j, 1);\n        j--;   //так как мы удалили элемент массива, то индекс j сдвинулся на 1 влево, поэтому мы должны уменьшить j на 1, чтобы не пропустить следующий элемент массива\n      }\n    }\n  }\n  return array;\n}",
+  "completedSolution": "[\n\nfunction deleteDuplicate(array) {\n  for (let i = 0; i < array.length; i++) {\n    for (let j = i + 1; j < array.length; j++) {\n      if (array[i] === array[j]) {\n        array.splice(j, 1);\n        j--;\n      }\n    }\n  }\n  return array;\n}",
+  "openTest": "it('Created function deleteDuplicate', () => {\n  expect(deleteDuplicate).to.be.a('function');\n});\n\nit('deleteDuplicate([\"hello\", \"hello\", \"js\", \"JavaScript\"]) should return [\"hello\", \"js\", \"JavaScript\"]', () => {\n  expect(deleteDuplicate([\"hello\", \"hello\", \"js\", \"JavaScript\"])).to.be.deep.equal([\"hello\", \"js\", \"JavaScript\"]);\n});\n\nit('deleteDuplicate([1, 2, 3, 4, 5, 5, 5, 6, 7, 8]) should return [1, 2, 3, 4, 5, 6, 7, 8]', () => {\n  expect(deleteDuplicate([1, 2, 3, 4, 5, 5, 5, 6, 7, 8])).to.be.deep.equal([1, 2, 3, 4, 5, 6, 7, 8]);\n});\n\nit('deleteDuplicate([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]) should return [1]', () => {\n  expect(deleteDuplicate([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])).to.be.deep.equal([1]);\n});\n\nit('deleteDuplicate([]) should return []', () => {\n  expect(deleteDuplicate([])).to.be.deep.equal([]);\n});\n\nit('deleteDuplicate([1, 1, 1, \"\", \"\", \"\"]) should return [1, \"\"]', () => {\n  expect(deleteDuplicate([1, 1, 1, \"\", \"\", \"\"])).to.be.deep.equal([1, \"\"]);\n});\n\nit('deleteDuplicate([\"\"]) should return [\"\"]', () => {\n  expect(deleteDuplicate([\"\"])).to.be.deep.equal([\"\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

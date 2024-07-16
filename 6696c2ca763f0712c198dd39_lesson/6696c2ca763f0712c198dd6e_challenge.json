@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd6e",
+  "name": {
+    "en": "Compare undefined and empty string",
+    "ru": "Сравните undefined и пустую строку"
+  },
+  "instruction": {
+    "en": "The special value `undefined` means that \"the value has not been assigned\".\n\nCreate a variable named `name` without assigning any value to it.\nCreate a variable named `login` and assign it an empty string value.\n\nCreate a variable named `areTheSame` and assign it the result of comparing the variables `name` and `login`.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nlet salary;\nlet job = '';\nconst isEqual = salary === job;\n```",
+    "ru": "Специальное значение `undefined` означает, что «значение не было присвоено».\n\nСоздайте переменную с именем `name` без присваивания ей какого-либо значения.\nСоздайте переменную с именем `login` и присвойте ей значение пустой строки.\n\nСоздайте переменную с именем `areTheSame` и присвойте ей результат сравнения переменных `name` и `login`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet salary;\nlet job = '';\nconst isEqual = salary === job;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let name;\nlet login = '';\nconst areTheSame = name === login;",
+  "openTest": "it('Variable `name` exists and is undefined', () => {\n  expect(name).to.be.undefined;\n});\n\nit('Variable `name` has type undefined', () => {\n  expect(typeof name).eq('undefined');\n});\n\nit('The `login` variable exists and has a value', () => {\n  expect(login).not.undefined;\n});\n\nit('The `login` variable is of type string', () => {\n  expect(login).a('string');\n});\n\nit('Variable `login` has value ``', () => {\n  expect(login).equal('');\n});\n\nit('The variable `areTheSame` exists and has a value', () => {\n  expect(areTheSame).not.undefined;\n});\n\nit('The value of variable `areTheSame` is boolean', () => {\n  expect(areTheSame).a('boolean');\n});\n\nit('The value of the variable `areTheSame` is true', () => {\n  expect(areTheSame).false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet name;\nlet login = '';\nconst areTheSame = name === login;\n```",
+    "ru": "```javascript\nlet name;\nlet login = '';\nconst areTheSame = name === login;\n```"
+  }
+}

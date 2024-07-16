@@ -1,0 +1,6 @@
+{
+  "name": "Correct the errors in the code. Number 3.125",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-14.png)\n\nYou need to write a command that assigns the number 3.125 to the variable `a`.\n\nSimilar solution:\n```javascript\nlet b = 5.345;\n```\n\nFix the errors in the above code.",
+  "instructions": {},
+  "hint": "```javascript\nlet a = 3.125;\n```"
+}

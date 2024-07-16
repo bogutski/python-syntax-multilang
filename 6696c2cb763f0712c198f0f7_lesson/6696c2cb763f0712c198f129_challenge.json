@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f129",
+  "name": {
+    "en": "Remove duplicate objects from the array",
+    "ru": "Удалить дубликаты объектов из массива"
+  },
+  "instruction": {
+    "en": "Let's consider the task of removing duplicate objects from an array.\n\nThe function `duplicatedObjects` takes an array of objects `arr` and returns an array of objects without duplicates.\n\nThe algorithm to solve the task:\n* Create an empty array `result`\n* Iterate through the array `arr` using a `for` loop\n* Create a variable `isUnique` with the value `true`\n* Iterate through the array `result` using a `for` loop\n* Use the `JSON.stringify` method to convert the loop elements (objects) `arr` and `result` into a string and compare them. If the strings are equal, assign `false` to `isUnique` and exit the loop\n* If `isUnique` is `true`, add the element `arr[i]` to the array `result`\n* Return the array `result`\n\nExamples of function execution:\n```javascript\nduplicatedObjects([{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}, {name: \"Alice\", age: 15}]) // [{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}]",
+    "ru": "Давайте рассмотрим задачу как удалить дубликаты объектов из массива.\n\nФункция `duplicatedObjects` принимает массив объектов `arr` и возвращает массив объектов без дубликатов.\n\nАлгоритм решения задачи:\n* Создать пустой массив `result`\n* Перебрать массив `arr` с помощью цикла `for`\n* Создать переменную `isUnique` со значением `true`\n* Перебрать массив `result` с помощью цикла `for`\n* С помощью метода `JSON.stringify` переведите элементы циклов (объекты) `arr` и `result` в строку и сравните их. Если строки равны, то `isUnique` присвойте значение `false` и выйти из цикла\n* Если `isUnique` равно `true`, то добавьте элемент `arr[i]` в массив `result`\n* Верните массив `result`\n\nПримеры запуска функции:\n```javascript\nduplicatedObjects([{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}, {name: \"Alice\", age: 15}]) // [{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}]"
+  },
+  "initialSolution": "function duplicatedObjects",
+  "completedSolution": "function duplicatedObjects(arr) {\n  let result = [];\n  for (let i = 0; i < arr.length; i++) {\n    let isUnique = true;\n    for (let j = 0; j < result.length; j++) {\n      if (JSON.stringify(arr[i]) === JSON.stringify(result[j])) {\n        isUnique = false;\n        break;\n      }\n    }\n    if (isUnique) {\n      result.push(arr[i]);\n    }\n\n  }\n  return result;\n}",
+  "openTest": "it('Created function duplicatedObjects', () => {\n  expect(duplicatedObjects).to.be.a('function');\n});\n\nit('duplicateObjects([{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}, {name: \"Alice\", age: 15}]) should return [{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}', () => {\n  expect(duplicatedObjects([{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}, {\n    name: \"Alice\",\n    age: 15\n  }])).to.deep.equal([{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}]);\n});\n\nit('duplicateObjects([{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}, {name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}]) should return [{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}', () => {\n  expect(duplicatedObjects([{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}, {name: \"Alice\", age: 15}, {\n    name: \"Tom\",\n    age: 15\n  }])).to.deep.equal([{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}]);\n});\n\nit('duplicateObjects([{company: \"Apple\", employee: 1500}, {company: \"Netflix\", founded: 1997}]) should return [{company: \"Apple\", employee: 1500}, {company: \"Netflix\", founded: 1997}]', () => {\n  expect(duplicatedObjects([{company: \"Apple\", employee: 1500}, {\n    company: \"Netflix\",\n    founded: 1997\n  }])).to.deep.equal([{company: \"Apple\", employee: 1500}, {company: \"Netflix\", founded: 1997}]);\n});\n\nit('duplicateObjects([{}, {}, {}]) should return [{}]', () => {\n  expect(duplicatedObjects([{}, {}, {}])).to.deep.equal([{}]);\n});\n\nit('duplicateObjects([]) should return []', () => {\n  expect(duplicatedObjects([])).to.deep.equal([]);\n});\n\nit('duplicateObjects([{letter: \"a\", class: \"vowel\", number: 5}, {letter: \"a\", class: \"vowel\", number: 5}, {letter: \"e\", class: \"vowel\", number: 5},]) should return [{letter: \"a\", class: \"vowel\", number: 5}, {letter: \"e\", class: \"vowel\", number: 5}]', () => {\n  expect(duplicatedObjects([{letter: \"a\", class: \"vowel\", number: 5}, {\n    letter: \"a\",\n    class: \"vowel\",\n    number: 5\n  }, {letter: \"e\", class: \"vowel\", number: 5},])).to.deep.equal([{letter: \"a\", class: \"vowel\", number: 5}, {\n    letter: \"e\",\n    class: \"vowel\",\n    number: 5\n  }]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Calculate the cost per square foot when buying an apartment",
+  "instruction": "Write a function `pricePerSquareFoot` that takes the dimensions of the three rooms and the price.\n\nParameters:\n- `length1` - length of the first room\n- `width1` - width of the first room\n- `length2` - length of the second room\n- `width2` - width of second room\n- `length3` - length of the third room\n- `width3` - width of the third room\n- `price` - price of apartment\n\nRoom dimensions are length and width specified in feet.\n\nThe function should return the cost per square foot.\n\nExample:\n```javascript\npricePerSquareFoot(10, 10, 10, 10, 10, 10, 30000) // 100\n```\n\nParameter names must necessarily be the same as in the condition."
+}

@@ -1,0 +1,2117 @@
+git:
+  filters:
+   # Lesson Первый урок
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 635c05ba659f6d77abf1f4e9_lesson/ru
+     translation_files_expression: '635c05ba659f6d77abf1f4e9_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 635c05ba659f6d77abf1f4e9_lesson/ru
+     translation_files_expression: '635c05ba659f6d77abf1f4e9_lesson/<lang>'
+
+   # Lesson Программисты и программы. Консоль
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 635c05ba659f6d77abf1f4fe_lesson/ru
+     translation_files_expression: '635c05ba659f6d77abf1f4fe_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 635c05ba659f6d77abf1f4fe_lesson/ru
+     translation_files_expression: '635c05ba659f6d77abf1f4fe_lesson/<lang>'
+
+   # Lesson Первая программа Hello World
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 635f26d0cf4ae3cbc5e5666c_lesson/ru
+     translation_files_expression: '635f26d0cf4ae3cbc5e5666c_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 635f26d0cf4ae3cbc5e5666c_lesson/ru
+     translation_files_expression: '635f26d0cf4ae3cbc5e5666c_lesson/<lang>'
+
+   # Lesson Что такое переменная?
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea8070_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea8070_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea8070_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea8070_lesson/<lang>'
+
+   # Lesson Разница между let и const
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea809a_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea809a_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea809a_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea809a_lesson/<lang>'
+
+   # Lesson Область видимости переменных
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea80b4_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea80b4_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea80b4_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea80b4_lesson/<lang>'
+
+   # Lesson Правила именования переменных
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea80cf_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea80cf_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea80cf_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea80cf_lesson/<lang>'
+
+   # Lesson Особенности присваивания
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea810b_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea810b_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea810b_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea810b_lesson/<lang>'
+
+   # Lesson Динамически типизированные переменные
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea8145_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea8145_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea8145_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea8145_lesson/<lang>'
+
+   # Lesson Тип "number" (Число)
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea8165_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea8165_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea8165_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea8165_lesson/<lang>'
+
+   # Lesson Тип "string" (Строка)
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea81a2_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea81a2_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea81a2_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea81a2_lesson/<lang>'
+
+   # Lesson Задачи на Числа и Строки
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 635f26d0cf4ae3cbc5e56671_lesson/ru
+     translation_files_expression: '635f26d0cf4ae3cbc5e56671_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 635f26d0cf4ae3cbc5e56671_lesson/ru
+     translation_files_expression: '635f26d0cf4ae3cbc5e56671_lesson/<lang>'
+
+   # Lesson Тип "boolean" (Логический тип данных)
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea81e0_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea81e0_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea81e0_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea81e0_lesson/<lang>'
+
+   # Lesson Тип "Undefined"
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea8218_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea8218_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea8218_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea8218_lesson/<lang>'
+
+   # Lesson Тип "Null"
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea8231_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea8231_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea8231_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea8231_lesson/<lang>'
+
+   # Lesson Типы данных: 5 из 8-ми
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea824a_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea824a_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea824a_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea824a_lesson/<lang>'
+
+   # Lesson Определение типа данных
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 635f26d0cf4ae3cbc5e5667d_lesson/ru
+     translation_files_expression: '635f26d0cf4ae3cbc5e5667d_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 635f26d0cf4ae3cbc5e5667d_lesson/ru
+     translation_files_expression: '635f26d0cf4ae3cbc5e5667d_lesson/<lang>'
+
+   # Lesson Математические операторы. NaN
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 635f26d0cf4ae3cbc5e56689_lesson/ru
+     translation_files_expression: '635f26d0cf4ae3cbc5e56689_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 635f26d0cf4ae3cbc5e56689_lesson/ru
+     translation_files_expression: '635f26d0cf4ae3cbc5e56689_lesson/<lang>'
+
+   # Lesson Унарные и бинарные операторы
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea8285_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea8285_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea8285_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea8285_lesson/<lang>'
+
+   # Lesson Оператор + в разных ситуациях
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea82c2_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea82c2_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea82c2_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea82c2_lesson/<lang>'
+
+   # Lesson Приоритет выполнения операций
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea82f4_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea82f4_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea82f4_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea82f4_lesson/<lang>'
+
+   # Lesson Остаток от деления. Возведение в степень
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea832c_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea832c_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea832c_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea832c_lesson/<lang>'
+
+   # Lesson Вызов с присваиванием
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea835a_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea835a_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642c93bf524c052731ea835a_lesson/ru
+     translation_files_expression: '642c93bf524c052731ea835a_lesson/<lang>'
+
+   # Lesson Создание и вызов функции
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 635f2a362c8a9b00b7a9d8a2_lesson/ru
+     translation_files_expression: '635f2a362c8a9b00b7a9d8a2_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 635f2a362c8a9b00b7a9d8a2_lesson/ru
+     translation_files_expression: '635f2a362c8a9b00b7a9d8a2_lesson/<lang>'
+
+   # Lesson Возвращаемое значение
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 635f2a362c8a9b00b7a9d8ae_lesson/ru
+     translation_files_expression: '635f2a362c8a9b00b7a9d8ae_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 635f2a362c8a9b00b7a9d8ae_lesson/ru
+     translation_files_expression: '635f2a362c8a9b00b7a9d8ae_lesson/<lang>'
+
+   # Lesson Параметры и аргументы функции
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 635f2a362c8a9b00b7a9d8ba_lesson/ru
+     translation_files_expression: '635f2a362c8a9b00b7a9d8ba_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 635f2a362c8a9b00b7a9d8ba_lesson/ru
+     translation_files_expression: '635f2a362c8a9b00b7a9d8ba_lesson/<lang>'
+
+   # Lesson Функции с параметрами по умолчанию
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 635f2a362c8a9b00b7a9d8c6_lesson/ru
+     translation_files_expression: '635f2a362c8a9b00b7a9d8c6_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 635f2a362c8a9b00b7a9d8c6_lesson/ru
+     translation_files_expression: '635f2a362c8a9b00b7a9d8c6_lesson/<lang>'
+
+   # Lesson Дополнительные задания на функции и числа
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 635f2a362c8a9b00b7a9d8de_lesson/ru
+     translation_files_expression: '635f2a362c8a9b00b7a9d8de_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 635f2a362c8a9b00b7a9d8de_lesson/ru
+     translation_files_expression: '635f2a362c8a9b00b7a9d8de_lesson/<lang>'
+
+   # Lesson И еще задания на функции и строки
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 635f2a362c8a9b00b7a9d8ea_lesson/ru
+     translation_files_expression: '635f2a362c8a9b00b7a9d8ea_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 635f2a362c8a9b00b7a9d8ea_lesson/ru
+     translation_files_expression: '635f2a362c8a9b00b7a9d8ea_lesson/<lang>'
+
+   # Lesson Задачи. Переменные, функции, let и const
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63683072577d41fa4da0e9cb_lesson/ru
+     translation_files_expression: '63683072577d41fa4da0e9cb_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63683072577d41fa4da0e9cb_lesson/ru
+     translation_files_expression: '63683072577d41fa4da0e9cb_lesson/<lang>'
+
+   # Lesson Задачи. Функции, переменные, числа
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63683072577d41fa4da0e9d7_lesson/ru
+     translation_files_expression: '63683072577d41fa4da0e9d7_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63683072577d41fa4da0e9d7_lesson/ru
+     translation_files_expression: '63683072577d41fa4da0e9d7_lesson/<lang>'
+
+   # Lesson Задачи. Функции, переменные, строки
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63683072577d41fa4da0e9e3_lesson/ru
+     translation_files_expression: '63683072577d41fa4da0e9e3_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63683072577d41fa4da0e9e3_lesson/ru
+     translation_files_expression: '63683072577d41fa4da0e9e3_lesson/<lang>'
+
+   # Lesson Область видимости переменных c функциями
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63683072577d41fa4da0e9ef_lesson/ru
+     translation_files_expression: '63683072577d41fa4da0e9ef_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63683072577d41fa4da0e9ef_lesson/ru
+     translation_files_expression: '63683072577d41fa4da0e9ef_lesson/<lang>'
+
+   # Lesson Результат работы функции в переменную
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63683072577d41fa4da0e9fb_lesson/ru
+     translation_files_expression: '63683072577d41fa4da0e9fb_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63683072577d41fa4da0e9fb_lesson/ru
+     translation_files_expression: '63683072577d41fa4da0e9fb_lesson/<lang>'
+
+   # Lesson Результат работы функции в другую функцию
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63683072577d41fa4da0ea07_lesson/ru
+     translation_files_expression: '63683072577d41fa4da0ea07_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63683072577d41fa4da0ea07_lesson/ru
+     translation_files_expression: '63683072577d41fa4da0ea07_lesson/<lang>'
+
+   # Lesson Логический тип данных boolean
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa31f_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa31f_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa31f_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa31f_lesson/<lang>'
+
+   # Lesson Сравнение чисел. Операторы >, <, >=, <=, ===, !==
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa32b_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa32b_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa32b_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa32b_lesson/<lang>'
+
+   # Lesson Ветвление. Операторы if, else, else if
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa337_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa337_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa337_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa337_lesson/<lang>'
+
+   # Lesson Оператор НЕ. Операторы !, !!
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa343_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa343_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa343_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa343_lesson/<lang>'
+
+   # Lesson Разница между ==, === и !=, !==
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa34f_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa34f_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa34f_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa34f_lesson/<lang>'
+
+   # Lesson Логическое ИЛИ и И. Операторы ||, &&
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa35b_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa35b_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa35b_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa35b_lesson/<lang>'
+
+   # Lesson Логические операторы в функциях
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa367_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa367_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63689267157a0ef5c22aa367_lesson/ru
+     translation_files_expression: '63689267157a0ef5c22aa367_lesson/<lang>'
+
+   # Lesson Округление в большую сторону. Math.ceil()
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 6439601a98dfa6acc27fc3f8_lesson/ru
+     translation_files_expression: '6439601a98dfa6acc27fc3f8_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 6439601a98dfa6acc27fc3f8_lesson/ru
+     translation_files_expression: '6439601a98dfa6acc27fc3f8_lesson/<lang>'
+
+   # Lesson Округление в меньшую сторону. Math.floor()
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 6439601a98dfa6acc27fc404_lesson/ru
+     translation_files_expression: '6439601a98dfa6acc27fc404_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 6439601a98dfa6acc27fc404_lesson/ru
+     translation_files_expression: '6439601a98dfa6acc27fc404_lesson/<lang>'
+
+   # Lesson Округление до ближайшего целого. Math.round()
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 6439601a98dfa6acc27fc410_lesson/ru
+     translation_files_expression: '6439601a98dfa6acc27fc410_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 6439601a98dfa6acc27fc410_lesson/ru
+     translation_files_expression: '6439601a98dfa6acc27fc410_lesson/<lang>'
+
+   # Lesson Форматирование чисел. toFixed()
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 6439601a98dfa6acc27fc41c_lesson/ru
+     translation_files_expression: '6439601a98dfa6acc27fc41c_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 6439601a98dfa6acc27fc41c_lesson/ru
+     translation_files_expression: '6439601a98dfa6acc27fc41c_lesson/<lang>'
+
+   # Lesson Конкатенация строк
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e4c_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e4c_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e4c_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e4c_lesson/<lang>'
+
+   # Lesson Длина строки
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e58_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e58_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e58_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e58_lesson/<lang>'
+
+   # Lesson Индексы в строке
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e64_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e64_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e64_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e64_lesson/<lang>'
+
+   # Lesson Изменение регистра. Методы toUpperCase, toLowerCase
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e70_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e70_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e70_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e70_lesson/<lang>'
+
+   # Lesson Повторение строки. Метод repeat
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e7c_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e7c_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e7c_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e7c_lesson/<lang>'
+
+   # Lesson Удаление пробелов. Методы trim, trimStart, trimEnd
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e88_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e88_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e88_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e88_lesson/<lang>'
+
+   # Lesson Поиск индекса. Методы indexOf, lastIndexOf
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e94_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e94_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c094c582c84077cf804e94_lesson/ru
+     translation_files_expression: '63c094c582c84077cf804e94_lesson/<lang>'
+
+   # Lesson Создание объекта
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289f68_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289f68_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289f68_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289f68_lesson/<lang>'
+
+   # Lesson Доступ к свойствам объекта
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289f74_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289f74_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289f74_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289f74_lesson/<lang>'
+
+   # Lesson Проверка наличия свойства в объекте
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289f80_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289f80_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289f80_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289f80_lesson/<lang>'
+
+   # Lesson Изменение свойств объекта
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289f8c_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289f8c_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289f8c_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289f8c_lesson/<lang>'
+
+   # Lesson Добавление свойств объекта
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289f98_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289f98_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289f98_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289f98_lesson/<lang>'
+
+   # Lesson Удаление свойств объекта
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289fa4_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289fa4_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289fa4_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289fa4_lesson/<lang>'
+
+   # Lesson Ссылочный тип данных. Копирование объектов
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289fb0_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289fb0_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289fb0_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289fb0_lesson/<lang>'
+
+   # Lesson Задания на комбинирование всего, что мы знаем
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289fbc_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289fbc_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09a67c7887ca79e289fbc_lesson/ru
+     translation_files_expression: '63c09a67c7887ca79e289fbc_lesson/<lang>'
+
+   # Lesson Создание массива. Свойство length
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bcec8_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bcec8_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bcec8_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bcec8_lesson/<lang>'
+
+   # Lesson Доступ к элементам массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bced4_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bced4_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bced4_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bced4_lesson/<lang>'
+
+   # Lesson Проверка наличия элемента в массиве
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bcee0_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bcee0_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bcee0_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bcee0_lesson/<lang>'
+
+   # Lesson Изменение элементов массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bceec_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bceec_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bceec_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bceec_lesson/<lang>'
+
+   # Lesson Добавление элементов в массив
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bcef8_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bcef8_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bcef8_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bcef8_lesson/<lang>'
+
+   # Lesson Удаление элементов из массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bcf04_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bcf04_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bcf04_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bcf04_lesson/<lang>'
+
+   # Lesson Копирование массивов
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bcf10_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bcf10_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bcf10_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bcf10_lesson/<lang>'
+
+   # Lesson Задания на комбинирование всего, что мы знаем
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bcf1c_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bcf1c_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 63c09b2fcf0eea67a07bcf1c_lesson/ru
+     translation_files_expression: '63c09b2fcf0eea67a07bcf1c_lesson/<lang>'
+
+   # Lesson Цикл for. Наполнение массива числами
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642247bf255c1d196990e5a7_lesson/ru
+     translation_files_expression: '642247bf255c1d196990e5a7_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642247bf255c1d196990e5a7_lesson/ru
+     translation_files_expression: '642247bf255c1d196990e5a7_lesson/<lang>'
+
+   # Lesson Перебор массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642247bf255c1d196990e5b3_lesson/ru
+     translation_files_expression: '642247bf255c1d196990e5b3_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642247bf255c1d196990e5b3_lesson/ru
+     translation_files_expression: '642247bf255c1d196990e5b3_lesson/<lang>'
+
+   # Lesson Перебор строки
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642247bf255c1d196990e5bf_lesson/ru
+     translation_files_expression: '642247bf255c1d196990e5bf_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642247bf255c1d196990e5bf_lesson/ru
+     translation_files_expression: '642247bf255c1d196990e5bf_lesson/<lang>'
+
+   # Lesson Прерывание цикла. break
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642247bf255c1d196990e5cb_lesson/ru
+     translation_files_expression: '642247bf255c1d196990e5cb_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642247bf255c1d196990e5cb_lesson/ru
+     translation_files_expression: '642247bf255c1d196990e5cb_lesson/<lang>'
+
+   # Lesson Пропуск итерации. continue
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 642247bf255c1d196990e5d7_lesson/ru
+     translation_files_expression: '642247bf255c1d196990e5d7_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 642247bf255c1d196990e5d7_lesson/ru
+     translation_files_expression: '642247bf255c1d196990e5d7_lesson/<lang>'
+
+   # Lesson Цикл от меньшего к большему
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 6422486ac4d22302354c2a8d_lesson/ru
+     translation_files_expression: '6422486ac4d22302354c2a8d_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 6422486ac4d22302354c2a8d_lesson/ru
+     translation_files_expression: '6422486ac4d22302354c2a8d_lesson/<lang>'
+
+   # Lesson Цикл от большего к меньшему
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 6422486ac4d22302354c2a99_lesson/ru
+     translation_files_expression: '6422486ac4d22302354c2a99_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 6422486ac4d22302354c2a99_lesson/ru
+     translation_files_expression: '6422486ac4d22302354c2a99_lesson/<lang>'
+
+   # Lesson Сумма чисел от и до
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 6422486ac4d22302354c2aa5_lesson/ru
+     translation_files_expression: '6422486ac4d22302354c2aa5_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 6422486ac4d22302354c2aa5_lesson/ru
+     translation_files_expression: '6422486ac4d22302354c2aa5_lesson/<lang>'
+
+   # Lesson Сумма четных, нечетных, простых чисел от и до
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 6422486ac4d22302354c2ab1_lesson/ru
+     translation_files_expression: '6422486ac4d22302354c2ab1_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 6422486ac4d22302354c2ab1_lesson/ru
+     translation_files_expression: '6422486ac4d22302354c2ab1_lesson/<lang>'
+
+   # Lesson Преобразовать строку в массив
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd8cd_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd8cd_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd8cd_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd8cd_lesson/<lang>'
+
+   # Lesson Преобразовать массив в строку
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd8d9_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd8d9_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd8d9_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd8d9_lesson/<lang>'
+
+   # Lesson Перевернуть строку
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd8e5_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd8e5_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd8e5_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd8e5_lesson/<lang>'
+
+   # Lesson Проверить, является ли строка палиндромом
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd8f1_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd8f1_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd8f1_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd8f1_lesson/<lang>'
+
+   # Lesson Проверить, является ли строка анаграммой
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd8fd_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd8fd_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd8fd_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd8fd_lesson/<lang>'
+
+   # Lesson Посчитать количество вхождений символа в строку
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd909_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd909_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd909_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd909_lesson/<lang>'
+
+   # Lesson Посчитать количество вхождений каждого символа в строку
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd915_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd915_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd915_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd915_lesson/<lang>'
+
+   # Lesson Посчитать количество гласных и согласных в строке
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd921_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd921_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd921_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd921_lesson/<lang>'
+
+   # Lesson Посчитать количество заглавных и строчных букв в строке
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd92d_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd92d_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd92d_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd92d_lesson/<lang>'
+
+   # Lesson Получить числа из строки
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd939_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd939_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd939_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd939_lesson/<lang>'
+
+   # Lesson Получить слова из строки
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd945_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd945_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd945_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd945_lesson/<lang>'
+
+   # Lesson Удалить из строки все символы дубликаты
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd951_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd951_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd951_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd951_lesson/<lang>'
+
+   # Lesson Удаление дубликатов слов из строки
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 645e942a19ffe89585cb1f5b_lesson/ru
+     translation_files_expression: '645e942a19ffe89585cb1f5b_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 645e942a19ffe89585cb1f5b_lesson/ru
+     translation_files_expression: '645e942a19ffe89585cb1f5b_lesson/<lang>'
+
+   # Lesson Замена символов в строке
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd95d_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd95d_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd95d_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd95d_lesson/<lang>'
+
+   # Lesson Поменять местами первое и последнее слово в строке
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd969_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd969_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd969_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd969_lesson/<lang>'
+
+   # Lesson Перевернуть в строке каждое слово
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd975_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd975_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd975_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd975_lesson/<lang>'
+
+   # Lesson Заменить в строке числа на их словесное описание
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd981_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd981_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd981_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd981_lesson/<lang>'
+
+   # Lesson Сумма чисел в строке
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd98d_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd98d_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd98d_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd98d_lesson/<lang>'
+
+   # Lesson Задания на комбинирование всего, что мы знаем
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 645e942a19ffe89585cb1f67_lesson/ru
+     translation_files_expression: '645e942a19ffe89585cb1f67_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 645e942a19ffe89585cb1f67_lesson/ru
+     translation_files_expression: '645e942a19ffe89585cb1f67_lesson/<lang>'
+
+   # Lesson Перебор массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f761f_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f761f_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f761f_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f761f_lesson/<lang>'
+
+   # Lesson Перебор массива в обратном порядке
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f762b_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f762b_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f762b_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f762b_lesson/<lang>'
+
+   # Lesson Сумма чисел в массиве
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f7637_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f7637_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f7637_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f7637_lesson/<lang>'
+
+   # Lesson Среднее арифметическое чисел в массиве
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f7643_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f7643_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f7643_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f7643_lesson/<lang>'
+
+   # Lesson Поиск максимального/минимального числа в массиве
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f764f_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f764f_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f764f_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f764f_lesson/<lang>'
+
+   # Lesson Поиск второго максимального/минимального числа в массиве
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f765b_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f765b_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f765b_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f765b_lesson/<lang>'
+
+   # Lesson Удвоить каждый элемент массива, если это число
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f7667_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f7667_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f7667_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f7667_lesson/<lang>'
+
+   # Lesson Удалить из массива все элементы, которые не являются числами
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f7673_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f7673_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f7673_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f7673_lesson/<lang>'
+
+   # Lesson Удалить из массива все дубликаты
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f767f_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f767f_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f767f_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f767f_lesson/<lang>'
+
+   # Lesson Проверить, является ли массив палиндромом / анаграммой
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f768b_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f768b_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f768b_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f768b_lesson/<lang>'
+
+   # Lesson Проверить, является ли массив симметричным
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f7697_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f7697_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f7697_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f7697_lesson/<lang>'
+
+   # Lesson Перевернуть массив
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f76a3_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f76a3_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f76a3_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f76a3_lesson/<lang>'
+
+   # Lesson Разделить массив на подмассивы
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f76af_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f76af_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f76af_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f76af_lesson/<lang>'
+
+   # Lesson Проверить, содержит ли массив все элементы другого массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f76bb_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f76bb_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f76bb_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f76bb_lesson/<lang>'
+
+   # Lesson Проверить, содержит ли массив значения одного типа
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f76c7_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f76c7_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f76c7_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f76c7_lesson/<lang>'
+
+   # Lesson Посчитать количество вхождений каждого элемента в массив
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f76d3_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f76d3_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224d1429c4ec06f04f76d3_lesson/ru
+     translation_files_expression: '64224d1429c4ec06f04f76d3_lesson/<lang>'
+
+   # Lesson Array.prototype.push() – добавляет элемент в конец массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64894a742f64d35dee52acce_lesson/ru
+     translation_files_expression: '64894a742f64d35dee52acce_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64894a742f64d35dee52acce_lesson/ru
+     translation_files_expression: '64894a742f64d35dee52acce_lesson/<lang>'
+
+   # Lesson Array.prototype.unshift() – добавляет элемент в начала массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64894a742f64d35dee52acda_lesson/ru
+     translation_files_expression: '64894a742f64d35dee52acda_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64894a742f64d35dee52acda_lesson/ru
+     translation_files_expression: '64894a742f64d35dee52acda_lesson/<lang>'
+
+   # Lesson Array.prototype.pop() – удаляет последний элемент массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64894a742f64d35dee52ace6_lesson/ru
+     translation_files_expression: '64894a742f64d35dee52ace6_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64894a742f64d35dee52ace6_lesson/ru
+     translation_files_expression: '64894a742f64d35dee52ace6_lesson/<lang>'
+
+   # Lesson Array.prototype.shift() – удаляет первый элемент массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64894a742f64d35dee52acf2_lesson/ru
+     translation_files_expression: '64894a742f64d35dee52acf2_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64894a742f64d35dee52acf2_lesson/ru
+     translation_files_expression: '64894a742f64d35dee52acf2_lesson/<lang>'
+
+   # Lesson Array.prototype.splice() – добавляет, удаляет элементы массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64894a742f64d35dee52acfe_lesson/ru
+     translation_files_expression: '64894a742f64d35dee52acfe_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64894a742f64d35dee52acfe_lesson/ru
+     translation_files_expression: '64894a742f64d35dee52acfe_lesson/<lang>'
+
+   # Lesson Array.prototype.toSpliced() – возвращает массив с добавленными или удаленными элементами
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90a0_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90a0_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90a0_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90a0_lesson/<lang>'
+
+   # Lesson Array.prototype.map() – преобразует каждый элемент массива по условию
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90ac_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90ac_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90ac_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90ac_lesson/<lang>'
+
+   # Lesson Array.prototype.forEach() – выполняет функцию для каждого элемента массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90b8_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90b8_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90b8_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90b8_lesson/<lang>'
+
+   # Lesson Array.prototype.with() – изменяет элемент по индексу
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90c4_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90c4_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90c4_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90c4_lesson/<lang>'
+
+   # Lesson Array.prototype.fill() – заполняет массив значением
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90d0_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90d0_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90d0_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90d0_lesson/<lang>'
+
+   # Lesson Array.prototype.flat() – убирает вложенность массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90dc_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90dc_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90dc_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90dc_lesson/<lang>'
+
+   # Lesson Array.prototype.flatMap() – комбинация map и flat
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90e8_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90e8_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90e8_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90e8_lesson/<lang>'
+
+   # Lesson Array.prototype.sort() – сортирует элементы массива на месте
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90f4_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90f4_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb90f4_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb90f4_lesson/<lang>'
+
+   # Lesson Array.prototype.toSorted() – возвращает отсортированный массив
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb9100_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb9100_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb9100_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb9100_lesson/<lang>'
+
+   # Lesson Array.prototype.reverse() – переворачивает порядок элементов массива на месте
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb910c_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb910c_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb910c_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb910c_lesson/<lang>'
+
+   # Lesson Array.prototype.toReversed() – возвращает массив с обратным порядком элементов
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb9118_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb9118_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648b99ea16cb56a165fb9118_lesson/ru
+     translation_files_expression: '648b99ea16cb56a165fb9118_lesson/<lang>'
+
+   # Lesson Array.prototype.filter() – фильтрует массив по условию
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce356_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce356_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce356_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce356_lesson/<lang>'
+
+   # Lesson Array.prototype.find() – первый элемент по условию
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce362_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce362_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce362_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce362_lesson/<lang>'
+
+   # Lesson Array.prototype.findLast() – последний элемент по условию
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce36e_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce36e_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce36e_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce36e_lesson/<lang>'
+
+   # Lesson Array.prototype.includes() – содержит ли массив искомый элемент
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce37a_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce37a_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce37a_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce37a_lesson/<lang>'
+
+   # Lesson Array.prototype.indexOf() – индекс искомого элемента
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce386_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce386_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce386_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce386_lesson/<lang>'
+
+   # Lesson Array.prototype.lastIndexOf() – индекс искомого элемента, начиная с конца массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce392_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce392_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce392_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce392_lesson/<lang>'
+
+   # Lesson Array.prototype.findIndex() – индекс элемента по условию
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce39e_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce39e_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce39e_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce39e_lesson/<lang>'
+
+   # Lesson Array.prototype.findLastIndex() – индекс последнего элемента по условию
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce3aa_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce3aa_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce3aa_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce3aa_lesson/<lang>'
+
+   # Lesson Array.prototype.every() – каждый элемент массива удовлетворяет условию
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce3b6_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce3b6_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce3b6_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce3b6_lesson/<lang>'
+
+   # Lesson Array.prototype.some() – хотя бы один элемент массива удовлетворяет условию
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce3c2_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce3c2_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce3c2_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce3c2_lesson/<lang>'
+
+   # Lesson Array.prototype.slice() – возвращает часть массива
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce3ce_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce3ce_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 648cf47fd88a18d9651ce3ce_lesson/ru
+     translation_files_expression: '648cf47fd88a18d9651ce3ce_lesson/<lang>'
+
+   # Lesson Практика по решению задач с кодинг-интервью
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd999_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd999_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 64224a47af2b9e1aaccfd999_lesson/ru
+     translation_files_expression: '64224a47af2b9e1aaccfd999_lesson/<lang>'
+

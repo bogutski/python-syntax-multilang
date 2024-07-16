@@ -1,0 +1,4 @@
+{
+  "name": "The sum of even and odd numbers. Objects",
+  "instruction": "Write a function `evenOddSum` that takes 5 parameters as numbers.\n\nThe function should return an object with two properties:\n* `even` - sum of even numbers\n* `odd` - sum of odd numbers\n\nAn example of running the function:\n```javascript\nevenOddSum(1, 2, 3, 4, 5) // {even: 6, odd: 9}\n```"
+}

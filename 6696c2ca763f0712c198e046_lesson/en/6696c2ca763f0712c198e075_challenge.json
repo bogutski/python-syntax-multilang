@@ -1,0 +1,4 @@
+{
+  "name": "Calculate the cost of travel by car in the U.S.",
+  "instruction": "Write a function `tripCost` that takes three parameters `mpg`, `pricePerGallon` and `distanceMiles`.\n\n`mpg` is the number of miles a car can travel on one gallon of gasoline.\n`pricePerGallon` - the price of one gallon of gasoline.\n`distanceMiles` - the distance in miles to be driven.\n\nThe function should return the cost of the trip by car.\n\nExamples:\n```javascript\ntripCost(20, 3, 100) // 15\ntripCost(10, 2, 100) // 20\n```\n\nTo solve the problem, divide the distance by the number of miles a car can travel on one gallon of gasoline, multiply by the price of one gallon of gasoline."
+}

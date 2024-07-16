@@ -1,0 +1,5 @@
+{
+  "name": "Вычислить цену со скидкой",
+  "instruction": "Напиши функцию `receiptMessage`, которая принимает параметры:\n- `price` - цена товара\n- `quantity` - количество товара\n- `discount` - скидка в процентах\n\nФункция должна возвращать строку `Price per item: $<price>. Quantity of items: <quantity>. Discount: <discount>%. Total price: $<totalPrice>.`, где `<price>`, `<quantity>`, `<discount>` и `<totalPrice>` - значения параметров.\n\nПример вызова функции:\n```javascript\nreceiptMessage(10, 4, 10); // Price per item: $10. Quantity of items: 4. Discount: 10%. Total price: $36.\nreceiptMessage(20, 3, 25); // Price per item: $20. Quantity of items: 3. Discount: 25%. Total price: $45.\n```\n\nСоздайте внутри функции переменную `totalPrice` c помощью оператора `const` и присвойте ей значение вычисления цены со скидкой.\n\nПример для помощи:\n```javascript\nconst price = 10;\nconst quantity = 4;\nconst discount = 10;\nconsole.log('Price: $' + price + '. Quantity: ' + quantity + '. Discount: ' + discount + '%. Total price: $' + price * quantity * (1 - discount / 100) + '.');\n```",
+  "instructions": {}
+}

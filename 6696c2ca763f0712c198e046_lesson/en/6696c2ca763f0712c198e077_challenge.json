@@ -1,0 +1,4 @@
+{
+  "name": "Greetings and Age",
+  "instruction": "Write a function `greetingAndAge` that takes two parameters `name` and `age` and returns a string\n\n`Hello, my name is John, and I am 99 years old.`\n\nInstead of `John` and `99` it should be the values of the parameters `name` and `age`.\n\nTo solve this, use string concatenation.\n\nExample of string concatenation:\n```javascript\nconst name = 'John';\nconst age = 99;\nconst str = 'Hi ' + name + ', you are ' + age + ' years old';\nconsole.log(str); // Hi John, you are 99 years old\n```"
+}

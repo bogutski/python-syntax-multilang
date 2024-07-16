@@ -1,0 +1,4 @@
+{
+  "name": "Get the sum of all even negative numbers of the array. Correct the errors",
+  "instruction": "The `sumEvenNegative` function, takes a single parameter, the `arr` array.\n\nThe array is of arbitrary length and contains only positive or negative integers.\n\nThe function should return the sum of all even negative numbers in the array.\n\nCorrect the errors in the code so that the function works correctly.\n\nAn example of running the function:\n```javascript\nsumEvenNegative([-1, 2, 3, -4, 5, 6, -7, -8]) // (-4) + (-8) = -12\nsumEvenNegative([1, 2, 3, 4, 5, 6, 7, 8]) // 0\n```"
+}

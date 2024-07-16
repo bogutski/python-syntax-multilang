@@ -1,0 +1,4 @@
+{
+  "name": "Increment, prefix form",
+  "instruction": "Assign a value of 99 to the `number` variable, then write a command that increments the variable by 1\n(increment, prefix form).\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the task:\n```\nlet x = 2;\n++x;\n\n```"
+}

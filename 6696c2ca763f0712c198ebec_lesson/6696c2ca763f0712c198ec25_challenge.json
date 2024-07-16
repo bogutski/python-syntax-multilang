@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec25",
+  "name": {
+    "en": "How many times does the element occur in the string",
+    "ru": "Сколько раз элемент встречается в строке"
+  },
+  "instruction": {
+    "en": "Write a function `stringOfOccurrences` that takes a string and an element.\n\nThe function should count the number of occurrences of the element in the string and return another string:\n\nFor example:\n```javascript\nstringOfOccurrences('abcabcabc', 'a')\n```\n* If element `a` occurs in the string 3 times, the function should return the string: ``The element \"a\" occurs in the string 3 times'``.\n* If the element does not occur or no parameter is passed, the function should return a string: `'There is no such element in the string'`\n\nAll elements will be passed in the same case.\n\n\nExamples of running a function:\n```javascript\nstringOfOccurrences('abcabcabc', 'a') // 'The element \"a\" occurs in the string 3 times'\nstringOfOccurrences('apple', 'w') // 'There is no such element in the string'\nstringOfOccurrences('', 'p') // 'There is no such element in the string'\n```",
+    "ru": "Напишите функцию `stringOfOccurrences`, которая принимает строку и элемент.\n\nФункция должна посчитать количество вхождений элемента в строку и вернуть другую строку:\n\nНапример:\n```javascript\nstringOfOccurrences('abcabcabc', 'a')\n```\n* Если элемент `a` встречается в строке 3 раза, то функция должна вернуть строку: `'The element \"a\" occurs in the string 3 times'`\n* Если элемент не встречается или какой то параметр не передан, то функция должна вернуть строку: `'There is no such element in the string'`\n\nВсе элементы будут переданы в одном регистре.\n\n\nПримеры запуска функции:\n```javascript\nstringOfOccurrences('abcabcabc', 'a') // 'The element \"a\" occurs in the string 3 times'\nstringOfOccurrences('apple', 'w') // 'There is no such element in the string'\nstringOfOccurrences('', 'p') // 'There is no such element in the string'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function stringOfOccurrences(str, el) {\n  let count = 0;\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] === el) count++;\n  }\n  if(count === 0) return 'There is no such element in the string';\n  return `The element \"${el}\" occurs in the string ${count} times`;\n}",
+  "openTest": "it('Created function stringOfOccurrences', () => {\n  expect(stringOfOccurrences).to.be.a('function');\n});\n\nit('stringOfOccurrences(\"abcabcabc\", \"a\") should return \"The element \"a\" occurs in the string 3 times\"', () => {\n  expect(stringOfOccurrences(\"abcabcabc\", \"a\")).to.equal('The element \"a\" occurs in the string 3 times');\n});\n\nit('stringOfOccurrences(\"abcacabc\", \"b\") should return \"The element \"b\" occurs in the string 2 times\"', () => {\n  expect(stringOfOccurrences(\"abcacabc\", \"b\")).to.equal('The element \"b\" occurs in the string 2 times');\n});\n\nit('stringOfOccurrences(\"apple\", \"w\") should return \"There is no such element in the string\"', () => {\n  expect(stringOfOccurrences(\"apple\", \"w\")).to.equal('There is no such element in the string');\n});\n\nit('stringOfOccurrences(\"\", \"p\") should return \"There is no such element in the string\"', () => {\n  expect(stringOfOccurrences(\"\", \"p\")).to.equal('There is no such element in the string');\n});\n\nit('stringOfOccurrences(\"0000000000000000\", \"0\") should return \"The element \"0\" occurs in the string 16 times\"', () => {\n  expect(stringOfOccurrences(\"0000000000000000\", \"0\")).to.equal('The element \"0\" occurs in the string 16 times');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

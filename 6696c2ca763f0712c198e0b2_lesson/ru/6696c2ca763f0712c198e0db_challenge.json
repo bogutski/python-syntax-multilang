@@ -1,0 +1,5 @@
+{
+  "name": "Результат функции приветствия записывается в переменную",
+  "instruction": "Напиши функцию `greeting`, которая принимает параметр `name` и возвращает строку вида `Hello, name!`.\n\nСоздайте переменную `message` и присвойте ей результат вызова функции `greeting`. В качестве аргумента передайте любое имя.\n\nПохожий пример:\n```javascript\nfunction hello(firstName) {\n  return 'Hello, ' + firstName + '!';\n}\n\nconst helloMessage = hello('John');\n```",
+  "instructions": {}
+}

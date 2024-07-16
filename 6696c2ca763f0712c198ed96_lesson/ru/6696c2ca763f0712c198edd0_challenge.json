@@ -1,0 +1,5 @@
+{
+  "name": "Сколько дубликатов в строке?",
+  "instruction": "Функция `countDuplicates` принимает строку, состоящую из слов в одинаковом регистре.\n\nНеобходимо посчитать сколько cлов-дубликатов содержится в строке.\n\nПервое вхождение слова не считается дубликатом. Дубликаты разных слов суммируются между собой.\n\nПример запуска функции:\n```javascript\ncountDuplicates('abc cde def') // 0\ncountDuplicates('abc abc abc abc def def def') // 5\ncountDuplicates('abc cde abc cde') // 2\n```",
+  "instructions": {}
+}

@@ -1,0 +1,13 @@
+{
+  "_id": "635bf77477d032c22e5b3574",
+  "video": {
+    "ru": "https://youtu.be/gSrU2k0nOHQ",
+    "en": "https://youtu.be/gSrU2k0nOHQ",
+    "es": ""
+  },
+  "content": {
+    "ru": "Внимательно прослушайте первую лекцию. \n\nПосле лекции выполните тест. \n\nТест находится под видео, ниже заголовка \"Quiz\". \n\nВ случае затруднения, вы можете еще раз пересмотреть лекцию.\n\n![welcome](https://course-js-syntax.s3-us-west-1.amazonaws.com/js-sandbox.jpg#half)\n",
+    "en": "Listen carefully to the first lecture. \n\nAfter the lecture, take the test. \n\nThe test is below the video, below the title \"Quiz\". \n\nIn case of difficulty, you can review the lecture again.\n\n![welcome](https://course-js-syntax.s3-us-west-1.amazonaws.com/js-sandbox.jpg#half)\n",
+    "es": ""
+  }
+}

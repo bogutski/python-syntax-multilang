@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ea45",
+  "name": {
+    "en": "An array of degrees of two",
+    "ru": "Массив степеней двойки"
+  },
+  "instruction": {
+    "en": "The function `powerOfTwo` takes the number `num` and returns an array containing degrees of two from 2^num to 2^0.\n\nIf `num` is less than 0, the function should return an empty array.\n\nAn example of running the function:\n```javascript\npowerOfTwo(2) // [4, 2, 1]\npowerOfTwo(-1) // []\n```",
+    "ru": "Функция `powerOfTwo` принимает число `num` и возвращает массив, содержащий степени двойки от `2^num` до `2^0`.\n\nЕсли `num` меньше `0`, функция должна вернуть пустой массив.\n\nПример запуска функции:\n```javascript\npowerOfTwo(2) // [4, 2, 1]\npowerOfTwo(-1) // []\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function powerOfTwo(num) {\n  let arr = [];\n  for (let i = num; i >= 0; i--) {\n    arr.push(2 ** i);\n  }\n  return arr\n}",
+  "openTest": "it('Created function powerOfTwo', () => {\n  expect(powerOfTwo).to.be.a('function');\n});\n\nit('powerOfTwo(0) should return [1]', () => {\n  expect(powerOfTwo(0)).to.eql([1]);\n});\n\nit('powerOfTwo(2) should return [4, 2, 1]', () => {\n  expect(powerOfTwo(2)).to.eql([4, 2, 1]);\n});\n\nit('powerOfTwo(3) should return [8, 4, 2, 1]', () => {\n  expect(powerOfTwo(3)).to.eql([8, 4, 2, 1]);\n});\n\nit('powerOfTwo(4) should return [16, 8, 4, 2, 1]', () => {\n  expect(powerOfTwo(4)).to.eql([16, 8, 4, 2, 1]);\n});\n\nit('powerOfTwo(-1) should return []', () => {\n  expect(powerOfTwo(-1)).to.eql([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f4c0",
+  "name": {
+    "en": "/*",
+    "ru": "Модификация выбранных элементов массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `filterAndModify`, которая принимает массив, функцию-условие и функцию-модификатор.\n\nФункция должна изменять элементы исходного массива, которые удовлетворяют заданному условию, применяя к ним функцию-модификатор mod. Остальные элементы оставляются без изменений. Возвращает модифицированный исходный массив.\n\n\nПример запуска функции:\n```javascript\nconst items = [1, \"hello\", 2, \"world\", 3];\nfilterAndModify(\n    items,\n    item => typeof item === \"number\",\n    item => item * 2\n);\nconsole.log(items); // [ 2, 'hello', 4, 'world', 6 ]\n\n\nconst numbers = [1, 2, 3, 4, 5];\nfilterAndModify(numbers, n => n % 2 === 0, n => n * 2);\nconsole.log(numbers); // [ 1, 4, 3, 8, 5 ]\n```"
+  },
+  "initialSolution": "function filterAndModify(){\n\n}",
+  "completedSolution": "function filterAndModify(arr, isTrue, mod) {\n  arr.forEach((el, i) => {\n    if(isTrue(el)) arr[i] = mod(el)\n  })\n\n  return arr;\n}",
+  "openTest": "it('Created function filterAndModify', () => {\n  expect(filterAndModify).to.be.a('function');\n});\n\nit('Function filterAndModify should include method forEach()', () => {\n  const res = filterAndModify.toString()\n  expect(res).to.include('.forEach(')\n});\n\nit(\"filterAndModify([1, 2, 3, 4, 5], n => n % 2 === 0, n => n * 2) should modify array to [1, 4, 3, 8, 5]\", () => {\n  const numbers = [1, 2, 3, 4, 5];\n  filterAndModify(numbers, n => n % 2 === 0, n => n * 2);\n  expect(numbers).to.deep.equal([1, 4, 3, 8, 5]);\n});\n\nit(\"filterAndModify(['a', 'b', 'c'], item => item === 'b', item => item.toUpperCase()) should modify array to ['a', 'B', 'c']\", () => {\n  const letters = ['a', 'b', 'c'];\n  filterAndModify(letters, item => item === 'b', item => item.toUpperCase());\n  expect(letters).to.deep.equal(['a', 'B', 'c']);\n});\n\nit(\"filterAndModify([10, 15, 20, 25], n => n > 10, n => n - 5) should modify array to [10, 10, 15, 20]\", () => {\n  const numbers = [10, 15, 20, 25];\n  filterAndModify(numbers, n => n > 10, n => n - 5);\n  expect(numbers).to.deep.equal([10, 10, 15, 20]);\n});\n\nit(\"filterAndModify([true, false, true], value => value === false, value => !value) should modify array to [true, true, true]\", () => {\n  const bools = [true, false, true];\n  filterAndModify(bools, value => value === false, value => !value);\n  expect(bools).to.deep.equal([true, true, true]);\n});\n\nit(\"filterAndModify(['apple', 'banana', 'cherry'], item => item.includes('a'), item => item.toUpperCase()) should modify array to ['APPLE', 'BANANA', 'cherry']\", () => {\n  const fruits = ['apple', 'banana', 'cherry'];\n  filterAndModify(fruits, item => item.includes('a'), item => item.toUpperCase());\n  expect(fruits).to.deep.equal(['APPLE', 'BANANA', 'cherry']);\n});\n\nit(\"filterAndModify([0, 1, 2, 3, 4], n => n % 2 === 0, n => n + 1) should modify array to [1, 1, 3, 3, 5]\", () => {\n  const numbers = [0, 1, 2, 3, 4];\n  filterAndModify(numbers, n => n % 2 === 0, n => n + 1);\n  expect(numbers).to.deep.equal([1, 1, 3, 3, 5]);\n});\n\nit(\"filterAndModify(['', ' ', 'text'], item => item.trim() === '', item => 'empty') should modify array to ['empty', 'empty', 'text']\", () => {\n  const strings = ['', ' ', 'text'];\n  filterAndModify(strings, item => item.trim() === '', item => 'empty');\n  expect(strings).to.deep.equal(['empty', 'empty', 'text']);\n});\n\nit(\"filterAndModify([3, 6, 9], n => true, n => n / 3) should modify array to [1, 2, 3]\", () => {\n  const numbers = [3, 6, 9];\n  filterAndModify(numbers, n => true, n => n / 3);\n  expect(numbers).to.deep.equal([1, 2, 3]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

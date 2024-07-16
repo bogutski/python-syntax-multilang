@@ -1,0 +1,4 @@
+{
+  "name": "Define that the number is even or odd",
+  "instruction": "Note a few examples:\n\n```javascript\nconsole.log(2 % 2 <= 0); // true\nconsole.log(3 % 2 <= 0); // false\nconsole.log(4 % 2 <= 0); // true\nconsole.log(5 % 2 <= 0); // false\nconsole.log(6 % 2 <= 0); // true\nconsole.log(7 % 2 <= 0); // false\n```\n\nDo you see the alternation of true and false? That means if the number is divisible by 2 without a remainder, then it's even, otherwise it's odd.\n\nWrite a function `isEven` that takes a number and returns `true` if the number is even, and `false` if it is odd."
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Find the sum of four numbers",
+  "instruction": "Write a function `sumFour` that takes 4 parameters `num1`, `num2`, `num3` and `num4` and returns their sum.\n\nAll arguments will be numbers.",
+  "instructions": {}
+}

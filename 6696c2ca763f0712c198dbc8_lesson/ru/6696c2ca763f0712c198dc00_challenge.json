@@ -1,0 +1,6 @@
+{
+  "name": "Робинзон Крузо",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-16.png)\n\nРобинзон Крузо отмечал каждый прожитый на острове день зарубкой на дереве в виде буквы 'I'.\n\nУ него уже получилась строка `days`, состоящая из многих \"палочек\": \"IIIIIII....III\".\n\nСегодня Робинзон добавил еще одну.\n\n\nСоздайте переменную `days` со значением `IIIIIIIIIIIIIIIIIIIIIIII` (24 дня).\n\nЗапишите команду, которая изменяет строку `days` путем добавления к ней еще одной буквы `'I'`.\n\n\nПохожий пример:\n```javascript\nlet cars = 'III';\ncars = cars + 'I';\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet days = 'IIIIIIIIIIIIIIIIIIIIIIII'\ndays = days + 'I';\n```"
+}

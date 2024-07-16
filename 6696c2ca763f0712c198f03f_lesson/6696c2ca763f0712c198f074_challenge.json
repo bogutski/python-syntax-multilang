@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198f074",
+  "name": {
+    "en": "",
+    "ru": "Найти второе максимальное число с помощью циклов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `secondMaxNumber`, которая принимает массив чисел и возвращает второе максимальное число из массива.\n\n* Если массив пустой, то функция возвращает строку `'Array is empty'`.\n* Если в массиве нет второго максимального числа, то функция возвращает строку `'There is no second max number'`.\n\nПопробуйте использовать два цикла для решения этой задачи.\n\n\nПримеры запуска функции:\n```javascript\nsecondMinNumber([1, 2, 3, 4, 5]);    // 4\nsecondMinNumber([-5, 2, -1, 10, 4]); // 4\nsecondMinNumber([1, 1, 1, 1, 1]);    // 'There is no second max number'\nsecondMinNumber([1]);                // 'There is no second max number'\nsecondMinNumber([]);                 // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function secondMaxNumber(arr){\n  if(arr.length === 0) return 'Array is empty';\n  if(arr.length === 1) return 'There is no second max number';\n\n  let max = arr[0];\n  let secondMax = arr[0];\n\n  for(let i = 1; i < arr.length; i++){\n    if(arr[i] > max) max = arr[i];\n  }\n\n  for(let i = 1; i < arr.length; i++){\n    if((max === secondMax || arr[i] > secondMax) && arr[i] !== max) secondMax = arr[i];\n  }\n\n  if(secondMax === max) return 'There is no second max number';\n  else return secondMax;\n}",
+  "openTest": "it('Created function secondMaxNumber', () => {\n  expect(secondMaxNumber).to.be.a('function');\n});\n\nit('Function secondMaxNumber does not include method sort', () => {\n  expect(secondMaxNumber.toString()).to.not.include('sort');\n});\n\nit('Function secondMaxNumber does not include method Math.max', () => {\n  expect(secondMaxNumber.toString()).to.not.include('Math.max');\n});\n\nit('secondMaxNumber([5, 3, 4, 1, -5, -2, -10]) should return 4', () => {\n  expect(secondMaxNumber([5, 3, 4, 1, -5, -2, -10])).to.equal(4);\n});\n\nit('secondMaxNumber([5, 7, 66, 12, 3, 6, 47, 85]) should return 66', () => {\n  expect(secondMaxNumber([5, 7, 66, 12, 3, 6, 47, 85])).to.equal(66);\n});\n\nit('secondMaxNumber([-25, 36, -42, 62, 1, 0, -40]) should return 36', () => {\n  expect(secondMaxNumber([-25, 36, -42, 62, 1, 0, -40])).to.equal(36);\n});\n\nit('secondMaxNumber([100, 125, 55, 35, Infinity, 120, 654]) should return 654', () => {\n  expect(secondMaxNumber([100, 125, 55, 35, Infinity, 120, 654])).to.equal(654);\n});\n\nit('secondMaxNumber([Infinity, -50, 43, 2, -Infinity, 45, 12, 8, Infinity]) should return 45', () => {\n  expect(secondMaxNumber([Infinity, -50, 43, 2, -Infinity, 45, 12, 8, Infinity])).to.equal(45);\n});\n\nit('secondMaxNumber([5, 5, 5]) should return \"There is no second max number\"', () => {\n  expect(secondMaxNumber([5, 5, 5])).to.equal('There is no second max number');\n});\n\nit('secondMaxNumber([10]) should return \"There is no second max number\"', () => {\n  expect(secondMaxNumber([10])).to.equal('There is no second max number');\n});\n\nit('secondMaxNumber([]) should return \"Array is empty\"', () => {\n  expect(secondMaxNumber([])).to.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

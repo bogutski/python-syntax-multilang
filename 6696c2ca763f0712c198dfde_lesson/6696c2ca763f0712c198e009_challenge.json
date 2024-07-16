@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e009",
+  "name": {
+    "en": "The function in which we reassign the values of the variables",
+    "ru": "Функция в которой переприсвоим значения переменных"
+  },
+  "instruction": {
+    "en": "Create a function `swapWorkers` that takes two parameters: `name1` and `name2`.\n\nInside the function, create a variable `shift1` and assign it the value of the `name1` parameter. Use the keyword `let`.\n\nInside the function, create a variable `shift2` and assign it the value of the parameter `name2`. Use the keyword `let`.\n\nPrint the values of the variable `shift1` into the console\nPrint the values of the variable `shift2` into the console\n\nInside the function, reassign the value of the variable `shift1` to `name2` and the value of the variable `shift2` to `name1`.\n\nOutput to the console the value of the variable `shift1`.\nPrint the value of the variable `shift2` into the console\n\nDon't let this function return anything. There is no need to write `return`.\n\nA similar example:\n```javascript\nfunction swap(a, b) {\n  let c = a;\n  let d = b;\n  console.log(c);\n  console.log(d);\n  c = b;\n  d = a;\n  console.log(c);\n  console.log(d);\n}\n```\n\nIf you're looking for the point of this assignment, it's for you to learn how to do the assignment by instruction.\nThere is no practical point to this assignment, but it is good practice.\nIf all the tests pass, then you have done the assignment correctly.\n\nStick to the instructions and design style, or the assignment will not pass the tests.\n\nThere must be 8 lines of code inside the function.",
+    "ru": "Создайте функцию `swapWorkers`, которая принимает два параметра: `name1` и `name2`.\n\nВнутри функции создайте переменную `shift1` и присвойте ей значение параметра `name1`. Используйте ключевое слово `let`.\n\nВнутри функции создайте переменную `shift2` и присвойте ей значение параметра `name2`. Используйте ключевое слово `let`.\n\nВыведите в консоль значения переменной `shift1`\nВыведите в консоль значения переменной `shift2`\n\nВнутри функции переприсвойте значение переменной `shift1` на `name2`, а значение переменной `shift2` на `name1`.\n\nВыведите в консоль значения переменной `shift1`\nВыведите в консоль значения переменной `shift2`\n\nПусть эта функция ничего не возвращает. Писать `return` не нужно.\n\nПохожий пример:\n```javascript\nfunction swap(a, b) {\n  let c = a;\n  let d = b;\n  console.log(c);\n  console.log(d);\n  c = b;\n  d = a;\n  console.log(c);\n  console.log(d);\n}\n```\n\nЕсли вы ищите смысл этого задания, то он в том, чтобы вы учились делать задание по инструкции.\nПрактического смысла в этом задании нет, но это хорошая практика.\nЕсли все тесты проходят, то вы сделали задание правильно.\n\nПридерживайтесь инструкций и стиля оформления, иначе задание не пройдет тесты.\n\nВнутри функции должно быть 8 строк кода."
+  },
+  "initialSolution": "fun!",
+  "completedSolution": "function swapWorkers(name1, name2) {\n  let shift1 = name1;\n  let shift2 = name2;\n  console.log(shift1);\n  console.log(shift2);\n  shift1 = name2;\n  shift2 = name1;\n  console.log(shift1);\n  console.log(shift2);\n}",
+  "openTest": "it('Created function swapWorkers', () => {\n  expect(swapWorkers).to.be.a('function');\n});\n\nit('Function swapWorkers has two parameters name1 and name2', () => {\n  const args = swapWorkers.toString().match(/\\(([^)]*)\\)/)[1].split(',').map(arg => arg.trim());\n  expect(args).to.be.eql(['name1', 'name2']);\n});\n\n\nit('Function swapWorkers has right structure. Line 1', () => {\n  expect(swapWorkers.toString()).contains('let shift1 = name1;');\n});\n\nit('Function swapWorkers has right structure. Line 2', () => {\n  expect(swapWorkers.toString()).contains('let shift2 = name2;');\n});\n\nit('Function swapWorkers has right structure. Line 3', () => {\n  expect(swapWorkers.toString()).contains('console.log(shift1);');\n});\n\nit('Function swapWorkers has right structure. Line 4', () => {\n  expect(swapWorkers.toString()).contains('console.log(shift2);');\n});\n\nit('Function swapWorkers has right structure. Line 5', () => {\n  expect(swapWorkers.toString()).contains('shift1 = name2;');\n});\n\nit('Function swapWorkers has right structure. Line 6', () => {\n  expect(swapWorkers.toString()).contains('shift2 = name1;');\n});\n\nit('Function swapWorkers has right structure. Line 7', () => {\n  expect(swapWorkers.toString()).contains('console.log(shift1);');\n});\n\nit('Function swapWorkers has right structure. Line 8', () => {\n  expect(swapWorkers.toString()).contains('console.log(shift2);');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

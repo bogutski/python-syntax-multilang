@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2cb763f0712c198f677",
+  "name": {
+    "ru": "Array.prototype.toReversed() – возвращает массив с обратным порядком элементов",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f678",
+      "name": {
+        "ru": "Что делает метод toReversed() в JavaScript?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f679",
+          "name": {
+            "ru": "Модифицирует исходный массив, переставляя его элементы.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f67a",
+          "name": {
+            "ru": "Удаляет элементы из массива.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f67b",
+          "name": {
+            "ru": "Сортирует массив по убыванию.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f67c",
+          "name": {
+            "ru": "Создаёт новый массив с элементами в обратном порядке, не изменяя исходный.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f67d",
+      "name": {
+        "ru": "Какой код правильно демонстрирует использование toReversed()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f67e",
+          "name": {
+            "ru": "```javascript\nlet newArray = originalArray.toReversed(1, 2);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f67f",
+          "name": {
+            "ru": "```javascript\nlet newArray = originalArray.toReversed();\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f680",
+          "name": {
+            "ru": "```javascript\nlet newArray = toReversed(originalArray);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f681",
+          "name": {
+            "ru": "```javascript\nlet newArray = Array.toReversed(originalArray);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f682",
+      "name": {
+        "ru": "Что выведет следующий код?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = [1, 2, 3];\nconst reversedNumbers = numbers.toReversed();\nconsole.log(numbers);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f683",
+          "name": {
+            "ru": "[1, 2, 3]",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f684",
+          "name": {
+            "ru": "[3, 2, 1]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f685",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f686",
+          "name": {
+            "ru": "Ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f687",
+      "name": {
+        "ru": "Что произойдет, если вызвать toReversed() на пустом массиве?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f688",
+          "name": {
+            "ru": "Вернёт null",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f689",
+          "name": {
+            "ru": "Вернёт undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f68a",
+          "name": {
+            "ru": "Вернёт пустой массив",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f68b",
+          "name": {
+            "ru": "Произойдет ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f68c",
+      "name": {
+        "ru": "Какие типы данных могут быть элементами массива, который инвертируется с помощью toReversed()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f68d",
+          "name": {
+            "ru": "Только числа",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f68e",
+          "name": {
+            "ru": "Только строки",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f68f",
+          "name": {
+            "ru": "Любые типы данных",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f690",
+          "name": {
+            "ru": "Только объекты",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f691",
+      "name": {
+        "ru": "Что будет результатом выполнения следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst data = ['apple', 'banana', 'cherry'].toReversed();\nconsole.log(data);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f692",
+          "name": {
+            "ru": "['cherry', 'banana', 'apple']",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f693",
+          "name": {
+            "ru": "['apple', 'banana', 'cherry']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f694",
+          "name": {
+            "ru": "['apple', 'cherry', 'banana']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f695",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f696",
+      "name": {
+        "ru": "Как изменится поведение кода, если заменить toReversed() на reverse() в следующем фрагменте?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst list = [10, 20, 30];\nconst newList = list.toReversed();\nconsole.log(list);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f697",
+          "name": {
+            "ru": "[10, 20, 30]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f698",
+          "name": {
+            "ru": "[10, 30, 20]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f699",
+          "name": {
+            "ru": "[30, 20, 10]",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f69a",
+          "name": {
+            "ru": "[30, 10, 20]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f69b",
+      "name": {
+        "ru": "Определите вывод следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst reversed = numbers.toReversed();\nreversed.pop();\nconsole.log(reversed);\nconsole.log(numbers);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f69c",
+          "name": {
+            "ru": "[5, 4, 3, 2, 1], [1, 2, 3, 4, 5]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f69d",
+          "name": {
+            "ru": "[1, 2, 3, 4], [1, 2, 3, 4, 5]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f69e",
+          "name": {
+            "ru": "[5, 4, 3, 2], [1, 2, 3, 4]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f69f",
+          "name": {
+            "ru": "[5, 4, 3, 2], [1, 2, 3, 4, 5]",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f6a0",
+      "name": {
+        "ru": "Что выведет следующий код?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst pets = ['dog', 'cat', 'bird'];\nconst reversedPets = pets.reverse();\nreversedPets.shift();\nconsole.log(pets);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f6a1",
+          "name": {
+            "ru": "['dog', 'cat']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f6a2",
+          "name": {
+            "ru": "['cat', 'bird']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f6a3",
+          "name": {
+            "ru": "['cat', 'dog']",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f6a4",
+          "name": {
+            "ru": "['bird', 'cat']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f6a5",
+      "name": {
+        "ru": "Что выведет код ниже?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst data = [1, 2, 3, 4, 5];\nconst processedData = data.map(x => x * 2).toReversed();\nconsole.log(processedData);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f6a6",
+          "name": {
+            "ru": "[2, 4, 6, 8, 10]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f6a7",
+          "name": {
+            "ru": "[5, 4, 3, 2, 1]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f6a8",
+          "name": {
+            "ru": "[10, 8, 6, 4, 2]",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f6a9",
+          "name": {
+            "ru": "[25, 16, 9, 4, 1]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

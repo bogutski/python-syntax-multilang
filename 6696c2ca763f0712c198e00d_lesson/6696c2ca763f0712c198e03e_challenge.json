@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e03e",
+  "name": {
+    "en": "The function counts half a quarter degree of a number",
+    "ru": "Функция считает половину четвертной степени числа"
+  },
+  "instruction": {
+    "en": "The function takes one number as input.\n\nWrite a function `halfCube` that takes a number to the fourth power and returns half.",
+    "ru": "На вход функция принимает одно число.\n\nНапиши функцию `halfCube`, которая возводит число в четвертую степень и возвращает половину."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function halfCube(num) {\n  return num ** 4 / 2;\n}",
+  "openTest": "it('Created function halfCube', () => {\n  expect(halfCube).to.be.a('function');\n});\n\nit('halfCube(2) should return 8', () => {\n  expect(halfCube(2)).to.equal(8);\n});\n\nit('halfCube(3) should return 40.5', () => {\n  expect(halfCube(3)).to.equal(40.5);\n});\n\nit('halfCube(4) should return 64', () => {\n  expect(halfCube(4)).to.equal(128);\n});\n\nit('halfCube(5) should return 312.5', () => {\n  expect(halfCube(5)).to.equal(312.5);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

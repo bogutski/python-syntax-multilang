@@ -1,0 +1,4 @@
+{
+  "name": "Increase by a factor of 10 all numbers divisible by three",
+  "instruction": "Numbers divisible by three are numbers that are divided by 3 without a remainder.\n\nTo check, you can use the operator `%` (the remainder of division) and if it is zero, then the number is a multiple of three.\n\nWrite a function `multiplyByTen` that takes a number and returns it multiplied by a factor of 10 if it is a multiple of three.\n\nOtherwise, return the number unchanged.\n\nRun examples:\n```javascript.\nmultiplyByTen(3); // 30\nmultiplyByTen(10); // 10\nmultiplyByTen(0); // 0\nmultiplyByTen(-3); // -30\nmultiplyByTen(-10); // -10\nmultiplyByTen(-15); // -150\n```\n\nUse the `===` (strict equality) operator to compare with zero.\n```javascript\nconst num = 0;\nconsole.log(num === 0); // true\n```"
+}

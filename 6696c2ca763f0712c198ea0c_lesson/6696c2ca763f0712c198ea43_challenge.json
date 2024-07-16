@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ea43",
+  "name": {
+    "en": "Sum of fractions from 1 to 1/n",
+    "ru": "Сумма дробей от 1 до 1/n"
+  },
+  "instruction": {
+    "en": "The function `fractionSum` takes a number `n` and returns a sum from one to 1/n (1/1 + 1/2 + 1/3 + ... + 1/n)\n\n`n` is an integer greater than zero\n\nThe sum must be rounded to 2 decimal places.\nUse the `toFixed` method for rounding and convert the result to a number using `Number`.\nRounding example:\n```javascript\nlet a = 1.2345;\nNumber(a.toFixed(2)) // 1.23\n\nlet b = 1.2355;\nb.toFixed(2) // \"1.24'' string. The `toFixed` method returns a rounded number string\nNumber(b.toFixed(2)) // 1.24 is a number. The `Number` method converts a string to a number\n```\n\nAn example of running the function:\n```javascript\nfractionSum(3) // 1 + 1/2 + 1/3 = 1.83\nfractionSum(5) // 1 + 1/2 + 1/3 + 1/4 + 1/5 = 2.28\n```",
+    "ru": "Функция `fractionSum` принимает число `n` и возвращает сумму от единицы до `1/n (1/1 + 1/2 + 1/3 + ... + 1/n)`\n\n`n` - целое число, больше нуля\n\nСумма должна быть округлена до 2 знаков после запятой.\nДля округления используйте метод `toFixed` и преобразуйте результат в число с помощью метода `Number`.\nПример округления:\n```javascript\nlet a = 1.2345;\nNumber(a.toFixed(2)) // 1.23\n\nlet b = 1.2355;\nb.toFixed(2) // \"1.24\" - строка. Метод `toFixed` возвращает строку округленного числа\nNumber(b.toFixed(2)) // 1.24 - число. Метод `Number` преобразует строку в число\n```\n\nПример запуска функции:\n```javascript\nfractionSum(3) // 1 + 1/2 + 1/3 = 1.83\nfractionSum(5) // 1 + 1/2 + 1/3 + 1/4 + 1/5 = 2.28\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function fractionSum(n) {\n  let sum = 0;\n  for (let i = 1; i <= n; i++) {\n    sum = sum + 1 / i\n  }\n  return Number(sum.toFixed(2))\n}",
+  "openTest": "it('Created function fractionSum', () => {\n  expect(fractionSum).to.be.a('function');\n});\n\nit('fractionSum(3) should return 1.83', () => {\n  expect(fractionSum(3)).to.equal(1.83);\n});\n\nit('fractionSum5) should return 2.28', () => {\n  expect(fractionSum(5)).to.equal(2.28);\n});\n\nit('fractionSum(10) should return 2.93', () => {\n  expect(fractionSum(10)).to.equal(2.93);\n});\n\nit('fractionSum(100) should return 5.19', () => {\n  expect(fractionSum(100)).to.equal(5.19);\n});\n\nit('fractionSum(1) should return 1', () => {\n  expect(fractionSum(1)).to.equal(1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

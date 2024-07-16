@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e7e7",
+  "name": {
+    "en": "Adding a new element to the end of an array",
+    "ru": "Добавление нового элемента в конец массива"
+  },
+  "instruction": {
+    "en": "Create a function `addElement`.\n\nFunction parameters:\n* `array` - array of numbers\n* `endElement` - the number to add to the end of the array\n\nThe function should return the array resulting from the addition of `endElement`.\nUse the `push` method to solve the problem.\n\nExamples of running the function:\n\n```javascript\naddElement([1, 2, 3 ,4], 5); // [1, 2, 3, 4, 5]\naddElement([2, 13, 64], 0); // [2, 13, 64, 0]\naddElement([2, 0], 56); // [2, 0, 56]\naddElement([], 56); // [56]\n```",
+    "ru": "Создайте функцию `addElement`.\n\nПараметры функции:\n* `array` – массив чисел\n* `endElement` – число, которое нужно добавить в конец массива\n\nФункция должна вернуть массив, полученный в результате добавления `endElement`.\nДля решения задачи используйте метод `push`.\n\nПримеры запуска функции:\n\n```javascript\naddElement([1, 2, 3 ,4], 5); // [1, 2, 3, 4, 5]\naddElement([2, 13, 64], 0);  // [2, 13, 64, 0]\naddElement([2, 0], 56);      // [2, 0, 56]\naddElement([], 56);          // [56]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function addElement(arr, elm) {\n  arr.push(elm);\n  return arr;\n}",
+  "openTest": "it('Created function addElement', () => {\n  expect(addElement).to.be.a('function');\n});\n\nit('addElement([1, 2, 3 ,4], 10) should return [1, 2, 3 , 4, 10]', () => {\n  expect(addElement([1, 2, 3, 4], 10)).eql([1, 2, 3, 4, 10]);\n});\n\nit('addElement([26, 30 ], 0) should return [26, 30, 0]', () => {\n  expect(addElement([26, 30], 0)).eql([26, 30, 0]);\n});\n\nit('addElement([100], 200) should return [100, 200]', () => {\n  expect(addElement([100], 200)).eql([100, 200]);\n});\n\nit('addElement([], 505) should return [505]', () => {\n  expect(addElement([], 505)).eql([505]);\n});\n\nit('addElement([10, 20, 30 ,40, 50, 60, 70, 80, 90], 10000) should return [10, 20, 30 ,40, 50, 60, 70, 80, 90, 10000]', () => {\n  expect(addElement([10, 20, 30, 40, 50, 60, 70, 80, 90], 10000)).eql([\n    10, 20, 30, 40, 50, 60, 70, 80, 90, 10000,\n  ]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

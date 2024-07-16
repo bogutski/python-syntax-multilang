@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dda6",
+  "name": {
+    "en": "Define and display the string type in the console",
+    "ru": "Определите и выведите в консоль тип строки"
+  },
+  "instruction": {
+    "en": "Only one line. Write the command `console.log(typeof '100 + 100');` Be sure to use spaces and punctuation marks. There are single quotes, not double quotes. There is a semicolon at the end.",
+    "ru": "Только одна строка. Напишите команду `console.log(typeof '100 + 100');`\n\nСоблюдайте пробелы и знаки пунктуации. Тут одинарные кавычки, а не двойные. В конце точка с запятой."
+  },
+  "initialSolution": "",
+  "completedSolution": "console.log(typeof '100 + 100');",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal",
+  "hint": {
+    "en": "```javascript\nconsole.log(typeof '100 + 100');\n```",
+    "ru": "```javascript\nconsole.log(typeof '100 + 100');\n```"
+  }
+}

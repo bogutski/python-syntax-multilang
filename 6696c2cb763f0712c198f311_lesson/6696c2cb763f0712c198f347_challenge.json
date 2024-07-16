@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f347",
+  "name": {
+    "en": "/*",
+    "ru": "Планирование учебного графика"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `addCoursesToFront`, которая принимает два аргумента: массив с уже запланированными курсами и массив с новыми курсами для добавления.\n\nФункция должна добавлять все новые курсы в начало списка существующих курсов.\n\nВозвращаемое значение — обновленный массив курсов.\n\nПример запуска функции:\n```javascript\naddCoursesToFront(['Mathematics', 'English Literature'], ['Physics', 'Chemistry']);\n// ['Physics', 'Chemistry', 'Mathematics', 'English Literature']\n\naddCoursesToFront(['Literature', 'Biology'], ['Philosophy', 'Art History']);\n// ['Philosophy', 'Art History', 'Literature', 'Biology']\n\naddCoursesToFront([], ['Introduction to Programming']);\n// ['Introduction to Programming']\n```"
+  },
+  "initialSolution": "function addCoursesToFront(){\n\n}",
+  "completedSolution": "function addCoursesToFront(arr, newItems){\n  arr.unshift(...newItems);\n  return arr;\n}",
+  "openTest": "it('Created function addCoursesToFront', () => {\n  expect(addCoursesToFront).to.be.a('function');\n});\n\nit(\"addCoursesToFront(['Mathematics', 'English Literature'], ['Physics', 'Chemistry']) should return ['Physics', 'Chemistry', 'Mathematics', 'English Literature']\", () => {\n  expect(addCoursesToFront([\"Mathematics\", \"English Literature\"], [\"Physics\", \"Chemistry\"])).to.deep.equal([\"Physics\", \"Chemistry\", \"Mathematics\", \"English Literature\"]);\n});\n\nit(\"addCoursesToFront([], ['Biology', 'History']) should return ['Biology', 'History']\", () => {\n  expect(addCoursesToFront([], [\"Biology\", \"History\"])).to.deep.equal([\"Biology\", \"History\"]);\n});\n\nit(\"addCoursesToFront(['Philosophy'], ['Psychology']) should start with 'Psychology'\", () => {\n  const result = addCoursesToFront([\"Philosophy\"], [\"Psychology\"]);\n  expect(result[0]).to.equal(\"Psychology\");\n});\n\nit(\"addCoursesToFront(['Programming'], ['Data Structures', 'Algorithms']) should return ['Data Structures', 'Algorithms', 'Programming']\", () => {\n  expect(addCoursesToFront([\"Programming\"], [\"Data Structures\", \"Algorithms\"])).to.deep.equal([\"Data Structures\", \"Algorithms\", \"Programming\"]);\n});\n\nit(\"addCoursesToFront(['Art'], ['Music', 'Painting']) should have a length of 3\", () => {\n  expect(addCoursesToFront([\"Art\"], [\"Music\", \"Painting\"]).length).to.equal(3);\n});\n\nit(\"addCoursesToFront(['Economics'], []) should return ['Economics'] without changes\", () => {\n  expect(addCoursesToFront([\"Economics\"], [])).to.deep.equal([\"Economics\"]);\n});\n\nit(\"addCoursesToFront(['Geometry'], ['Calculus']) should include 'Calculus'\", () => {\n  expect(addCoursesToFront([\"Geometry\"], [\"Calculus\"])).to.include(\"Calculus\");\n});\n\nit(\"addCoursesToFront(['Marketing', 'Management'], ['Leadership']) should not include 'Cooking'\", () => {\n  expect(addCoursesToFront([\"Marketing\", \"Management\"], [\"Leadership\"])).to.not.include(\"Cooking\");\n});\n\nit(\"addCoursesToFront(['World History'], ['Ancient Civilizations']) should have 'Ancient Civilizations' as the first task\", () => {\n  const result = addCoursesToFront([\"World History\"], [\"Ancient Civilizations\"]);\n  expect(result[0]).to.equal(\"Ancient Civilizations\");\n});\n\nit(\"addCoursesToFront(['Sociology'], ['Anthropology', 'Psychology']) should return array with exactly 3 elements\", () => {\n  const result = addCoursesToFront([\"Sociology\"], [\"Anthropology\", \"Psychology\"]);\n  expect(result.length).to.equal(3);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

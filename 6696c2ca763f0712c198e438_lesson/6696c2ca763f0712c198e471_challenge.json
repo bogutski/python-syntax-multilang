@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e471",
+  "name": {
+    "en": "Put dots between the words",
+    "ru": "Проставить точки между словами"
+  },
+  "instruction": {
+    "en": "Write a function `insertDots` that takes 3 parameters:\n\n- `string1` - string 1\n- `string2` - string 2\n- `length` - total length of the string\n\nFor example, `string1 = 'abc'`, `string2 = 'def'`, `length = 10`.\n\nWe need the function to return the string `abc....def`, where `....` are dots to put between the words `abc` and `def` to make the length of the string equal to `length`.\n\nIf the length of the string `string1 + string2` is greater than or equal to `length`, the function should return the string `string1 + string2`.\n\nExamples of running the function:\n```javascript\ninsertDots('abc', 'def', 10); // 'abc....def'\ninsertDots('abc', 'def', 9); // 'abc...def'\ninsertDots('abc', 'def', 8); // 'abc..def'\ninsertDots('abc', 'def', 7); // 'abc.def'\n\ninsertDots('ab', 'ef', 6); // 'ab..ef'\ninsertDots('ab', 'ef', 5); // 'ab.ef'\ninsertDots('ab', 'ef', 4); // 'abef'\n```",
+    "ru": "Напиши функцию `insertDots`, которая принимает 3 параметра:\n\n- `string1` - строка 1\n- `string2` - строка 2\n- `length` - общая длина строки\n\nНапример, `string1 = 'abc'`, `string2 = 'def'`, `length = 10`.\n\nНадо чтобы функция вернула строку `abc....def`, где `....` - это точки, которые нужно поставить между словами `abc` и `def`, чтобы длина строки была равна `length`.\n\nЕсли длина строки `string1 + string2` больше или равна `length`, то функция должна вернуть строку `string1 + string2`.\n\nПримеры запуска функции:\n```javascript\ninsertDots('abc', 'def', 10); // 'abc....def'\ninsertDots('abc', 'def', 9); // 'abc...def'\ninsertDots('abc', 'def', 8); // 'abc..def'\ninsertDots('abc', 'def', 7); // 'abc.def'\n\ninsertDots('ab', 'ef', 6); // 'ab..ef'\ninsertDots('ab', 'ef', 5); // 'ab.ef'\ninsertDots('ab', 'ef', 4); // 'abef'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function insertDots(string1, string2, length) {\n  if (string1.length + string2.length >= length) {\n    return string1 + string2;\n  }\n  const dots = '.'.repeat(length - string1.length - string2.length);\n  return string1 + dots + string2;\n}",
+  "openTest": "it('Created function insertDots', () => {\n  expect(insertDots).to.be.a('function');\n});\n\nit('insertDots(\"abc\", \"def\", 10) should return \"abc....def\"', () => {\n  expect(insertDots('abc', 'def', 10)).to.equal('abc....def');\n});\n\nit('insertDots(\"abc\", \"def\", 9) should return \"abc...def\"', () => {\n  expect(insertDots('abc', 'def', 9)).to.equal('abc...def');\n});\n\nit('insertDots(\"abc\", \"def\", 8) should return \"abc..def\"', () => {\n  expect(insertDots('abc', 'def', 8)).to.equal('abc..def');\n});\n\nit('insertDots(\"abc\", \"def\", 7) should return \"abc.def\"', () => {\n  expect(insertDots('abc', 'def', 7)).to.equal('abc.def');\n});\n\nit('insertDots(\"ab\", \"ef\", 6) should return \"ab..ef\"', () => {\n  expect(insertDots('ab', 'ef', 6)).to.equal('ab..ef');\n});\n\nit('insertDots(\"ab\", \"ef\", 5) should return \"ab.ef\"', () => {\n  expect(insertDots('ab', 'ef', 5)).to.equal('ab.ef');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

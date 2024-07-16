@@ -1,0 +1,4 @@
+{
+  "name": "A string of numbers",
+  "instruction": "Fix a bug in the code so that the `stringOfNumbers` function returns a string consisting of numbers from min to max, including them.\n\nThe numbers must be separated by a space.\n\nExamples of running the function:\n```javascript\nstringOfNumbers(0, 0) // '0'\nstringOfNumbers(-2, 2) // '-2 -1 0 1 2'\nstringOfNumbers(10, 15) // '10 11 12 13 14 15'\n```"
+}

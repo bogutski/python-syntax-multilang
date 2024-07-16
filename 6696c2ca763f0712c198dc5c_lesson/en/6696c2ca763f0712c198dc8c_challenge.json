@@ -1,0 +1,6 @@
+{
+  "name": "The last letter of the line",
+  "instruction": "Create a variable named `str` and assign it the value of an arbitrary non-empty string.\nCreate a variable named `lastSymbol` and assign it the value of the last character of the string.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst name = 'Jonh';\nconst last = name[name.length - 1];\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst str = 'hello';\nconst lastSymbol = str[str.length - 1];\n```"
+}

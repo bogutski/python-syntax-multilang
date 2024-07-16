@@ -1,0 +1,82 @@
+{
+  "name": "JS Syntax. Dynamically typed variables",
+  "questions": {
+    "0": {
+      "name": "JavaScript is",
+      "variants": {
+        "0": {
+          "name": "strictly typed language"
+        },
+        "1": {
+          "name": "dynamically typed language"
+        },
+        "2": {
+          "name": "non-typed language"
+        }
+      }
+    },
+    "1": {
+      "name": "What types of data do you know in JavaScript?",
+      "variants": {
+        "0": {
+          "name": "text"
+        },
+        "1": {
+          "name": "string"
+        },
+        "2": {
+          "name": "integer"
+        },
+        "3": {
+          "name": "number"
+        }
+      }
+    },
+    "2": {
+      "description": "```\nconst x = 'string';\n```",
+      "name": "To get the type of data assigned to the x variable, you can use",
+      "variants": {
+        "0": {
+          "name": "typeof x"
+        },
+        "1": {
+          "name": "typeOf x"
+        },
+        "2": {
+          "name": "typeof(x)"
+        },
+        "3": {
+          "name": "x.type()"
+        }
+      }
+    },
+    "3": {
+      "name": "Select the correct statements about the typeof operator.",
+      "variants": {
+        "0": {
+          "name": "typeof returns a string that records what type of data the operand contains."
+        },
+        "1": {
+          "name": "typeof can be used as a \"typeof x\" operator and as a \"typeof(x)\" function."
+        },
+        "2": {
+          "name": "typeof can be used to define types of variables, simple values and expressions."
+        },
+        "3": {
+          "name": "Once typeof is used, the type of the variable cannot be changed."
+        }
+      }
+    },
+    "4": {
+      "name": "In JavaScript you do not need to specify the type of a variable when you create it. During the execution of a program, the type of the variable may change.",
+      "variants": {
+        "0": {
+          "name": "This statement is true"
+        },
+        "1": {
+          "name": "This statement is false"
+        }
+      }
+    }
+  }
+}

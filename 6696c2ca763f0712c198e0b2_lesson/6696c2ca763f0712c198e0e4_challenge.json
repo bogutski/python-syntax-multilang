@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e0e4",
+  "name": {
+    "en": "Hypotenuse in a right triangle",
+    "ru": "Гипотенуза в прямоугольном треугольнике"
+  },
+  "instruction": {
+    "en": "There is a right triangle.\n\nThe values of its cathetuses `a` and `b` are known.\n\nWrite a function `hypotenuse` that takes two parameters - the lengths of the cathetuses, and returns the length of the hypotenuse.\n\nPythagoras' Theorem will help you: `The square of the hypotenuse is equal to the sum of the squares of the cathetuses.`\n\n```javascript\na * a + b * b = c * c // where 'a' and 'b' are the cathetuses, 'c' is the hypotenuse.\n```\n\nTo find the hypotenuse, you have to take the square root of the sum of the squares of the cathetuses.\n```javascript\nc = (a * a + b * b) ** 0.5;\n```\n\nExamples of running the function:\n```javascript\nhypotenuse(3, 4); // 5\nhypotenuse(5, 12); // 13\nhypotenuse(1, 1); // 1.4142135623730951\n```",
+    "ru": "Имеется прямоугольный треугольник.\n\nИзвестны значения его катетов `a` и `b`.\n\nНапишите функцию `hypotenuse`, которая принимает два параметра — длины катетов, и возвращает длину гипотенузы.\n\nВам поможет Теорема Пифагора: `Квадрат гипотенузы равен сумме квадратов катетов.`\n\n```javascript\na * a + b * b = c * c // где 'а' и 'b' — катеты, 'c' — гипотенуза.\n```\n\nЧтобы найти гипотенузу, нужно взять квадратный корень из суммы квадратов катетов.\n```javascript\nc = (a * a + b * b) ** 0.5;\n```\n\nПримеры запуска функции:\n```javascript\nhypotenuse(3, 4); // 5\nhypotenuse(5, 12); // 13\nhypotenuse(1, 1); // 1.4142135623730951\n```"
+  },
+  "initialSolution": "function hyp(a, b){\n  return\n}",
+  "completedSolution": "function hypotenuse(a, b){\n  return (a * a + b * b) ** 0.5;\n}",
+  "openTest": "it('Created function hypotenuse', () => {\n  expect(hypotenuse).to.be.a('function');\n});\n\nit('Function hypotenuse returns correct result for arguments `3, 4', () => {\n  expect(hypotenuse(3, 4)).eq(5);\n});\n\nit('Function hypotenuse returns correct result for arguments `5, 12', () => {\n  expect(hypotenuse(5, 12)).eq(13);\n});\n\nit('Function hypotenuse returns correct result for arguments `21, 20', () => {\n  expect(hypotenuse(21, 20)).eq(29);\n});\n\nit('Function hypotenuse returns correct result for arguments `1, 1', () => {\n  expect(hypotenuse(1, 1)).eq(1.4142135623730951);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Define and display the string type in the console",
+  "instruction": "Only one line. Write the command `console.log(typeof '100 + 100');` Be sure to use spaces and punctuation marks. There are single quotes, not double quotes. There is a semicolon at the end.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log(typeof '100 + 100');\n```"
+}

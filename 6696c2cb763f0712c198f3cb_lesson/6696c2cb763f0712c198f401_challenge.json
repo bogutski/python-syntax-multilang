@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f401",
+  "name": {
+    "en": "/*",
+    "ru": "Извлечение и возвращение первых N элементов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Создайте функцию `extractFirstN`, которая принимает массив и число `N`.\n\nФункция должна удалить из массива первые `N` элементов и вернуть массив, содержащий удаленные элементы.\n\nЕсли `N` больше длины массива, функция должна извлечь и вернуть все элементы массива.\n\n\nПример запуска функции:\n```javascript\nextractFirstN([1, 2, 3], 5); // Должен вернуть [1, 2, 3], исходный массив станет []\nextractFirstN([1, 2, 3, 4, 5], 2); // Должен вернуть [1, 2], исходный массив станет [3, 4, 5]\nextractFirstN(['a', 'b', 'c', 'd'], 3); // Должен вернуть ['a', 'b', 'c'], исходный массив станет ['d']\nextractFirstN([true, false, true], 1); // Должен вернуть [true], исходный массив станет [false, true]\n```"
+  },
+  "initialSolution": "function extractFirstN(){\n\n}",
+  "completedSolution": "function extractFirstN(arr, num) {\n  return arr.splice(0, num);\n}",
+  "openTest": "it('Created function extractFirstN', () => {\n  expect(extractFirstN).to.be.a('function');\n});\n\nit('Function extractFirstN should include methods splice()', () => {\n  const res = extractFirstN.toString()\n  expect(res).to.include('.splice(')\n});\n\nit(\"extractFirstN([1, 2, 3, 4, 5], 2) should return [1, 2]\", () => {\n  expect(extractFirstN([1, 2, 3, 4, 5], 2)).to.deep.equal([1, 2]);\n});\n\nit(\"extractFirstN(['a', 'b', 'c', 'd'], 3) should return ['a', 'b', 'c']\", () => {\n  expect(extractFirstN(['a', 'b', 'c', 'd'], 3)).to.deep.equal(['a', 'b', 'c']);\n});\n\nit(\"extractFirstN(['a', 'b', 'c', 'd'], 10) should return ['a', 'b', 'c', 'd']\", () => {\n  expect(extractFirstN(['a', 'b', 'c', 'd'], 10)).to.deep.equal(['a', 'b', 'c', 'd']);\n});\n\nit(\"extractFirstN([true, false, true], 1) should return [true]\", () => {\n  expect(extractFirstN([true, false, true], 1)).to.deep.equal([true]);\n});\n\nit(\"extractFirstN([1, 2, 3], 5) should return [1, 2, 3] when N is greater than array length\", () => {\n  expect(extractFirstN([1, 2, 3], 5)).to.deep.equal([1, 2, 3]);\n});\n\n// Дополнительные тесты\nit(\"extractFirstN([], 1) should return an empty array if the input array is initially empty\", () => {\n  expect(extractFirstN([], 1)).to.deep.equal([]);\n});\n\nit(\"extractFirstN([1, 2, 3, 4, 5], 0) should return an empty array when N is 0\", () => {\n  expect(extractFirstN([1, 2, 3, 4, 5], 0)).to.deep.equal([]);\n});\n\nit(\"should verify that the original array is modified correctly after extraction\", () => {\n  let originalArray = [1, 2, 3, 4, 5];\n  extractFirstN(originalArray, 3);\n  expect(originalArray).to.deep.equal([4, 5]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

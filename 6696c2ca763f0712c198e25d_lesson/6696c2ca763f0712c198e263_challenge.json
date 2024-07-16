@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e263",
+  "name": {
+    "en": "",
+    "ru": "Определяем тип данных и возвращаем его"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напиши функцию `defineDataType`, которая принимает один параметр.\n\nПусть функция возвращает строку вида:\n`This is string.`, если переданная строка – строка,\n`This is number.`, если переданная строка – число,\n`This is boolean.`, если переданная строка – булево значение,\n\nПримеры запуска функции:\n```javascript\ndefineDataType('Hello'); // 'This is string.'\ndefineDataType(10); // 'This is number.'\ndefineDataType(true); // 'This is boolean.'\n```\n\nОбратите внимание, что в конце возвращаемой строки есть точка."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function defineDataType(value) {\n  const type = typeof value;\n  return 'This is ' + type + '.';\n}",
+  "openTest": "it('Created function defineDataType', () => {\n  expect(defineDataType).to.be.a('function');\n});\n\nit('defineDataType(\"Hello\") returns \"This is string.\"', () => {\n  expect(defineDataType('Hello')).to.be.equal('This is string.');\n});\n\nit('defineDataType(10) returns \"This is number.\"', () => {\n  expect(defineDataType(10)).to.be.equal('This is number.');\n});\n\nit('defineDataType(true) returns \"This is boolean.\"', () => {\n  expect(defineDataType(true)).to.be.equal('This is boolean.');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

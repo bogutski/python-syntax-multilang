@@ -1,0 +1,184 @@
+{
+  "name": "Перебор массива",
+  "questions": {
+    "0": {
+      "name": "Что такое итерация?",
+      "variants": {
+        "0": {
+          "name": "Блок кода, который повторяет сам себя, пока известное условие остаётся истинным"
+        },
+        "1": {
+          "name": "Блок кода, который повторяет только один раз"
+        },
+        "2": {
+          "name": "Блок кода, который не повторяется"
+        },
+        "3": {
+          "name": "Блок кода, который повторяет сам себя бесконечно"
+        }
+      }
+    },
+    "1": {
+      "name": "Что выведет в консоль следующий код?",
+      "description": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nfor (let i = 0; i <= arr.length; i++) {\n    console.log(arr[i]);\n}\n```",
+      "variants": {
+        "0": {
+          "name": "1 2 3 4 5"
+        },
+        "1": {
+          "name": "1 2 3 4 5 undefined"
+        },
+        "2": {
+          "name": "0 1 2 3 4 5 undefined"
+        },
+        "3": {
+          "name": "0 1 2 3 4 5"
+        }
+      }
+    },
+    "2": {
+      "name": "Выберите верный вариант продолжения кода для нахождения суммы всех элементов массива arr",
+      "description": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nlet sum = 0;\n```",
+      "variants": {
+        "0": {
+          "name": "for (let i = 0; i < arr.length; i++) {\n    sum += arr[i];\n};\nconsole.log(sum);"
+        },
+        "1": {
+          "name": "for (let i = 0; i < arr.length; i++) {\n    sum = sum + arr[i];\n};\nconsole.log(sum);"
+        },
+        "2": {
+          "name": "for (let i = 0; i <= arr.length; i++) {\n    sum += arr[i];\n};\nconsole.log(sum);"
+        },
+        "3": {
+          "name": "for (let i = 0; i > arr.length; i++) {\n    sum += arr[i];\n};\nconsole.log(sum);"
+        }
+      }
+    },
+    "3": {
+      "name": "Что надо написать в теле цикла, чтобы найти произведение всех элементов массива arr?",
+      "description": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nlet mult = 1;\nfor (let i = 0; i < arr.length; i++) {\n    ?????;\n};\nconsole.log(mult);\n```",
+      "variants": {
+        "0": {
+          "name": "mult *= i;"
+        },
+        "1": {
+          "name": "mult *= arr[i];"
+        },
+        "2": {
+          "name": "mult = mult * arr[i];"
+        },
+        "3": {
+          "name": "mult *= arr;"
+        }
+      }
+    },
+    "4": {
+      "name": "Выберите верный вариант продолжения кода для разворачивания массива arr",
+      "description": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nconst reverse = [];\n```",
+      "variants": {
+        "0": {
+          "name": "for (let i = arr.length; i >= 0; i--) {\n    reverse.push(arr[i]);\n};\nconsole.log(reverse);"
+        },
+        "1": {
+          "name": "for (let i = 0; i < arr.length; i++) {\n    reverse.push(arr[i]);\n};\nconsole.log(reverse);"
+        },
+        "2": {
+          "name": "for (let i = 0; i < arr.length; i++) {\n    reverse.unshift(arr[i]);\n};\nconsole.log(reverse);"
+        },
+        "3": {
+          "name": "for (let i = arr.length - 1; i >= 0; i--) {\n    reverse.push(arr[i]);\n};\nconsole.log(reverse);"
+        }
+      }
+    },
+    "5": {
+      "name": "Что выведет в консоль код ниже?",
+      "description": "```javascript\nconst arr = [2, 3, 4];\nlet sum = 0;\nfor (let i = 0; i <= arr.length; i++) {\n    sum += arr[i];\n};\nconsole.log(sum)\n```",
+      "variants": {
+        "0": {
+          "name": "NaN"
+        },
+        "1": {
+          "name": "9"
+        },
+        "2": {
+          "name": "2 3 4"
+        },
+        "3": {
+          "name": "undefined"
+        }
+      }
+    },
+    "6": {
+      "name": "Выберите верный знак вместо знака вопроса в коде ниже",
+      "description": "```javascript\nconst arr= [10, 20, 30, 40];\nlet sum = 0;\nfor(let i = 0; i ? arr.length; i++){\n  sum += arr[i];\n}\nconsole.log(sum);\n```",
+      "variants": {
+        "0": {
+          "name": ">"
+        },
+        "1": {
+          "name": ">="
+        },
+        "2": {
+          "name": "<"
+        },
+        "3": {
+          "name": "<="
+        }
+      }
+    },
+    "7": {
+      "name": "Что выведет в консоль код ниже?",
+      "description": "```javascript\nconst arr= [10, 20, 30, 40];\nlet dif = 0;\nfor(let i = 0; i < arr.length; i++){\n  dif -= arr[i];\n}\nconsole.log(dif);\n```",
+      "variants": {
+        "0": {
+          "name": "-100"
+        },
+        "1": {
+          "name": "-40"
+        },
+        "2": {
+          "name": "-80"
+        },
+        "3": {
+          "name": "NaN"
+        }
+      }
+    },
+    "8": {
+      "name": "Что выведет в консоль код ниже?",
+      "description": "```javascript\nconst arr= [10, 20, 30, 40];\nlet sum = 0;\nfor(let i = arr.length - 1; i >= 0 ; i--){\n  sum += arr[i];\n}\nconsole.log(sum);\n```",
+      "variants": {
+        "0": {
+          "name": "NaN"
+        },
+        "1": {
+          "name": "100"
+        },
+        "2": {
+          "name": "90"
+        },
+        "3": {
+          "name": "Этот код не выполнится"
+        }
+      }
+    },
+    "9": {
+      "name": "Что выведет в консоль код ниже?",
+      "description": "```javascript\nconst arr= [10, 2, 50];\nlet mult = 0;\nfor(let i = 0; i < arr.length; i++){\n  mult *= arr[i];\n}\nconsole.log(mult);\n```",
+      "variants": {
+        "0": {
+          "name": "1000"
+        },
+        "1": {
+          "name": "62"
+        },
+        "2": {
+          "name": "0"
+        },
+        "3": {
+          "name": "100"
+        }
+      }
+    }
+  }
+}

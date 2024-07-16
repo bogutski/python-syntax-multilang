@@ -1,0 +1,5 @@
+{
+  "name": "The function returns the first character of the string",
+  "instruction": "Write a function `firstSymbol` that takes a string and returns the first character of that string.\n\nExamples of running the function:\n```javascript\nfirstSymbol('abc'); // 'a'\nfirstSymbol('JS'); // 'J'\n```",
+  "instructions": {}
+}

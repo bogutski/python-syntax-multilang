@@ -1,0 +1,5 @@
+{
+  "name": "Сколько рулонов обоев надо купить?",
+  "instruction": "Напишите функцию с именем `numberOfWallpapers`, которая принимает параметры:\n* `squareWall` – площадь стен в комнате, в квадратных футах;\n* `wallpaperWidth` – ширина рулона обоев, в футах.\n* `wallpaperLength` – длина рулона обоев, в футах.\n\nПусть функция возвращает минимальное количество рулонов обоев, которые необходимо купить для ремонта.\n\n```javascript\nnumberOfWallpapers(20, 5, 5) // 1\nnumberOfWallpapers(25, 5, 5) // 1\nnumberOfWallpapers(30, 5, 5) // 2\nnumberOfWallpapers(35, 5, 5) // 2\n```",
+  "instructions": {}
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Checking subarrays for numbers",
+  "instruction": "Write a function `areAllNumbers` that takes an array of arrays.\n\nThe function should return an array of arrays with boolean values that indicate whether all elements of the subarray are numbers.\n\nFor example: `[ [1, 2], ['a', 'b'], [123, 741] ]` should return `[ [true], [false], [true] ]`.\n\nIf the outer array is empty, the function should return the string 'Array is empty'.\n\nThe inner arrays will not be empty.\n\n\nFunction execution examples:\n```javascript\nareAllNumbers([ ['1', '2'], [3, 5], [true, false] ]);           // [[false], [true], [false]]\nareAllNumbers([ [5, 'true'], ['test', 7], [null, 'null'] ]);    // [[false], [false], [false]]\nareAllNumbers([ [155, 0, 36], [-52, 5, 10], [1, -2, 3, -4] ]);  // [[true], [true], [true]]\nareAllNumbers([ ]);                                             // 'Array is empty'\n```",
+  "instructions": {}
+}

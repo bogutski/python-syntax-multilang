@@ -1,0 +1,5 @@
+{
+  "name": "Исправьте текст, чтобы все предложения заканчивались точкой",
+  "instruction": "Напишите функцию `replacePunctuation`, которая принимает строку.\nСтрока - произвольный текст, составленный из одного или нескольких предложений, разделенных разными знаками препинания.\nФункция должна вернуть новую строку, в которой все `!` и `?` заменены на точки.\n\nПримеры запуска функции:\n```javascript\nreplacePunctuation('Hello! How are you?'); // 'Hello. How are you.'\nreplacePunctuation('Hi! What is your name again? Is it Alice? I am so sorry. How could I forget?'); // 'Hi. What is your name again. Is it Alice. I am so sorry. How could I forget.'\nreplacePunctuation('Hello! My name is Alice. I am 20 years old. I am a student.'); // 'Hello. My name is Alice. I am 20 years old. I am a student.'\nreplacePunctuation(''); // ''",
+  "instructions": {}
+}

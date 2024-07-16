@@ -1,0 +1,4 @@
+{
+  "name": "Invert letter case",
+  "instruction": "Write a function `invertCase` that takes 1 parameter - a string of 4 letters.\n\nThe function should return a string in which each letter is reversed.\n\nExamples of running the function:\n```javascript\ninvertCase('ABCD') // 'abcd'\ninvertCase('AbCd') // 'aBcD'\ninvertCase('aBcD') // 'AbCd'\n\ninvertCase('aBcDq') // 'Long string'\n```\n\nAs you can see from the examples, the function should only work with strings of 4 letters.\n\nIf the string is larger than 4 letters, the function should return a 'Long string'.\n\nUse string concatenation to solve the problem. Example:\n```javascript\nlet str = 'abc';\nstr = str + '123';\nconsole.log(str); // 'abc123'\nstr = str + '456';\nconsole.log(str); // 'abc123456'\n```\n\nOr shorter version:\n```javascript\nlet str = 'abc';\nstr += '123';\nconsole.log(str); // 'abc123'\nstr += '456';\nconsole.log(str); // 'abc123456'\n```"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Will everyone fit on the bus?",
+  "instruction": "The bus travels through stops. At each stop some number of people get on.\n\nWrite a function `isBusCanTakeAll` that takes as parameters:\n* `busCapacity` - the capacity of the bus,\n* `onTheBus` - the number of people on the bus before the start of the trip,\n* `countStops` - number of stops,\n* `peopleIn` - how many people enter at each stop. The same number of people enter at each stop.\n\nLet the function return `true` if all people fit on the bus, and `false` otherwise."
+}

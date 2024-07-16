@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ef49",
+  "name": {
+    "en": "",
+    "ru": "Подсчитать количество типов элементов в массиве"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `countElementTypes`, которая принимает массив элементов произвольного типа.\n\nФункция должна вернуть объект, в котором указано сколько элементов каждого типа было в массиве.\n\nНапример, для массива `['a', 'b', 1, 2, 3, true]` функция должна вернуть `{string: 2, number: 3, boolean: 1}`.\n\nЕсли массив пустой, то функция должна вернуть строку `'Array has no elements'`.\n\n\nПримеры запуска функции:\n```javascript\ncountElementTypes([])                           // 'Array has no elements'\ncountElementTypes([[], {}])                     // {object: 2}\ncountElementTypes([1, 2, 3, 4, 5])              // {number: 5}\ncountElementTypes(['a', 'b', 'c', 1, 2, 3])     // {string: 3, number: 3}\ncountElementTypes(['a', true, null, undefined]) // {string: 1, boolean: 1, object: 1, undefined: 1}\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function countElementTypes(arr){\n  if(!arr.length) return 'Array has no elements'\n  const objTypes = {};\n  for (let i = 0; i < arr.length; i++){\n    if(objTypes.hasOwnProperty(typeof arr[i])) objTypes[typeof arr[i]]++\n    else objTypes[typeof arr[i]] = 1\n  }\n  return objTypes;\n}",
+  "openTest": "it('Created function countElementTypes', () => {\n  expect(countElementTypes).to.be.a('function');\n});\n\nit(\"countElementTypes(['a', 'b', 'c', 1, 2, 3]) should return {string: 3, number: 3}\", () => {\n  expect(countElementTypes(['a', 'b', 'c', 1, 2, 3])).to.deep.equal({string: 3, number: 3});\n});\n\nit(\"countElementTypes(['a', 'b', 'c', true, false, null, undefined]) should return {string: 3, boolean: 2, object: 1, undefined: 1}\", () => {\n  expect(countElementTypes(['a', 'b', 'c', true, false, null, undefined])).to.deep.equal({string: 3, boolean: 2, object: 1, undefined: 1});\n});\n\nit(\"countElementTypes([1, 2, 3, 4, 5]) should return {number: 5}\", () => {\n  expect(countElementTypes([1, 2, 3, 4, 5])).to.deep.equal({number: 5});\n});\n\nit(\"countElementTypes([[], {}, null]) should return {object: 3}\", () => {\n  expect(countElementTypes([[], {}, null])).to.deep.equal({object: 3});\n});\n\nit('countElementTypes([{name: \"John\"}, [1,2,3], true, 50, undefined, null, \"hello\", NaN, 123890n]) should return' +\n  ' {object: 3, boolean: 1, number: 2, undefined: 1, string: 1, bigint: 1}', () => {\n  expect(countElementTypes([{name: \"John\"}, [1,2,3], true, 50, undefined, null, \"hello\", NaN, 123890n])).to.deep.equal({object: 3, boolean: 1, number: 2, undefined: 1, string: 1, bigint: 1});\n});\n\nit(\"countElementTypes([]) should return 'Array has no elements'\", () => {\n  expect(countElementTypes([])).to.equal('Array has no elements');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

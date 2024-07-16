@@ -1,0 +1,183 @@
+{
+  "name": "Поменять местами первое и последнее слово в строке",
+  "questions": {
+    "0": {
+      "name": "О каких способах перестановки мест первого с последним слов в строке говорится в лекции?",
+      "variants": {
+        "0": {
+          "name": "Использование методов split() и join()"
+        },
+        "1": {
+          "name": "Использование методов split() и reverse()"
+        },
+        "2": {
+          "name": "Использование нескольких циклов for"
+        },
+        "3": {
+          "name": "Использование объекта"
+        }
+      }
+    },
+    "1": {
+      "name": "Что делает метод `split()` со строкой в примере ниже?",
+      "description": "```javascript\nconst str = 'Monday through Friday';\nconst arr = str.split(' ');\n```",
+      "variants": {
+        "0": {
+          "name": "Преобразует строку в объект с ключами, соответствующими словам в строке"
+        },
+        "1": {
+          "name": "Преобразует строку в массив в виде ['Monday', 'through', 'Friday']"
+        },
+        "2": {
+          "name": "Преобразует строку в массив в виде ['Monday through Friday']"
+        },
+        "3": {
+          "name": "Преобразует строку в массив строк с разделением по пробелу"
+        }
+      }
+    },
+    "2": {
+      "name": "К чему применяется метод `join()` и что он выполняет?",
+      "variants": {
+        "0": {
+          "name": "Метод применяется к строке и объединяет слова в строке в одно слово"
+        },
+        "1": {
+          "name": "Метод применяется к массиву и объединяет все элементы массива в строку по заданному разделителю"
+        },
+        "2": {
+          "name": "Метод применяется к массивам и объединяет массивы в один массив по заданному разделителю"
+        },
+        "3": {
+          "name": "Метод применяется к массиву и переводит все элементы массива в объект"
+        }
+      }
+    },
+    "3": {
+      "name": "Выберите верный вариант результата запуска кода ниже",
+      "description": "```javascript\nconst str = 'seven plus zero equal 7';\nconst arr = str.split(' ');\nconst first = arr[0];\nconst last = arr[arr.length - 1];\narr[0] = arr[arr.length - 1];\narr[arr.length - 1] = first;\nconst res = arr.join(' ');\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "'7 plus zero equal seven'"
+        },
+        "1": {
+          "name": "'7 plus zero equal 7'"
+        },
+        "2": {
+          "name": "[7 plus zero equal seven]"
+        },
+        "3": {
+          "name": "['7', 'plus', 'zero', 'equal', 'seven']"
+        }
+      }
+    },
+    "4": {
+      "name": "Как можно сократить код ниже без потери функциональности?",
+      "description": "```javascript\nconst str = 'Alex met Mary';\nconst arr = str.split(' ');\nconst first = arr[0];\nconst last = arr[arr.length - 1];\narr[0] = last;\narr[arr.length - 1] = first;\nconst res = arr.join(' ');\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "На 5-ой написать arr[0] = arr[arr.length - 1];"
+        },
+        "1": {
+          "name": "Удалить 4 строчку кода, а на 5-ой написать arr[0] = arr[arr.length - 1];"
+        },
+        "2": {
+          "name": "Удалить 4 строчку кода"
+        },
+        "3": {
+          "name": "Удалить 4 строчку кода, а на 5-ой присвоить значению первого элемента массива значение последнего"
+        }
+      }
+    },
+    "5": {
+      "name": "Что выведется в консоль после запуска кода ниже?",
+      "description": "```javascript\nconst str = 'first could be last';\nlet start = '';\nfor(let i = 0; i < str.length; i++) {\n    if(str[i] === ' ') break;\n    else start += str[i];\n}\nconsole.log(start);\n```",
+      "variants": {
+        "0": {
+          "name": "'last'"
+        },
+        "1": {
+          "name": "Последний элемент строки"
+        },
+        "2": {
+          "name": "'first'"
+        },
+        "3": {
+          "name": "Первый элемент строки"
+        }
+      }
+    },
+    "6": {
+      "name": "Что надо написать вместо ??? во втором цикле, чтобы получить последний элемент строки?",
+      "description": "```javascript\nconst str = 'first could be last';\nlet start = '';\nlet end = '';\nfor(let i = 0; i < str.length; i++) {\n    if(str[i] === ' ') break;\n    else start += str[i];\n}\nfor(??????????????) {\n    if(str[i] === ' ') break;\n    else end = str[i]  + end;\n}\nconsole.log(end);\n```",
+      "variants": {
+        "0": {
+          "name": "(let i = str.length; i >= 0; i--)"
+        },
+        "1": {
+          "name": "(let i = str.length-1; i >= 0; i--)"
+        },
+        "2": {
+          "name": "(let i = str.length-1; i > 0; i--)"
+        },
+        "3": {
+          "name": "(let i = 0; i < str.length; i++)"
+        }
+      }
+    },
+    "7": {
+      "name": "Для чего используется оператор `break` в циклах ниже?",
+      "description": "```javascript\nconst str = 'x - 5 = y';\nlet start = '';\nlet end = '';\nfor(let i = 0; i < str.length; i++) {\n    if(str[i] === ' ') break;\n    else start += str[i];\n}\nfor(let i = str.length-1; i >= 0; i--) {\n    if(str[i] === ' ') break;\n    else end = str[i]  + end;\n}\n```",
+      "variants": {
+        "0": {
+          "name": "Для прерывания выполнения цикла как только встретится пробел в начале строки и в конце строки"
+        },
+        "1": {
+          "name": "Для остановки цикла если он бесконечный"
+        },
+        "2": {
+          "name": "Для прерывания работы функции"
+        },
+        "3": {
+          "name": "Для прерывании выполнения цикла как только встретится буква 'x'"
+        }
+      }
+    },
+    "8": {
+      "name": "Выберите верный вариант результата выполнения кода ниже",
+      "description": "```javascript\nconst str = 'first could be last';\nlet start = '';\nlet end = '';\nlet startSpaceIndex, endSpaceIndex;\nlet res = '';\nfor(let i = 0; i < str.length; i++) {\n  if (str[i] === ' ') {\n    startSpaceIndex = i;\n    break;\n  } else start += str[i];\n}\nfor(let i = str.length-1; i >= 0; i--) {\n    if(str[i] === ' ') {\n    endSpaceIndex = i;\n     break;\n    } else end = str[i]  + end;            \n}\nres = end;\nfor(let i = startSpaceIndex; i <= endSpaceIndex; i++) {\n  res += str[i];\n}\nres += start;\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "'first could be last'"
+        },
+        "1": {
+          "name": "[last could be first]"
+        },
+        "2": {
+          "name": "'last could be first'"
+        },
+        "3": {
+          "name": "['last', 'could', 'be', 'first']"
+        }
+      }
+    },
+    "9": {
+      "name": "Верно ли что результатом запуска кода ниже будет `'sunrise precedes the sunset'`?",
+      "description": "```javascript\nconst str = 'sunset precedes the sunrise';\nlet first = '';\nlet last = '';\nlet firstSpaceIndex, lastSpaceIndex;\nlet res = '';\nfor(let i = 0; i < str.length; i++) {\n  if (str[i] === ' ') {\n    firstSpaceIndex = i;\n    break;\n  } else first += str[i];\n}\nfor(let i = str.length-1; i >= 0; i--) {\n    if(str[i] === ' ') {\n    lastSpaceIndex = i;\n     break;\n    } else last = str[i]  + last;            \n}\nres = last;\nfor(let i = firstSpaceIndex; i <= lastSpaceIndex; i++) {\n  res += str[i];\n}\nres += first;\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "Неверно, результатом будет 'sunset precedes the sunrise'"
+        },
+        "1": {
+          "name": "Неверно, результатом будет 'the sunrise precedes the sunset'"
+        },
+        "2": {
+          "name": "Неверно, результатом будет 'sunsetprecedesthesunrise'"
+        },
+        "3": {
+          "name": "Верно, результатом будет 'sunrise precedes the sunset'"
+        }
+      }
+    }
+  }
+}

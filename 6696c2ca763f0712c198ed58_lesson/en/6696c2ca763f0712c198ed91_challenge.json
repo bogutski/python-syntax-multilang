@@ -1,0 +1,4 @@
+{
+  "name": "Find a duplicate of the last word in the string",
+  "instruction": "Write a function `lastDuplicate` that takes a string and returns `true` if there is a duplicate of the last word in the string `str`, `false` otherwise.\n\nThere is only one space between words.\n\nIf the string is empty or has one word in it (in other words, no spaces), the function should return `false`.\n\nExamples of running the function:\n```javascript\nlastDuplicate('Little A from Column A'); // true\nlastDuplicate('Fight Fire With Fire') // true\nlastDuplicate('a wolf, Lone Wolf'); // false\nlastDuplicate('Raining Cats and Dogs') // false\nlastDuplicate('Little Art from Column Ar') // false\n```"
+}

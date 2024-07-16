@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198efbb",
+  "name": {
+    "en": "",
+    "ru": "Сумма четных и нечетных чисел в массиве"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `sumOfEvenAndOdd`, которая принимает массив чисел.\n\nФункция должна суммировать все четные и нечетные числа отдельно и возвращать строку вида:\n\n* `Sum of even numbers is <sumEven>, sum of odd numbers is <sumOdd>`, где `<sumEven>` - сумма четных чисел, `<sumOdd>` - сумма нечетных чисел.\n\nЕсли массив пустой, то вернуть строку `Array has no numbers`.\n\n\nПримеры запуска функции:\n```javascript\nsumOfEvenAndOdd([1,2,3,4]);              // \"Sum of even numbers is 6, sum of odd numbers is 4\"\nsumOfEvenAndOdd([1,2,3,4,5,6,7,8,9,10]); // \"Sum of even numbers is 30, sum of odd numbers is 25\"\nsumOfEvenAndOdd([123, -55, 40, 27]);     // \"Sum of even numbers is 40, sum of odd numbers is 95\"\nsumOfEvenAndOdd([]);                     // \"Array has no numbers\"\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sumOfEvenAndOdd(arr){\n  if(!arr.length) return 'Array has no numbers';\n  let sumEven = 0;\n  let sumOdd = 0;\n  for (let i = 0; i < arr.length; i++){\n      if (arr[i] % 2) sumOdd += arr[i]\n      else sumEven += arr[i]\n  }\n  return `Sum of even numbers is ${sumEven}, sum of odd numbers is ${sumOdd}`\n}",
+  "openTest": "it('Created function sumOfEvenAndOdd', () => {\n  expect(sumOfEvenAndOdd).to.be.a('function');\n});\n\nit('sumOfEvenAndOdd([1,2,3,4]) should return \"Sum of even numbers is 6, sum of odd numbers is 4\"', () => {\n  expect(sumOfEvenAndOdd([1,2,3,4])).to.equal('Sum of even numbers is 6, sum of odd numbers is 4');\n});\n\nit('sumOfEvenAndOdd([1,2,3,4,5,6,7,8,9,10]) should return \"Sum of even numbers is 30, sum of odd numbers is 25\"', () => {\n  expect(sumOfEvenAndOdd([1,2,3,4,5,6,7,8,9,10])).to.equal('Sum of even numbers is 30, sum of odd numbers is 25');\n});\n\nit('sumOfEvenAndOdd([123, -52, -78, 56, 5, -63, 7, 32]) should return \"Sum of even numbers is -42, sum of odd numbers is 72\"', () => {\n  expect(sumOfEvenAndOdd([123, -52, -78, 56, 5, -63, 7, 32])).to.equal('Sum of even numbers is -42, sum of odd numbers is 72');\n});\n\nit('sumOfEvenAndOdd([2, 4, 6, 8, 10, 66]) should return \"Sum of even numbers is 96, sum of odd numbers is 0\"', () => {\n  expect(sumOfEvenAndOdd([2, 4, 6, 8, 10, 66])).to.equal('Sum of even numbers is 96, sum of odd numbers is 0');\n});\n\nit('sumOfEvenAndOdd([1, 3, 5, 7, 9, 11]) should return \"Sum of even numbers is 0, sum of odd numbers is 36\"', () => {\n  expect(sumOfEvenAndOdd([1, 3, 5, 7, 9, 11])).to.equal('Sum of even numbers is 0, sum of odd numbers is 36');\n});\n\nit('sumOfEvenAndOdd([]) should return \"Array has no numbers\"', () => {\n  expect(sumOfEvenAndOdd([])).to.equal('Array has no numbers');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

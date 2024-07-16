@@ -1,0 +1,4 @@
+{
+  "name": "Multiply the number to the given power",
+  "instruction": "Write a function `power` that takes 2 parameters.\n\nThe first parameter is a number to be raised to a power.\n\nThe second parameter is the power to which the number is to be raised.\n\nThe function should return the number, raised to the specified power.\n\nExamples:\n ```javascript\npower(2, 3) // 8\npower(3, 2) // 9\npower(3, 3) // 27\npower(2, 10) // 1024\npower(10, 2) // 100\n```"
+}

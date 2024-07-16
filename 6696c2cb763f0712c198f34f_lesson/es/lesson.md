@@ -1,0 +1,1 @@
+# Array.prototype.pop() – удаляет последний элемент массива language: es

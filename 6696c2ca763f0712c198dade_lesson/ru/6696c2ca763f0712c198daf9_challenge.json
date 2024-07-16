@@ -1,0 +1,6 @@
+{
+  "name": "Исправьте ошибки в коде - 2",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-4.png)\n\nТребуется вывести в консоль фразу: 'Happy New Year!'.\n\nИсправьте ошибки в приведенном коде.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log('Happy New Year!');\n```"
+}

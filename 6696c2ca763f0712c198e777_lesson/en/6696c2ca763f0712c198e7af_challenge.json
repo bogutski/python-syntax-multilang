@@ -1,0 +1,4 @@
+{
+  "name": "Changing the first three elements of an array",
+  "instruction": "Write a function `addLetter` that takes one parameter, an array.\n\nThe array contains 4 elements. \n\nThe first 3 are strings. \n\nThe fourth element is a nested array with three rows.\n\nThe nested array is at the end of the array.\n\nEach line of the main and nested array contains one letter.\n\nAn example of a given array:\n`['a', 'b', 'c', ['a', 'b', 'c']]`\n\nConnect the first element of the array with the first element of the nested array in upper case.\n\nConnect the second element of the array to the second element of the nested array in upper case.\n\nConnect the third element of the array to the third element of the nested array in uppercase.\n\nThe function should return the modified array.\n\nAn example of running the function:\n```javascript\naddLetter(['a', 'd', 'g', ['j', 'm', 'p']]) // ['aJ', 'dM', 'gP', ['j', 'm', 'p']]\n```"
+}

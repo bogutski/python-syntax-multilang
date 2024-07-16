@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eaf7",
+  "name": {
+    "en": "Add an inverted string to the array",
+    "ru": "Добавить перевернутую строку в массив"
+  },
+  "instruction": {
+    "en": "Write a function `reverseString` that takes a string - `string` and a character - `breakPoint`.\n\nCreate a loop that will go from the end of the string and add characters to the array, using the `push` method.\n\nThe loop should stop if it encounters a symbol `breakPoint`.\n\nReturn the array.\n\n\nAn example of running a function:\n```js\nreverseString('hello', 'l') // ['o']\nreverseString('hello', 'w') // ['o', 'l', 'l', 'e', 'h']\nreverseString('javascript', 'a') // ['t', 'p', 'i', 'r', 'c', 's']\nreverseString('', 'p') // []\n```",
+    "ru": "Напишите функцию `reverseString`, которая принимает строку - `string` и символ - `breakPoint`.\n\nСоздайте цикл, который будет идти с конца строки и добавлять в массив символы, методом `push`.\n\nПри этом цикл должен остановиться, если встретит символ `breakPoint`.\n\nВерните массив.\n\n\nПример запуска функции:\n```js\nreverseString('hello', 'l') // ['o']\nreverseString('hello', 'w') // ['o', 'l', 'l', 'e', 'h']\nreverseString('javascript', 'a') // ['t', 'p', 'i', 'r', 'c', 's']\nreverseString('', 'p') // []\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseString(string, breakPoint) {\n  const arr = [];\n  for (let i= string.length - 1; i >= 0; i--) {\n    if(string[i] === breakPoint) break;\n    arr.push(string[i]);\n  }\n  return arr;\n}",
+  "openTest": "it('Created function reverseString', () => {\n  expect(reverseString).to.be.a('function');\n});\n\nit(\"reverseString('hello', 'l') should return ['o']\", () => {\n  expect(reverseString('hello', 'l')).to.be.eql(['o']);\n});\n\nit(\"reverseString('hello', 'e') should return ['o', 'l', 'l']\", () => {\n  expect(reverseString('hello', 'e')).to.be.eql(['o', 'l', 'l']);\n});\n\nit(\"reverseString('javascript', 'a') should return ['t', 'p', 'i', 'r', 'c', 's']\", () => {\n  expect(reverseString('javascript', 'a')).to.be.eql(['t', 'p', 'i', 'r', 'c', 's']);\n});\n\nit(\"reverseString('javascript', 's') should return ['t', 'p', 'i', 'r', 'c']\", () => {\n  expect(reverseString('javascript', 's')).to.be.eql(['t', 'p', 'i', 'r', 'c']);\n});\n\nit(\"reverseString('apples', 'p') should return ['s', 'e', 'l']\", () => {\n  expect(reverseString('apples', 'p')).to.be.eql(['s', 'e', 'l']);\n});\n\nit(\"reverseString('', 'p') should return []\", () => {\n  expect(reverseString('', 'p')).to.be.eql([]);\n});\n\nit(\"reverseString('loop', '') should return ['p', 'o', 'o', 'l']\", () => {\n  expect(reverseString('loop', '')).to.be.eql(['p', 'o', 'o', 'l']);\n});\n\nit(\"reverseString('watermelon', 'S') should return ['n', 'o', 'l', 'e', 'm', 'r', 'e', 't', 'a', 'w']\", () => {\n  expect(reverseString('watermelon', 'S')).to.be.eql(['n', 'o', 'l', 'e', 'm', 'r', 'e', 't', 'a', 'w']);\n});\n\nit(\"reverseString('', '') should return []\", () => {\n  expect(reverseString('', '')).to.be.eql([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

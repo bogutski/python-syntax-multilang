@@ -1,0 +1,5 @@
+{
+  "name": "Строка начинается и заканчивается на один и тот же символ",
+  "instruction": "Напишите функцию `isSameStartAndEnd`, которая принимает строку и возвращает `true`, если строка начинается и заканчивается на один и тот же символ.\n\nНе учитывайте пробелы в начале и конце строки.\n\nНе чувствительна к регистру.\n\nПримеры:\n```javascript\nisSameStartAndEnd('a'); // true\nisSameStartAndEnd('  aa'); // true\nisSameStartAndEnd('abA '); // true\nisSameStartAndEnd('a b a '); // true\nisSameStartAndEnd('a b b'); // false\nisSameStartAndEnd('a b a b'); // false\n```",
+  "instructions": {}
+}

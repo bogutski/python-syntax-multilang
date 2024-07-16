@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df1c",
+  "name": {
+    "en": "Write an empty function `hello`.",
+    "ru": "Напишите пустую функцию `hello`"
+  },
+  "instruction": {
+    "en": "Write an empty function `hello`.\n\nAn example of an empty `time` function:\n```javascript\nfunction time() {}\n```",
+    "ru": "Напишите пустую функцию `hello`.\n\nПример пустой функции `time`:\n```javascript\nfunction time() {}\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function hello() {}",
+  "openTest": "it('Created function hello', () => {\n  expect(hello).to.be.a('function');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

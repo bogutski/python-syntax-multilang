@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df24",
+  "name": {
+    "en": "The function outputs the type 'number' to the console",
+    "ru": "Функция выводит в консоль тип 'number'"
+  },
+  "instruction": {
+    "en": "Write a function `showNumberType` that determines and outputs\nto the console what the data type of the number `5` is.\n\nTo determine the type, use the `typeof` operator.\n\n```javascript\ntypeof 15\n```\n\nIf you want to output to the console:\n```javascript\nconsole.log(typeof 15);\n```\n\nWrite a function that will output to the console with the type of number `5`;",
+    "ru": "Напишите функцию `showNumberType`, которая определяет и выводит\nв консоль чему равен тип данных числа `5`.\n\nЧтобы определить тип, используйте оператор `typeof`.\n\n```javascript\ntypeof 15\n```\n\nЕсли нужно вывести в консоль:\n```javascript\nconsole.log(typeof 15);\n```\n\nНапишите функцию, в которой будет вывод в консоль с определением типа числа `5`;"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function showNumberType() {\n  console.log(typeof 5);\n}",
+  "openTest": "it('Created function showNumberType', () => {\n  expect(showNumberType).to.be.a('function');\n});\n\nconst entire = showNumberType.toString();\nconst body = entire.slice(entire.indexOf('{') + 1, entire.lastIndexOf('}')).trim();\nconst strings = body.split('\\n');\n\nit('Functions contains console.log with typeof 5', () => {\n  expect(body).contains('console.log(typeof 5)');\n});\n\nit('Function contains 1 console log', () => {\n  const occurrences = body.split('console.log').length - 1;\n  expect(occurrences).eq(1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

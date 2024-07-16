@@ -1,0 +1,6 @@
+{
+  "name": "\"I am studying JS programming\"",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-2.png)\n\nPrint the phrase `I am learning JS programming` to the console.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log('I am studying JS programming');\n```"
+}

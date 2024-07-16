@@ -1,0 +1,4 @@
+{
+  "name": "Find the maximum number of two",
+  "instruction": "Write a function `maxFromTwo` that takes two numbers and returns the largest of them.\n\nUse the `if` operator or a ternary operator.\n\nThe signs  `>`, `<` are used to compare numbers.\n\nHere's a similar example, but in this one we'll look for the smallest number of two:\n```javascript\nfunction minFromTwo(num1, num2) {\nif (num1 < num2) {\nreturn num1;\n} else {\nreturn num2;\n}\n}\n```\n\nAnd if they are equal, we return either of them."
+}

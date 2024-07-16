@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dc1d",
+  "name": {
+    "en": "What type is null?",
+    "ru": "Какой тип имеет значение undefined?"
+  },
+  "instruction": {
+    "en": "JavaScript has a special value of `undefined`.\n\nIf you create a variable and do not assign a value to it, it will have the value `undefined`.\n\nLet's see what type this value will be.\n\nCreate a variable named `noValue` using the `let` keyword and do not assign a value to it.\n\nCreate a `typeOfNoValue` variable and assign it a value of the `noValue` variable type.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nlet nothing;\nconst typeOfNothing = typeof nothing;\n```",
+    "ru": "В JavaScript есть специальное значение `undefined`.\n\nЕсли создать переменную и не присвоить ей значение, то она будет иметь значение `undefined`.\n\nДавайте посмотрим какого типа будет это значение.\n\nСоздайте переменную с именем `noValue` с использованием ключевого слова `let` и не присваивайте ей значение.\n\nСоздайте переменную `typeOfNoValue` и присвойте ей значение типа переменной `noValue`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet nothing;\nconst typeOfNothing = typeof nothing;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let noValue;\nconst typeOfNoValue = typeof noValue;",
+  "openTest": "it('the variable `noValue` exists and is undefined', () => {\n  expect(noValue).to.be.undefined;\n});\n\nit('the variable `typeOfNoValue` exists and has a value', () => {\n  expect(typeOfNoValue).not.undefined;\n});\n\nit('the variable `typeOfNoValue` has type string', () => {\n  expect(typeOfNoValue).a('string');\n});\n\nit('the variable `typeOfNoValue` is equal to `undefined`', () => {\n  expect(typeOfNoValue).equal('undefined');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet noValue;\nconst typeOfNoValue = typeof noValue;\n```",
+    "ru": "```javascript\nlet noValue;\nconst typeOfNoValue = typeof noValue;\n```"
+  }
+}

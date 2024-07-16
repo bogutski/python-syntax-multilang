@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35c4",
+  "name": {
+    "ru": "Что такое пустота?",
+    "en": "What is emptiness?",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "\"*Слово - это пустота, со всех сторон облепленная буквами* \" (Юрий Ханон).\n\nСоздайте переменную с именем `empty` и присвойте ей значение пустой строки.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```\nconst word = '';\n```",
+    "en": "\"*The word is the emptiness lined on all sides with letters*\" (Yuri Hanon).\n\nCreate a variable named `empty` and assign to it the value of the empty string.\n\nHere is an example, which is fundamentally similar to what you need to do,\nbut adapt it to the needs of the task:\n```\nconst word = '';\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "const empty = '';",
+  "openTest": "it('the variable `empty` exists and has a value', () => {\n  expect(empty).not.undefined;\n});\n\nit('the variable `empty` is a string', () => {\n  expect(empty).a('string');\n});\n\nit('the value of the variable `empty` is ``', () => {\n  expect(empty).equal('');\n});\n\nit('the length of the string `empty` is 0 ', () => {\n  expect(empty.length).equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit"
+}

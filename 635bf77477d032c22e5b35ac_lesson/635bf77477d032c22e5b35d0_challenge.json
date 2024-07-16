@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35d0",
+  "name": {
+    "ru": "Создайте переменную co значением undefined",
+    "en": "Create a variable with value undefined",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Создайте переменную с именем `age`.\nИспользуйте ключевое слово `let`.\nПрисвойте значение `undefined`.\n\nДля этого напечатайте команду:\n```\nlet age = undefined;\n```",
+    "en": "Create a variable named `age`.\nUse keyword `let`.\nAssign a value of `undefined`.\n\nTo do this, type the command:\n```\nlet age = undefined;\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "let age = undefined;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

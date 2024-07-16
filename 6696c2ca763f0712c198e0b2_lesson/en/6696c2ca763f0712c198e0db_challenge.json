@@ -1,0 +1,4 @@
+{
+  "name": "The result of the greeting function is written in the variable",
+  "instruction": "Write a function `greeting` that takes the `name` parameter and returns a string like `Hello, name!`.\n\nCreate a variable `message` and assign it the result of a call to the `greeting` function. Pass any name as an argument.\n\nA similar example:\n```javascript\nfunction hello(firstName) {\n  return 'Hello, ' + firstName + '!'\n}\n\nconst helloMessage = hello('John');\n```"
+}

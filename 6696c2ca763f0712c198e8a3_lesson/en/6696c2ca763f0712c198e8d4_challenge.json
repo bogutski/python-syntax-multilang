@@ -1,0 +1,4 @@
+{
+  "name": "Fill the array with consecutive numbers from n to m",
+  "instruction": "Write a function `fillArray` that takes two integers `n` and `m` such that `n` <= `m`, and returns an array filled with consecutive integers from `n` to `m`.\n\nExamples of running the function:\n\n```javascript\nfillArray(1, 5); // [1, 2, 3, 4, 5]\nfillArray(-5, 1); // [-5, -4, -3, -2, -1, 0, 1]\nfillArray(5, 5); // [5]\n```"
+}

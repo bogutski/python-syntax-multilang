@@ -1,0 +1,6 @@
+{
+  "name": "Исправить ошибки в коде. Следим за кавычками",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-3.png)\n\nТребуется вывести в консоль фразу: \"Have a good day!\".\n\nУбедитесь, что фраза обрамлена в кавычки.\n\nИсправьте ошибки в приведенном коде.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log('Have a good day!');\n```"
+}

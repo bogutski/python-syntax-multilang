@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e042",
+  "name": {
+    "en": "Calculate the cost per square foot when buying an apartment",
+    "ru": "Вычислить стоимость квадратного фута при покупке квартиры"
+  },
+  "instruction": {
+    "en": "Write a function `pricePerSquareFoot` that takes the dimensions of the three rooms and the price.\n\nParameters:\n- `length1` - length of the first room\n- `width1` - width of the first room\n- `length2` - length of the second room\n- `width2` - width of second room\n- `length3` - length of the third room\n- `width3` - width of the third room\n- `price` - price of apartment\n\nRoom dimensions are length and width specified in feet.\n\nThe function should return the cost per square foot.\n\nExample:\n```javascript\npricePerSquareFoot(10, 10, 10, 10, 10, 10, 30000) // 100\n```\n\nParameter names must necessarily be the same as in the condition.",
+    "ru": "Напиши функцию `pricePerSquareFoot`, которая принимает габариты трех комнат и цену.\n\nПараметры:\n- `length1` - длина первой комнаты\n- `width1` - ширина первой комнаты\n- `length2` - длина второй комнаты\n- `width2` - ширина второй комнаты\n- `length3` - длина третьей комнаты\n- `width3` - ширина третьей комнаты\n- `price` - цена квартиры\n\nГабариты комнаты - это длина и ширина указываются в футах.\n\nФункция должна возвращать стоимость квадратного фута.\n\nПример:\n```javascript\npricePerSquareFoot(10, 10, 10, 10, 10, 10, 30000) // 100\n```\n\nНазвания параметров должны быть обязательно такими как в условии."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function pricePerSquareFoot(length1, width1, length2, width2, length3, width3, price) {\n  const totalSquareFeet = length1 * width1 + length2 * width2 + length3 * width3;\n  return price / totalSquareFeet;\n}",
+  "openTest": "it('Created function pricePerSquareFoot', () => {\n  expect(pricePerSquareFoot).to.be.a('function');\n});\n\nit('pricePerSquareFoot(10, 10, 10, 10, 10, 10, 30000) should return 100', () => {\n  expect(pricePerSquareFoot(10, 10, 10, 10, 10, 10, 30000)).to.equal(100);\n});\n\nit('pricePerSquareFoot(10, 10, 10, 10, 10, 10, 10000) should return 33.33', () => {\n  expect(pricePerSquareFoot(10, 10, 10, 10, 10, 10, 10000)).to.equal(33.333333333333336);\n});\n\nit('pricePerSquareFoot(10, 10, 10, 10, 10, 10, 100000) should return 333.33', () => {\n  expect(pricePerSquareFoot(10, 10, 10, 10, 10, 10, 100000)).to.equal(333.3333333333333);\n});\n\nit('Function pricePerSquareFoot has parameters length1, width1, length2, width2, length3, width3, price', () => {\n  // function to string and then to array of arguments\n  const args = pricePerSquareFoot.toString().match(/\\(([^)]*)\\)/)[1].split(',').map(arg => arg.trim());\n  expect(args).to.be.eql(['length1', 'width1', 'length2', 'width2', 'length3', 'width3', 'price']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

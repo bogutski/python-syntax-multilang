@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dc56",
+  "name": {
+    "en": "Creating a variable with the value NaN",
+    "ru": "Создание переменной со значением NaN"
+  },
+  "instruction": {
+    "en": "`NaN` refers to a computational error that occurs when performing an\narithmetic operation (for example, multiplication) with a variable that has a non-numeric value.\nCreate a variable `nan` and assign to it an expression with the value `NaN`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst notANumber = 'JS' / 2;\n```",
+    "ru": "`NaN` означает вычислительную ошибку, которая возникает при выполнении\nарифметического действия (например, умножения) с переменной, имеющей нечисловое значение.\nСоздайте переменную `nan` и присвойте ей выражение со значением `NaN`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst notANumber = 'JS' / 2;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const nan = 'Hello' * 2;",
+  "openTest": "it('the variable type `nan` is a number', () => {\n  expect(typeof (nan) === 'number').true;\n});\n\nit('the variable type `nan` is not a number', () => {\n  expect(isNaN(nan)).true;\n});\n\nit('the variable `nan` is not equal to nan', () => {\n  expect(nan).not.equal(nan);\n});\n\nit('Variable `nan` is equal to NaN', () => {\n  expect(nan).NaN;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst nan = 'Hello' * 2;\n```",
+    "ru": "```javascript\nconst nan = 'Hello' * 2;\n```"
+  }
+}

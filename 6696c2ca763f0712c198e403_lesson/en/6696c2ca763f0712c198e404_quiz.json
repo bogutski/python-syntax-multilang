@@ -1,0 +1,148 @@
+{
+  "name": "Changing the case. Methods toUpperCase, toLowerCase",
+  "questions": {
+    "0": {
+      "name": "What is the toUpperCase method used for?",
+      "variants": {
+        "0": {
+          "name": "To convert a string to uppercase"
+        },
+        "1": {
+          "name": "To convert a string to lowercase"
+        }
+      }
+    },
+    "1": {
+      "name": "What is the toLowerCase method used for?",
+      "variants": {
+        "0": {
+          "name": "To convert a string to uppercase"
+        },
+        "1": {
+          "name": "To convert a string to lowercase"
+        }
+      }
+    },
+    "2": {
+      "name": "The toUpperCase and toLowerCase methods do not change the original string, but return a new string in the correct case.",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "3": {
+      "name": "To determine the case of a character, use the method:",
+      "variants": {
+        "0": {
+          "name": "Convert string to uppercase and compare with the original string"
+        },
+        "1": {
+          "name": "Convert string to lower case and compare with the original string"
+        },
+        "2": {
+          "name": "Comparison without conversion to the original string"
+        }
+      }
+    },
+    "4": {
+      "name": "Is it possible to do this: `const s = 'hello'; s[0] = 'H'; console.log(s);` ?",
+      "variants": {
+        "0": {
+          "name": "You can change the characters of a string by referring to them by the index"
+        },
+        "1": {
+          "name": "You cannot change the characters of a string by referring to them by index"
+        },
+        "2": {
+          "name": "You can if the string is declared with `let`."
+        }
+      }
+    },
+    "5": {
+      "name": "What the code will output: `console.log('hello').toUpperCase();` ?",
+      "variants": {
+        "0": {
+          "name": "HELLO"
+        },
+        "1": {
+          "name": "hello"
+        },
+        "2": {
+          "name": "Hello"
+        },
+        "3": {
+          "name": "Error"
+        }
+      }
+    },
+    "6": {
+      "name": "What will the code print out: `console.log('hello'.toUpperCase());` ?",
+      "variants": {
+        "0": {
+          "name": "HELLO"
+        },
+        "1": {
+          "name": "hello"
+        },
+        "2": {
+          "name": "Hello"
+        },
+        "3": {
+          "name": "Error"
+        }
+      }
+    },
+    "7": {
+      "name": "What the code will output: `const s = 'const'; console.log('str[0]'.toUpperCase());` ?",
+      "variants": {
+        "0": {
+          "name": "С"
+        },
+        "1": {
+          "name": "с"
+        },
+        "2": {
+          "name": "STR[0]"
+        },
+        "3": {
+          "name": "str[0]"
+        }
+      }
+    },
+    "8": {
+      "name": "What the code will output: `const s = 'const'; console.log(s.toUpperCase().toLowerCase());` ?",
+      "variants": {
+        "0": {
+          "name": "CONST"
+        },
+        "1": {
+          "name": "const"
+        },
+        "2": {
+          "name": "Error"
+        }
+      }
+    },
+    "9": {
+      "name": "What the code will output: `const s = 'c'; console.log(s === s.toLowerCase());` ?",
+      "variants": {
+        "0": {
+          "name": "lowercase"
+        },
+        "1": {
+          "name": "uppercase"
+        },
+        "2": {
+          "name": "true"
+        },
+        "3": {
+          "name": "false"
+        }
+      }
+    }
+  }
+}

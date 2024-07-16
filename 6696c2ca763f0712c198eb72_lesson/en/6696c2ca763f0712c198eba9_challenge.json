@@ -1,0 +1,4 @@
+{
+  "name": "Is an array a palindrome?",
+  "instruction": "The checkArray function takes one argument, the arr array.\n\nThe array consists of one element - a string.\n\nThe array cannot be empty\n\nA string is always written in lower case.\n\nYou need to check if the string is a palindrome. And return true or false.\n\nExamples of running the function:\n```javascript\ncheckArray([\"madam\"]) // true\ncheckArray([\"hello\"]) // false\n```"
+}

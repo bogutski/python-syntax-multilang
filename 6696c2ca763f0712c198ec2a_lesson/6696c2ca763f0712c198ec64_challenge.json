@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec64",
+  "name": {
+    "en": "",
+    "ru": "Вернуть массив значений объекта"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `objectValues` которая принимает один параметр - строку.\n\nСтрока произвольной длины может содержать любые символы и буквы в верхнем и/или нижнем регистре.\n\nПеред созданием цикла for необходимо создать объект.\n\nОбъект будет наполняться свойствами, состоящими из ключей и значений.\n\nКлючи - это буквы из строки, а значения - это количество вхождений буквы в строку.\n\nФункция должна вернуть массив значений свойств объекта, где значение это количество повторений символа в строке.\n\nПоиск не должен быть чувствителен к регистру.\n\nДля решения задачи используйте метод `Object.values()`.\n\nПример запуска функции:\n```javascript\nobjectValues('minimumMAXIMUM'); // [6, 3, 1, 2, 1, 1]\nobjectValues('Onion'); // [2, 2, 1]\nobjectValues('ASSOCIATION'); // [2, 2, 2, 1, 2, 1, 1]\nobjectValues(''); // []\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function objectValues(str) {\n  str = str.toLowerCase();\n  const obj = {};\n  for (let i = 0; i < str.length; i++) {\n    if (obj[str[i]]) obj[str[i]]++\n    else obj[str[i]] = 1;\n  }\n  return Object.values(obj);\n}",
+  "openTest": "it('Created function objectValues', () => {\n  expect(objectValues).to.be.a('function');\n});\n\nit(\"objectValues('minimumMAXIMUM') should return [6, 3, 1, 2, 1, 1]\", () => {\n  expect(objectValues('minimumMAXIMUM')).to.deep.equal([6, 3, 1, 2, 1, 1]);\n});\n\nit(\"objectValues('Onion') should return [2, 2, 1]\", () => {\n  expect(objectValues('Onion')).to.deep.equal([2, 2, 1]);\n});\n\nit(\"objectValues('Reactor') should return [2, 1, 1, 1, 1, 1]\", () => {\n  expect(objectValues('Reactor')).to.deep.equal([2, 1, 1, 1, 1, 1]);\n});\n\nit(\"objectValues('improvement') should return [1, 2, 1, 1, 1, 1, 2, 1, 1]\", () => {\n  expect(objectValues('improvement')).to.deep.equal([1, 2, 1, 1, 1, 1, 2, 1, 1]);\n});\n\nit(\"objectValues('wheel') should return [1, 1, 2, 1]\", () => {\n  expect(objectValues('wheel')).to.deep.equal([1, 1, 2, 1]);\n});\n\nit(\"objectValues('ASSOCIATION') should return [2, 2, 2, 1, 2, 1, 1]\", () => {\n  expect(objectValues('ASSOCIATION')).to.deep.equal([2, 2, 2, 1, 2, 1, 1]);\n});\n\nit(\"objectValues('') should return []\", () => {\n  expect(objectValues('')).to.deep.equal([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

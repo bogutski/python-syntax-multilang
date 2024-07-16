@@ -1,0 +1,169 @@
+{
+  "name": "Tasks to combine everything we know",
+  "questions": {
+    "0": {
+      "name": "What keyword is used when creating a variable?",
+      "variants": {
+        "0": {
+          "name": "const"
+        },
+        "1": {
+          "name": "lat"
+        },
+        "2": {
+          "name": "let"
+        },
+        "3": {
+          "name": "console"
+        }
+      }
+    },
+    "1": {
+      "name": "What is output to the console? console.log(typeof (7 >= 7));",
+      "variants": {
+        "0": {
+          "name": "false"
+        },
+        "1": {
+          "name": "true"
+        },
+        "2": {
+          "name": "number"
+        },
+        "3": {
+          "name": "boolean"
+        }
+      }
+    },
+    "2": {
+      "name": "What is used to test multiple problem conditions?",
+      "variants": {
+        "0": {
+          "name": "else if"
+        },
+        "1": {
+          "name": "else for"
+        },
+        "2": {
+          "name": "if if"
+        },
+        "3": {
+          "name": "if all"
+        }
+      }
+    },
+    "3": {
+      "name": "Choose the correct option for the execution priority of the logical operators (AND) && and (OR) ||",
+      "variants": {
+        "0": {
+          "name": "The (OR) operator || will be executed first, followed by (AND) &&"
+        },
+        "1": {
+          "name": "The (AND) && operator will be executed first, followed by (OR) ||"
+        }
+      }
+    },
+    "4": {
+      "name": "Which property returns the number of characters in the string?",
+      "variants": {
+        "0": {
+          "name": "lenght"
+        },
+        "1": {
+          "name": "length"
+        },
+        "2": {
+          "name": "lenghts"
+        },
+        "3": {
+          "name": "langth"
+        }
+      }
+    },
+    "5": {
+      "name": "Choose the correct way to refer to the first element of str.",
+      "variants": {
+        "0": {
+          "name": "str(1)"
+        },
+        "1": {
+          "name": "str{0}"
+        },
+        "2": {
+          "name": "str[0]"
+        },
+        "3": {
+          "name": "str[1]"
+        }
+      }
+    },
+    "6": {
+      "name": "Which method removes spaces at the beginning and at the end of a line?",
+      "variants": {
+        "0": {
+          "name": "trim()"
+        },
+        "1": {
+          "name": "trimStart()"
+        },
+        "2": {
+          "name": "trimEnd()"
+        },
+        "3": {
+          "name": "Using trimStart() and trimEnd() together"
+        }
+      }
+    },
+    "7": {
+      "name": "What happens if I delete all the properties from an object?",
+      "variants": {
+        "0": {
+          "name": "It is not possible to remove all properties from an object"
+        },
+        "1": {
+          "name": "The object itself will be deleted"
+        },
+        "2": {
+          "name": "The object will remain empty"
+        },
+        "3": {
+          "name": "The last property will not be deleted"
+        }
+      }
+    },
+    "8": {
+      "name": "What is an object property?",
+      "variants": {
+        "0": {
+          "name": "Key-value pair"
+        },
+        "1": {
+          "name": "Value-key pair"
+        },
+        "2": {
+          "name": "Key-property pair"
+        },
+        "3": {
+          "name": "Name-value pair"
+        }
+      }
+    },
+    "9": {
+      "name": "What does the hasOwnProperty() method check in the object?",
+      "variants": {
+        "0": {
+          "name": "Does the object have the property you are looking for"
+        },
+        "1": {
+          "name": "Does the object have a nested object"
+        },
+        "2": {
+          "name": "Existence of an object"
+        },
+        "3": {
+          "name": "What is deleted in the object"
+        }
+      }
+    }
+  }
+}

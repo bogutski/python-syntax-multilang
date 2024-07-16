@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35c5",
+  "name": {
+    "ru": "Null или намеренное отсутствие какого-либо значения",
+    "en": "Null or deliberate absence of any value",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Null - специальное значение, которое имеет смысл `значение намеренно отсутствует`.\nСоздайте переменную с именем `futureProfit` и присвойте ей специальное значение null.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```\nconst nextWinner = null;\n```",
+    "en": "Null is a special value that has the meaning `value is intentionally absent`.\nCreate a variable named `futureProfit` and assign a special value null to it.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```\nconst nextWinner = null;\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "const futureProfit = null;",
+  "openTest": "it('the `futureProfit` variable exists and has a value', () => {\n  expect(futureProfit).not.undefined;\n});\n\nit('the value of variable `futureProfit` is null', () => {\n  expect(futureProfit).equal(null);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit"
+}

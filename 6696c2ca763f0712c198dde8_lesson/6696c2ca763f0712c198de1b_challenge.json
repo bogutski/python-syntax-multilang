@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de1b",
+  "name": {
+    "en": "Increment, or increasing a number by 1",
+    "ru": "Инкремент, или увеличение числа на 1"
+  },
+  "instruction": {
+    "en": "The price of the product is $20, but with the cost of delivery, the price increases by $1.\n\nSet the variable `price` and assign it the value of 20.\nThen write the command that increases the value of the variable `price` by 1.\n\nHere is an example that is essentially similar to what needs to be done,\nbut adapt it to the task requirements:\n```javascript\nlet number = 8;\nnumber++;\n```",
+    "ru": "Цена товара составляет $20, но вместе со стоимостью доставки цена увеличивается на $1.\n\nЗадайте переменную `price` и присвойте ей значение числа 20.\nЗатем запишите команду, увеличивающую значение переменной `price` на 1.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet number = 8;\nnumber++;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let price = 20;\nprice++;",
+  "openTest": "it('The `price` variable contains a value', () => {\n  expect(price).not.undefined;\n});\n\nit('the variable type `price` is a number', () => {\n  expect(price).a('number');\n});\n\nit('the variable `price` is not NaN', () => {\n  expect(isNaN(price)).false;\n});\n\nit('the variable `price` is incremented by 1', () => {\n  expect(price).equal(21);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet price = 20;\nprice++;\n```",
+    "ru": "```javascript\nlet price = 20;\nprice++;\n```"
+  }
+}

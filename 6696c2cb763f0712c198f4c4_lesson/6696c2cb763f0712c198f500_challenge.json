@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f500",
+  "name": {
+    "en": "/*",
+    "ru": "Перестановка элементов массива согласно карте индексов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `reorderArray`, которая принимает массив `arr` и карту индексов `indexMap`.\n\nКарта индексов — это объект, где ключи и значения представляют собой индексы массива `arr`.\n\nФункция должна переставить элементы в `arr` согласно карте индексов, генерируя новый массив с переставленными элементами и сохраняя неизменность исходного массива.\n\n\nВажное Уточнение к Решению Задачи:\n\nПри реализации функции `reorderArray` важно следовать определённому подходу: необходимо итерировать по исходному массиву, используя индексы его элементов для обращения к значениям в объекте карты индексов. И проверять есть ли такие ключи в объекте.\n\nЭтот подход обеспечит корректное переставление элементов массива в соответствии с заданными индексами. Применение альтернативных методов может привести к несоответствию ожидаемых результатов и, как следствие, не прохождению тестов.\n\n\nПримеры Запуска Функции:\n```javascript\nreorderArray(['x', 'y', 'z'], { 2: 1, 1: 2 }); // ['x', 'z', 'y']\nreorderArray(['a', 'b', 'c', 'd'], { 0: 2, 2: 0, 3: 1, 1: 3 }); // ['c', 'd', 'a', 'b']\nreorderArray(['hello', 'world', 'and', 'JS'], { 1: 3, 3: 1 }); // ['hello', 'JS', 'and', 'world']\n```"
+  },
+  "initialSolution": "function reorderArray(){\n\n}",
+  "completedSolution": "function reorderArray(arr, indexMap) {\n  let result = [...arr]\n\n  arr.forEach((_, index) => {\n    if(index in indexMap) result = result.with(index, arr[indexMap[index]])\n  })\n\n  return result;\n}",
+  "openTest": "Array.prototype.with = function(index, value){\n  const newArray = this.slice();\n  newArray.splice(index, 1, value);\n  return newArray;\n}\n\nit('Created function reorderArray', () => {\n  expect(reorderArray).to.be.a('function');\n});\n\nit(\"reorderArray(['a', 'b', 'c', 'd'], { 0: 2, 2: 0, 3: 1, 1: 3 }) should return ['c', 'd', 'a', 'b']\", function() {\n  expect(reorderArray(['a', 'b', 'c', 'd'], { 0: 2, 2: 0, 3: 1, 1: 3 })).to.deep.equal(['c', 'd', 'a', 'b']);\n});\n\nit(\"reorderArray(['apple', 'banana', 'cherry'], { 0: 1, 1: 2, 2: 0 }) should return ['banana', 'cherry', 'apple']\", function() {\n  expect(reorderArray(['apple', 'banana', 'cherry'], { 0: 1, 1: 2, 2: 0 })).to.deep.equal(['banana', 'cherry', 'apple']);\n});\n\nit(\"reorderArray([1, 2, 3], { 0: 0, 1: 1, 2: 2 }) should return [1, 2, 3] (no change)\", function() {\n  expect(reorderArray([1, 2, 3], { 0: 0, 1: 1, 2: 2 })).to.deep.equal([1, 2, 3]);\n});\n\nit(\"reorderArray(['first', 'second'], { 1: 0, 0: 1 }) should return ['second', 'first']\", function() {\n  expect(reorderArray(['first', 'second'], { 1: 0, 0: 1 })).to.deep.equal(['second', 'first']);\n});\n\nit(\"reorderArray(['x', 'y', 'z'], { 2: 1, 1: 2 }) should return ['x', 'z', 'y']\", function() {\n  expect(reorderArray(['x', 'y', 'z'], { 2: 1, 1: 2 })).to.deep.equal(['x', 'z', 'y']);\n});\n\nit(\"reorderArray(['left', 'right', 'up', 'down'], { 3: 0, 0: 3 }) should return ['down', 'right', 'up', 'left']\", function() {\n  expect(reorderArray(['left', 'right', 'up', 'down'], { 3: 0, 0: 3 })).to.deep.equal(['down', 'right', 'up', 'left']);\n});\n\nit(\"reorderArray([10, 20, 30, 40], { 0: 2, 2: 3, 3: 1, 1: 0 }) should return [30, 10, 40, 20]\", function() {\n  expect(reorderArray([10, 20, 30, 40], { 0: 2, 2: 3, 3: 1, 1: 0 })).to.deep.equal([30, 10, 40, 20]);\n});\n\nit(\"reorderArray(['sun', 'moon', 'earth'], { 0: 2, 1: 0, 2: 1 }) should return ['earth', 'sun', 'moon']\", function() {\n  expect(reorderArray(['sun', 'moon', 'earth'], { 0: 2, 1: 0, 2: 1 })).to.deep.equal(['earth', 'sun', 'moon']);\n});\n\nit(\"reorderArray([10, 20, 30, 40, 50], { 4: 0, 0: 4, 2: 2, 3: 1, 1: 3 }) should return [50, 40, 30, 20, 10]\", function() {\n  expect(reorderArray([10, 20, 30, 40, 50], { 4: 0, 0: 4, 2: 2, 3: 1, 1: 3 })).to.deep.equal([50, 40, 30, 20, 10]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

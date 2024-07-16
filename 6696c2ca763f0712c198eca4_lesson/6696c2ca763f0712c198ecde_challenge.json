@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ecde",
+  "name": {
+    "en": "Splitting a string into letters and characters",
+    "ru": "Разделение строки на буквы и символы"
+  },
+  "instruction": {
+    "en": "Write a function `lettersAndSymbols` that takes a string and returns an array of two strings.\n\nThe first string contains only letters, the second contains only symbols, including spaces.\n\nThe letters can be in any case.\n\n\nExamples of running the function:\n```javascript\nlettersAndSymbols('Hello World!') // ['HelloWorld', ' !']\nlettersAndSymbols('!J%a^Va') // ['JaVa', '!%^']\nlettersAndSymbols('banana') // ['banana', '']\nlettersAndSymbols('') // ['', '']\n```",
+    "ru": "Напишите функцию `lettersAndSymbols`, которая принимает строку и возвращает массив из двух строк.\n\nПервая строка содержит только буквы, вторая - только символы, включая пробелы.\n\nБуквы могут быть в любом регистре.\n\n\nПримеры запуска функции:\n```javascript\nlettersAndSymbols('Hello World!') // ['HelloWorld', ' !']\nlettersAndSymbols('!J%a^Va') // ['JaVa', '!%^']\nlettersAndSymbols('banana') // ['banana', '']\nlettersAndSymbols('') // ['', '']\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function lettersAndSymbols(str) {\n  let letters = '';\n  let symbols = '';\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] === str[i].toLowerCase() && str[i] === str[i].toUpperCase()) symbols += str[i];\n    else letters += str[i];\n  }\n  return [letters, symbols];\n}",
+  "openTest": "it('Created function lettersAndSymbols', () => {\n  expect(lettersAndSymbols).to.be.a('function');\n});\n\nit(\"lettersAndSymbols('Hello World!') returns ['HelloWorld', ' !'] \", () => {\n  expect(lettersAndSymbols('Hello World!')).to.eql(['HelloWorld', ' !']);\n});\n\nit(\"lettersAndSymbols('!J%a^Va :S c{()} R <<>> i pT!',) returns ['JaVaScRipT', '!%^ : {()}  <<>>  !'] \", () => {\n  expect(lettersAndSymbols('!J%a^Va :S c{()} R <<>> i pT!')).to.eql(['JaVaScRipT', '!%^ : {()}  <<>>  !']);\n});\n\nit(\"lettersAndSymbols('banana') returns ['banana', ''] \", () => {\n  expect(lettersAndSymbols('banana')).to.eql(['banana', '']);\n});\n\nit(\"lettersAndSymbols('1_+-23 4#567 8@90') returns ['', '1_+-23 4#567 8@90'] \", () => {\n  expect(lettersAndSymbols('1_+-23 4#567 8@90')).to.eql(['', '1_+-23 4#567 8@90']);\n});\n\nit(\"lettersAndSymbols('') returns ['', ''] \", () => {\n  expect(lettersAndSymbols('')).to.eql(['', '']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

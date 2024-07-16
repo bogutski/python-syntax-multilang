@@ -1,0 +1,4 @@
+{
+  "name": "The total area of the three rectangles",
+  "instruction": "Write a function `square` that takes as parameters the length and width of a rectangle and returns its area.\n\nWrite a function `threeRoomSquare` that takes as parameters the length and width of three rectangles and returns their total area.\n\nThe parameters of the function `threeRoomSquare`:\n- length of the first rectangle\n- width of the first rectangle\n- the length of the second rectangle\n- width of the second rectangle\n- length of the third rectangle\n- width of the third rectangle\n\nInside the `threeRoomSquare` function, use the `quare` function to calculate the area of each rectangle.\n\nA similar example:\n```javascript\nfunction sum(a, b){\n  Return a + b;\n}\n\nfunction sumThreeNumbers(a, b, c, d){\n  return sum(a, b) + sum(c, d);\n}\n```"
+}

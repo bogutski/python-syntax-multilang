@@ -1,0 +1,6 @@
+{
+  "name": "Let's add the strings, previously converting them into numbers",
+  "instruction": "Can two numbers represented as strings be added together to get the correct result?\n\nSet the variable `a` and assign it the value of a string containing an arbitrary number, for example, `'8'`.\n\nSet the variable `b` and assign it the value of a string containing an arbitrary number, for example, `'12'`.\n\nSet the variable `sum` and assign it the result of adding these numbers.\n\nHere is an example that is essentially similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst redBalls = '13';\nconst greenBalls = '15';\nconst balls = +redBalls + +greenBalls;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst a = '20';\nconst b = '22';\nconst sum = +a + +b;\n```"
+}

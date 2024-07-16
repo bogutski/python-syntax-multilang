@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ee4a",
+  "name": {
+    "en": "",
+    "ru": "Если в строке 3 пробела, то обновить строку"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `changeIf3Space` принимает строку `str`\n\nСлова в строке разделены пробелами и может содержаться любое количество слов\n\nЕсли в строке ровно 3 пробела, то возвращается строка, состоящая из первого и последнего слова, разделенных пробелом.\n\nЕсли пробелов меньше или больше 3, то возвращается исходная строка.\n\nПримеры запуска функции:\n```javascript\nchangeIf3Space('a b c d') // 'a d'\nchangeIf3Space('a b c') // 'a b c'\nchangeIf3Space('JS is good language') // 'JS language'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function changeIf3Space(str) {\n  let spaceCount = 0;\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] === ' ') {\n      spaceCount++;\n    }\n  }\n  if (spaceCount === 3) {\n    let firstWord = '';\n    let lastWord = '';\n    for(let i = 0; i < str.indexOf(' '); i++) {\n      firstWord += str[i];\n    }\n    for (let i = str.lastIndexOf(' '); i < str.length; i++) {\n      lastWord += str[i]\n    } return firstWord + lastWord;\n  } else return str\n}",
+  "openTest": "it('Created function changeIf3Space', () => {\n  expect(changeIf3Space).to.be.a('function');\n});\n\nit('changeIf3Space(\"a b c d\") returns \"a d\"', () => {\n  expect(changeIf3Space('a b c d')).to.equal('a d');\n});\n\nit('changeIf3Space(\"a b c\") returns \"a b c\"', () => {\n  expect(changeIf3Space('a b c')).to.equal('a b c');\n});\n\nit('changeIf3Space(\"a b c d e\") returns \"a b c d e\"', () => {\n  expect(changeIf3Space('a b c d e')).to.equal('a b c d e');\n});\n\nit('changeIf3Space(\"\") returns \"\"', () => {\n  expect(changeIf3Space('')).to.equal('');\n});\n\nit('changeIf3Space(\"JS is good language\") returns \"JS language\"', () => {\n  expect(changeIf3Space('JS is good language')).to.equal('JS language');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

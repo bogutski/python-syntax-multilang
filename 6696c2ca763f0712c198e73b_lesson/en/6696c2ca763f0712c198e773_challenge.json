@@ -1,0 +1,4 @@
+{
+  "name": "Find the key of an object in an array.",
+  "instruction": "The `findKey` function takes 3 parameters:\n* `array` - array\n* `object` - object\n* `key` - object key\n\nYou need to find the `value` by the `key` in the `object` object and check if it is in the `array` array.\n\nIf so, return the string `there is ${value} in array`.\n\nIf not, return the string `there is no ${value} in array`.\n\nExamples of running a function:\n```javascript\nfindKey(['lemon', 'apple', 'banana'], {fruit: 'apple'}, 'fruit') // 'there is apple in array'\nfindKey(['lemon', 'apple', 'banana'], {fruit: 'orange'}, 'fruit') // 'there is no orange in array'\n```"
+}

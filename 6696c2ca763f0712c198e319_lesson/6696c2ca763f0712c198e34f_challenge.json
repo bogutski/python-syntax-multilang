@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e34f",
+  "name": {
+    "en": "Robin Hood-style fair rounding",
+    "ru": "Справедливое округление в стиле Робина Гуда"
+  },
+  "instruction": {
+    "en": "In the fairy tale universe, a special cash register is made that rounds up purchase receipts so that the rich pay more.\n\nWrite a function `robinHoodRound` that takes a number and returns its rounded value.\n\nRounding rules:\n* If the number is greater than or equal to 100, round up and add 18%, the wealth tax\n* If the number is less than 100, round down and add 5% - poverty tax.\n\nThe tax is added from the previously rounded number.\n\nAfter the tax is added, the number is rounded up to a whole number.\n\n\nExamples of running the function:\n```javascript.\nrobinHoodRound(100); // 118\nrobinHoodRound(99); // 104\nrobinHoodRound(105.78); // 124\n```",
+    "ru": "В сказочной вселенной делается специальный кассовый аппарат, который округляет чеки покупок, чтобы богатые платили больше.\n\nНапишите функцию `robinHoodRound`, которая принимает число и возвращает его округленное значение.\n\nПравила округления:\n* Если число больше либо равно 100, то округляем вверх и добавляем 18% - налог на богатство\n* Если число меньше 100, то округляем вниз и добавляем 5% - налог на бедность.\n\nВычисление налога происходит от предварительно округленного числа.\n\nПосле добавления налога, число округляется до целого в большую сторону.\n\n\nПримеры запуска функции:\n```javascript\nrobinHoodRound(100); // 118\nrobinHoodRound(99); // 104\nrobinHoodRound(105.78); // 124\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function robinHoodRound(number) {\n  const tax = number >= 100 ? 1.18 : 1.05;\n\n  if (number >= 100) number = Math.ceil(number);\n  else number = Math.floor(number);\n\n  return Math.ceil(number * tax);\n}",
+  "openTest": "it('Created function robinHoodRound', () => {\n  expect(robinHoodRound).to.be.a('function');\n});\n\nit('robinHoodRound(100) should return 118', () => {\n  expect(robinHoodRound(100)).to.be.equal(118);\n});\n\nit('robinHoodRound(99) should return 104', () => {\n  expect(robinHoodRound(99)).to.be.equal(104);\n});\n\nit('robinHoodRound(105.78) should return 126', () => {\n  expect(robinHoodRound(105.78)).to.be.equal(126);\n});\n\nit('robinHoodRound(104.345) should return 124', () => {\n  expect(robinHoodRound(104.345)).to.be.equal(124);\n});\n\nit('robinHoodRound(14.615) should return 15', () => {\n  expect(robinHoodRound(14.615)).to.be.equal(15);\n});\n\nit('robinHoodRound(104.745) should return 124', () => {\n  expect(robinHoodRound(104.745)).to.be.equal(124);\n});\n\nit('robinHoodRound(756.149) should return 894', () => {\n  expect(robinHoodRound(756.149)).to.be.equal(894);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

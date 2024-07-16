@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f2c8",
+  "name": {
+    "en": "Counting the number of occurrences of elements in the array",
+    "ru": "Подсчет количества вхождений элементов в массив"
+  },
+  "instruction": {
+    "en": "The `countEachEl` function takes an array and returns an object in which the keys are the elements of the array and the values are the number of times those elements are repeated in the array.\n\nYou need to correct the code so that the function works correctly.\n\nExamples of how to run the function:\n```javascript\ncountEachEl([1, 2, 3, 4, 5]) // {1: 1, 2: 1, 3: 1, 4: 1, 5: 1}\ncountEachEl([1, 1, 1, 1, 1]) // {1: 5}\n```",
+    "ru": "Функция `countEachEl` принимает массив и возвращает объект, в котором ключами являются элементы массива, а значениями - количество повторений этих элементов в массиве.\n\nНеобходимо исправить код, чтобы функция работала правильно.\n\nПримеры запуска функции:\n```javascript\ncountEachEl([1, 2, 3, 4, 5]) // {1: 1, 2: 1, 3: 1, 4: 1, 5: 1}\ncountEachEl([1, 1, 1, 1, 1]) // {1: 5}\n```"
+  },
+  "initialSolution": "Function counteachel(arr) {\n  let result = {arr[i]: 1]};\n  for (let i = 0; i < arr.length; i++) {\n    if (result[\"arr[i]\"] = undefined) {\n      result[\"arr[i]\"] = 1;\n    } else {\n      result[\"arr[i]]\"++;\n    }\n  }\n  return result;\n}",
+  "completedSolution": "function countEachEl(arr) {\n  let result = {};\n  for (let i = 0; i < arr.length; i++) {\n    if (result[arr[i]] === undefined) {\n      result[arr[i]] = 1;\n    } else {\n      result[arr[i]]++;\n    }\n  }\n  return result;\n}",
+  "openTest": "it('Created function countEachEl', () => {\n  expect(countEachEl).to.be.a('function');\n});\n\nit('countEachEl([1, 2, 3, 4, 5]) should return {1: 1, 2: 1, 3: 1, 4: 1, 5: 1}', () => {\n  expect(countEachEl([1, 2, 3, 4, 5])).to.deep.equal({1: 1, 2: 1, 3: 1, 4: 1, 5: 1});\n});\n\nit('countEachEl([1, 1, 1, 1, 1]) should return {1: 5}', () => {\n  expect(countEachEl([1, 1, 1, 1, 1])).to.deep.equal({1: 5});\n});\n\nit('countEachEl([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]) should return {1: 2, 2: 2, 3: 2, 4: 2, 5: 2}', () => {\n  expect(countEachEl([1, 2, 3, 4, 5, 1, 2, 3, 4, 5])).to.deep.equal({1: 2, 2: 2, 3: 2, 4: 2, 5: 2});\n});\n\nit('countEachEl([]) should return {}', () => {\n  expect(countEachEl([])).to.deep.equal({});\n});\n\nit('countEachEl([\"hello\", \"hello\", \"hello\"]) should return {hello: 3}', () => {\n  expect(countEachEl(['hello', 'hello', 'hello'])).to.deep.equal({hello: 3});\n});\n\nit('countEachEl([\"\"]) should return {\"\": 1}', () => {\n  expect(countEachEl([''])).to.deep.equal({'': 1});\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

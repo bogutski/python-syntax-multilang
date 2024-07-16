@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db4a",
+  "name": {
+    "en": "Assign the variable salary to null",
+    "ru": "Присвойте переменной salary значение null"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-9.png)\n\nCreate a variable named `salary`.\nUse the `const` keyword.\nAssign the value `null` to it.\n\nA fundamentally similar example:\n```javascript\nconst price = null;\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-9.png)\n\nСоздайте переменную с именем `salary`.\nИспользуйте ключевое слово `const`.\nПрисвойте ей значение `null`.\n\nПринципиально похожий пример:\n```javascript\nconst price = null;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const salary = null;",
+  "openTest": "it('the variable salary exists', () => {\n  expect(salary).not.undefined;\n});\n\nit('the variable salary is a null', () => {\n  expect(salary).eql(null);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst salary = null;\n```",
+    "ru": "```javascript\nconst salary = null;\n```"
+  }
+}

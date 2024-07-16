@@ -1,0 +1,4 @@
+{
+  "name": "Find and correct mistakes",
+  "instruction": "Fix the `copyDuplicate` function that takes a string and returns an array of letters that are repeated in the string.\n\nA letter can be repeated one or more times, but it should only be added to the array once.\n\nAll words are written in lowercase.\n\nThere is only one space between words.\n\nAn example of running a function:\n```javascript\ncopyDuplicate('hello world'); // [ 'l', 'o' ]\ncopyDuplicate('a leg up'); // []\ncopyDuplicate('jumping the gun'); // [ 'g', 'u', 'n' ]\n```"
+}

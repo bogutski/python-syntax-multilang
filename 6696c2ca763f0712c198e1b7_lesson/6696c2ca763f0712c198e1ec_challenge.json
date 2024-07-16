@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e1ec",
+  "name": {
+    "en": "Every fifth person in line gets a free ticket",
+    "ru": "Каждый пятый в очереди получает бесплатный билет"
+  },
+  "instruction": {
+    "en": "Write a function `getFreeTicket` that takes the number of the person in the queue and returns `true` if that person gets a free ticket.\n\nIf the person does not get a free ticket, the function should return `false`.\n\nWe need to check that the person's number is divisible by 5 without a remainder.\n\nIf a person with a number in the queue greater than 100 applies, the function must return `false`.\n\nAn example of using an additional condition:\n\n```javascript\nfunction getSomething(position) {\n  if(position < 0) return false;\n\n  if(position % 2 === 0) return true;\n  return false;\n}\n\nNote the last return. It is not in the else block, but still it is executed only if the condition in the if is not met.",
+    "ru": "Напиши функцию `getFreeTicket`, которая принимает номер человека в очереди и возвращает `true`, если этот человек получает бесплатный билет.\n\nЕсли человек не получает бесплатный билет, то функция должна вернуть `false`.\n\nНужно проверить, что номер человека делится на 5 без остатка.\n\nЕсли обратится человек с номером в очереди больше 100, то функция должна вернуть `false`.\n\nПример использования дополнительного условия:\n\n```javascript\nfunction getSomething(position) {\n  if(position < 0) return false;\n\n  if(position % 2 === 0) return true;\n  return false;\n}\n\nОбратите внимание на последний return. Он не находится в блоке else, но все равно выполняется только в том случае, если условие в if не выполняется."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function getFreeTicket(position) {\n  if (position > 100) return false;\n  return position % 5 === 0;\n}",
+  "openTest": "it('Created function getFreeTicket', () => {\n  expect(getFreeTicket).to.be.a('function');\n});\n\nit('getFreeTicket(5) should return true', () => {\n  expect(getFreeTicket(5)).to.equal(true);\n});\n\nit('getFreeTicket(10) should return true', () => {\n  expect(getFreeTicket(10)).to.equal(true);\n});\n\nit('getFreeTicket(11) should return false', () => {\n  expect(getFreeTicket(11)).to.equal(false);\n});\n\nit('getFreeTicket(12) should return false', () => {\n  expect(getFreeTicket(12)).to.equal(false);\n});\n\nit('getFreeTicket(13) should return false', () => {\n  expect(getFreeTicket(13)).to.equal(false);\n});\n\nit('getFreeTicket(100) should return true', () => {\n  expect(getFreeTicket(100)).to.equal(true);\n});\n\nit('getFreeTicket(111) should return false', () => {\n  expect(getFreeTicket(110)).to.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f767",
+  "name": {
+    "en": "/*",
+    "ru": "Найти последний объект с заданным значением свойства"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findLastWithProperty`, которая принимает массив объектов и строку, представляющую имя свойства, и значение этого свойства.\n\nФункция должна возвращать последний объект в массиве, у которого значение указанного свойства соответствует заданному значению.\n\nЕсли такого объекта нет, функция должна вернуть `null`.\n\n\nПримеры запуска функции:\n```javascript\nfindLastWithProperty([{name: 'Alice', age: 25}, {name: 'Bob', age: 30}, {name: 'Alice', age: 22}], 'name', 'Alice') // {name: 'Alice', age: 22}.\n\nfindLastWithProperty([{color: 'red', size: 'small'}, {color: 'blue', size: 'large'}, {color: 'red', size: 'medium'}], 'color', 'red') // {color: 'red', size: 'medium'}.\n\nfindLastWithProperty([{brand: 'Nike', price: 100}, {brand: 'Adidas', price: 150}], 'brand', 'Puma') // null\n```"
+  },
+  "initialSolution": "function findLastWithProperty(){\n\n}",
+  "completedSolution": "function findLastWithProperty(arr, key, value) {\n  return arr.findLast(obj => obj[key] === value) || null;\n}",
+  "openTest": "it('Created function findLastWithProperty', () => {\n  expect(findLastWithProperty).to.be.a('function');\n});\n\nit(\"Function findLastWithProperty should include findLast method\", () => {\n  const result = findLastWithProperty.toString();\n  expect(result).to.include('.findLast(');\n});\n\nit('findLastWithProperty([{name: \"Alice\", age: 25}, {name: \"Bob\", age: 30}, {name: \"Alice\", age: 22}], \"name\", \"Alice\") should return {name: \"Alice\", age: 22}', function() {\n  expect(findLastWithProperty([{name: 'Alice', age: 25}, {name: 'Bob', age: 30}, {name: 'Alice', age: 22}], 'name', 'Alice')).to.deep.equal({name: 'Alice', age: 22});\n});\n\nit('findLastWithProperty([{color: \"red\", size: \"small\"}, {color: \"blue\", size: \"large\"}, {color: \"red\", size: \"medium\"}], \"color\", \"red\") should return {color: \"red\", size: \"medium\"}', function() {\n  expect(findLastWithProperty([{color: 'red', size: 'small'}, {color: 'blue', size: 'large'}, {color: 'red', size: 'medium'}], 'color', 'red')).to.deep.equal({color: 'red', size: 'medium'});\n});\n\nit('findLastWithProperty([{brand: \"Nike\", price: 100}, {brand: \"Adidas\", price: 150}], \"brand\", \"Puma\") should return null', function() {\n  expect(findLastWithProperty([{brand: 'Nike', price: 100}, {brand: 'Adidas', price: 150}], 'brand', 'Puma')).to.be.null;\n});\n\nit('findLastWithProperty([{type: \"sedan\", year: 2018}, {type: \"SUV\", year: 2020}, {type: \"sedan\", year: 2021}], \"type\", \"sedan\") should return {type: \"sedan\", year: 2021}', function() {\n  expect(findLastWithProperty([{type: 'sedan', year: 2018}, {type: 'SUV', year: 2020}, {type: 'sedan', year: 2021}], 'type', 'sedan')).to.deep.equal({type: 'sedan', year: 2021});\n});\n\nit('findLastWithProperty([{city: \"New York\", population: 8000000}, {city: \"Los Angeles\", population: 4000000}], \"city\", \"Chicago\") should return null', function() {\n  expect(findLastWithProperty([{city: 'New York', population: 8000000}, {city: 'Los Angeles', population: 4000000}], 'city', 'Chicago')).to.be.null;\n});\n\nit('findLastWithProperty([{shape: \"circle\", color: \"blue\"}, {shape: \"square\", color: \"red\"}, {shape: \"circle\", color: \"green\"}], \"shape\", \"circle\") should return {shape: \"circle\", color: \"green\"}', function() {\n  expect(findLastWithProperty([{shape: 'circle', color: 'blue'}, {shape: 'square', color: 'red'}, {shape: 'circle', color: 'green'}], 'shape', 'circle')).to.deep.equal({shape: 'circle', color: 'green'});\n});\n\nit('findLastWithProperty([{material: \"wood\", used: true}, {material: \"plastic\", used: false}], \"used\", true) should return {material: \"wood\", used: true}', function() {\n  expect(findLastWithProperty([{material: 'wood', used: true}, {material: 'plastic', used: false}], 'used', true)).to.deep.equal({material: 'wood', used: true});\n});\n\nit('findLastWithProperty([], \"key\", \"value\") should return null', function() {\n  expect(findLastWithProperty([], 'key', 'value')).to.be.null;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

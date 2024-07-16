@@ -1,0 +1,6 @@
+{
+  "name": "\"Eat. Sleep. Code.\"",
+  "instruction": "Create a `myGoal` variable and write the following value into it: `'Eat. Sleep. Code.'`\n\nHere is an example that is fundamentally similar to what you need to do:\n```javascript\nconst car = 'tractor';\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst myGoal = 'Eat. Sleep. Code.';\n```"
+}

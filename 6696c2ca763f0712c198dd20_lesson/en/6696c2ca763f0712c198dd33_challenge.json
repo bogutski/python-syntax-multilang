@@ -1,0 +1,6 @@
+{
+  "name": "Is null equal to an empty string?",
+  "instruction": "Create a variable named `isNullEqualEmpty` and assign it the result of a strict comparison between the value `null` and an empty string.\n(Check the result in the console).\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst comparison = null === '' ;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst isNullEqualEmpty = null === '';\n```"
+}

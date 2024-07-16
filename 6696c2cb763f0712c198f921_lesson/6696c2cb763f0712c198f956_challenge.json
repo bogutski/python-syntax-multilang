@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f956",
+  "name": {
+    "en": "/*",
+    "ru": "Извлечение последних двух элементов массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `getLastTwoElements`, которая принимает массив и возвращает новый массив, содержащий последние два элемента исходного массива.\n\n\nПримеры запуска функции:\n```javascript\ngetLastTwoElements([10, 20]); // [10, 20]\ngetLastTwoElements([1, 2, 3, 4, 5]); // [4, 5]\ngetLastTwoElements(['a', 'b', 'c', 'd', 'e']); // ['d', 'e']\ngetLastTwoElements([true, false, true, false]); // [true, false]\n```"
+  },
+  "initialSolution": "function getLastTwoElements(){\n\n}",
+  "completedSolution": "function getLastTwoElements(arr) {\n  return arr.slice(-2);\n}",
+  "openTest": "it('Created function getLastTwoElements', () => {\n  expect(getLastTwoElements).to.be.a('function');\n});\n\nit(\"Function getLastTwoElements should include slice method\", () => {\n  const result = getLastTwoElements.toString();\n  expect(result).to.include('.slice(');\n});\n\nit('getLastTwoElements([1, 2, 3, 4, 5]) should return [4, 5]', function() {\n  expect(getLastTwoElements([1, 2, 3, 4, 5])).to.eql([4, 5]);\n});\n\nit('getLastTwoElements([\"a\", \"b\", \"c\", \"d\", \"e\"]) should return [\"d\", \"e\"]', function() {\n  expect(getLastTwoElements([\"a\", \"b\", \"c\", \"d\", \"e\"])).to.eql([\"d\", \"e\"]);\n});\n\nit('getLastTwoElements([true, false, true, false]) should return [true, false]', function() {\n  expect(getLastTwoElements([true, false, true, false])).to.eql([true, false]);\n});\n\nit('getLastTwoElements([10, 20]) should return [10, 20]', function() {\n  expect(getLastTwoElements([10, 20])).to.eql([10, 20]);\n});\n\nit('getLastTwoElements([1, 2, 3]) should return [2, 3]', function() {\n  expect(getLastTwoElements([1, 2, 3])).to.eql([2, 3]);\n});\n\nit('getLastTwoElements([\"apple\", \"banana\", \"cherry\", \"date\"]) should return [\"cherry\", \"date\"]', function() {\n  expect(getLastTwoElements([\"apple\", \"banana\", \"cherry\", \"date\"])).to.eql([\"cherry\", \"date\"]);\n});\n\nit('getLastTwoElements([]) should return []', function() {\n  expect(getLastTwoElements([])).to.eql([]);\n});\n\nit('getLastTwoElements([null, undefined, false, true]) should return [false, true]', function() {\n  expect(getLastTwoElements([null, undefined, false, true])).to.eql([false, true]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

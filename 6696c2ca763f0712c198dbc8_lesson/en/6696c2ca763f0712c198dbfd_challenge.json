@@ -1,0 +1,6 @@
+{
+  "name": "How many mushrooms are there?",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-13.png)\n\nMasha collected `mushroomCount` of mushrooms in the forest. Returning home, she found 15 more mushrooms.\n\nCreate a variable `mushroomCount` with the value `12`.\n\nWrite a command that increases the existing value of the `mushroomCount` variable by `15`.",
+  "instructions": {},
+  "hint": "```javascript\nlet mushroomCount = 12\nmushroomCount = mushroomCount + 15;\n```"
+}

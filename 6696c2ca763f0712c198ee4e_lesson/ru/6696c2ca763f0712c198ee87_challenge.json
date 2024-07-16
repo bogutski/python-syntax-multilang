@@ -1,0 +1,5 @@
+{
+  "name": "Перевернуть последнее слово строки",
+  "instruction": "Напишите функцию `reverseOnlyLastWord`, которая принимает строку с одним или несколькими словами.\n\nФункция должна вернуть строку, в которой `только` последнее слово перевернуто.\n\nЕсли в строке только одно слово, это можно определить по наличию пробелов, то функция должна вернуть одно перевернутое слово.\n\n\nПримеры запуска функции:\n```javascript\nreverseOnlyLastWord('');   // ''\nreverseOnlyLastWord('123');   // '321'\nreverseOnlyLastWord('olleH');    // 'Hello'\nreverseOnlyLastWord('Hi there 12345');  // 'Hi there 54321'\nreverseOnlyLastWord('Hello, my initials are .R.A'); // 'Hello, my initials are A.R.'\n```",
+  "instructions": {}
+}

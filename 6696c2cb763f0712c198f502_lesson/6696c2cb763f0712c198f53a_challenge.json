@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f53a",
+  "name": {
+    "en": "/*",
+    "ru": "Заполнение массива повторяющимися значениями"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `fillArrayWithRepeats`, которая принимает два аргумента: значение для заполнения `value` и количество повторений `repeats`.\n\nФункция должна создать и вернуть массив, содержащий значение `value`, повторенное `repeats` раз, используя метод `Array.prototype.fill()`.\n\n\nПримеры запуска функции:\n```javascript\nfillArrayWithRepeats('a', 3); // ['a', 'a', 'a']\nfillArrayWithRepeats(0, 5); // [0, 0, 0, 0, 0]\nfillArrayWithRepeats(true, 2); // [true, true]\n```"
+  },
+  "initialSolution": "function fillArrayWithRepeats(){\n\n}",
+  "completedSolution": "function fillArrayWithRepeats(value, n) {\n  return Array.from({length: n}).fill(value);\n}",
+  "openTest": "it('Created function fillArrayWithRepeats', () => {\n  expect(fillArrayWithRepeats).to.be.a('function');\n});\n\nit('Function fillArrayWithRepeats should include method fill()', () => {\n  const res = fillArrayWithRepeats.toString()\n  expect(res).to.include('.fill(')\n});\n\nit(\"fillArrayWithRepeats('a', 3) should return ['a', 'a', 'a']\", function() {\n  expect(fillArrayWithRepeats('a', 3)).to.deep.equal(['a', 'a', 'a']);\n});\n\nit(\"fillArrayWithRepeats(0, 5) should return [0, 0, 0, 0, 0]\", function() {\n  expect(fillArrayWithRepeats(0, 5)).to.deep.equal([0, 0, 0, 0, 0]);\n});\n\nit(\"fillArrayWithRepeats(true, 2) should return [true, true]\", function() {\n  expect(fillArrayWithRepeats(true, 2)).to.deep.equal([true, true]);\n});\n\nit(\"fillArrayWithRepeats('empty', 0) should return an empty array\", function() {\n  expect(fillArrayWithRepeats('empty', 0)).to.deep.equal([]);\n});\n\nit(\"fillArrayWithRepeats('repeat', 1) should return an array with a single element 'repeat'\", function() {\n  expect(fillArrayWithRepeats('repeat', 1)).to.deep.equal(['repeat']);\n});\n\nit(\"fillArrayWithRepeats(null, 4) should return an array of four nulls\", function() {\n  expect(fillArrayWithRepeats(null, 4)).to.deep.equal([null, null, null, null]);\n});\n\nit(\"fillArrayWithRepeats(5, 3) should contain exactly 3 elements all equal to 5\", function() {\n  const array = fillArrayWithRepeats(5, 3);\n  expect(array.length).to.equal(3);\n  expect(array.every(element => element === 5)).to.be.true;\n});\n\nit(\"fillArrayWithRepeats(undefined, 2) should return an array of two undefined values\", function() {\n  expect(fillArrayWithRepeats(undefined, 2)).to.deep.equal([undefined, undefined]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

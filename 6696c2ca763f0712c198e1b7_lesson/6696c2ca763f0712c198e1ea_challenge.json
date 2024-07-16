@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e1ea",
+  "name": {
+    "en": "Find a password",
+    "ru": "Подобрать пароль"
+  },
+  "instruction": {
+    "en": "Create a function `isCorrectPassword` that takes a string and returns `true` if the string is equal to `qwert123`, and `false` otherwise.\n\nTo compare strings, use the triple equal `===` strict equality operator.\n\nExamples of using string comparison:\n```javascript\nconst str = ``pasv'';\nconsole.log(str === 'pasv'); // true\nconsole.log(str === 'pasv '); // false\nconsole.log(str === 'pasv1'); // false\n```\n\nSimilar function:\n```javascript\nfunction isLuckyNumber(num) {\n  if(num === '777') return true;\n  return false;\n}\n```",
+    "ru": "Создайте функцию `isCorrectPassword`, которая принимает строку и возвращает `true`, если строка равна `qwert123`, и `false` в противном случае.\n\nДля сравнения строк используйте оператор тройное равно`===` строгое равенство.\n\nПримеры использования сравнения строк:\n```javascript\nconst str = 'pasv';\nconsole.log(str === 'pasv'); // true\nconsole.log(str === 'pasv '); // false\nconsole.log(str === 'pasv1'); // false\n```\n\nПохожая функции:\n```javascript\nfunction isLuckyNumber(num) {\n  if(num === '777') return true;\n  return false;\n}\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isCorrectPassword(password) {\n  if(password === 'qwert123') return true;\n  return false;\n}",
+  "openTest": "it('Created function isCorrectPassword', () => {\n  expect(isCorrectPassword).to.be.a('function');\n});\n\nit('isCorrectPassword(\"qwert123\") should return true', () => {\n  expect(isCorrectPassword('qwert123')).to.equal(true);\n} );\n\nit('isCorrectPassword(\"qwert1234\") should return false', () => {\n  expect(isCorrectPassword('qwert1234')).to.equal(false);\n} );\n\nit('isCorrectPassword(\"qwert123 \") should return false', () => {\n  expect(isCorrectPassword('qwert123 ')).to.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

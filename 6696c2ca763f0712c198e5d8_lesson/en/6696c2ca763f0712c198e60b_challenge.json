@@ -1,0 +1,4 @@
+{
+  "name": "Checking the presence of properties in the object",
+  "instruction": "Write a function `keyInObject` that takes an object and three keys.\n\nThe function should return the object, with the keys: `key1`, `key2`, `key3`, and the values `true` if the key is in the object, and `false` if there is no key.\n\nAn example of running the function:\n```javascript\nkeyInObject({ make: 'Ford', year: 2020, color: 'blue' }, 'make', 'model', 'year'); // { key1: true, key2: false, key3: true }\nkeyInObject({ a: null, b: undefined, c: NaN }, 'a', 'b', 'c'); // { key1: true, key2: true, key3: true }\n```"
+}

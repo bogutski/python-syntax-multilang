@@ -1,0 +1,72 @@
+{
+  "questions": {
+    "0": {
+      "name": "A memory location whose address can be used to access data is",
+      "variants": {
+        "0": {
+          "name": "variable"
+        },
+        "1": {
+          "name": "link"
+        },
+        "2": {
+          "name": "text"
+        },
+        "3": {
+          "name": "operator"
+        }
+      }
+    },
+    "1": {
+      "name": "In the course of program execution, variables are used",
+      "variants": {
+        "0": {
+          "name": "to output values to the console"
+        },
+        "1": {
+          "name": "for data storage"
+        },
+        "2": {
+          "name": "for checking correctness of the program "
+        },
+        "3": {
+          "name": "for aesthetic purposes"
+        }
+      }
+    },
+    "2": {
+      "name": "When creating a variable, you must always specify its name.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "3": {
+      "name": "When you create a variable, you must make sure to write the initial value into it.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "4": {
+      "name": "In JavaScript, when you create a variable, you must specify its type.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    }
+  },
+  "name": "JS Syntax. What is a variable?"
+}

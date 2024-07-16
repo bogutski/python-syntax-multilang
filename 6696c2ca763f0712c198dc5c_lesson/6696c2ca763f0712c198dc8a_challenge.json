@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dc8a",
+  "name": {
+    "en": "Blank line",
+    "ru": "Пустая строка"
+  },
+  "instruction": {
+    "en": "Create a variable named `empty` and assign it the value of the empty string `''`.\nCreate a variable named `emptyLength` and assign it the value of the string length `empty`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst address = '';\nconst addressLength = address.length;\n```",
+    "ru": "Создайте переменную с именем `empty` и присвойте ей значение пустой строки `''`.\nСоздайте переменную с именем `emptyLength` и присвойте ей значение длины строки `empty`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst address = '';\nconst addressLength = address.length;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const empty = '';\nconst emptyLength = empty.length;",
+  "openTest": "it('Variable `empty` exists and has a value', () => {\n  expect(empty).not.undefined;\n});\n\nit('Variable `empty` has type `string`', () => {\n  expect(empty).a('string');\n});\n\nit('Variable `empty` has the correct value', () => {\n  expect(empty).equal('');\n});\n\nit('The `emptyLength` variable exists and has a value', () => {\n  expect(emptyLength).not.undefined;\n});\n\nit('Variable `emptyLength` has type `number`', () => {\n  expect(emptyLength).a('number');\n});\n\nit('Variable `emptyLength` has the correct value', () => {\n  expect(emptyLength).equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst empty = '';\nconst emptyLength = empty.length;\n```",
+    "ru": "```javascript\nconst empty = '';\nconst emptyLength = empty.length;\n```"
+  }
+}

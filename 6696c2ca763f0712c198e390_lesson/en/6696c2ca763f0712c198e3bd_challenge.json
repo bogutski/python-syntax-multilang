@@ -1,0 +1,5 @@
+{
+  "name": "Average length of five lines",
+  "instruction": "Write a function `averageLength` that takes five strings and returns the average length of those strings.\n\nTo calculate the average length, add the lengths of all the strings and divide by their number.",
+  "instructions": {}
+}

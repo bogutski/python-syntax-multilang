@@ -1,0 +1,166 @@
+{
+  "name": "Logical boolean data type",
+  "questions": {
+    "0": {
+      "name": "Boolean can only be true or false",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "1": {
+      "name": "Choose the correct spelling of boolean options",
+      "variants": {
+        "0": {
+          "name": "True, False"
+        },
+        "1": {
+          "name": "'true', 'false'"
+        },
+        "2": {
+          "name": "true, false"
+        },
+        "3": {
+          "name": "TRUE, FALSE"
+        }
+      }
+    },
+    "2": {
+      "name": "To convert to boolean is used:",
+      "variants": {
+        "0": {
+          "name": "Boolean()"
+        },
+        "1": {
+          "name": "!"
+        },
+        "2": {
+          "name": "!!"
+        },
+        "3": {
+          "name": "toBoolean()"
+        }
+      }
+    },
+    "3": {
+      "name": "What does Boolean(0) return?",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "Error"
+        },
+        "3": {
+          "name": "NaN"
+        }
+      }
+    },
+    "4": {
+      "name": "What does !Boolean('') return?",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "Error"
+        },
+        "3": {
+          "name": "0"
+        }
+      }
+    },
+    "5": {
+      "name": "What will Booleam('Hello') return?",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "Error"
+        },
+        "3": {
+          "name": "Hello"
+        }
+      }
+    },
+    "6": {
+      "name": "Why is ! at the beginning of an expression used?",
+      "variants": {
+        "0": {
+          "name": "To convert to Boolean"
+        },
+        "1": {
+          "name": "To convert to the opposite boolean"
+        },
+        "2": {
+          "name": "To convert to Number"
+        },
+        "3": {
+          "name": "To convert to String"
+        }
+      }
+    },
+    "7": {
+      "name": "What does !!Boolean(0) return?",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "Error"
+        },
+        "3": {
+          "name": "0"
+        }
+      }
+    },
+    "8": {
+      "name": "What does Boolean('Hello') return?",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "Error"
+        },
+        "3": {
+          "name": "Hello"
+        }
+      }
+    },
+    "9": {
+      "name": "What will console.log(!(1 / 0)) return and why?",
+      "variants": {
+        "0": {
+          "name": "false, because 1 / 0 = Infinity. Infinity is true. !Infinity = false"
+        },
+        "1": {
+          "name": "true, because 1 / 0 = Infinity. Infinity is false. !Infinity = true"
+        },
+        "2": {
+          "name": "Error in the code"
+        }
+      }
+    }
+  }
+}

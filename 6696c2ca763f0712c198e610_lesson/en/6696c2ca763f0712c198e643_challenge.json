@@ -1,0 +1,4 @@
+{
+  "name": "Cancel the discount. Deleting object properties",
+  "instruction": "The function `orderSummary` needs to be written.\n\nThe function takes one parameter - an object that describes the order.\nThis object contains information about the price `price`, quantity `quantity` and discount `discount`.\nIt is necessary to remove the property `discount` from the object and return the total amount of the order.\n\nAn example of running the function:\n```javascript\norderSummary({price: 100, quantity: 2, discount: 0.1}); // 200\n```"
+}

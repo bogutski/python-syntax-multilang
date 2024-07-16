@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198e91c",
+  "name": {
+    "ru": "Перебор строки",
+    "en": "String search",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e91d",
+      "name": {
+        "ru": "В строке могут содержаться...",
+        "en": "The string may contain...",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e91e",
+          "name": {
+            "ru": "только буквы",
+            "en": "only letters",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e91f",
+          "name": {
+            "ru": "буквы и знаки",
+            "en": "letters and signs",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e920",
+          "name": {
+            "ru": "буквы и цифры",
+            "en": "letters and numbers",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e921",
+          "name": {
+            "ru": "любые символы",
+            "en": "any characters",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e922",
+      "name": {
+        "ru": "Как обратиться к последнему символу в строке",
+        "en": "How to refer to the last character in a string",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e923",
+          "name": {
+            "ru": "str[last]",
+            "en": "str[last]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e924",
+          "name": {
+            "ru": "str[str.length]",
+            "en": "str[str.length]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e925",
+          "name": {
+            "ru": "str[str.length-1]",
+            "en": "str[str.length-1]",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e926",
+          "name": {
+            "ru": "str.[str.length-1]",
+            "en": "str.[str.length-1]",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e927",
+      "name": {
+        "ru": "Строку можно перебирать только с первого символа",
+        "en": "The string can be searched from the first character only",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e928",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e929",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e92a",
+      "name": {
+        "ru": "Как перебрать строку с конца?",
+        "en": "How do you go through a string from the end?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e92b",
+          "name": {
+            "ru": "for(let i = str.length; i > 0; i--){...}",
+            "en": "for(let i = str.length; i > 0; i--){...}",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e92c",
+          "name": {
+            "ru": "for(let i = str.length-1; i >= 0; i--){...}",
+            "en": "for(let i = str.length-1; i >= 0; i--){...}",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e92d",
+          "name": {
+            "ru": "for(let i = str.length-1; i >= 0; i++){...}",
+            "en": "for(let i = str.length-1; i >= 0; i++){...}",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e92e",
+          "name": {
+            "ru": "for(let i = str.length-1; i < 0; i--){...}",
+            "en": "for(let i = str.length-1; i < 0; i--){...}",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e92f",
+      "name": {
+        "ru": "Какой правильный ответ приведенного кода?",
+        "en": "What is the correct answer of the above code?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'Hello';\nfor(let i = 0; i < str.length; i++){\n  console.log(str[i]);\n}\n```",
+        "en": "```javascript\nlet str = 'Hello';\nfor(let i = 0; i < str.length; i++){\n  console.log(str[i]);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e930",
+          "name": {
+            "ru": "'Hello'",
+            "en": "'Hello'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e931",
+          "name": {
+            "ru": "0, 1, 2, 3, 4",
+            "en": "0, 1, 2, 3, 4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e932",
+          "name": {
+            "ru": "01234",
+            "en": "01234",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e933",
+          "name": {
+            "ru": "'H', 'e', 'l', 'l', 'o'",
+            "en": "'H', 'e', 'l', 'l', 'o'",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e934",
+      "name": {
+        "ru": "Что вернет функция после себя?",
+        "en": "What will the function return after itself?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction getAllSymbols(str){\n  for(let i=0; i<str.length; i++){\n  console.log(i)\n  }\n} \nconsole.log(getAllSymbols('Hello'))```",
+        "en": "```javascript\nfunction getAllSymbols(str){\n  for(let i=0; i<str.length; i++){\n  console.log(i)\n  }\n} \nconsole.log(getAllSymbols('Hello'))```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e935",
+          "name": {
+            "ru": "0 1 2 3 4",
+            "en": "0 1 2 3 4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e936",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e937",
+          "name": {
+            "ru": "error",
+            "en": "error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e938",
+          "name": {
+            "ru": "'H', 'e', 'l', 'l', 'o'",
+            "en": "'H', 'e', 'l', 'l', 'o'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e939",
+      "name": {
+        "ru": "Необходимо посчитать количество цифр в строке. Код ниже работает правильно?",
+        "en": "I need to count the number of digits in a string. Does the code below work correctly?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'as3lj5g902kf0!h2kj#2$j'\nlet number = '0123456789';\nlet count = 0; \nfor(let i=0; i<str.length; i++)\n if (str.includes(number))\ncount++ \nconsole.log(count)\n```",
+        "en": "```javascript\nconst str = 'as3lj5g902kf0!h2kj#2$j'\nlet number = '0123456789';\nlet count = 0; \nfor(let i=0; i<str.length; i++)\n if (str.includes(number))\ncount++ \nconsole.log(count)\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e93a",
+          "name": {
+            "ru": "да, правильный ответ будет 8",
+            "en": "Yes, the correct answer is 8.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e93b",
+          "name": {
+            "ru": "нет, в коде ошибка, необходимо писать if(number.includes(str[i]))",
+            "en": "no, there is an error in the code, you need to write if(number.includes(str[i]))",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e93c",
+          "name": {
+            "ru": "нет, в коде ошибка, необходимо писать if(number === str[i])",
+            "en": "no, there is an error in the code, you should write if(number === str[i])",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e93d",
+          "name": {
+            "ru": "нет, правильно будет if(typeof str[i] === 'number')",
+            "en": "no, the correct way is if(typeof str[i] === 'number')",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e93e",
+      "name": {
+        "ru": "Для перебора строки с помощью цикла всегда нужно знать индекс последнего символа",
+        "en": "To search a string with a loop, you always need to know the index of the last character",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e93f",
+          "name": {
+            "ru": "нет, можно использовать str.length",
+            "en": "no, you can use str.length",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e940",
+          "name": {
+            "ru": "да, иначе цикл получится бесконечным",
+            "en": "yes, otherwise the loop would be infinite",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e941",
+          "name": {
+            "ru": "да, цикл всегда идет он начала строки до конца",
+            "en": "yes, the loop always goes from the beginning of the line to the end.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e942",
+          "name": {
+            "ru": "нет, цикл может быть любой длины",
+            "en": "no, the loop can be of any length",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e943",
+      "name": {
+        "ru": "Что будет выведено в консоль?",
+        "en": "What will be output to the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'Hello';\nconst vowel = 'euioa'; \nfor(let i=0; i<str.length; i++){\n if(vowel.includes(str[i])){console.log(str[i])}\n}\n```\n",
+        "en": "```javascript\nconst str = 'Hello';\nconst vowel = 'euioa'; \nfor(let i=0; i<str.length; i++){\n if(vowel.includes(str[i])){console.log(str[i])}\n}\n```\n",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e944",
+          "name": {
+            "ru": "2",
+            "en": "2",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e945",
+          "name": {
+            "ru": "H l l",
+            "en": "H l l",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e946",
+          "name": {
+            "ru": "e o",
+            "en": "e o",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e947",
+          "name": {
+            "ru": "'H' 'e' 'l' 'l' 'o'",
+            "en": "'H' 'e' 'l' 'l' 'o'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e948",
+      "name": {
+        "ru": "Как правильно написать цикл, чтобы перевернуть слово и получить в консоли 'olleH''?",
+        "en": "What is the correct way to write a loop to loop over a word and get 'olleH' in the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'Hello';\nlet newStr = '';\nfor(***){\n ***;\n}\nconsole.log(newStr);\n```\n",
+        "en": "```javascript\nconst str = 'Hello';\nlet newStr = '';\nfor(***){\n ***;\n}\nconsole.log(newStr);\n```\n",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e949",
+          "name": {
+            "ru": "for (let i = str.length-1; i >= 0; i--){newStr += str[i]}",
+            "en": "for (let i = str.length-1; i >= 0; i--){newStr += str[i]}",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e94a",
+          "name": {
+            "ru": "for (let i = 0; i < str.length; i++){newStr += str[i]}",
+            "en": "for (let i = 0; i < str.length; i++){newStr += str[i]}",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e94b",
+          "name": {
+            "ru": "for (let i = 0; i < str.length; i++){newStr = str[i] + newStr}",
+            "en": "for (let i = 0; i < str.length; i++){newStr = str[i] + newStr}",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e94c",
+          "name": {
+            "ru": "for (let i = str.length; i >= 0; i--){newStr += str[i]}",
+            "en": "for (let i = str.length; i >= 0; i--){newStr += str[i]}",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

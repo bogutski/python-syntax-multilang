@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f957",
+  "name": {
+    "en": "/*",
+    "ru": "Извлечение части массива с отрицательными индексами"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `getMiddleElements`, которая принимает массив и возвращает новый массив, содержащий элементы, начиная с третьего с конца и заканчивая предпоследним элементом массива.\n\n\nПримеры запуска функции:\n```javascript\ngetMiddleElements([1, 2, 3, 4, 5]); // [3, 4]\ngetMiddleElements([10, 20, 30, 40]); // [20, 30]\ngetMiddleElements(['a', 'b', 'c', 'd', 'e']); // ['c', 'd']\ngetMiddleElements([true, false, true, false, true]); // [true, false, true]\n```"
+  },
+  "initialSolution": "function getMiddleElements(){\n\n}",
+  "completedSolution": "function getMiddleElements(arr) {\n  return arr.slice(-3, -1);\n}",
+  "openTest": "it('Created function getMiddleElements', () => {\n  expect(getMiddleElements).to.be.a('function');\n});\n\nit(\"Function getMiddleElements should include slice method\", () => {\n  const result = getMiddleElements.toString();\n  expect(result).to.include('.slice(');\n});\n\nit('getMiddleElements([1, 2, 3, 4, 5]) should return [3, 4]', function() {\n  expect(getMiddleElements([1, 2, 3, 4, 5])).to.eql([3, 4]);\n});\n\nit('getMiddleElements([\"a\", \"b\", \"c\", \"d\", \"e\"]) should return [\"c\", \"d\"]', function() {\n  expect(getMiddleElements([\"a\", \"b\", \"c\", \"d\", \"e\"])).to.eql([\"c\", \"d\"]);\n});\n\nit('getMiddleElements([true, false, true, false, true]) should return [true, false]', function() {\n  expect(getMiddleElements([true, false, true, false, true])).to.eql([true, false]);\n});\n\nit('getMiddleElements([10, 20, 30, 40]) should return [20, 30]', function() {\n  expect(getMiddleElements([10, 20, 30, 40])).to.eql([20, 30]);\n});\n\nit('getMiddleElements([1, 2, 3]) should return [1, 2]', function() {\n  expect(getMiddleElements([1, 2, 3])).to.eql([1, 2]);\n});\n\nit('getMiddleElements([\"apple\", \"banana\", \"cherry\", \"date\"]) should return [\"banana\", \"cherry\"]', function() {\n  expect(getMiddleElements([\"apple\", \"banana\", \"cherry\", \"date\"])).to.eql([\"banana\", \"cherry\"]);\n});\n\nit('getMiddleElements([null, undefined, false, true]) should return [undefined, false]', function() {\n  expect(getMiddleElements([null, undefined, false, true])).to.eql([undefined, false]);\n});\n\nit('getMiddleElements([]) should return []', function() {\n  expect(getMiddleElements([])).to.eql([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

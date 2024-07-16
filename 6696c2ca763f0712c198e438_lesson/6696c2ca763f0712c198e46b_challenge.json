@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e46b",
+  "name": {
+    "en": "Repeat depending on the case of the first letter",
+    "ru": "Повторить в зависимости от регистра первой буквы"
+  },
+  "instruction": {
+    "en": "Write a function `repeatString` that takes a string.\n\nHave the function take the first character of the string and repeat it.\n\nIf the first character is written in upper case, repeat it 3 times, if in lower case, repeat it 2 times.\n\n\nAn example of how to start the function:\n```javascript\nrepeatString('abc'); // 'aa'\nrepeatString('Abc'); // 'AAA'\n```",
+    "ru": "Напиши функцию `repeatString`, которая принимает строку.\n\nПусть функция возьмет первый символ строки и повторит его.\n\nЕсли первый символ написан в верхнем регистре, то повторить его нужно 3 раза, если в нижнем, то 2 раза.\n\n\nПример запуска функции:\n```javascript\nrepeatString('abc'); // 'aa'\nrepeatString('Abc'); // 'AAA'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function repeatString(string) {\n  const firstLetter = string[0];\n  if (firstLetter === firstLetter.toUpperCase()) {\n    return firstLetter.repeat(3);\n  }\n  return firstLetter.repeat(2);\n}",
+  "openTest": "it('Created function repeatString', () => {\n  expect(repeatString).to.be.a('function');\n});\n\nit('Should return \"aa\" for \"abc\"', () => {\n  expect(repeatString('abc')).to.be.equal('aa');\n});\n\nit('Should return \"AAA\" for \"Abc\"', () => {\n  expect(repeatString('Abc')).to.be.equal('AAA');\n});\n\nit('Should return \"bb\" for \"bb\"', () => {\n  expect(repeatString('bb')).to.be.equal('bb');\n});\n\nit('Should return \"BBB\" for \"BBb\"', () => {\n  expect(repeatString('BBb')).to.be.equal('BBB');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

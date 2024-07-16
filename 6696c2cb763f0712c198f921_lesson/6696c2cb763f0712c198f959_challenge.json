@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f959",
+  "name": {
+    "en": "/*",
+    "ru": "Извлечение подмассива и приведение его к верхнему регистру"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `getUpperCaseSlice`, которая принимает массив строк и два числа.\n\nФункция должна возвращать новый массив, содержащий элементы массива между указанными индексами (включительно для начала и не включительно для конца), преобразованные в верхний регистр.\n\n\nПримеры запуска функции:\n```javascript\ngetUpperCaseSlice(['apple', 'banana', 'cherry', 'date', 'fig'], 1, 4); // ['BANANA', 'CHERRY', 'DATE']\ngetUpperCaseSlice(['dog', 'cat', 'rabbit', 'hamster'], 0, 3); // ['DOG', 'CAT', 'RABBIT']\ngetUpperCaseSlice(['sun', 'moon', 'stars'], 2, 3); // ['STARS']\ngetUpperCaseSlice(['blue', 'green', 'red'], 1, 2); // ['GREEN']\n```"
+  },
+  "initialSolution": "function getUpperCaseSlice(){\n\n}",
+  "completedSolution": "function getUpperCaseSlice(arr, start, end) {\n  return arr.slice(start, end).map(el => el.toUpperCase());\n}",
+  "openTest": "it('Created function getUpperCaseSlice', () => {\n  expect(getUpperCaseSlice).to.be.a('function');\n});\n\nit('getUpperCaseSlice([\"apple\", \"banana\", \"cherry\", \"date\", \"fig\"], 1, 4) should return [\"BANANA\", \"CHERRY\", \"DATE\"]', function() {\n  expect(getUpperCaseSlice([\"apple\", \"banana\", \"cherry\", \"date\", \"fig\"], 1, 4)).to.eql([\"BANANA\", \"CHERRY\", \"DATE\"]);\n});\n\nit('getUpperCaseSlice([\"dog\", \"cat\", \"rabbit\", \"hamster\"], 0, 3) should return [\"DOG\", \"CAT\", \"RABBIT\"]', function() {\n  expect(getUpperCaseSlice([\"dog\", \"cat\", \"rabbit\", \"hamster\"], 0, 3)).to.eql([\"DOG\", \"CAT\", \"RABBIT\"]);\n});\n\nit('getUpperCaseSlice([\"sun\", \"moon\", \"stars\"], 2, 3) should return [\"STARS\"]', function() {\n  expect(getUpperCaseSlice([\"sun\", \"moon\", \"stars\"], 2, 3)).to.eql([\"STARS\"]);\n});\n\nit('getUpperCaseSlice([\"blue\", \"green\", \"red\"], 1, 2) should return [\"GREEN\"]', function() {\n  expect(getUpperCaseSlice([\"blue\", \"green\", \"red\"], 1, 2)).to.eql([\"GREEN\"]);\n});\n\nit('getUpperCaseSlice([\"one\", \"two\", \"three\", \"four\"], 1, 3) should return [\"TWO\", \"THREE\"]', function() {\n  expect(getUpperCaseSlice([\"one\", \"two\", \"three\", \"four\"], 1, 3)).to.eql([\"TWO\", \"THREE\"]);\n});\n\nit('getUpperCaseSlice([\"apple\", \"banana\", \"cherry\", \"date\"], 0, 2) should return [\"APPLE\", \"BANANA\"]', function() {\n  expect(getUpperCaseSlice([\"apple\", \"banana\", \"cherry\", \"date\"], 0, 2)).to.eql([\"APPLE\", \"BANANA\"]);\n});\n\nit('getUpperCaseSlice([\"first\", \"second\", \"third\"], 1, 3) should return [\"SECOND\", \"THIRD\"]', function() {\n  expect(getUpperCaseSlice([\"first\", \"second\", \"third\"], 1, 3)).to.eql([\"SECOND\", \"THIRD\"]);\n});\n\nit('getUpperCaseSlice([\"a\", \"b\", \"c\", \"d\"], 2, 4) should return [\"C\", \"D\"]', function() {\n  expect(getUpperCaseSlice([\"a\", \"b\", \"c\", \"d\"], 2, 4)).to.eql([\"C\", \"D\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

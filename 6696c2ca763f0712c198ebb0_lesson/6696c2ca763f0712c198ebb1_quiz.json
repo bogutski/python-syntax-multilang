@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198ebb1",
+  "name": {
+    "ru": "Проверить, является ли строка анаграммой",
+    "en": "Check if the string is an anagram",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198ebb2",
+      "name": {
+        "ru": "Выберите верное определение понятия анаграмма",
+        "en": "Choose the correct definition of an anagram",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebb3",
+          "name": {
+            "ru": "Анаграмма - это слово, образованное путем перемещения половины букв в другое слово.",
+            "en": "An anagram is a word formed by moving half the letters in another word.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebb4",
+          "name": {
+            "ru": "Анаграмма - это слово или фраза, образованные путем уменьшения букв.",
+            "en": "An anagram is a word or phrase formed by reducing letters.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebb5",
+          "name": {
+            "ru": "Анаграмма - это слово или фраза, образованные путем перестановки букв другого слова или фразы.",
+            "en": "An anagram is a word or phrase formed by rearranging the letters of another word or phrase.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebb6",
+          "name": {
+            "ru": "Анаграмма - это фраза, образованная путем удаления согласных букв из слов.",
+            "en": "An anagram is a phrase formed by removing consonant letters from words.",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ebb7",
+      "name": {
+        "ru": "Выберите верный(е) пример(ы) анаграммы",
+        "en": "Choose the correct example(s) of an anagram",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebb8",
+          "name": {
+            "ru": "dusty - study",
+            "en": "dusty - study",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebb9",
+          "name": {
+            "ru": "eleven plus two - twelve plus one",
+            "en": "eleven plus two - twelve plus one",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebba",
+          "name": {
+            "ru": "cook - book",
+            "en": "cook - book",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebbb",
+          "name": {
+            "ru": "save - vase",
+            "en": "vase",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ebbc",
+      "name": {
+        "ru": "Верно ли следующее утверждение? Если длины строк не равны, то это не анаграмма.",
+        "en": "Is the following statement true? If the lengths of the strings are not equal, it is not an anagram.",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebbd",
+          "name": {
+            "ru": "Нет, это утверждение не верно.",
+            "en": "No, that statement is not true.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebbe",
+          "name": {
+            "ru": "Да, это утверждение верно.",
+            "en": "Yes, that statement is true.",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ebbf",
+      "name": {
+        "ru": "Может ли число быть анаграммой?",
+        "en": "Can a number be an anagram?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebc0",
+          "name": {
+            "ru": "Нет, только слова и фразы могут быть анаграммами",
+            "en": "No, only words and phrases can be anagrams",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebc1",
+          "name": {
+            "ru": "Да, но только если помимо цифр в слове или фразе есть буквы",
+            "en": "Yes, but only if there are letters in addition to numbers in the word or phrase",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebc2",
+          "name": {
+            "ru": "Да, но только отрицательные числа могут быть анаграммами",
+            "en": "Yes, but only negative numbers can be anagrams",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebc3",
+          "name": {
+            "ru": "Да, числа тоже могут быть анаграммой",
+            "en": "Yes, numbers can be an anagram too",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ebc4",
+      "name": {
+        "ru": "Верно ли что запуск кода ниже приведет к false?",
+        "en": "Is it true that running the code below will result in false?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```lavascript\nfunction isAnagram(str1, str2){\n  if(str1.length !== str2.length) return false;   \n  for(let i = 0; i < str1.length; i++){         \n    for(let j = 0; j < str2.length; j++){       \n      if(str1[i] === str2[j]) break;              \n      if(str2.length -1 === j) return false;    \n    }\n  }\n  return true;\n}\nconsole.log(isAnagram('dusty', 'study'));  \n```",
+        "en": "```lavascript\nfunction isAnagram(str1, str2){\n  if(str1.length !== str2.length) return false;   \n  for(let i = 0; i < str1.length; i++){         \n    for(let j = 0; j < str2.length; j++){       \n      if(str1[i] === str2[j]) break;              \n      if(str2.length -1 === j) return false;    \n    }\n  }\n  return true;\n}\nconsole.log(isAnagram('dusty', 'study'));  \n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebc5",
+          "name": {
+            "ru": "Да, потому что слова dusty и study не являются анаграммами",
+            "en": "Yes, because the words dusty and study are not anagrams.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebc6",
+          "name": {
+            "ru": "Нет, результатом будет true, потому что слова dusty и study являются анаграммами",
+            "en": "No, the result is true because the words dusty and study are anagrams",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebc7",
+          "name": {
+            "ru": "Да, потому что строки не преведены к единому регистру",
+            "en": "Yes, because the strings are not case-sensitive.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebc8",
+          "name": {
+            "ru": "Да, потому что внутри цикла for используется break",
+            "en": "Yes, because break is used inside the for loop",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ebc9",
+      "name": {
+        "ru": "Если слова vase и save содержат пробелы и написаны в разном регистре, могут ли они быть анаграммой?",
+        "en": "If the words vase and save contain spaces and are written in different case, can they be an anagram?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebca",
+          "name": {
+            "ru": "Да, они являются анаграммой, но надо обрезать пробелы и привести слова к единому регистру",
+            "en": "Yes, they are an anagram, but you have to trim the spaces and bring the words to the same case",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebcb",
+          "name": {
+            "ru": "Нет, слова изначально должны быть написаны в едином регистре и без пробелов",
+            "en": "No, words must initially be written in single case and without spaces",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebcc",
+          "name": {
+            "ru": "Да, если привести их к единому регистру. Пробелы можно не обрезать, они не учитываются в коде",
+            "en": "Yes, if you make them case-sensitive. Spaces may not be trimmed, they are not taken into account in the code",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebcd",
+          "name": {
+            "ru": "Нет, эти слова не являются анаграммой, даже если привести их к единому регистру и обрезать пробелы",
+            "en": "No, these words are not an anagram, even if you bring them to the same case and trim the spaces",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ebce",
+      "name": {
+        "ru": "Что выведется в консоль после запуска кода ниже?",
+        "en": "What will be output to the console after running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction isAnagram(str1, str2){\n    const s1 = str1.trim().toLowerCase();\n    const s2 = str2.trim().toLowerCase();\n    if(s1.length !== s2.length) return false;\n    const s1mod = s1.split('').sort().join('');\n    const s2mod = s2.split('').sort().join('');\n  return s1mod === s2mod;\n}\nconsole.log(isAnagram('a gentleman', 'elegant man'));\n```",
+        "en": "```javascript\nfunction isAnagram(str1, str2){\n    const s1 = str1.trim().toLowerCase();\n    const s2 = str2.trim().toLowerCase();\n    if(s1.length !== s2.length) return false;\n    const s1mod = s1.split('').sort().join('');\n    const s2mod = s2.split('').sort().join('');\n  return s1mod === s2mod;\n}\nconsole.log(isAnagram('a gentleman', 'elegant man'));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebcf",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebd0",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebd1",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebd2",
+          "name": {
+            "ru": "error",
+            "en": "error",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ebd3",
+      "name": {
+        "ru": "Что делает метод sort() с массивом?",
+        "en": "What does the sort() method do to an array?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebd4",
+          "name": {
+            "ru": "Сортирует слова по смыслу",
+            "en": "Sorts words by meaning",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebd5",
+          "name": {
+            "ru": "Сортирует буквы по гласным и согласным",
+            "en": "Sorts letters into vowels and consonants",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebd6",
+          "name": {
+            "ru": "Сортирует массив по алфавиту",
+            "en": "Sorts the array alphabetically",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebd7",
+          "name": {
+            "ru": "Сортирует слова по количеству гласных букв в слове",
+            "en": "Sorts words by the number of vowel letters in the word",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ebd8",
+      "name": {
+        "ru": "Что выведется в консоль после запуска кода ниже?",
+        "en": "What will be output to the console after running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'state'\nconst s2 = str.split('');\nconst s3 = s2.sort();\nconst s4 = s3.join('');\nconsole.log(s3, s4);\n```",
+        "en": "```javascript\nconst str = 'state'\nconst s2 = str.split('');\nconst s3 = s2.sort();\nconst s4 = s3.join('');\nconsole.log(s3, s4);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebd9",
+          "name": {
+            "ru": "['a', 'e', 's', 't', 't']\n'aestt'",
+            "en": "['a', 'e', 's', 't', 't']\n'aestt'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebda",
+          "name": {
+            "ru": "['s', 't', 'a', 't', 'e']\n['a', 'e', 's', 't', 't']",
+            "en": "['s', 't', 'a', 't', 'e']\n['a', 'e', 's', 't', 't']",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebdb",
+          "name": {
+            "ru": "['s', 't', 'a', 't', 'e']\n'aestt'",
+            "en": "['s', 't', 'a', 't', 'e']\n'aestt'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebdc",
+          "name": {
+            "ru": "['a', 'e', 's', 't', 't']\n'taste'",
+            "en": "['a', 'e', 's', 't', 't']\n'taste'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ebdd",
+      "name": {
+        "ru": "Почему результатом работы кода ниже будет false?",
+        "en": "Why would the result of the code below be false?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction isAnagram(str1, str2){\n    const s1 = str1.trim().toLowerCase();\n    const s2 = str2.trim().toLowerCase();\n    if(s1.length !== s2.length) return false;\n    const s1mod = s1.split('').sort().join('');\n    const s2mod = s2.split('').sort().join('');\n  return s1mod === s2mod;\n}\nconsole.log(isAnagram('schoolmaster', 'The classroom'));\n```",
+        "en": "```javascript\nfunction isAnagram(str1, str2){\n    const s1 = str1.trim().toLowerCase();\n    const s2 = str2.trim().toLowerCase();\n    if(s1.length !== s2.length) return false;\n    const s1mod = s1.split('').sort().join('');\n    const s2mod = s2.split('').sort().join('');\n  return s1mod === s2mod;\n}\nconsole.log(isAnagram('schoolmaster', 'The classroom'));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebde",
+          "name": {
+            "ru": "Потому что слова не являются анаграммами друг друга",
+            "en": "Because words are not anagrams of each other",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebdf",
+          "name": {
+            "ru": "Потому что длина строк не совпадает из-за пробела",
+            "en": "Because the lengths of the strings don't match because of the whitespace",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebe0",
+          "name": {
+            "ru": "Потому что в строках разный регистр букв",
+            "en": "Because the strings have different letter cases.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebe1",
+          "name": {
+            "ru": "Результатом работы кода будет true",
+            "en": "The result of the code will be true",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

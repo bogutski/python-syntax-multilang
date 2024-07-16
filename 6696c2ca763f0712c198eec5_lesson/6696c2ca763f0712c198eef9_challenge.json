@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eef9",
+  "name": {
+    "en": "",
+    "ru": "Простая сумма цифр"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `sum`, которая принимает строку, состоящую только из цифр, и возвращает сумму этих цифр.\n\nВ строке не будет пробелов, либо других символов, только цифры от 0 до 9.\n\nHint: для преобразования строки в число можно использовать `Number()` или унарный плюс `+`.\n\n\nПримеры запуска функции:\n```javascript\nsum(''); // 0\nsum('1234'); // 10\nsum('1234567890'); // 45\nsum('12345678901234567890'); // 90\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sum(str){\n  let sum = 0;\n  for(let i = 0; i < str.length; i++){\n    sum += Number(str[i]);\n  }\n  return sum;\n}",
+  "openTest": "it('Created function sum', () => {\n  expect(sum).to.be.a('function');\n});\n\nit(\"sum('1234') should return 10\", () => {\n  expect(sum('1234')).to.be.equal(10);\n});\n\nit(\"sum('1234567890') should return 45\", () => {\n  expect(sum('1234567890')).to.be.equal(45);\n});\n\nit(\"sum('12345678901234567890') should return 90\", () => {\n  expect(sum('12345678901234567890')).to.be.equal(90);\n});\n\nit(\"sum('9543810') should return 30\", () => {\n  expect(sum('9543810')).to.be.equal(30);\n});\n\nit(\"sum('') should return 0\", () => {\n  expect(sum('')).to.be.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

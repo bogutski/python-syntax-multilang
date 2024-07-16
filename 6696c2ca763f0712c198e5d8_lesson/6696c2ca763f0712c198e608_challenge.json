@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e608",
+  "name": {
+    "en": "Sum of object properties",
+    "ru": "Сумма свойств объектов"
+  },
+  "instruction": {
+    "en": "Write a function `sumOfTwoObjects` that takes two objects:\n* `obj1` - object which can have properties `a` and `b`.\n* `obj2` - object which can have properties `a` and `b`\n\nThe function must return a number which is the sum of values of properties `a` and `b` from objects `obj1` and `obj2`.\n\nWe need to take into account:\n * some properties: `a` or `b`, may not be in the objects\n * Values of properties `a` and `b` may not be numbers, but `null` or `undefined`\n\nAn example of running a function:\n```javascript\nsumOfTwoObjects({ a: null, b: 8 }, { a: 3, b: undefined }); // 11\nsumOfTwoObjects({ a: 1, b: 2 }, { a: 3, b: 4 }); // 10\nsumOfTwoObjects({ b: 2 }, { a: 3 }); // 5\n```",
+    "ru": "Напишите функцию `sumOfTwoObjects`, которая принимает два объекта:\n* `obj1` - объект, в котором могут быть свойства `a` и `b`\n* `obj2` - объект, в котором могут быть свойства `a` и `b`\n\nФункция должна вернуть число – сумма значений свойств `a` и `b` из объектов `obj1` и `obj2`.\n\nНужно учесть:\n * каких-то свойств: `a` или `b`, может не быть в объектах\n * значения свойств `a` и `b` могут быть не числами, а `null` или `undefined`\n\nПример запуска функции:\n```javascript\nsumOfTwoObjects({ a: null, b: 8 }, { a: 3, b: undefined }); //  11\nsumOfTwoObjects({ a: 1, b: 2 }, { a: 3, b: 4 }); // 10\nsumOfTwoObjects({ b: 2 }, { a: 3 }); // 5\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sumOfTwoObjects(obj1, obj2) {\n  let sum = 0;\n  if (!!obj1.a && typeof obj1.a === 'number') sum += obj1.a;\n  if (!!obj1.b && typeof obj1.b === 'number') sum += obj1.b;\n  if (!!obj2.a && typeof obj2.a === 'number') sum += obj2.a;\n  if (!!obj2.b && typeof obj2.b === 'number') sum += obj2.b;\n  return sum;\n}",
+  "openTest": "it('Created function sumOfTwoObjects', () => {\n  expect(sumOfTwoObjects).to.be.a('function');\n});\n\nit('sumOfTwoObjects({ a: 1, b: 2 }, { a: 3, b: 4 }) return 10', () => {\n  expect(sumOfTwoObjects({ a: 1, b: 2 }, { a: 3, b: 4 })).eq(10);\n});\n\nit('sumOfTwoObjects({ a: null, b: 8 }, { a: 3, b: undefined }) return 11', () => {\n  expect(sumOfTwoObjects({ a: null, b: 8 }, { a: 3, b: undefined })).eq(11);\n});\n\nit('sumOfTwoObjects({ a: 55, b: undefined }, { a: null, b: 5 }) return 60', () => {\n  expect(sumOfTwoObjects({ a: 55, b: undefined }, { a: null, b: 5 })).to.eql(60);\n});\n\nit('sumOfTwoObjects({ b: 2 }, { a: 3 }) return 5', () => {\n  expect(sumOfTwoObjects({ b: 2 }, { a: 3 })).eq(5);\n});\n\nit('sumOfTwoObjects({}, { b: 999 }) return 999 }', () => {\n  expect(sumOfTwoObjects({}, { b: 999 })).to.eql(999);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

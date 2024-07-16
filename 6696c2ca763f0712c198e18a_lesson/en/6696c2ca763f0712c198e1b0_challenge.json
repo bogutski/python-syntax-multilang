@@ -1,0 +1,4 @@
+{
+  "name": "Discount category",
+  "instruction": "Write a function `discountCategory` that helps you determine how much of a discount the customer will receive.\n\nThe function takes one argument - the amount of the purchase.\n\nDepending on the purchase amount, the function should return a string - the discount category:\n\n- `0%` - if amount is less than 100\n- `1%` - if amount between 100 and 200\n- `2%` - if amount is from 200 to 300\n- `3%` - if amount is from 300 to 400\n- `4%` - if amount is over 400\n\nA similar example:\n```javascript\nfunction category(amount) {\nif(amount > 100) {\nreturn '1%';\n} else {\nreturn '0%';\n}\n}\n```"
+}

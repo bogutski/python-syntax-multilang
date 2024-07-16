@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eb6c",
+  "name": {
+    "en": "Reverse the string, except for elements with certain indices",
+    "ru": "Перевернуть строку, за исключением элементов с определенными индексами"
+  },
+  "instruction": {
+    "en": "Write a function `reverse` that takes a string without spaces and two indexes.\n\nThe function should return a string that includes the original string and the inverted string, separated by a space.\n\nThe loop should check for indexes that are redone in the function parameters. Elements with these indices should not\n should be inverted and included in the final string.\n\nFor example:\n* the string `12345` and the indices `0` and `1` should return `12345 543`, where:\n* `12345` is the original string plus a space\n* `543` - inverted string, except indices `0` and `1`\n\nIn case the string is empty, the function should return: `nothing to reverse`.\n\nExamples of running the function:\n```javascript\nreverse('hello', 0, 4) // 'hello lle'\nreverse('world', 1, 2) // 'world dlw'\nreverse('123', 5, 6) // '123 321'\nreverse('', 0, 0) // 'nothing to reverse'\n```",
+    "ru": "Напишите функцию `reverse`, которая принимает строку без пробелов и два индекса.\n\nФункция должна вернуть строку, которая включает в себя исходную строку и перевернутую строку, через пробел.\n\nВ цикле должна быть проверка на индексы, которые передаются в параметрах функции. Элементы с этими индексами не должны быть перевернуты и не должны быть включены в итоговую строку.\n\nНапример:\n* строка `12345` и индексы `0` и `1` должны вернуть `12345 543`, где:\n* `12345` - исходная строка плюс пробел\n* `543` - перевернутая строка, кроме индексов `0` и `1`\n\nВ случае, если строка пустая, то функция должна вернуть: `nothing to reverse`.\n\nПримеры запуска функции:\n```javascript\nreverse('hello', 0, 4) // 'hello lle'\nreverse('world', 1, 2) // 'world dlw'\nreverse('123', 5, 6) // '123 321'\nreverse('', 0, 0) // 'nothing to reverse'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverse(str, index1, index2) {\n  if(str.length === 0) return 'nothing to reverse';\n  let reversed = '';\n  for(let i = 0; i < str.length; i++) {\n    if(i === index1 || i === index2) continue;\n    else reversed = str[i] + reversed;\n  }\n  return str + ' ' + reversed;\n}",
+  "openTest": "it('Created function reverse', () => {\n  expect(reverse).to.be.a('function');\n});\n\nit(\"reverse('hello', 0, 4) should return 'hello lle'\", () => {\n  expect(reverse('hello', 0, 4)).to.equal('hello lle');\n});\n\nit(\"reverse('world', 1, 2) should return 'world dlw'\", () => {\n  expect(reverse('world', 1, 2)).to.equal('world dlw');\n});\n\nit(\"reverse('applepie', 2, 5) should return 'applepie eielpa\", () => {\n  expect(reverse('applepie', 2, 5)).to.equal('applepie eielpa');\n});\n\nit(\"reverse('javascript', 0, 9) should return 'javascript pircsava'\", () => {\n  expect(reverse('javascript', 0, 9)).to.equal('javascript pircsava');\n});\n\nit(\"reverse('cheese', 5, 4) should return 'cheese eehc'\", () => {\n  expect(reverse('cheese', 5, 4)).to.equal('cheese eehc');\n});\n\nit(\"reverse('grapefruit', 10, 11) should return 'grapefruit tiurfeparg'\", () => {\n  expect(reverse('grapefruit', 10, 11)).to.equal('grapefruit tiurfeparg');\n});\n\nit(\"reverse('', 0, 0) should return 'nothing to reverse'\", () => {\n  expect(reverse('', 0, 0)).to.equal('nothing to reverse');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

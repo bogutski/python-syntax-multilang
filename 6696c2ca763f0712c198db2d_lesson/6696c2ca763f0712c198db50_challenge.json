@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db50",
+  "name": {
+    "en": "Assign value 10 to the variable a",
+    "ru": "Присвойте переменной a значение 10"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-15.png)\n\nCreate a variable named `a`. Use the keyword `let`. Assign a value - the number `10`.\n\nRelated example:\n```javascript\nlet b = 5;\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-15.png)\n\nСоздайте переменную с именем `a`. Используйте ключевое слово` let`. Присвойте значение - число `10`.\n\nПохожий пример:\n```javascript\nlet b = 5;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let a = 10;",
+  "openTest": "it('a is defined', () => {\n  expect (a).to.not.be.undefined;\n});\n\nit('a is 10', () => {\n  expect (a).to.equal(10);\n});\n\nit('a is a number', () => {\n  expect (a).to.be.a('number');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet a = 10;\n```",
+    "ru": "```javascript\nlet a = 10;\n```"
+  }
+}

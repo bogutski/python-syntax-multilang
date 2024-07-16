@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35d4",
+  "name": {
+    "ru": "Исправьте ошибки в коде. Переменная line и пустая строка",
+    "en": "Correct errors in the code. Variable line and empty string",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Требуется написать команду, которая присваивает переменной `line`\nзначение пустой строки `''` с использованием\nключевого слова `let`.\n\nИсправьте ошибки в приведенном коде.",
+    "en": "You need to write a command that assigns the variable `line`\nThe value of the empty string `''` using the\nkeyword `let`.\n\nCorrect the errors in the given code.",
+    "es": ""
+  },
+  "initialSolution": "let line = ' '",
+  "completedSolution": "let line = '';",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

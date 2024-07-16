@@ -1,0 +1,6 @@
+{
+  "name": "How many apples have you picked?",
+  "instruction": "Lena and Maria were picking apples. Lena collected 2 baskets of apples, while Maria collected 3 baskets more.\nHow many baskets of apples did Maria collect? How many baskets did the girls collect together?\n\nCreate a variable `applesLena` and assign it a value of 2.\n\nCreate a variable `applesMaria` and calculate its value.\n\nCreate a variable `applesTotal` and assign it the sum of variables `applesLena` and `applesMaria`.\n\nHere is an example that is essentially similar to what needs to be done.\nAdapt it to the task requirements.\n\n```javascript\nconst bananasPeter = 5;\nconst bananasNick = bananasPeter + 3;\nconst bananasTotal = bananasPeter + bananasNick;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst applesLena = 2;\nconst applesMaria = applesLena + 3;\nconst applesTotal = applesLena + applesMaria;\n```"
+}

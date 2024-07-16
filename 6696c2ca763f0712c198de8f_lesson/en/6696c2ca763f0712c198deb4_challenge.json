@@ -1,0 +1,4 @@
+{
+  "name": "Find 2 to the power of n",
+  "instruction": "A number n is given. Find 2 to the power of n.\n\nDefine a variable `n` and assign to it the value of an arbitrary number from -50 to 50.\nDefine a variable `power` in which calculate 2 to the power of `n`.\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n```\nconst x = 6;\nconst v = 2 ** x;\n```"
+}

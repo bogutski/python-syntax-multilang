@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35c8",
+  "name": {
+    "ru": "Присвойте переменной str значение пустой строки",
+    "en": "Assign an empty string to the str variable",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Создайте переменную с именем `str`.\nИспользуйте ключевое слово `const`.\nПрисвойте значение пустой строки `''`.\n\nДля этого напечатайте команду:\n```\nconst str = '';\n```",
+    "en": "Create a variable named `str`.\nUse keyword `const`.\nAssign a value to the empty string `''`.\n\nTo do this, type the command:\n```\nconst str = '';\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "const str = '';",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "equal"
+}

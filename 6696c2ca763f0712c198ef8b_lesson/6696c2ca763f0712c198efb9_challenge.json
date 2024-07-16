@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198efb9",
+  "name": {
+    "en": "",
+    "ru": "Сумма чисел в массиве"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `sumOfNumbers`, которая принимает массив чисел и возвращает сумму всех чисел в массиве.\n\nЕсли массив пустой, то функция должна вернуть 0.\n\n\nПример запуска функции:\n```javascript\nsumOfNumbers([1,2,3,4,5,10]);       // 25\nsumOfNumbers([100, 200, 300]);      // 600\nsumOfNumbers([-1, -2, -3, -4, -5]); // -15\nsumOfNumbers([]);                   // 0\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sumOfNumbers(arr){\n  let sum = 0;\n  for (let i = 0; i < arr.length; i++){\n    sum += arr[i];\n  }\n  return sum;\n}",
+  "openTest": "it('Created function sumOfNumbers', () => {\n  expect(sumOfNumbers).to.be.a('function');\n});\n\nit('sumOfNumbers([1,2,3,4,5,10]) should return 25', () => {\n  expect(sumOfNumbers([1,2,3,4,5,10])).to.equal(25);\n});\n\nit('sumOfNumbers([100, -50, 0, 50, 100]) should return 200', () => {\n  expect(sumOfNumbers([100, -50, 0, 50, 100])).to.equal(200);\n});\n\nit('sumOfNumbers([-1, -2, -3, -4, -5, -10]) should return -25', () => {\n  expect(sumOfNumbers([-1, -2, -3, -4, -5, -10])).to.equal(-25);\n});\n\nit('sumOfNumbers([1,2,3,4,5,10, 100, -50, 0, 50, 100, -1, -2, -3, -4, -5, -10]) should return 200', () => {\n  expect(sumOfNumbers([1,2,3,4,5,10, 100, -50, 0, 50, 100, -1, -2, -3, -4, -5, -10])).to.equal(200);\n});\n\nit('sumOfNumbers([]) should return 0', () => {\n  expect(sumOfNumbers([])).to.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

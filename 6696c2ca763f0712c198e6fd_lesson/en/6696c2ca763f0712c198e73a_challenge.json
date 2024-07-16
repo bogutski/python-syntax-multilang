@@ -1,0 +1,4 @@
+{
+  "name": "Finding an element in a two-dimensional array",
+  "instruction": "Write a function `multiDimensional` that takes one parameter, an array.\n\nThe array is two-dimensional.\n\nAn example of a multidimensional array:\n`[['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']]`\n\nEach nested array contains strings.\n\nThe function must return the last element of the second nested array.\n\nFor example, from the above two-dimensional array the letter `f` must be returned.\n\n* Spaces at the beginning and at the end of the string must be removed.\n* The string must be converted to uppercase.\n\n```javascript\nmultiDimensional([[' Airplane', 'Airport '], ['Boardwalk', ' Bookstore '], [' Brainstorm ', ' Fisherman']])\n// 'BOOKSTORE'\n```"
+}

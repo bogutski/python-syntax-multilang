@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f1d5",
+  "name": {
+    "en": "Reverse an array of strings",
+    "ru": "Перевернуть массив строк"
+  },
+  "instruction": {
+    "en": "Write a function `reverseArrayOfStrings` that takes an array of strings.\n\nThe function should return a new array where the array is reversed in reverse order, and each string inside the array is reversed in reverse order.\n\nFor example: `['abc', '123', 'false']` => `['eslaf', '321', 'cba']`\n\nIf the array is empty, return the string `'Array is empty'`.\n\nThe `reverse` method cannot be used.\n\nExample of function execution:\n```javascript\nreverseArrayOfStrings(['123', 'test', abc']); // ['cba', 'tset', '321']\nreverseArrayOfStrings(['12345']);             // ['54321']\nreverseArrayOfStrings(['dlrow', 'olleh']);    // ['hello', 'world']\nreverseArrayOfStrings([]);                    // 'Array is empty'\n```",
+    "ru": "Напишите функцию `reverseArrayOfStrings`, которая принимает массив строк.\n\nФункция должна вернуть новый массив, в котором массив перевернут в обратном порядке, и каждая строка внутри массива\n перевернута в обратном порядке.\n\nНапример: `['abc', '123', 'false']` => `['eslaf', '321', 'cba']`\n\nЕсли массив пустой, то вернуть строку `'Array is empty'`.\n\nМетод `reverse` использовать нельзя.\n\n\nПример запуска функции:\n```javascript\nreverseArrayOfStrings(['123', 'test', 'abc']); // ['cba', 'tset', '321']\nreverseArrayOfStrings(['12345']);              // ['54321']\nreverseArrayOfStrings(['dlrow', 'olleh']);     // ['hello', 'world']\nreverseArrayOfStrings([]);                     // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseArrayOfStrings(arr){\n  if(!arr.length) return 'Array is empty';\n  let newArr = [];\n\n  for(let i = arr.length - 1; i >= 0 ; i--){\n    let chunk = '';\n    for(let j = 0; j < arr[i].length; j++){\n      chunk = arr[i][j] + chunk;\n    }\n    newArr.push(chunk);\n  }\n\n  return newArr;\n}",
+  "openTest": "it('Created function reverseArrayOfStrings', () => {\n  expect(reverseArrayOfStrings).to.be.a('function');\n});\n\nit(\"Function reverseArrayOfStrings does not include '.reverse' method\", () => {\n  expect(reverseArrayOfStrings.toString()).to.not.include('.reverse');\n});\n\nit(\"reverseArrayOfStrings(['hello', 'world', 'test']) should return ['tset', 'dlrow', 'olleh']\", () => {\n  expect(reverseArrayOfStrings(['hello', 'world', 'test'])).to.eql(['tset', 'dlrow', 'olleh']);\n});\n\nit(\"reverseArrayOfStrings(['abc', '12345', 'true', '67890']) should return ['09876', 'eurt', '54321', 'cba']\", () => {\n  expect(reverseArrayOfStrings(['abc', '12345', 'true', '67890'])).to.eql(['09876', 'eurt', '54321', 'cba']);\n});\n\nit(\"reverseArrayOfStrings(['avaJ olleH', 'nohtyP olleH', 'tpircSavaJ olleH']) should return ['Hello JavaScript', 'Hello Python', 'Hello Java']\", () => {\n  expect(reverseArrayOfStrings(['avaJ olleH', 'nohtyP olleH', 'tpircSavaJ olleH'])).to.eql(['Hello JavaScript', 'Hello Python', 'Hello Java']);\n});\n\nit(\"reverseArrayOfStrings(['gnimmargorp SJ olleH']) should return ['Hello JS programming']\", () => {\n  expect(reverseArrayOfStrings(['gnimmargorp SJ olleH'])).to.eql(['Hello JS programming']);\n});\n\nit(\"reverseArrayOfStrings([]) should return 'Array is empty'\", () => {\n  expect(reverseArrayOfStrings([])).to.eql('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dbfe",
+  "name": {
+    "en": "The child's height",
+    "ru": "Рост ребенка"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-14.png)\n\nIn one year, the boy Mike's height increased by 9 cm. Find the boy's height.\n\nCreate a `mikeHeight` variable with a value of `120`:\n\nWrite a command that increases the existing value of the `mikeHeight` variable by `9`.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-14.png)\n\nЗа год рост мальчика Майка увеличился на 9 см. Найдите рост мальчика.\n\nСоздайте переменную `mikeHeight` со значением `120`:\n\nЗапишите команду, которая увеличивает имеющееся значение переменной `mikeHeight` на `9`."
+  },
+  "initialSolution": "",
+  "completedSolution": "let mikeHeight = 120;\nmikeHeight = mikeHeight + 9;",
+  "openTest": "it('The variable \"mikeHeight\" should be defined', () => {\n    expect(mikeHeight).not.undefined;\n});\n\nit('The variable \"mikeHeight\" should be a number', () => {\n    expect(mikeHeight).a('number');\n});\n\nit('The variable \"mikeHeight\" should be equal to 129', () => {\n    expect(mikeHeight).eq(129);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet mikeHeight = 120;\nmikeHeight = mikeHeight + 9;\n```",
+    "ru": "```javascript\nlet mikeHeight = 120;\nmikeHeight = mikeHeight + 9;\n```"
+  }
+}

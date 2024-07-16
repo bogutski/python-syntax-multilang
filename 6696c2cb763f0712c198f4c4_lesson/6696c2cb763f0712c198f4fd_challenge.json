@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f4fd",
+  "name": {
+    "en": "/*",
+    "ru": "Обновление объекта в массиве"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `updateTaskStatus`, которая принимает три аргумента: массив объектов `tasks`, индекс `index` задачи в массиве и новый статус `newStatus` задачи.\n\nКаждый объект в массиве tasks содержит два свойства: `name` (имя задачи) и `status` (статус задачи).\n\nФункция должна обновить статус задачи по указанному индексу на `newStatus` с использованием метода `with()` и вернуть новый массив задач без изменения исходного.\n\nЕсли индекс находится за пределами диапазона массива, функция должна вернуть переданный массив без изменений.\n\n\nПример запуска функции:\n```javascript\nconst tasks = [\n  { name: \"Task 1\", status: \"Incomplete\" },\n  { name: \"Task 2\", status: \"Incomplete\" },\n  { name: \"Task 3\", status: \"Complete\" }\n];\n\nconst updatedTasks = updateTaskStatus(tasks, 1, \"Complete\");\nconsole.log(updatedTasks);\n// Вывод: [\n//   { name: \"Task 1\", status: \"Incomplete\" },\n//   { name: \"Task 2\", status: \"Complete\" },\n//   { name: \"Task 3\", status: \"Complete\" }\n// ]\nconsole.log(tasks);\n// Вывод: [\n//   { name: \"Task 1\", status: \"Incomplete\" },\n//   { name: \"Task 2\", status: \"Incomplete\" },\n//   { name: \"Task 3\", status: \"Complete\" }\n// ]\n```"
+  },
+  "initialSolution": "function updateTaskStatus(){\n\n}",
+  "completedSolution": "function updateTaskStatus(arr, i, el) {\n  if(Math.abs(i) > arr.length) return arr\n\n  const updatedObj = {...arr[i], status: el}\n  return arr.with(i, updatedObj);\n}",
+  "openTest": "Array.prototype.with = function(index, value){\n  const newArray = this.slice();\n  newArray.splice(index, 1, value);\n  return newArray;\n}\n\nit('Created function updateTaskStatus', () => {\n  expect(updateTaskStatus).to.be.a('function');\n});\n\nit('Function updateTaskStatus should include method with()', () => {\n  const res = updateTaskStatus.toString()\n  expect(res).to.include('.with(')\n});\n\nit(\"updateTaskStatus(tasks, 1, 'Complete') should correctly update the status of task at index 1\", () => {\n  const tasks = [\n    { name: \"Task 1\", status: \"Incomplete\" },\n    { name: \"Task 2\", status: \"Incomplete\" },\n    { name: \"Task 3\", status: \"Complete\" }\n  ];\n  const updatedTasks = updateTaskStatus(tasks, 1, \"Complete\");\n  expect(updatedTasks[1].status).to.equal(\"Complete\");\n});\n\nit(\"updateTaskStatus should not modify the original tasks array\", () => {\n  const tasks = [\n    { name: \"Task 1\", status: \"Incomplete\" },\n    { name: \"Task 2\", status: \"Incomplete\" },\n    { name: \"Task 3\", status: \"Complete\" }\n  ];\n  updateTaskStatus(tasks, 1, \"Complete\");\n  expect(tasks[1].status).to.equal(\"Incomplete\");\n});\n\nit(\"updateTaskStatus should return the original array if the index is out of bounds\", () => {\n  const tasks = [\n    { name: \"Task 1\", status: \"Incomplete\" }\n  ];\n  const updatedTasks = updateTaskStatus(tasks, 2, \"Complete\");\n  expect(updatedTasks).to.deep.equal(tasks);\n});\n\nit(\"updateTaskStatus should correctly handle negative indices\", () => {\n  const tasks = [\n    { name: \"Task 1\", status: \"Incomplete\" },\n    { name: \"Task 2\", status: \"Incomplete\" },\n    { name: \"Task 3\", status: \"Complete\" }\n  ];\n  const updatedTasks = updateTaskStatus(tasks, -2, \"Complete\");\n  expect(updatedTasks[1].status).to.equal(\"Complete\");\n});\n\nit(\"updateTaskStatus should update the task even if the new status is the same as the current status\", () => {\n  const tasks = [\n    { name: \"Task 1\", status: \"Incomplete\" },\n    { name: \"Task 2\", status: \"Complete\" }\n  ];\n  const updatedTasks = updateTaskStatus(tasks, 1, \"Complete\");\n  expect(updatedTasks[1].status).to.equal(\"Complete\");\n});\n\nit(\"updateTaskStatus should not change the array if index is invalid\", () => {\n  const tasks = [\n    { name: \"Task 1\", status: \"Incomplete\" },\n    { name: \"Task 2\", status: \"Incomplete\" }\n  ];\n  const updatedTasks = updateTaskStatus(tasks, 5, \"Complete\");\n  expect(updatedTasks).to.deep.equal(tasks);\n});\n\nit(\"updateTaskStatus should correctly update the first task's status when index is 0\", () => {\n  const tasks = [\n    { name: \"Task 1\", status: \"Incomplete\" },\n    { name: \"Task 2\", status: \"Complete\" }\n  ];\n  const updatedTasks = updateTaskStatus(tasks, 0, \"Complete\");\n  expect(updatedTasks[0].status).to.equal(\"Complete\");\n});\n\nit(\"updateTaskStatus should return a new array instance\", () => {\n  const tasks = [\n    { name: \"Task 1\", status: \"Incomplete\" },\n    { name: \"Task 2\", status: \"Incomplete\" }\n  ];\n  const updatedTasks = updateTaskStatus(tasks, 1, \"Complete\");\n  expect(updatedTasks).to.not.equal(tasks);\n  expect(updatedTasks).to.be.an.instanceof(Array);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

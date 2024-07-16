@@ -1,0 +1,401 @@
+{
+  "_id": "6696c2ca763f0712c198dc9b",
+  "name": {
+    "ru": "Числа и строки",
+    "en": "Numbers and strings",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198dc9c",
+      "name": {
+        "ru": "Для обозначения текста используются",
+        "en": "The text is used to denote",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc9d",
+          "name": {
+            "ru": "Одинарные кавычки ('')",
+            "en": "Single quotes ('')",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc9e",
+          "name": {
+            "ru": "Двойные кавычки (\"\")",
+            "en": "Double quotes (\"\")",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc9f",
+          "name": {
+            "ru": "Наклонные кавычки (``)",
+            "en": "Inclined quotation marks (``)",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dca0",
+      "name": {
+        "ru": "Для определения границ строки кавычки должны быть парными – открытая и закрытая",
+        "en": "To determine the line boundaries, the quotation marks must be paired - open and closed",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dca1",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dca2",
+          "name": {
+            "ru": "Достаточно одной кавычки в начале строки",
+            "en": "One quotation mark at the beginning of the line is enough",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dca3",
+      "name": {
+        "ru": "Если первая кавычка в строке одинарная, то вторая должна быть одинарной, а не двойной",
+        "en": "If the first quote in the line is single, then the second quote should be single, not double",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dca4",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dca5",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dca6",
+      "name": {
+        "ru": "Числа записываются без кавычек",
+        "en": "Numbers are written without quotation marks",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dca7",
+          "name": {
+            "ru": "Верно",
+            "en": "Right",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dca8",
+          "name": {
+            "ru": "Неверно",
+            "en": "Wrong",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dca9",
+      "name": {
+        "ru": "С числами можно производить арифметические операции",
+        "en": "You can perform arithmetic operations with numbers",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcaa",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcab",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dcac",
+      "name": {
+        "ru": "Знак % в выражении 10 % 3 означает",
+        "en": "The % sign in 10 % 3 means",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcad",
+          "name": {
+            "ru": "знак деления",
+            "en": "division symbol",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcae",
+          "name": {
+            "ru": "извлечение процента",
+            "en": "percentage extraction",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcaf",
+          "name": {
+            "ru": "получение остатка от деления",
+            "en": "obtaining the remainder of a division",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcb0",
+          "name": {
+            "ru": "получение дробной части от деления",
+            "en": "getting the fractional part from division",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dcb1",
+      "name": {
+        "ru": "Результат выражения 11 % 3 равен",
+        "en": "The result of the expression 11 % 3 is",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcb2",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcb3",
+          "name": {
+            "ru": "2",
+            "en": "2",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcb4",
+          "name": {
+            "ru": "3",
+            "en": "3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcb5",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dcb6",
+      "name": {
+        "ru": "Знак ** в выражении 2 ** 3 означает",
+        "en": "The sign ** in the expression 2 ** 3 means",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcb7",
+          "name": {
+            "ru": "Возведение 3 в степень 2",
+            "en": "Increasing 3 to the power of 2",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcb8",
+          "name": {
+            "ru": "Возведение 2 в степень 3",
+            "en": "Increment 2 to the power of 3",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcb9",
+          "name": {
+            "ru": "Умножение 2 на 3",
+            "en": "Multiplying 2 by 3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcba",
+          "name": {
+            "ru": "Умножение 3 на 2",
+            "en": "Multiplying 3 by 2",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dcbb",
+      "name": {
+        "ru": "Чтобы извлечь квадратный корень из числа 16, нужно написать",
+        "en": "To extract the square root of 16, write",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcbc",
+          "name": {
+            "ru": "16 ** 2",
+            "en": "16 ** 2",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcbd",
+          "name": {
+            "ru": "16 ** 5",
+            "en": "16 ** 5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcbe",
+          "name": {
+            "ru": "16 ** 0.5",
+            "en": "16 ** 0.5",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcbf",
+          "name": {
+            "ru": "0.5 ** 16",
+            "en": "0.5 ** 16",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dcc0",
+      "name": {
+        "ru": "Выражение 2 + 3 * 4 равно",
+        "en": "The expression 2 + 3 * 4 is",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dcc1",
+          "name": {
+            "ru": "20",
+            "en": "20",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcc2",
+          "name": {
+            "ru": "14",
+            "en": "14",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcc3",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dcc4",
+          "name": {
+            "ru": "12",
+            "en": "12",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

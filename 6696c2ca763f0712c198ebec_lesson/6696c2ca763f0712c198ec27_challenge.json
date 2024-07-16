@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec27",
+  "name": {
+    "en": "Replacing a character with its index",
+    "ru": "Замена символа на его индекс"
+  },
+  "instruction": {
+    "en": "Write a function `replaceElWithIndex` that takes a string and a character.\n\nThe function should return a new string that contains all characters from the original string, except those that match the character passed in the second argument.\n\nInstead of these characters the new string should contain their indexes in the original string.\n\nFor example, `replaceElWithIndex('abc', 'b')` should return `'a1c'`, because the character `b` has index `1` in the string `abc`.\n\nWhen checking an element for a character match, it is necessary to bring the element and the character to the same case.\n\n\nExamples of running the function:\n```javascript\nreplaceElWithIndex('Hello World', 'l'); // 'He23o Wor9d'\nreplaceElWithIndex('PulchrItudinous', 'i'); // 'Pulchr6tud10nous'\nreplaceElWithIndex('', ''); // ''\n```",
+    "ru": "Напишите функцию `replaceElWithIndex`, которая принимает строку и символ.\n\nФункция должна вернуть новую строку, которая содержит все символы из исходной строки, кроме тех, что совпадают с символом, переданным вторым аргументом.\n\nВместо этих символов в новой строке должны быть их индексы в исходной строке.\n\nНапример, `replaceElWithIndex('abc', 'b')` должна вернуть `'a1c'`, потому что символ `b` имеет индекс `1` в строке `abc`.\n\nВо время проверке элемента на совпадение с символом, необходимо привести элемент и символ к одному регистру.\n\n\nПримеры запуска функции:\n```javascript\nreplaceElWithIndex('Hello World', 'l'); // 'He23o Wor9d'\nreplaceElWithIndex('PulchrItudinous', 'i'); // 'Pulchr6tud10nous'\nreplaceElWithIndex('', ''); // ''\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function replaceElWithIndex(str, el) {\n  let newStr = '';\n  for (let i = 0; i < str.length; i++) {\n    if (str[i].toLowerCase() === el.toLowerCase()) newStr += i;\n    else newStr += str[i];\n  }\n  return newStr;\n}",
+  "openTest": "it('Created function replaceElWithIndex', () => {\n  expect(replaceElWithIndex).to.be.a('function');\n});\n\nit(\"replaceElWithIndex('Hello World', 'l') returns 'He23o Wor9d'\", () => {\n  expect(replaceElWithIndex('Hello World', 'l')).to.eq('He23o Wor9d');\n});\n\nit(\"replaceElWithIndex('HullAballoo', 'a') returns 'Hull4b6lloo'\", () => {\n  expect(replaceElWithIndex('HullAballoo', 'a')).to.eq('Hull4b6lloo');\n});\n\nit(\"replaceElWithIndex('Bumbershoot', 'O') returns 'Bumbersh89t'\", () => {\n  expect(replaceElWithIndex('Bumbershoot', 'O')).to.eq('Bumbersh89t');\n});\n\nit(\"replaceElWithIndex('PulchrItudinous', 'i') returns 'Pulchr6tud10nous'\", () => {\n  expect(replaceElWithIndex('PulchrItudinous', 'i')).to.eq('Pulchr6tud10nous');\n});\n\nit(\"replaceElWithIndex('', '') returns ''\", () => {\n  expect(replaceElWithIndex('', '')).to.eq('');\n});\n\nit(\"replaceElWithIndex('', 'w') returns ''\", () => {\n  expect(replaceElWithIndex('', 'w')).to.eq('');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

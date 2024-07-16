@@ -1,0 +1,4 @@
+{
+  "name": "Formatted answer. Squares of circles",
+  "instruction": "Write a function `CircleAreaFormatted` that takes the radius of a circle as a parameter and returns a string like `Area of circle with radius 2 is 12.56`.\n\nTo calculate the area of a circle, use the function `circleArea` that takes the radius of the circle as a parameter and returns its area.\n\nAs a result, you should have two functions: `circleArea` and `circleAreaFormatted`.\n\n`PI = 3.14`.\n\nTo avoid rounding errors, use the formula `PI * (radius ** 2)` to calculate the area of the circle."
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Самая длинная строка из двух",
+  "instruction": "Напишите функцию `longestString`, которая принимает две строки и возвращает самую длинную из них.\n\nПри равенстве длин возвращается первая строка.\n\nПримеры запуска функции:\n```javascript\nlongestString('aaa', 'aa'); // 'aaa'\nlongestString('aaa', 'bbbb'); // 'bbbb'\nlongestString('aaa', 'qqq'); // 'aaa'\n```",
+  "instructions": {}
+}

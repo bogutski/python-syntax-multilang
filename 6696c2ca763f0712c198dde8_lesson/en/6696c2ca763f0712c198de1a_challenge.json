@@ -1,0 +1,6 @@
+{
+  "name": "Decrement, or reduction of a number by 1",
+  "instruction": "The price of the product was $10, but it was reduced by $1. Find the new price of the product.\n\nSet the variable `price` and assign it the value of 10.\nThen write the command that decreases the value of the variable `price` by 1.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nlet number = 8;\nnumber--;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet price = 10;\nprice--;\n```"
+}

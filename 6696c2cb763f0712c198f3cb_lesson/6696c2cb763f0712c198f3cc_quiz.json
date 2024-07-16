@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2cb763f0712c198f3cc",
+  "name": {
+    "ru": "Array.prototype.splice() – добавляет, удаляет элементы массива",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f3cd",
+      "name": {
+        "ru": "Что делает метод splice()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f3ce",
+          "name": {
+            "ru": "Возвращает новый массив, содержащий удаленные элементы.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3cf",
+          "name": {
+            "ru": "Изменяет содержимое исходного массива, добавляя или удаляя элементы.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3d0",
+          "name": {
+            "ru": "Создает копию исходного массива.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3d1",
+          "name": {
+            "ru": "Сортирует элементы массива по возрастанию.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f3d2",
+      "name": {
+        "ru": "Как удалить элементы из массива, начиная с индекса 2, не добавляя новые элементы?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f3d3",
+          "name": {
+            "ru": "array.splice(2);",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3d4",
+          "name": {
+            "ru": "array.splice(2, 1);",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3d5",
+          "name": {
+            "ru": "array.splice(2, 0);",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3d6",
+          "name": {
+            "ru": "array.splice(2, max);",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f3d7",
+      "name": {
+        "ru": "Какой код добавит 'mango' и 'kiwi' в массив фруктов после 'banana'?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet fruits = ['apple', 'orange', 'banana'];\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f3d8",
+          "name": {
+            "ru": "fruits.splice(2, 0, 'mango', 'kiwi');",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3d9",
+          "name": {
+            "ru": "```javascript\nfruits.splice(3, 0, 'mango', 'kiwi');\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3da",
+          "name": {
+            "ru": "```javascript\nfruits.splice(1, 2, 'mango', 'kiwi');\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3db",
+          "name": {
+            "ru": "```javascript\nfruits.splice(-1, 0, 'mango', 'kiwi');\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f3dc",
+      "name": {
+        "ru": "Как удалить все элементы массива, начиная с третьего?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f3dd",
+          "name": {
+            "ru": "array.splice(2);",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3de",
+          "name": {
+            "ru": "array.splice(3);",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3df",
+          "name": {
+            "ru": "array.splice(0, 3);",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3e0",
+          "name": {
+            "ru": "array.splice(2, array.length - 2);",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f3e1",
+      "name": {
+        "ru": "Что вернет метод splice(), если не удалить ни одного элемента?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f3e2",
+          "name": {
+            "ru": "Пустой массив",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3e3",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3e4",
+          "name": {
+            "ru": "Исходный массив",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3e5",
+          "name": {
+            "ru": "null",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f3e6",
+      "name": {
+        "ru": "Как заменить в массиве первый элемент на новый?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f3e7",
+          "name": {
+            "ru": "array.splice(0, 1, 'new element');",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3e8",
+          "name": {
+            "ru": "array.splice(1, 0, 'new element');",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3e9",
+          "name": {
+            "ru": "array.splice(0, 0, 'new element');",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3ea",
+          "name": {
+            "ru": "array.splice(1, 1, 'new element');",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f3eb",
+      "name": {
+        "ru": "Какой код правильно удаляет последний элемент массива?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f3ec",
+          "name": {
+            "ru": "array.pop();",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3ed",
+          "name": {
+            "ru": "array.splice(-1);",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3ee",
+          "name": {
+            "ru": "array.splice(array.length - 1, 1);",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3ef",
+          "name": {
+            "ru": "Все варианты верны",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f3f0",
+      "name": {
+        "ru": "Можно ли использовать splice() для добавления элементов без удаления существующих?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f3f1",
+          "name": {
+            "ru": "Нет, для добавления используется только push().",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3f2",
+          "name": {
+            "ru": "Да, установив deleteCount в -1.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3f3",
+          "name": {
+            "ru": "Нет, splice() всегда удаляет элементы.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3f4",
+          "name": {
+            "ru": "Да, установив deleteCount в 0.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f3f5",
+      "name": {
+        "ru": "Какой из этих кодов удалит второй и третий элементы из массива?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f3f6",
+          "name": {
+            "ru": "array.splice(1, 3);",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3f7",
+          "name": {
+            "ru": "array.splice(2, 1);",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3f8",
+          "name": {
+            "ru": "array.splice(1, 2);",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3f9",
+          "name": {
+            "ru": "array.splice(2, 3);",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f3fa",
+      "name": {
+        "ru": "Что произойдет, если deleteCount больше, чем количество элементов, следующих за start?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f3fb",
+          "name": {
+            "ru": "Все элементы после и включая start будут удалены.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3fc",
+          "name": {
+            "ru": "Ничего не будет удалено.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3fd",
+          "name": {
+            "ru": "Произойдет ошибка.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f3fe",
+          "name": {
+            "ru": "Метод вернет пустой массив.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

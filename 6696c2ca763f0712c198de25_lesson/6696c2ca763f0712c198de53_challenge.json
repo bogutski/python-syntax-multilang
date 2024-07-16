@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de53",
+  "name": {
+    "en": "Subtraction of numbers written as strings",
+    "ru": "Вычитание чисел, записанных в виде строк"
+  },
+  "instruction": {
+    "en": "Set variables `a` and `b` and assign them values as strings containing arbitrary numbers.\n\nSet variable `difference` and assign it the result of subtracting the numbers (subtract `b` from `a`), after converting the strings to numbers.\nFor example, the result of `'5' - '3'` should be 2.\n\nHere is an example that is conceptually similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst num1 = '13';\nconst num2 = '15';\nconst result = +num1 - +num2;\n```",
+    "ru": "Задайте переменные `a` и `b` и присвойте им значения строк, содержащих произвольные числа.\n\nЗадайте переменную `difference` и присвойте ей результат вычитания чисел (от a отнимите  b), предварительно преобразовав строки в числа.\nТ.е. например, результат `'5' - '3'` должен быть равен 2.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst num1 = '13';\nconst num2 = '15';\nconst result = +num1 - +num2;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const a = '20';\nconst b = '22';\nconst difference = +a - +b;",
+  "openTest": "it('Variable `a` contains a value', () => {\n  expect(a).not.undefined;\n});\n\nit('the variable type `a` is string', () => {\n  expect(a).a('string');\n});\n\nit('the variable `a` is not NaN', () => {\n  expect(isNaN(a)).false;\n});\n\nit('Variable `b` contains a value', () => {\n  expect(b).not.undefined;\n});\n\nit('the variable type `b` is a string', () => {\n  expect(b).a('string');\n});\n\nit('the variable `b` is not NaN', () => {\n  expect(isNaN(b)).false;\n});\n\nit('variable `difference` contains a value', () => {\n  expect(difference).not.undefined;\n});\n\nit('The variable `difference` type is a number', () => {\n  expect(difference).a('number');\n});\n\nit('the variable `difference` is not NaN', () => {\n  expect(isNaN(difference)).false;\n});\n\nit('the variable `difference` has the correct value', () => {\n  expect(difference).equal(+a - +b);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst a = '20';\nconst b = '22';\nconst difference = +a - +b;\n```",
+    "ru": "```javascript\nconst a = '20';\nconst b = '22';\nconst difference = +a - +b;\n```"
+  }
+}

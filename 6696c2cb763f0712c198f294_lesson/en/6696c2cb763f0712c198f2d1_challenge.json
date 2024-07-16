@@ -1,0 +1,5 @@
+{
+  "name": "Count the number of occurrences of each element in the array",
+  "instruction": "The function `countEachEl` takes an array of strings and returns an object where the keys are the elements of the array and the values are the number of times these elements appear in the array.\n\nExamples of function execution:\n```javascript\ncountEachEl([\"hello\", \"js\", \"js\"]) // {hello: 1, js: 2}\ncountEachEl([\"a\", \"b\", \"c\", \"a\", \"c\", \"a\", \"x\"]) // {a: 3, b: 1, c: 2, x: 1}\n```",
+  "instructions": {}
+}

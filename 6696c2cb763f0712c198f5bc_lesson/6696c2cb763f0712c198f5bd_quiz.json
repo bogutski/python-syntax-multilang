@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2cb763f0712c198f5bd",
+  "name": {
+    "ru": "Array.prototype.sort() – сортирует элементы массива на месте",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f5be",
+      "name": {
+        "ru": "Как по умолчанию sort() сортирует элементы массива?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f5bf",
+          "name": {
+            "ru": "В случайном порядке",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5c0",
+          "name": {
+            "ru": "По возрастанию числовых значений",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5c1",
+          "name": {
+            "ru": "Как строки в лексикографическом порядке",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5c2",
+          "name": {
+            "ru": "Как числа в порядке убывания",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f5c3",
+      "name": {
+        "ru": "Какой из следующих вариантов правильно сортирует массив чисел по убыванию?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f5c4",
+          "name": {
+            "ru": "```javascript\nnumbers.sort((a, b) => a > b);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5c5",
+          "name": {
+            "ru": "```javascript\nnumbers.sort((a, b) => b - a);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5c6",
+          "name": {
+            "ru": "```javascript\nnumbers.sort((a, b) => a < b);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5c7",
+          "name": {
+            "ru": "```javascript\nnumbers.sort((a, b) => a + b);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f5c8",
+      "name": {
+        "ru": "Что произойдет после выполнения следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst fruits = ['banana', 'apple', 'pear'];\nfruits.sort();\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f5c9",
+          "name": {
+            "ru": "Массив fruits будет отсортирован в алфавитном порядке.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5ca",
+          "name": {
+            "ru": "Массив fruits будет отсортирован в обратном алфавитном порядке.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5cb",
+          "name": {
+            "ru": "Массив fruits останется в исходном порядке.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5cc",
+          "name": {
+            "ru": "Произойдет ошибка выполнения.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f5cd",
+      "name": {
+        "ru": "Что возвращает метод sort()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f5ce",
+          "name": {
+            "ru": "Новый массив с отсортированными элементами",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5cf",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5d0",
+          "name": {
+            "ru": "Исходный массив, отсортированный на месте",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5d1",
+          "name": {
+            "ru": "Булево значение, указывающее успешность сортировки",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f5d2",
+      "name": {
+        "ru": "Каким образом можно отсортировать массив объектов { name: <Name>, age: <Age> } по возрасту в порядке возрастания?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f5d3",
+          "name": {
+            "ru": "```javascript\nobjects.sort((a, b) => a.age - b.age);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5d4",
+          "name": {
+            "ru": "```javascript\nobjects.sort((a, b) => a.name > b.name);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5d5",
+          "name": {
+            "ru": "```javascript\nobjects.sort((a, b) => a.age);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5d6",
+          "name": {
+            "ru": "```javascript\nobjects.sort((a, b) => a.age < b.age);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f5d7",
+      "name": {
+        "ru": "Как sort() обрабатывает null и undefined в числовом массиве?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f5d8",
+          "name": {
+            "ru": "Относит их к самому началу массива.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5d9",
+          "name": {
+            "ru": "Относит их к самому концу массива.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5da",
+          "name": {
+            "ru": "Удаляет их из массива перед сортировкой.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5db",
+          "name": {
+            "ru": "Игнорирует их при сортировке, оставляя на своих местах.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f5dc",
+      "name": {
+        "ru": "Какие аспекты следует учитывать, используя метод sort() для больших массивов?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f5dd",
+          "name": {
+            "ru": "Сортировка может быть неэффективной и медленной.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5de",
+          "name": {
+            "ru": "Метод sort() использует минимальное количество памяти.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5df",
+          "name": {
+            "ru": "Всегда гарантируется стабильная сортировка.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5e0",
+          "name": {
+            "ru": "Результат сортировки не зависит от реализации JavaScript движка.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f5e1",
+      "name": {
+        "ru": "Что будет результатом выполнения следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = [4, 2, 5, 1, 3];\nnumbers.sort((a, b) => 0);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f5e2",
+          "name": {
+            "ru": "[1, 2, 3, 4, 5]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5e3",
+          "name": {
+            "ru": "[4, 2, 5, 1, 3]",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5e4",
+          "name": {
+            "ru": "[5, 4, 3, 2, 1]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5e5",
+          "name": {
+            "ru": "Результат будет случайным",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f5e6",
+      "name": {
+        "ru": "Что вернет следующий код?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst items = [{ value: 10 }, { value: 5 }, { value: 20 }];\nitems.sort((a, b) => a.value < b.value ? 1 : -1);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f5e7",
+          "name": {
+            "ru": "[{ value: 5 }, { value: 10 }, { value: 20 }]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5e8",
+          "name": {
+            "ru": "[{ value: 20 }, { value: 10 }, { value: 5 }]",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5e9",
+          "name": {
+            "ru": "[{ value: 10 }, { value: 5 }, { value: 20 }]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5ea",
+          "name": {
+            "ru": "[{ value: 20 }, { value: 5 }, { value: 10 }]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f5eb",
+      "name": {
+        "ru": "Что будет результатом следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = [6, -1, 7, 0, 2];\nnumbers.sort((a, b) => b - a);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f5ec",
+          "name": {
+            "ru": "[6, -1, 7, 0, 2]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5ed",
+          "name": {
+            "ru": "[-1, 0, 2, 6, 7]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5ee",
+          "name": {
+            "ru": "[7, 6, 2, 0, -1]",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f5ef",
+          "name": {
+            "ru": "Ошибка",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

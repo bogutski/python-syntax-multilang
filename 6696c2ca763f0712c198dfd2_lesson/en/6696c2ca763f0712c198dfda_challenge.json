@@ -1,0 +1,4 @@
+{
+  "name": "Fix a bug in the contactFormat function so that it sticks the strings together correctly.",
+  "instruction": "Fix a bug in the `contactFormat` function so that it sticks the strings together correctly.\n\nThe function is expected to take three parameters: `firstName`, `lastName` and `phone` and return a string in the format `'lastName firstName: phone'`.\n\nExample runtime:\n```javascript\ncontactFormat('John', 'Doe', '+1234567890'); // 'Doe John: +1234567890'\ncontactFormat('Jane', 'Smith', '+17897897845'); // 'Smith Jane: +17897897845'\n```"
+}

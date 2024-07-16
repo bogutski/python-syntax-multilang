@@ -1,0 +1,4 @@
+{
+  "name": "The remainder of the division of two numbers",
+  "instruction": "Create a function `remainder` that takes two numbers as parameters and returns the remainder of\nof the first parameter by the second.\n\nExamples:\n\n* the function remainder(21, 10) should return 1;\n* function remainder(5, 8) should return 5;\n* function remainder(20, 3) should return 2;"
+}

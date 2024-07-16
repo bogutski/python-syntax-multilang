@@ -1,0 +1,5 @@
+{
+  "name": "Проверка на перевернутую строку",
+  "instruction": "Напишите функцию `reversedString`, которая принимает два аргумента: `string` и `reversedString`.\n\nВ этой задаче вам нужно будет проверить, является ли `string` перевернутой версией `reversedString`.\n\nРазверните `string` задом наперед и сравните с `reversedString`. Если они совпадают, верните `true`, иначе `false`.\n\nПримеры запуска функции:\n```javascript\nreversedString('hello', 'olleh'); // true\nreversedString('apple', 'apple'); // false\nreversedString('123', ''); // false\n```",
+  "instructions": {}
+}

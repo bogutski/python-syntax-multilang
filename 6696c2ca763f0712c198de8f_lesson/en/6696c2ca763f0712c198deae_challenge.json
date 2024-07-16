@@ -1,0 +1,4 @@
+{
+  "name": "Remainder of dividing one number by another",
+  "instruction": "The numbers a and b are given. Find the remainder of a divided by b.\n\nCreate variables `a` and `b` and assign them values of arbitrary positive numbers.\n\nCreate a variable `remainder` and assign it an expression to find the remainder of division of `a` by `b`.\n\nHere is an example, which is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n```\nconst x = 5;\nconst y = 2;\nconst rest = x % y; // 5 % 2 = 1\n```"
+}

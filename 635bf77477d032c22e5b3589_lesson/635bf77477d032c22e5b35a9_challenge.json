@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35a9",
+  "name": {
+    "ru": "Удалите лишние пробелы",
+    "en": "Remove any extra spaces",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Требуется написать команду, которая выводит в консоль слово \"Coding\".\nПравильное решение:\n```\nconsole.log('Coding');\n```\nУдалите лишние пробелы в приведенном коде.",
+    "en": "You need to write a command that outputs the word \"Coding\" to the console.\nThe correct solution is:\n```\nconsole.log('Coding');\n```\nRemove unnecessary spaces in the above code.\n\n",
+    "es": ""
+  },
+  "initialSolution": "console. log ( 'Coding' ) ;",
+  "completedSolution": "console.log('Coding');",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

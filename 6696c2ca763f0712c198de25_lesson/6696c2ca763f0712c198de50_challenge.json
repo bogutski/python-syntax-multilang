@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de50",
+  "name": {
+    "en": "Everything is beautiful!",
+    "ru": "Everything is beautiful!"
+  },
+  "instruction": {
+    "en": "The operation `+` is used not only for adding numbers, but also for concatenating strings.\nThis operation is called \"concatenation\".\n\nSet the variable `str1` and assign it the value of the string `'Everything'`.\nSet the variable `str2` and assign it the value of the string `'is'`.\nSet the variable `str3` and assign it the value of the string `'beautiful'`.\n\nSet the variable `message` and assign it the result of merging the variables `str1`, `str2`, and `str3` with a space separator and an exclamation mark at the end.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst x = 'best';\nconst y = 'day';\nconst res = x + ' ' + y;\n```",
+    "ru": "Операция `+` используется не только для сложения чисел, но и для соединения (слияния) строк.\nЭта операция называется \"конкатенация\".\n\nЗадайте переменную `str1` и присвойте ей значение строки `'Everything'`.\nЗадайте переменную `str2` и присвойте ей значение строки `'is'`.\nЗадайте переменную `str3` и присвойте ей значение строки `'beautiful'`.\n\nЗадайте переменную `message` и присвойте ей результат слияния переменных `str1`, `str2` и `str3` с разделителем-пробелом и восклицательным знаком в конце.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst x = 'best';\nconst y = 'day';\nconst res = x + ' ' + y;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const str1 = 'Everything';\nconst str2 = 'is';\nconst str3 = 'beautiful';\nconst message = str1 + ' ' + str2 + ' ' + str3 + '!';",
+  "openTest": "it('Variable `str1` contains a value', () => {\n  expect(str1).not.undefined;\n});\n\nit('the variable type `str1` is a string', () => {\n  expect(str1).a('string');\n});\n\nit('the variable `str1` has the correct value', () => {\n  expect(str1).equal('Everything');\n});\n\nit('Variable `str2` has a value', () => {\n  expect(str2).not.undefined;\n});\n\nit('the variable type `str2` is a string', () => {\n  expect(str2).a('string');\n});\n\nit('the variable `str2` has the correct value', () => {\n  expect(str2).equal('is');\n});\n\nit('Variable `str3` has a value', () => {\n  expect(str3).not.undefined;\n});\n\nit('the variable type `str3` is a string', () => {\n  expect(str3).a('string');\n});\n\nit('the variable `str3` has the correct value', () => {\n  expect(str3).equal('beautiful');\n});\n\nit('The `message` variable has a value', () => {\n  expect(message).not.undefined;\n});\n\nit('the variable type `message` is a string', () => {\n  expect(message).a('string');\n});\n\nit('the variable `message` has the correct value', () => {\n  expect(message).equal('Everything is beautiful!');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst str1 = 'Everything';\nconst str2 = 'is';\nconst str3 = 'beautiful';\nconst message = str1 + ' ' + str2 + ' ' + str3 + '!';\n```",
+    "ru": "```javascript\nconst str1 = 'Everything';\nconst str2 = 'is';\nconst str3 = 'beautiful';\nconst message = str1 + ' ' + str2 + ' ' + str3 + '!';\n```"
+  }
+}

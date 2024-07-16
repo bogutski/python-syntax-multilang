@@ -1,0 +1,4 @@
+{
+  "name": "True if the numbers are equal",
+  "instruction": "Write a function `isEqual` that takes two parameters `num1` and `num2`.\n\nIt returns `true` if `num1` equals `num2` and false if `num1` is not equal to `num2`.\n\n\nExamples:\n```javascript\nisEqual(1, 1); // true\nisEqual(1, 2); // false\nisEqual(1, -1); // false\n```"
+}

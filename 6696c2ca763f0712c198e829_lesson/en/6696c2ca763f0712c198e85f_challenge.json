@@ -1,0 +1,4 @@
+{
+  "name": "Array deployment - 'spread' operator",
+  "instruction": "Write a function `spread` that takes two arrays and returns a new array consisting of the elements of the first and second array.\n\nUse the 'spread' operator to solve this problem.\n\nAn example of running the function:\n```javascript\nspread([1, 2, 3], [4, 5, 6]); // [1, 2, 3, 4, 5, 6]\n```"
+}

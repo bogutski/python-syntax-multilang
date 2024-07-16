@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e7ed",
+  "name": {
+    "en": "Forming the title bar",
+    "ru": "Формирование титульной строки"
+  },
+  "instruction": {
+    "en": "Write a function `addTitleString` that takes an array of strings `names` containing information about a person: title, first name and last name.\n\nThe array elements are arranged in the following order: `title, firstName, lastName`.\n\nThe array can be empty, some elements of the array can be omitted.\n\nLines can contain spaces at the beginning and at the end, but cannot be empty.\n\nYou need to format the strings by removing spaces at the beginning and at the end of each one, and write new values to the `names` array.\n\nFrom the formatted elements we need to get the string `titleString` in the format: `title firstName lastName` and add it to the end of the array.\n\nThe function should return the updated `names` array.\n\nIf the number of elements in the array passed is not equal to 3, the function should return the message `Invalid input`.\n\nExamples of running the function:\n\n```javascript\naddTitleString([' Mr.', ' John', ' Smith ']); // ['Mr.', 'John', 'Smith', 'Mr. John Smith']\naddTitleString(['Mrs. ', ' Sarah', ' Smith']); // ['Mrs.', 'Sarah', 'Smith', 'Mrs. Sarah Smith']\naddTitleString([' Johnny', ' Depp']); // \"Invalid input\"\naddTitleString(['Mr.', 'Johnny', ' Depp', 'Little ']); // \"Invalid input\"\naddTitleString([]); // \"Invalid input\"\n```",
+    "ru": "Напишите функцию `addTitleString`, которая принимает массив строк `names`, содержащий информацию о человеке: титул, имя и фамилию.\n\nЭлементы массива расположены в следующем порядке: `title, firstName, lastName`.\n\nМассив может быть пустым, некоторые элементы массива могут быть пропущены.\n\nСтроки могут содержать пробелы в начале и в конце, но не могут быть пустыми.\n\nНужно отформатировать строки, удалив из каждой пробелы в начале и в конце, и записать новые значения в массив `names`.\n\nИз отформатированных элементов нужно получить строку `titleString` в формате: `title firstName lastName` и добавить ее в конец массива.\n\nФункция должна вернуть обновленный массив `names`.\n\nЕсли количество элементов в переданном массиве не равно 3, то функция должна вернуть сообщение `\"Invalid input\"`.\n\nПримеры запуска функции:\n\n```javascript\naddTitleString([' Mr.', '  John', '  Smith  ']);         // ['Mr.', 'John', 'Smith', 'Mr. John Smith']\naddTitleString(['Mrs.   ', '  Sarah', '  Smith']);       // ['Mrs.', 'Sarah', 'Smith', 'Mrs. Sarah Smith']\naddTitleString(['  Johnny', '  Depp']);                  // \"Invalid input\"\naddTitleString(['Mr.', 'Johnny', ' Depp', 'Little  ']);  // \"Invalid input\"\naddTitleString([]);                                      // \"Invalid input\"\n```"
+  },
+  "initialSolution": "function addTitleString",
+  "completedSolution": "function addTitleString(names) {\n  if (names.length !== 3) {\n    return 'Invalid input';\n  }\n  names[0] = names[0].trim();\n  names[1] = names[1].trim();\n  names[2] = names[2].trim();\n  names.push(`${names[0]} ${names[1]} ${names[2]}`);\n  return names;\n}",
+  "openTest": "it('Created function addTitleString', () => {\n  expect(addTitleString).to.be.a('function');\n});\n\nit('addTitleString([\"  Mrs. \" , \"    Jane   \", \" Hermann    \"]) should return [\"Mrs.\", \"Jane\", \"Hermann\", \"Mrs. Jane Hermann\"]', () => {\n  expect(addTitleString([\"  Mrs. \" , \"    Jane   \", \" Hermann    \"])).to.deep.equal([\"Mrs.\", \"Jane\", \"Hermann\", \"Mrs. Jane Hermann\"]);\n});\n\nit('addTitleString([\"  Mr. \" , \"    John   \", \" Smith    \"]) should return [\"Mr.\", \"John\", \"Smith\", \"Mr. John Smith\"]', () => {\n  expect(addTitleString([\"  Mr. \" , \"    John   \", \" Smith    \"])).to.deep.equal([\"Mr.\", \"John\", \"Smith\", \"Mr. John Smith\"]);\n});\n\nit('addTitleString([\"  Mr. \" , \"    John   \"]) should return \"Invalid input\"', () => {\n  expect(addTitleString([\"  Mr. \" , \"    John   \"])).to.equal(\"Invalid input\");\n});\n\nit('addTitleString([\"  Mr. \" , \"  Rick  \", \" Ford\", \"  Little  \"]) should return \"Invalid input\"', () => {\n  expect(addTitleString([\"  Mr. \" , \"  Rick  \", \" Ford\", \"  Little  \"])).to.equal(\"Invalid input\");\n});\n\nit('addTitleString([\"  Mr. \" , \"  Rick  \", \" Ford\"]) should return [\"Mr.\", \"Rick\", \"Ford\", \"Mr. Rick Ford\"]', () => {\n  expect(addTitleString([\"  Mr. \" , \"  Rick  \", \" Ford\"])).to.deep.equal([\"Mr.\", \"Rick\", \"Ford\", \"Mr. Rick Ford\"]);\n});\n\nit('addTitleString([\"Dr.\" , \"Stephen\", \"Goldman\"]) should return [\"Dr.\", \"Stephen\", \"Goldman\", \"Dr. Stephen Goldman\"]', () => {\n  expect(addTitleString([\"Dr.\" , \"Stephen\", \"Goldman\"])).to.deep.equal([\"Dr.\", \"Stephen\", \"Goldman\", \"Dr. Stephen Goldman\"]);\n});\n\nit('addTitleString([]) should return \"Invalid input\"', () => {\n  expect(addTitleString([])).to.equal(\"Invalid input\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

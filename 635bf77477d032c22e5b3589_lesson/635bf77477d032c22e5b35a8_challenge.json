@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35a8",
+  "name": {
+    "ru": "Комментарий в программе",
+    "en": "Commentary in the program",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Напишите команду вывода в консоль слова \"Testing\" и закомментируйте эту строку.\nПравильное решение:\n```\n//console.log('Testing');\n```",
+    "en": "Write a command to output the word \"Testing\" to the console and comment out that line.\nThe correct solution is:\n```\n//console.log('Testing');\n```\n",
+    "es": ""
+  },
+  "initialSolution": "console.log('');",
+  "completedSolution": "//console.log('Testing');",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

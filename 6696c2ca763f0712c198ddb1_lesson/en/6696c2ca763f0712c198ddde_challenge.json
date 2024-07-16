@@ -1,0 +1,6 @@
+{
+  "name": "Calculate and display the sum of the numbers in the console",
+  "instruction": "Only one line.\n\nWrite the command `console.log(2.5 + 3.14);`\n\nObserve spaces and punctuation marks.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log(2.5 + 3.14);\n```"
+}

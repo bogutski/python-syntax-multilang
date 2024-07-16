@@ -1,0 +1,5 @@
+{
+  "name": "Перевернуть самую длинную строку",
+  "instruction": "Напишите функцию `reverseBiggerString`, которая принимает массив из двух строк.\n\nФункция должна сравнить длину строк и перевернуть ту, которая длиннее.\n\nЕсли строки одинаковой длины, то переверните первую строку.\n\nФункция должна возвращать массив с `первой строкой`, `второй строкой` и `перевернутой строкой`.\n\n\nПримеры запуска функции:\n```js\nreverseBiggerString(['Hello', 'World']) // => [ 'Hello', 'World', 'olleH' ]\nreverseBiggerString(['blue', 'red'])    // => [ 'blue', 'red', 'eulb' ]\nreverseBiggerString(['Hello', 'JS'])    // => [ 'Hello', 'JS', 'olleH' ]\nreverseBiggerString(['', ''])           // => [ '', '', '' ]\n```",
+  "instructions": {}
+}

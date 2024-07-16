@@ -1,0 +1,4 @@
+{
+  "name": "Find and correct errors in the function",
+  "instruction": "Find and correct errors in the code.\n\nThe `quantityOfNumbers` function takes an array `array` which can contain any type of data.\n\nThe function should return the number of array elements that are of type `number`.\n\nIf there are no numbers in the array, the function should return 0.\n\nExamples of running the function:\n```javascript\nquiantityOfNumbers([1, 2, 3]); // 3\nquiantityOfNumbers(['a', 'b', 'c']); // 0\nquiantityOfNumbers([1, 2, 3, 'a', 'b', 'c', 4, 5, '6']); // 5\n```"
+}

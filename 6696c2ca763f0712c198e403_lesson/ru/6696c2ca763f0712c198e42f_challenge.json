@@ -1,0 +1,5 @@
+{
+  "name": "Перевести строку в нижний регистр",
+  "instruction": "Напишите функцию `allLower`, которая принимает строку и возвращает эту же строку, но в нижнем регистре.\n\nПримеры запуска функции:\n```javascript\nallLower('Hello') // 'hello'\nallLower('Hello World') // 'hello world'\nallLower('AAA') // 'aaa'\nallLower('AAA aaa') // 'aaa aaa'\n```",
+  "instructions": {}
+}

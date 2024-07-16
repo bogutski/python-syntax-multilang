@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ef08",
+  "name": {
+    "en": "",
+    "ru": "Где больше гласных?"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `whatWin` принимает 2 строки.\n\nСтроки не содержат заглавных букв.\n\nНеобходимо определить, какая из строк содержит больше гласных букв (a, e, i, o, u) и вернуть результат в виде строки:\n* \"First word wins!\" если первая строка содержит больше гласных\n* \"Second word wins!\" если вторая строка содержит больше гласных\n* \"It's a draw!\" если количество гласных в обеих строках одинаково\n\nПример запуска функции:\n```javascript\nwhatWin(\"a\", \"b\") // \"First word wins!\"\nwhatWin(\"a\", \"a\") // \"It's a draw!\"\nwhatWin(\"a\", \"aa\") // \"Second word wins!\"\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function whatWin(str1, str2) {\n  const letters = 'aeiou'\n  let count1 = 0;\n  let count2 = 0;\n  for (let i = 0; i < str1.length; i++) {\n    if (letters.includes(str1[i])) {\n      count1++;\n    }\n  }\n  for (let i = 0; i < str2.length; i++) {\n    if (letters.includes(str2[i])) {\n      count2++;\n    }\n  }\n  if (count1 > count2) {\n    return `First word wins!`;\n  } else if (count1 < count2) {\n    return `Second word wins!`;\n  } else return `It's a draw!`;\n}",
+  "openTest": "it('Created function whatWin', () => {\n  expect(whatWin).to.be.a('function');\n});\n\nit('whatWin(\"a\", \"b\") returns \"First word wins!\"', () => {\n  expect(whatWin(\"a\", \"b\")).to.equal(\"First word wins!\");\n});\n\nit('whatWin(\"a\", \"a\") returns \"It\\'s a draw!\"', () => {\n  expect(whatWin(\"a\", \"a\")).to.equal(\"It's a draw!\");\n});\n\nit('whatWin(\"a\", \"aa\") returns \"Second word wins!\"', () => {\n  expect(whatWin(\"a\", \"aa\")).to.equal(\"Second word wins!\");\n});\n\nit('whatWin(\"apple\", \"apple pie\") returns \"Second word wins!\"', () => {\n  expect(whatWin(\"apple\", \"apple pie\")).to.equal(\"Second word wins!\");\n});\n\nit('whatWin(\"pumpkin pie\", \"wonderful fall\") returns \"It\\'s a draw!\"', () => {\n  expect(whatWin(\"pumpkin pie\", \"wonderful fall\")).to.equal(\"It's a draw!\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

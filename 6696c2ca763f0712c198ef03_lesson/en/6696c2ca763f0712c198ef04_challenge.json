@@ -1,0 +1,5 @@
+{
+  "name": "Reverse the longest line",
+  "instruction": "Write a `reverseBiggerString` function that takes an array of two strings.\n\nThe function should compare the lengths of the strings and reverse the one that is longer.\n\nIf the strings are the same length, then reverse the first string.\n\nThe function must return an array with `first string`, `second string` and `flipped string`.\n\n\nExamples of how to run the function:\n```js\nreverseBiggerString(['Hello', 'World']) // => [ 'Hello', 'World', 'olleH' ]\nreverseBiggerString(['blue', 'red']) // => [ 'blue', 'red', 'eulb' ]\nreverseBiggerString(['Hello', 'JS']) // => [ 'Hello', 'JS', 'olleH' ]\nreverseBiggerString(['', '']) // => [ '', '', '' ]\n```",
+  "instructions": {}
+}

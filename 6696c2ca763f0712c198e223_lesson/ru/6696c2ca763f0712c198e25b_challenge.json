@@ -1,0 +1,5 @@
+{
+  "name": "Открыто в определенные промежутки времени",
+  "instruction": "Напишите функцию `isOpen`, которая принимает параметры:\n* `time` – время в часах, число от 1 до 12;\n* `ampm` – строка, может быть либо `'am'`, либо `'pm'`;\n\nФункция должна возвращать `true`, если время находится в промежутке от 9 до 11 `am` или от 8 до 10 `pm`.\n\nВо всех остальных случаях функция должна возвращать `false`.\n\nПримеры запуска функции:\n```javascript\nisOpen(8, 'am'); // false\nisOpen(9, 'am'); // true\nisOpen(10, 'am'); // true\nisOpen(11, 'am'); // true\nisOpen(12, 'am'); // false\nisOpen(7, 'pm'); // false\nisOpen(8, 'pm'); // true\nisOpen(9, 'pm'); // true\nisOpen(10, 'pm'); // true\nisOpen(11, 'pm'); // false\n```",
+  "instructions": {}
+}

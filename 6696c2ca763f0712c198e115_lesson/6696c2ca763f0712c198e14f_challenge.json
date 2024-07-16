@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e14f",
+  "name": {
+    "en": "Checking that the string is empty",
+    "ru": "Проверка что строка пустая"
+  },
+  "instruction": {
+    "en": "Write a function `isEmptyString` that, when called, accepts a string and returns `true` if the string is empty, and `false` if it is not.",
+    "ru": "Напишите функцию `isEmptyString`, которая при вызове принимает строку и возвращает `true`, если строка пустая, и `false` если не пустая."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isEmptyString(str) {\n  return !str;\n}",
+  "openTest": "it('Created function isEmptyString', () => {\n  expect(isEmptyString).to.be.a('function');\n});\n\nit('isEmptyString(\"\") should return true', () => {\n  expect(isEmptyString('')).to.equal(true);\n});\n\nit('isEmptyString(\" \") should return false', () => {\n  expect(isEmptyString(' ')).to.equal(false);\n});\n\nit('isEmptyString(\"a\") should return false', () => {\n  expect(isEmptyString('a')).to.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

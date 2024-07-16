@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e261",
+  "name": {
+    "en": "",
+    "ru": "Конвертер метры в километры и наоборот"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `converter`, которая принимает три параметра: `value`, `from`, `to`.\n\nФункция должна конвертировать `value` из единицы измерения `from` в единицу измерения `to`.\n\n`value` - число, которое необходимо конвертировать.\n`from` - единица измерения, в которой передано число. Допустимые значения: `m`, `km`.\n`to` - единица измерения, в которую необходимо конвертировать число. Допустимые значения: `m`, `km`.\n\nПримеры запуска функции:\n```javascript\nconverter(1000, 'm', 'km'); // 1\nconverter(1, 'km', 'm'); // 1000\nconverter(1, 'm', 'm'); // 1\nconverter(1, 'km', 'km'); // 1\n```\n\nЭта функция должна уметь конвертировать метры в километры и наоборот.\n\nЕсли `value` не является положительным числом, то функция должна вернуть `null`."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function converter(value, from, to) {\n  if (typeof value !== 'number' || value < 0) {\n    return null;\n  }\n\n  if (from === 'm' && to === 'km') {\n    return value / 1000;\n  }\n\n  if (from === 'km' && to === 'm') {\n    return value * 1000;\n  }\n\n  if (from === to) {\n    return value;\n  }\n\n  return null;\n}",
+  "openTest": "it('Created function converter', () => {\n  expect(converter).to.be.a('function');\n});\n\nit('converter(1000, \\'m\\', \\'km\\') should return 1', () => {\n  expect(converter(1000, 'm', 'km')).to.be.equal(1);\n} );\n\nit('converter(1, \\'km\\', \\'m\\') should return 1000', () => {\n  expect(converter(1, 'km', 'm')).to.be.equal(1000);\n} );\n\nit('converter(1, \\'m\\', \\'m\\') should return 1', () => {\n  expect(converter(1, 'm', 'm')).to.be.equal(1);\n} );\n\nit('converter(1, \\'km\\', \\'km\\') should return 1', () => {\n  expect(converter(1, 'km', 'km')).to.be.equal(1);\n} );\n\nit('converter(1, \\'m\\', \\'km\\') should return 0.001', () => {\n  expect(converter(1, 'm', 'km')).to.be.equal(0.001);\n} );\n\nit('converter(1, \\'km\\', \\'m\\') should return 1000', () => {\n  expect(converter(1, 'km', 'm')).to.be.equal(1000);\n} );\n\nit('converter(-2, \\'m\\', \\'km\\') should return null', () => {\n  expect(converter(-2, 'm', 'km')).to.be.equal(null);\n} );\n\nit('converter(true, \\'m\\', \\'km\\') should return null', () => {\n  expect(converter(true, 'm', 'km')).to.be.equal(null);\n} );\n\nit('converter(\\'1\\', \\'m\\', \\'km\\') should return null', () => {\n  expect(converter('1', 'm', 'km')).to.be.equal(null);\n} );",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

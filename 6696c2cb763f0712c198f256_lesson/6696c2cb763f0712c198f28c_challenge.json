@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f28c",
+  "name": {
+    "en": "Check the data type in two arrays",
+    "ru": "Проверить тип данных в двух массивах"
+  },
+  "instruction": {
+    "en": "Write a function `sameTypeForAll` that takes two arrays.\n\nThe function should return `true` if all elements in both arrays have the same data type. Otherwise, return `false`.\n\nThe number of elements in the arrays does not matter, the check should only be based on the data type.\n\nIf both arrays are empty, return the string `'Both arrays are empty'`.\n\n\nExamples of function calls:\n```javascript\nsameTypeForAll([true, false, true], [true, false, true]);         // true\nsameTypeForAll([1, true, 3, false, 5], [1, 'true', 3, false, 5]); // false\nsameTypeForAll([1, 2, 3], [-6, 0, 4]);                            // true\nsameTypeForAll([], []);                                           // 'Both arrays are empty'\n```",
+    "ru": "Напишите функцию `sameTypeForAll`, которая принимает два массива.\n\nФункция должна вернуть `true`, если все элементы обоих массивов имеют одинаковый тип данных. Иначе вернуть `false`.\n\nКоличество элементов в массивах не имеет значения, проверка должна быть только по типу данных.\n\nЕсли оба массива пустые, то вернуть строку `'Both arrays are empty'`.\n\n\nПримеры запуска функции:\n```javascript\nsameTypeForAll([true, false, true], [true, false, true]);         // true\nsameTypeForAll([1, true, 3, false, 5], [1, 'true', 3, false, 5]); // false\nsameTypeForAll([1, 2, 3], [-6, 0, 4]);                            // true\nsameTypeForAll([], []);                                           // 'Both arrays are empty'\n```"
+  },
+  "initialSolution": "function sameTypeForAll(arr1, arr2)",
+  "completedSolution": "function sameTypeForAll(arr1, arr2){\n  if(!arr1.length && !arr2.length) return 'Both arrays are empty';\n\n  const bothArrays = [...arr1, ...arr2];\n  const firstType = typeof bothArrays[0];\n  \n  for(let i = 1; i < bothArrays.length; i++){\n    if(typeof bothArrays[i] !== firstType) return false;\n  }\n\n  return true;\n}",
+  "openTest": "it('Created function sameTypeForAll', () => {\n  expect(sameTypeForAll).to.be.a('function');\n});\n\nit(\"sameTypeForAll([true, false, true], [true, false, true]) should return true\", () => {\n  expect(sameTypeForAll([true, false, true], [true, false, true])).to.be.true;\n});\n\nit(\"sameTypeForAll([1, true, 3, false, 5], [1, true, 3, false, 5]) should return false\", () => {\n  expect(sameTypeForAll([1, true, 3, false, 5], [1, true, 3, false, 5])).to.be.false;\n});\n\nit(\"sameTypeForAll([1, 2, 3], [NaN, 5, 0, 503, -69]) should return true\", () => {\n  expect(sameTypeForAll([1, 2, 3], [NaN, 5, 0, 503, -69])).to.be.true;\n});\n\nit(\"sameTypeForAll(['undefined', 'null', 'NaN'], ['string', 'here', '555']) should return true\", () => {\n  expect(sameTypeForAll(['undefined', 'null', 'NaN'], ['string', 'here', '555'])).to.be.true;\n});\n\nit(\"sameTypeForAll([false, 25 + 5 === 30, true, typeof 100 === 'number'], [true]) should return true\", () => {\n  expect(sameTypeForAll([false, 25 + 5 === 30, true, typeof 100 === 'number'], [true])).to.be.true;\n});\n\nit(\"sameTypeForAll([1, 10, 100], [0, 9, 99, null]) should return false\", () => {\n  expect(sameTypeForAll([1, 10, 100], [0, 9, 99, null])).to.be.false;\n});\n\nit(\"sameTypeForAll([], []) should return 'Both arrays are empty'\", () => {\n  expect(sameTypeForAll([], [])).to.be.equal('Both arrays are empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

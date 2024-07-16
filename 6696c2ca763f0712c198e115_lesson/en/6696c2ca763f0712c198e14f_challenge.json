@@ -1,0 +1,5 @@
+{
+  "name": "Checking that the string is empty",
+  "instruction": "Write a function `isEmptyString` that, when called, accepts a string and returns `true` if the string is empty, and `false` if it is not.",
+  "instructions": {}
+}

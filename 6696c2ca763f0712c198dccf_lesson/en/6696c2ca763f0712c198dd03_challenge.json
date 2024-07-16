@@ -1,0 +1,6 @@
+{
+  "name": "Variable with value false",
+  "instruction": "Create a variable named `isCold` and assign it the value `false`.\nCreate a variable named `typeOfIsCold` and assign it the type of the variable `isCold`.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst isAdult = false;\nconst typeOfIsAdult = typeof isAdult;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst isCold = false;\nconst typeOfIsCold = typeof isCold;\n```"
+}

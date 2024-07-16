@@ -1,0 +1,4 @@
+{
+  "name": "Calculate the cost of fuel for the trip",
+  "instruction": "Write a function `tripPrice` that takes three parameters:\n\n* `distance` - distance in miles,\n* `mpg` - the number of miles the car can travel on one gallon of fuel,\n* `fuelPrice` - price per gallon of fuel"
+}

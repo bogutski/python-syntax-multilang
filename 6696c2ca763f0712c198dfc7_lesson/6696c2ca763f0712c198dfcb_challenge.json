@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dfcb",
+  "name": {
+    "en": "Find the sum of the four numbers. Default parameters",
+    "ru": "Найти сумму четырех чисел. Параметры по умолчанию"
+  },
+  "instruction": {
+    "en": "Write a function `sumFour` that takes 4 parameters `num1`, `num2`, `num3` and `num4` and returns their sum.\n\nIf any argument is not passed, it must be equal to 2.\n\nAll arguments will be numbers.\n\nExamples:\n``javascript.\nsumFour(1, 2, 3, 4) // 10\nsumFour(1, 2, 3) // 8\nsumFour(1, 2) // 7\nsumFour(1) // 7\nsumFour() // 8",
+    "ru": "Напишите функцию `sumFour`, которая принимает 4 параметра `num1`, `num2`, `num3` и `num4` и возвращает их сумму.\n\nЕсли какой-то аргумент не передан, то он должен быть равен 2.\n\nВсе аргументы будут числами.\n\nПримеры:\n```javascript\nsumFour(1, 2, 3, 4) // 10\nsumFour(1, 2, 3) // 8\nsumFour(1, 2) // 7\nsumFour(1) // 7\nsumFour() // 8"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sumFour(num1 = 2, num2 = 2, num3 = 2, num4 = 2) {\n  return num1 + num2 + num3 + num4;\n}",
+  "openTest": "it('Created function sumFour', () => {\n  expect(sumFour).to.be.a('function');\n});\n\nit('Function returns correct result for arguments `1, 2, 3, 4`', () => {\n  expect(sumFour(1, 2, 3, 4)).to.equal(10);\n});\n\nit('Function returns correct result for arguments `0, 0, 0, 0`', () => {\n  expect(sumFour(0, 0, 0, 0)).to.equal(0);\n});\n\nit('Function returns correct result for arguments `1, 2, 3`', () => {\n  expect(sumFour(1, 2, 3)).to.equal(8);\n});\n\nit('Function returns correct result for arguments `1, 2`', () => {\n  expect(sumFour(1, 2)).to.equal(7);\n});\n\nit('Function returns correct result for arguments `1`', () => {\n  expect(sumFour(1)).to.equal(7);\n});\n\nit('Function returns correct result with no arguments', () => {\n  expect(sumFour()).to.equal(8);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

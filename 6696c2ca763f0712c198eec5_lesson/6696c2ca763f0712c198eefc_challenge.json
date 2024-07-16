@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eefc",
+  "name": {
+    "en": "Sorting numbers in a string",
+    "ru": "Сортировка чисел в строке"
+  },
+  "instruction": {
+    "en": "Write a function `sortNumbers` that takes a string with various characters, including numbers.\n\nThe function should sort only the numbers and add them to two strings:\n\n* `from 0 to 4` inclusive, in the first string\n* `from 5 to 9` inclusive, in the second string\n\nReturn an array of two strings, where the first element is the string from 0 to 4, and the second element is the string from 5 to 9.\n\n\nExample function calls:\n```javascript\nsortNumbers(' 3 4 5 6 7 8 0 ') // ['340', '5678']\nsortNumbers('1, 2, 9, 8, 3, 0, 5, 6, 7, 4') // ['12304', '98567']\nsortNumbers('1abc asd29, $4ngb92 762') // ['12422', '9976']\nsortNumbers('abc') // ['', '']\nsortNumbers('') // ['', '']\n```",
+    "ru": "Напишите функцию `sortNumbers`, которая принимает строку с различными символами, включая числа.\n\nФункция должна отсортировать только числа и добавить их в две строки:\n\n* `от 0 до 4` включительно, в первую строку\n* `от 5 до 9` включительно, во вторую строку\n\nВернуть массив из двух строк, где первый элемент - строка от 0 до 4, второй элемент - строка от 5 до 9.\n\n\nПример запуска функции:\n```javascript\nsortNumbers(' 3 4 5 6 7 8 0 ') // ['340', '5678']\nsortNumbers('1, 2, 9, 8, 3, 0, 5, 6, 7, 4') // ['12304', '98567']\nsortNumbers('1abc asd29, $4ngb92 762') // ['12422', '9976']\nsortNumbers('abc') // ['', '']\nsortNumbers('') // ['', '']\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sortNumbers(str){\n  let str1 = '';\n  let str2 = '';\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] !== ` ` && !isNaN(+str[i])){\n      if (+str[i] <= 4) str1 += str[i];\n      else str2 += str[i];\n    }\n  }\n  return [str1, str2];\n}",
+  "openTest": "it('Created function sortNumbers', () => {\n  expect(sortNumbers).to.be.a('function');\n});\n\nit(\"sortNumbers('1 2 3 4 5 6 7 8 9 0') returns ['12340', '56789']\", () => {\n  expect(sortNumbers('1 2 3 4 5 6 7 8 9 0')).to.eql(['12340', '56789']);\n});\n\nit(\"sortNumbers('1, 2, 9, 8, 3, 0, 5, 6, 7, 4') returns ['12304', '98567']\", () => {\n  expect(sortNumbers('1, 2, 9, 8, 3, 0, 5, 6, 7, 4')).to.eql(['12304', '98567']);\n});\n\nit(\"sortNumbers('1mm2092 2a @03qb 4wv6# 5 64a% 7w 8a 9^ q03') returns ['12022034403', '9656789']\", () => {\n  expect(sortNumbers('1mm2092 2a @03qb 4wv6# 5 64a% 7w 8a 9^ q03')).to.eql(['12022034403', '9656789']);\n});\n\nit(\"sortNumbers('abc') returns ['', '']\", () => {\n  expect(sortNumbers('abc')).to.eql(['', '']);\n});\n\nit(\"sortNumbers('') returns ['', '']\", () => {\n  expect(sortNumbers('')).to.eql(['', '']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dbfd",
+  "name": {
+    "en": "How many mushrooms are there?",
+    "ru": "Сколько стало грибов?"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-13.png)\n\nMasha collected `mushroomCount` of mushrooms in the forest. Returning home, she found 15 more mushrooms.\n\nCreate a variable `mushroomCount` with the value `12`.\n\nWrite a command that increases the existing value of the `mushroomCount` variable by `15`.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-13.png)\n\nМаша собрала в лесу `mushroomCount` грибов. Возвращаясь домой, она нашла еще 15 грибов.\n\nСоздайте переменную `mushroomCount` со значением `12`.\n\nЗапишите команду, которая увеличивает имеющееся значение переменной `mushroomCount` на `15`."
+  },
+  "initialSolution": "",
+  "completedSolution": "let mushroomCount = 12\nmushroomCount = mushroomCount + 15;",
+  "openTest": "it(\"The 'mushroomCount' variable should be defined\", () => {\n    expect(mushroomCount).not.undefined;\n});\n\nit(`The \"mushroomCount\" variable should be equal to 27`, () => {\n    expect(mushroomCount).to.equal(27);\n});\n\nit(`The \"mushroomCount\" variable should be a number`, () => {\n    expect(mushroomCount).to.be.a('number');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet mushroomCount = 12\nmushroomCount = mushroomCount + 15;\n```",
+    "ru": "```javascript\nlet mushroomCount = 12\nmushroomCount = mushroomCount + 15;\n```"
+  }
+}

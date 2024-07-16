@@ -1,0 +1,6 @@
+{
+  "name": "Cuboid volume",
+  "instruction": "Bob needs a quick way to calculate the volume of a cuboid with three values: length, width, and height of the cuboid.\n\nWrite a program to help Bob with this calculation.\n\nCreate variables with the names: `length`, `width`, and `height`. Assign them values: 5, 7, and 12 respectively.\n\nCreate a variable with the name `volumeOfCuboid`, assign it a value that calculates the volume of the cuboid.\n\nHere is an example that is essentially similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst first = 15;\nconst second = 20;\nconst third = 10;\nconst volume = first * second * third;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst length = 5;\nconst width = 7;\nconst height = 12;\nconst volumeOfCuboid = length * width * height;\n```"
+}

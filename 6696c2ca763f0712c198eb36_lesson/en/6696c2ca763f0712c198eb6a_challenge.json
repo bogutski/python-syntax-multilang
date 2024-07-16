@@ -1,0 +1,4 @@
+{
+  "name": "Reverse the line and change the case of letters",
+  "instruction": "Write a function `reverseStrAndCase` that takes a string and returns a new string.\n\nThe new string must be reversed and each letter must be in reverse case.\n\nFor example: the string `aBc` should turn into `CbA`.\n\nIn case of an empty string the function must return an empty string.\n\n\nAn example of running the function:\n```js\nreverseStrAndCase('Hi There'); // => 'EREHt Ih'\nreverseStrAndCase('cAt'); // => 'TaC'\nreverseStrAndCase('pAsV'); // => 'vSaP'\nreverseStrAndCase('123'); // => '321'\n```"
+}

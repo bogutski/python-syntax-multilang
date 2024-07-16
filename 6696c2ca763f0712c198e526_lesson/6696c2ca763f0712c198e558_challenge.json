@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e558",
+  "name": {
+    "en": "Which pizza is more profitable? Subjects.",
+    "ru": "Какая пицца выгоднее? Объекты."
+  },
+  "instruction": {
+    "en": "Write a function `comparePizzas` that takes two objects: `pizza1` and `pizza2`.\n\nEach object describes a pizza. The objects have the following properties:\n* `name` - name of the pizza, string\n* `diameter` - diameter of the pizza, number\n* `price` - price of the pizza, a number\n\nThe function should return a string that describes which pizza is more profitable.\n\n* If the first pizza is better, the function must return a string of the form: `Pizza1Name is the better deal`.\n* If the second pizza is the better deal, the function should return a string of the form: `Pizza2Name is the better deal`.\n* If the pizzas are the same price, the function should return a string of the form: `Both pizzas have the same price per square inch`\n\n`Pizza1Name` and `Pizza2Name` are strings, the names of the pizzas that will be passed to the function within objects.\n\nAn example of running the function:\n```javascript\ncomparePizzas(\n{ name: 'Pizza1Name', diameter: 20, price: 32 },\n{ name: 'Pizza2Name', diameter: 20, price: 32 }\n) // 'Both pizzas have the same price per square inch'\n\ncomparePizzas(\n{ name: 'Pizza1Name', diameter: 20, price: 32 },\n{ name: 'Pizza2Name', diameter: 20, price: 40 }\n) // 'Pizza1Name is the better deal'\n\ncomparePizzas(\n{ name: 'Pizza1Name', diameter: 20, price: 32 },\n{ name: 'Pizza2Name', diameter: 20, price: 20 }\n) // 'Pizza2Name is the better deal'\n```",
+    "ru": "Напишите функцию `comparePizzas`, которая принимает два объекта: `pizza1` и `pizza2`.\n\nКаждый объект описывает пиццу. Объекты имеют следующие свойства:\n* `name` - название пиццы, строка\n* `diameter` - диаметр пиццы, число\n* `price` - цена пиццы, число\n\nФункция должна вернуть строку, которая описывает, какая пицца выгоднее.\n\n* Если первая пицца выгоднее, то функция должна вернуть строку вида: `Pizza1Name is the better deal`\n* Если вторая пицца выгоднее, то функция должна вернуть строку вида: `Pizza2Name is the better deal`\n* Если пиццы стоят одинаково, то функция должна вернуть строку вида: `Both pizzas have the same price per square inch`\n\n`Pizza1Name` и `Pizza2Name` - это строки, названия пицц, которые будут переданы в функцию внутри объектов.\n\nПример запуска функции:\n```javascript\ncomparePizzas(\n  { name: 'Margherita ', diameter: 20, price: 32 },\n  { name: 'BBQ', diameter: 20, price: 32 }\n) // 'Both pizzas have the same price per square inch'\n\ncomparePizzas(\n  { name: 'Pepperoni', diameter: 20, price: 32 },\n  { name: 'Neapolitan', diameter: 20, price: 40 }\n) // 'Pepperoni is the better deal'\n\ncomparePizzas(\n  { name: 'Sicilian', diameter: 20, price: 32 },\n  { name: 'Hawaiian', diameter: 20, price: 20 }\n) // 'Hawaiian is the better deal'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function comparePizzas(pizza1, pizza2) {\n  // pizza { name: 'PizzaName', diameter: 20, price: 32  }\n  if (pizza1.price / pizza1.diameter < pizza2.price / pizza2.diameter) {\n    return pizza1.name + ' is the better deal';\n  } else if (pizza1.price / pizza1.diameter > pizza2.price / pizza2.diameter) {\n    return pizza2.name + ' is the better deal';\n  } else {\n    return 'Both pizzas have the same price per square inch';\n  }\n}",
+  "openTest": "it('Created function comparePizzas', () => {\n  expect(comparePizzas).to.be.a('function');\n});\n\nit('comparePizzas({ name: \"Pepperoni\", diameter: 20, price: 32 }, { name: \"Americana\", diameter: 20, price: 32 }) should return \"Both pizzas have the same price per square inch\"', () => {\n  expect(\n    comparePizzas(\n      { name: 'Pepperoni', diameter: 20, price: 32 },\n      { name: 'Americana', diameter: 20, price: 32 },\n    ),\n  ).to.equal('Both pizzas have the same price per square inch');\n});\n\nit('comparePizzas({ name: \"Pepperoni\", diameter: 20, price: 32 }, { name: \"Tomato\", diameter: 20, price: 40 }) should return \"Pepperoni is the better deal\"', () => {\n  expect(\n    comparePizzas(\n      { name: 'Pepperoni', diameter: 20, price: 32 },\n      { name: 'Tomato', diameter: 20, price: 40 },\n    ),\n  ).to.equal('Pepperoni is the better deal');\n});\n\nit('comparePizzas({ name: \"Marinara\", diameter: 20, price: 32 }, { name: \"Romana\", diameter: 20, price: 20 }) should return \"Romana is the better deal\"', () => {\n  expect(\n    comparePizzas(\n      { name: 'Marinara', diameter: 20, price: 32 },\n      { name: 'Romana', diameter: 20, price: 20 },\n    ),\n  ).to.equal('Romana is the better deal');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

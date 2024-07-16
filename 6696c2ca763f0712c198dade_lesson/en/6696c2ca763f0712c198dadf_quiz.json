@@ -1,0 +1,85 @@
+{
+  "name": "JS Syntax. Playing in the sandbox",
+  "questions": {
+    "0": {
+      "name": "Select the correct statements about the programs",
+      "variants": {
+        "0": {
+          "name": "A computer program is a set of instructions that a computer executes"
+        },
+        "1": {
+          "name": "A computer program is a set of instructions that are executed by a human"
+        }
+      }
+    },
+    "1": {
+      "name": "Programs are executed and consist of",
+      "variants": {
+        "0": {
+          "name": "Instructions"
+        },
+        "1": {
+          "name": "Data"
+        }
+      }
+    },
+    "2": {
+      "name": "Programs are written in programming languages",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "3": {
+      "name": "Every instruction in the program",
+      "variants": {
+        "0": {
+          "name": "Tells the computer what it should do"
+        },
+        "1": {
+          "name": "Tells you what you want the programmer to do"
+        }
+      }
+    },
+    "4": {
+      "name": "A programming language is an add-on to a computer language that allows a programmer to write programs",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "5": {
+      "name": "Programming languages were created by humans to help programmers write programs in a human-readable language, not a computer language",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is incorrect"
+        }
+      }
+    },
+    "6": {
+      "name": "Instructions written in a programming language are not understood by the computer, so",
+      "variants": {
+        "0": {
+          "name": "They will translate them into the language of the computer"
+        },
+        "1": {
+          "name": "The computer will execute them as they are written"
+        },
+        "2": {
+          "name": "The programmer must translate them into computer language himself"
+        }
+      }
+    }
+  }
+}

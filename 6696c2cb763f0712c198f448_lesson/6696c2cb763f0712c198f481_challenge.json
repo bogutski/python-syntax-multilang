@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f481",
+  "name": {
+    "en": "/*",
+    "ru": "Форматирование информации о пользователях"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `formatUserInfo`, которая принимает массив объектов, где каждый объект представляет пользователя с ключами: `id`, `name`, и `email`.\n\nФункция должна возвращать новый массив строк, где каждая строка содержит информацию о пользователе в формате: `ID: [id], Name: [name], Email: [email]`.\n\nИспользуйте метод `map()` для этого преобразования.\n\n\nПример запуска функции:\n```javascript\nconst users = [\n  { id: 1, name: \"Alice\", email: \"alice@example.com\" },\n  { id: 2, name: \"Bob\", email: \"bob@example.com\" },\n  { id: 3, name: \"Charlie\", email: \"charlie@example.com\" }\n];\n\nconsole.log(formatUserInfo(users));\n// [\"ID: 1, Name: Alice, Email: alice@example.com\",\n//  \"ID: 2, Name: Bob, Email: bob@example.com\",\n//  \"ID: 3, Name: Charlie, Email: charlie@example.com\"]\n```"
+  },
+  "initialSolution": "function formatUserInfo(){\n\n}",
+  "completedSolution": "function formatUserInfo(arr) {\n  return arr.map(({id, name, email}) => `ID: ${id}, Name: ${name}, Email: ${email}`);\n}",
+  "openTest": "it('Created function formatUserInfo', () => {\n  expect(formatUserInfo).to.be.a('function');\n});\n\nit('Function formatUserInfo should include method map()', () => {\n  const res = formatUserInfo.toString()\n  expect(res).to.include('.map(')\n});\n\nit(\"formatUserInfo([{ id: 1, name: 'Alice', email: 'alice@example.com' }, { id: 2, name: 'Bob', email: 'bob@example.com' }, { id: 3, name: 'Charlie', email: 'charlie@example.com' }]) should return ['ID: 1, Name: Alice, Email: alice@example.com', 'ID: 2, Name: Bob, Email: bob@example.com', 'ID: 3, Name: Charlie, Email: charlie@example.com']\", () => {\n  expect(formatUserInfo([\n    { id: 1, name: \"Alice\", email: \"alice@example.com\" },\n    { id: 2, name: \"Bob\", email: \"bob@example.com\" },\n    { id: 3, name: \"Charlie\", email: \"charlie@example.com\" }\n  ])).to.deep.equal([\n    \"ID: 1, Name: Alice, Email: alice@example.com\",\n    \"ID: 2, Name: Bob, Email: bob@example.com\",\n    \"ID: 3, Name: Charlie, Email: charlie@example.com\"\n  ]);\n});\n\nit(\"formatUserInfo([]) should return []\", () => {\n  expect(formatUserInfo([])).to.deep.equal([]);\n});\n\nit(\"formatUserInfo([{ id: 4, name: 'Diana', email: 'diana@example.com' }]) should return ['ID: 4, Name: Diana, Email: diana@example.com']\", () => {\n  expect(formatUserInfo([{ id: 4, name: \"Diana\", email: \"diana@example.com\" }])).to.deep.equal([\"ID: 4, Name: Diana, Email: diana@example.com\"]);\n});\n\nit(\"formatUserInfo([{ id: 5, name: 'Evan', email: 'evan@example.com' }]) should return ['ID: 5, Name: Evan, Email: evan@example.com']\", () => {\n  expect(formatUserInfo([{ id: 5, name: \"Evan\", email: \"evan@example.com\" }])).to.deep.equal([\"ID: 5, Name: Evan, Email: evan@example.com\"]);\n});\n\nit(\"formatUserInfo([{ id: 6, name: 'Fiona', email: 'fiona@sample.com' }, { id: 7, name: 'George', email: 'george@sample.com' }]) should return ['ID: 6, Name: Fiona, Email: fiona@sample.com', 'ID: 7, Name: George, Email: george@sample.com']\", () => {\n  expect(formatUserInfo([\n    { id: 6, name: \"Fiona\", email: \"fiona@sample.com\" },\n    { id: 7, name: \"George\", email: \"george@sample.com\" }\n  ])).to.deep.equal([\n    \"ID: 6, Name: Fiona, Email: fiona@sample.com\",\n    \"ID: 7, Name: George, Email: george@sample.com\"\n  ]);\n});\n\nit(\"formatUserInfo([{ id: 8, name: 'Hannah', email: 'hannah@demo.com' }]) should return ['ID: 8, Name: Hannah, Email: hannah@demo.com']\", () => {\n  expect(formatUserInfo([{ id: 8, name: \"Hannah\", email: \"hannah@demo.com\" }])).to.deep.equal([\"ID: 8, Name: Hannah, Email: hannah@demo.com\"]);\n});\n\nit(\"formatUserInfo([{ id: 9, name: 'Ian', email: 'ian@demo.com' }, { id: 10, name: 'Jane', email: 'jane@demo.com' }]) should return ['ID: 9, Name: Ian, Email: ian@demo.com', 'ID: 10, Name: Jane, Email: jane@demo.com']\", () => {\n  expect(formatUserInfo([\n    { id: 9, name: \"Ian\", email: \"ian@demo.com\" },\n    { id: 10, name: \"Jane\", email: \"jane@demo.com\" }\n  ])).to.deep.equal([\n    \"ID: 9, Name: Ian, Email: ian@demo.com\",\n    \"ID: 10, Name: Jane, Email: jane@demo.com\"\n  ]);\n});\n\nit(\"formatUserInfo([{ id: 11, name: 'Kyle', email: 'kyle@info.com' }]) should return ['ID: 11, Name: Kyle, Email: kyle@info.com']\", () => {\n  expect(formatUserInfo([{ id: 11, name: \"Kyle\", email: \"kyle@info.com\" }])).to.deep.equal([\"ID: 11, Name: Kyle, Email: kyle@info.com\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

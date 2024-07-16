@@ -1,0 +1,148 @@
+{
+  "questions": {
+    "0": {
+      "description": "```\nlet a;\n```",
+      "name": "If no value is assigned to the variable (as shown in the example below), it will be equal to",
+      "variants": {
+        "0": {
+          "name": "null"
+        },
+        "1": {
+          "name": "undefined"
+        },
+        "2": {
+          "name": "blank line"
+        },
+        "3": {
+          "name": "we'll get an error"
+        }
+      }
+    },
+    "1": {
+      "name": "The variable can be used before it is declared.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "2": {
+      "name": "The value of one variable can be copied to another variable.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "3": {
+      "description": "```\nlet a = 2;\nlet b = 2;\na = b;\nb = a;\n```",
+      "name": "Can such code work without errors?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "4": {
+      "name": "Select the option(s) where a variable is created and an empty string is assigned to it.",
+      "variants": {
+        "0": {
+          "name": "let name = ''; // two single quotes here"
+        },
+        "1": {
+          "name": "let name = ' '; // here are two single quotes with a space between them"
+        },
+        "2": {
+          "name": "const name = ''; // two single quotes here"
+        },
+        "3": {
+          "name": "let name;"
+        },
+        "4": {
+          "name": "let name = null;"
+        },
+        "5": {
+          "name": "var name = ''; // two single quotes here"
+        },
+        "6": {
+          "name": "let name = empty;"
+        }
+      }
+    },
+    "5": {
+      "description": "```\nlet a = 2;\na = a - a;\n```",
+      "name": "Can such code work without errors?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "6": {
+      "description": "```\nlet a = 1; // number\na = '1'; //changed to a string\n```",
+      "name": "Is it possible to change the value of a variable and write a different data type to it?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "7": {
+      "name": "Is it possible to assign a function in a variable?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "8": {
+      "description": "```\nlet a;\na = 2 * 5 + 3;\n```",
+      "name": "According to the priority table, the assignment action (=) in the example below will occur",
+      "variants": {
+        "0": {
+          "name": "first"
+        },
+        "1": {
+          "name": "last"
+        }
+      }
+    },
+    "9": {
+      "description": "```\nlet a, b, c;\na = b = c = 2 + 2;\n```",
+      "name": "Which action in the example below happens first?",
+      "variants": {
+        "0": {
+          "name": "will calculate 2 + 2"
+        },
+        "1": {
+          "name": "2 + 2 will be assigned in c"
+        },
+        "2": {
+          "name": "c will be assigned to b"
+        },
+        "3": {
+          "name": "b will be assigned to a"
+        }
+      }
+    }
+  },
+  "name": "JS Syntax. Miracles of assignment"
+}

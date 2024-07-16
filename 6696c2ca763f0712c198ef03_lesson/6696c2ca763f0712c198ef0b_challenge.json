@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ef0b",
+  "name": {
+    "en": "",
+    "ru": "Проверка на анаграмму с использованием циклов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `isAnagram`, которая принимает две строки и возвращает `true`, если они являются анаграммами, и `false` в противном случае.\n\nСтроки могут быть разной длины, иметь пробелы и содержать заглавные и строчные буквы. Пустых строк не будет передано.\n\nПопробуйте решить задачу используя только циклы. Методы: `split`, `join` и `sort` использовать нельзя.\n\n\nПримеры запуска функции:\n```javascript\nisAnagram('123', '321'); // true\nisAnagram('cat', 'act'); // true\nisAnagram('12345', '012345'); // false\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isAnagram(str1, str2) {\n  const s1 = str1.trim().toLowerCase();\n  const s2 = str2.trim().toLowerCase();\n\n  if (s1.length !== s2.length) return false;\n\n  for (let i = 0; i < s1.length; i++){\n    for (let j = 0; j < s2.length; j++){\n      if (s1[i] === s2[j]) break;\n      else if (j === s2.length - 1) return false;\n    }\n  }\n  return true;\n}",
+  "openTest": "it('Created function isAnagram', () => {\n  expect(isAnagram).to.be.a('function');\n});\n\nit(\"Function isAnagram should not contain 'split'\", () => {\n  expect(isAnagram.toString()).to.not.contain('split');\n});\n\nit(\"Function isAnagram should not contain 'join'\", () => {\n  expect(isAnagram.toString()).to.not.contain('join');\n});\n\nit(\"Function isAnagram should not contain 'sort'\", () => {\n  expect(isAnagram.toString()).to.not.contain('sort');\n});\n\nit(\"isAnagram('123', '312') should return true\", () => {\n  expect(isAnagram('123', '312')).to.be.true;\n});\n\nit(\"isAnagram('32145', '54326') should return false\", () => {\n  expect(isAnagram('32145', '54326')).to.be.false;\n});\n\nit(\"isAnagram('elbow', 'belowy') should return false\", () => {\n  expect(isAnagram('elbow', 'belowy')).to.be.false;\n});\n\nit(\"isAnagram('lIstEn', 'sIlEnt') should return true\", () => {\n  expect(isAnagram('lIstEn', 'sIlEnt')).to.be.true;\n});\n\nit(\"isAnagram('Astronomer', 'Moon starer') should return false\", () => {\n  expect(isAnagram('Astronomer', 'Moon starer')).to.be.false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

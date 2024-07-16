@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e072",
+  "name": {
+    "en": "Calculate using the formula. Sum and multiplication",
+    "ru": "Рассчитать по формуле. Сумма и умножение"
+  },
+  "instruction": {
+    "en": "Write a function `formula` that takes three parameters `a`, `b` and `c` and returns the result of the calculation using the formula `(a + b) * c`.",
+    "ru": "Напиши функцию `formula`, которая принимает три параметра `a`, `b` и `c` и возвращает результат вычисления по формуле `(a + b) * c`."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function formula(a, b, c) {\n  return (a + b) * c;\n}",
+  "openTest": "it('Created function formula', () => {\n  expect(formula).to.be.a('function');\n});\n\nit('formula(1, 2, 3) should return 9', () => {\n  expect(formula(1, 2, 3)).to.equal(9);\n});\n\nit('formula(2, 3, 4) should return 20', () => {\n  expect(formula(2, 3, 4)).to.equal(20);\n});\n\nit('formula(3, 4, 5) should return 35', () => {\n  expect(formula(3, 4, 5)).to.equal(35);\n});\n\nit('formula(4, 5, 6) should return 54', () => {\n  expect(formula(4, 5, 6)).to.equal(54);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eba9",
+  "name": {
+    "en": "Is an array a palindrome?",
+    "ru": "Является ли массив палиндромом?"
+  },
+  "instruction": {
+    "en": "The checkArray function takes one argument, the arr array.\n\nThe array consists of one element - a string.\n\nThe array cannot be empty\n\nA string is always written in lower case.\n\nYou need to check if the string is a palindrome. And return true or false.\n\nExamples of running the function:\n```javascript\ncheckArray([\"madam\"]) // true\ncheckArray([\"hello\"]) // false\n```",
+    "ru": "Функция checkArray принимает один аргумент - массив arr.\n\nМассив состоит из одного элемента - строки.\n\nМассив не может быть пустым\n\nСтрока всегда написана в нижнем регистре.\n\nНеобходимо проверить является ли строка палиндромом. И вернуть true или false.\n\nПримеры запуска функции:\n```javascript\ncheckArray([\"madam\"]) // true\ncheckArray([\"hello\"]) // false\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function checkArray(arr) {\n  let str = '';\n  for (let i = arr[0].length - 1; i >= 0; i--) {\n    str += arr[0][i];\n  }\n  return str === arr[0]\n}",
+  "openTest": "it('Created function checkArray', () => {\n  expect(checkArray).to.be.a('function');\n});\n\nit('checkArray([\"madam\"]) should return true', () => {\n  expect(checkArray([\"madam\"])).to.equal(true);\n});\n\nit('checkArray([\"hello\"]) should return false', () => {\n  expect(checkArray([\"hello\"])).to.equal(false);\n});\n\nit('checkArray([\"racecar\"]) should return true', () => {\n  expect(checkArray([\"racecar\"])).to.equal(true);\n});\n\nit('checkArray([\"madam eye madam\"]) should return true', () => {\n  expect(checkArray([\"madam eye madam\"])).to.equal(true);\n});\n\nit('checkArray([\"hello world\"]) should return false', () => {\n  expect(checkArray([\"hello world\"])).to.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

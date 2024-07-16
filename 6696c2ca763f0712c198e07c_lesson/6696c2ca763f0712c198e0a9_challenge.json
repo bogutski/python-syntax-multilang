@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e0a9",
+  "name": {
+    "en": "Convert kilometers to miles",
+    "ru": "Конвертировать километры в мили"
+  },
+  "instruction": {
+    "en": "Write a function `kmToMile` that takes as its argument the number of kilometers and returns the number of miles.\n\nOne mile has `1.60934` kilometers.\n\nExamples:\n```javascript.\nkmToMile(1); // 0.6213727366498067\nkmToMile(2); // 1.2427454732996135\nkmToMile(3); // 1.8641182099494202\n```",
+    "ru": "Напиши функцию `kmToMile`, которая принимает в качестве аргумента число километров и возвращает число миль.\n\nВ одной миле `1.60934` километра.\n\nПримеры:\n```javascript\nkmToMile(1); // 0.6213727366498067\nkmToMile(2); // 1.2427454732996135\nkmToMile(3); // 1.8641182099494202\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function kmToMile(km) {\n  return km / 1.60934;\n}",
+  "openTest": "it('Created function kmToMile', () => {\n  expect(kmToMile).to.be.a('function');\n});\n\nit('kmToMile(1) should return 0.6213727366498067', () => {\n  expect(kmToMile(1)).to.be.equal(0.6213727366498067);\n});\n\nit('kmToMile(2) should return 1.2427454732996135', () => {\n  expect(kmToMile(2)).to.be.equal(1.2427454732996135);\n});\n\nit('kmToMile(3) should return 1.8641182099494202', () => {\n  expect(kmToMile(3)).to.be.equal(1.8641182099494202);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

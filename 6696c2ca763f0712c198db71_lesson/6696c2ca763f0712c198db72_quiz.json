@@ -1,0 +1,185 @@
+{
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198db73",
+      "name": {
+        "ru": "Для объявления переменной в JavaScript (как в старом, так и в современном стандарте) используют ключевые слова",
+        "en": "To declare a variable, JavaScript (both the old and modern standard) uses the keywords",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db74",
+          "name": {
+            "ru": "let",
+            "en": "let",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db75",
+          "name": {
+            "ru": "var",
+            "en": "var",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db76",
+          "name": {
+            "ru": "const",
+            "en": "const",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db77",
+          "name": {
+            "ru": "int",
+            "en": "int",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db78",
+      "name": {
+        "ru": "Если переменная объявлена с помощью ключевых слов let или var, то ее значение можно перезаписать.",
+        "en": "If a variable is declared using the let or var keywords, its value can be overwritten.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db79",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db7a",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db7b",
+      "name": {
+        "ru": "Если переменная объявлена с помощью ключевого слова const, то ее значение можно перезаписать.",
+        "en": "If a variable is declared using the const keyword, its value can be overwritten.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db7c",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db7d",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db7e",
+      "name": {
+        "ru": "У переменных, объявленных через ключевые слова let, const и var, разные области видимости данных (scope).",
+        "en": "Variables declared using the let, const, and var keywords have different data scopes.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db7f",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db80",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db81",
+      "name": {
+        "ru": "Если использовать режим \"use strict\", то нельзя будет создавать переменные без ключевых слов let, var и const.",
+        "en": "If you use \"use strict\" mode, you cannot create variables without let, var and const keywords.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db82",
+          "name": {
+            "ru": "Данное утверждение верно",
+            "en": "This statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db83",
+          "name": {
+            "ru": "Неверно",
+            "en": "This statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": false,
+  "_id": "6696c2ca763f0712c198db72",
+  "description": {
+    "ru": "",
+    "en": "",
+    "es": ""
+  },
+  "name": {
+    "ru": "JS Syntax. Область видимости переменной",
+    "en": "JS Syntax. Variable scope",
+    "es": ""
+  }
+}

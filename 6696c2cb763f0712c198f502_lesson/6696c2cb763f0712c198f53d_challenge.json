@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f53d",
+  "name": {
+    "en": "/*",
+    "ru": "Создание шаблона звездочек"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Разработайте функцию `createStarPattern`, которая принимает один аргумент `n`, представляющий размер стороны квадрата.\n\nФункция должна возвращать массив строк, где каждая строка содержит звездочки ('*'), формирующие квадратный узор размером `n x n`, используя метод `Array.prototype.fill()`.\n\n\nПримеры Запуска Функции:\n```javascript\ncreateStarPattern(2);\n// [\n//   '**',\n//   '**'\n// ]\n\ncreateStarPattern(3);\n// [\n//   '***',\n//   '***',\n//   '***'\n// ]\n```"
+  },
+  "initialSolution": "function createStarPattern(){\n\n}",
+  "completedSolution": "function createStarPattern(n) {\n  return new Array(n).fill('*'.repeat(n));\n}",
+  "openTest": "it('Created function createStarPattern', () => {\n  expect(createStarPattern).to.be.a('function');\n});\n\nit('Function createStarPattern should include method fill()', () => {\n  const res = createStarPattern.toString()\n  expect(res).to.include('.fill(')\n});\n\nit(\"createStarPattern(2) should return an array with 2 strings of '**'\", function() {\n  expect(createStarPattern(2)).to.deep.equal(['**', '**']);\n});\n\nit(\"createStarPattern(3) should return an array with 3 strings of '***'\", function() {\n  expect(createStarPattern(3)).to.deep.equal(['***', '***', '***']);\n});\n\nit(\"createStarPattern(1) should return ['*']\", function() {\n  expect(createStarPattern(1)).to.deep.equal(['*']);\n});\n\nit(\"createStarPattern(0) should return an empty array\", function() {\n  expect(createStarPattern(0)).to.deep.equal([]);\n});\n\nit(\"createStarPattern(4) should return an array where each element is '****'\", function() {\n  const pattern = createStarPattern(4);\n  const expected = ['****', '****', '****', '****'];\n  expect(pattern).to.deep.equal(expected);\n  expect(pattern.every(line => line === '****')).to.be.true;\n});\n\nit(\"createStarPattern(5) should return an array of 5 elements\", function() {\n  const result = createStarPattern(5);\n  expect(result.length).to.equal(5);\n});\n\nit(\"createStarPattern(3) each string should have a length of 3\", function() {\n  const result = createStarPattern(3);\n  expect(result.every(str => str.length === 3)).to.be.true;\n});\n\nit(\"createStarPattern(6) should match the pattern of 6x6 stars\", function() {\n  const sixBySixPattern = Array(6).fill('******');\n  expect(createStarPattern(6)).to.deep.equal(sixBySixPattern);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

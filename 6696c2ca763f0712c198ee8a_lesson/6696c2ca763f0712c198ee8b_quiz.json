@@ -1,0 +1,505 @@
+{
+  "_id": "6696c2ca763f0712c198ee8b",
+  "name": {
+    "ru": "Заменить в строке числа на их словесное описание",
+    "en": "Replace the numbers in the string with their verbal description",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198ee8c",
+      "name": {
+        "ru": "Выберите верный вариант результата замены чисел на слова для строки ниже",
+        "en": "Choose the correct result of replacing numbers with words for the string below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = '1 + 3 = 5 - 1';\n```",
+        "en": "```javascript\nconst str = '1 + 3 = 5 - 1';\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee8d",
+          "name": {
+            "ru": "'one + three = five - one'",
+            "en": "'one + three = five - one'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee8e",
+          "name": {
+            "ru": "'one plus three = five minus one'",
+            "en": "'one plus three = five minus one'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee8f",
+          "name": {
+            "ru": "'one + three equals five - one'",
+            "en": "'one + three equals five - one'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee90",
+          "name": {
+            "ru": "'one plus three equals five minus one'",
+            "en": "'one plus three equals five minus one'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee91",
+      "name": {
+        "ru": "Что представляет из себя объект ниже при замене числа на словесное его описание?",
+        "en": "What is the object below when you replace a number with a verbal description of it?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = {\n  0: 'zero',\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}\n```",
+        "en": "```javascript\nconst numbers = {\n  0: 'zero',\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee92",
+          "name": {
+            "ru": "Объект является таблицей соответствия, где ключ - это словесное описание числа, а значение - это число",
+            "en": "The object is a matching table where the key is a verbal description of the number and the value is the number",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee93",
+          "name": {
+            "ru": "Объект является таблицей соответствия, где ключ - это число, а значение - это его словесное описание",
+            "en": "An object is a matching table where the key is a number and the value is its verbal description",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee94",
+      "name": {
+        "ru": "Сколько соответствий надо прописать в объекте, чтобы заменить все числа от 0 до 5 на их словесное описание?",
+        "en": "How many correspondences do you need to write in the object to replace all numbers from 0 to 5 with their verbal description?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee95",
+          "name": {
+            "ru": "Достаточно прописать соответствия только для 0 и для 5, остальные числа будут заменены автоматически",
+            "en": "It is enough to specify matches only for 0 and for 5, the other numbers will be replaced automatically",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee96",
+          "name": {
+            "ru": "Соответствия должны быть прописаны от 0 до 10 включительно",
+            "en": "Matches must be spelled out from 0 to 10 inclusive",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee97",
+          "name": {
+            "ru": "От 0 до 5 включительно",
+            "en": "From 0 to 5 inclusive",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee98",
+          "name": {
+            "ru": "const numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}",
+            "en": "const numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee99",
+      "name": {
+        "ru": "Где следует создавать объект с соответствиями? Перед функцией или внутри функции?",
+        "en": "Where should you create an object with correspondences? Before the function or inside the function?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee9a",
+          "name": {
+            "ru": "После функции",
+            "en": "After the function",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee9b",
+          "name": {
+            "ru": "Перед функцией",
+            "en": "Before the function",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee9c",
+          "name": {
+            "ru": "Внутри функции",
+            "en": "Inside the function.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee9d",
+          "name": {
+            "ru": "Не имеет значения",
+            "en": "Doesn't matter",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee9e",
+      "name": {
+        "ru": "Верно ли, что результатом работы кода ниже будет 'one + two = three'?",
+        "en": "Is it correct that the result of the code below is 'one + two = three'?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = {\n  0: 'zero',\n  1: 'one',\n  2: 'two'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\nlet word = '';\n\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word) {\n        if(numbers[word]) result += numbers[word];\n        else result += word;\n        word = '';\n    }\n\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\n\nconsole.log(changeNumberToWord('1 + 2 = 3'));\n",
+        "en": "```javascript\nconst numbers = {\n  0: 'zero',\n  1: 'one',\n  2: 'two'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\nlet word = '';\n\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word) {\n        if(numbers[word]) result += numbers[word];\n        else result += word;\n        word = '';\n    }\n\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\n\nconsole.log(changeNumberToWord('1 + 2 = 3'));\n",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee9f",
+          "name": {
+            "ru": "Нет, результат будет 'one + two = 3'",
+            "en": "No, the result is 'one + two = 3'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eea0",
+          "name": {
+            "ru": "Нет, результат будет 'one + two ='",
+            "en": "No, the result will be 'one + two ='.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eea1",
+          "name": {
+            "ru": "Нет, результат будет 'one plus two equals three'",
+            "en": "No, the result is 'one plus two equals three'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eea2",
+          "name": {
+            "ru": "Да, результат будет 'one + two = three'",
+            "en": "Yes, the result will be 'one + two = three'.",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eea3",
+      "name": {
+        "ru": "Что надо добавить во второе условии if, чтобы последний элемент строки не обрезался?",
+        "en": "What should I add to the second if condition so that the last element of the string is not cut off?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\n\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word) {\n        if(numbers[word]) result += numbers[word];\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\n\nconsole.log(changeNumberToWord('1 2 3 4 5 ready or not, here I come'));\n```",
+        "en": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\n\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word) {\n        if(numbers[word]) result += numbers[word];\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\n\nconsole.log(changeNumberToWord('1 2 3 4 5 ready or not, here I come'));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eea4",
+          "name": {
+            "ru": "&& i === str.length - 1",
+            "en": "&& i === str.length - 1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eea5",
+          "name": {
+            "ru": "|| i === str.length - 1 && word",
+            "en": "|| i === str.length - 1 && word",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eea6",
+          "name": {
+            "ru": "|| i === str.length - 1",
+            "en": "|| i === str.length - 1",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eea7",
+          "name": {
+            "ru": "&& i === str.length - 1 && word",
+            "en": "&& i === str.length - 1 && word",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eea8",
+      "name": {
+        "ru": "Верно ли, что результатом работы кода ниже будет '!404! - !404! = five'?",
+        "en": "Is it correct that the result of the code below will be '!404! - !404! = five'?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word || i === str.length - 1) {\n        if(numbers[word]) result += numbers[word];\n        else if(!Number.isNaN(+word)) result += '!404!';\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\nconsole.log(changeNumberToWord('100 - 95 = 5'));\n```",
+        "en": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word || i === str.length - 1) {\n        if(numbers[word]) result += numbers[word];\n        else if(!Number.isNaN(+word)) result += '!404!';\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\nconsole.log(changeNumberToWord('100 - 95 = 5'));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eea9",
+          "name": {
+            "ru": "Нет, результатом будет 'one hundred - ninety five = five'",
+            "en": "No, the result is 'one hundred - ninety five = five'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eeaa",
+          "name": {
+            "ru": "Нет, результатом будет '100 - 95 = five'",
+            "en": "No, the result is '100 - 95 = five'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eeab",
+          "name": {
+            "ru": "Нет, результатом будет '!404! - !404! = !404!'",
+            "en": "No, the result will be '!404! - !404! = !404!'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eeac",
+          "name": {
+            "ru": "Да, результатом будет '!404! - !404! = five'",
+            "en": "Yes, the result will be '!404! - !404! = five'",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eead",
+      "name": {
+        "ru": "Что получится в результате запуска кода ниже?",
+        "en": "What is the result of running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word || i === str.length - 1) {\n        if(numbers[word]) result += numbers[word];\n        else if(!Number.isNaN(+word)) result += 'SomeNumber';\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\nconsole.log(changeNumberToWord('On cloud 9'));\n```",
+        "en": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word || i === str.length - 1) {\n        if(numbers[word]) result += numbers[word];\n        else if(!Number.isNaN(+word)) result += 'SomeNumber';\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\nconsole.log(changeNumberToWord('On cloud 9'));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eeae",
+          "name": {
+            "ru": "'On cloud nine'",
+            "en": "'On cloud nine'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eeaf",
+          "name": {
+            "ru": "'On cloud 9'",
+            "en": "'On cloud 9'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eeb0",
+          "name": {
+            "ru": "'On cloud SomeNumber'",
+            "en": "'On cloud SomeNumber'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eeb1",
+          "name": {
+            "ru": "'On cloud '",
+            "en": "'On cloud '",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eeb2",
+      "name": {
+        "ru": "Что надо дописать, чтобы все числа заменились на их словесное описание?",
+        "en": "What do you need to add to replace all the numbers with their verbal description?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word || i === str.length - 1) {\n        if(numbers[word]) result += numbers[word];\n        else if(!Number.isNaN(+word)) result += 'SomeNumber';\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\nconsole.log(changeNumberToWord('1 2 Buckle my shoe 3 4 Shut the door'));\n\n```",
+        "en": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word || i === str.length - 1) {\n        if(numbers[word]) result += numbers[word];\n        else if(!Number.isNaN(+word)) result += 'SomeNumber';\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\nconsole.log(changeNumberToWord('1 2 Buckle my shoe 3 4 Shut the door'));\n\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eeb3",
+          "name": {
+            "ru": "Ничего дописывать не надо, все числа заменятся на их словесное описание",
+            "en": "Nothing needs to be added, all numbers will be replaced by their verbal description",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eeb4",
+          "name": {
+            "ru": "В объекте numbers надо добавить еще одно свойство - 4: 'four'",
+            "en": "In the numbers object, we need to add one more property, 4: 'four'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eeb5",
+          "name": {
+            "ru": "В объекте numbers надо добавить еще одно свойство - 5: 'five'",
+            "en": "In the numbers object, we need to add one more property - 5: 'five'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eeb6",
+      "name": {
+        "ru": "Выберите верный вариант результата запуска кода ниже",
+        "en": "Select the correct version of the result of the code run below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word || i === str.length - 1) {\n        if(numbers[word]) result += numbers[word];\n        else if(!Number.isNaN(+word)) result += 'SomeNumber';\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\nconsole.log(changeNumberToWord('5 4 3 2 1 Start!'));\n```",
+        "en": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word || i === str.length - 1) {\n        if(numbers[word]) result += numbers[word];\n        else if(!Number.isNaN(+word)) result += 'SomeNumber';\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\nconsole.log(changeNumberToWord('5 4 3 2 1 Start!'));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eeb7",
+          "name": {
+            "ru": "five four three two one Start!",
+            "en": "five four three three two one Start!",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eeb8",
+          "name": {
+            "ru": "'five four three two one '",
+            "en": "'five four three two one '",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eeb9",
+          "name": {
+            "ru": "'5 4 3 2 1 Start!'",
+            "en": "'5 4 3 2 1 Start!'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eeba",
+          "name": {
+            "ru": "'five four three two one Start!'",
+            "en": "'five four three two one Start!'",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

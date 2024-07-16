@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e148",
+  "name": {
+    "en": "The function converts any value to a boolean",
+    "ru": "Функция преобразует любое значение в boolean"
+  },
+  "instruction": {
+    "en": "Write a function `toBoolean` that takes one value and converts it to `boolean` using `Boolean(value)`.",
+    "ru": "Напишите функцию `toBoolean`, которая принимает одно значение и преобразует его в `boolean`, используя `Boolean(value)`."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function toBoolean(value) {\n  return Boolean(value);\n}",
+  "openTest": "it('Created function toBoolean', () => {\n  expect(toBoolean).to.be.a('function');\n} );\n\nit('toBoolean(0) should return false', () => {\n  expect(toBoolean(0)).to.equal(false);\n} );\n\nit('toBoolean(1) should return true', () => {\n  expect(toBoolean(1)).to.equal(true);\n} );\n\nit('toBoolean(NaN) should return false', () => {\n  expect(toBoolean(NaN)).to.equal(false);\n});\n\nit('toBoolean(\\'a\\') should return true', () => {\n  expect(toBoolean('a')).to.equal(true);\n} );\n\nit('function should contain Boolean', function () {\n  expect(toBoolean.toString().indexOf('Boolean')).to.not.equal(-1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

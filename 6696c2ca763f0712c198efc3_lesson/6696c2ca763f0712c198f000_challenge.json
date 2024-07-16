@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198f000",
+  "name": {
+    "en": "",
+    "ru": "Найти среднее арифметическое чисел в массиве, записанных в виде строки"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `averageStringNum` принимает один параметр - массив строк `arr`.\n\nМассив содержит произвольное количество строк, в которых записаны только однозначные числа.\n\nФункция возвращает среднее арифметическое всех чисел в массиве.\n\nЧтобы вычислить среднее арифметическое, надо числа из типа данных `string` преобразовать в тип данных `number`.\n\nЕсли массив пустой или содержит только пустые строки, функция возвращает строку 'There are no numbers'.\n\nРезультат выполнения функции округляется до ближайшего `целого числа`.\n\nИсправьте ошибки в коде, чтобы функция работала правильно.\n\nПример запуска функции:\n```javascript\naverageStringNum(['3', '2', '4']); // (3 + 2 + 4) / 3 = 3\naverageStringNum(['1', '9', '5', '']); // (1 + 9 + 5) / 3 = 5\naverageStringNum(['', '']); // 'There are no numbers'\naverageStringNum([]); // 'There are no numbers'\n```"
+  },
+  "initialSolution": "function averageStringNum(arr) {\n  let sum = 0;\n  let count = 0;\n  let symbols = 0123456789;\n  for (let i = 0; i <= arr.length; i++) {\n    for (let j = 0; j <= symbols.length; j++) {\n      if (arr[i] === symbols[j]) {\n        sum -= +arr[i];\n        count++;\n        break;\n      }\n    }\n  }\n  if (count = 0) return 'There are no numbers';\n  return Math.floor(sum / count);\n}",
+  "completedSolution": "function averageStringNum(arr) {\n  let sum = 0;\n  let count = 0;\n  let symbols = '0123456789';\n  for (let i = 0; i < arr.length; i++) {\n    for (let j = 0; j < symbols.length; j++) {\n      if (arr[i] === symbols[j]) {\n        sum += +arr[i];\n        count++;\n        break;\n      }\n    }\n  }\n  if (count === 0) return 'There are no numbers';\n  return Math.round(sum / count);\n}",
+  "openTest": "it('Created function averageStringNum', () => {\n  expect(averageStringNum).to.be.a('function');\n});\n\nit(\"averageStringNum(['3', '2', '4']) should return 3\", () => {\n  expect(averageStringNum(['3', '2', '4'])).to.equal(3);\n});\n\nit(\"averageStringNum(['1', '7']) should return 4\", () => {\n  expect(averageStringNum(['1', '7'])).to.equal(4);\n});\n\nit(\"averageStringNum(['9', '8', '7', '6' ]) should return 8\", () => {\n  expect(averageStringNum(['9', '8', '7', '6'])).to.equal(8);\n});\n\nit(\"averageStringNum(['1', '9', '5', '']) should return 5\", () => {\n  expect(averageStringNum(['1', '9', '5', ''])).to.equal(5);\n});\n\nit(\"averageStringNum(['', '7', '']) should return 7\", () => {\n  expect(averageStringNum(['', '7', ''])).to.equal(7);\n});\n\nit(\"averageStringNum(['', '']) should return 'There are no numbers'\", () => {\n  expect(averageStringNum(['', ''])).to.equal('There are no numbers');\n});\n\nit(\"averageStringNum([]) should return 'There are no numbers'\", () => {\n  expect(averageStringNum([])).to.equal('There are no numbers');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e267",
+  "name": {
+    "en": "",
+    "ru": "Возможно ли построить треугольник по трем сторонам"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Треугольник можно построить в том случае, если сумма длин двух любых его сторон больше длины третьей стороны.\n\nНапишите функцию `isTriangle`, которая принимает три параметра: `a`, `b`, `c` – длины сторон треугольника.\n\nФункция должна возвращать `true`, если треугольник можно построить, и `false` в противном случае.\n\nАлгоритм проверки:\n* Сложите длины двух сторон треугольника `a` и `b`. Должно быть больше длины третьей стороны `с`.\n* Сложите длины двух сторон треугольника `a` и `c`. Должно быть больше длины третьей стороны `b`.\n* Сложите длины двух сторон треугольника `b` и `c`. Должно быть больше длины третьей стороны `a`.\n\nЕсли хотя бы одно из этих условий не выполняется, то треугольник не может быть построен.\n\nПримеры запуска функции:\n```javascript\nisTriangle(3, 4, 5) // true\nisTriangle(3, 4, 10) // false\nisTriangle(3, 4, 4) // true\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isTriangle(a, b, c) {\n  if (a + b > c && a + c > b && b + c > a) {\n    return true;\n  }\n  return false;\n}",
+  "openTest": "it('Created function isTriangle', () => {\n  expect(isTriangle).to.be.a('function');\n});\n\nit('isTriangle(3, 4, 5) should return true', () => {\n  expect(isTriangle(3, 4, 5)).to.be.true;\n});\n\nit('isTriangle(5, 4, 3) should return true', () => {\n  expect(isTriangle(5, 4, 3)).to.be.true;\n});\n\nit('isTriangle(4, 5, 3) should return true', () => {\n  expect(isTriangle(4, 5, 3)).to.be.true;\n});\n\nit('isTriangle(3, 4, 10) should return false', () => {\n  expect(isTriangle(3, 4, 10)).to.be.false;\n});\n\nit('isTriangle(3, 4, 4) should return true', () => {\n  expect(isTriangle(3, 4, 4)).to.be.true;\n});\n\nit('isTriangle(3, 4, 3) should return true', () => {\n  expect(isTriangle(3, 4, 3)).to.be.true;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

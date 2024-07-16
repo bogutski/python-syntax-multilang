@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f441",
+  "name": {
+    "en": "/*",
+    "ru": "Интеграция новых элементов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `integrateElements`, которая принимает три аргумента: массив, позицию вставки - `position`, и массив элементов - `elements` для добавления.\n\nИспользуя метод `toSpliced()`, функция должна вставлять элементы из `elements` в массив начиная с позиции - `position`, не изменяя исходный массив.\n\nФункция возвращает новый массив с вставленными элементами.\n\n\nПример запуска функции:\n```javascript\nconst originalArray = [10, 20, 30, 40];\nconst elementsToAdd = [50, 60];\nconst resultArray = integrateElements(originalArray, 2, elementsToAdd);\n\nconsole.log(originalArray); // Вывод: [10, 20, 30, 40]\nconsole.log(resultArray);   // Вывод: [10, 20, 50, 60, 30, 40]\n```"
+  },
+  "initialSolution": "function integrateElements(){\n\n}",
+  "completedSolution": "function integrateElements(arr, position, elements) {\n  if(position > arr.length) return 'Position is out of bounds'\n  return arr.toSpliced(position, 0, ...elements);\n}",
+  "openTest": "Array.prototype.toSpliced = function(start, deleteCount, ...items) {\n  let newArray = this.slice();\n  if(deleteCount === undefined) deleteCount = newArray.length - start\n  newArray.splice(start, deleteCount, ...items);\n  return newArray;\n};\n\nit('Created function integrateElements', () => {\n  expect(integrateElements).to.be.a('function');\n});\n\nit('Function integrateElements should include method toSpliced()', () => {\n  const res = integrateElements.toString()\n  expect(res).to.include('.toSpliced(')\n});\n\nit(\"integrateElements([10, 20, 30, 40], 2, [50, 60]) should return [10, 20, 50, 60, 30, 40]\", () => {\n  expect(integrateElements([10, 20, 30, 40], 2, [50, 60])).to.deep.equal([10, 20, 50, 60, 30, 40]);\n});\n\nit(\"integrateElements(['a', 'b', 'c'], 1, ['x']) should return ['a', 'x', 'b', 'c']\", () => {\n  expect(integrateElements(['a', 'b', 'c'], 1, ['x'])).to.deep.equal(['a', 'x', 'b', 'c']);\n});\n\nit(\"integrateElements([], 0, [1, 2, 3]) should return [1, 2, 3] for an empty original array\", () => {\n  expect(integrateElements([], 0, [1, 2, 3])).to.deep.equal([1, 2, 3]);\n});\n\nit(\"integrateElements([1], 1, [2, 3]) should insert elements at the end of the array\", () => {\n  expect(integrateElements([1], 1, [2, 3])).to.deep.equal([1, 2, 3]);\n});\n\nit(\"integrateElements([1, 2, 3], 0, [0]) should insert element at the beginning\", () => {\n  expect(integrateElements([1, 2, 3], 0, [0])).to.deep.equal([0, 1, 2, 3]);\n});\n\nit(\"integrateElements([1, 2, 3], 4, [4]) should return 'Position is out of bounds'\", () => {\n  expect(integrateElements([1, 2, 3], 4, [4])).to.equal('Position is out of bounds');\n});\n\nit(\"integrateElements(['apple', 'banana'], 2, ['cherry']) should add 'cherry' at the end\", () => {\n  expect(integrateElements(['apple', 'banana'], 2, ['cherry'])).to.deep.equal(['apple', 'banana', 'cherry']);\n});\n\nit(\"integrateElements(['first', 'second'], 0, ['start']) should return ['start', 'first', 'second']\", () => {\n  expect(integrateElements(['first', 'second'], 0, ['start'])).to.deep.equal(['start', 'first', 'second']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

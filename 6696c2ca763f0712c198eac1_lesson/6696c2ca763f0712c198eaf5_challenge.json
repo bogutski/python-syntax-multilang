@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eaf5",
+  "name": {
+    "en": "Figures equal to their indices",
+    "ru": "Цифры, равные своим индексам"
+  },
+  "instruction": {
+    "en": "Write a function `strOfNum` that accepts a string consisting only of numbers.\n\nThe function should return an array consisting of digits that are equal to their indices in the string.\n\nFor example, for string '0423' the function should return ['0', '2', '3']\n* +str[0] === 0 - true\n* +str[1] === 1 - false\n* +str[2] === 2 - true\n* +str[3] === 3 - true\n\nAn example of function execution:\n```js\nstrOfNum('052446'); // [ '0', '2', '4' ]\nstrOfNum('012345'); // ['0', '1', '2', '3', '4', '5']\nstrOfNum('1234567890'); // []\n```",
+    "ru": "Напишите функцию `strOfNum`, которая принимает строку, состоящую только из цифр.\n\nФункция должна вернуть массив, состоящий из цифр, которые равны своим индексам в строке.\n\nНапример, для строки '0423' функция должна вернуть ['0', '2', '3']\n* +str[0] === 0 - true\n* +str[1] === 1 - false\n* +str[2] === 2 - true\n* +str[3] === 3 - true\n\nПример запуска функции:\n```js\nstrOfNum('052446'); // [ '0', '2', '4' ]\nstrOfNum('012345'); // ['0', '1', '2', '3', '4', '5']\nstrOfNum('1234567890'); // []\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function strOfNum(str) {\n  const result = [];\n  for(let i = 0; i < str.length; i++) {\n    if(+str[i] === i) result.push(str[i])\n  }\n  return result;\n}",
+  "openTest": "it('Created function strOfNum', () => {\n  expect(strOfNum).to.be.a('function');\n});\n\nit('strOfNum(\"052446\") should return [\"0\", \"2\", \"4\"]', () => {\n  expect(strOfNum(\"052446\")).to.eql([\"0\", \"2\", \"4\"]);\n});\n\nit(\"strOfNum('5176436109') should return ['1', '4', '6', '9']\", () => {\n  expect(strOfNum('5176436109')).to.eql(['1', '4', '6', '9']);\n});\n\nit(\"strOfNum('9803451859') should return ['3', '4', '5', '9']\", () => {\n  expect(strOfNum('9803451859')).to.eql(['3', '4', '5', '9']);\n});\n\nit(\"strOfNum('1234567890') should return []\", () => {\n  expect(strOfNum('1234567890')).to.eql([]);\n});\n\nit(\"strOfNum('012345') should return ['0', '1', '2', '3', '4', '5']\", () => {\n  expect(strOfNum('012345')).to.eql(['0', '1', '2', '3', '4', '5']);\n});\n\nit(\"strOfNum('') should return []\", () => {\n  expect(strOfNum('')).to.eql([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

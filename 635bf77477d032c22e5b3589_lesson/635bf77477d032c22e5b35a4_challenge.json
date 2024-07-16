@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35a4",
+  "name": {
+    "ru": "Исправьте ошибки в коде - 2",
+    "en": "Correct errors in the code - 2",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Требуется вывести в консоль фразу: \"Happy New Year!\".\nПравильное решение:\n```\nconsole.log('Happy New Year!');\n```\nИсправьте ошибки в приведенном коде.",
+    "en": "You need to display the following phrase in the console: \"Happy New Year!\"\nCorrect solution:\n```\nconsole.log('Happy New Year!');\n```\nCorrect the errors in the given code.\n",
+    "es": ""
+  },
+  "initialSolution": "Console.log['Happy New Year!']",
+  "completedSolution": "console.log('Happy New Year!');",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

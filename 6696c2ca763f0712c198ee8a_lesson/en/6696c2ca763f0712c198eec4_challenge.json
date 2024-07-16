@@ -1,0 +1,5 @@
+{
+  "name": "Translating numbers from 0 to 99 into words",
+  "instruction": "Write a function `numToWord` that takes an array of numbers from `0` to `99` and returns a new array where each number is replaced with the corresponding word.\n\nFor example, the string `[0, 1, 23, 89]` will be transformed into the array `['zero', 'one', 'twenty-three', 'eighty-nine']`.\n\nIf the array is empty, the function should return the string `'Array is empty'`.\n\nExamples of function calls:\n```javascript\nnumToWord([1, 3, 7, 9]);          // ['one', 'three', 'seven', 'nine']\nnumToWord([11, 12, 16, 18]);      // ['eleven', 'twelve', 'sixteen', 'eighteen']\nnumToWord([23, 46, 72, 94]);      // ['twenty-three', 'forty-six', 'seventy-two', 'ninety-four']\nnumToWord([65, 0, 41, 13, 6, 7]); // ['sixty-five', 'zero', 'forty-one', 'thirteen', 'six', 'seven']\nnumToWord([]);                    // 'Array is empty'\n```",
+  "instructions": {}
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Draw the arrow with the symbols",
+  "instruction": "Write a function `arrowArt` that takes a string.\n\nLet the function take a string, convert it to uppercase, and return a string that is a\n an arrow consisting of the characters  `>`, `=` and the string we passed into the function.\n\nAn example of running the function:\n```javascript\narrowArt(''); // '>=>'\narrowArt('r'); // '>=R=>'\narrowArt('go'); // '>>==GO==>>'\narrowArt('abc'); // '>>>===ABC===>>>'\narrowArt('abcd'); // '>>>>====ABCD====>>>>'\narrowArt('pasv'); // '>>>>====PASV====>>>>'\narrowArt('coding'); // '>>>>>>======CODING======>>>>>>'\n```\n\nEach arrow element is repeated as many times as there are characters in the original string.\n\nIf the string is empty, the arrow should be: `'>=>'`."
+}

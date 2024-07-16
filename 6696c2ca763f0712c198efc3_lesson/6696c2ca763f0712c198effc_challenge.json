@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198effc",
+  "name": {
+    "en": "",
+    "ru": "Найти среднее арифметическое всех отрицательных чисел в массиве"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `averageNegative`, которая принимает один параметр - массив чисел.\n\nМассив произвольной длины и может содержать как положительные, так и отрицательные целые числа.\n\nФункция производит подсчет суммы и количества всех отрицательных чисел в массиве, возвращая среднее арифметическое этих чисел.\n\nЕсли массив пустой, то функция должна вернуть строку `'Array is empty'`.\n\nРезультат подсчета среднеарифметического значения должен быть округлен `до ближайшего целого`.\n\nПеред выводом результата в `return`, сделайте проверку на ноль количества отрицательных чисел в массиве.\n\nПример запуска функции:\n```javascript\naverageNegative([-10, -3, -120]); // (-10 + (-3) + (-120)) / 3 = -44\naverageNegative([5, 31, 12]); // 0\naverageNegative([]); // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function averageNegative(arr) {\n  if (!arr.length) return 'Array is empty';\n  let sum = 0;\n  let avr = 0;\n  let count = 0;\n  for (let i = 0; i < arr.length; i++) {\n    if (arr[i] < 0) {\n      sum += arr[i];\n      count++;\n    }\n  }\n  if (count) avr = sum / count;\n  return Math.round(avr);\n}",
+  "openTest": "it('Created function averageNegative', () => {\n  expect(averageNegative).to.be.a('function');\n});\n\nit(\"averageNegative([-10, -3, -120]) should return -44\", () => {\n  expect(averageNegative([-10, -3, -120])).to.equal(-44);\n});\n\nit(\"averageNegative([-10, -3, 120]) should return -6\", () => {\n  expect(averageNegative([-10, -3, 120])).to.equal(-6);\n});\n\nit(\"averageNegative([5, 31, 12]) should return 0\", () => {\n  expect(averageNegative([5, 31, 12])).to.equal(0);\n});\n\nit(\"averageNegative([-7, 0, 5, -2]) should return -4\", () => {\n  expect(averageNegative([-7, 0, 5, -2])).to.equal(-4);\n});\n\nit(\"averageNegative([-51, -2]) should return -26\", () => {\n  expect(averageNegative([-51, -2])).to.equal(-26);\n});\n\nit(\"averageNegative([-9]) should return -9\", () => {\n  expect(averageNegative([-9])).to.equal(-9);\n});\n\nit(\"averageNegative([]) should return 'Array is empty'\", () => {\n  expect(averageNegative([])).to.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

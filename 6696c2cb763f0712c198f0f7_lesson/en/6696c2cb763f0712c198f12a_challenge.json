@@ -1,0 +1,5 @@
+{
+  "name": "Remove duplicate by id",
+  "instruction": "The `onlyUnique` function takes an array of objects.\n\nThe objects in the array have the following format:\n*id,\n*title,\n*class,\n\nIf the objects have the same `id`, they are considered the same even if the other properties of the object are different, and the duplicate needs to be removed.\n\nThe first occurrence of the object (id) is considered unique.\n\nThe function should return an array of objects without duplicates.\n\nExamples of function execution:\n```javascript\nonlyUnique([{id: 2342, title: 'Sherlock Holmes', class: 'detective'}, {id: 2342, title: 'The lost Word', class: 'fantastic'}, {id: 3453, title: 'The lost Word', class: 'fantastic'}])\n//[{id: 2342, title: 'Sherlock Holmes', class: 'detective'}, {id: 3453, title: 'The lost Word', class: 'fantastic'}]\n```",
+  "instructions": {}
+}

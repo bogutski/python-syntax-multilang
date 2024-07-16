@@ -1,0 +1,6 @@
+{
+  "name": "Increment, or increasing a number by 1",
+  "instruction": "The price of the product is $20, but with the cost of delivery, the price increases by $1.\n\nSet the variable `price` and assign it the value of 20.\nThen write the command that increases the value of the variable `price` by 1.\n\nHere is an example that is essentially similar to what needs to be done,\nbut adapt it to the task requirements:\n```javascript\nlet number = 8;\nnumber++;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet price = 20;\nprice++;\n```"
+}

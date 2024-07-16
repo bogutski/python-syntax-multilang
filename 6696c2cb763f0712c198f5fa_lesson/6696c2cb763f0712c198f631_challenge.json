@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f631",
+  "name": {
+    "en": "/*",
+    "ru": "Сортировка по алфавиту"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `sortAlphabetically`, которая принимает массив строк и возвращает новый массив, где строки отсортированы в алфавитном порядке.\n\nФункция должна использовать метод `toSorted()`, чтобы исходный массив оставался неизменным.\n\n\nПримеры запуска функции:\n```javascript\nsortAlphabetically([\"table\", \"chair\", \"lamp\"]); // [\"chair\", \"lamp\", \"table\"]\nsortAlphabetically([\"banana\", \"apple\", \"cherry\"]); // [\"apple\", \"banana\", \"cherry\"]\nsortAlphabetically([\"dog\", \"cat\", \"bird\", \"elephant\"]); // [\"bird\", \"cat\", \"dog\", \"elephant\"]\n```"
+  },
+  "initialSolution": "function sortAlphabetically(){\n\n}",
+  "completedSolution": "function sortAlphabetically(arr) {\n  return arr.toSorted();\n}",
+  "openTest": "Array.prototype.toSorted = function(compareFunction){\n  const newArray = this.slice()\n  if(compareFunction) return newArray.sort(compareFunction)\n  else return newArray.sort()\n}\n\nit('Created function sortAlphabetically', () => {\n  expect(sortAlphabetically).to.be.a('function');\n});\n\nit('Function sortAlphabetically should include method toSorted()', () => {\n  const res = sortAlphabetically.toString()\n  expect(res).to.include('.toSorted(')\n});\n\nit('Function sortAlphabetically should not include method sort()', () => {\n  const res = sortAlphabetically.toString()\n  expect(res).to.not.include('.sort(')\n});\n\nit(\"sortAlphabetically(['banana', 'apple', 'cherry']) should return ['apple', 'banana', 'cherry']\", () => {\n  expect(sortAlphabetically([\"banana\", \"apple\", \"cherry\"])).to.deep.equal([\"apple\", \"banana\", \"cherry\"]);\n});\n\nit(\"sortAlphabetically(['dog', 'cat', 'bird', 'elephant']) should return ['bird', 'cat', 'dog', 'elephant']\", () => {\n  expect(sortAlphabetically([\"dog\", \"cat\", \"bird\", \"elephant\"])).to.deep.equal([\"bird\", \"cat\", \"dog\", \"elephant\"]);\n});\n\nit(\"sortAlphabetically(['table', 'chair', 'lamp']) should return ['chair', 'lamp', 'table']\", () => {\n  expect(sortAlphabetically([\"table\", \"chair\", \"lamp\"])).to.deep.equal([\"chair\", \"lamp\", \"table\"]);\n});\n\nit(\"sortAlphabetically(['a', 'b', 'c']) should return ['a', 'b', 'c']\", () => {\n  expect(sortAlphabetically(['a', 'b', 'c'])).to.deep.equal(['a', 'b', 'c']);\n});\n\nit(\"sortAlphabetically(['z', 'y', 'x']) should return ['x', 'y', 'z']\", () => {\n  expect(sortAlphabetically(['z', 'y', 'x'])).to.deep.equal(['x', 'y', 'z']);\n});\n\nit(\"sortAlphabetically([]) should return an empty array\", () => {\n  expect(sortAlphabetically([])).to.deep.equal([]);\n});\n\nit(\"sortAlphabetically(['same', 'same', 'same']) should return ['same', 'same', 'same']\", () => {\n  expect(sortAlphabetically(['same', 'same', 'same'])).to.deep.equal(['same', 'same', 'same']);\n});\n\nit(\"sortAlphabetically(['Apple', 'apple']) should consider case sensitivity and return ['Apple', 'apple']\", () => {\n  expect(sortAlphabetically(['Apple', 'apple'])).to.deep.equal(['Apple', 'apple']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

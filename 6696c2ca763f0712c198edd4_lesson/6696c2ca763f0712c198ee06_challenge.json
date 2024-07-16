@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ee06",
+  "name": {
+    "en": "",
+    "ru": "Заменить все запятые на пробелы"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `replaceCommas`, которая принимает строку.\nФункция должна возвращать новую строку, в которой все запятые заменены на пробелы.\n\nДля решения задачи используйте цикл `for`, не используйте методы строк.\n\nПримеры запуска функции:\n```\nreplaceCommas('1,2,3,4,5,6,7,8,9,0') // '1 2 3 4 5 6 7 8 9 0'\nreplaceCommas('red,white,orange,yellow') // 'red white orange yellow'\nreplaceCommas('1, 2,3') // '1  2 3'\nreplaceCommas('') // ''\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function replaceCommas(str) {\n  let result = '';\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] === ',') {\n      result += ' ';\n    } else {\n      result += str[i];\n    }\n  }\n  return result;\n}",
+  "openTest": "it('Created function replaceCommas', () => {\n  expect(replaceCommas).to.be.a('function');\n});\n\nit('Function replaceCommas should not contain indexOf()', () => {\n  expect(replaceCommas.toString()).to.not.contain('.indexOf(');\n});\n\nit('Function replaceCommas should not contain split()', () => {\n  expect(replaceCommas.toString()).to.not.contain('.split(');\n});\n\nit('Function replaceCommas should not contain replace()', () => {\n  expect(replaceCommas.toString()).to.not.contain('.replace(');\n});\n\nit('Function replaceCommas should not contain replaceAll()', () => {\n  expect(replaceCommas.toString()).to.not.contain('.replaceAll(');\n});\n\nit('replaceCommas(\"1,2,3,4,5,6,7,8,9,0\") should return \"1 2 3 4 5 6 7 8 9 0\"', () => {\n  expect(replaceCommas('1,2,3,4,5,6,7,8,9,0')).to.equal('1 2 3 4 5 6 7 8 9 0');\n});\n\nit('replaceCommas(\"red,white,orange,yellow\") should return \"red white orange yellow\"', () => {\n  expect(replaceCommas('red,white,orange,yellow')).to.equal('red white orange yellow');\n});\n\nit('replaceCommas(\"\") should return \"\"', () => {\n  expect(replaceCommas('')).to.equal('');\n});\n\nit('replaceCommas(\"01 02, 25 - 12 = 13, 15% ,Tax is: $123.34, \") should return \"01 02  25 - 12 = 13  15%  Tax is: $123.34  \"', () => {\n  expect(replaceCommas('01 02, 25 - 12 = 13, 15% ,Tax is: $123.34, ')).to.equal('01 02  25 - 12 = 13  15%  Tax is: $123.34  ');\n});\n\nit('replaceCommas(\",3,45, -6 ,7,8,90,\") should return \" 3 45  -6  7 8 90 \"', () => {\n  expect(replaceCommas(',3,45, -6 ,7,8,90,')).to.equal(' 3 45  -6  7 8 90 ');\n});\n\nit('replaceCommas(\"test,test\") should return \"test test\"', () => {\n  expect(replaceCommas('test,test')).to.equal('test test');\n});\n\nit('replaceCommas(\"test_1.2\") should return \"test_1.2\"', () => {\n  expect(replaceCommas('test_1.2')).to.equal('test_1.2');\n});\n\nit('replaceCommas(\",\") should return \" \"', () => {\n  expect(replaceCommas(',')).to.equal(' ');\n});\n\nit('replaceCommas(\",,,,,\") should return \"     \"', () => {\n  expect(replaceCommas(',,,,,')).to.equal('     ');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

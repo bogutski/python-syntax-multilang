@@ -1,0 +1,4 @@
+{
+  "name": "Correct the errors in the three functions",
+  "instruction": "Something has gone wrong. Find and correct the errors in the three functions.\n\nFunction requirements 1:\n1. The function must be called `piNumber`;\n2. The function must return the number `3.14159265359`;\n\nRequirements for function 2:\n1. The function must be called `piString`;\n2. The function must return the string `'3.14159265359'`;\n\nThe requirements for function 3:\n1. The function must be called `piDefinition`;\n2. The function must return the string `'The ratio of the circumference of any circle to the diameter of that circle'`;"
+}

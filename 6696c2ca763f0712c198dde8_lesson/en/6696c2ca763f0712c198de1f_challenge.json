@@ -1,0 +1,6 @@
+{
+  "name": "Unary plus - converting a logical value (boolean) into a number",
+  "instruction": "Before you is a pile of coins. Some of them are American cents, others, similar to them in appearance, are Russian kopecks.\nYou need to count the number of cent coins.\nWhen you take a coin, you check if it is a cent (true), and if so, mentally add 1.\n\nSet the variable `coin` and assign it the value `true`.\nSet the variable `value` and assign it the value of the variable `coin`, converted to a number using the unary plus operation.\n\nHere is an example that is essentially similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst s = true;\nconst x = +s; // 1\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst coin = true;\nconst value = +coin;\n```"
+}

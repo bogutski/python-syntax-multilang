@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dfc0",
+  "name": {
+    "en": "Modify the division function with the default parameters",
+    "ru": "Модифицируйте функцию деления c параметрами по умолчанию"
+  },
+  "instruction": {
+    "en": "Modify the `div` function so that it returns the result of dividing the two numbers passed as arguments, even if the second argument is not passed.\n\nExamples:\n```javascript\ndiv(10, 2) // 5\ndiv(10) // 10\ndiv() // 0\n```",
+    "ru": "Модифицируйте функцию `div` так, чтобы она возвращала результат деления двух чисел, переданных в качестве аргументов, даже если второй аргумент не передан.\n\nПримеры:\n```javascript\ndiv(10, 2) // 5\ndiv(10) // 10\ndiv() // 0\n```"
+  },
+  "initialSolution": "function div(num1, num2){\n    retun num / num2;\n}",
+  "completedSolution": "function div(num1 = 0, num2 = 1) {\n  return num1 / num2;\n}",
+  "openTest": "it('Created function div', () => {\n  expect(div).to.be.a('function');\n});\n\nit('Function returns correct result for arguments `-10, 10`', () => {\n  expect(div(-10, 10)).eq(-1);\n});\n\nit('Function returns correct result for arguments `5, 8`', () => {\n  expect(div(5, 8)).eq(0.625);\n});\n\nit('Function returns correct result for arguments `-20, -2`', () => {\n  expect(div(-20, -2)).eq(10);\n});\n\nit('The function returns the correct result for arguments `20, 5`', () => {\n  expect(div(20, 5)).eq(4);\n});\n\nit('The function returns a valid result for arguments `120, 30`', () => {\n  expect(div(120, 30)).eq(4);\n});\n\nit('The function returns the correct result for argument `-9`', () => {\n  expect(div(-9)).eq(-9);\n});\n\nit('The function returns the correct result for argument `3`', () => {\n  expect(div(3)).eq(3);\n});\n\nit('The function returns the correct result for argument `34`', () => {\n  expect(div(34)).eq(34);\n});\n\nit('The function returns the correct result for argument `-78`', () => {\n  expect(div(-78)).eq(-78);\n});\n\nit('The function returns the correct result without arguments', () => {\n  expect(div()).eq(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

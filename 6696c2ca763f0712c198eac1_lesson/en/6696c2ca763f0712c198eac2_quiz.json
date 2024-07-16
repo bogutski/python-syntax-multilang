@@ -1,0 +1,167 @@
+{
+  "name": "Convert a string to an array",
+  "questions": {
+    "0": {
+      "name": "What does the split() method apply to?",
+      "variants": {
+        "0": {
+          "name": "To the array"
+        },
+        "1": {
+          "name": "To the line"
+        },
+        "2": {
+          "name": "To the number of"
+        },
+        "3": {
+          "name": "To the object"
+        }
+      }
+    },
+    "1": {
+      "name": "The split() method converts a string into an array by splitting it by the specified delimiter.",
+      "variants": {
+        "0": {
+          "name": "This statement is true"
+        },
+        "1": {
+          "name": "This statement is false"
+        }
+      }
+    },
+    "2": {
+      "name": "The split() method takes as an argument:",
+      "variants": {
+        "0": {
+          "name": "Separator"
+        },
+        "1": {
+          "name": "Space: split(' ')"
+        },
+        "2": {
+          "name": "Point: split('.')"
+        },
+        "3": {
+          "name": "Any character can be a delimiter"
+        }
+      }
+    },
+    "3": {
+      "name": "What is the result of running the code below?",
+      "description": "```javascript\nlet str = 'Birds of a Feather Flock Together';\nconsole.log(str.split(' '));\n```",
+      "variants": {
+        "0": {
+          "name": "['Birds, of, a, Feather, Flock, Together]"
+        },
+        "1": {
+          "name": "[Birds, of, a, Feather, Flock, Together]"
+        },
+        "2": {
+          "name": "['Birds', 'of', 'a', 'Feather', 'Flock', 'Together']"
+        },
+        "3": {
+          "name": "['Birds' 'of' 'a' 'Feather' 'Flock' 'Together']"
+        }
+      }
+    },
+    "4": {
+      "name": "What will be output to the console after running the code below?",
+      "description": "```javascript\nlet str = 'Birds of a Feather Flock Together';\nconsole.log(str.split('F'));\n```",
+      "variants": {
+        "0": {
+          "name": "['Birds of a ', 'eather ', 'lock Together']"
+        },
+        "1": {
+          "name": "['Birds of a ', 'Feather ', 'Flock Together']"
+        },
+        "2": {
+          "name": "[Birds of a, eather, lock Together]"
+        },
+        "3": {
+          "name": "['Birds of a ' 'eather ' 'lock Together']"
+        }
+      }
+    },
+    "5": {
+      "name": "The code below will return the original str string unchanged",
+      "description": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  acc += str[i];\n}\nconsole.log(acc);\n```",
+      "variants": {
+        "0": {
+          "name": "Right"
+        },
+        "1": {
+          "name": "Wrong"
+        }
+      }
+    },
+    "6": {
+      "name": "Select the correct option to run the code below",
+      "description": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] !== ',')\n  acc += str[i];\n};\nconsole.log(acc);\n```",
+      "variants": {
+        "0": {
+          "name": "'No Ifs, Ands or Buts'"
+        },
+        "1": {
+          "name": "'No Ifs Ands, or Buts'"
+        },
+        "2": {
+          "name": "'No Ifs, Ands, or Buts'"
+        },
+        "3": {
+          "name": "'No Ifs Ands or Buts'"
+        }
+      }
+    },
+    "7": {
+      "name": "What will be output to the console after running the code below?",
+      "description": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nconst arr = [];\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] !== ','){ \n    acc += str[i];\n  }else{ \n    arr.push(acc);\n    acc = '';  \n  };\n};\nconsole.log(arr);\n```",
+      "variants": {
+        "0": {
+          "name": "['No Ifs', ' Ands', ' or Buts']"
+        },
+        "1": {
+          "name": "['No Ifs', ' Ands']"
+        },
+        "2": {
+          "name": "'No Ifs', ' Ands'"
+        },
+        "3": {
+          "name": "['No Ifs' ' Ands']"
+        }
+      }
+    },
+    "8": {
+      "name": "The code below will return an array of space-separated strings",
+      "description": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nconst arr = [];\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] !== ',') acc += str[i];\n  else {arr.push(acc); acc = '';}\n};\narr.push(acc);\nconsole.log(arr);\n```",
+      "variants": {
+        "0": {
+          "name": "Yes, he will ['No', 'Ifs,', 'Ands,', 'or', 'Buts']"
+        },
+        "1": {
+          "name": "No, comma separation ['No Ifs', ' Ands', ' or Buts'] will return."
+        },
+        "2": {
+          "name": "No, comma and space separation will return ['No Ifs', 'Ands', 'or Buts']"
+        }
+      }
+    },
+    "9": {
+      "name": "Select the correct option for the result of the code execution below",
+      "description": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nconst arr = [];\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] !== ',')acc += str[i];\n  else {arr.push(acc); acc = '';}  \n  if(i === str.length - 1) arr.push(acc);\n};\nconsole.log(arr);\n```",
+      "variants": {
+        "0": {
+          "name": "A comma-separated array of str string."
+        },
+        "1": {
+          "name": "A space-separated array of str string"
+        },
+        "2": {
+          "name": "['No Ifs', ' Ands', ' or Buts']"
+        },
+        "3": {
+          "name": "['No', 'Ifs,', 'Ands,', 'or', 'Buts']"
+        }
+      }
+    }
+  }
+}

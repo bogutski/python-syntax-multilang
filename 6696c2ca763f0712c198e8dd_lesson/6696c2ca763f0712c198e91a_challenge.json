@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e91a",
+  "name": {
+    "en": "Find and correct errors in the function",
+    "ru": "Найдите и исправьте ошибки в функции"
+  },
+  "instruction": {
+    "en": "Find and correct errors in the code.\n\nThe `quantityOfNumbers` function takes an array `array` which can contain any type of data.\n\nThe function should return the number of array elements that are of type `number`.\n\nIf there are no numbers in the array, the function should return 0.\n\nExamples of running the function:\n```javascript\nquiantityOfNumbers([1, 2, 3]); // 3\nquiantityOfNumbers(['a', 'b', 'c']); // 0\nquiantityOfNumbers([1, 2, 3, 'a', 'b', 'c', 4, 5, '6']); // 5\n```",
+    "ru": "Найдите и исправьте ошибки в коде.\n\nФункция `quantityOfNumbers` принимает массив `array`, в котором могут быть любые типы данных.\n\nФункция должна вернуть количество элементов массива, которые имеют тип `number`.\n\nЕсли в массиве нет чисел, то функция должна вернуть 0.\n\nПримеры запуска функции:\n```javascript\nquiantityOfNumbers([1, 2, 3]); // 3\nquiantityOfNumbers(['a', 'b', 'c']); // 0\nquiantityOfNumbers([1, 2, 3, 'a', 'b', 'c', 4, 5, '6']); // 5\n```"
+  },
+  "initialSolution": "function quantityOfNumbers(string) {\n  const result = 0;\n  for(let i = 5; a < array.length; i++) {\n    if(array[i] === 'number') result--;\n  }\n  return 'result';\n}",
+  "completedSolution": "function quantityOfNumbers(array) {\n  let result = 0;\n  for(let i = 0; i < array.length; i++) {\n    if(typeof array[i] === 'number') result++;\n  }\n  return result;\n}",
+  "openTest": "it('Created function quantityOfNumbers', () => {\n  expect(quantityOfNumbers).to.be.a('function');\n});\n\nit('quantityOfNumbers([1, 2, 3, 4, 5]) should return 5', () => {\n  expect(quantityOfNumbers([1, 2, 3, 4, 5])).to.be.equal(5);\n});\n\nit('quantityOfNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) should return 10', () => {\n  expect(quantityOfNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).to.be.equal(10);\n});\n\nit(\"quantityOfNumbers(['10', '20', '30', '40', '50']) should return 0\", () => {\n  expect(quantityOfNumbers(['10', '20', '30', '40', '50'])).to.be.equal(0);\n});\n\nit(\"quantityOfNumbers(['a', 'b', 'c', 'd', 'e']) should return 0\", () => {\n  expect(quantityOfNumbers(['a', 'b', 'c', 'd', 'e'])).to.be.equal(0);\n});\n\nit(\"quantityOfNumbers(['a', 123, 'b', 456, 'c', 789, 'd', 101112, 'e']) should return 4\", () => {\n  expect(quantityOfNumbers(['a', 123, 'b', 456, 'c', 789, 'd', 101112, 'e'])).to.be.equal(4);\n});\n\nit(\"quantityOfNumbers(['a', true, 100, {name: 'John'}, [1, 2, 3], 1000, undefined, null]) should return 1100\", () => {\n  expect(quantityOfNumbers(['a', true, 100, {name: 'John'}, [1, 2, 3], 1000, undefined, null])).to.be.equal(2);\n});\n\nit(\"quantityOfNumbers([]) should return 0\", () => {\n  expect(quantityOfNumbers([])).to.be.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ea09",
+  "name": {
+    "en": "Degree Calculation",
+    "ru": "Вычисление степени"
+  },
+  "instruction": {
+    "en": "Write a function `powerOfTwo` that takes a number `n` and returns `2` to the power of that number.\n\nSteps to solve the problem:\n* Create a variable and assign it the value `1`.\n* Create a loop that runs from `1` to `n`, inclusive\n* In the body of the loop, multiply the variable by `2`.\n\nAn example of running a function:\n```javascript\npowerOFTwo(4); // 16\npowerOFTwo(8); // 256\npowerOFTwo(10); // 1024\n```",
+    "ru": "Напишите функцию `powerOfTwo`, которая принимает число `n` и возвращает `2` в степени этого числа.\n\nШаги по решению задачи:\n* Создайте переменную и присвойте ей значение `1`\n* Создайте цикл, который будет выполняться от `1` до `n`, включительно\n* В теле цикла умножайте переменную на `2`\n\nПример запуска функции:\n```javascript\npowerOfTwo(4); // 16\npowerOfTwo(8); // 256\npowerOfTwo(10); // 1024\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function powerOfTwo(num){\n  let power = 1;\n  for(let i = 1; i <= num; i++){\n    power *= 2;\n  }\n  return power;\n}",
+  "openTest": "it('Created function powerOfTwo', () => {\n  expect(powerOfTwo).to.be.a('function');\n});\n\nit('powerOfTwo(4) should return 16', () => {\n  expect(powerOfTwo(4)).to.equal(16);\n});\n\nit('powerOfTwo(8) should return 256', () => {\n  expect(powerOfTwo(8)).to.equal(256);\n});\n\nit('powerOfTwo(10) should return 1024', () => {\n  expect(powerOfTwo(10)).to.equal(1024);\n});\n\nit('powerOfTwo(6) should return 64', () => {\n  expect(powerOfTwo(6)).to.equal(64);\n});\n\nit('powerOfTwo(0) should return 1', () => {\n  expect(powerOfTwo(0)).to.equal(1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

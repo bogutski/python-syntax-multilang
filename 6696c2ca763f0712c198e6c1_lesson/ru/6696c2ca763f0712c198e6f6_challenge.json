@@ -1,0 +1,5 @@
+{
+  "name": "Средняя длина четырех массивов",
+  "instruction": "Напиши функцию `averageLength`, которая принимает четыре параметра:\n* `arr1` - массив элементов,\n* `arr2` - массив элементов,\n* `arr3` - массив элементов,\n* `arr4` - массив элементов.\n\nФункция должна возвращать среднюю длину массивов, округленную до ближайшего целого числа.\n\nДля округления используй метод  `Math.round()`.\n\nПример запуска функции:\n```javascript\naverageLength([1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5, 6]);\n// 5\n```\n\nПохожий пример:\n```javascript\nfunction averageString(str1, str2, str3) {\n  const average = (str1.length + str2.length + str3.length) / 3;\n  return Math.round(average);\n}\n```",
+  "instructions": {}
+}

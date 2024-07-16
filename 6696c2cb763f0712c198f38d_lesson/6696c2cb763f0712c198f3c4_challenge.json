@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f3c4",
+  "name": {
+    "en": "/*",
+    "ru": "Извлечение уникальных значений"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `extractUnique`, которая принимает массив элементов.\n\nФункция должна использовать метод `shift()` для последовательного удаления каждого элемента из начала массива и добавления его в новый массив, только если такой элемент еще не присутствует в новом массиве, тем самым гарантируя уникальность элементов в результирующем массиве.\n\nФункция должна возвращать новый массив с уникальными элементами.\n\n\nПример запуска функции:\n```javascript\nextractUnique([1, 2, 2, 3, 4, 3, 5]);          // [1, 2, 3, 4, 5]\nextractUnique(['a', 'b', 'a', 'c', 'd', 'c']); // ['a', 'b', 'c', 'd']\nextractUnique([true, false, true, false]);     // [true, false]\nextractUnique([]); // []\n```"
+  },
+  "initialSolution": "function extractUnique(){\n\n}",
+  "completedSolution": "function extractUnique(arr) {\n  let res = []\n\n  while(arr.length){\n    const el = arr.shift()\n    if(res.indexOf(el) === -1) res.push(el)\n  }\n\n  return res;\n}",
+  "openTest": "it('Created function extractUnique', () => {\n  expect(extractUnique).to.be.a('function');\n});\n\nit('extractUnique includes method shift()', () => {\n  const res = extractUnique.toString()\n  expect(res).to.include('.shift()');\n});\n\nit(\"extractUnique([1, 2, 2, 3, 4, 3, 5]) should return [1, 2, 3, 4, 5]\", () => {\n  expect(extractUnique([1, 2, 2, 3, 4, 3, 5])).to.deep.equal([1, 2, 3, 4, 5]);\n});\n\nit(\"extractUnique(['a', 'b', 'a', 'c', 'd', 'c']) should return ['a', 'b', 'c', 'd']\", () => {\n  expect(extractUnique(['a', 'b', 'a', 'c', 'd', 'c'])).to.deep.equal(['a', 'b', 'c', 'd']);\n});\n\nit(\"extractUnique([true, false, true, false]) should return [true, false]\", () => {\n  expect(extractUnique([true, false, true, false])).to.deep.equal([true, false]);\n});\n\nit(\"extractUnique([]) should return an empty array for an initially empty array\", () => {\n  expect(extractUnique([])).to.deep.equal([]);\n});\n\nit(\"should handle array with mixed types\", () => {\n  let mixedArray = [1, '1', 2, '2', 1];\n  expect(extractUnique(mixedArray)).to.deep.equal([1, '1', 2, '2']);\n});\n\nit(\"extractUnique([undefined, null, false, 0, '', undefined, null]) should return [undefined, null, false, 0, '']\", () => {\n  expect(extractUnique([undefined, null, false, 0, '', undefined, null])).to.deep.equal([undefined, null, false, 0, '']);\n});\n\nit(\"extractUnique([NaN, 0.1, undefined]) should return [NaN, 0.1, undefined]\", () => {\n  expect(extractUnique([NaN, 0.1, undefined])).to.deep.equal([NaN, 0.1, undefined]);\n});\n\nit(\"should handle large array with only two unique values efficiently\", () => {\n  let largeArray = new Array(10000).fill('a');\n  largeArray.push('b');\n  largeArray.unshift('b');\n  let startTime = process.hrtime();\n  let uniqueArray = extractUnique(largeArray);\n  let elapsedTime = process.hrtime(startTime);\n  let elapsedTimeInMs = (elapsedTime[0] * 1000 + elapsedTime[1] / 1e6).toFixed(3);\n\n  expect(uniqueArray).to.deep.equal(['b', 'a']);\n  console.log(`Execution time for large array: ${elapsedTimeInMs} ms`);\n  // Note: This test doesn't fail based on execution time but provides insight into the function's efficiency.\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

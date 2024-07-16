@@ -1,0 +1,6 @@
+{
+  "name": "Какой тип имеет значение undefined?",
+  "instruction": "В JavaScript есть специальное значение `undefined`.\n\nЕсли создать переменную и не присвоить ей значение, то она будет иметь значение `undefined`.\n\nДавайте посмотрим какого типа будет это значение.\n\nСоздайте переменную с именем `noValue` с использованием ключевого слова `let` и не присваивайте ей значение.\n\nСоздайте переменную `typeOfNoValue` и присвойте ей значение типа переменной `noValue`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet nothing;\nconst typeOfNothing = typeof nothing;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet noValue;\nconst typeOfNoValue = typeof noValue;\n```"
+}

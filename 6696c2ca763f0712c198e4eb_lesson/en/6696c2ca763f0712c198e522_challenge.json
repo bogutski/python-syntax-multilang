@@ -1,0 +1,4 @@
+{
+  "name": "Nested objects with address",
+  "instruction": "Write a function `paramsToObject` that takes four parameters:\n* `street` - string, street name\n* `zip` - a string, zip code\n* `lat` - number, latitude\n* `lng` - number, longitude\n\nAn example of running the function:\n```javascript\nparamsToObject('Market street', '94103', 37.776, -122.416);\n// {\n// street: 'Market street',\n// zip: '94103',\n// location: {\n// lat: 37.776,\n// lng: -122.416,\n// }\n// }\n```\n\nAs you can see, the function returns an object that has a property `location`, which in turn is an object."
+}

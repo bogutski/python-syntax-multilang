@@ -1,0 +1,5 @@
+{
+  "name": "Посчитать количество гласных в строке. Исправьте ошибки",
+  "instruction": "Функция `countOnlyVowel` принимает строку, которая может содержать гласные и согласные строчные буквы.\n\nНеобходимо посчитать только количество вхождений гласных букв в строку и вернуть результат в виде строки в формате:\n\n`${str} includes ${vowel} vowels and ${str.length - vowel} consonants`\n\nНеобходимо исправить ошибки в коде, чтобы функция работала правильно.\n\nПримеры запуска функции\n```javascript\ncountOnlyVowel('hello') // 'hello includes 2 vowels and 3 consonants'\ncountOnlyVowel('world') // 'world includes 1 vowels and 4 consonants'\n```",
+  "instructions": {}
+}

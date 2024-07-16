@@ -1,0 +1,4 @@
+{
+  "name": "Flip the line and separate with spaces",
+  "instruction": "Write a function `reverseAndSpaceIt` that takes a string.\n\nThe function should return a string in which all characters are reversed and separated by spaces.\n\nThere should not be a space at the end of the string.\n\nExamples of running the function:\n```\nreverseAndSpaceIt('Hello World!') // should return '! d l r o W o l l e H'\nreverseAndSpaceIt('apple') // should return 'e l p p a'\nreverseAndSpaceIt('') // should return ''\n```"
+}

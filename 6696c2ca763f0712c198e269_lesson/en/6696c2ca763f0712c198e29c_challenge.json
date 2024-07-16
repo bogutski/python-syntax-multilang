@@ -1,0 +1,4 @@
+{
+  "name": "How many rolls of wallpaper should I buy?",
+  "instruction": "Write a function named `numberOfWallpapers` that takes parameters:\n* `squareWall` - the area of walls in the room, in square feet;\n* `wallpaperWidth` - width of the wallpaper roll, in feet.\n* `wallpaperLength` - length of the wallpaper roll, in feet.\n\nLet the function return the minimum number of rolls of wallpaper to buy for the repair.\n\n```javascript\nnumberOfWallpapers(20, 5, 5) // 1\nnumberOfWallpapers(25, 5, 5) // 1\nnumberOfWallpapers(30, 5, 5) // 2\nnumberOfWallpapers(35, 5, 5) // 2\n```"
+}

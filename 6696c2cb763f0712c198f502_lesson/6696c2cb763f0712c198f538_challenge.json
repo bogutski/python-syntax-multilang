@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f538",
+  "name": {
+    "en": "/*",
+    "ru": "Заполнение массива по условию"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `fillArrayConditionally`, которая принимает три аргумента: размер массива `size`, значение для заполнения `value`, и строку `condition`.\n\nФункция должна создать и вернуть массив размером `size`, где каждый элемент заполнен значением `value`, если условие `condition` - `true`.\n\nЕсли условие `condition` - `true`, то массив должен быть заполнен: `undefined`.\n\n\nПримеры Запуска Функции:\n```javascript\nfillArrayConditionally(5, 'a', 'true'); // ['a', 'a', 'a', 'a', 'a']\nfillArrayConditionally(3, 1, 'false'); // [undefined, undefined, undefined]\nfillArrayConditionally(4, 'yes', 'true'); // ['yes', 'yes', 'yes', 'yes']\n```"
+  },
+  "initialSolution": "function fillArrayConditionally(){\n\n}",
+  "completedSolution": "function fillArrayConditionally(size, value, isTrue) {\n  let res = new Array(size)\n\n  if(isTrue === 'true') res.fill(value)\n  else if(isTrue === 'false') res.fill()\n\n  return res;\n}",
+  "openTest": "it('Created function fillArrayConditionally', () => {\n  expect(fillArrayConditionally).to.be.a('function');\n});\n\nit('Function fillArrayConditionally should include method fill()', () => {\n  const res = fillArrayConditionally.toString()\n  expect(res).to.include('.fill(')\n});\n\nit(\"fillArrayConditionally(5, 'a', 'true') should return ['a', 'a', 'a', 'a', 'a']\", function() {\n  expect(fillArrayConditionally(5, 'a', 'true')).to.deep.equal(['a', 'a', 'a', 'a', 'a']);\n});\n\nit(\"fillArrayConditionally(3, 1, 'false') should return [undefined, undefined, undefined]\", function() {\n  expect(fillArrayConditionally(3, 1, 'false')).to.deep.equal([undefined, undefined, undefined]);\n});\n\nit(\"fillArrayConditionally(4, 'yes', 'true') should return ['yes', 'yes', 'yes', 'yes']\", function() {\n  expect(fillArrayConditionally(4, 'yes', 'true')).to.deep.equal(['yes', 'yes', 'yes', 'yes']);\n});\n\nit(\"fillArrayConditionally(2, 'even', 'false') should return [undefined, undefined]\", function() {\n  expect(fillArrayConditionally(2, 'even', 'false')).to.deep.equal([undefined, undefined]);\n});\n\nit(\"fillArrayConditionally(0, 'none', 'true') should return an empty array\", function() {\n  expect(fillArrayConditionally(0, 'none', 'true')).to.deep.equal([]);\n});\n\nit(\"fillArrayConditionally(6, 2, 'true') should return an array filled with 2s\", function() {\n  expect(fillArrayConditionally(6, 2, 'true')).to.deep.equal([2, 2, 2, 2, 2, 2]);\n});\n\nit(\"fillArrayConditionally(3, 'first', 'false') should return an array filled with undefined\", function() {\n  expect(fillArrayConditionally(3, 'first', 'false')).to.deep.equal([undefined, undefined, undefined]);\n});\n\nit(\"fillArrayConditionally(4, 'last', 'false') should return an array filled with undefined\", function() {\n  expect(fillArrayConditionally(4, 'last', 'false')).to.deep.equal([undefined, undefined, undefined, undefined]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

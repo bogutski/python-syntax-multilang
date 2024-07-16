@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e2dd",
+  "name": {
+    "en": "The arithmetic mean of five rounded numbers",
+    "ru": "Среднее арифметическое округленных пяти чисел"
+  },
+  "instruction": {
+    "en": "Correct the function to return the arithmetic mean of the rounded five numbers.\n\nEach number is rounded down.\n\nThe result is rounded to the higher side.\n\nThe name of the function: `average`.",
+    "ru": "Исправьте функцию, чтобы она возвращала среднее арифметическое округленных пяти чисел.\n\nКаждое число округляется в меньшую сторону.\n\nРезультат округляется в большую сторону.\n\nНазвание функции: `average`."
+  },
+  "initialSolution": "function Average(1, 2, 3, 4, 5)\n  return Math.floor(1 + 2 + 3 + 4 + 5);\n}",
+  "completedSolution": "function average(n1, n2, n3, n4, n5) {\n  const sum =\n    Math.floor(n1) + Math.floor(n2) + Math.floor(n3) + Math.floor(n4) + Math.floor(n5);\n  return Math.ceil(sum / 5);\n}",
+  "openTest": "it('Created function average', () => {\n  expect(average).to.be.a('function');\n});\n\nit('average(1, 2, 3, 4, 5) should return 3', () => {\n  expect(average(1, 2, 3, 4, 5)).to.equal(3);\n});\n\nit('average(1.1, 2.2, 3.3, 4.4, 5.5) should return 3', () => {\n  expect(average(1.1, 2.2, 3.3, 4.4, 5.5)).to.equal(3);\n});\n\nit('average(1.5, 2.5, 3.5, 4.5, 5.5) should return 3', () => {\n  expect(average(1.5, 2.5, 3.5, 4.5, 5.5)).to.equal(3);\n});\n\nit('average(1.5, 2.5, 3.5, 4.5, 6.5) should return 4', () => {\n  expect(average(1.5, 2.5, 3.5, 4.5, 6.5)).to.equal(4);\n});\n\nit('average(4.5, 1.5, -0.5, 47.8, 11.5) should return 13', () => {\n  expect(average(4.5, 1.5, -0.5, 47.8, 11.5)).to.equal(13);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

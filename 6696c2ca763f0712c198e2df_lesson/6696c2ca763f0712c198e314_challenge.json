@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e314",
+  "name": {
+    "en": "Cylinder volume calculation with special rounding",
+    "ru": "Расчет объема цилиндра с особым округлением"
+  },
+  "instruction": {
+    "en": "To calculate the volume of the cylinder we use the formula: `V = π * r^2 * h`, where `V` is the volume, `r` is the base radius, `h` is the height of the cylinder.\n\n`r^2` is `r` squared.\n\nWrite a function `cylinderVolume` that takes two arguments: `r` and `h` and returns the volume of the cylinder.\n\nUse `Math.PI` to get the number `π`.\n\nRound up the result according to the following rules:\n* if the fractional part of the number is less than or equal to 0.3, round it down;\n* if the fractional part of the number is greater than 0.3 and less than 0.7, then let the fractional part of the number be equal to 0.5;\n* If the fractional part of the number is greater than or equal to 0.7, round up.\n\nExamples of running a function:\n```javascript\ncylinderVolume(1, 1) // 3\ncylinderVolume(2, 1) // 12.50\ncylinderVolume(2, 2) // 25\ncylinderVolume(4, 2) // 100\n\n\n```",
+    "ru": "Для расчета объема цилиндра используется формула: `V = π * r^2 * h`, где `V` – объем, `r` – радиус основания, `h` – высота цилиндра.\n\n`r^2` – это `r` в квадрате.\n\nНапишите функцию `cylinderVolume`, которая принимает два аргумента: `r` и `h` и возвращает объем цилиндра.\n\nИспользуйте `Math.PI` для получения числа `π`.\n\nРезультат округлите по следующим правилам:\n* если дробная часть числа меньше или равна 0.3, то округлите в меньшую сторону;\n* если дробная часть числа больше 0.3 и меньше 0.7, то пусть дробная часть числа будет равна 0.5;\n* если дробная часть числа больше или равна 0.7, то округлите в большую сторону.\n\nПримеры запуска функции:\n```javascript\ncylinderVolume(1, 1) // 3\ncylinderVolume(2, 1) // 12.50\ncylinderVolume(2, 2) // 25\ncylinderVolume(4, 2) // 100\n\n\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function cylinderVolume(r, h) {\n  const volume = Math.PI * r ** 2 * h;\n  const decimal = volume - Math.floor(volume);\n\n  if (decimal <= 0.3) {\n    return Math.floor(volume);\n  } else if (decimal > 0.3 && decimal < 0.7) {\n    return Math.floor(volume) + 0.5;\n  } else {\n    return Math.ceil(volume);\n  }\n}",
+  "openTest": "it('Created function cylinderVolume', () => {\n  expect(cylinderVolume).to.be.a('function');\n});\n\nit('cylinderVolume(1, 1) should return 3', () => {\n  expect(cylinderVolume(1, 1)).to.equal(3);\n});\n\nit('cylinderVolume(2, 1) should return 12.50', () => {\n  expect(cylinderVolume(2, 1)).to.equal(12.5);\n});\n\nit('cylinderVolume(2, 2) should return 25', () => {\n  expect(cylinderVolume(2, 2)).to.equal(25);\n});\n\nit('cylinderVolume(4, 2) should return 100.5', () => {\n  expect(cylinderVolume(4, 2)).to.equal(100.5);\n});\n\nit('cylinderVolume(1, 2) should return 6', () => {\n  expect(cylinderVolume(1, 2)).to.equal(6);\n});\n\nit('cylinderVolume(1, 3) should return 9.5', () => {\n  expect(cylinderVolume(1, 3)).to.equal(9.5);\n});\n\nit('cylinderVolume(1, 4) should return 12.5', () => {\n  expect(cylinderVolume(1, 4)).to.equal(12.5);\n});\n\nit('cylinderVolume(1, 5) should return 16', () => {\n  expect(cylinderVolume(1, 5)).to.equal(16);\n});\n\nit('cylinderVolume(8, 6) should return 1206.5', () => {\n  expect(cylinderVolume(8, 6)).to.equal(1206.5);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

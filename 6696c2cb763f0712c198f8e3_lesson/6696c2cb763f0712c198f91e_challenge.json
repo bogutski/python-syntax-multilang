@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f91e",
+  "name": {
+    "en": "/*",
+    "ru": "Проверка наличия числа в массивах чисел"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `hasArrayWithTargetNumbers`, которая принимает массив массивов чисел и несколько чисел.\n\nФункция должна возвращать `true`, если хотя бы один массив содержит хотя бы одно из указанных чисел, и `false` в противном случае.\n\n\nПримеры запуска функции:\n```javascript\nhasArrayWithTargetNumbers([[5, 10, 15], [20, 25, 30]], 35); // false\nhasArrayWithTargetNumbers([[23, 4, 8], [88, 63, 7]], 3, 5); // false\nhasArrayWithTargetNumbers([[10, 20, 30], [40, 50, 60]], 50, 70, 60, 80);  // true\nhasArrayWithTargetNumbers([[1, 2], [1, 2, 2, 1], [2, 3, 1, 5]], 6, 5, 4); // true\n```"
+  },
+  "initialSolution": "function hasArrayWithTargetNumbers(){\n\n}",
+  "completedSolution": "function hasArrayWithTargetNumbers(numbers, ...arguments) {\n  const targetArr = [...arguments]\n\n  return numbers.some(arr => {\n    return targetArr.some(n => arr.includes(n))\n  });\n}",
+  "openTest": "it('Created function hasArrayWithTargetNumbers', () => {\n  expect(hasArrayWithTargetNumbers).to.be.a('function');\n});\n\nit('hasArrayWithTargetNumbers([[1, 2], [1, 2, 2, 1], [2, 3, 1, 5]], 6, 5, 4) should return true', function() {\n  expect(hasArrayWithTargetNumbers([[1, 2], [1, 2, 2, 1], [2, 3, 1, 5]], 6, 5, 4)).to.equal(true);\n});\n\nit('hasArrayWithTargetNumbers([[23, 4, 8], [88, 63, 7]], 3, 5) should return false', function() {\n  expect(hasArrayWithTargetNumbers([[23, 4, 8], [88, 63, 7]], 3, 5)).to.equal(false);\n});\n\nit('hasArrayWithTargetNumbers([[10, 20, 30], [40, 50, 60]], 50, 70) should return true', function() {\n  expect(hasArrayWithTargetNumbers([[10, 20, 30], [40, 50, 60]], 50, 70)).to.equal(true);\n});\n\nit('hasArrayWithTargetNumbers([[5, 10, 15], [20, 25, 30]], 35, 40) should return false', function() {\n  expect(hasArrayWithTargetNumbers([[5, 10, 15], [20, 25, 30]], 35, 40)).to.equal(false);\n});\n\nit('hasArrayWithTargetNumbers([[1, 1, 1], [2, 2, 2], [3, 3, 3]], 3) should return true', function() {\n  expect(hasArrayWithTargetNumbers([[1, 1, 1], [2, 2, 2], [3, 3, 3]], 3)).to.equal(true);\n});\n\nit('hasArrayWithTargetNumbers([[9, 8, 7], [6, 5, 4]], 1, 2, 3) should return false', function() {\n  expect(hasArrayWithTargetNumbers([[9, 8, 7], [6, 5, 4]], 1, 2, 3)).to.equal(false);\n});\n\nit('hasArrayWithTargetNumbers([[11, 22, 33], [44, 55, 66]], 22, 44) should return true', function() {\n  expect(hasArrayWithTargetNumbers([[11, 22, 33], [44, 55, 66]], 22, 44)).to.equal(true);\n});\n\nit('hasArrayWithTargetNumbers([[0, 1, 2], [3, 4, 5]], 6, 7, 8) should return false', function() {\n  expect(hasArrayWithTargetNumbers([[0, 1, 2], [3, 4, 5]], 6, 7, 8)).to.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,487 @@
+{
+  "_id": "6696c2ca763f0712c198eac2",
+  "name": {
+    "ru": "Преобразовать строку в массив",
+    "en": "Convert a string to an array",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198eac3",
+      "name": {
+        "ru": "К чему применяется метод split()?",
+        "en": "What does the split() method apply to?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eac4",
+          "name": {
+            "ru": "К массиву",
+            "en": "To the array",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eac5",
+          "name": {
+            "ru": "К строке",
+            "en": "To the line",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eac6",
+          "name": {
+            "ru": "К числу",
+            "en": "To the number of",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eac7",
+          "name": {
+            "ru": "К объекту",
+            "en": "To the object",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eac8",
+      "name": {
+        "ru": "Метод split() преобразует строку в массив, разбивая ее по заданному разделителю.",
+        "en": "The split() method converts a string into an array by splitting it by the specified delimiter.",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eac9",
+          "name": {
+            "ru": "Данное утверждение верно",
+            "en": "This statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaca",
+          "name": {
+            "ru": "Данное утверждение неверно",
+            "en": "This statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eacb",
+      "name": {
+        "ru": "В качестве аргумента метод split() принимает:",
+        "en": "The split() method takes as an argument:",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eacc",
+          "name": {
+            "ru": "Разделитель",
+            "en": "Separator",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eacd",
+          "name": {
+            "ru": "Пробел: split(' ')",
+            "en": "Space: split(' ')",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eace",
+          "name": {
+            "ru": "Точка: split('.')",
+            "en": "Point: split('.')",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eacf",
+          "name": {
+            "ru": "Любой символ может быть разделителем",
+            "en": "Any character can be a delimiter",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ead0",
+      "name": {
+        "ru": "Что получится в результате запуска кода ниже?",
+        "en": "What is the result of running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'Birds of a Feather Flock Together';\nconsole.log(str.split(' '));\n```",
+        "en": "```javascript\nlet str = 'Birds of a Feather Flock Together';\nconsole.log(str.split(' '));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ead1",
+          "name": {
+            "ru": "['Birds, of, a, Feather, Flock, Together]",
+            "en": "['Birds, of, a, Feather, Flock, Together]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ead2",
+          "name": {
+            "ru": "[Birds, of, a, Feather, Flock, Together]",
+            "en": "[Birds, of, a, Feather, Flock, Together]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ead3",
+          "name": {
+            "ru": "['Birds', 'of', 'a', 'Feather', 'Flock', 'Together']",
+            "en": "['Birds', 'of', 'a', 'Feather', 'Flock', 'Together']",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ead4",
+          "name": {
+            "ru": "['Birds' 'of' 'a' 'Feather' 'Flock' 'Together']",
+            "en": "['Birds' 'of' 'a' 'Feather' 'Flock' 'Together']",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ead5",
+      "name": {
+        "ru": "Что выведется в консоль после запуска кода ниже?",
+        "en": "What will be output to the console after running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'Birds of a Feather Flock Together';\nconsole.log(str.split('F'));\n```",
+        "en": "```javascript\nlet str = 'Birds of a Feather Flock Together';\nconsole.log(str.split('F'));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ead6",
+          "name": {
+            "ru": "['Birds of a ', 'eather ', 'lock Together']",
+            "en": "['Birds of a ', 'eather ', 'lock Together']",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ead7",
+          "name": {
+            "ru": "['Birds of a ', 'Feather ', 'Flock Together']",
+            "en": "['Birds of a ', 'Feather ', 'Flock Together']",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ead8",
+          "name": {
+            "ru": "[Birds of a, eather, lock Together]",
+            "en": "[Birds of a, eather, lock Together]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ead9",
+          "name": {
+            "ru": "['Birds of a ' 'eather ' 'lock Together']",
+            "en": "['Birds of a ' 'eather ' 'lock Together']",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eada",
+      "name": {
+        "ru": "Код ниже вернет первоначальную строку str без изменений",
+        "en": "The code below will return the original str string unchanged",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  acc += str[i];\n}\nconsole.log(acc);\n```",
+        "en": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  acc += str[i];\n}\nconsole.log(acc);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eadb",
+          "name": {
+            "ru": "Верно",
+            "en": "Right",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eadc",
+          "name": {
+            "ru": "Неверно",
+            "en": "Wrong",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eadd",
+      "name": {
+        "ru": "Выберите верный вариант запуска кода ниже",
+        "en": "Select the correct option to run the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] !== ',')\n  acc += str[i];\n};\nconsole.log(acc);\n```",
+        "en": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] !== ',')\n  acc += str[i];\n};\nconsole.log(acc);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eade",
+          "name": {
+            "ru": "'No Ifs, Ands or Buts'",
+            "en": "'No Ifs, Ands or Buts'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eadf",
+          "name": {
+            "ru": "'No Ifs Ands, or Buts'",
+            "en": "'No Ifs Ands, or Buts'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eae0",
+          "name": {
+            "ru": "'No Ifs, Ands, or Buts'",
+            "en": "'No Ifs, Ands, or Buts'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eae1",
+          "name": {
+            "ru": "'No Ifs Ands or Buts'",
+            "en": "'No Ifs Ands or Buts'",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eae2",
+      "name": {
+        "ru": "Что выведется в консоль после запуска кода ниже?",
+        "en": "What will be output to the console after running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nconst arr = [];\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] !== ','){ \n    acc += str[i];\n  }else{ \n    arr.push(acc);\n    acc = '';  \n  };\n};\nconsole.log(arr);\n```",
+        "en": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nconst arr = [];\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] !== ','){ \n    acc += str[i];\n  }else{ \n    arr.push(acc);\n    acc = '';  \n  };\n};\nconsole.log(arr);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eae3",
+          "name": {
+            "ru": "['No Ifs', ' Ands', ' or Buts']",
+            "en": "['No Ifs', ' Ands', ' or Buts']",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eae4",
+          "name": {
+            "ru": "['No Ifs', ' Ands']",
+            "en": "['No Ifs', ' Ands']",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eae5",
+          "name": {
+            "ru": "'No Ifs', ' Ands'",
+            "en": "'No Ifs', ' Ands'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eae6",
+          "name": {
+            "ru": "['No Ifs' ' Ands']",
+            "en": "['No Ifs' ' Ands']",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eae7",
+      "name": {
+        "ru": "Код ниже вернет массив строк, разделенных по пробелу",
+        "en": "The code below will return an array of space-separated strings",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nconst arr = [];\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] !== ',') acc += str[i];\n  else {arr.push(acc); acc = '';}\n};\narr.push(acc);\nconsole.log(arr);\n```",
+        "en": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nconst arr = [];\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] !== ',') acc += str[i];\n  else {arr.push(acc); acc = '';}\n};\narr.push(acc);\nconsole.log(arr);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eae8",
+          "name": {
+            "ru": "Да, вернется ['No', 'Ifs,', 'Ands,', 'or', 'Buts']",
+            "en": "Yes, he will ['No', 'Ifs,', 'Ands,', 'or', 'Buts']",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eae9",
+          "name": {
+            "ru": "Нет, вернется разделение по запятой ['No Ifs', ' Ands', ' or Buts']",
+            "en": "No, comma separation ['No Ifs', ' Ands', ' or Buts'] will return.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaea",
+          "name": {
+            "ru": "Нет, вернется разделение по запятой и пробелу ['No Ifs', 'Ands', 'or Buts']",
+            "en": "No, comma and space separation will return ['No Ifs', 'Ands', 'or Buts']",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eaeb",
+      "name": {
+        "ru": "Выберите верный вариант результата выполнения кода ниже",
+        "en": "Select the correct option for the result of the code execution below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nconst arr = [];\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] !== ',')acc += str[i];\n  else {arr.push(acc); acc = '';}  \n  if(i === str.length - 1) arr.push(acc);\n};\nconsole.log(arr);\n```",
+        "en": "```javascript\nlet str = 'No Ifs, Ands, or Buts';\nconst arr = [];\nlet acc = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] !== ',')acc += str[i];\n  else {arr.push(acc); acc = '';}  \n  if(i === str.length - 1) arr.push(acc);\n};\nconsole.log(arr);\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eaec",
+          "name": {
+            "ru": "Массив строк строки str, разделенных по запятой",
+            "en": "A comma-separated array of str string.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaed",
+          "name": {
+            "ru": "Массив строк строки str, разделенных по пробелу",
+            "en": "A space-separated array of str string",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaee",
+          "name": {
+            "ru": "['No Ifs', ' Ands', ' or Buts']",
+            "en": "['No Ifs', ' Ands', ' or Buts']",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaef",
+          "name": {
+            "ru": "['No', 'Ifs,', 'Ands,', 'or', 'Buts']",
+            "en": "['No', 'Ifs,', 'Ands,', 'or', 'Buts']",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

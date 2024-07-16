@@ -1,0 +1,4 @@
+{
+  "name": "The area of the circle by the radius",
+  "instruction": "Write a function `circleArea` that takes the radius of a circle and returns its area.\n\nUse `3.14` as the value of `π`.\n\nThe formula for the area of the circle is `S = π * r * r`, where `r` is the radius of the circle.\n\nA similar example of a function to calculate the area of a square:\n```javascript\nfunction squareArea(side) {\n  return side * side;\n}"
+}

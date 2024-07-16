@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f4c3",
+  "name": {
+    "en": "/*",
+    "ru": "Изменение элементов массива на основе их индекса"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `modifyBasedOnIndex`, которая принимает массив и модифицирует каждый его элемент, добавляя к его значению его индекс в массиве.\n\nФункция возвращает измененный массив.\n\nИспользуйте метод `forEach` для итерации по массиву и включения индекса в обработку элементов.\n\n\nПример запуска функции:\n```javascript\nmodifyBasedOnIndex([10, 20, 30, 40]); // [ 10, 21, 32, 43 ]\nmodifyBasedOnIndex([-5, -4, -3, -2, -1]); // [ -5, -3, -1, 1, 3 ]\nmodifyBasedOnIndex(['a', 'b', 'c']) // [ 'a0', 'b1', 'c2' ]\n```"
+  },
+  "initialSolution": "function modifyBasedOnIndex(){\n\n}",
+  "completedSolution": "function modifyBasedOnIndex(arr) {\n  arr.forEach((n, i) => arr[i] = n + i)\n  return arr;\n}",
+  "openTest": "it('Created function modifyBasedOnIndex', () => {\n  expect(modifyBasedOnIndex).to.be.a('function');\n});\n\nit('Function modifyBasedOnIndex should include method forEach()', () => {\n  const res = modifyBasedOnIndex.toString()\n  expect(res).to.include('.forEach(')\n});\n\nit(\"modifyBasedOnIndex([10, 20, 30, 40]) should modify array to [10, 21, 32, 43]\", () => {\n  const numbers = [10, 20, 30, 40];\n  modifyBasedOnIndex(numbers);\n  expect(numbers).to.deep.equal([10, 21, 32, 43]);\n});\n\nit(\"modifyBasedOnIndex([0, 1, 2, 3]) should modify array to [0, 2, 4, 6]\", () => {\n  const sequence = [0, 1, 2, 3];\n  modifyBasedOnIndex(sequence);\n  expect(sequence).to.deep.equal([0, 2, 4, 6]);\n});\n\nit(\"modifyBasedOnIndex([-3, -2, -1, 0]) should modify array to [-3, -1, 1, 3]\", () => {\n  const negatives = [-3, -2, -1, 0];\n  modifyBasedOnIndex(negatives);\n  expect(negatives).to.deep.equal([-3, -1, 1, 3]);\n});\n\nit(\"modifyBasedOnIndex([]) should keep the array unchanged\", () => {\n  const emptyArray = [];\n  modifyBasedOnIndex(emptyArray);\n  expect(emptyArray).to.deep.equal([]);\n});\n\nit(\"modifyBasedOnIndex([0, 0, 0]) should return [0, 1, 2]\", () => {\n  const numbers = [0, 0, 0];\n  expect(modifyBasedOnIndex(numbers)).to.deep.equal([0, 1, 2]);\n});\n\nit(\"modifyBasedOnIndex([100, 200, 300]) should modify array to [100, 201, 302]\", () => {\n  const largeNumbers = [100, 200, 300];\n  modifyBasedOnIndex(largeNumbers);\n  expect(largeNumbers).to.deep.equal([100, 201, 302]);\n});\n\nit(\"modifyBasedOnIndex(['0', '1', '2', '3']) should concatenate index to each string\", () => {\n  const strings = ['0', '1', '2', '3'];\n  modifyBasedOnIndex(strings);\n  expect(strings).to.deep.equal(['00', '11', '22', '33']);\n});\n\nit(\"modifyBasedOnIndex([1]) should modify single-element array to [1]\", () => {\n  const singleElement = [1];\n  modifyBasedOnIndex(singleElement);\n  expect(singleElement).to.deep.equal([1]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

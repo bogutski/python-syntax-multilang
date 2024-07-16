@@ -1,0 +1,5 @@
+{
+  "name": "Найдено или нет",
+  "instruction": "Напишите функцию `isContains`, которая принимает два параметра: строку и подстроку.\n\nФункция должна возвращать `true`, если подстрока найдена в строке, и `false` в противном случае.\n\nПоиск должен быть нечувствителен к регистру.\n\nПримеры:\n```javascript\nisContains('Hello', 'll'); // true\nisContains('Hello', 'lL'); // true\nisContains('Hello', 'LL'); // true\nisContains('Example', 'ex'); // true\nisContains('Example', 'Ex'); // true\nisContains('MOUSE', 'mou'); // true\nisContains('MOUSE', 'mOu'); // true\nisContains('MOUSE', 'mU'); // false\n```",
+  "instructions": {}
+}

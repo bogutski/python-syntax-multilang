@@ -1,0 +1,4 @@
+{
+  "name": "Fix errors in the getDayOfWeek function",
+  "instruction": "You need to write a function `getDayOfWeek` that takes the day of the week `day` and returns a string like `'Today is day'`.\n\nIf no argument is given, the function should return the string `'Today is today'`.\n\nCorrect the errors in the code."
+}

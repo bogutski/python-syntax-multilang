@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dbbf",
+  "name": {
+    "en": "CamelCase style variable name (\"Toy Price\")",
+    "ru": "Имя переменной в стиле camelCase (\"Цена игрушки\")"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-5.png)\n\nNeed to create a variable without assigning a value to it, using the keyword `let`,\nwhich will store the price of the toy.\nCorrect the variable name so that the name is written in `camelCase` style.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-5.png)\n\nТребуется создать переменную без присваивания ей значения, с использованием ключевого слова `let`,\nв которой будет храниться цена игрушки.\nИсправьте имя переменной, чтобы имя было записано в стиле `camelCase`."
+  },
+  "initialSolution": "let price_of_toy;",
+  "completedSolution": "let priceOfToy;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal",
+  "hint": {
+    "en": "```javascript\nlet priceOfToy;\n```",
+    "ru": "```javascript\nlet priceOfToy;\n```"
+  }
+}

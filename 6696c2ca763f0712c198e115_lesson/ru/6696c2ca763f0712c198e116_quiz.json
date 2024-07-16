@@ -1,0 +1,166 @@
+{
+  "name": "Логический тип данных boolean",
+  "questions": {
+    "0": {
+      "name": "Boolean может быть только true или false",
+      "variants": {
+        "0": {
+          "name": "Утверждение верно"
+        },
+        "1": {
+          "name": "Утверждение неверно"
+        }
+      }
+    },
+    "1": {
+      "name": "Выберите правильное написание вариантов boolean",
+      "variants": {
+        "0": {
+          "name": "True, False"
+        },
+        "1": {
+          "name": "'true', 'false'"
+        },
+        "2": {
+          "name": "true, false"
+        },
+        "3": {
+          "name": "TRUE, FALSE"
+        }
+      }
+    },
+    "2": {
+      "name": "Для преобразования в boolean используется:",
+      "variants": {
+        "0": {
+          "name": "Boolean()"
+        },
+        "1": {
+          "name": "!"
+        },
+        "2": {
+          "name": "!!"
+        },
+        "3": {
+          "name": "toBoolean()"
+        }
+      }
+    },
+    "3": {
+      "name": "Что вернет Boolean(0)?",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "Ошибка"
+        },
+        "3": {
+          "name": "NaN"
+        }
+      }
+    },
+    "4": {
+      "name": "Что вернет !Boolean('')?",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "Ошибка"
+        },
+        "3": {
+          "name": "0"
+        }
+      }
+    },
+    "5": {
+      "name": "Что вернет Booleam('Hello')?",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "Ошибка"
+        },
+        "3": {
+          "name": "Hello"
+        }
+      }
+    },
+    "6": {
+      "name": "Для чего используется ! в начале выражения?",
+      "variants": {
+        "0": {
+          "name": "Для преобразования в Boolean"
+        },
+        "1": {
+          "name": "Для преобразования в противоположный boolean"
+        },
+        "2": {
+          "name": "Для преобразования в Number"
+        },
+        "3": {
+          "name": "Для преобразования в String"
+        }
+      }
+    },
+    "7": {
+      "name": "Что вернет !!Boolean(0)?",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "Ошибка"
+        },
+        "3": {
+          "name": "0"
+        }
+      }
+    },
+    "8": {
+      "name": "Что вернет Boolean('Hello')?",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "Ошибка"
+        },
+        "3": {
+          "name": "Hello"
+        }
+      }
+    },
+    "9": {
+      "name": "Что вернет console.log(!(1 / 0)) и почему?",
+      "variants": {
+        "0": {
+          "name": "false, потому что 1 / 0 = Infinity. Infinity это true. !Infinity = false"
+        },
+        "1": {
+          "name": "true, потому что 1 / 0 = Infinity. Infinity это false. !Infinity = true"
+        },
+        "2": {
+          "name": "Ошибка в коде"
+        }
+      }
+    }
+  }
+}

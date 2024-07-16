@@ -1,0 +1,5 @@
+{
+  "name": "Посчитать буквы в строке без учета пробелов",
+  "instruction": "Напишите функцию `countLetters`, которая принимает строку и возвращает строку вида `String hello has 5 symbols`.\n\nПример запуска функции:\n```javascript\ncountLetters('hello'); // 'String hello has 5 symbols'\ncountLetters('  hello     '); // 'String hello has 5 symbols'\ncountLetters('  hello  world'); // 'String hello world has 12 symbols'\n```\n\nДля подсчета удалите пробелы в начале и в конце строки, а затем посчитайте длину строки.\n\nПробелы внутри строки удалять не нужно, считайте их символами.",
+  "instructions": {}
+}

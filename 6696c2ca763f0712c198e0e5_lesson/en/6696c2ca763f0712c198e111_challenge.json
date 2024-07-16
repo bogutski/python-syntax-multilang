@@ -1,0 +1,4 @@
+{
+  "name": "The area of a right triangle",
+  "instruction": "A right triangle is a triangle with one of its angles equal to 90°. Its area can be found if you know the two cathetuses\n(The cathetuses are the sides adjacent to the right angle). The formula for finding the area of a right triangle is `1/2 * a * b`, where `a` and `b` are the cathetuses.\n\nCreate a function `triangleArea` that takes two numbers - the cathetuses of the right triangle.\n\nThe function should return the area of the triangle."
+}

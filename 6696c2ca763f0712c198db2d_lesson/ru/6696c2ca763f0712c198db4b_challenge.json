@@ -1,0 +1,6 @@
+{
+  "name": "Присвойте переменной isAdult значение true",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-10.png)\n\nСоздайте переменную с именем `isAdult`.\nИспользуйте ключевое слово` const`.\nПрисвойте логическое значение `true`.\n\nПохожий пример:\n```javascript\nconst isMan = true;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst isAdult = true;\n```"
+}

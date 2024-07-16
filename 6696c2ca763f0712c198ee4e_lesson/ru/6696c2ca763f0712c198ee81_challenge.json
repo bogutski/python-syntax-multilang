@@ -1,0 +1,5 @@
+{
+  "name": "Перевернуть слово, кроме последнего символа",
+  "instruction": "Напишите функцию `reverseExceptLast`, которая принимает строку и возвращает перевернутую строку, кроме последнего символа.\n\nЕсли строка пустая, то функция должна вернуть пустую строку.\n\n\nПримеры запуска функции:\n```javascript\nreverseExceptLast('tpircSavaJ!'); // 'JavaScript!'\nreverseExceptLast('ananab?');     // 'banana?'\nreverseExceptLast('hello.');      // 'olleh.'\nreverseExceptLast('25$');         // '52$'\nreverseExceptLast('');            // ''\n```",
+  "instructions": {}
+}

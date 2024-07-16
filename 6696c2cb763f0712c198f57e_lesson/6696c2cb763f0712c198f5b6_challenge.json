@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f5b6",
+  "name": {
+    "en": "/*",
+    "ru": "Извлечение уникальных идентификаторов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `extractUniqueIDs`, которая принимает массив объектов.\n\nКаждый объект содержит ключ `ids`, который ассоциируется с массивом идентификаторов (целых чисел).\n\nФункция должна возвращать один массив, содержащий все уникальные идентификаторы из всех объектов, сохраняя порядок их первого появления.\n\n\nПример запуска функции:\n```javascript\nconst records = [\n  { ids: [101, 102] },\n  { ids: [102, 103, 104] },\n  { ids: [104, 105, 106] }\n];\n\nconsole.log(extractUniqueIDs(records));\n// Вывод: [101, 102, 103, 104, 105, 106]\n```"
+  },
+  "initialSolution": "function extractUniqueIDs(){\n\n}",
+  "completedSolution": "function extractUniqueIDs(arr) {\n  const getAllIds = arr.flatMap(obj => obj.ids)\n  let res = []\n\n  getAllIds.forEach((el, index, array) => {\n    if(array.indexOf(el, index + 1) === -1) res.push(el)\n  })\n\n  return res;\n}",
+  "openTest": "it('Created function extractUniqueIDs', () => {\n  expect(extractUniqueIDs).to.be.a('function');\n});\n\nit('should extract and combine unique ids from an array of objects', () => {\n  const records = [\n    { ids: [101, 102] },\n    { ids: [102, 103, 104] },\n    { ids: [104, 105, 106] }\n  ];\n  expect(extractUniqueIDs(records)).to.deep.equal([101, 102, 103, 104, 105, 106]);\n});\n\nit('should return an empty array if the input array is empty', () => {\n  expect(extractUniqueIDs([])).to.deep.equal([]);\n});\n\nit('should handle objects with empty id arrays', () => {\n  const records = [{ ids: [] }, { ids: [101, 102] }];\n  expect(extractUniqueIDs(records)).to.deep.equal([101, 102]);\n});\n\nit('should return an empty array if all objects have empty id arrays', () => {\n  const records = [{ ids: [] }, { ids: [] }];\n  expect(extractUniqueIDs(records)).to.deep.equal([]);\n});\n\nit('should handle single-id arrays in all objects', () => {\n  const records = [{ ids: [101] }, { ids: [102] }, { ids: [103] }];\n  expect(extractUniqueIDs(records)).to.deep.equal([101, 102, 103]);\n});\n\nit('should not include duplicates from the combined array', () => {\n  const records = [{ ids: [101, 101] }, { ids: [102, 102] }];\n  expect(extractUniqueIDs(records)).to.deep.equal([101, 102]);\n});\n\nit('should combine ids correctly regardless of the order in the input objects', () => {\n  const records = [{ ids: [106, 105] }, { ids: [104, 103] }, { ids: [102, 101] }];\n  expect(extractUniqueIDs(records)).to.deep.equal([106, 105, 104, 103, 102, 101]);\n});\n\nit('should handle a large array of objects efficiently', () => {\n  const largeArray = Array.from({ length: 1000 }, (_, i) => ({ ids: [i, i + 1] }));\n  const expectedResult = Array.from({ length: 1001 }, (_, i) => i);\n  expect(extractUniqueIDs(largeArray)).to.deep.equal(expectedResult);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

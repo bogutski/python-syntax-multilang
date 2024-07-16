@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e38a",
+  "name": {
+    "en": "",
+    "ru": "Цена снижается в зависимости от срока годности"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `productPrice`, которая принимает два параметра: `initialPrice`, `daysRemaining`.\n\nФункция должна возвращать цену товара, с учетом срока годности.\n\n`initialPrice` - базовая цена товара\n`daysRemaining` - количество дней до окончания срока годности.\n\nПримеры запуска функции:\n```javascript\nproductPrice(100, 30); // 100\nproductPrice(100, 20); // 80\nproductPrice(100, 10); // 50\nproductPrice(100, 3); // 30\nproductPrice(100, 0); // 'Product is expired'\n```\n\n* Если `daysRemaining` больше или равно 30, то функция должна возвращать оригинальную цену `initialPrice`.\n* Если `daysRemaining` от 20 до 29 включительно, то функция должна возвращать цену, уменьшенную на 20%.\n* Если `daysRemaining` от 10 до 19 включительно, то функция должна возвращать цену, уменьшенную на 50%.\n* Если `daysRemaining` от 1 до 9 включительно, то функция должна возвращать цену, уменьшенную на 70%.\n* Если `daysRemaining` 0, то функция должна возвращать 'Product is expired'."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function productPrice(initialPrice, daysRemaining) {\n  if (daysRemaining >= 30) return initialPrice;\n  else if (daysRemaining >= 20) return initialPrice * 0.8;\n  else if (daysRemaining >= 10) return initialPrice * 0.5;\n  else if (daysRemaining > 0) return initialPrice * 0.3;\n  else return 'Product is expired';\n}",
+  "openTest": "it('Created function productPrice', () => {\n  expect(productPrice).to.be.a('function');\n});\n\nit('productPrice(200, 30) should return 200', () => {\n  expect(productPrice(200, 30)).to.be.equal(200);\n});\n\nit('productPrice(200, 20) should return 160', () => {\n  expect(productPrice(200, 20)).to.be.equal(160);\n});\n\nit('productPrice(200, 21) should return 160', () => {\n  expect(productPrice(200, 21)).to.be.equal(160);\n});\n\nit('productPrice(200, 10) should return 100', () => {\n  expect(productPrice(200, 10)).to.be.equal(100);\n});\n\nit('productPrice(200, 9) should return 60', () => {\n  expect(productPrice(200, 9)).to.be.equal(60);\n});\n\nit('productPrice(200, 3) should return 60', () => {\n  expect(productPrice(200, 3)).to.be.equal(60);\n});\n\nit('productPrice(200, 2) should return 60', () => {\n  expect(productPrice(200, 2)).to.be.equal(60);\n});\n\nit('productPrice(200, 0) should return \"Product is expired\"', () => {\n  expect(productPrice(200, 0)).to.be.equal('Product is expired');\n});\n\nit('productPrice(200, -1) should return \"Product is expired\"', () => {\n  expect(productPrice(200, -1)).to.be.equal('Product is expired');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

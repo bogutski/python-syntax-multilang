@@ -1,0 +1,4 @@
+{
+  "name": "Removing spaces from a string",
+  "instruction": "Write a function `noSpaces` that takes a string that may contain spaces and returns a new one, a copy of the original string, but without spaces.\n\nIf the input string is empty, return an empty string.\n\nExamples of running the function:\n```javascript\nnoSpaces('Hello World') // 'HelloWorld'\nnoSpaces('a b c') // 'abc'\nnoSpaces('') // ''\n```"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Commentary in the program",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-8.png)\n\nWrite a command to output the word \"Testing\" to the console and comment out this line.\n\nA similar example solution:\n```javascript\n//console.log('Hello JS');\n```",
+  "instructions": {},
+  "hint": "```javascript\n//console.log('Testing');\n```"
+}

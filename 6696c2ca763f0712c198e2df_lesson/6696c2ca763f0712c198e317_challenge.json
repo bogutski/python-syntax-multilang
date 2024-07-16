@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e317",
+  "name": {
+    "en": "Purchasing coffee for the office for a month",
+    "ru": "Закупка кофе для офиса на месяц"
+  },
+  "instruction": {
+    "en": "In the month there are 20 working days.\n\nOn average, each employee uses 100 grams of coffee per day.\n\nCoffee is sold in packs of 1 kg.\n\nWrite a function `coffeeForOffice` that takes the parameters:\n* `price` - price for 1 kg of coffee\n* `employees` - number of employees in the office\n\nThe function should return a string in the following format:\n`You need to buy 7 kg of coffee. Price: $123`\n\nExamples of function calls:\n```javascript\ncoffeeForOffice(10, 5) // 'You need to buy 10 kg of coffee. Price: $100'\ncoffeeForOffice(15, 15) // 'You need to buy 30 kg of coffee. Price: $450'\ncoffeeForOffice(25, 30) // 'You need to buy 60 kg of coffee. Price: $1500'\n```",
+    "ru": "В месяце 20 рабочих дней.\n\nВ среднем каждый сотрудник использует 100 грамм кофе в день.\n\nКофе продается пачками по 1 кг.\n\nНапишите функцию `coffeeForOffice`, которая принимает параметры:\n* `price` - цена за 1 кг кофе\n* `employees` - количество сотрудников в офисе\n\nФункция должна возвращать строку вида:\n`You need to buy 7 kg of coffee. Price: $123`\n\nПримеры запуска функции:\n```javascript\ncoffeeForOffice(10, 5) // 'You need to buy 10 kg of coffee. Price: $100'\ncoffeeForOffice(15, 15) // 'You need to buy 30 kg of coffee. Price: $450'\ncoffeeForOffice(25, 30) // 'You need to buy 60 kg of coffee. Price: $1500'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function coffeeForOffice(price, employees) {\n  const kg = Math.ceil((employees * 20 * 100) / 1000);\n  return `You need to buy ${kg} kg of coffee. Price: $${kg * price}`;\n}",
+  "openTest": "it('Created function coffeeForOffice', () => {\n  expect(coffeeForOffice).to.be.a('function');\n});\n\nit('coffeeForOffice(10, 5) should return \"You need to buy 10 kg of coffee. Price: $100\"', () => {\n  expect(coffeeForOffice(10, 5)).to.equal(\n    'You need to buy 10 kg of coffee. Price: $100',\n  );\n});\n\nit('coffeeForOffice(15, 15) should return \"You need to buy 30 kg of coffee. Price: $450\"', () => {\n  expect(coffeeForOffice(15, 15)).to.equal(\n    'You need to buy 30 kg of coffee. Price: $450',\n  );\n});\n\nit('coffeeForOffice(25, 30) should return \"You need to buy 60 kg of coffee. Price: $1500\"', () => {\n  expect(coffeeForOffice(25, 30)).to.equal(\n    'You need to buy 60 kg of coffee. Price: $1500',\n  );\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

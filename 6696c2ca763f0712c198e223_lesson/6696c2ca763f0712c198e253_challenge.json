@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e253",
+  "name": {
+    "en": "",
+    "ru": "Красный, синий или зеленый?"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `isRedBlueGreen`, которая принимает цвет (строка) и возвращает true, если цвет `red`, `blue` или `green`. В противном случае возвращает false.\n\nЭту задачу можно решить с помощью `if`, но для тренировки попробуйте решить ее с помощью `||`.\n\nПохожий пример:\n```javascript\nfunction isOneTwoThree(number) {\n  if (number === 1 || number === 2 || number === 3) {\n    return true;\n  }\n  return false;\n}\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isRedBlueGreen(color) {\n  if (color === 'red' || color === 'blue' || color === 'green') {\n    return true;\n  }\n  return false;\n\n}",
+  "openTest": "it('Created function isRedBlueGreen', () => {\n  expect(isRedBlueGreen).to.be.a('function');\n});\n\nit('isRedBlueGreen(\"red\") should return true', () => {\n  expect(isRedBlueGreen('red')).to.be.equal(true);\n});\n\nit('isRedBlueGreen(\"blue\") should return true', () => {\n  expect(isRedBlueGreen('blue')).to.be.equal(true);\n});\n\nit('isRedBlueGreen(\"green\") should return true', () => {\n  expect(isRedBlueGreen('green')).to.be.equal(true);\n});\n\nit('isRedBlueGreen(\"yellow\") should return false', () => {\n  expect(isRedBlueGreen('yellow')).to.be.equal(false);\n});\n\nit('isRedBlueGreen(\"orange\") should return false', () => {\n  expect(isRedBlueGreen('orange')).to.be.equal(false);\n});\n\nit('isRedBlueGreen(\"purple\") should return false', () => {\n  expect(isRedBlueGreen('purple')).to.be.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

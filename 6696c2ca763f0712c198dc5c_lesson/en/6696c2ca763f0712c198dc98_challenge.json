@@ -1,0 +1,6 @@
+{
+  "name": "Life is good!",
+  "instruction": "Create a variable `word1` and write the word `'Life'` into it.\n\nCreate a variable `word2` and write the word `'is'` into it.\n\nCreate a variable `word3` and write the word `'good!'` into it.\n\nCreate a variable `myGoal` and write into it the result of concatenation (gluing) of the three previous variables with spaces between them.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task\n\n```javascript\nconst before = \"Be\";\nconst after = \"Happy!\"\nconst together = before + ' ' + after;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst word1 = 'Life';\nconst word2 = 'is';\nconst word3 = 'good!';\nconst myGoal = word1 + ' ' + word2 + ' ' + word3;\n```"
+}

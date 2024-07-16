@@ -1,0 +1,4 @@
+{
+  "name": "The function fills the object with the properties",
+  "instruction": "Write a function `roomProperties` that takes three parameters: `width`, `height`, `length`.\n\nThe function should return an object with properties `width`, `height` and `length` that will be equal to the corresponding arguments.\n\nExamples of running the function are:\n```javascript\nroomProperties(10, 20, 30); // { width: 10, height: 20, length: 30 }\nroomProperties(5, 10, 15); // { width: 5, height: 10, length: 15 }\n```\n\nSimilar function:\n```javascript\nfunction carProperties(model, year, color) {\n  return {\n    model,\n    year,\n    color,\n  };\n}"
+}

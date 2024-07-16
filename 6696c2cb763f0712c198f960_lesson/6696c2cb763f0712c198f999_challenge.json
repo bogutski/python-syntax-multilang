@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f999",
+  "name": {
+    "en": "/*",
+    "ru": "Сумма чисел в строке"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `sumNumbersInString`, которая принимает строку, содержащую числа, разделенные запятыми и пробелами, и возвращает сумму этих чисел.\n\nВ этой задаче нельзя использовать методы массивов.\n\n\nПримеры запуска функции:\n```javascript\nconsole.log(sumNumbersInString('1, 2, 3')); // 6\nconsole.log(sumNumbersInString('2.5, -3.719, 84.36')); // 83.141\nconsole.log(sumNumbersInString('-11, 28, 39, -7, 63')); // 112\nconsole.log(sumNumbersInString('0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144')); // 376\n```"
+  },
+  "initialSolution": "function sumNumbersInString(){\n\n}",
+  "completedSolution": "function sumNumbersInString(str) {\n  let result = 0\n  let chunk = ''\n\n  for(let i = 0; i < str.length; i++) {\n\n    if(str[i] !== ',' && str[i] !== ' ') chunk += str[i]\n    else if(str[i] === ','){\n      result += Number(chunk)\n      chunk = ''\n    }\n\n  }\n\n  if(chunk) result += Number(chunk)\n\n  return result;\n}",
+  "openTest": "it('Created function sumNumbersInString', () => {\n  expect(sumNumbersInString).to.be.a('function');\n});\n\nit(\"Function sumNumbersInString should not include methods\", () => {\n  const result = sumNumbersInString.toString();\n  const forbiddenMethods = ['.split(', '.map(', '.filter(', '.reduce(', '.forEach(', '.slice(', '.join(', '.concat('];\n\n  forbiddenMethods.forEach(method => {\n    expect(result).to.not.include(method);\n  });\n});\n\nit('sumNumbersInString(\"1, 2, 3\") should return 6', function() {\n  expect(sumNumbersInString('1, 2, 3')).to.equal(6);\n});\n\nit('sumNumbersInString(\"-11, 28, 39, -7\") should return 49', function() {\n  expect(sumNumbersInString('-11, 28, 39, -7')).to.equal(49);\n});\n\nit('sumNumbersInString(\"0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144\") should return 376', function() {\n  expect(sumNumbersInString('0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144')).to.equal(376);\n});\n\nit('sumNumbersInString(\"10, 20, 30, 40, 50\") should return 150', function() {\n  expect(sumNumbersInString('10, 20, 30, 40, 50')).to.equal(150);\n});\n\nit('sumNumbersInString(\"100, 200, 300\") should return 600', function() {\n  expect(sumNumbersInString('100, 200, 300')).to.equal(600);\n});\n\nit('sumNumbersInString(\"-1, -2, -3\") should return -6', function() {\n  expect(sumNumbersInString('-1, -2, -3')).to.equal(-6);\n});\n\nit('sumNumbersInString(\"2.5, -3.719, 84.36\") should return 83.141', function() {\n  expect(sumNumbersInString('2.5, -3.719, 84.36')).to.equal(83.141);\n});\n\nit('sumNumbersInString(\"1, 0.5, 0.9, -0.7, -1, 0.3\") should return 1', function() {\n  expect(sumNumbersInString('1, 0.5, 0.9, -0.7, -1, 0.3')).to.equal(1);\n});\n\nit('sumNumbersInString(\"0\") should return 0', function() {\n  expect(sumNumbersInString('0')).to.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

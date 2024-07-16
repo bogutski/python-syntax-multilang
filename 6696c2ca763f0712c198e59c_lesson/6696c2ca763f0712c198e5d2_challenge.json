@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e5d2",
+  "name": {
+    "en": "Correct the addresses",
+    "ru": "Исправь адреса"
+  },
+  "instruction": {
+    "en": "Write a `fixAddress` function that takes one parameter:\n* an `address` object with information about the address to be corrected.\n\nThe `address` object stores information about the address:\n* `state` - state, written in lower case, e.g. `ma`, string\n* `zip` - zip code, written with spaces at the beginning and/or end of the line, eg ` 03456 `.\n\nThe function should return an `address` object in which:\n* `state` - state, written in uppercase, for example `MA`\n* `zip` - zip code, written without spaces at the beginning and/or end of the line, for example `03456`.\n\nFunction launch example:\n```javascript\nfixAddress({ state: 'ma', zip: ' 03456 ' })\n// { state: 'MA', zip: '03456' }\n```\nSimilar example:\n```javascript\nfixPerson({ name: 'john', age: ' 20 ' })\n// { name: 'JOHN', age: '20' }\n```",
+    "ru": "Напишите функцию `fixAddress`, которая принимает один параметр:\n* объект `address` с информацией об адресе, в котором нужно исправить ошибки.\n\nВ объекте `address` хранится информация об адресе:\n* `state` - штат, написан в нижнем регистре, например `ma`, строка\n* `zip` - почтовый индекс, написан с пробелами в начале и/или в конце строки, например `  03456  `.\n\nФункция должна вернуть объект `address`, в котором:\n* `state` - штат, написан в верхнем регистре, например `MA`\n* `zip` - почтовый индекс, написан без пробелов в начале и/или в конце строки, например `03456`.\n\nПример запуска функции:\n```javascript\nfixAddress({ state: 'ma', zip: '  03456  ' })\n// { state: 'MA', zip: '03456' }\n```\nПохожий пример:\n```javascript\nfixPerson({ name: 'john', age: ' 20  ' })\n// { name: 'JOHN', age: '20' }\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function fixAddress(address) {\n  address.state = address.state.toUpperCase();\n  address.zip = address.zip.trim();\n  return address;\n}",
+  "openTest": "it('Created function fixAddress', () => {\n    expect(fixAddress).to.be.a('function');\n  });\n\n  it('fixAddress should return object', () => {\n    expect(fixAddress({ state: 'ma', zip: '  03456  ' })).to.be.an('object');\n  });\n\n  it('fixAddress should return object with correct state and zip', () => {\n    expect(fixAddress({ state: 'ma', zip: '  01245' })).to.eql({ state: 'MA', zip: '01245' });\n  });\n\n  it('fixAddress should return object with correct state and zip', () => {\n    expect(fixAddress({ state: 'ca', zip: '98787  ' })).to.eql({ state: 'CA', zip: '98787' });\n  });\n\n  it('fixAddress should return object with correct state and zip', () => {\n    expect(fixAddress({ state: 'ny', zip: ' 23654  ' })).to.eql({ state: 'NY', zip: '23654' });\n  });",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

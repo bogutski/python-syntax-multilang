@@ -1,0 +1,4 @@
+{
+  "name": "Find the sum of the lengths of the arrays",
+  "instruction": "Write a function `arraySumLengths` that takes two parameters:\n* `arr1` - array\n* `arr2` - array\n\nThe function should return the sum of the lengths of the arrays.\n\nAn example of running the function:\n```javascript\narraySumLengths(['a', 'b', 'c'], [1, 2, 3, 4, 5, 6, 7, 8])\n// 11\n```\n\nA similar example with strings:\n```javascript\nfunction strSumLengths(str1, str2){\nreturn str1.length + str2.length;\n}\n```"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db6c",
+  "name": {
+    "en": "Variable with a logical value",
+    "ru": "Переменная с логическим значением"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-4.png)\n\nCreate a variable named `isRainy` using the `const` keyword and assign it the boolean value `true`.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-4.png)\n\nСоздайте переменную с именем `isRainy` c использованием ключевого слова `const` и присвойте ей логическое значение `true`."
+  },
+  "initialSolution": "",
+  "completedSolution": "const isRainy = true;",
+  "openTest": "it('isRainy should be a variable', () => {\n  expect (isRainy).to.exist;\n});\n\nit('isRainy should be a boolean', () => {\n  expect (isRainy).to.be.a('boolean');\n});\n\nit('isRainy should be equal to true', () => {\n  expect (isRainy).to.be.equal(true);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst isRainy = true;\n```",
+    "ru": "```javascript\nconst isRainy = true;\n```"
+  }
+}

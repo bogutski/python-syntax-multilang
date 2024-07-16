@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e00b",
+  "name": {
+    "en": "A function and a problem about buses. Version 2",
+    "ru": "Функция и задача про автобусы. Версия 2"
+  },
+  "instruction": {
+    "en": "Two buses left the same point at the same time and are moving in opposite directions.\n\nThe speed of the buses is different.\n\nCreate a function `busDistance` that takes three parameters: `bus1`, `bus2` and `time`.\n\nThe function should return the distance between the buses.\n\nThe `bus1` and `bus2` are numbers, the speed, in miles per hour, at which the buses move.\n\nThe `time` is a number, the time, in minutes, that has elapsed since the buses left.\n\nExamples:\n```javascript.\nbusDistance(10, 10, 60) // 20\nbusDistance(10, 20, 60) // 30\nbusDistance(10, 20, 120) // 60",
+    "ru": "Одновременно 2 автобуса выехали из одной точки и движутся в противоположные стороны.\n\nСкорость автобусов разная.\n\nСоздайте функцию `busDistance`, которая принимает три параметра: `bus1`, `bus2` и `time`.\n\nФункция должна возвращать расстояние между автобусами.\n\n`bus1` и `bus2` - это числа, скорость, в милях в час, с которой движутся автобусы.\n\n`time` - это число, время, в минутах, которое прошло с момента выезда автобусов.\n\nПримеры:\n```javascript\nbusDistance(10, 10, 60) // 20\nbusDistance(10, 20, 60) // 30\nbusDistance(10, 20, 120) // 60"
+  },
+  "initialSolution": "fun bus 2",
+  "completedSolution": "function busDistance(bus1, bus2, time) {\n  return (bus1 + bus2) * time / 60;\n}",
+  "openTest": "it('Created function busDistance', () => {\n  expect(busDistance).to.be.a('function');\n});\n\nit('Function busDistance has tree parameters bus1, bus2, time', () => {\n  // function to string and then to array of arguments\n  const args = busDistance.toString().match(/\\(([^)]*)\\)/)[1].split(',').map(arg => arg.trim());\n  expect(args).to.be.eql(['bus1', 'bus2', 'time']);\n});\n\nit('Function busDistance returns correct value with 10, 10, 60', () => {\n  expect(busDistance(10, 10, 60)).to.be.equal(20);\n} );\n\nit('Function busDistance returns correct value with 10, 20, 60', () => {\n  expect(busDistance(10, 20, 60)).to.be.equal(30);\n} );\n\nit('Function busDistance returns correct value with 10, 20, 120', () => {\n  expect(busDistance(10, 20, 120)).to.be.equal(60);\n} );\n\nit('Function busDistance returns correct value with 20, 10, 120', () => {\n  expect(busDistance(20, 10, 120)).to.be.equal(60);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

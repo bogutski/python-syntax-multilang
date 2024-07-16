@@ -1,0 +1,6 @@
+{
+  "name": "Переменная со значением true",
+  "instruction": "Создайте переменную с именем `isStudy` и присвойте ей значение `true`.\nСоздайте переменную с именем `typeOfIsStudy` и присвойте ей тип переменной `isStudy`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst isAdult = true;\nconst typeOfIsAdult = typeof isAdult;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst isStudy = true;\nconst typeOfIsStudy = typeof isStudy;\n```"
+}

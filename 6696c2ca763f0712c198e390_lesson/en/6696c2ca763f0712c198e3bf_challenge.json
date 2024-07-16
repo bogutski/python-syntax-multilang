@@ -1,0 +1,5 @@
+{
+  "name": "By how much the two lines differ in length",
+  "instruction": "Write a function `diffLength` that takes two strings and returns the difference of their lengths.\n\nExamples of running the function:\n```javascript\ndiffLength('aaa', 'aa'); // 1\ndiffLength('aa', 'aaa'); // 1\ndiffLength('aaa', ''); // 3\ndiffLength('', 'aaa'); // 3\ndiffLength('aaa', 'aaa'); // 0\n```\n\nThe return value must be a positive number.",
+  "instructions": {}
+}

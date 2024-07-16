@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f62f",
+  "name": {
+    "en": "/*",
+    "ru": "Сортировка массива строк по длине"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `sortStringsByLength`, которая принимает массив строк и возвращает новый массив, где строки отсортированы по их длине в порядке возрастания.\n\nФункция должна использовать метод `toSorted()` для обеспечения неизменности исходного массива.\n\n\nПримеры запуска функции:\n```javascript\nsortStringsByLength([\"apple\", \"banana\", \"cherry\", \"date\"]); // [ 'date', 'apple', 'banana', 'cherry' ]\nsortStringsByLength([\"hello\", \"world\", \"!\", \"JavaScript\"]); // [ '!', 'hello', 'world', 'JavaScript' ]\nsortStringsByLength([\"test\", \"testing\", \"tester\", \"tested\"]); // [ 'test', 'tester', 'tested', 'testing' ]\n```"
+  },
+  "initialSolution": "function sortStringsByLength(){\n\n}",
+  "completedSolution": "function sortStringsByLength(arr) {\n  return arr.toSorted((a, b) => a.length - b.length);\n}",
+  "openTest": "Array.prototype.toSorted = function(compareFunction){\n  const newArray = this.slice()\n  if(compareFunction) return newArray.sort(compareFunction)\n  else return newArray.sort()\n}\n\nit('Created function sortStringsByLength', () => {\n  expect(sortStringsByLength).to.be.a('function');\n});\n\nit('Function sortStringsByLength should include method toSorted()', () => {\n  const res = sortStringsByLength.toString()\n  expect(res).to.include('.toSorted(')\n});\n\nit(\"sortStringsByLength(['apple', 'banana', 'cherry', 'date']) should return ['date', 'apple', 'banana', 'cherry']\", () => {\n  expect(sortStringsByLength([\"apple\", \"banana\", \"cherry\", \"date\"])).to.deep.equal([\"date\", \"apple\", \"banana\", \"cherry\"]);\n});\n\nit(\"sortStringsByLength(['hello', 'world', '!', 'JavaScript']) should return ['!', 'hello', 'world', 'JavaScript']\", () => {\n  expect(sortStringsByLength([\"hello\", \"world\", \"!\", \"JavaScript\"])).to.deep.equal([\"!\", \"hello\", \"world\", \"JavaScript\"]);\n});\n\nit(\"sortStringsByLength(['test', 'testing', 'tester', 'tested']) should return ['test', 'tester', 'tested', 'testing']\", () => {\n  expect(sortStringsByLength([\"test\", \"testing\", \"tester\", \"tested\"])).to.deep.equal([\"test\", \"tester\", \"tested\", \"testing\"]);\n});\n\nit(\"sortStringsByLength(['one', 'two', 'three', 'four']) should return ['one', 'two', 'four', 'three']\", () => {\n  expect(sortStringsByLength([\"one\", \"two\", \"three\", \"four\"])).to.deep.equal([\"one\", \"two\", \"four\", \"three\"]);\n});\n\nit(\"sortStringsByLength(['a', 'ab', 'abc']) should return ['a', 'ab', 'abc']\", () => {\n  expect(sortStringsByLength([\"a\", \"ab\", \"abc\"])).to.deep.equal([\"a\", \"ab\", \"abc\"]);\n});\n\nit(\"sortStringsByLength(['12345', '1234', '123', '12']) should return ['12', '123', '1234', '12345']\", () => {\n  expect(sortStringsByLength([\"12345\", \"1234\", \"123\", \"12\"])).to.deep.equal([\"12\", \"123\", \"1234\", \"12345\"]);\n});\n\nit(\"sortStringsByLength([]) should return []\", () => {\n  expect(sortStringsByLength([])).to.deep.equal([]);\n});\n\nit(\"sortStringsByLength(['same', 'same', 'same']) should return ['same', 'same', 'same']\", () => {\n  expect(sortStringsByLength(['same', 'same', 'same'])).to.deep.equal(['same', 'same', 'same']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

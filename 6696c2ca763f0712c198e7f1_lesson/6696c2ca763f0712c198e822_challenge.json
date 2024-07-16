@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e822",
+  "name": {
+    "en": "Add a string to an array at a certain position",
+    "ru": "Добавить строку в массив в определенную позицию"
+  },
+  "instruction": {
+    "en": "The `addStr` function takes three parameters:\n* `array` - array, can contain numbers, strings\n* `str` - string\n* `n` - number.\n\nThe function must add a string to the array by an index equal to the number `n`.\nIf the number n is greater than the length of the array, then add the element last.\n\nThe function must return the modified array.\n\nExamples of running the function:\n```javascript\naddStr([1, 2, 3], \"a\", 1) // [1, \"a\", 2, 3]\naddStr([\"a\", \"b\", \"c\"], \"a\", 2) // [\"a\", \"b\", \"a\", \"c\"]\n```",
+    "ru": "Функция `addStr` принимает три параметра:\n* `array` - массив, может содержать числа, строки\n* `str` - строка\n* `n` - число.\n\nФункция должна добавить строку в массив по индексу, равному числу `n`.\nЕсли число n больше длины массива, то добавить элемент последним.\n\nФункция должна вернуть измененный массив.\n\nПримеры запуска функции:\n```javascript\naddStr([1, 2, 3], \"a\", 1) // [1, \"a\", 2, 3]\naddStr([\"a\", \"b\", \"c\"], \"a\", 2) // [\"a\", \"b\", \"a\", \"c\"]\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function addStr(array, str, n) {\n  if(n <= array.length) {array.splice(n, 0, str)}\n  else {array.push(str)}\n  return array\n}",
+  "openTest": "it('Created function addStr', () => {\n  expect(addStr).to.be.a('function');\n});\n\nit('addStr([1, 2, 3], \"a\", 1) should return [1, \"a\", 2, 3]', () => {\n  expect(addStr([1, 2, 3], \"a\", 1)).eql([1, \"a\", 2, 3]);\n});\n\nit('addStr([\"a\", \"b\", \"c\"], \"a\", 2) should return [\"a\", \"b\", \"a\", \"c\"]', () => {\n  expect(addStr([\"a\", \"b\", \"c\"], \"a\", 2)).eql([\"a\", \"b\", \"a\", \"c\"]);\n});\n\nit('addStr([1, 2], \"x\", 0) should return [\"x\", 1, 2]', () => {\n  expect(addStr([1, 2], \"x\", 0)).eql([\"x\", 1, 2]);\n});\n\nit('addStr([\"banana\", \"apple\", \"mango\", \"peach\"], \"orange\", 3) should return [\"banana\", \"apple\", \"mango\", \"orange\", \"peach\"]', () => {\n  expect(addStr([\"banana\", \"apple\", \"mango\", \"peach\"], \"orange\", 3)).eql([\"banana\", \"apple\", \"mango\", \"orange\", \"peach\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

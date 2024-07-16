@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ef4b",
+  "name": {
+    "en": "",
+    "ru": "Нахождение строк в массиве"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `getAllSmallOnes`, которая принимает массив строк разной длины.\n\nФункция должна пройтись по массиву и все строки, длина которых меньше или равна `3`, объединить в одну строку.\n\nВсе остальные строки должны добавиться в новый массив.\n\nПо окончанию цикла, сформированная строка должна добавиться в начало нового массива.\n\nЕсли массив пустой, то функция должна вернуть строку `'Array has no elements'`.\n\n\nПримеры запуска функции:\n```javascript\ngetAllSmallOnes(['1', '12', '123', '1234', '12345'])     // ['112123', '1234', '12345']\ngetAllSmallOnes(['hello', 'check', 'aaa', 'text', 'a'])  // ['aaaa', 'hello', 'check', 'text']\ngetAllSmallOnes(['1', '2', '3'])                         // ['123']\ngetAllSmallOnes(['', '', '', ''])                        // ['']\ngetAllSmallOnes([])                                      // 'Array has no elements'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function getAllSmallOnes(arr){\n  if (!arr.length) return 'Array has no elements';\n  const newArr = [];\n  let str = '';\n  for (let i = 0; i < arr.length; i++){\n    if (arr[i].length <= 3) str += arr[i];\n    else newArr.push(arr[i]);\n  }\n  newArr.unshift(str)\n  return newArr;\n}",
+  "openTest": "it('Created function getAllSmallOnes', () => {\n  expect(getAllSmallOnes).to.be.a('function');\n});\n\nit(\"getAllSmallOnes(['1', '12', '123', '1234', '12345', '12346']) should return ['112123', '1234', '12345', '12346']\", () => {\n  expect(getAllSmallOnes(['1', '12', '123', '1234', '12345', '12346'])).to.deep.equal(['112123', '1234', '12345', '12346']);\n});\n\nit(\"getAllSmallOnes(['apple', 'hello', 'check', 'aaa', 'text', 'a']) should return ['aaaa', 'apple', 'hello', 'check', 'text']\", () => {\n  expect(getAllSmallOnes(['apple', 'hello', 'check', 'aaa', 'text', 'a'])).to.deep.equal(['aaaa', 'apple', 'hello', 'check', 'text']);\n});\n\nit(\"getAllSmallOnes(['one', 'two', 'three', 'four', 'five']) should return ['onetwo', 'three', 'four', 'five']\", () => {\n  expect(getAllSmallOnes(['one', 'two', 'three', 'four', 'five'])).to.deep.equal(['onetwo', 'three', 'four', 'five']);\n});\n\nit(\"getAllSmallOnes(['1', '2', '3', '4', '5']) should return ['12345']\", () => {\n  expect(getAllSmallOnes(['1', '2', '3', '4', '5'])).to.deep.equal(['12345']);\n});\n\nit(\"getAllSmallOnes['', '', '', '', '']) should return ['']\", () => {\n  expect(getAllSmallOnes(['', '', '', '', ''])).to.deep.equal(['']);\n});\n\nit(\"getAllSmallOnes([]) should return 'Array has no elements'\", () => {\n  expect(getAllSmallOnes([])).to.deep.equal('Array has no elements');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

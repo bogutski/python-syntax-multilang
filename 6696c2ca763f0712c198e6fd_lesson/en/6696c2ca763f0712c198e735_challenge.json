@@ -1,0 +1,4 @@
+{
+  "name": "Defining the data type of the first element of the array",
+  "instruction": "Write a function `typeofArr` that takes one parameter, an array.\n\nThe function should return the data type of the first element of the array.\n\nAn example of running the function:\n```javascript\ntypeofArr([1, 2, 3]) // 'number'\ntypeofArr([\"1\", \"2\", 3]) // 'string'\ntypeofArr([true, \"2\", 3]) // 'boolean'\n```"
+}

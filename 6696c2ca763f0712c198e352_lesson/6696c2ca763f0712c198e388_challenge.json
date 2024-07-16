@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e388",
+  "name": {
+    "en": "",
+    "ru": "Конкатенация с вычислениями"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `sumCalculator`, которая принимает два параметра, числа и возвращает строку вида `a + b = c`, где `a` и `b` - это параметры функции, а `c` - их сумма.\n\nПримеры запуска функции:\n```javascript\nsumCalculator(1, 2); // '1 + 2 = 3'\nsumCalculator(10, 20); // '10 + 20 = 30'\nsumCalculator(-10, 10); // '-10 + 10 = 0'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sumCalculator(a, b) {\n  return `${a} + ${b} = ${a + b}`;\n}",
+  "openTest": "it('Created function sumCalculator', () => {\n  expect(sumCalculator).to.be.a('function');\n});\n\nit('sumCalculator(1, 2) returns \"1 + 2 = 3\"', () => {\n  expect(sumCalculator(1, 2)).to.equal('1 + 2 = 3');\n});\n\nit('sumCalculator(10, 20) returns \"10 + 20 = 30\"', () => {\n  expect(sumCalculator(10, 20)).to.equal('10 + 20 = 30');\n});\n\nit('sumCalculator(-10, 10) returns \"-10 + 10 = 0\"', () => {\n  expect(sumCalculator(-10, 10)).to.equal('-10 + 10 = 0');\n});\n\nit('sumCalculator(0, 0) returns \"0 + 0 = 0\"', () => {\n  expect(sumCalculator(0, 0)).to.equal('0 + 0 = 0');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

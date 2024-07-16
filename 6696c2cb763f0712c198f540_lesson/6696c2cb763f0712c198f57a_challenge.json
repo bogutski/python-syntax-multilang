@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f57a",
+  "name": {
+    "en": "/*",
+    "ru": "Удаление пустых массивов после частичного сглаживания"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `removeEmptyArrays`, которая принимает один аргумент — вложенный массив `nestedArray`.\n\nФункция должна сначала выполнить сглаживание массива на один уровень вложенности, используя метод `Array.prototype.flat()`.\n\nЗатем функция должна фильтровать и удалять все пустые массивы из результата.\n\nВозвращаемый массив должен содержать все кроме пустых массивов.\n\nДля проверки, является ли элемент массивом, можно использовать метод `Array.isArray()`.\n\nПример:\n```javascript\nArray.isArray([1, 2, 3]);  // Выводит: true\nArray.isArray({foo: 123}); // Выводит: false\nArray.isArray('Hello');    // Выводит: false\nArray.isArray(undefined);  // Выводит: false\n```\n\n\nПримеры Запуска Функции:\n```javascript\nremoveEmptyArrays([[[], []], [[]], []]); // []\nremoveEmptyArrays(['a', [], ['b', ['c']], []]); // [ 'a', 'b', ['с'] ]\nremoveEmptyArrays([[['hello']], [[]], [['world']]]) // [ [ 'hello' ], [ 'world' ] ]\nremoveEmptyArrays([1, [], [2, [3, []], []], [4, []]]); // [ 1, 2, [3, []], 4 ]\n```"
+  },
+  "initialSolution": "function removeEmptyArrays(){\n\n}",
+  "completedSolution": "function removeEmptyArrays(arr) {\n  arr = arr.flat()\n  let res = []\n\n  for(let el of arr){\n    if(Array.isArray(el)){\n      if(el.length !== 0) res.push(el)\n    } else {\n      res.push(el)\n    }\n  }\n\n  return res;\n}",
+  "openTest": "it('Created function removeEmptyArrays', () => {\n  expect(removeEmptyArrays).to.be.a('function');\n});\n\nit('Function removeEmptyArrays should include method flat()', () => {\n  const res = removeEmptyArrays.toString()\n  expect(res).to.include('.flat(')\n});\n\nit(\"removeEmptyArrays([1, [], [2, [3, []], []], [4, []]]) should return [1, 2, [3, []], 4]\", function() {\n  expect(removeEmptyArrays([1, [], [2, [3, []], []], [4, []]])).to.deep.equal([1, 2, [3, []], 4]);\n});\n\nit(\"removeEmptyArrays([[[], []], [[]], []]) should return []\", function() {\n  expect(removeEmptyArrays([[[], []], [[]], []])).to.deep.equal([]);\n});\n\nit(\"removeEmptyArrays(['a', [], ['b', ['c']], []]) should return ['a', 'b', ['c']]\", function() {\n  expect(removeEmptyArrays(['a', [], ['b', ['c']], []])).to.deep.equal(['a', 'b', ['c']]);\n});\n\nit(\"removeEmptyArrays([[], [[], [0]]]) should return [[0]]\", function() {\n  expect(removeEmptyArrays([[], [[], [0]]])).to.deep.equal([[0]]);\n});\n\nit(\"removeEmptyArrays([[1, 2], [], [3, 4], []]) should return [1, 2, 3, 4]\", function() {\n  expect(removeEmptyArrays([[1, 2], [], [3, 4], []])).to.deep.equal([1, 2, 3, 4]);\n});\n\nit(\"removeEmptyArrays([[['hello']], [[]], [['world']]]) should return [['hello'], ['world']]\", function() {\n  expect(removeEmptyArrays([[['hello']], [[]], [['world']]])).to.deep.equal([['hello'], ['world']]);\n});\n\nit(\"removeEmptyArrays([['keep', [], ['elements']], [[], 'remove', []]]) should return ['keep', ['elements'], 'remove']\", function() {\n  expect(removeEmptyArrays([['keep', [], ['elements']], [[], 'remove', []]])).to.deep.equal(['keep', ['elements'], 'remove']);\n});\n\nit(\"removeEmptyArrays([['data', [true, false]], [undefined, null, []], []]) should return ['data', [true, false], undefined, null]\", function() {\n  expect(removeEmptyArrays([['data', [true, false]], [undefined, null, []], []])).to.deep.equal(['data', [true, false], undefined, null]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

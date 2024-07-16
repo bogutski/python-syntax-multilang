@@ -1,0 +1,5 @@
+{
+  "name": "Inches to centimeters with rounding",
+  "instruction": "There are 2.54 centimeters in one inch.\n\nWrite a `inchesToCm` function that takes the number of inches and returns the number of centimeters rounded to the nearest integer.\n\nExamples of how to run the function:\n```javascript\ninchesToCm(1) // 3\ninchesToCm(2) // 5\ninchesToCm(3) // 8\ninchesToCm(55) // 140\ninchesToCm(100) // 254\n```",
+  "instructions": {}
+}

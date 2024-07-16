@@ -1,0 +1,4 @@
+{
+  "name": "Calculate using the formula. Division and multiplication",
+  "instruction": "Write a `formula` function that takes three parameters `param1`, `param2` and `param3` and returns the result of the calculation using the formula `(param2 * param3) / (param1 + param3) * 2.5`."
+}

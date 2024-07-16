@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dbf9",
+  "name": {
+    "en": "Double name",
+    "ru": "Двойное имя"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-9.png)\n\nOften Americans have two personal names.\nSuppose the `name` variable stores the first name.\nWe need to get the first two names in the `name` variable separated by a space.\n\nWrite a command that creates a `name` variable with the value `Ivan`.\n\nWrite a command that changes the existing value of the variable `name` by concatenating it with the name 'Francis' through a space.\n\nRelated example:\n```javascript\nlet name = 'Alice';\nname = name + ' ' + 'Marie';\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-9.png)\n\nЧасто американцы имеют два личных имени.\nПредположим, что в переменной `name` хранится первое имя.\nТребуется в переменной `name` получить два первых имени через пробел.\n\nНапишите команду, создающую переменную `name` со значением `Ivan`.\n\nЗапишите команду, которая изменяет имеющееся значение переменной `name`, соединяя его с именем 'Francis' через пробел.\n\nПохожий пример:\n```javascript\nlet name = 'Alice';\nname = name + ' ' + 'Marie';\n```"
+  },
+  "initialSolution": "let name = 'Ivan';",
+  "completedSolution": "let name = 'Ivan';\nname = name + ' ' + 'Francis';",
+  "openTest": "it('The `name` variable contains a value Ivan Francis', () => {\n    expect(name).eq('Ivan Francis');\n});\n\nit('The \"name\" is type of string', () => {\n    expect(typeof name).eq('string');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet name = 'Ivan';\nname = name + ' ' + 'Francis';\n```",
+    "ru": "```javascript\nlet name = 'Ivan';\nname = name + ' ' + 'Francis';\n```"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "The arithmetic mean of some numbers from the arrays",
+  "instruction": "Write a function `average` that takes three parameters - arrays with numbers.\n\nEach array contains at least 3 numbers, which can be both positive and negative.\n\nFind the sum of the defined elements of the arrays and `divide it by 3`:\n* First element of the first array\n* Second element of the second array\n* Last element of the third array\n\nUse the function `Math.round()` to round the result.\n\nAn example of running the function:\n```javascript\naverage([1, 2, 3], [4, 5, 6], [7, 8, 9]) // 5\n```"
+}

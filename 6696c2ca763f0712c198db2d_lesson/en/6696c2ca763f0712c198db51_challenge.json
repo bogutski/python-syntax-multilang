@@ -1,0 +1,6 @@
+{
+  "name": "Create a variable with value undefined",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-16.png)\n\nCreate a variable named `age`.\nUse the `let` keyword.\nAssign the value `undefined`.\n\nRelated example:\n```javascript\nlet year = undefined;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet age = undefined;\n```"
+}

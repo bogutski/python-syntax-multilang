@@ -1,0 +1,4 @@
+{
+  "name": "Number of occurrences of the character in the string",
+  "instruction": "Write a function `numberOfOccurrences` that takes a string and a character and returns the number of occurrences of the character in the string.\n\nIf either the string or the character is empty, the function should return 0.\n\n\nExamples of this function:\n```javascript\nnumberOfOccurrences('hello', 'o'); // 1\nnumberOfOccurrences('apple', 'p'); // 2\nnumberOfOccurrences('', 'w'); // 0\nnumberOfOccurrences('', ''); // 0\n```"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e25f",
+  "name": {
+    "en": "",
+    "ru": "Вернуть противоположный цвет"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "В функцию передается строка, которая является названием цвета. Необходимо вернуть противоположный цвет.\n\nНазвание функции: `getOppositeColor`.\n\nНапример, если передать функции \"red\", то она должна вернуть \"green\".\n\nЕсли передать \"blue\", то должно вернуться \"orange\". Если передать \"orange\", то должно вернуться \"blue\".\n\nСписок цветов:\n* red - green\n* orange - blue\n* yellow - purple\n* violet - amber\n\nЕсли передать функции строку, которая не является названием ожидаемого цвета, то она должна вернуть строку `Unexpected color`."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function getOppositeColor(color) {\n  const colors = {\n    red: 'green',\n    orange: 'blue',\n    yellow: 'purple',\n    violet: 'amber',\n    green: 'red',\n    blue: 'orange',\n    purple: 'yellow',\n    amber: 'violet',\n  };\n\n  return colors[color] || 'Unexpected color';\n}",
+  "openTest": "it('Created function getOppositeColor', () => {\n  expect(getOppositeColor).to.be.a('function');\n});\n\nit('getOppositeColor(\"red\") should return \"green\"', () => {\n  expect(getOppositeColor('red')).to.be.equal('green');\n});\n\nit('getOppositeColor(\"orange\") should return \"blue\"', () => {\n  expect(getOppositeColor('orange')).to.be.equal('blue');\n});\n\nit('getOppositeColor(\"yellow\") should return \"purple\"', () => {\n  expect(getOppositeColor('yellow')).to.be.equal('purple');\n});\n\nit('getOppositeColor(\"violet\") should return \"amber\"', () => {\n  expect(getOppositeColor('violet')).to.be.equal('amber');\n});\n\nit('getOppositeColor(\"green\") should return \"red\"', () => {\n  expect(getOppositeColor('green')).to.be.equal('red');\n});\n\nit('getOppositeColor(\"blue\") should return \"orange\"', () => {\n  expect(getOppositeColor('blue')).to.be.equal('orange');\n});\n\nit('getOppositeColor(\"purple\") should return \"yellow\"', () => {\n  expect(getOppositeColor('purple')).to.be.equal('yellow');\n});\n\nit('getOppositeColor(\"amber\") should return \"violet\"', () => {\n  expect(getOppositeColor('amber')).to.be.equal('violet');\n});\n\nit('getOppositeColor(\"black\") should return \"Unexpected color\"', () => {\n  expect(getOppositeColor('black')).to.be.equal('Unexpected color');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

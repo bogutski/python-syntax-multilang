@@ -1,0 +1,5 @@
+{
+  "name": "'Deep Copy' массива",
+  "instruction": "Напишите функцию `deepCopy`, которая принимает массив и возвращает его копию.\n\nИспользуйте `JSON.stringify` и `JSON.parse` для решения этой задачи.\n\nПример запуска:\n```javascript\ndeepCopy([1, 2, 3]); // [1, 2, 3]\n```",
+  "instructions": {}
+}

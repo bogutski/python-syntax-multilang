@@ -1,0 +1,4 @@
+{
+  "name": "Two strings in one array",
+  "instruction": "Write a function `twoIntoOne` that takes two strings and returns an array of characters from those strings.\n\nCheck for empty strings:\n\n* If both strings are not empty, then there must be a space between them in the array.\n* If one or both strings are empty, then there should be no space in the array.\n\nHint: Do a check for empty strings, and then merge the strings into one, before the loop.\n\nA similar example of check:\n```js\nlet fullString;\nif ( string1.length !== 0 && string2.length !== 0 ) {\nfullString = string1 + ' ' + string2;\n}\n```\n\n\nExamples of function calls:\n```js\ntwoIntoOne('Hello', 'World'); // ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']\ntwoIntoOne('123', ''); // ['1', '2', '3']\ntwoIntoOne('', ''); // []\n```"
+}

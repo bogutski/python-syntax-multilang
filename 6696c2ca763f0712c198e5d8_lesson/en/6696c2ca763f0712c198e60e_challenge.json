@@ -1,0 +1,5 @@
+{
+  "name": "Correct the values of the object properties",
+  "instruction": "Write a function `fixValues` that takes an object with two properties:\n* `name` - should be a string\n* `age` - should be a number\n\nThe properties in the object are mixed up, for example:\n* {name: 1990, age: 'Mike'} - should be {name: 'Mike', age: 1990}\n\nThe function should return a new object with the corrected property values.\n\n\nExample function call:\n```javascript\nfixValues({name: 1978, age: 'Tim'}) // {name: 'Tim', age: 1978}\n```",
+  "instructions": {}
+}

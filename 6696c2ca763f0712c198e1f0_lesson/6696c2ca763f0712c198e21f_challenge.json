@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e21f",
+  "name": {
+    "en": "Come back later",
+    "ru": "Приходите позже"
+  },
+  "instruction": {
+    "en": "There are habits of putting off things and meetings for later.\n\nWrite a function `meetingProposal` that takes one argument `date` - the date of the meeting.\n\nIf `date` is 'today', the function should return the string 'Let's meet tomorrow'.\n\nIf `date` is 'tomorrow', the function should return the string 'Let's meet after tomorrow'.\n\nIf `date` is 'after tomorrow', the function must return the string 'Let's meet after after tomorrow'.\n\nIf `date` is not equal to 'today', 'tomorrow' or 'after tomorrow', the function must return the string 'Let's meet next week'.\n\n\nA similar comparison example:\n```javascript\nfunction compare(x) {\n  if (x === 10) {\n    return 11\n  } else if (x === 11) {\n    return 12\n  } else {\n    return 13\n  }\n}\n```\n\nYou're probably wondering how to get an apostrophe (single quote) in a string? Like this:\n\n``javascript\nconsole.log('Let\\'s meet tomorrow');\n```\n\nUse a backslash `\\` before the apostrophe `'` and it won't count as the end of the line.",
+    "ru": "Есть привычки откладывать дела и встречи на потом.\n\nНапиши функцию `meetingProposal`, которая принимает один аргумент `date` - дату встречи.\n\nЕсли `date` равна 'today', то функция должна вернуть строку 'Let's meet tomorrow'.\n\nЕсли `date` равна 'tomorrow', то функция должна вернуть строку 'Let's meet after tomorrow'.\n\nЕсли `date` равна 'after tomorrow', то функция должна вернуть строку 'Let's meet after after tomorrow'.\n\nЕсли `date` не равна 'today', 'tomorrow' или 'after tomorrow', то функция должна вернуть строку 'Let's meet next week'.\n\n\nПохожий пример сравнения:\n```javascript\nfunction compare(x) {\n  if (x === 10) {\n    return 11\n  } else if (x === 11) {\n    return 12\n  } else {\n    return 13\n  }\n}\n```\n\nНаверное вы думаете как вывести апостроф (одиночную кавычку) в строке? Вот так:\n\n```javascript\nconsole.log('Let\\'s meet tomorrow');\n```\n\nИспользуете обратный слеш `\\` перед апострофом `'` и он не будет считаться концом строки."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function meetingProposal(date) {\n  if (date === 'today') {\n    return 'Let\\'s meet tomorrow';\n  } else if (date === 'tomorrow') {\n    return 'Let\\'s meet after tomorrow';\n  } else if (date === 'after tomorrow') {\n    return 'Let\\'s meet after after tomorrow';\n  } else {\n    return 'Let\\'s meet next week';\n  }\n}",
+  "openTest": "it('Created function meetingProposal', () => {\n  expect(meetingProposal).to.be.a('function');\n});\n\nit('Function returns correct result for argument \"today\"', () => {\n  expect(meetingProposal('today')).eq('Let\\'s meet tomorrow');\n});\n\nit('Function returns correct result for argument \"tomorrow\"', () => {\n  expect(meetingProposal('tomorrow')).eq('Let\\'s meet after tomorrow');\n});\n\nit('Function returns correct result for argument \"after tomorrow\"', () => {\n  expect(meetingProposal('after tomorrow')).eq('Let\\'s meet after after tomorrow');\n});\n\nit('Function returns correct result for argument \"now\"', () => {\n  expect(meetingProposal('now')).eq('Let\\'s meet next week');\n});\n\nit('Function returns correct result for argument \"sometimes\"', () => {\n  expect(meetingProposal('sometimes')).eq('Let\\'s meet next week');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

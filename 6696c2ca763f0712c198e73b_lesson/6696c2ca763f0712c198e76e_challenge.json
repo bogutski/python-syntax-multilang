@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e76e",
+  "name": {
+    "en": "Name check. Arrays",
+    "ru": "Проверка имени. Массивы"
+  },
+  "instruction": {
+    "en": "The `list` function takes two parameters:\n* `names` - array of strings\n* `key` - string\n\nYou need to check if `key` is in the `names` array. It is necessary to delete spaces at the beginning and at the end of the string `key` and to convert it to lower case.\n\nThe function should return `true` if `key` is contained in the `names` array, otherwise `false`.\n\nAn example of running the function:\n```javascript\nlist([\"john\", \"alice\", \"tom\", \"eric\", \"helga\"], \" Helga\") // true\nlist([\"alice\", \"john\", \"eric\", \"tom\", \"helga\"], \"nathan \") // false\n```",
+    "ru": "Функция `list` принимает два параметра:\n* `names` - массив строк\n* `key` - строка\n\nНеобходимо проверить, содержится ли `key` в массиве `names`. При этом необходимо удалить пробелы в начале и в конце строки `key` и привести ее к нижнему регистру.\n\nФункция должна вернуть `true`, если `key` содержится в массиве `names`, иначе `false`.\n\nПример запуска функции:\n```javascript\nlist([\"john\", \"alice\", \"tom\", \"eric\", \"helga\"], \" Helga\") // true\nlist([\"alice\", \"john\", \"eric\", \"tom\", \"helga\"], \"nathan  \") // false\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function list(names, key) {\n  key = key.trim().toLowerCase()\n  return names.includes(key)\n}",
+  "openTest": "it('Created function list', () => {\n  expect(list).to.be.a('function');\n});\n\nit('list([\"john\", \"alice\", \"tom\", \"eric\", \"helga\"], \" Helga\") // true', () => {\n    expect(list([\"john\", \"alice\", \"tom\", \"eric\", \"helga\"], \" Helga\")).to.equal(true);\n});\n\nit('list([\"alice\", \"john\", \"eric\", \"tom\", \"helga\"], \"nathan  \") // false', () => {\n    expect(list([\"alice\", \"john\", \"eric\", \"tom\", \"helga\"], \"nathan  \")).to.equal(false);\n});\n\nit('list([\"john\", \"alice\", \"tom\", \"eric\", \"helga\"], \"  tom\") // true', () => {\n    expect(list([\"john\", \"alice\", \"tom\", \"eric\", \"helga\"], \"  tom\")).to.equal(true);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Hotel room rates",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-11.png)\n\nHotel room rates went up 1.5 times during the summer, but decreased by 100 as fall came.\n\nCreate a `price` variable with the value `120`.\n\nWrite a command that changes the existing value of the `price` variable:\n\n* first increases by `1.5` times,\n* then decreases it by `100`.\n\nWhen performing the task, remember the priority of operations (multiplication and division operations are performed first, followed by addition and subtraction operations) and do not put extra brackets.",
+  "instructions": {},
+  "hint": "```javascript\nlet price = 120;\nprice= price * 1.5;\nprice= price - 100;\n```"
+}

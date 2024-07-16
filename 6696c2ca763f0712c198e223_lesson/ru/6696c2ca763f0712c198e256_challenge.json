@@ -1,0 +1,5 @@
+{
+  "name": "Верно ли, что числа идут по возрастанию?",
+  "instruction": "Напишите функцию `isSequence`, которая принимает 5 чисел и возвращает true, если они идут по возрастанию. В противном случае возвращает false.\n\nЭту задачу можно решить с помощью `if`, но для тренировки попробуйте решить ее с помощью `&&`.\n\nПримеры запуска:\n```javascript\nisSequence(1, 2, 3, 4, 5); // true\nisSequence(1, 2, 3, 4, 4); // false\nisSequence(1, 2, 3, 4, 3); // false\nisSequence(10, 40, 300, 1000, 1001); // true\n```\n\nПохожий пример:\n```javascript\nfunction isSequence(n1, n2, n3)\n  if (n1 < n2 && n2 < n3) {\n    return true;\n  }\n  return false;\n}\n```",
+  "instructions": {}
+}

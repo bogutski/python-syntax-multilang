@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2cb763f0712c198f257",
+  "name": {
+    "ru": "Проверить, содержит ли массив значения одного типа",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f258",
+      "name": {
+        "ru": " Какой метод используется для проверки, что все элементы массива имеют один и тот же тип данных?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f259",
+          "name": {
+            "ru": "filter()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f25a",
+          "name": {
+            "ru": "map()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f25b",
+          "name": {
+            "ru": "every()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f25c",
+          "name": {
+            "ru": "some()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f25d",
+      "name": {
+        "ru": "Какой результат будет у следующего выражения?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\ntypeof [1, 2, 3][0] === typeof 'apple'\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f25e",
+          "name": {
+            "ru": "true",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f25f",
+          "name": {
+            "ru": "false",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f260",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f261",
+          "name": {
+            "ru": "Error",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f262",
+      "name": {
+        "ru": "Как проверить, что массив ['apple', 'banana', 'cherry'] содержит только строки?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f263",
+          "name": {
+            "ru": "['apple', 'banana', 'cherry'].some(s => typeof s === 'string')",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f264",
+          "name": {
+            "ru": "['apple', 'banana', 'cherry'].filter(s => typeof s === 'string').length === 3",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f265",
+          "name": {
+            "ru": "['apple', 'banana', 'cherry'].every(s => typeof s === 'string')",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f266",
+          "name": {
+            "ru": "typeof ['apple', 'banana', 'cherry'] === 'string'",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f267",
+      "name": {
+        "ru": "Как удалить элемент из массива по индексу?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f268",
+          "name": {
+            "ru": "Использовать delete array[index]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f269",
+          "name": {
+            "ru": "Применить array.splice(index, 1)",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f26a",
+          "name": {
+            "ru": " Использовать array.pop(index)",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f26b",
+          "name": {
+            "ru": "Вызвать array.removeAt(index)",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f26c",
+      "name": {
+        "ru": "Какой метод можно использовать для преобразования всех элементов массива в строку?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f26d",
+          "name": {
+            "ru": "join()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f26e",
+          "name": {
+            "ru": "concat()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f26f",
+          "name": {
+            "ru": "toString()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f270",
+          "name": {
+            "ru": "reduce()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f271",
+      "name": {
+        "ru": "Что возвращает следующий код?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n['1', 2, true].every(item => typeof item === typeof 2)\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f272",
+          "name": {
+            "ru": "true",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f273",
+          "name": {
+            "ru": "false",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f274",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f275",
+          "name": {
+            "ru": "Error",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f276",
+      "name": {
+        "ru": "Какая ошибка в следующей функции, которая должна проверять, все ли элементы массива являются числами?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction areAllNumbers(array) {\n    return array.every(n => typeof n == 'number');\n}\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f277",
+          "name": {
+            "ru": "Нет ошибки, функция написана правильно",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f278",
+          "name": {
+            "ru": "Должно быть строгое сравнение === вместо ==",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f279",
+          "name": {
+            "ru": "Метод every не существует",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f27a",
+          "name": {
+            "ru": "Необходимо использовать метод map вместо every",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f27b",
+      "name": {
+        "ru": "Что не так с этой функцией, предназначенной для объединения двух массивов?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction mergeArrays(arr1, arr2) {\n    return arr1.push(arr2);\n}\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f27c",
+          "name": {
+            "ru": "push() добавляет элементы в массив, но не возвращает новый массив",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f27d",
+          "name": {
+            "ru": "Функция должна использовать concat() вместо push()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f27e",
+          "name": {
+            "ru": "Нет ошибки, функция корректно объединяет массивы",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f27f",
+          "name": {
+            "ru": "Следует использовать метод unshift()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f280",
+      "name": {
+        "ru": "В чем ошибка в функции, которая должна возвращать новый массив без первого элемента исходного массива?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction removeFirstElement(arr) {\n    arr.splice(0, 1);\n    return arr;\n}\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f281",
+          "name": {
+            "ru": "Нет ошибки, функция правильно удаляет первый элемент",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f282",
+          "name": {
+            "ru": "splice() изменяет исходный массив, лучше использовать slice()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f283",
+          "name": {
+            "ru": "Должен быть использован метод shift()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f284",
+          "name": {
+            "ru": "Должен быть использован метод pop()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f285",
+      "name": {
+        "ru": "Что не так с функцией, предназначенной для добавления нового элемента в начало массива и возврата длины нового массива?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction addElementToFront(arr, element) {\n    return arr.unshift(element);\n}\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f286",
+          "name": {
+            "ru": "unshift() возвращает новый массив, а не его длину",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f287",
+          "name": {
+            "ru": "Нет ошибки, функция работает корректно",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f288",
+          "name": {
+            "ru": "Должен быть использован метод push() вместо unshift()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f289",
+          "name": {
+            "ru": "Должен быть использован метод shift() вместо unshift()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

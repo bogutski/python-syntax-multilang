@@ -1,0 +1,4 @@
+{
+  "name": "Security guard in a nightclub",
+  "instruction": "Write a function `clubGuard` that takes the age of the club visitor.\n\n* If the visitor is 21 or older, we return the string `Welcome to the club!`.\n* Otherwise return the string `You are not allowed to enter the club!`"
+}

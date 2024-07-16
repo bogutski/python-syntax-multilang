@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198f079",
+  "name": {
+    "en": "",
+    "ru": "Найти вторую минимальную цифру"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Исправьте функцию `secondMinNumber`, которая принимает массив с одной строкой.\n\nВ строке находятся цифры без разделения. Например: `['12345']`.\n\nФункция должна вернуть вторую минимальную цифру, которая будет переведена в тип данных `number`.\n\n* Если массив либо строка пустая, то вернуть `'There are no numbers'`.\n* Если в строке нет второй минимальной цифры, то вернуть `'There is no second min number'`.\n\nВ коде три ошибки.\n\nРазберитесь как работает код, исправьте ошибки и перепишите код самостоятельно.\n\n\nПример запуска функции:\n```javascript\nsecondMinNumber(['123']);  // 2\nsecondMinNumber(['98']);   // 9\nsecondMinNumber(['555']);  // 'There is no second min number' \nsecondMinNumber(['']);     // 'There are no numbers'\nsecondMinNumber([]);       // 'There are no numbers'\n```"
+  },
+  "initialSolution": "function secondMinNumber(arr){\n  if(!arr.length && !arr[0].length) return 'There are no numbers';\n  const min = +arr[0][0];\n  const secondMin = +arr[0][0];\n\n  for(let i = 1; i < arr[0].length; i++){\n    if(+arr[0][i] < min) min = +arr[0][i];\n  }\n  for(let i = 1; i < arr[0].length; i++){\n    if((secondMin === min || +arr[0][i] < secondMin) && +arr[0][i] !== min) secondMin = +arr[0][i];\n  }\n\n  if(secondMin === min) return 'There is no second min number';\n  else return secondMin\n}",
+  "completedSolution": "function secondMinNumber(arr){\n  if(!arr.length || !arr[0].length) return 'There are no numbers';\n  let min = +arr[0][0];\n  let secondMin = +arr[0][0];\n\n  for(let i = 1; i < arr[0].length; i++){\n    if(+arr[0][i] < min) min = +arr[0][i];\n  }\n  for(let i = 1; i < arr[0].length; i++){\n    if((secondMin === min || +arr[0][i] < secondMin) && +arr[0][i] !== min) secondMin = +arr[0][i];\n  }\n\n  if(secondMin === min) return 'There is no second min number';\n  else return secondMin\n}",
+  "openTest": "it('Created function secondMinNumber', () => {\n  expect(secondMinNumber).to.be.a('function');\n});\n\nit('Function secondMinNumber does not include method sort', () => {\n  expect(secondMinNumber.toString()).to.not.include('sort');\n});\n\nit('Function secondMinNumber does not include method Math.min', () => {\n  expect(secondMinNumber.toString()).to.not.include('Math.min');\n});\n\nit(\"secondMinNumber(['12345']) should return 2\", () => {\n  expect(secondMinNumber(['12345'])).to.equal(2);\n});\n\nit(\"secondMinNumber(['98765]) should return 6\", () => {\n  expect(secondMinNumber(['98765'])).to.equal(6);\n});\n\nit(\"secondMinNumber(['898111']) should return 8\", () => {\n  expect(secondMinNumber(['898111'])).to.equal(8);\n});\n\nit(\"secondMinNumber(['555555']) should return 'There is no second min number'\", () => {\n  expect(secondMinNumber(['555555'])).to.equal('There is no second min number');\n});\n\nit(\"secondMinNumber(['']) should return 'There are no numbers'\", () => {\n  expect(secondMinNumber([''])).to.equal('There are no numbers');\n});\n\nit(\"secondMinNumber([]) should return 'There are no numbers'\", () => {\n  expect(secondMinNumber([])).to.equal('There are no numbers');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

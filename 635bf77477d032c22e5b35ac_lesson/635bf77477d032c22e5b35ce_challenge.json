@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35ce",
+  "name": {
+    "ru": "Исправьте ошибки в коде. Число 3.125",
+    "en": "Correct the errors in the code. Number 3.125",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Требуется написать команду, которая присваивает переменной `a` число 3.125.\nПравильное решение:\n```\nlet a = 3.125;\n```\nИсправьте ошибки в приведенном коде.",
+    "en": "It is required to write a command that assigns the number 3.125 to the variable `a`.\nThe correct solution is:\n```\nlet a = 3.125;\n```\nCorrect the errors in the given code.",
+    "es": ""
+  },
+  "initialSolution": "let a = 3,125",
+  "completedSolution": "let a = 3.125;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

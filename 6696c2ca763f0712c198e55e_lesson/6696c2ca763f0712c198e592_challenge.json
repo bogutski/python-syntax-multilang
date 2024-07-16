@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e592",
+  "name": {
+    "en": "Is there a property in the object, the 'in' operator",
+    "ru": "Есть ли свойство в объекте, оператор 'in'"
+  },
+  "instruction": {
+    "en": "Write a function `objectHasProperty` that takes two parameters:\n* `object` - object, can have any number of properties\n* `property` - the property you want to check for in the object, string.\n\nIn the solution use the operator `in`.\n\nIf the property `property` is present in the object `object`, the function should return `true`, otherwise `false`.\n\nAn example of running the function:\n```javascript\nobjectHasProperty({ name: 'John', age: 20 }, 'name') // true\nobjectHasProperty({ type: 'car', color: 'red' }, 'age') // false\n```",
+    "ru": "Напишите функцию `objectHasProperty`, которая принимает два параметра:\n* `object` – объект, может иметь любое количество свойств\n* `property` – свойство, которое нужно проверить на наличие в объекте, строка.\n\nВ решении используйте оператор `in`.\n\nЕсли свойство `property` присутствует в объекте `object`, то функция должна вернуть `true`, иначе `false`.\n\nПример запуска функции:\n```javascript\nobjectHasProperty({ name: 'John', age: 20 }, 'name') // true\nobjectHasProperty({ type: 'car', color: 'red' }, 'age') // false\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function objectHasProperty(object, property) {\n  return property in object;\n}",
+  "openTest": "it(\"Created function objectHasProperty\", () => {\n  expect(objectHasProperty).to.be.a(\"function\");\n});\n\nit(\"The function includes the `in` operator\", () => {\n  expect(objectHasProperty.toString()).to.include(\" in \");\n});\n\nit(`objectHasProperty({ name: \"John\", age: 20 }, \"name\")  // true`, () => {\n  expect(objectHasProperty({ name: \"John\", age: 20 }, \"name\")).eq(true);\n});\n\nit(`objectHasProperty({ type: \"car\", color: \"red\" }, \"age\")  // false`, () => {\n  expect(objectHasProperty({ type: \"car\", color: \"red\" }, \"age\")).eq(false);\n});\n\nit(`objectHasProperty({ name: \"Mississippi\", type: \"river\", length: 2345 }, \"length\")  // true`, () => {\n  expect(objectHasProperty({ name: \"Mississippi\", type: \"river\", length: 2345 }, \"length\")).eq(true);\n});\n\nit(`objectHasProperty({ name: \"dog\", breed: \"Labrador\", color: \"black\" }, 123)  // false`, () => {\n  expect(objectHasProperty({name: \"dog\", breed: \"Labrador\", color: \"black\"}, 123)).eq(false);\n});\n\nit(`objectHasProperty({ name: \"Taiwan\", capital: \"Taipei\", population: 23.5 }, \" \" )  // false`, () => {\n  expect(objectHasProperty({name: \"Taiwan\", capital: \"Taipei\", population: 23.5}, \" \")).eq(false);\n});\n\nit(`objectHasProperty({ first: \"\", last: \"\" }, \"\")  // false`, () => {\n  expect(objectHasProperty({first: \"John\", last: \"Doe\"}, \"\")).eq(false);\n});\n\nit(`objectHasProperty({}, \"something\")  // false`, () => {\n  expect(objectHasProperty({}, \"something\")).eq(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f673",
+  "name": {
+    "en": "/*",
+    "ru": "Выравнивание и обращение массива подмассивов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `flattenAndReverse`, которая принимает массив подмассивов любых типов данных.\n\nФункция должна преобразовать все вложенные подмассивы в один плоский массив, а затем обратить порядок его элементов и вернуть новый массив.\n\n\nПримеры запуска функции:\n```javascript\nflattenAndReverse([[1, 2, 3], [4, 5], [6]]); // [6, 5, 4, 3, 2, 1]\nflattenAndReverse([['a', 'b'], ['c', 'd', 'e']]); // ['e', 'd', 'c', 'b', 'a']\nflattenAndReverse([[1], [], [2, 3]]); // [3, 2, 1]\n```"
+  },
+  "initialSolution": "function flattenAndReverse(){\n\n}",
+  "completedSolution": "function flattenAndReverse(array) {\n  return array.flat(Infinity).reverse();\n}",
+  "openTest": "it('Created function flattenAndReverse', () => {\n  expect(flattenAndReverse).to.be.a('function');\n});\n\nit(\"Original array should not be modified\", () => {\n  const array  = [[1, 2, 3], [4, 5], [6, 7]];\n  flattenAndReverse(array)\n  expect(array).to.deep.equal([[1, 2, 3], [4, 5], [6, 7]]);\n});\n\nit(\"flattenAndReverse([[1, 2, 3], [4, 5], [6]]) should return [6, 5, 4, 3, 2, 1]\", () => {\n  expect(flattenAndReverse([[1, 2, 3], [4, 5], [6]])).to.deep.equal([6, 5, 4, 3, 2, 1]);\n});\n\nit(\"flattenAndReverse([['a', 'b'], ['c', 'd', 'e']]) should return ['e', 'd', 'c', 'b', 'a']\", () => {\n  expect(flattenAndReverse([['a', 'b'], ['c', 'd', 'e']])).to.deep.equal(['e', 'd', 'c', 'b', 'a']);\n});\n\nit(\"flattenAndReverse([[1], [], [2, 3]]) should return [3, 2, 1]\", () => {\n  expect(flattenAndReverse([[1], [], [2, 3]])).to.deep.equal([3, 2, 1]);\n});\n\nit(\"flattenAndReverse([]) should return an empty array\", () => {\n  expect(flattenAndReverse([])).to.deep.equal([]);\n});\n\nit(\"flattenAndReverse([[], [], []]) should return an empty array\", () => {\n  expect(flattenAndReverse([[], [], []])).to.deep.equal([]);\n});\n\nit(\"flattenAndReverse([[1, 2], [3]]) should return [3, 2, 1]\", () => {\n  expect(flattenAndReverse([[1, 2], [3]])).to.deep.equal([3, 2, 1]);\n});\n\nit(\"flattenAndReverse([[true, false], [false, true]]) should return [true, false, false, true]\", () => {\n  expect(flattenAndReverse([[true, false], [false, true]])).to.deep.equal([true, false, false, true]);\n});\n\nit(\"flattenAndReverse([['one', 'two'], ['three']]) should return ['three', 'two', 'one']\", () => {\n  expect(flattenAndReverse([['one', 'two'], ['three']])).to.deep.equal(['three', 'two', 'one']);\n});\n\nit(\"flattenAndReverse([[10, 20], [30, 40, 50]]) should return [50, 40, 30, 20, 10]\", () => {\n  expect(flattenAndReverse([[10, 20], [30, 40, 50]])).to.deep.equal([50, 40, 30, 20, 10]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

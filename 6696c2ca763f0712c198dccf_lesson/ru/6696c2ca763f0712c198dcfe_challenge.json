@@ -1,0 +1,6 @@
+{
+  "name": "Сравним null и undefined",
+  "instruction": "Создайте переменную с именем `a` и присвойте ей значение `null`.\nСоздайте переменную `b` и присвойте ей значение `undefined`.\n\nСоздайте переменную с именем `isStrictEqual` и присвойте ей результат строгого равенства переменных `a` и `b`.\nСоздайте переменную с именем `isEqual` и присвойте ей результат нестрогого равенства переменных `a` и `b`.\n\nСоздайте переменную `strictResult` и присвойте ей значение строки `'true'` или `'false'`, совпадающее с результатом строгого сравнения `null` и `undefined`.\n\nСоздайте переменную `notStrictResult` и присвойте ей значение строки `'true'` или `'false'`, совпадающее с результатом нестрогого сравнения `null` и `undefined`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst x = 1;\nconst y = 3;\nconst comparison = x === y;        // так как x не равно y, результат сравнения будет false\nconst comparisonResult = 'false';  // переменной присвоено значение строки 'false'\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst a = null;\nconst b = undefined;\nconst isStrictEqual = a === b;\nconst isEqual = a == b;\nconst strictResult = 'false';\nconst notStrictResult = 'true';\n```"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "The function returns the opposite value",
+  "instruction": "Try writing\n```javascript\nconsole.log(!true); // false\nconsole.log(!false); // true\n```\n\nThe exclamation point `!` in front of any value converts it to `boolean` and returns the opposite value.\n\nWrite a function `opposite` that takes one value and returns the opposite value. Use `!`."
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198efc0",
+  "name": {
+    "en": "Sum of numbers in the array and in internal arrays",
+    "ru": "Сумма чисел в массиве и во внутренних массивах"
+  },
+  "instruction": {
+    "en": "Write a function sumOfNumbers that takes an array of numbers and inner arrays.\n\n* The outer array can only contain numbers and other arrays with numbers.\n* The inner arrays can only contain numbers.\n\nThe function should return the sum of all the numbers.\n\nIf the array is empty, return the string \"Array is empty\".\n\nExamples of function calls:\n```javascript\nsumOfNumbers([1, 2, [1, 2, 3], 3, 4, [1, 2, 3], 5, 10]); // 37\nsumOfNumbers([1, 2, 3, 4, 5, 10]);                       // 25\nsumOfNumbers([1, [], 2, [], 3, []]);                     // 6\nsumOfNumbers([]);                                        // \"Array is empty\"\n```",
+    "ru": "Напишите функцию sumOfNumbers, которая принимает массив чисел и внутренних массивов.\n\n* Во внешнем массиве могут быть только числа и другие массивы с числами.\n* Во внутренних массивах могут быть только числа.\n\nФункция должна вернуть сумму всех чисел.\n\nЕсли массив пустой - верните строку \"Array is empty\".\n\n\nПримеры запуска функции:\n```javascript\nsumOfNumbers([1, 2, [1, 2, 3], 3, 4, [1, 2, 3], 5, 10]); // 37\nsumOfNumbers([1, 2, 3, 4, 5, 10]);                       // 25\nsumOfNumbers([1, [], 2, [], 3, []]);                     // 6\nsumOfNumbers([]);                                        // \"Array is empty\"\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sumOfNumbers(arr){\n  if(!arr.length) return 'Array is empty';\n  let sum = 0;\n\n  for(let i = 0; i < arr.length; i++){\n    if(typeof arr[i] === 'number') sum += arr[i];\n\n    else if(typeof arr[i] === 'object'){\n      for(let j = 0; j < arr[i].length; j++){\n        sum += arr[i][j];\n      }\n    }\n\n  }\n\n  return sum;\n}",
+  "openTest": "it('Created function sumOfNumbers', () => {\n  expect(sumOfNumbers).to.be.a('function');\n});\n\nit('sumOfNumbers([1, 2, [1, 2, 3], 3, 4, [1, 2, 3], 5, 10]) should return 37', () => {\n  expect(sumOfNumbers([1, 2, [1, 2, 3], 3, 4, [1, 2, 3], 5, 10])).to.equal(37);\n});\n\nit('sumOfNumbers([ [10, -50, 75, 123, 5], 25894, [-500, -632, -789, -4149], [4, 2, 7], -10000 ]) should return 10000', () => {\n  expect(sumOfNumbers([ [10, -50, 75, 123, 5], 25894, [-500, -632, -789, -4149], [4, 2, 7], -10000 ])).to.equal(10000);\n});\n\nit('sumOfNumbers([1, 2, 3, 4, 5, 10]) should return 25', () => {\n  expect(sumOfNumbers([1, 2, 3, 4, 5, 10])).to.equal(25);\n});\n\nit('sumOfNumbers([1, [], 2, [], 3, [],  4, [],  5, [],  10]) should return 25', () => {\n  expect(sumOfNumbers([1, [], 2, [], 3, [],  4, [],  5, [],  10])).to.equal(25);\n});\n\nit('sumOfNumbers([ [1], [2], [3], [4], [5], [10]]) should return 25', () => {\n  expect(sumOfNumbers([ [1], [2], [3], [4], [5], [10]])).to.equal(25);\n});\n\nit('sumOfNumbers([]) should return \"Array is empty\"', () => {\n  expect(sumOfNumbers([])).to.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

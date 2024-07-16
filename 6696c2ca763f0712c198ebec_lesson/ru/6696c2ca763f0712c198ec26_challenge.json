@@ -1,0 +1,5 @@
+{
+  "name": "Количество вхождений цифр в строку вывести в виде объекта",
+  "instruction": "Напишите функцию `occurrencesInObject`, которая принимает строку.\n\nФункция должна посчитать сколько раз встречаются цифры `'1'`, `'2`', `'3'` в строке и вернуть объект вида:\n\n * `{ one: <number>, two: <number>, three: <number> }`, где `<number>` - количество вхождений цифры в строку.\n\nЕсли какая-то цифра не встречается в строке, то соответствующее свойство объекта должно быть равно нулю.\n\n\nПримеры запуска функции:\n```javascript\noccurrencesInObject('123123123'); // { one: 3, two: 3, three: 3 }\noccurrencesInObject('11112222'); // { one: 4, two: 4, three: 0 }\noccurrencesInObject('3333322222'); // { one: 0, two: 5, three: 5 }\noccurrencesInObject(''); // { one: 0, two: 0, three: 0 }\n```",
+  "instructions": {}
+}

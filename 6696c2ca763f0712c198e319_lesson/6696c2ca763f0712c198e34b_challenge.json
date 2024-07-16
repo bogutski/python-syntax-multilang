@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e34b",
+  "name": {
+    "en": "Markup on merchandise",
+    "ru": "Наценка на товар"
+  },
+  "instruction": {
+    "en": "Write a function `retailPrice` that takes the price of the product and the markup as a percentage and returns the price including the markup.\n\nThe function should return a string like `Initial price: $20, markup: 2.47%, final price: $20.49`.\n\nExamples of function:\n```javascript\nretailPrice(20, 2.47); // 'Initial price: $20, markup: 2.47%, final price: $20.49'\nretailPrice(20, 0); // 'Initial price: $20, markup: 0%, final price: $20.00'\nretailPrice(20, 100); // 'Initial price: $20, markup: 100%, final price: $40.00'\n```",
+    "ru": "Напишите функцию `retailPrice`, которая принимает цену товара и наценку в процентах и возвращает цену с учетом наценки.\n\nФункция должна возвращать строку вида `Initial price: $20, markup: 2.47%, final price: $20.49`.\n\nПримеры запуска функции:\n```javascript\nretailPrice(20, 2.47); // 'Initial price: $20, markup: 2.47%, final price: $20.49'\nretailPrice(20, 0); // 'Initial price: $20, markup: 0%, final price: $20.00'\nretailPrice(20, 100); // 'Initial price: $20, markup: 100%, final price: $40.00'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function retailPrice(price, markup) {\n  const finalPrice = price + (price * markup) / 100;\n  return `Initial price: $${price}, markup: ${markup}%, final price: $${finalPrice.toFixed(\n    2,\n  )}`;\n}",
+  "openTest": "it('Created function retailPrice', () => {\n  expect(retailPrice).to.be.a('function');\n});\n\nit('retailPrice(20, 2.47) should return \"Initial price: $20, markup: 2.47%, final price: $20.49\"', () => {\n  expect(retailPrice(20, 2.47)).to.be.equal(\n    'Initial price: $20, markup: 2.47%, final price: $20.49',\n  );\n});\n\nit('retailPrice(20, 5) should return \"Initial price: $20, markup: 5%, final price: $21.00\"', () => {\n  expect(retailPrice(20, 0)).to.be.equal(\n    'Initial price: $20, markup: 0%, final price: $20.00',\n  );\n});\n\nit('retailPrice(20, 100) should return \"Initial price: $20, markup: 100%, final price: $40.00\"', () => {\n  expect(retailPrice(20, 100)).to.be.equal(\n    'Initial price: $20, markup: 100%, final price: $40.00',\n  );\n});\n\nit('retailPrice(35, 4.74) should return \"Initial price: $35, markup: 4.74%, final price: $36.66\"', () => {\n  expect(retailPrice(35, 4.74)).to.be.equal(\n    'Initial price: $35, markup: 4.74%, final price: $36.66',\n  );\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

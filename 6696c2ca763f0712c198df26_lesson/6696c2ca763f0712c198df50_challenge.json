@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df50",
+  "name": {
+    "en": "Correct errors in the function with return",
+    "ru": "Исправьте ошибки в функции с return"
+  },
+  "instruction": {
+    "en": "The programmer was writing a program.\nHe distracted himself for a few minutes to make some tea.\nThe cat jumped on the keyboard and walked over the buttons.\n\nNow we have to fix everything.\n\nRequirements:\n\n* The function name is `businessHours`.\n* The function must return the string `8.00 - 11.30`\n* There must be no output to the console in the function body\n* There must be only one `return` in the function body\n\nCorrect the errors or rewrite the entire function as required.",
+    "ru": "Программист писал программу.\nОтвлекся на пару минут, чтобы заварить чай.\nКот запрыгнул на клавиатуру и прошелся по кнопкам.\n\nТеперь нам надо все исправить.\n\nТребования:\n\n* Название функции `businessHours`\n* Функция должна возвращать строку `8.00 - 11.30`\n* В теле функции не должно быть вывода в консоль\n* В теле функции должен быть только один `return`\n\nИсправьте ошибки или перепишите всю функцию по требованиям."
+  },
+  "initialSolution": "funcion meow }{ (\n  console.log('cat was meow');\n{\n  rerun 'busnesрours!';\n  console.log('meow');\n\n// rerun 8,00 - 11.00",
+  "completedSolution": "function businessHours() {\n  return '8.00 - 11.30';\n}",
+  "openTest": "it('Created function ', () => {\n  expect(businessHours).to.be.a('function');\n});\n\nit('Function returns correct result', () => {\n  expect(businessHours()).eq('8.00 - 11.30');\n});\n\nconst entire = businessHours.toString();\nconst body = entire.slice(entire.indexOf('{') + 1, entire.lastIndexOf('}')).trim();\nconst strings = body.split('\\n');\n\nit('Functions does not contain console.log', () => {\n  expect(body).not.contains('console.log');\n});\n\nit('Function contains 1 return', () => {\n  const occurrences = body.split('return').length - 1;\n  expect(occurrences).eq(1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

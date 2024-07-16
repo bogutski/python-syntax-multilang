@@ -1,0 +1,4 @@
+{
+  "name": "The function defines the type of the argument",
+  "instruction": "Write a function `defineType` that takes 1 parameter and returns a string specifying the type of the argument.\n\n\nExamples:\n  * the `defineType(1)` function should return `'number'`;\n  * The `defineType('1')` function should return `'string'`;\n\nUse the `typeof` operator to define the type of the argument."
+}

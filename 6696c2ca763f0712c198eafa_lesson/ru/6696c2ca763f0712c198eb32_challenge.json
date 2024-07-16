@@ -1,0 +1,5 @@
+{
+  "name": "Выбрать из массива слова, начинающиеся с заданной буквы",
+  "instruction": "Функция `getWordsStartingWith`, принимает массив строк `words` и строку `letter`, и возвращает строку, составленную из слов, начинающихся с буквы `letter`.\n\nПоиск производится без учета регистра символов.\n\nСлова в возвращаемой строке должны быть разделены пробелами. В конце строки пробела быть не должно.\n\nЕсли в массиве нет слов, начинающихся с буквы `letter`, то функция должна вернуть пустую строку.\n\nПримеры запуска функции:\n\n```javascript\ngetWordsStartingWith(['Ant', 'bot', 'can', 'arrow', 'Act', 'back'], 'a'); // 'Ant arrow Act'\ngetWordsStartingWith(['run', 'rack', 'role'], 'b'); // ''\ngetWordsStartingWith(['run', 'rack', 'role'], 'R'); // 'run rack role'\ngetWordsStartingWith([], 'r'); // ''\n```",
+  "instructions": {}
+}

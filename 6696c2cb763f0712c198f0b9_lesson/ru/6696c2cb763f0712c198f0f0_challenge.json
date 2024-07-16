@@ -1,0 +1,5 @@
+{
+  "name": "Найти числа и объединить их в строку",
+  "instruction": "Напишите функцию `onlyNumbers`, которая принимает массив с разными типами данных, включая числовые.\n\nФункция должна найти все числа с типом данных `number` и добавить их в строку.\n\nВерните новый массив с этой строкой чисел в качестве единственного элемента.\n\n* Если массив пустой - верните строку `'Array is empty'`\n* Если в массиве нет чисел - верните строку `'No numbers in array'`\n\n\nПримеры запуска функции:\n```javascript\nonlyNumbers([10, 20, 30, 5555]);                         // ['1020305555']\nonlyNumbers([1,2,3, 'test', '55', true, null, NaN, 8]);  // ['1238']\nonlyNumbers(['888', true, false, undefined, null, NaN]); // 'No numbers in array'\nonlyNumbers([]);                                         // 'Array is empty'\n```",
+  "instructions": {}
+}

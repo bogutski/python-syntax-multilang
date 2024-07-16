@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f34d",
+  "name": {
+    "en": "/*",
+    "ru": "Разделение букв строки на гласные и согласные"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `splitVowelsAndConsonants`, которая принимает строку в качестве аргумента и возвращает объект с двумя свойствами: `vowels` (гласные буквы) и `consonants` (согласные буквы).\n\nЗначения этих свойств должны быть массивами, содержащими соответствующие буквы.\n\nПри добавлении букв в массив используйте метод unshift.\n\nОбратите внимание, буквы будут в разном регистре.\n\nЕсли гласных или согласных букв нет в строке, не добавляйте соответсвующее свойство в объект.\n\n\nПример запуска функции:\n```javascript\nsplitVowelsAndConsonants('example'); // { vowels: [ 'e', 'a', 'e' ], consonants: [ 'l', 'p', 'm', 'x' ] }\nsplitVowelsAndConsonants('Test'); // { vowels: [ 'e' ], consonants: [ 't', 's', 'T' ] }\nsplitVowelsAndConsonants('eai'); // { vowels: [ 'i', 'a', 'e' ] }\nsplitVowelsAndConsonants(''); // {}\n```"
+  },
+  "initialSolution": "function splitVowelsAndConsonants(){\n\n}",
+  "completedSolution": "function splitVowelsAndConsonants(word) {\n  const res = {};\n  const arrVowels = [];\n  const arrConst = [];\n  const vowels = 'euioaEUIOA';\n\n  for(let letter of word){\n    if(vowels.includes(letter)) arrVowels.unshift(letter);\n    else arrConst.unshift(letter);\n  }\n\n  if(arrVowels.length) res.vowels = arrVowels;\n  if(arrConst.length) res.consonants = arrConst;\n\n  return res;\n}",
+  "openTest": "it('Created function splitVowelsAndConsonants', () => {\n  expect(splitVowelsAndConsonants).to.be.a('function');\n});\n\nit(\"splitVowelsAndConsonants('example') should return { vowels: [ 'e', 'a', 'e' ], consonants: [ 'l', 'p', 'm', 'x' ] }\", () => {\n  expect(splitVowelsAndConsonants(\"example\")).to.deep.equal({ vowels: [ 'e', 'a', 'e' ], consonants: [ 'l', 'p', 'm', 'x' ] });\n});\n\nit(\"splitVowelsAndConsonants('Test') should return { vowels: [ 'e' ], consonants: [ 't', 's', 'T' ] }\", () => {\n  expect(splitVowelsAndConsonants(\"Test\")).to.deep.equal({ vowels: [ 'e' ], consonants: [ 't', 's', 'T' ] });\n});\n\nit(\"splitVowelsAndConsonants('eye') should return { vowels: [ 'e', 'e' ], consonants: [ 'y' ] }\", () => {\n  expect(splitVowelsAndConsonants(\"eye\")).to.deep.equal({ vowels: [ 'e', 'e' ], consonants: [ 'y' ] });\n});\n\nit(\"splitVowelsAndConsonants('') should return { } for an empty string\", () => {\n  expect(splitVowelsAndConsonants(\"\")).to.deep.equal({});\n});\n\nit(\"splitVowelsAndConsonants('bcdfghjklmnpqrstvwxyz') should return {consonants: ['z', 'y', 'x', 'w', 'v', 't', 's', 'r', 'q', 'p', 'n', 'm', 'l', 'k', 'j', 'h', 'g', 'f', 'd', 'c', 'b']}\", () => {\n  expect(splitVowelsAndConsonants(\"bcdfghjklmnpqrstvwxyz\")).to.deep.equal({consonants: ['z', 'y', 'x', 'w', 'v', 't', 's', 'r', 'q', 'p', 'n', 'm', 'l', 'k', 'j', 'h', 'g', 'f', 'd', 'c', 'b']});\n});\n\nit(\"splitVowelsAndConsonants('AEIOUaeiou') should return {vowels: ['u', 'o', 'i', 'e', 'a', 'U', 'O', 'I', 'E', 'A']}\", () => {\n  expect(splitVowelsAndConsonants(\"AEIOUaeiou\")).to.deep.equal({vowels: ['u', 'o', 'i', 'e', 'a', 'U', 'O', 'I', 'E', 'A']});\n});\n\nit(\"should verify that splitVowelsAndConsonants function is defined and is a function\", () => {\n  expect(splitVowelsAndConsonants).to.be.a('function');\n});\n\nit(\"splitVowelsAndConsonants('XYZxyz') should return { consonants: [ 'z', 'y', 'x', 'Z', 'Y', 'X' ] }\", () => {\n  expect(splitVowelsAndConsonants(\"XYZxyz\")).to.deep.equal({ consonants: [ 'z', 'y', 'x', 'Z', 'Y', 'X' ] });\n});\n\nit(\"splitVowelsAndConsonants('') should return { }\", () => {\n  expect(splitVowelsAndConsonants(\"\")).to.deep.equal({});\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

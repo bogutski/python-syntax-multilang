@@ -1,0 +1,4 @@
+{
+  "name": "Circle length or perimeter of a circle",
+  "instruction": "A circle is a closed flat curve in which all its points are equidistant from a given point (center) and lie in the same plane with it.\n\nThe formula for calculating the length of a circle is `2 * PI * r`, where\n`PI` is the number 3.14,\n`r` is the radius of the circle.\n\nWrite a function `circleLength` that takes one argument `r` - the radius of the circle and returns the length of the circle."
+}

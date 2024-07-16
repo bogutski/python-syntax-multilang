@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f0f3",
+  "name": {
+    "en": "",
+    "ru": "Найди дробные числа"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `fixTheNumbers`, которая принимает массив дробных и целых чисел.\n\nФункция должна найти все дробные числа в массиве, округлить их до ближайшего целого и добавить в новый массив.\n\nФункция должна вернуть новый массив с округленными числами.\n\nЕсли массив пустой или в нем нет дробных чисел, то функция должна вернуть `false`.\n\nHint: для проверки является ли число дробным, можно перевести его в строку и проверить включает ли она точку.\n\n\nПримеры запуска функции:\n```javascript\nfixTheNumbers([1.5, 25, 36.6, 41.695, 45, 2]); // [2, 37, 42]\nfixTheNumbers([0, 0.0001, -52, -42.52, -7.5]); // [0, -43, -7]\nfixTheNumbers([1, 2, 3, 4, 5]);                // false\nfixTheNumbers([]);                             // false\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function fixTheNumbers(arr) {\n  if (!arr.length) return false;\n  const newArr = [];\n\n  for (let i = 0; i < arr.length; i++) {\n    if (arr[i].toString().includes('.')) newArr.push(Math.round(arr[i]));\n  }\n  if(!newArr.length) return false;\n  else return newArr;\n}",
+  "openTest": "it('Created function fixTheNumbers', () => {\n  expect(fixTheNumbers).to.be.a('function');\n});\n\nit(\"Function fixTheNumbers does not include 'isInteger' method\", () => {\n  expect(fixTheNumbers.toString()).to.not.include('isInteger');\n});\n\nit(\"fixTheNumbers([1.5, 2, 3.6, 4.1, 5, 6.2, 7, 8.2, 9.9, 10.1]) should return [-1, 4, -4, 6, -8, 10, 10]\", () => {\n  expect(fixTheNumbers([-1.5, 2, 3.6, -4.1, 5, 6.2, 7, -8.2, 9.9, 10.1])).to.deep.equal([-1, 4, -4, 6, -8, 10, 10]);\n});\n\nit(\"fixTheNumbers([22, 226.365, 0.00000000, 563, 7.654, 3.2, 1.1, 0]) should return [226, -8, 3, 1]\", () => {\n  expect(fixTheNumbers([22, 226.365, -0.00000000, 563, -7.654, 3.2, 1.1, 0])).to.deep.equal([226, -8, 3, 1]);\n});\n\nit(\"fixTheNumbers([0.000001, 9999, 1.000000001, 1.0000000000000, 0.95412]) should return [0, 1, 1]\", () => {\n  expect(fixTheNumbers([0.000001, 9999, 1.000000001, -1.0000000000000, 0.95412])).to.deep.equal([0, 1, 1]);\n});\n\nit(\"fixTheNumbers([0, 9, 10, 99, 100, 999, 1000]) should return false\", () => {\n  expect(fixTheNumbers([0, 9, 10, -99, 100, 999, -1000])).to.deep.equal(false);\n});\n\nit(\"fixTheNumbers([]) should return false\", () => {\n  expect(fixTheNumbers([])).to.deep.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd1c",
+  "name": {
+    "en": "What is the sum of undefined and the number?",
+    "ru": "Чему равна сумма undefined и числа?"
+  },
+  "instruction": {
+    "en": "Create a variable named `unknown` and assign it the value `undefined`.\nCreate a variable named `sum` and assign it the sum of the variable `unknown` and a random number.\nCreate a variable named `typeOfSum` and assign it the type of the variable `sum`.\nCheck in jsbin.com what the result of adding a number and undefined is.\nCreate a variable named `result` and assign it a string containing the result of adding a number and undefined.\n\nHere is an example that is essentially similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nlet salary;\nlet newSalary = salary + 100;\nlet type = typeof newSalary;\nconst result = 'NaN';\n```",
+    "ru": "Создайте переменную с именем `unknown` и присвойте ей значение `undefined`.\nСоздайте переменную с именем `sum` и присвойте ей значение суммы переменной `unknown` и произвольного числа.\nСоздайте переменную с именем `typeOfSum` и присвойте ей значение типа переменной `sum`.\nПроверьте в jsbin.com, чему равен результат сложения числа и undefined.\nСоздайте переменную с именем `result` и присвойте ей строку, содержащую результат сложения числа и undefined.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet salary;\nlet newSalary = salary + 100;\nlet type = typeof newSalary;\nconst result = 'NaN';\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let unknown;\nlet sum = unknown + 1;\nconst typeOfSum = typeof sum;\nconst result = 'NaN';",
+  "openTest": "it('The `unknown` variable exists and is undefined', () => {\n  !expect(unknown).to.be.undefined;\n});\n\nit('The `unknown` variable is of type undefined', () => {\n  expect(typeof unknown).eq('undefined');\n});\n\nit('Variable`sum` exists and has a value', () => {\n  expect(sum).not.undefined;\n});\n\nit('Variable`sum` equals NaN', () => {\n  expect(sum).to.be.NaN;\n});\n\nit('Variable `typeOfSum` exists and has a value', () => {\n  expect(typeOfSum).not.undefined;\n});\n\nit('Variable `typeOfSum` has type `string`', () => {\n  expect(typeOfSum).a('string');\n});\n\nit('Variable `typeOfSum` is equal to `number`', () => {\n  expect(typeOfSum).equal('number');\n});\n\nit('Variable `result` exists and has a value', () => {\n  expect(result).not.undefined;\n});\n\nit('Variable `result` has type `string`', () => {\n  expect(result).a('string');\n});\n\nit('Variable `result` is equal to `NaN', () => {\n  expect(result).equal('NaN');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet unknown;\nlet sum = unknown + 1;\nconst typeOfSum = typeof sum;\nconst result = 'NaN';\n```",
+    "ru": "```javascript\nlet unknown;\nlet sum = unknown + 1;\nconst typeOfSum = typeof sum;\nconst result = 'NaN';\n```"
+  }
+}

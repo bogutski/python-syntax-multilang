@@ -1,0 +1,4 @@
+{
+  "name": "The function repeats the string",
+  "instruction": "Write a function `repeater` that takes a string and a number, and returns a new string that consists of repetitions of the original string.\n\nExample use of the function:\n```javascript.\nrepeater('abc', 3); // 'abcabcabc'\nrepeater('qwe', 5); // 'qweqweqweqwe'\n```"
+}

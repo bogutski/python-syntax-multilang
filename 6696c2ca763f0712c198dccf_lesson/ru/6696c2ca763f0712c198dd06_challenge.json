@@ -1,0 +1,6 @@
+{
+  "name": "Кто из подруг собрал больше грибов?",
+  "instruction": "Две подружки пошли в лес по грибы, а после их сбора решили посчитать, кто собрал больше.\n\nПервая подруга насчитала в своем лукошке 20 грибов, а вторая 23.\n\nСоздайте две переменные `firstCart` и `secondCart` присвойте им соответствующие значения 20 и 23.\n\nСоздайте третью переменную `trueOrFalse` и проверьте: правда ли, что вторая подруга собрала больше грибов?\n\nПриведем пример, который принципиально похож на то что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst deckOfCardsForPoker = 52;\nconst deckOfCardsForJass = 36;\nconst trueOrFalse = deckOfCardsForPoker < deckOfCardsForJass; //false\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst firstCart = 20;\nconst secondCart = 23;\nconst trueOrFalse = firstCart < secondCart;\n```"
+}

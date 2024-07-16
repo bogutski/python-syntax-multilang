@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f575",
+  "name": {
+    "en": "/*",
+    "ru": "Сглаживание вложенных массивов до полной плоскости"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `deepFlatten`, которая принимает один аргумент — вложенный массив `nestedArray`.\n\nФункция должна возвращать новый массив, в котором все элементы вложенных массивов были полностью выпрямлены, независимо от уровня их вложенности, используя метод `Array.prototype.flat()` с параметром `Infinity`.\n\n\nПримеры Запуска Функции:\n```javascript\ndeepFlatten([1, [2, 3], [4, [5, 6]]]); // [1, 2, 3, 4, 5, 6]\ndeepFlatten([[1], 2, [[3, 4], [5]], 6]); // [1, 2, 3, 4, 5, 6]\ndeepFlatten([['a', ['b']], ['c', ['d', ['e']]]]); // ['a', 'b', 'c', 'd', 'e']\n```"
+  },
+  "initialSolution": "function deepFlatten(){\n\n}",
+  "completedSolution": "function deepFlatten(arr) {\n  return arr.flat(Infinity);\n}",
+  "openTest": "it('Created function deepFlatten', () => {\n  expect(deepFlatten).to.be.a('function');\n});\n\nit('Function deepFlatten should include method flat()', () => {\n  const res = deepFlatten.toString()\n  expect(res).to.include('.flat(')\n});\n\nit(\"deepFlatten([1, [2, 3], [4, [5, 6]]]) should return [1, 2, 3, 4, 5, 6]\", function() {\n  expect(deepFlatten([1, [2, 3], [4, [5, 6]]])).to.deep.equal([1, 2, 3, 4, 5, 6]);\n});\n\nit(\"deepFlatten([[1], 2, [[3, 4], [5]], 6]) should return [1, 2, 3, 4, 5, 6]\", function() {\n  expect(deepFlatten([[1], 2, [[3, 4], [5]], 6])).to.deep.equal([1, 2, 3, 4, 5, 6]);\n});\n\nit(\"deepFlatten([['a', ['b']], ['c', ['d', ['e']]]]) should return ['a', 'b', 'c', 'd', 'e']\", function() {\n  expect(deepFlatten([['a', ['b']], ['c', ['d', ['e']]]])).to.deep.equal(['a', 'b', 'c', 'd', 'e']);\n});\n\nit(\"deepFlatten([]) should return an empty array\", function() {\n  expect(deepFlatten([])).to.deep.equal([]);\n});\n\nit(\"deepFlatten([[], [[]], [[[]]]]) should return an empty array\", function() {\n  expect(deepFlatten([[], [[]], [[[]]]])).to.deep.equal([]);\n});\n\nit(\"deepFlatten([0, [1, [2, [3, [4]]]]]) should return [0, 1, 2, 3, 4]\", function() {\n  expect(deepFlatten([0, [1, [2, [3, [4]]]]])).to.deep.equal([0, 1, 2, 3, 4]);\n});\n\nit(\"deepFlatten([['flat', ['is', ['awesome']]]]) should return ['flat', 'is', 'awesome']\", function() {\n  expect(deepFlatten(['flat', ['is', ['awesome']]])).to.deep.equal(['flat', 'is', 'awesome']);\n});\n\nit(\"deepFlatten([[['infinity']], [['flat']]]) should return ['infinity', 'flat']\", function() {\n  expect(deepFlatten([[['infinity']], [['flat']]])).to.deep.equal(['infinity', 'flat']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

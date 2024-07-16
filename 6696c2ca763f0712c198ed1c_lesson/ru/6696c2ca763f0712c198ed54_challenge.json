@@ -1,0 +1,5 @@
+{
+  "name": "Найти количество \"BUG\" в строке",
+  "instruction": "Написать функцию `findBugs` которая принимает строку `str` и возвращает количество `\"BUG\"` в ней.\n\n`\"BUG\"` может находится даже посередине слова.\n\nДля простоты можно использовать методы `.includes()` и `.indexOf()`.\n\n```javascript\nfindBugs('Hello, BUGWorld!'); // 1\nfindBugs('it is a nice day'); // 0\nfindBugs('BUG'); // 1\n```",
+  "instructions": {}
+}

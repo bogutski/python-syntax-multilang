@@ -1,0 +1,5 @@
+{
+  "name": "Сколько полных часов в заданном количестве минут",
+  "instruction": "Напишите функцию `howManyHours`.\n\nФункция принимает одно число – количество минут, возвращает количество полных часов, которые содержатся в этом количестве минут.\n\nПримеры запуска функции:\n```javascript\nhowManyHours(59) // 0\nhowManyHours(60) // 1\nhowManyHours(90) // 1\nhowManyHours(120) // 2\nhowManyHours(121) // 2\nhowManyHours(122) // 2\n```",
+  "instructions": {}
+}

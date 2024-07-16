@@ -1,0 +1,4 @@
+{
+  "name": "Correct the errors so that the function works correctly",
+  "instruction": "The `stopAt2DigitNum` function takes one parameter, an array of numbers of arbitrary length.\n\nThe `stopAt2DigitNum` function returns the sum of all the numbers in the array.\n\nIf there is a two-digit positive or negative number,\n\nthe summation stops and returns the current sum before a two-digit number is encountered.\n\nCorrect the errors in the code so that the function works correctly.\n\nAn example of running the function:\n```javascript\nstopAt2DigitNum([1, 3, 5, 17, 7, 84, 9]) // 1 + 3 + 5 = 9\nstopAt2DigitNum([3, 4, -11, 3, 5, 33]) // 3 + 4 = 7\nstopAt2DigitNum([15, 7, -2]) // 0\nstopAt2DigitNum([1, 3, 4]) // 1 + 3 + 4 = 8\nstopAt2DigitNum([2, 400, 5, 99]) // 2 + 400 + 5 = 407\n```"
+}

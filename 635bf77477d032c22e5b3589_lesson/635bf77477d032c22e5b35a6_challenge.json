@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35a6",
+  "name": {
+    "ru": "Вывод в консоль числа",
+    "en": "Output a number to the console",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Напишите команду, которая выводит в консоль число 2020.\nДля этого напечатайте команду:\n```\nconsole.log(2020);\n```",
+    "en": "Write a command that outputs the number 2020 to the console.\nTo do this, type the command:\n```\nconsole.log(2020);\n```\n",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "console.log(2020);",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

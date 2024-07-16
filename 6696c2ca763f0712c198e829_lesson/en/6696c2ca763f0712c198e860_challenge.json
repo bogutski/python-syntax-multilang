@@ -1,0 +1,4 @@
+{
+  "name": "Copying and modifying an array",
+  "instruction": "Write a function `twoArrays` that takes an array.\n\nThe function should return an array of two arrays, the original one and its copy.\n\n\nCreate a second array and copy all elements from the first array into it.\nUse the `slice` method to copy the elements.\n\nChange the first element in the first array to `undefined`.\n\nReturn the array of two arrays:\n```javascript\n[ [originalArray], [copiedArray] ]\n```\n\nAn example of running a function:\n```javascript\ntwoArrays([1,2,3]) // [[undefined,2,3], [1,2,3]]\ntwoArrays(['a','b','c']) // [[undefined,'b','c'], ['a','b','c']]\n```"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Modify the string depending on its length",
+  "instruction": "Write a function `modifyString` that takes a string as a parameter.\n\nIf the length of the string is even, that is, divisible by 2 without a remainder, then the function should return a string in which every character is uppercase.\n\nIf the string length is odd, the function should return a string in which each character is in lowercase.\n\nExamples of running the function:\n```javascript\nmodifyString('Hello') // 'hello'\nmodifyString('Aa') // 'AA'\nmodifyString('aAa') // 'aaa'\n```"
+}

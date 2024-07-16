@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd6f",
+  "name": {
+    "en": "Let's take null to the power of 2",
+    "ru": "Возводим null в степень 2"
+  },
+  "instruction": {
+    "en": "\"Zero, raised to the power,\nRemains zero...\" (poet Stanisław Jerzy Lec)\n\nCreate a variable named `zero` and assign it the value `null`.\nCreate a variable named `power` and assign it the value of the variable `zero` raised to the power of 2.\nCreate a variable named `type` and assign it the type of the variable `power`.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst money = null;\nconst extraMoney = money ** 2;\nconst type = typeof extraMoney;\n```",
+    "ru": "\"Нуль, в степень возведенный,\nНулем и остается...\" ( поэт Станислав Ежи Лец)\n\nСоздайте переменную с именем `zero` и присвойте ей значение `null`.\nСоздайте переменную с именем `power` и присвойте ей значение переменной `zero` в степени 2.\nСоздайте переменную с именем `type` и присвойте ей тип переменной `power`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst money = null;\nconst extraMoney = money ** 2;\nconst type = typeof extraMoney;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const zero = null;\nconst power = zero ** 2;\nconst type = typeof power;",
+  "openTest": "it('Variable `zero` exists and has a value', () => {\n  expect(zero).not.undefined;\n});\n\nit('Variable `zero` has typeof object', () => {\n  expect(typeof zero).equal('object');\n});\n\nit('Variable `zero` has value null', () => {\n  expect(zero).equal(null);\n});\n\nit('Variable `power` exists and has a value', () => {\n  expect(power).not.undefined;\n});\n\nit('Variable `power` has type number', () => {\n  expect(power).a('number');\n});\n\nit('Variable `power` has the correct value', () => {\n  expect(power).equal(0);\n});\n\nit('Variable `type` exists and has a value', () => {\n  expect(type).not.undefined;\n});\n\nit('Variable `type` has type string', () => {\n  expect(type).a('string');\n});\n\nit('Variable `type` has value `number` ', () => {\n  expect(type).equal('number');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst zero = null;\nconst power = zero ** 2;\nconst type = typeof power;\n```",
+    "ru": "```javascript\nconst zero = null;\nconst power = zero ** 2;\nconst type = typeof power;\n```"
+  }
+}

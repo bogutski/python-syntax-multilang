@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f5f3",
+  "name": {
+    "en": "/*",
+    "ru": "Сортировка массива студентов по именам"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `sortStudentsByName`, которая принимает массив объектов.\n\nКаждый объект представляет студента со свойствами: `name` и `age`.\n\nФункция должна возвращать новый массив, содержащий те же объекты, отсортированные по имени студента в алфавитном порядке.\n\n\nПримеры запуска функции:\n```javascript\nconst students = [\n  { name: \"John\", age: 18 },\n  { name: \"Alice\", age: 20 },\n  { name: \"Bob\", age: 17 }\n];\n\nconsole.log(sortStudentsByName(students));\n// Вывод: [{ name: \"Alice\", age: 20 }, { name: \"Bob\", age: 17 }, { name: \"John\", age: 18 }]\n```"
+  },
+  "initialSolution": "function sortStudentsByName(){\n\n}",
+  "completedSolution": "function sortStudentsByName(students) {\n  return students.slice().sort((a, b) => a.name.localeCompare(b.name))\n}",
+  "openTest": "it('Created function sortStudentsByName', () => {\n  expect(sortStudentsByName).to.be.a('function');\n});\n\nit('Function sortStudentsByName should include method sort()', () => {\n  const res = sortStudentsByName.toString()\n  expect(res).to.include('.sort(')\n});\n\nit('sortStudentsByName([{ name: \"John\", age: 18 }, { name: \"Alice\", age: 20 }, { name: \"Bob\", age: 17 }]) should return [{ name: \"Alice\", age: 20 }, { name: \"Bob\", age: 17 }, { name: \"John\", age: 18 }]', () => {\n  const students = [\n    { name: \"John\", age: 18 },\n    { name: \"Alice\", age: 20 },\n    { name: \"Bob\", age: 17 }\n  ];\n  expect(sortStudentsByName(students)).to.deep.equal([\n    { name: \"Alice\", age: 20 },\n    { name: \"Bob\", age: 17 },\n    { name: \"John\", age: 18 }\n  ]);\n});\n\nit('sortStudentsByName([]) should return []', () => {\n  expect(sortStudentsByName([])).to.deep.equal([]);\n});\n\nit('sortStudentsByName([{ name: \"Charlie\" }]) should return [{ name: \"Charlie\" }]', () => {\n  expect(sortStudentsByName([{ name: \"Charlie\" }])).to.deep.equal([{ name: \"Charlie\" }]);\n});\n\nit('sortStudentsByName([{ name: \"Anna\" }, { name: \"anna\" }]) should sort case-insensitively', () => {\n  const students = [{ name: \"Anna\" }, { name: \"anna\" }];\n  expect(sortStudentsByName(students)).to.deep.equal([{ name: \"anna\" }, { name: \"Anna\" }]);\n});\n\nit('sortStudentsByName([{ name: \"Bob\" }, { name: \"bob\" }]) should consider locale and sensitivity', () => {\n  const students = [{ name: \"Bob\" }, { name: \"bob\" }];\n  expect(sortStudentsByName(students)).to.deep.equal([{ name: \"bob\" }, { name: \"Bob\" }]);\n});\n\nit('sortStudentsByName([{ name: \"Cory\" }, { name: \"bob\" }, { name: \"Alice\" }]) should return sorted names regardless of case', () => {\n  const students = [{ name: \"Cory\" }, { name: \"bob\" }, { name: \"Alice\" }];\n  expect(sortStudentsByName(students)).to.deep.equal([{ name: \"Alice\" }, { name: \"bob\" }, { name: \"Cory\" }]);\n});\n\nit('sortStudentsByName([{ name: \"Cory\" }, { name: \"Alice\" }, { name: \"Bob\" }]) should return names sorted alphabetically', () => {\n  const students = [{ name: \"Cory\" }, { name: \"Alice\" }, { name: \"Bob\" }];\n  expect(sortStudentsByName(students)).to.deep.equal([{ name: \"Alice\" }, { name: \"Bob\" }, { name: \"Cory\" }]);\n});\n\nit('sortStudentsByName([{ name: \"Dave\" }, { name: \"Eve\" }, { name: \"Frank\" }]) should return names in alphabetical order', () => {\n  const students = [{ name: \"Dave\" }, { name: \"Eve\" }, { name: \"Frank\" }];\n  expect(sortStudentsByName(students)).to.deep.equal([{ name: \"Dave\" }, { name: \"Eve\" }, { name: \"Frank\" }]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

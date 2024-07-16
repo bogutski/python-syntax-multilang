@@ -1,0 +1,4 @@
+{
+  "name": "Search for an occurrence, starting with the second word",
+  "instruction": "Write a function `search` that takes two strings and returns the index of the occurrence of the second string in the first, starting the search from the second word.\n\nWords are separated by spaces.\n\nFind the index of the first space in the string and use it as the start of the search.\n\nIf the second line is repeated, the function should return the index of the first occurrence.\n\nExamples of running the function:\n```javascript\nsearch('Hello world', 'o'); // 7\nsearch('Hello world', 'l'); // 9\nsearch('Hello world', 'x'); // -1\n```\n\nIf no string is found, the function should return `-1`."
+}

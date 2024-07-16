@@ -1,0 +1,4 @@
+{
+  "name": "Determine an even and odd number",
+  "instruction": "A number is passed to the `oddOrEven` function. We need to determine if it is even, and return the string `'even'` or `'odd'` depending on the result.\n\nUse the `%` operator to determine the remainder of the division."
+}

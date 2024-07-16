@@ -1,0 +1,4 @@
+{
+  "name": "We do not accept less than 10 gifts",
+  "instruction": "For the birthday of a very cranky baby, each guest should bring at least 10 gifts.\n\nWrite a function `isEnough` that takes the number of gifts from the guest, and returns `true` if there are enough gifts, and `false` if there are not enough gifts.\n\nBy the way, you don't need to use `if` here, you can do without it.\n\nAn example with `if`:\n```javascript\nfunction isMoreThanFive(num) {\n  if (num > 5) {\n    return true;\n  } else {\n    return false;\n  }\n}\n\nThe result of the `num > 5` comparison will be `true` or `false`, so you can return it immediately:\n.```javascript\nfunction isMoreThanFive(num) {\n  return num > 5;\n}\n```\n\nUse this principle in the `isEnough` function."
+}

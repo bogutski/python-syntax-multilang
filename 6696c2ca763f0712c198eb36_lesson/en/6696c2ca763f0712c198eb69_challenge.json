@@ -1,0 +1,4 @@
+{
+  "name": "Flip the line and remove spaces",
+  "instruction": "Write a function `reverseWithoutSpaces` that takes a string and returns it in reverse order, but without spaces.\n\nIf the string is empty, the function should return an empty string.\n\nExamples of running the function:\n```js\nreverseWithoutSpaces('Hello World!'); // '!dlroWolleH'\nreverseWithoutSpaces(' abc '); // 'cba'\nreverseWithoutSpaces('1 2 3'); // '321'\n```"
+}

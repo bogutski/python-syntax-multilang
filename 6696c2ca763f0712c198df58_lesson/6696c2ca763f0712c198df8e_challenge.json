@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df8e",
+  "name": {
+    "en": "Calculate shipping costs for a group of customers",
+    "ru": "Рассчитать стоимость доставки товара для группы покупателей"
+  },
+  "instruction": {
+    "en": "Write a function `deliveryCost` that returns the shipping cost for each member.\n\nThe function takes parameters:\n* `distance` - distance in miles\n* `weight` - weight in pounds\n* `mileCost` - cost per mile in dollars\n* `participants` - number of participants\n\nParticipants share the cost of delivery equally.\n\nThe function should return the shipping cost in dollars.\n\nUse weight and distance to calculate the total shipping cost.\n\nThe shipping cost is calculated by the formula:\n\n`Total shipping cost = weight * distance * cost per mile\n\nDivide the total shipping cost by the number of participants.",
+    "ru": "Напиши функцию `deliveryCost`, которая возвращает стоимость доставки для каждого участника.\n\nФункция принимает параметры:\n* `distance` - расстояние в милях\n* `weight` - вес в фунтах\n* `mileCost` - стоимость одной мили в долларах\n* `participants` - количество участников\n\nУчастники делят стоимость доставки поровну.\n\nФункция должна возвращать стоимость доставки в долларах.\n\nИспользуем вес и расстояние для расчета общей стоимости доставки.\n\nСтоимость доставки рассчитывается по формуле:\n\n`общая стоимость доставки = вес * расстояние * стоимость одной мили`\n\nРазделите общую стоимость доставки на количество участников."
+  },
+  "initialSolution": "fun (){\n\n}",
+  "completedSolution": "function deliveryCost(distance, weight, mileCost, participants) {\n  return (distance * weight * mileCost) / participants;\n}",
+  "openTest": "it('Created function deliveryCost', () => {\n  expect(deliveryCost).to.be.a('function');\n});\n\nit('deliveryCost(1, 1, 1, 1) returns 1', () => {\n  expect(deliveryCost(1, 1, 1, 1)).to.equal(1);\n});\n\nit('deliveryCost(1, 1, 1, 2) returns 0.5', () => {\n  expect(deliveryCost(1, 1, 1, 2)).to.equal(0.5);\n});\n\nit('deliveryCost(10, 10, 10, 2) returns 500', () => {\n  expect(deliveryCost(10, 10, 10, 2)).to.equal(500);\n});\n\nit('deliveryCost(1, 1, 1, 4) returns 0.25', () => {\n  expect(deliveryCost(1, 1, 1, 4)).to.equal(0.25);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

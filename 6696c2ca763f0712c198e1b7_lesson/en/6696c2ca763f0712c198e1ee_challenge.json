@@ -1,0 +1,4 @@
+{
+  "name": "Zero to 10 numbers in words",
+  "instruction": "Write a function `numToWord` that takes a number and returns its word representation.\n\nOnly for numbers from 0 to 10.\n\nFor example:\n```javascript\nnumToWord(0) // 'zero'\nnumToWord(1) // 'one'\nnumToWord(2) // 'two'\nnumToWord(3) // 'three'\nnumToWord(4) // 'four'\nnumToWord(5) // 'five'\nnumToWord(6) // 'six'\nnumToWord(7) // 'seven'\nnumToWord(8) // 'eight'\nnumToWord(9) // 'nine'\nnumToWord(10) // 'ten'\n\nnumToWord(11) // '11\nnumToWord(20) // 20\nnumToWord(-1) // -1\n```\n\nIf the number is not in the range 0 to 10, the function should return that number.\n\nA comparison will help you solve this problem:\n```javascript\nfunction words(num) {\n  if(num === -1) return 'minus one';\n  if(num === 11) return 'eleven';\n  if(num === 20) return 'twenty';\n  return num;\n}\n```"
+}

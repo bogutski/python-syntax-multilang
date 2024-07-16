@@ -1,0 +1,5 @@
+{
+  "name": "Отформатировать число. Два знака после запятой. toFixed",
+  "instruction": "На вход функция `formatNumber` принимает одно число.\n\nНеобходимо вернуть это число, округленное до двух знаков после запятой.\n\nИспользуйте для округления `toFixed`. Преобразуйте результат в число с помощью унарного плюса.\n\n```javascript\nconst num = 1.111;\nconst numStr = num.toFixed(2); // строка '1.11'\nconst numNum = +numStr; // число 1.11\n```\n\nПримеры запуска функции:\n```javascript\nformatNumber(1) // 1\nformatNumber(1.1) // 1.1\nformatNumber(1.11) // 1.11\nformatNumber(1.111) // 1.11\n\nformatNumber(1.99) // 1.99\nformatNumber(1.999) // 2\n```",
+  "instructions": {}
+}

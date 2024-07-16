@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f675",
+  "name": {
+    "en": "/*",
+    "ru": "Фильтрация чисел и обращение порядка элементов массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `filterNumbersAndReverse`, которая принимает массив, содержащий элементы разных типов данных.\n\nФункция должна сначала фильтровать массив, оставляя только числовые значения, которые не равны `NaN`. После фильтрации, функция должна обратить порядок элементов и вернуть новый массив.\n\n\nПримеры запуска функции:\n```javascript\nfilterNumbersAndReverse([1, 'text', NaN, 2.5, undefined, 3, NaN, 4]); // [4, 3, 2.5, 1]\nfilterNumbersAndReverse(['100', 100, 'NaN', 101, NaN]); // [101, 100]\nfilterNumbersAndReverse(['string', true, NaN, false]); // []\n```"
+  },
+  "initialSolution": "function filterNumbersAndReverse(){\n\n}",
+  "completedSolution": "function filterNumbersAndReverse(array) {\n  let result = []\n  array.forEach(el => {\n    if(typeof el === 'number' && !isNaN(el)) result.push(el)\n  })\n\n  return result.reverse();\n}",
+  "openTest": "it('Created function filterNumbersAndReverse', () => {\n  expect(filterNumbersAndReverse).to.be.a('function');\n});\n\nit(\"Original array should not be modified\", () => {\n  const array  = ['100', 100, 'NaN', 101, NaN];\n  filterNumbersAndReverse(array)\n  expect(array).to.deep.equal(['100', 100, 'NaN', 101, NaN]);\n});\n\nit(\"filterNumbersAndReverse([1, 'text', NaN, 2.5, undefined, 3, NaN, 4]) should return [4, 3, 2.5, 1]\", () => {\n  expect(filterNumbersAndReverse([1, 'text', NaN, 2.5, undefined, 3, NaN, 4])).to.deep.equal([4, 3, 2.5, 1]);\n});\n\nit(\"filterNumbersAndReverse(['100', 100, 'NaN', 101, NaN]) should return [101, 100]\", () => {\n  expect(filterNumbersAndReverse(['100', 100, 'NaN', 101, NaN])).to.deep.equal([101, 100]);\n});\n\nit(\"filterNumbersAndReverse(['string', true, NaN, false]) should return []\", () => {\n  expect(filterNumbersAndReverse(['string', true, NaN, false])).to.deep.equal([]);\n});\n\nit(\"filterNumbersAndReverse([10, 20, NaN, 30]) should return [30, 20, 10]\", () => {\n  expect(filterNumbersAndReverse([10, 20, NaN, 30])).to.deep.equal([30, 20, 10]);\n});\n\nit(\"filterNumbersAndReverse([1.1, NaN, 2.2, NaN, 3.3]) should return [3.3, 2.2, 1.1]\", () => {\n  expect(filterNumbersAndReverse([1.1, NaN, 2.2, NaN, 3.3])).to.deep.equal([3.3, 2.2, 1.1]);\n});\n\nit(\"filterNumbersAndReverse([0, -1, 1, NaN]) should return [1, -1, 0]\", () => {\n  expect(filterNumbersAndReverse([0, -1, 1, NaN])).to.deep.equal([1, -1, 0]);\n});\n\nit(\"filterNumbersAndReverse([null, undefined, NaN, 0, 0, 0, 1]) should return [1, 0, 0, 0]\", () => {\n  expect(filterNumbersAndReverse([null, undefined, NaN, 0, 0, 0, 1])).to.deep.equal([1, 0, 0, 0]);\n});\n\nit(\"filterNumbersAndReverse([5, 5, 5]) should return [5, 5, 5]\", () => {\n  expect(filterNumbersAndReverse([5, 5, 5])).to.deep.equal([5, 5, 5]);\n});\n\nit(\"filterNumbersAndReverse([Infinity, -Infinity, NaN]) should return [-Infinity, Infinity]\", () => {\n  expect(filterNumbersAndReverse([Infinity, -Infinity, NaN])).to.deep.equal([-Infinity, Infinity]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

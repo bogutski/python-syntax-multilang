@@ -1,0 +1,5 @@
+{
+  "name": "Найти строку или булево значение в массиве",
+  "instruction": "Напишите функцию `findStringOrBoolean`, которая принимает массив.\n\nФункция должна вернуть индекс последнего встречающегося в массиве элемента, который является строкой или булевым значением.\n\nЕсли такого элемента нет, то функция должна вернуть строку `No string or boolean found`.\n\nПример запуска функции:\n```javascript\nfindStringOrBoolean([true, 2, '3', 4, false]) // 4\nfindStringOrBoolean(['dev', 132, 'abc', 345]) // 2\nfindStringOrBoolean([1, 2, 3, 4, 5]) // 'No string or boolean found'\n```",
+  "instructions": {}
+}

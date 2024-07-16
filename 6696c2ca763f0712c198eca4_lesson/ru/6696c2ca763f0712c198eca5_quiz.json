@@ -1,0 +1,179 @@
+{
+  "name": "Посчитать количество заглавных и строчных букв в строке",
+  "questions": {
+    "0": {
+      "name": "Почему в результате запуска кода ниже, количество букв в верхнем регистре равно 6?",
+      "description": "```javascript\nlet str = 'Easy As Pie!';\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < str.length; i++){\n  if(str[i].toUpperCase() === str[i]) upperCount++\n  else lowerCount++;\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n\n```",
+      "variants": {
+        "0": {
+          "name": "Потому что помимо букв в верхнем регистре считаются пробелы и восклицательный знак"
+        },
+        "1": {
+          "name": "Потому что пробелы и восклицательный знак находятся в верхнем регистре"
+        },
+        "2": {
+          "name": "Потому что в строке 6 букв в верхнем регистре"
+        },
+        "3": {
+          "name": "Потому что в console.log в обоих случаях выводятся буквы в нижнем регистре"
+        }
+      }
+    },
+    "1": {
+      "name": "Код ниже означает то, что цифры, знаки препинания и символы не переводятся в верхний или нижний регистр",
+      "description": "```javascript\nconsole.log('!?@#$%^&*( )-_=+:><123'.toUpperCase() === '!?@#$%^&*( )-_=+:><123'.toLowerCase()); // true\n```",
+      "variants": {
+        "0": {
+          "name": "Нет, это утверждение неверно"
+        },
+        "1": {
+          "name": "Да, это утверждение верно"
+        }
+      }
+    },
+    "2": {
+      "name": "Выберите верный вариант результата запуска кода ниже",
+      "description": "```javascript\nlet str = 'Easy As Pie!';\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < str.length; i++){\n  if(str[i].toUpperCase() === str[i] && str[i].toLowerCase() !== str[i]) upperCount++\n  if(str[i].toUpperCase() !== str[i]) lowerCount++;\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n\n```",
+      "variants": {
+        "0": {
+          "name": "'Upper case = 6, lower case = 6'"
+        },
+        "1": {
+          "name": "'Upper case = 3, lower case = 3'"
+        },
+        "2": {
+          "name": "'Upper case = 6, lower case = 3'"
+        },
+        "3": {
+          "name": "'Upper case = 3, lower case = 6'"
+        }
+      }
+    },
+    "3": {
+      "name": "Верно ли, что результатом работы кода ниже будет `'Upper case = 5, lower case = 13'`",
+      "description": "```javascript\nlet str = 'An Oxford scholar!';\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < str.length; i++){\n  if(str[i].toLowerCase() !== str[i]) upperCount++\n  if(str[i].toUpperCase() !== str[i]) lowerCount++;\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n```",
+      "variants": {
+        "0": {
+          "name": "Да, результатом будет 'Upper case = 5, lower case = 13'"
+        },
+        "1": {
+          "name": "Нет, результатом будет 'Upper case = 2, lower case = 13'"
+        },
+        "2": {
+          "name": "Нет, результатом будет 'Upper case = 2, lower case = 11'"
+        },
+        "3": {
+          "name": "Нет, результатом будет 'Upper case = 3, lower case = 12'"
+        }
+      }
+    },
+    "4": {
+      "name": "Что выведется в консоль после запуска кода ниже?",
+      "description": "```javascript\nlet str = '? , . ! 7 ';\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < str.length; i++){\n  if(str[i].toLowerCase() !== str[i]) upperCount++\n  if(str[i].toUpperCase() !== str[i]) lowerCount++;\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n```",
+      "variants": {
+        "0": {
+          "name": "'Upper case = 3, lower case = 2'"
+        },
+        "1": {
+          "name": "'Upper case = 0, lower case = 1'"
+        },
+        "2": {
+          "name": "'Upper case = 0, lower case = 0'"
+        },
+        "3": {
+          "name": "'Upper case = 1, lower case = 0'"
+        }
+      }
+    },
+    "5": {
+      "name": "Сработает ли код ниже и каким будет результат?",
+      "description": "```javascript\nlet arr = ['A Piece of Cake', 'On the QT'];\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < arr.length; i++){\n    for(let j = 0; j < arr[i].length; j++){\n  if(arr[i][j].toLowerCase() !== arr[i][j]) upperCount++\n  if(arr[i][j].toUpperCase() !== arr[i][j]) lowerCount++;\n    }\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n```",
+      "variants": {
+        "0": {
+          "name": "Нет, код не сработает, результатом будет undefined"
+        },
+        "1": {
+          "name": "Да, код сработает, результатом будет 'Upper case = 6, lower case = 13'"
+        },
+        "2": {
+          "name": "Да, код сработает, результатом будет 'Upper case = 3, lower case = 9'"
+        },
+        "3": {
+          "name": "Нет, код не сработает, результатом будет error"
+        }
+      }
+    },
+    "6": {
+      "name": "Верно ли что результатом запуска кода ниже будет 'Upper case = 2, lower case = 10'",
+      "description": "```javascript\nlet arr = ['13', 'Flat out', 'Grass'];\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < arr.length; i++){\n    for(let j = 0; j < arr[i].length; j++){\n       if(arr[i][j].toLowerCase() !== arr[i][j]) upperCount++\n       if(arr[i][j].toUpperCase() !== arr[i][j]) lowerCount++;\n    }\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n```",
+      "variants": {
+        "0": {
+          "name": "Нет, неверно, результатом будет 'Upper case = 4, lower case = 10'"
+        },
+        "1": {
+          "name": "Нет, неверно, результатом будет 'Upper case = 10, lower case = 2'"
+        },
+        "2": {
+          "name": "Нет, не верно, запуск кода приведет к ошибке"
+        },
+        "3": {
+          "name": "Да, верно, результатом будет 'Upper case = 2, lower case = 10'"
+        }
+      }
+    },
+    "7": {
+      "name": "Выберите верный результат запуска функции ниже",
+      "description": "```javascript\nfunction lowerUpperCase(str){\n  let upperCount = 0;\n  let lowerCount = 0;\n  for(let i = 0; i < str.length; i++){\n    if(str[i].toLowerCase() !== str[i]) upperCount++\n    if(str[i].toUpperCase() !== str[i]) lowerCount++\n}\n  return `Upper case = ${upperCount}, lower case = ${lowerCount}`;\n}\nconsole.log(lowerUpperCase('12 plus 1'));\n```",
+      "variants": {
+        "0": {
+          "name": "'Upper case = 3, lower case = 4'"
+        },
+        "1": {
+          "name": "'Upper case = 4, lower case = 0'"
+        },
+        "2": {
+          "name": "'Upper case = 0, lower case = 4'"
+        },
+        "3": {
+          "name": "'Upper case = 0, lower case = 7'"
+        }
+      }
+    },
+    "8": {
+      "name": "Верно ли, что результатом запуска функции ниже будет `'Upper case = 9, lower case = 1'`",
+      "description": "```javascript\nfunction lowerUpperCase(str){\n  let upperCount = 0;\n  let lowerCount = 0;\n  for(let i = 0; i < str.length; i++){\n    if(str[i].toLowerCase() !== str[i]) upperCount++\n    if(str[i].toUpperCase() !== str[i]) lowerCount++\n}\n  return `Upper case = ${upperCount}, lower case = ${lowerCount}`;\n}\nconsole.log(lowerUpperCase('TWELVE + ONE'));\n```",
+      "variants": {
+        "0": {
+          "name": "Да, результатом будет 'Upper case = 9, lower case = 1'"
+        },
+        "1": {
+          "name": "Нет, результатом будет 'Upper case = 0, lower case = 9'"
+        },
+        "2": {
+          "name": "Нет, результатом будет 'Upper case = 9, lower case = -1'"
+        },
+        "3": {
+          "name": "Нет, результатом будет 'Upper case = 9, lower case = 0'"
+        }
+      }
+    },
+    "9": {
+      "name": "Что полчится в результате запуска кода ниже?",
+      "description": "```javascript\nlet arr = ['smile', true, 3, 'COOK'];\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < arr.length; i++){\n    for(let j = 0; j < arr[i].length; j++){\n  if(arr[i][j].toLowerCase() !== arr[i][j]) upperCount++\n  if(arr[i][j].toUpperCase() !== arr[i][j]) lowerCount++;\n    }\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n```",
+      "variants": {
+        "0": {
+          "name": "'Upper case = 4, lower case = 9'"
+        },
+        "1": {
+          "name": "'Upper case = 4, lower case = 5'"
+        },
+        "2": {
+          "name": "'Upper case = 5, lower case = 4'"
+        },
+        "3": {
+          "name": "'Upper case = 5, lower case = 10'"
+        }
+      }
+    }
+  }
+}

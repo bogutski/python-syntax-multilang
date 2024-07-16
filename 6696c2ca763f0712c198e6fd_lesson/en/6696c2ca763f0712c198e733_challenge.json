@@ -1,0 +1,5 @@
+{
+  "name": "Finding the last element of an array",
+  "instruction": "Write a function `lastElement` that takes one parameter, an array.\n\nThe function should return the last element of the array.\n\nAn example of running the function:\n```javascript\nlast([1, 2, 3, 4, 5]); // 5\n```",
+  "instructions": {}
+}

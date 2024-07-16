@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198deaa",
+  "name": {
+    "en": "Sum of digits of a two-digit number",
+    "ru": "Сумма цифр двузначного числа"
+  },
+  "instruction": {
+    "en": "Given a two-digit number. Find the sum of its digits.\n\nTo solve the problem:\nCreate a variable `num` and assign it a value of any positive two-digit number from 10 to 99.\n\nCreate a variable `secondDigit` and assign it an expression that allows you to get the second digit of the number `num` (use the remainder operation %).\n\nCreate a variable `firstDigit` and assign it an expression that allows you to get the first digit of the number `num`.\nCreate a variable `sum` and assign it the value of the sum of the digits.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\n// Find the last digit of a three-digit number\nconst number = 456;    // three-digit number\nconst a = number % 10; // the last digit of the number is equal to the remainder of dividing the number by 10\n```",
+    "ru": "Дано двузначное число. Найдите сумму его цифр.\n\nДля решения задачи:\nСоздайте переменную `num` и присвойте ей значение любого положительного двузначного число от 10 до 99.\n\nСоздайте переменную `secondDigit`, присвойте ей выражение, позволяющее получить вторую цифру числа `num` (используйте операцию нахождения остатка %).\n\nСоздайте переменную `firstDigit`, присвойте ей выражение, позволяющее получить первую цифру числа `num`.\nСоздайте переменную `sum`, присвойте ей значение суммы цифр.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\n// Найти последнюю цифру трехзначного числа\nconst number = 456;    // трехзначное число\nconst a = number % 10; // последняя цифра числа равна остатку от деления числа на 10\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const num = 34;\nconst secondDigit = num % 10;\nconst firstDigit = (num - secondDigit) / 10;\nconst sum = secondDigit + firstDigit;",
+  "openTest": "it('Variable `num` exists and has a value', () => {\n  expect(num).not.undefined;\n});\n\nit('Variable `num` has a numeric type', () => {\n  expect(num).a('number');\n});\n\nit('Variable `num` is a positive two-digit number', () => {\n  expect(num >= 10 && num <= 99).to.be.true;\n});\n\nit('Переменная `num` больше или равна 10', () => {\n  expect(num).gte(10);\n});\n\nit('Variable `num` is less than or equal to 99', () => {\n  expect(num).lte(99);\n});\n\nit('Variable `firstDigit` has a value', () => {\n  expect(firstDigit).not.undefined;\n});\n\nit('The ``secondDigit` variable has a value', () => {\n  expect(secondDigit).not.undefined;\n});\n\nit('Variable `firstDigit` is calculated correctly', () => {\n  let a = +((num + '')[0]);\n  expect(a).equal(firstDigit);\n});\n\nit('Variable`secondDigit` is calculated correctly', () => {\n  let a = +((num + '')[1]);\n  expect(a).equal(secondDigit);\n});\n\nit('Variable`sum` has a value', () => {\n  expect(sum).not.undefined;\n});\n\nit('Variable`sum` is equal to the sum of digits of a number', () => {\n  expect(sum).equal(firstDigit + secondDigit);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst num = 34;\nconst secondDigit = num % 10;\nconst firstDigit = (num - secondDigit) / 10;\nconst sum = secondDigit + firstDigit;\n```",
+    "ru": "```javascript\nconst num = 34;\nconst secondDigit = num % 10;\nconst firstDigit = (num - secondDigit) / 10;\nconst sum = secondDigit + firstDigit;\n```"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Count lowercase and uppercase vowels",
+  "instruction": "The function `countLetters` takes the string\n\nThe string can consist of letters of the Latin alphabet in different registers and symbols.\n\nThe function must return an object with the following properties:\n* `vowelLowerCase` - number of lowercase vowel letters\n* `vowelUpperCase` - number of vowel letters in upper case\n* `others` - number of remaining characters and/or consonants\n\nAn example of how to start this function:\n```javascript\ncountLetters('aAbcde') // { vowelLowerCase: 2, vowelUpperCase: 1, others: 3 }\ncountLetters('HI there! 123') // { vowelLowerCase: 2, vowelUpperCase: 1, others: 10 }\n```"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ed8d",
+  "name": {
+    "en": "Find the same elements in an array",
+    "ru": "Найти одинаковые элементы в массиве"
+  },
+  "instruction": {
+    "en": "Write a function `doubleElement` that takes an array of strings and returns `true` if there are two identical elements in the array and returns `false` if there are no such elements.\n\nIf the array is empty, the function should return ``\"No array - no work\"`\n\nStrings in the array are written in lowercase and have no spaces.\n\nYou can use the `indexOf()` method to solve this.\n\nExamples of running the function:\n```javascript\ndoubleElement(['str', 'str']); // true\ndoubleElement(['one', 'two', 'three']); // false\ndoubleElement([]); // 'No array - no work'\n```",
+    "ru": "Написать функцию `doubleElement`, которая принимает массив со строками и возвращает `true`, если в массиве есть два\n одинаковых элемента и возвращает `false`, если таких элементов нет.\n\nЕсли массив пустой, то функция должна вернуть `\"No array - no work\"`\n\nСтроки в массиве написаны в нижнем регистре и не имеют пробелов.\n\nДля решения можно воспользоваться методом `indexOf()`.\n\nПримеры запуска функции:\n```javascript\ndoubleElement(['str', 'str']); // true\ndoubleElement(['one', 'two', 'three']); // false\ndoubleElement([]); // 'No array - no work'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function doubleElement(arr) {\n  if(arr.length === 0) return 'No array - no work';\n  for(let i = 0; i < arr.length; i++){\n    if(arr.indexOf(arr[i], i+1) !== -1) return true;\n  }\n  return false;\n}",
+  "openTest": "it('Created function doubleElement', () => {\n  expect(doubleElement).to.be.a('function');\n});\n\nit(\"doubleElement(['str', 'str']) should return true\", () => {\n  expect(doubleElement(['str', 'str'])).true\n});\n\nit(\"doubleElement(['one', 'two', 'three']) should return false\", () => {\n  expect(doubleElement(['one', 'two', 'three'])).false\n});\n\nit(\"doubleElement(['one', 'two', 'three', 'one']) should return true\", () => {\n  expect(doubleElement(['one', 'two', 'three', 'one'])).true\n});\n\nit(\"doubleElement(['empty', '', '']) should return true\", () => {\n  expect(doubleElement(['empty', '', ''])).true\n});\n\nit(\"doubleElement([]) should return 'No array - no work'\", () => {\n  expect(doubleElement([])).to.equal('No array - no work')\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

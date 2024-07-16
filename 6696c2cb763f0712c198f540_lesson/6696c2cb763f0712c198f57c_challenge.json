@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f57c",
+  "name": {
+    "en": "/*",
+    "ru": "Выпрямление и суммирование уникальных значений"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `flattenAndSumUnique`, которая принимает один аргумент — вложенный массив `nestedArray`, содержащий числа.\n\nФункция должна сначала \"выпрямить\" все элементы массивов до одного уровня. Затем функция должна суммировать только уникальные числа в результирующем массиве.\n\n\nПримеры Запуска Функции:\n```javascript\nflattenAndSumUnique([[0], [-1], [1], [0]]); // 0 (-1 + 0 + 1)\nflattenAndSumUnique([1, [2, 2], [3, [4, 4]]]); // 10 (1 + 2 + 3 + 4)\nflattenAndSumUnique([[6, 5, 5], [4], [3, 6], [1, 2, 3, 1]]); //  21 (6 + 5 + 4 + 3 + 2 + 1)\n```"
+  },
+  "initialSolution": "function flattenAndSumUnique(){\n\n}",
+  "completedSolution": "function flattenAndSumUnique(arr) {\n  arr = arr.flat(Infinity)\n  let sum = 0\n\n  arr.forEach((el, index, original) => {\n    if(original.indexOf(el, index + 1) === -1) sum += el\n  })\n\n  return sum;\n}",
+  "openTest": "it('Created function flattenAndSumUnique', () => {\n  expect(flattenAndSumUnique).to.be.a('function');\n});\n\nit('Function flattenAndSumUnique should include method flat()', () => {\n  const res = flattenAndSumUnique.toString()\n  expect(res).to.include('.flat(')\n});\n\nit(\"flattenAndSumUnique([1, [2, 2], [3, [4, 4]]]) should return 10\", function() {\n  expect(flattenAndSumUnique([1, [2, 2], [3, [4, 4]]])).to.equal(10);\n});\n\nit(\"flattenAndSumUnique([[6, 5, 5], [4], [3, 6], [1, 2, 3, 1]]) should return 21\", function() {\n  expect(flattenAndSumUnique([[6, 5, 5], [4], [3, 6], [1, 2, 3, 1]])).to.equal(21);\n});\n\nit(\"flattenAndSumUnique([[0], [-1], [1], [0]]) should return 0\", function() {\n  expect(flattenAndSumUnique([[0], [-1], [1], [0]])).to.equal(0);\n});\n\nit(\"flattenAndSumUnique([[100], [100], [100]]) should return 100\", function() {\n  expect(flattenAndSumUnique([[100], [100], [100]])).to.equal(100);\n});\n\nit(\"flattenAndSumUnique([[], [], [1, 2, 3]]) should return 6\", function() {\n  expect(flattenAndSumUnique([[], [], [1, 2, 3]])).to.equal(6);\n});\n\nit(\"flattenAndSumUnique([[-10, 20], [-20, 10, 30]]) should return 30\", function() {\n  expect(flattenAndSumUnique([[-10, 20], [-20, 10, 30]])).to.equal(30);\n});\n\nit(\"flattenAndSumUnique([[3, 3], [3], [3, [3]]]) should return 3\", function() {\n  expect(flattenAndSumUnique([[3, 3], [3], [3, [3]]])).to.equal(3);\n});\n\nit(\"flattenAndSumUnique([[7, 8, 9], [], [10, 11, 12], [7, 8, 9]]) should return 57\", function() {\n  expect(flattenAndSumUnique([[7, 8, 9], [], [10, 11, 12], [7, 8, 9]])).to.equal(57);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

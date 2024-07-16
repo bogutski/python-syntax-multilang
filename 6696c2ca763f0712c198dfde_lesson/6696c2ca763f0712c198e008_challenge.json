@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e008",
+  "name": {
+    "en": "Variables and functions. Volume of a ball",
+    "ru": "Переменные и функции. Объем шара"
+  },
+  "instruction": {
+    "en": "The volume of the ball can be calculated by the formula: `V = 4/3 * π * r^3`, where `r` is the radius of the ball.\n\n`r^3` is r in a cube.\n\nWrite a function `sphereVolume` that takes one parameter `radius` and returns the volume of the sphere with radius `radius`.\n\nDeclare variable `PI` inside the function `sphereVolume` and give it value `3.14`.\n\nUse the `**` operator for the cube.",
+    "ru": "Объем шара можно вычислить по формуле: `V = 4/3 * π * r^3`, где `r` - радиус шара.\n\n`r^3` – это r в кубе.\n\nНапишите функцию `sphereVolume`, которая принимает один параметр `radius` и возвращает объем шара с радиусом `radius`.\n\nПеременную `PI` объявите внутри функции `sphereVolume` и присвойте ей значение `3.14`.\n\nДля возведения в куб используйте оператор `**`."
+  },
+  "initialSolution": "fun sphere!",
+  "completedSolution": "function sphereVolume(radius) {\n  const PI = 3.14;\n  return 4/3 * PI * radius ** 3;\n}",
+  "openTest": "it('Created function sphereVolume', () => {\n  expect(sphereVolume).to.be.a('function');\n});\n\nit('Function sphereVolume has one parameter diameter', () => {\n  // function to string and then to array of arguments\n  const args = sphereVolume.toString().match(/\\(([^)]*)\\)/)[1].split(',').map(arg => arg.trim());\n  expect(args).to.be.eql(['radius']);\n});\n\nit('Function sphereVolume returns volume of sphere for radius 10', () => {\n  expect(sphereVolume(10)).to.be.equal(4186.666666666667);\n} );\n\nit('Function sphereVolume returns volume of sphere for radius 20', () => {\n  expect(sphereVolume(20)).to.be.equal(33493.333333333336);\n} );\n\nit('Function sphereVolume returns volume of sphere for radius 30', () => {\n  expect(sphereVolume(30)).to.be.equal(113040);\n} );\n\nit('Variable PI is declared inside function sphereVolume', () => {\n  expect(sphereVolume.toString().includes('const PI')).to.be.equal(true);\n} );",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

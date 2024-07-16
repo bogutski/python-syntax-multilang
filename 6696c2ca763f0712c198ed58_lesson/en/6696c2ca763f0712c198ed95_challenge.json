@@ -1,0 +1,5 @@
+{
+  "name": "Split a line and move duplicates",
+  "instruction": "Write a function `moveDuplicates` that takes a string of different characters.\n\nThe function should return an array with two elements:\n\n* The first element is a new string in which the elements do not repeat.\n\n* The second element is a string to which all other elements will be added if they already exist in the first string.\n\nThe string can contain both uppercase and lowercase letters. Before checking, convert the string to lowercase and use this string to add characters to the new string.\n\nIf the string is empty, return a string in the form: 'string is empty'.\n\n\nExamples of function execution:\n```javascript\nmoveDuplicates('')          // ['string is empty', '']\nmoveDuplicates('ABCabc')    // [ 'abc', 'abc' ]\nmoveDuplicates('AbCAaBbCc') // [ 'abc', 'aabbcc' ]\nmoveDuplicates('123123123') // [ '123', '123123' ]\n```",
+  "instructions": {}
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f443",
+  "name": {
+    "en": "/*",
+    "ru": "Слияние и разделение массивов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `mergeAndSplit`, которая принимает пять аргументов:\n\n* исходный массив,\n* позицию начала вставки `insertAt`,\n* массив элементов `elementsToInsert` для добавления,\n* позицию начала удаления `deleteFrom`,\n* количество элементов для удаления `deleteCount`.\n\nФункция должна сначала вставить `elementsToInsert` в переданный массив начиная с позиции `insertAt`.\n\nЗатем создать копию переданного массива, и удалить сегмент начиная с `deleteFrom` на `deleteCount` элементов.\n\nВаша функция должна возвращать объект с двумя свойствами: `merged` для массива после вставки и `newArray` для нового массива.\n\n\nПример запуска функции:\n```javascript\nmergeAndSplit([1, 2, 3, 4, 5], 3, [6, 7, 8], 1, 4);\n// { merged: [1, 2, 3, 6, 7, 8, 4, 5], newArray: [1, 8, 4, 5] }\nmergeAndSplit(['a'], 0, ['b', 'c', 'd'], 3, 1);\n// { merged: ['b', 'c', 'd', 'a'], newArray: ['b', 'c', 'd'] }\n```"
+  },
+  "initialSolution": "function mergeAndSplit(){\n\n}",
+  "completedSolution": "function mergeAndSplit(arr, insertAt, elementsToInsert, deleteFrom, deleteCount) {\n  const withNewEl = arr.toSpliced(insertAt, 0, ...elementsToInsert)\n  const newArr = withNewEl.toSpliced(deleteFrom, deleteCount);\n\n  return {merged: withNewEl, newArray: newArr}\n}",
+  "openTest": "Array.prototype.toSpliced = function(start, deleteCount, ...items) {\n  let newArray = this.slice();\n  if(deleteCount === undefined) deleteCount = newArray.length - start\n  newArray.splice(start, deleteCount, ...items);\n  return newArray;\n};\n\nit('Created function mergeAndSplit', () => {\n  expect(mergeAndSplit).to.be.a('function');\n});\n\nit('Function mergeAndSplit should include method toSpliced()', () => {\n  const res = mergeAndSplit.toString()\n  expect(res).to.include('.toSpliced(')\n});\n\nit(\"should correctly merge and split the array with numbers\", () => {\n  const { merged, newArray } = mergeAndSplit([1, 2, 3, 4, 5], 3, [6, 7, 8], 1, 4);\n  expect(merged).to.deep.equal([1, 2, 3, 6, 7, 8, 4, 5]);\n  expect(newArray).to.deep.equal([1, 8, 4, 5]);\n});\n\nit(\"should correctly merge and create new array with strings\", () => {\n  const { merged, newArray } = mergeAndSplit(['a'], 0, ['b', 'c', 'd'], 3, 1);\n  expect(merged).to.deep.equal(['b', 'c', 'd', 'a']);\n  expect(newArray).to.deep.equal(['b', 'c', 'd']);\n});\n\nit(\"should handle empty elementsToInsert and return unchanged arrays\", () => {\n  const { merged, newArray } = mergeAndSplit([10, 20, 30], 1, [], 0, 1);\n  expect(merged).to.deep.equal([10, 20, 30]);\n  expect(newArray).to.deep.equal([20, 30]);\n});\n\nit(\"should correctly insert at the beginning and remove from the end\", () => {\n  const { merged, newArray } = mergeAndSplit([1, 2, 3], 0, [0], 2, 1);\n  expect(merged).to.deep.equal([0, 1, 2, 3]);\n  expect(newArray).to.deep.equal([0, 1, 3]);\n});\n\nit(\"should correctly insert at the end and remove from the beginning\", () => {\n  const { merged, newArray } = mergeAndSplit(['x', 'y'], 2, ['z'], 0, 1);\n  expect(merged).to.deep.equal(['x', 'y', 'z']);\n  expect(newArray).to.deep.equal(['y', 'z']);\n});\n\nit(\"should handle insert and delete at the same position\", () => {\n  const { merged, newArray } = mergeAndSplit([100, 200, 300], 1, [150], 1, 2);\n  expect(merged).to.deep.equal([100, 150, 200, 300]);\n  expect(newArray).to.deep.equal([100, 300]);\n});\n\nit(\"should return original array in merged when insertAt is beyond array length\", () => {\n  const { merged, newArray } = mergeAndSplit(['a', 'b'], 5, ['c'], 0, 2);\n  expect(merged).to.deep.equal(['a', 'b', 'c']);\n  expect(newArray).to.deep.equal(['c']);\n});\n\nit(\"should return original array in newArray when deleteFrom is beyond array length\", () => {\n  const { merged, newArray } = mergeAndSplit(['a', 'b', 'c'], 2, ['d', 'e'], 5, 1);\n  expect(merged).to.deep.equal(['a', 'b', 'd', 'e', 'c']);\n  expect(newArray).to.deep.equal(['a', 'b', 'd', 'e', 'c']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dc96",
+  "name": {
+    "en": "Elvis Presley",
+    "ru": "Elvis Presley"
+  },
+  "instruction": {
+    "en": "Create a `firstName` variable and assign it the value `'Elvis'`.\n\nCreate a `lastName` variable and assign it the value `'Presley'`.\n\nCreate a `name` variable and assign it the result of concatenating the `firstName` and `lastName` variables with a space between them.\n\nHere is an example that is fundamentally similar to what you need to do.\nAdapt it to the requirements of the task.\n\n```javascript\nconst firstName = 'Barack';\nconst lastName = 'Obama';\nconst name = firstName + ' ' + lastName;\n```",
+    "ru": "Создайте переменную `firstName` и присвойте ей значение `'Elvis'`.\n\nСоздайте переменную `lastName` и присвойте ей значение `'Presley'`.\n\nСоздайте переменную `name` и присвойте ей результат конкатенации переменных `firstName` и `lastName` с пробелом между ними.\n\nПриведем пример, который принципиально похож на то, что нужно сделать.\nАдаптируйте его к требованиям задачи.\n\n```javascript\nconst firstName = 'Barack';\nconst lastName = 'Obama';\nconst name = firstName + ' ' + lastName;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const firstName = 'Elvis';\nconst lastName = 'Presley';\nconst name = firstName + ' ' + lastName;",
+  "openTest": "it('The `firstName` variable exists and contains a value', () => {\n  expect(firstName).not.undefined;\n});\n\nit('Variable `firstName` contains data type string', () => {\n  expect(firstName).a('string');\n});\n\nit('The `firstName` variable takes the value `Elvis`', () => {\n  expect(firstName).eq('Elvis');\n});\n\nit('The variable `lastName` exists and contains the value', () => {\n  expect(lastName).not.undefined;\n});\n\nit('Variable `lastName` contains data type string', () => {\n  expect(lastName).a('string');\n});\n\nit('The `lastName` variable takes the value `Presley`', () => {\n  expect(lastName).eq('Presley');\n});\n\nit('The `name` variable exists and contains the value', () => {\n  expect(name).not.undefined;\n});\n\nit('Variable `name` contains data type string', () => {\n  expect(name).a('string');\n});\n\nit('The `name` variable takes the value `Elvis Presley`', () => {\n  expect(name).eq('Elvis Presley');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst firstName = 'Elvis';\nconst lastName = 'Presley';\nconst name = firstName + ' ' + lastName;\n```",
+    "ru": "```javascript\nconst firstName = 'Elvis';\nconst lastName = 'Presley';\nconst name = firstName + ' ' + lastName;\n```"
+  }
+}

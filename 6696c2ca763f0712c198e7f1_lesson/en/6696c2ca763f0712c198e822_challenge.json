@@ -1,0 +1,4 @@
+{
+  "name": "Add a string to an array at a certain position",
+  "instruction": "The `addStr` function takes three parameters:\n* `array` - array, can contain numbers, strings\n* `str` - string\n* `n` - number.\n\nThe function must add a string to the array by an index equal to the number `n`.\nIf the number n is greater than the length of the array, then add the element last.\n\nThe function must return the modified array.\n\nExamples of running the function:\n```javascript\naddStr([1, 2, 3], \"a\", 1) // [1, \"a\", 2, 3]\naddStr([\"a\", \"b\", \"c\"], \"a\", 2) // [\"a\", \"b\", \"a\", \"c\"]\n```"
+}

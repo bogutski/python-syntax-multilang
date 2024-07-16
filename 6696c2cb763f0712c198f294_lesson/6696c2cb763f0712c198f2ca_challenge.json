@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f2ca",
+  "name": {
+    "en": "Count the number of occurrences of odd numbers",
+    "ru": "Посчитать количество вхождений нечетных чисел"
+  },
+  "instruction": {
+    "en": "The function `countOddEl` takes an array of numbers.\n\nThe function should count the occurrences of only odd numbers in the array\nand return the result as an object, where the key is the odd number and the value is the count of occurrences.\n\nIf the array is empty, return the string \"Array is empty\"\n\nExamples of function calls:\n```javascript\ncountOddEl([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // {1: 1, 3: 1, 5: 1, 7: 1, 9: 1}\ncountOddEl([1, 1, 1, 3, 3, 1]) // {1: 4, 3: 2}\ncountOddEl([2, 2, 2, 4, 4, 2]) // {}\n```",
+    "ru": "Функция `countOddEl` принимает массив чисел.\n\nФункция должна посчитать количество вхождений только нечетных чисел в массив\nи вернуть результат в виде объекта, где ключ - нечетное число, значение - количество вхождений\n\nЕсли массив пустой, то вернуть строку \"Array is empty\"\n\nПримеры запуска функции:\n```javascript\ncountOddEl([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // {1: 1, 3: 1, 5: 1, 7: 1, 9: 1}\ncountOddEl([1, 1, 1, 3, 3, 1]) // {1: 4, 3: 2}\ncountOddEl([2, 2, 2, 4, 4, 2]) // {}\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function countOddEl(arr) {\n  if (!arr.length) return \"Array is empty\";\n  const result = {};\n  for (let i = 0; i < arr.length; i++) {\n    if (arr[i] % 2 === 1 && result[arr[i]]) result[arr[i]]++;\n    else if (arr[i] % 2 === 1 && !result[arr[i]]) result[arr[i]] = 1;\n  }\n  return result;\n}",
+  "openTest": "it('Created function countOddEl', () => {\n  expect(countOddEl).to.be.a('function');\n});\n\nit('countOddEl([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) should return {1: 1, 3: 1, 5: 1, 7: 1, 9: 1}', () => {\n  expect(countOddEl([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).to.deep.equal({1: 1, 3: 1, 5: 1, 7: 1, 9: 1});\n});\n\nit('countOddEl([1, 1, 1, 3, 3, 1]) should return {1: 4, 3: 2}', () => {\n  expect(countOddEl([1, 1, 1, 3, 3, 1])).to.deep.equal({1: 4, 3: 2});\n});\n\nit('countOddEl([2, 2, 2, 4, 4, 2]) should return {}', () => {\n  expect(countOddEl([2, 2, 2, 4, 4, 2])).to.deep.equal({});\n});\n\nit('countOddEl([]) should return \"Array is empty\"', () => {\n  expect(countOddEl([])).to.equal(\"Array is empty\");\n});\n\nit('countOddEl([5, 5, 5, 5, 5]) should return {5: 5}', () => {\n  expect(countOddEl([5, 5, 5, 5, 5])).to.deep.equal({5: 5});\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

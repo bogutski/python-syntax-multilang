@@ -1,0 +1,5 @@
+{
+  "name": "List all items by data type",
+  "instruction": "The function `elementListByType` takes an array with different data types and returns an object with three properties: `number`, `string`, and `boolean`.\n\nElements with other data types should not be included in the resulting object.\n\nEach property contains a string in which all elements of the corresponding type are written separated by spaces.\n\nIf there are no elements of the corresponding type in the array, the property should be an empty string.\n\nThere should be no space at the end of each line.\n\nExamples of function execution:\n```javascript\nelementListByType([1, 2, 3, \"a\", \"b\", \"c\", true, false]) // {number: \"1 2 3\", string: \"a b c\", boolean: \"true false\"}\nelementListByType([NaN, \"\", null, 2<1]) // {number: \"NaN\", string: \"\", boolean: \"false\"}\nelementListByType([]) // {number: \"\", string: \"\", boolean: \"\"}\n```",
+  "instructions": {}
+}

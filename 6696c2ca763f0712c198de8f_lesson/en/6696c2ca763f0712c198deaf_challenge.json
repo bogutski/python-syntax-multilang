@@ -1,0 +1,6 @@
+{
+  "name": "The last digit of the number",
+  "instruction": "Given a number. Get its last digit.\n\nTo solve the problem:\nCreate a variable `num` and assign it a value of any non-negative number.\n\nCreate a variable `lastDigit` and assign it an expression that allows you to get the last digit of the number `num` (use the modulo operation to find the remainder of dividing the number by 10).\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst number = 456;\nconst a = number % 10; \n// the last digit of the number is equal to the remainder of dividing the number by 10\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst num = 34;\nconst lastDigit = num % 10;\n```"
+}

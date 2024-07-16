@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ea40",
+  "name": {
+    "en": "From higher to lower even numbers",
+    "ru": "От большего к меньшему четные числа"
+  },
+  "instruction": {
+    "en": "The function `decreaseEven` takes two numbers `num1` and `num2`.\n\nThe number `num1` will always be greater than or equal to `num2` and both numbers will always be positive.\n\nThe function should return an array containing all even numbers in the range num1 to num2 inclusive.\n\nThe numbers must be in descending order.\n\nAn example of running the function:\n```javascript\ndecreaseEven(10, 2) // [10, 8, 6, 4, 2]\ndecreaseEven(8, 4) // [8, 6, 4]\n```",
+    "ru": "Функция `decreaseEven` принимает два числа `num1` и `num2`.\n\nЧисло `num1` всегда будет больше или равно `num2` и оба числа всегда будут положительными.\n\nФункция должна возвращать массив, содержащий все четные числа в диапазоне от `num1` до `num2` включительно.\n\nЧисла должны быть упорядочены по убыванию.\n\nПример запуска функции:\n```javascript\ndecreaseEven(10, 2) // [10, 8, 6, 4, 2]\ndecreaseEven(8, 4) // [8, 6, 4]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function decreaseEven(num1, num2) {\n  let arr = [];\n  for (let i = num1; i >= num2; i--) {\n    if (i % 2 === 0) {\n      arr.push(i);\n    }\n  }\n  return arr\n}",
+  "openTest": "it('Created function decreaseEven', () => {\n  expect(decreaseEven).to.be.a('function');\n});\n\nit('decreaseEven(10, 2) should return [10, 8, 6, 4, 2]', () => {\n  expect(decreaseEven(10, 2)).eql([10, 8, 6, 4, 2]);\n});\n\nit('decreaseEven(8, 4) should return [8, 6, 4]', () => {\n  expect(decreaseEven(8, 4)).eql([8, 6, 4]);\n});\n\nit('decreaseEven(3, 2) should return [2]', () => {\n  expect(decreaseEven(3, 2)).eql([2]);\n});\n\nit('decreaseEven(1, 0) should return [0]', () => {\n  expect(decreaseEven(1, 0)).eql([0]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

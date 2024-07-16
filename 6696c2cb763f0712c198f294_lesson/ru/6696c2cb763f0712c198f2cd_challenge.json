@@ -1,0 +1,5 @@
+{
+  "name": "Посчитать количество элементов каждого типа в массиве",
+  "instruction": "Функция `countEachType` принимает массив и возвращает объект с количеством элементов каждого типа в массиве.\n\nВ массиве могут быть элементы трех типов: `number`, `string` и `boolean`.\n\nОбъект, который возвращает функция, должен иметь три свойства: `number`, `string` и `boolean`.\nЗначениями этих свойств должны быть числа, которые соответствуют количеству элементов каждого типа в массиве.\n\nЕсли массив пустой, то функция должна вернуть строку \"Array is empty\".\n\nПримеры запуска функции:\n```javascript\ncountEachType([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // {number: 10, string: 0, boolean: 0}\ncountEachType([1, \"a\"]) // {number: 1, string: 1, boolean: 0}\ncountEachType([true, false, true, false]) // {number: 0, string: 0, boolean: 4}\ncountEachType([]) // \"Array is empty\"",
+  "instructions": {}
+}

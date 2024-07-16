@@ -1,0 +1,4 @@
+{
+  "name": "Hypotenuse in a right triangle",
+  "instruction": "There is a right triangle.\n\nThe values of its cathetuses `a` and `b` are known.\n\nWrite a function `hypotenuse` that takes two parameters - the lengths of the cathetuses, and returns the length of the hypotenuse.\n\nPythagoras' Theorem will help you: `The square of the hypotenuse is equal to the sum of the squares of the cathetuses.`\n\n```javascript\na * a + b * b = c * c // where 'a' and 'b' are the cathetuses, 'c' is the hypotenuse.\n```\n\nTo find the hypotenuse, you have to take the square root of the sum of the squares of the cathetuses.\n```javascript\nc = (a * a + b * b) ** 0.5;\n```\n\nExamples of running the function:\n```javascript\nhypotenuse(3, 4); // 5\nhypotenuse(5, 12); // 13\nhypotenuse(1, 1); // 1.4142135623730951\n```"
+}

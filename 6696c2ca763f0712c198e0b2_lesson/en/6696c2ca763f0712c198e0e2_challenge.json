@@ -1,0 +1,5 @@
+{
+  "name": "Find errors in the calculation function using the formula mc squared",
+  "instruction": "The function should be called `formulaCalculation`.\n\nThe function must take two parameters: `m` and `c`.\n\nThe function must return the result of the calculation using the formula `m * c * c`.",
+  "instructions": {}
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f728",
+  "name": {
+    "en": "/*",
+    "ru": "Поиск числа в массиве"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findNumber`, которая принимает массив чисел и число, которое нужно найти, в качестве аргументов.\n\nФункция должна вернуть первое вхождение числа в массиве. Если число не найдено, функция должна вернуть `undefined`.\n\n\nПример запуска функции:\n```javascript\nfindNumber([1, 2, 3, 4, 5], 3); // 3\nfindNumber([10, 20, 30, 40, 50], 25); // undefined\n```"
+  },
+  "initialSolution": "function findNumber(){\n\n}",
+  "completedSolution": "function findNumber(numbers, n) {\n  return numbers.find(el => el === n);\n}",
+  "openTest": "it('Created function findNumber', () => {\n  expect(findNumber).to.be.a('function');\n});\n\nit(\"Function findNumber should include find method\", () => {\n  const result = findNumber.toString();\n  expect(result).to.include('.find(');\n});\n\nit(\"findNumber([1, 2, 3, 4, 5], 3) should return 3\", () => {\n  expect(findNumber([1, 2, 3, 4, 5], 3)).to.equal(3);\n});\n\nit(\"findNumber([10, 20, 30, 40, 50], 25) should return undefined\", () => {\n  expect(findNumber([10, 20, 30, 40, 50], 25)).to.be.undefined;\n});\n\nit(\"findNumber([1, 2, 3, 4, 5], 6) should return undefined\", () => {\n  expect(findNumber([1, 2, 3, 4, 5], 6)).to.be.undefined;\n});\n\nit(\"findNumber([], 5) should return undefined if array is empty\", () => {\n  expect(findNumber([], 5)).to.be.undefined;\n});\n\nit(\"findNumber([1, 2, 3, 4, 5], 3) should return the first occurrence of the number\", () => {\n  expect(findNumber([1, 2, 3, 3, 3, 4, 5], 3)).to.equal(3);\n});\n\nit(\"findNumber([5, 5, 5, 5, 5], 5) should return the first occurrence of the number\", () => {\n  expect(findNumber([5, 5, 5, 5, 5], 5)).to.equal(5);\n});\n\nit(\"findNumber([1, 2, 3, 4, 5], 5) should return 5\", () => {\n  expect(findNumber([1, 2, 3, 4, 5], 5)).to.equal(5);\n});\n\nit(\"findNumber([1, 2, 3, 4, 5], 1) should return 1\", () => {\n  expect(findNumber([1, 2, 3, 4, 5], 1)).to.equal(1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

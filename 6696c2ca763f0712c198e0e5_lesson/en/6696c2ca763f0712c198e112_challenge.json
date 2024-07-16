@@ -1,0 +1,4 @@
+{
+  "name": "The surface area of the ball",
+  "instruction": "A sphere is a geometric body consisting of points in space that are separated from the center by a distance no more than a given. This distance is called the radius of the ball.\n\nThe surface area of a sphere is equal to `4 * PI * powerOfTwo(r)`, where\n\n`PI` is a variable, the number `3.14`,\n`powerOfTwo(r)` is a function which returns the square of the number `r`.\n\nCreate a variable `PI` that is equal to the number `3.14`.\nCreate a function `powerOfTwo` that takes a number and returns the square of that number.\nCreate a function `sphereSurfaceArea` that takes the radius of a sphere and returns its surface area.\n\nUse the variable `PI` and the function `powerOfTwo` inside the function `sphereSurfaceArea`."
+}

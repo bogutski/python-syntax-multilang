@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e770",
+  "name": {
+    "en": "How many times does a number occur in an array",
+    "ru": "Сколько раз встречается число в массиве"
+  },
+  "instruction": {
+    "en": "The `checkQuantity` function takes two parameters: an array of numbers and a number.\n\nYou need to check how many times the number occurs in the array and return the number of occurrences.\n\nThe number can occur no more than three times.\n\nExamples of running the function:\n```javascript\ncheckQuantity([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5); // 1\ncheckQuantity([1, 5, 2, 4, 5, 6, 7, 5, 2, 10], 2); // 2\ncheckQuantity([1, 5, 2, 4, 5, 6, 7, 5, 2, 10], 5); // 3\n```",
+    "ru": "Функция `checkQuantity` принимает два параметра: массив чисел и число.\n\nНеобходимо проверить сколько раз встречается число в массиве и вернуть количество этих вхождений.\n\nЧисло может встречаться не более трех раз.\n\nПримеры запуска функции:\n```javascript\ncheckQuantity([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5); // 1\ncheckQuantity([1, 5, 2, 4, 5, 6, 7, 5, 2, 10], 2); // 2\ncheckQuantity([1, 5, 2, 4, 5, 6, 7, 5, 2, 10], 5); // 3\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function checkQuantity(array, number) {\n    let count = 0;\n    const firstIndex = array.indexOf(number);\n    const secondIndex = array.indexOf(number, firstIndex + 1);\n    const thirdIndex = array.indexOf(number, secondIndex + 1);\n    if (firstIndex > -1) count++;\n    if (secondIndex > -1) count++;\n    if (thirdIndex > firstIndex) count++;\n    return count;\n}",
+  "openTest": "it('Created function checkQuantity', () => {\n    expect(checkQuantity).to.be.a('function');\n});\n\nit('checkQuantity([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5) should return 1', () => {\n    expect(checkQuantity([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5)).eql(1);\n});\n\nit('checkQuantity([1, 5, 2, 4, 5, 6, 7, 5, 2, 10], 2) should return 2', () => {\n    expect(checkQuantity([1, 5, 2, 4, 5, 6, 7, 5, 2, 10], 2)).eql(2);\n});\n\nit('checkQuantity([1, 5, 2, 4, 5, 6, 7, 5, 2, 10], 5) should return 3', () => {\n    expect(checkQuantity([1, 5, 2, 4, 5, 6, 7, 5, 2, 10], 5)).eql(3);\n});\n\nit('checkQuantity([10, 500, 2045, 40, 1000, 500, 75, 523, 204, 103], 500) should return 2', () => {\n    expect(checkQuantity([10, 500, 2045, 40, 1000, 500, 75, 523, 204, 103], 500)).eql(2);\n});\n\nit('checkQuantity([10, 500, 2045, 40, 1000, 500, 75, 523, 204, 103], 2) should return 0', () => {\n    expect(checkQuantity([10, 500, 2045, 40, 1000, 500, 75, 523, 204, 103], 2)).eql(0);\n});\n\nit('checkQuantity([10, 500, 2045, 40, 1000, 500, 75, 523, 204, 10], 10) should return 2', () => {\n    expect(checkQuantity([10, 500, 2045, 40, 1000, 500, 75, 523, 204, 10], 10)).eql(2);\n});\n\nit('checkQuantity([10, 500, 2045, 40, 1000, 500, 75, 523, 204, 10], 2045) should return 1', () => {\n    expect(checkQuantity([10, 500, 2045, 40, 1000, 500, 75, 523, 204, 10], 2045)).eql(1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

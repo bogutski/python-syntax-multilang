@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dc8c",
+  "name": {
+    "en": "The last letter of the line",
+    "ru": "Последняя буква строки"
+  },
+  "instruction": {
+    "en": "Create a variable named `str` and assign it the value of an arbitrary non-empty string.\nCreate a variable named `lastSymbol` and assign it the value of the last character of the string.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst name = 'Jonh';\nconst last = name[name.length - 1];\n```",
+    "ru": "Создайте переменную с именем `str` и присвойте ей значение произвольной непустой строки.\nСоздайте переменную `lastSymbol` и присвойте ей значение последнего символа строки.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst name = 'Jonh';\nconst last = name[name.length - 1];\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const str = 'hello';\nconst lastSymbol = str[str.length - 1];",
+  "openTest": "it('Variable `str` exists and has a value', () => {\n  expect(str).not.undefined;\n});\n\nit('Variable `str` has type `string`', () => {\n  expect(str).a('string');\n});\n\nit('The variable `lastSymbol` exists and has a value', () => {\n  expect(lastSymbol).not.undefined;\n});\n\nit('The `lastSymbol` variable has type `string`', () => {\n  expect(lastSymbol).a('string');\n});\n\nit('Variable `lastSymbol` is computed correctly', () => {\n  expect(lastSymbol).equal(str[str.length - 1]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst str = 'hello';\nconst lastSymbol = str[str.length - 1];\n```",
+    "ru": "```javascript\nconst str = 'hello';\nconst lastSymbol = str[str.length - 1];\n```"
+  }
+}

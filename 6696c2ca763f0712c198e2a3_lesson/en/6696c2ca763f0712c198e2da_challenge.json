@@ -1,0 +1,4 @@
+{
+  "name": "In which number the fractional part is greater",
+  "instruction": "Write a function `compareFractionalParts`.\n\nThe function accepts two numbers and returns the number with the fractional part greater.\n\nIf the fractional parts are equal, the first number is returned.\n\nExamples of running the function:\n```javascript.\ncompareFractionalParts(1.10, 1.2) // 1.2\ncompareFractionalParts(1.2, 1.1) // 1.2\ncompareFractionalParts(2.1, 1.1) // 2.1\ncompareFractionalParts(10.1, 2.3) // 2.3\n```"
+}

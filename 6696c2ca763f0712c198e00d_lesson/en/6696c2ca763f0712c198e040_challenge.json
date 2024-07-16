@@ -1,0 +1,4 @@
+{
+  "name": "Calculate salary with bonus",
+  "instruction": "Write a function `totalSalary` that takes three parameters (numbers):\n\n`salary` - monthly salary\n`monthsCount` - number of months worked\n`bonus` - bonus in percent\n\nThe function should return the amount of wages for all months, including the bonus.\n\nExample: `totalSalary(1000, 3, 10)` should return `3300`.\n\nThe names of the parameters must be the same as in the condition."
+}

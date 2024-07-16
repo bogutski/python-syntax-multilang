@@ -1,0 +1,6 @@
+{
+  "name": "Remove any extra spaces",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-9.png)\n\nYou need to write a command that outputs the word \"Coding\" to the console.\n\nRemove extra spaces in the given code.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log('Coding');\n```"
+}

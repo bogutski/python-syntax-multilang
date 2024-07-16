@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198e6c2",
+  "name": {
+    "ru": "Создание массива. Свойство length",
+    "en": "Creating an array. Length property",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e6c3",
+      "name": {
+        "ru": "Выберите правильный вариант создания массива",
+        "en": "Choose the correct option to create an array",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6c4",
+          "name": {
+            "ru": "const arr = [1, 2, 3];",
+            "en": "const arr = [1, 2, 3];",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6c5",
+          "name": {
+            "ru": "const arr = (1, 2, 3);",
+            "en": "const arr = (1, 2, 3);",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6c6",
+          "name": {
+            "ru": "const arr = {1, 2, 3};",
+            "en": "const arr = {1, 2, 3};",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6c7",
+          "name": {
+            "ru": "const arr = {1: 1, 2: 2, 3: 3};",
+            "en": "const arr = {1: 1, 2: 2, 3: 3};",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6c8",
+      "name": {
+        "ru": "Как называются данные, которые хранятся в массиве?",
+        "en": "What is the name of the data that is stored in the array?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6c9",
+          "name": {
+            "ru": "свойства",
+            "en": "properties",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6ca",
+          "name": {
+            "ru": "элементы",
+            "en": "items",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6cb",
+          "name": {
+            "ru": "данные",
+            "en": "data",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6cc",
+          "name": {
+            "ru": "звенья",
+            "en": "links",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6cd",
+      "name": {
+        "ru": "С какой цифры начинается нумерация элементов массива?",
+        "en": "Which digit starts the numbering of the array elements?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6ce",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6cf",
+          "name": {
+            "ru": "-1",
+            "en": "-1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6d0",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6d1",
+          "name": {
+            "ru": "2",
+            "en": "2",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6d2",
+      "name": {
+        "ru": "Выберите верный вариант разделения элементов массива",
+        "en": "Choose the correct way to divide the array elements",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6d3",
+          "name": {
+            "ru": "пробел",
+            "en": "blank",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6d4",
+          "name": {
+            "ru": "двоеточие",
+            "en": "colon",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6d5",
+          "name": {
+            "ru": "запятая",
+            "en": "comma",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6d6",
+          "name": {
+            "ru": "точка с запятой",
+            "en": "semicolon",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6d7",
+      "name": {
+        "ru": "В массиве могут находиться:",
+        "en": "The array can contain:",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6d8",
+          "name": {
+            "ru": "cтроки",
+            "en": "lines",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6d9",
+          "name": {
+            "ru": "числа",
+            "en": "numbers",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6da",
+          "name": {
+            "ru": "объекты",
+            "en": "objects",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6db",
+          "name": {
+            "ru": "массивы",
+            "en": "arrays",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6dc",
+      "name": {
+        "ru": "Для определения длины массива используется свойство:",
+        "en": "To determine the length of an array, use the property:",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6dd",
+          "name": {
+            "ru": "lenght",
+            "en": "lenght",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6de",
+          "name": {
+            "ru": "lenght()",
+            "en": "lenght()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6df",
+          "name": {
+            "ru": "length",
+            "en": "length",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6e0",
+          "name": {
+            "ru": "length()",
+            "en": "length()",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6e1",
+      "name": {
+        "ru": "Выберите верный вариант определения длины массива arr",
+        "en": "Choose the correct way to determine the length of the array arr",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6e2",
+          "name": {
+            "ru": "arr.lenght",
+            "en": "arr.lenght",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6e3",
+          "name": {
+            "ru": "arr.length()",
+            "en": "arr.length()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6e4",
+          "name": {
+            "ru": "arr.length",
+            "en": "arr.length",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6e5",
+          "name": {
+            "ru": "arr.lenght()",
+            "en": "arr.lenght()",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6e6",
+      "name": {
+        "ru": "Чему равна длина массива? const arr = ['a', 'b', 'c', 'd', 'e'];",
+        "en": "What is the length of the array? const arr = ['a', 'b', 'c', 'd', 'e'];",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6e7",
+          "name": {
+            "ru": "4",
+            "en": "4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6e8",
+          "name": {
+            "ru": "5",
+            "en": "5",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6e9",
+          "name": {
+            "ru": "6",
+            "en": "6",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6ea",
+          "name": {
+            "ru": "7",
+            "en": "7",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6eb",
+      "name": {
+        "ru": "Чему равна длина массива? const arr = ['a', 'b', 'c', 'd', [1, 2, 3, 4, 5]];",
+        "en": "What is the length of the array? const arr = ['a', 'b', 'c', 'd', [1, 2, 3, 4, 5]];",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6ec",
+          "name": {
+            "ru": "5",
+            "en": "5",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6ed",
+          "name": {
+            "ru": "9",
+            "en": "9",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6ee",
+          "name": {
+            "ru": "4",
+            "en": "4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6ef",
+          "name": {
+            "ru": "8",
+            "en": "8",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e6f0",
+      "name": {
+        "ru": "Массив - это упорядоченный тип данных",
+        "en": "An array is an ordered data type",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e6f1",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e6f2",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

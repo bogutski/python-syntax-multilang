@@ -1,0 +1,5 @@
+{
+  "name": "Поменять слова местами и добавить в массив",
+  "instruction": "Функция `switchWordAddToArray` принимает строку содержащую разные символы. Слова в строке разделены пробелами.\n\nФункция должна вернуть массив следующего вида:\n* первый элемент массива - последнее слово в строке\n* второй элемент массива - слова между первым и последним словом в строке\n* третий элемент массива - первое слово в строке\n\nПример запуска функции:\n```javascript\nswitchWordAddToArray(\"Hello world, my name is John\") // [\"John\", \"world, my name is\", \"Hello\"]\nswitchWordAddToArray(\"hello\") // [\"hello\", \"\", \"\"]\nswitchWordAddToArray(\"hello world\") // [\"world\", \"\", \"hello\"]\nswitchWordAddToArray(\"\") // [\"\", \"\", \"\"]\n```\nИспользуйте только циклы для решения этой задачи.",
+  "instructions": {}
+}

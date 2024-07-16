@@ -1,0 +1,460 @@
+{
+  "_id": "6696c2ca763f0712c198e047",
+  "name": {
+    "ru": "Разница между let и const",
+    "en": "The difference between let and const",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e048",
+      "name": {
+        "ru": "В современном JavaScript есть два способа объявления переменных: let и const. Выберите правильное утверждение:",
+        "en": "In modern JavaScript there are two ways to declare variables: let and const. Choose the correct one:",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e049",
+          "name": {
+            "ru": "let объявляет переменную, значение которой можно изменить, а const объявляет переменную, значение которой нельзя изменить.",
+            "en": "let declares a variable whose value can be changed, and const declares a variable whose value cannot be changed.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e04a",
+          "name": {
+            "ru": "При объявлении переменной с помощью let можно не указывать значение, а при объявлении переменной с помощью const значение обязательно.",
+            "en": "If you declare a variable with let, you can leave out the value, but if you declare a variable with const, the value is mandatory.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e04b",
+          "name": {
+            "ru": "Если объявить переменную с помощью const без значения, то она будет равна undefined.",
+            "en": "If you declare a variable with const without a value, it will be undefined.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e04c",
+          "name": {
+            "ru": "Если объявить переменную с помощью let без значения, то она будет равна undefined.",
+            "en": "If you declare a variable with let without a value, it will be undefined.",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e04d",
+      "name": {
+        "ru": "Если объявить переменную с помощью const без значения",
+        "en": "If you declare a variable with const without a value",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e04e",
+          "name": {
+            "ru": "Получим ошибку",
+            "en": "We get an error",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e04f",
+          "name": {
+            "ru": "Переменная будет равна undefined",
+            "en": "The variable will be undefined",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e050",
+          "name": {
+            "ru": "Переменная будет равна null",
+            "en": "The variable will be null",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e051",
+          "name": {
+            "ru": "Переменная будет равна 0",
+            "en": "The variable will be 0",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e052",
+      "name": {
+        "ru": "Если объявить переменную с помощью let без значения",
+        "en": "If you declare a variable with let without a value",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e053",
+          "name": {
+            "ru": "Получим ошибку",
+            "en": "We get an error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e054",
+          "name": {
+            "ru": "Переменная будет равна undefined",
+            "en": "The variable will be undefined",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e055",
+          "name": {
+            "ru": "Переменная будет равна null",
+            "en": "The variable will be null",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e056",
+          "name": {
+            "ru": "Переменная будет равна 0",
+            "en": "The variable will be 0",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e057",
+      "name": {
+        "ru": "При попытке изменить значение переменной, объявленной с помощью const получим ошибку",
+        "en": "If you try to change the value of a variable declared with const, you get an error",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e058",
+          "name": {
+            "ru": "SyntaxError: Assignment to const variable.",
+            "en": "SyntaxError: Assignment to const variable.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e059",
+          "name": {
+            "ru": "TypeError: Assignment to constant variable.",
+            "en": "TypeError: Assignment to constant variable.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e05a",
+          "name": {
+            "ru": "RuntimeError: Assignment to constant variable.",
+            "en": "RuntimeError: Assignment to constant variable.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e05b",
+          "name": {
+            "ru": "SyntaxError: Unexpected token =",
+            "en": "SyntaxError: Unexpected token =",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e05c",
+      "name": {
+        "ru": "Если значение переменной не планируется менять, то лучше использовать const",
+        "en": "If you do not plan to change the value of the variable, it is better to use const",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e05d",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e05e",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e05f",
+      "name": {
+        "ru": "Переменную можно использовать до ее объявления",
+        "en": "A variable can be used before it is declared",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e060",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e061",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e062",
+      "name": {
+        "ru": "Переменная объявленная с помощью let можно переопределять не более 16 раз",
+        "en": "A variable declared with let can be redefined up to 16 times",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e063",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e064",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e065",
+      "name": {
+        "ru": "При создании переменой знак равно (=) является оператором присваивания",
+        "en": "When you create a variable, the equals sign (=) is an assignment operator",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e066",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e067",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e068",
+      "name": {
+        "ru": "Выберите корректные варианты",
+        "en": "Select the correct options",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e069",
+          "name": {
+            "ru": "const a = 1; const b = 2; const c = a + b;",
+            "en": "const a = 1; const b = 2; const c = a + b;",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e06a",
+          "name": {
+            "ru": "const a = 1; const b = a; const c = a - b;",
+            "en": "const a = 1; const b = a; const c = a - b;",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e06b",
+          "name": {
+            "ru": "const a = 1; a = a + 1; const c = a + b;",
+            "en": "const a = 1; a = a + 1; const c = a + b;",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e06c",
+          "name": {
+            "ru": "let a = 1; a = a + 1; const c = a + a;",
+            "en": "let a = 1; a = a + 1; const c = a + a;",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e06d",
+      "name": {
+        "ru": "Выберите корректные варианты",
+        "en": "Select the correct options",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e06e",
+          "name": {
+            "ru": "let a = 1; let a = a + 1; const c = a + a;",
+            "en": "let a = 1; let a = a + 1; const c = a + a;",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e06f",
+          "name": {
+            "ru": "let a = 1; a = a + a; const b = a + a;",
+            "en": "let a = 1; a = a + a; const b = a + a;",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e070",
+          "name": {
+            "ru": "const a = 1; let a = 2; const b = a + a;",
+            "en": "const a = 1; let a = 2; const b = a + a;",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e071",
+          "name": {
+            "ru": "lat a = 1; a = a + 1; const b = a + a;",
+            "en": "lat a = 1; a = a + 1; const b = a + a;",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

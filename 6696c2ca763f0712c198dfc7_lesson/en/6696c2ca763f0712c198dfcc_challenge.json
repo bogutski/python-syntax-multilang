@@ -1,0 +1,5 @@
+{
+  "name": "Calculate half the area of a rectangle",
+  "instruction": "We need to calculate half the area of a rectangular room.\n\nWrite a function `halfArea` that takes 2 parameters `width` and `height` and returns half the area of the rectangle.",
+  "instructions": {}
+}

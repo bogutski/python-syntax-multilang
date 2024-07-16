@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f4ff",
+  "name": {
+    "en": "/*",
+    "ru": "Добавление или замена элемента в массиве с условием"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `modifyArray`, которая принимает исходный массив, позицию для добавления/замены элемента, сам элемент, и строку, указывающую действие ('add' или 'replace').\n\nДля добавления элемента можете использовать любой метод (которые не изменяет исходный массив), а для замены - метод `with()`.\n\nФункция должна возвращать новый массив с учётом указанного действия, не изменяя исходный массив.\n\nЕсли в строке было передано другое значение, функция должна вернуть строку вида: `String is not recognized`\n\n\nПримеры Запуска Функции:\n```javascript\n// Добавление элемента\nconsole.log(modifyArray(['a', 'b', 'd'], 2, 'c', 'add')); // Вывод: ['a', 'b', 'c', 'd']\n\n// Замена элемента\nconsole.log(modifyArray(['a', 'b', 'd'], 2, 'c', 'replace')); // Вывод: ['a', 'b', 'c']\n\n// Добавление элемента в начало\nconsole.log(modifyArray(['b', 'c'], 0, 'a', 'add')); // Вывод: ['a', 'b', 'c']\n\n// Замена элемента в начале\nconsole.log(modifyArray(['x', 'b', 'c'], 0, 'a', 'replace')); // Вывод: ['a', 'b', 'c']\n\n// Строка не распознана\nconsole.log(modifyArray([1, 2, 3], 0, 5, 'delete')); // Вывод: \"String is not recognized\"\n```"
+  },
+  "initialSolution": "function modifyArray(){\n\n}",
+  "completedSolution": "function modifyArray(arr, i, el, toDo) {\n  if(toDo === 'add'){\n    let res = arr.slice()\n    res.splice(i, 0, el)\n    return res\n  } else if(toDo === 'replace') return arr.with(i, el)\n  else return 'String is not recognized';\n}",
+  "openTest": "Array.prototype.with = function(index, value){\n  const newArray = this.slice();\n  newArray.splice(index, 1, value);\n  return newArray;\n}\n\nit('Created function modifyArray', () => {\n  expect(modifyArray).to.be.a('function');\n});\n\nit('Function modifyArray should include method with()', () => {\n  const res = modifyArray.toString()\n  expect(res).to.include('.with(')\n});\n\nit(\"modifyArray([1, 2, 4], 2, 3, 'add') should return [1, 2, 3, 4]\", function() {\n  expect(modifyArray([1, 2, 4], 2, 3, 'add')).to.deep.equal([1, 2, 3, 4]);\n});\n\nit(\"modifyArray(['a', 'b', 'd'], 2, 'c', 'add') should return ['a', 'b', 'c', 'd']\", function() {\n  expect(modifyArray(['a', 'b', 'd'], 2, 'c', 'add')).to.deep.equal(['a', 'b', 'c', 'd']);\n});\n\nit(\"modifyArray(['a', 'b', 'd'], 2, 'c', 'replace') should return ['a', 'b', 'c']\", function() {\n  expect(modifyArray(['a', 'b', 'd'], 2, 'c', 'replace')).to.deep.equal(['a', 'b', 'c']);\n});\n\nit(\"modifyArray(['b', 'c'], 0, 'a', 'add') should return ['a', 'b', 'c']\", function() {\n  expect(modifyArray(['b', 'c'], 0, 'a', 'add')).to.deep.equal(['a', 'b', 'c']);\n});\n\nit(\"modifyArray(['x', 'b', 'c'], 0, 'a', 'replace') should return ['a', 'b', 'c']\", function() {\n  expect(modifyArray(['x', 'b', 'c'], 0, 'a', 'replace')).to.deep.equal(['a', 'b', 'c']);\n});\n\nit(\"modifyArray([1, 2, 3], 1, 4, 'unknown') should return 'String is not recognized'\", function() {\n  expect(modifyArray([1, 2, 3], 1, 4, 'unknown')).to.equal('String is not recognized');\n});\n\nit(\"modifyArray([1, 2, 3], 1, 4, 'add') should not modify the original array\", function() {\n  const originalArray = [1, 2, 3];\n  modifyArray(originalArray, 1, 4, 'add');\n  expect(originalArray).to.deep.equal([1, 2, 3]);\n});\n\nit(\"modifyArray([], 0, 'a', 'add') should handle an empty array correctly\", function() {\n  expect(modifyArray([], 0, 'a', 'add')).to.deep.equal(['a']);\n});\n\nit(\"modifyArray(['a', 'b'], -1, 'c', 'replace') should return ['a', 'c']\", function() {\n  expect(modifyArray(['a', 'b'], -1, 'c', 'replace')).to.deep.equal(['a', 'c']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

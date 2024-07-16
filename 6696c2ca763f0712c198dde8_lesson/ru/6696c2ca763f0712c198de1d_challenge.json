@@ -1,0 +1,6 @@
+{
+  "name": "Бинарный плюс - слияние строк",
+  "instruction": "Задайте переменную `century` и присвойте ей значение строки `'20'`.\n\nЗадайте переменную `years` и присвойте ей значение строки `'22'`.\n\nЗадайте переменную `date` и присвойте ей результат слияния переменных `century` и `years`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst redBalls = '13';\nconst greenBalls = '15';\nconst balls = redBalls + greenBalls;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst century = '20';\nconst years = '22';\nconst date = century + years;\n```"
+}

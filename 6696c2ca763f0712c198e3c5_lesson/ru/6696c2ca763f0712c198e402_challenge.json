@@ -1,0 +1,5 @@
+{
+  "name": "Это две гласные?",
+  "instruction": "В английском языке есть 5 гласных букв: `a`, `e`, `i`, `o`, `u`.\n\nНапишите функцию `isVowel`, которая принимает строку из двух букв нижнего регистра и возвращает `true`, если строка содержит только гласные буквы, и `false` в противном случае.\n\nПримеры запуска функции:\n```javascript\nisVowel('aa'); // true\nisVowel('ae'); // true\nisVowel('ai'); // true\nisVowel('oa'); // true\nisVowel('uu'); // true\nisVowel('ab'); // false\nisVowel('ba'); // false\nisVowel('ac'); // false\nisVowel('ca'); // false\n```\n\nСравнивайте каждый символ строки с каждой гласной буквой. Вам пригодятся операторы сравнения и логические операторы.",
+  "instructions": {}
+}

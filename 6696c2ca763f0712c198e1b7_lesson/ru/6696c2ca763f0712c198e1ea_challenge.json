@@ -1,0 +1,5 @@
+{
+  "name": "Подобрать пароль",
+  "instruction": "Создайте функцию `isCorrectPassword`, которая принимает строку и возвращает `true`, если строка равна `qwert123`, и `false` в противном случае.\n\nДля сравнения строк используйте оператор тройное равно`===` строгое равенство.\n\nПримеры использования сравнения строк:\n```javascript\nconst str = 'pasv';\nconsole.log(str === 'pasv'); // true\nconsole.log(str === 'pasv '); // false\nconsole.log(str === 'pasv1'); // false\n```\n\nПохожая функции:\n```javascript\nfunction isLuckyNumber(num) {\n  if(num === '777') return true;\n  return false;\n}\n```",
+  "instructions": {}
+}

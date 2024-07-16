@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ed94",
+  "name": {
+    "en": "",
+    "ru": "Сохранить повторяющиеся буквы в объект"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `copyDuplicate`, которая принимает строку и возвращает объект с повторяющимися буквами из `str`.\n\nВ объекте ключом является буква, которая повторяется, а его свойство - это количество дубликатов этой буквы,\n повторяющихся в строке.\n\nВсе слова написаны в нижнем регистре.\n\nМежду словами есть лишь один пробел.\n\n\nПример запуска функции:\n```javascript\ncopyDuplicate('hello world'); // { l: 2, o: 1 }\ncopyDuplicate('a leg up'); // {}\ncopyDuplicate('talk the talk'); // { t: 2, a: 1, l: 1, k: 1 }\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function copyDuplicate(str) {\n  let obj = {};\n  let newStr = \"\";\n  for (let i = 0; i < str.length; i++) {\n    if (newStr.indexOf(str[i]) === -1 || str[i] === ' ') {\n      newStr += str[i];\n    } else {\n      if(obj.hasOwnProperty(str[i])){\n        obj[str[i]] += 1;\n      } else obj[str[i]] = 1;\n    }\n  }\n  return obj;\n}",
+  "openTest": "it('Created function copyDuplicate', () => {\n  expect(copyDuplicate).to.be.a('function');\n});\n\nit(\"copyDuplicate('hello world') should return { l: 2, o: 1 }\", () => {\n  expect(copyDuplicate('hello world')).to.eql({ l: 2, o: 1 });\n});\n\nit(\"copyDuplicate('a leg up') should return {}\", () => {\n  expect(copyDuplicate('a leg up')).to.eql({});\n});\n\nit(\"copyDuplicate('what am i, chopped liver?') should return { a: 1, h: 1, p: 1, i: 1, e: 1 }\", () => {\n  expect(copyDuplicate('what am i, chopped liver?')).to.eql({ a: 1, h: 1, p: 1, i: 1, e: 1 });\n});\n\nit(\"copyDuplicate('a busy bee') should return { b: 1, e: 1 }\", () => {\n  expect(copyDuplicate('a busy bee')).to.eql({ b: 1, e: 1 });\n});\n\nit(\"copyDuplicate('talk the talk') should return { t: 2, a: 1, l: 1, k: 1 }\", () => {\n  expect(copyDuplicate('talk the talk')).to.eql({ t: 2, a: 1, l: 1, k: 1 });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

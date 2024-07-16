@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f307",
+  "name": {
+    "en": "/*",
+    "ru": "Добавить элементы в конец массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `appendElements` принимает массив и список элементов. Она должна добавить эти элементы в конец массива и вернуть новую длину массива.\n\nКоличество элементов на добавление будет разный.\n\nПримеры запуска функции:\n```javascript\nappendElements([], 1, 2)  // возвращает 2, массив теперь [1, 2]\nappendElements([1, 2, 3]) // возвращает 1, массив теперь [1, 2, 3]\nappendElements([1, 2, 3], 4, 5) // возвращает 5, массив теперь [1, 2, 3, 4, 5]\nappendElements(['a', 'b'], 'c', 'd', 'e') // возвращает 5, массив теперь ['a', 'b', 'c', 'd', 'e']\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function appendElements(arr, ...elements) {\n  return arr.push(...elements);\n}",
+  "openTest": "it('Created function appendElements', () => {\n  expect(appendElements).to.be.a('function');\n});\n\nit('appendElements([1, 2, 3], 4, 5) should return 5', () => {\n  expect(appendElements([1, 2, 3], 4, 5)).to.equal(5);\n});\n\nit('appendElements([\"a\", \"b\"], \"c\", \"d\", \"e\") should return 5', () => {\n  expect(appendElements(['a', 'b'], 'c', 'd', 'e')).to.equal(5);\n});\n\nit('appendElements([], \"first\", \"second\") should return 2', () => {\n  expect(appendElements([], 'first', 'second')).to.equal(2);\n});\n\nit('appendElements([0], 1) should return 2', () => {\n  expect(appendElements([0], 1)).to.equal(2);\n});\n\nit('appendElements([\"x\", \"y\"], \"z\") should return 3', () => {\n  expect(appendElements(['x', 'y'], 'z')).to.equal(3);\n});\nit('appendElements with an empty array and no elements to add should return 0', () => {\n  expect(appendElements([])).to.equal(0);\n});\n\nit('appendElements with null values should correctly add them to the array', () => {\n  expect(appendElements([1, 2], null, null)).to.equal(4);\n});\n\nit('appendElements should correctly handle adding arrays as elements', () => {\n  expect(appendElements([1], [2, 3])).to.equal(2);\n});\n\nit('appendElements should correctly handle adding an object as an element', () => {\n  const arrLength = appendElements([1, 2], {a: 3});\n  expect(arrLength).to.equal(3);\n  expect(typeof arrLength).to.equal('number');\n});\n\nit('appendElements should maintain the order of added elements', () => {\n  const originalArray = ['start'];\n  const newArrayLength = appendElements(originalArray, 'middle', 'end');\n  expect(newArrayLength).to.equal(3);\n  expect(originalArray[1]).to.equal('middle');\n  expect(originalArray[2]).to.equal('end');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

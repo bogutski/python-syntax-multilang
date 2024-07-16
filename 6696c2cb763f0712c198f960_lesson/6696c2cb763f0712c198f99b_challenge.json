@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f99b",
+  "name": {
+    "en": "/*",
+    "ru": "Сжатие строки"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `compress`, которая принимает строку и возвращает её сжатую версию, где каждый повторяющийся символ заменяется на сам символ и количество его повторений.\n\nЕсли символ встречается один раз, он остается без изменений.\n\n\nПримеры запуска функции:\n```javascript\nconsole.log(compress('aab')) // \"a2b\"\nconsole.log(compress('kkkkj')) // \"k4j\"\nconsole.log(compress('wwwaabbbb')) // \"w3a2b4\"\nconsole.log(compress('mmmnnnnossssyqqr')) // \"m3n4os4yq2r\"\n```"
+  },
+  "initialSolution": "function compress(){\n\n}",
+  "completedSolution": "function compress(str) {\n  let obj = {}\n  let result = ''\n\n  for(let char of str){\n    if(obj.hasOwnProperty(char)) obj[char]++\n    else obj[char] = 1\n  }\n\n  for(let key in obj){\n    if(obj[key] > 1) result += key + obj[key]\n    else result += key\n  }\n\n  return result;\n}",
+  "openTest": "it('Created function compress', () => {\n  expect(compress).to.be.a('function');\n});\n\nit('compress(\"aab\") should return \"a2b\"', function() {\n  expect(compress(\"aab\")).to.equal(\"a2b\");\n});\n\nit('compress(\"kkkkj\") should return \"k4j\"', function() {\n  expect(compress(\"kkkkj\")).to.equal(\"k4j\");\n});\n\nit('compress(\"wwwaabbbb\") should return \"w3a2b4\"', function() {\n  expect(compress(\"wwwaabbbb\")).to.equal(\"w3a2b4\");\n});\n\nit('compress(\"mmmnnnnossssyqqr\") should return \"m3n4os4yq2r\"', function() {\n  expect(compress(\"mmmnnnnossssyqqr\")).to.equal(\"m3n4os4yq2r\");\n});\n\nit('compress(\"a\") should return \"a\"', function() {\n  expect(compress(\"a\")).to.equal(\"a\");\n});\n\nit('compress(\"gggguiiimmmeeeeppp\") should return \"g4ui3m3e4p3\"', function() {\n  expect(compress(\"gggguiiimmmeeeeppp\")).to.equal(\"g4ui3m3e4p3\");\n});\n\nit('compress(\"yttrrreeeewwwwwqqqqqqm\") should return \"yt2r3e4w5q6m\"', function() {\n  expect(compress(\"yttrrreeeewwwwwqqqqqqm\")).to.equal(\"yt2r3e4w5q6m\");\n});\n\nit('compress(\"aaaaa\") should return \"a5\"', function() {\n  expect(compress(\"aaaaa\")).to.equal(\"a5\");\n});\n\nit('compress(\"aaabbbcccddd\") should return \"a3b3c3d3\"', function() {\n  expect(compress(\"aaabbbcccddd\")).to.equal(\"a3b3c3d3\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

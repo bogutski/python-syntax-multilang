@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eb2f",
+  "name": {
+    "en": "Shopping list",
+    "ru": "Список покупок"
+  },
+  "instruction": {
+    "en": "You need to write a function `shoppingList` that takes an array of `items`.\n\nEach element of the array is a string with the name of the product you want to buy.\n\nThe function should return a formatted string with a list of products separated by `\\n` line break characters.\n\nThe string must start with the phrase - `Shopping list:`.\n\nEach item in the list must be preceded by a line break character `\\n` and a hyphen `-`.\n\nThe line \"Shopping list:\\n-milk\\n-eggs\\n-bread\" is an example of a formatted string.\n\nIt will be output to the console in the following form:\n\n\"Shopping list:\n-milk\n-eggs\n-bread\"\n\nExamples of function calls:\n\n```javascript\nshoppingList(['milk', 'eggs', 'bread']); // \"Shopping list:\\n-milk\\n-eggs\\n-bread\"\nshoppingList(['apples']); // \"Shopping list:\\n-apples\"\nshoppingList([]); // \"Shopping list:\"\n```",
+    "ru": "Нужно написать функцию `shoppingList`, которая принимает массив `items`.\n\nКаждый элемент массива - это строка с названием продукта, который нужно купить.\n\nФункция должна возвращать отформатированную строку со списком продуктов, разделенных символами переноса строки `\\n`.\n\nСтрока должна начинаться с фразы - `Shopping list:`.\n\nПеред каждым элементом списка нужно поставить символ переноса строки `\\n` и дефис `-`.\n\nСтрока \"Shopping list:\\n-milk\\n-eggs\\n-bread\" - это пример отформатированной строки.\n\nОна будет выведена на консоль в следующем виде:\n\n\"Shopping list:\n-milk\n-eggs\n-bread\"\n\nПримеры вызова функции:\n\n```javascript\nshoppingList(['milk', 'eggs', 'bread']); // \"Shopping list:\\n-milk\\n-eggs\\n-bread\"\nshoppingList(['apples']); // \"Shopping list:\\n-apples\"\nshoppingList([]); // \"Shopping list:\"\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function shoppingList(items) {\n  let str = \"Shopping list:\";\n  for (let i = 0; i < items.length; i++) {\n    str += '\\n-'+items[i];\n  }\n  return str;\n}",
+  "openTest": "it('Created function shoppingList', () => {\n  expect(shoppingList).to.be.a('function');\n});\n\nit('shoppingList([\"milk\", \"eggs\", \"bread\"]) should return \"Shopping list:\\\\n-milk\\\\n-eggs\\\\n-bread\"', () => {\n  expect(shoppingList([\"milk\", \"eggs\", \"bread\"])).to.be.equal(\"Shopping list:\\n-milk\\n-eggs\\n-bread\");\n});\n\nit('shoppingList([\"apples\"]) should return \"Shopping list:\\\\n-apples\"', () => {\n  expect(shoppingList([\"apples\"])).to.be.equal(\"Shopping list:\\n-apples\");\n});\n\nit('shoppingList([]) should return \"Shopping list:\"', () => {\n  expect(shoppingList([])).to.be.equal(\"Shopping list:\");\n});\n\nit('shoppingList([\"sour cream\", \"cheese\", \"bread\", \"bananas\", \"orange juice\", \"cat food\"]) should return \"Shopping list:\\\\n-sour cream\\\\n-cheese\\\\n-bread\\\\n-bananas\\\\n-orange juice\\\\n-cat food\"', () => {\n  expect(shoppingList([\"sour cream\", \"cheese\", \"bread\", \"bananas\", \"orange juice\", \"cat food\"])).to.be.equal(\"Shopping list:\\n-sour cream\\n-cheese\\n-bread\\n-bananas\\n-orange juice\\n-cat food\");\n});\n\nit('shoppingList([\"tomatoes\", \"eggs\", \"corn\", \"celery\"]) should return \"Shopping list:\\\\n-tomatoes\\\\n-eggs\\\\n-corn\\\\n-celery\"', () => {\n  expect(shoppingList([\"tomatoes\", \"eggs\", \"corn\", \"celery\"])).to.be.equal(\"Shopping list:\\n-tomatoes\\n-eggs\\n-corn\\n-celery\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

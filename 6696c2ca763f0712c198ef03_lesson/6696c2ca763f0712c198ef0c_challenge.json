@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ef0c",
+  "name": {
+    "en": "",
+    "ru": "Перевернуть последнее слово"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `reverseOnlyLastWord`, которая принимает строку с одним или несколькими словами.\n\nФункция должна вернуть строку, в которой только последнее слово перевернуто.\n\nЕсли в строке только одно слово, это можно определить по наличию пробелов, то функция должна вернуть одно перевернутое слово.\n\n\nПримеры запуска функции:\n```javascript\nreverseOnlyLastWord('');   // ''\nreverseOnlyLastWord('123');   // '321'\nreverseOnlyLastWord('olleH');    // 'Hello'\nreverseOnlyLastWord('Hi there 12345');  // 'Hi there 54321'\nreverseOnlyLastWord('Hello, my initials are .R.A'); // 'Hello, my initials are A.R.'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseOnlyLastWord(str){\n  let result = '';\n  let lastWord = '';\n  let lastSpace = str.lastIndexOf(' ');\n  for(let i = 0; i < str.length; i++){\n    if(i > lastSpace) lastWord = str[i] + lastWord;\n    else result += str[i];\n  }\n  return result +lastWord;\n}",
+  "openTest": "it('Created function reverseOnlyLastWord', () => {\n  expect(reverseOnlyLastWord).to.be.a('function');\n});\n\nit(\"reverseOnlyLastWord('Hello my name is nhoJ') returns 'Hello my name is John'\", () => {\n  expect(reverseOnlyLastWord('Hello my name is nhoJ')).to.equal('Hello my name is John');\n});\n\nit(\"reverseOnlyLastWord('Hello dlrow') returns 'Hello world'\", () => {\n  expect(reverseOnlyLastWord('Hello dlrow')).to.equal('Hello world');\n});\n\nit(\"reverseOnlyLastWord('Hi there 12345') returns 'Hi there 54321'\", () => {\n  expect(reverseOnlyLastWord('Hi there 12345')).to.equal('Hi there 54321');\n});\n\nit(\"reverseOnlyLastWord('olleH') returns 'Hello'\", () => {\n  expect(reverseOnlyLastWord('olleH')).to.equal('Hello');\n});\n\nit(\"reverseOnlyLastWord('0987654321') returns '1234567890'\", () => {\n  expect(reverseOnlyLastWord('0987654321')).to.equal('1234567890');\n});\n\nit(\"reverseOnlyLastWord('') returns ''\", () => {\n  expect(reverseOnlyLastWord('')).to.equal('');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

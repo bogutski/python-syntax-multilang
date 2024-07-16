@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e2d7",
+  "name": {
+    "en": "File size in kilobytes",
+    "ru": "Размер файла в килобайтах"
+  },
+  "instruction": {
+    "en": "A file size is given in bytes. Find the number of full kilobytes in that file size.\n\nWrite a function named `fileSizeKb` that takes one number of the file size in bytes.\n\nThe function should return the number of full kilobytes in that size.\n\n1Kb = 1024 bytes\n\nExamples of running the function:\n```javascript\nfileSizeKb(1000) // 0\nfileSizeKb(1024) // 1\nfileSizeKb(1025) // 1\nfileSizeKb(2048) // 2\nfileSizeKb(2049) // 2\n```",
+    "ru": "Дан размер файла в байтах. Найдите количество полных килобайтов в этом размере файла.\n\nНапишите функцию с именем `fileSizeKb`, которая принимает одно число размер файла в байтах.\n\nФункция должна возвращать количество полных килобайтов в этом размере.\n\n1Kb = 1024 bytes\n\nПримеры запуска функции:\n```javascript\nfileSizeKb(1000) // 0\nfileSizeKb(1024) // 1\nfileSizeKb(1025) // 1\nfileSizeKb(2048) // 2\nfileSizeKb(2049) // 2\n```"
+  },
+  "initialSolution": "function sum(num1, num2){\n\n}",
+  "completedSolution": "function fileSizeKb(bytes) {\n  return Math.floor(bytes / 1024);\n}",
+  "openTest": "it('Created function fileSizeKb', () => {\n  expect(fileSizeKb).to.be.a('function');\n});\n\nit('fileSizeKb(1000) should return 0', () => {\n  expect(fileSizeKb(1000)).to.equal(0);\n});\n\nit('fileSizeKb(1024) should return 1', () => {\n  expect(fileSizeKb(1024)).to.equal(1);\n});\n\nit('fileSizeKb(1025) should return 1', () => {\n  expect(fileSizeKb(1025)).to.equal(1);\n});\n\nit('fileSizeKb(2048) should return 2', () => {\n  expect(fileSizeKb(2048)).to.equal(2);\n});\n\nit('fileSizeKb(2049) should return 2', () => {\n  expect(fileSizeKb(2049)).to.equal(2);\n});\n\nit('fileSizeKb(4096) should return 4', () => {\n  expect(fileSizeKb(4096)).to.equal(4);\n});\n\nit('fileSizeKb(4097) should return 4', () => {\n  expect(fileSizeKb(4097)).to.equal(4);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

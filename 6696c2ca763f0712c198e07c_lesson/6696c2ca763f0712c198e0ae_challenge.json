@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e0ae",
+  "name": {
+    "en": "How long will it take to fill the pool?",
+    "ru": "За сколько времени наполнится бассейн?"
+  },
+  "instruction": {
+    "en": "A pump is used to pump water into the pool.\n\nWrite a function `poolPumpTime` that takes as parameters:\n`pumpSpeed` - the pump pumping speed in gallons per hour\n`poolVolume` - pool volume in cubic feet\n\nThe function should return the time, in seconds, in which the pool will be completely full.\n\nThere are `7.48052` gallons in one cubic foot.\n\nJob script:\n* Convert pool volume to gallons\n* Divide the pool volume in gallons by the speed of the pump\n* Translate the result into seconds\n\n\nExamples of functions:\n```javascript\npoolPumpTime(50, 2500); // 1346493.6\npoolPumpTime(100, 1000); // 269298.72\npoolPumpTime(500, 10000); // 538597.44\n```",
+    "ru": "Для перекачки воды в бассейн используется насос.\n\nНапишите функцию `poolPumpTime`, которая принимает в качестве параметров:\n`pumpSpeed` – скорость перекачки насоса в галонах в час\n`poolVolume` – объем бассейна в кубических футах\n\nФункция должна возвращать время в секундах, за которое бассейн будет полностью заполнен.\n\nВ одном кубическом футе `7.48052` галлонов.\n\nСкрипт выполнения задания:\n* Объем бассейна перевести в галлоны\n* Объем бассейна в галлонах разделить на скорость насоса\n* Полученный результат перевести в секунды\n\n\nПримеры запуска функции:\n```javascript\npoolPumpTime(50, 2500);   // 1346493.6\npoolPumpTime(100, 1000);  // 269298.72\npoolPumpTime(500, 10000); // 538597.44\n```"
+  },
+  "initialSolution": "fun pool",
+  "completedSolution": "function poolPumpTime(pumpSpeed, poolVolume) {\n  const poolGallons = poolVolume * 7.48052;\n  return poolGallons / pumpSpeed * 3600;\n}",
+  "openTest": "it('Created function poolPumpTime', () => {\n  expect(poolPumpTime).to.be.a('function');\n});\n\nit('poolPumpTime(100, 1000) should return 269298.72', () => {\n  expect(poolPumpTime(100, 1000)).to.be.equal(269298.72);\n});\n\nit('poolPumpTime(200, 1000) should return 134649.36', () => {\n  expect(poolPumpTime(200, 1000)).to.be.equal(134649.36);\n});\n\nit('poolPumpTime(100, 2000) should return 538597.44', () => {\n  expect(poolPumpTime(100, 2000)).to.be.equal(538597.44);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Перевернуть строку и удалить пробелы",
+  "instruction": "Напишите функцию `reverseWithoutSpaces`, которая принимает строку и возвращает ее в обратном порядке, но без пробелов.\n\nЕсли строка пустая, то функция должна вернуть пустую строку.\n\nПримеры запуска функции:\n```js\nreverseWithoutSpaces('Hello World!'); // '!dlroWolleH'\nreverseWithoutSpaces(' abc '); // 'cba'\nreverseWithoutSpaces('1 2 3'); // '321'\n```",
+  "instructions": {}
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f404",
+  "name": {
+    "en": "/*",
+    "ru": "Удаление и возвращение из массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `removeAndReturn`, которая принимает массив, индекс начала удаления, и количество элементов для удаления.\n\nФункция должна удалить указанное количество элементов из массива, начиная с заданного индекса, и вернуть массив удаленных элементов.\n\nЕсли индекс начала удаления выходит за пределы массива, функция должна вернуть пустой массив.\n\nЕсли количество элементов для удаления превышает размер массива от начального индекса до конца, удаляются все элементы до конца массива.\n\n\nПример запуска функции:\n```javascript\nremoveAndReturn([1, 2, 3], 3, 1); // Должен вернуть [], исходный массив остается неизменным [1, 2, 3]\nremoveAndReturn([1, 2, 3, 4, 5], 1, 2);  // Должен вернуть [2, 3], исходный массив станет [1, 4, 5]\nremoveAndReturn([1, 2, 3, 4, 5], 2, 10); // Должен вернуть [3, 4, 5], исходный массив станет [1, 2]\nremoveAndReturn([true, false, true], 0, 1);  // Должен вернуть [true], исходный массив станет [false, true]\nremoveAndReturn(['a', 'b', 'c', 'd'], 2, 2); // Должен вернуть ['c', 'd'], исходный массив станет ['a', 'b']\n```"
+  },
+  "initialSolution": "function removeAndReturn(){\n\n}",
+  "completedSolution": "function removeAndReturn(arr, start, deleteCount) {\n  return arr.splice(start, deleteCount);\n}",
+  "openTest": "it('Created function removeAndReturn', () => {\n  expect(removeAndReturn).to.be.a('function');\n});\n\nit('Function removeAndReturn should include methods splice()', () => {\n  const res = removeAndReturn.toString()\n  expect(res).to.include('.splice(')\n});\n\nit(\"removeAndReturn([1, 2, 3, 4, 5], 1, 2) should return [2, 3]\", () => {\n  expect(removeAndReturn([1, 2, 3, 4, 5], 1, 2)).to.deep.equal([2, 3]);\n});\n\nit(\"removeAndReturn(['a', 'b', 'c', 'd'], 2, 2) should return ['c', 'd']\", () => {\n  expect(removeAndReturn(['a', 'b', 'c', 'd'], 2, 2)).to.deep.equal(['c', 'd']);\n});\n\nit(\"removeAndReturn(['a', 'b', 'c'], 2, 0) should return []\", () => {\n  expect(removeAndReturn(['a', 'b', 'c'], 2, 0)).to.deep.equal([]);\n});\n\nit(\"removeAndReturn([true, false, true], 0, 1) should return [true]\", () => {\n  expect(removeAndReturn([true, false, true], 0, 1)).to.deep.equal([true]);\n});\n\nit(\"removeAndReturn([1, 2, 3], 3, 1) should return an empty array when start index is beyond array length\", () => {\n  expect(removeAndReturn([1, 2, 3], 3, 1)).to.deep.equal([]);\n});\n\nit(\"removeAndReturn([1, 2, 3, 4, 5], 2, 10) should return [3, 4, 5] when deleteCount exceeds elements count from start\", () => {\n  expect(removeAndReturn([1, 2, 3, 4, 5], 2, 10)).to.deep.equal([3, 4, 5]);\n});\n\nit(\"removeAndReturn([], 0, 1) should return an empty array if the input array is initially empty\", () => {\n  expect(removeAndReturn([], 0, 1)).to.deep.equal([]);\n});\n\nit(\"should verify that the original array is modified correctly after elements are removed\", () => {\n  let originalArray = [1, 2, 3, 4, 5];\n  removeAndReturn(originalArray, 1, 3);\n  expect(originalArray).to.deep.equal([1, 5]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

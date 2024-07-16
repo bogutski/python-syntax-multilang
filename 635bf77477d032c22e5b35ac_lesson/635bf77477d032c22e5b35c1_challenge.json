@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35c1",
+  "name": {
+    "ru": "Первая переменная. Число",
+    "en": "The first variable. The number",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Создайте переменную с именем `price`, используйте ключевое слово` let`, присвойте в качестве значения число `123`",
+    "en": "Create a variable named `price`, use keyword `let`, assign number `123` as value",
+    "es": ""
+  },
+  "initialSolution": "let price = ",
+  "completedSolution": "let price = 123;",
+  "openTest": "it('is variable exists', () => {\n  expect(price).not.to.be.undefined;\n});\n\nit('should have a value of 123', () => {\n  expect(price).eq(123);\n});",
+  "hiddenTest": "  ",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit"
+}

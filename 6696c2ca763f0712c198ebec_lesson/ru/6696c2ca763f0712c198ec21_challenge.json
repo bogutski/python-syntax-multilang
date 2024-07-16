@@ -1,0 +1,5 @@
+{
+  "name": "Первый и последний элемент",
+  "instruction": "Напишите функцию `firstAndLastElement`, которая принимает строку.\n\nФункция должна подсчитать количество элементов равных первому и последнему элементу строки, включая их самих.\n\nВерните строку в формате `Count of first element: <countOfFirst>, count of last element: <countOfLast>`.\n\nЕсли строка пустая, верните: `String is empty`.\n\n\nПримеры запуска функции:\n```javascript\nfirstAndLastElement('abracadabra'); // \"Count of first element: 5, count of last element: 5\"\nfirstAndLastElement('aaaaaab');     // \"Count of first element: 6, count of last element: 1\"\nfirstAndLastElement('');            // \"String is empty\"\n```",
+  "instructions": {}
+}

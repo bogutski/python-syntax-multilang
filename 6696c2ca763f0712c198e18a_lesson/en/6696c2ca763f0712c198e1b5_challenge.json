@@ -1,0 +1,4 @@
+{
+  "name": "Categorize products by price",
+  "instruction": "Write a function `productCategory` that takes the product price and returns the product category.\n\nIf the product price is less than 100, then return `cheap`, if from 100 to 200, then `normal`, if from 200 to 300, then `expensive`, if from 300, then `luxury`."
+}

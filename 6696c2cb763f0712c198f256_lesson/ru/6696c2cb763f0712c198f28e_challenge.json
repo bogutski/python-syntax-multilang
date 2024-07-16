@@ -1,0 +1,5 @@
+{
+  "name": "Проверка типов в массиве массивов",
+  "instruction": "Напишите функцию `areAllTypesTheSame`, которая принимает массив массивов.\n\nФункция должна проверить, что все элементы всех под-массивов имеют одинаковый тип данных.\n\nЕсли один из подмассивов пустой, то функция должна вернуть строку `One or more sub-arrays are empty`.\n\nЕсли внешний массив пустой, то функция должна вернуть строку `Array is empty`.\n\n\nПримеры запуска функции:\n```javascript\nareAllTypesTheSame([ [1, 2], [3, 4], [5, 6] ]);              // true\nareAllTypesTheSame([ [1, 2], [3, 4], [5, '6'] ]);            // false\nareAllTypesTheSame([ ['abc'], ['test'], ['a', undefined] ]); // false\nareAllTypesTheSame([ [], ['test'], ['a', 'b'], ['str'] ]);   // 'One or more sub-arrays are empty'\nareAllTypesTheSame([ ]);                                     // 'Array is empty'\n```",
+  "instructions": {}
+}

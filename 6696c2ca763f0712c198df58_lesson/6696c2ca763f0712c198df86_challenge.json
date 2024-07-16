@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df86",
+  "name": {
+    "en": "The function returns a number multiplied by 2",
+    "ru": "Функция возвращает число умноженное на 2"
+  },
+  "instruction": {
+    "en": "Write a function `double` that takes a number and returns its doubled value.\n\nExample:\n```js.\ndouble(2) // 4\ndouble(3) // 6\n```",
+    "ru": "Напиши функцию `double`, которая принимает число и возвращает его удвоенное значение.\n\nПример:\n```js\ndouble(2) // 4\ndouble(3) // 6\n```"
+  },
+  "initialSolution": "solution here",
+  "completedSolution": "function double(num) {\n  return num * 2;\n}",
+  "openTest": "it('Created function double', () => {\n  expect(double).to.be.a('function');\n});\n\nit('Function returns correct result for 2', () => {\n  expect(double(2)).eq(4);\n});\n\nit('Function returns correct result for 3', () => {\n  expect(double(3)).eq(6);\n});\n\nit('Function returns correct result for 4', () => {\n  expect(double(4)).eq(8);\n});\n\nit('Function returns correct result for 5', () => {\n  expect(double(5)).eq(10);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

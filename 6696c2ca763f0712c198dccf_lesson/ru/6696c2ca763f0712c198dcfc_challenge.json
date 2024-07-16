@@ -1,0 +1,6 @@
+{
+  "name": "Верно ли, что первый символ строки равен последнему символу?",
+  "instruction": "Создайте переменную с именем `str` и присвойте ей значение произвольной непустой строки.\nСоздайте переменную `firstSymbol` и присвойте ей значение первого символа строки.\nСоздайте переменную `lastSymbol` и присвойте ей значение последнего символа строки.\n\nСоздайте переменную с именем `areTheSame` и присвойте ей результат сравнения первого символа строки с последним,\nт.е. переменная `areTheSame` будет иметь значение `true`, если первый символ равен последнему, и `false` в противном случае.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst name = 'Andrew';\nconst first = name[0];\nconst last = name[name.length - 1];\nconst comparison = first === last;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst str = 'abracadabra';\nconst firstSymbol = str[0];\nconst lastSymbol = str[str.length - 1];\nconst areTheSame = firstSymbol === lastSymbol;\n```"
+}

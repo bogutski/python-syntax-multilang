@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec65",
+  "name": {
+    "en": "Return an array of object properties, in the format [key, value]",
+    "ru": "Вернуть массив свойств объекта, в формате [key, value]"
+  },
+  "instruction": {
+    "en": "The function `objectEntries` takes one parameter - the string `str`.\n\nThe string can be of any length and can contain any characters.\n\nBefore creating the for loop, it is necessary to create an object.\n\nThe object will be populated with properties consisting of keys and values.\n\nKeys are the letters from the string, and values are the number of occurrences of the letter in the string.\n\nThe function returns an array consisting of the object's properties in the format [key, value].\n\n* `Key` is the letter that appears in the string `str`.\n\n* `Value` is the number of times that letter appears in the string `str`.\n\nThe search is case-insensitive.\n\nTo solve the problem, use the `Object.entries()` method.\n\nFix the errors in the code to make the function work correctly.\n\nExample function calls:\n```javascript\nobjectEntries('minimumMAXIMUM'); // [['m', 6], ['i', 3], ['n', 1], ['u', 2], ['a', 1], ['x', 1]]\nobjectEntries('Reactor'); // [['r', 2], ['e', 1], ['a', 1], ['c', 1], ['t', 1], ['o', 1]]\nobjectEntries('hOroscOpe'); // [['h', 1], ['o', 3], ['r', 1], ['s', 1], ['c', 1], ['p', 1], ['e', 1]]\nobjectEntries(''); // []\n```",
+    "ru": "Функция `objectEntries` принимает один параметр - строку `str`.\n\nСтрока произвольной длины, может содержать любые символы.\n\nПеред созданием цикла for необходимо создать объект.\n\nОбъект будет наполняться свойствами, состоящими из ключей и значений.\n\nКлючи - это буквы из строки, а значения - это количество вхождений буквы в строку.\n\nФункция возвращает массив, состоящий из свойств объекта, в формате [key, value].\n\n* `Key` - это буква, которая встречается в строке `str`.\n\n* `Value` - это количество повторений этой буквы в строке `str`.\n\nПоиск не чувствителен к регистру.\n\nДля решения задачи используйте метод `Object.entries()`.\n\nИсправьте ошибки в коде, чтобы функция работала правильно.\n\nПример запуска функции:\n```javascript\nobjectEntries('minimumMAXIMUM'); // [['m', 6], ['i', 3], ['n', 1], ['u', 2], ['a', 1], ['x', 1]]\nobjectEntries('Reactor'); // [['r', 2], ['e', 1], ['a', 1], ['c', 1], ['t', 1], ['o', 1]]\nobjectEntries('hOroscOpe'); // [['h', 1], ['o', 3], ['r', 1], ['s', 1], ['c', 1], ['p', 1], ['e', 1]]\nobjectEntries(''); // []\n```"
+  },
+  "initialSolution": "function objectEntries(str) {\n  str === str.toLowerCase;\n  const obj = {};\n  for (let i = 0; i < str.length -1; i--) {\n    if (obj[str[i]]) obj[str[i]]++\n    else obj[str[i]] = 1;\n  }\n  return Object.Entries(obj);\n}",
+  "completedSolution": "function objectEntries(str) {\n  str = str.toLowerCase();\n  const obj = {};\n  for (let i = 0; i < str.length; i++) {\n    if (obj[str[i]]) obj[str[i]]++\n    else obj[str[i]] = 1;\n  }\n  return Object.entries(obj);\n}",
+  "openTest": "it('Created function objectEntries', () => {\n  expect(objectEntries).to.be.a('function');\n});\n\nit(\"objectEntries('minimumMAXIMUM') should return [['m', 6], ['i', 3], ['n', 1], ['u', 2], ['a', 1], ['x', 1]]\", () => {\n  expect(objectEntries('minimumMAXIMUM')).to.deep.equal([['m', 6], ['i', 3], ['n', 1], ['u', 2], ['a', 1], ['x', 1]]);\n});\n\nit(\"objectEntries('Chocolate') should return [['c', 2], ['h', 1], ['o', 2], ['l', 1], ['a', 1], ['t', 1], ['e', 1]]\", () => {\n  expect(objectEntries('Chocolate')).to.deep.equal([['c', 2], ['h', 1], ['o', 2], ['l', 1], ['a', 1], ['t', 1], ['e', 1]]);\n});\n\nit(\"objectEntries('Reactor') should return [['r', 2], ['e', 1], ['a', 1], ['c', 1], ['t', 1], ['o', 1]]\", () => {\n  expect(objectEntries('Reactor')).to.deep.equal([['r', 2], ['e', 1], ['a', 1], ['c', 1], ['t', 1], ['o', 1]]);\n});\n\nit(\"objectEntries('hOroscOpe') should return [['h', 1], ['o', 3], ['r', 1], ['s', 1], ['c', 1], ['p', 1], ['e', 1]]\", () => {\n  expect(objectEntries('hOroscOpe')).to.deep.equal([['h', 1], ['o', 3], ['r', 1], ['s', 1], ['c', 1], ['p', 1], ['e', 1]]);\n});\n\nit(\"objectEntries('wheel') should return [['w', 1], ['h', 1], ['e', 2], ['l', 1]]\", () => {\n  expect(objectEntries('wheel')).to.deep.equal([['w', 1], ['h', 1], ['e', 2], ['l', 1]]);\n});\n\nit(\"objectEntries('cunning') should return [['c', 1], ['u', 1], ['n', 3], ['i', 1], ['g', 1]]\", () => {\n  expect(objectEntries('cunning')).to.deep.equal([['c', 1], ['u', 1], ['n', 3], ['i', 1], ['g', 1]]);\n});\n\nit(\"objectEntries('') should return []\", () => {\n  expect(objectEntries('')).to.deep.equal([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

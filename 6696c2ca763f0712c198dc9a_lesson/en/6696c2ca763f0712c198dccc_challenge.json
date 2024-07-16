@@ -1,0 +1,6 @@
+{
+  "name": "Output the expression 121 ** 0.5 to the console",
+  "instruction": "Only one line. Observe spaces and punctuation marks. A semicolon at the end.\n```javascript\nconsole.log(121 ** 0.5);\n```\n\nExtract the square root of a number.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log(121 ** 0.5);\n```"
+}

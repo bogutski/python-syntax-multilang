@@ -1,0 +1,5 @@
+{
+  "name": "Функция заполняет объект свойствами",
+  "instruction": "Напишите функцию `roomProperties`, которая принимает три параметра: `width`, `height`, `length`.\n\nФункция должна возвращать объект со свойствами `width`, `height` и `length`, которые будут равны соответствующим аргументам.\n\nПримеры запуска функции:\n```javascript\nroomProperties(10, 20, 30); // { width: 10, height: 20, length: 30 }\nroomProperties(5, 10, 15); // { width: 5, height: 10, length: 15 }\n```\n\nПохожая функция:\n```javascript\nfunction carProperties(model, year, color) {\n  return {\n    model,\n    year,\n    color,\n  };\n}",
+  "instructions": {}
+}

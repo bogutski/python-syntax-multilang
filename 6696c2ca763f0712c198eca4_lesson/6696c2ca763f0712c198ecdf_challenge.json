@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ecdf",
+  "name": {
+    "en": "Number of lowercase and uppercase letters, not including other characters",
+    "ru": "Количество строчных и заглавных букв, не считая остальных символов"
+  },
+  "instruction": {
+    "en": "Write a function `numOfLowerAndUpperCase` that takes a string and returns an array.\n\nThe array must contain two elements, where the first element is the number of lowercase letters and the second is the number of uppercase letters.\n\nThe string can contain any characters.\n\nIf there are no lowercase or uppercase letters in the string, the array must contain 0 in the corresponding place.\n\n\nExamples of running a function:\n```javascript.\nnumOfLowerAndUpperCase('aBc De Fg!H') // [4, 4]\nnumOfLowerAndUpperCase('J@a1#v4%a ') // [3, 1]\nnumOfLowerAndUpperCase('apple') // [5, 0]\nnumOfLowerAndUpperCase('PASV') // [0, 4]\nnumOfLowerAndUpperCase('') // [0, 0]\n```",
+    "ru": "Напишите функцию `numOfLowerAndUpperCase`, которая принимает строку и возвращает массив.\n\nМассив должен содержать два элемента, где первый элемент - количество строчных букв, а второй - количество прописных букв.\n\nВ строке могут быть любые символы.\n\nЕсли в строке нет строчных или прописных букв, то в массиве должен быть 0 на соответствующем месте.\n\n\nПримеры запуска функции:\n```javascript\nnumOfLowerAndUpperCase('aBc De Fg!H') // [4, 4]\nnumOfLowerAndUpperCase(' J@a1#v4%a ') // [3, 1]\nnumOfLowerAndUpperCase('apple')       // [5, 0]\nnumOfLowerAndUpperCase('PASV')        // [0, 4]\nnumOfLowerAndUpperCase('')            // [0, 0]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function numOfLowerAndUpperCase(str){\n  let lowerCase = 0;\n  let upperCase = 0;\n  for (let i = 0; i < str.length; i++){\n    if (str[i] === str[i].toLowerCase() && str[i] === str[i].toUpperCase()) continue;\n    else {\n      if (str[i] === str[i].toLowerCase()) lowerCase++;\n      if (str[i] === str[i].toUpperCase()) upperCase++;\n    }\n  }\n  return [lowerCase, upperCase];\n}",
+  "openTest": "it('Created function numOfLowerAndUpperCase', () => {\n  expect(numOfLowerAndUpperCase).to.be.a('function');\n});\n\nit(\"numOfLowerAndUpperCase('aBc De Fg!H') returns [4, 4]\", () => {\n  expect(numOfLowerAndUpperCase('aBc De Fg!H')).to.eql([4, 4]);\n});\n\nit(\"numOfLowerAndUpperCase(' J@a#v%a S*c(r)_ip+t') returns [8, 2]\", () => {\n  expect(numOfLowerAndUpperCase(' J@a#v%a S*c(r)_ip+t')).to.eql([8, 2]);\n});\n\nit(\"numOfLowerAndUpperCase('programming') returns [11, 0]\", () => {\n  expect(numOfLowerAndUpperCase('programming')).to.eql([11, 0]);\n});\n\nit(\"numOfLowerAndUpperCase('SKY') returns [0, 3]\", () => {\n  expect(numOfLowerAndUpperCase('SKY')).to.eql([0, 3]);\n});\n\nit(\"numOfLowerAndUpperCase(' 1234567890/*-+!@#$%^&*()_)+ ') returns [0, 0]\", () => {\n  expect(numOfLowerAndUpperCase(' 1234567890/*-+!@#$%^&*()_)+ ')).to.eql([0, 0]);\n});\n\nit(\"numOfLowerAndUpperCase('') returns [0, 0]\", () => {\n  expect(numOfLowerAndUpperCase('')).to.eql([0, 0]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

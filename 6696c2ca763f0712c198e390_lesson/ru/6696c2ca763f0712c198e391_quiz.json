@@ -1,0 +1,148 @@
+{
+  "name": "Длина строки",
+  "questions": {
+    "0": {
+      "name": "Длина строки это:",
+      "variants": {
+        "0": {
+          "name": "Функция"
+        },
+        "1": {
+          "name": "Свойство"
+        },
+        "2": {
+          "name": "целочисленное значение, равное количеству символов в строке"
+        }
+      }
+    },
+    "1": {
+      "name": "Длина строки может быть равна нулю",
+      "variants": {
+        "0": {
+          "name": "Утверждение верно"
+        },
+        "1": {
+          "name": "Утверждение неверно"
+        }
+      }
+    },
+    "2": {
+      "name": "Выберите возможные варианты получения длины строки",
+      "variants": {
+        "0": {
+          "name": "const str = 'str'; const length = str.length;"
+        },
+        "1": {
+          "name": "const str = 'str'; const length = str.length();"
+        },
+        "2": {
+          "name": "const str = 'str'; const length = str.lentgh;"
+        },
+        "3": {
+          "name": "console.log('str'.length);"
+        }
+      }
+    },
+    "3": {
+      "name": "Выберите допустимые варианты получения длины строки",
+      "variants": {
+        "0": {
+          "name": "let str = '' + ''; console.log(str.length);"
+        },
+        "1": {
+          "name": "let str = ' + '; console.log(str.lenght);"
+        },
+        "2": {
+          "name": "let str = ' + '.length; console.log(str);"
+        },
+        "3": {
+          "name": "let str = ' ;+; '; console.log(str.length);"
+        }
+      }
+    },
+    "4": {
+      "name": "При получении длины строки мы получим",
+      "variants": {
+        "0": {
+          "name": "число"
+        },
+        "1": {
+          "name": "строку"
+        }
+      }
+    },
+    "5": {
+      "name": "Что выведет код в консоль? const number = 'string'; console.log(typeof typeof number.length);",
+      "variants": {
+        "0": {
+          "name": "number"
+        },
+        "1": {
+          "name": "string"
+        },
+        "2": {
+          "name": "boolean"
+        },
+        "3": {
+          "name": "Ошибка"
+        }
+      }
+    },
+    "6": {
+      "name": "Может ли длина строки быть отрицательной?",
+      "variants": {
+        "0": {
+          "name": "Да"
+        },
+        "1": {
+          "name": "Нет"
+        }
+      }
+    },
+    "7": {
+      "name": "Что выведет код в консоль? const str = 'string'; console.log(str.length);",
+      "variants": {
+        "0": {
+          "name": "string"
+        },
+        "1": {
+          "name": "число 5"
+        },
+        "2": {
+          "name": "число 6"
+        },
+        "3": {
+          "name": "строку 6"
+        }
+      }
+    },
+    "8": {
+      "name": "Можно ли изменить длину строки так?  const number = 'string'; number.length = 10;",
+      "variants": {
+        "0": {
+          "name": "Да"
+        },
+        "1": {
+          "name": "Нет"
+        }
+      }
+    },
+    "9": {
+      "name": "Свойство длины считает количество символов в строке, включая пробелы. Какой результат будет у выражения ' '.length?",
+      "variants": {
+        "0": {
+          "name": "0"
+        },
+        "1": {
+          "name": "1"
+        },
+        "2": {
+          "name": "2"
+        },
+        "3": {
+          "name": "Ошибка"
+        }
+      }
+    }
+  }
+}

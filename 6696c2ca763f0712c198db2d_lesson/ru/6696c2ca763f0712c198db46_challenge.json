@@ -1,0 +1,6 @@
+{
+  "name": "Null или намеренное отсутствие какого-либо значения",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-5.png)\n\nNull - специальное значение, которое имеет смысл `значение намеренно отсутствует`.\nСоздайте переменную с именем `futureProfit` и присвойте ей специальное значение null.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet nextWinner = null;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet futureProfit = null;\n```"
+}

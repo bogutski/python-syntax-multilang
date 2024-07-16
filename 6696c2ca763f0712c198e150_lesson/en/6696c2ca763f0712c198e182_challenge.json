@@ -1,0 +1,4 @@
+{
+  "name": "True if the first is greater than or equal to the second",
+  "instruction": "Write a function `firstIsBiggerOrEqual` that takes two numbers `first` and `second` and returns `true` if the first number `first` is greater than or equal to the second number `second`, and `false` if less."
+}

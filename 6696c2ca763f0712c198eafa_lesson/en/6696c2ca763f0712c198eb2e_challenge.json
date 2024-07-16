@@ -1,0 +1,4 @@
+{
+  "name": "Array of numbers to string",
+  "instruction": "Fix the errors in the `numbersToString` function to make it work correctly.\n\nThe function `numbersToString` takes an array of numbers `numbers` and returns a string containing all the numbers in the array, separated by commas.\n\nThere must not be a comma at the end of the string.\n\nExamples of running the function:\n\n```javascript\nnumbersToString([1, 20, 345]); // \"1,20,345\"\nnumbersToString([0, 10, -3, 4.67, 0.8, 910]); // \"0,10,-3,4.67,0.8,910\"\nnumbersToString([77]); // \"77\"\nnumbersToString([]); // \"\"\n```"
+}

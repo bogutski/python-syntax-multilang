@@ -1,0 +1,1 @@
+# Array.prototype.lastIndexOf() – индекс искомого элемента, начиная с конца массива language: en

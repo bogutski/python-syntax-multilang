@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eb2d",
+  "name": {
+    "en": "A number made of single digits",
+    "ru": "Число из отдельных цифр"
+  },
+  "instruction": {
+    "en": "You need to get a number from individual digits stored in an array.\n\nWrite a function `getNumber` that takes an array of `digits`.\n\nEach element of the `digits` array is a string containing one of the digits (0, 1, 2, 3, 4, 5, 6, 7, 8, 9).\n\nThe function should return the number obtained from the digits written in the array.\n\nSolution algorithm:\n\n1. Create a string variable `number` and assign to it the initial value of the empty string.\n\n2. In the loop - for each element of the array `digits` - add its value - a digit - to the variable `number` (string concatenation).\n\n3. Return variable `number`, previously converting it to a number using unary operator `+`.\n\nExamples of running a function:\n\n```javascript\ngetNumber(['1', '2', '3']); // 123\ngetNumber(['4', '5', '6', '0', '1']); // 45601\ngetNumber(['0', '0', '0', '0']); // 0\ngetNumber(['0', '0', '3']); // 3\ngetNumber([]); // 0\n```",
+    "ru": "Нужно получить число из отдельных цифр, хранящихся в массиве.\n\nНапишите функцию `getNumber`, которая принимает массив `digits`.\n\nКаждый элемент массива `digits` - это строка, содержащая одну из цифр (0, 1, 2, 3, 4, 5, 6, 7, 8, 9).\n\nФункция должна вернуть число, полученное из цифр, записанных в массиве.\n\nАлгоритм решения:\n\n1. Создать строковую переменную `number` и присвоить ей начальное значение пустой строки.\n\n2. В цикле - для каждого элемента массива `digits` - добавлять его значение - цифру - к переменной `number` (конкатенация строк).\n\n3. Вернуть переменную `number`, предварительно преобразовав ее в число с помощью унарного оператора `+`.\n\nПримеры запуска функции:\n\n```javascript\ngetNumber(['1', '2', '3']);           // 123\ngetNumber(['4', '5', '6', '0', '1']); // 45601\ngetNumber(['0', '0', '0', '0']);      // 0\ngetNumber(['0', '0', '3']);           // 3\ngetNumber([]);                        // 0\n```"
+  },
+  "initialSolution": "functio",
+  "completedSolution": "function getNumber(digits) {\n  let number = '';\n  for (let i = 0; i < digits.length; i++) {\n    number += digits[i];\n  }\n  return +number;\n}",
+  "openTest": "it('Created function getNumber', () => {\n  expect(getNumber).to.be.a('function');\n});\n\nit('getNumber([\"1\", \"2\", \"3\"]) should return 123', () => {\n  expect(getNumber(['1', '2', '3'])).to.be.equal(123);\n});\n\nit('getNumber([\"4\", \"5\", \"6\", \"0\", \"1\"]) should return 45601', () => {\n  expect(getNumber(['4', '5', '6', '0', '1'])).to.be.equal(45601);\n});\n\nit('getNumber([\"0\", \"0\", \"0\", \"0\", \"0\", \"0\", \"0\", \"0\", \"0\", \"0\"]) should return 0', () => {\n  expect(getNumber(['0', '0', '0', '0', '0', '0', '0', '0', '0', '0'])).to.be.equal(0);\n});\n\nit('getNumber([]) should return 0', () => {\n  expect(getNumber([])).to.be.equal(0);\n});\n\nit('getNumber([\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"0\"]) should return 1234567890', () => {\n  expect(getNumber(['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'])).to.be.equal(1234567890);\n});\n\nit('getNumber([\"1\"]) should return 1', () => {\n  expect(getNumber(['1'])).to.be.equal(1);\n});\n\nit('getNumber([\"0\", \"2\", \"3\"]) should return 23', () => {\n  expect(getNumber(['0', '2', '3'])).to.be.equal(23);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

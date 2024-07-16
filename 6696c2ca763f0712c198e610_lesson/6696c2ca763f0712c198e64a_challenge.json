@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e64a",
+  "name": {
+    "en": "Filling out a sample check. Objects",
+    "ru": "Заполнение образца чека. Объекты"
+  },
+  "instruction": {
+    "en": "There is a sample receipt for a purchase at the store. But it varies depending on the amount of the purchase.\n\nWrite a function `receipt` that takes three parameters:\n* `template` - object containing information about the receipt\n* `amount` - purchase amount, number\n* `number` - check number, number\n\nThe function must return an object `template`, which has the following structure:\n* `purchaseAmount` - purchase amount equal to the `amount` parameter, number\n* `receiptNumber` - check number equal to the parameter `number`, number\n* `discount` - amount of discount - must be calculated\n* `finalAmount` - total amount of purchase, see conditions below, number\n\nIf the purchase amount `amount` is greater than or equal to `1000`, then the discount is `10%` of the purchase amount.\n\nIf the purchase amount is less than `1000`, then you must remove the `discount` property from the `template` object and instead\nAdd the `message` property with the value `Thank you for your purchase!\n\nThe `finalAmount` property must contain the total purchase amount.\n\nIf there is no discount then the total amount is equal to the purchase amount `purchaseAmount`.\n\nAn example of running the function:\n```javascript\nreceipt({purchaseAmount: 0, receiptNumber: 0}, 1000, 1);\n// {purchaseAmount: 1000, receiptNumber: 1, discount: 100, finalAmount: 900}\n\nreceipt({purchaseAmount: 0, receiptNumber: 0}, 100, 1);\n// {purchaseAmount: 100, receiptNumber: 1, message: 'Thank you for your purchase!', finalAmount: 100}\n```",
+    "ru": "Существует образец чека за покупку в магазине. Но он изменяется в зависимости от суммы покупки.\n\nНапишите функцию `receipt`, которая принимает три параметра:\n* `template` – объект, содержащий информацию о чеке\n* `amount` – сумма покупки, число\n* `number` – номер чека, число\n\nФункция должна вернуть объект `template`, который имеет следующую структуру:\n* `purchaseAmount` – сумма покупки равная параметру `amount`, число\n* `receiptNumber` – номер чека равный параметру `number`, число\n* `discount` – сумма скидки - необходимо вычислить\n* `finalAmount` – итоговая сумма покупки, смотри условия ниже, число\n\nЕсли сумма покупки `amount` больше или равна `1000`, то скидка составляет `10%` от суммы покупки.\n\nЕсли сумма покупки меньше `1000`, то необходимо удалить свойство `discount` из объекта `template` и вместо него\nдобавить свойство `message` со значением `Thank you for your purchase!`.\n\nСвойство `finalAmount` должно содержать итоговую сумму покупки.\n\nЕсли скидка отсутствует, то итоговая сумма равна сумме покупки `purchaseAmount`.\n\nПример запуска функции:\n```javascript\nreceipt({purchaseAmount: 0, receiptNumber: 0}, 1000, 1);\n// {purchaseAmount: 1000, receiptNumber: 1, discount: 100, finalAmount: 900}\n\nreceipt({purchaseAmount: 0, receiptNumber: 0}, 100, 1);\n// {purchaseAmount: 100, receiptNumber: 1, message: 'Thank you for your purchase!', finalAmount: 100}\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function receipt(template, amount, number) {\n  if (amount >= 1000) {\n    template.discount = amount * 0.1;\n    template.finalAmount = amount - template.discount;\n  } else {\n    delete template.discount;\n    template.message = 'Thank you for your purchase!';\n    template.finalAmount = amount;\n  }\n  template.receiptNumber = number;\n  template.purchaseAmount = amount;\n  return template;\n}",
+  "openTest": "it('Created function receipt', () => {\n  expect(receipt).to.be.a('function');\n});\n\nit('receipt({purchaseAmount: 0, receiptNumber: 0}, 1000, 1) // {purchaseAmount: 1000, receiptNumber: 1, discount: 100, finalAmount: 900}', () => {\n  expect(receipt({ purchaseAmount: 0, receiptNumber: 0 }, 1000, 1)).to.deep.equal({\n    purchaseAmount: 1000,\n    receiptNumber: 1,\n    discount: 100,\n    finalAmount: 900,\n  });\n});\n\nit('receipt({purchaseAmount: 0, receiptNumber: 0}, 100, 1) // {purchaseAmount: 100, receiptNumber: 1, message: Thank you for your purchase!, finalAmount: 100}', () => {\n  expect(receipt({ purchaseAmount: 0, receiptNumber: 0 }, 100, 1)).to.deep.equal({\n    purchaseAmount: 100,\n    receiptNumber: 1,\n    message: 'Thank you for your purchase!',\n    finalAmount: 100,\n  });\n});\n\nit('receipt({purchaseAmount: 0, receiptNumber: 0}, 2000, 14562) // {purchaseAmount: 2000, receiptNumber: 14562, discount: 200, finalAmount: 1800}', () => {\n  expect(receipt({ purchaseAmount: 0, receiptNumber: 0 }, 2000, 14562)).to.deep.equal({\n    purchaseAmount: 2000,\n    receiptNumber: 14562,\n    discount: 200,\n    finalAmount: 1800,\n  });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

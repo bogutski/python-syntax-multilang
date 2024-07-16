@@ -1,0 +1,5 @@
+{
+  "name": "Количество букв и остальных символов",
+  "instruction": "Напишите функцию `numOfLettersAndOther`, которая принимает строку и возвращает количество `букв` и количество `остальных символов` в строке.\n\nФункция должна вернуть:\n* `String is empty` - если строка пустая\n* `Letters: ${count}, other symbols: ${count}` - если строка не пустая\n\n\nПримеры запуска функции:\n```javascript\nnumOfLettersAndOther('')                  // 'String is empty'\nnumOfLettersAndOther('Hello World!')      // 'Letters: 10, other symbols: 2'\nnumOfLettersAndOther(' 123 !@# {[()]} ')  // 'Letters: 0, other symbols: 16'\n```",
+  "instructions": {}
+}

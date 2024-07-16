@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de18",
+  "name": {
+    "en": "Reduced by a factor of 10",
+    "ru": "Уменьшение в 10 раз"
+  },
+  "instruction": {
+    "en": "Denomination is the change in the nominal value of money. It is usually expressed by \"trimming\" a certain number of zeros from old banknotes and issuing new money of a lower denomination.\n\nLet's assume that a denomination has occurred in a certain country, and one zero has been removed from the banknotes. Set the variable `money` and assign it a value of 1000. Then write the command to reduce the value of the variable `money` by 10 times.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nlet number = 30;\nnumber /= 10;\n```",
+    "ru": "Деноминация — изменение нарицательной стоимости денег.\nОбычно выражается в «обрезании» некоторого количества нулей со старых купюр и выпуске\nв обращение новых денег меньшего номинала.\n\nПредположим, в некоторой стране произошла деноминация, и с купюр убрали один ноль.\nЗадайте переменную `money` и присвойте ей значение 1000.\nЗатем запишите команду, уменьшающую значение переменной `money` в 10 раз.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet number = 30;\nnumber /= 10;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let money = 1000;\nmoney /= 10;",
+  "openTest": "it('Variable `money` contains a value', () => {\n  expect(money).not.undefined;\n});\n\nit('the variable type `money` is a number', () => {\n  expect(money).a('number');\n});\n\nit('the variable `money` is not NaN', () => {\n  expect(isNaN(money)).false;\n});\n\nit('the variable `money` is reduced by a factor of 10', () => {\n  expect(money).equal(100);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet money = 1000;\nmoney /= 10;\n```",
+    "ru": "```javascript\nlet money = 1000;\nmoney /= 10;\n```"
+  }
+}

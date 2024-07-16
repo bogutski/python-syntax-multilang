@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ebaf",
+  "name": {
+    "en": "What letter prevents a palindrome from being a palindrome?",
+    "ru": "Какая буква не дает быть палиндромом?"
+  },
+  "instruction": {
+    "en": "The `findWrongLetter` function takes a string.\n\nThis string is almost a palindrome, but one letter in it is wrong.\n\nYou need to find the index of this letter and return a string of the following form:\n\n`${str} is not palindrome because of wrong letter at position ${wrongLetter}`, where `str` - original string, `wrongLetter` - index of wrong letter.\n\nThe string contains only one wrong letter.\n\nExample:\n```javascript\nfindWrongLetter('alba') // 'alba is not palindrome because of wrong letter at position 1'\nfindWrongLetter('midam') // 'midam is not palindrome because of wrong letter at position 1'\n```",
+    "ru": "Функция `findWrongLetter` принимает строку.\n\nДанная строка почти является палиндромом, но одна буква в ней неправильная.\n\nНеобходимо найти индекс этой буквы и вернуть строку следующего вида:\n\n`${str} is not palindrome because of wrong letter at position ${wrongLetter}`, где `str` - исходная строка, `wrongLetter` - индекс неправильной буквы.\n\nСтрока содержит только одну неправильную букву.\n\nПример:\n```javascript\nfindWrongLetter('alba') // 'alba is not palindrome because of wrong letter at position 1'\nfindWrongLetter('midam') // 'midam is not palindrome because of wrong letter at position 1'\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function findWrongLetter(str) {\n  let middle = Math.floor(str.length / 2);\n  let wrongLetter;\n  for (let i = 0; i < middle; i++) {\n    if (str[i] !== str[str.length - i - 1]) {\n      wrongLetter = i\n    }\n  }\n  return `${str} is not palindrome because of wrong letter at position ${wrongLetter}`;\n}",
+  "openTest": "it('Created function findWrongLetter', () => {\n  expect(findWrongLetter).to.be.a('function');\n});\n\nit('findWrongLetter(\"alba\") returns \"alba is not palindrome because of wrong letter at position 1\"', () => {\n  expect(findWrongLetter('alba')).to.equal('alba is not palindrome because of wrong letter at position 1');\n});\n\nit('findWrongLetter(\"midam\") returns \"midam is not palindrome because of wrong letter at position 1\"', () => {\n  expect(findWrongLetter('midam')).to.equal('midam is not palindrome because of wrong letter at position 1');\n});\n\nit('findWrongLetter(\"ratecar\") returns \"ratecar is not palindrome because of wrong letter at position 2\"', () => {\n  expect(findWrongLetter('ratecar')).to.equal('ratecar is not palindrome because of wrong letter at position 2');\n});\n\nit('findWrongLetter(\"aaaabaaa\") returns \"aaaabaaa is not palindrome because of wrong letter at position 3\"', () => {\n  expect(findWrongLetter('aaaabaaa')).to.equal('aaaabaaa is not palindrome because of wrong letter at position 3');\n});\n\nit('findWrongLetter(\"yye\") returns \"yye is not palindrome because of wrong letter at position 0\"', () => {\n  expect(findWrongLetter('yye')).to.equal('yye is not palindrome because of wrong letter at position 0');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

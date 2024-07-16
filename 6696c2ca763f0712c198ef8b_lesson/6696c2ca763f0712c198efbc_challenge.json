@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198efbc",
+  "name": {
+    "en": "",
+    "ru": "Сумма чисел в массиве с разными типами данных"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `sumOfNumbers`, которая принимает массив.\n\nЭлементы массива могут быть числами, строками и т.д.\n\nФункция должна вернуть сумму всех чисел, которые есть в массиве.\n\nЕсли массив пустой, то функция должна вернуть строку 'Empty array'.\n\n\nПримеры запуска функции:\n```javascript\nsumOfNumbers([1, 2, true, 3, 'false']); // 6\nsumOfNumbers([1, 2, 3, 4, 5]);          // 15\nsumOfNumbers(['1', '2', '3']);          // 0\nsumOfNumbers([]);                       // 'Empty array'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sumOfNumbers(arr){\n  if(!arr.length) return 'Empty array';\n  let sum = 0;\n  for(let i = 0; i < arr.length; i++){\n    if(typeof arr[i] === 'number') sum += arr[i];\n  }\n  return sum;\n}",
+  "openTest": "it('Created function sumOfNumbers', () => {\n  expect(sumOfNumbers).to.be.a('function');\n});\n\nit(\"sumOfNumbers([1, 2, true, 3, false, 4, 5, 'hello', (5 < 7)]) should return 15\", () => {\n  expect(sumOfNumbers([1, 2, true, 3, false, 4, 5, 'hello', (5 < 7)])).to.equal(15);\n});\n\nit(\"sumOfNumbers([1, 2, 3, 4, 5, 10]) should return 25\", () => {\n  expect(sumOfNumbers([1, 2, 3, 4, 5, 10])).to.equal(25);\n});\n\nit(\"sumOfNumbers(['1', '2', '3', '4', '5', '10']) should return 0\", () => {\n  expect(sumOfNumbers(['1', '2', '3', '4', '5', '10'])).to.equal(0);\n});\n\nit(\"sumOfNumbers([-50, 100, 'some', 74, 'text', 91, 'here']) should return 215\", () => {\n  expect(sumOfNumbers([-50, 100, 'some', 74, 'text', 91, 'here'])).to.equal(215);\n});\n\nit(\"sumOfNumbers([]) should return 'Empty array'\", () => {\n  expect(sumOfNumbers([])).to.equal('Empty array');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

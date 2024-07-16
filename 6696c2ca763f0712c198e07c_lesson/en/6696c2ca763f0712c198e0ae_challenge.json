@@ -1,0 +1,4 @@
+{
+  "name": "How long will it take to fill the pool?",
+  "instruction": "A pump is used to pump water into the pool.\n\nWrite a function `poolPumpTime` that takes as parameters:\n`pumpSpeed` - the pump pumping speed in gallons per hour\n`poolVolume` - pool volume in cubic feet\n\nThe function should return the time, in seconds, in which the pool will be completely full.\n\nThere are `7.48052` gallons in one cubic foot.\n\nJob script:\n* Convert pool volume to gallons\n* Divide the pool volume in gallons by the speed of the pump\n* Translate the result into seconds\n\n\nExamples of functions:\n```javascript\npoolPumpTime(50, 2500); // 1346493.6\npoolPumpTime(100, 1000); // 269298.72\npoolPumpTime(500, 10000); // 538597.44\n```"
+}

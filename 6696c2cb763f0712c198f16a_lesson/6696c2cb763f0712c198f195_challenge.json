@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f195",
+  "name": {
+    "en": "",
+    "ru": "Сделать массив симметричным"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "В данной задаче нужно исправить функцию `keepOnlyPairs', которая убирает все непарные элементы из массива.\n\nПосле удаления всех непарных элементов, массив гарантировано будет симметричным.\n\nКоличество повторений каждого элемента не будет больше двух.\n\nВ функции четыре ошибки, которые нужно исправить, все они до первого цикла.\n\n\nПримеры запуска функции:\n```javascript\nkeepOnlyPairs([1, 'a', 2, 8, 2, 'abc', 1]); // [1, 2, 2, 1]\nkeepOnlyPairs([1, 2, 3, 4, 5, 6, 7, 8, 9]); // []\nkeepOnlyPairs([]);                          // 'Array is empty'\n```"
+  },
+  "initialSolution": "Function keepOnlyPairs([arr]){\n  if(arr.length !== 0) return 'Array is empty';\n  const obj = [];\n\n  for(let i = 0; i < arr.length; i++){\n    if ( !obj[arr[i]] ) obj[arr[i]] = 1;   // if object does not have a key, create it and set value to 1\n    else obj[arr[i]]++;                    // if object has a key, increment value by 1\n  }\n\n  for(let i = 0; i < arr.length; i++){\n    if ( obj[arr[i]] === 1 ) {            // if object value is 1, remove element from array\n      arr.splice(i, 1)                    // use splice method to remove element from array\n      i--;                                // decrement i to avoid skipping element\n    }\n  }\n\n  return arr;\n}",
+  "completedSolution": "function keepOnlyPairs(arr){\n  if(!arr.length) return 'Array is empty';\n  const obj = {};\n\n  for(let i = 0; i < arr.length; i++){\n    if(!obj[arr[i]]) obj[arr[i]] = 1;\n    else obj[arr[i]]++;\n  }\n\n  for(let i = 0; i < arr.length; i++){\n    if(obj[arr[i]] === 1) {\n      arr.splice(i, 1)\n      i--;\n    }\n  }\n\n  return arr;\n}",
+  "openTest": "it('Created function keepOnlyPairs', () => {\n  expect(keepOnlyPairs).to.be.a('function');\n});\n\nit(\"Function keepOnlyPairs does not include 'reverse' method\", () => {\n  expect(keepOnlyPairs.toString()).to.not.include('reverse');\n});\n\nit(\"Function keepOnlyPairs does not include 'join' method\", () => {\n  expect(keepOnlyPairs.toString()).to.not.include('join');\n});\n\nit(\"keepOnlyPairs([1, 5, 2, 3, 7, 3, 2, 9, 1]) should return [1, 2, 3, 3, 2, 1]\", () => {\n  expect(keepOnlyPairs([1, 5, 2, 3, 7, 3, 2, 9, 1])).to.deep.equal([1, 2, 3, 3, 2, 1]);\n});\n\nit(\"keepOnlyPairs(['a', 1, 2, 4, 'B', 3, 'C', 2, 'b', 1, 'A']) should return [1, 2, 2, 1]\", () => {\n  expect(keepOnlyPairs(['a', 1, 2, 4, 'B', 3, 'C', 2, 'b', 1, 'A'])).to.deep.equal([1, 2, 2, 1]);\n});\n\nit(\"keepOnlyPairs([23, 55, 'a', 74, 'b', 55, 23]) should return [23, 55, 55, 23]\", () => {\n  expect(keepOnlyPairs([23, 55, 'a', 74, 'b', 55, 23])).to.deep.equal([23, 55, 55, 23]);\n});\n\nit(\"keepOnlyPairs(['a', 'b', 'c', 'test', 'c', true, 'b', false, 'a']) should return ['a', 'b', 'c', 'c', 'b', 'a']\", () => {\n  expect(keepOnlyPairs(['a', 'b', 'c', 'test', 'c', true, 'b', false, 'a'])).to.deep.equal(['a', 'b', 'c', 'c', 'b', 'a']);\n});\n\nit(\"keepOnlyPairs([1, 2, 3, 4, 5, 6, 7, 8, 9]) should return []\", () => {\n  expect(keepOnlyPairs([1, 2, 3, 4, 5, 6, 7, 8, 9])).to.deep.equal([]);\n});\n\nit(\"keepOnlyPairs([]) should return 'Array is empty'\", () => {\n  expect(keepOnlyPairs([])).to.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Заменить все цифры в строке на заданный символ",
+  "instruction": "Функция `replaceDigits` принимает строку и символ, и возвращает новую строку, в которой все цифры заменены на заданный символ.\n`Цифрами` считаются символы от `0` до `9`. Если в строке нет цифр, то возвращается исходная строка.\n\n\n\nПримеры запуска функции:\n```javascript\nreplaceDigits('abc1d3efg', '*'); // 'abc*d*efg'\nreplaceDigits('The score is 3 to 2', '^'); // 'The score is ^ to ^'\nreplaceDigits('1234567890', '&'); // '&&&&&&&&&&'\nreplaceDigits('There are no digits', '*'); // 'There are no digits'\nreplaceDigits('', '*'); // ''\n```",
+  "instructions": {}
+}

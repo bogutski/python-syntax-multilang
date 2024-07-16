@@ -1,0 +1,5 @@
+{
+  "name": "The function returns the number of the golden ratio",
+  "instruction": "Write a function `goldenRatio` that returns the number of the golden ratio `1.618033988749895`.",
+  "instructions": {}
+}

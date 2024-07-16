@@ -1,0 +1,5 @@
+{
+  "name": "All true numbers except zero",
+  "instruction": "Write a function `numberToBoolean` that takes a number and returns `true` if the number is not zero, and `false` if it is zero.",
+  "instructions": {}
+}

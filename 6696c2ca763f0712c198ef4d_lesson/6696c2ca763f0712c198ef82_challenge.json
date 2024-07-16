@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ef82",
+  "name": {
+    "en": "Reverse the array",
+    "ru": "Перевернуть массив"
+  },
+  "instruction": {
+    "en": "The `reverseArray` function takes an array that may contain different data types.\n\nThe function should return a new array with the elements in reverse order.\n\nExample function calls:\n```javascript\nreverseArray([1, 2, 3]) // [3, 2, 1]\nreverseArray([\"hello\" , 12, \"world\", 234, false]) // [false, 234, \"world\", 12, \"hello\"]\n```",
+    "ru": "Функция `reverseArray` принимает массив, в котором могут быть разные типы данных.\n\nФункция должна вернуть новый массив, в котором элементы идут в обратном порядке.\n\nПример запуска функции:\n```javascript\nreverseArray([1, 2, 3]) // [3, 2, 1]\nreverseArray([\"hello\" , 12, \"world\", 234, false]) // [false, 234, \"world\", 12, \"hello\"]\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function reverseArray(arr) {\n  const newArr = []\n  for (let i = arr.length - 1; i >= 0; i--) {\n    newArr.push(arr[i])\n  }\n  return newArr\n}",
+  "openTest": "it('Created function reverseArray', () => {\n  expect(reverseArray).to.be.a('function');\n});\n\nit('reverseArray([1, 2, 3]) returns [3, 2, 1]', () => {\n  expect(reverseArray([1, 2, 3])).to.deep.equal([3, 2, 1]);\n});\n\nit('reverseArray([\"hello\" , 12, \"world\", 234, false]) returns [false, 234, \"world\", 12, \"hello\"', () => {\n  expect(reverseArray([\"hello\", 12, \"world\", 234, false])).to.deep.equal([false, 234, \"world\", 12, \"hello\"]);\n});\n\nit('reverseArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) returns [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]', () => {\n  expect(reverseArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).to.deep.equal([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]);\n});\n\nit('reverseArray([\"JS task\"]) returns [\"JS task\"]', () => {\n  expect(reverseArray([\"JS task\"])).to.deep.equal([\"JS task\"]);\n});\n\nit('reverseArray([]) returns []', () => {\n  expect(reverseArray([])).to.deep.equal([]);\n})",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

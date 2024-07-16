@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eff9",
+  "name": {
+    "en": "",
+    "ru": "Найти среднее арифметическое всех нечетных чисел в массиве"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `averageOdd`, которая принимает один параметр - массив чисел.\n\nМассив произвольной длины и может содержать как положительные, так и отрицательные целые числа.\n\nФункция производит подсчет суммы и количества всех нечетных чисел в массиве, возвращая среднее арифметическое этих чисел.\n\nЕсли массив пустой, то функция должна вернуть строку `'Array is empty'`.\n\nРезультат подсчета среднеарифметического значения должен быть округлен в `большую сторону`.\n\nЕсли в массиве нет нечетных чисел, то функция должна вернуть `0`.\n\nПример запуска функции:\n```javascript\naverageOdd([11, 13, 17]); // (11 + 13 + 17) / 3 = 14\naverageOdd([12, 4, 138]); // 0\naverageOdd([1, 27, -353]); // (1 + 27 + (-353)) / 3 = -108\naverageOdd([]); // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function averageOdd(arr) {\n  if (!arr.length) return 'Array is empty';\n  let sum = 0;\n  let avr = 0;\n  let count = 0;\n  for (let i = 0; i < arr.length; i++) {\n    if (arr[i] % 2 !== 0) {\n      sum += arr[i];\n      count++;\n    }\n  }\n  if (count) avr = sum / count;\n  return Math.ceil(avr);\n}",
+  "openTest": "it('Created function averageOdd', () => {\n  expect(averageOdd).to.be.a('function');\n});\n\nit(\"averageOdd([11, 13, 17]) should return 14\", () => {\n  expect(averageOdd([11, 13, 17])).to.equal(14);\n});\n\nit(\"averageOdd([12, 4, 138]) should return 0\", () => {\n  expect(averageOdd([12, 4, 138])).to.equal(0);\n});\n\nit(\"averageOdd([-11, 30, 17, 11, -17]) should return 0\", () => {\n  expect(averageOdd([-11, 30, 17, 11, -17])).to.equal(0);\n});\n\nit(\"averageOdd([1, 27, -353]) should return -108\", () => {\n  expect(averageOdd([1, 27, -353])).to.equal(-108);\n});\n\nit(\"averageOdd([11, 3, -11]) should return 1\", () => {\n  expect(averageOdd([11, 3, -11])).to.equal(1);\n});\n\nit(\"averageOdd([11]) should return 11\", () => {\n  expect(averageOdd([11])).to.equal(11);\n});\n\nit(\"averageOdd([]) should return 'Array is empty'\", () => {\n  expect(averageOdd([])).to.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

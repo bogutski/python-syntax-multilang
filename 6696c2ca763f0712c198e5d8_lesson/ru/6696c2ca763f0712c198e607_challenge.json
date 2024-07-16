@@ -1,0 +1,5 @@
+{
+  "name": "Заполнить объект свойствами",
+  "instruction": "Напишите функцию `fillObj`, которая принимает объект и три значения:\n* `obj` - объект\n* `value1` - значение,\n* `value2` - значение,\n* `value3` - значение\n\nДобавьте в объект следующие ключи:\n* `width` со значением `value1`,\n* `height` со значением `value2`,\n* `length` со значением `value3`\n\nЕсли в объекте уже есть один из таких ключей, то оставьте его без изменений.\n\nФункция должна вернуть объект.\n\nПример запуска функции:\n```javascript\nfillObj({}, 10, 20, 30);      // { width: 10, height: 20, length: 30 }\nfillObj({ width: 10 }, 20, 30, 40);      // { width: 10, height: 30, length: 40 }\nfillObj({ width: 10, height: 20 }, 20, 30, 40);      // { width: 10, height: 20, length: 40 }\n```\nПохожий пример:\n```javascript\nfunction fillCarObj(car, \"red\", \"Camry\", 2020) {\n    if (!car.color) car.color = \"red\";\n    if (!car.model) car.model = \"Camry\";\n    if (!car.year) car.year = 2020;\n    return car;\n}\n```",
+  "instructions": {}
+}

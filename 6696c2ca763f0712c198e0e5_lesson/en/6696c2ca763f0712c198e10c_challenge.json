@@ -1,0 +1,4 @@
+{
+  "name": "Sum of four numbers squared",
+  "instruction": "Create a function `powerOfTwo` that takes a number and returns it squared.\n\nCreate a function `sum` that takes four numbers and returns their sum squared.\n\nUse the function `powerOfTwo` inside the function `sum` to square each number."
+}

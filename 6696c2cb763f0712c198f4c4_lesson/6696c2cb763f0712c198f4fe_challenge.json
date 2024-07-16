@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f4fe",
+  "name": {
+    "en": "/*",
+    "ru": "Безопасное обновление элементов массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию, которая обновляет элементы в массиве на основе массива индексов и массива новых элементов, используя метод `with()` для обеспечения неизменности исходного массива.\n\nФункция принимает:\n\n* `array`: Массив, элементы которого требуется обновить.\n* `indexArray`: Массив индексов элементов, которые нужно обновить.\n* `elementsArray`: Массив новых элементов для замены.\n\nФункция должна вернуть новый массив с обновленными элементами.\n\n\n* Функция должна проверить, что массивы индексов и элементов для замены имеют одинаковую длину. Если нет, вернуть копию исходного массива.\n* Для каждого индекса из indexArray, функция должна использовать метод `with()` для вставки соответствующего элемента из `elementsArray` в новый массив.\n* Если индекс за пределами допустимого диапазона для массива, этот индекс пропускается.\n\n\nПример использования:\n```javascript\nconst originalArray = ['a', 'b', 'c', 'd'];\n\n\nconst updatedArray1 = updateArrayWith(originalArray, [1, 3], ['x', 'y']);\nconsole.log(updatedArray1); // ['a', 'x', 'c', 'y']\n\nconst updatedArray2 = updateArrayWith(originalArray, [0, 5], ['hello', 'world']);\nconsole.log(updatedArray2); // ['hello', 'b', 'c', 'd']\n\nconst updatedArray3 = updateArrayWith(originalArray, [0, 1, 2, 3], ['hello']);\nconsole.log(updatedArray3); // ['a', 'b', 'c', 'd']\n\n\nconsole.log(originalArray); // ['a', 'b', 'c', 'd']\n```"
+  },
+  "initialSolution": "function updateArrayWith(){\n\n}",
+  "completedSolution": "function updateArrayWith(arr, indexes, elements) {\n  let res = [...arr]\n  if(indexes.length !== elements.length) return res\n\n  indexes.forEach((el, index) => {\n    if(el < res.length) res = res.with(el, elements[index])\n  })\n  return res;\n}",
+  "openTest": "Array.prototype.with = function(index, value){\n  const newArray = this.slice();\n  newArray.splice(index, 1, value);\n  return newArray;\n}\n\nit('Created function updateArrayWith', () => {\n  expect(updateArrayWith).to.be.a('function');\n});\n\nit('Function updateArrayWith should include method with()', () => {\n  const res = updateArrayWith.toString()\n  expect(res).to.include('.with(')\n});\n\nit('should correctly update elements given valid index and elements arrays', function() {\n  const originalArray = ['January', 'February', 'April'];\n  const result = updateArrayWith(originalArray, [2], ['March']);\n  expect(result).to.deep.equal(['January', 'February', 'March']);\n});\n\nit('should return a new array with the same elements if indexes are out of bounds', function() {\n  const originalArray = ['a', 'b', 'c'];\n  const result = updateArrayWith(originalArray, [3], ['d']);\n  expect(result).to.deep.equal(['a', 'b', 'c']);\n});\n\nit('should handle negative indexes correctly', function() {\n  const originalArray = ['first', 'second', 'fourth'];\n  const result = updateArrayWith(originalArray, [-1], ['third']);\n  expect(result).to.deep.equal(['first', 'second', 'third']);\n});\n\nit('should return the original array (copy) if indexes and elements arrays have different lengths', function() {\n  const originalArray = ['x', 'y', 'z'];\n  const result = updateArrayWith(originalArray, [1], ['a', 'b']);\n  expect(result).to.deep.equal(['x', 'y', 'z']);\n});\n\nit('should not modify the original array', function() {\n  const originalArray = ['one', 'two', 'three'];\n  updateArrayWith(originalArray, [1], ['new']);\n  expect(originalArray).to.deep.equal(['one', 'two', 'three']);\n});\n\nit('should correctly update multiple elements', function() {\n  const originalArray = [1, 2, 3, 4];\n  const result = updateArrayWith(originalArray, [1, 3], [8, 9]);\n  expect(result).to.deep.equal([1, 8, 3, 9]);\n});\n\nit('should skip invalid indexes', function() {\n  const originalArray = ['start', 'middle', 'end'];\n  const result = updateArrayWith(originalArray, [4], ['newStart']);\n  expect(result).to.deep.equal(['start', 'middle', 'end']);\n});\n\nit('should work with empty arrays and return a copy of the original array', function() {\n  const originalArray = [];\n  const result = updateArrayWith(originalArray, [], []);\n  expect(result).to.deep.equal([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Find the sum, difference and product of the lengths of the arrays",
+  "instruction": "Write a function `operationLength` that takes two parameters:\n* `arr1` - array of elements,\n* `arr2` - array of elements.\n\nThe function should return an array in which the first element is the sum of the lengths of the arrays,\nThe second is the difference of the lengths of the arrays, the third is the product of the lengths of the arrays.\n\nAn example of running the function:\n```javascript\noperationLength([14, 12, 35], [12, 22, 23, 43]);\n// [7, -1, 12]\n```\n\nA similar example with strings:\n```javascript\nfunction operationLength(str1, str2) {\nconst sum = str1.length + str2.length;\nconst difference = str1.length - str2.length;\nconst multiplication = str1.length * str2.length;\nreturn [sum, difference, multiplication];\n}\n```"
+}

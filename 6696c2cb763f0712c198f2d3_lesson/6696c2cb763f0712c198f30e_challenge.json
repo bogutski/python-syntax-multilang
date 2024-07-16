@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f30e",
+  "name": {
+    "en": "/*",
+    "ru": "Добавление дел с учетом приоритета"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `addTaskWithPriority`, которая принимает три аргумента:\n\n* массив с текущим списком дел,\n* новую задачу в виде строки,\n* булево значение, указывающее, имеет ли дело высокий приоритет.\n\nЕсли задача имеет высокий приоритет (true), она добавляется в начало массива. В противном случае задача добавляется в конец массива.\n\nЕсли задача дублируется, то вернуть строку: `<task_name> - task duplicates the existing one`\n\nФункция должна возвращать обновленный список дел.\n\nПримеры запуска функции:\n```javascript\naddTaskWithPriority([\"Buy milk\", \"Call mom\"], \"Go to the post office\", false)\n// [\"Buy milk\", \"Call mom\", \"Go to the post office\"]\n\naddTaskWithPriority([\"Finish report\", \"Prepare for meeting\"], \"Check emails\", true)\n// [\"Check emails\", \"Finish report\", \"Prepare for meeting\"]\n\naddTaskWithPriority([], \"Start a new project\", true)\n// [\"Start a new project\"]\n\naddTaskWithPriority([\"Do exercise\"], \"Prepare breakfast\", false)\n// [\"Do exercise\", \"Prepare breakfast\"]\n\naddTaskWithPriority([], \"Learn a new word\", false)\n// [\"Learn a new word\"]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function addTaskWithPriority(tasks, newTask, isHighPriority) {\n  if(tasks.includes(newTask)) return `${newTask} - task duplicates the existing one`\n\n  if(isHighPriority) tasks.unshift(newTask)\n  else tasks.push(newTask)\n\n  return tasks;\n}",
+  "openTest": "it('Created function addTaskWithPriority', () => {\n  expect(addTaskWithPriority).to.be.a('function');\n});\n\nit('addTaskWithPriority([\"Buy milk\", \"Call mom\"], \"Go to the post office\", false) should return [\"Buy milk\", \"Call mom\", \"Go to the post office\"]', () => {\n  expect(addTaskWithPriority([\"Buy milk\", \"Call mom\"], \"Go to the post office\", false)).to.deep.equal([\"Buy milk\", \"Call mom\", \"Go to the post office\"]);\n});\n\nit('addTaskWithPriority([\"Finish report\", \"Prepare for meeting\"], \"Check emails\", true) should return [\"Check emails\", \"Finish report\", \"Prepare for meeting\"]', () => {\n  expect(addTaskWithPriority([\"Finish report\", \"Prepare for meeting\"], \"Check emails\", true)).to.deep.equal([\"Check emails\", \"Finish report\", \"Prepare for meeting\"]);\n});\n\nit('addTaskWithPriority([], \"Start a new project\", true) should return [\"Start a new project\"]', () => {\n  expect(addTaskWithPriority([], \"Start a new project\", true)).to.deep.equal([\"Start a new project\"]);\n});\n\nit('addTaskWithPriority([\"Do exercise\"], \"Prepare breakfast\", false) should return [\"Do exercise\", \"Prepare breakfast\"]', () => {\n  expect(addTaskWithPriority([\"Do exercise\"], \"Prepare breakfast\", false)).to.deep.equal([\"Do exercise\", \"Prepare breakfast\"]);\n});\n\nit('addTaskWithPriority([], \"Learn a new word\", false) should return [\"Learn a new word\"]', () => {\n  expect(addTaskWithPriority([], \"Learn a new word\", false)).to.deep.equal([\"Learn a new word\"]);\n});\n\nit('addTaskWithPriority([\"Buy groceries\", \"Study JavaScript\"], \"Study JavaScript\", true) should return \"Study JavaScript - task duplicates the existing one\"', () => {\n  expect(addTaskWithPriority([\"Buy groceries\", \"Study JavaScript\"], \"Study JavaScript\", true)).to.eq(\"Study JavaScript - task duplicates the existing one\");\n});\n\nit('addTaskWithPriority([\"Meditate\", \"Drink water\"], \"Drink water\", false) should return \"Drink water - task duplicates the existing one\"', () => {\n  expect(addTaskWithPriority([\"Meditate\", \"Drink water\"], \"Drink water\", false)).to.equal('Drink water - task duplicates the existing one');\n});\n\nit('addTaskWithPriority([\"Call family\"], \"Call family\", true) should return \"Call family - task duplicates the existing one\"', () => {\n  expect(addTaskWithPriority([\"Call family\"], \"Call family\", true)).to.equal('Call family - task duplicates the existing one');\n});\n\nit('addTaskWithPriority([\"Read book\"], \"Write diary\", true) should add \"Write diary\" to the beginning of the list', () => {\n  expect(addTaskWithPriority([\"Read book\"], \"Write diary\", true)).to.deep.equal([\"Write diary\", \"Read book\"]);\n});\n\nit('addTaskWithPriority([\"Yoga\", \"Code\"], \"Sleep\", true) should add \"Sleep\" to the beginning of the list', () => {\n  expect(addTaskWithPriority([\"Yoga\", \"Code\"], \"Sleep\", true)).to.deep.equal([\"Sleep\", \"Yoga\", \"Code\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

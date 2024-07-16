@@ -1,0 +1,4 @@
+{
+  "name": "Create an empty function to get the user's address",
+  "instruction": "You need to create a function that gets the user's address.\n\nNow you just need to choose the right name for it out of several options:\n\n* `myAddress`.\n* `adresuser`.\n* `getAddress`\n* `addressUser`\n* `getUserAddress`\n* `userAddress`\n\nThe name of the function should reflect the process of getting the user's address."
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd1d",
+  "name": {
+    "en": "Compare undefined and null",
+    "ru": "Сравните undefined и null"
+  },
+  "instruction": {
+    "en": "Usually `undefined` is used for checks whether a variable has been assigned.\nThe special value `null` means \"nothing\", \"empty\" or \"value intentionally missing\".\n\nCreate a variable named `home` and assign it the value `undefined`.\nCreate a variable named `money` and assign it the value `null`.\nCreate a variable named `isNullEqualsUndefined` and assign it the result of strict equality between variables `home` and `money`.\n\nHere is an example that is essentially similar to what needs to be done,\nbut adapt it to the task requirements:\n```javascript\nlet salary = undefined;\nlet job = null;\nlet comparison = salary === job;\n```",
+    "ru": "Обычно `undefined` используется для проверок, была ли переменная назначена.\nСпециальное значение `null` означает «ничего», «пусто» или «значение намеренно отсутствует».\n\nСоздайте переменную с именем `home` и присвойте ей значение `undefined`.\nСоздайте переменную с именем `money` и присвойте ей значение `null`.\nСоздайте переменную с именем `isNullEqualsUndefined` и присвойте ей результат строгого равенства переменных `home` и `money`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet salary = undefined;\nlet job = null;\nlet comparison = salary === job;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let home = undefined;\nlet money = null;\nconst isNullEqualsUndefined = home === money;",
+  "openTest": "it('The `home` variable exists and is undefined', () => {\n  expect(home).to.be.undefined;\n});\n\nit('The `home` variable is of type undefined', () => {\n  expect(typeof home).eq('undefined');\n});\n\nit('The `money` variable exists and has a value', () => {\n  expect(money).not.undefined;\n});\n\nit('Variable `money` has type of object', () => {\n  expect(typeof money).equal('object');\n});\n\nit('Variable `money` has value null', () => {\n  expect(money).equal(null);\n});\n\nit('The `isNullEqualsUndefined` variable exists and has a value', () => {\n  expect(isNullEqualsUndefined).not.undefined;\n});\n\nit('The `isNullEqualsUndefined` variable has a value of false', () => {\n  expect(isNullEqualsUndefined).false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet home = undefined;\nlet money = null;\nconst isNullEqualsUndefined = home === money;\n```",
+    "ru": "```javascript\nlet home = undefined;\nlet money = null;\nconst isNullEqualsUndefined = home === money;\n```"
+  }
+}

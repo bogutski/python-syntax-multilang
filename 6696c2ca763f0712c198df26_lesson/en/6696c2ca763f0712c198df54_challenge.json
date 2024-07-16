@@ -1,0 +1,4 @@
+{
+  "name": "Two functions are called inside a third function",
+  "instruction": "Write the first function `positiveNumber` that returns the number 123.\nWrite the second function `negativeNumber` that returns the number -321.\n\nWrite a third function `sum` that returns the sum of the two numbers that the `positiveNumber` and `negativeNumber` functions return.\n\nThere should be no problem creating the first two functions.\n\nA fundamentally similar example:\n\n```js\nfunction getFirstNumber() {\n  return 1\n}\n\nfunction getSecondNumber() {\n  return 2\n}\n\nfunction calculation() {\n  return getFirstNumber() * getSecondNumber()\n}\n```"
+}

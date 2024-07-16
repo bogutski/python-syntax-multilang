@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35cc",
+  "name": {
+    "ru": "Присвойте переменной `age` значение 25",
+    "en": "Assign a value of 25 to the `age` variable",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Создайте переменную с именем `age`. Используйте ключевое слово `const`. Присвойте значение - число `25`.\nДля этого напечатайте команду:\n```\nconst age = 25;\n```",
+    "en": "Create a variable named `age`. Use keyword `const`. Assign a value - the number `25`.\nTo do this, type the command:\n```\nconst age = 25;\n```\n",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "const age = 25;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "equal"
+}

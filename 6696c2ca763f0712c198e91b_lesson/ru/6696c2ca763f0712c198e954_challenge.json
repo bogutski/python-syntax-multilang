@@ -1,0 +1,5 @@
+{
+  "name": "Исправьте ошибку в функции 'everySecond'",
+  "instruction": "Исправьте ошибку в функции `everySecond`.\n\nФункция должна принимать строку и возвращать новую строку.\n\nВ новой строке прописные и строчные буквы должны чередоваться, начиная с прописной буквы.\n\nПример:\n```javascript\nlet str = 'abc';\nstr[0].toUpperCase(); // 'A'\nstr[1].toLowerCase(); // 'b'\nstr[2].toUpperCase(); // 'C'\n// newStr = 'AbC';\n```",
+  "instructions": {}
+}

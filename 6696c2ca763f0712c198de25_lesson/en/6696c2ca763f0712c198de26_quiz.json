@@ -1,0 +1,154 @@
+{
+  "questions": {
+    "0": {
+      "name": "Operator plus \"+\" can be",
+      "variants": {
+        "0": {
+          "name": "unary"
+        },
+        "1": {
+          "name": "binary"
+        }
+      }
+    },
+    "1": {
+      "name": "Binary plus \"+\" can be applied to numbers.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    },
+    "2": {
+      "name": "The binary plus \"+\" can be applied to strings.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    },
+    "3": {
+      "name": "Binary plus \"+\" can convert non-string arguments to strings.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    },
+    "4": {
+      "name": "The result of running the example below is",
+      "description": "```javascript\nconsole.log( '1' + 2 );\n```",
+      "variants": {
+        "0": {
+          "name": "\"1\"2"
+        },
+        "1": {
+          "name": "\"12\""
+        },
+        "2": {
+          "name": "12"
+        }
+      }
+    },
+    "5": {
+      "name": "Unary plus \"+\" applied to a number (see example below)",
+      "description": "```javascript\nlet a = -15;\nconsole.log( +a );\n```",
+      "variants": {
+        "0": {
+          "name": "reverses the sign"
+        },
+        "1": {
+          "name": "folds strings"
+        },
+        "2": {
+          "name": "doubles the number"
+        },
+        "3": {
+          "name": "makes no difference"
+        }
+      }
+    },
+    "6": {
+      "name": "Unary plus \"+\" applied to a string (see example below)",
+      "description": "```javascript\nlet a = '123'; //string!\nconsole.log(+a);\n```",
+      "variants": {
+        "0": {
+          "name": "sorts the string"
+        },
+        "1": {
+          "name": "doubles the line"
+        },
+        "2": {
+          "name": "converts the string to a number"
+        },
+        "3": {
+          "name": "makes no difference"
+        }
+      }
+    },
+    "7": {
+      "name": "The result of running the example below is",
+      "description": "```javascript\nlet n1 = '5';\nlet n2 = '7';\nconsole.log( n1 + n2 );\n```",
+      "variants": {
+        "0": {
+          "name": "57"
+        },
+        "1": {
+          "name": "12"
+        },
+        "2": {
+          "name": "\"12\""
+        },
+        "3": {
+          "name": "\"57\""
+        }
+      }
+    },
+    "8": {
+      "name": "The result of running the example below is",
+      "description": "```javascript\nlet n1 = '5';\nlet n2 = '7';\nconsole.log( +n1 + +n2 );\n```",
+      "variants": {
+        "0": {
+          "name": "57"
+        },
+        "1": {
+          "name": "12"
+        },
+        "2": {
+          "name": "\"12\""
+        },
+        "3": {
+          "name": "\"57\""
+        }
+      }
+    },
+    "9": {
+      "name": "The result of running the example below is",
+      "description": "```javascript\nlet a = '-13';\nconsole.log( - + a);```\n",
+      "variants": {
+        "0": {
+          "name": "- \"-13\""
+        },
+        "1": {
+          "name": "-13"
+        },
+        "2": {
+          "name": "13"
+        },
+        "3": {
+          "name": "error"
+        }
+      }
+    }
+  },
+  "name": "JS Syntax. Weird +"
+}

@@ -1,0 +1,148 @@
+{
+  "name": "String length",
+  "questions": {
+    "0": {
+      "name": "The length of the string is:",
+      "variants": {
+        "0": {
+          "name": "Function"
+        },
+        "1": {
+          "name": "Property"
+        },
+        "2": {
+          "name": "an integer value equal to the number of characters in the string"
+        }
+      }
+    },
+    "1": {
+      "name": "The string length can be equal to zero",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "2": {
+      "name": "Select the possible options for obtaining the string length",
+      "variants": {
+        "0": {
+          "name": "const str = 'str'; const length = str.length;"
+        },
+        "1": {
+          "name": "const str = 'str'; const length = str.length();"
+        },
+        "2": {
+          "name": "const str = 'str'; const length = str.lentgh;"
+        },
+        "3": {
+          "name": "console.log('str'.length);"
+        }
+      }
+    },
+    "3": {
+      "name": "Select the valid options for obtaining the string length",
+      "variants": {
+        "0": {
+          "name": "let str = '' + ''; console.log(str.length);"
+        },
+        "1": {
+          "name": "let str = ' + '; console.log(str.lenght);"
+        },
+        "2": {
+          "name": "let str = ' + '.length; console.log(str);"
+        },
+        "3": {
+          "name": "let str = ' ;+; '; console.log(str.length);"
+        }
+      }
+    },
+    "4": {
+      "name": "When we get the length of the string we get",
+      "variants": {
+        "0": {
+          "name": "number"
+        },
+        "1": {
+          "name": "the line"
+        }
+      }
+    },
+    "5": {
+      "name": "What will the code output to the console? const number = 'string'; console.log(typeof typeof number.length);",
+      "variants": {
+        "0": {
+          "name": "number"
+        },
+        "1": {
+          "name": "string"
+        },
+        "2": {
+          "name": "boolean"
+        },
+        "3": {
+          "name": "Error"
+        }
+      }
+    },
+    "6": {
+      "name": "Can the string length be negative?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "7": {
+      "name": "What will the code print to the console? const str = 'string'; console.log(str.length);",
+      "variants": {
+        "0": {
+          "name": "string"
+        },
+        "1": {
+          "name": "number 5"
+        },
+        "2": {
+          "name": "number 6"
+        },
+        "3": {
+          "name": "line 6"
+        }
+      }
+    },
+    "8": {
+      "name": "Can I change the length of a string like this?  const number = 'string'; number.length = 10;",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "9": {
+      "name": "The length property counts the number of characters in a string, including spaces. What is the result of the expression ' '.length?",
+      "variants": {
+        "0": {
+          "name": "0"
+        },
+        "1": {
+          "name": "1"
+        },
+        "2": {
+          "name": "2"
+        },
+        "3": {
+          "name": "Error"
+        }
+      }
+    }
+  }
+}

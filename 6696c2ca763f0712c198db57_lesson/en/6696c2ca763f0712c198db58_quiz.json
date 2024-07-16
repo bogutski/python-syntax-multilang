@@ -1,0 +1,66 @@
+{
+  "questions": {
+    "0": {
+      "name": "If a variable is declared using the let keyword, you must specify its value immediately when declaring it.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "1": {
+      "name": "If a variable is declared using the const keyword, you must immediately specify its value when declaring it.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "2": {
+      "description": "```\nlet b;\nb = 7;\n```",
+      "name": "Can such code work without errors?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "3": {
+      "description": "```\nconst a;\na = 2;\n```",
+      "name": "Can such code work without errors?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "4": {
+      "description": "A distance in miles is given. It is necessary to convert miles to kilometers. It is known that 1 mile is equal to 1.609344 km.\n",
+      "name": "Which keyword should be used to create the mile variable in the following task? ",
+      "variants": {
+        "0": {
+          "name": "let"
+        },
+        "1": {
+          "name": "const"
+        },
+        "2": {
+          "name": "mile"
+        }
+      }
+    }
+  },
+  "name": "JS Syntax. The difference between let and const"
+}

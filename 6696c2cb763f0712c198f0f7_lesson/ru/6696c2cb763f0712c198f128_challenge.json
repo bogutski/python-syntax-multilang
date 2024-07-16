@@ -1,0 +1,5 @@
+{
+  "name": "Удалить из массива дубликаты",
+  "instruction": "Функция `cleanDuplicates` принимает массив и возвращает массив без дубликатов.\n\nПримеры запуска функции:\n```javascript\ncleanDuplicates([1, 2, 3, 3, 2, 1, 4]) // [1, 2, 3, 4]\ncleanDuplicates([1]) // [1]\n```",
+  "instructions": {}
+}

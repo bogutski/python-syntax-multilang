@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e734",
+  "name": {
+    "en": "Finding the first element of a nested array",
+    "ru": "Нахождение первого элемента вложенного массива"
+  },
+  "instruction": {
+    "en": "Write a function `innerArray` that takes one parameter, an array.\n\nThe array contains a nested array at the end.\n\nFor example: `[1, 2, 3, [4, 5, 6]]`\n\nThe function must return the first element of the nested array.\n\nAn example of running the function:\n```javascript\nnestedArray([1, 2, 3, [4, 5, 6]]); // 4\n```",
+    "ru": "Напишите функцию `innerArray`, которая принимает один параметр - массив.\n\nМассив содержит в себе вложенный массив, который находится в конце.\n\nНапример: `[1, 2, 3, [4, 5, 6]]`\n\nФункция должна вернуть первый элемент вложенного массива.\n\nПример запуска функции:\n```javascript\nnestedArray([1, 2, 3, [4, 5, 6]]); // 4\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function innerArray(firstElement) {\n    return firstElement[firstElement.length - 1][0];\n}",
+  "openTest": "it('Created function innerArray', () => {\n    expect(innerArray).to.be.a('function');\n});\n\nit('Function innerArray returns first element of nested array', () => {\n    expect(innerArray([1, 2, 3, [4, 5, 6]])).to.be.equal(4);\n});\n\nit('Function innerArray returns first element of nested array', () => {\n    expect(innerArray(['a', 'b', 'c', 'd', ['f', 'g', 'h']])).to.be.equal('f');\n});\n\nit('Function innerArray returns first element of nested array', () => {\n    expect(innerArray([true, false, false, true, 10, 'a', [7, true]])).to.be.equal(7);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

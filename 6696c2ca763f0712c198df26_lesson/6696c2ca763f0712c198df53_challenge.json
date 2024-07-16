@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df53",
+  "name": {
+    "en": "The function returns the address of the PASV site",
+    "ru": "Функция возвращает адрес сайта PASV"
+  },
+  "instruction": {
+    "en": "Write a function `getPasvWebsite` that returns a string with the PASV website address: `https://pasv.us`.",
+    "ru": "Напиши функцию `getPasvWebsite`, которая возвращает строку с адресом сайта PASV: `https://pasv.us`."
+  },
+  "initialSolution": "fun here",
+  "completedSolution": "function getPasvWebsite() {\n  return 'https://pasv.us'\n}",
+  "openTest": "it('Created function getPasvWebsite', () => {\n  expect(getPasvWebsite).to.be.a('function');\n});\n\nit('Function returns correct result', () => {\n  expect(getPasvWebsite()).eq('https://pasv.us');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Book card. Objects",
+  "instruction": "When a book arrives at the library, the librarian must fill out a form and determine the book's place on the shelf.\n\nWrite a function `bookSpec` that takes the following parameters:\n* `firstName` - author name, string\n* `lastName` - author's last name, string\n* `title` - book title, string\n* `genre` - genre, string\n\nThe function should return an object containing the data of the book:\n* `author` - author's first and last name (`firstName lastName`),\n* `title` - book title,\n* `genre` - genre,\n* `shelfIndex` - index of the shelf space, which consists of the first letter of the first name and full surname in upper case.\n\nAn example of running the function:\n```javascript\nbookSpec('Joanne', 'Rowling', 'Harry Potter', 'fantasy')\n// {author: 'Joanne Rowling', title: 'Harry Potter', genre: 'fantasy', shelfIndex: 'JROWLING'}\n```"
+}

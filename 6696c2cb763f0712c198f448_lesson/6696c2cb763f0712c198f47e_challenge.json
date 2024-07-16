@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f47e",
+  "name": {
+    "en": "/*",
+    "ru": "Нормализация строк"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `normalizeStrings`, которая принимает массив строк и возвращает новый массив, где каждая строка преобразована к нижнему регистру и все пробелы в начале и конце удалены.\n\nИспользуйте метод `map()` для этой задачи.\n\n\nПример запуска функции:\n```javascript\nnormalizeStrings([\"\"]); // [ '' ]\nnormalizeStrings([\"NUMBERS123\", \"123NUMBERS\"]); // [ 'numbers123', '123numbers' ]\nnormalizeStrings([\"  Hello\", \"World!  \", \" TeSt  \"]); // [ 'hello', 'world!', 'test' ]\nnormalizeStrings([\" SOMETHING \", \" ANOTHER THING \", \"LaSt OnE\"]); // [ 'something', 'another thing', 'last one' ]\nnormalizeStrings([\"NoTrim\", \"  Space Before\", \"Space After   \"]); // [ 'notrim', 'space before', 'space after' ]\nnormalizeStrings([\"   Mixed CASE  \", \"CapS LoCk DAY\", \"  Today IS nice  \"]); // [ 'mixed case', 'caps lock day', 'today is nice' ]\n```"
+  },
+  "initialSolution": "function normalizeStrings(){\n\n}",
+  "completedSolution": "function normalizeStrings(arr) {\n  return arr.map(str => str.toLowerCase().trim());\n}",
+  "openTest": "it('Created function normalizeStrings', () => {\n  expect(normalizeStrings).to.be.a('function');\n});\n\nit('Function normalizeStrings should include method map()', () => {\n  const res = normalizeStrings.toString()\n  expect(res).to.include('.map(')\n});\n\nit(\"normalizeStrings(['  Hello', 'World!  ', ' TeSt  ']) should return ['hello', 'world!', 'test']\", () => {\n  expect(normalizeStrings([\"  Hello\", \"World!  \", \" TeSt  \"])).to.deep.equal([\"hello\", \"world!\", \"test\"]);\n});\n\nit(\"normalizeStrings([' PYTHON ', 'jAVaScript ']) should return ['python', 'javascript']\", () => {\n  expect(normalizeStrings([\" PYTHON \", \"jAVaScript \"])).to.deep.equal([\"python\", \"javascript\"]);\n});\n\nit(\"normalizeStrings(['']) should return ['']\", () => {\n  expect(normalizeStrings([''])).to.deep.equal(['']);\n});\n\nit(\"normalizeStrings(['  SPACES  ', ' NO SPACES']) should return ['spaces', 'no spaces']\", () => {\n  expect(normalizeStrings([\"  SPACES  \", \" NO SPACES\"])).to.deep.equal([\"spaces\", \"no spaces\"]);\n});\n\nit(\"normalizeStrings(['MixedCase ', ' LoWeR ', 'UPPER']) should return ['mixedcase', 'lower', 'upper']\", () => {\n  expect(normalizeStrings(['MixedCase ', ' LoWeR ', 'UPPER'])).to.deep.equal(['mixedcase', 'lower', 'upper']);\n});\n\nit(\"normalizeStrings([' leading space', 'trailing space ']) should return ['leading space', 'trailing space']\", () => {\n  expect(normalizeStrings([' leading space', 'trailing space '])).to.deep.equal(['leading space', 'trailing space']);\n});\n\nit(\"normalizeStrings(['ALL CAPS']) should return ['all caps']\", () => {\n  expect(normalizeStrings(['ALL CAPS'])).to.deep.equal(['all caps']);\n});\n\nit(\"normalizeStrings(['  multiple   spaces  ']) should return ['multiple   spaces']\", () => {\n  expect(normalizeStrings(['  multiple   spaces  '])).to.deep.equal(['multiple   spaces']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

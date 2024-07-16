@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f346",
+  "name": {
+    "en": "/*",
+    "ru": "Расширение списка утренних дел"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `expandMorningRoutines`, которая принимает массив с уже запланированными делами и добавляет в его начало задачи \"Wake up\" и \"Meditate\".\n\nФункция должна возвращать новый обновленный массив утренних дел.\n\nПример запуска функции:\n```javascript\nexpandMorningRoutines([]); // [\"Wake up\", \"Meditate\"]\nexpandMorningRoutines([\"Brush teeth\", \"Have breakfast\"]); // [\"Wake up\", \"Meditate\", \"Brush teeth\", \"Have breakfast\"]\n```"
+  },
+  "initialSolution": "function expandMorningRoutines(){\n\n}",
+  "completedSolution": "function expandMorningRoutines(arr){\n  arr.unshift('Wake up', 'Meditate')\n  return arr;\n}",
+  "openTest": "it('Created function expandMorningRoutines', () => {\n  expect(expandMorningRoutines).to.be.a('function');\n});\n\nit(\"expandMorningRoutines(['Brush teeth', 'Have breakfast']) should return ['Wake up', 'Meditate', 'Brush teeth', 'Have breakfast']\", () => {\n  expect(expandMorningRoutines([\"Brush teeth\", \"Have breakfast\"])).to.deep.equal([\"Wake up\", \"Meditate\", \"Brush teeth\", \"Have breakfast\"]);\n});\n\nit(\"expandMorningRoutines([]) should return ['Wake up', 'Meditate']\", () => {\n  expect(expandMorningRoutines([])).to.deep.equal([\"Wake up\", \"Meditate\"]);\n});\n\nit(\"expandMorningRoutines(['Go jogging']) should start with 'Wake up'\", () => {\n  const result = expandMorningRoutines([\"Go jogging\"]);\n  expect(result[0]).to.equal(\"Wake up\");\n});\n\nit(\"expandMorningRoutines(['Read a book']) should have 'Meditate' as the second task\", () => {\n  const result = expandMorningRoutines([\"Read a book\"]);\n  expect(result[1]).to.equal(\"Meditate\");\n});\n\nit(\"expandMorningRoutines(['Plan the day']) should have a length of 3\", () => {\n  expect(expandMorningRoutines([\"Plan the day\"]).length).to.equal(3);\n});\n\nit(\"expandMorningRoutines(['Check emails']) should include 'Meditate'\", () => {\n  expect(expandMorningRoutines([\"Check emails\"])).to.include(\"Meditate\");\n});\n\nit(\"expandMorningRoutines(['Have breakfast', 'Brush teeth']) should not include 'Go to sleep'\", () => {\n  expect(expandMorningRoutines([\"Have breakfast\", \"Brush teeth\"])).to.not.include(\"Go to sleep\");\n});\n\nit(\"expandMorningRoutines(['Yoga']) should have 'Yoga' as the last task\", () => {\n  const result = expandMorningRoutines([\"Yoga\"]);\n  expect(result[result.length - 1]).to.equal(\"Yoga\");\n});\n\nit(\"expandMorningRoutines(['Write a journal']) should have 'Wake up' as the first and 'Write a journal' as the last tasks\", () => {\n  const result = expandMorningRoutines([\"Write a journal\"]);\n  expect(result[0]).to.equal(\"Wake up\");\n  expect(result[result.length - 1]).to.equal(\"Write a journal\");\n});\n\nit(\"expandMorningRoutines(['Study']) should return array with exactly 3 elements\", () => {\n  const result = expandMorningRoutines([\"Study\"]);\n  expect(result.length).to.equal(3);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

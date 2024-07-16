@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dafd",
+  "name": {
+    "en": "Commentary in the program",
+    "ru": "Комментарий в программе"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-8.png)\n\nWrite a command to output the word \"Testing\" to the console and comment out this line.\n\nA similar example solution:\n```javascript\n//console.log('Hello JS');\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-8.png)\n\nНапишите команду вывода в консоль слова \"Testing\" и закомментируйте эту строку.\n\nПохожий пример решения:\n```javascript\n//console.log('Hello JS');\n```"
+  },
+  "initialSolution": "console.log('');",
+  "completedSolution": "//console.log('Testing');",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal",
+  "hint": {
+    "en": "```javascript\n//console.log('Testing');\n```",
+    "ru": "```javascript\n//console.log('Testing');\n```"
+  }
+}

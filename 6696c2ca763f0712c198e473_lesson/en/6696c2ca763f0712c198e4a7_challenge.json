@@ -1,0 +1,4 @@
+{
+  "name": "Make only one space between words",
+  "instruction": "Write a function `separator` that takes two strings and returns them joined by one space, but without spaces at the beginning and at the end.\n\nAn example of running the function:\n```javascript\nseparator(' abc', ' def '); // 'abc def'\nseparator('abc ', ' def'); // 'abc def'\nseparator(' hello', ' world '); // 'hello world'\nseparator(' hello', ' world'); // 'hello world'\n```"
+}

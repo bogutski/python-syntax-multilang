@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35aa",
+  "name": {
+    "ru": "Закомментируйте строку программы",
+    "en": "Comment out the program line",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Закомментируйте строку программы.\nПравильное решение:\n```\n//console.log('Everything will be fine!');\n```",
+    "en": "Comment out the program line.\nThe correct solution is:\n```\n//console.log('Everything will be fine!');\n```\n",
+    "es": ""
+  },
+  "initialSolution": "console.log('Everything will be fine!');",
+  "completedSolution": "//console.log('Everything will be fine!');",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "equal"
+}

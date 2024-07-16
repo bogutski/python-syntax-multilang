@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e256",
+  "name": {
+    "en": "Is it true that the numbers go in ascending order?",
+    "ru": "Верно ли, что числа идут по возрастанию?"
+  },
+  "instruction": {
+    "en": "Write a function `isSequence` that takes 5 numbers and returns true if they are ascending. Otherwise it returns false.\n\nThis problem can be solved with `if`, but try solving it with `&&` to practice.\n\nExamples of triggers:\n```javascript.\nisSequence(1, 2, 3, 4, 5); // true\nisSequence(1, 2, 3, 4, 4); // false\nisSequence(1, 2, 3, 4, 3); // false\nisSequence(10, 40, 300, 1000, 1001); // true\n```\n\nA similar example:\n```javascript\nfunction isSequence(n1, n2, n3)\nif (n1 < n2 && n2 < n3) {\nreturn true;\n}\nreturn false;\n}\n```",
+    "ru": "Напишите функцию `isSequence`, которая принимает 5 чисел и возвращает true, если они идут по возрастанию. В противном случае возвращает false.\n\nЭту задачу можно решить с помощью `if`, но для тренировки попробуйте решить ее с помощью `&&`.\n\nПримеры запуска:\n```javascript\nisSequence(1, 2, 3, 4, 5); // true\nisSequence(1, 2, 3, 4, 4); // false\nisSequence(1, 2, 3, 4, 3); // false\nisSequence(10, 40, 300, 1000, 1001); // true\n```\n\nПохожий пример:\n```javascript\nfunction isSequence(n1, n2, n3)\n  if (n1 < n2 && n2 < n3) {\n    return true;\n  }\n  return false;\n}\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isSequence(n1, n2, n3, n4, n5) {\n  if (n1 < n2 && n2 < n3 && n3 < n4 && n4 < n5) {\n    return true;\n  }\n  return false;\n}",
+  "openTest": "it('Created function isSequence', () => {\n  expect(isSequence).to.be.a('function');\n});\n\nit('isSequence(1, 2, 3, 4, 5) should return true', () => {\n  expect(isSequence(1, 2, 3, 4, 5)).to.be.equal(true);\n});\n\nit('isSequence(1, 2, 3, 4, 4) should return false', () => {\n  expect(isSequence(1, 2, 3, 4, 4)).to.be.equal(false);\n});\n\nit('isSequence(1, 2, 3, 4, 3) should return false', () => {\n  expect(isSequence(1, 2, 3, 4, 3)).to.be.equal(false);\n});\n\nit('isSequence(10, 40, 300, 1000, 1001) should return true', () => {\n  expect(isSequence(10, 40, 300, 1000, 1001)).to.be.equal(true);\n});\n\nit('isSequence(10, 40, 300, 1000, 1000) should return false', () => {\n  expect(isSequence(10, 40, 300, 1000, 1000)).to.be.equal(false);\n});\n\nit('isSequence(10, 40, 300, 1000, 999) should return false', () => {\n  expect(isSequence(10, 40, 300, 1000, 999)).to.be.equal(false);\n});\n\nit('isSequence(10, 40, 300, 1000, 1002) should return true', () => {\n  expect(isSequence(10, 40, 300, 1000, 1002)).to.be.equal(true);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

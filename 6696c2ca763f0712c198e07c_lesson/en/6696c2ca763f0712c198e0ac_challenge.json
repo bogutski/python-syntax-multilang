@@ -1,0 +1,4 @@
+{
+  "name": "Travel time in space. Kilometers",
+  "instruction": "The spaceship flies at a speed of `27,000` kilometers per hour.\n\nWrite a function `getSpaceTripTime` that takes as a parameter the distance in kilometers\nand returns the time, in hours, it takes the ship to travel that distance.\n\nExamples:\n```javascript\ngetSpaceTripTime(27000); // 1\ngetSpaceTripTime(54000); // 2\ngetSpaceTripTime(81000); // 3\n```"
+}

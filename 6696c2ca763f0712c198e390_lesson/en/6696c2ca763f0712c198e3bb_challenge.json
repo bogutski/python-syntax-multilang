@@ -1,0 +1,5 @@
+{
+  "name": "The function calculates the length of the string",
+  "instruction": "Write a function `stringLength` that takes a string and returns its length.",
+  "instructions": {}
+}

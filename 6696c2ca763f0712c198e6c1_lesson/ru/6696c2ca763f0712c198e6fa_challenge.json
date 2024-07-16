@@ -1,0 +1,5 @@
+{
+  "name": "На сколько два массива отличаются по длине",
+  "instruction": "Напиши функцию `differenceOfArrays`, которая принимает два параметра:\n* `arr1` - массив элементов,\n* `arr2` - массив элементов.\n\nФункция должна вернуть число - разницу между длинами массивов.\nВозвращаемое число должно быть положительным.\n\nПример запуска функции:\n```javascript\ndifferenceOfArrays([14, 52, 1, 'abc', null], [12, 902, 'zx', 4, 'qwe', undefined]);\n// 1\n```\n\nПохожий пример:\n```javascript\nfunction differenceOfStr(str1, str2) {\n  if(str1.length > str2.length){\n    return str1.length - str2.length\n  } else {\n    return str2.length - str1.length\n  }\n}\n```",
+  "instructions": {}
+}

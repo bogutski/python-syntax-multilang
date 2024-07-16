@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f0f1",
+  "name": {
+    "en": "",
+    "ru": "Найти числа и преобразовать в массив цифр"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `onlyNumbers`, которая принимает массив с разными типами данных.\n\nФункция должна найти все числа с типом данных `number` и записать их в строку.\n\nПосле выполнения первого цикла, добавьте второй цикл, который преобразует строку в новый массив `цифр` (0 - 9),\n преобразовав каждый элемент строки в числовой тип данных.\n\nЕсли массив пустой или в нем нет чисел, то функция должна вернуть `false`.\n\nМетоды использовать нельзя.\n\n\nПримеры запуска функции:\n```javascript\nonlyNumbers([0, 1, 2, 'a', '1', NaN, true]); // [0, 1, 2]\nonlyNumbers([98745, 12547, 3000]);           // [9, 8, 7, 4, 5, 1, 2, 5, 4, 7, 3, 0, 0, 0]\nonlyNumbers(['a', 'b', 'c']);                // false\nonlyNumbers([]);                             // false\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function onlyNumbers(arr){\n  if(!arr.length) return false;\n  const newArr = [];\n  let str = '';\n\n  for(let i = 0; i < arr.length; i++){\n    if(typeof arr[i] === 'number' && !isNaN(arr[i])) str += arr[i];\n  }\n\n  for(let i = 0; i < str.length; i++){\n    newArr.push(+str[i]);\n  }\n\n  if(!str.length) return false;\n  else return newArr;\n}",
+  "openTest": "it('Created function onlyNumbers', () => {\n  expect(onlyNumbers).to.be.a('function');\n});\n\nit(\"Function onlyNumbers does not include method split\", () => {\n  expect(onlyNumbers.toString()).to.not.include('split');\n});\n\nit(\"onlyNumbers([111, 22, 345, 'a', 'b', 'c', '1', NaN, true]) should return [1, 1, 1, 2, 2, 3, 4, 5]\", () => {\n  expect(onlyNumbers([111, 22, 345, 'a', 'b', 'c', '1', NaN, true])).to.deep.equal([1, 1, 1, 2, 2, 3, 4, 5]);\n});\n\nit(\"onlyNumbers(['123', 'text', 'a', null, 'c', 9870, NaN, false, 0]) should return [9, 8, 7, 0, 0]\", () => {\n  expect(onlyNumbers(['123', 'text', 'a', null, 'c', 9870, NaN, false, 0])).to.deep.equal([9, 8, 7, 0, 0]);\n});\n\nit(\"onlyNumbers([98745, 12547, 3000, 98741563]) should return [9, 8, 7, 4, 5, 1, 2, 5, 4, 7, 3, 0, 0, 0, 9, 8, 7, 4, 1, 5, 6, 3]\", () => {\n  expect(onlyNumbers([98745, 12547, 3000, 98741563])).to.deep.equal([9, 8, 7, 4, 5, 1, 2, 5, 4, 7, 3, 0, 0, 0, 9, 8, 7, 4, 1, 5, 6, 3]);\n});\n\nit(\"onlyNumbers(['no', 'numbers', 'in', 'array']) should return false\", () => {\n  expect(onlyNumbers(['no', 'numbers', 'in', 'array'])).to.be.false;\n});\n\nit(\"onlyNumbers([]) should return false\", () => {\n  expect(onlyNumbers([])).to.be.false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e311",
+  "name": {
+    "en": "Round the square root",
+    "ru": "Округлите квадратный корень"
+  },
+  "instruction": {
+    "en": "Write a function `roundSqrt` that takes one number and returns its square root rounded to the nearest integer.\n\nUse `Math.round` for rounding.\n\nTo calculate the square root, round the number to the power of 1/2. Example: `10 ** 0.5`.\n\nExamples of running a function:\n```javascript.\nroundSqrt(1) // 1\nroundSqrt(2) // 1\nroundSqrt(3) // 2\nroundSqrt(4) // 2\nroundSqrt(5) // 2\nroundSqrt(6) // 2\nroundSqrt(7) // 3\nroundSqrt(8) // 3\n```",
+    "ru": "Напишите функцию `roundSqrt`, которая принимает одно число и возвращает его квадратный корень, округленный до ближайшего целого.\n\nИспользуйте для округления `Math.round`.\n\nДля вычисления квадратного корня возводите число в степень 1/2. Пример: `10 ** 0.5`.\n\nПримеры запуска функции:\n```javascript\nroundSqrt(1) // 1\nroundSqrt(2) // 1\nroundSqrt(3) // 2\nroundSqrt(4) // 2\nroundSqrt(5) // 2\nroundSqrt(6) // 2\nroundSqrt(7) // 3\nroundSqrt(8) // 3\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function roundSqrt(num) {\n  return Math.round(num ** 0.5);\n}",
+  "openTest": "it('Created function roundSqrt', () => {\n  expect(roundSqrt).to.be.a('function');\n});\n\nit('roundSqrt(1) should return 1', () => {\n  expect(roundSqrt(1)).to.equal(1);\n});\n\nit('roundSqrt(2) should return 1', () => {\n  expect(roundSqrt(2)).to.equal(1);\n});\n\nit('roundSqrt(3) should return 2', () => {\n  expect(roundSqrt(3)).to.equal(2);\n});\n\nit('roundSqrt(4) should return 2', () => {\n  expect(roundSqrt(4)).to.equal(2);\n});\n\nit('roundSqrt(5) should return 2', () => {\n  expect(roundSqrt(5)).to.equal(2);\n});\n\nit('roundSqrt(6) should return 2', () => {\n  expect(roundSqrt(6)).to.equal(2);\n});\n\nit('roundSqrt(7) should return 3', () => {\n  expect(roundSqrt(7)).to.equal(3);\n});\n\nit('roundSqrt(8) should return 3', () => {\n  expect(roundSqrt(8)).to.equal(3);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

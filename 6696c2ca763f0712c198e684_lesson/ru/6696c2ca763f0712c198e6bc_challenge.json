@@ -1,0 +1,5 @@
+{
+  "name": "Изменение информации о клиенте. Объекты",
+  "instruction": "Функция `clientInfo` принимает три параметра:\n* `obj` – объект.\n* `key` – строка с названием ключа.\n* `value` – значение, которое необходимо проверить, может быть любого типа.\n\nПроверьте наличие свойства `key` в объекте `obj`.\n\nЕсли объект `obj` содержит свойство `key`, то замените существующее значение этого свойства на `value`.\nЕсли объект `obj` не содержит свойство `key`, то добавьте это свойство со значением `value`.\n\nФункция должна вернуть объект `obj` с измененными свойствами.\n\nПример запуска функции:\n```javascript\nhasProperty({ name: \"Helen\", lastName: \"Rock\", age: 15 }, \"lastName\", \"Cash\")  // {name: \"Helen\", lastName: \"Cash\", age: 15}\nhasProperty({ name: \"Helen\", lastName: \"Rock\", age: 15 }, \"country\", \"USA\")  // {name: \"Helen\", lastName: \"Rock\", age: 15, country: USA}\n```",
+  "instructions": {}
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Calculation of percentage gain or loss on sale",
+  "instruction": "The `saleMargin` function takes two parameters as input:\n `costPrice` - purchase price and `salePrice` - sale price.\n\nThe function should return the percentage gain or loss of the sale as a number.\n\nExamples:\n```javascript\nsaleMargin(100, 200); // 100\nsaleMargin(100, 150); // 50\nsaleMargin(10, 100); // 900\n```\n\nUse the formula: `(salePrice - costPrice) / costPrice * 100`\n\nExample:\n\nLet's say you bought an item for $100 and sold it for $120.\n\nThen: (salePrice - costPrice) / costPrice * 100 = (120 - 100) / 100 * 100 = 20%.\n\nYou have made a profit of 20% of the cost of the product for the seller.\n\nIf you had sold the product for $90, the result would have been:\n\n(salePrice - costPrice) / costPrice * 100 = (90 - 100) / 100 * 100 = -10%\n\nYou would have lost 10% of the value of the product to the seller, that is, you would have suffered a loss."
+}

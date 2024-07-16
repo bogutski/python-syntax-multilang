@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db52",
+  "name": {
+    "en": "Correct the errors in the code. Variable result",
+    "ru": "Исправьте ошибки в коде. Переменная result"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-17.png)\n\nYou need to write a command that assigns the value of the number `12.5` to the `result` variable using the `let` keyword.\nkeyword `let`.\n\nCorrect the errors in the given code.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-17.png)\n\nТребуется написать команду, которая присваивает переменной `result` значение числа `12.5` с использованием\nключевого слова `let`.\n\nИсправьте ошибки в приведенном коде."
+  },
+  "initialSolution": "let result = 12,5",
+  "completedSolution": "let result = 12.5;",
+  "openTest": "it('Variable result is defined', () => {\n  expect (result).not.to.be.undefined;\n});\n\nit('Variable result is a number', () => {\n  expect (result).to.be.a('number');\n});\n\nit('Variable result is equal to 12.5', () => {\n  expect (result).to.be.equal(12.5);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet result = 12.5;\n```",
+    "ru": "```javascript\nlet result = 12.5;\n```"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Format a number. Two decimal places. toFixed",
+  "instruction": "The `formatNumber` function takes one number as input.\n\nThis number must be returned rounded to two decimal places.\n\nUse `toFixed` for rounding. Convert the result to a number using unary plus.\n\n```javascript\nconst num = 1.111;\nconst numStr = num.toFixed(2); // string '1.11'\nconst numNum = +numStr; // the number 1.11\n```\n\nExamples of running the function:\n```javascript\nformatNumber(1) // 1\nformatNumber(1.1) // 1.1\nformatNumber(1.11) // 1.11\nformatNumber(1.111) // 1.11\n\nformatNumber(1.99) // 1.99\nformatNumber(1.999) // 2\n```"
+}

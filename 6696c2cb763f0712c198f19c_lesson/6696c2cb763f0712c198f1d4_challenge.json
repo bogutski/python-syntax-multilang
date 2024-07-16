@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f1d4",
+  "name": {
+    "en": "Reverse numeric elements in internal arrays",
+    "ru": "Перевернуть численные элементы во внутренних массивах"
+  },
+  "instruction": {
+    "en": "Write a function `reverseInnerArraysWithNumbers` that takes an array of arrays with different data types.\n\nThe function should return a new array in which the numbers in the inner arrays are reversed.\n\nIf the elements in the inner array have a different data type, they should remain unchanged.\n\nFor example: `[[1,2,3], ['4','5','6'], [7,8,9]]` => `[[3,2,1], ['4','5','6'], [9,8,7]]`, in this example the elements were reversed in the first and third sub-array, as they contained numbers.\n\nThe `reverse` method cannot be used.\n\nIf the outer array is empty, return the string `'Array is empty'`.\n\n\nFunction execution example:\n```javascript\nreverseInnerArraysWithNumbers([[1,2,3], ['4','5','6'], [7,8,9]]);              // [[3,2,1], ['4','5','6'], [9,8,7]]\nreverseInnerArraysWithNumbers([['test', 'string'], [9, 8, 7]]);                // [['test', 'string'], [7, 8, 9]]\nreverseInnerArraysWithNumbers([[true, false], ['a', 'b', 'c'], [55, 66, 77]]); // [[true, false], ['a', 'b', 'c'], [77, 66, 55]]\nreverseInnerArraysWithNumbers([]);                                             // 'Array is empty'\n```",
+    "ru": "Напишите функцию `reverseInnerArraysWithNumbers`, которая принимает массив массивов с различными типами данных.\n\nФункция должна вернуть новый массив, в котором во внутренних массивах числа должны быть в обратном порядке.\n\nЕсли во внутреннем массиве элементы имеют другой тип данных, то они должны остаться без изменений.\n\nНапример: `[[1,2,3], ['4','5','6'], [7,8,9]]` => `[[3,2,1], ['4','5','6'], [9,8,7]]`, в этом примере элементы были\n перевернуты в первом и третьем под-массиве, так как они содержали числа.\n\nМетод `reverse` использовать нельзя.\n\nЕсли внешний массив пустой, то вернуть строку `'Array is empty'`.\n\n\nПример запуска функции:\n```javascript\nreverseInnerArraysWithNumbers([[1,2,3], ['4','5','6'], [7,8,9]]);              // [[3,2,1], ['4','5','6'], [9,8,7]]\nreverseInnerArraysWithNumbers([['test', 'string'], [9, 8, 7]]);                // [['test', 'string'], [7, 8, 9]]\nreverseInnerArraysWithNumbers([[true, false], ['a', 'b', 'c'], [55, 66, 77]]); // [[true, false], ['a', 'b', 'c'], [77, 66, 55]]\nreverseInnerArraysWithNumbers([]);                                             // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseInnerArraysWithNumbers(arr){\n  if(!arr.length) return 'Array is empty';\n  let newArr = [];\n\n  for(let i = 0; i < arr.length; i++){\n    let chunk = [];\n    for(let j = 0; j < arr[i].length; j++){\n      if(typeof arr[i][j] === 'number') chunk.unshift(arr[i][j]);\n      else chunk.push(arr[i][j]);\n    }\n    newArr.push(chunk);\n  }\n\n  return newArr;\n}",
+  "openTest": "it('Created function reverseInnerArraysWithNumbers', () => {\n  expect(reverseInnerArraysWithNumbers).to.be.a('function');\n});\n\nit(\"Function reverseInnerArraysWithNumbers does not include '.reverse' method\", () => {\n  expect(reverseInnerArraysWithNumbers.toString()).to.not.include('.reverse');\n});\n\nit(\"reverseInnerArraysWithNumbers([[1,2,3], ['4','5','6'], [7,8,9]]) should return [[3,2,1], ['4','5','6'], [9,8,7]]\", () => {\n  expect(reverseInnerArraysWithNumbers([[1,2,3], ['4','5','6'], [7,8,9]])).to.eql([[3,2,1], ['4','5','6'], [9,8,7]]);\n});\n\nit(\"reverseInnerArraysWithNumbers([['a', 'b', 'c'], ['d', 'e', 'f'], [55, 67, 100]]) should return [['a', 'b', 'c'], ['d', 'e', 'f'], [100, 67, 55]]\", () => {\n  expect(reverseInnerArraysWithNumbers([['a', 'b', 'c'], ['d', 'e', 'f'], [55, 67, 100]])).to.eql([['a', 'b', 'c'], ['d', 'e', 'f'], [100, 67, 55]]);\n});\n\nit(\"reverseInnerArraysWithNumbers([[99, 100, 999, 10000]]) should return [[10000, 999, 100, 99]]\", () => {\n  expect(reverseInnerArraysWithNumbers([[99, 100, 999, 10000]])).to.eql([[10000, 999, 100, 99]]);\n});\n\nit(\"reverseInnerArraysWithNumbers([[true, false], ['one', 'two'], [{name: 'Jack'}, {name: 'John'}]]) should return [[true, false], ['one', 'two'], [{name: 'Jack'}, {name: 'John'}]]\", () => {\n  expect(reverseInnerArraysWithNumbers([[true, false], ['one', 'two'], [{name: 'Jack'}, {name: 'John'}]])).to.eql([[true, false], ['one', 'two'], [{name: 'Jack'}, {name: 'John'}]]);\n});\n\nit(\"reverseInnerArraysWithNumbers([[], [], []]) should return [[], [], []]\", () => {\n  expect(reverseInnerArraysWithNumbers([[], [], []])).to.eql([[], [], []]);\n});\n\nit(\"reverseInnerArraysWithNumbers([]) should return 'Array is empty'\", () => {\n  expect(reverseInnerArraysWithNumbers([])).to.eql('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

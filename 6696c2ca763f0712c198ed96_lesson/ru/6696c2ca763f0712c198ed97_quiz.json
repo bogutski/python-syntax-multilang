@@ -1,0 +1,185 @@
+{
+  "name": "Удаление дубликатов слов из строки",
+  "questions": {
+    "0": {
+      "name": "Что выведется в консоль в результате выполнения следующего кода?",
+      "description": "```javascript\nconst str = 'Hello ! World Hello !';\n\nconst words = {}\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') acc += str[i]\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n            res += acc + ' ';\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res)\n```",
+      "variants": {
+        "0": {
+          "name": "'Hello World ! '"
+        },
+        "1": {
+          "name": "'Hello ! World'"
+        },
+        "2": {
+          "name": "'Hello ! World ! '"
+        },
+        "3": {
+          "name": "'Hello ! World '"
+        }
+      }
+    },
+    "1": {
+      "name": "Задача в коде ниже удалить дубликаты слов. Какой код пропущен на третьей строке?",
+      "description": "```javascript\nconst str = 'Hello ! World Hello !';\n\n// ???\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') acc += str[i]\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n            res += acc + ' ';\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res)\n```",
+      "variants": {
+        "0": {
+          "name": "```javascript\nconst words = []]\n```"
+        },
+        "1": {
+          "name": "```javascript\nconst words = '']\n```"
+        },
+        "2": {
+          "name": "```javascript\nconst words = {}\n```"
+        },
+        "3": {
+          "name": "Ничего не пропущено, код будет работать правильно"
+        }
+      }
+    },
+    "2": {
+      "name": "Что выведется в консоль в результате выполнения следующего кода?",
+      "description": "```javascript\nconst str = '!! JS World JS !!';\n\nconst words = {}\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') acc += str[i]\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n            res += acc + ' ';\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res === '!! JS World')\n```",
+      "variants": {
+        "0": {
+          "name": "undefined"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "null"
+        },
+        "3": {
+          "name": "true"
+        }
+      }
+    },
+    "3": {
+      "name": "Что выведется в консоль в результате выполнения следующего кода?",
+      "description": "```javascript\nconst str = 'programming is easy is as 123 123';\n\nconst words = {}\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') acc += str[i]\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n\n            if(res) res += ' ' + acc;\n            else res += acc;\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "'programming is easy as 123'"
+        },
+        "1": {
+          "name": "'programming is easy is as 123 123'"
+        },
+        "2": {
+          "name": "'programming easy is as 123'"
+        },
+        "3": {
+          "name": "true"
+        }
+      }
+    },
+    "4": {
+      "name": "Что выведется в консоль в результате выполнения следующего кода?",
+      "description": "```javascript\nconst str = '12 34 56 12';\n\nconst words = {}\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n\n            if(res) res += ' ' + acc;\n            else res += acc;\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "'12 34 56 12'"
+        },
+        "1": {
+          "name": "''"
+        },
+        "2": {
+          "name": "'12 34 56'"
+        },
+        "3": {
+          "name": "'12 34 56 '"
+        }
+      }
+    },
+    "5": {
+      "name": "Сработает ли условие `if`, в следующем коде, и почему?",
+      "description": "```javascript\nlet result = 'Hello';\nif(result) console.log('Hi');\n```",
+      "variants": {
+        "0": {
+          "name": "Да, потому что 'Hello' написано с заглавное буквы"
+        },
+        "1": {
+          "name": "Нет, условие написано с ошибкой"
+        },
+        "2": {
+          "name": "Нет, потому что 'Hello' не равно true"
+        },
+        "3": {
+          "name": "Да, потому что переменная `result` не пустая"
+        }
+      }
+    },
+    "6": {
+      "name": "Что выведется в консоль в результате выполнения следующего кода?",
+      "description": "```javascript\nconst obj = {name: 'Alice'};\nconsole.log(!obj['name']);\n```",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "undefined"
+        },
+        "2": {
+          "name": "false"
+        },
+        "3": {
+          "name": "'Alice'"
+        }
+      }
+    },
+    "7": {
+      "name": "Что выведется в консоль в результате выполнения следующего кода?",
+      "description": "```javascript\nconst obj = {name: 'Bob'};\nconsole.log(obj.age);\n```",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "null"
+        },
+        "3": {
+          "name": "undefined"
+        }
+      }
+    },
+    "8": {
+      "name": "Будет ли выполнятся условие `if` в следующем коде?",
+      "description": "```javascript\nconst obj = {name: 'Mike'};\nconst name = 'Alice';\n\nif(name && !obj['name']){\n    console.log('it works');\n}\n```",
+      "variants": {
+        "0": {
+          "name": "Нет, ключа такого нет в объекте"
+        },
+        "1": {
+          "name": "Да, потому что `name` не пустая строка"
+        },
+        "2": {
+          "name": "Нет, знак восклицания меняет значение на противоположное"
+        },
+        "3": {
+          "name": "Да, консоль выведет `it works`"
+        }
+      }
+    },
+    "9": {
+      "name": "Будет ли выполняться условие `if` в следующем коде?",
+      "description": "```javascript\nconst obj = {name: 'Mike'};\nconst name = 'undefined';\n\nif(name && obj['name']){\n    console.log('it works');\n}\n```",
+      "variants": {
+        "0": {
+          "name": "Нет, undefined вернут false"
+        },
+        "1": {
+          "name": "Нет, объект вернет false"
+        },
+        "2": {
+          "name": "Да, консоль выведет `it works`"
+        },
+        "3": {
+          "name": "Да, консоль выведет `Mike`"
+        }
+      }
+    }
+  }
+}

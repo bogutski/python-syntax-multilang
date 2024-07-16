@@ -1,0 +1,151 @@
+{
+  "name": "Variable scope",
+  "questions": {
+    "0": {
+      "name": "Inside a program there can be several blocks, in each of which you can declare a variable with the same name",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "1": {
+      "name": "A function can use variables declared outside its body before the function is called",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "2": {
+      "name": "The function creates its own scope of variables",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "3": {
+      "name": "Choose a code that will not cause an error",
+      "variants": {
+        "0": {
+          "name": "{ const a = 1; { const a = 2; } }"
+        },
+        "1": {
+          "name": "{ const a = 1; const a = 2; }"
+        },
+        "2": {
+          "name": "const a = 1; { const a = 2; }"
+        },
+        "3": {
+          "name": "const a = 1; { a = 2; }"
+        }
+      }
+    },
+    "4": {
+      "name": "Choose a code that will not cause an error",
+      "variants": {
+        "0": {
+          "name": "let a = 1; { a = 2; }"
+        },
+        "1": {
+          "name": "{ let a = 1; { a = 2; } } a = 3"
+        },
+        "2": {
+          "name": "function f() { let a = 1; { a = 2; } } f(); a = 3"
+        },
+        "3": {
+          "name": "const a = 1; { console.log(a); }"
+        }
+      }
+    },
+    "5": {
+      "name": "What is the result of executing the code? Select the options with the correct comment",
+      "variants": {
+        "0": {
+          "name": "{ let a = 1; { let a = 2; } } console.log(a); // ReferenceError: a is not defined"
+        },
+        "1": {
+          "name": "{ let a = 1; { a = 2; } console.log(a); // SyntaxError"
+        },
+        "2": {
+          "name": "console.log(a); { let a  = 1 } // ReferenceError: a is not defined"
+        },
+        "3": {
+          "name": "{ console.log(a); let a = undefined } // output undefined"
+        }
+      }
+    },
+    "6": {
+      "name": "Why is there no error in the code { let a = 1; {console.log(a);}}?",
+      "variants": {
+        "0": {
+          "name": "The code is written in one line"
+        },
+        "1": {
+          "name": "The nested block has access to the variable from the external block"
+        },
+        "2": {
+          "name": "The variable `a` is declared in the external block"
+        },
+        "3": {
+          "name": "There will be an error if in the external block the variable `a` is declared with `const`."
+        }
+      }
+    },
+    "7": {
+      "name": "Select the options that are correct",
+      "variants": {
+        "0": {
+          "name": "Variables declared with `let` are not visible in nested blocks"
+        },
+        "1": {
+          "name": "Variables declared with `let` and `const` have the same scope"
+        },
+        "2": {
+          "name": "If you declare variables with `let` or `const` in a function, they are only available within that function"
+        },
+        "3": {
+          "name": "If you declare variables with `let` or `const` in a function, they will be available outside the function after it is called"
+        }
+      }
+    },
+    "8": {
+      "name": "Variables declared with `let` and `const` have a block scope",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "9": {
+      "name": "The limited visibility allows for",
+      "variants": {
+        "0": {
+          "name": "Avoid variable name conflicts"
+        },
+        "1": {
+          "name": "Analyze code faster"
+        },
+        "2": {
+          "name": "Reduce errors"
+        },
+        "3": {
+          "name": "Control changes in variables"
+        }
+      }
+    }
+  }
+}

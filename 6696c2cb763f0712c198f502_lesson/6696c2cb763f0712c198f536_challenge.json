@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f536",
+  "name": {
+    "en": "/*",
+    "ru": "Заполнение массива статическим значением"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Создайте функцию `fillArray` которая принимает три параметра: размер массива `size`, значение для заполнения `value`, и необязательный параметр `start` с начальным индексом заполнения (по умолчанию 0).\n\nФункция должна возвращать новый массив указанного размера, заполненный заданным значением начиная с индекса `start` до конца массива.\n\n\nПримеры Запуска Функции:\n```javascript\nfillArray(4, 0); // [0, 0, 0, 0]\nfillArray(5, 'a'); // ['a', 'a', 'a', 'a', 'a']\nfillArray(3, true, 1); // [undefined, true, true]\n```"
+  },
+  "initialSolution": "function fillArray(){\n\n}",
+  "completedSolution": "function fillArray(size, value, start = 0) {\n  return new Array(size).fill(value, start);\n}",
+  "openTest": "it('Created function fillArray', () => {\n  expect(fillArray).to.be.a('function');\n});\n\nit('Function fillArray should include method fill()', () => {\n  const res = fillArray.toString()\n  expect(res).to.include('.fill(')\n});\n\nit(\"fillArray(5, 'a') should return ['a', 'a', 'a', 'a', 'a']\", function() {\n  expect(fillArray(5, 'a')).to.deep.equal(['a', 'a', 'a', 'a', 'a']);\n});\n\nit(\"fillArray(4, 0) should return [0, 0, 0, 0]\", function() {\n  expect(fillArray(4, 0)).to.deep.equal([0, 0, 0, 0]);\n});\n\nit(\"fillArray(3, true, 1) should return [undefined, true, true]\", function() {\n  expect(fillArray(3, true, 1)).to.deep.equal([undefined, true, true]);\n});\n\nit(\"fillArray(2, 'start', 0) should return ['start', 'start']\", function() {\n  expect(fillArray(2, 'start')).to.deep.equal(['start', 'start']);\n});\n\nit(\"fillArray(3, false) should return [false, false, false]\", function() {\n  expect(fillArray(3, false)).to.deep.equal([false, false, false]);\n});\n\nit(\"fillArray(1, 5, 1) should return [undefined]\", function() {\n  expect(fillArray(1, 5, 1)).to.deep.equal([undefined]);\n});\n\nit(\"fillArray(6, 'x', 2) should return [undefined, undefined, 'x', 'x', 'x', 'x']\", function() {\n  expect(fillArray(6, 'x', 2)).to.deep.equal([undefined, undefined, 'x', 'x', 'x', 'x']);\n});\n\nit(\"fillArray(0, 'empty') should return []\", function() {\n  expect(fillArray(0, 'empty')).to.deep.equal([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

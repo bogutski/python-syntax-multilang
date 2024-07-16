@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de1a",
+  "name": {
+    "en": "Decrement, or reduction of a number by 1",
+    "ru": "Декремент, или уменьшение числа на 1"
+  },
+  "instruction": {
+    "en": "The price of the product was $10, but it was reduced by $1. Find the new price of the product.\n\nSet the variable `price` and assign it the value of 10.\nThen write the command that decreases the value of the variable `price` by 1.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nlet number = 8;\nnumber--;\n```",
+    "ru": "Цена товара составляла $10, но была снижена на $1. Найдите новую цену товара.\n\nЗадайте переменную `price` и присвойте ей значение числа 10.\nЗатем запишите команду, уменьшающую значение переменной `price` на 1.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet number = 8;\nnumber--;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let price = 10;\nprice--;",
+  "openTest": "it('The `price` variable contains a value', () => {\n  expect(price).not.undefined;\n});\n\nit('the variable type `price` is a number', () => {\n  expect(price).a('number');\n});\n\nit('the variable `price` is not NaN', () => {\n  expect(isNaN(price)).false;\n});\n\nit('the variable `price` is reduced by 1', () => {\n  expect(price).equal(9);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet price = 10;\nprice--;\n```",
+    "ru": "```javascript\nlet price = 10;\nprice--;\n```"
+  }
+}

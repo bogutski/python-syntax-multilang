@@ -1,0 +1,5 @@
+{
+  "name": "Count the number of consonant letters in the line",
+  "instruction": "The `countOnlyConsonant` function accepts a string and should return the number of consonants in the string.\n\nThe string contains only lowercase letters and does not contain spaces.\n\nAn example of running the function:\n```javascript\ncountOnlyConsonant('abc') // 2\ncountOnlyConsonant('aeiou') // 0\n```",
+  "instructions": {}
+}

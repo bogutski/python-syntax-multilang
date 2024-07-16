@@ -1,0 +1,5 @@
+{
+  "name": "Тройная вложенность объектов",
+  "instruction": "Напишите функцию `tripleNestedObject`, которая принимает один параметр: `param`. Параметр - любое значение.\n\nПример поможет понять что нужно сделать:\n\n```javascript\ntripleNestedObject(5); // { first: { second: { third: { param: 5 } } } }\ntripleNestedObject('hello'); // { first: { second: { third: { param: 'hello' } } } }\n```\n\nФункция должна возвращать объект, в котором есть три вложенных свойства `first`, `second`, `third`. Каждое из этих свойств должно быть объектом.",
+  "instructions": {}
+}

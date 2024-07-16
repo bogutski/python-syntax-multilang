@@ -1,0 +1,4 @@
+{
+  "name": "Create a secret algorithm for encrypting numbers",
+  "instruction": "The `numberToSecret` function takes a string of 4 characters.\n\nEach character is a number from 0 to 9.\n\nThe substitution table for the encryption:\n```\n0 -> t\n1 -> &\n2 -> :\n3 -> B\n4 -> @\n5 -> Q\n6 -> 8\n7 -> W\n8 -> x\n9 -> #\n```\n\nWe need to encrypt the string, replacing each digit with the corresponding character from the table.\n\nFor example, if the string `1234` is passed to the function, the string `&amp;:B@` must be returned.\n\nTo solve the problem, use the object as a correspondence table.\n\nIn this object, the keys are numbers and the values are symbols.\n\nExamples of running a function:\n```javascript\nnumberToSecret('1234'); // '&:B@'\nnumberToSecret('0000'); // 'tttt'\nnumberToSecret('9900'); // '##tt'\nnumberToSecret('5792'); // 'QW#:'\n```"
+}

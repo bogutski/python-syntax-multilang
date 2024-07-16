@@ -1,0 +1,4 @@
+{
+  "name": "Calculate by formula. Degree",
+  "instruction": "Write a function `formula` that takes three parameters `n`, `m`, `p`.\n\nReturns the result of the calculation using the formula `m - (n + p) ** 2`.\n\n` ** ` is the exponentiation operator."
+}

@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35d5",
+  "name": {
+    "ru": "Исправьте ошибки в коде",
+    "en": "Fix bugs in the code",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Требуется написать команду, которая присваивает переменной `number`\nотрицательное число `-12` с использованием ключевого слова `let`.\n\nИсправьте ошибки в приведенном коде.",
+    "en": "It is required to write a command which assigns to the variable `number`\nnegative number `-12` using the keyword `let`.\n\nCorrect the errors in the given code.",
+    "es": ""
+  },
+  "initialSolution": "let number = 12",
+  "completedSolution": "let number = -12;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

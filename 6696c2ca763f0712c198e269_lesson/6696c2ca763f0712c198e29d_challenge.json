@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e29d",
+  "name": {
+    "en": "Number of the century by year",
+    "ru": "Номер века по году"
+  },
+  "instruction": {
+    "en": "Write a function `century` that takes a positive integer `year` - the number of the year\nas a parameter and returns the number of the century.\n\nExamples of function calls:\n```javascript\ncentury(1900) // 19\ncentury(1901) // 20\ncentury(2000) // 20\ncentury(2001) // 21\n```\n\nIn the solution, `Math.ceil()` will come in handy.",
+    "ru": "Напишите функцию `century`, которая принимает целое положительное число `year` - номер года\nв качестве параметра и возвращает номер столетия.\n\nПримеры вызова функции:\n```javascript\ncentury(1900) // 19\ncentury(1901) // 20\ncentury(2000) // 20\ncentury(2001) // 21\n```\n\nВ решении пригодится `Math.ceil()`."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function century(year) {\n  return Math.ceil(year / 100);\n}",
+  "openTest": "it('Created function century', () => {\n  expect(century).to.be.a('function');\n});\n\nit('century(1900) should return 19', () => {\n  expect(century(1900)).to.equal(19);\n});\n\nit('century(1901) should return 20', () => {\n  expect(century(1901)).to.equal(20);\n});\n\nit('century(2000) should return 20', () => {\n  expect(century(2000)).to.equal(20);\n});\n\nit('century(2001) should return 21', () => {\n  expect(century(2001)).to.equal(21);\n});\n\nit('century(200) should return 2', () => {\n  expect(century(200)).to.equal(2);\n});\n\nit('century(10) should return 1', () => {\n  expect(century(10)).to.equal(1);\n});\n\nit('century(5) should return 1', () => {\n  expect(century(5)).to.equal(1);\n});\n\nit('century(321) should return 4', () => {\n  expect(century(321)).to.equal(4);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

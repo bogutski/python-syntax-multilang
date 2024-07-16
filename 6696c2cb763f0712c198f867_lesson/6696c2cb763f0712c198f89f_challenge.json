@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f89f",
+  "name": {
+    "en": "/*",
+    "ru": "Найти индекс последнего элемента, чей квадрат больше заданного числа"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findLastIndexBySquare`, которая принимает массив чисел и число.\n\nФункция должна вернуть индекс последнего элемента в массиве, квадрат которого больше заданного числа.\n\nЕсли такого элемента нет, функция должна вернуть `-1`.\n\n\nПримеры запуска функции:\n```javascript\nfindLastIndexBySquare([1, 2, 3, 4, 5], 16); // 4\nfindLastIndexBySquare([10, 20, 30, 40], 900); // 3\nfindLastIndexBySquare([1, 2, 3, 4], 16); // -1\n```"
+  },
+  "initialSolution": "function findLastIndexBySquare(){\n\n}",
+  "completedSolution": "function findLastIndexBySquare(arr, num) {\n  return arr.findLastIndex(el => el ** 2 > num);\n}",
+  "openTest": "it('Created function findLastIndexBySquare', () => {\n  expect(findLastIndexBySquare).to.be.a('function');\n});\n\nit('findLastIndexBySquare([1, 2, 3, 4, 5], 16) should return 4', function() {\n  expect(findLastIndexBySquare([1, 2, 3, 4, 5], 16)).to.equal(4);\n});\n\nit('findLastIndexBySquare([10, 20, 30, 40], 900) should return 3', function() {\n  expect(findLastIndexBySquare([10, 20, 30, 40], 900)).to.equal(3);\n});\n\nit('findLastIndexBySquare([1, 3, 5, 7], 40) should return 3', function() {\n  expect(findLastIndexBySquare([1, 3, 5, 7], 40)).to.equal(3);\n});\n\nit('findLastIndexBySquare([1, 2, 3, 4], 16) should return -1', function() {\n  expect(findLastIndexBySquare([1, 2, 3, 4], 16)).to.equal(-1);\n});\n\nit('findLastIndexBySquare([2, 4, 6, 8], 36) should return 3', function() {\n  expect(findLastIndexBySquare([2, 4, 6, 8], 36)).to.equal(3);\n});\n\nit('findLastIndexBySquare([5, 10, 15, 20], 200) should return 3', function() {\n  expect(findLastIndexBySquare([5, 10, 15, 20], 200)).to.equal(3);\n});\n\nit('findLastIndexBySquare([3, 6, 9, 12], 50) should return 3', function() {\n  expect(findLastIndexBySquare([3, 6, 9, 12], 50)).to.equal(3);\n});\n\nit('findLastIndexBySquare([1, 4, 9, 16], 25) should return 3', function() {\n  expect(findLastIndexBySquare([1, 4, 9, 16], 25)).to.equal(3);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

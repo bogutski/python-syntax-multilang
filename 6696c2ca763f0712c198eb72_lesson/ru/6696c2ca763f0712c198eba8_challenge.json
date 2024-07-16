@@ -1,0 +1,5 @@
+{
+  "name": "Есть ли тут палиндромы?",
+  "instruction": "Функция isAnyPalindrome принимает два аргумента - строки str1 и str2.\n\nНеобходимо проверить какая из этих строк является палиндромом, а какая нет.\n\nФункция должна вернуть:\n* \"str1 is palindrome\" если первая строка является палиндромом\n* \"str2 is palindrome\" если вторая строка является палиндромом\n* \"both are palindrome\" если обе строки являются палиндромами\n* \"none of them is palindrome\" если ни одна из строк не является палиндромом\n\nПримеры запуска функции:\n```javascript\nisAnyPalindrome(\"madam\", \"racecar\") // \"both are palindrome\"\nisAnyPalindrome(\"madam\", \"hello\") // \"madam is palindrome\"\nisAnyPalindrome(\"hello\", \"racecar\") // \"racecar is palindrome\"\nisAnyPalindrome(\"hello\", \"world\") // \"none of them is palindrome\"\n```",
+  "instructions": {}
+}

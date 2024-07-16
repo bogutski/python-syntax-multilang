@@ -1,0 +1,157 @@
+{
+  "name": "Параметры и аргументы функции",
+  "questions": {
+    "0": {
+      "name": "При декларации функции function sum(n1, n2) в скобках n1 и n2 называются:",
+      "variants": {
+        "0": {
+          "name": "Параметрами функции"
+        },
+        "1": {
+          "name": "Аргументами функции"
+        },
+        "2": {
+          "name": "Никак не называются"
+        }
+      }
+    },
+    "1": {
+      "name": "При вызове функции sum(2, 5) в скобках числа 2 и 5 называются:",
+      "variants": {
+        "0": {
+          "name": "Параметрами функции"
+        },
+        "1": {
+          "name": "Аргументами функции"
+        },
+        "2": {
+          "name": "Никак не называются"
+        }
+      }
+    },
+    "2": {
+      "name": "Аргумент функции — это значение, которое присваивается параметру при вызове функции",
+      "variants": {
+        "0": {
+          "name": "Утверждение верно"
+        },
+        "1": {
+          "name": "Утверждение неверно"
+        }
+      }
+    },
+    "3": {
+      "name": "Аргументы присваиваются параметрам функции в том порядке, в котором они указаны при вызове функции.",
+      "variants": {
+        "0": {
+          "name": "Утверждение верно"
+        },
+        "1": {
+          "name": "Утверждение неверно"
+        }
+      }
+    },
+    "4": {
+      "name": "Выберите истинные утверждения о функциях:",
+      "variants": {
+        "0": {
+          "name": "Параметры функции должны быть уникальными в пределах одной функции."
+        },
+        "1": {
+          "name": "Параметры при декларации функции могут иметь одинаковые имена."
+        },
+        "2": {
+          "name": "Допустимо function f(x, x) { return x + x}"
+        },
+        "3": {
+          "name": "Допустимо function f1(n1, n2) { return 1 } и function f2(n1, n2) { return 2 }"
+        }
+      }
+    },
+    "5": {
+      "name": "Выберите допустимый синтаксис в функциях:",
+      "variants": {
+        "0": {
+          "name": "function f(x, y) { return x + y; }"
+        },
+        "1": {
+          "name": "function f(2, y) { return 2 + y; }"
+        },
+        "2": {
+          "name": "function 1f(x, y) { return x + y; }"
+        },
+        "3": {
+          "name": "function f() { return ''; }"
+        }
+      }
+    },
+    "6": {
+      "name": "Выберите допустимый синтаксис в функциях:",
+      "variants": {
+        "0": {
+          "name": "function function() { return 'fun'; }"
+        },
+        "1": {
+          "name": "function functin() {return 'fun';}"
+        },
+        "2": {
+          "name": "function fun() {return 'function';}"
+        },
+        "3": {
+          "name": "function fun() {return fun;}"
+        }
+      }
+    },
+    "7": {
+      "name": "Выберите допустимый синтаксис в функциях:",
+      "variants": {
+        "0": {
+          "name": "function f(x, y) {console.log(x, y);}"
+        },
+        "1": {
+          "name": "function f(x, y) {console.log(x, x, x);}"
+        },
+        "2": {
+          "name": "function f(f1, f2) {console.log(f1, f2); return f1 + f2;}"
+        },
+        "3": {
+          "name": "function f(f1, f2) {console.log(f1, f2), return f1 + f2;}"
+        }
+      }
+    },
+    "8": {
+      "name": "Выберите допустимый синтаксис в функциях:",
+      "variants": {
+        "0": {
+          "name": "function sum(n1, n2) {return f1 * f2;}"
+        },
+        "1": {
+          "name": "function multi(n1, n2) {return n1 + n2;}"
+        },
+        "2": {
+          "name": "function n1(n, n) {return n * n;}"
+        },
+        "3": {
+          "name": "function return(n) {console.log(n);}"
+        }
+      }
+    },
+    "9": {
+      "name": "Выберите допустимый синтаксис в функциях:",
+      "variants": {
+        "0": {
+          "name": "function retunr(n) { return n; }"
+        },
+        "1": {
+          "name": "function Console(log) { return log; }"
+        },
+        "2": {
+          "name": "console.log(function() { return 1; });"
+        },
+        "3": {
+          "name": "console.log(return 1);"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Find a password",
+  "instruction": "Create a function `isCorrectPassword` that takes a string and returns `true` if the string is equal to `qwert123`, and `false` otherwise.\n\nTo compare strings, use the triple equal `===` strict equality operator.\n\nExamples of using string comparison:\n```javascript\nconst str = ``pasv'';\nconsole.log(str === 'pasv'); // true\nconsole.log(str === 'pasv '); // false\nconsole.log(str === 'pasv1'); // false\n```\n\nSimilar function:\n```javascript\nfunction isLuckyNumber(num) {\n  if(num === '777') return true;\n  return false;\n}\n```"
+}

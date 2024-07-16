@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35d1",
+  "name": {
+    "ru": "Исправьте ошибки в коде. Переменная result",
+    "en": "Correct the errors in the code. Variable result",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Требуется написать команду, которая присваивает переменной `result` значение числа `12.5` с использованием\nключевого слова `let`.\n\nИсправьте ошибки в приведенном коде.",
+    "en": "You need to write a command which assigns to the variable `result` the value of `12.5` using\nkeyword `let`.\n\nCorrect the errors in the given code.",
+    "es": ""
+  },
+  "initialSolution": "let result = 12,5",
+  "completedSolution": "let result = 12.5;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

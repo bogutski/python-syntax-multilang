@@ -1,0 +1,4 @@
+{
+  "name": "Expanding and assigning the result to variables",
+  "instruction": "Create a function `powerOf` that takes two parameters `num` and `power` and returns the result of multiplying `num` by `power`.\n\nCreate a variable `calculation1` and assign it the result of a call to the function `powerOf` with arguments `2` and `3`.\nCreate a variable `calculation2` and assign it the result of a call to the function `powerOf` with arguments `3` and `4`.\nCreate a variable `calculation3` and assign it the result of a call to the function `powerOf` with arguments `4` and `5`.\n\nParameter names must necessarily be the same as in the condition."
+}

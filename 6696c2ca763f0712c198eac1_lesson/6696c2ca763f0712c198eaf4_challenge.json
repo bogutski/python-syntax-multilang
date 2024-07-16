@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eaf4",
+  "name": {
+    "en": "Changing the case of letters in a string",
+    "ru": "Изменение регистра букв в строке"
+  },
+  "instruction": {
+    "en": "Write a function `reverseLettersCase` that takes a string and returns an array.\n\nThe array must contain letters from the string, reversed case.\n\nIf there are spaces in the string, they must be skipped and must not go into the array.\n\nOnly letters and spaces will be passed in the string.\n\nAn example of running a function:\n```js\nreverseLettersCase('a a a B B B'); // [ 'A', 'A', 'A', 'b', 'b', 'b' ]\nreverseLettersCase(' AbCd EfGh '); // [ 'a', 'B', 'c', 'D', 'e', 'F', 'g', 'H' ]\nreverseLettersCase(''); // []\nreverseLettersCase(' '); // []\n```",
+    "ru": "Напишите функцию `reverseLettersCase`, которая принимает строку и возвращает массив.\n\nВ массиве должны быть буквы из строки, с противоположным регистром.\n\nЕсли в строке есть пробелы, то они должны быть пропущены и не должны попасть в массив.\n\nВ строке будут переданы только буквы и пробелы.\n\nПример запуска функции:\n```js\nreverseLettersCase('a a a B B B'); // [ 'A', 'A', 'A', 'b', 'b', 'b' ]\nreverseLettersCase(' AbCd EfGh '); // [ 'a', 'B', 'c', 'D', 'e', 'F', 'g', 'H' ]\nreverseLettersCase(''); // []\nreverseLettersCase(' '); // []\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseLettersCase(str) {\n  let result = [];\n  for (let i = 0; i < str.length; i++) {\n    if(str[i] === ' ') continue;\n    if (str[i] === str[i].toUpperCase()) result.push(str[i].toLowerCase());\n    else result.push(str[i].toUpperCase());\n  }\n  return result;\n}",
+  "openTest": "it('Created function reverseLettersCase', () => {\n  expect(reverseLettersCase).to.be.a('function');\n});\n\nit(\"reverseLettersCase('aaaBBB') should return ['A', 'A', 'A', 'b', 'b', 'b']\", () => {\n  expect(reverseLettersCase('aaaBBB')).to.eql(['A', 'A', 'A', 'b', 'b', 'b']);\n});\n\nit(\"reverseLettersCase('a a a B B B') should return ['A', 'A', 'A', 'b', 'b', 'b']\", () => {\n  expect(reverseLettersCase('a a a B B B')).to.eql(['A', 'A', 'A', 'b', 'b', 'b']);\n});\n\nit(\"reverseLettersCase(' AbCd EfGh ') should return ['a', 'B', 'c', 'D', 'e', 'F', 'g', 'H']\", () => {\n  expect(reverseLettersCase(' AbCd EfGh ')).to.eql(['a', 'B', 'c', 'D', 'e', 'F', 'g', 'H']);\n});\n\nit(\"reverseLettersCase('') should return []\", () => {\n  expect(reverseLettersCase('')).to.eql([]);\n});\n\nit(\"reverseLettersCase(' ') should return []\", () => {\n  expect(reverseLettersCase(' ')).to.eql([]);\n});\n\nit(\"reverseLettersCase('a a a a a') should return ['A', 'A', 'A', 'A', 'A']\", () => {\n  expect(reverseLettersCase('a a a a a')).to.eql(['A', 'A', 'A', 'A', 'A']);\n});\n\nit(\"reverseLettersCase('A A A A A') should return ['a', 'a', 'a', 'a', 'a']\", () => {\n  expect(reverseLettersCase('A A A A A')).to.eql(['a', 'a', 'a', 'a', 'a']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

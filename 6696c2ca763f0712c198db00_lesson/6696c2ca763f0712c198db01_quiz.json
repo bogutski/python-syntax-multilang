@@ -1,0 +1,433 @@
+{
+  "_id": "6696c2ca763f0712c198db01",
+  "name": {
+    "ru": "Вопросы к лекции Первая программа Hello World",
+    "en": "Lecture Questions First Hello World Program",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198db02",
+      "name": {
+        "ru": "Удалось ли открыть песочницу https://play.localcoding.us?",
+        "en": "Did you manage to open the sandbox https://play.localcoding.us?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db03",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db04",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db05",
+      "name": {
+        "ru": "Смогли ли вы открыть консоль разработчика в браузере?",
+        "en": "Were you able to open the developer console in your browser?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db06",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db07",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db08",
+      "name": {
+        "ru": "Смогли ли вы ввести в песочнице команду console.log('Hello World')?",
+        "en": "Were you able to enter the console.log('Hello World') command in the sandbox?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db09",
+          "name": {
+            "ru": "Да. Все сработало",
+            "en": "Yes. It all worked out.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db0a",
+          "name": {
+            "ru": "Нет. Не сработало",
+            "en": "No. It didn't work.",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db0b",
+      "name": {
+        "ru": "Одинарные кавычки используются для обозначения:",
+        "en": "Single quotes are used to indicate:",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db0c",
+          "name": {
+            "ru": "Чисел, например, 1, 2, 3",
+            "en": "Numbers, for example, 1, 2, 3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db0d",
+          "name": {
+            "ru": "Текст. Строка, например, 'Hello World'",
+            "en": "Text. A string, e.g. 'Hello World'.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db0e",
+          "name": {
+            "ru": "Кавычки можно не использовать",
+            "en": "You don't have to use quotation marks.",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db0f",
+      "name": {
+        "ru": "Предпочтительно использовать одинарные кавычки для обозначения текста",
+        "en": "It is preferable to use single quotes to denote text",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db10",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db11",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db12",
+      "name": {
+        "ru": "Команда console.log('5 - 2') выведет в консоль:",
+        "en": "The console.log('5 - 2') command will output to the console:",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db13",
+          "name": {
+            "ru": "Число 3",
+            "en": "Number 3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db14",
+          "name": {
+            "ru": "текст '5 - 2'",
+            "en": "text '5 - 2'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db15",
+          "name": {
+            "ru": "Текст '3'",
+            "en": "Text '3'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db16",
+          "name": {
+            "ru": "Выведет ошибку",
+            "en": "Outputs an error",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db17",
+      "name": {
+        "ru": "Команда console.log(5 - 2) выведет в консоль:",
+        "en": "The console.log(5 - 2) command will output to the console:",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db18",
+          "name": {
+            "ru": "Строку '3'",
+            "en": "Line '3'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db19",
+          "name": {
+            "ru": "Число 3",
+            "en": "Number 3",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db1a",
+          "name": {
+            "ru": "Текст '5 - 2'",
+            "en": "Text '5 - 2'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db1b",
+          "name": {
+            "ru": "Выдаст ошибку",
+            "en": "It will give out an error",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db1c",
+      "name": {
+        "ru": "Команда consol.log('5 - 2') выведет в консоль:",
+        "en": "The consol.log('5 - 2') command will output to the console:",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db1d",
+          "name": {
+            "ru": "Число 3",
+            "en": "Number 3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db1e",
+          "name": {
+            "ru": "Строку '5 - 2'",
+            "en": "Line '5 - 2'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db1f",
+          "name": {
+            "ru": "Строку '3'",
+            "en": "Line '3'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db20",
+          "name": {
+            "ru": "Выдаст ошибку",
+            "en": "It will give out an error",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db21",
+      "name": {
+        "ru": "Почему console.log('5 * 2') не выводит число 10?",
+        "en": "Why doesn't console.log('5 * 2') print the number 10?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db22",
+          "name": {
+            "ru": "Нужно использовать двойные кавычки",
+            "en": "You have to use double quotation marks",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db23",
+          "name": {
+            "ru": "Кавычки не нужны",
+            "en": "You don't need quotation marks.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db24",
+          "name": {
+            "ru": "Ошибка в написании команды console.log",
+            "en": "Error in writing the console.log command",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db25",
+      "name": {
+        "ru": "Точка с запятой в конце команды ставим для того, чтобы:",
+        "en": "We put a semicolon at the end of the command in order to:",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db26",
+          "name": {
+            "ru": "Показать, что команда закончена",
+            "en": "Show that the command is finished",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db27",
+          "name": {
+            "ru": "Чтобы не было ошибок",
+            "en": "To avoid mistakes",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db28",
+          "name": {
+            "ru": "Для краткости",
+            "en": "To shorten the text",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

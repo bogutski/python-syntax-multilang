@@ -1,0 +1,4 @@
+{
+  "name": "Welcome to PASV!",
+  "instruction": "Write a function `greeting` that takes an argument `name` and returns the string `Hello, name! Welcome to PASV! Set the default value for the `name` argument to `friend`.\n\nExamples\n```javascript\ngreeting('Alice'); // 'Hello, Alice! Welcome to PASV!\nGreeting('Bob'); // 'Hello, Bob! Welcome to PASV!\ngreeting(); // 'Hello, friend! Welcome to PASV!'\n```"
+}

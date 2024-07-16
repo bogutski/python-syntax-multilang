@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec9d",
+  "name": {
+    "en": "Number of vowel and consonant letters",
+    "ru": "Количество гласных и согласных букв"
+  },
+  "instruction": {
+    "en": "The `countLetters` function takes a string and returns an object with the number of vowels and consonants in the string:\n\n```javascript\n{\nvowel: countVowel,\nconsonant: countConsonant\n}\n```\n\nwhere `countVowel` is the number of vowels in the string, `countConsonant` is the number of consonants in the string.\n\nThe string can contain letters of the Latin alphabet and spaces. The letters in the string can be in different case.\n\nExamples of function execution:\n```javascript\ncountLetters('Hello') // {vowel: 2, consonant: 3}\ncountLetters('Why') // {vowel: 0, consonant: 3}\n```",
+    "ru": "Функция `countLetters` принимает строку и возвращает объект с количеством гласных и согласных букв в строке:\n\n```javascript\n{\nvowel: countVowel,\nconsonant: countConsonant\n}\n```\n\nгде `countVowel` - количество гласных букв в строке, `countConsonant` - количество согласных букв в строке.\n\nСтрока может содержать буквы латинского алфавита и пробелы. Буквы в строке могут быть в разном регистре.\n\nПримеры запуска функции:\n```javascript\ncountLetters('Hello') // {vowel: 2, consonant: 3}\ncountLetters('Why') // {vowel: 0, consonant: 3}\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function countLetters(str) {\n  str = str.toLowerCase()\n  let vowel = 0\n  let consonant = 0\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {\n      vowel++\n    } else if (str[i] === ' ') {\n      continue\n    } else {\n      consonant++\n    }\n  }\n  return {vowel, consonant}\n}",
+  "openTest": "it('Created function countLetters', () => {\n  expect(countLetters).to.be.a('function');\n});\n\nit('countLetters(\"Hello\") returns {vowel: 2, consonant: 3}', () => {\n  expect(countLetters('Hello')).eql({vowel: 2, consonant: 3});\n});\n\nit('countLetters(\"Why\") returns {vowel: 0, consonant: 3}', () => {\n  expect(countLetters('Why')).eql({vowel: 0, consonant: 3});\n});\n\nit('countLetters(\"Hello world\") returns {vowel: 3, consonant: 7}', () => {\n  expect(countLetters('Hello world')).eql({vowel: 3, consonant: 7});\n});\n\nit('countLetters(\"AaEeIiOoUu\") returns {vowel: 10, consonant: 0}', () => {\n  expect(countLetters('AaEeIiOoUu')).eql({vowel: 10, consonant: 0});\n});\n\nit('countLetters(\"BbCcDdFfGgHhJjKkLl  MmNnPpQqRrSsTtVvWwXxYyZz\") returns {vowel: 0, consonant: 42}', () => {\n  expect(countLetters('BbCcDdFfGgHhJjKkLl  MmNnPpQqRrSsTtVvWwXxYyZz')).eql({vowel: 0, consonant: 42});\n});\n\nit('countLetters(\"\") returns {vowel: 0, consonant: 0}', () => {\n  expect(countLetters('')).eql({vowel: 0, consonant: 0});\n});\n\nit('countLetters(\" \") returns {vowel: 0, consonant: 0}', () => {\n  expect(countLetters(' ')).eql({vowel: 0, consonant: 0});\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

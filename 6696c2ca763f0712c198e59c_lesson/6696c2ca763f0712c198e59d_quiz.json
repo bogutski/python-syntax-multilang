@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198e59d",
+  "name": {
+    "ru": "Изменение свойств объекта",
+    "en": "Changing object properties",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e59e",
+      "name": {
+        "ru": "Какой оператор используется для изменения свойства объекта?",
+        "en": "Which operator is used to change a property of an object?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e59f",
+          "name": {
+            "ru": "Сравнение",
+            "en": "Comparison",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5a0",
+          "name": {
+            "ru": "Присваивание",
+            "en": "Assignment",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5a1",
+          "name": {
+            "ru": "Удаление",
+            "en": "Deletion",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5a2",
+          "name": {
+            "ru": "Замена",
+            "en": "Substitution",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e5a3",
+      "name": {
+        "ru": "При изменении свойства объекта, меняется и адрес к этому объекту",
+        "en": "When you change the property of an object, the address to that object also changes",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e5a4",
+          "name": {
+            "ru": "Данное утверждение верно, если объект создан с помощью let",
+            "en": "This statement is true if the object is created with let",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5a5",
+          "name": {
+            "ru": "Данное утверждение верно, если объект создан с помощью const",
+            "en": "This statement is true if the object is created using const",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5a6",
+          "name": {
+            "ru": "Данное утверждение не верно",
+            "en": "This statement is not true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5a7",
+          "name": {
+            "ru": "Данное утверждение верно",
+            "en": "This statement is true",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e5a8",
+      "name": {
+        "ru": "Что произойдет, если изменить свойство в объекте, созданный через const?",
+        "en": "What happens if you change a property in an object created via const?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e5a9",
+          "name": {
+            "ru": "Изменение свойства приведет к ошибке",
+            "en": "Changing the property will result in an error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5aa",
+          "name": {
+            "ru": "Значение у свойства изменится на новое",
+            "en": "The value of the property will change to the new value",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5ab",
+          "name": {
+            "ru": "Изменение не произойдет и значение у свойства останется прежним",
+            "en": "No change will occur and the value of the property will remain the same",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5ac",
+          "name": {
+            "ru": "Создастся новый объект с измененным свойством",
+            "en": "A new object will be created with the changed property",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e5ad",
+      "name": {
+        "ru": "Выберите верный вариант вместо ????? для изменения свойства city с 'New York' на 'Florida' в коде ниже",
+        "en": "Choose the correct option instead of ????? to change the city property from 'New York' to 'Florida' in the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst address = {\n  city: 'New York'\n};\n??????????????\nconsole.log(address);\n```",
+        "en": "```javascript\nconst address = {\n  city: 'New York'\n};\n??????????????\nconsole.log(address);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e5ae",
+          "name": {
+            "ru": "address.city = Florida",
+            "en": "address.city = Florida",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5af",
+          "name": {
+            "ru": "address.city = 'Florida'",
+            "en": "address.city = 'Florida'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5b0",
+          "name": {
+            "ru": "city.address = 'Florida'",
+            "en": "city.address = 'Florida'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5b1",
+          "name": {
+            "ru": "address.city === Florida",
+            "en": "address.city === Florida",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e5b2",
+      "name": {
+        "ru": "Выберите правильный способ изменения значения свойства cost с 25-ти на 10 в объекте item",
+        "en": "Choose the correct way to change the value of the cost property from 25 to 10 in the item object",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst item = {\n  cost: 25\n};\n```",
+        "en": "```javascript\nconst item = {\n  cost: 25\n};\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e5b3",
+          "name": {
+            "ru": "let item.cost = 10",
+            "en": "let item.cost = 10",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5b4",
+          "name": {
+            "ru": "cost.item = 10",
+            "en": "cost.item = 10",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5b5",
+          "name": {
+            "ru": "item.cost = 10",
+            "en": "item.cost = 10",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5b6",
+          "name": {
+            "ru": "itemCost = 10",
+            "en": "itemCost = 10",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e5b7",
+      "name": {
+        "ru": "Можно ли изменить все свойства в объекте?",
+        "en": "Is it possible to change all the properties in an object?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e5b8",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5b9",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e5ba",
+      "name": {
+        "ru": "Что произойдет с объектом, если изменить в нем все свойства?",
+        "en": "What happens to an object if you change all of its properties?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e5bb",
+          "name": {
+            "ru": "Создастся новый объект с новым именем",
+            "en": "A new object with a new name will be created",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5bc",
+          "name": {
+            "ru": "Изменятся значения всех свойств, но ссылка на объект останется прежней",
+            "en": "The values of all properties will change, but the object reference will remain the same",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5bd",
+          "name": {
+            "ru": "Объект сохранит последнее свойство неизменным",
+            "en": "The object will keep the last property unchanged",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5be",
+          "name": {
+            "ru": "Изменение всех свойств приведёт к ошибке",
+            "en": "Changing all properties will result in an error",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e5bf",
+      "name": {
+        "ru": "Можно ли изменить значение свойства объекта с одного типа данных на другой как показано ниже?",
+        "en": "Is it possible to change the value of an object property from one data type to another as shown below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst user = {\n  age: '10'\n};\nuser.age = 10\n```",
+        "en": "```javascript\nconst user = {\n  age: '10'\n};\nuser.age = 10\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e5c0",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5c1",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5c2",
+          "name": {
+            "ru": "Да, если объект создан с помощью let",
+            "en": "Yes, if the object is created with let",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5c3",
+          "name": {
+            "ru": "Нет, если объект создан с помощью const",
+            "en": "Not if the object is created using const",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e5c4",
+      "name": {
+        "ru": "Сколько раз можно менять одно и то же свойство объекта?",
+        "en": "How many times can you change the same property of an object?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e5c5",
+          "name": {
+            "ru": "Бесконечное количество раз",
+            "en": "An infinite number of times",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5c6",
+          "name": {
+            "ru": "Только один раз",
+            "en": "Just once.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5c7",
+          "name": {
+            "ru": "Не больше 3-х раз",
+            "en": "No more than 3 times",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5c8",
+          "name": {
+            "ru": "Не больше 7-ми раз",
+            "en": "No more than seven times",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e5c9",
+      "name": {
+        "ru": "Что получится в результате запуска кода ниже?",
+        "en": "What is the result of running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst user = {\n  name: 'Lana',\n  address: {\n     city: 'Florida'\n}\n}\nuser.address.city = 'New York';\nconsole.log(user);\n```",
+        "en": "```javascript\nconst user = {\n  name: 'Lana',\n  address: {\n     city: 'Florida'\n}\n}\nuser.address.city = 'New York';\nconsole.log(user);\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e5ca",
+          "name": {
+            "ru": "Значение ключа city изменится на 'New York'",
+            "en": "The value of the city key will change to 'New York'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5cb",
+          "name": {
+            "ru": "{\n  name: 'Lana',\n  address: {\n     city: 'New York'\n}",
+            "en": "{\n  name: 'Lana',\n  address: {\n     city: 'New York'\n}",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5cc",
+          "name": {
+            "ru": "Значение ключа city останется неизменным",
+            "en": "The value of the city key will remain unchanged",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e5cd",
+          "name": {
+            "ru": "Значение ключа name останется неизменным, а значение ключа city изменится на 'New York'",
+            "en": "The value of the name key will remain unchanged and the value of the city key will change to 'New York'",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

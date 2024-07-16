@@ -1,0 +1,6 @@
+{
+  "name": "Let или const?",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-7.png)\n\nСоздайте переменную `a` со значением 100 (число). Примите во внимание, что значение переменной в дальнейшем будет изменено.",
+  "instructions": {},
+  "hint": "```javascript\nlet a = 100;\n```"
+}

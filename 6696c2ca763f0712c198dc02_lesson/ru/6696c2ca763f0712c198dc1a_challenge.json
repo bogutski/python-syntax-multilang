@@ -1,0 +1,6 @@
+{
+  "name": "Переменная с числовым значением",
+  "instruction": "Создайте переменную `age` и присвойте ей значение произвольного числа от 0 до 120.\n\nСоздайте переменную `typeOfAge` и присвойте ей значение типа переменной `age`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst phoneNumber = 911;\nconst typeOfPhoneNumber = typeof (phoneNumber);\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst age = 35;\nconst typeOfAge = typeof (age);\n```"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e187",
+  "name": {
+    "en": "Will everyone fit on the bus?",
+    "ru": "Поместятся ли все в автобус?"
+  },
+  "instruction": {
+    "en": "The bus travels through stops. At each stop some number of people get on.\n\nWrite a function `isBusCanTakeAll` that takes as parameters:\n* `busCapacity` - the capacity of the bus,\n* `onTheBus` - the number of people on the bus before the start of the trip,\n* `countStops` - number of stops,\n* `peopleIn` - how many people enter at each stop. The same number of people enter at each stop.\n\nLet the function return `true` if all people fit on the bus, and `false` otherwise.",
+    "ru": "Автобус едет по остановкам. На каждой остановке некоторое количество людей заходит.\n\nНапишите функцию `isBusCanTakeAll`, которая принимает в качестве параметров:\n* `busCapacity` – вместимость автобуса,\n* `onTheBus` – количество людей в автобусе до начала поездки,\n* `countStops` – количество остановок,\n* `peopleIn` – сколько людей заходит на каждой остановке. Одинаковое количество людей заходит на каждой остановке.\n\nПусть функция возвращает `true`, если все люди поместятся в автобус, и `false` в противном случае."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isBusCanTakeAll(busCapacity, onTheBus, countStops, peopleIn) {\n  return busCapacity >= onTheBus + peopleIn * countStops;\n}",
+  "openTest": "it('Created function isBusCanTakeAll', () => {\n  expect(isBusCanTakeAll).to.be.a('function');\n});\n\nit('isBusCanTakeAll(10, 0, 2, 2) should return true', () => {\n  expect(isBusCanTakeAll(10, 0, 2, 2)).to.be.true;\n});\n\nit('isBusCanTakeAll(10, 0, 2, 3) should return true', () => {\n  expect(isBusCanTakeAll(10, 0, 2, 3)).to.be.true;\n});\n\nit('isBusCanTakeAll(10, 0, 2, 4) should return true', () => {\n  expect(isBusCanTakeAll(10, 0, 2, 4)).to.be.true;\n});\n\nit('isBusCanTakeAll(10, 0, 2, 5) should return true', () => {\n  expect(isBusCanTakeAll(10, 0, 2, 5)).to.be.true;\n});\n\nit('isBusCanTakeAll(10, 5, 2, 2) should return true', () => {\n  expect(isBusCanTakeAll(10, 5, 2, 2)).to.be.true;\n});\n\nit('isBusCanTakeAll(10, 5, 2, 4) should return false', () => {\n  expect(isBusCanTakeAll(10, 5, 2, 4)).to.be.false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

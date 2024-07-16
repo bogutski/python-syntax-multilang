@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eaf1",
+  "name": {
+    "en": "Two strings in one array",
+    "ru": "Две строки в один массив"
+  },
+  "instruction": {
+    "en": "Write a function `twoIntoOne` that takes two strings and returns an array of characters from those strings.\n\nCheck for empty strings:\n\n* If both strings are not empty, then there must be a space between them in the array.\n* If one or both strings are empty, then there should be no space in the array.\n\nHint: Do a check for empty strings, and then merge the strings into one, before the loop.\n\nA similar example of check:\n```js\nlet fullString;\nif ( string1.length !== 0 && string2.length !== 0 ) {\nfullString = string1 + ' ' + string2;\n}\n```\n\n\nExamples of function calls:\n```js\ntwoIntoOne('Hello', 'World'); // ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']\ntwoIntoOne('123', ''); // ['1', '2', '3']\ntwoIntoOne('', ''); // []\n```",
+    "ru": "Напишите функцию `twoIntoOne`, которая принимает две строки и возвращает массив, состоящий из символов этих строк.\n\nВыполните проверку на пустые строки:\n\n* Если обе строки не пустые, то между ними должен быть пробел в массиве.\n* Если одна или обе строки пустые, то пробелов в массиве быть не должно.\n\nПодсказка: сделайте проверку на пустые строки, а затем объедините строки в одну, перед циклом.\n\nПохожий пример проверки:\n```js\nlet fullString;\nif ( string1.length !== 0 && string2.length !== 0 ) {\n  fullString = string1 + ' ' + string2;\n}\n\n\nПримеры запуска функции:\n```js\ntwoIntoOne('Hello', 'World'); // ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']\ntwoIntoOne('123', ''); // ['1', '2', '3']\ntwoIntoOne('', ''); // []\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function twoIntoOne(str1, str2) {\n  let fullString;\n  if (str1.length !== 0 && str2.length !== 0) fullString = str1 + ' ' + str2;\n  else fullString = str1 + str2;\n  const arr = [];\n  for(let i = 0; i < fullString.length; i++){\n    arr.push(fullString[i]);\n  }\n  return arr;\n}",
+  "openTest": "it('Created function twoIntoOne', () => {\n  expect(twoIntoOne).to.be.a('function');\n});\n\nit(\"twoIntoOne('Hello', 'World') should return ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']\", () => {\n  expect(twoIntoOne('Hello', 'World')).to.eql(['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']);\n});\n\nit(\"twoIntoOne('abc', 'def') should return ['a', 'b', 'c', ' ', 'd', 'e', 'f']\", () => {\n  expect(twoIntoOne('abc', 'def')).to.eql(['a', 'b', 'c', ' ', 'd', 'e', 'f']);\n});\n\nit(\"twoIntoOne('123', '456') should return ['1', '2', '3', ' ', '4', '5', '6']\", () => {\n  expect(twoIntoOne('123', '456')).to.eql(['1', '2', '3', ' ', '4', '5', '6']);\n});\n\nit(\"twoIntoOne('a', 'b') should return ['a', ' ', 'b']\", () => {\n  expect(twoIntoOne('a', 'b')).to.eql(['a', ' ', 'b']);\n});\n\nit(\"twoIntoOne('a', '') should return ['a']\", () => {\n  expect(twoIntoOne('a', '')).to.eql(['a']);\n});\n\nit(\"twoIntoOne('', 'b') should return ['b']\", () => {\n  expect(twoIntoOne('', 'b')).to.eql(['b']);\n});\n\nit(\"twoIntoOne('', '') should return []\", () => {\n  expect(twoIntoOne('', '')).to.eql([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

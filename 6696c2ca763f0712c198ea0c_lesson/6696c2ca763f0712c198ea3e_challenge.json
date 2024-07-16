@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ea3e",
+  "name": {
+    "en": "Array from number to zero",
+    "ru": "Массив от числа до нуля"
+  },
+  "instruction": {
+    "en": "The function `fromNumberToZero` takes the number `num`.\n\nThe function should return an array that contains all numbers from num to 0 inclusive.\n\nIf `num` is less than 0, the function should return an empty array.\n\nExamples of running the function:\n```javascript\nfromNumberToZero(5) // [5, 4, 3, 2, 1, 0]\nfromNumberToZero(10) // [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]\n```",
+    "ru": "Функция `fromNumberToZero` принимает число `num`.\n\nФункция должна вернуть массив, который содержит все числа от `num` до `0` включительно.\n\nЕсли `num` меньше `0`, то функция должна вернуть пустой массив.\n\nПримеры запуска функции:\n```javascript\nfromNumberToZero(5) // [5, 4, 3, 2, 1, 0]\nfromNumberToZero(10) // [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function fromNumberToZero(num) {\n  let arr = []\n  for (let i = num; i >= 0; i--) {\n    arr.push(i)\n  }\n  return arr\n}",
+  "openTest": "it('Created function fromNumberToZero', () => {\n  expect(fromNumberToZero).to.be.a('function');\n});\n\nit('fromNumberToZero(5) should return [5, 4, 3, 2, 1, 0]', () => {\n  expect(fromNumberToZero(5)).eql([5, 4, 3, 2, 1, 0]);\n});\n\nit('fromNumberToZero(10) should return [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]', () => {\n  expect(fromNumberToZero(10)).eql([10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]);\n});\n\nit('fromNumberToZero(0) should return [0]', () => {\n  expect(fromNumberToZero(0)).eql([0]);\n});\n\nit('fromNumberToZero(-5) should return []', () => {\n  expect(fromNumberToZero(-5)).eql([]);\n});\n\nit('fromNumberToZero(2) should return [2, 1, 0]', () => {\n  expect(fromNumberToZero(2)).eql([2, 1, 0]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

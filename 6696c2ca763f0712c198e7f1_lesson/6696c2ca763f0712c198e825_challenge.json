@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e825",
+  "name": {
+    "en": "Delete or add a string to an array",
+    "ru": "Удалить или добавить строку в массив"
+  },
+  "instruction": {
+    "en": "The `addOrDelete` function takes three parameters:\n* `arr` - array of strings\n* `str` - string\n* `num` a number\n\nThe string can be empty, contain spaces at the beginning and at the end, and contain capital letters.\n\nIt is necessary to add or remove the string `str` from the array, depending on the situation:\n* if the string is empty, return the array unchanged\n* if the string is contained in an array, delete it from the array\n* if the string is not contained in the array, then add it to the array at the position that corresponds to the number\n\nThe string must be converted to lower case, and the spaces at the beginning and end must be removed.\n\nThe function must return a modified array of strings.\n\nExamples of triggers:\n```javascript\naddOrDelete(['a', 'b', 'c', 'd'], ' a', 2) // ['b', 'c', 'd']\naddOrDelete(['a', 'b', 'c', 'd'], 'A ', 5) // ['b', 'c', 'd']\naddOrDelete(['a', 'b', 'c', 'd'], 'f', 0) // ['f', 'a', 'b', 'c', 'd']\n```",
+    "ru": "Функция `addOrDelete` принимает три параметра:\n* `arr` - массив строк\n* `str` - строка\n* `num` число\n\nСтрока может быть пустой, содержать пробелы в начале и конце, а также содержать заглавные буквы.\n\nНеобходимо добавить или удалить строку `str` из массива в зависимости от ситуации:\n* если строка пустая, то вернуть массив без изменений\n* если строка содержится в массиве, то удалить ее из массива\n* если строка не содержится в массиве, то добавить ее в массив на позицию, которая соответствует числу\n\nСтрока должна быть приведена к нижнему регистру, а также удалены пробелы в начале и конце.\n\nФункция должна возвращать измененный массив строк.\n\nПримеры запуска:\n```javascript\naddOrDelete(['a', 'b', 'c', 'd'], '  a', 2) // ['b', 'c', 'd']\naddOrDelete(['a', 'b', 'c', 'd'], 'A ', 5) // ['b', 'c', 'd']\naddOrDelete(['a', 'b', 'c', 'd'], 'f', 0) // ['f', 'a', 'b', 'c', 'd']\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function addOrDelete(arr, str, num) {\n  str = str.trim().toLowerCase();\n  if (str === '') {\n    return arr\n  }\n  arr.includes(str) ? arr.splice(arr.indexOf(str), 1) : arr.splice(num, 0, str);\n  return arr\n}",
+  "openTest": "it('Created function addOrDelete', () => {\n  expect(addOrDelete).to.be.a('function');\n});\n\nit(`addOrDelete(['a', 'b', 'c', 'd'], '  a', 2) should return ['b', 'c', 'd']`, () => {\n  expect(addOrDelete(['a', 'b', 'c', 'd'], '  a', 2)).to.eql(['b', 'c', 'd']);\n});\n\nit(`addOrDelete(['a', 'b', 'c', 'd'], 'A ', 5) should return ['b', 'c', 'd']`, () => {\n  expect(addOrDelete(['a', 'b', 'c', 'd'], 'A ', 5)).to.eql(['b', 'c', 'd']);\n});\n\nit(`addOrDelete(['a', 'b', 'c', 'd'], 'f', 0) should return ['f', 'a', 'b', 'c', 'd']`, () => {\n  expect(addOrDelete(['a', 'b', 'c', 'd'], 'f', 0)).to.eql(['f', 'a', 'b', 'c', 'd']);\n});\n\nit(`addOrDelete(['a', 'b', 'c', 'd'], 'F', 5) should return ['a', 'b', 'c', 'd', 'f']`, () => {\n  expect(addOrDelete(['a', 'b', 'c', 'd'], 'F', 5)).to.eql(['a', 'b', 'c', 'd', 'f']);\n});\n\nit(`addOrDelete(['a'], 'a', 2) should return []`, () => {\n  expect(addOrDelete(['a'], 'a', 2)).to.eql([]);\n});\n\nit(`addOrDelete(['a'], '', 0) should return ['a']`, () => {\n  expect(addOrDelete(['a'], '', 0)).to.eql(['a']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

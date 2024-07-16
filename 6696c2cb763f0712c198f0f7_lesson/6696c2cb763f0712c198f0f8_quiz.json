@@ -1,0 +1,451 @@
+{
+  "_id": "6696c2cb763f0712c198f0f8",
+  "name": {
+    "ru": "Удалить из массива все дубликаты",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f0f9",
+      "name": {
+        "ru": "Какой метод позволяет создать новый массив без дубликатов?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f0fa",
+          "name": {
+            "ru": "splice()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f0fb",
+          "name": {
+            "ru": "filter()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f0fc",
+          "name": {
+            "ru": "map()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f0fd",
+      "name": {
+        "ru": "Что делает метод lastIndexOf()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f0fe",
+          "name": {
+            "ru": "Возвращает первый индекс встреченного элемента",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f0ff",
+          "name": {
+            "ru": "Возвращает последний индекс встреченного элемента",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f100",
+          "name": {
+            "ru": "Удаляет последний элемент массива",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f101",
+      "name": {
+        "ru": "Какой метод изменяет исходный массив, удаляя из него элементы?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f102",
+          "name": {
+            "ru": "splice()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f103",
+          "name": {
+            "ru": "pop()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f104",
+          "name": {
+            "ru": "filter()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f105",
+      "name": {
+        "ru": "Какой способ НЕ может быть использован без цикла для создания массива уникальных элементов?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f106",
+          "name": {
+            "ru": "splice()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f107",
+          "name": {
+            "ru": "shift()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f108",
+          "name": {
+            "ru": "filter()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f109",
+      "name": {
+        "ru": "Какая конструкция используется для удаления дубликатов с помощью объекта?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f10a",
+          "name": {
+            "ru": "Цикл for с условием if",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f10b",
+          "name": {
+            "ru": "Метод forEach с условием if",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f10c",
+          "name": {
+            "ru": "Метод reduce",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f10d",
+      "name": {
+        "ru": "Какие методы массивов в JavaScript можно использовать для добавления или удаления элементов?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f10e",
+          "name": {
+            "ru": "push",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f10f",
+          "name": {
+            "ru": "pop",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f110",
+          "name": {
+            "ru": "shift",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f111",
+          "name": {
+            "ru": "unshift",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f112",
+      "name": {
+        "ru": "Какие методы используются для определения дубликатов перед их удалением?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f113",
+          "name": {
+            "ru": "indexOf() и lastIndexOf()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f114",
+          "name": {
+            "ru": "push() и pop()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f115",
+          "name": {
+            "ru": "shift() и unshift()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f116",
+      "name": {
+        "ru": "В каком случае использование объекта для удаления дубликатов будет наиболее эффективным?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f117",
+          "name": {
+            "ru": "Когда нужно сохранить порядок элементов",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f118",
+          "name": {
+            "ru": "Когда в массиве много дубликатов",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f119",
+          "name": {
+            "ru": "Когда в массиве мало дубликатов",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f11a",
+      "name": {
+        "ru": "Какой из этих методов не используется для удаления элементов из массива?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f11b",
+          "name": {
+            "ru": "splice()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f11c",
+          "name": {
+            "ru": "filter()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f11d",
+          "name": {
+            "ru": "concat()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f11e",
+      "name": {
+        "ru": "Какие операции необходимо выполнить для удаления дубликатов с помощью цикла и метода splice?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f11f",
+          "name": {
+            "ru": "Проверить, совпадает ли индекс элемента с его первым появлением",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f120",
+          "name": {
+            "ru": "Добавить элемент в новый объект",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f121",
+          "name": {
+            "ru": "Использовать метод filter для создания нового массива",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

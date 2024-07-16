@@ -1,0 +1,4 @@
+{
+  "name": "The sum of all numbers, if zero is not encountered",
+  "instruction": "Write a function `allButZero` that takes two numbers `n1` and `n2` and returns the sum of all numbers between `n1` and\n`n2`, inclusive.\n\nIf there is a zero in the range between `n1` and `n2`, the function should return the string `'Invalid input'`.\n\nExamples of running the function:\n```javascript\nallButZero(1, 5) // 15\nallButZero(-5, 5) // Invalid input\nallButZero(0, 5) // Invalid input\nallButZero(-25, -5) // -315\n```"
+}

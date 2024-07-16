@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e7af",
+  "name": {
+    "en": "Changing the first three elements of an array",
+    "ru": "Изменение первых трех элементов массива"
+  },
+  "instruction": {
+    "en": "Write a function `addLetter` that takes one parameter, an array.\n\nThe array contains 4 elements. \n\nThe first 3 are strings. \n\nThe fourth element is a nested array with three rows.\n\nThe nested array is at the end of the array.\n\nEach line of the main and nested array contains one letter.\n\nAn example of a given array:\n`['a', 'b', 'c', ['a', 'b', 'c']]`\n\nConnect the first element of the array with the first element of the nested array in upper case.\n\nConnect the second element of the array to the second element of the nested array in upper case.\n\nConnect the third element of the array to the third element of the nested array in uppercase.\n\nThe function should return the modified array.\n\nAn example of running the function:\n```javascript\naddLetter(['a', 'd', 'g', ['j', 'm', 'p']]) // ['aJ', 'dM', 'gP', ['j', 'm', 'p']]\n```",
+    "ru": "Напишите функцию `addLetter`, которая принимает один параметр - массив.\n\nМассив содержит 4 элемента. \n\nПервые 3 – строки. \n\nЧетвертый элемент - вложенный массив с тремя строками.\n\nВложенный массив находится в конце массива.\n\nКаждая строка основного и вложенного массива содержит одну букву.\n\nПример заданного массива:\n`['a', 'b', 'c', ['a', 'b', 'c']]`\n\nСоедините первый элемент массива с первым элементом вложенного массива в верхнем регистре.\n\nСоедините второй элемент массива со вторым элементом вложенного массива в верхнем регистре.\n\nСоедините третий элемент массива с третим элементом вложенного массива в верхнем регистре.\n\nФункция должна вернуть измененный массив.\n\nПример запуска функции:\n```javascript\naddLetter(['a', 'd', 'g', ['j', 'm', 'p']]) // ['aJ', 'dM', 'gP', ['j', 'm', 'p']]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function addLetter(arr){\n  arr[0] += arr[arr.length - 1][0].toUpperCase();\n  arr[1] += arr[arr.length - 1][1].toUpperCase();\n  arr[2] += arr[arr.length - 1][2].toUpperCase();\n  return arr\n}",
+  "openTest": "it('Created function addLetter', () => {\n  expect(addLetter).to.be.a('function');\n});\n\nit('addLetter([\\'a\\', \\'d\\', \\'g\\', [\\'j\\', \\'m\\', \\'p\\']]) should return [\\'aJ\\', \\'dM\\', \\'gP\\', [\\'j\\', \\'m\\', \\'p\\']]', () => {\n    expect(addLetter(['a', 'd', 'g', ['j', 'm', 'p']])).to.be.deep.equal(['aJ', 'dM', 'gP', ['j', 'm', 'p']]);\n});\n\nit('addLetter([\\'a\\', \\'b\\', \\'c\\', [\\'a\\', \\'b\\', \\'c\\']]) should return [\\'aA\\', \\'bB\\', \\'cC\\', [\\'a\\', \\'b\\', \\'c\\']]', () => {\n    expect(addLetter(['a', 'b', 'c', ['a', 'b', 'c']])).to.be.deep.equal(['aA', 'bB', 'cC', ['a', 'b', 'c']]);\n});\n\nit('addLetter([\\'k\\', \\'k\\', \\'k\\', [\\'T\\', \\'L\\', \\'O\\']]) should return [\\'kT\\', \\'kL\\', \\'kO\\', [\\'T\\', \\'L\\', \\'O\\']]', () => {\n    expect(addLetter(['k', 'k', 'k', ['T', 'L', 'O']])).to.be.deep.equal(['kT', 'kL', 'kO', ['T', 'L', 'O']]);\n});\n\nit('addLetter([\\'a\\', \\'b\\', \\'c\\', [\\'E\\', \\'k\\', \\'m\\']]) should return [\\'aE\\', \\'bK\\', \\'cM\\', [\\'E\\', \\'k\\', \\'m\\']]', () => {\n    expect(addLetter(['a', 'b', 'c', ['E', 'k', 'm']])).to.be.deep.equal(['aE', 'bK', 'cM', ['E', 'k', 'm']]);\n});\n\nit('addLetter([\\'a\\', \\'b\\', \\'c\\', [\\'j\\', \\'F\\', \\'s\\']]) should return [\\'aJ\\', \\'bF\\', \\'cS\\', [\\'j\\', \\'F\\', \\'s\\']]', () => {\n    expect(addLetter(['a', 'b', 'c', ['j', 'F', 's']])).to.be.deep.equal(['aJ', 'bF', 'cS', ['j', 'F', 's']]);\n});\n\nit('addLetter([\\'a\\', \\'b\\', \\'c\\', [\\'h\\', \\'v\\', \\'U\\']]) should return [\\'aH\\', \\'bV\\', \\'cU\\', [\\'h\\', \\'v\\', \\'U\\']]', () => {\n    expect(addLetter(['a', 'b', 'c', ['h', 'v', 'U']])).to.be.deep.equal(['aH', 'bV', 'cU', ['h', 'v', 'U']]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

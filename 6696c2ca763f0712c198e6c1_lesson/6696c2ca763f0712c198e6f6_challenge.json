@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e6f6",
+  "name": {
+    "en": "The average length of the four arrays",
+    "ru": "Средняя длина четырех массивов"
+  },
+  "instruction": {
+    "en": "Write a function `averageLength` that takes four parameters:\n* `arr1` - array of elements,\n* `arr2` - array of elements,\n* `arr3` - array of elements,\n* `arr4` - array of elements.\n\nThe function should return the average length of the arrays rounded to the nearest integer.\n\nUse the method `Math.round()` for rounding.\n\nAn example of running the function:\n```javascript\naverageLength([1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5, 6]);\n// 5\n```\n\nSimilar example:\n```javascript\nfunction averageString(str1, str2, str3) {\nconst average = (str1.length + str2.length + str3.length) / 3;\nreturn Math.round(average);\n}\n```",
+    "ru": "Напиши функцию `averageLength`, которая принимает четыре параметра:\n* `arr1` - массив элементов,\n* `arr2` - массив элементов,\n* `arr3` - массив элементов,\n* `arr4` - массив элементов.\n\nФункция должна возвращать среднюю длину массивов, округленную до ближайшего целого числа.\n\nДля округления используй метод  `Math.round()`.\n\nПример запуска функции:\n```javascript\naverageLength([1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5, 6]);\n// 5\n```\n\nПохожий пример:\n```javascript\nfunction averageString(str1, str2, str3) {\n  const average = (str1.length + str2.length + str3.length) / 3;\n  return Math.round(average);\n}\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function averageLength(arr1, arr2, arr3, arr4) {\n  const average =  (arr1.length + arr2.length + arr3.length + arr4.length) / 4;\n  return Math.round(average)\n}",
+  "openTest": "it('Created function averageLength', () => {\n  expect(averageLength).to.be.a('function');\n});\n\nit('Function averageLength([1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5, 6]) returns 5', () => {\n  expect(averageLength([1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5, 6])).to.equal(5);\n});\n\nit('Function averageLength([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) returns 10', () => {\n  expect(averageLength([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).to.equal(10);\n});\n\nit('Function averageLength([1, 2, 3, 4], [1], [], [1, 2, 3, 4, 5, 6, 7]) returns 3', () => {\n  expect(averageLength([1, 2, 3, 4], [1], [], [1, 2, 3, 4, 5, 6, 7])).to.equal(3);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

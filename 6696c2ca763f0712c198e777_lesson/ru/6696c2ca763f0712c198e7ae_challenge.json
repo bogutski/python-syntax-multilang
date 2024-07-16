@@ -1,0 +1,5 @@
+{
+  "name": "Изменение элемента в массиве с помощью метода indexOf()",
+  "instruction": "Напишите функцию `onlyFruits`, которая принимает один параметр - массив.\n\nМассив содержит произвольное количество строк с названиями фруктов, среди которых есть только одна строка с `cucumber`.\nПример массива: `['apple', 'banana', 'cucumber', 'orange', 'melon']`\n\nФункция должна вернуть массив, в котором `cucumber` будет изменён на `kiwi`.\n\nДля нахождения элемента `cucumber` в массиве используйте метод `indexOf()`\n\nПример запуска функции:\n```javascript\nonlyFruits(['banana', 'cucumber', 'orange', 'melon']); // ['banana', 'kiwi', 'orange', 'melon']\n```",
+  "instructions": {}
+}

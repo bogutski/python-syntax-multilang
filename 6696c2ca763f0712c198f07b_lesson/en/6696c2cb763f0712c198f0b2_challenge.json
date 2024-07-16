@@ -1,0 +1,5 @@
+{
+  "name": "Multiply all numbers in the array by 2",
+  "instruction": "The function `allNumbers` takes an array `arr` as a parameter.\n\nThe array can contain elements such as numbers, strings, and arrays.\n\nA number can be written either as a number or as a string, for example: 1 or \"1\". But a string containing digits will not be encountered (for example `ab23cc`).\n\nThe function should return an array in which all numbers are multiplied by 2.\n\nIf an element of the array is an array itself, then all numbers in the nested array should also be multiplied by 2.\n\nIf an element of the array is not a number, it should remain unchanged.\n\nExample of function execution:\n```javascript\nallNumbers([1, [2, 3], 4]) // [2, [4, 6], 8]\nallNumbers([\"1\", \"4\", \"6\"]) // [2, 8, 12]\n```",
+  "instructions": {}
+}

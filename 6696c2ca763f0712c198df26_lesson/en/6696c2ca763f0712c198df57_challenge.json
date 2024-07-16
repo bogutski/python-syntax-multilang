@@ -1,0 +1,4 @@
+{
+  "name": "Function with Circle Area Calculation",
+  "instruction": "Write a function `circleArea`.\nIn the function create a variable `pi` and give it a value of `3.14`.\nIn the function create a variable `radius` and give it a value of `20`.\n\nUse the formula `pi * radius * radius` to calculate the area of the circle.\n\nThe function should return the area of the circle.\n\nA fundamentally similar example is calculating the area of a rectangle:\n\n```javascript\nfunction cube() {\n  const side1 = 3;\n  const side2 = 5;\n  return side1 * side2;\n}\n```"
+}

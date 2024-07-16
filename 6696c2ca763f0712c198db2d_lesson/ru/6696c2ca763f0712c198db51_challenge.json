@@ -1,0 +1,6 @@
+{
+  "name": "Создайте переменную co значением undefined",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-16.png)\n\nСоздайте переменную с именем `age`.\nИспользуйте ключевое слово `let`.\nПрисвойте значение `undefined`.\n\nПохожий пример:\n```javascript\nlet year = undefined;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet age = undefined;\n```"
+}

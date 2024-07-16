@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dfd5",
+  "name": {
+    "en": "Two functions return strings. Tasks",
+    "ru": "Две функции возвращают строки. Tasks"
+  },
+  "instruction": {
+    "en": "Write two functions.\n\nRequirements for the function 1:\n1. The function must be called `task1`;\n2. The function must return the string `'Learn JS'`;\n\nRequirements for function 2:\n1. The function must be called `task2`;\n2. The function must return the string `'Learn HTML'`;",
+    "ru": "Напишите две функции.\n\nТребования к функции 1:\n1. Функция должна называться `task1`;\n2. Функция должна возвращать строку `'Learn JS'`;\n\nТребования к функции 2:\n1. Функция должна называться `task2`;\n2. Функция должна возвращать строку `'Learn HTML'`;"
+  },
+  "initialSolution": "fun\nfun",
+  "completedSolution": "function task1() {\n  return 'Learn JS';\n}\n\nfunction task2() {\n  return 'Learn HTML';\n}",
+  "openTest": "it('Created function task1', () => {\n  expect(task1).to.be.a('function');\n});\n\nit('Created function task2', () => {\n  expect(task2).to.be.a('function');\n});\n\nit('Function task1 returns Learn JS', () => {\n  expect(task1()).to.equal('Learn JS');\n});\n\nit('Function task2 returns Learn HTML', () => {\n  expect(task2()).to.equal('Learn HTML');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

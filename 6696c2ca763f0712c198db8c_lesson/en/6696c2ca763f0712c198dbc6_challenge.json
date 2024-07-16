@@ -1,0 +1,6 @@
+{
+  "name": "Variable with the name of the football team",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-12.png)\n\nCreate a variable `soccerTeam` and assign it the value `'Barcelona'`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task\n````javascript\nconst hockeyTeam = ``Panthers'';\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst soccerTeam = 'Barcelona';\n```"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f7a5",
+  "name": {
+    "en": "/*",
+    "ru": "Проверка наличия подмассива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `containsSubarray`, которая принимает два массива: `arr` и `subArr`.\n\nФункция должна возвращать `true`, если все элементы из массива `subArr` появляются в массиве `arr` в той же последовательности (не обязательно подряд), и `false` в противном случае.\n\n\nПримеры запуска функции:\n```javascript\ncontainsSubarray([1, 2, 3, 4, 5], [2, 4, 3]); // false\ncontainsSubarray(['a', 'b', 'c', 'd', 'e'], ['b', 'c', 'd']); // true\ncontainsSubarray(['apple', 'banana', 'mango'], ['banana', 'apple']); // false\n```"
+  },
+  "initialSolution": "function containsSubarray(){\n\n}",
+  "completedSolution": "function containsSubarray(arr, subArray) {\n  let currentIndex = 0\n  for(let i = 0; i < subArray.length; i++){\n    if(arr.includes(subArray[i], currentIndex)) currentIndex = arr.indexOf(subArray[i])\n    else return false\n  }\n\n  return true;\n}",
+  "openTest": "it('Created function containsSubarray', () => {\n  expect(containsSubarray).to.be.a('function');\n});\n\nit(\"Function containsAllElements should include includes method\", () => {\n  const result = containsSubarray.toString();\n  expect(result).to.include('.includes(');\n});\n\nit('containsSubarray([\"a\", \"b\", \"c\", \"d\", \"e\"], [\"b\", \"c\", \"d\"]) should return true', function() {\n  expect(containsSubarray([\"a\", \"b\", \"c\", \"d\", \"e\"], [\"b\", \"c\", \"d\"])).to.equal(true);\n});\n\nit('containsSubarray([1, 2, 3, 4, 5], [2, 4, 3]) should return false', function() {\n  expect(containsSubarray([1, 2, 3, 4, 5], [2, 4, 3])).to.equal(false);\n});\n\nit('containsSubarray([\"apple\", \"banana\", \"mango\"], [\"banana\", \"apple\"]) should return false', function() {\n  expect(containsSubarray([\"apple\", \"banana\", \"mango\"], [\"banana\", \"apple\"])).to.equal(false);\n});\n\nit('containsSubarray([true, false, true, false], [false, true]) should return true', function() {\n  expect(containsSubarray([true, false, true, false], [false, true])).to.equal(true);\n});\n\nit('containsSubarray([null, undefined, null], [undefined, null]) should return true', function() {\n  expect(containsSubarray([null, undefined, null], [undefined, null])).to.equal(true);\n});\n\nit('containsSubarray([\"a\", \"b\", \"c\"], [\"b\", \"c\", \"d\"]) should return false', function() {\n  expect(containsSubarray([\"a\", \"b\", \"c\"], [\"b\", \"c\", \"d\"])).to.equal(false);\n});\n\nit('containsSubarray([\"apple\", \"banana\", \"mango\"], [\"apple\", \"banana\"]) should return true', function() {\n  expect(containsSubarray([\"apple\", \"banana\", \"mango\"], [\"apple\", \"banana\"])).to.equal(true);\n});\n\nit('containsSubarray([1, 2, 3, 4, 5], [5]) should return true', function() {\n  expect(containsSubarray([1, 2, 3, 4, 5], [5])).to.equal(true);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

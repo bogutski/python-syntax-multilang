@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df56",
+  "name": {
+    "en": "The function returns the number of the golden ratio",
+    "ru": "Функция возвращает число золотого сечения"
+  },
+  "instruction": {
+    "en": "Write a function `goldenRatio` that returns the number of the golden ratio `1.618033988749895`.",
+    "ru": "Напишите функцию `goldenRatio`, которая возвращает число золотого сечения `1.618033988749895`."
+  },
+  "initialSolution": "fun here",
+  "completedSolution": "function goldenRatio() {\n  return 1.618033988749895;\n}",
+  "openTest": "it('Created function goldenRatio', () => {\n  expect(goldenRatio).to.be.a('function');\n});\n\nit('Function returns correct result', () => {\n  expect(goldenRatio()).eq(1.618033988749895);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

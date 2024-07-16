@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec5e",
+  "name": {
+    "en": "Count the number of occurrences of each element in the string",
+    "ru": "Посчитать количество вхождений каждого элемента в строку"
+  },
+  "instruction": {
+    "en": "Write a function `countEachEl` that takes 1 parameter, a string.\n\nThe string consists of any number of letters/words in lower or upper case.\n\nThe function should return an object in which the keys are letters from the string and the values are the number of their occurrences in the string.\n\nAn example of running the function is:\n```javascript\ncountEachEl('Anna'); // {A: 1, a: 1, n: 2}\nconsole.log(countEachEl('DEIfied')); // {D: 1, d: 1, E: 1, e: 1, f: 1, I: 1, i: 1}\nconsole.log(countEachEl('')); // {}\ncountEachEl('4 you'); // { : 1, 4: 1, o: 1, u: 1, y: 1}\n```",
+    "ru": "Напишите функцию `countEachEl`, которая принимает 1 параметр - строку.\n\nСтрока состоит из произвольного количества букв/слов в нижнем или верхнем регистре.\n\nФункция должна вернуть объект, в котором ключами будут буквы из строки, а значениями - количество их вхождений в строку.\n\nПример запуска функции:\n```javascript\ncountEachEl('Anna'); // {A: 1, a: 1, n: 2}\nconsole.log(countEachEl('DEIfied')); // {D: 1, d: 1, E: 1, e: 1, f: 1, I: 1, i: 1}\nconsole.log(countEachEl('')); // {}\ncountEachEl('4 you'); // { : 1, 4: 1, o: 1, u: 1, y: 1}\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function countEachEl(str) {\n  const obj = {};\n  for (let i = 0; i < str.length; i++) {\n    if (obj[str[i]]) obj[str[i]]++\n    else obj[str[i]] = 1;\n  }\n  return obj;\n}",
+  "openTest": "it('Created function countEachEl', () => {\n  expect(countEachEl).to.be.a('function');\n});\n\nit(\"countEachEl('Anna') should return {A: 1, a: 1, n: 2}\", () => {\n  expect(countEachEl('Anna')).to.be.deep.equal({A: 1, a: 1, n: 2});\n});\n\nit(\"countEachEl('DEIfied') should return {D: 1, d: 1, E: 1, e: 1, f: 1, I: 1, i: 1}\", () => {\n  expect(countEachEl('DEIfied')).to.be.deep.equal({D: 1, d: 1, E: 1, e: 1, f: 1, I: 1, i: 1});\n});\n\nit(\"countEachEl('') should return {}\", () => {\n  expect(countEachEl('')).to.be.deep.equal({});\n});\n\nit(\"countEachEl('4 you') should return { : 1, 4: 1, o: 1, u: 1, y: 1}\", () => {\n  expect(countEachEl('4 you')).to.be.deep.equal({' ': 1, '4': 1, o: 1, u: 1, y: 1});\n});\n\nit(\"countEachEl('save-vase') should return {-: 1, a: 2, e: 2, s: 2, v: 2}\", () => {\n  expect(countEachEl('save-vase')).to.be.deep.equal({'-': 1, a: 2, e: 2, s: 2, v: 2});\n});\n\nit(\"countEachEl('level') should return {e: 2, l: 2, v: 1}\", () => {\n  expect(countEachEl('level')).to.be.deep.equal({e: 2, l: 2, v: 1});\n});\n\nit(\"countEachEl('Madam') should return {a: 2, d: 1, M: 1, m: 1}\", () => {\n  expect(countEachEl('Madam')).to.be.deep.equal({a: 2, d: 1, M: 1, m: 1});\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

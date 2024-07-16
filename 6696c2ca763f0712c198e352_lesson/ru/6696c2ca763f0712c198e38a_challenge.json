@@ -1,0 +1,5 @@
+{
+  "name": "Цена снижается в зависимости от срока годности",
+  "instruction": "Напишите функцию `productPrice`, которая принимает два параметра: `initialPrice`, `daysRemaining`.\n\nФункция должна возвращать цену товара, с учетом срока годности.\n\n`initialPrice` - базовая цена товара\n`daysRemaining` - количество дней до окончания срока годности.\n\nПримеры запуска функции:\n```javascript\nproductPrice(100, 30); // 100\nproductPrice(100, 20); // 80\nproductPrice(100, 10); // 50\nproductPrice(100, 3); // 30\nproductPrice(100, 0); // 'Product is expired'\n```\n\nЕсли `daysRemaining` больше или равно 30, то функция должна возвращать оригинальную цену `initialPrice`.\nЕсли `daysRemaining` от 20 до 29, то функция должна возвращать цену, уменьшенную на 20%.\nЕсли `daysRemaining` от 10 до 19, то функция должна возвращать цену, уменьшенную на 50%.\nЕсли `daysRemaining` от 0 до 9, то функция должна возвращать цену, уменьшенную на 70%.\nЕсли `daysRemaining` 0, то функция должна возвращать 'Product is expired'.",
+  "instructions": {}
+}

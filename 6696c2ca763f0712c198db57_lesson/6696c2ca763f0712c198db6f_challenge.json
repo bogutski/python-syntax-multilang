@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db6f",
+  "name": {
+    "en": "Let or const?",
+    "ru": "Let или const?"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-7.png)\n\nCreate a variable `a` with a value of 100 (number). Note that the value of the variable will be changed later on.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-7.png)\n\nСоздайте переменную `a` со значением 100 (число). Примите во внимание, что значение переменной в дальнейшем будет изменено."
+  },
+  "initialSolution": "",
+  "completedSolution": "let a = 100;",
+  "openTest": "it('the variable `a` exists and has a value', () => {\n  expect(a).not.undefined;\n});\n\nit('the variable `a` is a number', () => {\n  expect(a).a('number');\n});\n\nit('the value of variable `a` is a number', () => {\n  expect(a).equal(100);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet a = 100;\n```",
+    "ru": "```javascript\nlet a = 100;\n```"
+  }
+}

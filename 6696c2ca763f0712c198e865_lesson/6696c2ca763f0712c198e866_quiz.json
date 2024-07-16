@@ -1,0 +1,523 @@
+{
+  "_id": "6696c2ca763f0712c198e866",
+  "name": {
+    "ru": "Задания на комбинирования всего, что мы знаем",
+    "en": "Tasks to combine everything we know",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e867",
+      "name": {
+        "ru": "Выберите верный вариант нахождения длины массива names",
+        "en": "Select the correct option for finding the length of the names array.",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst names = ['Anna', 'Mary', 'Olga', 'Lana']\n```",
+        "en": "```javascript\nconst names = ['Anna', 'Mary', 'Olga', 'Lana']\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e868",
+          "name": {
+            "ru": "names.length",
+            "en": "names.length",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e869",
+          "name": {
+            "ru": "names.length()",
+            "en": "names.length()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e86a",
+          "name": {
+            "ru": "names.lenght",
+            "en": "names.lenght",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e86b",
+          "name": {
+            "ru": "names[names.length - 1]",
+            "en": "names[names.length - 1]",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e86c",
+      "name": {
+        "ru": "Выберите верный вариант нахождения второго элемента массива names",
+        "en": "Select the correct option for finding the second element of the names array",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst names = ['Anna', 'Mary', 'Olga', 'Lana']\n```",
+        "en": "```javascript\nconst names = ['Anna', 'Mary', 'Olga', 'Lana']\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e86d",
+          "name": {
+            "ru": "names[2]",
+            "en": "names[2]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e86e",
+          "name": {
+            "ru": "names[1]",
+            "en": "names[1]",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e86f",
+          "name": {
+            "ru": "names[names.length - 1]",
+            "en": "names[names.length - 1]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e870",
+          "name": {
+            "ru": "names[names.length - 2]",
+            "en": "names[names.length - 2]",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e871",
+      "name": {
+        "ru": "Для чего используются методы indexOf(), lastIndexOf() и includes() в массивах?",
+        "en": "What are the indexOf(), lastIndexOf(), and includes() methods used in arrays?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e872",
+          "name": {
+            "ru": "Эти методы позволяют изменять элементы в массиве",
+            "en": "These methods allow you to change the elements in an array",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e873",
+          "name": {
+            "ru": "Эти методы позволяют выяснить наличие элемента в массиве",
+            "en": "These methods allow you to find out if an element exists in the array",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e874",
+          "name": {
+            "ru": "Эти методы позволяют узнать длину массива",
+            "en": "These methods allow you to find out the length of the array",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e875",
+      "name": {
+        "ru": "Выберите верный вариант изменения элемента 'birds' на 'fish' в массиве animals",
+        "en": "Choose the correct option to change the element 'birds' to 'fish' in the animals array",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst animals = ['cats', 'dogs', 'birds'];\n```",
+        "en": "```javascript\nconst animals = ['cats', 'dogs', 'birds'];\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e876",
+          "name": {
+            "ru": "animals[2] = 'fish';",
+            "en": "animals[2] = 'fish';",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e877",
+          "name": {
+            "ru": "animals[length - 1] = 'fish';",
+            "en": "animals[length - 1] = 'fish';",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e878",
+          "name": {
+            "ru": "animals[animals.length - 1] = 'fish';",
+            "en": "animals[animals.length - 1] = 'fish';",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e879",
+          "name": {
+            "ru": "animals[3] = 'fish';",
+            "en": "animals[3] = 'fish';",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e87a",
+      "name": {
+        "ru": "Что вернёт следующий код?",
+        "en": "What does the following code return?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst birds = [['dove', 'ostrich'], 'parrot'];\nbirds[0][0] = 'pigeon';\nconsole.log(birds);\n```",
+        "en": "```javascript\nconst birds = [['dove', 'ostrich'], 'parrot'];\nbirds[0][0] = 'pigeon';\nconsole.log(birds);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e87b",
+          "name": {
+            "ru": "[['pigeon', 'dove', 'ostrich'], 'parrot']",
+            "en": "[['pigeon', 'dove', 'ostrich'], 'parrot']",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e87c",
+          "name": {
+            "ru": "[['pigeon', 'ostrich'], 'parrot']",
+            "en": "[['pigeon', 'ostrich'], 'parrot']",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e87d",
+          "name": {
+            "ru": "[['dove,pigeon', 'ostrich'], 'parrot']",
+            "en": "[['dove,pigeon', 'ostrich'], 'parrot']",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e87e",
+          "name": {
+            "ru": "['dove', ['pigeon', 'ostrich'], 'parrot']",
+            "en": "['dove', ['pigeon', 'ostrich'], 'parrot']",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e87f",
+      "name": {
+        "ru": "Выберите верный вариант добавления элемента в массив",
+        "en": "Select the correct option to add an element to the array",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e880",
+          "name": {
+            "ru": "pop()",
+            "en": "pop()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e881",
+          "name": {
+            "ru": "unshift()",
+            "en": "unshift()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e882",
+          "name": {
+            "ru": "shift()",
+            "en": "shift()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e883",
+          "name": {
+            "ru": "push()",
+            "en": "push()",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e884",
+      "name": {
+        "ru": "Что происходит при добавлении элемента в начало массива с помощью unshift()?",
+        "en": "What happens when an element is added to the beginning of an array with unshift()?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e885",
+          "name": {
+            "ru": "Длина массива увеличится на количество добавленных элементов и индексы элементов перепишутся",
+            "en": "The length of the array will increase by the number of elements added and the element indices will be overwritten",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e886",
+          "name": {
+            "ru": "Длина массива увеличится на количество добавленных элементов, но индексы элементов не изменятся",
+            "en": "The length of the array will increase by the number of elements added, but the element indices will not change",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e887",
+          "name": {
+            "ru": "Длина и индексы элементов массива не изменятся",
+            "en": "The length and indexes of the array elements will not change",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e888",
+          "name": {
+            "ru": "Длина массива уменьшится на количество добавленных элементов и индексы элементов перепишутся",
+            "en": "The length of the array will be decreased by the number of elements added and the element indices will be rewritten",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e889",
+      "name": {
+        "ru": "Выберите верный вариант удаления элемента из массива",
+        "en": "Choose the correct option to remove an element from the array",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e88a",
+          "name": {
+            "ru": "shift()",
+            "en": "shift()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e88b",
+          "name": {
+            "ru": "pop()",
+            "en": "pop()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e88c",
+          "name": {
+            "ru": "unshift()",
+            "en": "unshift()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e88d",
+          "name": {
+            "ru": "push()",
+            "en": "push()",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e88e",
+      "name": {
+        "ru": "Что делает метод splice()?",
+        "en": "What does the splice() method do?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e88f",
+          "name": {
+            "ru": "Изменяет содержимое массива, удаляя существующие элементы и/или добавляя новые",
+            "en": "Changes the contents of an array by deleting existing elements and/or adding new elements",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e890",
+          "name": {
+            "ru": "Только добавляет новые элементы в массив",
+            "en": "Only adds new elements to the array",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e891",
+          "name": {
+            "ru": "Только удаляет элементы из массива",
+            "en": "Only removes elements from the array",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e892",
+          "name": {
+            "ru": "Только заменяет элементы в массиве",
+            "en": "Only replaces elements in the array",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e893",
+      "name": {
+        "ru": "Выберите верный вариант глубокого копирования массива",
+        "en": "Select the correct option for deep copying of an array",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e894",
+          "name": {
+            "ru": "Оператор spread",
+            "en": "Operator spread",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e895",
+          "name": {
+            "ru": "Метод slice()",
+            "en": "The slice() method",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e896",
+          "name": {
+            "ru": "JSON.stringify() и JSON.parse()",
+            "en": "JSON.stringify() and JSON.parse()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e897",
+          "name": {
+            "ru": "Метод splice()",
+            "en": "Splice() method",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

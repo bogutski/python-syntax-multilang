@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db85",
+  "name": {
+    "en": "Correct errors in the code. The isCorrect Boolean variable",
+    "ru": "Исправьте ошибки в коде. Переменная isCorrect Boolean"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-2.png)\n\nI need to write a command that assigns to the `isCorrect` variable the logical value `true` using the `const` keyword.\nboolean value `true` using the `const` keyword.\n\nCorrect the errors in the given code.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-2.png)\n\nТребуется написать команду, которая присваивает переменной `isCorrect`\nлогическое значение `true` с использованием ключевого слова `const`.\n\nИсправьте ошибки в приведенном коде."
+  },
+  "initialSolution": "const isCorrect = 'true'",
+  "completedSolution": "const isCorrect = true;",
+  "openTest": "it('isCorrect is a variable', () => {\n  expect (isCorrect).to.exist;\n});\n\nit('isCorrect is a Boolean', () => {\n  expect (isCorrect).to.be.a('boolean');\n});\n\nit('isCorrect is true', () => {\n  expect (isCorrect).to.be.true;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst isCorrect = true;\n```",
+    "ru": "```javascript\nconst isCorrect = true;\n```"
+  }
+}

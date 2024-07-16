@@ -1,0 +1,6 @@
+{
+  "name": "Assign true value to the isAdult variable",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-10.png)\n\nCreate a variable named `isAdult`.\nUse the keyword ` const`.\nAssign the logical value `true`.\n\nRelated example:\n```javascript\nconst isMan = true;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst isAdult = true;\n```"
+}

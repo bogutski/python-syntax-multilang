@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198e958",
+  "name": {
+    "ru": "Прерывание цикла. break",
+    "en": "Loop interrupt. break",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e959",
+      "name": {
+        "ru": "Какой оператор используется для прерывания работы цикла?",
+        "en": "Which operator is used to abort a loop?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e95a",
+          "name": {
+            "ru": "stop",
+            "en": "stop",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e95b",
+          "name": {
+            "ru": "break",
+            "en": "break",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e95c",
+          "name": {
+            "ru": "breack",
+            "en": "breack",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e95d",
+          "name": {
+            "ru": "exit",
+            "en": "exit",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e95e",
+      "name": {
+        "ru": "Оператор break может прервать работу бесконечного цикла",
+        "en": "The break operator can break an infinite loop",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e95f",
+          "name": {
+            "ru": "Данное утверждение верно",
+            "en": "This statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e960",
+          "name": {
+            "ru": "Данное утверждение неверно",
+            "en": "This statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e961",
+      "name": {
+        "ru": "Выберите верный вариант результата прерывания бесконечного цикла",
+        "en": "Choose the correct result of an infinite loop interrupt",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfor(let i = 5; i >= 0; i++){\n  if(i === 10) break;\n  console.log(i);\n}\n```",
+        "en": "```javascript\nfor(let i = 5; i >= 0; i++){\n  if(i === 10) break;\n  console.log(i);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e962",
+          "name": {
+            "ru": "Цикл будет работать бесконечно",
+            "en": "The cycle will run indefinitely",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e963",
+          "name": {
+            "ru": "5 6 7 8 9 10",
+            "en": "5 6 7 8 9 10",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e964",
+          "name": {
+            "ru": "5 6 7 8 9",
+            "en": "5 6 7 8 9",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e965",
+          "name": {
+            "ru": "Цикл не будет работать",
+            "en": "The cycle won't work",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e966",
+      "name": {
+        "ru": "На каком индексе закончится работа цикла ниже и что выведется в консоль?",
+        "en": "At what index will the loop below terminate and what will be output to the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'On Cloud Nine';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' ') break;\n  console.log(i);\n}\n```",
+        "en": "```javascript\nlet str = 'On Cloud Nine';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' ') break;\n  console.log(i);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e967",
+          "name": {
+            "ru": "Цикл остановится на 3 индексе. В консоль выведется 0 1 2 3",
+            "en": "The cycle will stop at index 3. The console will print 0 1 2 3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e968",
+          "name": {
+            "ru": "Цикл остановится на 2 индексе. В консоль выведется 0 1 2",
+            "en": "The cycle will stop at index 2. The console will print 0 1 2",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e969",
+          "name": {
+            "ru": "Цикл остановится на 2 индексе. В консоль выведется 0 1",
+            "en": "The cycle will stop at index 2. The console will print 0 1",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e96a",
+          "name": {
+            "ru": "Цикл остановится на 8 индексе. В консоль выведется 0 1 2 3 4 5 6 7 8",
+            "en": "The cycle will stop at index 8. The console will print 0 1 1 2 3 3 4 5 6 7 7 8",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e96b",
+      "name": {
+        "ru": "Выберите верный результат работы кода ниже",
+        "en": "Select the correct result of the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'On Cloud Nine';\nfor(let i = 3; i < str.length; i++){\n  if(str[i] === ' ') break;\n  console.log(i);\n}\n```",
+        "en": "```javascript\nlet str = 'On Cloud Nine';\nfor(let i = 3; i < str.length; i++){\n  if(str[i] === ' ') break;\n  console.log(i);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e96c",
+          "name": {
+            "ru": "0 1 2 3",
+            "en": "0 1 2 3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e96d",
+          "name": {
+            "ru": "0 1 2",
+            "en": "0 1 2",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e96e",
+          "name": {
+            "ru": "3 4 5 6 7",
+            "en": "3 4 5 6 7",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e96f",
+          "name": {
+            "ru": "3 4 5 6 7 8",
+            "en": "3 4 5 6 7 8",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e970",
+      "name": {
+        "ru": "Что получится в результате работы кода ниже?",
+        "en": "What is the result of the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet arr = [1, 2, 3, 4, 5];\nfor(let i = 0; i < arr.length; i++){\n  if(arr[i] > 4) break;\n  console.log(arr[i]);\n}\n```",
+        "en": "```javascript\nlet arr = [1, 2, 3, 4, 5];\nfor(let i = 0; i < arr.length; i++){\n  if(arr[i] > 4) break;\n  console.log(arr[i]);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e971",
+          "name": {
+            "ru": "1 2 3 4",
+            "en": "1 2 3 4",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e972",
+          "name": {
+            "ru": "1 2 3",
+            "en": "1 2 3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e973",
+          "name": {
+            "ru": "0 1 2 3 4",
+            "en": "0 1 2 3 4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e974",
+          "name": {
+            "ru": "0 1 2 3",
+            "en": "0 1 2 3",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e975",
+      "name": {
+        "ru": "Выберите верный вариант результата прерывания цикла ниже",
+        "en": "Select the correct cycle interrupt result below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet arr = [1, 2, 3, 4, 5, 6, 7];\nfor(let i = 0; i < arr.length; i++){\n  if(arr[i] === 6) break;\n  else if(arr[i] === 4) break;\n  console.log(arr[i]);\n}\n```",
+        "en": "```javascript\nlet arr = [1, 2, 3, 4, 5, 6, 7];\nfor(let i = 0; i < arr.length; i++){\n  if(arr[i] === 6) break;\n  else if(arr[i] === 4) break;\n  console.log(arr[i]);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e976",
+          "name": {
+            "ru": "1 2 3 4 5",
+            "en": "1 2 3 4 5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e977",
+          "name": {
+            "ru": "1 2 3",
+            "en": "1 2 3",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e978",
+          "name": {
+            "ru": "1 2 3 4 5 6",
+            "en": "1 2 3 4 5 6",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e979",
+          "name": {
+            "ru": "1 2 3 4",
+            "en": "1 2 3 4",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e97a",
+      "name": {
+        "ru": "Выберите верный вариант вывода в консоль работы кода ниже",
+        "en": "Select the correct option to output the code operation to the console below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet arr = [5, 6, 7, 8, 9, 10];\nfor(let i = 0; i < arr.length; i++){\n  if(arr[i] === 3) break; \n  console.log(arr[i]);\n}\n```",
+        "en": "```javascript\nlet arr = [5, 6, 7, 8, 9, 10];\nfor(let i = 0; i < arr.length; i++){\n  if(arr[i] === 3) break; \n  console.log(arr[i]);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e97b",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e97c",
+          "name": {
+            "ru": "5 6 7 8 9 10",
+            "en": "5 6 7 8 9 10",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e97d",
+          "name": {
+            "ru": "error",
+            "en": "error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e97e",
+          "name": {
+            "ru": "0 1 2 3 4 5",
+            "en": "0 1 2 3 4 5",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e97f",
+      "name": {
+        "ru": "Что надо написать вместо ??? в коде ниже, чтобы заполнение массива прекратилось на цифре 10?",
+        "en": "What should be written instead of ??? in the code below to stop filling the array at the digit 10?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet arr = [];\nfor(let i = 0; i < 13; i++){\n  if(???) break; \n  console.log(arr.push(i));\n}\n```",
+        "en": "```javascript\nlet arr = [];\nfor(let i = 0; i < 13; i++){\n  if(???) break; \n  console.log(arr.push(i));\n}\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e980",
+          "name": {
+            "ru": "i > 9",
+            "en": "i > 9",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e981",
+          "name": {
+            "ru": "i === 9",
+            "en": "i === 9",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e982",
+          "name": {
+            "ru": "i === 10",
+            "en": "i === 10",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e983",
+          "name": {
+            "ru": "i > 10",
+            "en": "i > 10",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e984",
+      "name": {
+        "ru": "Выберите верный вариант вывода в консоль работы кода ниже",
+        "en": "Select the correct option to output the code operation to the console below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'A Busy Bee';\nlet count = 0;\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === 'e') break; \n  count++;\n}\nconsole.log(count);\n```",
+        "en": "```javascript\nlet str = 'A Busy Bee';\nlet count = 0;\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === 'e') break; \n  count++;\n}\nconsole.log(count);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e985",
+          "name": {
+            "ru": "7",
+            "en": "7",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e986",
+          "name": {
+            "ru": "8",
+            "en": "8",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e987",
+          "name": {
+            "ru": "6",
+            "en": "6",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e988",
+          "name": {
+            "ru": "9",
+            "en": "9",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

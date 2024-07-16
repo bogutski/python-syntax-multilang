@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f442",
+  "name": {
+    "en": "/*",
+    "ru": "Замена сегментов массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `updateSegment`, которая принимает четыре параметра: исходный массив, начальную позицию `start`, количество элементов для удаления `deleteCount` и массив новых элементов `newElements`.\n\nФункция должна использовать метод `toSpliced()` для замены сегмента в новом массиве, начиная с `start`, удаляя `deleteCount` элементов и вставляя элементы из `newElements` на их место.\n\nФункция возвращает новый массив с обновленным сегментом, не изменяя исходный массив.\n\n\nПример запуска функции:\n```javascript\nconst originalArray = [10, 20, 30, 40, 50];\nconst newElements = [60, 70, 80];\nconst resultArray = updateSegment(originalArray, 1, 3, newElements);\n\nconsole.log(originalArray); // Вывод: [10, 20, 30, 40, 50]\nconsole.log(resultArray);   // Вывод: [10, 60, 70, 80, 50]\n```"
+  },
+  "initialSolution": "function updateSegment(){\n\n}",
+  "completedSolution": "function updateSegment(arr, start, deleteCount, elements) {\n  return arr.toSpliced(start, deleteCount, ...elements);\n}",
+  "openTest": "Array.prototype.toSpliced = function(start, deleteCount, ...items) {\n  let newArray = this.slice();\n  if(deleteCount === undefined) deleteCount = newArray.length - start\n  newArray.splice(start, deleteCount, ...items);\n  return newArray;\n};\n\nit('Created function updateSegment', () => {\n  expect(updateSegment).to.be.a('function');\n});\n\nit('Function updateSegment should include method toSpliced()', () => {\n  const res = updateSegment.toString()\n  expect(res).to.include('.toSpliced(')\n});\n\nit(\"updateSegment([10, 20, 30, 40, 50], 1, 3, [60, 70, 80]) should return [10, 60, 70, 80, 50]\", () => {\n  expect(updateSegment([10, 20, 30, 40, 50], 1, 3, [60, 70, 80])).to.deep.equal([10, 60, 70, 80, 50]);\n});\n\nit(\"updateSegment(['a', 'b', 'c', 'd'], 2, 1, ['x', 'y']) should return ['a', 'b', 'x', 'y', 'd']\", () => {\n  expect(updateSegment(['a', 'b', 'c', 'd'], 2, 1, ['x', 'y'])).to.deep.equal(['a', 'b', 'x', 'y', 'd']);\n});\n\nit(\"updateSegment([1, 2, 3], 0, 2, [4, 5]) should return [4, 5, 3]\", () => {\n  expect(updateSegment([1, 2, 3], 0, 2, [4, 5])).to.deep.equal([4, 5, 3]);\n});\n\nit(\"updateSegment([1], 1, 0, [2, 3]) should add elements at the end\", () => {\n  expect(updateSegment([1], 1, 0, [2, 3])).to.deep.equal([1, 2, 3]);\n});\n\nit(\"updateSegment(['apple', 'banana'], 0, 1, ['cherry']) should replace 'apple' with 'cherry'\", () => {\n  expect(updateSegment(['apple', 'banana'], 0, 1, ['cherry'])).to.deep.equal(['cherry', 'banana']);\n});\n\nit(\"updateSegment(['start', 'middle', 'end'], 1, 1, ['new']) should return ['start', 'new', 'end']\", () => {\n  expect(updateSegment(['start', 'middle', 'end'], 1, 1, ['new'])).to.deep.equal(['start', 'new', 'end']);\n});\n\nit(\"updateSegment(['x', 'y', 'z'], 0, 3, ['a']) should return ['a']\", () => {\n  expect(updateSegment(['x', 'y', 'z'], 0, 3, ['a'])).to.deep.equal(['a']);\n});\n\nit(\"updateSegment([10, 20, 30], 3, 0, [40]) should add '40' at the end\", () => {\n  expect(updateSegment([10, 20, 30], 3, 0, [40])).to.deep.equal([10, 20, 30, 40]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

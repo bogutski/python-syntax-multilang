@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db4f",
+  "name": {
+    "en": "Correct the errors in the code. Number 3.125",
+    "ru": "Исправьте ошибки в коде. Число 3.125"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-14.png)\n\nYou need to write a command that assigns the number 3.125 to the variable `a`.\n\nSimilar solution:\n```javascript\nlet b = 5.345;\n```\n\nFix the errors in the above code.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-14.png)\n\nТребуется написать команду, которая присваивает переменной `a` число 3.125.\n\nПохожее решение:\n```javascript\nlet b = 5.345;\n```\n\nИсправьте ошибки в приведенном коде."
+  },
+  "initialSolution": "let a = 3,125",
+  "completedSolution": "let a = 3.125;",
+  "openTest": "it('a is defined', () => {\n  expect (a).not.to.be.undefined;\n});\n\nit('a is a number', () => {\n  expect (a).to.be.a('number');\n});\n\nit('a is equal to 3.125', () => {\n  expect (a).to.be.equal(3.125);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet a = 3.125;\n```",
+    "ru": "```javascript\nlet a = 3.125;\n```"
+  }
+}

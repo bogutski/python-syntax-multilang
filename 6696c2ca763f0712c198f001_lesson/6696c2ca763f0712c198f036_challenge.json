@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198f036",
+  "name": {
+    "en": "",
+    "ru": "Найти максимальное число в массиве"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findMaxNumber`, которая принимает массив целых чисел и возвращает максимальное число из массива.\n\nЕсли массив пустой, то функция должна вернуть `undefined`.\n\nМетоды использовать нельзя.\n\n\nПримеры запуска функции:\n```javascript\nfindMaxNumber([11, 220, 34, 4, 50, 64, 77, 88, 96, 100]); // 220\nfindMaxNumber([-25, 5, -35, -4, 54, 99]); // 99\nfindMaxNumber([]); // undefined\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function findMaxNumber(arr){\n  let max = arr[0];\n\n  for (let i = 1; i < arr.length; i++){\n    if (arr[i] > max) max = arr[i];\n  }\n\n  return max;\n}",
+  "openTest": "it('Created function findMaxNumber', () => {\n  expect(findMaxNumber).to.be.a('function');\n});\n\nit('Function findMaxNumber should not include Math.max', () => {\n  expect(findMaxNumber.toString()).to.not.include('Math.max');\n});\n\nit('findMaxNumber([11, 22, 34, 4, 50, 64, 77, 88, 96, 100]) should return 100', () => {\n  expect(findMaxNumber([11, 22, 34, 4, 50, 64, 77, 88, 96, 100])).to.equal(100);\n});\n\nit('findMaxNumber([-5, -50, -32, -41, -63, -442, -145, -555]) should return -5', () => {\n  expect(findMaxNumber([-5, -50, -32, -41, -63, -442, -145, -555])).to.equal(-5);\n});\n\nit('findMaxNumber([-15, -5, 25, -6, 50, -64, 77, -88, 96, -100]) should return 96', () => {\n  expect(findMaxNumber([-15, -5, 25, -6, 50, -64, 77, -88, 96, -100])).to.equal(96);\n});\n\nit('findMaxNumber([-2, -32, -14, -25, 0]) should return 0', () => {\n  expect(findMaxNumber([-2, -32, -14, -25, 0])).to.equal(0);\n});\n\nit('findMaxNumber([-5]) should return -5', () => {\n  expect(findMaxNumber([-5])).to.equal(-5);\n});\n\nit('findMaxNumber([]) should return undefined', () => {\n  expect(findMaxNumber([])).to.equal(undefined);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

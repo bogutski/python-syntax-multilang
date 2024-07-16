@@ -1,0 +1,179 @@
+{
+  "name": "Count the number of uppercase and lowercase letters in a string",
+  "questions": {
+    "0": {
+      "name": "Why does running the code below result in the number of uppercase letters being 6?",
+      "description": "```javascript\nlet str = 'Easy As Pie!';\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < str.length; i++){\n  if(str[i].toUpperCase() === str[i]) upperCount++\n  else lowerCount++;\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n\n```",
+      "variants": {
+        "0": {
+          "name": "Because in addition to uppercase letters, spaces and exclamation points count."
+        },
+        "1": {
+          "name": "Because the spaces and exclamation point are in upper case"
+        },
+        "2": {
+          "name": "Because there are six upper-case letters in the string."
+        },
+        "3": {
+          "name": "Because the console.log in both cases outputs lower case letters"
+        }
+      }
+    },
+    "1": {
+      "name": "The code below means that numbers, punctuation marks, and characters are not converted to upper or lower case",
+      "description": "```javascript\nconsole.log('!?@#$%^&*( )-_=+:><123'.toUpperCase() === '!?@#$%^&*( )-_=+:><123'.toLowerCase()); // true\n```",
+      "variants": {
+        "0": {
+          "name": "No, that statement is incorrect"
+        },
+        "1": {
+          "name": "Yes, that statement is true"
+        }
+      }
+    },
+    "2": {
+      "name": "Select the correct version of the result of the code run below",
+      "description": "```javascript\nlet str = 'Easy As Pie!';\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < str.length; i++){\n  if(str[i].toUpperCase() === str[i] && str[i].toLowerCase() !== str[i]) upperCount++\n  if(str[i].toUpperCase() !== str[i]) lowerCount++;\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n\n```",
+      "variants": {
+        "0": {
+          "name": "'Upper case = 6, lower case = 6'"
+        },
+        "1": {
+          "name": "'Upper case = 3, lower case = 3'"
+        },
+        "2": {
+          "name": "'Upper case = 6, lower case = 3'"
+        },
+        "3": {
+          "name": "'Upper case = 3, lower case = 6'"
+        }
+      }
+    },
+    "3": {
+      "name": "Is it correct that the result of the code below is `'Upper case = 5, lower case = 13'`.",
+      "description": "```javascript\nlet str = 'An Oxford scholar!';\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < str.length; i++){\n  if(str[i].toLowerCase() !== str[i]) upperCount++\n  if(str[i].toUpperCase() !== str[i]) lowerCount++;\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n```",
+      "variants": {
+        "0": {
+          "name": "Yes, the result is 'Upper case = 5, lower case = 13'."
+        },
+        "1": {
+          "name": "No, the result is 'Upper case = 2, lower case = 13'."
+        },
+        "2": {
+          "name": "No, the result is 'Upper case = 2, lower case = 11'."
+        },
+        "3": {
+          "name": "No, the result is 'Upper case = 3, lower case = 12'."
+        }
+      }
+    },
+    "4": {
+      "name": "What will be output to the console after running the code below?",
+      "description": "```javascript\nlet str = '? , . ! 7 ';\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < str.length; i++){\n  if(str[i].toLowerCase() !== str[i]) upperCount++\n  if(str[i].toUpperCase() !== str[i]) lowerCount++;\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n```",
+      "variants": {
+        "0": {
+          "name": "'Upper case = 3, lower case = 2'."
+        },
+        "1": {
+          "name": "'Upper case = 0, lower case = 1'."
+        },
+        "2": {
+          "name": "'Upper case = 0, lower case = 0'."
+        },
+        "3": {
+          "name": "'Upper case = 1, lower case = 0'."
+        }
+      }
+    },
+    "5": {
+      "name": "Will the code below work and what will be the result?",
+      "description": "```javascript\nlet arr = ['A Piece of Cake', 'On the QT'];\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < arr.length; i++){\n    for(let j = 0; j < arr[i].length; j++){\n  if(arr[i][j].toLowerCase() !== arr[i][j]) upperCount++\n  if(arr[i][j].toUpperCase() !== arr[i][j]) lowerCount++;\n    }\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n```",
+      "variants": {
+        "0": {
+          "name": "No, the code will not work, the result will be undefined"
+        },
+        "1": {
+          "name": "Yes, the code will work, the result will be 'Upper case = 6, lower case = 13'"
+        },
+        "2": {
+          "name": "Yes, the code will work, the result will be 'Upper case = 3, lower case = 9'"
+        },
+        "3": {
+          "name": "No, the code will not work, the result will be an error"
+        }
+      }
+    },
+    "6": {
+      "name": "Is it correct that the result of running the code below is 'Upper case = 2, lower case = 10'?",
+      "description": "```javascript\nlet arr = ['13', 'Flat out', 'Grass'];\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i < arr.length; i++){\n    for(let j = 0; j < arr[i].length; j++){\n       if(arr[i][j].toLowerCase() !== arr[i][j]) upperCount++\n       if(arr[i][j].toUpperCase() !== arr[i][j]) lowerCount++;\n    }\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n```",
+      "variants": {
+        "0": {
+          "name": "No, incorrect, the result is 'Upper case = 4, lower case = 10'"
+        },
+        "1": {
+          "name": "No, incorrect, the result is 'Upper case = 10, lower case = 2'"
+        },
+        "2": {
+          "name": "No, that's not correct, running the code will result in an error"
+        },
+        "3": {
+          "name": "Yes, that's right, the result will be 'Upper case = 2, lower case = 10'"
+        }
+      }
+    },
+    "7": {
+      "name": "Select the correct result of the function run below",
+      "description": "```javascript\nfunction lowerUpperCase(str){\n  let upperCount = 0;\n  let lowerCount = 0;\n  for(let i = 0; i &lt; str.length; i++){\n    if(str[i].toLowerCase() !== str[i]) upperCount++\n    if(str[i].toUpperCase() !== str[i]) lowerCount++\n}\n  return `Upper case = ${upperCount}, lower case = ${lowerCount}`;\n}\nconsole.log(lowerUpperCase('12 plus 1'));\n```",
+      "variants": {
+        "0": {
+          "name": "'Upper case = 3, lower case = 4'."
+        },
+        "1": {
+          "name": "'Upper case = 4, lower case = 0'."
+        },
+        "2": {
+          "name": "'Upper case = 0, lower case = 4'."
+        },
+        "3": {
+          "name": "'Upper case = 0, lower case = 7'."
+        }
+      }
+    },
+    "8": {
+      "name": "Is it correct that the result of running the function below is ``'Upper case = 9, lower case = 1'`''?",
+      "description": "```javascript\nfunction lowerUpperCase(str){\n  let upperCount = 0;\n  let lowerCount = 0;\n  for(let i = 0; i &lt; str.length; i++){\n    if(str[i].toLowerCase() !== str[i]) upperCount++\n    if(str[i].toUpperCase() !== str[i]) lowerCount++\n}\n  return `Upper case = ${upperCount}, lower case = ${lowerCount}`;\n}\nconsole.log(lowerUpperCase('TWELVE + ONE'));\n```",
+      "variants": {
+        "0": {
+          "name": "Yes, the result is 'Upper case = 9, lower case = 1'."
+        },
+        "1": {
+          "name": "No, the result is 'Upper case = 0, lower case = 9'."
+        },
+        "2": {
+          "name": "No, the result is 'Upper case = 9, lower case = -1'."
+        },
+        "3": {
+          "name": "No, the result is 'Upper case = 9, lower case = 0'."
+        }
+      }
+    },
+    "9": {
+      "name": "What is the result of running the code below?",
+      "description": "```javascript\nlet arr = ['smile', true, 3, 'COOK'];\nlet upperCount = 0;\nlet lowerCount = 0;\nfor(let i = 0; i &lt; arr.length; i++){\n    for(let j = 0; j &lt; arr[i].length; j++){\n  if(arr[i][j].toLowerCase() !== arr[i][j]) upperCount++\n  if(arr[i][j].toUpperCase() !== arr[i][j]) lowerCount++;\n    }\n}\nconsole.log(`Upper case = ${upperCount}, lower case = ${lowerCount}`);\n```",
+      "variants": {
+        "0": {
+          "name": "'Upper case = 4, lower case = 9'."
+        },
+        "1": {
+          "name": "'Upper case = 4, lower case = 5'."
+        },
+        "2": {
+          "name": "'Upper case = 5, lower case = 4'."
+        },
+        "3": {
+          "name": "'Upper case = 5, lower case = 10'."
+        }
+      }
+    }
+  }
+}

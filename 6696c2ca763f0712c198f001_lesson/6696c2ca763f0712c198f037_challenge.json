@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198f037",
+  "name": {
+    "en": "",
+    "ru": "Найти минимальное и максимальное отрицательное число"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `minAndMaxOfNegatives`, которая принимает массив целых чисел.\n\nФункция должна вернуть массив из двух чисел, где первое число - `минимальное отрицательное` число, а второе - `максимальное отрицательное` число.\n\nЕсли массив пустой или нет отрицательных чисел, то верните массив: `[undefined, undefined]`.\n\nМетоды использовать нельзя.\n\n\nПримеры запуска функции:\n```javascript\nminAndMaxOfNegatives([1, 2, 3, 4, -1, -1, 2, 3, 4]) // [-1, -1]\nminAndMaxOfNegatives([-3, 2, 3, -10])               // [-10, -3]\nminAndMaxOfNegatives([-5, -2, -1])                  // [-5, -1]\nminAndMaxOfNegatives([1, 2, 3])                     // [undefined, undefined]\nminAndMaxOfNegatives([])                            // [undefined, undefined]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function minAndMaxOfNegatives(arr){\n  let min;\n  let max;\n\n  for (let i = 0; i < arr.length; i++){\n    if(arr[i] < 0) {\n      if(min === undefined) {\n        min = arr[i];\n        max = arr[i];\n      }\n      else {\n        if(arr[i] < min) min = arr[i];\n        if(arr[i] > max) max = arr[i];\n      }\n    }\n  }\n\n  return [min, max];\n}",
+  "openTest": "it('Created function minAndMaxOfNegatives', () => {\n  expect(minAndMaxOfNegatives).to.be.a('function');\n});\n\nit('Function minAndMaxOfNegatives should not include Math.min', () => {\n  expect(minAndMaxOfNegatives.toString()).to.not.include('Math.min');\n});\n\nit('Function minAndMaxOfNegatives should not include Math.max', () => {\n  expect(minAndMaxOfNegatives.toString()).to.not.include('Math.max');\n});\n\nit('minAndMaxOfNegatives([-1, 2, 3, -9]) should return [-9, -1]', () => {\n  expect(minAndMaxOfNegatives([-1, 2, 3, -9])).to.deep.equal([-9, -1]);\n});\n\nit('minAndMaxOfNegatives([9, 8, 7, 6, -5, -5, 4, 3, 2, 1, 0]) should return [-5, -5]', () => {\n  expect(minAndMaxOfNegatives([9, 8, 7, 6, -5, -5, 4, 3, 2, 1, 0])).to.deep.equal([-5, -5]);\n});\n\nit('minAndMaxOfNegatives([1, 2, 3]) should return [undefined, undefined]', () => {\n  expect(minAndMaxOfNegatives([1, 2, 3])).to.deep.equal([undefined, undefined]);\n});\n\nit('minAndMaxOfNegatives([-1, -2, -3]) should return [-3, -1]', () => {\n  expect(minAndMaxOfNegatives([-1, -2, -3])).to.deep.equal([-3, -1]);\n});\n\nit('minAndMaxOfNegatives([0, 0, 0]) should return [undefined, undefined]', () => {\n  expect(minAndMaxOfNegatives([0, 0, 0])).to.deep.equal([undefined, undefined]);\n});\n\nit('minAndMaxOfNegatives([]) should return [undefined, undefined]', () => {\n  expect(minAndMaxOfNegatives([])).to.deep.equal([undefined, undefined]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

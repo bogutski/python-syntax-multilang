@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ef09",
+  "name": {
+    "en": "",
+    "ru": "Цифры из строки записать в массив"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `digitsToArray` принимает строку, состоящую из различных символов, в том числе - цифр, и возвращает массив чисел, в который записаны все цифры, в том порядке, как они встречаются в строке.\n\nДля решения этой задачи можно использовать строку, в которой записаны все цифры от 0 до 9 и проверять, есть ли символ из этой строки в приходящем аргументе.\nДля проверки наличия символа в строке можно использовать метод `indexOf()` или `includes()`.\n\nНе забудьте преобразовать цифру из символа в число перед добавлением ее в массив!\n\nПримеры запуска функции:\n```javascript\ndigitsToArray('abc123'); // [1, 2, 3]\ndigitsToArray('abc');    // []\ndigitsToArray('');       // []\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function digitsToArray(str) {\n  const digits = '0123456789';\n  const result = [];\n  for (let i = 0; i < str.length; i++) {\n    if (digits.includes(str[i])) {\n      result.push(Number(str[i]));\n    }\n  }\n  return result;\n}",
+  "openTest": "it('Created function digitsToArray', () => {\n  expect(digitsToArray).to.be.a('function');\n});\n\nit('digitsToArray(\"a bc 12 3\") should return [1, 2, 3]', () => {\n  expect(digitsToArray('a bc 12 3')).to.deep.equal([1, 2, 3]);\n});\n\nit('digitsToArray(\"a b c\") should return []', () => {\n  expect(digitsToArray('a b c')).to.deep.equal([]);\n});\n\nit('digitsToArray(\"\") should return []', () => {\n  expect(digitsToArray('')).to.deep.equal([]);\n});\n\nit('digitsToArray(\"123 45 67 89 10\") should return [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 0]', () => {\n  expect(digitsToArray('123 45 67 89 10')).to.deep.equal([1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 0]);\n});\n\nit('digitsToArray(\"a\") should return []', () => {\n  expect(digitsToArray('a')).to.deep.equal([]);\n});\n\nit('digitsToArray(\"1\") should return [1]', () => {\n  expect(digitsToArray('1')).to.deep.equal([1]);\n});\n\nit('digitsToArray(\"1234567890\") should return [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]', () => {\n  expect(digitsToArray('1234567890')).to.deep.equal([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);\n});\n\nit('digitsToArray(\" 1 \") should return [1]', () => {\n  expect(digitsToArray(' 1 ')).to.deep.equal([1]);\n});\n\nit('digitsToArray(\" 1 2 3 \") should return [1, 2, 3]', () => {\n  expect(digitsToArray(' 1 2 3 ')).to.deep.equal([1, 2, 3]);\n});\n\nit('digitsToArray(\" 1 2 3 are digits!\") should return [1, 2, 3]', () => {\n  expect(digitsToArray(' 1 2 3 are digits!')).to.deep.equal([1, 2, 3]);\n});\n\nit('digitsToArray(\" There are no digits in this string! \") should return []', () => {\n  expect(digitsToArray(' There are no digits in this string! ')).to.deep.equal([]);\n});\n\nit('digitsToArray(\"1  and 2 or    3 not   4 nor 5 neither 6\") should return [1, 2, 3, 4, 5, 6]', () => {\n  expect(digitsToArray('1  and 2 or    3 not   4 nor 5 neither 6')).to.deep.equal([1, 2, 3, 4, 5, 6]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

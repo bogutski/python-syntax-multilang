@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e03c",
+  "name": {
+    "en": "The function finds the arithmetic mean of five numbers",
+    "ru": "Функция находит среднее арифметическое пяти чисел"
+  },
+  "instruction": {
+    "en": "Write a function `averageFromFiveNumbers` that takes five parameters and returns the arithmetic mean of the five numbers.",
+    "ru": "Напиши функцию `averageFromFiveNumbers`, которая принимает пять параметров и возвращает среднее арифметическое этих пяти чисел."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function averageFromFiveNumbers(n1, n2, n3, n4, n5) {\n  return (n1 + n2 + n3 + n4 + n5) / 5;\n}",
+  "openTest": "it('Created function averageFromFiveNumbers', () => {\n  expect(averageFromFiveNumbers).to.be.a('function');\n});\n\nit('averageFromFiveNumbers(4, 5, 3, 2, 1) should return 3', () => {\n  expect(averageFromFiveNumbers(4, 5, 3, 2, 1)).to.equal(3);\n} );\n\nit('averageFromFiveNumbers(30, 20, 10, 40, 50) should return 30', () => {\n  expect(averageFromFiveNumbers(30, 20, 10, 40, 50)).to.equal(30);\n});\n\nit('averageFromFiveNumbers(100, 500, 300, 400, 200) should return 300', () => {\n  expect(averageFromFiveNumbers(100, 500, 300, 400, 200)).to.equal(300);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

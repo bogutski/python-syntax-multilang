@@ -1,0 +1,4 @@
+{
+  "name": "Calculate the cost of Americans traveling by car in Europe",
+  "instruction": "Write a function `tripCost` that takes parameters\n\n`literPer100Km` - the number of liters for the car to drive 100 kilometers.\n`pricePerLiter` - the price of one liter of gasoline.\n`distanceKm` - distance in kilometers to be driven from point A to point B.\n\n* In one gallon of gasoline `3.785` liters.\n* In one mile `1.609` kilometers.\n* The maximum capacity of a car's tank is 60 liters.\n\nThe function should return the cost of a car trip from point A to point B and back.\n\nExamples:\n```javascript\ntripCost(10, 2, 100) // 40\ntripCost(20, 3, 100) // 30\n```\n\nFormula for calculating the cost of one way trip:\n``distanceKm / 100 * literPer100Km * pricePerLiter"
+}

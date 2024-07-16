@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e386",
+  "name": {
+    "en": "Concatenation of three lines",
+    "ru": "Конкатенация трех строк"
+  },
+  "instruction": {
+    "en": "Write a function `concat` that takes three parameters: `first`, `second`, `third` - strings.\nLet the function return concatenation of three strings.\n\nExamples of running the function:\n```javascript\nconcat('a', 'b', 'c'); // 'abc'\nconcat('hello', ' ', 'world'); // 'hello world'\nconcat('qwe', 'rty', 'uio'); // 'qwertyuio'\n```",
+    "ru": "Напишите функцию `concat`, которая принимает три параметра: `first`, `second`, `third` - строки.\nПусть функция возвращает конкатенацию трех строк.\n\nПримеры запуска функции:\n```javascript\nconcat('a', 'b', 'c'); // 'abc'\nconcat('hello', ' ', 'world'); // 'hello world'\nconcat('qwe', 'rty', 'uio'); // 'qwertyuio'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function concat(first, second, third) {\n  return first + second + third;\n}",
+  "openTest": "it('Created function concat', () => {\n  expect(concat).to.be.a('function');\n});\n\nit('concat(\"a\", \"b\", \"c\") should return \"abc\"', () => {\n  expect(concat('a', 'b', 'c')).to.equal('abc');\n});\n\nit('concat(\"hello\", \" \", \"world\") should return \"hello world\"', () => {\n  expect(concat('hello', ' ', 'world')).to.equal('hello world');\n});\n\nit('concat(\"qwe\", \"rty\", \"uio\") should return \"qwertyuio\"', () => {\n  expect(concat('qwe', 'rty', 'uio')).to.equal('qwertyuio');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

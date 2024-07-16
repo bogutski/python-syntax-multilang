@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e863",
+  "name": {
+    "en": "The difference between copying an array",
+    "ru": "Разница между копированием массива"
+  },
+  "instruction": {
+    "en": "Write a function `copyDifference` that takes an array and returns another array of two elements.\n\n* The first element is a surface copy of the first array. Use the `slice` method.\n* The second element is a deep copy of the first array. Use the `JSON.parse` and `JSON.stringify` methods.\n\nYou cannot return the original array; references to arrays will be checked for equality.\n\nAn example of running the function:\n```javascript\ncopyDifference([ 1, 2, 3 ]) // [ [ 1, 2, 3 ], [ 1, 2, 3 ] ]\ncopyDifference([ [true], [false] ]) // [ [[ true ], [ false ]], [[ true ], [ false ]] ]\n```",
+    "ru": "Напишите функцию `copyDifference`, которая принимает массив и возвращает другой массив из двух элементов.\n\n* Первый элемент - это поверхностная копия первого массива. Используйте метод `slice`.\n* Второй элемент - это глубокая копия первого массива. Используйте метод `JSON.parse` и `JSON.stringify`.\n\nВернуть оригинальный массив нельзя, ссылки на массивы будут проверяться на равенство.\n\nПример запуска функции:\n```javascript\ncopyDifference([ 1, 2, 3 ]) // [ [ 1, 2, 3 ], [ 1, 2, 3 ] ]\ncopyDifference([ [true], [false] ]) // [ [[ true ], [ false ]], [[ true ], [ false ]] ]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function copyDifference(array){\n  const shallowCopy = array.slice();\n  const deepCopy = JSON.parse(JSON.stringify(array));\n  return [shallowCopy, deepCopy]\n}",
+  "openTest": "it('Created function copyDifference', () => {\n  expect(copyDifference).to.be.a('function');\n});\n\nit('copyDifference([ 1, 2, 3 ]) should return [ [ 1, 2, 3 ], [ 1, 2, 3 ] ]', () => {\n  expect(copyDifference([ 1, 2, 3 ])).to.eql([ [ 1, 2, 3 ], [ 1, 2, 3 ] ]);\n});\n\nit(\"copyDifference([ ['Java'], ['Script'] ]) should return [ [['Java'], ['Script']], [['Java'], ['Script']] ]\", () => {\n  expect(copyDifference([ ['Java'], ['Script'] ])).to.eql([ [['Java'], ['Script']], [['Java'], ['Script']] ]);\n});\n\nit(\"copyDifference([ true, false ]) should return [ [true, false], [true, false] ]\", () => {\n  expect(copyDifference([ true, false ])).to.eql([ [true, false], [true, false] ]);\n});\n\nit(\"copyDifference([ 123, 'abc' ]) should return different arrays\", () => {\n  const array = [ 123, 'abc' ]\n  const result = copyDifference(array);\n  expect(result[0] === array).to.be.false;\n  expect(result[1] === array).to.be.false;\n  expect(result[0] === result[1]).to.be.false;\n});\n\nit(\"copyDifference([ 'a', 'b', 'c' ]) should include slice and JSON.parse/stringify\", () => {\n  const result = copyDifference.toString();\n  expect(result).to.include('slice');\n  expect(result).to.include('JSON.parse');\n  expect(result).to.include('JSON.stringify');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

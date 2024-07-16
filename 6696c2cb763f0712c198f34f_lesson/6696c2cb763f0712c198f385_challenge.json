@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f385",
+  "name": {
+    "en": "/*",
+    "ru": "Удаление N элементов с конца массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `removeNElements`, которая принимает массив и число `n`.\n\nФункция должна удалить `n` элементов с конца переданного массива.\n\nЕсли `n` больше длины массива или равно ей, функция должна вернуть пустой массив.\n\nФункция должна возвращать измененный исходный массив.\n\nПример запуска функции:\n```javascript\nremoveNElements([1, 2, 3, 4, 5], 2);      // [ 1, 2, 3 ]\nremoveNElements(['a', 'b', 'c', 'd'], 4); // []\nremoveNElements([true, false, true], 1);  // [ true, false ]\n```"
+  },
+  "initialSolution": "function removeNElements(){\n\n}",
+  "completedSolution": "function removeNElements(arr, n){\n  const length = arr.length >= n ? n : arr.length\n\n  for(let i = 0; i < length; i++){\n    arr.pop()\n  }\n\n  return arr;\n}",
+  "openTest": "it('Created function removeNElements', () => {\n  expect(removeNElements).to.be.a('function');\n});\n\nit(\"removeNElements([1, 2, 3, 4, 5], 2) should modify and return [1, 2, 3]\", () => {\n  expect(removeNElements([1, 2, 3, 4, 5], 2)).to.deep.equal([1, 2, 3]);\n});\n\nit(\"removeNElements(['a', 'b', 'c', 'd'], 4) should modify and return []\", () => {\n  let array = ['a', 'b', 'c', 'd'];\n  expect(removeNElements(array, 4)).to.deep.equal([]);\n  expect(array).to.deep.equal([]);\n});\n\nit(\"removeNElements([true, false, true], 1) should modify and return [true, false]\", () => {\n  expect(removeNElements([true, false, true], 1)).to.deep.equal([true, false]);\n});\n\nit(\"removeNElements([1, 2, 3], 0) should return the unmodified original array\", () => {\n  expect(removeNElements([1, 2, 3], 0)).to.deep.equal([1, 2, 3]);\n});\n\nit(\"removeNElements([], 5) should return an unmodified empty array\", () => {\n  expect(removeNElements([], 5)).to.deep.equal([]);\n});\n\nit(\"removeNElements([1, 2, 3, 4, 5], 10) should return an empty array if n is greater than array length\", () => {\n  expect(removeNElements([1, 2, 3, 4, 5], 10)).to.deep.equal([]);\n});\n\nit(\"removeNElements(['hello', 'world'], 1) should modify and return ['hello']\", () => {\n  expect(removeNElements(['hello', 'world'], 1)).to.deep.equal(['hello']);\n});\n\nit(\"removeNElements([10, 20, 30], 3) should return an empty array if n equals array length\", () => {\n  expect(removeNElements([10, 20, 30], 3)).to.deep.equal([]);\n});\n\nit(\"removeNElements(['a', 'b', 'c', 'd', 'e'], 3) should modify and return ['a', 'b']\", () => {\n  expect(removeNElements(['a', 'b', 'c', 'd', 'e'], 3)).to.deep.equal(['a', 'b']);\n});\n\nit(\"should confirm that the original array has been modified\", () => {\n  let originalArray = [1, 2, 3, 4, 5];\n  removeNElements(originalArray, 2);\n  expect(originalArray).to.deep.equal([1, 2, 3]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

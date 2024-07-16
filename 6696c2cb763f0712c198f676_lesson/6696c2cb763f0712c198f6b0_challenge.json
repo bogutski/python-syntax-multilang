@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f6b0",
+  "name": {
+    "en": "/*",
+    "ru": "Инверсия внутренних массивов и их объединение"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `reverseSubArraysAndFlatten`, которая принимает двухмерный массив массивов и возвращает новый массив.\n\nФункция должна сначала инвертировать каждый внутренний массив с использованием `toReversed()`, а затем объединить все инвертированные массивы в один массив.\n\n\nПримеры запуска функции:\n```javascript\nreverseSubArraysAndFlatten([[], [1, 2], []]); // [2, 1]\nreverseSubArraysAndFlatten([[1, 2], [3, 4], [5, 6]]); // [2, 1, 4, 3, 6, 5]\nreverseSubArraysAndFlatten([[1, 2], [3, 4], [5, 6]]); // [2, 1, 4, 3, 6, 5]\nreverseSubArraysAndFlatten([['a', 'b'], ['c', 'd'], ['e', 'f']]); // ['b', 'a', 'd', 'c', 'f', 'e']\n```"
+  },
+  "initialSolution": "function reverseSubArraysAndFlatten(){\n\n}",
+  "completedSolution": "function reverseSubArraysAndFlatten(arr) {\n  return arr.flatMap(el => el.toReversed());\n}",
+  "openTest": "Array.prototype.toReversed = function(){\n  return this.slice().reverse()\n}\n\nit('Created function reverseSubArraysAndFlatten', () => {\n  expect(reverseSubArraysAndFlatten).to.be.a('function');\n});\n\nit(\"Function reverseSubArraysAndFlatten() should include toReversed method\", () => {\n  const result = reverseSubArraysAndFlatten.toString();\n  expect(result).to.include('.toReversed()');\n});\n\nit(\"Function reverseSubArraysAndFlatten() should not include comments\", () => {\n  const result = reverseSubArraysAndFlatten.toString();\n  expect(result).to.not.include('//');\n  expect(result).to.not.include('/*');\n});\n\nit(\"Function reverseSubArraysAndFlatten() should not modify the original array\", () => {\n  let originalArray = [[1, 2], [3, 4]];\n  reverseSubArraysAndFlatten(originalArray);\n  expect(originalArray).to.deep.equal([[1, 2], [3, 4]]);\n});\n\nit(\"reverseSubArraysAndFlatten([[1, 2], [3, 4], [5, 6]]) should return [2, 1, 4, 3, 6, 5]\", () => {\n  expect(reverseSubArraysAndFlatten([[1, 2], [3, 4], [5, 6]])).to.deep.equal([2, 1, 4, 3, 6, 5]);\n});\n\nit(\"reverseSubArraysAndFlatten([['a', 'b'], ['c', 'd'], ['e', 'f']]) should return ['b', 'a', 'd', 'c', 'f', 'e']\", () => {\n  expect(reverseSubArraysAndFlatten([['a', 'b'], ['c', 'd'], ['e', 'f']])).to.deep.equal(['b', 'a', 'd', 'c', 'f', 'e']);\n});\n\nit(\"reverseSubArraysAndFlatten([[], [1, 2], []]) should return [2, 1]\", () => {\n  expect(reverseSubArraysAndFlatten([[], [1, 2], []])).to.deep.equal([2, 1]);\n});\n\nit(\"reverseSubArraysAndFlatten([[10], [20, 30], [40, 50, 60]]) should return [10, 30, 20, 60, 50, 40]\", () => {\n  expect(reverseSubArraysAndFlatten([[10], [20, 30], [40, 50, 60]])).to.deep.equal([10, 30, 20, 60, 50, 40]);\n});\n\nit(\"reverseSubArraysAndFlatten([]) should return []\", () => {\n  expect(reverseSubArraysAndFlatten([])).to.deep.equal([]);\n});\n\nit(\"reverseSubArraysAndFlatten([[100]]) should return [100]\", () => {\n  expect(reverseSubArraysAndFlatten([[100]])).to.deep.equal([100]);\n});\n\nit(\"reverseSubArraysAndFlatten([[1, 2, 3], [], [4, 5]]) should return [3, 2, 1, 5, 4]\", () => {\n  expect(reverseSubArraysAndFlatten([[1, 2, 3], [], [4, 5]])).to.deep.equal([3, 2, 1, 5, 4]);\n});\n\nit(\"reverseSubArraysAndFlatten([[1], [2], [3]]) should return [1, 2, 3]\", () => {\n  expect(reverseSubArraysAndFlatten([[1], [2], [3]])).to.deep.equal([1, 2, 3]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

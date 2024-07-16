@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e387",
+  "name": {
+    "en": "Line concatenation. Commas between words",
+    "ru": "Конкатенация строк. Запятые между словами"
+  },
+  "instruction": {
+    "en": "Write a function `concat` that takes three parameters: `str1`, `str2`, `str3`.\n\nWhen called, the function must return a string consisting of three lines separated by a comma and a space. A dot at the end of the string.\n\nExamples of running a function:\n```javascript\nconcat('Hello', 'world', 'JavaScript'); // 'Hello, world, JavaScript.'\nconcat('I', 'love', 'JS'); // 'I, love, JS.'\n```",
+    "ru": "Напишите функцию `concat`, которая принимает три параметра: `str1`, `str2`, `str3`.\n\nПри вызове функция должна возвращать строку, состоящую из трех строк, разделенных запятой и пробелом. Точка в конце строки.\n\nПримеры запуска функции:\n```javascript\nconcat('Hello', 'world', 'JavaScript'); // 'Hello, world, JavaScript.'\nconcat('I', 'love', 'JS'); // 'I, love, JS.'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function concat(str1, str2, str3) {\n  return str1 + ', ' + str2 + ', ' + str3 + '.';\n}",
+  "openTest": "it('Created function concat', () => {\n  expect(concat).to.be.a('function');\n});\n\nit('concat(\"Hello\", \"world\", \"JavaScript\") should return \"Hello, world, JavaScript.\"', () => {\n  expect(concat('Hello', 'world', 'JavaScript')).to.equal('Hello, world, JavaScript.');\n});\n\nit('concat(\"I\", \"love\", \"JS\") should return \"I, love, JS.\"', () => {\n  expect(concat('I', 'love', 'JS')).to.equal('I, love, JS.');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dcfe",
+  "name": {
+    "en": "Let's compare null and undefined",
+    "ru": "Сравним null и undefined"
+  },
+  "instruction": {
+    "en": "Create a variable named `a` and assign it the value `null`.\nCreate a variable `b` and assign it the value `undefined`.\n\nCreate a variable named `isStrictEqual` and assign it the result of the strict equality of variables `a` and `b`.\nCreate a variable named `isEqual` and assign it the result of the loose equality of variables `a` and `b`.\n\nCreate a variable `strictResult` and assign it the value of the string `'true'` or `'false'`, matching the result of the strict comparison of `null` and `undefined`.\n\nCreate a variable `notStrictResult` and assign it the value of the string `'true'` or `'false'`, matching the result of the loose comparison of `null` and `undefined`.\n\nLet's consider an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst x = 1;\nconst y = 3;\nconst comparison = x === y;        // since x is not equal to y, the comparison result will be false\nconst comparisonResult = 'false';  // the variable is assigned the value of the string 'false'\n```",
+    "ru": "Создайте переменную с именем `a` и присвойте ей значение `null`.\nСоздайте переменную `b` и присвойте ей значение `undefined`.\n\nСоздайте переменную с именем `isStrictEqual` и присвойте ей результат строгого равенства переменных `a` и `b`.\nСоздайте переменную с именем `isEqual` и присвойте ей результат нестрогого равенства переменных `a` и `b`.\n\nСоздайте переменную `strictResult` и присвойте ей значение строки `'true'` или `'false'`, совпадающее с результатом строгого сравнения `null` и `undefined`.\n\nСоздайте переменную `notStrictResult` и присвойте ей значение строки `'true'` или `'false'`, совпадающее с результатом нестрогого сравнения `null` и `undefined`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst x = 1;\nconst y = 3;\nconst comparison = x === y;        // так как x не равно y, результат сравнения будет false\nconst comparisonResult = 'false';  // переменной присвоено значение строки 'false'\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const a = null;\nconst b = undefined;\nconst isStrictEqual = a === b;\nconst isEqual = a == b;\nconst strictResult = 'false';\nconst notStrictResult = 'true';",
+  "openTest": "it('Variable `a ` exists and has a value', () => {\n  expect(a).not.undefined;\n});\n\nit('Variable `a` has typeof object', () => {\n  expect(typeof a).equal('object');\n});\n\nit('Variable `a` has value null ', () => {\n  expect(a).equal(null);\n});\n\nit('Variable `b` exists and is undefined ', () => {\n  expect(b).undefined;\n});\n\nit('Variable `b` has type `undefined', () => {\n  expect(b).a('undefined');\n});\n\nit('The `isStrictEqual` variable exists and has a value', () => {\n  expect(isStrictEqual).not.undefined;\n});\n\nit('The `isStrictEqual` variable is of type `boolean`', () => {\n  expect(isStrictEqual).a('boolean');\n});\n\nit('The `isStrictEqual` variable has value a===b', () => {\n  expect(isStrictEqual).equal(a === b);\n});\n\nit('The `isEqual` variable exists and has a value', () => {\n  expect(isEqual).not.undefined;\n});\n\nit('The `isEqual` variable is of type `boolean`', () => {\n  expect(isEqual).a('boolean');\n});\n\nit('Variable `isEqual` has value a==b', () => {\n  expect(isEqual).equal(a == b);\n});\n\nit('The `strictResult` variable exists and has a value', () => {\n  expect(strictResult).not.undefined;\n});\n\nit('Variable `strictResult` has type string', () => {\n  expect(strictResult).a('string');\n});\n\nit('Variable `strictResult` has value false ', () => {\n  expect(strictResult).equal('false');\n});\n\nit('The `notStrictResult` variable exists and has a value', () => {\n  expect(notStrictResult).not.undefined;\n});\n\nit('The `notStrictResult` variable is of type string', () => {\n  expect(notStrictResult).a('string');\n});\n\nit('The `notStrictResult` variable is true', () => {\n  expect(notStrictResult).equal('true');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst a = null;\nconst b = undefined;\nconst isStrictEqual = a === b;\nconst isEqual = a == b;\nconst strictResult = 'false';\nconst notStrictResult = 'true';\n```",
+    "ru": "```javascript\nconst a = null;\nconst b = undefined;\nconst isStrictEqual = a === b;\nconst isEqual = a == b;\nconst strictResult = 'false';\nconst notStrictResult = 'true';\n```"
+  }
+}

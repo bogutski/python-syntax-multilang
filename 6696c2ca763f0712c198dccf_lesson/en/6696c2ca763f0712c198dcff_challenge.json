@@ -1,0 +1,6 @@
+{
+  "name": "Line Comparison. Which word is bigger?",
+  "instruction": "To determine which string is greater than the other, JavaScript uses the \"alphabetical\" or \"lexicographic\" order. In other words, strings are compared character by character.\n\nThe comparison stops and returns the result as soon as a character in one string is not equal to the character in the other string.\n\nOnly if all characters in both strings are identical, the strings are equal.\n\nCreate variables named `a` and `b` and assign them arbitrary string values.\n\nCreate a variable named `isABiggerThanB` and assign it the result of comparing variables `a` and `b`.\nThe variable `isABiggerThanB` should have the value `true` if `a > b`, and `false` otherwise.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst x = 'son';\nconst y = 'dad';\nconst comparison = x > y;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst a = 'Grape';\nconst b = 'Banana';\nconst isABiggerThanB = a > b;\n```"
+}

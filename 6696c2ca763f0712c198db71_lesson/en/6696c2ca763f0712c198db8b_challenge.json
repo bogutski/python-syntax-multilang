@@ -1,0 +1,6 @@
+{
+  "name": "The name of a famous fairy tale",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-8.png)\n\nIn 1865, English mathematician Lewis Carroll wrote a famous children's fairy tale.\n\nCreate a variable `nameOfBook` and assign it the value `'Alice in Wonderland'`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst nameOfNewspaper = 'The New York Times';\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst nameOfBook = 'Alice in Wonderland';\n```"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Are those two vowels?",
+  "instruction": "There are 5 vowel letters in the English language: `a`, `e`, `i`, `o`, `u`.\n\nWrite a function `isVowel` that takes a string of two lowercase letters and returns `true` if the string contains only vowels, and `false` otherwise.\n\nExamples of running the function:\n```javascript\nisVowel('aa'); // true\nisVowel('ae'); // true\nisVowel('ai'); // true\nisVowel('oa'); // true\nisVowel('uu'); // true\nisVowel('ab'); // false\nisVowel('ba'); // false\nisVowel('ac'); // false\nisVowel('ca'); // false\n```\n\nCompare each character in the string with each vowel letter. Comparison operators and logical operators will come in handy."
+}

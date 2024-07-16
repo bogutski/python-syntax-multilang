@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de24",
+  "name": {
+    "en": "Rolls in a restaurant",
+    "ru": "Роллы в ресторане"
+  },
+  "instruction": {
+    "en": "Katya and Sasha went to a sushi restaurant. Katya said she wasn't hungry.\nSasha ordered 20 rolls, but Katya still ate 5 of Sasha's rolls.\nHow many rolls does Sasha have left?\n\nCreate a variable `rolls` and assign it a value of 20.\n\nCreate a variable `leftoverRolls` and calculate how many rolls Sasha has left.\n\nHere is an example that is essentially similar to what needs to be done.\nAdapt it to the task requirements.\n\n```javascript\nconst cupcakes = 8;\nconst leftoverCupcakes = cupcakes - 3;\n```",
+    "ru": "Катя и Саша пошли в суши ресторан. Катя сказала, что она не голодная.\nСаша заказал 20 роллов, но Катя все равно скушала 5 Сашиных роллов.\nСколько роллов осталось у Саши?\n\nСоздайте переменную `rolls` и присвойте ей значение 20.\n\nСоздайте переменную `leftoverRolls` и посчитайте, сколько же у Саши осталось роллов.\n\nПриведем пример, который принципиально похож на то, что нужно сделать.\nАдаптируйте его к требованиям задачи.\n\n```javascript\nconst cupcakes = 8;\nconst leftoverCupcakes = cupcakes - 3;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const rolls = 20;\nconst leftoverRolls = rolls - 5;",
+  "openTest": "it('Variable `rolls` contains a value', () => {\n  expect(rolls).not.undefined;\n});\n\nit('Variable `rolls` contains a number', () => {\n  expect(rolls).a('number');\n});\n\nit('Variable `rolls` has a value of 20', () => {\n  expect(rolls).eq(20);\n});\n\nit('The `leftoverRolls` variable has a value', () => {\n  expect(leftoverRolls).not.undefined;\n});\n\nit('The `leftoverRolls` variable contains a number', () => {\n  expect(leftoverRolls).a('number');\n});\n\n\nit('The `leftoverRolls` variable has a value of 15', () => {\n  expect(leftoverRolls).eq(15);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst rolls = 20;\nconst leftoverRolls = rolls - 5;\n```",
+    "ru": "```javascript\nconst rolls = 20;\nconst leftoverRolls = rolls - 5;\n```"
+  }
+}

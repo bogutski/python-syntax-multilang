@@ -1,0 +1,6 @@
+{
+  "name": "Fee and Charity",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-6.png)\n\nA famous actor received a $10 million dollar fee for starring in a movie.\nOf this amount, 11% went to pay tax, and 60% of the remaining royalties he spent on charity.\nFind how much money the actor kept for himself.\n\nCreate a variable `fee` and assign it a value of 10,000,000.\nWrite a command that decreases the value of the `fee` variable by 11%.\nThen write a command that decreases the value obtained after the previous step by 60%.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nlet a = 100;\na = a - a * 0.15; // the command decreases the value of the variable `a` by 15 percent.\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet fee = 10000000;\nfee = fee - fee * 0.11;\nfee = fee - fee * 0.6;\n```"
+}

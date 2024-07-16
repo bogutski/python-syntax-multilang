@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f3c5",
+  "name": {
+    "en": "/*",
+    "ru": "Очистка массива от ложных значений"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `filterFalsy`, которая принимает массив с различными типами данных.\n\nФункция должна использовать метод `shift()` для последовательного удаления и проверки каждого элемента массива.\n\nЕсли элемент является \"ложным\" значением (`false, 0, \"\", null, undefined, NaN`), он не должен включаться в возвращаемый массив.\n\nФункция должна возвращать новый массив, содержащий только \"истинные\" значения из исходного массива.\n\n\nПример запуска функции:\n```javascript\nfilterFalsy([0, 1, false, 2, '', 3]);  // [ 1, 2, 3 ]\nfilterFalsy([NaN, true, false, true]); // [ true, true ]\nfilterFalsy(['a', 'b', null, 'c', undefined, '']); // [ 'a', 'b', 'c' ]\nfilterFalsy([]); // []\n```"
+  },
+  "initialSolution": "function filterFalsy(){\n\n}",
+  "completedSolution": "function filterFalsy(arr) {\n  let res = []\n\n  while(arr.length){\n    const el = arr.shift()\n    if(el) res.push(el)\n  }\n\n  return res;\n}",
+  "openTest": "it('Created function filterFalsy', () => {\n  expect(filterFalsy).to.be.a('function');\n});\n\nit('Function filterFalsy includes method shift() ', () => {\n  const res = filterFalsy.toString()\n  expect(res).to.include('.shift()');\n});\n\nit(\"filterFalsy([0, 1, false, 2, '', 3]) should return [1, 2, 3]\", () => {\n  expect(filterFalsy([0, 1, false, 2, '', 3])).to.deep.equal([1, 2, 3]);\n});\n\nit(\"filterFalsy(['a', 'b', null, 'c', undefined, '']) should return ['a', 'b', 'c']\", () => {\n  expect(filterFalsy(['a', 'b', null, 'c', undefined, ''])).to.deep.equal(['a', 'b', 'c']);\n});\n\nit(\"filterFalsy([NaN, true, false, true]) should return [true, true]\", () => {\n  let result = filterFalsy([NaN, true, false, true]);\n  expect(result).to.deep.equal([true, true]);\n  expect(result.length).to.equal(2);\n});\n\nit(\"filterFalsy([]) should return an empty array for an initially empty array\", () => {\n  expect(filterFalsy([])).to.deep.equal([]);\n});\n\nit(\"filterFalsy([undefined, 0, null, '', NaN]) should return an empty array\", () => {\n  expect(filterFalsy([undefined, 0, null, '', NaN])).to.deep.equal([]);\n});\n\nit(\"should correctly process an array with mixed 'truthy' and 'falsy' values\", () => {\n  expect(filterFalsy([1, 'test', 0, '0', false, true, null])).to.deep.equal([1, 'test', '0', true]);\n});\n\nit(\"filterFalsy([false, 0, '', null, undefined, NaN, 'NaN']) should return ['NaN']\", () => {\n  expect(filterFalsy([false, 0, '', null, undefined, NaN, 'NaN'])).to.deep.equal(['NaN']);\n});\n\nit(\"filterFalsy([1, 2, 3, 'false', 'null', 'undefined']) should return [1, 2, 3, 'false', 'null', 'undefined']\", () => {\n  expect(filterFalsy([1, 2, 3, 'false', 'null', 'undefined'])).to.deep.equal([1, 2, 3, 'false', 'null', 'undefined']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

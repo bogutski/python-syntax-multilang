@@ -1,0 +1,4 @@
+{
+  "name": "The opposite Boolean value in the formatted string",
+  "instruction": "Write a function `oppositeBooleanAnswer` that takes one value and returns a string like\n`'The value 0 converted to opposite boolean is true'`, where\n`0` is the value that was passed to the function, and\n`true` is the result of converting that value to `boolean` and its inversion."
+}

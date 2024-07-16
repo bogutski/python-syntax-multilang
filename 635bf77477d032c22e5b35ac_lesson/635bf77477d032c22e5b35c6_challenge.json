@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35c6",
+  "name": {
+    "ru": "Создание переменной без значения",
+    "en": "Creating a variable without a value",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Переменную можно создать, не присваивая ей значения.\n\nСоздайте переменную с именем `phoneNumber` без присваивания ей какого-либо значения.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```\nlet age;\n```",
+    "en": "A variable can be created without assigning a value to it.\n\nCreate a variable named `phoneNumber` without assigning any value to it.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the needs of the task:\n```\nlet age;\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "let phoneNumber;",
+  "openTest": "it('the `phoneNumber` variable exists and is undefined', () => {\n  expect(phoneNumber).to.be.undefined;\n});\n\nit('the variable `phoneNumber` is of type undefined', () => {\n  expect(typeof phoneNumber).eq('undefined');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Calculate the result of the expression 2 ** 5 and print it to the console",
+  "instruction": "Just one line.\n\nObserve spaces and punctuation marks. Semicolon at the end.\n\n````javascript\nconsole.log(2 ** 5);\n```",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log(2 ** 5);\n```"
+}

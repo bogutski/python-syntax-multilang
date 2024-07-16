@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e257",
+  "name": {
+    "en": "",
+    "ru": "Определите в какой четверти находится точка"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Представьте оси координат. Оси `x` и `y` пересекаются в точке `(0, 0)`.\n\nОсь `x` направлена вправо, ось `y` – вверх.\n\nТочка `(0, 0)` – это начало координат.\n\nПервая четверть – это четверть, в которой находятся точки с положительными значениями по обеим осям.\n\nНапример, точка (1, 1) находится в первой четверти, а точка (-1, -1) - в третьей.\n\nВ декартовой системе координат четверти считаются против часовой стрелки.\n\n\nНапишите функцию `getQuarter`, которая принимает параметры `x` и `y` – координаты точки.\n\nПусть функция возвращает номер четверти, в которой находится эта точка.\n\nПримеры запуска функции:\n```javascript\ngetQuarter(1, 1);   // 1\ngetQuarter(1, -1);  // 4\ngetQuarter(-1, -1); // 3\ngetQuarter(-1, 1);  // 2\n\n// Если точка находится на оси координат, то функция возвращает 0\ngetQuarter(0, 0);   // 0\ngetQuarter(0, 1);   // 0\ngetQuarter(-1, 0);  // 0\ngetQuarter(0, -1);  // 0\ngetQuarter(1, 0);   // 0\n```\n\nВместо `x` и `y` может быть любое число.\n\nВ решении используйте `if`, `else`, операторы `||` и `&&`."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function getQuarter(x, y) {\n  if (x === 0 || y === 0) {\n    return 0;\n  }\n\n  if (x > 0 && y > 0) {\n    return 1;\n  }\n\n  if (x > 0 && y < 0) {\n    return 4;\n  }\n\n  if (x < 0 && y < 0) {\n    return 3;\n  }\n\n  if (x < 0 && y > 0) {\n    return 2;\n  }\n}",
+  "openTest": "it('Created function getQuarter', () => {\n  expect(getQuarter).to.be.a('function');\n});\n\nit('getQuarter(1, 1) === 1', () => {\n  expect(getQuarter(1, 1)).to.equal(1);\n});\n\nit('getQuarter(-1, 1) === 2', () => {\n  expect(getQuarter(-1, 1)).to.equal(2);\n});\n\nit('getQuarter(-1, -1) === 3', () => {\n  expect(getQuarter(-1, -1)).to.equal(3);\n});\n\nit('getQuarter(1, -1) === 4', () => {\n  expect(getQuarter(1, -1)).to.equal(4);\n});\n\nit('getQuarter(0, 0) === 0', () => {\n  expect(getQuarter(0, 0)).to.equal(0);\n});\n\nit('getQuarter(0, 1) === 0', () => {\n  expect(getQuarter(0, 1)).to.equal(0);\n});\n\nit('getQuarter(-1, 0) === 0', () => {\n  expect(getQuarter(-1, 0)).to.equal(0);\n});\n\nit('getQuarter(0, -1) === 0', () => {\n  expect(getQuarter(0, -1)).to.equal(0);\n});\n\nit('getQuarter(1, 0) === 0', () => {\n  expect(getQuarter(1, 0)).to.equal(0);\n});\n\nit('getQuarter(100, 100) === 1', () => {\n  expect(getQuarter(100, 100)).to.equal(1);\n});\n\nit('getQuarter(-100, 100) === 2', () => {\n  expect(getQuarter(-100, 100)).to.equal(2);\n});\n\nit('getQuarter(-100, -100) === 3', () => {\n  expect(getQuarter(-100, -100)).to.equal(3);\n});\n\nit('getQuarter(100, -100) === 4', () => {\n  expect(getQuarter(100, -100)).to.equal(4);\n});\n\nit('getQuarter(0, 100) === 0', () => {\n  expect(getQuarter(0, 100)).to.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Перевернуть только первое слово в строке",
+  "instruction": "Напишите функцию `reverseOnlyFirstWord`, которая принимает строку с одним или несколькими словами.\n\nФункция должна перевернуть только первое слово и вернуть перевернутое слово и остаток строки.\n\nНапример, если входная строка - `'one two'`, то функция должна вернуть строку `'eno two'`.\n\nКаждое слово разделено одним пробелом. Если в строке одно слово, то функция должна вернуть только это перевернутое слово.\n\n\nПримеры запуска функции:\n```javascript\nreverseOnlyFirstWord('one two three') // 'eno two three'\nreverseOnlyFirstWord('123 numbers') // '321 numbers'\nreverseOnlyFirstWord('Hello') // 'olleH'\nreverseOnlyFirstWord('') // ''\n```",
+  "instructions": {}
+}

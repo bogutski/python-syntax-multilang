@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df25",
+  "name": {
+    "en": "The function outputs the result of multiplication to the console",
+    "ru": "Функция выводит в консоль результат умножения"
+  },
+  "instruction": {
+    "en": "Write a function `calculateTotal`.\n\nIn the body of the function, multiply `15` by `71` and output the result to the console.\n\nA similar example:\n\n```javascript\nconsole.log(2 * 4)\n```\n\nPut spaces around the multiplication sign.",
+    "ru": "Напишите функцию `calculateTotal`.\n\nВ теле функции умножьте `15` на `71` и выводите результат в консоль.\n\nПохожий пример:\n\n```javascript\nconsole.log(2 * 4)\n```\n\nСтавьте пробелы вокруг знака умножения."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function calculateTotal() {\n  console.log(15 * 71);\n}",
+  "openTest": "it('Created function calculateTotal', () => {\n  expect(calculateTotal).to.be.a('function');\n});\n\nconst entire = calculateTotal.toString();\nconst body = entire.slice(entire.indexOf('{') + 1, entire.lastIndexOf('}')).trim();\nconst strings = body.split('\\n');\n\nit('Functions contains console.log with multiplication', () => {\n  expect(body).contains.oneOf(['console.log(15 * 71)', 'console.log(71 * 15)']);\n});\n\nit('Function contains 1 console log', () => {\n  const occurrences = body.split('console.log').length - 1;\n  expect(occurrences).eq(1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

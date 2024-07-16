@@ -1,0 +1,4 @@
+{
+  "name": "Is a string a palindrome without case",
+  "instruction": "The `isPalindrome` function must accept the string and return `true` if the string is a palindrome and `false` if not.\n\nThe string may contain uppercase and lowercase letters, and must be compared case insensitive.\n\nExamples of running the function:\n\n```javascript\nisPalindrome(\"Eye\") // true\nisPalindrome(\"Hello\") // false\n```"
+}

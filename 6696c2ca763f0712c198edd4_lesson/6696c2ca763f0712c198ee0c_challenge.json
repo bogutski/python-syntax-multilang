@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ee0c",
+  "name": {
+    "en": "",
+    "ru": "Замените каждый второй пробел в строке на подчеркивание '_'."
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `replaceEverySecondSpace` принимает строку, составленную из слов, разделенных пробелами.\nВ начале и в конце строки могут быть лишние пробелы, которые необходимо удалить перед обработкой строки.\nВ строке между словами не может быть двух пробелов подряд.\n\nФункция должна заменить каждый второй пробел в строке на символ подчеркивания '_' и вернуть полученную строку.\nВ решении запрещается использовать методы `split()`, `join()` и `replace()`.\n\nПодсказка: для решения задачи используйте цикл `for` и счетчик пробелов.\nПроверяйте каждый символ строки на пробел.\nСимволы, не являющиеся пробелами, записывайте в результирующую строку без изменений.\nЕсли символ - пробел, то увеличивайте счетчик пробелов на 1.\nЕсли значение счетчика четное, то в строку записывается символ подчеркивания, иначе - пробел.\n\nПримеры запуска функции:\n\n```javascript\nreplaceEverySecondSpace('row row row your boat'); // 'row row_row your_boat'\nreplaceEverySecondSpace('a b c d e f g h i j k l'); // 'a b_c d_e f_g h_i j_k l'\nreplaceEverySecondSpace('once upon'); // 'once upon'\nreplaceEverySecondSpace('  once upon  '); // 'once upon'\nreplaceEverySecondSpace(''); // ''"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function replaceEverySecondSpace(str) {\n  str = str.trim();\n  let result = '';\n  let spaceCounter = 0;\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] === ' ') {\n      spaceCounter++;\n      if (spaceCounter % 2 === 0) {\n        result += '_';\n      } else {\n        result += ' ';\n      }\n    } else {\n      result += str[i];\n    }\n  }\n  return result;\n}",
+  "openTest": "it('Created function replaceEverySecondSpace', () => {\n  expect(replaceEverySecondSpace).to.be.a('function');\n});\n\nit('Function replaceEverySecondSpace should not include method split()', () => {\n  expect(replaceEverySecondSpace.toString().includes('split(')).to.be.false;\n});\n\nit('Function replaceEverySecondSpace should not include method join()', () => {\n  expect(replaceEverySecondSpace.toString().includes('join(')).to.be.false;\n});\n\nit('Function replaceEverySecondSpace should not include method replace()', () => {\n  expect(replaceEverySecondSpace.toString().includes('replace(')).to.be.false;\n});\n\nit('replaceEverySecondSpace(\"row row row your boat\") should return \"row row_row your_boat\"', () => {\n  expect(replaceEverySecondSpace('row row row your boat')).to.equal('row row_row your_boat');\n});\n\nit('replaceEverySecondSpace(\"a b c d e f g h i j k l\") should return \"a b_c d_e f_g h_i j_k l\"', () => {\n  expect(replaceEverySecondSpace('a b c d e f g h i j k l')).to.equal('a b_c d_e f_g h_i j_k l');\n});\n\nit('replaceEverySecondSpace(\"once upon\") should return \"once upon\"', () => {\n  expect(replaceEverySecondSpace('once upon')).to.equal('once upon');\n});\n\nit('replaceEverySecondSpace(\"  once upon a time  \") should return \"once upon_a time\"', () => {\n  expect(replaceEverySecondSpace('  once upon a time  ')).to.equal('once upon_a time');\n});\n\nit('replaceEverySecondSpace(\"one two three four five six seven eight nine ten\") should return \"one two_three four_five six_seven eight_nine ten\"', () => {\n  expect(replaceEverySecondSpace('one two three four five six seven eight nine ten')).to.equal('one two_three four_five six_seven eight_nine ten');\n});\n\nit('replaceEverySecondSpace(\"only\") should return \"only\"', () => {\n  expect(replaceEverySecondSpace('only')).to.equal('only');\n});\n\nit('replaceEverySecondSpace(\"  only  \") should return \"only\"', () => {\n  expect(replaceEverySecondSpace('  only  ')).to.equal('only');\n});\n\nit('replaceEverySecondSpace(\"\") should return \"\"', () => {\n  expect(replaceEverySecondSpace('')).to.equal('');\n});\n\nit('replaceEverySecondSpace(\" \") should return \"\"', () => {\n  expect(replaceEverySecondSpace(' ')).to.equal('');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ed14",
+  "name": {
+    "en": "",
+    "ru": "Посчитать сколько раз заданная цифра входит в число"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `countDigitInNumber` должна принимать два аргумента: число `number` и цифру `digit`.\n\nОба аргумента должны быть целыми неотрицательными числами.\n\nФункция должна посчитать сколько раз цифра `digit` встречается в числе `number` и вернуть результат в виде строки следующего формата:\n\n \\`In number ${number} digit ${digit} occurs ${count} times\\`\n\nГде `number` и `digit` - аргументы функции, а `count` - количество вхождений цифры `digit` в число `number`.\n\nДля решения задачи приведите оба аргумента к типу String.\n\nПримеры преобразования чисел в строки:\n\n```javascript\nconst number = 123123123;\nconst digit = 3;\nconst numberAsString = number.toString(); // '123123123'\nconst digitAsString = String(digit);   // '3'\n```\n\nПримеры запуска функции:\n\n```javascript\ncountDigitInNumber(123123, 3) должна вернуть `In number 123123 digit 3 occurs 2 times`\ncountDigitInNumber(302, 0) должна вернуть `In number 302 digit 0 occurs 1 times`\ncountDigitInNumber(111, 5) должна вернуть `In number 111 digit 5 occurs 0 times`\n```"
+  },
+  "initialSolution": "function countDigitInNumber(number, digit) {\n\n}",
+  "completedSolution": "function countDigitInNumber(number, digit) {\n  let count = 0;\n  const numberAsString = String(number);\n  const digitAsString = String(digit);\n  for (let i = 0; i < numberAsString.length; i += 1) {\n    if (numberAsString[i] === digitAsString) {\n      count += 1;\n    }\n  }\n  return `In number ${number} digit ${digit} occurs ${count} times`;\n}",
+  "openTest": "it('Created function countDigitInNumber', () => {\n  expect(countDigitInNumber).to.be.a('function');\n});\n\nit('countDigitInNumber(123123, 3) should return \"In number 123123 digit 3 occurs 2 times\"', () => {\n  expect(countDigitInNumber(123123, 3)).to.be.eq('In number 123123 digit 3 occurs 2 times');\n});\n\nit('countDigitInNumber(123123, 2) should return \"In number 123123 digit 2 occurs 2 times\"', () => {\n  expect(countDigitInNumber(123123, 2)).to.be.eq('In number 123123 digit 2 occurs 2 times');\n});\n\nit('countDigitInNumber(123123, 0) should return \"In number 123123 digit 0 occurs 0 times\"', () => {\n  expect(countDigitInNumber(123123, 0)).to.be.eq('In number 123123 digit 0 occurs 0 times');\n});\n\nit('countDigitInNumber(111, 5) should return \"In number 111 digit 5 occurs 0 times\"', () => {\n  expect(countDigitInNumber(111, 5)).to.be.eq('In number 111 digit 5 occurs 0 times');\n});\n\nit('countDigitInNumber(111111, 1) should return \"In number 111111 digit 1 occurs 6 times\"', () => {\n  expect(countDigitInNumber(111111, 1)).to.be.eq('In number 111111 digit 1 occurs 6 times');\n});\n\nit('countDigitInNumber(302, 0) should return \"In number 302 digit 0 occurs 1 times\"', () => {\n  expect(countDigitInNumber(302, 0)).to.be.eq('In number 302 digit 0 occurs 1 times');\n});\n\nit('countDigitInNumber(3000000000, 0) should return \"In number 3000000000 digit 0 occurs 9 times\"', () => {\n  expect(countDigitInNumber(3000000000, 0)).to.be.eq('In number 3000000000 digit 0 occurs 9 times');\n});\n\nit('countDigitInNumber(3000000000, 3) should return \"In number 3000000000 digit 3 occurs 1 times\"', () => {\n  expect(countDigitInNumber(3000000000, 3)).to.be.eq('In number 3000000000 digit 3 occurs 1 times');\n});\n\nit('countDigitInNumber(3000000000, 5) should return \"In number 3000000000 digit 5 occurs 0 times\"', () => {\n  expect(countDigitInNumber(3000000000, 5)).to.be.eq('In number 3000000000 digit 5 occurs 0 times');\n});\n\nit('countDigitInNumber(0, 9) should return \"In number 0 digit 9 occurs 0 times\"', () => {\n  expect(countDigitInNumber(0, 9)).to.be.eq('In number 0 digit 9 occurs 0 times');\n});\n\nit('countDigitInNumber(0, 0) should return \"In number 0 digit 0 occurs 1 times\"', () => {\n  expect(countDigitInNumber(0, 0)).to.be.eq('In number 0 digit 0 occurs 1 times');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

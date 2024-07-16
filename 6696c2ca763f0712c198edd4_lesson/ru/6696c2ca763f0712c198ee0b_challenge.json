@@ -1,0 +1,5 @@
+{
+  "name": "Переписать все слова с заглавной буквы",
+  "instruction": "Функция `wordsCapitalize` принимает строку из слов в нижнем регистре, разделенных пробелами, и возвращает строку, в которой все слова начинаются с заглавной буквы.\nПереданная строка может быть пустой. В этом случае функция должна вернуть пустую строку.\n\nДля решения задачи используйте цикл `for` и метод `toUpperCase()`.\n\nПримеры вызова функции `wordsCapitalize`:\n\n```javascript\nwordsCapitalize('hi hello welcome goodbye'); // 'Hi Hello Welcome Goodbye'\nwordsCapitalize(''); // ''",
+  "instructions": {}
+}

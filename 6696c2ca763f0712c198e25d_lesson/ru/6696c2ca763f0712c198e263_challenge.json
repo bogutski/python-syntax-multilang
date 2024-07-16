@@ -1,0 +1,5 @@
+{
+  "name": "Определяем тип данных и возвращаем его",
+  "instruction": "Напиши функцию `defineDataType`, которая принимает один параметр.\n\nПусть функция возвращает строку вида:\n`This is string.`, если переданная строка – строка,\n`This is number.`, если переданная строка – число,\n`This is boolean.`, если переданная строка – булево значение,\n\nПримеры запуска функции:\n```javascript\ndefineDataType('Hello'); // 'This is string.'\ndefineDataType(10); // 'This is number.'\ndefineDataType(true); // 'This is boolean.'\n```\n\nОбратите внимание, что в конце возвращаемой строки есть точка.",
+  "instructions": {}
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e21b",
+  "name": {
+    "en": "One of the numbers or the sum of the numbers is 23",
+    "ru": "Одно из чисел или сумма чисел равны 23"
+  },
+  "instruction": {
+    "en": "Write a function `equal23` that takes two arguments num1 and num2.\nThe function should return true if one of the arguments or the sum of the arguments is 23, and `false` otherwise.\n\nExamples:\n- The `equal23(1, 23)` function should return true;\n- The function `equal23(21, 2)` must return true.\n- The function `equal23('23', 1)` must return false.\n- The function `equal23(10, 12)` must return false.",
+    "ru": "Напишите функцию `equal23`, которая принимает два аргумента num1 и num2.\nФункция должна возвращать true если один из аргументов или их сумма равны 23, и `false` в других случаях.\n\nПримеры:\n- функция `equal23(1, 23)` должна возвратить true;\n- функция `equal23(21, 2)` должна возвратить true.\n- функция `equal23('23', 1)` должна возвратить false.\n- функция `equal23(10, 12)` должна возвратить false."
+  },
+  "initialSolution": "",
+  "completedSolution": "function equal23(num1, num2) {\n  if (num1 === 23) {\n    return true;\n  } else if (num2 === 23) {\n    return true;\n  } else if (num1 + num2 === 23) {\n    return true;\n  } else {\n    return false;\n  }\n}",
+  "openTest": "it(\"Created function equal23\", () => {\n  expect(equal23).to.be.a(\"function\");\n});\n\nit(\"Function returns correct result for arguments `1, 23\", () => {\n  expect(equal23(1, 23)).eq(true);\n});\n\nit(\"Function returns correct result for arguments `21, 2`\", () => {\n  expect(equal23(21, 2)).eq(true);\n});\n\nit(\"Function returns correct result for arguments `'23', 1`\", () => {\n  expect(equal23(\"23\", 1)).eq(false);\n});\n\nit(\"The function returns the correct result for arguments `10, 12`\", () => {\n  expect(equal23(10, 12)).eq(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

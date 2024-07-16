@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e7b1",
+  "name": {
+    "en": "Changing a numeric element of an array",
+    "ru": "Изменение числового элемента массива"
+  },
+  "instruction": {
+    "en": "Write a function `reverseArrElement` that takes two parameters, an array and an array element index.\n\nThe array contains only positive three-digit numbers and has an arbitrary length.\n\nThe array element index is a number that must not exceed the length of the array.\n\nPrint the number with the specified index in reverse order.\n\nTo find the digits of a number, use the division operator `%`.\n\nTo convert a string of digits to a number, use the unary operator `+` or the `Number` method.\n\nFor example:\n`let str = '123'; // number string\n`let num = +str; // number 123`\n`let num1 = Number(str); // number 123`\n\nThe function should return the changed array.\n\nAn example of running the function:\n```javascript\nreverseArrElement([123, 456, 789], 1); // [123, 654, 789]\nreverseArrElement([123, 456, 789, 754, 307], 2); // [123, 456, 987, 754, 307]",
+    "ru": "Напишите функцию `reverseArrElement`, которая принимает два параметра - массив и индекс элемента массива.\n\nМассив содержит только трёхзначные положительные числа и имеет произвольную длину.\n\nИндекс элемента массива - число, которое не должно превышать длину массива.\n\nВыведите число, с указанным индексом, в обратном порядке.\n\nДля нахождения цифр числа, используйте оператор остатка от деления `%`.\n\nДля перевода строки с цифрами в число, используйте унарный оператор `+` или метод `Number`.\n\nНапример:\n`let str = '123'; // строка с цифрами`\n`let num = +str; // число 123`\n`let num1 = Number(str); // число 123`\n\nФункция должна вернуть изменённый массив.\n\nПример запуска функции:\n```javascript\nreverseArrElement([123, 456, 789], 1); // [123, 654, 789]\nreverseArrElement([123, 456, 789, 754, 307], 2); // [123, 456, 987, 754, 307]"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseArrElement(arr, n) {\n  let last = arr[n] % 10\n  let middle = ((arr[n] - last) / 10) % 10\n  let first = ((((arr[n] - last) / 10) - middle) / 10) % 10\n  arr[n] = +('' + last + middle + first)\n  return arr\n}",
+  "openTest": "it('Created function reverseArrElement', () => {\n  expect(reverseArrElement).to.be.a('function');\n});\n\nit('reverseArrElement([123, 456, 789], 1) should return [123, 654, 789]', () => {\n  expect(reverseArrElement([123, 456, 789], 1)).to.be.eql([123, 654, 789]);\n});\n\nit('reverseArrElement([123, 456, 789, 754, 307], 2) should return [123, 456, 987, 754, 307]', () => {\n  expect(reverseArrElement([123, 456, 789, 754, 307], 2)).to.be.eql([123, 456, 987, 754, 307]);\n});\n\nit('reverseArrElement([123, 456, 789, 754, 307], 4) should return [123, 456, 789, 754, 703]', () => {\n  expect(reverseArrElement([123, 456, 789, 754, 307], 4)).to.be.eql([123, 456, 789, 754, 703]);\n});\n\nit('reverseArrElement([123, 456, 789, 754, 307], 0) should return [321, 456, 789, 754, 307]', () => {\n  expect(reverseArrElement([123, 456, 789, 754, 307], 0)).to.be.eql([321, 456, 789, 754, 307]);\n});\n\nit('reverseArrElement([123, 456, 789, 754, 307, 397, 773, 811, 119], 3) should return [123, 456, 789, 457, 307, 397, 773, 811, 119]', () => {\n  expect(reverseArrElement([123, 456, 789, 754, 307, 397, 773, 811, 119], 3)).to.be.eql([123, 456, 789, 457, 307, 397, 773, 811, 119]);\n});\n\nit('reverseArrElement([123, 456, 789, 754, 307, 397, 773, 811, 119], 8) should return [123, 456, 789, 754, 307, 397, 773, 811, 911]', () => {\n  expect(reverseArrElement([123, 456, 789, 754, 307, 397, 773, 811, 119], 8)).to.be.eql([123, 456, 789, 754, 307, 397, 773, 811, 911]);\n});\n\nit('reverseArrElement([123, 456, 789, 754, 307, 397, 773, 811, 119], 5) should return [123, 456, 789, 754, 307, 793, 773, 811, 119]', () => {\n  expect(reverseArrElement([123, 456, 789, 754, 307, 397, 773, 811, 119], 5)).to.be.eql([123, 456, 789, 754, 307, 793, 773, 811, 119]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

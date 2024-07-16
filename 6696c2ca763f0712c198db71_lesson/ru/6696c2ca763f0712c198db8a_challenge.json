@@ -1,0 +1,6 @@
+{
+  "name": "Создайте переменную, не присваивая ей значения",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-7.png)\n\nСоздайте переменную с именем `b` c использованием ключевого слова `let`. Значение переменной не присваивайте.",
+  "instructions": {},
+  "hint": "```javascript\nlet b;\n```"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "The number of occurrences of digits in the string output as an object",
+  "instruction": "Write a function `occurrencesInObject` that takes a string.\n\nThe function must count how many times the digits `'1'`, `'2'`, `'3'` occur in the string and return an object of the form:\n\n * `{ one:  <number> , two:  <number> , three: <number> }` where ` <number> ` is the number of occurrences of the digit in the string.\n\nIf some digit does not occur in the string, the corresponding property of the object must be equal to zero.\n\n\nExamples of function execution:\n```javascript\noccurrencesInObject('123123123'); // { one: 3, two: 3, three: 3 }\noccurrencesInObject('11112222'); // { one: 4, two: 4, three: 0 }\noccurrencesInObject('3333322222'); // { one: 0, two: 5, three: 5 }\noccurrencesInObject(''); // { one: 0, two: 0, three: 0 }\n```"
+}

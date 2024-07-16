@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e85b",
+  "name": {
+    "en": "Copying an array using the slice() method",
+    "ru": "Копирование массива с помощью метода slice()"
+  },
+  "instruction": {
+    "en": "Write a function `shallowCopy` that takes an array and returns a copy of it using the `slice` method.\n\nThe function will receive an array with only primitive values.",
+    "ru": "Напишите функцию `shallowCopy`, которая принимает массив и возвращает его копию с помощью метода `slice`.\n\nВ функцию будет передан массив, в котором только примитивные значения."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function shallowCopy(array) {\n  return array.slice();\n}",
+  "openTest": "it('Created function shallowCopy', () => {\n  expect(shallowCopy).to.be.a('function');\n});\n\nit('shallowCopy([1, 2, 3, 4, 5]) should return [1, 2, 3, 4, 5]', () => {\n  expect(shallowCopy([1, 2, 3, 4, 5])).to.deep.equal([1, 2, 3, 4, 5]);\n});\n\nit('shallowCopy([55, true, \"hello\"]) should return [55, true, \"hello\"]', () => {\n  expect(shallowCopy([55, true, \"hello\"])).to.deep.equal([55, true, \"hello\"]);\n});\n\nit('shallowCopy([\"a\", \"b\", \"c\"]) should have slice method', () => {\n  expect(shallowCopy.toString()).to.contain('slice');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

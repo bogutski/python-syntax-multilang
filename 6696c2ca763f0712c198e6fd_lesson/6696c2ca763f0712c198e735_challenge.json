@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e735",
+  "name": {
+    "en": "Defining the data type of the first element of the array",
+    "ru": "Определение типа данных первого элемента массива"
+  },
+  "instruction": {
+    "en": "Write a function `typeofArr` that takes one parameter, an array.\n\nThe function should return the data type of the first element of the array.\n\nAn example of running the function:\n```javascript\ntypeofArr([1, 2, 3]) // 'number'\ntypeofArr([\"1\", \"2\", 3]) // 'string'\ntypeofArr([true, \"2\", 3]) // 'boolean'\n```",
+    "ru": "Напишите функцию `typeofArr`, которая принимает один параметр - массив.\n\nФункция должна вернуть тип данных первого элемента массива.\n\nПример запуска функции:\n```javascript\ntypeofArr([1, 2, 3]) // 'number'\ntypeofArr([\"1\", \"2\", 3]) // 'string'\ntypeofArr([true, \"2\", 3]) // 'boolean'\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function typeofArr(mixArr){\n  return typeof mixArr[0];\n}",
+  "openTest": "it('Created function typeofArr', () => {\n  expect(typeofArr).to.be.a('function');\n});\n\nit('typeofArr([1, 2, 3]) should return \"number\"', () => {\n    expect(typeofArr([1, 2, 3])).to.be.equal('number');\n} );\n\nit('typeofArr([\"1\", \"2\", 3]) should return \"string\"', () => {\n    expect(typeofArr([\"1\", \"2\", 3])).to.be.equal('string');\n});\n\nit('typeofArr([true, \"2\", 3]) should return \"boolean\"', () => {\n    expect(typeofArr([true, \"2\", 3])).to.be.equal('boolean');\n});\n\nit('typeofArr([null, \"2\", 3]) should return \"object\"', () => {\n    expect(typeofArr([null, \"2\", 3])).to.be.equal('object');\n});\n\nit('typeofArr([-5, \"2\", 3]) should return \"number\"', () => {\n    expect(typeofArr([-5, \"2\", 3])).to.be.equal('number');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

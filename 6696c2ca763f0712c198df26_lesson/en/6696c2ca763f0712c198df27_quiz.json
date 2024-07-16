@@ -1,0 +1,139 @@
+{
+  "name": "Functions. Returned value",
+  "questions": {
+    "0": {
+      "name": "Using return within a function interrupts its execution and returns the value that is specified after return. Right?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "1": {
+      "name": "If no return is specified in the function, it returns undefined. Right?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "2": {
+      "name": "The function can return any value. Right?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "3": {
+      "name": "The function can be called a maximum of 128 times. Right?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "4": {
+      "name": "The return directive is an optional part of the function statement. Right?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "5": {
+      "name": "return can only be used within a function. Right?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "6": {
+      "name": "If the function return 2 + 5, it returns:",
+      "variants": {
+        "0": {
+          "name": "number 2"
+        },
+        "1": {
+          "name": "line 2 + 5"
+        },
+        "2": {
+          "name": "number 7"
+        },
+        "3": {
+          "name": "line 7"
+        }
+      }
+    },
+    "7": {
+      "name": "If the function return '2 + 5', it returns:",
+      "variants": {
+        "0": {
+          "name": "line 7"
+        },
+        "1": {
+          "name": "number 7"
+        },
+        "2": {
+          "name": "line '2 + 5'"
+        },
+        "3": {
+          "name": "Error"
+        }
+      }
+    },
+    "8": {
+      "name": "If in the function return; it returns:",
+      "variants": {
+        "0": {
+          "name": "Error"
+        },
+        "1": {
+          "name": "undefined"
+        },
+        "2": {
+          "name": "0"
+        },
+        "3": {
+          "name": "Blank line"
+        }
+      }
+    },
+    "9": {
+      "name": "If the function return null; then it returns:",
+      "variants": {
+        "0": {
+          "name": "0"
+        },
+        "1": {
+          "name": "null"
+        },
+        "2": {
+          "name": "undefined"
+        },
+        "3": {
+          "name": "Blank line"
+        }
+      }
+    }
+  }
+}

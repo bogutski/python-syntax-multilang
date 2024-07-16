@@ -1,0 +1,4 @@
+{
+  "name": "Correct errors in the function",
+  "instruction": "The assignment is to make the `sayHello` function.\n\nThe body of the function should have two outputs to the console.\n\nThe first `console.log` should print the string 'Hello'.\nThe second `console.log` should output the 'JavaScript' line\n\nBeginner programmer done, but not exactly as the assignment stated.\n\nFind and fix the errors."
+}

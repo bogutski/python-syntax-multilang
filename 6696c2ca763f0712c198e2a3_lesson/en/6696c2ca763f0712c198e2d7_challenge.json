@@ -1,0 +1,4 @@
+{
+  "name": "File size in kilobytes",
+  "instruction": "A file size is given in bytes. Find the number of full kilobytes in that file size.\n\nWrite a function named `fileSizeKb` that takes one number of the file size in bytes.\n\nThe function should return the number of full kilobytes in that size.\n\n1Kb = 1024 bytes\n\nExamples of running the function:\n```javascript\nfileSizeKb(1000) // 0\nfileSizeKb(1024) // 1\nfileSizeKb(1025) // 1\nfileSizeKb(2048) // 2\nfileSizeKb(2049) // 2\n```"
+}

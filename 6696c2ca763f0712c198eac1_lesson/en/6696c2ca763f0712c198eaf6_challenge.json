@@ -1,0 +1,4 @@
+{
+  "name": "The division into vowels and consonants",
+  "instruction": "Write a function `vowelsAndConsonants` that takes a string and returns an array of two arrays:\n\n* the first array contains all the vowels of the string in the same order as they occur in the string\n* The second array contains all consonants of the string in the same order as they occur in the string\n\nThe vowel letters are `a`, `e`, `i`, `o`, `u`.\n\nAn example of an `if` condition that checks if a letter is a vowel:\n* `if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u')`\n\nAll letters in the string will be lowercase.\n\n\nAn example of how to run a function:\n```javascript\nvowelsAndConsonants('javascript') // [ ['a', 'a', 'i'], ['j', 'v', 's', 'c', 'r', 'p', 't'] ]\nvowelsAndConsonants('pasv') // [ ['a'], ['p', 's', 'v'] ]\nvowelsAndConsonants('') // [ [], [] ]\n```"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f252",
+  "name": {
+    "en": "Comparing arrays for repeating elements",
+    "ru": "Сравнение массивов на повторяющиеся элементы"
+  },
+  "instruction": {
+    "en": "The `checkArrays` function must accept two arrays, which can contain strings and numbers.\n\nThe function must return the string:\n* `Array 1 includes all elements of array 2`, if the first array contains all elements of the second array\n* `Array 2 has unique elements`, if the second array contains unique elements\n* `false` if at least one of the arrays is empty\n\nExamples of how to run the function:\n```javascript\ncheckArrays([1, 2, 3], [3, 2]) // \"Array 1 includes all elements of array 2\"\ncheckArrays([\"hello\", \"hello\", \"js\"], [\"js\", \"practice\") // \"Array 2 has unique elements\"\ncheckArrays([1, 2, 3], []) // false\n```",
+    "ru": "Функция `checkArrays` должна принимать два массива, в котором могут содержаться строки и числа.\n\nФункция должна возвращать строку:\n* `Array 1 includes all elements of array 2`, если первый массив содержит все элементы второго массива\n* `Array 2 has unique elements`, если второй массив содержит уникальные элементы\n* `false`, если хоть один из массивов пустой\n\nПримеры запуска функции:\n```javascript\ncheckArrays([1, 2, 3], [3, 2]) // \"Array 1 includes all elements of array 2\"\ncheckArrays([\"hello\", \"hello\", \"js\"], [\"js\", \"practice\") // \"Array 2 has unique elements\"\ncheckArrays([1, 2, 3], []) // false\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function checkArrays(arr1, arr2) {\n  if (!arr1.length || !arr2.length) return false;\n  const obj = {};\n  for (let i = 0; i < arr2.length; i++) {\n    if (!obj[arr2[i]]) obj[arr2[i]] = 1;\n    else obj[arr2[i]]++;\n  }\n\n  for (let i = 0; i < arr1.length; i++) {\n    if (obj[arr1[i]]) {\n      obj[arr1[i]]--;\n    }\n  }\n\n  const values = Object.values(obj)\n\n\n  for (let i = 0; i < values.length; i++) {\n    if (values[i] !== 0) return 'Array 2 has unique elements'\n  }\n  return 'Array 1 includes all elements of array 2';\n}",
+  "openTest": "it('Created function checkArrays', () => {\n  expect(checkArrays).to.be.a('function');\n});\n\nit('checkArrays([1, 2, 3], [3, 2]) should return \"Array 1 includes all elements of array 2\"', () => {\n  expect(checkArrays([1, 2, 3], [3, 2])).to.equal('Array 1 includes all elements of array 2');\n});\n\nit('checkArrays([\"hello\", \"hello\", \"js\"], [\"js\", \"practice\"]) should return \"Array 2 has unique elements\"', () => {\n  expect(checkArrays([\"hello\", \"hello\", \"js\"], [\"js\", \"practice\"])).to.equal('Array 2 has unique elements');\n});\n\nit('checkArrays([1, 2, 3], []) should return false', () => {\n  expect(checkArrays([1, 2, 3], [])).to.equal(false);\n});\n\nit('checkArrays([], [1, 2, 3]) should return false', () => {\n  expect(checkArrays([], [1, 2, 3])).to.equal(false);\n});\n\nit('checkArrays([], []) should return false', () => {\n  expect(checkArrays([], [])).to.equal(false);\n});\n\nit('checkArrays([1, 2, 3, 1, 1, 2], [1, 1, 1, 2, 2, 3]) should return \"Array 2 has unique elements\"', () => {\n  expect(checkArrays([1, 2, 3, 1, 1, 2], [11, 1, 1, 2, 2, 3])).to.equal('Array 2 has unique elements');\n});\n\nit('checkArrays([1, 2, 3], [1, 2, 3, 4]) should return \"Array 2 has unique elements\"', () => {\n  expect(checkArrays([1, 2, 3], [1, 2, 3, 4])).to.equal('Array 2 has unique elements');\n});\n\nit('checkArrays([\"js\", \"practice\"], [\"\"]) should return \"Array 2 has unique elements\"', () => {\n  expect(checkArrays([\"js\", \"practice\"], [\"\"])).to.equal('Array 2 has unique elements');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

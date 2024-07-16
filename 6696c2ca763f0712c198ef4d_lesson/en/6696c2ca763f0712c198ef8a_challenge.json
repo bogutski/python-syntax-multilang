@@ -1,0 +1,5 @@
+{
+  "name": "Calculate the number of apartments and the amount of payments. Array with objects",
+  "instruction": "In this task, it is necessary to calculate how many apartments are in the block and what amount of payments they make.\n\nThe function `countFees` accepts an array of objects containing information about the building.\nWe are interested in objects that have the following structure (other objects may also be passed to the function):\n* `apartment` - apartment number\n* `condoFee` - payment amount\n\nIt is necessary to return an object with the following properties:\n* `overallApartments` - the number of apartments in the block\n* `sumOfPayments` - the sum of payments for all apartments\n\nExample function call:\n```javascript\ncountFees([{apartment: 1, condoFee: 100}, {apartment: 2, condoFee: 200}, {apartment: 3, condoFee: 100}, {apartment: 4, condoFee: 200}])\n// {overallApartments: 4, sumOfPayments: 600}\n\ncountFees([{room: 1, name: \"Utility room\"},{apartment: 2, condoFee: 200}, {apartment: 3, condoFee: 200}])\n// {overallApartments: 2, sumOfPayments: 400}\n```",
+  "instructions": {}
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198deb2",
+  "name": {
+    "en": "How many grains did the inventor of chess ask for the 64th square?",
+    "ru": "Сколько зерен попросил изобретатель шахмат за 64-ую клетку?"
+  },
+  "instruction": {
+    "en": "From the legend of the chessboard:\n\n\"– Lord,\" said Setha, –command me to give me one grain of wheat for the first square of the chessboard.\n\n– A grain of wheat? – The king was astonished.\n– Yes, my lord. For the second square give me 2 grains, for the third 4, for the fourth 8, for the fifth 16, for the sixth 32...\n\n– Enough, – with irritation the king interrupted him – you will get your grains for all 64 squares of the board, according to your wishes:\neach one twice as much as the last. But know that your request is not worthy of my generosity...\"\n\nFind how many grains did the inventor ask for the 64th square?\nIt is not difficult to calculate that it is 2 to the power of 63.\n\nDefine a variable `power` in which calculate 2 to the power of 63.\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n```\nconst v = 2 ** 64;\n```",
+    "ru": "Из легенды о шахматной доске:\n\n\"– Повелитель, – сказал Сета,– прикажи выдать мне за первую клетку шахматной доски одно пшеничное зерно.\n\n– Простое пшеничное зерно? – изумился царь.\n– Да, повелитель. За вторую клетку прикажи выдать 2 зерна, за третью 4, за четвертую – 8, за пятую – 16, за шестую – 32...\n\n– Довольно, – с раздражением прервал его царь.– Ты получишь свои зерна за все 64 клетки доски, согласно твоему желанию:\nза каждую вдвое больше против предыдущей. Но знай, что просьба твоя недостойна моей щедрости...\"\n\nНайдите, сколько зерен попросил изобретатель за 64-ую клетку?\nНетрудно посчитать, что это 2 в степени 63.\n\nЗадайте переменную `power`, в которой вычислите 2 в степени 63.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst v = 2 ** 64;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const power = 2 ** 63;",
+  "openTest": "it('Variable `power` contains a value', () => {\n  expect(power).not.undefined;\n});\n\nit('the variable `power` type is a number', () => {\n  expect(power).a('number');\n});\n\nit('the variable `power` has the correct value', () => {\n  expect(power).equal(2 ** 63);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": "```javascript\nconst power = 2 ** 63;\n```"
+  }
+}

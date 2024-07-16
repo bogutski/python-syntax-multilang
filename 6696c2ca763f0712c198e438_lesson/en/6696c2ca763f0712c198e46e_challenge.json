@@ -1,0 +1,4 @@
+{
+  "name": "Repeat the number",
+  "instruction": "Write a function `repeatNumber` that takes a number.\n\nLet the function take a number and repeat it as many times as the number itself equals.\n\nAn example of running the function:\n```javascript\nrepeatNumber(1); // '1\nrepeatNumber(2); // '22\nrepeatNumber(3); // `` 333\nrepeatNumber(4); // '4444'\nrepeatNumber(5); // '55555'\n```\n\nThe result of the function must be a string.\n\nTo convert a number to a string, use the construct `(number + '')`.\n\n```javascript\nconst n = 3;\nconsole.log((n + '').repeat(n)); // '333'\n```\nIf you add an empty string to the number, you get a string."
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e46a",
+  "name": {
+    "en": "The function repeats the string according to its length",
+    "ru": "Функция повторяет строку согласно своей длине"
+  },
+  "instruction": {
+    "en": "Write a function `repeatString` that takes a string and returns it repeated as many times as its length.\n\nAn example of running the function:\n```javascript\nrepeatString('abc1'); // 'abc1abc1abc1abc1'\nrepeatString('abc'); // 'abcabcabc'\nrepeatString('qw'); // 'qwqw'\nrepeatString('q'); // 'q'\n```",
+    "ru": "Напиши функцию `repeatString`, которая принимает строку и возвращает ее повторенную столько раз, сколько длина этой строки.\n\nПример запуска функции:\n```javascript\nrepeatString('abc1'); // 'abc1abc1abc1abc1'\nrepeatString('abc'); // 'abcabcabc'\nrepeatString('qw'); // 'qwqw'\nrepeatString('q'); // 'q'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function repeatString(string) {\n  return string.repeat(string.length);\n}",
+  "openTest": "it('Created function repeatString', () => {\n  expect(repeatString).to.be.a('function');\n});\n\nit('repeatString(\"abc1\") should return \"abc1abc1abc1abc1\"', () => {\n  expect(repeatString('abc1')).to.equal('abc1abc1abc1abc1');\n});\n\nit('repeatString(\"abc\") should return \"abcabcabc\"', () => {\n  expect(repeatString('abc')).to.equal('abcabcabc');\n});\n\nit('repeatString(\"qw\") should return \"qwqw\"', () => {\n  expect(repeatString('qw')).to.equal('qwqw');\n});\n\nit('repeatString(\"q\") should return \"q\"', () => {\n  expect(repeatString('q')).to.equal('q');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

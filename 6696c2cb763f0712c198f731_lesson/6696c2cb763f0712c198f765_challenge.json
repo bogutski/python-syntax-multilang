@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f765",
+  "name": {
+    "en": "/*",
+    "ru": "Найти последнее четное число в массиве"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findLastEven`, которая принимает массив целых чисел и возвращает последнее четное число в этом массиве.\n\nЕсли четных чисел в массиве нет, функция должна вернуть `undefined`.\n\n\nПримеры запуска функции:\n```javascript\nfindLastEven([1, 2, 3, 4, 5, 6]) // 6\nfindLastEven([2, 4, 6, 8, 11])   // 8\nfindLastEven([1, 3, 5, 7])       // undefined\n```"
+  },
+  "initialSolution": "function findLastEven(){\n\n}",
+  "completedSolution": "function findLastEven(arr) {\n  return arr.findLast(el => el % 2 === 0);\n}",
+  "openTest": "it('Created function findLastEven', () => {\n  expect(findLastEven).to.be.a('function');\n});\n\nit(\"Function findLastEven should include findLast method\", () => {\n  const result = findLastEven.toString();\n  expect(result).to.include('.findLast(');\n});\n\nit('findLastEven([1, 2, 3, 4, 5, 6]) should return 6', function() {\n  expect(findLastEven([1, 2, 3, 4, 5, 6])).to.equal(6);\n});\n\nit('findLastEven([1, 3, 5, 7]) should return undefined', function() {\n  expect(findLastEven([1, 3, 5, 7])).to.be.undefined;\n});\n\nit('findLastEven([2, 4, 6, 8, 11]) should return 8', function() {\n  expect(findLastEven([2, 4, 6, 8, 11])).to.equal(8);\n});\n\nit('findLastEven([42]) should return 42', function() {\n  expect(findLastEven([42])).to.equal(42);\n});\n\nit('findLastEven([]) should return undefined', function() {\n  expect(findLastEven([])).to.be.undefined;\n});\n\nit('findLastEven([21, 23, 20]) should return 20', function() {\n  expect(findLastEven([21, 23, 20])).to.equal(20);\n});\n\nit('findAfindLastEven([0, 1, 3, 5]) should return 0', function() {\n  expect(findLastEven([0, 1, 3, 5])).to.equal(0);\n});\n\nit('findLastEven([-1, -2, -3]) should return -2', function() {\n  expect(findLastEven([-1, -2, -3])).to.equal(-2);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

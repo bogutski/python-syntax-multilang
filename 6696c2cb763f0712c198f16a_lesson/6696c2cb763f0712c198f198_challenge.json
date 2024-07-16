@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f198",
+  "name": {
+    "en": "",
+    "ru": "Удаление пробелов и проверка на симметричность"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `isArraySymmetrical`, которая принимает массив строк.\n\nФункция должна вернуть `true`, если массив является симметричным, и `false` в противном случае.\n\nВ строках могут быть пробелы, как в начале и в конце, так и внутри слов.\n\nЭта задача, повторяет алгоритм прошлой задачи, но нужно добавить цикл, в котором нужно убрать все пробелы из строки:\n\n* Проверить, что массив не пустой, иначе вернуть строку `'Array is empty'`\n* Перевести массив в строку, для этого воспользуйтесь методом `join`\n* Привести строку к нижнему или верхнему регистру.\n* Создать пустую строку, в которую будут записываться все символы, кроме пробелов.\n* Создать цикл, который будет проходить по строке и записывать в новую строку все символы, кроме пробелов.\n* Создайте цикл, который будет проверять, что первый символ равен последнему, второй предпоследнему и т.д.\n  Цикл должен проходить до половины строки и если элементы равны, то возвращать `true`, иначе `false`\n\n\nПримеры запуска функции:\n```javascript\nisArraySymmetrical(['A ', ' B B, ' C', 'b b', 'a ']);           // 'abbcbba' => true\nisArraySymmetrical([' t rue   ', 'a Aa ', 'E UR T']);           // 'trueaaaeurt' => true\nisArraySymmetrical(['T RU E', 'O  R', '  be', 'r  o', 'eurt']); // 'trueorberoeurt' => false\nisArraySymmetrical(['123 ', '5 55', '12  3']);                  //  '123555123' => false\nisArraySymmetrical([]);                                         // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isArraySymmetrical(arr) {\n  if(!arr.length) return 'Array is empty';\n  const str = arr.join('').toLowerCase();\n  let noSpacesStr = '';\n\n  for(let i = 0; i < str.length; i++) {\n    if(str[i] !== ' ') noSpacesStr += str[i];\n  }\n\n  for(let i = 0; i < noSpacesStr.length / 2; i++) {\n    if(noSpacesStr[i] !== noSpacesStr[noSpacesStr.length - i - 1]) return false;\n\n  }\n\n  return true;\n}",
+  "openTest": "it('Created function isArraySymmetrical', () => {\n  expect(isArraySymmetrical).to.be.a('function');\n});\n\nit(\"Function isArraySymmetrical does not include 'reverse' method\", () => {\n  expect(isArraySymmetrical.toString()).to.not.include('reverse');\n});\n\nit(\"isArraySymmetrical([' A', 'b', 'c ', 'b', '  a ']) should return true\", () => {\n  expect(isArraySymmetrical([' A', 'b', 'c ', 'b', '  a '])).to.be.true;\n});\n\nit(\"isArraySymmetrical(['te st', 'SHO ULD', 'be  ', ' false']) should return false\", () => {\n  expect(isArraySymmetrical(['te st', 'SHO ULD', 'be  ', ' false'])).to.be.false;\n});\n\nit(\"isArraySymmetrical(['   TR U   E', ' O R', ' b e E b ', ' r o  ', 'e ur  t']) should return true\", () => {\n  expect(isArraySymmetrical(['   TR U   E', ' O R', ' b e E b ', ' r o  ', 'e ur  t'])).to.be.true;\n});\n\nit(\"isArraySymmetrical([' 12 3', '55 5', '1 23 ']) should return false\", () => {\n  expect(isArraySymmetrical([' 12 3', '55 5', '1 23 '])).to.be.false;\n});\n\nit(\"isArraySymmetrical(['789', 'abc', '   c b  a', '   9  87   ']) should return true\", () => {\n  expect(isArraySymmetrical(['789', 'abc', '   c b  a', '   9  87   '])).to.be.true;\n});\n\nit(\"isArraySymmetrical([]) should return 'Array is empty'\", () => {\n  expect(isArraySymmetrical([])).to.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

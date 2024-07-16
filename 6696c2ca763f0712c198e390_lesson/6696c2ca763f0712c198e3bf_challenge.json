@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e3bf",
+  "name": {
+    "en": "By how much the two lines differ in length",
+    "ru": "На сколько отличаются две строки по длине"
+  },
+  "instruction": {
+    "en": "Write a function `diffLength` that takes two strings and returns the difference of their lengths.\n\nExamples of running the function:\n```javascript\ndiffLength('aaa', 'aa'); // 1\ndiffLength('aa', 'aaa'); // 1\ndiffLength('aaa', ''); // 3\ndiffLength('', 'aaa'); // 3\ndiffLength('aaa', 'aaa'); // 0\n```\n\nThe return value must be a positive number.",
+    "ru": "Напишите функцию `diffLength`, которая принимает две строки и возвращает разницу их длин.\n\nПримеры запуска функции:\n```javascript\ndiffLength('aaa', 'aa'); // 1\ndiffLength('aa', 'aaa'); // 1\ndiffLength('aaa', ''); // 3\ndiffLength('', 'aaa'); // 3\ndiffLength('aaa', 'aaa'); // 0\n```\n\nВозвращаемое значение должно быть положительным числом."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function diffLength(str1, str2) {\n  return Math.abs(str1.length - str2.length);\n}",
+  "openTest": "it('Created function diffLength', () => {\n  expect(diffLength).to.be.a('function');\n});\n\nit('diffLength(\"aaa\", \"aa\") should return 1', () => {\n  expect(diffLength('aaa', 'aa')).to.equal(1);\n});\n\nit('diffLength(\"aaa\", \"bbbbb\") should return 2', () => {\n  expect(diffLength('aaa', 'bbbbb')).to.equal(2);\n});\n\nit('diffLength(\"\", \"qqq\") should return 3', () => {\n  expect(diffLength('', 'qqq')).to.equal(3);\n});\n\nit('diffLength(\"qqq\", \"\") should return 3', () => {\n  expect(diffLength('qqq', '')).to.equal(3);\n});\n\nit('diffLength(\"qqq\", \"qqq\") should return 0', () => {\n  expect(diffLength('qqq', 'qqq')).to.equal(0);\n});\n\nit('diffLength(\"q\", \"qqqq\") should return 3', () => {\n  expect(diffLength('q', 'qqqq')).to.equal(3);\n});\n\nit('diffLength(\"qqqqaaaa\", \"---q\") should return 4', () => {\n  expect(diffLength('qqqqaaaa', '---q')).to.equal(4);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

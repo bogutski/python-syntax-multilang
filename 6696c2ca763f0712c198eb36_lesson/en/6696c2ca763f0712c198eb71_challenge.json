@@ -1,0 +1,4 @@
+{
+  "name": "Flip each row in the array",
+  "instruction": "Fix the `reverseStringInArray` function, which takes an array of strings and returns an array of inverted strings.\n\nEach string must remain in its place in the array.\n\nOnly three errors are made in the function. The loop and everything inside is without errors.\n\nTake apart each line and try to understand what it does.\n\nAn example of running a function:\n```js\nreverseStringInArray(['blue', 'red']); // [ 'eulb', 'der' ]\nreverseStringInArray(['abc', 'def', 'ghi', 'jkl']); // [ 'cba', 'fed', 'ihg', 'lkj' ]\nreverseStringInArray(['hello', 'programming' ,'world']); // [ 'olleh', 'gnimmargorp', 'dlrow' ]\n```"
+}

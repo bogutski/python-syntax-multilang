@@ -1,0 +1,4 @@
+{
+  "name": "Number of spaces in lines",
+  "instruction": "Write a function `numOfSpaces` that takes two strings and returns the number of spaces in both strings.\n\nGlue the strings together and use the `for` loop to count the number of spaces in the resulting string.\n\nIf there are no spaces in both lines, the function should return 0.\n\nExamples of running the function:\n```javascript\nnumOfSpaces('1 2 3', '4 5 6'); // 4\nnumOfSpaces('a b c', ''); // 2\nnumOfSpaces('', ''); // 0\n```"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f95c",
+  "name": {
+    "en": "/*",
+    "ru": "Извлечение, модификация и нахождение подстрок"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `getStringsContainingSubstring`, которая принимает массив строк, два числа и строку.\n\nФункция должна возвращать новый массив, содержащий строки, извлеченные между указанными индексами (включительно для начала и конца).\n\nКаждая строка должна быть модифицирована: все символы преобразуются в нижний регистр.\n\nЗатем функция должна отфильтровать строки, которые содержат указанную подстроку.\n\n\nПримеры запуска функции:\n```javascript\ngetStringsContainingSubstring(['Apple', 'Banana', 'Cherry', 'Date', 'Fig'], 1, 4, 'a');\n// ['banana', 'date']\n\ngetStringsContainingSubstring(['Dog', 'Cat', 'Rabbit', 'Hamster'], 0, 2, 'b');\n// ['rabbit']\n```"
+  },
+  "initialSolution": "function getSortedModifiedObjects(){\n\n}",
+  "completedSolution": "function getStringsContainingSubstring(arr, start, end, subStr) {\n  return arr.slice(start, end + 1)\n      .map(str => str.toLowerCase())\n      .filter(str => str.includes(subStr))\n}",
+  "openTest": "it('Created function getStringsContainingSubstring', () => {\n  expect(getStringsContainingSubstring).to.be.a('function');\n});\n\nit('getStringsContainingSubstring([\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"Fig\"], 1, 4, \"a\") should return [\"banana\", \"date\"]', function() {\n  expect(getStringsContainingSubstring([\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"Fig\"], 1, 4, \"a\")).to.deep.equal([\"banana\", \"date\"]);\n});\n\nit('getStringsContainingSubstring([\"Dog\", \"Cat\", \"Rabbit\", \"Hamster\"], 0, 2, \"b\") should return [\"rabbit\"]', function() {\n  expect(getStringsContainingSubstring([\"Dog\", \"Cat\", \"Rabbit\", \"Hamster\"], 0, 2, \"b\")).to.deep.equal([\"rabbit\"]);\n});\n\nit('getStringsContainingSubstring([\"Sun\", \"Moon\", \"Stars\", \"Galaxy\"], 0, 3, \"o\") should return [\"moon\"]', function() {\n  expect(getStringsContainingSubstring([\"Sun\", \"Moon\", \"Stars\", \"Galaxy\"], 0, 3, \"o\")).to.deep.equal([\"moon\"]);\n});\n\nit('getStringsContainingSubstring([\"blue\", \"green\", \"red\", \"yellow\"], 1, 3, \"e\") should return [\"green\", \"red\", \"yellow\"]', function() {\n  expect(getStringsContainingSubstring([\"blue\", \"green\", \"red\", \"yellow\"], 1, 3, \"e\")).to.deep.equal([\"green\", \"red\", \"yellow\"]);\n});\n\nit('getStringsContainingSubstring([\"one\", \"two\", \"three\", \"four\"], 2, 3, \"o\") should return [\"four\"]', function() {\n  expect(getStringsContainingSubstring([\"one\", \"two\", \"three\", \"four\"], 2, 3, \"o\")).to.deep.equal([\"four\"]);\n});\n\nit('getStringsContainingSubstring([\"abc\", \"def\", \"ghi\", \"jkl\"], 0, 1, \"e\") should return [\"def\"]', function() {\n  expect(getStringsContainingSubstring([\"abc\", \"def\", \"ghi\", \"jkl\"], 0, 1, \"e\")).to.deep.equal([\"def\"]);\n});\n\nit('getStringsContainingSubstring([\"AB\", \"CD\", \"EF\", \"GH\"], 1, 3, \"f\") should return [\"ef\"]', function() {\n  expect(getStringsContainingSubstring([\"AB\", \"CD\", \"EF\", \"GH\"], 1, 3, \"f\")).to.deep.equal([\"ef\"]);\n});\n\nit('getStringsContainingSubstring([\"IJ\", \"KL\", \"MN\", \"OP\"], 0, 2, \"j\") should return [\"ij\"]', function() {\n  expect(getStringsContainingSubstring([\"IJ\", \"KL\", \"MN\", \"OP\"], 0, 2, \"j\")).to.deep.equal([\"ij\"]);\n});\n\nit('getStringsContainingSubstring([\"123ABC\", \"DEFG\", \"HIJKL\", \"MNOP\"], 1, 3, \"m\") should return [\"mnop\"]', function() {\n  expect(getStringsContainingSubstring([\"123ABC\", \"DEFG\", \"HIJKL\", \"MNOP\"], 1, 3, \"m\")).to.deep.equal([\"mnop\"]);\n});\n\nit('getStringsContainingSubstring([\"wOrLd\", \"PLANET\", \"STAR\", \"SUN\"], 1, 3, \"a\") should return [\"planet\", \"star\"]', function() {\n  expect(getStringsContainingSubstring([\"wOrLd\", \"PLANET\", \"STAR\", \"SUN\"], 1, 3, \"a\")).to.deep.equal([\"planet\", \"star\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

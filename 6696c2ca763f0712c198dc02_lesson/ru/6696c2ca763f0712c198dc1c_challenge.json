@@ -1,0 +1,6 @@
+{
+  "name": "Какой тип имеет бесконечность?",
+  "instruction": "Создайте переменную `infinity` и присвойте ей значение результата деления произвольного положительного числа на 0.\nСоздайте переменную `typeOfInfinity` и присвойте ей значение типа переменной `infinity`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst inf = 2 / 0;\nconst typeOfInf = typeof (inf);\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst infinity = 1 / 0;\nconst typeOfInfinity = typeof (infinity);\n```"
+}

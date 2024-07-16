@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e952",
+  "name": {
+    "en": "Even and odd index division",
+    "ru": "Разделение по четности и нечетности индексов"
+  },
+  "instruction": {
+    "en": "Write a function `oddAndEven` that takes a string and returns an array of two strings: `[odd, even]`.\n\nThe function must divide by even and odd characters indices in the string.\n\nExample:\n```javascript\nlet str = 'abc';\n// 'a' - 0 index, even\n// 'b' - 1 index, odd\n// 'c' - 2 index, even\n```\n\nExamples of running the function:\n```javascript\noddAndEven('0123456'); // ['135', '0246']\noddAndEven('abcdef'); // ['bdf', 'ace']\noddAndEven(''); // ['', '']\n```",
+    "ru": "Напишите функцию `oddAndEven`, которая принимает строку и возвращает массив из двух строк: `[odd, even]`.\n\nФункция должна разделять по четности и нечетности индексов символов в строке.\n\nПример:\n```javascript\nlet str = 'abc';\n// 'a' - 0 индекс, четный\n// 'b' - 1 индекс, нечетный\n// 'c' - 2 индекс, четный\n```\n\nПримеры запуска функции:\n```javascript\noddAndEven('0123456'); // ['135', '0246']\noddAndEven('abcdef'); // ['bdf', 'ace']\noddAndEven(''); // ['', '']\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function oddAndEven(string){\n  let odd = '';\n  let even = '';\n  for (let i = 0; i < string.length; i++){\n    if (i % 2 === 0) even += string[i];\n    else odd += string[i];\n  }\n  return [odd, even];\n}",
+  "openTest": "it('Created function oddAndEven', () => {\n  expect(oddAndEven).to.be.a('function');\n});\n\nit(\"oddAndEven('0123456') should return ['135', '0246']\", () => {\n  expect(oddAndEven('0123456')).to.deep.equal(['135', '0246']);\n});\n\nit(\"oddAndEven('abcdef') should return ['bdf', 'ace']\", () => {\n  expect(oddAndEven('abcdef')).to.deep.equal(['bdf', 'ace']);\n});\n\nit(\"oddAndEven('') should return ['', '']\", () => {\n  expect(oddAndEven('')).to.deep.equal(['', '']);\n});\n\nit(\"oddAndEven('a') should return ['', 'a']\", () => {\n  expect(oddAndEven('a')).to.deep.equal(['', 'a']);\n});\n\nit(\"oddAndEven('ab') should return ['b', 'a']\", () => {\n  expect(oddAndEven('ab')).to.deep.equal(['b', 'a']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

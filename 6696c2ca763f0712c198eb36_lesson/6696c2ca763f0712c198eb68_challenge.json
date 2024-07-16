@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eb68",
+  "name": {
+    "en": "Flip the line",
+    "ru": "Перевернуть строку"
+  },
+  "instruction": {
+    "en": "Write a function `reverseString` that takes a string and returns it in reverse order.\n\nIf the string is empty, return an empty string.\n\nAn example of running the function:\n```javascript\nreverseString('hello'); // 'olleh'\nreverseString('Howdy'); // 'ydwoH'\nreverseString('Greetings from California'); // 'ainrofilaC morf sgniteerG'\n```",
+    "ru": "Напишите функцию `reverseString`, которая принимает строку и возвращает ее в обратном порядке.\n\nЕсли строка пустая, верните пустую строку.\n\nПример запуска функции:\n```javascript\nreverseString('hello'); // 'olleh'\nreverseString('Howdy'); // 'ydwoH'\nreverseString('Greetings from California'); // 'ainrofilaC morf sgniteerG'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseString(str) {\n  let newStr = '';\n  for (let i = str.length - 1; i >= 0; i--) {\n    newStr += str[i];\n  }\n  return newStr\n}\n\nconsole.log(reverseString('hello'));",
+  "openTest": "it('Created function reverseString', () => {\n  expect(reverseString).to.be.a('function');\n});\n\nit(\"reverseString('hello') should return 'olleh'\", () => {\n  expect(reverseString('hello')).to.equal('olleh');\n});\n\nit(\"reverseString('Howdy') should return 'ydwoH'\", () => {\n  expect(reverseString('Howdy')).to.equal('ydwoH');\n});\n\nit(\"reverseString('Greetings from California') should return 'ainrofilaC morf sgniteerG'\", () => {\n  expect(reverseString('Greetings from California')).to.equal('ainrofilaC morf sgniteerG');\n});\n\nit(\"reverseString('') should return ''\", () => {\n  expect(reverseString('')).to.equal('');\n});\n\nit(\"reverseString('a') should return 'a'\", () => {\n  expect(reverseString('a')).to.equal('a');\n});\n\nit(\"reverseString('123456789') should return '987654321'\", () => {\n  expect(reverseString('123456789')).to.equal('987654321');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

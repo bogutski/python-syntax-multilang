@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e7ab",
+  "name": {
+    "en": "Changing the first or last element of an array",
+    "ru": "Изменение первого или последнего элемента массива"
+  },
+  "instruction": {
+    "en": "Write a function `changeElement` that takes one parameter, an array of numbers.\n\nIf the length of the array is even, add to the value of the last element the value of the penultimate one.\nIf the length of the array is odd, cube the value of the first element.\n\nThe function should return the naked array.\n\nAn example of running the function:\n```javascript\nchangeElement([1, 2, 3, 4, 5, 6]); // [1, 2, 3, 4, 5, 11]\nchangeElement([2, 3, 4, 5, 6]); // [8, 3, 4, 5, 6]\n```",
+    "ru": "Напишите функцию `changeElement`, которая принимает один параметр - массив из чисел.\n\nЕсли длина массива четная, прибавьте к значению последнего элемента значение предпоследнего.\nЕсли длина массива нечетная, возведите в куб значение первого элемента.\n\nФункция должна вернуть обновленный массив.\n\nПример запуска функции:\n```javascript\nchangeElement([1, 2, 3, 4, 5, 6]); // [1, 2, 3, 4, 5, 11]\nchangeElement([2, 3, 4, 5, 6]); // [8, 3, 4, 5, 6]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function changeElement(arr){\n  if(arr.length % 2 === 0){\n    arr[arr.length - 1] = arr[arr.length - 1] + arr[arr.length - 2];\n  }else{\n    arr[0] = arr[0] ** 3;\n  }\n  return arr;\n}",
+  "openTest": "it('Created function changeElement', () => {\n  expect(changeElement).to.be.a('function');\n});\n\nit('changeElement([1, 2, 3, 4, 5, 6]) should return [1, 2, 3, 4, 5, 11]', () => {\n    expect(changeElement([1, 2, 3, 4, 5, 6])).to.deep.equal([1, 2, 3, 4, 5, 11]);\n});\n\nit('changeElement([2, 3, 4, 5, 6]) should return [8, 3, 4, 5, 6]', () => {\n    expect(changeElement([2, 3, 4, 5, 6])).to.deep.equal([8, 3, 4, 5, 6]);\n});\n\nit('changeElement([3, 2, 3, 4, 5, 6, 7]) should return [27, 2, 3, 4, 5, 6, 7]', () => {\n    expect(changeElement([3, 2, 3, 4, 5, 6, 7])).to.deep.equal([27, 2, 3, 4, 5, 6, 7]);\n});\n\nit('changeElement([2, 3, 4, 5, 6, 7]) should return [2, 3, 4, 5, 6, 13]', () => {\n    expect(changeElement([2, 3, 4, 5, 6, 7])).to.deep.equal([2, 3, 4, 5, 6, 13]);\n});\n\nit('changeElement([1, 2, 3, 4, 5, 6, 7, -8]) should return [1, 2, 3, 4, 5, 6, 7, -1]', () => {\n    expect(changeElement([1, 2, 3, 4, 5, 6, 7, -8])).to.deep.equal([1, 2, 3, 4, 5, 6, 7, -1]);\n});\n\nit('changeElement([-4, 4, 5, 6, 7, -8, 9]) should return [-64, 4, 5, 6, 7, -8, 9]', () => {\n    expect(changeElement([-4, 4, 5, 6, 7, -8, 9])).to.deep.equal([-64, 4, 5, 6, 7, -8, 9]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

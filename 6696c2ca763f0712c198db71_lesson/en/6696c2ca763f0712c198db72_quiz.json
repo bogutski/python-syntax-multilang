@@ -1,0 +1,66 @@
+{
+  "questions": {
+    "0": {
+      "name": "To declare a variable, JavaScript (both the old and modern standard) uses the keywords",
+      "variants": {
+        "0": {
+          "name": "let"
+        },
+        "1": {
+          "name": "var"
+        },
+        "2": {
+          "name": "const"
+        },
+        "3": {
+          "name": "int"
+        }
+      }
+    },
+    "1": {
+      "name": "If a variable is declared using the let or var keywords, its value can be overwritten.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "2": {
+      "name": "If a variable is declared using the const keyword, its value can be overwritten.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "3": {
+      "name": "Variables declared using the let, const, and var keywords have different data scopes.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "4": {
+      "name": "If you use \"use strict\" mode, you cannot create variables without let, var and const keywords.",
+      "variants": {
+        "0": {
+          "name": "This statement is true"
+        },
+        "1": {
+          "name": "This statement is false"
+        }
+      }
+    }
+  },
+  "name": "JS Syntax. Variable scope"
+}

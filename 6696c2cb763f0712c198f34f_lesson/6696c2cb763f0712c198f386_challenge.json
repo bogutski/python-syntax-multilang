@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f386",
+  "name": {
+    "en": "/*",
+    "ru": "Последовательное удаление до максимального элемента"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `removeUntilMax`, которая принимает массив чисел.\n\nФункция должна последовательно удалять элементы с конца массива с использованием метода `pop()`, пока не будет удален максимальный элемент в массиве.\n\nФункция должна возвращать измененный исходный массив.\n\n* Если максимальный элемент находится в конце массива, то он также должен быть удален.\n* Если в массиве повторяется максимальный элемент, то удаление должно остановится после удаления первого максимального элемента.\n* Если массив пустой, функция должна возвращать пустой массив.\n\n\nПример запуска функции:\n```javascript\nremoveUntilMax([3, 5, 2, 4]); // [3]\nremoveUntilMax([10, 20, 5, 20]); // [10, 20, 5]\nremoveUntilMax([]); // []\n```"
+  },
+  "initialSolution": "function removeUntilMax(){\n\n}",
+  "completedSolution": "function removeUntilMax(arr){\n  if(!arr.length) return arr\n  const maxNum = Math.max(...arr)\n\n  for(let i = arr.length - 1; i >= 0; i--){\n    if(arr[i] === maxNum) {\n      arr.pop()\n      break\n    }\n    arr.pop()\n  }\n\n  return arr\n}",
+  "openTest": "it('Created function removeUntilMax', () => {\n  expect(removeUntilMax).to.be.a('function');\n});\n\nit(\"removeUntilMax([3, 5, 2, 4]) should return [3]\", () => {\n  expect(removeUntilMax([3, 5, 2, 4])).to.deep.equal([3]);\n});\n\nit(\"removeUntilMax([10, 20, 5, 20]) should return [10, 20, 5]\", () => {\n  expect(removeUntilMax([10, 20, 5, 20])).to.deep.equal([10, 20, 5]);\n});\n\nit(\"removeUntilMax([]) should return []\", () => {\n  expect(removeUntilMax([])).to.deep.equal([]);\n});\n\nit(\"removeUntilMax([1, 3, 5, 7]) should return [1, 3, 5]\", () => {\n  expect(removeUntilMax([1, 3, 5, 7])).to.deep.equal([1, 3, 5]);\n});\n\nit(\"removeUntilMax([10]) should return []\", () => {\n  expect(removeUntilMax([10])).to.deep.equal([]);\n});\n\nit(\"should modify the original array\", () => {\n  let originalArray = [1, 2, 3, 4, 5];\n  removeUntilMax(originalArray);\n  expect(originalArray).to.deep.equal([1, 2, 3, 4]);\n});\n\nit(\"removeUntilMax([5, 3, 5, 1]) should return [5, 3]\", () => {\n  expect(removeUntilMax([5, 3, 5, 1])).to.deep.equal([5, 3]);\n});\n\nit(\"removeUntilMax([2, 2, 2]) should return [2, 2]\", () => {\n  expect(removeUntilMax([2, 2, 2])).to.deep.equal([2, 2]);\n});\n\nit(\"removeUntilMax([5, 4, 3, 2, 1]) should return []\", () => {\n  expect(removeUntilMax([5, 4, 3, 2, 1])).to.deep.equal([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

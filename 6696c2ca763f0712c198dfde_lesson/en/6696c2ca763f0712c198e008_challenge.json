@@ -1,0 +1,4 @@
+{
+  "name": "Variables and functions. Volume of a ball",
+  "instruction": "The volume of the ball can be calculated by the formula: `V = 4/3 * π * r^3`, where `r` is the radius of the ball.\n\n`r^3` is r in a cube.\n\nWrite a function `sphereVolume` that takes one parameter `radius` and returns the volume of the sphere with radius `radius`.\n\nDeclare variable `PI` inside the function `sphereVolume` and give it value `3.14`.\n\nUse the `**` operator for the cube."
+}

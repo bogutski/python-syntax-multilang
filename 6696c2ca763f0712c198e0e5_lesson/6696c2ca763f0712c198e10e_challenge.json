@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e10e",
+  "name": {
+    "en": "Calculate cylinder volume",
+    "ru": "Рассчитать объем цилиндра"
+  },
+  "instruction": {
+    "en": "Create a function `PI` that returns the number 3.14.\n\nCreate a function `powerOfTwo` that takes a number and returns the square of that number.\n\nCreate a function `cylinderVolume` that takes two numbers: the radius and the height of a cylinder.\n\nThe function should return the volume of the cylinder, calculated using the formula: `PI() * powerOfTwo(r) * h`, where\n\n`PI()` is the function which returns the number 3.14,\n`powerOfTwo(r)` is a function which returns the square of the number `r`,\n`h` is the height of the cylinder.",
+    "ru": "Создайте функцию `PI`, которая возвращает число 3.14.\n\nСоздайте функцию `powerOfTwo`, которая принимает число и возвращает квадрат этого числа.\n\nСоздайте функцию `cylinderVolume`, которая принимает два числа: радиус и высоту цилиндра.\n\nФункция должна возвращать объем цилиндра, рассчитанный по формуле: `PI() * powerOfTwo(r) * h`, где\n\n`PI()` - функция, которая возвращает число 3.14,\n`powerOfTwo(r)` - функция, которая возвращает квадрат числа `r`,\n`h` - высота цилиндра."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function PI() {\n  return 3.14;\n}\n\nfunction powerOfTwo(x) {\n  return x * x;\n}\n\nfunction cylinderVolume(r, h) {\n  return PI() * powerOfTwo(r) * h;\n}",
+  "openTest": "it('Created function PI', () => {\n  expect(PI).to.be.a('function');\n});\n\nit('Created function powerOfTwo', () => {\n  expect(powerOfTwo).to.be.a('function');\n});\n\nit('Created function cylinderVolume', () => {\n  expect(cylinderVolume).to.be.a('function');\n});\n\nit('Function PI returns correct result', () => {\n  expect(PI()).eq(3.14);\n});\n\nit('Function powerOfTwo returns correct result for argument `2`', () => {\n  expect(powerOfTwo(2)).eq(4);\n});\n\nit('Function powerOfTwo returns correct result for argument `3`', () => {\n  expect(powerOfTwo(3)).eq(9);\n});\n\nit('Function cylinderVolume returns correct result for arguments `2, 3`', () => {\n  expect(cylinderVolume(2, 3)).eq(37.68);\n});\n\nit('Function cylinderVolume returns correct result for arguments `3, 4`', () => {\n  expect(cylinderVolume(3, 4)).eq(113.04);\n});\n\nit('Function cylinderVolume returns correct result for arguments `5, 6`', () => {\n  expect(cylinderVolume(5, 6)).eq(471);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Самое длинное слово в массиве\n/*",
+  "instruction": "Напишите функцию `theLongestWord`, которая принимает массив и должна вернуть количество символов самого длинного слова в нем.\n\nВывод функции должен выглядеть так: `The longest word has 'wordLength' length`.\n\nЕсли все слова одинакового размера, то функция должна вернуть длину первого элемент массива.\n\nЕсли массив пустой, то функция должна вернуть `\"No words found\"`.\n\nПримеры запуска функции:\n```javascript\ntheLongestWord(['The', 'longest', 'word']) // 'The longest word has 7 length'\ntheLongestWord(['Karl', 'John', 'Hugo']) // 'The longest word has 4 length'\ntheLongestWord([]) // 'No words found'\n```",
+  "instructions": {}
+}

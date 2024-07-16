@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e60b",
+  "name": {
+    "en": "Checking the presence of properties in the object",
+    "ru": "Проверка наличия свойств в объекте"
+  },
+  "instruction": {
+    "en": "Write a function `keyInObject` that takes an object and three keys.\n\nThe function should return the object, with the keys: `key1`, `key2`, `key3`, and the values `true` if the key is in the object, and `false` if there is no key.\n\nAn example of running the function:\n```javascript\nkeyInObject({ make: 'Ford', year: 2020, color: 'blue' }, 'make', 'model', 'year'); // { key1: true, key2: false, key3: true }\nkeyInObject({ a: null, b: undefined, c: NaN }, 'a', 'b', 'c'); // { key1: true, key2: true, key3: true }\n```",
+    "ru": "Напишите функцию `keyInObject`, которая принимает объект и три ключа.\n\nФункция должна вернуть объект, с ключами: `key1`, `key2`, `key3`, и значениями `true`, если ключ есть в объекте, и `false`, если ключа нет.\n\nПример запуска функции:\n```javascript\nkeyInObject({ make: 'Ford', year: 2020, color: 'blue' }, 'make', 'model', 'year'); // { key1: true, key2: false, key3: true }\nkeyInObject({ a: null, b: undefined, c: NaN }, 'a', 'b', 'c'); // { key1: true, key2: true, key3: true }\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function keyInObject(object, key1, key2, key3) {\n  return {\n    key1: object.hasOwnProperty(key1),\n    key2: object.hasOwnProperty(key2),\n    key3: object.hasOwnProperty(key3),\n  };\n}",
+  "openTest": "it('Created function keyInObject', () => {\n  expect(keyInObject).to.be.a('function');\n});\n\nit('keyInObject({ make: \"Ford\", year: 2020, color: \"blue\" }, \"make\", \"model\", \"year\") returns { key1: true, key2: false, key3: true }', () => {\n  expect(keyInObject({ make: 'Ford', year: 2020, color: 'blue' }, 'make', 'model', 'year')).to.eql({ key1: true, key2: false, key3: true });\n});\n\nit('keyInObject({ a: null, b: undefined, c: NaN }, \"a\", \"b\", \"c\") returns { key1: true, key2: true, key3: true }', () => {\n  expect(keyInObject({ a: null, b: undefined, c: NaN }, 'a', 'b', 'c')).to.eql({ key1: true, key2: true, key3: true });\n});\n\nit('keyInObject({ num1: 5, num2: 10, car: false }, \"num1\", \"num2\", \"num3\") returns { key1: true, key2: true, key3: false }', () => {\n  expect(keyInObject({ num1: 5, num2: 10, car: false }, 'num1', 'num2', 'num3')).to.eql({ key1: true, key2: true, key3: false });\n});\n\nit('keyInObject({}, \"a\", \"b\", \"c\") returns { key1: false, key2: false, key3: false }', () => {\n  expect(keyInObject({}, 'a', 'b', 'c')).to.eql({ key1: false, key2: false, key3: false });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eebd",
+  "name": {
+    "en": "",
+    "ru": "Использование массива с заготовленными словами"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Исправьте функция `numToWordWithArray`, которая принимает строку, состоящую из цифр.\n\nФункция должна возвращать строку, в которой каждая цифра заменена на слово, соответствующее этой цифре. Слова разделяются запятыми и пробелами.\n\nРазберитесь в коде и постарайтесь переписать его самостоятельно.\n\nВ функции три ошибки. Цикл `for` без ошибок.\n\n\nP.S. В этом задании мы используем унарный плюс `+` для преобразования строки в число.\nПодробней о нём можно прочитать в разделе:\nJavaScript Syntax -> Section 4 -> Операторы -> Унарные и бинарные операторы\n\n\nПримеры запуска функции:\n```javascript\nnumToWordWithArray('') // ''\nnumToWordWithArray('123') // 'one, two, three'\nnumToWordWithArray('987') // 'nine, eight, seven'\nnumToWordWithArray('1234567890') // 'one, two, three, four, five, six, seven, eight, nine, zero'\n```"
+  },
+  "initialSolution": "function numToWordWithArray(str){\n  let arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'five', 'six', 'seven', 'eight', 'nine'];\n  let newStr = '';\n  for (let i = 0; i < str.length; i++) {\n    newStr += arr[+str[i]];\n    if(i !== str.length - 1) {\n      newStr += ', ';\n    }\n  }\n  Return arr;\n}",
+  "completedSolution": "function numToWordWithArray(str){\n  let arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];\n  let newStr = '';\n  for (let i = 0; i < str.length; i++) {\n    newStr += arr[+str[i]];\n    if(i !== str.length - 1) newStr += ', ';\n  }\n  return newStr;\n}",
+  "openTest": "it('Created function numToWordWithArray', () => {\n  expect(numToWordWithArray).to.be.a('function');\n});\n\nit(\"numToWordWithArray('0123') returns 'zero, one, two, three'\", () => {\n  expect(numToWordWithArray('0123')).to.equal('zero, one, two, three');\n});\n\nit(\"numToWordWithArray('98765') returns 'nine, eight, seven, six, five'\", () => {\n  expect(numToWordWithArray('98765')).to.equal('nine, eight, seven, six, five');\n});\n\nit(\"numToWordWithArray('1234567890') returns 'one, two, three, four, five, six, seven, eight, nine, zero'\", () => {\n  expect(numToWordWithArray('1234567890')).to.equal('one, two, three, four, five, six, seven, eight, nine, zero');\n});\n\nit(\"numToWordWithArray('115599') returns 'one, one, five, five, nine, nine'\", () => {\n  expect(numToWordWithArray('115599')).to.equal('one, one, five, five, nine, nine');\n});\n\nit(\"numToWordWithArray('') returns ''\", () => {\n  expect(numToWordWithArray('')).to.equal('');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

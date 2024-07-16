@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f8a1",
+  "name": {
+    "en": "/*",
+    "ru": "Найти индекс последнего элемента с определенной длиной буквенной строки"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findLastIndexByFormattedLength`, которая принимает массив строк и число.\n\nФункция должна вернуть индекс последнего элемента в массиве, который после удаления всех символов, кроме букв, имеет заданную длину.\n\nЕсли такого элемента нет, функция должна вернуть `-1`.\n\n\nПримеры запуска функции:\n```javascript\nfindLastIndexByFormattedLength([\"123heLlo!\", \"woRl@d!\", \"eXi_t@code\"], 5); // 1\nfindLastIndexByFormattedLength([\"123Go!\", \"Hello!World\", \"Java$Script!\"], 5); // -1\nfindLastIndexByFormattedLength(['a123 ppl(e', '.b,l?ueberr!y', 'p%ine#app@le+', '+o_ran45ge/*'], 5); // 0\n```"
+  },
+  "initialSolution": "function findLastIndexByFormattedLength(){\n\n}",
+  "completedSolution": "function findLastIndexByFormattedLength(arr, length) {\n  const strFormat = str => str.replace(/[^a-zA-Z]/g, '');\n  return arr.findLastIndex(el => strFormat(el).length === length);\n}",
+  "openTest": "it('Created function findLastIndexByFormattedLength', () => {\n  expect(findLastIndexByFormattedLength).to.be.a('function');\n});\n\nit('findLastIndexByFormattedLength([\"a123 ppl(e\", \".b,l?ueberr!y\", \"p%ine#app@le+\", \"+o_ran45ge/*\"], 5) should return 0', function() {\n  expect(findLastIndexByFormattedLength([\"a123 ppl(e\", \".b,l?ueberr!y\", \"p%ine#app@le+\", \"+o_ran45ge/*\"], 5)).to.equal(0);\n});\n\nit('findLastIndexByFormattedLength([\"123heLlo!\", \"woRl@d!\", \"eXi_t@code\"], 5) should return 1', function() {\n  expect(findLastIndexByFormattedLength([\"123heLlo!\", \"woRl@d!\", \"eXi_t@code\"], 5)).to.equal(1);\n});\n\nit('findLastIndexByFormattedLength([\"my#str!ng\", \"wi_th@_spEci^al\", \"cha$ra%c^ters\"], 8) should return -1', function() {\n  expect(findLastIndexByFormattedLength([\"my#str!ng\", \"wi_th@_spEci^al\", \"cha$ra%c^ters\"], 8)).to.equal(-1);\n});\n\nit('findLastIndexByFormattedLength([\"no@pe#cia!l\", \"ch_ar$a^ct%ers\", \"here\"], 4) should return 2', function() {\n  expect(findLastIndexByFormattedLength([\"no@pe#cia!l\", \"ch_ar$a^ct%ers\", \"here\"], 4)).to.equal(2);\n});\n\nit('findLastIndexByFormattedLength([\"123Go!\", \"Hello!World\", \"Java$Script!\"], 10) should return 2', function() {\n  expect(findLastIndexByFormattedLength([\"123Go!\", \"Hello!World\", \"Java$Script!\"], 10)).to.equal(2);\n});\n\nit('findLastIndexByFormattedLength([\"ap@ple\", \"ban#ana!\", \"cherr_y\"], 6) should return 2', function() {\n  expect(findLastIndexByFormattedLength([\"ap@ple\", \"ban#ana!\", \"cherr_y\"], 6)).to.equal(2);\n});\n\nit('findLastIndexByFormattedLength([\"a#1p2p3l4e\", \"b5a6n7a8n9a\", \"c_h_e_r_r_y\"], 5) should return 0', function() {\n  expect(findLastIndexByFormattedLength([\"a#1p2p3l4e\", \"b5a6n7a8n9a\", \"c_h_e_r_r_y\"], 5)).to.equal(0);\n});\n\nit('findLastIndexByFormattedLength([\"p!ine@ap#ple\", \"blueb@e!rry\", \"orange\"], 6) should return 2', function() {\n  expect(findLastIndexByFormattedLength([\"p!ine@ap#ple\", \"blueb@e!rry\", \"orange\"], 6)).to.equal(2);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

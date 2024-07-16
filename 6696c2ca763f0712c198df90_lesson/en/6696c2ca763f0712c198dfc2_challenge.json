@@ -1,0 +1,4 @@
+{
+  "name": "The arithmetic mean of two numbers",
+  "instruction": "Write an `average` function that takes 2 arguments `num1` and `num2` and returns their arithmetic average.\n\nTo find the arithmetic mean, add two numbers and divide them by 2.\n\nSet the parameters `num1` and `num2` to the default value `0`.\n\nExamples:\n  * the `average(2, 2)` function should return `2`;\n  * The `average(4, 2)` function should return `3`;\n  * The `average(-2, 2)` function must return `0`.\n  * function `average(10)` must return `5`.\n  * The `average()` function must return `0`."
+}

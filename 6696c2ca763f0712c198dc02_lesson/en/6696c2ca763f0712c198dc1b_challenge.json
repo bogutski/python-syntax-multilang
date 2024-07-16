@@ -1,0 +1,6 @@
+{
+  "name": "What type does the string have?",
+  "instruction": "Create a variable named `message` and assign it the value 'hello world'.\nCreate a variable `typeOfMessage` and assign it the value of the `message` variable type.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst hi = 'good morning';\nconst typeOfHi = typeof(hi);\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst message = 'hello world';\nconst typeOfMessage = typeof (message);\n```"
+}

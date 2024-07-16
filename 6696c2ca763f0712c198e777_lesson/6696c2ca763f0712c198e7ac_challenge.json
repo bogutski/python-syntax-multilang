@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e7ac",
+  "name": {
+    "en": "Changing the 1st and 4th element of an array or the last element",
+    "ru": "Изменение 1-го и 4-го элемента массива или последнего элемента"
+  },
+  "instruction": {
+    "en": "Write a function `changeArr` that takes one parameter, an array of numbers.\n\nIf the length of the array is greater than or equal to 5, change the value of the first element of the array to the value of the 5th element,\nand change the value of the 4th element of the array to the value of the 2nd element.\n\nIf the length of the array is less than or equal to 4, change the value of the first element of the array to the square of the last element.\n\nThe function should return the modified array.\n\nAn example of running the function:\n```javascript\nchangeArr([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // [5, 2, 3, 2, 5, 6, 7, 8, 9, 10]\nchangeArr([5, 6, 7, 8]) // [64, 6, 7, 8]\n```",
+    "ru": "Напишите функцию `changeArr`, которая принимает один параметр - массив из чисел.\n\nЕсли длина массива больше или равна 5, измените значение первого элемента массива на значение 5-го элемента,\nа значение 4-го элемента массива измените на значение 2-го элемента.\n\nЕсли длина массива меньше или равна 4, измените значение первого элемента массива на квадрат последнего элемента.\n\nФункция должна вернуть измененный массив.\n\nПример запуска функции:\n```javascript\nchangeArr([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // [5, 2, 3, 2, 5, 6, 7, 8, 9, 10]\nchangeArr([5, 6, 7, 8]) // [64, 6, 7, 8]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function changeArr(arr){\n    if(arr.length >= 5){\n        arr[0] = arr[4];\n        arr[3] = arr[1];\n    }else{\n        arr[0] = arr[arr.length - 1] ** 2;\n    }\n    return arr\n}",
+  "openTest": "it('Created function changeArr', () => {\n  expect(changeArr).to.be.a('function');\n});\n\nit('changeArr([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) should return [5, 2, 3, 2, 5, 6, 7, 8, 9, 10]', () => {\n    expect(changeArr([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).to.deep.equal([5, 2, 3, 2, 5, 6, 7, 8, 9, 10]);\n});\n\nit('changeArr([5, 6, 7, 8]) should return [64, 6, 7, 8]', () => {\n    expect(changeArr([5, 6, 7, 8])).to.deep.equal([64, 6, 7, 8]);\n});\n\nit('changeArr([5, 100, 7, 8, 90, 7]) should return [90, 6, 7, 100, 90, 7]', () => {\n    expect(changeArr([5, 100, 7, 8, 90, 7])).to.deep.equal([90, 100, 7, 100, 90, 7]);\n});\n\nit('changeArr([5, 100]) should return [10000, 100]', () => {\n    expect(changeArr([5, 100])).to.deep.equal([10000, 100]);\n});\n\nit('changeArr([9, 10, 11, 12, -13, 14, 15, 16]) should return [-13, 10, 11, 10, -13, 14, 15, 16]', () => {\n    expect(changeArr([9, 10, 11, 12, -13, 14, 15, 16])).to.deep.equal([-13, 10, 11, 10, -13, 14, 15, 16]);\n});\n\nit('changeArr([13, 14, -5]) should return [13, 14, 25]', () => {\n    expect(changeArr([13, 14, -5])).to.deep.equal([25, 14, -5]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

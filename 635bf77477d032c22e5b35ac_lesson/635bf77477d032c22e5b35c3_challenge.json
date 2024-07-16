@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35c3",
+  "name": {
+    "ru": "Тринадцатый ряд в самолете",
+    "en": "Thirteenth row on the plane",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Число 13 во многих странах считается несчастливым, а боязнь числа 13 называется трискаидекафобией.\nНапример, во многих пассажирских самолётах отсутствует тринадцатый ряд.\n\nСоздайте переменную с именем `isRow12` и присвойте ей значение `true`.\n\nСоздайте переменную с именем `isRow13` и присвойте ей значение `false`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```\nconst isGold = true;\n```",
+    "en": "The number 13 is considered unlucky in many countries, and the fear of the number 13 is called triskaidekaphobia.\nFor example, many passenger planes do not have a thirteenth row.\n\nCreate a variable named `isRow12` and set it to `true`.\n\nCreate a variable named `isRow13` and set it to `false`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the needs of the task:\n```\nconst isGold = true;\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "const isRow12 = true;\nconst isRow13 = false;",
+  "openTest": "it('the variable `isRow12` exists and has a value', () => {\n  expect(isRow12).not.undefined;\n});\n\nit('the variable `isRow12` has a boolean type', () => {\n  expect(isRow12).a('boolean');\n});\n\nit('the value of variable `isRow12` is true', () => {\n  expect(isRow12).true;\n});\n\nit('variable `isRow13` exists and has a value', () => {\n  expect(isRow13).not.undefined;\n});\n\nit('variable `isRow13` is of boolean type', () => {\n  expect(isRow13).a('boolean');\n});\n\nit('the value of variable `isRow13` is false', () => {\n  expect(isRow13).false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit"
+}

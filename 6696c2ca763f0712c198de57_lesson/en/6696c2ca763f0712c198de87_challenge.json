@@ -1,0 +1,6 @@
+{
+  "name": "Perimeter of an equilateral triangle",
+  "instruction": "Given side of an equilateral triangle. Find its perimeter.\n\nSet the variable `side` and assign it a value of any non-negative number (side of an equilateral triangle).\nSet the variable `perimeter`, in which you calculate the perimeter of the triangle (the perimeter of a triangle is equal to the side multiplied by 3).\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst a = 10;\nconst p = a * 3;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst side = 99;\nconst perimeter = side * 3;\n```"
+}

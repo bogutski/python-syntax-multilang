@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db69",
+  "name": {
+    "en": "Number of squats",
+    "ru": "Количество приседаний"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-1.png)\nEvery day Bob does exactly 50 squats in the morning, a number he never changes.\nHow many squats will Bob do in `days`?\n\nCreate a constant named `squats` (number of squats per day) and give it a value of 50.\n\nCreate a variable named `days` (number of days) and give it an arbitrary number from 1 to 365.\n\nCreate a variable named `numberOfSquats` (total number of squats) and give it a value equal to the product of the variables `quats` and `days`.\n\nHere is an example, which is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the problem:\n```javascript\nconst pencil = 10;\nlet boxes = 140;\nlet amount = pencil * boxes;\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-1.png)\n\nКаждый день Боб утром делает ровно 50 приседаний, и это количество он никогда не изменяет.\nСколько приседаний сделает Боб за `days` дней?\n\nСоздайте константу c именем `squats` (количество приседаний в день) и присвойте ей значение 50.\n\nСоздайте переменную с именем `days` (количество дней) и присвойте ей произвольное число от 1 до 365.\n\nСоздайте переменную `numberOfSquats` (общее количество приседаний) и присвойте ей в качестве значения произведение переменных `squats` и  `days`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst pencil = 10;\nlet boxes = 140;\nlet amount = pencil * boxes;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const squats = 50;\nlet days = 15;\nlet numberOfSquats = squats * days;",
+  "openTest": "it('the `squats` variable exists and has a value', () => {\n  expect(squats).not.undefined;\n});\n\nit('the variable`squats` is a number', () => {\n  expect(squats).a('number');\n});\n\nit('the value of variable`squats` is 50', () => {\n  expect(squats).equal(50);\n});\n\nit('the variable `days` exists and has a value', () => {\n  expect(days).not.undefined;\n});\n\nit('the variable `days` is a number', () => {\n  expect(days).a('number');\n});\n\nit('the value of variable `days` is in the range of 1 to 365', () => {\n  expect(days >= 1 && days <= 365).true;\n});\n\nit('переменная `numberOfSquats` существует и имеет значение', () => {\n  expect(numberOfSquats).not.undefined;\n});\n\nit('the variable `numberOfSquats` is a number', () => {\n  expect(numberOfSquats).a('number');\n});\n\nit('the value of the variable `numberOfSquats` is a number', () => {\n  expect(numberOfSquats).equal(squats * days);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst squats = 50;\nlet days = 15;\nlet numberOfSquats = squats * days;\n```",
+    "ru": "```javascript\nconst squats = 50;\nlet days = 15;\nlet numberOfSquats = squats * days;\n```"
+  }
+}

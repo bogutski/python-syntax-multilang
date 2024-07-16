@@ -1,0 +1,6 @@
+{
+  "name": "Compare undefined and empty string",
+  "instruction": "The special value `undefined` means that \"the value has not been assigned\".\n\nCreate a variable named `name` without assigning any value to it.\nCreate a variable named `login` and assign it an empty string value.\n\nCreate a variable named `areTheSame` and assign it the result of comparing the variables `name` and `login`.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nlet salary;\nlet job = '';\nconst isEqual = salary === job;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet name;\nlet login = '';\nconst areTheSame = name === login;\n```"
+}

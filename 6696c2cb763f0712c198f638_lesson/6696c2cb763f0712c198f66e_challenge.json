@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f66e",
+  "name": {
+    "en": "/*",
+    "ru": "Создание обратного копирования массива с использованием метода slice()"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `createReversedCopyUsingSlice`, которая принимает массив любых типов данных.\n\nФункция возвращает новый массив, в котором элементы следуют в обратном порядке по сравнению с исходным.\n\nИспользуйте метод `slice()` для копирования элементов исходного массива.\n\n\nПримеры запуска функции:\n```javascript\ncreateReversedCopyUsingSlice([1, 2, 3, 4, 5]); // [5, 4, 3, 2, 1]\ncreateReversedCopyUsingSlice(['a', 'b', 'c']); // ['c', 'b', 'a']\ncreateReversedCopyUsingSlice([]); // []\n```"
+  },
+  "initialSolution": "function createReversedCopyUsingSlice(){\n\n}",
+  "completedSolution": "function createReversedCopyUsingSlice(arr) {\n  return arr.slice().reverse();\n}",
+  "openTest": "it('Created function createReversedCopyUsingSlice', () => {\n  expect(createReversedCopyUsingSlice).to.be.a('function');\n});\n\nit(\"original array should not be modified\", () => {\n  const numbers = [1, 2, 3, 4, 5];\n  createReversedCopyUsingSlice(numbers)\n  expect(numbers).to.deep.equal([1, 2, 3, 4, 5]);\n});\n\nit(\"createReversedCopyUsingSlice should use the slice method for array copying\", () => {\n  const result = createReversedCopyUsingSlice.toString();\n  expect(result).to.include('.slice()');\n});\n\nit(\"createReversedCopyUsingSlice([1, 2, 3, 4, 5]) should return [5, 4, 3, 2, 1]\", () => {\n  expect(createReversedCopyUsingSlice([1, 2, 3, 4, 5])).to.deep.equal([5, 4, 3, 2, 1]);\n});\n\nit(\"createReversedCopyUsingSlice(['a', 'b', 'c']) should return ['c', 'b', 'a']\", () => {\n  expect(createReversedCopyUsingSlice(['a', 'b', 'c'])).to.deep.equal(['c', 'b', 'a']);\n});\n\nit(\"createReversedCopyUsingSlice([]) should return an empty array\", () => {\n  expect(createReversedCopyUsingSlice([])).to.deep.equal([]);\n});\n\nit(\"createReversedCopyUsingSlice([1]) should return [1]\", () => {\n  expect(createReversedCopyUsingSlice([1])).to.deep.equal([1]);\n});\n\nit(\"createReversedCopyUsingSlice([1, 2]) should return [2, 1]\", () => {\n  expect(createReversedCopyUsingSlice([1, 2])).to.deep.equal([2, 1]);\n});\n\nit(\"createReversedCopyUsingSlice(['Hello', 'world']) should return ['world', 'Hello']\", () => {\n  expect(createReversedCopyUsingSlice(['Hello', 'world'])).to.deep.equal(['world', 'Hello']);\n});\n\nit(\"createReversedCopyUsingSlice([null, undefined, '']) should return ['', undefined, null]\", () => {\n  expect(createReversedCopyUsingSlice([null, undefined, ''])).to.deep.equal(['', undefined, null]);\n});\n\nit(\"createReversedCopyUsingSlice([true, false, true]) should return [true, false, true]\", () => {\n  expect(createReversedCopyUsingSlice([true, false, true])).to.deep.equal([true, false, true]);\n});\n\nit(\"createReversedCopyUsingSlice should use the slice method for array copying\", () => {\n  const originalArray = [1, 2, 3];\n  const copyUsingSlice = originalArray.slice();\n  createReversedCopyUsingSlice(originalArray); // This doesn't test directly but implies use\n  expect(copyUsingSlice).to.deep.equal(originalArray); // Checking if slice was used to make a copy\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

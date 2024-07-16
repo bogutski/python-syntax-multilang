@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e03f",
+  "name": {
+    "en": "The sum of two numbers and the remainder of division by 3",
+    "ru": "Сумма двух чисел и остаток от деления на 3"
+  },
+  "instruction": {
+    "en": "The function takes two numbers as input.\n\nWrite a function `remainder` that returns the remainder of dividing the sum of two numbers by 3.",
+    "ru": "На вход функция принимает два числа.\n\nНапиши функцию `remainder`, которая возвращает остаток от деления суммы двух чисел на 3."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function remainder(num1, num2) {\n  return (num1 + num2) % 3;\n}",
+  "openTest": "it('Created function remainder', () => {\n  expect(remainder).to.be.a('function');\n});\n\nit('remainder(1, 2) should return 0', () => {\n  expect(remainder(1, 2)).to.equal(0);\n} );\n\nit('remainder(3, 4) should return 1', () => {\n  expect(remainder(3, 4)).to.equal(1);\n} );\n\nit('remainder(5, 6) should return 2', () => {\n  expect(remainder(5, 6)).to.equal(2);\n} );",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

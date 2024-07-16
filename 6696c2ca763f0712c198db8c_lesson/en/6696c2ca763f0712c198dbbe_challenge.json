@@ -1,0 +1,6 @@
+{
+  "name": "The most suitable variable name",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-4.png)\n\nYou need to create a variable to store the number of daily reports.\nCreate a variable using the `let` keyword without assigning a value to the variable.\nChoose the best name to create this variable:\n`chisloDnevnyhOtchetov`, `number_of_daily_reports`, `numberOfDailyReports`, `numberofdailyreports`, `number`, `a`.",
+  "instructions": {},
+  "hint": "```javascript\nlet numberOfDailyReports;\n```"
+}

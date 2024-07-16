@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e077",
+  "name": {
+    "en": "Greetings and Age",
+    "ru": "Приветствие и возраст"
+  },
+  "instruction": {
+    "en": "Write a function `greetingAndAge` that takes two parameters `name` and `age` and returns a string\n\n`Hello, my name is John, and I am 99 years old.`\n\nInstead of `John` and `99` it should be the values of the parameters `name` and `age`.\n\nTo solve this, use string concatenation.\n\nExample of string concatenation:\n```javascript\nconst name = 'John';\nconst age = 99;\nconst str = 'Hi ' + name + ', you are ' + age + ' years old';\nconsole.log(str); // Hi John, you are 99 years old\n```",
+    "ru": "Напиши функцию `greetingAndAge`, которая принимает два параметра `name` и `age` и возвращает строку\n\n`Hello, my name is John, and I am 99 years old`.\n\nВместо `John` и `99` должны быть значения параметров `name` и `age`.\n\nДля решения используй конкатенацию строк.\n\nПример конкатенации строк:\n```javascript\nconst name = 'John';\nconst age = 99;\nconst str = 'Hi ' + name + ', you are ' + age + ' years old';\nconsole.log(str); // Hi John, you are 99 years old\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function greetingAndAge(name, age) {\n  return 'Hello, my name is ' + name + ', and I am ' + age + ' years old';\n}",
+  "openTest": "it('Created function greetingAndAge', () => {\n  expect(greetingAndAge).to.be.a('function');\n});\n\nit('Function get `John` and `99` and return `Hello, my name is John, and I am 99 years old`', () => {\n  expect(greetingAndAge('John', 99)).to.equal('Hello, my name is John, and I am 99 years old');\n})\n\nit('Function get `Bob` and `22` and return `Hello, my name is Bob, and I am 22 years old`', () => {\n  expect(greetingAndAge('Bob', 22)).to.equal('Hello, my name is Bob, and I am 22 years old');\n})\n\nit('Function greetingAndAge has two parameters name and age', () => {\n  // function to string and then to array of arguments\n  const args = greetingAndAge.toString().match(/\\(([^)]*)\\)/)[1].split(',').map(arg => arg.trim());\n  expect(args).to.be.eql(['name', 'age']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

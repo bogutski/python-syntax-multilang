@@ -1,0 +1,6 @@
+{
+  "name": "Thirteenth row on the plane",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-3.png)\n\nThe number 13 is considered unlucky in many countries, and the fear of the number 13 is called triskaidekaphobia.\nFor example, many passenger airplanes do not have a thirteenth row.\n\nCreate a variable named `isRow12` and assign it the value `true`.\n\nCreate a variable named `isRow13` and assign it the value `false`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```\nconst isGold = true;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst isRow12 = true;\nconst isRow13 = false;\n```"
+}

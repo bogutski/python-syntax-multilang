@@ -1,0 +1,6 @@
+{
+  "name": "Unix time",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-4.png)\n\nС 1 января 1970 года идет отсчет времени в Unix системах.\n\nСоздайте переменную `unixTime` и присвойте значение числа 1970.\n\nПриведем пример, который принципиально похож на то что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst age = 38;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst unixTime = 1970;\n```"
+}

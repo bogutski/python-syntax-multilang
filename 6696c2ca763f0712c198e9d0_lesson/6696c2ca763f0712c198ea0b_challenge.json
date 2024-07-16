@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ea0b",
+  "name": {
+    "en": "The sum of digits in the line",
+    "ru": "Сумма цифр в строке"
+  },
+  "instruction": {
+    "en": "Fix the `stringOfNumbers` function so that it returns the sum of the digits in the string.\n\nThe string will contain only digits.\n\nExamples of running the function:\n```javascript\nstringOfNumbers(\"123\") // 6\nstringOfNumbers(\"1234\") // 10\n```",
+    "ru": "Исправьте функцию `stringOfNumbers` так, чтобы она возвращала сумму цифр в строке.\n\nВ строке будут только цифры.\n\nПримеры запуска функции:\n```javascript\nstringOfNumbers(\"123\") // 6\nstringOfNumbers(\"1234\") // 10\n```"
+  },
+  "initialSolution": "function stringOfNumbers() {\n  sum = 0;\n  if (let i = 0; i > str.width; i = i + 5) {\n    sum += +str(i);\n  }\n  return result;\n}",
+  "completedSolution": "function stringOfNumbers(str) {\n  let sum = 0;\n  for (let i = 0; i < str.length; i++) {\n    sum += +str[i];\n  }\n  return sum;\n}",
+  "openTest": "it('Created function stringOfNumbers', () => {\n  expect(stringOfNumbers).to.be.a('function');\n});\n\nit('stringOfNumbers(\"123\") should return 6', () => {\n  expect(stringOfNumbers(\"123\")).to.equal(6);\n});\n\nit('stringOfNumbers(\"1234\") should return 10', () => {\n  expect(stringOfNumbers(\"1234\")).to.equal(10);\n});\n\nit('stringOfNumbers(\"555\") should return 15', () => {\n  expect(stringOfNumbers(\"555\")).to.equal(15);\n});\n\nit('stringOfNumbers(\"000\") should return 0', () => {\n  expect(stringOfNumbers(\"000\")).to.equal(0);\n});\n\nit('stringOfNumbers(\"9999999\") should return 63', () => {\n  expect(stringOfNumbers(\"9999999\")).to.equal(63);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "_id": "6696c2ca763f0712c198db8d",
+  "description": {
+    "ru": "",
+    "en": "",
+    "es": ""
+  },
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198db8e",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Создание нескольких переменных с одинаковым именем  в одном блоке невозможно.",
+        "en": "Creation of several variables with the same name in one block is impossible.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198db8f"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198db90"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db91",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "В имени переменной регистр букв имеет значение.",
+        "en": "In a variable name, the case of letters matters.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198db92"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198db93"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db94",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "В имени переменной можно использовать",
+        "en": "In the name of the variable you can use",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "multi",
+      "variants": [
+        {
+          "name": {
+            "ru": "знак подчеркивания_",
+            "en": "underscore_",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198db95"
+        },
+        {
+          "name": {
+            "ru": "пробел",
+            "en": "blank",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198db96"
+        },
+        {
+          "name": {
+            "ru": "кириллические символы",
+            "en": "cyrillic characters",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198db97"
+        },
+        {
+          "name": {
+            "ru": "знак минус -",
+            "en": "minus sign -",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198db98"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db99",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "В имени переменной НЕЛЬЗЯ использовать",
+        "en": "The variable name MUST NOT contain",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "имена людей",
+            "en": "human names",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198db9a"
+        },
+        {
+          "name": {
+            "ru": "цифры в середине имени переменной",
+            "en": "digits in the middle of the variable name",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198db9b"
+        },
+        {
+          "name": {
+            "ru": "чередование больших и маленьких букв",
+            "en": "alternation of capital and small letters",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198db9c"
+        },
+        {
+          "name": {
+            "ru": "цифры в начале имени переменной",
+            "en": "digits at the beginning of the variable name",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198db9d"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db9e",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Имя переменной может начинаться со знака _.",
+        "en": "The variable name can begin with the _ sign.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198db9f"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dba0"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dba1",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Имя переменной может состоять только из одного символа $ или _ .",
+        "en": "A variable name can only consist of a single $ or _ .",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dba2"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dba3"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dba4",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Существует список зарезервированных слов, которые нельзя использовать для переменных.",
+        "en": "There is a list of reserved words that cannot be used for variables.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dba5"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dba6"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dba7",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Выберите допустимые имена для переменной.",
+        "en": "Select valid names for the variable.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "multi",
+      "variants": [
+        {
+          "name": {
+            "ru": "cat",
+            "en": "cat",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dba8"
+        },
+        {
+          "name": {
+            "ru": "refund",
+            "en": "refund",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dba9"
+        },
+        {
+          "name": {
+            "ru": "return",
+            "en": "return",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbaa"
+        },
+        {
+          "name": {
+            "ru": "rerun",
+            "en": "rerun",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbab"
+        },
+        {
+          "name": {
+            "ru": "var",
+            "en": "var",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbac"
+        },
+        {
+          "name": {
+            "ru": "let",
+            "en": "let",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbad"
+        },
+        {
+          "name": {
+            "ru": "varLet",
+            "en": "varLet",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbae"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbaf",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Выберите допустимые имена для переменной.",
+        "en": "Select valid names for the variable.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "multi",
+      "variants": [
+        {
+          "name": {
+            "ru": "export",
+            "en": "export",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbb0"
+        },
+        {
+          "name": {
+            "ru": "clas",
+            "en": "clas",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbb1"
+        },
+        {
+          "name": {
+            "ru": "class",
+            "en": "class",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbb2"
+        },
+        {
+          "name": {
+            "ru": "returnClass",
+            "en": "returnClass",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbb3"
+        },
+        {
+          "name": {
+            "ru": "classExport",
+            "en": "classExport",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbb4"
+        },
+        {
+          "name": {
+            "ru": "function",
+            "en": "function",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbb5"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbb6",
+      "description": {
+        "ru": "```\nlet userName;\nlet createClass;\n```",
+        "en": "```\nlet userName;\nlet createClass;\n```",
+        "es": ""
+      },
+      "name": {
+        "ru": "Запись переменных в формате приведенном ниже называется",
+        "en": "Writing variables in the format shown below is called",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "snake case",
+            "en": "snake case",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbb7"
+        },
+        {
+          "name": {
+            "ru": "worm case",
+            "en": "worm case",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbb8"
+        },
+        {
+          "name": {
+            "ru": "camel case",
+            "en": "camel case",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbb9"
+        },
+        {
+          "name": {
+            "ru": "horse case",
+            "en": "horse case",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbba"
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": false,
+  "name": {
+    "ru": "JS Syntax. “Что в имени тебе моем?”",
+    "en": "JS Syntax. \"What is in my name?\"",
+    "es": ""
+  }
+}

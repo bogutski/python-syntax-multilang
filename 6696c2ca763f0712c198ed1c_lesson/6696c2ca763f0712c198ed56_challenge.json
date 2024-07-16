@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ed56",
+  "name": {
+    "en": "The longest word in the array",
+    "ru": "Самое длинное слово в массиве\n/*"
+  },
+  "instruction": {
+    "en": "Write a function `theLongestWord` that takes an array and should return the number of characters of the longest word in it.\n\nThe output of the function should look like this: `The longest word has 'wordLength' length'.\n\nIf all the words are the same size, the function should return the length of the first element in the array.\n\nIf the array is empty, the function should return `\"No words found\"`.\n\nExamples of running the function:\n```javascript\ntheLongestWord(['The', 'longest', 'word']) // 'The longest word has 7 length'\ntheLongestWord(['Karl', 'John', 'Hugo']) // 'The longest word has 4 length'\ntheLongestWord([]) // 'No words found'\n```",
+    "ru": "Напишите функцию `theLongestWord`, которая принимает массив и должна вернуть количество символов самого длинного слова в нем.\n\nВывод функции должен выглядеть так: `The longest word has 'wordLength' length`.\n\nЕсли все слова одинакового размера, то функция должна вернуть длину первого элемент массива.\n\nЕсли массив пустой, то функция должна вернуть `\"No words found\"`.\n\nПримеры запуска функции:\n```javascript\ntheLongestWord(['The', 'longest', 'word']) // 'The longest word has 7 length'\ntheLongestWord(['Karl', 'John', 'Hugo']) // 'The longest word has 4 length'\ntheLongestWord([]) // 'No words found'\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function theLongestWord(arr){\n  if(arr.length === 0) return \"No words found\";\n  let wordLength = arr[0].length;\n  for (let i = 0; i < arr.length; i++){\n    if(wordLength < arr[i].length) {\n      wordLength = arr[i].length;\n    }\n  }\n  return `The longest word has ${wordLength} length`;\n}",
+  "openTest": "it('theLongestWord is a function', () => {\n  expect(theLongestWord).to.be.a('function');\n})\nit(\"theLongestWord(['The', 'longest', 'word']) should return 'The longest word has 7 length'\", () =>{\n  expect(theLongestWord(['The', 'longest', 'word'])).equal('The longest word has 7 length');\n});\nit(\"theLongestWord(['kiwi', 'fig', 'blackberry']) should return 'The longest word has 10 length'\", () =>{\n  expect(theLongestWord(['kiwi', 'fig', 'blackberry'])).equal('The longest word has 10 length');\n});\nit(\"countWordsNotNumbers(['Karl', 'John', 'Hugo']) should return 'The longest word is Karl and it has 4 length'\", () =>{\n  expect(theLongestWord(['Karl', 'John', 'Hugo'])).equal('The longest word has 4 length');\n});\nit(\"countWordsNotNumbers([]) should return 'No words found'\", () =>{\n  expect(theLongestWord([])).equal('No words found');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "The `attentionToDetail` function outputs 3 lines to the console",
+  "instruction": "It's very good that you fixed the errors in the `greeting` function. Moving on.\n\nNow we need to write a new function `attentionToDetail` that outputs 3 lines to the console:\n\n```javascript\nP=======================A\n-= Attention to detail =-\nS=======================V\n```\n\n* Use 3 console.logs\n* Write each console.log on a new line\n* Use single quotes.\n* Do everything very carefully."
+}

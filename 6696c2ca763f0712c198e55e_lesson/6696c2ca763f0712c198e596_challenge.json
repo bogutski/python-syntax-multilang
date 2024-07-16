@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e596",
+  "name": {
+    "en": "Check if the property exists in the object and return its value",
+    "ru": "Проверьте наличие свойства в объекте и верните его значение"
+  },
+  "instruction": {
+    "en": "Write a function `hasProperty` that takes parameters:\n* `object` - object, can have any number of properties;\n* `propCheck` - name of the property to check, string.\n\nIf the property `propCheck` is present in the object, the function must return the value `value`.\n\nIf the property `propCheck` is not present in the object, the function should return\nReturn the string `No such property: propCheck`, where:\n`propCheck` is the name of the property that was not found.\n\nExamples of running the function:\n```javascript\nhasProperty({first: \"mushroom\"}, \"first\"); // 'mushroom'\nhasProperty({cat: \"meow\", bird: \"tweet\"}, \"dog\"); // 'No such property: dog'\n```",
+    "ru": "Напишите функцию `hasProperty`, которая принимает параметры:\n* `object` – объект, может иметь любое количество свойств;\n* `propCheck` – наименование свойства, которое необходимо проверить, строка.\n\nЕсли свойство `propCheck` присутствует в объекте, то функция должна возвращать значение `value`.\n\nЕсли свойство `propCheck` отсутствует в объекте, то функция должна\nвозвращать строку `No such property: propCheck`, где:\n`propCheck` - наименование свойства, которое не было найдено.\n\nПримеры запуска функции:\n```javascript\nhasProperty({first: \"mushroom\"}, \"first\");  // 'mushroom'\nhasProperty({cat: \"meow\", bird: \"tweet\"}, \"dog\");  // 'No such property: dog'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function hasProperty(object, propCheck) {\n  if (propCheck in object) {\n    return object[propCheck];\n  }\n  return `No such property: ${propCheck}`;\n}",
+  "openTest": "it('Created function `hasProperty`', () => {\n  expect(hasProperty).to.be.a('function');\n});\n\nit('hasProperty({sun: \"star\"}, \"sun\")  // \"star\"', () => {\n  expect(hasProperty({ sun: 'star' }, 'sun')).to.be.equal('star');\n});\n\nit('hasProperty({intel: \"processor\", gigabyte: \"motherboard\"}, \"AMD\")  // \"No such property: AMD\"', () => {\n  expect(\n    hasProperty(\n      {\n        intel: 'processor',\n        gigabyte: 'motherboard',\n      },\n      'AMD',\n    ),\n  ).to.be.equal('No such property: AMD');\n});\n\nit('hasProperty({oak: \"tree\", birch: \"tree\", camomile: \"flower\"}, \"camomile\")  // \"flower\"', () => {\n  expect(\n    hasProperty(\n      {\n        oak: 'tree',\n        birch: 'tree',\n        camomile: 'flower',\n      },\n      'camomile',\n    ),\n  ).to.be.equal('flower');\n});\n\nit('hasProperty({albatross: \"\", eagle: \"bird\", penguin: 999}, \"albatross\")  // \"\"', () => {\n  expect(\n    hasProperty(\n      {\n        albatross: '',\n        eagle: 'bird',\n        penguin: 999,\n      },\n      'albatross',\n    ),\n  ).to.be.equal('');\n});\n\nit('hasProperty({123: \"number\", null: \"null\", true: \"boolean\"}, \"123\")  // \"number\"', () => {\n  expect(\n    hasProperty(\n      {\n        123: 'number',\n        null: 'null',\n        true: 'boolean',\n      },\n      '123',\n    ),\n  ).to.be.equal('number');\n});\n\nit('hasProperty({true: \"boolean\", false: 0}, \"false\")  // 0', () => {\n  expect(hasProperty({ true: 'boolean', false: 0 }, 'false')).to.be.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

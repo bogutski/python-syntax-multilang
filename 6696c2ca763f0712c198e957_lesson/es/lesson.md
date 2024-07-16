@@ -1,0 +1,1 @@
+# Прерывание цикла. break language: es

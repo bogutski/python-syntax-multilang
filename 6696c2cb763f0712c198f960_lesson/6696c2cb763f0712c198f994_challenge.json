@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f994",
+  "name": {
+    "en": "Are the brackets balanced? Fix the code",
+    "ru": "Сбалансированы ли скобки"
+  },
+  "instruction": {
+    "en": "The `checkBrackets` function takes a string and checks that all opening brackets have closing pairs.\n\nThe string cannot be empty.\n\nThe function returns `true` if all brackets are closed and `false` if there are unclosed brackets.\n\nYou should correct the errors to make the code work correctly.\n\nExamples of running the function:\n```javascript\ncheckBrackets('()') // true\ncheckBrackets('())(') // false\n```",
+    "ru": "Функция `checkBrackets` принимает строку и проверяет, что все открывающие скобки имеют закрывающие пары.\n\nФункция возвращает `true`, если все скобки закрыты и `false`, если есть незакрытые скобки.\n\n\nПримеры запуска функции:\n```javascript\nconsole.log(checkBrackets('()'))     // true\nconsole.log(checkBrackets('(())()')) // true\nconsole.log(checkBrackets('())'))    // false\nconsole.log(checkBrackets('())('))   // false\nconsole.log(checkBrackets(')(())(')) // false\n```"
+  },
+  "initialSolution": "function checkBrackets(){\n\n}",
+  "completedSolution": "function checkBrackets(str) {\n  let count = 0\n\n  for(let char of str){\n    if(count < 0) return false\n    else if(char === '(') count++\n    else if(char === ')') count--\n  }\n\n  return count === 0\n}",
+  "openTest": "it('Created function checkBrackets', () => {\n  expect(checkBrackets).to.be.a('function');\n});\n\nit('checkBrackets(\"()\") should return true', () => {\n  expect(checkBrackets('()')).to.be.true;\n});\n\nit('checkBrackets(\"((())())\") should return true', () => {\n  expect(checkBrackets('((())())')).to.be.true;\n});\n\nit('checkBrackets(\"())(\") should return false', () => {\n  expect(checkBrackets('())(')).to.be.false;\n});\n\nit('checkBrackets(\"(()())(\") should return false', () => {\n  expect(checkBrackets('(()())(')).to.be.false;\n});\n\nit('checkBrackets(\"(()())()\") should return true', () => {\n  expect(checkBrackets('(()())()')).to.be.true;\n});\n\nit('checkBrackets(\"(\") should return false', () => {\n  expect(checkBrackets('(')).to.be.false;\n});\n\nit('checkBrackets(\")(())(\") should return false', () => {\n  expect(checkBrackets(')(())(')).to.be.false;\n});\n\nit('checkBrackets(\"())(\") should return false', () => {\n  expect(checkBrackets('())(')).to.be.false;\n});\n\nit('checkBrackets(\"())\") should return false', () => {\n  expect(checkBrackets('())')).to.be.false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

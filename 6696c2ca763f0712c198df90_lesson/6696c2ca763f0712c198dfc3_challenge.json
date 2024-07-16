@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dfc3",
+  "name": {
+    "en": "Greeting function with default parameter",
+    "ru": "Функция приветствия с параметром по умолчанию"
+  },
+  "instruction": {
+    "en": "Create a function `greet` that takes the name `name` and returns a string like `'Hello, name!'`.\n\nIf no parameter is given, the function should return the string `'Hello, guest!'`.\n\nHere is an example that is fundamentally similar to what you need to do. Adapt it to the requirements of the task:\n```javascript\nfunction message(user = 'Unknown'){\n  return 'You got message form, ' + name;\n}\n```",
+    "ru": "Создайте функцию `greet`, которая принимает имя `name` и возвращает строку вида `'Hello, name!'`.\n\nЕсли параметр не задан, функция должна вернуть строку `'Hello, Guest!'`.\n\nПриведем пример, принципиально похож на то, что нужно сделать. Адаптируйте его к требованиям задачи:\n```javascript\nfunction message(user = 'Unknown'){\n  return 'You got message form, ' + name;\n}\n```"
+  },
+  "initialSolution": "function greet(name){\n  return\n}",
+  "completedSolution": "function greet(name = 'Guest') {\n    return 'Hello, ' + name + '!';\n}",
+  "openTest": "it('Created function greet', () => {\n    expect(greet).to.be.a('function');\n});\n\nit('Function returns correct result for arguments `Alice`', () => {\n    expect(greet('Alice')).to.equal('Hello, Alice!');\n});\n\nit('Function returns correct result for arguments `Bob`', () => {\n    expect(greet('Bob')).to.equal('Hello, Bob!');\n});\n\nit('Function returns correct result if no arguments', () => {\n    expect(greet()).to.equal('Hello, Guest!');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Reverse the string, except for elements with certain indices",
+  "instruction": "Write a function `reverse` that takes a string without spaces and two indexes.\n\nThe function should return a string that includes the original string and the inverted string, separated by a space.\n\nThe loop should check for indexes that are redone in the function parameters. Elements with these indices should not\n should be inverted and included in the final string.\n\nFor example:\n* the string `12345` and the indices `0` and `1` should return `12345 543`, where:\n* `12345` is the original string plus a space\n* `543` - inverted string, except indices `0` and `1`\n\nIn case the string is empty, the function should return: `nothing to reverse`.\n\nExamples of running the function:\n```javascript\nreverse('hello', 0, 4) // 'hello lle'\nreverse('world', 1, 2) // 'world dlw'\nreverse('123', 5, 6) // '123 321'\nreverse('', 0, 0) // 'nothing to reverse'\n```"
+}

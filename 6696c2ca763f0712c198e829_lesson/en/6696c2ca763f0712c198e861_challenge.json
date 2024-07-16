@@ -1,0 +1,4 @@
+{
+  "name": "Expand arrays into a string",
+  "instruction": "Write a function `toString` that takes three arguments: two arrays and a string.\n\nThe function should return a string consisting of elements of arrays and a string.\n\nAdd a space between the elements.\n\nExample: `arr1 + ' ' + arr2 + ' ' + str`\n\nUse the `spread` operator to expand arrays.\n\nAn example of running a function:\n```javascript\ntoString(['hello'], ['world'], '!!!' ); // 'hello world!!!'\ntoString(['Hi'], ['there'], '!' ); // 'Hi there!'\n```"
+}

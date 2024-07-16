@@ -1,0 +1,5 @@
+{
+  "name": "Checking for negative numbers",
+  "instruction": "Write an isNegative function that takes an array of numbers and returns:\n\n* `true` if there is at least one negative number in the array,\n* `false` if there is not.",
+  "instructions": {}
+}

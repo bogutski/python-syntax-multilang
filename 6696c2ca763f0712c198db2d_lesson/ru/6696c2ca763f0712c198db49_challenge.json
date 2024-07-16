@@ -1,0 +1,6 @@
+{
+  "name": "Присвойте переменной str значение пустой строки",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-8.png)\n\nСоздайте переменную с именем `str`.\nИспользуйте ключевое слово `const`.\nПрисвойте значение пустой строки `''`.\n\nПринципиально похожий пример:\n```javascript\nconst string = '';\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst str = '';\n```"
+}

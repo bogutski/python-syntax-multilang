@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de8a",
+  "name": {
+    "en": "Salary for the first working day",
+    "ru": "Зарплата за первый рабочий день"
+  },
+  "instruction": {
+    "en": "When you start working, you were offered a salary of `N` dollars per hour.\nHow much will you earn on your first working day if you work for 8 hours?\n\nCreate a variable `hourRate` and assign it the value you would like to earn per hour.\n\nCreate a variable `dayHours` and assign it the value of hours you would like to work per day, but not more than 8.\n\nCreate a variable `daySalary` and calculate the result of the money you earned for the day.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements\n\n```javascript\nconst months = 12;\nconst years = 25;\nconst myAgeInMonths = months * years;\n```",
+    "ru": "При устройстве на работу вам предложили зарплату `N` долларов в час.\nКакую сумму вы заработаете за свой первый рабочий день если проработаете 8 часов?\n\nСоздайте переменную `hourRate` и присвойте ей значение, которое хотели бы зарабатывать в час.\n\nСоздайте переменную `dayHours` и присвойте ей значение часов,\nкоторое хотели бы работать в день, но не больше 8.\n\nСоздайте переменную `daySalary` и рассчитайте в ней результат заработанных вами денег за день.\n\nПриведем пример, который принципиально похож на то что нужно сделать,\nно адаптируйте его к требованиям задачи\n\n```javascript\nconst months = 12;\nconst years = 25;\nconst myAgeInMonths = months * years;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const hourRate = 70;\nconst dayHours = 8;\nconst daySalary = hourRate * dayHours;",
+  "openTest": "it('Variable `hourRate` exists and contains a value', () => {\n  expect(hourRate).not.to.be.undefined;\n});\n\nit('The value of the `hourRate` variable is a number', () => {\n  expect(hourRate).a('number');\n});\n\nit('The variable `dayHours` exists and contains a value', () => {\n  expect(dayHours).not.to.be.undefined;\n});\n\nit('The value of the `dayHours` variable is a number', () => {\n  expect(dayHours).a('number');\n});\n\nit('The value of variable `dayHours` is less than or equal to 8', () => {\n  expect(dayHours).lte(8);\n});\n\nit('The result of the variable `daySalary` is equal to the product of hourRate and dayHours', () => {\n  expect(daySalary).eq(hourRate * dayHours);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst hourRate = 70;\nconst dayHours = 8;\nconst daySalary = hourRate * dayHours;\n```",
+    "ru": "```javascript\nconst hourRate = 70;\nconst dayHours = 8;\nconst daySalary = hourRate * dayHours;\n```"
+  }
+}

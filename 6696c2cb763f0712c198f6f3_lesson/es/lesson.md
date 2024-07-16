@@ -1,0 +1,1 @@
+# Array.prototype.find() – первый элемент по условию language: es

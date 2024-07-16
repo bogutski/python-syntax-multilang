@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2ca763f0712c198ed97",
+  "name": {
+    "ru": "Удаление дубликатов слов из строки",
+    "en": "Removing duplicate words from a string",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198ed98",
+      "name": {
+        "ru": "Что выведется в консоль в результате выполнения следующего кода?",
+        "en": "What will be output to the console as a result of executing the following code?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'Hello ! World Hello !';\n\nconst words = {}\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') acc += str[i]\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n            res += acc + ' ';\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res)\n```",
+        "en": "```javascript\nconst str = 'Hello ! World Hello !';\n\nconst words = {}\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') acc += str[i]\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n            res += acc + ' ';\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res)\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ed99",
+          "name": {
+            "ru": "'Hello World ! '",
+            "en": "'Hello World ! '",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ed9a",
+          "name": {
+            "ru": "'Hello ! World'",
+            "en": "'Hello ! World'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ed9b",
+          "name": {
+            "ru": "'Hello ! World ! '",
+            "en": "'Hello ! World ! '",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ed9c",
+          "name": {
+            "ru": "'Hello ! World '",
+            "en": "'Hello ! World '",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ed9d",
+      "name": {
+        "ru": "Задача в коде ниже удалить дубликаты слов. Какой код пропущен на третьей строке?",
+        "en": "The task in the code below is to remove duplicate words. Which code is missing on the third line?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'Hello ! World Hello !';\n\n// ???\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') acc += str[i]\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n            res += acc + ' ';\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res)\n```",
+        "en": "```javascript\nconst str = 'Hello ! World Hello !';\n\n// ???\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') acc += str[i]\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n            res += acc + ' ';\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res)\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ed9e",
+          "name": {
+            "ru": "```javascript\nconst words = []]\n```",
+            "en": "```javascript\nconst words = []]\n```",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ed9f",
+          "name": {
+            "ru": "```javascript\nconst words = '']\n```",
+            "en": "```javascript\nconst words = '']\n```",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eda0",
+          "name": {
+            "ru": "```javascript\nconst words = {}\n```",
+            "en": "```javascript\nconst words = {}\n```",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eda1",
+          "name": {
+            "ru": "Ничего не пропущено, код будет работать правильно",
+            "en": "Nothing is missing, the code will work correctly",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eda2",
+      "name": {
+        "ru": "Что выведется в консоль в результате выполнения следующего кода?",
+        "en": "What will be output to the console as a result of executing the following code?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = '!! JS World JS !!';\n\nconst words = {}\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') acc += str[i]\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n            res += acc + ' ';\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res === '!! JS World')\n```",
+        "en": "```javascript\nconst str = '!! JS World JS !!';\n\nconst words = {}\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') acc += str[i]\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n            res += acc + ' ';\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res === '!! JS World')\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eda3",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eda4",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eda5",
+          "name": {
+            "ru": "null",
+            "en": "null",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eda6",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eda7",
+      "name": {
+        "ru": "Что выведется в консоль в результате выполнения следующего кода?",
+        "en": "What will be output to the console as a result of executing the following code?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'programming is easy is as 123 123';\n\nconst words = {}\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') acc += str[i]\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n\n            if(res) res += ' ' + acc;\n            else res += acc;\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res);\n```",
+        "en": "```javascript\nconst str = 'programming is easy is as 123 123';\n\nconst words = {}\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') acc += str[i]\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n\n            if(res) res += ' ' + acc;\n            else res += acc;\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eda8",
+          "name": {
+            "ru": "'programming is easy as 123'",
+            "en": "'programming is easy as 123'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eda9",
+          "name": {
+            "ru": "'programming is easy is as 123 123'",
+            "en": "'programming is easy is as 123 123'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edaa",
+          "name": {
+            "ru": "'programming easy is as 123'",
+            "en": "'programming easy is as 123'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edab",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198edac",
+      "name": {
+        "ru": "Что выведется в консоль в результате выполнения следующего кода?",
+        "en": "What will be output to the console as a result of executing the following code?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = '12 34 56 12';\n\nconst words = {}\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n\n            if(res) res += ' ' + acc;\n            else res += acc;\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res);\n```",
+        "en": "```javascript\nconst str = '12 34 56 12';\n\nconst words = {}\nlet res = '';\nlet acc = '';\n\nfor (let i = 0; i < str.length; i++){\n\n    if(str[i] === ' ' || i === str.length-1){\n        if(acc && !words[acc]) {\n            words[acc] = 1;\n\n            if(res) res += ' ' + acc;\n            else res += acc;\n        }\n        acc = '';\n    }\n}\n\nconsole.log(res);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198edad",
+          "name": {
+            "ru": "'12 34 56 12'",
+            "en": "'12 34 56 12'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edae",
+          "name": {
+            "ru": "''",
+            "en": "''",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198edaf",
+          "name": {
+            "ru": "'12 34 56'",
+            "en": "'12 34 56'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edb0",
+          "name": {
+            "ru": "'12 34 56 '",
+            "en": "'12 34 56 '",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198edb1",
+      "name": {
+        "ru": "Сработает ли условие `if`, в следующем коде, и почему?",
+        "en": "Will the `if` condition work, in the following code, and why?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet result = 'Hello';\nif(result) console.log('Hi');\n```",
+        "en": "```javascript\nlet result = 'Hello';\nif(result) console.log('Hi');\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198edb2",
+          "name": {
+            "ru": "Да, потому что 'Hello' написано с заглавное буквы",
+            "en": "Yeah, because 'Hello' is capitalized.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edb3",
+          "name": {
+            "ru": "Нет, условие написано с ошибкой",
+            "en": "No, the condition is misspelled",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edb4",
+          "name": {
+            "ru": "Нет, потому что 'Hello' не равно true",
+            "en": "No, because 'Hello' does not equal true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edb5",
+          "name": {
+            "ru": "Да, потому что переменная `result` не пустая",
+            "en": "Yes, because the `result` variable is not empty",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198edb6",
+      "name": {
+        "ru": "Что выведется в консоль в результате выполнения следующего кода?",
+        "en": "What will be output to the console as a result of executing the following code?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst obj = {name: 'Alice'};\nconsole.log(!obj['name']);\n```",
+        "en": "```javascript\nconst obj = {name: 'Alice'};\nconsole.log(!obj['name']);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198edb7",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edb8",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edb9",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198edba",
+          "name": {
+            "ru": "'Alice'",
+            "en": "'Alice'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198edbb",
+      "name": {
+        "ru": "Что выведется в консоль в результате выполнения следующего кода?",
+        "en": "What will be output to the console as a result of executing the following code?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst obj = {name: 'Bob'};\nconsole.log(obj.age);\n```",
+        "en": "```javascript\nconst obj = {name: 'Bob'};\nconsole.log(obj.age);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198edbc",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edbd",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edbe",
+          "name": {
+            "ru": "null",
+            "en": "null",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edbf",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198edc0",
+      "name": {
+        "ru": "Будет ли выполнятся условие `if` в следующем коде?",
+        "en": "Will the `if` condition be satisfied in the following code?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst obj = {name: 'Mike'};\nconst name = 'Alice';\n\nif(name && !obj['name']){\n    console.log('it works');\n}\n```",
+        "en": "```javascript\nconst obj = {name: 'Mike'};\nconst name = 'Alice';\n\nif(name && !obj['name']){\n    console.log('it works');\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198edc1",
+          "name": {
+            "ru": "Нет, ключа такого нет в объекте",
+            "en": "No, there is no such key in the object",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edc2",
+          "name": {
+            "ru": "Да, потому что `name` не пустая строка",
+            "en": "Yes, because `name` is not an empty string",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edc3",
+          "name": {
+            "ru": "Нет, знак восклицания меняет значение на противоположное",
+            "en": "No, the exclamation point reverses the meaning.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198edc4",
+          "name": {
+            "ru": "Да, консоль выведет `it works`",
+            "en": "Yes, the console will print `it works`.",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198edc5",
+      "name": {
+        "ru": "Будет ли выполняться условие `if` в следующем коде?",
+        "en": "Will the `if` condition be satisfied in the following code?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst obj = {name: 'Mike'};\nconst name = 'undefined';\n\nif(name && obj['name']){\n    console.log('it works');\n}\n```",
+        "en": "```javascript\nconst obj = {name: 'Mike'};\nconst name = 'undefined';\n\nif(name && obj['name']){\n    console.log('it works');\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198edc6",
+          "name": {
+            "ru": "Нет, undefined вернут false",
+            "en": "No, undefined will return false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edc7",
+          "name": {
+            "ru": "Нет, объект вернет false",
+            "en": "No, the object will return false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198edc8",
+          "name": {
+            "ru": "Да, консоль выведет `it works`",
+            "en": "Yes, the console will print `it works`.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198edc9",
+          "name": {
+            "ru": "Да, консоль выведет `Mike`",
+            "en": "Yes, the console will print `Mike`.",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

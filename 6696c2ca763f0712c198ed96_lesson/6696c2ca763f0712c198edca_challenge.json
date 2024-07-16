@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198edca",
+  "name": {
+    "en": "",
+    "ru": "Удалить дубликаты из строки"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `deleteDuplicate` принимает строку и возвращает строку без дубликатов слов.\n\nСлова в новой строке должны быть разделены пробелом.\n\nВ конце строки пробела быть не должно.\n\nПримеры запуска функции:\n```javascript\ndeleteDuplicate(\"i like to like learn i javascript\") // \"i like to learn javascript\"\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function deleteDuplicate(str) {\n  const obj = {};\n  let result = '';\n  let acc = '';\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] !== ' ') acc += str[i]\n    if (str[i] === ' ' || i === str.length - 1) {\n      if (acc && !obj[acc]) {\n        obj[acc] = 1;\n        if (result) result += ' ' + acc;\n        else result += acc;\n      }\n      acc = '';\n    }\n  }\n  return result\n}",
+  "openTest": "it('Created function deleteDuplicate', () => {\n  expect(deleteDuplicate).to.be.a('function');\n});\n\nit('deleteDuplicate(\"i like to like learn i javascript\") should return \"i like to learn javascript\"', () => {\n  expect(deleteDuplicate('i like to like learn i javascript')).to.equal('i like to learn javascript');\n});\n\nit('deleteDuplicate(\"what what what is going on?\") should return \"what is going on?\"', () => {\n  expect(deleteDuplicate('what what what is going on?')).to.equal('what is going on?');\n});\n\nit('deleteDuplicate(\"no duplicates here\") should return \"no duplicates here\"', () => {\n  expect(deleteDuplicate('no duplicates here')).to.equal('no duplicates here');\n});\n\nit('deleteDuplicate(\"after i finish i after the course nothing would be difficult\") should return \"after i finish the course nothing would be difficult\"', () => {\n  expect(deleteDuplicate('after i finish i after the course nothing would be difficult')).to.equal('after i finish the course nothing would be difficult');\n});\n\nit('deleteDuplicate(\"\") should return \"\"', () => {\n  expect(deleteDuplicate('')).to.equal('');\n});\n\nit('deleteDuplicate(\"hello\") should return \"hello\"', () => {\n  expect(deleteDuplicate('hello')).to.equal('hello');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

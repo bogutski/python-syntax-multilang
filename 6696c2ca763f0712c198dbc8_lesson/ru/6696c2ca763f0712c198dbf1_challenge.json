@@ -1,0 +1,5 @@
+{
+  "name": "Увеличение на 2",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-1.png)\n\nСоздайте переменную `count` и присвойте ей значение 100.\n\n```javascript\nlet count = 100;\n```\n\nЗатем запишите команду, увеличивающую имеющееся значение переменной `count` на 2.\nДля этого напечатайте команду:\n```javascript\ncount = count + 2;\n```\n\nИтого, в итоге должно получиться так:\n```javascript\nlet count = 100;\ncount = count + 2;\n```",
+  "instructions": {}
+}

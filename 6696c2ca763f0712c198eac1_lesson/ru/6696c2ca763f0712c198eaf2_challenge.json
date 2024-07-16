@@ -1,0 +1,5 @@
+{
+  "name": "Замена пробелов в строке на null",
+  "instruction": "Напишите функцию `replaceSpaces`, которая принимает строку и возвращает массив из символов этой строки.\n\nВ строке могут быть пробелы. В массиве эти пробелы должны быть заменены на `null`.\n\nВ результате функция вернет массив, в котором строка будет перевернута и в конце будут `null` в количестве пробелов в строке.\n\nИспользуйте методы массива: `push`, `unshift`.\n\nПримеры запуска функции:\n```js\nreplaceSpaces('hi there') // [ 'e', 'r',  'e', 'h', 't',  'i', 'h', null ]\nreplaceSpaces('abcdef') // [ 'f', 'e', 'd', 'c', 'b', 'a' ]\nreplaceSpaces('a b c d') // [ 'd', 'c', 'b', 'a', null, null, null ]\nreplaceSpaces('    ') // [ null, null, null, null ]\nreplaceSpaces('') // []\n```",
+  "instructions": {}
+}

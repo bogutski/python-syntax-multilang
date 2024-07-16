@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35c9",
+  "name": {
+    "ru": "Присвойте переменной salary значение null",
+    "en": "Assign the variable salary to null",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Создайте переменную с именем `salary`.\nИспользуйте ключевое слово `const`.\nПрисвойте ей значение `null`.\n\nДля этого напечатайте команду:\n```\nconst salary = null;\n```",
+    "en": "Create a variable named `salary`.\nUse keyword `const`.\nAssign to it the value `null`.\n\nTo do this, type the command:\n```\nconst salary = null;\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "const salary = null;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "equal"
+}

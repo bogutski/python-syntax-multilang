@@ -1,0 +1,228 @@
+{
+  "_id": "635bf77477d032c22e5b35ad",
+  "description": {
+    "ru": "",
+    "en": "",
+    "es": ""
+  },
+  "questions": [
+    {
+      "_id": "635bf77477d032c22e5b35ae",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Область памяти, адрес которой можно использовать для доступа к данным – это",
+        "en": "A memory location whose address can be used to access data is",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "переменная",
+            "en": "variable",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b35af"
+        },
+        {
+          "name": {
+            "ru": "ссылка",
+            "en": "link",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b35b0"
+        },
+        {
+          "name": {
+            "ru": "текст",
+            "en": "text",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b35b1"
+        },
+        {
+          "name": {
+            "ru": "оператор",
+            "en": "operator",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b35b2"
+        }
+      ]
+    },
+    {
+      "_id": "635bf77477d032c22e5b35b3",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "В ходе выполнения программы переменные используются для",
+        "en": "In the course of program execution, variables are used",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "вывода значений в консоль",
+            "en": "to output values to the console",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b35b4"
+        },
+        {
+          "name": {
+            "ru": "хранения данных",
+            "en": "for data storage",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b35b5"
+        },
+        {
+          "name": {
+            "ru": "проверки корректности программы",
+            "en": "for checking correctness of the program ",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b35b6"
+        },
+        {
+          "name": {
+            "ru": "красоты",
+            "en": "for aesthetic purposes",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b35b7"
+        }
+      ]
+    },
+    {
+      "_id": "635bf77477d032c22e5b35b8",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "При создании переменной нужно всегда указывать ее имя.",
+        "en": "When creating a variable, you must always specify its name.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b35b9"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b35ba"
+        }
+      ]
+    },
+    {
+      "_id": "635bf77477d032c22e5b35bb",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "При создании переменной нужно обязательно записать в нее начальное значение.",
+        "en": "When you create a variable, you must make sure to write the initial value into it.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b35bc"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b35bd"
+        }
+      ]
+    },
+    {
+      "_id": "635bf77477d032c22e5b35be",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "В JavaScript при создании переменной нужно обязательно указать ее тип.",
+        "en": "In JavaScript, when you create a variable, you must specify its type.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b35bf"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b35c0"
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": false,
+  "name": {
+    "ru": "JS Syntax. Что такое переменная?",
+    "en": "JS Syntax. What is a variable?",
+    "es": ""
+  }
+}

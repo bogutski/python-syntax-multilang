@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e1b5",
+  "name": {
+    "en": "Categorize products by price",
+    "ru": "Категоризируйте товары по цене"
+  },
+  "instruction": {
+    "en": "Write a function `productCategory` that takes the product price and returns the product category.\n\nIf the product price is less than 100, then return `cheap`, if from 100 to 200, then `normal`, if from 200 to 300, then `expensive`, if from 300, then `luxury`.",
+    "ru": "Напишите функцию `productCategory`, которая принимает цену товара и возвращает категорию товара.\n\nЕсли цена товара меньше 100, то возвращаем `cheap`, если от 100 до 200, то `normal`, если от 200 до 300, то `expensive`, если от 300, то `luxury`."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function productCategory(price) {\n  if (price < 100) {\n    return 'cheap';\n  } else if (price < 200) {\n    return 'normal';\n  } else if (price < 300) {\n    return 'expensive';\n  } else {\n    return 'luxury';\n  }\n}",
+  "openTest": "it('Created function productCategory', () => {\n  expect(productCategory).to.be.a('function');\n});\n\nit('productCategory(99) returns cheap', () => {\n  expect(productCategory(99)).to.equal('cheap');\n});\n\nit('productCategory(100) returns normal', () => {\n  expect(productCategory(100)).to.equal('normal');\n});\n\nit('productCategory(200) returns expensive', () => {\n  expect(productCategory(200)).to.equal('expensive');\n});\n\nit('productCategory(300) returns luxury', () => {\n  expect(productCategory(300)).to.equal('luxury');\n});\n\nit('productCategory(400) returns luxury', () => {\n  expect(productCategory(400)).to.equal('luxury');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

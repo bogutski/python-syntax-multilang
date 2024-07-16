@@ -1,0 +1,523 @@
+{
+  "_id": "63c094c582c84077cf804ea1",
+  "name": {
+    "ru": "Строки. Комбинирование всего, что мы знаем",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "63c094c582c84077cf80500a",
+      "name": {
+        "ru": "Как сделать строку 'hello' из строки ' hEllo '?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "63c094c582c84077cf80500b",
+          "name": {
+            "ru": "' hEllo '.trim().toLowerCase()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "63c094c582c84077cf80500c",
+          "name": {
+            "ru": "' hEllo '.toLowerCase().trim()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "63c094c582c84077cf80500d",
+          "name": {
+            "ru": "' hEllo '.toUpperCase().trim()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf80500e",
+          "name": {
+            "ru": "' hEllo '.toLowerCase().trimStart()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "63c094c582c84077cf80500f",
+      "name": {
+        "ru": "Что выведет следующий код console.log('   Hello, World!   '.trim().toUpperCase().repeat(2));",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "63c094c582c84077cf805010",
+          "name": {
+            "ru": " Hello, World! HELLO, WORLD! Hello, World! HELLO, WORLD! ",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf805011",
+          "name": {
+            "ru": "HELLO, WORLD!HELLO, WORLD!",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "63c094c582c84077cf805012",
+          "name": {
+            "ru": "hello, world!hello, world!",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf805013",
+          "name": {
+            "ru": "hello, world!HELLO, WORLD!",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "63c094c582c84077cf805014",
+      "name": {
+        "ru": "Как проверить что в строке 'Hello, World!' есть только одна буква 'w'?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "63c094c582c84077cf805015",
+          "name": {
+            "ru": "'Hello, World!'.toLowerCase().indexOf('w') === 'Hello, World!'.toLowerCase().lastIndexOf('w')",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf805016",
+          "name": {
+            "ru": "'Hello, World!'.indexOf('w').toLowerCase() === 'Hello, World!'.lastIndexOf('w').toLowerCase()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "63c094c582c84077cf805017",
+          "name": {
+            "ru": "'Hello, World!'.indexOf('W').toUpperCase() === 'Hello, World!'.lastIndexOf('W').toUpperCase()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf805018",
+          "name": {
+            "ru": "'Hello, World!'.toUpperCase().indexOf('W') === 'Hello, World!'.toUpperCase().lastIndexOf('W')",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "63c094c582c84077cf805019",
+      "name": {
+        "ru": "Какой результат вернет этот код: console.log('hello, ' + 'World'.indexOf('o'))",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "63c094c582c84077cf80501a",
+          "name": {
+            "ru": "HelloWorld",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf80501b",
+          "name": {
+            "ru": "Hello, 2",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf80501c",
+          "name": {
+            "ru": "error",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf80501d",
+          "name": {
+            "ru": "hello, 1",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "63c094c582c84077cf80501e",
+      "name": {
+        "ru": "Какой код вернет инициалы в верхнем регистре, если имена и фамилии могут содержать пробелы и вводятся с разными регистрами, например, const name = '   JoHN  '; const surname = 'dOE ';?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "63c094c582c84077cf80501f",
+          "name": {
+            "ru": "name[0].trim().toUpperCase() + surname[0].trim().toUpperCase()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf805020",
+          "name": {
+            "ru": "name.trim().toUpperCase() + surname.trim().toUpperCase()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf805021",
+          "name": {
+            "ru": "name.trim()[0].toUpperCase() + surname.trim()[0].toUpperCase()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "63c094c582c84077cf805022",
+          "name": {
+            "ru": "name[1].toLowerCase() + surname[1].toLowerCase()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "63c094c582c84077cf805023",
+      "name": {
+        "ru": "Как вернуть последнюю букву в строке, например, 'hello, world  ' -> 'd'?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "63c094c582c84077cf805024",
+          "name": {
+            "ru": "'hello, world  '.trim()['hello, world  '.trim().length]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf805025",
+          "name": {
+            "ru": "'hello, world  '.trim()['hello, world  '.trim().length - 1]",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "63c094c582c84077cf805026",
+          "name": {
+            "ru": "'hello, world  '['hello, world  '.trim().length]",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "63c094c582c84077cf805028",
+      "name": {
+        "ru": "Что возвращает этот код: let str = ' alice smith '; str.trim()[str.length - 3];",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "63c094c582c84077cf805029",
+          "name": {
+            "ru": "h",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "63c094c582c84077cf80502a",
+          "name": {
+            "ru": "t",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf80502b",
+          "name": {
+            "ru": "error",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf80502c",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "63c094c582c84077cf80502d",
+      "name": {
+        "ru": "Что вернет этот код 'alice@gmail.com'.indexOf(@) > 0 ?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "63c094c582c84077cf80502e",
+          "name": {
+            "ru": "true",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf80502f",
+          "name": {
+            "ru": "SyntaxError: Invalid or unexpected token",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "63c094c582c84077cf805030",
+          "name": {
+            "ru": "false",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf805031",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "63c094c582c84077cf805032",
+      "name": {
+        "ru": "Что вернет код: '  Alice'.trimStart()[0].repeat(5)?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "63c094c582c84077cf805033",
+          "name": {
+            "ru": "AliceAliceAliceAlice",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf805034",
+          "name": {
+            "ru": "Alice Alice Alice Alice Alice",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf805035",
+          "name": {
+            "ru": "AAAAA",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "63c094c582c84077cf805036",
+          "name": {
+            "ru": "error",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "63c094c582c84077cf805037",
+      "name": {
+        "ru": "Как вернуть первый и последний символ в строке (например, 'Hello JS' -> 'HS')?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "63c094c582c84077cf805038",
+          "name": {
+            "ru": "str.indexOf('H') + str.lastIndexOf('S')",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf805039",
+          "name": {
+            "ru": "str.indexOf(0) + str.lastIndexOf(str.length - 1)",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "63c094c582c84077cf80503a",
+          "name": {
+            "ru": "str[0] + str[str.length - 1]",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "63c094c582c84077cf80503b",
+          "name": {
+            "ru": "str.trimStart() + str.trimEnd()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

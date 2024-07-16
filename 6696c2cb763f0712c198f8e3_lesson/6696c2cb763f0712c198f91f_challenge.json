@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f91f",
+  "name": {
+    "en": "/*",
+    "ru": "Проверка наличия строки с определенными символами после обработки массива строк"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `hasStringWithCharacters`, которая принимает массив строк и объект с условиями.\n\nУсловия включают два свойства:\n * `requiredChars` - массив символов, которые должны присутствовать в строке,\n * `minLength` - минимальная длина строки после удаления всех пробелов.\n\nФункция должна вернуть `true`, если хотя бы одна строка после удаления всех пробелов удовлетворяет указанным условиям, и `false` в противном случае.\n\n\nПримеры запуска функции:\n```javascript\nhasStringWithCharacters(['he llo', 'wo rld', 'jav a scri pt'], {requiredChars: ['a', 's'], minLength: 5}); // true\nhasStringWithCharacters(['hello', 'world', 'javascript'], {requiredChars: ['x', 'y'], minLength: 5}); // false\nhasStringWithCharacters([' fo o', ' bar', ' baz '], {requiredChars: ['a', 'b'], minLength: 3}); // true\nhasStringWithCharacters(['qu ick', 'bro wn', 'f ox'], {requiredChars: ['z', 'q', 'i'], minLength: 4}); // false\n```"
+  },
+  "initialSolution": "function hasStringWithCharacters(){\n\n}",
+  "completedSolution": "function hasStringWithCharacters(arr, target) {\n  const deleteAllSpaces = str => {\n    let newStr = ''\n    for(let char of str){\n      if(char !== ' ') newStr += char\n    }\n    return newStr\n  }\n\n  return arr.some(str => {\n    const modified = deleteAllSpaces(str)\n    return modified.length >= target.minLength && target.requiredChars.every(el => modified.includes(el))\n  });\n}",
+  "openTest": "it('Created function hasStringWithCharacters', () => {\n  expect(hasStringWithCharacters).to.be.a('function');\n});\n\nit('hasStringWithCharacters([\"he llo\", \"wo rld\", \"jav a scri pt\"], {requiredChars: [\"a\", \"s\"], minLength: 5}) should return true', function() {\n  expect(hasStringWithCharacters([\"he llo\", \"wo rld\", \"jav a scri pt\"], {requiredChars: [\"a\", \"s\"], minLength: 5})).to.equal(true);\n});\n\nit('hasStringWithCharacters([\"hello\", \"world\", \"javascript\"], {requiredChars: [\"x\", \"y\"], minLength: 5}) should return false', function() {\n  expect(hasStringWithCharacters([\"hello\", \"world\", \"javascript\"], {requiredChars: [\"x\", \"y\"], minLength: 5})).to.equal(false);\n});\n\nit('hasStringWithCharacters([\" fo o\", \" bar\", \" baz \"], {requiredChars: [\"a\", \"b\"], minLength: 3}) should return true', function() {\n  expect(hasStringWithCharacters([\" fo o\", \" bar\", \" baz \"], {requiredChars: [\"a\", \"b\"], minLength: 3})).to.equal(true);\n});\n\nit('hasStringWithCharacters([\"qu ick\", \"bro wn\", \"f ox\"], {requiredChars: [\"z\"], minLength: 4}) should return false', function() {\n  expect(hasStringWithCharacters([\"qu ick\", \"bro wn\", \"f ox\"], {requiredChars: [\"z\"], minLength: 4})).to.equal(false);\n});\n\nit('hasStringWithCharacters([\" a pple\", \" ba nana\", \" ch err y\"], {requiredChars: [\"p\", \"l\"], minLength: 5}) should return true', function() {\n  expect(hasStringWithCharacters([\" a pple\", \" ba nana\", \" ch err y\"], {requiredChars: [\"p\", \"l\"], minLength: 5})).to.equal(true);\n});\n\nit('hasStringWithCharacters([\"gr ape\", \" ora nge\", \"p ear\"], {requiredChars: [\"g\", \"r\"], minLength: 6}) should return true', function() {\n  expect(hasStringWithCharacters([\"gr ape\", \" ora nge\", \"p ear\"], {requiredChars: [\"g\", \"r\"], minLength: 6})).to.equal(true);\n});\n\nit('hasStringWithCharacters([\"ki wi\", \"ma ngo\", \"pe ach\"], {requiredChars: [\"m\", \"n\"], minLength: 4}) should return true', function() {\n  expect(hasStringWithCharacters([\"ki wi\", \"ma ngo\", \"pe ach\"], {requiredChars: [\"m\", \"n\"], minLength: 4})).to.equal(true);\n});\n\nit('hasStringWithCharacters([\"wa ter\", \"me lo n\", \" st raw ber ry\"], {requiredChars: [\"w\", \"e\", \"y\", \"r\"], minLength: 5}) should return true', function() {\n  expect(hasStringWithCharacters([\"wa ter\", \"me lo n\", \" st raw ber ry\"], {requiredChars: [\"w\", \"e\", \"y\", \"r\"], minLength: 5})).to.equal(true);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

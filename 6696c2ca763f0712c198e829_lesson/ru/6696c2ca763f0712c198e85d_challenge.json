@@ -1,0 +1,5 @@
+{
+  "name": "Копирование массива по элементам",
+  "instruction": "Напишите функцию `copyElements`, которая принимает два массива: `arrFrom` и `arrTo`.\n\nФункция должна скопировать первый и последний элементы из `arrFrom` в `arrTo` и вернуть `arrTo`.\n\nПохожая функция:\n```javascript\nfunction copyElements(arr1, arr2) {\n  arr2.push(arr1[0]);\n  arr2.push(arr1[1]);\n  arr2.push(arr1[3]);\n  return arr2;\n}\n```\n\nПример запуска функции:\n```javascript\ncopyElements([1, 2, 3, 4, 5], []) // [1, 5]\ncopyElements(['string', 1, 2, 3, 'number'], []) // ['string', 'number']\ncopyElements(['Hello'], []) // ['Hello', 'Hello']\n```",
+  "instructions": {}
+}

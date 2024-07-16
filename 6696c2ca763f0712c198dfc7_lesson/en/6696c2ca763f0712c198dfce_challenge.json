@@ -1,0 +1,4 @@
+{
+  "name": "Calculate the discount for two products",
+  "instruction": "Write a function `discountOfTwo` that calculates a discount on two items.\n\nThe function takes 4 parameters: `priceProduct1`, `priceProduct2`, `discountProduct1`, `discountProduct2`.\n\nDiscounts are specified in percent.\n\nThe function should return only the discount amount for both products.\n\nExamples:\n```javascript\ndiscountOfTwo(100, 200, 10, 10) // 30\ndiscountOfTwo(100, 200, 10, 20) // 50\ndiscountOfTwo(100, 200, 20, 10) // 40\n```"
+}

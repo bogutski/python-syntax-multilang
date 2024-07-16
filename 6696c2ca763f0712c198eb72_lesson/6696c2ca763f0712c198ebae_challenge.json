@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ebae",
+  "name": {
+    "en": "Convert the string and check if it is a palindrome",
+    "ru": "Преобразовать строку и проверить является ли она палиндромом"
+  },
+  "instruction": {
+    "en": "The `checkPalindrome` function takes the string `str`.\n\nThe string may contain spaces at the beginning and at the end, and may also contain uppercase letters.\n\nBefore checking if the string is a palindrome, the string must be converted to lower case and the spaces at the beginning and at the end must be removed.\n\nThe function returns a string that tells you whether the string is a palindrome or not:\n* if the string is a palindrome, the string `str is a palindrome` is returned\n* If the string is not a palindrome, the string `str is not a palindrome` is returned.\n\nwhere `str` is a string that was passed to the function but is already converted to lowercase and without spaces at the beginning and at the end.\n\nExamples of function start:\n```javascript\ncheckPalindrome(\"rePAPER \") // \"repaper is a palindrome\"\ncheckPalindrome(\"abac\") // \"abac is not a palindrome\"\n```",
+    "ru": "Функция `checkPalindrome` принимает строку `str`.\n\nСтрока может содержать пробелы в начале и в конце, а также может содержать заглавные буквы.\n\nПеред проверкой, является ли строка палиндромом, необходимо привести строку к нижнему регистру и удалить пробелы в начале и в конце.\n\nФункция возвращает строку, которая сообщает, является ли строка палиндромом или нет:\n* если строка является палиндромом, то возвращается строка `str is a palindrome`\n* если строка не является палиндромом, то возвращается строка `str is not a palindrome`\n\nгде `str` - это строка, которая была передана в функцию но уже приведена к нижнему регистру и без пробелов в начале и в конце.\n\nПримеры запуска функции:\n```javascript\ncheckPalindrome(\"rePAPER  \") // \"repaper is a palindrome\"\ncheckPalindrome(\"abac\") // \"abac is not a palindrome\"\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function checkPalindrome(str) {\n    str = str.trim().toLowerCase();\n    let middle = str.length / 2\n    for (let i = 0; i < middle; i++) {\n        if (str[i] !== str[str.length - 1 - i]) {\n            return `${str} is not a palindrome`;\n        }\n    }\n    return `${str} is a palindrome`\n}",
+  "openTest": "it('Created function checkPalindrome', () => {\n    expect(checkPalindrome).to.be.a('function');\n});\n\nit('checkPalindrome(\"repaper\") should return \"repaper is a palindrome\"', () => {\n    expect(checkPalindrome(\"repaper\")).to.equal(\"repaper is a palindrome\");\n});\n\nit('checkPalindrome(\"abaa\") should return \"abaa is not a palindrome\"', () => {\n    expect(checkPalindrome(\"abaa\")).to.equal(\"abaa is not a palindrome\");\n});\n\nit('checkPalindrome(\"leVEl\") should return \"level is a palindrome\"', () => {\n    expect(checkPalindrome(\"leVel\")).to.equal(\"level is a palindrome\");\n});\n\nit('checkPalindrome(\"salut\") should return \"salut is not a palindrome\"', () => {\n    expect(checkPalindrome(\"salut\")).to.equal(\"salut is not a palindrome\");\n});\n\nit('checkPalindrome(\" 2A3*3a2 \") should return \"2a3*3a2 is a palindrome\"', () => {\n    expect(checkPalindrome(\" 2A3*3a2 \")).to.equal(\"2a3*3a2 is a palindrome\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

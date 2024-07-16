@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f89b",
+  "name": {
+    "en": "/*",
+    "ru": "Найти индекс последнего положительного числа"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findLastPositiveIndex`, которая принимает массив чисел.\n\nФункция должна вернуть индекс последнего положительного числа в массиве.\n\nЕсли такого числа нет, функция должна вернуть `-1`.\n\n\nПримеры запуска функции:\n```javascript\nfindLastPositiveIndex([1, 2, 3, 4, 5]); // 4\nfindLastPositiveIndex([1, 2, -3, 4, -5]); // 3\nfindLastPositiveIndex([-1, -2, -3, -4, -5]); // -1\nfindLastPositiveIndex([10, -20, 30, -40, 50]); // 4\n```"
+  },
+  "initialSolution": "function findLastPositiveIndex(){\n\n}",
+  "completedSolution": "function findLastPositiveIndex(arr) {\n  return arr.findLastIndex(n => n > 0);\n}",
+  "openTest": "it('Created function findLastPositiveIndex', () => {\n  expect(findLastPositiveIndex).to.be.a('function');\n});\n\nit(\"Function findLastPositiveIndex should include findLastIndex method\", () => {\n  const result = findLastPositiveIndex.toString();\n  expect(result).to.include('.findLastIndex(');\n});\n\nit('findLastPositiveIndex([1, 2, -3, 4, -5]) should return 3', function() {\n  expect(findLastPositiveIndex([1, 2, -3, 4, -5])).to.equal(3);\n});\n\nit('findLastPositiveIndex([1, 2, 3, 4, 5]) should return 4', function() {\n  expect(findLastPositiveIndex([1, 2, 3, 4, 5])).to.equal(4);\n});\n\nit('findLastPositiveIndex([-1, -2, -3, -4, -5]) should return -1', function() {\n  expect(findLastPositiveIndex([-1, -2, -3, -4, -5])).to.equal(-1);\n});\n\nit('findLastPositiveIndex([10, -20, 30, -40, 50]) should return 4', function() {\n  expect(findLastPositiveIndex([10, -20, 30, -40, 50])).to.equal(4);\n});\n\nit('findLastPositiveIndex([-10, 20, -30, 40, -50]) should return 3', function() {\n  expect(findLastPositiveIndex([-10, 20, -30, 40, -50])).to.equal(3);\n});\n\nit('findLastPositiveIndex([1, 2, 3, 4, -5, -6]) should return 3', function() {\n  expect(findLastPositiveIndex([1, 2, 3, 4, -5, -6])).to.equal(3);\n});\n\nit('findLastPositiveIndex([100, 200, 300, 400, 500]) should return 4', function() {\n  expect(findLastPositiveIndex([100, 200, 300, 400, 500])).to.equal(4);\n});\n\nit('findLastPositiveIndex([-100, -200, -300, -400, -500]) should return -1', function() {\n  expect(findLastPositiveIndex([-100, -200, -300, -400, -500])).to.equal(-1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

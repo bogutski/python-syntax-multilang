@@ -1,0 +1,4 @@
+{
+  "name": "The function returns glued strings",
+  "instruction": "You may not know this yet, but if you use the `+` sign between two lines, they are glued into one line.\n\nTry to glue two lines into one using the `+` sign.\n```javascript\nconsole.log('Hello' + 'World') // 'HelloWorld'\n```\n\nWrite a function `glueString` that takes two arguments `str1` and `str2` and returns them glued into one string.\n\nAn example of string gluing:\n```javascript\nfunction connection(string1, string2) {\n  Return string1 + string2;\n}\n\nconsole.log(connection('Hello', 'World')); // 'HelloWorld'\n```\n\nDo the same thing."
+}

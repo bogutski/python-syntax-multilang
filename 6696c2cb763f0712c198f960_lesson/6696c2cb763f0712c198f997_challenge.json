@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f997",
+  "name": {
+    "en": "/*",
+    "ru": "Поиск стоп-слов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findStopWords`, которая принимает строку и число `n`, и возвращает массив слов, которые встречаются в строке `n` или более раз.\n\n\nПримеры запуска функции:\n```javascript\nfindStopWords('this is a test this is only a test', 2); // [ 'this', 'is', 'a', 'test' ]\nfindStopWords('one fish two fish red fish blue fish', 3); // [ 'fish' ]\nfindStopWords('the quick brown fox jumps over the lazy dog', 1); // [ 'the', 'quick', 'brown', 'fox', 'jumps', 'over', 'lazy', 'dog' ]\n```"
+  },
+  "initialSolution": "function findStopWords(){\n\n}",
+  "completedSolution": "function findStopWords(string, n) {\n  const arr = string.split(' ');\n  let result = []\n  let count = 0\n\n  for(let i = 0; i < arr.length; i++) {\n\n    for(let j = 0; j < arr.length; j++) {\n      if(arr[j] === arr[i]) count++\n      if(count >= n){\n        if(!result.includes(arr[i])) result.push(arr[i])\n        count = 0\n        break\n      }\n      if(j === arr.length - 1) count = 0\n    }\n\n  }\n\n  return result;\n}",
+  "openTest": "it('Created function findStopWords', () => {\n  expect(findStopWords).to.be.a('function');\n});\n\nit('findStopWords(\"a mouse is smaller than a dog but a dog is stronger\", 2) should return [ \"a\", \"is\", \"dog\" ]', function() {\n  expect(findStopWords('a mouse is smaller than a dog but a dog is stronger', 2)).to.deep.equal([ 'a', 'is', 'dog' ]);\n});\n\nit('findStopWords(\"this is a test this is only a test\", 2) should return [ \"this\", \"is\", \"a\", \"test\" ]', function() {\n  expect(findStopWords('this is a test this is only a test', 2)).to.deep.equal([ 'this', 'is', 'a', 'test' ]);\n});\n\nit('findStopWords(\"one fish two fish red fish blue fish\", 2) should return [ \"fish\" ]', function() {\n  expect(findStopWords('one fish two fish red fish blue fish', 2)).to.deep.equal([ 'fish' ]);\n});\n\nit('findStopWords(\"the quick brown fox jumps over the lazy dog\", 1) should return [ \"the\", \"quick\", \"brown\", \"fox\", \"jumps\", \"over\", \"lazy\", \"dog\" ]', function() {\n  expect(findStopWords('the quick brown fox jumps over the lazy dog', 1)).to.deep.equal([ 'the', 'quick', 'brown', 'fox', 'jumps', 'over', 'lazy', 'dog' ]);\n});\n\nit('findStopWords(\"repeat repeat repeat repeat\", 3) should return [ \"repeat\" ]', function() {\n  expect(findStopWords('repeat repeat repeat repeat', 3)).to.deep.equal([ 'repeat' ]);\n});\n\nit('findStopWords(\"hello world hello\", 2) should return [ \"hello\" ]', function() {\n  expect(findStopWords('hello world hello', 2)).to.deep.equal([ 'hello' ]);\n});\n\nit('findStopWords(\"hello hello world world world\", 3) should return [ \"world\" ]', function() {\n  expect(findStopWords('hello hello world world world', 3)).to.deep.equal([ 'world' ]);\n});\n\nit('findStopWords(\"one two three four five six\", 1) should return [ \"one\", \"two\", \"three\", \"four\", \"five\", \"six\" ]', function() {\n  expect(findStopWords('one two three four five six', 1)).to.deep.equal([ 'one', 'two', 'three', 'four', 'five', 'six' ]);\n});\n\nit('findStopWords(\"apple banana orange apple grape banana\", 2) should return [ \"apple\", \"banana\" ]', function() {\n  expect(findStopWords('apple banana orange apple grape banana', 2)).to.deep.equal([ 'apple', 'banana' ]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

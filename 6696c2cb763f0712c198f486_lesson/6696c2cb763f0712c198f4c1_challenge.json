@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f4c1",
+  "name": {
+    "en": "/*",
+    "ru": "Подсчет символов в массиве строк"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `countCharacters`, которая принимает массив строк.\n\nФункция возвращает объект, в котором ключами являются символы, а значениями — количество их появлений во всех строках массива.\n\nИспользуйте метод `forEach` для реализации этой задачи.\n\n\nПример запуска функции:\n```javascript\ncountCharacters(['abc', 'def', 'g']);\n// { a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1 }\n\ncountCharacters(['hello', 'world', 'hello', 'again']);\n// { h: 2, e: 2, l: 5, o: 3, w: 1, r: 1, d: 1, a: 2, g: 1, i: 1, n: 1 }\n```"
+  },
+  "initialSolution": "function countCharacters(){\n\n}",
+  "completedSolution": "function countCharacters(arr) {\n  let res = {}\n\n  arr.forEach(word => {\n\n    for(let el of word){\n      if(res.hasOwnProperty(el)) res[el]++\n      else res[el] = 1\n    }\n\n  })\n\n  return res;\n}",
+  "openTest": "it('Created function countCharacters', () => {\n  expect(countCharacters).to.be.a('function');\n});\n\nit('Function countCharacters should include method forEach()', () => {\n  const res = countCharacters.toString()\n  expect(res).to.include('.forEach(')\n});\n\nit(\"countCharacters(['hello', 'world', 'hello', 'again']) should return { h: 2, e: 2, l: 5, o: 3, w: 1, r: 1, d: 1, a: 2, g: 1, i: 1, n: 1 }\", () => {\n  expect(countCharacters([\"hello\", \"world\", \"hello\", \"again\"])).to.deep.equal({ h: 2, e: 2, l: 5, o: 3, w: 1, r: 1, d: 1, a: 2, g: 1, i: 1, n: 1 });\n});\n\nit(\"countCharacters(['', ' ', '!!']) should return { ' ': 1, '!': 2 }\", () => {\n  expect(countCharacters(['', ' ', '!!'])).to.deep.equal({ ' ': 1, '!': 2 });\n});\n\nit(\"countCharacters(['abc', 'def', 'g']) should return { a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1 }\", () => {\n  expect(countCharacters(['abc', 'def', 'g'])).to.deep.equal({ a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1 });\n});\n\nit(\"countCharacters(['123', '456', '789']) should return { '1': 1, '2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1 }\", () => {\n  expect(countCharacters(['123', '456', '789'])).to.deep.equal({ '1': 1, '2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1 });\n});\n\nit(\"countCharacters(['AAA', 'BBB', 'A', 'B', 'AB']) should return { 'A': 5, 'B': 5 }\", () => {\n  expect(countCharacters(['AAA', 'BBB', 'A', 'B', 'AB'])).to.deep.equal({ 'A': 5, 'B': 5 });\n});\n\nit(\"countCharacters(['']) should return {}\", () => {\n  expect(countCharacters([''])).to.deep.equal({});\n});\n\nit(\"countCharacters(['one', 'two', 'three']) should return { 'o': 2, 'n': 1, 'e': 3, 't': 2, 'w': 1, 'h': 1, 'r': 1 }\", () => {\n  expect(countCharacters(['one', 'two', 'three'])).to.deep.equal({ 'o': 2, 'n': 1, 'e': 3, 't': 2, 'w': 1, 'h': 1, 'r': 1 });\n});\n\nit(\"countCharacters(['x', 'y', 'z', 'xx', 'yy', 'zz']) should return { 'x': 3, 'y': 3, 'z': 3 }\", () => {\n  expect(countCharacters(['x', 'y', 'z', 'xx', 'yy', 'zz'])).to.deep.equal({ 'x': 3, 'y': 3, 'z': 3 });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

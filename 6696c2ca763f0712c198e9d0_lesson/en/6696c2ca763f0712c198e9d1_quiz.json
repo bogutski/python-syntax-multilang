@@ -1,0 +1,174 @@
+{
+  "name": "Cycle from less to more",
+  "questions": {
+    "0": {
+      "name": "Which statement is true",
+      "variants": {
+        "0": {
+          "name": "To loop through the numbers, you must always write them into an array"
+        },
+        "1": {
+          "name": "Cycles with numbers cannot be infinite because numbers are finite"
+        },
+        "2": {
+          "name": "Cycle with numbers allow you to get all numbers from and to in some increments"
+        },
+        "3": {
+          "name": "The cycle with numbers always works only with integers"
+        }
+      }
+    },
+    "1": {
+      "name": "What will be the result of the code?",
+      "description": "```javascript\nfor (let i = 0; i < 10; i++) {\n  console.log(i);\n}\n```",
+      "variants": {
+        "0": {
+          "name": "012345678910"
+        },
+        "1": {
+          "name": "123456789"
+        },
+        "2": {
+          "name": "0123456789"
+        },
+        "3": {
+          "name": "0 1 2 3 4 5 6 7 8 9"
+        }
+      }
+    },
+    "2": {
+      "name": "The continue and break operators must not be used when looping with numbers",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "3": {
+      "name": "What will be the result of the code?",
+      "description": "```javascript\nfor (let i = 0; i < 10; i = i + 3) {\n  if (i % 2 === 0) {\n    console.log( i );\n  }\n}\n```",
+      "variants": {
+        "0": {
+          "name": "mistake"
+        },
+        "1": {
+          "name": "0 2 4 6 8"
+        },
+        "2": {
+          "name": "0 6"
+        },
+        "3": {
+          "name": "0 4 8"
+        }
+      }
+    },
+    "4": {
+      "name": "Skipping numbers in a loop can be done by using...",
+      "variants": {
+        "0": {
+          "name": "break operator"
+        },
+        "1": {
+          "name": "continue operator"
+        },
+        "2": {
+          "name": "if"
+        },
+        "3": {
+          "name": "changing the final expression (loop step)"
+        }
+      }
+    },
+    "5": {
+      "name": "What will be the result of the code?",
+      "description": "```javascript\nconst count = 0;\nfor (let i = 0; i < 10; i++) {\n  if (i % 2 === 0) {\ncount++;\n  }\n}console.log(count)\n```",
+      "variants": {
+        "0": {
+          "name": "Error"
+        },
+        "1": {
+          "name": "5"
+        },
+        "2": {
+          "name": "4"
+        },
+        "3": {
+          "name": "20"
+        }
+      }
+    },
+    "6": {
+      "name": "As a result of the loop with numbers we can get",
+      "variants": {
+        "0": {
+          "name": "array"
+        },
+        "1": {
+          "name": "object"
+        },
+        "2": {
+          "name": "mistake"
+        },
+        "3": {
+          "name": "string"
+        }
+      }
+    },
+    "7": {
+      "name": "How to get the numbers from 22 to 32 from the cycle given below? Choose the correct option instead of ????",
+      "description": "```javascript\nfor (let i = 12; i < 52; i++) {\n  if ??? \nconsole.log(i);\n  }\n```",
+      "variants": {
+        "0": {
+          "name": "if(i >= 22 && i <= 32)"
+        },
+        "1": {
+          "name": "if(i >= 22 && i <= 32) continue;"
+        },
+        "2": {
+          "name": "if(i >= 22 && i <= 32) break;"
+        },
+        "3": {
+          "name": "if(i >= 22 || i <= 32)"
+        }
+      }
+    },
+    "8": {
+      "name": "How to get all numbers except numbers 22 to 32 from the loop given below? Choose the correct option instead of ???",
+      "description": "```javascript\nfor (let i = 12; i < 52; i++) {\n  if ??? \nconsole.log(i);\n  }\n```",
+      "variants": {
+        "0": {
+          "name": "if(i >= 22 && i <= 32)"
+        },
+        "1": {
+          "name": "if(i >= 22 && i <= 32) continue;"
+        },
+        "2": {
+          "name": "if(i >= 22 && i <= 32) break"
+        },
+        "3": {
+          "name": "if(i >= 22 || i <= 32) continue;"
+        }
+      }
+    },
+    "9": {
+      "name": "Which cycle entry is correct?",
+      "variants": {
+        "0": {
+          "name": "for(let i = 0; i < 10; i++)"
+        },
+        "1": {
+          "name": "for(i === 0; i < 10; i++)"
+        },
+        "2": {
+          "name": "for(let i = 0, i < 10, i++)"
+        },
+        "3": {
+          "name": "(for i = 0; i < 10; i++)"
+        }
+      }
+    }
+  }
+}

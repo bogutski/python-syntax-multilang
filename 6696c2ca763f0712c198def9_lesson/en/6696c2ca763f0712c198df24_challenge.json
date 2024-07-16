@@ -1,0 +1,4 @@
+{
+  "name": "The function outputs the type 'number' to the console",
+  "instruction": "Write a function `showNumberType` that determines and outputs\nto the console what the data type of the number `5` is.\n\nTo determine the type, use the `typeof` operator.\n\n```javascript\ntypeof 15\n```\n\nIf you want to output to the console:\n```javascript\nconsole.log(typeof 15);\n```\n\nWrite a function that will output to the console with the type of number `5`;"
+}

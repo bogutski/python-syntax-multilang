@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ea06",
+  "name": {
+    "en": "The sum of even numbers from n1 to n2",
+    "ru": "Сумма четных чисел от n1 до n2"
+  },
+  "instruction": {
+    "en": "Write a function `sumOfEvenNumbers` that takes two numbers `n1` and `n2` and returns the sum of all even numbers between `n1` and `n2` inclusive.\n\n`n1` will always be less than or equal to `n2`.\n\nExamples of running the function:\n```javascript\nsumOfEvenNumbers(1, 10); // 30\nsumOfEvenNumbers(1, 11); // 30\nsumOfEvenNumbers(15, 37); // 286\n```",
+    "ru": "Напишите функцию `sumOfEvenNumbers`, которая принимает два числа `n1` и `n2` и возвращает сумму всех четных чисел в диапазоне от `n1` до `n2` включительно.\n\n`n1` всегда будет меньше или равно `n2`.\n\nПримеры запуска функции:\n```javascript\nsumOfEvenNumbers(1, 10); // 30\nsumOfEvenNumbers(1, 11); // 30\nsumOfEvenNumbers(15, 37); // 286\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sumOfEvenNumbers(n1, n2) {\n  let sum = 0;\n  for (let i = n1; i <= n2; i++) {\n    if (i % 2 === 0) sum += i;\n  }\n  return sum;\n}",
+  "openTest": "it('Created function sumOfEvenNumbers', () => {\n  expect(sumOfEvenNumbers).to.be.a('function');\n});\n\nit('sumOfEvenNumbers(1, 10) should return 30', () => {\n  expect(sumOfEvenNumbers(1, 10)).to.equal(30);\n});\n\nit('sumOfEvenNumbers(1, 11) should return 30', () => {\n  expect(sumOfEvenNumbers(1, 11)).to.equal(30);\n});\n\nit('sumOfEvenNumbers(15, 37) should return 286', () => {\n  expect(sumOfEvenNumbers(15, 37)).to.equal(286);\n});\n\nit('sumOfEvenNumbers(-7, 27) should return 170', () => {\n  expect(sumOfEvenNumbers(-7, 27)).to.equal(170);\n});\n\nit('sumOfEvenNumbers(2000, 2010) should return 12030', () => {\n  expect(sumOfEvenNumbers(2000, 2010)).to.equal(12030);\n});\n\nit('sumOfEvenNumbers(0, 0) should return 0', () => {\n  expect(sumOfEvenNumbers(0, 0)).to.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f482",
+  "name": {
+    "en": "/*",
+    "ru": "Преобразование долей в проценты с форматированием"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `convertToPercentages`, которая принимает массив чисел, каждое из которых представляет долю от целого.\n\nФункция создает новый массив, содержащий строки. Каждая строка представляет собой процентное значение соответствующей доли из исходного массива, округленное до двух десятичных знаков и дополненное символом процента.\n\nДля этого используйте метод `map()`.\n\n\nПример запуска функции:\n```javascript\nconvertToPercentages([0.3, 0.1, 0.2, 0.4]); // [ '30.00 %', '10.00 %', '20.00 %', '40.00 %' ]\nconvertToPercentages([0.25, 0.7, 0.95, 0]); // [ '25.00 %', '70.00 %', '95.00 %', '0.00 %' ]\n```"
+  },
+  "initialSolution": "function convertToPercentages(){\n\n}",
+  "completedSolution": "function convertToPercentages(arr) {\n  return arr.map(n => (n * 100).toFixed(2) + ' %')\n}",
+  "openTest": "it('Created function convertToPercentages', () => {\n  expect(convertToPercentages).to.be.a('function');\n});\n\nit('Function formatUserInfo should include method map()', () => {\n  const res = convertToPercentages.toString()\n  expect(res).to.include('.map(')\n});\n\nit(\"convertToPercentages([0.3, 0.1, 0.2, 0.4]) should return ['30.00 %', '10.00 %', '20.00 %', '40.00 %']\", () => {\n  expect(convertToPercentages([0.3, 0.1, 0.2, 0.4])).to.deep.equal(['30.00 %', '10.00 %', '20.00 %', '40.00 %']);\n});\n\nit(\"convertToPercentages([0.25, 0.75]) should return ['25.00 %', '75.00 %']\", () => {\n  expect(convertToPercentages([0.25, 0.75])).to.deep.equal(['25.00 %', '75.00 %']);\n});\n\nit(\"convertToPercentages([1]) should return ['100.00 %']\", () => {\n  expect(convertToPercentages([1])).to.deep.equal(['100.00 %']);\n});\n\nit(\"convertToPercentages([0]) should return ['0.00 %']\", () => {\n  expect(convertToPercentages([0])).to.deep.equal(['0.00 %']);\n});\n\nit(\"convertToPercentages([0.123, 0.877]) should return ['12.30 %', '87.70 %']\", () => {\n  expect(convertToPercentages([0.123, 0.877])).to.deep.equal(['12.30 %', '87.70 %']);\n});\n\nit(\"convertToPercentages([0.505, 0.305]) should return ['50.50 %', '30.50 %']\", () => {\n  expect(convertToPercentages([0.505, 0.305])).to.deep.equal(['50.50 %', '30.50 %']);\n});\n\nit(\"convertToPercentages([0.999]) should return ['99.90 %']\", () => {\n  expect(convertToPercentages([0.999])).to.deep.equal(['99.90 %']);\n});\n\nit(\"convertToPercentages([0.3333, 0.6667]) should return ['33.33 %', '66.67 %']\", () => {\n  expect(convertToPercentages([0.3333, 0.6667])).to.deep.equal(['33.33 %', '66.67 %']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

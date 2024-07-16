@@ -1,0 +1,4 @@
+{
+  "name": "How many cuts should be made on a log",
+  "instruction": "Write a function `woodSplit`.\nOne parameter is the number of parts to divide the log into. It will not be less than 1.\n\nThe function should return the number of cuts to be made on the log to get the specified number of parts.\n\nExamples:\n\n```javascript\nwoodSplit(1) === 0\nwoodSplit(2) === 1\nwoodSplit(3) === 2\nwoodSplit(4) === 3\nwoodSplit(5) === 4\n```\n\nI hope you understand what needs to be done."
+}

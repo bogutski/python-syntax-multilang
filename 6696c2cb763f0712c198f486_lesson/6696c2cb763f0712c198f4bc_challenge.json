@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f4bc",
+  "name": {
+    "en": "/*",
+    "ru": "Добавление префикса к элементам массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `addPrefixToArray`, которая принимает массив строк и строковый префикс, затем использует метод `forEach` для добавления этого префикса к каждому элементу исходного массива.\n\nФункция должна возвращать новый массив с модифицированными строками.\n\n\nПример запуска функции:\n```javascript\naddPrefixToArray(['John', 'Jane', 'Doe'], 'Mr. '); // [ 'Mr. John', 'Mr. Jane', 'Mr. Doe' ]\n```"
+  },
+  "initialSolution": "function addPrefixToArray(){\n\n}",
+  "completedSolution": "function addPrefixToArray(arr, prefix) {\n  let res = [];\n  arr.forEach(str => res.push(prefix + str))\n\n  return res;\n}",
+  "openTest": "it('Created function addPrefixToArray', () => {\n  expect(addPrefixToArray).to.be.a('function');\n});\n\nit('Function addPrefixToArray should include method forEach()', () => {\n  const res = addPrefixToArray.toString()\n  expect(res).to.include('.forEach(')\n});\n\nit(\"addPrefixToArray(['John', 'Jane', 'Doe'], 'Mr. ') should return ['Mr. John', 'Mr. Jane', 'Mr. Doe']\", () => {\n  expect(addPrefixToArray([\"John\", \"Jane\", \"Doe\"], \"Mr. \")).to.deep.equal([\"Mr. John\", \"Mr. Jane\", \"Mr. Doe\"]);\n});\n\nit(\"addPrefixToArray(['apple', 'banana', 'cherry'], 'fruit: ') should return ['fruit: apple', 'fruit: banana', 'fruit: cherry']\", () => {\n  expect(addPrefixToArray([\"apple\", \"banana\", \"cherry\"], \"fruit: \")).to.deep.equal([\"fruit: apple\", \"fruit: banana\", \"fruit: cherry\"]);\n});\n\nit(\"addPrefixToArray([], 'empty: ') should return []\", () => {\n  expect(addPrefixToArray([], \"empty: \")).to.deep.equal([]);\n});\n\nit(\"addPrefixToArray(['2021', '2022'], 'Year: ') should return ['Year: 2021', 'Year: 2022']\", () => {\n  expect(addPrefixToArray([\"2021\", \"2022\"], \"Year: \")).to.deep.equal([\"Year: 2021\", \"Year: 2022\"]);\n});\n\nit(\"addPrefixToArray(['', ' '], 'Prefix: ') should return ['Prefix: ', 'Prefix:  ']\", () => {\n  expect(addPrefixToArray(['', ' '], \"Prefix: \")).to.deep.equal([\"Prefix: \", \"Prefix:  \"]);\n});\n\nit(\"addPrefixToArray(['quick', 'brown', 'fox'], 'The ') should return ['The quick', 'The brown', 'The fox']\", () => {\n  expect(addPrefixToArray([\"quick\", \"brown\", \"fox\"], \"The \")).to.deep.equal([\"The quick\", \"The brown\", \"The fox\"]);\n});\n\nit(\"addPrefixToArray(['error', 'warning', 'info'], 'Status: ') should return ['Status: error', 'Status: warning', 'Status: info']\", () => {\n  expect(addPrefixToArray([\"error\", \"warning\", \"info\"], \"Status: \")).to.deep.equal([\"Status: error\", \"Status: warning\", \"Status: info\"]);\n});\n\nit(\"addPrefixToArray(['first', 'second', 'third'], '') should return ['first', 'second', 'third']\", () => {\n  expect(addPrefixToArray([\"first\", \"second\", \"third\"], \"\")).to.deep.equal([\"first\", \"second\", \"third\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

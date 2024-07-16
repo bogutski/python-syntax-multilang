@@ -1,0 +1,4 @@
+{
+  "name": "Day of the week and date",
+  "instruction": "Create a function `getDayOfWeek` that takes 2 parameters: day `day` and date `date` as a string, for example `'01.01.2018'`.\n\nThe function should return a string like `'Today is Monday, 01.01.2018'`.\n\nSet the parameters to the default values as an empty string."
+}

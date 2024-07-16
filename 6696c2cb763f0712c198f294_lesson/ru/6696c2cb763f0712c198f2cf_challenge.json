@@ -1,0 +1,5 @@
+{
+  "name": "Сколько видов элементов в массиве",
+  "instruction": "Функция `countEachEl` принимает массив целых чисел и возвращает строку вида `Array has NN elements and N kinds of them\",\n\nгде NN - число элементов массива, а второе - количество встречающихся видов элементов в массиве.\n\nПример запуска функции:\n```javascript\ncountEachEl([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // \"Array has 10 elements and 10 kinds of them\"\ncountEachEl([1, 1, 1, 1, 1])                 // \"Array has 5 elements and 1 kinds of them\"\ncountEachEl([])                              // \"Array has 0 elements and 0 kinds of them\"\ncountEachEl([1, 1, 1, 2, 2, 2])  // \"Array has 6 elements and 2 kinds of them\"\n```",
+  "instructions": {}
+}

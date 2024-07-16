@@ -1,0 +1,4 @@
+{
+  "name": "Number of lowercase letters and other characters",
+  "instruction": "The `numOfLowerCase` function takes a string and returns the number of `letters` in lower case and the number of `other letters/symbols` in the string.\n\nThe function should return a string in the format: `Lowercase: ${count} and other symbols: ${count}`.\nIf the string is empty, the function should return a string: `String is empty`.\n\nFix the function so that it works correctly.\n\nOnly three errors are made, the loop and everything after it is correct.\n\nTry to understand the code and rewrite it yourself.\n\n\nExamples of function launching:\n```javascript\nnumOfLowerCase('Hello World!') // 'Lowercase: 8 and other symbols: 4'\nnumOfLowerCase(' 135 8!0 %^') // 'Lowercase: 0 and other symbols: 11'\nnumOfLowerCase('aBcDeFgHi') // 'Lowercase: 5 and other symbols: 4'\nnumOfLowerCase('ICE') // 'Lowercase: 0 and other symbols: 3'\nnumOfLowerCase('') // 'String is empty'\n```"
+}

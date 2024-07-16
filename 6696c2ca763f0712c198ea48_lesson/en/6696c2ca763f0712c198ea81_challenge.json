@@ -1,0 +1,4 @@
+{
+  "name": "Add the sum property to the object",
+  "instruction": "Correct the errors in the code.\n\nThe `addSumToObj` function takes an object and two numbers:\n\n* `obj` - object to add the `sum` property to\n* `n1` - first number\n* `n2` - second number\n\nFirst you need to check which of the numbers is bigger and which is smaller.\n\nThen add all numbers between `n1` and `n2` inclusive and write the sum to the `sum` property of the `obj` object.\n\nReturn the object `obj`.\n\nExamples of running a function:\n```javascript\naddSumToObj({}, 1, 4) // {sum: 10}\naddSumToObj({}, 5, -2) // {sum: 12}\naddSumToObj({}, 50, 37) // {sum: 609}\n```"
+}

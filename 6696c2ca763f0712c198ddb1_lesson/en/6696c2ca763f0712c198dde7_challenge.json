@@ -1,0 +1,6 @@
+{
+  "name": "Calculate and output to the console. Volume of a cube with edge length 4",
+  "instruction": "Only one line.\n\nWrite the command `console.log(4 ** 3);`\n\nObserve spaces and punctuation marks.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log(4 ** 3);\n```"
+}

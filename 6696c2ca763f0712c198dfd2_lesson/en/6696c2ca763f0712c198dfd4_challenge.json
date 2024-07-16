@@ -1,0 +1,5 @@
+{
+  "name": "Fix an error in the hello world function",
+  "instruction": "Function requirements:\n1. The function must be named `helloWorld`;\n2. The function must return the string `'Hello'`;",
+  "instructions": {}
+}

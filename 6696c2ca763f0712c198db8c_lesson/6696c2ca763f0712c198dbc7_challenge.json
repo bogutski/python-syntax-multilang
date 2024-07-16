@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dbc7",
+  "name": {
+    "en": "The variable with the name of the Oscar winner",
+    "ru": "Переменная с именем победителя Оскара"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-13.png)\n\nCreate a variable `oscarWinner` with the name of the Oscar winner and assign it the value `'Leonardo Di Caprio'`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst grammyWinner = 'Lady Gaga';\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-13.png)\n\nСоздайте переменную `oscarWinner` с именем победителя Оскара и присвойте ей значение `'Leonardo Di Caprio'`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst grammyWinner = 'Lady Gaga';\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const oscarWinner = 'Leonardo Di Caprio';",
+  "openTest": "it('The `oscarWinner` variable contains a value', () => {\n  expect(oscarWinner).not.undefined;\n});\n\nit('The data type `oscarWinner` string', () => {\n  expect(oscarWinner).a('string');\n});\n\nit('The `oscarWinner` variable contains Leonardo Di Caprio', () => {\n  expect(oscarWinner).eq('Leonardo Di Caprio');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst oscarWinner = 'Leonardo Di Caprio';\n```",
+    "ru": "```javascript\nconst oscarWinner = 'Leonardo Di Caprio';\n```"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ed19",
+  "name": {
+    "en": "",
+    "ru": "Найти первую цифру в строке и посчитать, сколько раз она встречается в строке"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `firstDigitCount` принимает строку, состоящую из различных символов.\nФункция должна находить первую цифру в переданной строке и возвращать количество вхождений первой цифры в строку.\nЕсли в строке нет цифр, то функция должна вернуть 0.\n\nНапример, для строки \"var_1__Int_12\" функция должна вернуть 2 - цифра 1 встречается в строке дважды.\n\nПримеры вызова функции:\n\n```javascript\nfirstDigitCount(\"var a=1, b=121, c=212\";) // 4\nfirstDigitCount(\"Arrow\") // 0\nfirstDigitCount(\"5 plus 6 is 11\") // 1\n```\nРассмотрим еще один способ определения является ли символ цифрой - сравнение символа с символом '0' и символом '9':\n\n```javascript\nconst char = '5';\nconst isDigit = char >= '0' && char <= '9';\nconsole.log(isDigit); // true - символ '5' является цифрой\n```\nИсправьте ошибки в коде функции `firstDigitCount` и разберитесь, как она работает."
+  },
+  "initialSolution": "func firstDigitCount(str) {\n  let count = -1;\n  let firstDigit = '';\n  for (let i = ; i < str.length;) {\n    if (str[i] >= '0' && str[i] <= '9' && firstDigit === '') {// если это первая цифра, записываем ее в переменную firstDigit\n      firstDigit === str[i];\n    }\n    if (str[i] === firstDigit) { // если текущий символ строки равен первой цифре, то увеличиваем счетчик\n      counter++;\n    }\n  }\n  return counter;\n}",
+  "completedSolution": "function firstDigitCount(str) {\n  let count = 0;\n  let firstDigit = '';\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] >= '0' && str[i] <= '9' && firstDigit === '') {\n      firstDigit = str[i];\n    }\n    if (str[i] === firstDigit) {\n      count++;\n    }\n  }\n  return count;\n}",
+  "openTest": "it('Created function firstDigitCount', () => {\n  expect(firstDigitCount).to.be.a('function');\n});\n\nit('firstDigitCount(\"var a=1, b=121, c=212\") should return 4', () => {\n  expect(firstDigitCount(\"var a=1, b=121, c=212\")).to.be.equal(4);\n});\n\nit('firstDigitCount(\"var a=8, b=128, c=212\") should return 2', () => {\n  expect(firstDigitCount(\"var a=8, b=128, c=212\")).to.be.equal(2);\n});\n\nit('firstDigitCount(\"4 plus 6 is 10\") should return 1', () => {\n  expect(firstDigitCount(\"4 plus 6 is 10\")).to.be.equal(1);\n});\n\nit('firstDigitCount(\" 1 plus 1 is 2, 2 minus 1 is 1, 10 / 5 = 2; \") should return 5', () => {\n  expect(firstDigitCount(\" 1 plus 1 is 2, 2 minus 1 is 1, 10 / 5 = 2; \")).to.be.equal(5);\n});\n\nit('firstDigitCount(\"5\") should return 1', () => {\n  expect(firstDigitCount(\"5\")).to.be.equal(1);\n});\n\nit('firstDigitCount(\"555\") should return 3', () => {\n  expect(firstDigitCount(\"555\")).to.be.equal(3);\n});\n\nit('firstDigitCount(\"999 999 999 999\") should return 12', () => {\n  expect(firstDigitCount(\"999 999 999 999\")).to.be.equal(12);\n});\n\nit('firstDigitCount(\"000 90909 0 9990\") should return 7', () => {\n  expect(firstDigitCount(\"000 90909 0 9990\")).to.be.equal(7);\n});\n\nit('firstDigitCount(\"\") should return 0', () => {\n  expect(firstDigitCount(\"\")).to.be.equal(0);\n});\n\nit('firstDigitCount(\"Arrows\") should return 0', () => {\n  expect(firstDigitCount(\"Arrows\")).to.be.equal(0);\n});\n\nit('firstDigitCount(\"It is so wonderful, wonderful life!\") should return 0', () => {\n  expect(firstDigitCount(\"It is so wonderful, wonderful life!\")).to.be.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

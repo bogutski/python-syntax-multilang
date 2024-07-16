@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f53f",
+  "name": {
+    "en": "/*",
+    "ru": "Создание шахматной доски"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `createChessBoard`, которая принимает один аргумент: размер стороны шахматной доски `n`.\n\nФункция должна возвращать двумерный массив, представляющий шахматную доску размером `n x n`, где строка массива содержит строки доски, и каждый элемент строки представляет собой `B` для черной ячейки и `W` для белой ячейки.\n\n\nПримеры Запуска Функции:\n```javascript\nconsole.log(createChessBoard(2));\n// [\n//   ['B', 'W'],\n//   ['W', 'B']\n// ]\n\nconsole.log(createChessBoard(3));\n// [\n//   ['B', 'W', 'B'],\n//   ['W', 'B', 'W'],\n//   ['B', 'W', 'B']\n// ]\n\nconsole.log(createChessBoard(4));\n// [\n//   [ 'B', 'W', 'B', 'W' ],\n//   [ 'W', 'B', 'W', 'B' ],\n//   [ 'B', 'W', 'B', 'W' ],\n//   [ 'W', 'B', 'W', 'B' ]\n// ]\n```"
+  },
+  "initialSolution": "function createChessBoard(){\n\n}",
+  "completedSolution": "function createChessBoard(n) {\n  let res = []\n\n  for(let i = 0; i < n; i++){\n    let chunk = []\n    for(let j = 0; j < n; j++){\n\n      if(i % 2){\n        if(j % 2) chunk.push('B')\n        else chunk.push('W')\n      }\n\n      if(i % 2 === 0){\n        if(j % 2) chunk.push('W')\n        else chunk.push('B')\n      }\n    }\n\n    res.push(chunk)\n    chunk = []\n  }\n\n  return res;\n}",
+  "openTest": "it('Created function createChessBoard', () => {\n  expect(createChessBoard).to.be.a('function');\n});\n\nit(\"createChessBoard(2) should return [['B', 'W'], ['W', 'B']]\", function() {\n  expect(createChessBoard(2)).to.deep.equal([['B', 'W'], ['W', 'B']]);\n});\n\nit(\"createChessBoard(3) should return [['B', 'W', 'B'], ['W', 'B', 'W'], ['B', 'W', 'B']]\", function() {\n  expect(createChessBoard(3)).to.deep.equal([['B', 'W', 'B'], ['W', 'B', 'W'], ['B', 'W', 'B']]);\n});\n\nit(\"createChessBoard(1) should return [['B']]\", function() {\n  expect(createChessBoard(1)).to.deep.equal([['B']]);\n});\n\nit(\"createChessBoard(4) should create a 4x4 chess board\", function() {\n  expect(createChessBoard(4)).to.deep.equal([['B', 'W', 'B', 'W'], ['W', 'B', 'W', 'B'], ['B', 'W', 'B', 'W'], ['W', 'B', 'W', 'B']]);\n});\n\nit(\"createChessBoard(5) should create a 5x5 chess board\", function() {\n  expect(createChessBoard(5)).to.deep.equal([['B', 'W', 'B', 'W', 'B'], ['W', 'B', 'W', 'B', 'W'], ['B', 'W', 'B', 'W', 'B'], ['W', 'B', 'W', 'B', 'W'], ['B', 'W', 'B', 'W', 'B']]);\n});\n\nit(\"createChessBoard(0) should return an empty array\", function() {\n  expect(createChessBoard(0)).to.deep.equal([]);\n});\n\nit(\"createChessBoard(6) includes 6 'W' in the first two rows\", function() {\n  const board = createChessBoard(6);\n  const countW = board.slice(0, 2).flat().filter(x => x === 'W').length;\n  expect(countW).to.equal(6);\n});\n\nit(\"createChessBoard(7) includes 7 'B' in the last row\", function() {\n  const board = createChessBoard(7);\n  const lastRowBCount = board[board.length - 1].filter(x => x === 'B').length;\n  expect(lastRowBCount).to.equal(4);\n});\n\nit(\"createChessBoard(8) should have alternating 'B' and 'W' starting with 'B' in top left corner\", function() {\n  const board = createChessBoard(8);\n  let isValidChessBoard = true;\n  for (let i = 0; i < 8; i++) {\n    for (let j = 0; j < 8; j++) {\n      if ((i + j) % 2 === 0) {\n        if (board[i][j] !== 'B') {\n          isValidChessBoard = false;\n          break;\n        }\n      } else {\n        if (board[i][j] !== 'W') {\n          isValidChessBoard = false;\n          break;\n        }\n      }\n    }\n    if (!isValidChessBoard) break;\n  }\n  expect(isValidChessBoard).to.be.true;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

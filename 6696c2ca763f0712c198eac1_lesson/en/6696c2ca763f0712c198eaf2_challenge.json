@@ -1,0 +1,4 @@
+{
+  "name": "Replacing spaces in a string with null",
+  "instruction": "Write a function `replaceSpaces` that takes a string and returns an array of characters from that string.\n\nThere may be spaces in the string. In the array these spaces must be replaced with `null`.\n\nAs a result, the function will return an array with the string reversed and `null` at the end in the number of spaces in the string.\n\nUse array methods: `push`, `unshift`.\n\nExamples of running a function:\n```js\nreplaceSpaces('hi there') // [ 'e', 'r', 'e', 'h', 't', 'i', 'h', null ]\nreplaceSpaces('abcdef') // [ 'f', 'e', 'd', 'c', 'b', 'a' ]\nreplaceSpaces('a b c d') // [ 'd', 'c', 'b', 'a', null, null, null ]\nreplaceSpaces(' ') // [ null, null, null, null ]\nreplaceSpaces('') // []\n```"
+}

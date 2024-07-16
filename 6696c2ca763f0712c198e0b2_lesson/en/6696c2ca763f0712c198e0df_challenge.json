@@ -1,0 +1,4 @@
+{
+  "name": "Area of three rooms",
+  "instruction": "Create a function `roomArea` that takes two parameters `width` and `height` and returns the area of the room.\n\nCreate a variable `kitchenArea` and assign it the result of calling the `roomArea` function with arguments `15` and `14`.\n\nCreate a variable `livingRoomArea` and assign it the result of a call to the function `roomArea` with arguments `15` and `18`.\n\nCreate a variable `bedroomArea` and assign it the result of a call to the function `roomArea` with arguments `12` and `12`.\n\nThe names of the parameters must necessarily be the same as in the condition."
+}

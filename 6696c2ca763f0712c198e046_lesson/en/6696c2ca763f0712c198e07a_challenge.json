@@ -1,0 +1,4 @@
+{
+  "name": "Calculate the remainder of the division",
+  "instruction": "Write a function `remainder` that takes two parameters `num1` and `num2` and returns the string `The remainder of 10 and 4 is 2.`\n\nIn place of `10` and `4` there should be parameter values, and in place of `2` there should be the remainder of the parameters divided.\n\nTo get the remainder of the division use the `%` operator.\n\nExample:\n```javascript\nconsole.log(10 % 4); // 2\nconsole.log(10 % 3); // 1\nconsole.log(10 % 2); // 0\n```"
+}

@@ -1,0 +1,160 @@
+{
+  "name": "Operator NOT. Operator !",
+  "questions": {
+    "0": {
+      "name": "The ! operator is used to invert the value of a variable. For example, if the variable a is 1, then the expression !a will be equal to 0. If the variable a is 0, then the expression !a equals 1. Is it true?",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "1": {
+      "name": "The ! operator is used to convert a variable into a boolean and invert it. For example, if the variable a is 1, then the expression !a equals false. If the a variable is 0, then the !a expression will be true. Is it true?",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "2": {
+      "name": "What will console.log(!true) print?",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "1"
+        },
+        "3": {
+          "name": "0"
+        }
+      }
+    },
+    "3": {
+      "name": "What will be output to the console? console.log(!0);",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "1"
+        },
+        "3": {
+          "name": "0"
+        }
+      }
+    },
+    "4": {
+      "name": "What will be output to the console? console.log(!'');",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "blank line"
+        },
+        "3": {
+          "name": "not blank line"
+        }
+      }
+    },
+    "5": {
+      "name": "What will be output to the console? console.log(!'hello');",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "hello"
+        },
+        "3": {
+          "name": "!hello"
+        }
+      }
+    },
+    "6": {
+      "name": "Double negation leads to a boolean conversion. What will console.log(!!'hello') print?",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "hello"
+        },
+        "3": {
+          "name": "!!hello"
+        }
+      }
+    },
+    "7": {
+      "name": "Each negation operator leads to a boolean and inverts. What is output to the console? console.log(!!!'hello');",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "hello"
+        },
+        "3": {
+          "name": "!!!hello"
+        }
+      }
+    },
+    "8": {
+      "name": "Select the options for the correct use of the operator `!`",
+      "variants": {
+        "0": {
+          "name": "if (!!boxCount) { ... }"
+        },
+        "1": {
+          "name": "if (!isOpen) { ... }"
+        },
+        "2": {
+          "name": "const isClosed = !isOpen"
+        },
+        "3": {
+          "name": "const !isClosed = isOpen"
+        }
+      }
+    },
+    "9": {
+      "name": "Is it possible to invert the result of the comparison? !(1 > 2)",
+      "variants": {
+        "0": {
+          "name": "You can. In this case you get `false`."
+        },
+        "1": {
+          "name": "You can. In this case it is `true`."
+        },
+        "2": {
+          "name": "You can't. It can't be done."
+        }
+      }
+    }
+  }
+}

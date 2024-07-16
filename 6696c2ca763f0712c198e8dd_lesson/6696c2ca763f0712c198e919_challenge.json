@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e919",
+  "name": {
+    "en": "The index of the first 'null' in the array",
+    "ru": "Индекс первого 'null' в массиве"
+  },
+  "instruction": {
+    "en": "Find and correct errors in the code.\n\nThe `findNull` function should take the `arr` array and return the index of the first `null` or the string `'null not\n found'` if `null` is not found.\n\nExamples of running the function:\n```javascript\nfindNull([1,2,3,null,5,6,7,8,9]); // 3\nfindNull([1,2,3,4,5,6,7,8,9]); // 'null not found'\n```",
+    "ru": "Найдите и исправьте ошибки в коде.\n\nФункция `findNull` должна принимать массив `arr` и возвращать индекс первого `null` или строку `'null not\n found'` если `null` не найден.\n\nПримеры запуска функции:\n```javascript\nfindNull([1,2,3,null,5,6,7,8,9]); // 3\nfindNull([1,2,3,4,5,6,7,8,9]); // 'null not found'\n```"
+  },
+  "initialSolution": "function findNull(){\n  for(let i = 0; i < arr.length; i--){\n    if(arr[i] = null) return arr[i];\n  }\n  return null not found;\n}",
+  "completedSolution": "function findNull(arr){\n  for(let i = 0; i < arr.length; i++){\n    if(arr[i] === null) return i;\n  }\n  return 'null not found';\n}",
+  "openTest": "it('Created function findNull', () => {\n  expect(findNull).to.be.a('function');\n});\n\nit('findNull([1, 2, 3, 4, 5, null, 7, 8, 9]) should return 5', () => {\n  expect(findNull([1, 2, 3, 4, 5, null, 7, 8, 9])).to.be.equal(5);\n});\n\nit('findNull([null, null, null]) should return 0', () => {\n  expect(findNull([null, null, null])).to.be.equal(0);\n});\n\nit('findNull([10, 20, 30, 40, 50, 60, 70, 80, null]) should return 8', () => {\n  expect(findNull([10, 20, 30, 40, 50, 60, 70, 80, null])).to.be.equal(8);\n});\n\nit(\"findNull([100, 200, 300, 400, 500, 600, 700, 800, 900]) should return 'null not found'\", () => {\n  expect(findNull([100, 200, 300, 400, 500, 600, 700, 800, 900])).to.be.equal('null not found');\n});\n\nit(\"findNull([]) should return 'null not found'\", () => {\n  expect(findNull([])).to.be.equal('null not found');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

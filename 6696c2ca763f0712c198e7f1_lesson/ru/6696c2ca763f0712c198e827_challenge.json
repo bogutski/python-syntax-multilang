@@ -1,0 +1,5 @@
+{
+  "name": "Исключить слова с пробелами. Массивы",
+  "instruction": "Функция `changeElement` принимает массив строк и строку.\n\nМассив состоит из 5 элементов.\n\nНеобходимо найти в массиве все элементы, которые содержат пробелы, и заменить их на второй параметр функции - строку.\n\nФункция должна возвращать измененный массив.\n\nИспользуйте метод `splice` для изменения массива.\n\nПример запуска функции:\n```javascript\nchangeElement(['John Smith', 'MarthaLee', 'TomMcKenzie', 'Alice New', 'Derrick Kent'], 'updateName')\n // [\"updateName\", \"MarthaLee\", \"TomMcKenzie\", \"updateName\", \"updateName\"]\n ```",
+  "instructions": {}
+}

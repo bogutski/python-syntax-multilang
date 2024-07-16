@@ -1,0 +1,4 @@
+{
+  "name": "By how many percent one line is longer than the other",
+  "instruction": "Write a function `stringLonger` that takes two strings and returns a percentage of how much longer the largest string is than the shortest.\n\nExamples of running the function:\n```javascript\nstringLonger('a', 'aa'); // '100%'\nstringLonger('aa', 'b'); // '100%'\nstringLonger('a', 'b'); // '0%'\nstringLonger('a', 'aaa'); // '200%'\nstringLonger('aaaaaa', 'aa'); // '200%'\nstringLonger('aa', 'aaaaaa'); // '200%'\nstringLonger('aa', 'aa'); // '0%'\n```\n\nTo solve this problem, first find the lengths of the longest and shortest string, and then find the percentage of how much longer the longest string is than the shortest string.\n\nDivide the length of the longest line by the length of the shortest line and multiply by 100 and subtract 100.\n\nNote that the return value must be a string and end in `%`."
+}

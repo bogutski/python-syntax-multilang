@@ -1,0 +1,6 @@
+{
+  "name": "Присвойте переменной `a` значение 4.25",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-6.png)\n\nСоздайте переменную с именем `a`. Используйте ключевое слово` let`. Присвойте значение - число `4.25`\n\nПохожий пример:\n```javascript\nlet b = 2.45;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet a = 4.25;\n```"
+}

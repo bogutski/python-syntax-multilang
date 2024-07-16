@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e00a",
+  "name": {
+    "en": "The function and the problem about buses",
+    "ru": "Функция и задача про автобусы"
+  },
+  "instruction": {
+    "en": "Two buses left the same point at the same time and are moving in opposite directions.\n\nThe speed of the buses is the same.\n\nCreate a function `busDistance` that takes two parameters: `bus1` and `bus2`.\n\nThe function should return the distance between the buses.\n\nThe `bus1` and `bus2` are numbers, the distance that each bus has traveled since leaving.",
+    "ru": "Одновременно 2 автобуса выехали из одной точки и движутся в противоположные стороны.\n\nСкорость автобусов одинаковая.\n\nСоздайте функцию `busDistance`, которая принимает два параметра: `bus1` и `bus2`.\n\nФункция должна возвращать расстояние между автобусами.\n\n`bus1` и `bus2` - это числа, расстояние, которое каждый автобус проехал с момента выезда."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function busDistance(bus1, bus2) {\n  return bus1 + bus2;\n}",
+  "openTest": "it('Created function busDistance', () => {\n  expect(busDistance).to.be.a('function');\n});\n\nit('Function busDistance has two parameters bus1 and bus2', () => {\n  // function to string and then to array of arguments\n  const args = busDistance.toString().match(/\\(([^)]*)\\)/)[1].split(',').map(arg => arg.trim());\n  expect(args).to.be.eql(['bus1', 'bus2']);\n});\n\nit('Function busDistance returns number with arguments 2, 3', () => {\n  expect(busDistance(2, 3)).eql(5);\n});\n\nit('Function busDistance returns number with arguments 5, 5', () => {\n  expect(busDistance(5, 5)).eql(10);\n});\n\nit('Function busDistance returns number with arguments 10, 10', () => {\n  expect(busDistance(10, 10)).eql(20);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

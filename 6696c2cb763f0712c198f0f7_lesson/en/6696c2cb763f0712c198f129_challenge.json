@@ -1,0 +1,5 @@
+{
+  "name": "Remove duplicate objects from the array",
+  "instruction": "Let's consider the task of removing duplicate objects from an array.\n\nThe function `duplicatedObjects` takes an array of objects `arr` and returns an array of objects without duplicates.\n\nThe algorithm to solve the task:\n* Create an empty array `result`\n* Iterate through the array `arr` using a `for` loop\n* Create a variable `isUnique` with the value `true`\n* Iterate through the array `result` using a `for` loop\n* Use the `JSON.stringify` method to convert the loop elements (objects) `arr` and `result` into a string and compare them. If the strings are equal, assign `false` to `isUnique` and exit the loop\n* If `isUnique` is `true`, add the element `arr[i]` to the array `result`\n* Return the array `result`\n\nExamples of function execution:\n```javascript\nduplicatedObjects([{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}, {name: \"Alice\", age: 15}]) // [{name: \"Alice\", age: 15}, {name: \"Tom\", age: 15}]",
+  "instructions": {}
+}

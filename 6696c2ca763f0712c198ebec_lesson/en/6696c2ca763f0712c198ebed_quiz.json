@@ -1,0 +1,184 @@
+{
+  "name": "Count the number of occurrences of a character in a string",
+  "questions": {
+    "0": {
+      "name": "Why would the result of the code below be 0?",
+      "description": "```javascript\nconst str = 'My Cup of Tea';\nlet count = 0;\nconst symbol = 'c';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === symbol) {\n    count++;\n  }\n}\nconsole.log(count);\n```",
+      "variants": {
+        "0": {
+          "name": "Because the search is case sensitive"
+        },
+        "1": {
+          "name": "Because the letter 'c' isn't in the string."
+        },
+        "2": {
+          "name": "Because there must be more than one character in the string you are looking for"
+        },
+        "3": {
+          "name": "Because the string and the character you are looking for must be in the same case"
+        }
+      }
+    },
+    "1": {
+      "name": "What is the result of the code below?",
+      "description": "```javascript\nlet str = 'Two Down, One to Go';\nstr = str.toLowerCase()\nlet count = 0;\nlet symbol = 'o';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === symbol) {\n    count++;\n  }\n}\nconsole.log(count);\n```",
+      "variants": {
+        "0": {
+          "name": "4"
+        },
+        "1": {
+          "name": "1"
+        },
+        "2": {
+          "name": "5"
+        },
+        "3": {
+          "name": "0"
+        }
+      }
+    },
+    "2": {
+      "name": "Select the correct option of outputting the result of the code below to the console",
+      "description": "```javascript\nlet str = 'Two Down, One to Go';\nstr = str.toLowerCase()\nlet count = 0;\nlet symbol = 'O';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === symbol) {\n    count++;\n  }\n}\nconsole.log(count);\n```",
+      "variants": {
+        "0": {
+          "name": "0"
+        },
+        "1": {
+          "name": "5"
+        },
+        "2": {
+          "name": "1"
+        },
+        "3": {
+          "name": "4"
+        }
+      }
+    },
+    "3": {
+      "name": "How can I fix the code below so that the search is not case sensitive?",
+      "description": "```javascript\nlet str = 'Two Down, One to Go';\nstr = str.toLowerCase()\nlet count = 0;\nlet symbol = 'O';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === symbol) {\n    count++;\n  }\n}\nconsole.log(count);\n```",
+      "variants": {
+        "0": {
+          "name": "The code is written correctly and there is no need to correct it"
+        },
+        "1": {
+          "name": "After declaring the symbol variable, add the line symbol = symbol.toLowerCase()"
+        },
+        "2": {
+          "name": "In the body of the for loop, in the if condition, compare str[i] === symbol.toLowerCase()"
+        },
+        "3": {
+          "name": "After declaring the str variable, remove the line str = str.toLowerCase()"
+        }
+      }
+    },
+    "4": {
+      "name": "Is it true that the result of the code below is 0?",
+      "description": "```javascript\nconst arr = ['ac', 'aa', 'ab', 'ac'];\nlet count = 0\nlet symbol = 'AC';\nfor (let i = 0; i < arr.length; i++) {\n  arr[i] = arr[i].toLowerCase()\n  if (arr[i] === symbol.toLowerCase()) {\n    count++;\n  }\n}\nconsole.log(count); \n```",
+      "variants": {
+        "0": {
+          "name": "Yes, because the character you're looking for is in uppercase."
+        },
+        "1": {
+          "name": "No, the result will be 2 because the search is case insensitive"
+        },
+        "2": {
+          "name": "No, the result is 4 because all 4 elements in the array start with the character 'a'"
+        },
+        "3": {
+          "name": "Yes, the result will be 0, because the index of the first element you are looking for in the array is 0"
+        }
+      }
+    },
+    "5": {
+      "name": "Select the correct result of the code below",
+      "description": "```javascript\nconst arr = ['Ac', 'aa', 'ab', 'Ac'];\nlet count = 0\nlet symbol = 'AC';\nfor (let i = 0; i < arr.length; i++) {\n  if (arr[i] === symbol.toLowerCase()) {\n    count++;\n  }\n}\nconsole.log(count); \n```",
+      "variants": {
+        "0": {
+          "name": "4"
+        },
+        "1": {
+          "name": "2"
+        },
+        "2": {
+          "name": "1"
+        },
+        "3": {
+          "name": "0"
+        }
+      }
+    },
+    "6": {
+      "name": "In an array with multiple rows, the number of occurrences of a character in all rows is done using two loops.",
+      "variants": {
+        "0": {
+          "name": "No, the counting is done with a single loop"
+        },
+        "1": {
+          "name": "Yes, counting is done using two cycles"
+        },
+        "2": {
+          "name": "Yes, the outer loop loops through the strings and the inner loop loops through the characters in the string"
+        },
+        "3": {
+          "name": "No, it would take three loops to loop through all the characters in all the strings"
+        }
+      }
+    },
+    "7": {
+      "name": "Select the correct result of the code below",
+      "description": "```javascript\nconst arr = ['pool', 'loud', 'slow', 'sour'];\nlet count = 0;\nconst s = 'o';\nfor (let i = 0; i < arr.length; i++){\n  for (let j = 0; j < arr[i].length; j++) {\n    if (arr[i][j] === s) {\n      count++;\n    }\n  }\n}\nconsole.log(count);\n```",
+      "variants": {
+        "0": {
+          "name": "0"
+        },
+        "1": {
+          "name": "2"
+        },
+        "2": {
+          "name": "4"
+        },
+        "3": {
+          "name": "5"
+        }
+      }
+    },
+    "8": {
+      "name": "Is it correct that the result of the code below will be 0?",
+      "description": "```javascript\nconst arr = ['lion', 'light', 'finish'];\nlet count = 0;\nlet s = 'I';\ns = s.toLowerCase();\nfor (let i = 0; i < arr.length; i++){\n  arr[i] = arr[i].toLowerCase();\n  for (let j = 0; j < arr[i].length; j++) {\n    if (arr[i][j] === s) {\n      count++;\n    }\n  }\n}\nconsole.log(count);\n```",
+      "variants": {
+        "0": {
+          "name": "Yes, the result will be 0 because the given character is upper case and the array is lower case"
+        },
+        "1": {
+          "name": "No, the result is 3 because the given character occurs in each of the 3 words"
+        },
+        "2": {
+          "name": "No, the result will be 4 because the search is case insensitive"
+        },
+        "3": {
+          "name": "Yes, the result will be 0 because all words do not start with the letter 'I'"
+        }
+      }
+    },
+    "9": {
+      "name": "Why would the result of the code below be `error`?",
+      "description": "```javascript\nconst arr = ['lion', 'light'];\nconst count = 0;\nconst s = 'i';\nfor (let i = 0; i < arr.length; i++){\n  for (let j = 0; j < arr[i].length; j++) {\n    if (arr[i][j] === s) {\n      count++;\n    }\n  }\n}\nconsole.log(count);\n```",
+      "variants": {
+        "0": {
+          "name": "Because the `count` variable is declared via `const` and its value changes in the loop"
+        },
+        "1": {
+          "name": "The result of the code will be 2"
+        },
+        "2": {
+          "name": "The result of the code will be 0"
+        },
+        "3": {
+          "name": "Because the variable `s` is declared via `const` and its value changes in the loop"
+        }
+      }
+    }
+  }
+}

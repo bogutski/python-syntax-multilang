@@ -1,0 +1,5 @@
+{
+  "name": "Дисконт при покупке. Параметры по умолчанию",
+  "instruction": "Напишите функцию `discountCalculate`, которая принимает два параметра:\n\n- `price` – цена товара. Число. По умолчанию равно 0.\n- `discount` – скидка в процентах. Число. По умолчанию равно 10.\n\nФункция должна возвращать цену товара с учетом скидки.\n\nЦена товара будет всегда больше нуля, а скидка – от 0 до 100.\n\nПримеры:\n```javascript\ndiscountCalculate(100, 5); // 95\ndiscountCalculate(100); // 90\ndiscountCalculate(100, 0); // 100\ndiscountCalculate(100, 100); // 0\ndiscountCalculate(50, 10); // 45\ndiscountCalculate(50, 20); // 40\n```",
+  "instructions": {}
+}

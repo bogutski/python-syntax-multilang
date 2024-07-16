@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f0af",
+  "name": {
+    "en": "",
+    "ru": "Найти и удвоить числа"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `doubleNumber` принимает массив, содержащий разные типы данных.\n\nНеобходимо удвоить все числа в массиве и вернуть массив с измененными данными.\n\nПример запуска функции:\n```javascript\ndoubleNumber([1, 2, 3]) // [2, 4, 6]\ndoubleNumber([1, \"hello\", true, 5]) // [2, \"hello\", true, 10]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function doubleNumber(arr) {\n  for (let i = 0; i < arr.length; i++) {\n    if (typeof arr[i] === 'number')\n    arr[i] *= 2;\n  }\n  return arr\n}",
+  "openTest": "it('Created function doubleNumber', () => {\n  expect(doubleNumber).to.be.a('function');\n});\n\nit('doubleNumber([1, 2, 3]) returns [2, 4, 6]', () => {\n  expect(doubleNumber([1, 2, 3])).to.deep.equal([2, 4, 6]);\n});\n\nit('doubleNumber([1, \"hello\", true, 5]) returns [2, \"hello\", true, 10]', () => {\n  expect(doubleNumber([1, \"hello\", true, 5])).to.deep.equal([2, \"hello\", true, 10]);\n});\n\nit('doubleNumber([\"hello\", true, NaN]) returns [\"hello\", true, NaN]', () => {\n  expect(doubleNumber([\"hello\", true, NaN])).to.deep.equal([\"hello\", true, NaN]);\n});\n\nit('doubleNumber([]) returns []', () => {\n  expect(doubleNumber([])).to.deep.equal([]);\n});\n\nit('doubleNumber([\"a\", \"b\", \"c\", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) returns [\"a\", \"b\", \"c\", 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]', () => {\n  expect(doubleNumber([\"a\", \"b\", \"c\", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).to.deep.equal([\"a\", \"b\", \"c\", 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

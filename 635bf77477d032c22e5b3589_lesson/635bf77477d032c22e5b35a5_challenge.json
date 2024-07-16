@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35a5",
+  "name": {
+    "ru": "Console PASV",
+    "en": "Console PASV",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Напишите команду, которая выводит в консоль слово `'PASV'`.\n\nПосле этого нажмите кнопку `Validate solution`.\nЕсли решение верное, нажмите кнопку `Submit solution`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n\n```\nconsole.log('FUN');\n```",
+    "en": "Write a command that outputs the word `'PASV'` to the console.\n\nThen click the `Validate solution` button.\nIf the solution is correct, click the `Submit solution` button.\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n\n```\nconsole.log('FUN');\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "console.log('PASV');",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

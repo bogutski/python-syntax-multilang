@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de8b",
+  "name": {
+    "en": "Salary for the first working month",
+    "ru": "Зарплата за первый рабочий месяц"
+  },
+  "instruction": {
+    "en": "When applying for the next job, you were offered $75 per hour. How much will you earn in your first working month?\n\nCreate a variable `salary` and assign it the value of 75.\n\nCreate a variable `hours` and assign it the value of 8.\n\nCreate a variable `days` and assign it the value of 21 (number of working days).\n\nCreate a variable `monthSalary`, in which you will calculate the result of the money you earned for the month.\n\nLet's provide an example that is essentially similar to what needs to be done, but adapt it to the task requirements.\n\n```javascript\nconst lessons = 12;\nconst months = 3;\nconst  class = lessons * months;\n```",
+    "ru": "При устройстве на следующую работу вам предложили 75 долларов в час. Какую сумму вы заработаете за свой первый рабочий месяц?\n\nСоздайте переменную `salary` и присвойте ей значение 75.\n\nСоздайте переменную `hours` и присвойте ей значение 8.\n\nСоздайте переменную `days` и присвойте ей значение 21 (количество рабочих дней).\n\nСоздайте переменную `monthSalary`, в которой вычислите результат заработанных вами денег за месяц.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи.\n\n```javascript\nconst lessons = 12;\nconst months = 3;\nconst total = lessons * months;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const salary = 75;\nconst hours = 8;\nconst days = 21;\nconst monthSalary = salary * hours * days;",
+  "openTest": "it('Variable `salary` exists and contains a value', () => {\n  expect(salary).not.undefined;\n});\n\nit('Variable `hours` exists and contains a value', () => {\n  expect(hours).not.undefined;\n});\n\nit('The `days` variable exists and contains a value', () => {\n  expect(days).not.undefined;\n});\n\nit('The value of variable `alary` is a number', () => {\n  expect(salary).a('number');\n});\n\nit('Value of variable `hours` is a number', () => {\n  expect(hours).a('number');\n});\n\nit('Value of variable `days` is a number', () => {\n  expect(days).a('number');\n});\n\nit('The result of variable `monthSalary` is a number 12600', () => {\n  expect(monthSalary).eq(12600);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst salary = 75;\nconst hours = 8;\nconst days = 21;\nconst monthSalary = salary * hours * days;\n```",
+    "ru": "```javascript\nconst salary = 75;\nconst hours = 8;\nconst days = 21;\nconst monthSalary = salary * hours * days;\n```"
+  }
+}

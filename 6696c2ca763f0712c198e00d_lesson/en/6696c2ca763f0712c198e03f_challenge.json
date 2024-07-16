@@ -1,0 +1,5 @@
+{
+  "name": "The sum of two numbers and the remainder of division by 3",
+  "instruction": "The function takes two numbers as input.\n\nWrite a function `remainder` that returns the remainder of dividing the sum of two numbers by 3.",
+  "instructions": {}
+}

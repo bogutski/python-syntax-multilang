@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f6eb",
+  "name": {
+    "en": "/*",
+    "ru": "Фильтрация товаров по категориям"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `filterByCategory`, которая принимает массив объектов, представляющих товары и строку.\n\n * Ключи объектов: `name` и `category`.\n * Строка - указывает категорию.\n\nФункция должна возвращать новый массив, содержащий только те товары, которые соответствуют указанной категории.\n\n\nПримеры запуска функции:\n```javascript\nconst products = [\n  { name: \"Laptop\", category: \"Electronics\" },\n  { name: \"Cheese\", category: \"Food\" },\n  { name: \"TV\", category: \"Electronics\" },\n  { name: \"Apples\", category: \"Food\" }\n];\n\nconsole.log(filterByCategory(products, \"Electronics\"));\n// [{ name: \"Laptop\", category: \"Electronics\" }, { name: \"TV\", category: \"Electronics\" }]\n```"
+  },
+  "initialSolution": "function filterByCategory(){\n\n}",
+  "completedSolution": "function filterByCategory(array, string) {\n  return array.filter(({category}) => category === string);\n}",
+  "openTest": "it('Created function filterByCategory', () => {\n  expect(filterByCategory).to.be.a('function');\n});\n\nit(\"Function filterByCategory should include filter method\", () => {\n  const result = filterByCategory.toString();\n  expect(result).to.include('.filter(');\n});\n\nit(\"filterByCategory should return products that match the 'Electronics' category\", () => {\n  const products = [\n    { name: \"Laptop\", category: \"Electronics\" },\n    { name: \"Cheese\", category: \"Food\" },\n    { name: \"TV\", category: \"Electronics\" },\n    { name: \"Apples\", category: \"Food\" }\n  ];\n  expect(filterByCategory(products, \"Electronics\")).to.deep.equal([\n    { name: \"Laptop\", category: \"Electronics\" },\n    { name: \"TV\", category: \"Electronics\" }\n  ]);\n});\n\nit(\"filterByCategory should return an empty array when no products match the category\", () => {\n  const products = [\n    { name: \"Laptop\", category: \"Electronics\" },\n    { name: \"TV\", category: \"Electronics\" }\n  ];\n  expect(filterByCategory(products, \"Clothing\")).to.deep.equal([]);\n});\n\nit(\"filterByCategory should handle case where products array is empty\", () => {\n  expect(filterByCategory([], \"Electronics\")).to.deep.equal([]);\n});\n\nit(\"filterByCategory should not alter the original products array\", () => {\n  const products = [{ name: \"Laptop\", category: \"Electronics\" }];\n  filterByCategory(products, \"Electronics\");\n  expect(products).to.deep.equal([{ name: \"Laptop\", category: \"Electronics\" }]);\n});\n\nit(\"filterByCategory should handle products with mixed case categories\", () => {\n  const products = [\n    { name: \"Laptop\", category: \"electronics\" },\n    { name: \"TV\", category: \"Electronics\" }\n  ];\n  expect(filterByCategory(products, \"Electronics\")).to.deep.equal([{ name: \"TV\", category: \"Electronics\" }]);\n});\n\nit(\"filterByCategory should return multiple items for a popular category\", () => {\n  const products = [\n    { name: \"Cheese\", category: \"Food\" },\n    { name: \"Apples\", category: \"Food\" },\n    { name: \"Banana\", category: \"Food\" }\n  ];\n  expect(filterByCategory(products, \"Food\")).to.deep.equal([\n    { name: \"Cheese\", category: \"Food\" },\n    { name: \"Apples\", category: \"Food\" },\n    { name: \"Banana\", category: \"Food\" }\n  ]);\n});\n\nit(\"filterByCategory should be case sensitive\", () => {\n  const products = [\n    { name: \"Mouse\", category: \"Electronics\" },\n    { name: \"Keyboard\", category: \"electronics\" }\n  ];\n  expect(filterByCategory(products, \"electronics\")).to.deep.equal([\n    { name: \"Keyboard\", category: \"electronics\" }\n  ]);\n});\n\nit(\"filterByCategory should correctly filter when multiple products have the same category\", () => {\n  const products = [\n    { name: \"T-shirt\", category: \"Clothing\" },\n    { name: \"Jeans\", category: \"Clothing\" },\n    { name: \"Cap\", category: \"Clothing\" }\n  ];\n  expect(filterByCategory(products, \"Clothing\")).to.deep.equal([\n    { name: \"T-shirt\", category: \"Clothing\" },\n    { name: \"Jeans\", category: \"Clothing\" },\n    { name: \"Cap\", category: \"Clothing\" }\n  ]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

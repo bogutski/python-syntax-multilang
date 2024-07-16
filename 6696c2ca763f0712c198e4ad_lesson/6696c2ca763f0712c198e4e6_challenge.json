@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e4e6",
+  "name": {
+    "en": "The line starts and ends with the same character",
+    "ru": "Строка начинается и заканчивается на один и тот же символ"
+  },
+  "instruction": {
+    "en": "Write a function `isSameStartAndEnd` that accepts a string and returns `true` if the string begins and ends with the same character.\n\nDo not count spaces at the beginning and end of the string.\n\nNot case sensitive.\n\nExamples:\n```javascript\nisSameStartAndEnd('a'); // true\nisSameStartAndEnd(' aa'); // true\nisSameStartAndEnd('abA '); // true\nisSameStartAndEnd('a b a '); // true\nisSameStartAndEnd('a b b'); // false\nisSameStartAndEnd('a b a b'); // false\n```",
+    "ru": "Напишите функцию `isSameStartAndEnd`, которая принимает строку и возвращает `true`, если строка начинается и заканчивается на один и тот же символ.\n\nНе учитывайте пробелы в начале и конце строки.\n\nНе чувствительна к регистру.\n\nПримеры:\n```javascript\nisSameStartAndEnd('a'); // true\nisSameStartAndEnd('  aa'); // true\nisSameStartAndEnd('abA '); // true\nisSameStartAndEnd('a b a '); // true\nisSameStartAndEnd('a b b'); // false\nisSameStartAndEnd('a b a b'); // false\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isSameStartAndEnd(text) {\n  const str = text.trim().toLowerCase();\n  return str[0] === str[str.length - 1];\n}",
+  "openTest": "it('Created function isSameStartAndEnd', () => {\n  expect(isSameStartAndEnd).to.be.a('function');\n});\n\nit('isSameStartAndEnd(\"a\") should return true', () => {\n  expect(isSameStartAndEnd('a')).to.be.true;\n});\n\nit('isSameStartAndEnd(\"  aa\") should return true', () => {\n  expect(isSameStartAndEnd('  aa')).to.be.true;\n});\n\nit('isSameStartAndEnd(\"abA \") should return true', () => {\n  expect(isSameStartAndEnd('abA ')).to.be.true;\n});\n\nit('isSameStartAndEnd(\"a b a \") should return true', () => {\n  expect(isSameStartAndEnd('a b a ')).to.be.true;\n});\n\nit('isSameStartAndEnd(\"a b b\") should return false', () => {\n  expect(isSameStartAndEnd('a b b')).to.be.false;\n});\n\nit('isSameStartAndEnd(\"a b a b\") should return false', () => {\n  expect(isSameStartAndEnd('a b a b')).to.be.false;\n});\n\nit('isSameStartAndEnd(\"  jw  WJ \") should return true', () => {\n  expect(isSameStartAndEnd('  jw  WJ ')).to.be.true;\n});\n\nit('isSameStartAndEnd(\" H e l l o \") should return false', () => {\n  expect(isSameStartAndEnd(' H e l l o ')).to.be.false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

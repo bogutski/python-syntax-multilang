@@ -1,0 +1,4 @@
+{
+  "name": "Correct the error in the 'everySecond' function",
+  "instruction": "Correct the error in the `everySecond` function.\n\nThe function should accept a string and return a new string.\n\nIn the new line the uppercase and lowercase letters must alternate, starting with the uppercase letter.\n\nExample:\n```javascript\nlet str = 'abc';\nstr[0].toUpperCase(); // 'A'\nstr[1].toLowerCase(); // 'b'\nstr[2].toUpperCase(); // 'C'\n// newStr = 'AbC';\n```"
+}

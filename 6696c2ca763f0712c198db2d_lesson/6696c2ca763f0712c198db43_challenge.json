@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db43",
+  "name": {
+    "en": "Company's name",
+    "ru": "Название компании"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-2.png)\n\nIn 1997, company founders Larry Page and Sergey Brin approached Yahoo,\nto sell their design, but were turned down.\n\nCreate a `nameOfCompany` variable and assign it the value `'Google'`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst biggestOnlineShop = 'Amazon';\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-2.png)\n\nВ 1997 г. основатели компании Ларри Пейдж и Сергей Брин обратились в Yahoo,\nчтобы продать свою разработку, но получили отказ.\n\nСоздайте переменную `nameOfCompany` и присвойте ей значение `'Google'`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst biggestOnlineShop = 'Amazon';\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const nameOfCompany = 'Google';",
+  "openTest": "it('The variable `nameOfCompany` exists and has a value', () => {\n  expect(nameOfCompany).not.undefined;\n});\n\nit('Variable `nameOfCompany` contains data type string', () => {\n  expect(nameOfCompany).a('string');\n});\n\nit('The `nameOfCompany` variable contains the value `Google`', () => {\n  expect(nameOfCompany).eq('Google');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst nameOfCompany = 'Google';\n```",
+    "ru": "```javascript\nconst nameOfCompany = 'Google';\n```"
+  }
+}

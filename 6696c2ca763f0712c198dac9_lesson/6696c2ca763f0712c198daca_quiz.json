@@ -1,0 +1,203 @@
+{
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198dacb",
+      "name": {
+        "ru": "Целью курса JavaScript Syntax является",
+        "en": "The goal of the JavaScript Syntax course is",
+        "es": ""
+      },
+      "owner": "5ce60d1fcc104c003802183a",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dacc",
+          "name": {
+            "ru": "Изучение основ программирования",
+            "en": "Learning the basics of programming",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dacd",
+          "name": {
+            "ru": "Изучение основных принципов тестирования",
+            "en": "Learning the basic principles of testing",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dace",
+      "name": {
+        "ru": "Для перехода к следующему уроку",
+        "en": "To go to the next lesson",
+        "es": ""
+      },
+      "owner": "5ce60d1fcc104c003802183a",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dacf",
+          "name": {
+            "ru": "Необходимо успешно завершить тест",
+            "en": "You must successfully complete the test",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dad0",
+          "name": {
+            "ru": "Можно пропустить тест ",
+            "en": "You can skip the test ",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dad1",
+      "name": {
+        "ru": "Тест можно пройти",
+        "en": "You can take the test",
+        "es": ""
+      },
+      "owner": "5ce60d1fcc104c003802183a",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dad2",
+          "name": {
+            "ru": "Только один раз",
+            "en": "Only once.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dad3",
+          "name": {
+            "ru": "Два раза",
+            "en": "Twice.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dad4",
+          "name": {
+            "ru": "Столько раз, сколько требуется для успешного завершения",
+            "en": "As many times as it takes to successfully complete",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dad5",
+      "name": {
+        "ru": "Я понимаю, что во время лекции желательно: повторять код, показываемый на экране, обращать внимание на код ошибок, возникающих при выполнении программ",
+        "en": "I understand that during the lecture it is desirable: to repeat the code shown on the screen, to pay attention to the code of errors that occur during the execution of programs",
+        "es": ""
+      },
+      "owner": "5ce60d1fcc104c003802183a",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dad6",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dad7",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dad8",
+      "name": {
+        "ru": "После прохождения теста ",
+        "en": "After passing the test ",
+        "es": ""
+      },
+      "owner": "5ce60d1fcc104c003802183a",
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dad9",
+          "name": {
+            "ru": "можно увидеть сделанные ошибки",
+            "en": "you can see the mistakes you've made",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dada",
+          "name": {
+            "ru": "выполнить тест повторно",
+            "en": "retest",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dadb",
+          "name": {
+            "ru": "можно почитать дополнительную информацию и выполнить тест еще раз",
+            "en": "you can read more information and perform the test again",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dadc",
+          "name": {
+            "ru": "пересмотреть лекцию для лучшего понимания материала и выполнить тест снова",
+            "en": "revise the lecture for a better understanding of the material and perform the test again",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dadd",
+          "name": {
+            "ru": "ничего исправить нельзя",
+            "en": "nothing can be fixed",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": false,
+  "_id": "6696c2ca763f0712c198daca",
+  "description": {
+    "ru": "Краткая информация о курсе JavaScript Syntax",
+    "en": "Summary of the JavaScript Syntax course",
+    "es": ""
+  },
+  "name": {
+    "ru": "JS Syntax. Первый урок",
+    "en": "JS Syntax. About the course",
+    "es": ""
+  }
+}

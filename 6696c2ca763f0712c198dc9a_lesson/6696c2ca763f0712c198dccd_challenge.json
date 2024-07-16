@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dccd",
+  "name": {
+    "en": "Output the expression 20 % 7 to the console",
+    "ru": "Выведите в консоль выражение 20 % 7"
+  },
+  "instruction": {
+    "en": "Only one line. Observe spaces and punctuation marks. A semicolon at the end.\n```javascript\nconsole.log(20 % 7);\n```\n\nThe remainder of the division of 20 by 7 = 6. Since 7 * 2 = 14, 20 - 14 = 6.",
+    "ru": "Только одна строка. Соблюдайте пробелы и знаки пунктуации. В конце точка с запятой.\n```javascript\nconsole.log(20 % 7);\n```\n\nОстаток от деления 20 на 7 = 6. Так как 7 * 2 = 14, 20 - 14 = 6."
+  },
+  "initialSolution": "",
+  "completedSolution": "console.log(20 % 7);",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal",
+  "hint": {
+    "en": "```javascript\nconsole.log(20 % 7);\n```",
+    "ru": "```javascript\nconsole.log(20 % 7);\n```"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Посчитать сумму всех чисел в строке",
+  "instruction": "Напишите функцию `sumPositiveAndNegative`, которая принимает строку, состоящую из чисел, символов и букв.\n\nКаждый элемент строки разделен запятой и пробелом.\n\nФункция должна вернуть сумму всех чисел.\n\n\nПримеры запуска функции:\n```javascript\nsumPositiveAndNegative('abc, 55, -13, @#, a5, 8o9'); // 42\nsumPositiveAndNegative('1, -3, 5'); // 3\nsumPositiveAndNegative('a, b, c'); // 0\nsumPositiveAndNegative(''); // 0\n```",
+  "instructions": {}
+}

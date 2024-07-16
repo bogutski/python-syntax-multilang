@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dea8",
+  "name": {
+    "en": "Is the number odd?",
+    "ru": "Является ли число нечетным?"
+  },
+  "instruction": {
+    "en": "Given number num. Is it true that the number is odd?\n\nCreate a variable `num` and assign it a value of any positive number.\n\nCreate a variable `isOdd` and assign it the result of comparing the remainder of dividing the number `num` by 2 with 1.\nThat is, if the number `num` is odd, then the value of the variable `isOdd` will be true.\n\nIf the number `num` is even, then the value of the variable `isOdd` will be false.\n\nLet's provide an example that is essentially similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst number = 9;\nconst isNumberOdd = number % 2 === 1; // true\n```",
+    "ru": "Дано число num. Верно ли, что число нечетное?\n\nСоздайте переменную `num` и присвойте ей значение произвольного положительного числа.\n\nСоздайте переменную `isOdd` и присвойте ей результат сравнения остатка от деления числа `num` на 2 с единицей.\nТ.е. если число `num` - нечетное, то значение переменной `isOdd` будет равно true.\n\nЕсли число `num` - четное, то значение переменной `isOdd` будет равно false.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst number = 9;\nconst isNumberOdd = number % 2 === 1; // true\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const num = 18;\nconst isOdd = num % 2 === 1;",
+  "openTest": "it('Variable `num` exists and has a value', () => {\n  expect(num).not.undefined;\n});\n\nit('Variable `num` has a numeric type', () => {\n  expect(num).a('number');\n});\n\nit('Variable `num` is not NaN', () => {\n  expect(isNaN(num)).false;\n});\n\nit('Variable `num` is a non-negative number', () => {\n  expect(num >= 0).to.be.true;\n});\n\nit('Variable `isOdd` is a value', () => {\n  expect(isOdd).not.undefined;\n});\n\nit('Variable `isOdd` has a boolean type', () => {\n  expect(isOdd).a('boolean');\n});\n\nit('Variable `isOdd` is computed correctly', () => {\n  expect(isOdd).equal(num % 2 === 1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst num = 18;\nconst isOdd = num % 2 === 1;\n```",
+    "ru": "```javascript\nconst num = 18;\nconst isOdd = num % 2 === 1;\n```"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dcfd",
+  "name": {
+    "en": "Is it true that the string starts with 'A'?",
+    "ru": "Верно ли, что строка начинается с 'A'?"
+  },
+  "instruction": {
+    "en": "Create a variable named `str` and assign it a value of an arbitrary non-empty string.\nCreate a variable named `firstSymbol` and assign it the value of the first character of the string.\n\nCreate a variable named `isStartWithA` and assign it the result of comparing the first character of the string with `'A'`,\ni.e. the variable `isStartWithA` will have the value `true` if the string starts with 'A', and `false` otherwise.\n\nHere is an example that is conceptually similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst name = 'Andrew';\nconst first = name[0];\nconst comparison = first === 'A';\n```",
+    "ru": "Создайте переменную с именем `str` и присвойте ей значение произвольной непустой строки.\nСоздайте переменную `firstSymbol` и присвойте ей значение первого символа строки.\n\nСоздайте переменную с именем `isStartWithA` и присвойте ей результат сравнения первого символа строки с `'A'`,\nт.е. переменная `isStartWithA` будет иметь значение `true`, если строка начинается с 'A', и `false` в противном случае.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst name = 'Andrew';\nconst first = name[0];\nconst comparison = first === 'A';\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const str = 'Andrew';\nconst firstSymbol = str[0];\nconst isStartWithA = firstSymbol === 'A';",
+  "openTest": "it('Variable `str` exists and has a value', () => {\n  expect(str).not.undefined;\n});\n\nit('Variable `str` has type string', () => {\n  expect(str).a('string');\n});\n\nit('Variable `str` is a non-empty string', () => {\n  expect(str === '').false;\n});\n\nit('The variable `firstSymbol` exists and has a value', () => {\n  expect(firstSymbol).not.undefined;\n});\n\nit('The `firstSymbol` variable is of type string', () => {\n  expect(firstSymbol).a('string');\n});\n\nit('The `firstSymbol` variable is equal to the first character', () => {\n  expect(firstSymbol).equal(str[0]);\n});\n\nit('The variable `isStartWithA` exists and has a value', () => {\n  expect(isStartWithA).not.undefined;\n});\n\nit('The `isStartWithA` variable is of type boolean', () => {\n  expect(isStartWithA).a('boolean');\n});\n\nit('The `isStartWithA` variable has a valid value', () => {\n  expect(isStartWithA).equal(firstSymbol === 'A');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst str = 'Andrew';\nconst firstSymbol = str[0];\nconst isStartWithA = firstSymbol === 'A';\n```",
+    "ru": "```javascript\nconst str = 'Andrew';\nconst firstSymbol = str[0];\nconst isStartWithA = firstSymbol === 'A';\n```"
+  }
+}

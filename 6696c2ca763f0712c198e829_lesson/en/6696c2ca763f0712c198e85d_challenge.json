@@ -1,0 +1,4 @@
+{
+  "name": "Copying an array element by element",
+  "instruction": "Write a function `copyElements` that takes two arrays: `arrFrom` and `arrTo`.\n\nThe function should copy the first and last elements from `arrFrom` to `arrTo` and return `arrTo`.\n\nA similar function is:\n```javascript\nfunction copyElements(arr1, arr2) {\narr2.push(arr1[0]);\narr2.push(arr1[1]);\narr2.push(arr1[3]);\nreturn arr2;\n}\n```\n\nAn example of running a function:\n```javascript\ncopyElements([1, 2, 3, 4, 5], []) // [1, 5]\ncopyElements(['string', 1, 2, 3, 'number'], []) // ['string', 'number']\ncopyElements(['Hello'], []) // ['Hello', 'Hello']\n```"
+}

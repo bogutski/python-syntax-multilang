@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e0de",
+  "name": {
+    "en": "Expanding and assigning the result to variables",
+    "ru": "Возведение в степень и присваивание результата переменным"
+  },
+  "instruction": {
+    "en": "Create a function `powerOf` that takes two parameters `num` and `power` and returns the result of multiplying `num` by `power`.\n\nCreate a variable `calculation1` and assign it the result of a call to the function `powerOf` with arguments `2` and `3`.\nCreate a variable `calculation2` and assign it the result of a call to the function `powerOf` with arguments `3` and `4`.\nCreate a variable `calculation3` and assign it the result of a call to the function `powerOf` with arguments `4` and `5`.\n\nParameter names must necessarily be the same as in the condition.",
+    "ru": "Создайте функцию `powerOf`, которая принимает два параметра `num` и `power` и возвращает результат возведения `num` в степень `power`.\n\nСоздайте переменную `calculation1` и присвойте ей результат вызова функции `powerOf` с аргументами `2` и `3`.\nСоздайте переменную `calculation2` и присвойте ей результат вызова функции `powerOf` с аргументами `3` и `4`.\nСоздайте переменную `calculation3` и присвойте ей результат вызова функции `powerOf` с аргументами `4` и `5`.\n\nНазвания параметров должны быть обязательно такими как в условии."
+  },
+  "initialSolution": "function sum(num1, num2){\n\n}",
+  "completedSolution": "function powerOf(num, power) {\n  return num ** power;\n}\n\nconst calculation1 = powerOf(2, 3);\nconst calculation2 = powerOf(3, 4);\nconst calculation3 = powerOf(4, 5);",
+  "openTest": "it('Created function powerOf', () => {\n  expect(powerOf).to.be.a('function');\n});\n\nit('Function has parameters num and power', () => {\n  const func = powerOf.toString();\n  const params = func.match(/\\((.+?)\\)/)[1];\n  expect(params).to.equal('num, power');\n});\n\nit('Function powerOf(2, 3) returns 8 and calculation1 is 8', () => {\n  expect(powerOf(2, 3)).to.equal(8);\n  expect(calculation1).to.equal(8);\n});\n\nit('Function powerOf(3, 4) returns 81 and calculation2 is 81', () => {\n  expect(powerOf(3, 4)).to.equal(81);\n  expect(calculation2).to.equal(81);\n});\n\nit('Function powerOf(4, 5) returns 1024 and calculation3 is 1024', () => {\n  expect(powerOf(4, 5)).to.equal(1024);\n  expect(calculation3).to.equal(1024);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Create a variable named `zero` and set it to 0",
+  "instruction": "Create a variable named `zero` and give it a value of `0` by number.",
+  "instructions": {},
+  "hint": "```javascript\nconst zero = 0;\n```"
+}

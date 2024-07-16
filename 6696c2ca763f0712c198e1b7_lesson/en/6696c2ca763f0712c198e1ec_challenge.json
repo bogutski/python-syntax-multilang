@@ -1,0 +1,4 @@
+{
+  "name": "Every fifth person in line gets a free ticket",
+  "instruction": "Write a function `getFreeTicket` that takes the number of the person in the queue and returns `true` if that person gets a free ticket.\n\nIf the person does not get a free ticket, the function should return `false`.\n\nWe need to check that the person's number is divisible by 5 without a remainder.\n\nIf a person with a number in the queue greater than 100 applies, the function must return `false`.\n\nAn example of using an additional condition:\n\n```javascript\nfunction getSomething(position) {\n  if(position < 0) return false;\n\n  if(position % 2 === 0) return true;\n  return false;\n}\n\nNote the last return. It is not in the else block, but still it is executed only if the condition in the if is not met."
+}

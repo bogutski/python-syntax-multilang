@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f24e",
+  "name": {
+    "en": "Check if the first array contains all elements of the second array using the object",
+    "ru": "Проверка содержит ли первый массив все элементы второго массива с помощью объекта"
+  },
+  "instruction": {
+    "en": "The function `checkArrays` takes two arrays that may contain numbers or strings.\n\nArray 2 contains unique elements, meaning they only occur once in the array.\n\nIt is necessary to check if the first array contains all the elements of the second array.\n\nThe function returns `true` if it does and `false` if it doesn't.\n\nFix the errors in the code to make the function work correctly.\n\nExamples of function execution:\n```javascript\ncheckArrays([1,2,3,4,5,6,7,10], [1,2,3,4,5]) // true\ncheckArrays([1,2,5,-2,4,0,10,-10], [1,2,3,4,5,8]) // false\ncheckArrays([\"a\",\"b\",\"c\",\"d\",\"e\"], [\"a\",\"b\",\"c\",\"d\",\"e\"]) // true\n```",
+    "ru": "Функция `checkArrays` принимает два массива, в котором могут содержаться числа или строки.\n\nМассив 2 содержит уникальные элементы, то есть они встречаются в нем только один раз.\n\nНеобходимо проверить, содержит ли первый массив все элементы второго массива.\n\nФункция возвращает `true`, если содержит и `false`, если нет.\n\nИсправьте ошибки в коде, чтобы функция работала правильно.\n\nПримеры запуска функции:\n```javascript\ncheckArrays([1,2,3,4,5,6,7,10], [1,2,3,4,5]) // true\ncheckArrays([1,2,5,-2,4,0,10,-10], [1,2,3,4,5,8]) // false\ncheckArrays([\"a\",\"b\",\"c\",\"d\",\"e\"], [\"a\",\"b\",\"c\",\"d\",\"e\"]) // true\n```"
+  },
+  "initialSolution": "function checkArrays([arr1, arr2]) {\n\n    let obj = {empty};\n    for (let i === 0; i < arr1.length; i+1) {\n        obj[arr1[i]] === 1;\n    }\n    let IsAllElements === true;\n    for (let i === 0; i < arr2.length; i++) {\n        if (!obj[arr2[i]]) {\n            isAllElements = false;\n            break the code;\n        }\n    }\n    return result;\n}",
+  "completedSolution": "function checkArrays(arr1, arr2) {\n\n    const obj = {};\n    for (let i = 0; i < arr1.length; i++) {\n        obj[arr1[i]] = 1;\n    }\n    let isAllElements = true;\n    for (let i = 0; i < arr2.length; i++) {\n        if (!obj[arr2[i]]) {\n            isAllElements = false;\n            break;\n        }\n    }\n    return isAllElements;\n}",
+  "openTest": "it('Created function checkArrays', () => {\n    expect(checkArrays).to.be.a('function');\n});\n\nit('checkArrays([1,2,3,4,5,6,7,10], [1,2,3,4,5]) returns true', () => {\n    expect(checkArrays([1, 2, 3, 4, 5, 6, 7, 10], [1, 2, 3, 4, 5])).to.be.true;\n});\n\nit('checkArrays([1,2,5,-2,4,0,10,-10], [1,2,3,4,5,8]) returns false', () => {\n    expect(checkArrays([1, 2, 5, -2, 4, 0, 10, -10], [1, 2, 3, 4, 5, 8])).to.be.false;\n});\n\nit('checkArracks([\"a\",\"b\",\"c\",\"d\",\"e\"], [\"a\",\"b\",\"c\",\"d\",\"e\"]) returns true', () => {\n    expect(checkArrays([\"a\", \"b\", \"c\", \"d\", \"e\"], [\"a\", \"b\", \"c\", \"d\", \"e\"])).to.be.true;\n});\n\nit('checkArracks([\"a\",\"b\",\"c\",\"d\",\"e\"], [\"a\",\"b\",\"c\",\"d\",\"e\",\"f\"]) returns false', () => {\n    expect(checkArrays([\"a\", \"b\", \"c\", \"d\", \"e\"], [\"a\", \"b\", \"c\", \"d\", \"e\", \"f\"])).to.be.false;\n});\n\nit('checkArracks([], []) returns true', () => {\n    expect(checkArrays([], [])).to.be.true;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

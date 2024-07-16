@@ -1,0 +1,4 @@
+{
+  "name": "If a negative number, return a positive number",
+  "instruction": "Write a function `abs` that takes a number and returns its absolute value.\n\nIf the number is negative, return a positive number.\n\nIf the number is positive, return the same number.\n\nThis will help you:\n```javascript\nconst num = -10;\nconsole.log(-num); // 10\n```"
+}

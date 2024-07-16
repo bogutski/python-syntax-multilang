@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e51f",
+  "name": {
+    "en": "Multiplication in an object",
+    "ru": "Умножение в объекте"
+  },
+  "instruction": {
+    "en": "Write a function `multiObject` that takes two parameters: `param1`, `param2`. Both parameters are numbers.\n\nThe function should return an object with properties `param1`, `param2` which will be equal to the corresponding arguments and `result`.\n\nThe `result` is the product of `param1` and `param2`.\n\nExamples of running a function:\n```javascript\nmultiObject(2, 3); // { param1: 2, param2: 3, result: 6 }\nmultiObject(10, 10); // { param1: 10, param2: 10, result: 100 }\n```",
+    "ru": "Напишите функцию `multiObject`, которая принимает два параметра: `param1`, `param2`. Оба параметра - числа.\n\nФункция должна возвращать объект со свойствами `param1`, `param2`, которые будут равны соответствующим аргументам и `result`.\n\n`result` - это произведение `param1` и `param2`.\n\nПримеры запуска функции:\n```javascript\nmultiObject(2, 3); // { param1: 2, param2: 3, result: 6 }\nmultiObject(10, 10); // { param1: 10, param2: 10, result: 100 }\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function multiObject(param1, param2) {\n  return {\n    param1,\n    param2,\n    result: param1 * param2,\n  };\n}",
+  "openTest": "it('Created function multiObject', () => {\n  expect(multiObject).to.be.a('function');\n});\n\nit('multiObject(2, 3) return { param1: 2, param2: 3, result: 6 }', () => {\n  expect(multiObject(2, 3)).eql({ param1: 2, param2: 3, result: 6 });\n});\n\nit('multiObject(0, 0) return { param1: 0, param2: 0, result: 0 }', () => {\n  expect(multiObject(0, 0)).eql({ param1: 0, param2: 0, result: 0 });\n});\n\nit('multiObject(1, 0) return { param1: 1, param2: 0, result: 0 }', () => {\n  expect(multiObject(1, 0)).eql({ param1: 1, param2: 0, result: 0 });\n});\n\nit('multiObject(10, 10) return { param1: 10, param2: 10, result: 100 }', () => {\n  expect(multiObject(10, 10)).eql({ param1: 10, param2: 10, result: 100 });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

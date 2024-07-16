@@ -1,0 +1,4 @@
+{
+  "name": "Correct the error in the code",
+  "instruction": "The function `stopCountAtEl` takes 2 parameters: the string `str` and the character `el`.\n\nThe function returns the number of characters in the string `str`.\n\nIf there is an uppercase or lowercase character `el` in the string `str` it stops counting.\n\nCorrect the errors in the code so that the function works correctly.\n\nAn example of running the function:\n```javascript\nstopCountAtEl('ftgjkfdttfjRhKl', 'r') // 11\nstopCountAtEl('rftgjkffjR', 'R') // 0\nstopCountAtEl('rftgjkffjR', 'W') // 10\n```"
+}

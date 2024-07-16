@@ -1,0 +1,161 @@
+{
+  "questions": {
+    "0": {
+      "name": "Creation of several variables with the same name in one block is impossible.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "1": {
+      "name": "In a variable name, the case of letters matters.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "2": {
+      "name": "In the name of the variable you can use",
+      "variants": {
+        "0": {
+          "name": "underscore_"
+        },
+        "1": {
+          "name": "blank"
+        },
+        "2": {
+          "name": "cyrillic characters"
+        },
+        "3": {
+          "name": "minus sign -"
+        }
+      }
+    },
+    "3": {
+      "name": "The variable name MUST NOT contain",
+      "variants": {
+        "0": {
+          "name": "human names"
+        },
+        "1": {
+          "name": "digits in the middle of the variable name"
+        },
+        "2": {
+          "name": "alternation of capital and small letters"
+        },
+        "3": {
+          "name": "digits at the beginning of the variable name"
+        }
+      }
+    },
+    "4": {
+      "name": "The variable name can begin with the _ sign.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "5": {
+      "name": "A variable name can only consist of a single $ or _ .",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "6": {
+      "name": "There is a list of reserved words that cannot be used for variables.",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "7": {
+      "name": "Select valid names for the variable.",
+      "variants": {
+        "0": {
+          "name": "cat"
+        },
+        "1": {
+          "name": "refund"
+        },
+        "2": {
+          "name": "return"
+        },
+        "3": {
+          "name": "rerun"
+        },
+        "4": {
+          "name": "var"
+        },
+        "5": {
+          "name": "let"
+        },
+        "6": {
+          "name": "varLet"
+        }
+      }
+    },
+    "8": {
+      "name": "Select valid names for the variable.",
+      "variants": {
+        "0": {
+          "name": "export"
+        },
+        "1": {
+          "name": "clas"
+        },
+        "2": {
+          "name": "class"
+        },
+        "3": {
+          "name": "returnClass"
+        },
+        "4": {
+          "name": "classExport"
+        },
+        "5": {
+          "name": "function"
+        }
+      }
+    },
+    "9": {
+      "description": "```\nlet userName;\nlet createClass;\n```",
+      "name": "Writing variables in the format shown below is called",
+      "variants": {
+        "0": {
+          "name": "snake case"
+        },
+        "1": {
+          "name": "worm case"
+        },
+        "2": {
+          "name": "camel case"
+        },
+        "3": {
+          "name": "horse case"
+        }
+      }
+    }
+  },
+  "name": "JS Syntax. \"What is in my name?\""
+}

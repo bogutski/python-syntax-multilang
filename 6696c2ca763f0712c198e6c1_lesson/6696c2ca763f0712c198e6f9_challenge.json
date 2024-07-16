@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e6f9",
+  "name": {
+    "en": "Determine how the arrays are arranged",
+    "ru": "Определи, как расположены массивы"
+  },
+  "instruction": {
+    "en": "Write a function `arrayOrder` that takes three parameters:\n* `arr1` - array of elements,\n* `arr2` - array of elements,\n* `arr3` - array of elements.\n\nThe function must compare the lengths of the arrays and return a string:\n* `Arrays are in ascending order` - if the length of the second array is greater than the length of the first array,\nand the length of the third array is longer than the second, i.e. the arrays are in ascending order,\n\n* `Arrays are in descending order` - if second array length is less than first array length,\nand the length of the third array is less than the length of the second one, i.e. the arrays are in descending order,\n\n* `Not sure` - if the lengths of the arrays do not match the conditions above.\n\nAn example of function start:\n```javascript\narrayOrder([5, 'e'], [111, 2, 34, 4], ['fgh', 2, 35, 4, '54', 0, null]);\n//'Arrays are in ascending order'\n```\n\nSimilar example with strings:\n```javascript\nfunction strOrder(str1, str2) {\nif (str2.length > str1.length) {\nreturn 'Strings are in up order';\n} else if (str2.length < str1.length) {\nreturn 'Strings are in down order';\n} else {\nreturn 'Not sure';\n}\n}\n```",
+    "ru": "Напиши функцию `arrayOrder`, которая принимает три параметра:\n* `arr1` - массив элементов,\n* `arr2` - массив элементов,\n* `arr3` - массив элементов.\n\nФункция должна сравнить длины массивов и вернуть строку:\n* `Arrays are in ascending order` - если длина второго массива больше, чем длина первого массива,\nи длина третьего массива больше, чем длина второго, т.е. массивы расположены по возрастанию,\n\n* `Arrays are in descending order` - если длина второго массива меньше, чем длина первого массива,\nи длина третьего массива меньше, чем длина второго, т.е. массивы расположены по убыванию,\n\n* `Not sure` - если длины массивов не соответствуют условиям выше.\n\nПример запуска функции:\n```javascript\narrayOrder([5, 'e'], [111, 2, 34, 4], ['fgh', 2, 35, 4, '54', 0, null]);\n//'Arrays are in ascending order'\n```\n\nПохожий пример со строками:\n```javascript\nfunction strOrder(str1, str2) {\n  if (str2.length > str1.length) {\n    return 'Strings are in up order';\n  } else if (str2.length < str1.length) {\n    return 'Strings are in down order';\n  } else {\n    return 'Not sure';\n  }\n}\n```"
+  },
+  "initialSolution": "function sum(num1, num2){\n\n}",
+  "completedSolution": "function arrayOrder(arr1, arr2, arr3){\n  if(arr2.length>arr1.length && arr3.length>arr2.length){\n    return 'Arrays are in ascending order'\n  }\n  else if(arr2.length<arr1.length && arr3.length<arr2.length){\n    return 'Arrays are in descending order'\n  }\n  else {\n    return 'Not sure'\n  }\n}",
+  "openTest": "it('Created function arrayOrder', () => {\n  expect(arrayOrder).to.be.a('function');\n});\n\nit('Function arrayOrder([5, \"e\"], [111, 2, 34, 4], [\"fgh\", 2, 35, 4, \"54\", 0, null]) returns \"Arrays are in ascending order\"', () => {\n  expect(arrayOrder([5, 'e'], [111, 2, 34, 4], ['fgh', 2, 35, 4, '54', 0, null])).to.equal('Arrays are in ascending order');\n});\n\nit('Function arrayOrder([5, \"e\"], [111], []) returns \"Arrays are in descending order\"', () => {\n  expect(arrayOrder([5, 'e'], [111], [])).to.equal('Arrays are in descending order');\n});\n\nit('Function arrayOrder([5, \"e\"], [111, 2, 34, 4], [\"fgh\", 2, 35, 4]) returns \"Not sure\"', () => {\n  expect(arrayOrder([5, 'e'], [111, 2, 34, 4], ['fgh', 2, 35, 4])).to.equal('Not sure');\n});\n\nit('Function arrayOrder([], [111, 2, 34, 4], []) returns \"Not sure\"', () => {\n  expect(arrayOrder([], [111, 2, 34, 4], [])).to.equal('Not sure');\n});\n\nit('Function arrayOrder([5, \"e\"], [111, 2], [\"fgh\", 2]) returns \"Not sure\"', () => {\n  expect(arrayOrder([5, 'e'], [111, 2], ['fgh', 2])).to.equal('Not sure');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

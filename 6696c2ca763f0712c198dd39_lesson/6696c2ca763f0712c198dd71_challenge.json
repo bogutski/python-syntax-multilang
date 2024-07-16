@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd71",
+  "name": {
+    "en": "How many hours, minutes and seconds until Christmas?",
+    "ru": "Сколько часов, минут и секунд осталось до Рождества?"
+  },
+  "instruction": {
+    "en": "It is known that there are a certain number of days (24-hour periods) left until Christmas.\n\nBut children are so eager to receive gifts that they count the hours, minutes, and sometimes even seconds until the holiday.\n\nWrite a sequence of commands that calculates the number of hours, minutes, and seconds in the given number of days.\n\nCreate a variable `days` and assign it a value of an arbitrary number from 1 to 364.\nCreate a variable `hours` and assign it an expression to find the number of hours.\nCreate a variable `minutes` and assign it an expression to find the number of minutes.\nCreate a variable `seconds` and assign it an expression to find the number of seconds.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst weeks = 3;\nconst days = weeks * 7;\n```",
+    "ru": "Известно, что до Рождества осталось некоторое количество дней (суток).\n\nНо детям так не терпится поскорее получить подарки, что они считают часы, минуты, а порой даже секунды до праздника.\n\nНапишите последовательность команд, вычисляющих количество часов, минут и секунд в данном количестве суток.\n\nСоздайте переменную `days` и присвойте ей значение произвольного числа от 1 до 364.\nСоздайте переменную `hours` и присвойте ей значение выражения для нахождения количества часов.\nСоздайте переменную `minutes` и присвойте ей значение выражения для нахождения количества минут.\nСоздайте переменную `seconds` и присвойте ей значение выражения для нахождения количества секунд.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst weeks = 3;\nconst days = weeks * 7;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const days = 30;\nconst hours = days * 24;\nconst minutes = hours * 60;\nconst seconds = minutes * 60;",
+  "openTest": "it('The `days` variable exists and has a value', () => {\n  expect(days).not.undefined;\n});\n\nit('Variable `days` is a number', () => {\n  expect(days).a('number');\n});\n\nit('Variable `days` is not a NaN', () => {\n  expect(isNaN(days)).false;\n});\n\nit('Variable `days` belongs to interval 1 to 364', () => {\n  expect(days >= 1 && days <= 364).true;\n});\n\nit('Переменная `hours` существует и имеет значение', () => {\n  expect(hours).not.undefined;\n});\n\nit('Variable `hours` is a number', () => {\n  expect(hours).a('number');\n});\n\nit('Variable `hours` is not a NaN', () => {\n  expect(isNaN(hours)).false;\n});\n\nit('Variable `hours` is calculated correctly', () => {\n  expect(hours).eq(days * 24);\n});\n\nit('Variable `minutes` exists and has a value', () => {\n  expect(minutes).not.undefined;\n});\n\nit('Variable `minutes` is a number', () => {\n  expect(minutes).a('number');\n});\n\nit('Variable `minutes` is not a NaN', () => {\n  expect(isNaN(minutes)).false;\n});\n\nit('Variable `minutes` is calculated correctly', () => {\n  expect(minutes).eq(hours * 60);\n});\n\nit('Variable`seconds` exists and has a value', () => {\n  expect(seconds).not.undefined;\n});\n\nit('Variable`seconds` is a number', () => {\n  expect(seconds).a('number');\n});\n\nit('Variable`seconds` is not a NaN', () => {\n  expect(isNaN(seconds)).false;\n});\n\nit('Variable`seconds` is calculated correctly', () => {\n  expect(seconds).eq(minutes * 60);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst days = 30;\nconst hours = days * 24;\nconst minutes = hours * 60;\nconst seconds = minutes * 60;\n```",
+    "ru": "```javascript\nconst days = 30;\nconst hours = days * 24;\nconst minutes = hours * 60;\nconst seconds = minutes * 60;\n```"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Check the data type in two arrays",
+  "instruction": "Write a function `sameTypeForAll` that takes two arrays.\n\nThe function should return `true` if all elements in both arrays have the same data type. Otherwise, return `false`.\n\nThe number of elements in the arrays does not matter, the check should only be based on the data type.\n\nIf both arrays are empty, return the string `'Both arrays are empty'`.\n\n\nExamples of function calls:\n```javascript\nsameTypeForAll([true, false, true], [true, false, true]);         // true\nsameTypeForAll([1, true, 3, false, 5], [1, 'true', 3, false, 5]); // false\nsameTypeForAll([1, 2, 3], [-6, 0, 4]);                            // true\nsameTypeForAll([], []);                                           // 'Both arrays are empty'\n```",
+  "instructions": {}
+}

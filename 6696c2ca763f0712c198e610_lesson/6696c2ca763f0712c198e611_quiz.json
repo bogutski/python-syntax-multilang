@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198e611",
+  "name": {
+    "ru": "Удаление свойств объекта",
+    "en": "Deleting object properties",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e612",
+      "name": {
+        "ru": "Для удаления свойства из объекта используется оператор:",
+        "en": "The operator is used to remove a property from an object:",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e613",
+          "name": {
+            "ru": "remove",
+            "en": "remove",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e614",
+          "name": {
+            "ru": "erase",
+            "en": "erase",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e615",
+          "name": {
+            "ru": "delete",
+            "en": "delete",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e616",
+          "name": {
+            "ru": "clear",
+            "en": "clear",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e617",
+      "name": {
+        "ru": "Сколько свойств можно удалить из объекта?",
+        "en": "How many properties can be removed from an object?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e618",
+          "name": {
+            "ru": "Только одно",
+            "en": "Just one.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e619",
+          "name": {
+            "ru": "Все",
+            "en": "All",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e61a",
+          "name": {
+            "ru": "Только половину",
+            "en": "Only half.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e61b",
+          "name": {
+            "ru": "Только первое или последнее свойство",
+            "en": "Only the first or last property",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e61c",
+      "name": {
+        "ru": "Удалится ли объект, если удалить из него все свойства?",
+        "en": "Will an object be deleted if all its properties are removed?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e61d",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e61e",
+          "name": {
+            "ru": "Удаление всех свойств приведёт к ошибке",
+            "en": "Deleting all properties will result in an error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e61f",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e620",
+          "name": {
+            "ru": "Объект станет пустым",
+            "en": "The object will become empty",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e621",
+      "name": {
+        "ru": "Выберите правильный способ удаления свойства age из объекта user",
+        "en": "Choose the correct way to remove the age property from the user object",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e622",
+          "name": {
+            "ru": "delete user(age)",
+            "en": "delete user(age)",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e623",
+          "name": {
+            "ru": "delete user'age'",
+            "en": "delete user'age'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e624",
+          "name": {
+            "ru": "delete user.Age",
+            "en": "delete user.Age",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e625",
+          "name": {
+            "ru": "delete user.age",
+            "en": "delete user.age",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e626",
+      "name": {
+        "ru": "Надо ли указывать значение свойства при удалении его из объекта?",
+        "en": "Is it necessary to specify the value of a property when removing it from an object?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e627",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e628",
+          "name": {
+            "ru": "Надо указывать, если значением является число",
+            "en": "It is necessary to specify if the value is a number",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e629",
+          "name": {
+            "ru": "Надо указывать, если значением является строка",
+            "en": "It is necessary to specify if the value is a string",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e62a",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e62b",
+      "name": {
+        "ru": "При удалении свойства из объекта, удаляется",
+        "en": "When you delete a property from an object, it deletes",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e62c",
+          "name": {
+            "ru": "Только ключ",
+            "en": "Only the key",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e62d",
+          "name": {
+            "ru": "Только значение",
+            "en": "Only the value",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e62e",
+          "name": {
+            "ru": "Ключ и значение",
+            "en": "Key and value",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e62f",
+          "name": {
+            "ru": "Объект",
+            "en": "Item",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e630",
+      "name": {
+        "ru": "Выберите правильную последовательность удаления свойства city из вложенного объекта",
+        "en": "Choose the correct sequence for removing the city property from a nested object",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\n const user = {\n  name: 'Alex',\n  age: 25,\n  address: {\n    city: 'New York',\n    country: 'USA'\n  }\n};\n```",
+        "en": "```javascript\n const user = {\n  name: 'Alex',\n  age: 25,\n  address: {\n    city: 'New York',\n    country: 'USA'\n  }\n};\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e631",
+          "name": {
+            "ru": "delete user.address.city",
+            "en": "delete user.address.city",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e632",
+          "name": {
+            "ru": "delete user.address(city)",
+            "en": "delete user.address(city)",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e633",
+          "name": {
+            "ru": "delete user.address.city()",
+            "en": "delete user.address.city()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e634",
+          "name": {
+            "ru": "delete user.city.address",
+            "en": "delete user.city.address",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e635",
+      "name": {
+        "ru": "Что представляет из себя свойство объекта?",
+        "en": "What is an object property?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e636",
+          "name": {
+            "ru": "Ключ и значение",
+            "en": "Key and value",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e637",
+          "name": {
+            "ru": "Название объекта и значение",
+            "en": "Object name and value",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e638",
+          "name": {
+            "ru": "Значение и ключ",
+            "en": "Value and key",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e639",
+          "name": {
+            "ru": "Только ключ",
+            "en": "Only the key",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e63a",
+      "name": {
+        "ru": "Можно ли присвоить значению undefined?",
+        "en": "Can I assign an undefined value?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e63b",
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e63c",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e63d",
+      "name": {
+        "ru": "Выберите правильный способ удаления свойства score из объекта student",
+        "en": "Choose the correct way to remove the score property from the student object",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e63e",
+          "name": {
+            "ru": "delete student,score",
+            "en": "delete student,score",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e63f",
+          "name": {
+            "ru": "delete student.score()",
+            "en": "delete student.score()",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e640",
+          "name": {
+            "ru": "delete student.score",
+            "en": "delete student.score",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e641",
+          "name": {
+            "ru": "delete studentScore",
+            "en": "delete studentScore",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

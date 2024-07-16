@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f43d",
+  "name": {
+    "en": "/*",
+    "ru": "Очистка и наполнение массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `clearAndFill`, которая принимает массив и произвольное количество аргументов `newElements`.\n\nФункция должна удалять все элементы из копии массива, используя метод `toSpliced()`, а затем добавлять `newElements` в массив.\n\nВаша функция должна возвращать новый массив с добавленными элементами, оставляя исходный массив неизменным.\n\n\nПример запуска функции:\n```javascript\nconst originalArray = ['apple', 'banana', 'cherry'];\nconst newArray = clearAndFill(originalArray, 'durian', 'elderberry');\n\nconsole.log(originalArray); // Вывод: ['apple', 'banana', 'cherry']\nconsole.log(newArray);      // Вывод: ['durian', 'elderberry']\n```"
+  },
+  "initialSolution": "function clearAndFill(){\n\n}",
+  "completedSolution": "function clearAndFill(arr, ...elements) {\n  return arr.toSpliced(0, arr.length, ...elements);\n}",
+  "openTest": "Array.prototype.toSpliced = function(start, deleteCount, ...items) {\n  let newArray = this.slice();\n  if(deleteCount === undefined) deleteCount = newArray.length - start\n  newArray.splice(start, deleteCount, ...items);\n  return newArray;\n};\n\nit('Created function clearAndFill', () => {\n  expect(clearAndFill).to.be.a('function');\n});\n\nit('Function clearAndFill should include method toSpliced()', () => {\n  const res = clearAndFill.toString()\n  expect(res).to.include('.toSpliced(')\n});\n\nit(\"clearAndFill(['apple', 'banana', 'cherry'], 'durian', 'elderberry') should return ['durian', 'elderberry']\", () => {\n  const originalArray = ['apple', 'banana', 'cherry'];\n  const newArray = clearAndFill(originalArray, 'durian', 'elderberry');\n  expect(newArray).to.deep.equal(['durian', 'elderberry']);\n});\n\nit(\"clearAndFill(['apple', 'banana', 'cherry'], 'durian', 'elderberry') should return ['apple', 'banana', 'cherry']\", () => {\n  const originalArray = ['apple', 'banana', 'cherry'];\n  clearAndFill(originalArray, 'durian', 'elderberry');\n  expect(originalArray).to.deep.equal(['apple', 'banana', 'cherry']);\n});\n\nit(\"clearAndFill(['apple', 'banana', 'cherry']) should return []\", () => {\n  const originalArray = ['apple', 'banana', 'cherry'];\n  const newArray = clearAndFill(originalArray);\n  expect(newArray).to.deep.equal([]);\n});\n\nit(\"clearAndFill([1, 2, 3], 4, 5, 6) should return [4, 5, 6]\", () => {\n  const originalArray = [1, 2, 3];\n  const newArray = clearAndFill(originalArray, 4, 5, 6);\n  expect(newArray).to.deep.equal([4, 5, 6]);\n});\n\nit(\"clearAndFill(['a', 1, true], null, 'b', 2) should return [null, 'b', 2]\", () => {\n  const originalArray = ['a', 1, true];\n  const newArray = clearAndFill(originalArray, null, 'b', 2);\n  expect(newArray).to.deep.equal([null, 'b', 2]);\n});\n\nit(\"clearAndFill(['apple', 'banana'], undefined) should return [undefined]\", () => {\n  const originalArray = ['apple', 'banana'];\n  const newArray = clearAndFill(originalArray, undefined);\n  expect(newArray).to.deep.equal([undefined]);\n});\n\nit(\"clearAndFill([], 'new', 'array') should return ['new', 'array']\", () => {\n  const originalArray = [];\n  const newArray = clearAndFill(originalArray, 'new', 'array');\n  expect(newArray).to.deep.equal(['new', 'array']);\n});\n\nit(\"clearAndFill([], 'a', 'b', 'c') should return ['a', 'b', 'c']\", () => {\n  const originalArray = [];\n  const newArray = clearAndFill(originalArray, 'a', 'b', 'c');\n  expect(newArray).to.deep.equal(['a', 'b', 'c']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Double the elements of the array, except for one",
+  "instruction": "The `twiceExceptOne` function takes an array of numbers and returns an array in which every number is multiplied by 2 except one.\n\nUse the continue instruction to solve this problem.\n\nThe problem will be tested by applying the continue instruction.\n\n```javascript\ntwiceExceptOne([1, 2, 3, 4, 5]) // [1, 4, 6, 8, 10]\n```"
+}

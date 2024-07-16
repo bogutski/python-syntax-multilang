@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ea04",
+  "name": {
+    "en": "Multiplication from 1 to n",
+    "ru": "Умножение от 1 до n"
+  },
+  "instruction": {
+    "en": "Write a function `multiplication` that takes a number `n` and returns the product of numbers from `1` to `n` inclusive.\n\nIn the loop `for` use iteration step `2`.\n\nAn example loop `for` with iteration step `5`:\n```javascript\nfor (let i = 0; i <= 50; i += 5) {\nconsole.log(i);\n}\n```\n\nExamples of running a function:\n```javascript\nmultiplication(1) // 1\nmultiplication(5) // 15\nmultiplication(7) // 105\nmultiplication(9) // 945\n```",
+    "ru": "Напишите функцию `multiplication`, которая принимает число `n` и возвращает произведение чисел от `1` до `n` включительно.\n\nВ цикле `for` используйте шаг итерации `2`.\n\nПример цикла `for` с шагом итерации `5`:\n```javascript\nfor (let i = 0; i <= 50; i += 5) {\n  console.log(i);\n}\n```\n\nПримеры запуска функции:\n```javascript\nmultiplication(1) // 1\nmultiplication(5) // 15\nmultiplication(7) // 105\nmultiplication(9) // 945\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function multiplication(n) {\n  let result = 1;\n  for (let i = 1; i <= n; i += 2) {\n    result *= i;\n  }\n  return result;\n}",
+  "openTest": "it('Created function multiplication', () => {\n  expect(multiplication).to.be.a('function');\n});\n\nit('multiplication(5) should return 15', () => {\n  expect(multiplication(5)).to.equal(15);\n});\n\nit('multiplication(9) should return 945', () => {\n  expect(multiplication(9)).to.equal(945);\n});\n\nit('multiplication(15) should return 2027025', () => {\n  expect(multiplication(15)).to.equal(2027025);\n});\n\nit('multiplication(25) should return 7905853580625', () => {\n  expect(multiplication(25)).to.equal(7905853580625);\n});\n\nit('multiplication(1) should return 1', () => {\n  expect(multiplication(1)).to.equal(1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

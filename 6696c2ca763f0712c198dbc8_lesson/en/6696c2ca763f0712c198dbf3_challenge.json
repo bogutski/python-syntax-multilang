@@ -1,0 +1,6 @@
+{
+  "name": "Big win",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-3.png)\n\nIn 2013, a British man managed to win more than 200,000 pounds with a minimum bet of one penny.\nThat is, the amount of money he had increased by a factor of 20000000!\n\nCreate a `money` variable and assign it a value of 1.\n\nThen write a command that increases the value of the `money` variable by 20000000 times.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nlet a = 5;\na = a * 1000;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet money = 1;\nmoney = money * 20000000;\n```"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e260",
+  "name": {
+    "en": "",
+    "ru": "Цена автомобиля в зависимости от комплектации"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `carPrice`, которая принимает параметры:\n* `basePrice` - базовая цена автомобиля\n* `panoramicRoof` - наличие панорамной крыши, boolean\n* `parkingSensors` - наличие датчиков парковки, boolean\n* `leatherInterior` - наличие кожаного салона, boolean\n* `navigation` - наличие навигации, boolean\n* `multimedia` - наличие мультимедиа, boolean\n* `climateControl` - наличие климат-контроля, boolean\n* `heatedSeats` - наличие подогрева сидений, boolean\n\nНаличие каждой опции увеличивает цену автомобиля на 10% от базовой цены.\n\nФункция должна возвращать цену автомобиля с учетом всех опций.\n\nПример запуска функции:\n```javascript\ncarPrice(10000, true, true, true, true, true, true, true); // 17000\ncarPrice(10000, false, false, false, false, false, false, false); // 10000\ncarPrice(10000, true, false, false, false, false, false, false); // 11000\n```\n\nДля расчета общей цены сначала сложите все опции и только потом рассчитайте размер наценки.\n\nПрибавьте к базовой цене наценку."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function carPrice(basePrice, panoramicRoof, parkingSensors, leatherInterior, navigation, multimedia, climateControl, heatedSeats) {\n  let percent = 0;\n  if (panoramicRoof)  percent += 10;\n  if (parkingSensors)  percent += 10;\n  if (leatherInterior)  percent += 10;\n  if (navigation)  percent += 10;\n  if (multimedia)  percent += 10;\n  if (climateControl)  percent += 10;\n  if (heatedSeats)  percent += 10;\n\n  const price = basePrice + basePrice * (percent / 100);\n\n  return price;\n}",
+  "openTest": "it('Created function carPrice', () => {\n  expect(carPrice).to.be.a('function');\n});\n\nit('Function returns correct result for arguments `10000, true, true, true, true, true, true, true`', () => {\n  expect(carPrice(10000, true, true, true, true, true, true, true)).eq(17000);\n});\n\nit('Function returns correct result for arguments `10000, false, false, false, false, false, false, false`', () => {\n  expect(carPrice(10000, false, false, false, false, false, false, false)).eq(10000);\n});\n\nit('Function returns correct result for arguments `10000, true, false, false, false, false, false, false`', () => {\n  expect(carPrice(10000, true, false, false, false, false, false, false)).eq(11000);\n});\n\nit('Function returns correct result for arguments `10000, false, true, true, false, true, false, false`', () => {\n  expect(carPrice(10000, false, true, true, false, true, false, false)).eq(13000);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

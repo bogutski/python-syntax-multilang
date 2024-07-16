@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f3c1",
+  "name": {
+    "en": "/*",
+    "ru": "Удаление первого элемента, если он boolean"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `removeFirstIfBoolean`, которая принимает массив как аргумент.\n\nЕсли первый элемент массива является `boolean` значением (true или false), функция должна удалить этот элемент из массива и вернуть измененный массив.\n\nЕсли первый элемент массива не является `boolean`, функция должна вернуть строку, указывающую на это: '\"<first element>\" is not boolean', где <first element> будет заменено на значение первого элемента массива.\n\nДля реализации используйте метод `shift()`.\n\n\nПример запуска функции:\n```javascript\nremoveFirstIfBoolean([true, 1, 2, 3]); // [ 1, 2, 3 ]\nremoveFirstIfBoolean([false, 'a', 'b', 'c']); // [ 'a', 'b', 'c' ]\nremoveFirstIfBoolean([1, 2, 3]); // \"1\" is not boolean\nremoveFirstIfBoolean(['a', 'b', 'c']); // \"a\" is not boolean\n```"
+  },
+  "initialSolution": "function removeFirstIfBoolean(){\n\n}",
+  "completedSolution": "function removeFirstIfBoolean(arr) {\n  if(typeof arr[0] === 'boolean') arr.shift()\n  else return `\"${arr[0]}\" is not boolean`;\n\n  return arr;\n}",
+  "openTest": "it('Created function removeFirstIfBoolean', () => {\n  expect(removeFirstIfBoolean).to.be.a('function');\n});\n\nit('Function removeFirstIfBoolean should include methods shift()', () => {\n  const res = removeFirstIfBoolean.toString()\n  expect(res).to.include('.shift()')\n});\n\nit(\"removeFirstIfBoolean([true, 1, 2, 3]) should return [1, 2, 3]\", () => {\n  expect(removeFirstIfBoolean([true, 1, 2, 3])).to.deep.equal([1, 2, 3]);\n});\n\nit(\"removeFirstIfBoolean([false, 'a', 'b', 'c']) should return ['a', 'b', 'c']\", () => {\n  expect(removeFirstIfBoolean([false, 'a', 'b', 'c'])).to.deep.equal(['a', 'b', 'c']);\n});\n\nit('removeFirstIfBoolean([1, 2, 3]) should return: \"1\" is not boolean', () => {\n  expect(removeFirstIfBoolean([1, 2, 3])).to.equal('\"1\" is not boolean');\n});\n\nit('removeFirstIfBoolean([\"a\", \"b\", \"c\"]) should return: \"a\" is not boolean', () => {\n  expect(removeFirstIfBoolean(['a', 'b', 'c'])).to.equal('\"a\" is not boolean');\n});\n\nit('removeFirstIfBoolean([]) should return: \"undefined\" is not boolean for an empty array', () => {\n  expect(removeFirstIfBoolean([])).to.equal('\"undefined\" is not boolean');\n});\n\nit('removeFirstIfBoolean([undefined, \"a\", \"b\"]) should return: \"undefined\" is not boolean', () => {\n  expect(removeFirstIfBoolean([undefined, \"a\", \"b\"])).to.equal('\"undefined\" is not boolean');\n});\n\nit('removeFirstIfBoolean([null, 1, 2, 3]) should return: \"null\" is not boolean', () => {\n  expect(removeFirstIfBoolean([null, 1, 2, 3])).to.equal('\"null\" is not boolean');\n});\n\nit(\"should return the same array instance if the first element is boolean\", () => {\n  let inputArray = [true, 1, 2, 3];\n  let resultArray = removeFirstIfBoolean(inputArray);\n  expect(resultArray).to.equal(inputArray);\n});\n\nit(\"should not return an array but original array remains unchanged if the first element is not boolean\", () => {\n  let inputArray = [1, 2, 3];\n  let result = removeFirstIfBoolean(inputArray);\n  expect(result).to.be.a('string');\n  expect(inputArray).to.deep.equal([1, 2, 3]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

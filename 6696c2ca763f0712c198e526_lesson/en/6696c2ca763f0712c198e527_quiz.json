@@ -1,0 +1,157 @@
+{
+  "name": "Accessing object properties\n",
+  "questions": {
+    "0": {
+      "name": "const person = { name: 'John', age: 30 }. How can you access the name property?",
+      "variants": {
+        "0": {
+          "name": "person.name"
+        },
+        "1": {
+          "name": "person[0]"
+        },
+        "2": {
+          "name": "person['name']"
+        },
+        "3": {
+          "name": "name"
+        }
+      }
+    },
+    "1": {
+      "name": "const person = { name: 'John', age: 30 }. How can you access the age property?",
+      "variants": {
+        "0": {
+          "name": "person,age"
+        },
+        "1": {
+          "name": "person[1]"
+        },
+        "2": {
+          "name": "person['age']"
+        },
+        "3": {
+          "name": "person.age"
+        }
+      }
+    },
+    "2": {
+      "name": "const person = { person: 'person' }. Is such a declaration acceptable?",
+      "variants": {
+        "0": {
+          "name": "Yes. The person variable will contain an object with one person property equal to the string 'person'"
+        },
+        "1": {
+          "name": "No. Such a declaration is unacceptable."
+        }
+      }
+    },
+    "3": {
+      "name": "const room = { width: 10, height: 20 }. How can you calculate the area of a room?",
+      "variants": {
+        "0": {
+          "name": "room.width * room.height"
+        },
+        "1": {
+          "name": "room.width + room.height"
+        },
+        "2": {
+          "name": "room[width] * room[height]"
+        },
+        "3": {
+          "name": "room['width'] * room['height']"
+        }
+      }
+    },
+    "4": {
+      "name": "const person = { name: 'John', address: { city: 'New York', country: 'USA' } } How can you access the country property?",
+      "variants": {
+        "0": {
+          "name": "person.country"
+        },
+        "1": {
+          "name": "person.address.country"
+        },
+        "2": {
+          "name": "person['address']['country']"
+        },
+        "3": {
+          "name": "person.address['country']"
+        }
+      }
+    },
+    "5": {
+      "name": "const person = { 130 }. Is such a declaration acceptable?",
+      "variants": {
+        "0": {
+          "name": "Yes. The person variable will contain an object with one property 130"
+        },
+        "1": {
+          "name": "No. Such a declaration is unacceptable."
+        }
+      }
+    },
+    "6": {
+      "name": "const person = { 130: 130 }. Is such a declaration acceptable?",
+      "variants": {
+        "0": {
+          "name": "Yes. The variable person will contain an object with the key 130 and the value 130"
+        },
+        "1": {
+          "name": "No. Such a declaration is unacceptable."
+        }
+      }
+    },
+    "7": {
+      "name": "const person = { 130: 'a130b' }. To access the value of property 130 is used:",
+      "variants": {
+        "0": {
+          "name": "person.130"
+        },
+        "1": {
+          "name": "person['130']"
+        },
+        "2": {
+          "name": "person[130]"
+        },
+        "3": {
+          "name": "person[0]"
+        }
+      }
+    },
+    "8": {
+      "name": "const person = { 'person-name': 'John' }. To access the value of the 'person-name' property is used:",
+      "variants": {
+        "0": {
+          "name": "person.person-name"
+        },
+        "1": {
+          "name": "person['person-name']"
+        },
+        "2": {
+          "name": "person[person-name]"
+        },
+        "3": {
+          "name": "person.'person-name'"
+        }
+      }
+    },
+    "9": {
+      "name": "const person = { personName: 'John' }. To access the value of the 'personName' property is used:",
+      "variants": {
+        "0": {
+          "name": "person.personName"
+        },
+        "1": {
+          "name": "person['personName']"
+        },
+        "2": {
+          "name": "person[personName]"
+        },
+        "3": {
+          "name": "person.'personName'"
+        }
+      }
+    }
+  }
+}

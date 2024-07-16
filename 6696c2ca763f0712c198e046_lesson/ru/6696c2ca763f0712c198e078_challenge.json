@@ -1,0 +1,5 @@
+{
+  "name": "Мой любимый город",
+  "instruction": "Напиши функцию `myFavoriteCity`, которая принимает один параметр `city` и возвращает строку `I love San Francisco!`.\n\nВместо `San Francisco` должно быть значение параметра `city`.",
+  "instructions": {}
+}

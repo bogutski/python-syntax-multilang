@@ -1,0 +1,6 @@
+{
+  "name": "Calculate and output to the console. Minus",
+  "instruction": "Only one line.\n\nWrite the command `console.log(10 - 15);`\n\nObserve spaces and punctuation marks.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log(10 - 15);\n```"
+}

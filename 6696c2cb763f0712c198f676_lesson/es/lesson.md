@@ -1,0 +1,1 @@
+# Array.prototype.toReversed() – возвращает массив с обратным порядком элементов language: es

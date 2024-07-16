@@ -1,0 +1,5 @@
+{
+  "name": "Сколько раз строка встречается в массиве?",
+  "instruction": "Функция `countEachEl` принимает массив строк.\n\nФункция должна вернуть количество вхождений каждого элемента в массив в виде объекта.\n\nЕсли массив пустой, то функция должна вернуть строку `Array is empty`.\n\nПримеры запуска функции:\n```javascript\ncountEachEl([\"hello\", \"js\"]); // {hello: 1, js: 1}\ncountEachEl([\"hello\", \"js\", \"hello\"]); // {hello: 2, js: 1}\ncountEachEl([]); // 'Array is empty'\n```",
+  "instructions": {}
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dc90",
+  "name": {
+    "en": "U.S. states that begin with the letter \"C\"",
+    "ru": "Штаты США, которые начинаются с буквы \"C\""
+  },
+  "instruction": {
+    "en": "The United States consists of 50 states. Your task is to list the states that begin with the letter \"C\".\n\nCreate variables `cState1`, `cState2` and `cState3` and assign them the names of the states that begin with the letter \"C\": `'California'`, `'Colorado'`, `'Connecticut'`.\n\nCreate a `threeCStates` variable that combines the three variables separated by commas into a single string.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst hCar1 = 'Honda';\nconst hCar2 = 'Hummer';\nconst hCar3 = 'Hyundai';\nconst threeHCars = hCar1 + ',' + hCar2 + ',' + hCar3;\n```",
+    "ru": "США состоит из 50 штатов. Ваша задача: перечислить штаты, которые начинаются с буквы \"C\".\n\nСоздайте переменные `cState1`, `cState2` и `cState3`присвойте им названия штатов, который начинается с буквы \"C\": `'California'`, `'Colorado'`, `'Connecticut'`.\n\nСоздайте переменную `threeCStates`, которая объединит три переменные через запятую в одну строку.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst hCar1 = 'Honda';\nconst hCar2 = 'Hummer';\nconst hCar3 = 'Hyundai';\nconst threeHCars = hCar1 + ',' + hCar2 + ',' + hCar3;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const cState1 = 'California';\nconst cState2 = 'Colorado';\nconst cState3 = 'Connecticut';\nconst threeCStates = cState1 + ',' + cState2 + ',' + cState3;",
+  "openTest": "it('Variable `cState1` contains a value', () => {\n  expect(cState1).not.undefined;\n});\n\nit('Variable `cState1` contains string', () => {\n  expect(cState1).a('string');\n});\n\nit('Variable `cState2` contains a value', () => {\n  expect(cState2).not.undefined;\n});\n\nit('Variable `cState2` contains a string', () => {\n  expect(cState2).a('string');\n});\n\nit('Variable `cState3` contains a value', () => {\n  expect(cState3).not.undefined;\n});\n\nit('Variable `cState3` contains string', () => {\n  expect(cState3).a('string');\n});\n\nit('Variable `threeCStates` contains a value', () => {\n  expect(threeCStates).not.undefined;\n});\n\nit('The `threeCStates` variable contains a string', () => {\n  expect(threeCStates).a('string');\n});\n\nit('The `threeCStates` variable contains only three states starting with `C` and listed comma separated with a space', () => {\n  expect(threeCStates).to.satisfy(function CStates(threeCStates) {\n    threeCStates = threeCStates.split(',').map((el) => el.trim());\n    return threeCStates.length === 3 && threeCStates.includes('California') && threeCStates.includes('Colorado') && threeCStates.includes('Connecticut');\n  });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst cState1 = 'California';\nconst cState2 = 'Colorado';\nconst cState3 = 'Connecticut';\nconst threeCStates = cState1 + ',' + cState2 + ',' + cState3;\n```",
+    "ru": "```javascript\nconst cState1 = 'California';\nconst cState2 = 'Colorado';\nconst cState3 = 'Connecticut';\nconst threeCStates = cState1 + ',' + cState2 + ',' + cState3;\n```"
+  }
+}

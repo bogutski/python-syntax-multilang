@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de17",
+  "name": {
+    "en": "Increasing the number by a factor of 2",
+    "ru": "Увеличение числа в 2 раза"
+  },
+  "instruction": {
+    "en": "Everyone is familiar with the 5-point grading system: numbers from 1 to 5.\nBut with the introduction of the 10-point system, all grades doubled.\nFor example, 5 became a ten, 4 became an eight, and so on.\n\nSet the variable `score` and assign it the value 5.\nThen write the command that doubles the value of the variable `score`.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nlet number = 3;\nnumber *= 2;\n```",
+    "ru": "Всем знакома 5-балльная система отметок: числа от 1 до 5.\nНо с введением 10-балльной системы все отметки увеличились в 2 раза.\nНапример, 5 стала десяткой, 4 - восьмеркой и т.п.\n\nЗадайте переменную `score` и присвойте ей значение 5.\nЗатем запишите команду, увеличивающую значение переменной `score` в 2 раза.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nlet number = 3;\nnumber *= 2;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let score = 5;\nscore *= 2;",
+  "openTest": "it('The `score` variable contains a value', () => {\n  expect(score).not.undefined;\n});\n\nit('The variable `score` type is a number', () => {\n  expect(score).a('number');\n});\n\nit('the variable `score` is not NaN', () => {\n  expect(isNaN(score)).false;\n});\n\nit('the `score` variable is 2 times', () => {\n  expect(score).equal(10);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet score = 5;\nscore *= 2;\n```",
+    "ru": "```javascript\nlet score = 5;\nscore *= 2;\n```"
+  }
+}

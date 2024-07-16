@@ -1,0 +1,6 @@
+{
+  "name": "Welcome to our class",
+  "instruction": "Create a `stringStart` variable and assign it the value ``Welcome to our class``.\n\nCreate a `stringEnd` variable and assign it the value `'John Smith'`.\n\nCreate a `newString` variable that will be the result of merging the `stringStart` variable and the `stringEnd` variable with a space between them.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nlet name = 'Paul';\nlet surname = 'Smith';\nlet fullName = name + ' ' + surname;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet stringStart = 'Welcome to our class';\nlet stringEnd = 'John Smith';\nlet newString = stringStart + ' ' + stringEnd;\n```"
+}

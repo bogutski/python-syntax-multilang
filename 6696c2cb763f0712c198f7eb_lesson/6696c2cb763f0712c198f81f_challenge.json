@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f81f",
+  "name": {
+    "en": "/*",
+    "ru": "Найти индекс последнего вхождения элемента"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findLastIndex`, которая принимает массив и элемент.\n\nФункция должна вернуть индекс последнего вхождения элемента в массиве. Если элемент не найден, функция должна вернуть `-1`.\n\n\nПримеры запуска функции:\n```javascript\nfindLastIndex(['apple', 'banana', 'mango', 'banana'], 'banana'); // 3\nfindLastIndex(['cat', 'dog', 'fish'], 'bird'); // -1\nfindLastIndex([1, 2, 3, 4, 2, 5], 2); // 4\n```"
+  },
+  "initialSolution": "function findLastIndex(){\n\n}",
+  "completedSolution": "function findLastIndex(arr, element) {\n  return arr.lastIndexOf(element);\n}",
+  "openTest": "it('Created function findLastIndex', () => {\n  expect(findLastIndex).to.be.a('function');\n});\n\nit(\"Function findLastIndex should include lastIndexOf method\", () => {\n  const result = findLastIndex.toString();\n  expect(result).to.include('.lastIndexOf(');\n});\n\nit('findLastIndex([\"apple\", \"banana\", \"mango\", \"banana\"], \"banana\") should return 3', function() {\n  expect(findLastIndex([\"apple\", \"banana\", \"mango\", \"banana\"], \"banana\")).to.equal(3);\n});\n\nit('findLastIndex([1, 2, 3, 4, 2, 5], 2) should return 4', function() {\n  expect(findLastIndex([1, 2, 3, 4, 2, 5], 2)).to.equal(4);\n});\n\nit('findLastIndex([\"cat\", \"dog\", \"fish\"], \"bird\") should return -1', function() {\n  expect(findLastIndex([\"cat\", \"dog\", \"fish\"], \"bird\")).to.equal(-1);\n});\n\nit('findLastIndex([true, false, true], false) should return 1', function() {\n  expect(findLastIndex([true, false, true], false)).to.equal(1);\n});\n\nit('findLastIndex([null, undefined, null], null) should return 2', function() {\n  expect(findLastIndex([null, undefined, null], null)).to.equal(2);\n});\n\nit('findLastIndex([NaN, 0, \"hello\"], NaN) should return -1', function() {\n  expect(findLastIndex([NaN, 0, \"hello\"], NaN)).to.equal(-1);\n});\n\nit('findLastIndex([\"apple\", \"banana\", \"mango\"], \"APPLE\") should return -1', function() {\n  expect(findLastIndex([\"apple\", \"banana\", \"mango\"], \"APPLE\")).to.equal(-1);\n});\n\nit('findLastIndex([], \"anything\") should return -1', function() {\n  expect(findLastIndex([], \"anything\")).to.equal(-1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

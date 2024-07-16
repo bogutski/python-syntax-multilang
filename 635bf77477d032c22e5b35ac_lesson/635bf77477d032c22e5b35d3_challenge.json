@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35d3",
+  "name": {
+    "ru": "Исправьте ошибки в коде. Число ноль",
+    "en": "Correct the errors in the code. Number zero",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Требуется написать команду, которая присваивает переменной `sum`\nзначение числа `0` с использованием ключевого слова `let`.\n\nИсправьте ошибки в приведенном коде.",
+    "en": "You need to write a command which assigns to the variable `sum`\nvariable `0` using the keyword `let`.\n\nCorrect the errors in the given code.",
+    "es": ""
+  },
+  "initialSolution": "let sum = '0';",
+  "completedSolution": "let sum = 0;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

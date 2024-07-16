@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e821",
+  "name": {
+    "en": "Swap the first and the last element of the array",
+    "ru": "Первый и последний элемент массива поменять местами"
+  },
+  "instruction": {
+    "en": "The `witchFirstAndLast` function takes one parameter:\n* `array` - array of numbers\n\nYou need to swap the first and the last element of the array.\n\nThe function should return the changed array.\n\nExamples of running the function:\n```javascript\nswitchFirstAndLast([1, 2, 3, 4]) // [4, 2, 3, 1]\n\nswitchFirstAndLast([5, 2, 3, 4]) // [4, 2, 3, 5]\n```",
+    "ru": "Функция `switchFirstAndLast` принимает один параметр:\n* `array` - массив чисел\n\nНеобходимо первый и последний элемент массива поменять местами.\n\nФункция должна вернуть измененный массив.\n\nПримеры запуска функции:\n```javascript\nswitchFirstAndLast([1, 2, 3, 4]) // [4, 2, 3, 1]\n\nswitchFirstAndLast([5, 2, 3, 4]) // [4, 2, 3, 5]\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function switchFirstAndLast(array) {\n  const lastElement= array[array.length - 1];\n  array[array.length-1] = array[0]\n  array[0] = lastElement\n  return array\n}",
+  "openTest": "it('Created function switchFirstAndLast', () => {\n  expect(switchFirstAndLast).to.be.a('function');\n});\n\nit('switchFirstAndLast([1, 2, 3, 4]) should return [4, 2, 3, 1]', () => {\n  expect(switchFirstAndLast([1, 2, 3, 4])).to.eql([4, 2, 3, 1]);\n});\n\nit('switchFirstAndLast([2, 4]) should return [4, 2]', () => {\n  expect(switchFirstAndLast([2, 4])).to.eql([4, 2]);\n});\n\nit('switchFirstAndLast([10, 2, 3, 4]) should return [4, 2, 3, 10]', () => {\n  expect(switchFirstAndLast([10, 2, 3, 4])).to.eql([4, 2, 3, 10]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

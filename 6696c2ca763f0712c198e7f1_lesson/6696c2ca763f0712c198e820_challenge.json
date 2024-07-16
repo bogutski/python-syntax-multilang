@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e820",
+  "name": {
+    "en": "Alice is the last name in the array",
+    "ru": "Alice последнее имя в массиве"
+  },
+  "instruction": {
+    "en": "The `names` function takes an array of strings with names.\n\nYou need to determine if the array contains the string `Alice` and if not, add it to the end of the array.\n\nIf the array contains the name `Alice`, then it is necessary to delete all elements of the array, after the name `Alice`.\n\nUse the `push` and `plice` methods.\n\nAn example of a similar task:\n```javascript\nconst animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];\nconst index = animals.indexOf('camel');\nif (index > -1) {animals.splice(index +1);} // if there is a camel in the array, delete all elements after the camel, the camel element itself remains\nelse {animals.push('camel');} //add camel to the end of the array\nconsole.log(animals); // [\"ant\", \"bison\", \"camel\"]\n```\n\nExamples of running the function:\n```javascript\nnames(['Bob', 'Alice', 'Kate']) // ['Bob', 'Alice']\nnames(['Bob', 'Kate']) // ['Bob', 'Kate', 'Alice']\n```",
+    "ru": "Функция `names` принимает массив строк с именами.\n\nНеобходимо определить содержит ли массив строку `Alice` и если нет, то добавить ее в конец массива.\n\nЕсли же массив содержит имя `Alice`, то необходимо удалить все элементы массива, после имени `Alice`.\n\nИспользуйте методы `push` и `splice`.\n\nПример похожей задачи:\n```javascript\nconst animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];\nconst index = animals.indexOf('camel');\nif (index > -1) {animals.splice(index +1);} // Если camel присутствует в массиве, то удалить все элементы после camel, сам элемент camel останется\nelse {animals.push('camel');} // добавит camel в конец массива\nconsole.log(animals); // [\"ant\", \"bison\", \"camel\"]\n```\n\nПримеры запуска функции:\n```javascript\nnames(['Bob', 'Alice', 'Kate']) // ['Bob', 'Alice']\nnames(['Bob', 'Kate']) // ['Bob', 'Kate', 'Alice']\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function names(name) {\n  const nameIndex = name.indexOf('Alice')\n  if (nameIndex === -1) {\n    name.push('Alice')\n  } else {\n    name.splice(nameIndex + 1)\n  }\n  return name\n}",
+  "openTest": "it('Created function names', () => {\n  expect(names).to.be.a('function');\n});\n\nit('names([\"Bob\", \"Alice\", \"Kate\"]) should return [\"Bob\", \"Alice\"]', () => {\n  expect(names([\"Bob\", \"Alice\", \"Kate\"])).to.deep.equal([\"Bob\", \"Alice\"]);\n});\n\nit('names([\"Bob\", \"Kate\"]) should return [\"Bob\", \"Kate\", \"Alice\"]', () => {\n  expect(names([\"Bob\", \"Kate\"])).to.deep.equal([\"Bob\", \"Kate\", \"Alice\"]);\n});\n\nit('names([\"Alice\", \"Bob\", \"Kate\"]) should return [\"Alice\"]', () => {\n  expect(names([\"Alice\", \"Bob\", \"Kate\"])).to.deep.equal([\"Alice\"]);\n});\n\nit('names([\"Bob\", \"Alice\"]) should return [\"Bob\", \"Alice\"]', () => {\n  expect(names([\"Bob\", \"Alice\"])).to.deep.equal([\"Bob\", \"Alice\"]);\n});\n\nit('names([\"Alice\"]) should return [\"Alice\"]', () => {\n  expect(names([\"Alice\"])).to.deep.equal([\"Alice\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

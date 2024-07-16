@@ -1,0 +1,5 @@
+{
+  "name": "Погода. Тепло или холодно?",
+  "instruction": "Напишите функцию `currentWeather`, которая принимает один параметр:\n* объект `weather` с информацией о погоде.\n\nОбъект `weather` имеет два свойства:\n* `temperature` - температура в градусах Цельсия, число,\n* `condition` - состояние погоды, пустая строка.\n\nФункция должна изменить свойство `condition` в объекте `weather` следующим образом:\n\n* Если температура больше или равна 20 градусам Цельсия, то состояние погоды должно измениться на `warm`,\n* Если температура больше или равна 10 и меньше 20 градусов Цельсия, то состояние погоды должно измениться на `cool`,\n* Если температура меньше 10 градусов Цельсия, то состояние погоды должно измениться на `cold`.\n\nФункция должна вернуть обновленный объект `weather`.\n\nПример запуска функции:\n```javascript\ncurrentWeather({temperature: 10, condition: ''});\n// { temperature: 10, condition: 'cool' }\n\ncurrentWeather({temperature: 7, condition: ''});\n// { temperature: 7, condition: 'cold' }\n\ncurrentWeather({temperature: 25, condition: ''});\n// { temperature: 25, condition: 'warm' }\n```",
+  "instructions": {}
+}

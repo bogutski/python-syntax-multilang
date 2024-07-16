@@ -1,0 +1,6 @@
+{
+  "name": "Unix time",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-4.png)\n\nSince January 1, 1970, time has been counting down on Unix systems.\n\nCreate a `unixTime` variable and assign a value to the number 1970.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst age = 38;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst unixTime = 1970;\n```"
+}

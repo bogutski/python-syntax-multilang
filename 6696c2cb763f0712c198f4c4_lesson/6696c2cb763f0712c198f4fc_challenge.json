@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f4fc",
+  "name": {
+    "en": "/*",
+    "ru": "Обновление элемента с проверкой на уникальность"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `updateIfUnique`, которая принимает три аргумента: массив, индекс для обновления и новое значение.\n\nФункция должна обновить элемент в массиве на указанном индексе только в случае, если новое значение не существует в массиве.\n\nЕсли значение уже существует, функция должна вернуть новый массив без изменений.\n\nЕсли индекс находится за пределами диапазона массива, функция также должна вернуть новый массив без изменений.\n\n\nПримеры запуска функции:\n```javascript\nconst originalArray = ['apple', 'banana', 'cherry'];\nconsole.log(updateIfUnique(originalArray, 1, 'date')); // ['apple', 'date', 'cherry']\nconsole.log(updateIfUnique(originalArray, 1, 'banana')); // ['apple', 'banana', 'cherry']\nconsole.log(updateIfUnique(originalArray, 3, 'date')); // ['apple', 'banana', 'cherry']\n```"
+  },
+  "initialSolution": "function updateIfUnique(){\n\n}",
+  "completedSolution": "function updateIfUnique(arr, i, el) {\n  const isIncluded = arr.includes(el)\n  const withingBound = Math.abs(i) < arr.length\n\n  if(!isIncluded && withingBound) return arr.with(i, el)\n  else return [...arr]\n}",
+  "openTest": "Array.prototype.with = function(index, value){\n  const newArray = this.slice();\n  newArray.splice(index, 1, value);\n  return newArray;\n}\n\nit('Created function updateIfUnique', () => {\n  expect(updateIfUnique).to.be.a('function');\n});\n\nit('Function updateIfUnique should include method with()', () => {\n  const res = updateIfUnique.toString()\n  expect(res).to.include('.with(')\n});\n\nit(\"updates value at index 1 to 'date' when 'date' is not in the array\", () => {\n  expect(updateIfUnique(['apple', 'banana', 'cherry'], 1, 'date')).to.deep.equal(['apple', 'date', 'cherry']);\n});\n\nit(\"does not update value at index 1 to 'banana' when 'banana' is already in the array\", () => {\n  expect(updateIfUnique(['apple', 'banana', 'cherry'], 1, 'banana')).to.deep.equal(['apple', 'banana', 'cherry']);\n});\n\nit(\"returns a new array without changes when index is out of bounds\", () => {\n  expect(updateIfUnique(['apple', 'banana', 'cherry'], 3, 'date')).to.deep.equal(['apple', 'banana', 'cherry']);\n});\n\nit(\"returns a new array without changes when the new value is already present in the array\", () => {\n  expect(updateIfUnique(['apple', 'banana', 'cherry'], 2, 'apple')).to.deep.equal(['apple', 'banana', 'cherry']);\n});\n\nit(\"correctly handles negative index\", () => {\n  expect(updateIfUnique(['apple', 'banana', 'cherry'], -1, 'date')).to.deep.equal(['apple', 'banana', 'date']);\n});\n\nit(\"updates the first element when index is 0 and new value is unique\", () => {\n  expect(updateIfUnique(['apple', 'banana', 'cherry'], 0, 'date')).to.deep.equal(['date', 'banana', 'cherry']);\n});\n\nit(\"does not update when the new value is already present and index is the last element\", () => {\n  expect(updateIfUnique(['apple', 'banana', 'cherry'], 2, 'apple')).to.deep.equal(['apple', 'banana', 'cherry']);\n});\n\nit(\"returns a new array without changes when the index is negative and out of bounds\", () => {\n  expect(updateIfUnique(['apple', 'banana', 'cherry'], -4, 'date')).to.deep.equal(['apple', 'banana', 'cherry']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f860",
+  "name": {
+    "en": "/*",
+    "ru": "Найти индекс первого элемента, начинающегося с определенной буквы"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findFirstIndexStartingWith`, которая принимает массив строк и букву.\n\nФункция должна вернуть индекс первого элемента в массиве, который начинается с данной буквы (без учета регистра и пробелов).\n\nЕсли такого элемента нет, функция должна вернуть строку \"Element not found\".\n\n\nПримеры запуска функции:\n```javascript\nfindFirstIndexStartingWith([' one', '  two', 'three '], 'z'); // \"Element not found\"\nfindFirstIndexStartingWith(['  hello', 'world  ', ' hi'], 'W'); // 1\nfindFirstIndexStartingWith(['cat', ' dog', 'Car', '  cow'], 'c'); // 2\nfindFirstIndexStartingWith(['  ApplE ', 'BANANA  ', '   aPRIcot', ' BLUEberry '], 'A'); // 0\n```"
+  },
+  "initialSolution": "function findFirstIndexStartingWith(){\n\n}",
+  "completedSolution": "function findFirstIndexStartingWith(arr, letter) {\n  const result = arr.findIndex(string => string.trim().toLowerCase().startsWith(letter.toLowerCase()))\n  return result !== -1 ? result : 'Element not found';\n}",
+  "openTest": "it('Created function findFirstIndexStartingWith', () => {\n  expect(findFirstIndexStartingWith).to.be.a('function');\n});\n\nit('findFirstIndexStartingWith([\"  ApplE \", \"BANANA  \", \"   aPRIcot\", \" BLUEberry \"], \"A\") should return 0', function() {\n  expect(findFirstIndexStartingWith([\"  ApplE \", \"BANANA  \", \"   aPRIcot\", \" BLUEberry \"], \"A\")).to.equal(0);\n});\n\nit('findFirstIndexStartingWith([\"cat\", \" dog\", \"Car\", \"  cow\"], \"c\") should return 0', function() {\n  expect(findFirstIndexStartingWith([\"cat\", \" dog\", \"Car\", \"  cow\"], \"c\")).to.equal(0);\n});\n\nit('findFirstIndexStartingWith([\"  hello\", \"world  \", \" hi\"], \"W\") should return 1', function() {\n  expect(findFirstIndexStartingWith([\"  hello\", \"world  \", \" hi\"], \"W\")).to.equal(1);\n});\n\nit('findFirstIndexStartingWith([\" one\", \"  two\", \"three \"], \"z\") should return \"Element not found\"', function() {\n  expect(findFirstIndexStartingWith([\" one\", \"  two\", \"three \"], \"z\")).to.equal(\"Element not found\");\n});\n\nit('findFirstIndexStartingWith([\"  lemon\", \"lime  \", \"  banana\", \"berry  \"], \"b\") should return 2', function() {\n  expect(findFirstIndexStartingWith([\"  lemon\", \"lime  \", \"  banana\", \"berry  \"], \"b\")).to.equal(2);\n});\n\nit('findFirstIndexStartingWith([\"  apple\", \"banana  \", \"  apricot\", \"blueberry  \"], \"b\") should return 1', function() {\n  expect(findFirstIndexStartingWith([\"  apple\", \"banana  \", \"  apricot\", \"blueberry  \"], \"b\")).to.equal(1);\n});\n\nit('findFirstIndexStartingWith([\"  strawberry\", \"raspberry  \", \"blueberry  \"], \"R\") should return 1', function() {\n  expect(findFirstIndexStartingWith([\"  strawberry\", \"raspberry  \", \"blueberry  \"], \"R\")).to.equal(1);\n});\n\nit('findFirstIndexStartingWith([\"kiwi  \", \"  melon\", \" orange\"], \"o\") should return 2', function() {\n  expect(findFirstIndexStartingWith([\"kiwi  \", \"  melon\", \" orange\"], \"o\")).to.equal(2);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

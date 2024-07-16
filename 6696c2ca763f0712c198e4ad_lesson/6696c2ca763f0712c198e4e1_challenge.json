@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e4e1",
+  "name": {
+    "en": "Remove spaces and convert to lowercase",
+    "ru": "Убрать пробелы и перевести в нижний регистр"
+  },
+  "instruction": {
+    "en": "Write a function `cleanAndLower` that takes a string and returns it without spaces at the beginning and end, and in lower case.\n\nExample:\n```javascript.\ncleanAndLower(' Hello World ') // 'hello world'\ncleanAndLower(' tESt ') // 'test'\n```",
+    "ru": "Напишите функцию `cleanAndLower`, которая принимает строку и возвращает ее без пробелов в начале и конце, и в нижнем регистре.\n\nПример:\n```javascript\ncleanAndLower('  Hello World  ') // 'hello world'\ncleanAndLower('  tESt  ') // 'test'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function cleanAndLower(text) {\n  return text.trim().toLowerCase();\n}",
+  "openTest": "it('Created function cleanAndLower', () => {\n  expect(cleanAndLower).to.be.a('function');\n});\n\nit('cleanAndLower(\"  Hello World  \") should return \"hello world\"', () => {\n  expect(cleanAndLower('  Hello World  ')).to.equal('hello world');\n});\n\nit('cleanAndLower(\"  tESt  \") should return \"test\"', () => {\n  expect(cleanAndLower('  tESt  ')).to.equal('test');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

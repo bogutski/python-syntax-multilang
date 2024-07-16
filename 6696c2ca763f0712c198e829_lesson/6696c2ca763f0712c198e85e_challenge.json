@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e85e",
+  "name": {
+    "en": "'Deep Copy' of an array",
+    "ru": "'Deep Copy' массива"
+  },
+  "instruction": {
+    "en": "Write a function `deepCopy` that takes an array and returns a copy of it.\n\nUse JSON.stringify and JSON.parse to solve this problem.\n\nExample runtime:\n```javascript\ndeepCopy([1, 2, 3]); // [1, 2, 3]\n```",
+    "ru": "Напишите функцию `deepCopy`, которая принимает массив и возвращает его копию.\n\nИспользуйте `JSON.stringify` и `JSON.parse` для решения этой задачи.\n\nПример запуска:\n```javascript\ndeepCopy([1, 2, 3]); // [1, 2, 3]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function deepCopy(arr){\n  const arrToStr = JSON.stringify(arr);\n  return JSON.parse(arrToStr)\n}",
+  "openTest": "it('Created function deepCopy', () => {\n  expect(deepCopy).to.be.a('function');\n});\n\nit('deepCopy([1, 2, 3]) should return [1, 2, 3]', () => {\n  expect(deepCopy([1, 2, 3])).to.eql([1, 2, 3]);\n});\n\nit('deepCopy([25, 50, 75]) should return [25, 50, 75]', () => {\n  expect(deepCopy([25, 50, 75])).to.eql([25, 50, 75]);\n});\n\nit('deepCopy([1, 2, 3, 5, 8, 13, 21]) should return [1, 2, 3, 5, 8, 13, 21]', () => {\n  expect(deepCopy([1, 2, 3, 5, 8, 13, 21])).to.eql([1, 2, 3, 5, 8, 13, 21]);\n});\n\nit('deepCopy([55, 66, 77]) should include JSON.stringify', () => {\n  expect(deepCopy.toString()).to.include('JSON.stringify');\n});\n\nit('deepCopy([55, 66, 77]) should include JSON.parse', () => {\n  expect(deepCopy.toString()).to.include('JSON.parse');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

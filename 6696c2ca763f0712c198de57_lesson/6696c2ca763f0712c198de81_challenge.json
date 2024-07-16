@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de81",
+  "name": {
+    "en": "Forks and spoons",
+    "ru": "Вилки и ложки"
+  },
+  "instruction": {
+    "en": "Given the number of spoons. How many forks and spoons are there on the table in total if there are twice as many forks as spoons?\n\nSet the variable `spoon` and assign it a value of any non-negative number (the number of spoons).\n\nSet the variable `fork` and assign it an expression to calculate the number of forks.\n\nSet the variable `tableware` in which you will calculate the total number of forks and spoons.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst apple = 10;\nconst orange = apple * 4;\nconst fruits = apple + orange;\n\n```",
+    "ru": "Дано количество ложек. Сколько всего вилок и ложек лежит на столе, если вилок в два раза больше, чем ложек?\n\nЗадайте переменную `spoon` и присвойте ей значение произвольного неотрицательного числа (количество ложек).\n\nЗадайте переменную `fork` и присвойте ей значение выражения для вычисления количества вилок.\n\nЗадайте переменную `tableware`, в которой вычислите общее количество вилок и ложек.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst apple = 10;\nconst orange = apple * 4;\nconst fruits = apple + orange;\n\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const spoon = 99;\nconst fork = spoon * 2;\nconst tableware = spoon + fork;",
+  "openTest": "it('The `spoon` variable contains a value', () => {\n  expect(spoon).not.undefined;\n});\n\nit('the variable type `spoon` is a number', () => {\n  expect(spoon).a('number');\n});\n\nit('the variable type `spoon` is not NaN', () => {\n  expect(isNaN(spoon)).false;\n});\n\nit('Variable `spoon` has value >= 0', () => {\n  expect(spoon >= 0).true;\n});\n\nit('The `fork` variable has a value', () => {\n  expect(fork).not.undefined;\n});\n\nit('the variable type `fork` is a number', () => {\n  expect(fork).a('number');\n});\n\nit('the variable `fork` has the correct value', () => {\n  expect(fork).equal(spoon * 2);\n});\n\nit('The variable `tableware` has a value', () => {\n  expect(tableware).not.undefined;\n});\n\nit('the variable type `tableware` is a number', () => {\n  expect(tableware).a('number');\n});\n\nit('the variable `tableware` has the correct value', () => {\n  expect(tableware).equal(spoon + fork);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst spoon = 99;\nconst fork = spoon * 2;\nconst tableware = spoon + fork;\n```",
+    "ru": "```javascript\nconst spoon = 99;\nconst fork = spoon * 2;\nconst tableware = spoon + fork;\n```"
+  }
+}

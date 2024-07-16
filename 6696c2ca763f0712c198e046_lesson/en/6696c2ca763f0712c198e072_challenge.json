@@ -1,0 +1,5 @@
+{
+  "name": "Calculate using the formula. Sum and multiplication",
+  "instruction": "Write a function `formula` that takes three parameters `a`, `b` and `c` and returns the result of the calculation using the formula `(a + b) * c`.",
+  "instructions": {}
+}

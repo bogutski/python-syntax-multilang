@@ -1,0 +1,4 @@
+{
+  "name": "Repeat the first and last letters of the line",
+  "instruction": "Write a function `repeatString` that takes 2 parameters:\n\n1. `string` - string\n2. `count` - number\n\nLet the function take the first character of the string and the last character of the string and repeat them `count` times.\n\nAn example of running the function:\n```javascript\nrepeatString('abc', 3); // 'acacac'\nrepeatString('abcde', 2); // 'aeae'\n```"
+}

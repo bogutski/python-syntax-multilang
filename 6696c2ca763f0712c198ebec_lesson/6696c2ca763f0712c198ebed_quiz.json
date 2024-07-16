@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2ca763f0712c198ebed",
+  "name": {
+    "ru": "Посчитать количество вхождений символа в строку",
+    "en": "Count the number of occurrences of a character in a string",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198ebee",
+      "name": {
+        "ru": "Почему результатом работы кода ниже будет 0?",
+        "en": "Why would the result of the code below be 0?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'My Cup of Tea';\nlet count = 0;\nconst symbol = 'c';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === symbol) {\n    count++;\n  }\n}\nconsole.log(count);\n```",
+        "en": "```javascript\nconst str = 'My Cup of Tea';\nlet count = 0;\nconst symbol = 'c';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === symbol) {\n    count++;\n  }\n}\nconsole.log(count);\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebef",
+          "name": {
+            "ru": "Потому что поиск чувствителен к регистру",
+            "en": "Because the search is case sensitive",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebf0",
+          "name": {
+            "ru": "Потому что буквы 'c' нет в строке",
+            "en": "Because the letter 'c' isn't in the string.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebf1",
+          "name": {
+            "ru": "Потому что в строке должно быть больше одного искомого символа",
+            "en": "Because there must be more than one character in the string you are looking for",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebf2",
+          "name": {
+            "ru": "Потому что строка и искомый символ должны быть в одном регистре",
+            "en": "Because the string and the character you are looking for must be in the same case",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ebf3",
+      "name": {
+        "ru": "Что получится в результате работы кода ниже?",
+        "en": "What is the result of the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'Two Down, One to Go';\nstr = str.toLowerCase()\nlet count = 0;\nlet symbol = 'o';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === symbol) {\n    count++;\n  }\n}\nconsole.log(count);\n```",
+        "en": "```javascript\nlet str = 'Two Down, One to Go';\nstr = str.toLowerCase()\nlet count = 0;\nlet symbol = 'o';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === symbol) {\n    count++;\n  }\n}\nconsole.log(count);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebf4",
+          "name": {
+            "ru": "4",
+            "en": "4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebf5",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebf6",
+          "name": {
+            "ru": "5",
+            "en": "5",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebf7",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ebf8",
+      "name": {
+        "ru": "Выберите верный вариант вывода в консоль результата работы кода ниже",
+        "en": "Select the correct option of outputting the result of the code below to the console",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'Two Down, One to Go';\nstr = str.toLowerCase()\nlet count = 0;\nlet symbol = 'O';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === symbol) {\n    count++;\n  }\n}\nconsole.log(count);\n```",
+        "en": "```javascript\nlet str = 'Two Down, One to Go';\nstr = str.toLowerCase()\nlet count = 0;\nlet symbol = 'O';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === symbol) {\n    count++;\n  }\n}\nconsole.log(count);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebf9",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebfa",
+          "name": {
+            "ru": "5",
+            "en": "5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebfb",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebfc",
+          "name": {
+            "ru": "4",
+            "en": "4",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ebfd",
+      "name": {
+        "ru": "Как можно исправить код ниже, чтобы поиск не был чувствителен к регистру?",
+        "en": "How can I fix the code below so that the search is not case sensitive?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet str = 'Two Down, One to Go';\nstr = str.toLowerCase()\nlet count = 0;\nlet symbol = 'O';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === symbol) {\n    count++;\n  }\n}\nconsole.log(count);\n```",
+        "en": "```javascript\nlet str = 'Two Down, One to Go';\nstr = str.toLowerCase()\nlet count = 0;\nlet symbol = 'O';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === symbol) {\n    count++;\n  }\n}\nconsole.log(count);\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ebfe",
+          "name": {
+            "ru": "Код написан верно и исправлять его не надо",
+            "en": "The code is written correctly and there is no need to correct it",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ebff",
+          "name": {
+            "ru": "После объявления переменной symbol добавить строчку symbol = symbol.toLowerCase()",
+            "en": "After declaring the symbol variable, add the line symbol = symbol.toLowerCase()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec00",
+          "name": {
+            "ru": "В теле цикла for в условии if сравнивать str[i] === symbol.toLowerCase()",
+            "en": "In the body of the for loop, in the if condition, compare str[i] === symbol.toLowerCase()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec01",
+          "name": {
+            "ru": "После объявления переменной str убрать строчку str = str.toLowerCase()",
+            "en": "After declaring the str variable, remove the line str = str.toLowerCase()",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ec02",
+      "name": {
+        "ru": "Верно ли, что результатом работы кода ниже будет 0?",
+        "en": "Is it true that the result of the code below is 0?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = ['ac', 'aa', 'ab', 'ac'];\nlet count = 0\nlet symbol = 'AC';\nfor (let i = 0; i < arr.length; i++) {\n  arr[i] = arr[i].toLowerCase()\n  if (arr[i] === symbol.toLowerCase()) {\n    count++;\n  }\n}\nconsole.log(count); \n```",
+        "en": "```javascript\nconst arr = ['ac', 'aa', 'ab', 'ac'];\nlet count = 0\nlet symbol = 'AC';\nfor (let i = 0; i < arr.length; i++) {\n  arr[i] = arr[i].toLowerCase()\n  if (arr[i] === symbol.toLowerCase()) {\n    count++;\n  }\n}\nconsole.log(count); \n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ec03",
+          "name": {
+            "ru": "Да, потому что искомый символ написан в верхнем регистре",
+            "en": "Yes, because the character you're looking for is in uppercase.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec04",
+          "name": {
+            "ru": "Нет, результатом будет 2, потому что поиск не чувствителен к регистру",
+            "en": "No, the result will be 2 because the search is case insensitive",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec05",
+          "name": {
+            "ru": "Нет, результатом будет 4, потому что все 4 элемента в массиве начинаются с символа 'a'",
+            "en": "No, the result is 4 because all 4 elements in the array start with the character 'a'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec06",
+          "name": {
+            "ru": "Да, результатом будет 0, потому что индекс первого искомого элемента в массиве равен 0",
+            "en": "Yes, the result will be 0, because the index of the first element you are looking for in the array is 0",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ec07",
+      "name": {
+        "ru": "Выберите верный результат работы кода ниже",
+        "en": "Select the correct result of the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = ['Ac', 'aa', 'ab', 'Ac'];\nlet count = 0\nlet symbol = 'AC';\nfor (let i = 0; i < arr.length; i++) {\n  if (arr[i] === symbol.toLowerCase()) {\n    count++;\n  }\n}\nconsole.log(count); \n```",
+        "en": "```javascript\nconst arr = ['Ac', 'aa', 'ab', 'Ac'];\nlet count = 0\nlet symbol = 'AC';\nfor (let i = 0; i < arr.length; i++) {\n  if (arr[i] === symbol.toLowerCase()) {\n    count++;\n  }\n}\nconsole.log(count); \n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ec08",
+          "name": {
+            "ru": "4",
+            "en": "4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec09",
+          "name": {
+            "ru": "2",
+            "en": "2",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec0a",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec0b",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ec0c",
+      "name": {
+        "ru": "В массиве с несколькими строками, количество вхождений символа во все строки осуществляется с помощью двух циклов.",
+        "en": "In an array with multiple rows, the number of occurrences of a character in all rows is done using two loops.",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ec0d",
+          "name": {
+            "ru": "Нет, подсчет осуществляется с помощью одного цикла",
+            "en": "No, the counting is done with a single loop",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec0e",
+          "name": {
+            "ru": "Да, подсчет осуществляется с помощью двух циклов",
+            "en": "Yes, counting is done using two cycles",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec0f",
+          "name": {
+            "ru": "Да, внешний цикл перебирает строки, а внутренний - символы в строке",
+            "en": "Yes, the outer loop loops through the strings and the inner loop loops through the characters in the string",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec10",
+          "name": {
+            "ru": "Нет, понадобится три цикла, чтобы перебрать все символы во всех строках",
+            "en": "No, it would take three loops to loop through all the characters in all the strings",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ec11",
+      "name": {
+        "ru": "Выберите верный результат работы кода ниже",
+        "en": "Select the correct result of the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = ['pool', 'loud', 'slow', 'sour'];\nlet count = 0;\nconst s = 'o';\nfor (let i = 0; i < arr.length; i++){\n  for (let j = 0; j < arr[i].length; j++) {\n    if (arr[i][j] === s) {\n      count++;\n    }\n  }\n}\nconsole.log(count);\n```",
+        "en": "```javascript\nconst arr = ['pool', 'loud', 'slow', 'sour'];\nlet count = 0;\nconst s = 'o';\nfor (let i = 0; i < arr.length; i++){\n  for (let j = 0; j < arr[i].length; j++) {\n    if (arr[i][j] === s) {\n      count++;\n    }\n  }\n}\nconsole.log(count);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ec12",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec13",
+          "name": {
+            "ru": "2",
+            "en": "2",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec14",
+          "name": {
+            "ru": "4",
+            "en": "4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec15",
+          "name": {
+            "ru": "5",
+            "en": "5",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ec16",
+      "name": {
+        "ru": "Верно ли что результатом работы кода ниже будет 0?",
+        "en": "Is it correct that the result of the code below will be 0?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = ['lion', 'light', 'finish'];\nlet count = 0;\nlet s = 'I';\ns = s.toLowerCase();\nfor (let i = 0; i < arr.length; i++){\n  arr[i] = arr[i].toLowerCase();\n  for (let j = 0; j < arr[i].length; j++) {\n    if (arr[i][j] === s) {\n      count++;\n    }\n  }\n}\nconsole.log(count);\n```",
+        "en": "```javascript\nconst arr = ['lion', 'light', 'finish'];\nlet count = 0;\nlet s = 'I';\ns = s.toLowerCase();\nfor (let i = 0; i < arr.length; i++){\n  arr[i] = arr[i].toLowerCase();\n  for (let j = 0; j < arr[i].length; j++) {\n    if (arr[i][j] === s) {\n      count++;\n    }\n  }\n}\nconsole.log(count);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ec17",
+          "name": {
+            "ru": "Да, результатом будет 0, потому что заданный символ в верхнем регистре, а в массиве - в нижнем",
+            "en": "Yes, the result will be 0 because the given character is upper case and the array is lower case",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec18",
+          "name": {
+            "ru": "Нет, результатом будет 3, потому что заданный символ встречается в каждом из 3-х слов",
+            "en": "No, the result is 3 because the given character occurs in each of the 3 words",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec19",
+          "name": {
+            "ru": "Нет, результатом будет 4, потому что поиск не чувствителен к регистру",
+            "en": "No, the result will be 4 because the search is case insensitive",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec1a",
+          "name": {
+            "ru": "Да, результатом будет 0, потому что все слова начинаются не с буквы 'I'",
+            "en": "Yes, the result will be 0 because all words do not start with the letter 'I'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ec1b",
+      "name": {
+        "ru": "Почему результатом работы кода ниже будет `error`?",
+        "en": "Why would the result of the code below be `error`?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = ['lion', 'light'];\nconst count = 0;\nconst s = 'i';\nfor (let i = 0; i < arr.length; i++){\n  for (let j = 0; j < arr[i].length; j++) {\n    if (arr[i][j] === s) {\n      count++;\n    }\n  }\n}\nconsole.log(count);\n```",
+        "en": "```javascript\nconst arr = ['lion', 'light'];\nconst count = 0;\nconst s = 'i';\nfor (let i = 0; i < arr.length; i++){\n  for (let j = 0; j < arr[i].length; j++) {\n    if (arr[i][j] === s) {\n      count++;\n    }\n  }\n}\nconsole.log(count);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ec1c",
+          "name": {
+            "ru": "Потому что переменная `count` объявлена через `const`, а в цикле ее значение изменяется",
+            "en": "Because the `count` variable is declared via `const` and its value changes in the loop",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec1d",
+          "name": {
+            "ru": "Результатом работы кода будет 2",
+            "en": "The result of the code will be 2",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec1e",
+          "name": {
+            "ru": "Результатом работы кода будет 0",
+            "en": "The result of the code will be 0",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ec1f",
+          "name": {
+            "ru": "Потому что переменная `s` объявлена через `const`, а в цикле ее значение изменяется",
+            "en": "Because the variable `s` is declared via `const` and its value changes in the loop",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec9b",
+  "name": {
+    "en": "Count the number of vowels in the line. Correct the errors.",
+    "ru": "Посчитать количество гласных в строке. Исправьте ошибки"
+  },
+  "instruction": {
+    "en": "The `countOnlyVowel` function accepts a string that can contain both vowel and consonant lowercase letters.\n\nYou only need to count the number of occurrences of vowels in the string and return the result as a string in the format:\n\n`${str} includes ${vowel} vowels and ${str.length - vowel} consonants`.\n\nYou need to fix bugs in the code for the function to work correctly.\n\nExamples of how to run the function\n```javascript\ncountOnlyVowel('hello') // 'hello includes 2 vowels and 3 consonants'\ncountOnlyVowel('world') // 'world includes 1 vowels and 4 consonants'\n```",
+    "ru": "Функция `countOnlyVowel` принимает строку, которая может содержать гласные и согласные строчные буквы.\n\nНеобходимо посчитать только количество вхождений гласных букв в строку и вернуть результат в виде строки в формате:\n\n`${str} includes ${vowel} vowels and ${str.length - vowel} consonants`\n\nНеобходимо исправить ошибки в коде, чтобы функция работала правильно.\n\nПримеры запуска функции\n```javascript\ncountOnlyVowel('hello') // 'hello includes 2 vowels and 3 consonants'\ncountOnlyVowel('world') // 'world includes 1 vowels and 4 consonants'\n```"
+  },
+  "initialSolution": "function countOnlyVowel(str) {\n  let vowel = 0\n  for (let i = 0, i = str.length, i++) {\n    if (str[i] === 'e' || str[i] === 'u' || str[i] === 'i' || str[i] === 'o' || str[i] === 'a') {\n      vowel++\n    }\n  }\n  return  `${str} includes ${vowel} vowels and ${str.length - vowel} consonants`;\n}",
+  "completedSolution": "function countOnlyVowel(str) {\n  let vowel = 0\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] === 'e' || str[i] === 'u' || str[i] === 'i' || str[i] === 'o' || str[i] === 'a') {\n      vowel += 1;\n    }\n  }\n  return `${str} includes ${vowel} vowels and ${str.length - vowel} consonants`;\n}",
+  "openTest": "it('Created function countOnlyVowel', () => {\n  expect(countOnlyVowel).to.be.a('function');\n});\n\nit('countOnlyVowel(\"hello\") should return \"hello includes 2 vowels and 3 consonants\"', () => {\n  expect(countOnlyVowel('hello')).to.be.equal('hello includes 2 vowels and 3 consonants');\n});\n\nit('countOnlyVowel(\"world\") should return \"world includes 1 vowels and 4 consonants\"', () => {\n  expect(countOnlyVowel('world')).to.be.equal('world includes 1 vowels and 4 consonants');\n});\n\nit('countOnlyVowel(\"a\") should return \"a includes 1 vowels and 0 consonants\"', () => {\n  expect(countOnlyVowel('a')).to.be.equal('a includes 1 vowels and 0 consonants');\n});\n\nit('countOnlyVowel(\"b\") should return \"b includes 0 vowels and 1 consonants\"', () => {\n  expect(countOnlyVowel('b')).to.be.equal('b includes 0 vowels and 1 consonants');\n});\n\nit('countOnlyVowel(\"aeiou\") should return \"aeiou includes 5 vowels and 0 consonants\"', () => {\n  expect(countOnlyVowel('aeiou')).to.be.equal('aeiou includes 5 vowels and 0 consonants');\n});\n\nit('countOnlyVowel(\"bcdfghjklmnpqrstvwxyz\") should return \"bcdfghjklmnpqrstvwxyz includes 0 vowels and 21 consonants\"', () => {\n  expect(countOnlyVowel('bcdfghjklmnpqrstvwxyz')).to.be.equal('bcdfghjklmnpqrstvwxyz includes 0 vowels and 21 consonants');\n});\n\nit('countOnlyVowel(\"\") should return \"hello world includes 0 vowels and 0 consonants\"', () => {\n  expect(countOnlyVowel('')).to.be.equal(' includes 0 vowels and 0 consonants');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

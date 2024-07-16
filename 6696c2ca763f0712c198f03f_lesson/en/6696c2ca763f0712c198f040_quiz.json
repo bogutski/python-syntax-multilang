@@ -1,0 +1,178 @@
+{
+  "name": "Search for the second maximum/minimum number in the array",
+  "questions": {
+    "0": {
+      "name": "Which numbers, from the array below, will be the second minimum and maximum?",
+      "description": "```javascript\nconst arr = [13, -2, 7, 0, 13.5, 0.5, 13.1];\n```",
+      "variants": {
+        "0": {
+          "name": "The second minimum number is 0 and the maximum number is 13.1"
+        },
+        "1": {
+          "name": "The second minimum number is -2 and the maximum number is 13.5"
+        },
+        "2": {
+          "name": "The second minimum number is 13.1 and the maximum number is 0"
+        },
+        "3": {
+          "name": "The second minimum number is 13.5 and the maximum number is -2"
+        }
+      }
+    },
+    "1": {
+      "name": "Is it true that the second minimum number in an array is greater than the first minimum number,\nand the second maximum number in the array is less than the first maximum number?",
+      "variants": {
+        "0": {
+          "name": "No, the statement is incorrect"
+        },
+        "1": {
+          "name": "Yes, the statement is correct"
+        }
+      }
+    },
+    "2": {
+      "name": "Choose the correct result of running the code below to find the second minimum number in the array",
+      "description": "```javascript\nconst arr = [-2, -1, 0, 1, 2]\nlet firstMin = arr[0];\nlet secondMin = arr[0];\nfor(let i = 1; i < arr.length; i++){\n  if(arr[i] < firstMin){\n    secondMin = firstMin;\n    firstMin = arr[i];\n  }else if(arr[i] < secondMin && arr[i] > firstMin){\n    secondMin = arr[i];\n  }else if(firstMin === secondMin){\n    secondMin = arr[i];\n  }\n}\nconsole.log([firstMin, secondMin])\n```",
+      "variants": {
+        "0": {
+          "name": "[-1, -2]"
+        },
+        "1": {
+          "name": "[-2, -1]"
+        },
+        "2": {
+          "name": "[-1, 0]"
+        },
+        "3": {
+          "name": "[2, 1]"
+        }
+      }
+    },
+    "3": {
+      "name": "What is the result of running the code below?",
+      "description": "```javascript\nconst arr = [-2, -1, 0, 1, 2];\nlet firstMax = arr[0];\nlet secondMax = arr[0];\nfor(let i = 1; i < arr.length; i++){\n  if(arr[i] > firstMax) {\n    secondMax = firstMax;\n    firstMax = arr[i];\n  } else if(arr[i] > secondMax && arr[i] < firstMax){\n    secondMax = arr[i];\n  } else if(firstMax === secondMax){\n    secondMax = arr[i];\n  }\n}\nconsole.log([firstMax, secondMax]);\n```",
+      "variants": {
+        "0": {
+          "name": "[1, 0]"
+        },
+        "1": {
+          "name": "[1, 2]"
+        },
+        "2": {
+          "name": "[0, 1]"
+        },
+        "3": {
+          "name": "[2, 1]"
+        }
+      }
+    },
+    "4": {
+      "name": "What will be the result of running the code if we go through the array in reverse order?",
+      "description": "```javascript\nconst arr = [-2, -1, 0, 1, 2];\nlet firstMax = arr[arr.length - 1];\nlet secondMax = arr[arr.length - 1];\nfor(let i = arr.length - 1; i >= 0; i--){\n  if(arr[i] > firstMax) {\n    secondMax = firstMax;\n    firstMax = arr[i];\n  } else if(arr[i] > secondMax && arr[i] < firstMax){\n    secondMax = arr[i];\n  } else if(firstMax === secondMax){\n    secondMax = arr[i];\n  }\n}\nconsole.log([firstMax, secondMax]);\n```",
+      "variants": {
+        "0": {
+          "name": "For two-digit numbers, the result will be different when going through the array from left to right and vice versa"
+        },
+        "1": {
+          "name": "[-2, -1]"
+        },
+        "2": {
+          "name": "The same as when traversing the array from left to right"
+        },
+        "3": {
+          "name": "[2, 1]"
+        }
+      }
+    },
+    "5": {
+      "name": "Select the correct result of the function run below",
+      "description": "```javascript\nfunction secondMinAndMax(arr){\n  let result = '';\n  let firstMin = arr[0];\n  let secondMin = arr[0];\n  let firstMax = arr[0];\n  let secondMax = arr[0];\n\n  for(let i = 1; i < arr.length; i++){\n    if(arr[i] < firstMin) {\n      secondMin = firstMin;\n      firstMin = arr[i];\n    } else if(arr[i] < secondMin && arr[i] > firstMin){\n      secondMin = arr[i];\n    } else if(firstMin === secondMin){\n      secondMin = arr[i];\n    }\n    if(arr[i] > firstMax) {\n      secondMax = firstMax;\n      firstMax = arr[i];\n    } else if(arr[i] > secondMax && arr[i] < firstMax){\n      secondMax = arr[i];\n    } else if(firstMax === secondMax){\n       secondMax = arr[i];\n    }\n  }\n\n  result = `Second Min: ${secondMin}, Second Max: ${secondMax}`\n\n  return result;\n}\n\nconsole.log(secondMinAndMax([-2, -1, 0, 1, 2, 3, 4]));\n```",
+      "variants": {
+        "0": {
+          "name": "'Second Min: -2, Second Max: 4'"
+        },
+        "1": {
+          "name": "'Second Min: 0, Second Max: 3'"
+        },
+        "2": {
+          "name": "'Second Min: -1, Second Max: 3'"
+        },
+        "3": {
+          "name": "'Second Min: -1, Second Max: 4'"
+        }
+      }
+    },
+    "6": {
+      "name": "What will be obtained if we compare the found second minimum number in the array when passing through the array from left to right and vice versa?\narray from left to right and vice versa?",
+      "description": "```javascript\nconst arr = [-2, -1, 0, 1, 2]\nlet firstMin = arr[0];\nlet secondMin = arr[0];\nlet firstMin2 = arr[arr.length - 1];\nlet secondMin2 = arr[arr.length - 1];\n\nfor(let i = 1; i < arr.length; i++){\n  if(arr[i] < firstMin){\n    secondMin = firstMin;\n    firstMin = arr[i];\n  }else if(arr[i] < secondMin && arr[i] > firstMin){\n    secondMin = arr[i];\n  }else if(firstMin === secondMin){\n    secondMin = arr[i];\n  }\n}\n  \nfor(let i = arr.length - 2; i >= 0; i--){\n  if(arr[i] < firstMin2){\n    secondMin2 = firstMin2;\n    firstMin2 = arr[i];\n  }else if(arr[i] < secondMin2 && arr[i] > firstMin2){\n    secondMin2 = arr[i];\n  }else if(firstMin2 === secondMin2){\n    secondMin2 = arr[i];\n  }\n}\nconsole.log(secondMin === secondMin2)\n\n```",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        },
+        "2": {
+          "name": "NaN"
+        },
+        "3": {
+          "name": "undefined"
+        }
+      }
+    },
+    "7": {
+      "name": "Why does the for loop start at index 1?",
+      "description": "```javascript\nconst arr = [-2, -1, 0, 1, 2]\nlet firstMin = arr[0];\nlet secondMin = arr[0];\nfor(let i = 1; i < arr.length; i++){\n  if(arr[i] < firstMin){\n    secondMin = firstMin;\n    firstMin = arr[i];\n  }else if(arr[i] < secondMin && arr[i] > firstMin){\n    secondMin = arr[i];\n  }else if(firstMin === secondMin){\n    secondMin = arr[i];\n  }\n}\n```",
+      "variants": {
+        "0": {
+          "name": "Because the index of the first element of the array is 1"
+        },
+        "1": {
+          "name": "Because the first element of the array with index 0 is assigned to the variables firstMin and secondMin"
+        },
+        "2": {
+          "name": "This is an error in the code, the loop should start at index 0"
+        },
+        "3": {
+          "name": "Because the first and last elements of the array are not considered in the comparison"
+        }
+      }
+    },
+    "8": {
+      "name": "What will be the result of executing the code below?",
+      "description": "```javascript\nfunction secondMinAndMax(arr){\n  let result = '';\n  let firstMin = arr[0];\n  let secondMin = arr[0];\n  let firstMax = arr[0];\n  let secondMax = arr[0];\n\n  for(let i = 1; i < arr.length; i++){\n    if(arr[i] < firstMin) {\n      secondMin = firstMin;\n      firstMin = arr[i];\n    } else if(arr[i] < secondMin && arr[i] > firstMin){\n      secondMin = arr[i];\n    } else if(firstMin === secondMin){\n      secondMin = arr[i];\n    }\n    if(arr[i] > firstMax) {\n      secondMax = firstMax;\n      firstMax = arr[i];\n    } else if(arr[i] > secondMax && arr[i] < firstMax){\n      secondMax = arr[i];\n    } else if(firstMax === secondMax){\n       secondMax = arr[i];\n    }\n  }\n\n  result = `Second Min: ${secondMin}, Second Max: ${secondMax}`\n\n  return result;\n}\n\nconsole.log(secondMinAndMax([17, -18, 17.1, -18.1, 17.4, -18.3]));\n```",
+      "variants": {
+        "0": {
+          "name": "'Second Min: 17.1, Second Max: -18.1'."
+        },
+        "1": {
+          "name": "'Second Min: -18.1, Second Max: 17'."
+        },
+        "2": {
+          "name": "'Second Min: -18, Second Max: 17.1'."
+        },
+        "3": {
+          "name": "'Second Min: -18.1, Second Max: 17.1'."
+        }
+      }
+    },
+    "9": {
+      "name": "Select the correct result of running the code below",
+      "description": "```javascript\nfunction secondMinAndMax(arr){\n  let result = '';\n  let firstMin = arr[0];\n  let secondMin = arr[0];\n  let firstMax = arr[0];\n  let secondMax = arr[0];\n\n  for(let i = 1; i < arr.length; i++){\n    if(arr[i] < firstMin) {\n      secondMin = firstMin;\n      firstMin = arr[i];\n    } else if(arr[i] < secondMin && arr[i] > firstMin){\n      secondMin = arr[i];\n    } else if(firstMin === secondMin){\n      secondMin = arr[i];\n    }\n    if(arr[i] > firstMax) {\n      secondMax = firstMax;\n      firstMax = arr[i];\n    } else if(arr[i] > secondMax && arr[i] < firstMax){\n      secondMax = arr[i];\n    } else if(firstMax === secondMax){\n       secondMax = arr[i];\n    }\n  }\n\n  result = `Second Min: ${secondMin}, Second Max: ${secondMax}`\n\n  return result;\n}\n\nconsole.log(secondMinAndMax([237]));\n```",
+      "variants": {
+        "0": {
+          "name": "'Second Min: 237, Second Max: 237'."
+        },
+        "1": {
+          "name": "'Second Min: undefined, Second Max: undefined'."
+        },
+        "2": {
+          "name": "'Second Min: NaN, Second Max: NaN'."
+        },
+        "3": {
+          "name": "'Second Min: undefined, Second Max: 237'."
+        }
+      }
+    }
+  }
+}

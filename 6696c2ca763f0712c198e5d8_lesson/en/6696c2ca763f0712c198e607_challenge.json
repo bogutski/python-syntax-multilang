@@ -1,0 +1,4 @@
+{
+  "name": "Fill the object with properties",
+  "instruction": "Write a function `fillObj` that takes an object and three values:\n* `obj` - object\n* `value1` - value,\n* `value2` - value,\n* `value3` - value\n\nAdd the following keys to the object:\n* `width` with value `value1`,\n* `height` with value `value2`,\n* `length` with value `value3`.\n\nIf the object already has one of these keys, leave it unchanged.\n\nThe function should return the object.\n\nAn example of running the function:\n```javascript\nfillObj({}, 10, 20, 30); // { width: 10, height: 20, length: 30 }\nfillObj({ width: 10 }, 20, 30, 40); // { width: 10, height: 30, length: 40 }\nfillObj({ width: 10, height: 20 }, 20, 30, 40); // { width: 10, height: 20, length: 40 }\n```\nA similar example:\n```javascript\nfunction fillCarObj(car, \"red\", \"Camry\", 2020) {\nif (!car.color) car.color = \"red\";\nif (!car.model) car.model = \"Camry\";\nif (!car.year) car.year = 2020;\nreturn car;\n}\n```"
+}

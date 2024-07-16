@@ -1,0 +1,5 @@
+{
+  "name": "Поменять свойства между объектами. SKU продукта",
+  "instruction": "Напишите функцию `swapProductSku`.\n\nПараметры функции:\n* `product1` – объект, содержащий информацию о продукте\n* `product2` – объект, содержащий информацию о продукте\n\nФункция должна поменять местами значения свойств `sku` у объектов `product1` и `product2`.\n\nФункция не должна ничего возвращать.\n\nПример запуска функции:\n```javascript\nconst product1 = { name: 'Product 1', price: 100, sku: '123', code: 'abc' };\nconst product2 = { name: 'Product 2', price: 200, sku: '456', code: 'def' };\nswapProductSku(product1, product2);\nconsole.log(product1.sku); // '456'\nconsole.log(product2.sku); // '123'\n```\n\nПохожий пример:\n```javascript\nfunction swapPrice(obj1, obj2) {\n  const temp = obj1.price;\n  obj1.price = obj2.price;\n  obj2.price = temp;\n}\n\nconst product1 = { name: 'Product 1', price: 100, sku: '123', code: 'abc' };\nconst product2 = { name: 'Product 2', price: 200, sku: '456', code: 'def' };\n\nswapPrice(product1, product2);\nconsole.log(product1.price); // 100\nconsole.log(product2.price); // 200\n```",
+  "instructions": {}
+}

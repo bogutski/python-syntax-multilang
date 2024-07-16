@@ -1,0 +1,6 @@
+{
+  "name": "Исправьте ошибки в коде. Число ноль",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-19.png)\n\nТребуется написать команду, которая присваивает переменной `sum`\nзначение числа `0` с использованием ключевого слова `let`.\n\nИсправьте ошибки в приведенном коде.",
+  "instructions": {},
+  "hint": "```javascript\nlet sum = 0;\n```"
+}

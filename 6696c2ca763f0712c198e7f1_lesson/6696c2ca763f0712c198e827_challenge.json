@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e827",
+  "name": {
+    "en": "Eliminate words with spaces. Arrays",
+    "ru": "Исключить слова с пробелами. Массивы"
+  },
+  "instruction": {
+    "en": "The `changeElement` function takes an array of strings and a string.\n\nThe array consists of 5 elements.\n\nYou need to find all elements in the array that contain spaces, and replace them with the second parameter of the function - a string.\n\nThe function should return the modified array.\n\nUse the `splice` method to change the array.\n\nAn example of running the function:\n```javascript\nchangeElement(['John Smith', 'MarthaLee', 'TomMcKenzie', 'Alice New', 'Derrick Kent'], 'updateName')\n// [\"updateName\", \"MarthaLee\", \"TomMcKenzie\", \"updateName\", \"updateName\"]\n```",
+    "ru": "Функция `changeElement` принимает массив строк и строку.\n\nМассив состоит из 5 элементов.\n\nНеобходимо найти в массиве все элементы, которые содержат пробелы, и заменить их на второй параметр функции - строку.\n\nФункция должна возвращать измененный массив.\n\nИспользуйте метод `splice` для изменения массива.\n\nПример запуска функции:\n```javascript\nchangeElement(['John Smith', 'MarthaLee', 'TomMcKenzie', 'Alice New', 'Derrick Kent'], 'updateName')\n // [\"updateName\", \"MarthaLee\", \"TomMcKenzie\", \"updateName\", \"updateName\"]\n ```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function changeElement(arr, str) {\n  if (arr[0].includes(' ')) {\n    arr.splice(0, 1, str)\n  }\n\n  if (arr[1].includes(' ')) {\n    arr.splice(1, 1, str)\n  }\n\n  if (arr[2].includes(' ')) {\n    arr.splice(2, 1, str)\n  }\n\n  if (arr[3].includes(' ')) {\n    arr.splice(3, 1, str)\n  }\n\n  if (arr[4].includes(' ')) {\n    arr.splice(4, 1, str)\n  }\n  return arr\n}",
+  "openTest": "it('Created function changeElement', () => {\n  expect(changeElement).to.be.a('function');\n});\n\nit(`function changeElement should include 'splice'`, () => {\n    expect(changeElement.toString().includes('splice')).to.equal(true);\n});\n\nit(`changeElement(['Hello world', 'hello', 'newWord', 'first step', 'hot summer'], 'changedElement') should return [\"changedElement\", \"hello\", \"newWord\", \"changedElement\", \"changedElement\"]`, () => {\n  expect(changeElement(['Hello world', 'hello', 'newWord', 'first step', 'hot summer'], 'changedElement')).to.eql([\"changedElement\", \"hello\", \"newWord\", \"changedElement\", \"changedElement\"]);\n});\n\nit(`changeElement(['oneWord', 'two words, 'threeWords', 'four words', 'five words'], 'useCamelCase') should return ['oneWord', 'useCamelCase', 'threeWords', 'useCamelCase', 'useCamelCase']`, () => {\n  expect(changeElement(['oneWord', 'two words', 'threeWords', 'four words', 'five words'], 'useCamelCase')).to.eql(['oneWord', 'useCamelCase', 'threeWords', 'useCamelCase', 'useCamelCase']);\n});\n\nit(`changeElement(['applePie', 'carrot pie', 'cherryPie', 'blueberry pie', 'strawberryPie'], 'modificationRequired') should return ['applePie', 'modificationRequired', 'cherryPie', 'modificationRequired', 'strawberryPie']`, () => {\n  expect(changeElement(['applePie', 'carrot pie', 'cherryPie', 'blueberry pie', 'strawberryPie'], 'modificationRequired')).to.eql(['applePie', 'modificationRequired', 'cherryPie', 'modificationRequired', 'strawberryPie']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

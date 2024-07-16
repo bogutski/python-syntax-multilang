@@ -1,0 +1,5 @@
+{
+  "name": "Есть ли свойство в объекте, метод `hasOwnProperty`",
+  "instruction": "Напишите функцию `hasProperty`, которая принимает два параметра:\n\n* `object` – объект\n* `property` – свойство, которое будет проверяться на наличие в объекте, строка\n\nВ решении используйте метод `hasOwnProperty`.\n\nЕсли свойство `property` присутствует в объекте `object`, то функция должна вернуть `true`, иначе `false`.\n\nПример запуска функции:\n```javascript\nhasProperty({ name: 'Alice' }, 'name') // true\nhasProperty({ name: 'Toshiba', model: 'Satellite', year: 2015 }, 'color') // false\n```",
+  "instructions": {}
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e4e5",
+  "name": {
+    "en": "Found or not found",
+    "ru": "Найдено или нет"
+  },
+  "instruction": {
+    "en": "Write a function `isContains` that takes two parameters: a string and a substring.\n\nThe function should return `true` if the substring is found in the string, and `false` otherwise.\n\nThe search should be case insensitive.\n\nExamples:\n```javascript\nisContains('Hello', 'll'); // true\nisContains('Hello', 'lL'); // true\nisContains('Hello', 'LL'); // true\nisContains('Example', 'ex'); // true\nisContains('Example', 'Ex'); // true\nisContains('MOUSE', 'mou'); // true\nisContains('MOUSE', 'mOu'); // true\nisContains('MOUSE', 'mU'); // false\n```",
+    "ru": "Напишите функцию `isContains`, которая принимает два параметра: строку и подстроку.\n\nФункция должна возвращать `true`, если подстрока найдена в строке, и `false` в противном случае.\n\nПоиск должен быть нечувствителен к регистру.\n\nПримеры:\n```javascript\nisContains('Hello', 'll'); // true\nisContains('Hello', 'lL'); // true\nisContains('Hello', 'LL'); // true\nisContains('Example', 'ex'); // true\nisContains('Example', 'Ex'); // true\nisContains('MOUSE', 'mou'); // true\nisContains('MOUSE', 'mOu'); // true\nisContains('MOUSE', 'mU'); // false\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isContains(string, subString) {\n  return string.toLowerCase().indexOf(subString.toLowerCase()) !== -1;\n}",
+  "openTest": "it('Created function isContains', () => {\n  expect(isContains).to.be.a('function');\n});\n\nit('isContains(\"Hello\", \"ll\") should return true', () => {\n  expect(isContains('Hello', 'll')).to.equal(true);\n});\n\nit('isContains(\"Hello\", \"lL\") should return true', () => {\n  expect(isContains('Hello', 'lL')).to.equal(true);\n});\n\nit('isContains(\"Hello\", \"LL\") should return true', () => {\n  expect(isContains('Hello', 'LL')).to.equal(true);\n});\n\nit('isContains(\"Example\", \"ex\") should return true', () => {\n  expect(isContains('Example', 'ex')).to.equal(true);\n});\n\nit('isContains(\"World\", \"world\") should return true', () => {\n  expect(isContains('World', 'world')).to.equal(true);\n});\n\nit('isContains(\"Cursor\", \"cu rs\") should return false', () => {\n  expect(isContains('Cursor', 'cu rs')).to.equal(false);\n});\n\nit('isContains(\"Mouse\", \"mu\") should return false', () => {\n  expect(isContains('Mouse', 'mu')).to.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

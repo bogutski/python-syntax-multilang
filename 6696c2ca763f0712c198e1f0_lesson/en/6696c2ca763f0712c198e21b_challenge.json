@@ -1,0 +1,4 @@
+{
+  "name": "One of the numbers or the sum of the numbers is 23",
+  "instruction": "Write a function `equal23` that takes two arguments num1 and num2.\nThe function should return true if one of the arguments or the sum of the arguments is 23, and `false` otherwise.\n\nExamples:\n- The `equal23(1, 23)` function should return true;\n- The function `equal23(21, 2)` must return true.\n- The function `equal23('23', 1)` must return false.\n- The function `equal23(10, 12)` must return false."
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Прогноз пожароопасности. Объекты",
+  "instruction": "Функция `forecast` оценивает риск пожароопасности в лесах в зависимости от температуры и влажности воздуха.\n\nФункция принимает объект `weather` с двумя свойствами:\n* `temperature`  - температура в градусах цельсия, число\n* `humidity` - влажность в процентах, число\n\nЕсли температура ниже 22 градусов, а влажность выше 65%, то функция должна вернуть строку `Low risk`.\n\nЕсли температура от 22 до 29 градусов (включительно), а влажность выше 50%, то вернуть строку `Medium risk`.\n\nЕсли температура выше 29 градусов и влажность равна или меньше 50%, то вернуть строку `High risk`.\n\nВ остальных случаях вернуть строку `Watch the situation`.\n\nПримеры запуска функции:\n```javascript\nforecast({temperature: 20, humidity: 70}) // => 'Low risk'\n\nforecast({temperature: 25, humidity: 55}) // => 'Medium risk'\n\nforecast({temperature: 30, humidity: 60}) // => 'Watch the situation'\n\nforecast({temperature: 30, humidity: 30}) // => 'High risk'\n```",
+  "instructions": {}
+}

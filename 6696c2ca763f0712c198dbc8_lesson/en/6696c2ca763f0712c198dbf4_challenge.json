@@ -1,0 +1,6 @@
+{
+  "name": "Delicious cake",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-4.png)\n\nA hostess baked a pie weighing 1400 g and left it on the table.\nWhen she returned, only 1/8th of the pie was on the plate.\nFind the weight of the remaining part of the pie.\n\n\nCreate a variable `pieWeight` and assign it the value 1400.\nThen write a command that decreases the value of the `pieWeight` variable by a factor of 8.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nlet a = 100;\na = a / 5; // the command decreases the value of the variable `a` by a factor of 5.\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet pieWeight = 1400;\npieWeight = pieWeight / 8;\n```"
+}

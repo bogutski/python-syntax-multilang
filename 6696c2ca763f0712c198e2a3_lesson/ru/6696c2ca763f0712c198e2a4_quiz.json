@@ -1,0 +1,170 @@
+{
+  "name": "Округление в меньшую сторону. Math.floor()",
+  "questions": {
+    "0": {
+      "name": "Math.floor() это...",
+      "variants": {
+        "0": {
+          "name": "Свойство"
+        },
+        "1": {
+          "name": "Метод"
+        },
+        "2": {
+          "name": "Параметр"
+        },
+        "3": {
+          "name": "Инструкция"
+        }
+      }
+    },
+    "1": {
+      "name": "Метод Math.floor() округляет число до ...",
+      "variants": {
+        "0": {
+          "name": "Округляет число до ближайшего меньшего целого"
+        },
+        "1": {
+          "name": "Округляет число до ближайшего большего целого"
+        }
+      }
+    },
+    "2": {
+      "name": "Выберите верный(е) вариант(ы) работы метода Math.floor()",
+      "variants": {
+        "0": {
+          "name": "Math.floor(45.95); // 46"
+        },
+        "1": {
+          "name": "Math.floor(45.95); // 45"
+        },
+        "2": {
+          "name": "Math.floor(-45.95); // -45"
+        },
+        "3": {
+          "name": "Math.floor(-45.95); // -46"
+        }
+      }
+    },
+    "3": {
+      "name": "Выберите вариант(ы) сравнения который вернет true",
+      "variants": {
+        "0": {
+          "name": "Math.floor(-5.1) === -6"
+        },
+        "1": {
+          "name": "Math.floor(-5.1) === -5"
+        },
+        "2": {
+          "name": "Math.floor(5.1) === 6"
+        },
+        "3": {
+          "name": "Math.floor(5.1) === 5"
+        }
+      }
+    },
+    "4": {
+      "name": "Выберите вариант(ы) сравнения который вернет false",
+      "variants": {
+        "0": {
+          "name": "Math.floor(0.90) === 1"
+        },
+        "1": {
+          "name": "Math.floor(0.60) === 0"
+        },
+        "2": {
+          "name": "Math.floor(5.6) === 6"
+        },
+        "3": {
+          "name": "Math.floor(5.7) === 5"
+        }
+      }
+    },
+    "5": {
+      "name": "Выберите вариант(ы) сравнения который вернет true",
+      "variants": {
+        "0": {
+          "name": "Math.floor(7.8) <= 8"
+        },
+        "1": {
+          "name": "Math.floor(7.8) < 8"
+        },
+        "2": {
+          "name": "Math.floor(7.8) <= 7"
+        },
+        "3": {
+          "name": "Math.floor(7.8) < 7"
+        }
+      }
+    },
+    "6": {
+      "name": "Выберите вариант(ы) сравнения который вернет true",
+      "variants": {
+        "0": {
+          "name": "Math.floor(7.8) === Math.floor(7.5)"
+        },
+        "1": {
+          "name": "Math.floor(7.8) <= Math.floor(7.5)"
+        },
+        "2": {
+          "name": "Math.floor(7.8) > Math.floor(7.5)"
+        },
+        "3": {
+          "name": "Math.floor(7.8) >= Math.floor(7.5)"
+        }
+      }
+    },
+    "7": {
+      "name": "Выберите вариант(ы) сравнения который вернет false",
+      "variants": {
+        "0": {
+          "name": "Math.floor(5.9) === Math.floor(5.3)"
+        },
+        "1": {
+          "name": "Math.floor(5.9) > Math.floor(5.3)"
+        },
+        "2": {
+          "name": "Math.floor(5.9) !== Math.floor(5.3)"
+        },
+        "3": {
+          "name": "Math.floor(5.9) >= Math.floor(5.3)"
+        }
+      }
+    },
+    "8": {
+      "name": "Выберите вариант(ы) сравнения который вернет false",
+      "variants": {
+        "0": {
+          "name": "Math.floor(9.3) !== 9"
+        },
+        "1": {
+          "name": "Math.floor(9.3) === 9"
+        },
+        "2": {
+          "name": "Math.floor(9.3) > 9"
+        },
+        "3": {
+          "name": "Math.floor(9.3) < 9"
+        }
+      }
+    },
+    "9": {
+      "name": "Выберите верный вариант результата работы кода ниже",
+      "description": "```javascript\nlet num = 3.7;\nlet round = Math.floor(num);\nconsole.log(round);\n```",
+      "variants": {
+        "0": {
+          "name": "4"
+        },
+        "1": {
+          "name": "3"
+        },
+        "2": {
+          "name": "3.7"
+        },
+        "3": {
+          "name": "3.8"
+        }
+      }
+    }
+  }
+}

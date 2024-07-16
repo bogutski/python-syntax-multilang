@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e10d",
+  "name": {
+    "en": "Formatted answer. Squares of circles",
+    "ru": "Форматированный ответ. Площади кругов"
+  },
+  "instruction": {
+    "en": "Write a function `CircleAreaFormatted` that takes the radius of a circle as a parameter and returns a string like `Area of circle with radius 2 is 12.56`.\n\nTo calculate the area of a circle, use the function `circleArea` that takes the radius of the circle as a parameter and returns its area.\n\nAs a result, you should have two functions: `circleArea` and `circleAreaFormatted`.\n\n`PI = 3.14`.\n\nTo avoid rounding errors, use the formula `PI * (radius ** 2)` to calculate the area of the circle.",
+    "ru": "Напишите функцию `circleAreaFormatted`, которая принимает в качестве параметра радиус круга и возвращает строку вида `Area of circle with radius 2 is 12.56`.\n\nДля расчета площади круга используйте функцию `circleArea`, которая принимает в качестве параметра радиус круга и возвращает его площадь.\n\nВ итоге у вас должно быть 2 функции: `circleArea` и `circleAreaFormatted`.\n\n`PI = 3.14`\n\nДля избежания ошибок округления используйте для расчета площади круга формулу `PI * (radius ** 2)`"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function circleArea(radius) {\n  return 3.14 * (radius ** 2);\n}\n\nfunction circleAreaFormatted(radius) {\n  return `Area of circle with radius ${radius} is ${circleArea(radius)}`;\n}",
+  "openTest": "it('Created function circleArea', () => {\n  expect(circleArea).to.be.a('function');\n});\n\nit('Created function circleAreaFormatted', () => {\n  expect(circleAreaFormatted).to.be.a('function');\n});\n\nit('circleArea(2) should return 12.56', () => {\n  expect(circleArea(2)).to.be.equal(12.56);\n});\n\nit('circleAreaFormatted(2) should return \"Area of circle with radius 2 is 12.56\"', () => {\n  expect(circleAreaFormatted(2)).to.be.equal('Area of circle with radius 2 is 12.56');\n});\n\nit('circleArea(3) should return 28.26', () => {\n  expect(circleArea(3)).to.be.equal(28.26);\n});\n\nit('circleAreaFormatted(3) should return \"Area of circle with radius 3 is 28.26\"', () => {\n  expect(circleAreaFormatted(3)).to.be.equal('Area of circle with radius 3 is 28.26');\n});\n\nit('circleArea(4) should return 50.24', () => {\n  expect(circleArea(4)).to.be.equal(50.24);\n});\n\nit('circleAreaFormatted(4) should return \"Area of circle with radius 4 is 50.24\"', () => {\n  expect(circleAreaFormatted(4)).to.be.equal('Area of circle with radius 4 is 50.24');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db4b",
+  "name": {
+    "en": "Assign true value to the isAdult variable",
+    "ru": "Присвойте переменной isAdult значение true"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-10.png)\n\nCreate a variable named `isAdult`.\nUse the keyword ` const`.\nAssign the logical value `true`.\n\nRelated example:\n```javascript\nconst isMan = true;\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-10.png)\n\nСоздайте переменную с именем `isAdult`.\nИспользуйте ключевое слово` const`.\nПрисвойте логическое значение `true`.\n\nПохожий пример:\n```javascript\nconst isMan = true;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const isAdult = true;",
+  "openTest": "it('isAdult is defined', () => {\n  expect(isAdult).not.undefined;\n});\n\nit('isAdult is a boolean', () => {\n  expect(typeof isAdult).to.equal('boolean');\n});\n\nit('isAdult is true', () => {\n  expect(isAdult).to.equal(true);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst isAdult = true;\n```",
+    "ru": "```javascript\nconst isAdult = true;\n```"
+  }
+}

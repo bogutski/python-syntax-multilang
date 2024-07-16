@@ -1,0 +1,1 @@
+# Array.prototype.includes() – содержит ли массив искомый элемент language: es

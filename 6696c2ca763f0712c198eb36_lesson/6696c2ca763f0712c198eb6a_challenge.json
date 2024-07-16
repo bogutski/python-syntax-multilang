@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eb6a",
+  "name": {
+    "en": "Reverse the line and change the case of letters",
+    "ru": "Перевернуть строку и поменять регистр букв"
+  },
+  "instruction": {
+    "en": "Write a function `reverseStrAndCase` that takes a string and returns a new string.\n\nThe new string must be reversed and each letter must be in reverse case.\n\nFor example: the string `aBc` should turn into `CbA`.\n\nIn case of an empty string the function must return an empty string.\n\n\nAn example of running the function:\n```js\nreverseStrAndCase('Hi There'); // => 'EREHt Ih'\nreverseStrAndCase('cAt'); // => 'TaC'\nreverseStrAndCase('pAsV'); // => 'vSaP'\nreverseStrAndCase('123'); // => '321'\n```",
+    "ru": "Напишите функцию `reverseStrAndCase`, которая принимает строку и возвращает новую строку.\n\nНовая строка должна быть перевернутой и каждая буква должна быть в противоположном регистре.\n\nНапример: строка `aBc` должна превратиться в `CbA`.\n\nВ случае пустой строки функция должна вернуть пустую строку.\n\n\nПример запуска функции:\n```js\nreverseStrAndCase('Hi There'); // => 'EREHt Ih'\nreverseStrAndCase('cAt');   // => 'TaC'\nreverseStrAndCase('pAsV');  // => 'vSaP'\nreverseStrAndCase('123');   // => '321'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseStrAndCase(str) {\n  let newStr = '';\n  for (let i = str.length - 1; i >= 0; i--) {\n    if (str[i] === str[i].toLowerCase()) newStr += str[i].toUpperCase();\n    else newStr += str[i].toLowerCase();\n  }\n  return newStr;\n}",
+  "openTest": "it('Created function reverseStrAndCase', () => {\n  expect(reverseStrAndCase).to.be.a('function');\n});\n\nit('reverseStrAndCase(\"hello\") should return \"OLLEH\"', () => {\n  expect(reverseStrAndCase('hello')).to.equal('OLLEH');\n});\n\nit('reverseStrAndCase(\"UPPERCASE\") should return \"esacreppu\"', () => {\n  expect(reverseStrAndCase('UPPERCASE')).to.equal('esacreppu');\n});\n\nit('reverseStrAndCase(\"JaVaScRiPt\") should return \"TpIrCsAvAj\"', () => {\n  expect(reverseStrAndCase('JaVaScRiPt')).to.equal('TpIrCsAvAj');\n});\n\nit('reverseStrAndCase(\"1234567890\") should return \"0987654321\"', () => {\n  expect(reverseStrAndCase('1234567890')).to.equal('0987654321');\n});\n\nit('reverseStrAndCase(\"HeLLo WoRlD\") should return \"dLrOw OllEh\"', () => {\n  expect(reverseStrAndCase('HeLLo WoRlD')).to.equal('dLrOw OllEh');\n});\n\nit('reverseStrAndCase(\"\") should return \"\"', () => {\n  expect(reverseStrAndCase('')).to.equal('');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

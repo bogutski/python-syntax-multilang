@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f5f0",
+  "name": {
+    "en": "/*",
+    "ru": "Сортировка массива чисел по возрастанию"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `sortNumbersAscending`, которая принимает массив целых чисел и возвращает новый массив, содержащий те же числа, отсортированные по возрастанию.\n\n\nПримеры запуска функции:\n```javascript\nsortNumbersAscending([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]); // [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]\nsortNumbersAscending([-2, 3, -1, 5, 4, -3]); // [-3, -2, -1, 3, 4, 5]\n```"
+  },
+  "initialSolution": "function sortNumbersAscending(){\n\n}",
+  "completedSolution": "function sortNumbersAscending(arr) {\n  return arr.slice().sort((a, b) => a - b);\n}",
+  "openTest": "it('Created function sortNumbersAscending', () => {\n  expect(sortNumbersAscending).to.be.a('function');\n});\n\nit('Function sortNumbersAscending should include method sort()', () => {\n  const res = sortNumbersAscending.toString()\n  expect(res).to.include('.sort(')\n});\n\nit('sortNumbersAscending([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]) should return [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]', () => {\n  expect(sortNumbersAscending([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5])).to.deep.equal([1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]);\n});\n\nit('sortNumbersAscending([-2, 3, -1, 5, 4, -3]) should return [-3, -2, -1, 3, 4, 5]', () => {\n  expect(sortNumbersAscending([-2, 3, -1, 5, 4, -3])).to.deep.equal([-3, -2, -1, 3, 4, 5]);\n});\n\nit('sortNumbersAscending([]) should return []', () => {\n  expect(sortNumbersAscending([])).to.deep.equal([]);\n});\n\nit('sortNumbersAscending([5]) should return [5]', () => {\n  expect(sortNumbersAscending([5])).to.deep.equal([5]);\n});\n\nit('sortNumbersAscending([10, 1]) should return [1, 10]', () => {\n  expect(sortNumbersAscending([10, 1])).to.deep.equal([1, 10]);\n});\n\nit('sortNumbersAscending([1, 2, 3]) should return the same array [1, 2, 3]', () => {\n  expect(sortNumbersAscending([1, 2, 3])).to.deep.equal([1, 2, 3]);\n});\n\nit('sortNumbersAscending([2, 3, 1]) should sort to [1, 2, 3]', () => {\n  expect(sortNumbersAscending([2, 3, 1])).to.deep.equal([1, 2, 3]);\n});\n\nit('sortNumbersAscending([9, 8, 7, 6, 5, 4, 3, 2, 1]) should return [1, 2, 3, 4, 5, 6, 7, 8, 9]', () => {\n  expect(sortNumbersAscending([9, 8, 7, 6, 5, 4, 3, 2, 1])).to.deep.equal([1, 2, 3, 4, 5, 6, 7, 8, 9]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

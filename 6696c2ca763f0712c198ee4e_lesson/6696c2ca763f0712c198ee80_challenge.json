@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ee80",
+  "name": {
+    "en": "Flip the line with one word",
+    "ru": "Перевернуть строку с одним словом"
+  },
+  "instruction": {
+    "en": "Write a function `reverseAWord` that takes a single-word string and returns an inverted word.\n\nExamples of running the function:\n```javascript\nreverseAWord('olleh') // 'hello'\nreverseAWord('dlrow') // 'world'\nreverseAWord('98765') // '56789'\n```",
+    "ru": "Напишите функцию `reverseAWord`, которая принимает строку с одним словом и возвращает перевернутое слово.\n\nПримеры запуска функции:\n```javascript\nreverseAWord('olleh') // 'hello'\nreverseAWord('dlrow') // 'world'\nreverseAWord('98765') // '56789'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseAWord(word){\n  let revWord = '';\n  for(let i = word.length - 1; i >= 0; i--){\n    revWord += word[i];\n  }\n  return revWord;\n}",
+  "openTest": "it('Created function reverseAWord', () => {\n  expect(reverseAWord).to.be.a('function');\n});\n\nit(\"reverseAWord('olleh') returns 'hello'\", () => {\n  expect(reverseAWord('olleh')).to.equal('hello');\n});\n\nit(\"reverseAWord('dlrow') returns 'world'\", () => {\n  expect(reverseAWord('dlrow')).to.equal('world');\n});\n\nit(\"reverseAWord('12345') returns '54321'\", () => {\n  expect(reverseAWord('12345')).to.equal('54321');\n});\n\nit(\"reverseAWord('apple123!@#') returns '#@!321elppa'\", () => {\n  expect(reverseAWord('apple123!@#')).to.equal('#@!321elppa');\n});\n\nit(\"reverseAWord('') returns ''\", () => {\n  expect(reverseAWord('')).to.equal('');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

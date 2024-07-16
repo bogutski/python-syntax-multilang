@@ -1,0 +1,5 @@
+{
+  "name": "Функция удаляет пробелы в начале и в конце строки",
+  "instruction": "Напишите функцию `clearString`, которая принимает строку и возвращает ее без пробелов в начале и в конце.\n\nПример запуска функции:\n```javascript\nclearString('  abc'); // 'abc'\nclearString('abc  '); // 'abc'\nclearString('  abc  '); // 'abc'\nclearString('  a b c  '); // 'a b c'\nclearString(' a b c '); // 'a b c'\nclearString(' a b c'); // 'a b c'\n```\n\nИспользуйте метод `trim` для удаления пробелов в начале и в конце строки.",
+  "instructions": {}
+}

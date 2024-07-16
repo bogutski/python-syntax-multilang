@@ -1,0 +1,5 @@
+{
+  "name": "Очистить строку от дубликатов слов",
+  "instruction": "Функция `findDuplicates` принимает строку.\n\nВ строке могут быть слова, разделенные пробелами или дефисами. Все слова написаны в нижнем регистре.\n\nОдинаковые слова могут быть написаны через дефис, при этом они всё равно считаются дубликатами, а не единым словом.\n\nНеобходимо очистить строку от дубликатов слов и вернуть строку, в которой слова разделены пробелами.\n\nПримеры запуска функции:\n```javascript\nfindDuplicates('hide-and-seek up-down up and down'); // 'hide and seek up down'\nfindDuplicates('start-stop and stop and run'); // 'start stop and run'\nfindDuplicates('javascript'); // 'javascript'\n```",
+  "instructions": {}
+}

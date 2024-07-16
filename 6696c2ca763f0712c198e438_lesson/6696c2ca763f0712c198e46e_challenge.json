@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e46e",
+  "name": {
+    "en": "Repeat the number",
+    "ru": "Повторить число"
+  },
+  "instruction": {
+    "en": "Write a function `repeatNumber` that takes a number.\n\nLet the function take a number and repeat it as many times as the number itself equals.\n\nAn example of running the function:\n```javascript\nrepeatNumber(1); // '1\nrepeatNumber(2); // '22\nrepeatNumber(3); // `` 333\nrepeatNumber(4); // '4444'\nrepeatNumber(5); // '55555'\n```\n\nThe result of the function must be a string.\n\nTo convert a number to a string, use the construct `(number + '')`.\n\n```javascript\nconst n = 3;\nconsole.log((n + '').repeat(n)); // '333'\n```\nIf you add an empty string to the number, you get a string.",
+    "ru": "Напиши функцию `repeatNumber`, которая принимает число.\n\nПусть функция возьмет число и повторит его столько раз чему равно само число.\n\nПример запуска функции:\n```javascript\nrepeatNumber(1); // '1'\nrepeatNumber(2); // '22'\nrepeatNumber(3); // '333'\nrepeatNumber(4); // '4444'\nrepeatNumber(5); // '55555'\n```\n\nРезультат функции должен быть строкой.\n\nЧтобы преобразовать число в строку, используй конструкцию `(number + '')`.\n\n```javascript\nconst n = 3;\nconsole.log((n + '').repeat(n)); // '333'\n```\nЕсли вы к числу прибавите пустую строку, то получите строку."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function repeatNumber(number) {\n  return (number + '').repeat(number);\n}",
+  "openTest": "it('Created function repeatNumber', () => {\n  expect(repeatNumber).to.be.a('function');\n});\n\nit('repeatNumber(1) should return \"1\"', () => {\n  expect(repeatNumber(1)).to.be.equal('1');\n});\n\nit('repeatNumber(2) should return \"22\"', () => {\n  expect(repeatNumber(2)).to.be.equal('22');\n});\n\nit('repeatNumber(3) should return \"333\"', () => {\n  expect(repeatNumber(3)).to.be.equal('333');\n});\n\nit('repeatNumber(4) should return \"4444\"', () => {\n  expect(repeatNumber(4)).to.be.equal('4444');\n});\n\nit('repeatNumber(5) should return \"55555\"', () => {\n  expect(repeatNumber(5)).to.be.equal('55555');\n});\n\nit('repeatNumber(6) should return \"666666\"', () => {\n  expect(repeatNumber(6)).to.be.equal('666666');\n});\n\nit('repeatNumber(7) should return \"7777777\"', () => {\n  expect(repeatNumber(7)).to.be.equal('7777777');\n});\n\nit('repeatNumber(8) should return \"88888888\"', () => {\n  expect(repeatNumber(8)).to.be.equal('88888888');\n});\n\nit('repeatNumber(9) should return \"999999999\"', () => {\n  expect(repeatNumber(9)).to.be.equal('999999999');\n});\n\nit('repeatNumber(10) should return \"10101010101010101010\"', () => {\n  expect(repeatNumber(10)).to.be.equal('10101010101010101010');\n});\n\nit('repeatNumber(11) should return \"1111111111111111111111\"', () => {\n  expect(repeatNumber(11)).to.be.equal('1111111111111111111111');\n});\n\nit('repeatNumber(12) should return \"121212121212121212121212\"', () => {\n  expect(repeatNumber(12)).to.be.equal('121212121212121212121212');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

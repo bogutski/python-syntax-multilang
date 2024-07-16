@@ -1,0 +1,5 @@
+{
+  "name": "Исправьте функцию 'deepCopyOfArray'",
+  "instruction": "Исправьте функцию `deepCopyOfArray`, чтобы она возвращала глубокую копию массива.",
+  "instructions": {}
+}

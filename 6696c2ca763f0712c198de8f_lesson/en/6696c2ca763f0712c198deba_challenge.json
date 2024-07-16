@@ -1,0 +1,4 @@
+{
+  "name": "Degree conversion.  How many seconds are in an hour?",
+  "instruction": "There are 60 seconds in one minute. There are 60 minutes in one hour. Find the number of seconds in 1 hour using the power operator.\n\nCreate a variable `seconds` and assign a value of 60 to it.\n\nCreate a variable `power` and give it a value of 2.\n\nCreate a variable `result` and give it a value of `seconds` to the extent of `power`.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n\n ```\nconst number = 5;\nconst cube = 3;\nconst result = n ** cube;\n ```"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ee4c",
+  "name": {
+    "en": "",
+    "ru": "Замените первое слово на последнее при помощи циклов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `firstIsLast` принимает строку, состоящую из слов, разделенных пробелами.\n\nСтрока может содержать любое количество слов.\n\nПоменяйте местами первое и последнее слово в строке, предварительно переведя строку в нижний регистр.\n\nЕсли в строке только одно слово, то верните \"nothing to switch\".\n\nИспользуйте только циклы для решения этой задачи.\n\nПример запуска функции:\n```javascript\nfirstIsLast(\"JavaScript is easy\") // \"easy is javascript\"\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function firstIsLast(str) {\n  if(str.includes(' ') === false) return 'nothing to switch'\n  str = str.toLowerCase();\n  let firstWord = ''\n  const firstSpace = str.indexOf(' ');\n  const lastSpace = str.lastIndexOf(' ');\n  for(let i = 0; i < firstSpace; i++) {\n    firstWord += str[i]\n  }\n  let lastWord = ''\n  for(let i = lastSpace + 1; i < str.length; i++) {\n    lastWord += str[i]\n  }\n  let newStr = ''\n  for(let i = firstSpace; i <= lastSpace; i++) {\n    newStr += str[i]\n  }\n  return lastWord + newStr + firstWord\n}",
+  "openTest": "it('Created function firstIsLast', () => {\n  expect(firstIsLast).to.be.a('function');\n});\n\nit('Function firstIsLast not include statement substring', () => {\n  expect(firstIsLast.toString()).to.not.include('substring');\n});\n\nit('firstIsLast(\"JavaScript is easy\") return \"easy is javascript\"', () => {\n  expect(firstIsLast(\"JavaScript is easy\")).to.equal(\"easy is javascript\");\n});\n\nit('firstIsLast(\"I will get a lot of interview\") return \"interview will get a lot of i\"', () => {\n  expect(firstIsLast(\"I will get a lot of interview\")).to.equal(\"interview will get a lot of i\");\n});\n\nit('firstIsLast(\"\") return \"nothing to switch\"', () => {\n  expect(firstIsLast(\"\")).to.equal(\"nothing to switch\");\n});\n\nit('firstIsLast(\"I\") return \"nothing to switch\"', () => {\n  expect(firstIsLast(\"I\")).to.equal(\"nothing to switch\");\n});\n\nit('firstIsLast(\"I am\") return \"am i\"', () => {\n  expect(firstIsLast(\"I am\")).to.equal(\"am i\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

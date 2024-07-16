@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e954",
+  "name": {
+    "en": "Correct the error in the 'everySecond' function",
+    "ru": "Исправьте ошибку в функции 'everySecond'"
+  },
+  "instruction": {
+    "en": "Correct the error in the `everySecond` function.\n\nThe function should accept a string and return a new string.\n\nIn the new line the uppercase and lowercase letters must alternate, starting with the uppercase letter.\n\nExample:\n```javascript\nlet str = 'abc';\nstr[0].toUpperCase(); // 'A'\nstr[1].toLowerCase(); // 'b'\nstr[2].toUpperCase(); // 'C'\n// newStr = 'AbC';\n```",
+    "ru": "Исправьте ошибку в функции `everySecond`.\n\nФункция должна принимать строку и возвращать новую строку.\n\nВ новой строке прописные и строчные буквы должны чередоваться, начиная с прописной буквы.\n\nПример:\n```javascript\nlet str = 'abc';\nstr[0].toUpperCase(); // 'A'\nstr[1].toLowerCase(); // 'b'\nstr[2].toUpperCase(); // 'C'\n// newStr = 'AbC';\n```"
+  },
+  "initialSolution": "function everySecond(str){\n  let newStr = '';\n  for(let i = 5; i = string.length; i--){\n    if(i % 2 === 0) {\n      newStr = str[i].toUpperCase();\n    } else {\n      newStr += str[o].toLowerCase();\n    }\n  }\n  return str;\n}",
+  "completedSolution": "function everySecond(str){\n  let newStr = '';\n  for(let i = 0; i < str.length; i++){\n    if(i % 2 === 0) newStr += str[i].toUpperCase();\n    else newStr += str[i].toLowerCase();\n  }\n  return newStr;\n}",
+  "openTest": "it('Created function everySecond', () => {\n  expect(everySecond).to.be.a('function');\n});\n\nit(\"everySecond('hello') should return 'HeLlO'\", () => {\n  expect(everySecond('hello')).to.equal('HeLlO');\n});\n\nit(\"everySecond('abcDEF') should return 'AbCdEf'\", () => {\n  expect(everySecond('abcDEF')).to.equal('AbCdEf');\n});\n\nit(\"everySecond('ASDHJLKJPOIK') should return 'AsDhJlKjPoIk'\", () => {\n  expect(everySecond('ASDHJLKJPOIK')).to.equal('AsDhJlKjPoIk');\n});\n\nit(\"everySecond('') should return ''\", () => {\n  expect(everySecond('')).to.equal('');\n});\n\nit(\"everySecond('a') should return 'A'\", () => {\n  expect(everySecond('a')).to.equal('A');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

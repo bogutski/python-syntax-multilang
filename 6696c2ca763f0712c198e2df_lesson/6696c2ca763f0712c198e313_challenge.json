@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e313",
+  "name": {
+    "en": "Inches to centimeters with rounding",
+    "ru": "Дюймы в сантиметры с округлением"
+  },
+  "instruction": {
+    "en": "There are 2.54 centimeters in one inch.\n\nWrite a `inchesToCm` function that takes the number of inches and returns the number of centimeters rounded to the nearest integer.\n\nExamples of how to run the function:\n```javascript\ninchesToCm(1) // 3\ninchesToCm(2) // 5\ninchesToCm(3) // 8\ninchesToCm(55) // 140\ninchesToCm(100) // 254\n```",
+    "ru": "В одном дюйме 2.54 сантиметра.\n\nНапишите функцию `inchesToCm`, которая принимает число дюймов и возвращает число сантиметров, округленное до ближайшего целого.\n\nПримеры запуска функции:\n```javascript\ninchesToCm(1) // 3\ninchesToCm(2) // 5\ninchesToCm(3) // 8\ninchesToCm(55) // 140\ninchesToCm(100) // 254\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function inchesToCm(num) {\n  return Math.round(num * 2.54);\n}",
+  "openTest": "it('Created function inchesToCm', () => {\n  expect(inchesToCm).to.be.a('function');\n});\n\nit('inchesToCm(1) should return 3', () => {\n  expect(inchesToCm(1)).to.equal(3);\n});\n\nit('inchesToCm(2) should return 5', () => {\n  expect(inchesToCm(2)).to.equal(5);\n});\n\nit('inchesToCm(3) should return 8', () => {\n  expect(inchesToCm(3)).to.equal(8);\n});\n\nit('inchesToCm(55) should return 140', () => {\n  expect(inchesToCm(55)).to.equal(140);\n});\n\nit('inchesToCm(100) should return 254', () => {\n  expect(inchesToCm(100)).to.equal(254);\n});\n\nit('inchesToCm(156) should return 396', () => {\n  expect(inchesToCm(156)).to.equal(396);\n});\n\nit('inchesToCm(0) should return 0', () => {\n  expect(inchesToCm(0)).to.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

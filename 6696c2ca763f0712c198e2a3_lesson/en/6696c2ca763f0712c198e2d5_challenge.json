@@ -1,0 +1,4 @@
+{
+  "name": "How many full hours in a given number of minutes",
+  "instruction": "Write a function `howManyHours`.\n\nThe function takes one number - the number of minutes, it returns the number of full hours that this number of minutes contains.\n\nExamples of running the function:\n```javascript.\nhowManyHours(59) // 0\nhowManyHours(60) // 1\nhowManyHours(90) // 1\nhowManyHours(120) // 2\nhowManyHours(121) // 2\nhowManyHours(122) // 2\n```"
+}

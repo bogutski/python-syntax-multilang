@@ -1,0 +1,5 @@
+{
+  "name": "A function that returns 2 strings. A line break character.",
+  "instruction": "If you add a line break character `\\n` in a string, you can write multiple lines with line breaks.\n\nTry:\n```javascript\nconst str = 'Hello\\nWorld';\nconsole.log(str);\n```\n\nWrite a function `twoLines` that takes two parameters `str1` and `str2` and returns them concatenated into one string, with a line break character between them.\n\nVery similar example:\n```javascript\nfunction lines(line1, line2) {\n  return line1 + '\\n' + line2;\n}\n```",
+  "instructions": {}
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Функция возвращает склеенные строки",
+  "instruction": "Возможно вы этого еще не знаете но если использовать знак `+` между двумя строками, то они склеиваются в одну строку.\n\nПопробуйте склеить две строки в одну используя знак `+`.\n```javascript\nconsole.log('Hello' + 'World') // 'HelloWorld'\n```\n\nНапиши функцию `glueString`, которая принимает два аргумента `str1` и `str2` и возвращает их склеенные в одну строку.\n\nПример склеивания строк:\n```javascript\nfunction connection(string1, string2) {\n  return string1 + string2;\n}\n\nconsole.log(connection('Hello', 'World')); // 'HelloWorld'\n```\n\nСделайте аналогично.",
+  "instructions": {}
+}

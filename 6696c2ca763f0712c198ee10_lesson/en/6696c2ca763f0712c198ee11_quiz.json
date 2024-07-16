@@ -1,0 +1,183 @@
+{
+  "name": "Swap the first and last word in the string",
+  "questions": {
+    "0": {
+      "name": "What are some ways to rearrange the places of the first and last words in a line in the lesson?",
+      "variants": {
+        "0": {
+          "name": "Using split() and join() methods"
+        },
+        "1": {
+          "name": "Using split() and reverse() methods"
+        },
+        "2": {
+          "name": "Using multiple for loops"
+        },
+        "3": {
+          "name": "Object utilization"
+        }
+      }
+    },
+    "1": {
+      "name": "What does the `split()` method do to the string in the example below?",
+      "description": "```javascript\nconst str = 'Monday through Friday';\nconst arr = str.split(' ');\n```",
+      "variants": {
+        "0": {
+          "name": "Converts a string into an object with keys corresponding to the words in the string"
+        },
+        "1": {
+          "name": "Converts the string to an array in the form ['Monday', 'through', 'Friday']"
+        },
+        "2": {
+          "name": "Converts the string to an array in the form ['Monday through Friday']"
+        },
+        "3": {
+          "name": "Converts a string to a space-separated array of strings"
+        }
+      }
+    },
+    "2": {
+      "name": "What does the `join()` method apply to and what does it do?",
+      "variants": {
+        "0": {
+          "name": "The method is applied to a string and combines the words in the string into a single word"
+        },
+        "1": {
+          "name": "The method is applied to an array and combines all elements of the array into a string by the specified delimiter"
+        },
+        "2": {
+          "name": "The method is applied to arrays and combines arrays into one array by a given separator"
+        },
+        "3": {
+          "name": "The method is applied to an array and translates all elements of the array into an object"
+        }
+      }
+    },
+    "3": {
+      "name": "Select the correct version of the result of the code run below",
+      "description": "```javascript\nconst str = 'seven plus zero equal 7';\nconst arr = str.split(' ');\nconst first = arr[0];\nconst last = arr[arr.length - 1];\narr[0] = arr[arr.length - 1];\narr[arr.length - 1] = first;\nconst res = arr.join(' ');\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "'7 plus zero equals seven'"
+        },
+        "1": {
+          "name": "'7 plus zero equals 7'"
+        },
+        "2": {
+          "name": "[7 plus zero equals seven]"
+        },
+        "3": {
+          "name": "['7', 'plus', 'zero', 'equal', 'seven']"
+        }
+      }
+    },
+    "4": {
+      "name": "How can you shorten the code below without losing functionality?",
+      "description": "```javascript\nconst str = 'Alex met Mary';\nconst arr = str.split(' ');\nconst first = arr[0];\nconst last = arr[arr.length - 1];\narr[0] = last;\narr[arr.length - 1] = first;\nconst res = arr.join(' ');\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "On the 5th write arr[0] = arr[arr.length - 1];"
+        },
+        "1": {
+          "name": "Delete line 4 of the code, and on line 5 write arr[0] = arr[arr.length - 1];"
+        },
+        "2": {
+          "name": "Delete line 4 of the code"
+        },
+        "3": {
+          "name": "Delete line 4 of the code, and on line 5 assign the value of the first element of the array to the value of the last element of the array"
+        }
+      }
+    },
+    "5": {
+      "name": "What will be output to the console after running the code below?",
+      "description": "```javascript\nconst str = 'first could be last';\nlet start = '';\nfor(let i = 0; i < str.length; i++) {\n    if(str[i] === ' ') break;\n    else start += str[i];\n}\nconsole.log(start);\n```",
+      "variants": {
+        "0": {
+          "name": "'last'"
+        },
+        "1": {
+          "name": "The last element of the string"
+        },
+        "2": {
+          "name": "'first'."
+        },
+        "3": {
+          "name": "The first element of the string"
+        }
+      }
+    },
+    "6": {
+      "name": "What should I write instead of ??? in the second loop to get the last element of the string?",
+      "description": "```javascript\nconst str = 'first could be last';\nlet start = '';\nlet end = '';\nfor(let i = 0; i < str.length; i++) {\n    if(str[i] === ' ') break;\n    else start += str[i];\n}\nfor(??????????????) {\n    if(str[i] === ' ') break;\n    else end = str[i]  + end;\n}\nconsole.log(end);\n```",
+      "variants": {
+        "0": {
+          "name": "(let i = str.length; i >= 0; i--)"
+        },
+        "1": {
+          "name": "(let i = str.length-1; i >= 0; i--)"
+        },
+        "2": {
+          "name": "(let i = str.length-1; i > 0; i--)"
+        },
+        "3": {
+          "name": "(let i = 0; i < str.length; i++)"
+        }
+      }
+    },
+    "7": {
+      "name": "What is the `break` operator used for in the loops below?",
+      "description": "```javascript\nconst str = 'x - 5 = y';\nlet start = '';\nlet end = '';\nfor(let i = 0; i < str.length; i++) {\n    if(str[i] === ' ') break;\n    else start += str[i];\n}\nfor(let i = str.length-1; i >= 0; i--) {\n    if(str[i] === ' ') break;\n    else end = str[i]  + end;\n}\n```",
+      "variants": {
+        "0": {
+          "name": "To interrupt loop execution as soon as a space is encountered at the beginning of a line and at the end of a line"
+        },
+        "1": {
+          "name": "To stop the loop if it is infinite"
+        },
+        "2": {
+          "name": "To interrupt the function"
+        },
+        "3": {
+          "name": "To interrupt loop execution as soon as the letter 'x' is encountered"
+        }
+      }
+    },
+    "8": {
+      "name": "Select the correct option for the result of the code execution below",
+      "description": "```javascript\nconst str = 'first could be last';\nlet start = '';\nlet end = '';\nlet startSpaceIndex, endSpaceIndex;\nlet res = '';\nfor(let i = 0; i < str.length; i++) {\n  if (str[i] === ' ') {\n    startSpaceIndex = i;\n    break;\n  } else start += str[i];\n}\nfor(let i = str.length-1; i >= 0; i--) {\n    if(str[i] === ' ') {\n    endSpaceIndex = i;\n     break;\n    } else end = str[i]  + end;            \n}\nres = end;\nfor(let i = startSpaceIndex; i <= endSpaceIndex; i++) {\n  res += str[i];\n}\nres += start;\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "'first could be last'"
+        },
+        "1": {
+          "name": "[last could be first]"
+        },
+        "2": {
+          "name": "'last could be first'"
+        },
+        "3": {
+          "name": "['last', 'could', 'be', 'first']."
+        }
+      }
+    },
+    "9": {
+      "name": "Is it correct that the result of running the code below is `'sunrise precedes the sunset'`?",
+      "description": "```javascript\nconst str = 'sunset precedes the sunrise';\nlet first = '';\nlet last = '';\nlet firstSpaceIndex, lastSpaceIndex;\nlet res = '';\nfor(let i = 0; i < str.length; i++) {\n  if (str[i] === ' ') {\n    firstSpaceIndex = i;\n    break;\n  } else first += str[i];\n}\nfor(let i = str.length-1; i >= 0; i--) {\n    if(str[i] === ' ') {\n    lastSpaceIndex = i;\n     break;\n    } else last = str[i]  + last;            \n}\nres = last;\nfor(let i = firstSpaceIndex; i <= lastSpaceIndex; i++) {\n  res += str[i];\n}\nres += first;\nconsole.log(res);\n```",
+      "variants": {
+        "0": {
+          "name": "Incorrect, the result is 'sunset precedes the sunrise'."
+        },
+        "1": {
+          "name": "Incorrect, the result is 'the sunrise precedes the sunset'."
+        },
+        "2": {
+          "name": "Incorrect, the result is 'sunsetprecedesthesunrise'"
+        },
+        "3": {
+          "name": "Right, the result is 'sunrise precedes the sunset'."
+        }
+      }
+    }
+  }
+}

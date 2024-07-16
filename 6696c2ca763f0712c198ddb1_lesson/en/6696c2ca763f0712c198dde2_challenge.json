@@ -1,0 +1,6 @@
+{
+  "name": "Calculate and output to the console. 2 to the power of 10",
+  "instruction": "Only one line.\n\nWrite the command `console.log(2 ** 10);`\n\nObserve spaces and punctuation marks.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log(2 ** 10);\n```"
+}

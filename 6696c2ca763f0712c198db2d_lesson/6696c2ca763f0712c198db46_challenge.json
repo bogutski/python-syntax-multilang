@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db46",
+  "name": {
+    "en": "Null or deliberate absence of any value",
+    "ru": "Null или намеренное отсутствие какого-либо значения"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-5.png)\n\nNull is a special value that has the meaning of `value intentionally missing`.\nCreate a variable named `futureProfit` and assign the special value null to it.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nlet nextWinner = null;\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-5.png)\n\nNull - специальное значение, которое имеет смысл `значение намеренно отсутствует`.\nСоздайте переменную с именем `futureProfit` и присвойте ей специальное значение null.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet nextWinner = null;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let futureProfit = null;",
+  "openTest": "it('the `futureProfit` variable exists and has a value', () => {\n  expect(futureProfit).not.undefined;\n});\n\nit('the value of variable `futureProfit` is null', () => {\n  expect(futureProfit).equal(null);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet futureProfit = null;\n```",
+    "ru": "```javascript\nlet futureProfit = null;\n```"
+  }
+}

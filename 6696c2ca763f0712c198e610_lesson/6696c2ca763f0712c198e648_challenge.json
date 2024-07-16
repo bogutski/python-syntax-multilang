@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e648",
+  "name": {
+    "en": "Replacing the zip code. Objects.",
+    "ru": "Замена почтового индекса. Объекты."
+  },
+  "instruction": {
+    "en": "The `clientInfo` function takes two parameters:\n* `address` - object containing information about the address\n* `postalCode` - postal code, string\n\nThe object `address` has the following structure:\n* `flat` - apartment number, string\n* `city` - city, line\n* `country` - country, line.\n\nWe do not need the `flat` property, but the object is missing a postal code. We need to fix the object: remove the property\n`flat` and add a property `postalCode` with value `postalCode`.\n\nThe function should return the changed `address` object\n\nAn example of running the function:\n```javascript\nclientInfo({\nflat: '35',\ncity: 'London',\ncountry: 'Great Britain'},\n'NW1 6XE') //\n{city: 'London',\ncountry: 'Great Britain',\npostalCode: 'NW1 6XE'}\n```",
+    "ru": "Функция `clientInfo` принимает два параметра:\n* `address` – объект, содержащий информацию об адресе\n* `postalCode` – почтовый индекс, строка\n\nОбъект `address` имеет следующую структуру:\n* `flat` – номер квартиры, строка\n* `city` – город, строка\n* `country` – страна, строка.\n\nСвойство `flat` нам не нужно, но в объекте не хватает почтового индекса. Необходимо исправить объект: удалить свойство\n`flat` и добавить свойство `postalCode` со значением `postalCode`.\n\nФункция должна вернуть измененный объект `address`\n\nПример запуска функции:\n```javascript\nclientInfo({\nflat: '35',\ncity: 'London',\ncountry: 'Great Britain'},\n'NW1 6XE') //\n{city: 'London',\ncountry: 'Great Britain',\npostalCode: 'NW1 6XE'}\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function clientInfo(address, postalCode) {\n  address.postalCode = postalCode;\n  delete address.flat;\n  return address;\n}",
+  "openTest": "it(`created function clientInfo`, () => {\n  expect(clientInfo).to.be.a(`function`);\n});\n\nit(`clientInfo({flat: '1', city: 'London', country: 'Great Britain'}, 'NW1 6XE') should return {city: 'London', country: 'Great Britain', postalCode: 'NW1 6XE'}`, () => {\n  expect(\n    clientInfo({ flat: '1', city: 'London', country: 'Great Britain' }, 'NW1 6XE'),\n  ).eql({ city: 'London', country: 'Great Britain', postalCode: 'NW1 6XE' });\n});\n\nit(`clientInfo({flat: '35', city: 'Los Angeles', country: 'USA'}, '90210') should return {city: 'Los Angeles', country: 'USA', postalCode: '90210'}`, () => {\n  expect(clientInfo({ flat: '35', city: 'Los Angeles', country: 'USA' }, '90210')).eql({\n    city: 'Los Angeles',\n    country: 'USA',\n    postalCode: '90210',\n  });\n});\n\nit(`clientInfo({flat: '453', city: 'Paris', country: 'France'}, '75001') should return {city: 'Paris', country: 'France', postalCode: '75001'}`, () => {\n  expect(clientInfo({ flat: '453', city: 'Paris', country: 'France' }, '75001')).eql({\n    city: 'Paris',\n    country: 'France',\n    postalCode: '75001',\n  });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e10a",
+  "name": {
+    "en": "We get the result from a function and pass it to another function. Sum and multiplication",
+    "ru": "Получаем результат от функции и передаем его в другую функцию. Сумма и умножение"
+  },
+  "instruction": {
+    "en": "Write a function `multiply` that takes two parameters and returns their product.\n\nWrite a function `add` that takes two parameters and returns their sum.\n\nCreate a variable `sum1` and assign it the result of the `add` function with arguments 2 and 3.\n\nCreate a variable `sum2` and assign to it the result of the `add` function with arguments 4 and 5.\n\nCreate a variable `multiply1` and assign to it the result of the function `multiply` with arguments `sum1` and `sum2`.",
+    "ru": "Напишите функцию `multiply`, которая принимает два параметра и возвращает их произведение.\n\nНапишите функцию `add`, которая принимает два параметра и возвращает их сумму.\n\nСоздайте переменную `sum1` и присвойте ей результат работы функции `add` с аргументами 2 и 3.\n\nСоздайте переменную `sum2` и присвойте ей результат работы функции `add` с аргументами 4 и 5.\n\nСоздайте переменную `multiply1` и присвойте ей результат работы функции `multiply` с аргументами `sum1` и `sum2`."
+  },
+  "initialSolution": "function sum(num1, num2){\n\n}",
+  "completedSolution": "function multiply(a, b) {\n  return a * b;\n}\n\nfunction add(a, b) {\n  return a + b;\n}\n\nconst sum1 = add(2, 3);\nconst sum2 = add(4, 5);\nconst multiply1 = multiply(sum1, sum2);",
+  "openTest": "it('Created function multiply', () => {\n  expect(multiply).to.be.a('function');\n});\n\nit('Created function add', () => {\n  expect(add).to.be.a('function');\n});\n\nit('Created variable sum1', () => {\n  expect(sum1).to.be.equal(5);\n});\n\nit('Created variable sum2', () => {\n  expect(sum2).to.be.equal(9);\n});\n\nit('Created variable multiply1', () => {\n  expect(multiply1).to.be.equal(45);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

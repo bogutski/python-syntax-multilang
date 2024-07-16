@@ -1,0 +1,5 @@
+{
+  "name": "Сколько раз элемент встречается в строке",
+  "instruction": "Напишите функцию `stringOfOccurrences`, которая принимает строку и элемент.\n\nФункция должна посчитать количество вхождений элемента в строку и вернуть другую строку:\n\nНапример:\n```javascript\nstringOfOccurrences('abcabcabc', 'a')\n```\n* Если элемент `a` встречается в строке 3 раза, то функция должна вернуть строку: `'The element \"a\" occurs in the string 3 times'`\n* Если элемент не встречается или какой то параметр не передан, то функция должна вернуть строку: `'There is no such element in the string'`\n\nВсе элементы будут переданы в одном регистре.\n\n\nПримеры запуска функции:\n```javascript\nstringOfOccurrences('abcabcabc', 'a') // 'The element \"a\" occurs in the string 3 times'\nstringOfOccurrences('apple', 'w') // 'There is no such element in the string'\nstringOfOccurrences('', 'p') // 'There is no such element in the string'\n```",
+  "instructions": {}
+}

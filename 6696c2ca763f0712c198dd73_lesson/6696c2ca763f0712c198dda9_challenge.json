@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dda9",
+  "name": {
+    "en": "Define and display in the console the type of expression 'a' * 100",
+    "ru": "Определите и выведите в консоль тип выражения 'a' * 100"
+  },
+  "instruction": {
+    "en": "Only one line.\n\nWrite the command `console.log(typeof ('a' * 100));`\n\nObserve spaces and punctuation marks.\n\nA semicolon at the end.",
+    "ru": "Только одна строка.\n\nНапишите команду `console.log(typeof ('a' * 100));`\n\nСоблюдайте пробелы и знаки пунктуации.\n\nВ конце точка с запятой."
+  },
+  "initialSolution": "",
+  "completedSolution": "console.log(typeof ('a' * 100));",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal",
+  "hint": {
+    "en": "```javascript\nconsole.log(typeof ('a' * 100));\n```",
+    "ru": "```javascript\nconsole.log(typeof ('a' * 100));\n```"
+  }
+}

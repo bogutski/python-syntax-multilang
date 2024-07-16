@@ -1,0 +1,5 @@
+{
+  "name": "Checking types in an array of arrays",
+  "instruction": "Write a function `areAllTypesTheSame` that takes an array of arrays.\n\nThe function should check if all elements of all sub-arrays have the same data type.\n\nIf one of the sub-arrays is empty, the function should return the string `One or more sub-arrays are empty`.\n\nIf the outer array is empty, the function should return the string `Array is empty`.\n\n\nExamples of function calls:\n```javascript\nareAllTypesTheSame([ [1, 2], [3, 4], [5, 6] ]);              // true\nareAllTypesTheSame([ [1, 2], [3, 4], [5, '6'] ]);            // false\nareAllTypesTheSame([ ['abc'], ['test'], ['a', undefined] ]); // false\nareAllTypesTheSame([ [], ['test'], ['a', 'b'], ['str'] ]);   // 'One or more sub-arrays are empty'\nareAllTypesTheSame([ ]);                                     // 'Array is empty'\n```",
+  "instructions": {}
+}

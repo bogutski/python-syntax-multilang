@@ -1,0 +1,4 @@
+{
+  "name": "How many times does a number occur in an array",
+  "instruction": "The `checkQuantity` function takes two parameters: an array of numbers and a number.\n\nYou need to check how many times the number occurs in the array and return the number of occurrences.\n\nThe number can occur no more than three times.\n\nExamples of running the function:\n```javascript\ncheckQuantity([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5); // 1\ncheckQuantity([1, 5, 2, 4, 5, 6, 7, 5, 2, 10], 2); // 2\ncheckQuantity([1, 5, 2, 4, 5, 6, 7, 5, 2, 10], 5); // 3\n```"
+}

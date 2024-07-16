@@ -1,0 +1,4 @@
+{
+  "name": "String vs. array comparison",
+  "instruction": "Write a function `stringAndArray` that takes a string and an array as arguments.\n\nCreate a loop that goes through each character of the string and compares it to elements of the array.\n\nIf one of the characters does not match, the function should return the string 'Elements are not equal'.\n\nIf all characters match, the function should return the string 'Elements are equal'.\n\nBefore the loop, check that the string and array lengths match. If not, the function should return the string 'Elements are not equal'.\n\nAn example of running the function:\n```javascript\nstringAndArray('abc', ['A', 'b', 'c']); // 'Elements are not equal'\nstringAndArray('123', ['1', '2', '3']); // 'Elements are equal'\nstringAndArray('qwerty', ['a', 's', 'd']); // 'Elements are not equal'\nstringAndArray('', ['']); // 'Elements are equal'\n```"
+}

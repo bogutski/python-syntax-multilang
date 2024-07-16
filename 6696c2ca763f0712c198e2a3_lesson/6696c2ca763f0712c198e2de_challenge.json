@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e2de",
+  "name": {
+    "en": "Implement fair rounding",
+    "ru": "Реализовываем справедливое округление"
+  },
+  "instruction": {
+    "en": "In this problem we implement almost fair rounding - if the fractional part of the number is greater than or equal to 0.6, then the number is rounded up, otherwise it is rounded down.\n\nThe `round` function accepts only positive numbers and returns rounded values.\n\nExamples of running the function:\n```javascript\nround(1.1) // 1\nround(1.5) // 1\nround(1.55) // 1\nround(1.6) // 2\nround(1.9) // 2\n```",
+    "ru": "В этой задаче мы реализуем почти справедливое округление – если дробная часть числа больше или равна 0.6, то число округляется вверх, иначе вниз.\n\nФункция `round` принимает только положительные числа и возвращает округленные значения.\n\nПримеры запуска функции:\n```javascript\nround(1.1) // 1\nround(1.5) // 1\nround(1.55) // 1\nround(1.6) // 2\nround(1.9) // 2\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function round(n) {\n  const fraction = n - Math.floor(n);\n  return fraction >= 0.6 ? Math.ceil(n) : Math.floor(n);\n}",
+  "openTest": "it('Created function round', () => {\n  expect(round).to.be.a('function');\n});\n\nit('round(1.1) should return 1', () => {\n  expect(round(1.1)).to.equal(1);\n} );\n\nit('round(1.5) should return 1', () => {\n  expect(round(1.5)).to.equal(1);\n} );\n\nit('round(1.55) should return 1', () => {\n  expect(round(1.55)).to.equal(1);\n} );\n\nit('round(1.6) should return 2', () => {\n  expect(round(1.6)).to.equal(2);\n});\n\nit('round(1.9) should return 2', () => {\n  expect(round(1.9)).to.equal(2);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

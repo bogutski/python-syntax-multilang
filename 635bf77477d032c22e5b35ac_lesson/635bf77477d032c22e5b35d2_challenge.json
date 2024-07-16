@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35d2",
+  "name": {
+    "ru": "Исправьте ошибки в коде. Переменная product",
+    "en": "Fix bugs in the code. Variable product",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Требуется написать команду, которая присваивает переменной `product` значение числа `1` с использованием\nключевого слова `let`.\n\nИсправьте ошибки в приведенном коде.",
+    "en": "You need to write a command which assigns the value of `1` to the variable `product` using the\nkeyword `let`.\n\nCorrect the errors in the given code.\n",
+    "es": ""
+  },
+  "initialSolution": "let 'product' = 1;",
+  "completedSolution": "let product = 1;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

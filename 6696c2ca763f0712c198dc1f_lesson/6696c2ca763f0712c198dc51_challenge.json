@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dc51",
+  "name": {
+    "en": "Create a variable named `distanceToSun` and assign a value of 92960000",
+    "ru": "Создайте переменную с именем `distanceToSun` и присвойте ей значение 92960000"
+  },
+  "instruction": {
+    "en": "Create a variable named `distanceToSun` and assign a value of `92960000` to it.",
+    "ru": "Создайте переменную с именем `distanceToSun` и присвойте ей значение `92960000` числом."
+  },
+  "initialSolution": "",
+  "completedSolution": "const distanceToSun = 92960000;",
+  "openTest": "it('is variable `distanceToSun ` exists', () => {\n  expect(distanceToSun).not.to.be.undefined;\n});\n\nit('should variable `distanceToSun ` be a number', () => {\n  expect(distanceToSun).a('number');\n});\n\nit('should the variable `distanceToSun` be equal to 92960000', () => {\n  expect(distanceToSun).eq(92960000);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst distanceToSun = 92960000;\n```",
+    "ru": "```javascript\nconst distanceToSun = 92960000;\n```"
+  }
+}

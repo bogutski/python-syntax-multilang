@@ -1,0 +1,185 @@
+{
+  "name": "Finding the maximum/minimum number in an array",
+  "questions": {
+    "0": {
+      "name": "Which number in the array below is the minimum and maximum?",
+      "description": "```javascript\nconst arr = [-5, -8, -17, -33]\n```",
+      "variants": {
+        "0": {
+          "name": "-33 minimum, -5 maximum"
+        },
+        "1": {
+          "name": "-5 minimum, -33 maximum"
+        },
+        "2": {
+          "name": "-33 minimum, undefined maximum"
+        },
+        "3": {
+          "name": "-33 minimum, -17 maximum"
+        }
+      }
+    },
+    "1": {
+      "name": "Select the correct result of running the code below",
+      "description": "```javascript\nconst arr = [-1, -3, -5, 0];\nlet min = arr[0];\nfor (let i = 1; i < arr.length; i++) {\n    if (arr[i] < min) {\n        min = arr[i];\n    }\n}\nconsole.log(min);\n```",
+      "variants": {
+        "0": {
+          "name": "-1"
+        },
+        "1": {
+          "name": "-3"
+        },
+        "2": {
+          "name": "0"
+        },
+        "3": {
+          "name": "-5"
+        }
+      }
+    },
+    "2": {
+      "name": "What is the result of running the code below?",
+      "description": "```javascript\nconst arr = [7.3, 7.5, 7.7, 7.4, 7];\nlet max = arr[0];\nfor (let i = 1; i < arr.length; i++) {\n    if (arr[i] > max) {\n        max = arr[i];\n    }\n}\nconsole.log(max); \n```",
+      "variants": {
+        "0": {
+          "name": "7"
+        },
+        "1": {
+          "name": "7.7"
+        },
+        "2": {
+          "name": "7.5"
+        },
+        "3": {
+          "name": "7.3"
+        }
+      }
+    },
+    "3": {
+      "name": "Is it true that the result of running the code below is [5.1, 5.7]?",
+      "description": "```javascript\nfunction minAndMax(arr){\n    let min = arr[0];\n    let max = arr[0];\n    for (let i = 1; i < arr.length; i++) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([5.7, 5.1, 5.6, 5.3, 5, 5.5]));\n```",
+      "variants": {
+        "0": {
+          "name": "No, the result will be [5.1, 5.3]"
+        },
+        "1": {
+          "name": "Yes, the result will be [5.1, 5.7]"
+        },
+        "2": {
+          "name": "No, the result will be [5, 5.7]"
+        },
+        "3": {
+          "name": "No, the result will be [5.1, 5]"
+        }
+      }
+    },
+    "4": {
+      "name": "Why would the result of running the code below be [-5, 17] and not [-7, 20]?",
+      "description": "```javascript\nfunction minAndMax(arr){\n    let min = arr[0];\n    let max = arr[0];\n    for (let i = 1; i < arr.length; i++) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([-5, 17, [-7, 20], -3, 13]));\n```",
+      "variants": {
+        "0": {
+          "name": "Because there is a nested array in the array, which the loop does not go into"
+        },
+        "1": {
+          "name": "The result is [-7, 20], the loop goes through all elements of the array, including nested arrays"
+        },
+        "2": {
+          "name": "Because -5 is the minimum number and 17 is the maximum number"
+        },
+        "3": {
+          "name": "Because there is a condition in the code to ignore nested arrays"
+        }
+      }
+    },
+    "5": {
+      "name": "What will be the result if we go through the array from right to left as in the code below?",
+      "description": "```javascript\nconst arr = [23, 12, 41];\nlet max = arr[arr.length - 1];\nfor (let i = arr.length - 1; i >= 0; i--) {\n    if (arr[i] > max) {\n        max = arr[i];\n    }\n}\nconsole.log(max);\n```",
+      "variants": {
+        "0": {
+          "name": "The same as when traversing the array from left to right"
+        },
+        "1": {
+          "name": "The result will be 41"
+        },
+        "2": {
+          "name": "As you traverse the array from right to left, the digits are flipped. The result is 32"
+        },
+        "3": {
+          "name": "The result will be -3.5"
+        }
+      }
+    },
+    "6": {
+      "name": "Choose the correct result of comparing traversing the same array from left to right and vice versa\nwhen searching for the minimum number (see code below)",
+      "description": "```javascript\nconst arr = [-1, -3, -5, 0];\nlet min1 = arr[0];\nlet min2 = arr[arr.length - 1];\nfor (let i = 1; i < arr.length; i++){\n    if (arr[i] < min1) {\n        min1 = arr[i];\n    }\n}\nfor (let i = arr.length - 1; i >= 0; i--){\n    if (arr[i] < min2) {\n        min2 = arr[i];\n    }\n}\nconsole.log(min1 === min2);\n```",
+      "variants": {
+        "0": {
+          "name": "false"
+        },
+        "1": {
+          "name": "true"
+        },
+        "2": {
+          "name": "-5"
+        },
+        "3": {
+          "name": "error"
+        }
+      }
+    },
+    "7": {
+      "name": "What is the result of running the code below?",
+      "description": "```javascript\nfunction minAndMax(arr){\n    let min = arr[arr.length - 1];\n    let max = arr[arr.length - 1];\n    for (let i = arr.length - 1; i >= 0; i--) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([-5, -13, 77, 91, 11]));\n```",
+      "variants": {
+        "0": {
+          "name": "[91, -13]"
+        },
+        "1": {
+          "name": "[11, 91]"
+        },
+        "2": {
+          "name": "[-13, -5]"
+        },
+        "3": {
+          "name": "[-13, 91]"
+        }
+      }
+    },
+    "8": {
+      "name": "In step 1 in the for loop, the result will be [-25, 100]. What will be the result at step 2 in the code below?",
+      "description": "```function minAndMax(arr){\n    let min = arr[0];\n    let max = arr[0];\n    for (let i = 1; i < arr.length; i += 2) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([5, -25, 14, 69, 100]));\n```",
+      "variants": {
+        "0": {
+          "name": "[-25, 100]"
+        },
+        "1": {
+          "name": "[-25, 69]"
+        },
+        "2": {
+          "name": "[5, 100]"
+        },
+        "3": {
+          "name": "[5, 69]"
+        }
+      }
+    },
+    "9": {
+      "name": "Select the correct result of running the code below",
+      "description": "```javascript\nfunction minAndMax(arr){\n    let min = arr[0];\n    let max = arr[0];\n    for (let i = 1; i < arr.length; i++) {\n        if (arr[i] < min) min = arr[i];\n        if (arr[i] > max) max = arr[i];\n    }\n    return [min, max];\n}\nconsole.log(minAndMax([7]));\n\n```",
+      "variants": {
+        "0": {
+          "name": "[7]"
+        },
+        "1": {
+          "name": "[7, 7]"
+        },
+        "2": {
+          "name": "[7, undefined]."
+        },
+        "3": {
+          "name": "[undefined, 7]."
+        }
+      }
+    }
+  }
+}

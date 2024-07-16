@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f7e1",
+  "name": {
+    "en": "/*",
+    "ru": "Найти индекс элемента"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findIndex`, которая принимает массив и элемент.\n\nФункция должна вернуть индекс первого вхождения элемента в массиве. Если элемент не найден, функция должна вернуть `-1`.\n\nПримеры запуска функции:\n```javascript\nfindIndex(['apple', 'banana', 'mango'], 'banana'); // 1\nfindIndex(['cat', 'dog', 'fish'], 'bird'); // -1\nfindIndex([1, 2, 3, 4, 5], 3); // 2\n```"
+  },
+  "initialSolution": "function findIndex(){\n\n}",
+  "completedSolution": "function findIndex(arr, element) {\n  return arr.indexOf(element);\n}",
+  "openTest": "it('Created function findIndex', () => {\n  expect(findIndex).to.be.a('function');\n});\n\nit(\"Function findIndex should include indexOf method\", () => {\n  const result = findIndex.toString();\n  expect(result).to.include('.indexOf(');\n});\n\nit('findIndex([\"apple\", \"banana\", \"mango\"], \"banana\") should return 1', function() {\n  expect(findIndex([\"apple\", \"banana\", \"mango\"], \"banana\")).to.equal(1);\n});\n\nit('findIndex([1, 2, 3, 4, 5], 3) should return 2', function() {\n  expect(findIndex([1, 2, 3, 4, 5], 3)).to.equal(2);\n});\n\nit('findIndex([\"cat\", \"dog\", \"fish\"], \"bird\") should return -1', function() {\n  expect(findIndex([\"cat\", \"dog\", \"fish\"], \"bird\")).to.equal(-1);\n});\n\nit('findIndex([true, false, true], false) should return 1', function() {\n  expect(findIndex([true, false, true], false)).to.equal(1);\n});\n\nit('findIndex([null, undefined, null], undefined) should return 1', function() {\n  expect(findIndex([null, undefined, null], undefined)).to.equal(1);\n});\n\nit('findIndex([NaN, 0, \"hello\"], NaN) should return -1', function() {\n  expect(findIndex([NaN, 0, \"hello\"], NaN)).to.equal(-1);\n});\n\nit('findIndex([\"apple\", \"banana\", \"mango\"], \"APPLE\") should return -1', function() {\n  expect(findIndex([\"apple\", \"banana\", \"mango\"], \"APPLE\")).to.equal(-1);\n});\n\nit('findIndex([], \"anything\") should return -1', function() {\n  expect(findIndex([], \"anything\")).to.equal(-1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

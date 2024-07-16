@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f89e",
+  "name": {
+    "en": "/*",
+    "ru": "Найти индекс последнего элемента, содержащего не менее половины букв из заданного слова"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findLastIndexContainingLetters`, которая принимает массив строк и слово.\n\nФункция должна вернуть индекс последнего элемента в массиве, который содержит не менее половины букв из заданного слова.\n\nОкругляйте в большую сторону, если длина строки не четная.\n\nЕсли такого элемента нет, функция должна вернуть `-1`.\n\n\nПримеры запуска функции:\n```javascript\nfindLastIndexContainingLetters(['apple', 'banana', 'cherry', 'blueberry'], 'car');\n// 2, так как 'cherry' содержит 2 символа: 'c', 'r'.\n\nfindLastIndexContainingLetters(['hello', 'world', 'hi'], 'hell'); // 1\n// 1, так как 'world' содержит 2 повторяющихся символа: 'l', 'l'.\n\nfindLastIndexContainingLetters(['orange', 'kiwi', 'melon'], 'ok'); // 2\n// 2, так как 'melon' содержит 1 символ: 'o'.\n\nfindLastIndexContainingLetters(['one', 'two', 'three'], 'four'); // -1\n```"
+  },
+  "initialSolution": "function findLastIndexContainingLetters(){\n\n}",
+  "completedSolution": "function findLastIndexContainingLetters(arr, str) {\n  const targetNum = Math.ceil(str.length / 2)\n\n  return arr.findLastIndex(el => {\n    let count = 0\n    for(let char of str){\n      if(el.includes(char)) count++\n      if(count === targetNum) return true\n    }\n    return false\n  });\n}",
+  "openTest": "it('Created function findLastIndexContainingLetters', () => {\n  expect(findLastIndexContainingLetters).to.be.a('function');\n});\n\nit('findLastIndexContainingLetters([\"apple\", \"banana\", \"cherry\", \"blueberry\"], \"car\") should return 2', function() {\n  expect(findLastIndexContainingLetters([\"apple\", \"banana\", \"cherry\", \"blueberry\"], \"car\")).to.equal(2);\n});\n\nit('findLastIndexContainingLetters([\"hello\", \"world\", \"hi\"], \"hell\") should return 1', function() {\n  expect(findLastIndexContainingLetters([\"hello\", \"world\", \"hi\"], \"hell\")).to.equal(1);\n});\n\nit('findLastIndexContainingLetters([\"one\", \"two\", \"three\"], \"four\") should return -1', function() {\n  expect(findLastIndexContainingLetters([\"one\", \"two\", \"three\"], \"four\")).to.equal(-1);\n});\n\nit('findLastIndexContainingLetters([\"orange\", \"kiwi\", \"melon\"], \"ok\") should return 2', function() {\n  expect(findLastIndexContainingLetters([\"orange\", \"kiwi\", \"melon\"], \"ok\")).to.equal(2);\n});\n\nit('findLastIndexContainingLetters([\"apple\", \"banana\", \"cherry\", \"blueberry\"], \"berry\") should return 3', function() {\n  expect(findLastIndexContainingLetters([\"apple\", \"banana\", \"cherry\", \"blueberry\"], \"berry\")).to.equal(3);\n});\n\nit('findLastIndexContainingLetters([\"strawberry\", \"raspberry\", \"blueberry\"], \"berry\") should return 2', function() {\n  expect(findLastIndexContainingLetters([\"strawberry\", \"raspberry\", \"blueberry\"], \"berry\")).to.equal(2);\n});\n\nit('findLastIndexContainingLetters([\"kiwi\", \"melon\", \"orange\"], \"lemon\") should return 2', function() {\n  expect(findLastIndexContainingLetters([\"kiwi\", \"melon\", \"orange\"], \"lemon\")).to.equal(2);\n});\n\nit('findLastIndexContainingLetters([\"kiwi\", \"melon\", \"orange\"], \"zoo\") should return 2', function() {\n  expect(findLastIndexContainingLetters([\"kiwi\", \"melon\", \"orange\"], \"zoo\")).to.equal(2);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

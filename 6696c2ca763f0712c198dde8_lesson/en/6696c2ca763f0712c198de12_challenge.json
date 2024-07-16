@@ -1,0 +1,6 @@
+{
+  "name": "Temperature in the other hemisphere",
+  "instruction": "If it is winter in the Northern Hemisphere, then it is summer in the Southern Hemisphere.\nFor example, if it is -30 degrees Celsius in Russia, it can be hot in Australia, with a temperature 30 degrees Celsius above zero.\n\nTo solve the problem:\n\nSet the variable `temp` and assign it a value of any number.\nSet the variable `opposite` and assign it the value of the variable `temp` with the opposite sign.\n\nHere is an example that is essentially similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst number = 5;\nconst minus = -number;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst temp = 30;\nconst opposite = -temp;\n```"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Длина строки",
+  "instruction": "Создайте переменную с именем `question` и присвойте ей значение `How do you do?`.\nСоздайте переменную `length` и присвойте ей значение длины строки `question`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst name = 'Jonh';\nconst lengthName = name.length;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst question = 'How do you do?';\nconst length = question.length;\n```"
+}

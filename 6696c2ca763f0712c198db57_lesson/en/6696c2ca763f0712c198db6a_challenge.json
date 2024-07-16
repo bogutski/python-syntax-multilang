@@ -1,0 +1,6 @@
+{
+  "name": "Euler's number or \"e\" number",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-2.png)\n\nThe Euler number is a famous mathematical constant, the base of the natural logarithm, and a transcendental number.\nSometimes the number \"e\" is called Euler's number or Neper's number. It is denoted by the lowercase Latin letter \"e\".\nThe number is approximately equal to 2.7.\n\nCreate a constant named `e` and assign it the value `2.7`. Use the keyword `const`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst a = 3.8;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst e = 2.7;\n```"
+}

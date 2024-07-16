@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dafb",
+  "name": {
+    "en": "Number output to the console",
+    "ru": "Вывод в консоль числа"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-6.png)\n\nWrite a command that outputs the number 2020 to the console.\nThe number must be without quotation marks.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-6.png)\n\nНапишите команду, которая выводит в консоль число 2020.\nЧисло должно быть без кавычек."
+  },
+  "initialSolution": "",
+  "completedSolution": "console.log(2020);",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal",
+  "hint": {
+    "en": "```javascript\nconsole.log(2020);\n```",
+    "ru": "```javascript\nconsole.log(2020);\n```"
+  }
+}

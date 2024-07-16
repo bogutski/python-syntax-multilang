@@ -1,0 +1,249 @@
+{
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198de91",
+      "name": {
+        "ru": "Оператор % используется для получения",
+        "en": "The % operator is used to get",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198de92",
+          "name": {
+            "ru": "результата деления",
+            "en": "result of division",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198de93",
+          "name": {
+            "ru": "процентов от числа",
+            "en": "percent of the number",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198de94",
+          "name": {
+            "ru": "остатка от деления",
+            "en": "remainder",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198de95",
+          "name": {
+            "ru": "целой части от деления",
+            "en": "integer from division",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198de96",
+      "name": {
+        "ru": "Оператор ** используется для",
+        "en": "Operator ** is used for",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198de97",
+          "name": {
+            "ru": "умножения два раза подряд",
+            "en": "multiplication twice in a row",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198de98",
+          "name": {
+            "ru": "комментирования",
+            "en": "comments",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198de99",
+          "name": {
+            "ru": "выделения текста",
+            "en": "text selections",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198de9a",
+          "name": {
+            "ru": "возведения в степень",
+            "en": "exponentiation",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198de9b",
+      "name": {
+        "ru": "Выберите результат указанного ниже примера.",
+        "en": "Select the result of the example below.",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet c = 11 % 3;\nconsole.log(c);\n```",
+        "en": "```javascript\nlet c = 11 % 3;\nconsole.log(c);\n```",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198de9c",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198de9d",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198de9e",
+          "name": {
+            "ru": "2",
+            "en": "2",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198de9f",
+          "name": {
+            "ru": "3",
+            "en": "3",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dea0",
+      "name": {
+        "ru": "Выберите результат указанного ниже примера.",
+        "en": "Select the result of the example below.",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet c = -2 ** 3;\nconsole.log(c);\n```",
+        "en": "```javascript\nlet c = -2 ** 3;\nconsole.log(c);\n```",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dea1",
+          "name": {
+            "ru": "8",
+            "en": "8",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dea2",
+          "name": {
+            "ru": "-8",
+            "en": "-8",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dea3",
+          "name": {
+            "ru": "-6",
+            "en": "-6",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dea4",
+          "name": {
+            "ru": "ошибка",
+            "en": "error",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dea5",
+      "name": {
+        "ru": "Оператор ** можно использовать для извлечения корня из числа.",
+        "en": "The ** operator can be used to extract the root of a number.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dea6",
+          "name": {
+            "ru": "да",
+            "en": "yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dea7",
+          "name": {
+            "ru": "нет",
+            "en": "no",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 0,
+  "active": false,
+  "_id": "6696c2ca763f0712c198de90",
+  "description": {
+    "ru": "",
+    "en": "",
+    "es": ""
+  },
+  "name": {
+    "ru": "JS Syntax. Точно пригодятся!",
+    "en": "JS Syntax. They will definitely come in handy!",
+    "es": ""
+  }
+}

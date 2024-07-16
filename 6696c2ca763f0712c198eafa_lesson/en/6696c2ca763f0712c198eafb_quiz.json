@@ -1,0 +1,174 @@
+{
+  "name": "Convert an array to a string",
+  "questions": {
+    "0": {
+      "name": "An array can be translated to a string using the join method. What is the correct syntax of this command",
+      "variants": {
+        "0": {
+          "name": "join()"
+        },
+        "1": {
+          "name": "join.arrayToString(separator)"
+        },
+        "2": {
+          "name": "array.join(separator)"
+        },
+        "3": {
+          "name": "array.join.toString"
+        }
+      }
+    },
+    "1": {
+      "name": "The split and join methods can be used to convert a string to an array and vice versa",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "No, both methods only work with arrays"
+        },
+        "2": {
+          "name": "The statement is true, split works with a string and join works with an array"
+        },
+        "3": {
+          "name": "The statement is incorrect, split works with an array and join works with a string"
+        }
+      }
+    },
+    "2": {
+      "name": "Does the code below work correctly?",
+      "description": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nconst str = arr.join();\nconsole.log(str);\n// '1,2,3,4,5'\n```",
+      "variants": {
+        "0": {
+          "name": "No, there should be semicolons instead of commas"
+        },
+        "1": {
+          "name": "Yes, the code is working correctly"
+        },
+        "2": {
+          "name": "No, no delimiter is specified"
+        },
+        "3": {
+          "name": "No, there should be spaces instead of commas"
+        }
+      }
+    },
+    "3": {
+      "name": "Is there any limitation to the join method?",
+      "variants": {
+        "0": {
+          "name": "No, you can always use it to convert the entire array to a string"
+        },
+        "1": {
+          "name": "Yes, if there are objects in the array, the join method will not work"
+        },
+        "2": {
+          "name": "Yes, if you want to output certain elements from an array, join is not suitable"
+        },
+        "3": {
+          "name": "Yes, if there are special characters in the array (for example, quotes), then join will not work"
+        }
+      }
+    },
+    "4": {
+      "name": "What is the result of executing the code below?",
+      "description": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nlet str = '';\nfor(let i = 0; i < arr.length; i++){\n if(arr[i] % 2 === 0) str += arr[i]\n}\nconsole.log(str);\n```",
+      "variants": {
+        "0": {
+          "name": "'2, 4'"
+        },
+        "1": {
+          "name": "'1, 3, 5'"
+        },
+        "2": {
+          "name": "'24'"
+        },
+        "3": {
+          "name": "'2 4'"
+        }
+      }
+    },
+    "5": {
+      "name": "What is the result of executing the code below?",
+      "description": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nlet str = '';\nfor(let i = 0; i < arr.length; i++){\n str = arr[i] + ', ' + str;\n}\nconsole.log(str);\n```",
+      "variants": {
+        "0": {
+          "name": "'1, 2, 3, 4, 5 '"
+        },
+        "1": {
+          "name": "'5 4 3 2 1'"
+        },
+        "2": {
+          "name": "1 2 3 4 5"
+        },
+        "3": {
+          "name": "'5, 4, 3, 2, 1, '"
+        }
+      }
+    },
+    "6": {
+      "name": "Which loop body will produce the result `I study JavaScript'?",
+      "description": "```javascript \nconst arr = ['I', 'study', 'JavaScript'];\n let str = '' \nfor (let i = 0; i < arr.length; i++) {\n // ваш код\n}\nconsole.log(str.trim())\n```\n",
+      "variants": {
+        "0": {
+          "name": "console.log(arr.join(' '))"
+        },
+        "1": {
+          "name": "str += arr[i] + ' '"
+        },
+        "2": {
+          "name": "str += arr[i] + ' ' + str;"
+        },
+        "3": {
+          "name": "str =str + ' ' +  arr[i];"
+        }
+      }
+    },
+    "7": {
+      "name": "Can we use loops to get the string '24' from the array [1, 2, 3, 4, 5]?",
+      "variants": {
+        "0": {
+          "name": "No"
+        },
+        "1": {
+          "name": "Yes"
+        }
+      }
+    },
+    "8": {
+      "name": "Which condition should be added to the loop to get the result '1 2 3 4 4 5'?",
+      "description": "```javascript\nconst arr = [10, 20, 30, 40, 50];\nlet str = '';\nfor(let i = 0; i < arr.length; i++){\n // ваш код\n}\nconsole.log(str);\n```\n",
+      "variants": {
+        "0": {
+          "name": "str += arr[i] / 10 + ' ';"
+        },
+        "1": {
+          "name": "arr[i] = arr[i] / 10; str += arr[i] + ' ';"
+        },
+        "2": {
+          "name": "str += arr[i] % 10 + ' '"
+        },
+        "3": {
+          "name": "all the options above are wrong"
+        }
+      }
+    },
+    "9": {
+      "name": "Is it possible to output only numeric elements as a string from the array `arr=['hello', 23, 'false', 'true', 15]`",
+      "variants": {
+        "0": {
+          "name": "No, the numbers are only output as numbers"
+        },
+        "1": {
+          "name": "No, you can't extract only numbers from an array"
+        },
+        "2": {
+          "name": "Yes, the string can show any result, including only numbers"
+        },
+        "3": {
+          "name": "Yes, but there will be a different string for each number"
+        }
+      }
+    }
+  }
+}

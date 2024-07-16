@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2cb763f0712c198f639",
+  "name": {
+    "ru": "Array.prototype.reverse() – переворачивает порядок элементов массива на месте",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f63a",
+      "name": {
+        "ru": "Что делает метод Array.prototype.reverse()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f63b",
+          "name": {
+            "ru": "Возвращает новый массив с элементами в обратном порядке.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f63c",
+          "name": {
+            "ru": "Переворачивает порядок элементов массива на месте.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f63d",
+          "name": {
+            "ru": "Сортирует элементы массива в алфавитном порядке.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f63e",
+          "name": {
+            "ru": "Удаляет последний элемент массива.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f63f",
+      "name": {
+        "ru": "Какой из следующих кодов правильно демонстрирует использование reverse()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f640",
+          "name": {
+            "ru": "```javascript\nlet arr = [1, 2, 3];\narr.reverse(1);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f641",
+          "name": {
+            "ru": "```javascript\nlet arr = [1, 2, 3];\narr.reverse();\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f642",
+          "name": {
+            "ru": "```javascript\nlet arr = reverse([1, 2, 3]);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f643",
+          "name": {
+            "ru": "```javascript\nlet arr = [1, 2, 3].reverse(3);\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f644",
+      "name": {
+        "ru": "Каков результат выполнения следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet fruits = ['apple', 'banana', 'cherry'];\nlet reversed = fruits.reverse();\nconsole.log(fruits);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f645",
+          "name": {
+            "ru": "['apple', 'banana', 'cherry']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f646",
+          "name": {
+            "ru": "['cherry', 'apple', 'banana']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f647",
+          "name": {
+            "ru": "['banana', 'cherry', 'apple']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f648",
+          "name": {
+            "ru": "['cherry', 'banana', 'apple']",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f649",
+      "name": {
+        "ru": "Можно ли использовать reverse() на строке напрямую в JavaScript?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f64a",
+          "name": {
+            "ru": "Да, это изменит порядок символов в строке.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f64b",
+          "name": {
+            "ru": "Нет, потому что строки в JavaScript неизменяемы.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f64c",
+          "name": {
+            "ru": "Да, но только если строка была предварительно преобразована в массив.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f64d",
+          "name": {
+            "ru": "Нет, потому что reverse() предназначен только для объектов.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f64e",
+      "name": {
+        "ru": "Какое поведение метода reverse() следует ожидать, если массив содержит элементы разных типов?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f64f",
+          "name": {
+            "ru": "Произойдет ошибка типа.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f650",
+          "name": {
+            "ru": "Элементы будут успешно переставлены, несмотря на их тип.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f651",
+          "name": {
+            "ru": "Метод отфильтрует только числовые типы данных.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f652",
+          "name": {
+            "ru": "Массив будет возвращен без изменений.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f653",
+      "name": {
+        "ru": "Что возвращает метод reverse()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f654",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f655",
+          "name": {
+            "ru": "Исходный массив.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f656",
+          "name": {
+            "ru": "Копию массива с перевернутыми элементами.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f657",
+          "name": {
+            "ru": "Измененный исходный массив.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f658",
+      "name": {
+        "ru": "Какие предположения можно сделать о поведении метода reverse() при работе с многомерными массивами?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f659",
+          "name": {
+            "ru": "Он развернет элементы в каждом подмассиве.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f65a",
+          "name": {
+            "ru": "Он развернет порядок подмассивов, но не их содержимое.",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f65b",
+          "name": {
+            "ru": "Он отсортирует подмассивы по убыванию.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f65c",
+          "name": {
+            "ru": "Он не влияет на порядок в подмассивах.",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f65d",
+      "name": {
+        "ru": "Как можно использовать reverse() для создания перевернутой копии массива, не изменяя исходный массив?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet numbers = [1, 2, 3, 4, 5];\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f65e",
+          "name": {
+            "ru": "```javascript\nlet newArr = [...numbers].reverse();\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f65f",
+          "name": {
+            "ru": "```javascript\nlet newArr = numbers.reverse();\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f660",
+          "name": {
+            "ru": "```javascript\nlet newArr = numbers;\nnewArr.reverse();\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f661",
+          "name": {
+            "ru": "```javascript\nlet newArr = numbers.slice();\nnewArr.reverse();\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f662",
+      "name": {
+        "ru": "Какой будет результат выполнения следующего кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet arr1 = ['a', 'b', 'c'];\nlet arr2 = arr1.reverse();\narr2.push('d');\nconsole.log(arr1);\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f663",
+          "name": {
+            "ru": "['c', 'b', 'a']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f664",
+          "name": {
+            "ru": "['d', 'c', 'b', 'a']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f665",
+          "name": {
+            "ru": "['a', 'b', 'c', 'd']",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f666",
+          "name": {
+            "ru": "['c', 'b', 'a', 'd']",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f667",
+      "name": {
+        "ru": "Каким образом можно применить reverse() для получения обратного порядка слов в строке 'Hello World'?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f668",
+          "name": {
+            "ru": "```javascript\n'Hello World'.reverse()\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f669",
+          "name": {
+            "ru": "```javascript\n'Hello World'.split('').reverse().join('')\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f66a",
+          "name": {
+            "ru": "```javascript\n'Hello World'.split(' ').reverse().join(' ')\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f66b",
+          "name": {
+            "ru": "Ни один из предложенных методов",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

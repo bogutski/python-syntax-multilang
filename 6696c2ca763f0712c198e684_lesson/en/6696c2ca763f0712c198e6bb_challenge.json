@@ -1,0 +1,4 @@
+{
+  "name": "Is there a property in the object?",
+  "instruction": "The `hasProperty` function takes two parameters:\n* `obj` - object to check;\n* `key` - the string, the key to be checked.\n\nThe function must return `true` if the object contains a key, and `false` if not.\n\nAn example of running the function:\n```javascript\nhasProperty({ name: \"Helen\", lastName: \"Rock\" }, \"lastName\") // true\n```"
+}

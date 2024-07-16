@@ -1,0 +1,6 @@
+{
+  "name": "Непредсказуемость игры",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-8.png)\n\nТурист в Лас-Вегасе начал игру со какой-то суммой денег.\n\nСоздайте переменную `startMoney` и присвойте ей значение большее либо равное 100.\n\nВ конце игры он проиграл какую-то сумму денег.\n\nСоздайте переменную `lostMoney` и присвойте ей значение от 50 до 80.\n\nСоздайте переменную `endMoney` и присвойте ей вычисленное значение оставшихся денег, как разницу между `startMoney` и `lostMoney`.\n\nПохожий пример:\n```javascript\nconst start = 55;\nconst lost = 10;\nconst end = start - lost;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst startMoney = 100;\nconst lostMoney = 76;\nconst endMoney = startMoney - lostMoney;\n```"
+}

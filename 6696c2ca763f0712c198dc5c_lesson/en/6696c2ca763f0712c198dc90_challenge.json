@@ -1,0 +1,6 @@
+{
+  "name": "U.S. states that begin with the letter \"C\"",
+  "instruction": "The United States consists of 50 states. Your task is to list the states that begin with the letter \"C\".\n\nCreate variables `cState1`, `cState2` and `cState3` and assign them the names of the states that begin with the letter \"C\": `'California'`, `'Colorado'`, `'Connecticut'`.\n\nCreate a `threeCStates` variable that combines the three variables separated by commas into a single string.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst hCar1 = 'Honda';\nconst hCar2 = 'Hummer';\nconst hCar3 = 'Hyundai';\nconst threeHCars = hCar1 + ',' + hCar2 + ',' + hCar3;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst cState1 = 'California';\nconst cState2 = 'Colorado';\nconst cState3 = 'Connecticut';\nconst threeCStates = cState1 + ',' + cState2 + ',' + cState3;\n```"
+}

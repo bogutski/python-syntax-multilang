@@ -1,0 +1,6 @@
+{
+  "name": "Perimeter and area of the square",
+  "instruction": "Given a side of a square `a`.\nMake a program that calculates its perimeter `p` and area `s`.\n\nCreate a variable named `a` and assign it the value of an arbitrary positive number.\nCreate a variable named `p` and assign it the value of the expression to calculate the perimeter.\nCreate a variable `s` and assign it the value of an expression to calculate the area.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst number = 4;\nconst square = number ** 2;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst a = 7;\nconst p = a * 4;\nconst s = a ** 2;\n```"
+}

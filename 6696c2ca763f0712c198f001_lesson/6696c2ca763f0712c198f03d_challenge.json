@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198f03d",
+  "name": {
+    "en": "",
+    "ru": "Найти минимальное и максимальное число из двух массивов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `minAndMax`, которая принимает два массива чисел.\n\nФункция должна вернуть массив из двух чисел, где:\n * первое число - это `минимальное` число из двух массивов,\n * второе число - это `максимальное` число из двух массивов.\n\nЕсли оба массива пустые, то функция должна вернуть `null`.\n\n\nПримеры запуска функции:\n```javascript\nminAndMax([-5, -3, 25], [3, 65, -5]); // [-5, 65]\nminAndMax([0, 1, 2, 3], [8, 9, 10]);  // [0, 10]\nminAndMax([-55, 0, 6], []);           // [-55, 6]\nminAndMax([], [5, 6, 7]);             // [5, 7]\nminAndMax([], []);                    // null\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function minAndMax(arr1, arr2){\n  const newArr = [...arr1, ...arr2];\n  if(!newArr.length) return null;\n  let min = newArr[0];\n  let max = newArr[0];\n\n  for(let i = 0; i < newArr.length; i++){\n    if(newArr[i] < min) min = newArr[i];\n    if(newArr[i] > max) max = newArr[i];\n  }\n\n  return [min, max];\n}",
+  "openTest": "it('Created function minAndMax', () => {\n  expect(minAndMax).to.be.a('function');\n});\n\nit('Function minAndMax does not include method Math.min', () => {\n  expect(minAndMax.toString()).to.not.include('Math.min');\n});\n\nit('Function minAndMax does not include method Math.max', () => {\n  expect(minAndMax.toString()).to.not.include('Math.max');\n});\n\nit('minAndMax([0, 1, 2, 3, 4, 5], [5, 6, 7, 8, 9, 10]) should return [0, 10]', () => {\n  expect(minAndMax([0, 1, 2, 3, 4, 5], [5, 6, 7, 8, 9, 10])).to.deep.equal([0, 10]);\n});\n\nit('minAndMax([-5, -3, 25, 0, 10], [3, 65, -5, 45, 14, 0]) should return [-5, 65]', () => {\n  expect(minAndMax([-5, -3, 25, 0, 10], [3, 65, -5, 45, 14, 0])).to.deep.equal([-5, 65]);\n});\n\nit('minAndMax([-55, 0, 6, 47-, 12, 5, 55], [] should return [-55, 55]', () => {\n  expect(minAndMax([-55, 55], [])).to.deep.equal([-55, 55]);\n})\n\nit('minAndMax([], [5, 6, 7, 8, 9, 10]) should return [5, 10]', () => {\n  expect(minAndMax([], [5, 6, 7, 8, 9, 10])).to.deep.equal([5, 10]);\n});\n\nit('minAndMax([], []) should return null', () => {\n  expect(minAndMax([], [])).to.equal(null);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

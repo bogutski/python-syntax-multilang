@@ -1,0 +1,6 @@
+{
+  "name": "The child's height",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-14.png)\n\nIn one year, the boy Mike's height increased by 9 cm. Find the boy's height.\n\nCreate a `mikeHeight` variable with a value of `120`:\n\nWrite a command that increases the existing value of the `mikeHeight` variable by `9`.",
+  "instructions": {},
+  "hint": "```javascript\nlet mikeHeight = 120;\nmikeHeight = mikeHeight + 9;\n```"
+}

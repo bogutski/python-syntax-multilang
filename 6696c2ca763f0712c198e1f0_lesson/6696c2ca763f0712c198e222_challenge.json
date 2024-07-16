@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e222",
+  "name": {
+    "en": "Is a number the square of a whole number",
+    "ru": "Является ли число квадратом целого числа"
+  },
+  "instruction": {
+    "en": "The `isSquare` function takes the number `n` as a parameter and returns `true` if the number is the square of an integer, and `false` otherwise.\n\nTo determine whether a number is the square of an integer, you must calculate the square root of the number and check whether the result is an integer.\n\nIf the residue from dividing a number by 1 is 0, then the number is an integer, otherwise it is not.\n\n```javascript\nconsole.log(5 % 1); // 0\nconsole.log(5.5 % 1); // 0.5\n```\n\nExamples:\n- The `isSquare(4)` function should return `true` since 4 is the square of number 2;\n- The function `isSquare(25)` should return `true` since 25 is the square of number 5;\n- The function `isSquare(26)` must return `false` since 26 is not the square of an integer.\n\nSolution algorithm:\n1. Calculate the square root of the number `n` and save the result in the variable `root`;\n\n```javascript\nconst root = n ** 0.5;\n```\n\n2. Calculate the remainder of the division of `root` by 1 and store the result in the variable `remainder`;\n```javascript\nconst remainder = root % 1;\n```\n\n3. If `remainder` is 0 then return `true`, otherwise return `false`;",
+    "ru": "Функция `isSquare` принимает число `n` в качестве параметра и возвращает `true`, если число является квадратом целого числа, и `false` в противном случае.\n\nДля определения является ли число квадратом целого числа, необходимо вычислить квадратный корень из числа и проверить является ли результат целым числом.\n\nЕсли остаток от деления числа на 1 равен 0, то число целое, иначе нет.\n\n```javascript\nconsole.log(5 % 1); // 0\nconsole.log(5.5 % 1); // 0.5\n```\n\nПримеры:\n- функция `isSquare(4)` должна возвратить `true`, так как 4 является квадратом числа 2;\n- функция `isSquare(25)` должна возвратить `true`, так как 25 является квадратом числа 5;\n- функция `isSquare(26)` должна возвратить `false`, так как 26 не является квадратом целого числа.\n\nАлгоритм решения:\n1. Вычислить квадратный корень из числа `n` и сохранить результат в переменную `root`;\n\n```javascript\nconst root = n ** 0.5;\n```\n\n2. Вычислить остаток от деления `root` на 1 и сохранить результат в переменную `remainder`;\n```javascript\nconst remainder = root % 1;\n```\n\n3. Если `remainder` равен 0, то вернуть `true`, иначе вернуть `false`;"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isSquare(n) {\n  const root = n ** 0.5;\n  const remainder = root % 1;\n  return remainder === 0;\n}",
+  "openTest": "it('Created function isSquare', () => {\n  expect(isSquare).to.be.a('function');\n});\n\nit('isSquare(4) should return true', () => {\n  expect(isSquare(4)).to.be.true;\n});\n\nit('isSquare(25) should return true', () => {\n  expect(isSquare(25)).to.be.true;\n});\n\nit('isSquare(26) should return false', () => {\n  expect(isSquare(26)).to.be.false;\n});\n\nit('isSquare(0) should return true', () => {\n  expect(isSquare(0)).to.be.true;\n});\n\nit('isSquare(1) should return true', () => {\n  expect(isSquare(1)).to.be.true;\n});\n\nit('isSquare(2) should return false', () => {\n  expect(isSquare(2)).to.be.false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

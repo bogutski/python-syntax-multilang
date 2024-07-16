@@ -1,0 +1,4 @@
+{
+  "name": "Find the sum of the four numbers. Default parameters",
+  "instruction": "Write a function `sumFour` that takes 4 parameters `num1`, `num2`, `num3` and `num4` and returns their sum.\n\nIf any argument is not passed, it must be equal to 2.\n\nAll arguments will be numbers.\n\nExamples:\n``javascript.\nsumFour(1, 2, 3, 4) // 10\nsumFour(1, 2, 3) // 8\nsumFour(1, 2) // 7\nsumFour(1) // 7\nsumFour() // 8"
+}

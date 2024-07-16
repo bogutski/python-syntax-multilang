@@ -1,0 +1,6 @@
+{
+  "name": "Everything is beautiful!",
+  "instruction": "The operation `+` is used not only for adding numbers, but also for concatenating strings.\nThis operation is called \"concatenation\".\n\nSet the variable `str1` and assign it the value of the string `'Everything'`.\nSet the variable `str2` and assign it the value of the string `'is'`.\nSet the variable `str3` and assign it the value of the string `'beautiful'`.\n\nSet the variable `message` and assign it the result of merging the variables `str1`, `str2`, and `str3` with a space separator and an exclamation mark at the end.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst x = 'best';\nconst y = 'day';\nconst res = x + ' ' + y;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst str1 = 'Everything';\nconst str2 = 'is';\nconst str3 = 'beautiful';\nconst message = str1 + ' ' + str2 + ' ' + str3 + '!';\n```"
+}

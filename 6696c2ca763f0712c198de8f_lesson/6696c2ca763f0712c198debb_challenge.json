@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198debb",
+  "name": {
+    "en": "Raising to the power of zero",
+    "ru": "Возведение в нулевую степень"
+  },
+  "instruction": {
+    "en": "Any number raised to power of 0 is equal to 1. Find the result of raising 101 to the power of zero.\n\nCreate a variable `number` and assign value 101 to it.\n\nCreate a variable `power` and give it a value 0.\n\nCreate a variable `result` and give it a value of `number` to the extent of `power`.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n\n```\nconst number = 5;\nconst power = 1;\nconst result = number ** power;\n ```",
+    "ru": "Любое число, возведенное в степень 0, равно 1. Найдите результат возведения в нулевую степень числа 101.\n\nСоздайте переменную `number` и присвойте ей значение 101.\n\nСоздайте переменную `power` и присвойте ей значение 0.\n\nСоздайте переменную `result` и присвойте ей значение `number` в степени `power`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n\n```javascript\nconst number = 5;\nconst power = 1;\nconst result = number ** power;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const number = 101;\nconst power = 0;\nconst result = number ** power;",
+  "openTest": "it('Variable `number` contains a value', () => {\n  expect(number).not.undefined;\n});\n\nit('Variable `number` contains a number', () => {\n  expect(number).a('number');\n});\n\nit('Variable `number` is equal to 101', () => {\n  expect(number).eq(101);\n});\n\nit('Variable `power` contains a value', () => {\n  expect(power).not.undefined;\n});\n\nit('Variable `power` contains a number', () => {\n  expect(power).a('number');\n});\n\nit('Variable `power` is 0', () => {\n  expect(power).eq(0);\n});\n\nit('Variable `result` contains a value', () => {\n  expect(result).not.undefined;\n});\n\nit('Variable `result` contains a number', () => {\n  expect(result).a('number');\n});\n\nit('Variable `result` is 1', () => {\n  expect(result).eq(1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": "```javascript\nconst number = 101;\nconst power = 0;\nconst result = number ** power;\n```"
+  }
+}

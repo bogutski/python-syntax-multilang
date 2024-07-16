@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f3c3",
+  "name": {
+    "en": "/*",
+    "ru": "Удаление и возврат первых N элементов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `removeAndReturnFirstN`, которая принимает массив и число n.\n\nФункция должна удалить первые n элементов из массива и вернуть их в новом массиве.\n\nЕсли n больше длины массива, функция должна вернуть копию исходного массива.\n\nИсходный массив после выполнения функции должен содержать оставшиеся элементы или быть пустым, если все элементы были удалены.\n\nИспользуйте метод `shift()` для удаления элементов из массива и `push()` - для добавление элементов в новый.\n\n\nПример запуска функции:\n```javascript\nremoveAndReturnFirstN([1, 2, 3, 4, 5], 2);      // [ 1, 2 ]\nremoveAndReturnFirstN(['a', 'b', 'c', 'd'], 3); // [ 'a', 'b', 'c' ]\nremoveAndReturnFirstN([true, false, true], 5);  // [ true, false, true ]\nremoveAndReturnFirstN([], 1); // []\n```"
+  },
+  "initialSolution": "function removeAndReturnFirstN(){\n\n}",
+  "completedSolution": "function removeAndReturnFirstN(arr, n) {\n  let res = []\n\n  while(arr.length > 0 && n > 0){\n    res.push(arr.shift())\n    n--\n  }\n\n  return res;\n}",
+  "openTest": "it('Created function removeAndReturnFirstN', () => {\n  expect(removeAndReturnFirstN).to.be.a('function');\n});\n\nit(\"removeAndReturnFirstN should include methods shift and push\", () => {\n  const res = removeAndReturnFirstN.toString()\n  expect(res).to.include('.shift()');\n  expect(res).to.include('.push(');\n});\n\nit(\"removeAndReturnFirstN([1, 2, 3, 4, 5], 2) should return [1, 2]\", () => {\n  expect(removeAndReturnFirstN([1, 2, 3, 4, 5], 2)).to.deep.equal([1, 2]);\n});\n\nit(\"removeAndReturnFirstN(['a', 'b', 'c', 'd'], 3) should return ['a', 'b', 'c']\", () => {\n  expect(removeAndReturnFirstN(['a', 'b', 'c', 'd'], 3)).to.deep.equal(['a', 'b', 'c']);\n});\n\nit(\"removeAndReturnFirstN([true, false, true], 5) should return [true, false, true]\", () => {\n  expect(removeAndReturnFirstN([true, false, true], 5)).to.deep.equal([true, false, true]);\n});\n\nit(\"removeAndReturnFirstN([], 1) should return []\", () => {\n  expect(removeAndReturnFirstN([], 1)).to.deep.equal([]);\n});\n\nit(\"removeAndReturnFirstN([1, 2, 3], 0) should return []\", () => {\n  expect(removeAndReturnFirstN([1, 2, 3], 0)).to.deep.equal([]);\n});\n\nit(\"removeAndReturnFirstN([1, 2, 3, 4], 2) should modify the original array to [3, 4]\", () => {\n  let originalArray = [1, 2, 3, 4];\n  removeAndReturnFirstN(originalArray, 2);\n  expect(originalArray).to.deep.equal([3, 4]);\n});\n\nit(\"removeAndReturnFirstN(['x', 'y', 'z'], 1) should return ['x']\", () => {\n  expect(removeAndReturnFirstN(['x', 'y', 'z'], 1)).to.deep.equal(['x']);\n});\n\nit(\"removeAndReturnFirstN([1, 2], 3) should return [1, 2] and leave the original array empty\", () => {\n  let shortArray = [1, 2];\n  expect(removeAndReturnFirstN(shortArray, 3)).to.deep.equal([1, 2]);\n  expect(shortArray).to.deep.equal([]);\n});\n\nit(\"removeAndReturnFirstN([1, 2, 3], -1) should return []\", () => {\n  expect(removeAndReturnFirstN([1, 2, 3], -1)).to.deep.equal([]);\n});\n\nit(\"removeAndReturnFirstN([{ id: 1 }, { id: 2 }, { id: 3 }], 2) should return [{ id: 1 }, { id: 2 }]\", () => {\n  let objectsArray = [{ id: 1 }, { id: 2 }, { id: 3 }];\n  expect(removeAndReturnFirstN(objectsArray, 2)).to.deep.equal([{ id: 1 }, { id: 2 }]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

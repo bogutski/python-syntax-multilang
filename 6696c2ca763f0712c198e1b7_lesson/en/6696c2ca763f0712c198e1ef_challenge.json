@@ -1,0 +1,4 @@
+{
+  "name": "Fizz, Buzz, FizzBuzz",
+  "instruction": "This is a classic programming problem called FizzBuzz.\n\nWrite a function `fizzBuzz` that takes a number and returns a string.\n\nIf the number is divisible by 3, return the string `Fizz`.\n\nIf the number is divisible by 5, return the string `Buzz`.\n\nIf the number is divisible by 3 and by 5, return the string `FizzBuzz`. Hint - that is, if the number is divisible by 15.\n\nIf the number is not divisible by either 3 or 5 or 15, return the number itself."
+}

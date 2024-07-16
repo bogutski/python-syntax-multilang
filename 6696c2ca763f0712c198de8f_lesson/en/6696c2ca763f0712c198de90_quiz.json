@@ -1,0 +1,86 @@
+{
+  "questions": {
+    "0": {
+      "name": "The % operator is used to get",
+      "variants": {
+        "0": {
+          "name": "result of division"
+        },
+        "1": {
+          "name": "percent of the number"
+        },
+        "2": {
+          "name": "remainder"
+        },
+        "3": {
+          "name": "integer from division"
+        }
+      }
+    },
+    "1": {
+      "name": "Operator ** is used for",
+      "variants": {
+        "0": {
+          "name": "multiplication twice in a row"
+        },
+        "1": {
+          "name": "comments"
+        },
+        "2": {
+          "name": "text selections"
+        },
+        "3": {
+          "name": "exponentiation"
+        }
+      }
+    },
+    "2": {
+      "name": "Select the result of the example below.",
+      "description": "```javascript\nlet c = 11 % 3;\nconsole.log(c);\n```",
+      "variants": {
+        "0": {
+          "name": "0"
+        },
+        "1": {
+          "name": "1"
+        },
+        "2": {
+          "name": "2"
+        },
+        "3": {
+          "name": "3"
+        }
+      }
+    },
+    "3": {
+      "name": "Select the result of the example below.",
+      "description": "```javascript\nlet c = -2 ** 3;\nconsole.log(c);\n```",
+      "variants": {
+        "0": {
+          "name": "8"
+        },
+        "1": {
+          "name": "-8"
+        },
+        "2": {
+          "name": "-6"
+        },
+        "3": {
+          "name": "error"
+        }
+      }
+    },
+    "4": {
+      "name": "The ** operator can be used to extract the root of a number.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    }
+  },
+  "name": "JS Syntax. They will definitely come in handy!"
+}

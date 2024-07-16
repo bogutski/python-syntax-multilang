@@ -1,0 +1,173 @@
+{
+  "name": "Changing object properties",
+  "questions": {
+    "0": {
+      "name": "Which operator is used to change a property of an object?",
+      "variants": {
+        "0": {
+          "name": "Comparison"
+        },
+        "1": {
+          "name": "Assignment"
+        },
+        "2": {
+          "name": "Deletion"
+        },
+        "3": {
+          "name": "Substitution"
+        }
+      }
+    },
+    "1": {
+      "name": "When you change the property of an object, the address to that object also changes",
+      "variants": {
+        "0": {
+          "name": "This statement is true if the object is created with let"
+        },
+        "1": {
+          "name": "This statement is true if the object is created using const"
+        },
+        "2": {
+          "name": "This statement is not true"
+        },
+        "3": {
+          "name": "This statement is true"
+        }
+      }
+    },
+    "2": {
+      "name": "What happens if you change a property in an object created via const?",
+      "variants": {
+        "0": {
+          "name": "Changing the property will result in an error"
+        },
+        "1": {
+          "name": "The value of the property will change to the new value"
+        },
+        "2": {
+          "name": "No change will occur and the value of the property will remain the same"
+        },
+        "3": {
+          "name": "A new object will be created with the changed property"
+        }
+      }
+    },
+    "3": {
+      "name": "Choose the correct option instead of ????? to change the city property from 'New York' to 'Florida' in the code below",
+      "description": "```javascript\nconst address = {\n  city: 'New York'\n};\n??????????????\nconsole.log(address);\n```",
+      "variants": {
+        "0": {
+          "name": "address.city = Florida"
+        },
+        "1": {
+          "name": "address.city = 'Florida'"
+        },
+        "2": {
+          "name": "city.address = 'Florida'"
+        },
+        "3": {
+          "name": "address.city === Florida"
+        }
+      }
+    },
+    "4": {
+      "name": "Choose the correct way to change the value of the cost property from 25 to 10 in the item object",
+      "description": "```javascript\nconst item = {\n  cost: 25\n};\n```",
+      "variants": {
+        "0": {
+          "name": "let item.cost = 10"
+        },
+        "1": {
+          "name": "cost.item = 10"
+        },
+        "2": {
+          "name": "item.cost = 10"
+        },
+        "3": {
+          "name": "itemCost = 10"
+        }
+      }
+    },
+    "5": {
+      "name": "Is it possible to change all the properties in an object?",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "6": {
+      "name": "What happens to an object if you change all of its properties?",
+      "variants": {
+        "0": {
+          "name": "A new object with a new name will be created"
+        },
+        "1": {
+          "name": "The values of all properties will change, but the object reference will remain the same"
+        },
+        "2": {
+          "name": "The object will keep the last property unchanged"
+        },
+        "3": {
+          "name": "Changing all properties will result in an error"
+        }
+      }
+    },
+    "7": {
+      "name": "Is it possible to change the value of an object property from one data type to another as shown below?",
+      "description": "```javascript\nconst user = {\n  age: '10'\n};\nuser.age = 10\n```",
+      "variants": {
+        "0": {
+          "name": "No"
+        },
+        "1": {
+          "name": "Yes"
+        },
+        "2": {
+          "name": "Yes, if the object is created with let"
+        },
+        "3": {
+          "name": "Not if the object is created using const"
+        }
+      }
+    },
+    "8": {
+      "name": "How many times can you change the same property of an object?",
+      "variants": {
+        "0": {
+          "name": "An infinite number of times"
+        },
+        "1": {
+          "name": "Just once."
+        },
+        "2": {
+          "name": "No more than 3 times"
+        },
+        "3": {
+          "name": "No more than seven times"
+        }
+      }
+    },
+    "9": {
+      "name": "What is the result of running the code below?",
+      "description": "```javascript\nconst user = {\n  name: 'Lana',\n  address: {\n     city: 'Florida'\n}\n}\nuser.address.city = 'New York';\nconsole.log(user);\n```",
+      "variants": {
+        "0": {
+          "name": "The value of the city key will change to 'New York'"
+        },
+        "1": {
+          "name": "{\n  name: 'Lana',\n  address: {\n     city: 'New York'\n}"
+        },
+        "2": {
+          "name": "The value of the city key will remain unchanged"
+        },
+        "3": {
+          "name": "The value of the name key will remain unchanged and the value of the city key will change to 'New York'"
+        }
+      }
+    }
+  }
+}

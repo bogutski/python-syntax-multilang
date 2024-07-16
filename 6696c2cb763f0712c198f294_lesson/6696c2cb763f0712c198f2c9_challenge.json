@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f2c9",
+  "name": {
+    "en": "How many times does the string occur in the array?",
+    "ru": "Сколько раз строка встречается в массиве?"
+  },
+  "instruction": {
+    "en": "The function `countEachEl` takes an array of strings.\n\nThe function should return the number of occurrences of each element in the array as an object.\n\nIf the array is empty, the function should return the string `Array is empty`.\n\nExamples of function execution:\n```javascript\ncountEachEl([\"hello\", \"js\"]); // {hello: 1, js: 1}\ncountEachEl([\"hello\", \"js\", \"hello\"]); // {hello: 2, js: 1}\ncountEachEl([]); // 'Array is empty'\n```",
+    "ru": "Функция `countEachEl` принимает массив строк.\n\nФункция должна вернуть количество вхождений каждого элемента в массив в виде объекта.\n\nЕсли массив пустой, то функция должна вернуть строку `Array is empty`.\n\nПримеры запуска функции:\n```javascript\ncountEachEl([\"hello\", \"js\"]); // {hello: 1, js: 1}\ncountEachEl([\"hello\", \"js\", \"hello\"]); // {hello: 2, js: 1}\ncountEachEl([]); // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function countEachEl(arr) {\n  if (!arr.length) return \"Array is empty\";\n  const result = {};\n  for (let i = 0; i < arr.length; i++) {\n    if (result[arr[i]]) result[arr[i]]++;\n    else result[arr[i]] = 1;\n  }\n  return result;\n}",
+  "openTest": "it('Created function countEachEl', () => {\n  expect(countEachEl).to.be.a('function');\n});\n\nit('countEachEl([\"hello\", \"js\"]) returns {hello: 1, js: 1}', () => {\n  expect(countEachEl([\"hello\", \"js\"])).to.deep.equal({hello: 1, js: 1});\n});\n\nit('countEachEl([\"hello\", \"js\", \"hello\"]) returns {hello: 2, js: 1}', () => {\n  expect(countEachEl([\"hello\", \"js\", \"hello\"])).to.deep.equal({hello: 2, js: 1});\n});\n\nit('countEachEl([\"hello\", \"js\", \"hello\", \"js\", \"code\"]) returns {hello: 2, js: 2, code: 1}', () => {\n  expect(countEachEl([\"hello\", \"js\", \"hello\", \"js\", \"code\"])).to.deep.equal({hello: 2, js: 2, code: 1});\n});\n\nit('countEachEl([]) returns \"Array is empty\"', () => {\n  expect(countEachEl([])).to.equal(\"Array is empty\");\n});\n\nit('countEachEl([\"\"]) returns {\"\": 1}', () => {\n  expect(countEachEl([\"\"])).to.deep.equal({\"\": 1});\n})",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

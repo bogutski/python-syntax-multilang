@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f160",
+  "name": {
+    "en": "",
+    "ru": "Проверить, является ли массив палиндромом"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `isPalindrome`, которая принимает один параметр - массив строк.\n\nМассив состоит из произвольного количества строк.\n\nФункция должна вернуть `true`, если массив является палиндромом, и `false` в противном случае.\n\nЕсли массив пустой, функция должна вернуть строку `Array is empty`.\n\nАлгоритм решения внутри функции:\n* Создать условие if на проверку пустого массива.\n* Преобразовать массив в строку, объединив элементы массива через пробел (метод join())\n  и привести строку к нижнему или верхнему регистру.\n* Создать цикл for, который будет проходить до половины длины строки.\n* В цикле, в условии if, сравнивать символы строки с противоположными им символами\n  (первый с последним, второй с предпоследним и т.д.).\n* Если хотя бы одна пара символов не равна, вернуть `false`.\n* В противном случае вернуть `true`.\n\nПример запуска функции:\n```javascript\nisPalindrome(['LEVEL', 'Anna', 'level']); // 'level anna level' = true\nisPalindrome(['level', '']); // 'level ' = false\nisPalindrome(['le', 'v', 'el']); // 'le v el' = true\nisPalindrome(['123', '321', '']); // '123 321 ' = false\nisPalindrome([]); // 'Array is empty' = true"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isPalindrome(arr) {\n  if (!arr.length) return 'Array is empty';\n  let arrToStr = arr.join(' ').toLowerCase();\n  for (let i = 0; i < arrToStr.length / 2; i++) {\n    if (arrToStr[i] !== arrToStr[arrToStr.length - 1 - i]) return false;\n  }\n  return true;\n}",
+  "openTest": "it('Created function isPalindrome', () => {\n  expect(isPalindrome).to.be.a('function');\n});\n\nit(\"isPalindrome(['a', 'b', 'c', 'b', 'a']) should return true\", () => {\n  expect(isPalindrome(['a', 'b', 'c', 'b', 'a'])).to.be.true;\n});\n\nit(\"isPalindrome(['a', 'b', 'c', 'b', 'b']) should return false\", () => {\n  expect(isPalindrome(['a', 'b', 'c', 'b', 'b'])).to.be.false;\n});\n\nit(\"isPalindrome(['level', '55', 'level']) should return true\", () => {\n  expect(isPalindrome(['level', '55', 'level'])).to.be.true;\n});\n\nit(\"isPalindrome(['LEVEL', 'Anna', 'level']) should return true\", () => {\n  expect(isPalindrome(['LEVEL', 'Anna', 'level'])).to.be.true;\n});\n\nit(\"isPalindrome(['level', '']) should return false\", () => {\n  expect(isPalindrome(['level', ''])).to.be.false;\n});\n\nit(\"isPalindrome(['le', 'v', 'el']) should return true\", () => {\n  expect(isPalindrome(['le', 'v', 'el'])).to.be.true;\n});\n\nit(\"isPalindrome(['', '!', 'Anna', '!', '']) should return true\", () => {\n  expect(isPalindrome(['', '!', 'Anna', '!', ''])).to.be.true;\n});\n\nit(\"isPalindrome(['Ma', 'D', 'AM']) should return true\", () => {\n  expect(isPalindrome(['Ma', 'D', 'AM'])).to.be.true;\n});\n\nit(\"isPalindrome(['123', '321', '']) should return false\", () => {\n  expect(isPalindrome(['123', '321', ''])).to.be.false;\n});\n\nit(\"isPalindrome(['', '']) should return true\", () => {\n  expect(isPalindrome(['', ''])).to.be.true;\n});\n\nit(\"isPalindrome([]) should return 'Array is empty'\", () => {\n  expect(isPalindrome([])).to.be.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

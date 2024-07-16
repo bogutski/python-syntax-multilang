@@ -1,0 +1,1 @@
+# Array.prototype.fill() – заполняет массив значением language: es

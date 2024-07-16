@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db84",
+  "name": {
+    "en": "Correct errors in the code. Strange assignment",
+    "ru": "Исправьте ошибки в коде. Странное присваивание"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-1.png)\n\nYou need to write a command that assigns the variable `a`\nthe value of `18` using the keyword `let`.\n\nCorrect the errors in the above code.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-1.png)\n\nТребуется написать команду, которая присваивает переменной `a`\nзначение числа `18` с использованием ключевого слова `let`.\n\nИсправьте ошибки в приведенном коде."
+  },
+  "initialSolution": "let a := 18",
+  "completedSolution": "let a = 18;",
+  "openTest": "it('a is 18', () => {\n  expect (a).to.equal(18);\n});\n\nit('a should be a number', () => {\n  expect (typeof a).to.equal('number');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet a = 18;\n```",
+    "ru": "```javascript\nlet a = 18;\n```"
+  }
+}

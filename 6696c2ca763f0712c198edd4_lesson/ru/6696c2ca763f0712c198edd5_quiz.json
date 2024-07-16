@@ -1,0 +1,175 @@
+{
+  "name": "Заменить в строке символы",
+  "questions": {
+    "0": {
+      "name": "Что является символом строки?",
+      "variants": {
+        "0": {
+          "name": "Только буквы, цифры и знаки препинания"
+        },
+        "1": {
+          "name": "Только буквы и цифры"
+        },
+        "2": {
+          "name": "Буквы, цифры, знаки препинания, пробелы и специальные символы"
+        },
+        "3": {
+          "name": "Буквы, цифры, специальные знаки и знаки препинания"
+        }
+      }
+    },
+    "1": {
+      "name": "Что получится в результате выполнения кода ниже?",
+      "description": "```javascript\nconst str = 'This is a sensational result.';\nlet result = '';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === '.') {\n    result += '!!!';\n  } else {\n    result += str[i];\n  }\n}\nconsole.log(result);\n```",
+      "variants": {
+        "0": {
+          "name": "'This is a sensational result!!!'"
+        },
+        "1": {
+          "name": "'This is a sensational result!'"
+        },
+        "2": {
+          "name": "'This is a sensational result.'"
+        },
+        "3": {
+          "name": "'This is a sensational result.!'"
+        }
+      }
+    },
+    "2": {
+      "name": "При замене символа на другой, мы изменяем первоначальную строку и сравнение ниже даст нам true",
+      "description": "```javascript\nconst str = 'That is fantastic!';\nlet result = '';\nfor (let i = 0; i < str.length; i++) {\n  if (str[i] === '!') {\n    result += '!!!';\n  } else {\n    result += str[i];\n  }\n}\nconsole.log(str === result);\n```",
+      "variants": {
+        "0": {
+          "name": "Верно, первоначальная строка изменилась"
+        },
+        "1": {
+          "name": "Неверно, изменения хранятся в переменной `result`, а `str` осталась без изменений. Результатом сравнения будет `false`"
+        },
+        "2": {
+          "name": "Сравнение строк приведёт к `true`, потому что обе строки изменились на новую"
+        },
+        "3": {
+          "name": "Сравнение строк приведёт к ошибке"
+        }
+      }
+    },
+    "3": {
+      "name": "Для замены сразу нескольких разных символов удобно использовать",
+      "variants": {
+        "0": {
+          "name": "Несколько циклов `for`"
+        },
+        "1": {
+          "name": "Переменные"
+        },
+        "2": {
+          "name": "Строку"
+        },
+        "3": {
+          "name": "Объект"
+        }
+      }
+    },
+    "4": {
+      "name": "Выберите верно созданный объект для получения ожидаемого результата",
+      "description": "```javascript\nconst str = 'What-is-End 2 End-testing.' // исходная строка\nlet result = 'What is End-to-End testing?' // ожидаемый результат\n```",
+      "variants": {
+        "0": {
+          "name": "const map = {\n  ' ': '-'\n  2: 'to'\n  '-': ' '\n  '.': '?'\n}"
+        },
+        "1": {
+          "name": "const map = {\n  2: 'to',\n  '-': ' ',\n  '.': '?'\n}"
+        },
+        "2": {
+          "name": "const map = {\n  ' ': '-',\n  2: 'to',\n  '-': ' ',\n  '.': '?'\n}"
+        },
+        "3": {
+          "name": "const map = {\n  ' ': '-',\n  'to': 2,\n  '-': ' ',\n  '.': '?'\n}"
+        }
+      }
+    },
+    "5": {
+      "name": "Что выведется в консоль после выполнения кода ниже?",
+      "description": "```javascript\nconst str = 'I am 2 old 4 it.';\nlet result = '';\nconst map = {\n  2: 'too',\n  4: 'for',\n  '.': '!'\n}\nfor (let i = 0; i < str.length; i++) {\n  if (map[str[i]]) {\n    result += map[str[i]];\n  } else {\n    result += str[i];\n  }\n}\nconsole.log(result);\n```",
+      "variants": {
+        "0": {
+          "name": "'I am 2 old for it!'"
+        },
+        "1": {
+          "name": "'I am too old for it.'"
+        },
+        "2": {
+          "name": "'I am too old 4 it!'"
+        },
+        "3": {
+          "name": "'I am too old for it!'"
+        }
+      }
+    },
+    "6": {
+      "name": "При использовании метода replace(), будет заменено только первое вхождение искомой строки",
+      "variants": {
+        "0": {
+          "name": "Данное утверждение верно"
+        },
+        "1": {
+          "name": "Данное утверждение неверно"
+        }
+      }
+    },
+    "7": {
+      "name": "Замену всех вхождений искомой строки можно осуществить с помощью...",
+      "variants": {
+        "0": {
+          "name": "Метода replaceAll()"
+        },
+        "1": {
+          "name": "Регулярных выражений"
+        },
+        "2": {
+          "name": "Метода replace()"
+        },
+        "3": {
+          "name": "Метода replaceSubString()"
+        }
+      }
+    },
+    "8": {
+      "name": "Выберите верный результат запуска кода ниже",
+      "description": "```javascript\nconst str = 'u r34lly c4n r34d th1s.';\nlet result = '';\nconst map = {\n  1: 'i',\n  'u': 'you',\n  3: 'e',\n  4: 'a',\n  '.': '!'\n}\nfor (let i = 0; i < str.length; i++) {\n  if (map[str[i]]) {\n    result += map[str[i]];\n  } else {\n    result += str[i];\n  }\n}\nconsole.log(result);\n```",
+      "variants": {
+        "0": {
+          "name": "'you really can read this.'"
+        },
+        "1": {
+          "name": "'you really can read this!'"
+        },
+        "2": {
+          "name": "'u really can read this!'"
+        },
+        "3": {
+          "name": "you really can read this!"
+        }
+      }
+    },
+    "9": {
+      "name": "Что получится в результате выполнения кода ниже?",
+      "description": "```javascript\nconst str = 'YOU BECOME WHAT YOU BELIEVE.';\nlet result = '';\nconst map = {\n  'I': 1,\n  'E': 3,\n  'A': 4,\n  'T': 7,\n  'B': 8,\n  '.': '!'\n}\nfor (let i = 0; i < str.length; i++) {\n  if (map[str[i]]) {\n    result += map[str[i]];\n  } else {\n    result += str[i];\n  }\n}\nconsole.log(result);\n```",
+      "variants": {
+        "0": {
+          "name": "'YOU 83COM3 WHAT YOU 83L13V3'"
+        },
+        "1": {
+          "name": "'YOU B3COM3 WH47 YOU B3L13V'"
+        },
+        "2": {
+          "name": "'YOU 83COM3 WH47 YOU 83L13V3'"
+        },
+        "3": {
+          "name": "'YOU 83COM3 WH47 YOU 83L13V3!'"
+        }
+      }
+    }
+  }
+}

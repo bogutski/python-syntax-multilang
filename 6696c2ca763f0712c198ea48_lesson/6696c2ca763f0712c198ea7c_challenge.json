@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ea7c",
+  "name": {
+    "en": "The sum of all numbers, if zero is not encountered",
+    "ru": "Сумма всех чисел, если не встретился ноль"
+  },
+  "instruction": {
+    "en": "Write a function `allButZero` that takes two numbers `n1` and `n2` and returns the sum of all numbers between `n1` and\n`n2`, inclusive.\n\nIf there is a zero in the range between `n1` and `n2`, the function should return the string `'Invalid input'`.\n\nExamples of running the function:\n```javascript\nallButZero(1, 5) // 15\nallButZero(-5, 5) // Invalid input\nallButZero(0, 5) // Invalid input\nallButZero(-25, -5) // -315\n```",
+    "ru": "Напишите функцию `allButZero`, которая принимает два числа `n1` и `n2` и возвращает сумму всех чисел между `n1` и\n`n2`, включительно.\n\nЕсли в диапазоне между `n1` и `n2` встретился ноль, то функция должна вернуть строку `'Invalid input'`.\n\nПримеры запуска функции:\n```javascript\nallButZero(1, 5) // 15\nallButZero(-5, 5) // Invalid input\nallButZero(0, 5) // Invalid input\nallButZero(-25, -5) // -315\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function allButZero(n1, n2) {\n  let sum = 0;\n  for(let i = n1; i <= n2; i++) {\n    if(i === 0) return 'Invalid input';\n    sum += i;\n  }\n  return sum;\n}",
+  "openTest": "it('Created function allButZero', () => {\n  expect(allButZero).to.be.a('function');\n});\n\nit('allButZero(1, 5) should return 15', () => {\n  expect(allButZero(1, 5)).to.equal(15);\n});\n\nit(\"allButZero(-5, 5) should return 'Invalid input'\", () => {\n  expect(allButZero(-5, 5)).to.equal('Invalid input');\n});\n\nit(\"allButZero(0, 5) should return 'Invalid input'\", () => {\n  expect(allButZero(0, 5)).to.equal('Invalid input');\n});\n\nit('allButZero(-25, -5) should return -315', () => {\n  expect(allButZero(-25, -5)).to.equal(-315);\n});\n\nit('allButZero(-20, -7) should return -189', () => {\n  expect(allButZero(-20, -7)).to.equal(-189);\n});\n\nit('allButZero(100, 117) should return 1953', () => {\n  expect(allButZero(100, 117)).to.equal(1953);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

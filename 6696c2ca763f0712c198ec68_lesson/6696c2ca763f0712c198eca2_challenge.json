@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eca2",
+  "name": {
+    "en": "Partition the word. Correct the code",
+    "ru": "Разбор слова на части. Исправьте код"
+  },
+  "instruction": {
+    "en": "The `wordSpec` function takes one parameter - a string.\n\nThe string can only contain lowercase vowels and consonants.\n\nThe function must return an object with three properties: `vowel`, `consonant` and `length`.\n\nThe `vowel` property contains all vowels in the string, `consonant` contains all consonants, and `length` contains the length of the string.\n\nFix the code to make it work correctly (no errors in the loop) and analyze it.\n\nExamples of running the function:\n```javascript\nwordSpec(\"hello\") // {vowel: \"eo\", consonant: \"hll\", length: 5}\n```",
+    "ru": "Функция `wordSpec` принимает один параметр - строку.\n\nСтрока может содержать только гласные и согласные буквы в нижнем регистре.\n\nФункция должна вернуть объект с тремя свойствами: `vowel`, `consonant` и `length`.\n\nСвойство `vowel` содержит все гласные буквы в строке, `consonant` - все согласные, а `length` - длину строки.\n\nИсправьте код, чтобы он работал правильно (в цикле ошибок нет), а также проанализируйте его.\n\nПримеры запуска функции:\n```javascript\nwordSpec(\"hello\") // {vowel: \"eo\", consonant: \"hll\", length: 5}\n```"
+  },
+  "initialSolution": "function wordSpec(str) {\n  const vowels = 'aeiou';\n  const length = lengthOfStr(str);\n  const vowel = \"\";\n  const consonant = \"\";\n  for (let i = 0; i < length; i++) {\n    if (vowels.includes(str[i])) {\n      vowel += str[i];\n    } else {\n      consonant += str[i];\n    }\n  }\n  return {\n    vowel;\n    consonant;\n    length;\n  }\n}",
+  "completedSolution": "function wordSpec(str) {\n  const vowels = 'aeiou'\n  const length = str.length;\n  let vowel = \"\";\n  let consonant = \"\";\n  for (let i = 0; i < length; i++) {\n    if (vowels.includes(str[i])) {\n      vowel += str[i];\n    } else {\n      consonant += str[i];\n    }\n  }\n  return {\n    vowel,\n    consonant,\n    length,\n  }\n}",
+  "openTest": "it('Created function wordSpec', () => {\n  expect(wordSpec).to.be.a('function');\n});\n\nit('wordSpec(\"hello\") returns {vowel: \"eo\", consonant: \"hll\", length: 5}', () => {\n  expect(wordSpec(\"hello\")).to.deep.equal({vowel: \"eo\", consonant: \"hll\", length: 5});\n});\n\nit('wordSpec(\"hmm\") returns {vowel: \"\", consonant: \"hmm\", length: 3}', () => {\n  expect(wordSpec(\"hmm\")).to.deep.equal({vowel: \"\", consonant: \"hmm\", length: 3});\n});\n\nit('wordSpec(\"aeiou\") returns {vowel: \"aeiou\", consonant: \"\", length: 5}', () => {\n  expect(wordSpec(\"aeiou\")).to.deep.equal({vowel: \"aeiou\", consonant: \"\", length: 5});\n});\n\nit('wordSpec(\"cherry\") returns {vowel: \"\", consonant: \"chrry\", length: 6}', () => {\n  expect(wordSpec(\"cherry\")).to.deep.equal({vowel: \"e\", consonant: \"chrry\", length: 6});\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

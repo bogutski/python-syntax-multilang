@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dfc5",
+  "name": {
+    "en": "Fix errors in the getDayOfWeek function",
+    "ru": "Исправьте ошибки в функции getDayOfWeek"
+  },
+  "instruction": {
+    "en": "You need to write a function `getDayOfWeek` that takes the day of the week `day` and returns a string like `'Today is day'`.\n\nIf no argument is given, the function should return the string `'Today is today'`.\n\nCorrect the errors in the code.",
+    "ru": "Нужно написать функцию `getDayOfWeek`, которая принимает день недели `day` и возвращает строку вида `'Today is day'`.\n\nЕсли аргумент не задан, функция должна вернуть строку `'Today is today'`.\n\nИсправьте ошибки в коде."
+  },
+  "initialSolution": "Function dayWeek(day - 'Friday') {\n  return 'Today is ' + day.\n}",
+  "completedSolution": "function getDayOfWeek(day = 'today') {\n  return 'Today is ' + day;\n}",
+  "openTest": "it('Created function getDayOfWeek', () => {\n  expect(getDayOfWeek).to.be.a('function');\n});\n\nit('Function returns correct result for argument `Monday`', () => {\n    expect(getDayOfWeek('Monday')).to.equal('Today is Monday');\n});\n\nit('Function returns correct result for argument `Tuesday`', () => {\n    expect(getDayOfWeek('Tuesday')).to.equal('Today is Tuesday');\n});\n\nit('Function returns correct result for argument `Wednesday`', () => {\n    expect(getDayOfWeek('Wednesday')).to.equal('Today is Wednesday');\n});\n\nit('Function returns correct result for argument `Thursday`', () => {\n    expect(getDayOfWeek('Thursday')).to.equal('Today is Thursday');\n});\n\nit('Function returns correct result for argument `Friday`', () => {\n    expect(getDayOfWeek('Friday')).to.equal('Today is Friday');\n});\n\nit('Function returns correct result for argument `Saturday`', () => {\n    expect(getDayOfWeek('Saturday')).to.equal('Today is Saturday');\n});\n\nit('Function returns correct result for argument `Sunday`', () => {\n    expect(getDayOfWeek('Sunday')).to.equal('Today is Sunday');\n});\n\nit('Function returns correct result without argument', () => {\n    expect(getDayOfWeek()).to.equal('Today is today');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

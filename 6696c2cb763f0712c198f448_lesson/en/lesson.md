@@ -1,0 +1,1 @@
+# Array.prototype.map() – преобразует каждый элемент массива по условию language: en

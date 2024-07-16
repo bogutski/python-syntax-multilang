@@ -1,0 +1,5 @@
+{
+  "name": "Round the square root",
+  "instruction": "Write a function `roundSqrt` that takes one number and returns its square root rounded to the nearest integer.\n\nUse `Math.round` for rounding.\n\nTo calculate the square root, round the number to the power of 1/2. Example: `10 ** 0.5`.\n\nExamples of running a function:\n```javascript.\nroundSqrt(1) // 1\nroundSqrt(2) // 1\nroundSqrt(3) // 2\nroundSqrt(4) // 2\nroundSqrt(5) // 2\nroundSqrt(6) // 2\nroundSqrt(7) // 3\nroundSqrt(8) // 3\n```",
+  "instructions": {}
+}

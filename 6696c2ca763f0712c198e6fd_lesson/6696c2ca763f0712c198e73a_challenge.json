@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e73a",
+  "name": {
+    "en": "Finding an element in a two-dimensional array",
+    "ru": "Нахождение элемента в двумерном массиве"
+  },
+  "instruction": {
+    "en": "Write a function `multiDimensional` that takes one parameter, an array.\n\nThe array is two-dimensional.\n\nAn example of a multidimensional array:\n`[['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']]`\n\nEach nested array contains strings.\n\nThe function must return the last element of the second nested array.\n\nFor example, from the above two-dimensional array the letter `f` must be returned.\n\n* Spaces at the beginning and at the end of the string must be removed.\n* The string must be converted to uppercase.\n\n```javascript\nmultiDimensional([[' Airplane', 'Airport '], ['Boardwalk', ' Bookstore '], [' Brainstorm ', ' Fisherman']])\n// 'BOOKSTORE'\n```",
+    "ru": "Напишите функцию `multiDimensional`, которая принимает один параметр - массив.\n\nМассив является двумерным.\n\nПример многомерного массива:\n`[['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']]`\n\nВ каждом вложенном массиве находятся строки.\n\nФункция должна вернуть последний элемент второго вложенного массива.\n\nНапример, из вышеуказанного двумерного массива должна вернуться буква `f`.\n\n* Пробелы в начале и в конце строки должны быть удалены.\n* Строка должна быть преобразована в верхний регистр.\n\n```javascript\nmultiDimensional([[' Airplane', 'Airport '], ['Boardwalk', '  Bookstore '], [' Brainstorm ', ' Fisherman']])\n// 'BOOKSTORE'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function multiDimensional(arr) {\n    let secondElement = arr[1];\n    return secondElement[secondElement.length - 1].trim().toUpperCase();\n}",
+  "openTest": "it('Created function multiDimensional', () => {\n    expect(multiDimensional).to.be.a('function');\n});\n\nit('multiDimensional([[\" Airplane\", \"Airport \"], [\"Boardwalk\", \"  Bookstore \"], [\" Brainstorm \", \" Fisherman\"]]) should return \"BOOKSTORE\"', () => {\n    expect(multiDimensional([[' Airplane', 'Airport '], ['Boardwalk', '  Bookstore '], [' Brainstorm ', ' Fisherman']])).to.equal('BOOKSTORE');\n});\n\nit('multiDimensional([[\" Airplane\", \"Bookstore \"], [\"Boardwalk\", \"  Airport \"], [\" Brainstorm \", \" Fisherman\"]]) should return \"AIRPORT\"', () => {\n    expect(multiDimensional([[' Airplane', 'Bookstore '], ['Boardwalk', '  Airport '], [' Brainstorm ', ' Fisherman']])).to.equal('AIRPORT');\n});\n\nit('multiDimensional([[\" Airplane\", \"Airport \"], [\"Boardwalk\", \"  Fisherman \"], [\" Brainstorm \", \" Bookstore\"]]) should return \"FISHERMAN\"', () => {\n    expect(multiDimensional([[' Airplane', 'Airport '], ['Boardwalk', '  Fisherman '], [' Brainstorm ', ' Bookstore']])).to.equal('FISHERMAN');\n});\n\nit('multiDimensional([[\" Airplane\", \"Airport \"], [\"Boardwalk\", \"  Blueberry \"], [\" Brainstorm \", \" Bookstore\"]]) should return \"BLUEBERRY\"', () => {\n    expect(multiDimensional([[' Airplane', 'Airport '], ['Boardwalk', '  Blueberry '], [' Brainstorm ', ' Bookstore']])).to.equal('BLUEBERRY');\n});\n\nit('multiDimensional([[\" Airplane\", \"Airport \"], [\"Boardwalk\", \"  Brainstorm \"], [\" Blueberry \", \" Fisherman\"]]) should return \"BRAINSTORM\"', () => {\n    expect(multiDimensional([[' Airplane', 'Airport '], ['Boardwalk', '  Brainstorm '], [' Blueberry ', ' Fisherman']])).to.equal('BRAINSTORM');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

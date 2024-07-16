@@ -1,0 +1,5 @@
+{
+  "name": "Посчитать количество вхождений каждого числа массива",
+  "instruction": "Функция `countEachNumberElement` принимает массив c разными типами данных\n\nНеобходимо посчитать количество вхождений каждого числа в массиве и вернуть результат в виде объекта.\n\nЕсли в массиве нет чисел, то вернуть строку `No numbers in array`\n\nЕсли массив пустой, то вернуть строку \"Array is empty\"\n\nПример запуска функции:\n```javascript\ncountEachNumberElement([1, 2, 3, 4, 5, \"hello\", \"js\"]) // {1: 1, 2: 1, 3: 1, 4: 1, 5: 1}\ncountEachNumberElement([\"hello\", \"js\", \"practice\"]) // \"No numbers in array\"\ncountEachNumberElement([]) // \"Array is empty\"\n```\n\nПодсказка: для проверки содержит ли объект числа, можно воспользоваться методом `Object.keys()`  и `typeof` и проверить длину массива",
+  "instructions": {}
+}

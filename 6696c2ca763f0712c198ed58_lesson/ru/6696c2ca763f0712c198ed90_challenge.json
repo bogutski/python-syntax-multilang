@@ -1,0 +1,5 @@
+{
+  "name": "Дубликат буквы",
+  "instruction": "Исправьте функцию `findDuplicate`, которая принимает строку `str` и возвращает `true`, если в строке `str` есть одинаковые буквы, возвращает `false` в противном случае.\n\nУчитывайте что большая буква не является дубликатом маленькой буквы или наоборот.\n\nМежду каждым элементом есть один пробел.\n\n\nПримеры запуска функции:\n```javascript\nfindDuplicate('a b c d d'); // true\nfindDuplicate('a b c d e'); // false\nfindDuplicate('A b C d a'); // false\nfindDuplicate('A b C d A'); // true\n```",
+  "instructions": {}
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Штаты США, которые начинаются с буквы \"C\"",
+  "instruction": "США состоит из 50 штатов. Ваша задача: перечислить штаты, которые начинаются с буквы \"C\".\n\nСоздайте переменные `cState1`, `cState2` и `cState3`присвойте им названия штатов, который начинается с буквы \"C\": `'California'`, `'Colorado'`, `'Connecticut'`.\n\nСоздайте переменную `threeCStates`, которая объединит три переменные через запятую в одну строку.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst hCar1 = 'Honda';\nconst hCar2 = 'Hummer';\nconst hCar3 = 'Hyundai';\nconst threeHCars = hCar1 + ',' + hCar2 + ',' + hCar3;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst cState1 = 'California';\nconst cState2 = 'Colorado';\nconst cState3 = 'Connecticut';\nconst threeCStates = cState1 + ',' + cState2 + ',' + cState3;\n```"
+}

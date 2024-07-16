@@ -1,0 +1,6 @@
+{
+  "name": "Welcome to our class",
+  "instruction": "Создайте переменную `stringStart` и присвойте ей значение `'Welcome to our class'`.\n\nСоздайте переменную `stringEnd` и присвойте ей значение `'John Smith'`.\n\nСоздайте переменную `newString` которая будет результатом слияния переменной `stringStart` и переменной `stringEnd` с пробелом между ними.\n\nПриведем пример, который принципиально похож на то что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet name = 'Paul';\nlet surname = 'Smith';\nlet fullName = name + ' ' + surname;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet stringStart = 'Welcome to our class';\nlet stringEnd = 'John Smith';\nlet newString = stringStart + ' ' + stringEnd;\n```"
+}

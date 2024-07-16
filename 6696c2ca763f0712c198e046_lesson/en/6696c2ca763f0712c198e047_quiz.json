@@ -1,0 +1,151 @@
+{
+  "name": "The difference between let and const",
+  "questions": {
+    "0": {
+      "name": "In modern JavaScript there are two ways to declare variables: let and const. Choose the correct one:",
+      "variants": {
+        "0": {
+          "name": "let declares a variable whose value can be changed, and const declares a variable whose value cannot be changed."
+        },
+        "1": {
+          "name": "If you declare a variable with let, you can leave out the value, but if you declare a variable with const, the value is mandatory."
+        },
+        "2": {
+          "name": "If you declare a variable with const without a value, it will be undefined."
+        },
+        "3": {
+          "name": "If you declare a variable with let without a value, it will be undefined."
+        }
+      }
+    },
+    "1": {
+      "name": "If you declare a variable with const without a value",
+      "variants": {
+        "0": {
+          "name": "We get an error"
+        },
+        "1": {
+          "name": "The variable will be undefined"
+        },
+        "2": {
+          "name": "The variable will be null"
+        },
+        "3": {
+          "name": "The variable will be 0"
+        }
+      }
+    },
+    "2": {
+      "name": "If you declare a variable with let without a value",
+      "variants": {
+        "0": {
+          "name": "We get an error"
+        },
+        "1": {
+          "name": "The variable will be undefined"
+        },
+        "2": {
+          "name": "The variable will be null"
+        },
+        "3": {
+          "name": "The variable will be 0"
+        }
+      }
+    },
+    "3": {
+      "name": "If you try to change the value of a variable declared with const, you get an error",
+      "variants": {
+        "0": {
+          "name": "SyntaxError: Assignment to const variable."
+        },
+        "1": {
+          "name": "TypeError: Assignment to constant variable."
+        },
+        "2": {
+          "name": "RuntimeError: Assignment to constant variable."
+        },
+        "3": {
+          "name": "SyntaxError: Unexpected token ="
+        }
+      }
+    },
+    "4": {
+      "name": "If you do not plan to change the value of the variable, it is better to use const",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "5": {
+      "name": "A variable can be used before it is declared",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "6": {
+      "name": "A variable declared with let can be redefined up to 16 times",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "7": {
+      "name": "When you create a variable, the equals sign (=) is an assignment operator",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "8": {
+      "name": "Select the correct options",
+      "variants": {
+        "0": {
+          "name": "const a = 1; const b = 2; const c = a + b;"
+        },
+        "1": {
+          "name": "const a = 1; const b = a; const c = a - b;"
+        },
+        "2": {
+          "name": "const a = 1; a = a + 1; const c = a + b;"
+        },
+        "3": {
+          "name": "let a = 1; a = a + 1; const c = a + a;"
+        }
+      }
+    },
+    "9": {
+      "name": "Select the correct options",
+      "variants": {
+        "0": {
+          "name": "let a = 1; let a = a + 1; const c = a + a;"
+        },
+        "1": {
+          "name": "let a = 1; a = a + a; const b = a + a;"
+        },
+        "2": {
+          "name": "const a = 1; let a = 2; const b = a + a;"
+        },
+        "3": {
+          "name": "lat a = 1; a = a + 1; const b = a + a;"
+        }
+      }
+    }
+  }
+}

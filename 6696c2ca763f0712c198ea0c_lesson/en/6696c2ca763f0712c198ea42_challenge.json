@@ -1,0 +1,4 @@
+{
+  "name": "Array in ascending or descending order",
+  "instruction": "The `makeOrder` function takes two numbers `n1` and `n2`.\n\nThe function should return an array that contains all numbers from n1 to n2 inclusive.\n\nIf n1 is less than n2, the function should return an array of numbers in ascending order.\n\nIf n1 is greater than n2, the function should return an array of numbers in descending order.\n\nExamples of running the function:\n```javascript\nmakeOrder(1, 5) // [1, 2, 3, 4, 5]\nmakeOrder(5, 1) // [5, 4, 3, 2, 1]\n```"
+}

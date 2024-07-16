@@ -1,0 +1,4 @@
+{
+  "name": "What is the remainder of dividing an even number by 2?",
+  "instruction": "An even number 'a' is given. Is it true that the residue from dividing an even number by 2 is zero?\n\nCreate a variable `a` and assign to it the value of an arbitrary even positive number.\nCreate a variable `remainder` and assign it an expression to find the remainder of division `a` by 2.\nCreate a variable `isZero` and assign to it the result of a comparison of the variable `remainder` with zero (strict equality ===).\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n```\nconst x = 6;\nconst rest = x % 2;\nconst isNull = rest === 0;\n```"
+}

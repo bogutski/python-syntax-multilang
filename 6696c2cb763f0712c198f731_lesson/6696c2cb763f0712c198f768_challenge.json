@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f768",
+  "name": {
+    "en": "/*",
+    "ru": "Найти последний вложенный массив, содержащий заданное число"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findLastArrayContainingNumber`, которая принимает массив массивов чисел и одно целое число.\n\nФункция должна возвращать последний вложенный массив, который содержит заданное число.\n\nЕсли такого массива нет, функция должна вернуть строку `Not found`.\n\nЕсли массив пустой, либо какой-то из параметров функции не передан, функция должна вернуть строку: `Missing information`.\n\n\nПримеры запуска функции:\n```javascript\nfindLastArrayContainingNumber([[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 11, 111]], 1) // [ 1, 11, 111 ]\nfindLastArrayContainingNumber([[10, 20], [30, 40], [50, 60]], 70) // \"Not found\"\nfindLastArrayContainingNumber([[3, 4], [5, 3], [3, 8]], 3) // [ 3, 8 ]\nfindLastArrayContainingNumber([[1, 2, 3]], undefined) // \"Missing information\"\nfindLastArrayContainingNumber(undefined, 5) // \"Missing information\"\nfindLastArrayContainingNumber([], 5) // \"Missing information\"\n```"
+  },
+  "initialSolution": "function findLastArrayContainingNumber(){\n\n}",
+  "completedSolution": "function findLastArrayContainingNumber(arr = [], element) {\n  if(arr.length === 0 || element === undefined) return 'Missing information'\n  return arr.findLast(subArray => subArray.includes(element)) || 'Not found';\n}",
+  "openTest": "it('Created function findLastArrayContainingNumber', () => {\n  expect(findLastArrayContainingNumber).to.be.a('function');\n});\n\nit(\"Function findLastArrayContainingNumber should include findLast method\", () => {\n  const result = findLastArrayContainingNumber.toString();\n  expect(result).to.include('.findLast(');\n});\n\nit('findLastArrayContainingNumber([[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 11, 111]], 1) should return [1, 11, 111]', function() {\n  expect(findLastArrayContainingNumber([[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 11, 111]], 1)).to.deep.equal([1, 11, 111]);\n});\n\nit('findLastArrayContainingNumber([[10, 20], [30, 40], [50, 60]], 70) should return \"Not found\"', function() {\n  expect(findLastArrayContainingNumber([[10, 20], [30, 40], [50, 60]], 70)).to.equal('Not found');\n});\n\nit('findLastArrayContainingNumber([[3, 4], [5, 3], [3, 8]], 3) should return [3, 8]', function() {\n  expect(findLastArrayContainingNumber([[3, 4], [5, 3], [3, 8]], 3)).to.deep.equal([3, 8]);\n});\n\nit('findLastArrayContainingNumber([], 5) should return \"Missing information\"', function() {\n  expect(findLastArrayContainingNumber([], 5)).to.equal('Missing information');\n});\n\nit('findLastArrayContainingNumber([[1, 2, 3]], undefined) should return \"Missing information\"', function() {\n  expect(findLastArrayContainingNumber([[1, 2, 3]], undefined)).to.equal('Missing information');\n});\n\nit('findLastArrayContainingNumber([[20, 30], [40, 50], [60, 70, 20]], 20) should return [60, 70, 20]', function() {\n  expect(findLastArrayContainingNumber([[20, 30], [40, 50], [60, 70, 20]], 20)).to.deep.equal([60, 70, 20]);\n});\n\nit('findLastArrayContainingNumber([[100, 200], [300, 400]], 500) should return \"Not found\"', function() {\n  expect(findLastArrayContainingNumber([[100, 200], [300, 400]], 500)).to.equal('Not found');\n});\n\nit('findLastArrayContainingNumber(undefined, 10) should return \"Missing information\"', function() {\n  expect(findLastArrayContainingNumber(undefined, 10)).to.equal('Missing information');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

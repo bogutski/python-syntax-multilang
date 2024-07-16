@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e0db",
+  "name": {
+    "en": "The result of the greeting function is written in the variable",
+    "ru": "Результат функции приветствия записывается в переменную"
+  },
+  "instruction": {
+    "en": "Write a function `greeting` that takes the `name` parameter and returns a string like `Hello, name!`.\n\nCreate a variable `message` and assign it the result of a call to the `greeting` function. Pass any name as an argument.\n\nA similar example:\n```javascript\nfunction hello(firstName) {\n  return 'Hello, ' + firstName + '!'\n}\n\nconst helloMessage = hello('John');\n```",
+    "ru": "Напиши функцию `greeting`, которая принимает параметр `name` и возвращает строку вида `Hello, name!`.\n\nСоздайте переменную `message` и присвойте ей результат вызова функции `greeting`. В качестве аргумента передайте любое имя.\n\nПохожий пример:\n```javascript\nfunction hello(firstName) {\n  return 'Hello, ' + firstName + '!';\n}\n\nconst helloMessage = hello('John');\n```"
+  },
+  "initialSolution": "fun hello",
+  "completedSolution": "function greeting(name) {\n  return `Hello, ${name}!`;\n}\n\nconst message = greeting('John');",
+  "openTest": "it('Created function greeting', () => {\n  expect(greeting).to.be.a('function');\n});\n\nit('function has parameter name', () => {\n  const func = greeting.toString();\n  const param = func.match(/\\((.+?)\\)/)[1];\n  expect(param).to.equal('name');\n});\n\nit('Created variable message', () => {\n  expect(message).to.be.a('string');\n});\n\nit('greeting(\"Mary\") returns \"Hello, Mary!\"', () => {\n  expect(greeting('Mary')).to.equal('Hello, Mary!');\n});\n\nit('greeting(\"Bob\") returns \"Hello, Bob!\"', () => {\n  expect(greeting('Bob')).to.equal('Hello, Bob!');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

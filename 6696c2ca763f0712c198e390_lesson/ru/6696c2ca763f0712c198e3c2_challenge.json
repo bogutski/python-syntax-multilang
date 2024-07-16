@@ -1,0 +1,5 @@
+{
+  "name": "Длины строк последовательно увеличиваются",
+  "instruction": "Напишите функцию `stringSequence`, которая принимает три строки и возвращает `true`, если длины строк последовательно увеличиваются на 1, и `false` в противном случае.\n\nРассмотрите пример для понимания условия задачи.\n\nПримеры запуска функции:\n```javascript\nstringSequence('', 'a', 'aa'); // true\nstringSequence('a', 'aa', 'aaa'); // true\nstringSequence('aaa', 'aaaa', 'aaaaa'); // true\n\nstringSequence('a', 'aa', 'aaaa'); // false\nstringSequence('a', 'aa', 'a'); // false\nstringSequence('a', 'a', 'a'); // false\n```",
+  "instructions": {}
+}

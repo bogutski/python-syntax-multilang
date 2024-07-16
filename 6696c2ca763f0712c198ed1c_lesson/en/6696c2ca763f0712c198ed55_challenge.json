@@ -1,0 +1,4 @@
+{
+  "name": "Count the number of words in the string without taking numbers into account",
+  "instruction": "Write a function `countWordsNotNumbers` that accepts a string and should return the number of words in it not including numbers.\n\nThere is one space after each word.\n\nYou can use the `isNaN()` method to check for a number.\n\nThe method `isNaN()` determines whether a literal or a variable is a non-numeric value `NaN` or not.\n\nExamples of method `isNaN()`:\n```javascript\nconsole.log(isNaN(NaN)); // true\nconsole.log(isNaN(+('string'))); // true, with the unary plus we converted a string into a number, but since it's not a number, we get - Not a Number\nconsole.log(isNaN(+('5'))); // false, using the unary plus we converted the string into a number, and got a number\n```\n\nExamples of running the function:\n```javascript\ncountWords('Hello') // 1\ncountWords('5 plus 5') // 1\ncountWords('7') // 0\ncountWords('') // 0\n```"
+}

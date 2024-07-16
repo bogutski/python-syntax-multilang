@@ -1,0 +1,6 @@
+{
+  "name": "Create a variable with undefined value",
+  "instruction": "A variable with the value `undefined` can be created without assigning any value to it.\nCreate a variable named `age` without assigning any value to it.\nCreate a variable named `typeOfAge` and assign it the value of the variable `age` type.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the task requirements:\n```javascript\nlet salary;\nconst typeOfSalary = typeof salary;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet age;\nconst typeOfAge = typeof age;\n```"
+}

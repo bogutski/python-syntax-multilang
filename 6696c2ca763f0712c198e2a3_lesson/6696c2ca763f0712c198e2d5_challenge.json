@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e2d5",
+  "name": {
+    "en": "How many full hours in a given number of minutes",
+    "ru": "Сколько полных часов в заданном количестве минут"
+  },
+  "instruction": {
+    "en": "Write a function `howManyHours`.\n\nThe function takes one number - the number of minutes, it returns the number of full hours that this number of minutes contains.\n\nExamples of running the function:\n```javascript.\nhowManyHours(59) // 0\nhowManyHours(60) // 1\nhowManyHours(90) // 1\nhowManyHours(120) // 2\nhowManyHours(121) // 2\nhowManyHours(122) // 2\n```",
+    "ru": "Напишите функцию `howManyHours`.\n\nФункция принимает одно число – количество минут, возвращает количество полных часов, которые содержатся в этом количестве минут.\n\nПримеры запуска функции:\n```javascript\nhowManyHours(59) // 0\nhowManyHours(60) // 1\nhowManyHours(90) // 1\nhowManyHours(120) // 2\nhowManyHours(121) // 2\nhowManyHours(122) // 2\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function howManyHours(minutes) {\n  return Math.floor(minutes / 60);\n}",
+  "openTest": "it('Created function howManyHours', () => {\n  expect(howManyHours).to.be.a('function');\n});\n\nit('howManyHours(59) should return 0', () => {\n  expect(howManyHours(59)).to.equal(0);\n});\n\nit('howManyHours(60) should return 1', () => {\n  expect(howManyHours(60)).to.equal(1);\n});\n\nit('howManyHours(90) should return 1', () => {\n  expect(howManyHours(90)).to.equal(1);\n});\n\nit('howManyHours(120) should return 2', () => {\n  expect(howManyHours(120)).to.equal(2);\n});\n\nit('howManyHours(121) should return 2', () => {\n  expect(howManyHours(121)).to.equal(2);\n});\n\nit('howManyHours(122) should return 2', () => {\n  expect(howManyHours(122)).to.equal(2);\n});\n\nit('howManyHours(250) should return 4', () => {\n  expect(howManyHours(250)).to.equal(4);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

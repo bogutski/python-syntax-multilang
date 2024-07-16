@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e4a9",
+  "name": {
+    "en": "Count the letters in the string without spaces",
+    "ru": "Посчитать буквы в строке без учета пробелов"
+  },
+  "instruction": {
+    "en": "Write a function `countLetters` that takes a string and returns a string like `String hello has 5 symbols`.\n\nAn example of running the function:\n`\n```javascript\ncountLetters('hello'); // 'String hello has 5 symbols'\ncountLetters(' hello '); // 'String hello has 5 symbols'\ncountLetters(' hello world'); // 'String hello world has 12 symbols'\n```\n\nTo count, remove the spaces at the beginning and end of the string, and then count the length of the string.\n\nThere is no need to remove spaces inside the string, just think of them as characters.",
+    "ru": "Напишите функцию `countLetters`, которая принимает строку и возвращает строку вида `String hello has 5 symbols`.\n\nПример запуска функции:\n```javascript\ncountLetters('hello'); // 'String hello has 5 symbols'\ncountLetters('  hello     '); // 'String hello has 5 symbols'\ncountLetters('  hello  world'); // 'String hello world has 12 symbols'\n```\n\nДля подсчета удалите пробелы в начале и в конце строки, а затем посчитайте длину строки.\n\nПробелы внутри строки удалять не нужно, считайте их символами."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function countLetters(name) {\n  return `String ${name.trim()} has ${name.trim().length} symbols`;\n}",
+  "openTest": "it('Created function countLetters', () => {\n  expect(countLetters).to.be.a('function');\n});\n\nit('countLetters(\"hello\") should return \"String hello has 5 symbols\"', () => {\n  expect(countLetters('hello')).to.be.equal('String hello has 5 symbols');\n});\n\nit('countLetters(\"  hello     \") should return \"String hello has 5 symbols\"', () => {\n  expect(countLetters('  hello     ')).to.be.equal('String hello has 5 symbols');\n});\n\nit('countLetters(\"  hello  world\") should return \"String hello world has 12 symbols\"', () => {\n  expect(countLetters('  hello  world')).to.be.equal('String hello  world has 12 symbols');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

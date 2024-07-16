@@ -1,0 +1,4 @@
+{
+  "name": "We get the result from a function and pass it to another function. Sum and multiplication",
+  "instruction": "Write a function `multiply` that takes two parameters and returns their product.\n\nWrite a function `add` that takes two parameters and returns their sum.\n\nCreate a variable `sum1` and assign it the result of the `add` function with arguments 2 and 3.\n\nCreate a variable `sum2` and assign to it the result of the `add` function with arguments 4 and 5.\n\nCreate a variable `multiply1` and assign to it the result of the function `multiply` with arguments `sum1` and `sum2`."
+}

@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35a1",
+  "name": {
+    "ru": "\"Hello world\"",
+    "en": "\"Hello world\"",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Выведите в консоль фразу \"Hello world\".\n\nДля этого напечатайте команду:\n```\nconsole.log('Hello world');\n```\nПосле этого нажмите кнопку  `Validate solution`. \n\nЕсли в появившемся справа окне появились сообщения об ошибках, исправьте их.\n\nЕсли  в окне справа появилась зеленая отметка `passed`, значит, вы все сделали правильно. \n\nПосле этого нажмите кнопку `Submit solution`. \n\nПри этом задание считается выполненным (около названия задачи появится зеленая отметка `Completed`).",
+    "en": "Output the phrase \"Hello world\" to the console.\n\nTo do this, type the command:\n```\nconsole.log('Hello world');\n```\nAfter that, click the `Validate solution` button. \n\nIf error messages appear in the window on the right, correct them.\n\nIf the green mark `passed` appears in the window on the right, then you have done everything correctly. \n\nThen click the `Submit solution` button. \n\nThe task is considered completed (a green marking `Completed` will appear next to the task name).",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "console.log('Hello world');",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

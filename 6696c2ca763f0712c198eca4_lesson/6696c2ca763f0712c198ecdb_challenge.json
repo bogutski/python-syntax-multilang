@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ecdb",
+  "name": {
+    "en": "Case-separated letters",
+    "ru": "Разделение букв по регистру"
+  },
+  "instruction": {
+    "en": "The `caseSeparation` function takes a string and returns an array of two strings: `['lowerCaseLetters', 'upperCaseLetters']`.\n\nThe function must go through the string and collect all lowercase letters on the first line, and all uppercase letters on the second line.\n\nThe result letters must not be repeated, if a letter already exists in a new string, it does not need to be added.\n\nFor example, for string `HelloWorld` the result will be `['elord', 'HW']`.\n\nThe function always receives a string consisting only of letters.\n\nFigure it out and fix the errors in the code.\nA total of 7 errors are made, find and fix them. (hint: incorrect brackets count as one error)\n\n\nExamples of running a function:\n```javascript\ncaseSeparation('HiThere'); // [ 'iher', 'HT' ]\ncaseSeparation('aaBBccDD'); // [ 'ac', 'BD' ]\ncaseSeparation('IIWWAACC'); // [ '', 'IWAC' ]\ncaseSeparation(''); // ['', '']\n```",
+    "ru": "Функция `caseSeparation` принимает строку и возвращает массив из двух строк: `['lowerCaseLetters', 'upperCaseLetters']`.\n\nФункция должна пройтись по строке и собрать все буквы в нижнем регистре в первую строку, а все буквы в верхнем регистре во вторую строку.\n\nБуквы в результате не должны повторяться, если буква уже есть в новой строке, то ее добавлять не нужно.\n\nНапример, для строки `HelloWorld` результатом будет `['elord', 'HW']`.\n\nВ функцию всегда приходит строка, состоящая только из букв.\n\nРазберитесь и исправьте ошибки в коде.\nВсего сделано 7 ошибок, найдите и исправьте их. (hint: неправильные скобки считаются за одну ошибку)\n\n\nПримеры запуска функции:\n```javascript\ncaseSeparation('HiThere');  // [ 'iher', 'HT' ]\ncaseSeparation('aaBBccDD'); // [ 'ac', 'BD' ]\ncaseSeparation('IIWWAACC'); // [ '', 'IWAC' ]\ncaseSeparation('');         // ['', '']\n```"
+  },
+  "initialSolution": "function caseSeparation[str]{\n  letItBe lowerCase = '';\n  letItBe upperCase = '';\n  loop(let i = 0; i < str.length; i++){\n    if(str[i] === str[i].toLowerCase() and lowerCase.indexOf(str[i]) === -1) {\n      lowerCase += str[i];\n    }\n    if(str[i] === str[i].toUpperCase() and upperCase.indexOf(str[i]) === -1) {\n      upperCase += str[i];\n    }\n  }\n  return {lowerCase, upperCase};\n}",
+  "completedSolution": "function caseSeparation(str){\n  let lowerCase = '';\n  let upperCase = '';\n  for(let i = 0; i < str.length; i++){\n    if(str[i] === str[i].toLowerCase() && lowerCase.indexOf(str[i]) === -1) {\n      lowerCase += str[i];\n    }\n    if(str[i] === str[i].toUpperCase() && upperCase.indexOf(str[i]) === -1) {\n      upperCase += str[i];\n    }\n  }\n  return [lowerCase, upperCase];\n}",
+  "openTest": "it('Created function caseSeparation', () => {\n  expect(caseSeparation).to.be.a('function');\n});\n\nit(\"caseSeparation('HelloWorld') returns ['elord', 'HW']\", () => {\n  expect(caseSeparation('HelloWorld')).to.deep.equal(['elord', 'HW']);\n});\n\nit(\"caseSeparation('aBcAbC') returns ['acb', 'BAC']\", () => {\n  expect(caseSeparation('aBcAbC')).to.deep.equal(['acb', 'BAC']);\n});\n\nit(\"caseSeparation('hhuuppww') returns ['hupw', '']\", () => {\n  expect(caseSeparation('hhuuppww')).to.deep.equal(['hupw', '']);\n});\n\nit(\"caseSeparation('IIWWAACC') returns ['', 'IWAC']\", () => {\n  expect(caseSeparation('IIWWAACC')).to.deep.equal(['', 'IWAC']);\n});\n\nit(\"caseSeparation('') returns ['', '']\", () => {\n  expect(caseSeparation('')).to.deep.equal(['', '']);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

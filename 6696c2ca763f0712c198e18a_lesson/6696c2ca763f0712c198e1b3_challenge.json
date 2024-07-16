@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e1b3",
+  "name": {
+    "en": "Determine an even and odd number",
+    "ru": "Определяем четное и нечетное число"
+  },
+  "instruction": {
+    "en": "A number is passed to the `oddOrEven` function. We need to determine if it is even, and return the string `'even'` or `'odd'` depending on the result.\n\nUse the `%` operator to determine the remainder of the division.",
+    "ru": "В функцию `oddOrEven` передается число. Нужно определить, четное ли оно, и вернуть строку `'even'` или `'odd'` в зависимости от результата.\n\nИспользуй оператор `%` для определения остатка от деления."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function oddOrEven(num) {\n  return num % 2 < 1 ? 'even' : 'odd';\n}",
+  "openTest": "it('Created function oddOrEven', () => {\n  expect(oddOrEven).to.be.a('function');\n});\n\nit('oddOrEven(1) returns \"odd\"', () => {\n  expect(oddOrEven(1)).to.equal('odd');\n});\n\nit('oddOrEven(2) returns \"even\"', () => {\n  expect(oddOrEven(2)).to.equal('even');\n});\n\nit('oddOrEven(3) returns \"odd\"', () => {\n  expect(oddOrEven(3)).to.equal('odd');\n});\n\nit('oddOrEven(4) returns \"even\"', () => {\n  expect(oddOrEven(4)).to.equal('even');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

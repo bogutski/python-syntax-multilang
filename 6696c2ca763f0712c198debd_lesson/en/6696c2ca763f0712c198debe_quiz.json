@@ -1,0 +1,169 @@
+{
+  "questions": {
+    "0": {
+      "name": "Operator ++",
+      "variants": {
+        "0": {
+          "name": "adds up the variables twice"
+        },
+        "1": {
+          "name": "squares the variable"
+        },
+        "2": {
+          "name": "increases the variable by one"
+        },
+        "3": {
+          "name": "assigns a plus sign to the variable"
+        }
+      }
+    },
+    "1": {
+      "name": "The operator--",
+      "variants": {
+        "0": {
+          "name": "extracts the root"
+        },
+        "1": {
+          "name": "decreases the variable by one"
+        },
+        "2": {
+          "name": "doesn't change the variable"
+        },
+        "3": {
+          "name": "doesn't exist"
+        }
+      }
+    },
+    "2": {
+      "name": "The ++ operator is called",
+      "variants": {
+        "0": {
+          "name": "increment"
+        },
+        "1": {
+          "name": "decrement"
+        }
+      }
+    },
+    "3": {
+      "name": "The ++ and -- operators can only be applied to variables.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    },
+    "4": {
+      "name": "Specify the two actions that the ++ operator performs in the example below.",
+      "description": "```javascript\nlet c = a++;\n```",
+      "variants": {
+        "0": {
+          "name": "increases the value by one"
+        },
+        "1": {
+          "name": "decreases the value by one"
+        },
+        "2": {
+          "name": "returns a new value"
+        },
+        "3": {
+          "name": "returns the old value"
+        }
+      }
+    },
+    "5": {
+      "name": "Specify the two actions that the operator performs -- in the example below.",
+      "description": "```javascript\nlet c = --a;\n```",
+      "variants": {
+        "0": {
+          "name": "increases the value by one"
+        },
+        "1": {
+          "name": "decreases the value by one"
+        },
+        "2": {
+          "name": "returns a new value"
+        },
+        "3": {
+          "name": "returns the old value"
+        }
+      }
+    },
+    "6": {
+      "name": "Select the result of the example below.",
+      "description": "```javascript\nlet a = 7;\nlet c = ++a;\nconsole.log(c, a);\n```",
+      "variants": {
+        "0": {
+          "name": "c = 8; a = 8;"
+        },
+        "1": {
+          "name": "c = 7; a = 8;"
+        },
+        "2": {
+          "name": "c = 7; a = 7;"
+        },
+        "3": {
+          "name": "c = 8; a = 7;"
+        }
+      }
+    },
+    "7": {
+      "name": "Select the result of the example below.",
+      "description": "```javascript\nlet a = 7;\nlet c = a--;\nconsole.log(c, a);\n```",
+      "variants": {
+        "0": {
+          "name": "c = 6; a = 6;"
+        },
+        "1": {
+          "name": "c = 7; a = 6;"
+        },
+        "2": {
+          "name": "c = 6; a = 7;"
+        },
+        "3": {
+          "name": "c = 7; a = 7;"
+        }
+      }
+    },
+    "8": {
+      "name": "Select the result of the example below.",
+      "description": "```javascript\nlet i = 1;\nconsole.log( 2 * i++ );\n```",
+      "variants": {
+        "0": {
+          "name": "1"
+        },
+        "1": {
+          "name": "2"
+        },
+        "2": {
+          "name": "4"
+        },
+        "3": {
+          "name": "6"
+        }
+      }
+    },
+    "9": {
+      "name": "Select the result of the example below.",
+      "description": "```javascript\nlet i = 1;\nconsole.log( 2 * ++i );\n```",
+      "variants": {
+        "0": {
+          "name": "1"
+        },
+        "1": {
+          "name": "2"
+        },
+        "2": {
+          "name": "4"
+        },
+        "3": {
+          "name": "6"
+        }
+      }
+    }
+  },
+  "name": "JS Syntax. Call with assignment"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f388",
+  "name": {
+    "en": "/*",
+    "ru": "Инвертирование массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `reverseArray`, которая принимает массив в качестве аргумента.\n\nФункция возвращает новый массив, элементы которого расположены в обратном порядке.\n\nДля создания нового массива используйте метод `pop()` для извлечения элементов из исходного массива и метод `push()` для добавления их в новый массив.\n\nПример запуска функции:\n```javascript\nreverseArray([1, 2, 3, 4, 5]); // [ 5, 4, 3, 2, 1 ]\nreverseArray(['a', 'b', 'c']); // [ 'c', 'b', 'a' ]\nreverseArray([]); // []\n```"
+  },
+  "initialSolution": "function reverseArray(){\n\n}",
+  "completedSolution": "function reverseArray(arr){\n  let result = []\n\n  while(arr.length !== 0){\n    result.push(arr.pop())\n  }\n\n  return result\n}",
+  "openTest": "it('Created function reverseArray', () => {\n  expect(reverseArray).to.be.a('function');\n});\n\nit(\"reverseArray([1, 2, 3, 4, 5]) should return [5, 4, 3, 2, 1]\", () => {\n  expect(reverseArray([1, 2, 3, 4, 5])).to.deep.equal([5, 4, 3, 2, 1]);\n});\n\nit(\"reverseArray(['a', 'b', 'c']) should return ['c', 'b', 'a']\", () => {\n  expect(reverseArray(['a', 'b', 'c'])).to.deep.equal(['c', 'b', 'a']);\n});\n\nit(\"reverseArray([]) should return []\", () => {\n  expect(reverseArray([])).to.deep.equal([]);\n});\n\nit(\"reverseArray([true, false, true]) should return [true, false, true]\", () => {\n  expect(reverseArray([true, false, true])).to.deep.equal([true, false, true]);\n});\n\nit(\"reverseArray(['one', 'two', 'three']) should return ['three', 'two', 'one']\", () => {\n  expect(reverseArray(['one', 'two', 'three'])).to.deep.equal(['three', 'two', 'one']);\n});\n\nit(\"reverseArray([null, undefined, '']) should return ['', undefined, null]\", () => {\n  expect(reverseArray([null, undefined, ''])).to.deep.equal(['', undefined, null]);\n});\n\nit(\"reverseArray(['single']) should return ['single']\", () => {\n  expect(reverseArray(['single'])).to.deep.equal(['single']);\n});\n\nit(\"reverseArray([1, -1, 2, -2, 3, -3]) should return [-3, 3, -2, 2, -1, 1]\", () => {\n  expect(reverseArray([1, -1, 2, -2, 3, -3])).to.deep.equal([-3, 3, -2, 2, -1, 1]);\n});\n\nit(\"reverseArray should include methods pop() and push()\", () => {\n  const result = reverseArray.toString()\n  expect(result).to.include('.pop()')\n  expect(result).to.include('.push(')\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

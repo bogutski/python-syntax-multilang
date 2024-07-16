@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f630",
+  "name": {
+    "en": "/*",
+    "ru": "Сортировка пользователей по возрасту"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `sortUsersByAge`, которая принимает массив объектов.\n\nКаждый из объектов представляет пользователя со свойствами: `name` и `age`.\n\nФункция должна возвращать новый массив, где пользователи отсортированы по возрасту в порядке возрастания.\n\nИсходный массив должен оставаться неизменным.\n\n\nПримеры запуска функции:\n```javascript\nconsole.log(sortUsersByAge([\n  { name: \"Alice\", age: 25 },\n  { name: \"Bob\", age: 30 },\n  { name: \"Clara\", age: 28 }\n]));\n// Вывод: [\n//    { name: \"Alice\", age: 25 },\n//    { name: \"Clara\", age: 28 },\n//    { name: \"Bob\", age: 30 }\n// ]\n\nconsole.log(sortUsersByAge([\n  { name: \"Tom\", age: 31 },\n  { name: \"Jerry\", age: 29 },\n  { name: \"Mike\", age: 25 }\n]));\n// Вывод: [\n//    { name: \"Mike\", age: 25 },\n//    { name: \"Jerry\", age: 29 },\n//    { name: \"Tom\", age: 31 }\n// ]\n```"
+  },
+  "initialSolution": "function sortUsersByAge(){\n\n}",
+  "completedSolution": "function sortUsersByAge(arr) {\n  return arr.toSorted((a, b) => a.age - b.age);\n}",
+  "openTest": "Array.prototype.toSorted = function(compareFunction){\n  const newArray = this.slice()\n  if(compareFunction) return newArray.sort(compareFunction)\n  else return newArray.sort()\n}\n\nit('Created function sortUsersByAge', () => {\n  expect(sortUsersByAge).to.be.a('function');\n});\n\nit('Function sortUsersByAge should include method toSorted()', () => {\n  const res = sortUsersByAge.toString()\n  expect(res).to.include('.toSorted(')\n});\n\nit('Function sortUsersByAge should not include method sort()', () => {\n  const res = sortUsersByAge.toString()\n  expect(res).to.not.include('.sort(')\n});\n\nit(\"sortUsersByAge([{ name: 'Alice', age: 25 }, { name: 'Bob', age: 30 }, { name: 'Clara', age: 28 }]) should return sorted by age\", () => {\n  expect(sortUsersByAge([\n    { name: \"Alice\", age: 25 },\n    { name: \"Bob\", age: 30 },\n    { name: \"Clara\", age: 28 }\n  ])).to.deep.equal([\n    { name: \"Alice\", age: 25 },\n    { name: \"Clara\", age: 28 },\n    { name: \"Bob\", age: 30 }\n  ]);\n});\n\nit(\"sortUsersByAge([{ name: 'Tom', age: 31 }, { name: 'Jerry', age: 29 }, { name: 'Mike', age: 25 }]) should return sorted by age\", () => {\n  expect(sortUsersByAge([\n    { name: \"Tom\", age: 31 },\n    { name: \"Jerry\", age: 29 },\n    { name: \"Mike\", age: 25 }\n  ])).to.deep.equal([\n    { name: \"Mike\", age: 25 },\n    { name: \"Jerry\", age: 29 },\n    { name: \"Tom\", age: 31 }\n  ]);\n});\n\nit(\"sortUsersByAge([]) should return an empty array\", () => {\n  expect(sortUsersByAge([])).to.deep.equal([]);\n});\n\nit(\"sortUsersByAge([{ name: 'Sam', age: 35 }]) should return the same single-user array\", () => {\n  expect(sortUsersByAge([{ name: 'Sam', age: 35 }])).to.deep.equal([{ name: 'Sam', age: 35 }]);\n});\n\nit(\"sortUsersByAge([{ name: 'Anne', age: 22 }, { name: 'Anne', age: 22 }]) should return the array unchanged\", () => {\n  expect(sortUsersByAge([\n    { name: 'Anne', age: 22 },\n    { name: 'Anne', age: 22 }\n  ])).to.deep.equal([\n    { name: 'Anne', age: 22 },\n    { name: 'Anne', age: 22 }\n  ]);\n});\n\nit(\"sortUsersByAge([{ name: 'Zoe', age: 26 }, { name: 'Adam', age: 26 }]) should sort by age, names remain in original order\", () => {\n  expect(sortUsersByAge([\n    { name: 'Zoe', age: 26 },\n    { name: 'Adam', age: 26 }\n  ])).to.deep.equal([\n    { name: 'Zoe', age: 26 },\n    { name: 'Adam', age: 26 }\n  ]);\n});\n\nit(\"sortUsersByAge([{ name: 'Liam', age: 29 }, { name: 'Noah', age: 27 }, { name: 'Emma', age: 31 }]) should return sorted by age\", () => {\n  expect(sortUsersByAge([\n    { name: 'Liam', age: 29 },\n    { name: 'Noah', age: 27 },\n    { name: 'Emma', age: 31 }\n  ])).to.deep.equal([\n    { name: 'Noah', age: 27 },\n    { name: 'Liam', age: 29 },\n    { name: 'Emma', age: 31 }\n  ]);\n});\n\nit(\"sortUsersByAge([{ name: 'Oliver', age: 28 }, { name: 'Olivia', age: 28 }]) should return the array with the same order\", () => {\n  expect(sortUsersByAge([\n    { name: 'Oliver', age: 28 },\n    { name: 'Olivia', age: 28 }\n  ])).to.deep.equal([\n    { name: 'Oliver', age: 28 },\n    { name: 'Olivia', age: 28 }\n  ]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

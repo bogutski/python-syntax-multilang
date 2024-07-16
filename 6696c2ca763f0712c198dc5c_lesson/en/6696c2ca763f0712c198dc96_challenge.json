@@ -1,0 +1,6 @@
+{
+  "name": "Elvis Presley",
+  "instruction": "Create a `firstName` variable and assign it the value `'Elvis'`.\n\nCreate a `lastName` variable and assign it the value `'Presley'`.\n\nCreate a `name` variable and assign it the result of concatenating the `firstName` and `lastName` variables with a space between them.\n\nHere is an example that is fundamentally similar to what you need to do.\nAdapt it to the requirements of the task.\n\n```javascript\nconst firstName = 'Barack';\nconst lastName = 'Obama';\nconst name = firstName + ' ' + lastName;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst firstName = 'Elvis';\nconst lastName = 'Presley';\nconst name = firstName + ' ' + lastName;\n```"
+}

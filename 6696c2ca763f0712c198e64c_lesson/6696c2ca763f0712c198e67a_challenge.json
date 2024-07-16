@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e67a",
+  "name": {
+    "en": "Compare user profile objects",
+    "ru": "Сравнить объекты профилей пользователей"
+  },
+  "instruction": {
+    "en": "Write a function `compareProfiles` that takes two parameters:\n* `profile1` - object containing information about the first user\n* `profile2` - object containing information about the second user\n\nObjects `profile1` and `profile2` have the following structure:\n* `name` - user name, string\n* `phone` - user's phone number, string\n\nThe function should return `true` if the objects are equal and `false` otherwise.\n\nAn example of running the function:\n```javascript\ncompareProfiles({name: 'John', phone: '+1234567890'}, {name: 'John', phone: '+1234567890'}) // true\ncompareProfiles({name: 'John', phone: '+1234567890'}, {name: 'John', phone: '+1234567891'}) // false\ncompareProfiles({name: 'Alice', phone: '+1234567890'}, {name: 'Alex', phone: '+1234567890'}) // false\n```\n\nObjects cannot be compared using the `===` operator because they are compared by reference, not by value.\n\nTo compare objects, you must compare each property to each other for equality.",
+    "ru": "Напишите функцию `compareProfiles`, которая принимает два параметра:\n* `profile1` – объект, содержащий информацию о первом пользователе\n* `profile2` – объект, содержащий информацию о втором пользователе\n\nОбъекты `profile1` и `profile2` имеют следующую структуру:\n* `name` – имя пользователя, строка\n* `phone` – телефон пользователя, строка\n\nФункция должна вернуть `true`, если объекты равны, и `false` в противном случае.\n\nПример запуска функции:\n```javascript\ncompareProfiles({name: 'John', phone: '+1234567890'}, {name: 'John', phone: '+1234567890'}) // true\ncompareProfiles({name: 'John', phone: '+1234567890'}, {name: 'John', phone: '+1234567891'}) // false\ncompareProfiles({name: 'Alice', phone: '+1234567890'}, {name: 'Alex', phone: '+1234567890'}) // false\n```\n\nОбъекты нельзя сравнивать с помощью оператора `===`, так как они сравниваются по ссылке, а не по значению.\n\nДля сравнения объектов необходимо сравнивать на равенство каждое свойство между собой."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function compareProfiles(profile1, profile2) {\n  return profile1.name === profile2.name && profile1.phone === profile2.phone;\n}",
+  "openTest": "it('Created function compareProfiles', () => {\n  expect(compareProfiles).to.be.a('function');\n});\n\nit(\"compareProfiles({name: 'John', phone: '+1234567890'}, {name: 'John', phone: '+1234567890'}) // true\", () => {\n  expect(\n    compareProfiles(\n      { name: 'John', phone: '+1234567890' },\n      { name: 'John', phone: '+1234567890' },\n    ),\n  ).to.be.true;\n});\n\nit(\"compareProfiles({name: 'John', phone: '+1234567890'}, {name: 'John', phone: '+1234567891'}) // false\", () => {\n  expect(\n    compareProfiles(\n      { name: 'John', phone: '+1234567890' },\n      { name: 'John', phone: '+1234567891' },\n    ),\n  ).to.be.false;\n});\n\nit(\"compareProfiles({name: 'Alice', phone: '+1234567890'}, {name: 'Alex', phone: '+1234567890'}) // false\", () => {\n  expect(\n    compareProfiles(\n      { name: 'Alice', phone: '+1234567890' },\n      { name: 'Alex', phone: '+1234567890' },\n    ),\n  ).to.be.false;\n});\n\nit(\"compareProfiles({name: 'Bob', phone: '+1234567895'}, {name: 'Bob', phone: '+1234567895'}) // true\", () => {\n  expect(\n    compareProfiles(\n      { name: 'Bob', phone: '+1234567895' },\n      { name: 'Bob', phone: '+1234567895' },\n    ),\n  ).to.be.true;\n});\n\nit(\"compareProfiles({name: 'KJ', phone: '+4234567895'}, {name: 'Kj', phone: '+4234567895'}) // false\", () => {\n  expect(\n    compareProfiles(\n      { name: 'KJ', phone: '+4234567895' },\n      { name: 'Kj', phone: '+4234567895' },\n    ),\n  ).to.be.false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

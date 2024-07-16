@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e2a1",
+  "name": {
+    "en": "Rounded area of the circle",
+    "ru": "Округленная площадь круга"
+  },
+  "instruction": {
+    "en": "Write a function `roundCircleArea` that takes one parameter, the radius of the circle, and returns its area rounded up.\n\nThe numbers can be integers or fractions. Choose the name of the function parameter yourself.\n\nThe value of `π` in JavaScript can be obtained as follows: `Math.PI`.\n\n```javascript\nconst square = Math.PI * radius ** 2;\n```\n\nExamples of function calls:\n```javascript\nroundCircleArea(1) // 4\nroundCircleArea(1.5) // 7\nroundCircleArea(2) // 13\n```",
+    "ru": "Напишите функцию `roundCircleArea`, которая принимает один параметр – радиус круга, и возвращает его площадь, округленную в большую сторону.\n\nЧисла могут быть целыми или дробными. Название параметра функции выберите сами.\n\nЗначение `π` в JavaScript можно получить так: `Math.PI`.\n\n```javascript\nconst square = Math.PI * radius ** 2;\n```\n\nПримеры вызова функции:\n```javascript\nroundCircleArea(1) // 4\nroundCircleArea(1.5) // 7\nroundCircleArea(2) // 13\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function roundCircleArea(radius) {\n  return Math.ceil(Math.PI * radius ** 2);\n}",
+  "openTest": "it('Created function roundCircleArea', () => {\n  expect(roundCircleArea).to.be.a('function');\n});\n\nit('roundCircleArea(1) should return 4', () => {\n  expect(roundCircleArea(1)).to.equal(4);\n});\n\nit('roundCircleArea(1.5) should return 8', () => {\n  expect(roundCircleArea(1.5)).to.equal(8);\n});\n\nit('roundCircleArea(2) should return 13', () => {\n  expect(roundCircleArea(2)).to.equal(13);\n});\n\nit('roundCircleArea(3) should return 29', () => {\n  expect(roundCircleArea(3)).to.equal(29);\n});\n\nit('roundCircleArea(4) should return 51', () => {\n  expect(roundCircleArea(4)).to.equal(51);\n});\n\nit('roundCircleArea(5) should return 79', () => {\n  expect(roundCircleArea(5)).to.equal(79);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

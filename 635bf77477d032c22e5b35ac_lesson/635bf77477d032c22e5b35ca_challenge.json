@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35ca",
+  "name": {
+    "ru": "Присвойте переменной isAdult значение true",
+    "en": "Assign true value to the isAdult variable",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "Создайте переменную с именем `isAdult`.\nИспользуйте ключевое слово` const`.\nПрисвойте логическое значение `true`.\n\nДля этого напечатайте команду:\n```\nconst isAdult = true;\n```",
+    "en": "Create a variable named `isAdult`.\nUse keyword `const`.\nAssign a boolean value `true`.\n\nTo do this, type the command:\n```\nconst isAdult = true;\n```",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "const isAdult = true;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "equal"
+}

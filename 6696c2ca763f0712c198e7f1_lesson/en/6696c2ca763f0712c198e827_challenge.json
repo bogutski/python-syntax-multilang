@@ -1,0 +1,4 @@
+{
+  "name": "Eliminate words with spaces. Arrays",
+  "instruction": "The `changeElement` function takes an array of strings and a string.\n\nThe array consists of 5 elements.\n\nYou need to find all elements in the array that contain spaces, and replace them with the second parameter of the function - a string.\n\nThe function should return the modified array.\n\nUse the `splice` method to change the array.\n\nAn example of running the function:\n```javascript\nchangeElement(['John Smith', 'MarthaLee', 'TomMcKenzie', 'Alice New', 'Derrick Kent'], 'updateName')\n// [\"updateName\", \"MarthaLee\", \"TomMcKenzie\", \"updateName\", \"updateName\"]\n```"
+}

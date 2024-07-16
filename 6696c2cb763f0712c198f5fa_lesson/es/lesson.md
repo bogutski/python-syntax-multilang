@@ -1,0 +1,1 @@
+# Array.prototype.toSorted() – возвращает отсортированный массив language: es

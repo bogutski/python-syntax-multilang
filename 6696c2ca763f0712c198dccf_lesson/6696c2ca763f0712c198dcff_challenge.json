@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dcff",
+  "name": {
+    "en": "Line Comparison. Which word is bigger?",
+    "ru": "Сравнение строк. Какое слово больше?"
+  },
+  "instruction": {
+    "en": "To determine which string is greater than the other, JavaScript uses the \"alphabetical\" or \"lexicographic\" order. In other words, strings are compared character by character.\n\nThe comparison stops and returns the result as soon as a character in one string is not equal to the character in the other string.\n\nOnly if all characters in both strings are identical, the strings are equal.\n\nCreate variables named `a` and `b` and assign them arbitrary string values.\n\nCreate a variable named `isABiggerThanB` and assign it the result of comparing variables `a` and `b`.\nThe variable `isABiggerThanB` should have the value `true` if `a > b`, and `false` otherwise.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst x = 'son';\nconst y = 'dad';\nconst comparison = x > y;\n```",
+    "ru": "Чтобы определить, что одна строка больше другой, JavaScript использует «алфавитный» или «лексикографический»\n порядок. Другими словами, строки сравниваются посимвольно.\n\nСравнение останавливается и возвращает результат, как только символ в одной строке не равен символу в другой строке.\n\nТолько если все символы в обеих строках идентичны, строки равны.\n\nСоздайте переменные с именами `a` и `b` и присвойте им произвольные строковые значения.\n\nСоздайте переменную с именем `isABiggerThanB` и присвойте ей результат сравнения переменных `a` и `b`.\nПеременная `isABiggerThanB` должна принимать значение `true`, если `a > b`, и `false` в противном случае.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst x = 'son';\nconst y = 'dad';\nconst comparison = x > y;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const a = 'Grape';\nconst b = 'Banana';\nconst isABiggerThanB = a > b;",
+  "openTest": "it('Variable `a ` exists and has a value', () => {\n  expect(a).not.undefined;\n});\n\nit('Variable `a` has type `string`', () => {\n  expect(a).a('string');\n});\n\nit('Variable `b` exists and has a value', () => {\n  expect(b).not.undefined;\n});\n\nit('Variable `b` has type `string`', () => {\n  expect(b).a('string');\n});\n\nit('Variable `isABiggerThanB` exists and has a value', () => {\n  expect(isABiggerThanB).not.undefined;\n});\n\nit('Variable `isABiggerThanB` has type `boolean`', () => {\n  expect(isABiggerThanB).a('boolean');\n});\n\nit('Variable `isABiggerThanB` has value a>b', () => {\n  expect(isABiggerThanB).equal(a > b);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst a = 'Grape';\nconst b = 'Banana';\nconst isABiggerThanB = a > b;\n```",
+    "ru": "```javascript\nconst a = 'Grape';\nconst b = 'Banana';\nconst isABiggerThanB = a > b;\n```"
+  }
+}

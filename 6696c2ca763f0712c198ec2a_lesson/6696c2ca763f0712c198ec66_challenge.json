@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec66",
+  "name": {
+    "en": "",
+    "ru": "Посчитать количество вхождений каждого элемента и вывести результат в виде строки"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `objectEntriesJoin`, которая принимает один параметр - строку.\n\nСтрока произвольной длины и содержит символы и/или буквы в разном регистре.\n\nПеред созданием цикла for необходимо создать объект.\n\nОбъект будет наполняться свойствами, состоящими из ключей и значений.\n\nКлючи - это буквы из строки, а значения - это количество вхождений буквы в строку.\n\nФункция должна вернуть букву и количество ее вхождений в строку в виде строки:\n\n`<буква>, <количество вхождений>`\n\nПоиск не чувствителен к регистру.\n\nДля решения задачи используйте следующие методы `Object.entries()` и `join()`.\n\nПример запуска функции:\n```javascript\nobjectEntriesJoin('Referee'); // 'r,2 e,4 f,1'\nobjectEntriesJoin('donor'); // 'd,1 o,2 n,1 r,1'\nobjectEntriesJoin('sleep'); // 's,1 l,1 e,2 p,1'\nobjectEntriesJoin(''); // ''\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function objectEntriesJoin(str) {\n  str = str.toLowerCase();\n  const obj = {};\n  for (let i = 0; i < str.length; i++) {\n    if (obj[str[i]]) obj[str[i]]++\n    else obj[str[i]] = 1;\n  }\n  return Object.entries(obj).join(' ');\n}",
+  "openTest": "it('Created function objectEntriesJoin', () => {\n  expect(objectEntriesJoin).to.be.a('function');\n});\n\nit(\"objectEntriesJoin('Hallway') should return 'h,1 a,2 l,2 w,1 y,1'\", () => {\n  expect(objectEntriesJoin('Hallway')).to.equal('h,1 a,2 l,2 w,1 y,1');\n});\n\nit(\"objectEntriesJoin('Referee') should return 'r,2 e,4 f,1'\", () => {\n  expect(objectEntriesJoin('Referee')).to.equal('r,2 e,4 f,1');\n});\n\nit(\"objectEntriesJoin('Sausage') should return 's,2 a,2 u,1 g,1 e,1'\", () => {\n  expect(objectEntriesJoin('Sausage')).to.equal('s,2 a,2 u,1 g,1 e,1');\n});\n\nit(\"objectEntriesJoin('donor') should return 'd,1 o,2 n,1 r,1'\", () => {\n  expect(objectEntriesJoin('donor')).to.equal('d,1 o,2 n,1 r,1');\n});\n\nit(\"objectEntriesJoin('sleep') should return 's,1 l,1 e,2 p,1'\", () => {\n  expect(objectEntriesJoin('sleep')).to.equal('s,1 l,1 e,2 p,1');\n});\n\nit(\"objectEntriesJoin('Association') should return 'a,2 s,2 o,2 c,1 i,2 t,1 n,1'\", () => {\n  expect(objectEntriesJoin('Association')).to.equal('a,2 s,2 o,2 c,1 i,2 t,1 n,1');\n});\n\nit(\"objectEntriesJoin('') should return ''\", () => {\n  expect(objectEntriesJoin('')).to.equal('');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

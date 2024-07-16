@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ed90",
+  "name": {
+    "en": "Duplicate letter",
+    "ru": "Дубликат буквы"
+  },
+  "instruction": {
+    "en": "Fix the `findDuplicate` function, which takes a string `str` and returns `true` if the string `str` has the same letters, returns `false` otherwise.\n\nNote that a capital letter is not a duplicate of a small letter or vice versa.\n\nExamples of this function:\n```javascript\nfindDuplicate('a b c d d'); // true\nfindDuplicate('a b c d e'); // false\nfindDuplicate('A b C d a'); // false\nfindDuplicate('A b C d A'); // true\n```",
+    "ru": "Напишите функцию `findDuplicate`, которая принимает строку `str` и возвращает `true`, если в строке `str` есть\n одинаковые\n буквы, возвращает `false` в противном случае.\n\nУчитывайте, что большая буква не является дубликатом маленькой буквы или, наоборот.\n\nМежду каждым элементом есть один пробел.\n\n\nПримеры запуска функции:\n```javascript\nfindDuplicate('a b c d d'); // true\nfindDuplicate('a b c d e'); // false\nfindDuplicate('A b C d a'); // false\nfindDuplicate('A b C d A'); // true\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function findDuplicate(str) {\n  for(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') {\n      if(str.indexOf(str[i], i+1) !== -1){\n        return true\n      }\n    }\n  }\n  return false;\n}",
+  "openTest": "it('Created function findDuplicate', () => {\n  expect(findDuplicate).to.be.a('function');\n});\n\nit(\"findDuplicate('a b c d d') should return true\", () => {\n  expect(findDuplicate('a b c d d')).true\n});\n\nit(\"findDuplicate('a b c d e') should return false\", () => {\n  expect(findDuplicate('a b c d e')).false\n});\n\nit(\"findDuplicate('A b C d a') should return false\", () => {\n  expect(findDuplicate('A b C d a')).false\n});\n\nit(\"findDuplicate('q W e R t') should return false\", () => {\n  expect(findDuplicate('q W e R t')).false\n});\n\nit(\"findDuplicate('q W e W t') should return true\", () => {\n  expect(findDuplicate('q W e W t')).true\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

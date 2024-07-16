@@ -1,0 +1,5 @@
+{
+  "name": "The function outputs the result of multiplication to the console",
+  "instruction": "Write a function `calculateTotal`.\n\nIn the body of the function, multiply `15` by `71` and output the result to the console.\n\nA similar example:\n\n```javascript\nconsole.log(2 * 4)\n```\n\nPut spaces around the multiplication sign.",
+  "instructions": {}
+}

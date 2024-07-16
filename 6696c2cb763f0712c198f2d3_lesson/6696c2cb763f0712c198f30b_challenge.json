@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f30b",
+  "name": {
+    "en": "/*",
+    "ru": "Добавление предметов в рюкзак"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `packBackpack`, которая принимает два аргумента: исходный массив с вещами, уже упакованными в рюкзак, и массив новых предметов для путешествия.\n\nИспользуя метод `push()`, функция должна добавить новые предметы в конец массива (рюкзака).\n\nПосле добавления новых предметов, если в рюкзаке окажется более 5 предметов, функция должна вернуть сообщение о том, что рюкзак полон, указав, сколько предметов находится в рюкзаке.\n\nВ противном случае, вернуть обновленный список предметов в рюкзаке.\n\nПримеры запуска функции:\n```javascript\npackBackpack([\"Flashlight\", \"Lighter\"], [\"Knife\", \"Binoculars\", \"Pot\", \"Machete\"]) // \"Backpack is full. It contains 6 items.\"\npackBackpack([\"Map\", \"Compass\"], [\"Tent\", \"Sleeping Bag\"]) // [\"Map\", \"Compass\", \"Tent\", \"Sleeping Bag\"]\npackBackpack([\"Food\", \"Water\", \"First Aid\"], [\"Book\"]) // [\"Food\", \"Water\", \"First Aid\", \"Book\"]\npackBackpack([\"Water Bottle\"], []) // [\"Water Bottle\"]\npackBackpack([], [\"Canned Food\"]) // [\"Canned Food\"]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function packBackpack(backpack, newItems) {\n  backpack.push(...newItems)\n  return backpack.length > 5 ? `Backpack is full. It contains ${backpack.length} items.` : backpack;\n}",
+  "openTest": "it('Created function packBackpack', () => {\n  expect(packBackpack).to.be.a('function');\n});\n\nit('packBackpack([\"Water\", \"Food\"], [\"Map\", \"Knife\", \"Torch\", \"Compass\"]) should return \"Backpack is full. It contains 6 items.\"', () => {\n  expect(packBackpack([\"Water\", \"Food\"], [\"Map\", \"Knife\", \"Torch\", \"Compass\"])).to.equal('Backpack is full. It contains 6 items.');\n});\n\nit('packBackpack([\"Food\", \"Water\", \"Map\", \"Knife\", \"Torch\"], [\"Compass\", \"Tent\"]) should return \"Backpack is full. It contains 7 items.\"', () => {\n  const backpack = [\"Food\", \"Water\", \"Map\", \"Knife\", \"Torch\"];\n  expect(packBackpack(backpack, [\"Compass\", \"Tent\"])).to.equal('Backpack is full. It contains 7 items.');\n});\n\nit('Returns a message when the backpack is full', () => {\n  expect(packBackpack([\"Water\", \"Food\", \"Map\", \"Knife\"], [\"Torch\", \"Compass\", \"Sleeping Bag\", \"Stove\"])).to.equal(\"Backpack is full. It contains 8 items.\");\n});\n\nit('packBackpack([\"Food\", \"Water\"], [\"Tent\", \"Sleeping Bag\", \"Stove\", \"Map\"]) should return \"Backpack is full. It contains 6 items.\"', () => {\n  expect(packBackpack([\"Food\", \"Water\"], [\"Tent\", \"Sleeping Bag\", \"Stove\", \"Map\"])).to.equal('Backpack is full. It contains 6 items.');\n});\n\nit('Handles adding to an empty backpack', () => {\n  expect(packBackpack([], [\"Sleeping Bag\"])).to.deep.equal([\"Sleeping Bag\"]);\n});\n\nit('Handles adding no new items to the backpack', () => {\n  expect(packBackpack([\"Tent\"], [])).to.deep.equal([\"Tent\"]);\n});\n\nit('Correctly adds one item when the backpack has space for one more', () => {\n  expect(packBackpack([\"Food\", \"Water\", \"Map\", \"Knife\"], [\"Compass\"])).to.deep.equal([\"Food\", \"Water\", \"Map\", \"Knife\", \"Compass\"]);\n});\n\nit('Adds multiple types of items to the backpack', () => {\n  expect(packBackpack([\"Food\"], [\"Water\", \"First Aid Kit\"])).to.deep.equal([\"Food\", \"Water\", \"First Aid Kit\"]);\n});\n\nit('Handles adding an array of items that exceeds the backpack limit', () => {\n  expect(packBackpack([\"Food\", \"Water\", \"Tent\"], [\"Map\", \"Knife\", \"Compass\", \"Binoculars\"])).to.equal(\"Backpack is full. It contains 7 items.\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

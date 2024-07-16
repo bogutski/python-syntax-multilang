@@ -1,0 +1,4 @@
+{
+  "name": "Find the number of \"BUGs\" in the string",
+  "instruction": "Write a function `findBugs` that takes a string `str` and returns the number of `\"BUG\"` in it.\n\nThe `\"BUG\"` can even be in the middle of a word.\n\nFor simplicity you can use the methods `.includes()` and `.indexOf()`.\n\n```javascript\nfindBugs('Hello, BUGWorld!'); // 1\nfindBugs('it is a nice day'); // 0\nfindBugs('BUG'); // 1\n```"
+}

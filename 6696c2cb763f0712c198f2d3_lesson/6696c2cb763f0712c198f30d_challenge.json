@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f30d",
+  "name": {
+    "en": "/*",
+    "ru": "Динамическое обновление списка курсов с изменением регистра"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `updateCoursesList`, которая принимает два аргумента: массив с текущим списком курсов и массив новых курсов для добавления.\n\nФункция должна проверить каждый новый курс на наличие в текущем списке:\n\n* Если курс уже присутствует, его название в оригинальном списке должно быть преобразовано в верхний регистр (UPPER CASE).\n* Если курс отсутствует, его следует добавить в список в нижнем регистре (lower case).\n\nФункция должна возвращать обновленный список курсов.\n\nПримеры запуска функции:\n```javascript\nupdateCoursesList([\"Introduction to Programming\", \"Advanced JavaScript\"], [\"introduction to programming\", \"Python Basics\"])\n// [\"INTRODUCTION TO PROGRAMMING\", \"Advanced JavaScript\", \"python basics\"]\n\nupdateCoursesList([\"Web Development\", \"Data Science\"], [\"Data Science\", \"Machine Learning\"])\n// [\"Web Development\", \"DATA SCIENCE\", \"machine learning\"]\n\nupdateCoursesList([\"Algorithms\", \"Data Structures\"], [\"ALGORITHMS\", \"Graph Theory\"])\n// [\"ALGORITHMS\", \"Data Structures\", \"graph theory\"]\n\nupdateCoursesList([\"Graphic Design\", \"UI/UX\"], [\"graphic design\", \"Web Design\"])\n// [\"GRAPHIC DESIGN\", \"UI/UX\", \"web design\"]\n\nupdateCoursesList([], [\"React\", \"Vue\"])\n// [\"react\", \"vue\"]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function updateCoursesList(courses, newCourses) {\n  for(let el of newCourses){\n    const indexOfEl = courses.findIndex(item => item.toLowerCase() === el.toLowerCase())\n\n    if(indexOfEl > -1) courses[indexOfEl] = courses[indexOfEl].toUpperCase()\n    else courses.push(el.toLowerCase())\n  }\n\n  return courses;\n}",
+  "openTest": "it('Created function updateCoursesList', () => {\n  expect(updateCoursesList).to.be.a('function');\n});\n\nit('Converts existing course to UPPER CASE and adds new courses in lower case', () => {\n  expect(updateCoursesList([\"Math\", \"Science\"], [\"Science\", \"English\"])).to.deep.equal([\"Math\", \"SCIENCE\", \"english\"]);\n});\n\nit('Handles empty initial list by adding new courses in lower case', () => {\n  expect(updateCoursesList([], [\"History\", \"Geography\"])).to.deep.equal([\"history\", \"geography\"]);\n});\n\nit('Does not add a new course if it exactly matches an existing course in lower case', () => {\n  expect(updateCoursesList([\"Programming\"], [\"Programming\"])).to.deep.equal([\"PROGRAMMING\"]);\n});\n\nit('Correctly processes mixed case inputs by adjusting case as necessary', () => {\n  expect(updateCoursesList([\"Biology\", \"Chemistry\"], [\"biology\", \"PHYSICS\"])).to.deep.equal([\"BIOLOGY\", \"Chemistry\", \"physics\"]);\n});\n\nit('Processes an empty list of new courses by returning the unchanged current list', () => {\n  expect(updateCoursesList([\"Math\", \"Science\"], [])).to.deep.equal([\"Math\", \"Science\"]);\n});\n\nit('Correctly adds a new course that differs only in case from an existing course', () => {\n  expect(updateCoursesList([\"art\"], [\"Art\"])).to.deep.equal([\"ART\"]);\n});\n\nit('Updates multiple existing courses to UPPER CASE when matched', () => {\n  expect(updateCoursesList([\"History\", \"Geography\"], [\"history\", \"geography\"])).to.deep.equal([\"HISTORY\", \"GEOGRAPHY\"]);\n});\n\nit('Maintains the original order of courses after updates and additions', () => {\n  const originalCourses = [\"Music\", \"Art\"];\n  const newCourses = [\"music\", \"Dance\", \"art\"];\n  const updatedCourses = updateCoursesList(originalCourses, newCourses);\n  expect(updatedCourses[0]).to.equal(\"MUSIC\");\n  expect(updatedCourses[1]).to.equal(\"ART\");\n  expect(updatedCourses[2]).to.equal(\"dance\");\n});\n\nit('Adds new courses in lower case when no existing courses match', () => {\n  expect(updateCoursesList([\"Math\", \"Science\"], [\"Technology\", \"Engineering\"])).to.deep.equal([\"Math\", \"Science\", \"technology\", \"engineering\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

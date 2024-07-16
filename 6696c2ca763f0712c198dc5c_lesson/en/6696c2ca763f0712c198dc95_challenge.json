@@ -1,0 +1,6 @@
+{
+  "name": "The variable with the actor's name",
+  "instruction": "Create a variable `actorName` and assign it the value `'Brad Pitt'`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst actorName = 'Leonardo DiCaprio';\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst actorName = 'Brad Pitt';\n```"
+}

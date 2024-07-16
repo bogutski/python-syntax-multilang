@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dde1",
+  "name": {
+    "en": "Calculate and output to the console. Minus",
+    "ru": "Вычислите и выведите в консоль. Минус"
+  },
+  "instruction": {
+    "en": "Only one line.\n\nWrite the command `console.log(10 - 15);`\n\nObserve spaces and punctuation marks.",
+    "ru": "Только одна строка.\n\nНапишите команду `console.log(10 - 15);`\n\nСоблюдайте пробелы и знаки пунктуации."
+  },
+  "initialSolution": "",
+  "completedSolution": "console.log(10 - 15);",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal",
+  "hint": {
+    "en": "```javascript\nconsole.log(10 - 15);\n```",
+    "ru": "```javascript\nconsole.log(10 - 15);\n```"
+  }
+}

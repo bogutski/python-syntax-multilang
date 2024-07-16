@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f0b0",
+  "name": {
+    "en": "",
+    "ru": "Вернуть массив удвоенных чисел"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `doubleAndReturnNumbers` принимает массив, состоящий из элементов с разными типами данных.\n\nФункция возвращает массив чисел, умноженных на 2.\n\nПример запуска функции:\n```javascript\ndoubleAndReturnNumbers([1, 2, 3]) // [2, 4, 6]\ndoubleAndReturnNumbers([1, 2, 3, \"4\"]) // [2, 4, 6]\n```"
+  },
+  "initialSolution": "function doubleAndReturnNumbers",
+  "completedSolution": "function doubleAndReturnNumbers(arr) {\n  const newArr = [];\n  for (let i = 0; i < arr.length; i++) {\n    if (typeof arr[i] === 'number') {\n      arr[i] = arr[i] * 2;\n      newArr.push(arr[i])\n    }\n  }\n  return newArr;\n}",
+  "openTest": "it('Created function doubleAndReturnNumbers', () => {\n  expect(doubleAndReturnNumbers).to.be.a('function');\n});\n\nit('doubleAndReturnNumbers([1, 2, 3]) should returns [2, 4, 6]', () => {\n  expect(doubleAndReturnNumbers([1, 2, 3])).to.deep.equal([2, 4, 6]);\n});\n\nit('doubleAndReturnNumbers([]) should returns []', () => {\n  expect(doubleAndReturnNumbers([])).to.deep.equal([]);\n});\n\nit('doubleAndReturnNumbers([1, 2, 3, \"4\"]) should returns [2, 4, 6]', () => {\n  expect(doubleAndReturnNumbers([1, 2, 3, \"4\"])).to.deep.equal([2, 4, 6]);\n});\n\nit('doubleAndReturnNumbers([\"4\", \"5\"]) should returns []', () => {\n  expect(doubleAndReturnNumbers([\"4\", \"5\"])).to.deep.equal([]);\n});\n\nit('doubleAndReturnNumbers([1, 2, 3, \"4\", \"5\"]) should returns [2, 4, 6]', () => {\n  expect(doubleAndReturnNumbers([1, 2, 3, \"4\", \"5\"])).to.deep.equal([2, 4, 6]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

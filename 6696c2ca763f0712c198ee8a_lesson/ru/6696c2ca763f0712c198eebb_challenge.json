@@ -1,0 +1,5 @@
+{
+  "name": "Замена цифр: '1, 2, 3, 4, 5' на слова.",
+  "instruction": "Напишите функцию `numFromOneToFive`, которая принимает строку с различными символами.\n\nФункция должна вернуть строку, в которой цифры `1`, `2`, `3`, `4`, `5` заменены на `one`, `two`, `three`, `four`, `five` соответственно.\n\nВсе остальные символы должны быть проигнорированы.\n\nПосле каждого слова должен быть пробел, кроме последнего слова.\n\n\nПримеры запуска функции:\n```javascript\nnumFromOneToFive('12345'); // 'one two three four five'\nnumFromOneToFive('3a2d1'); // 'three two one'\nnumFromOneToFive('555');   // 'five five five'\nnumFromOneToFive('abc');   // ''\nnumFromOneToFive('');      // ''\n```",
+  "instructions": {}
+}

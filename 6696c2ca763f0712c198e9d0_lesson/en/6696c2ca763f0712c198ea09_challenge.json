@@ -1,0 +1,4 @@
+{
+  "name": "Degree Calculation",
+  "instruction": "Write a function `powerOfTwo` that takes a number `n` and returns `2` to the power of that number.\n\nSteps to solve the problem:\n* Create a variable and assign it the value `1`.\n* Create a loop that runs from `1` to `n`, inclusive\n* In the body of the loop, multiply the variable by `2`.\n\nAn example of running a function:\n```javascript\npowerOFTwo(4); // 16\npowerOFTwo(8); // 256\npowerOFTwo(10); // 1024\n```"
+}

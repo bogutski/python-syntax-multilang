@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dbbe",
+  "name": {
+    "en": "The most suitable variable name",
+    "ru": "Наиболее удачное имя переменной"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-4.png)\n\nYou need to create a variable to store the number of daily reports.\nCreate a variable using the `let` keyword without assigning a value to the variable.\nChoose the best name to create this variable:\n`chisloDnevnyhOtchetov`, `number_of_daily_reports`, `numberOfDailyReports`, `numberofdailyreports`, `number`, `a`.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-4.png)\n\nТребуется создать переменную для хранения количества дневных отчетов (number of daily reports).\nСоздайте переменную с использованием ключевого слова `let` без присваивания значения переменной.\nВыберите наиболее удачное имя для создания этой переменной:\n`chisloDnevnyhOtchetov`, `number_of_daily_reports`, `numberOfDailyReports`, `numberofdailyreports`, `number`, `a`."
+  },
+  "initialSolution": "",
+  "completedSolution": "let numberOfDailyReports;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal",
+  "hint": {
+    "en": "```javascript\nlet numberOfDailyReports;\n```",
+    "ru": "```javascript\nlet numberOfDailyReports;\n```"
+  }
+}

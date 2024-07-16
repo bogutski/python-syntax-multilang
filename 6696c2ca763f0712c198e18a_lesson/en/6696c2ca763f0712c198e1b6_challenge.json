@@ -1,0 +1,4 @@
+{
+  "name": "Program of air conditioner operation",
+  "instruction": "Write a function `conditioner` that takes the air temperature in fahrenheit and returns the state of the air conditioner.\n\nIf the air temperature is less than 60, return `cold`, if from 60 to 80, return `normal`, if from 80 to 90, return `warm`, if from 90, return `hot`."
+}

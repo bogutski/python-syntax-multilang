@@ -1,0 +1,163 @@
+{
+  "name": "Method trim(), trimStart(), trimEnd()",
+  "questions": {
+    "0": {
+      "name": "Which method removes spaces at the beginning and end of a line at the same time?",
+      "variants": {
+        "0": {
+          "name": "slice()"
+        },
+        "1": {
+          "name": "trim()"
+        },
+        "2": {
+          "name": "trimStart()"
+        },
+        "3": {
+          "name": "trimEnd()"
+        }
+      }
+    },
+    "1": {
+      "name": "Does the value of the original string change after applying the trim(), trimStart(), and trimEnd() methods?",
+      "variants": {
+        "0": {
+          "name": "Yes. The trim(), trimStart(), and trimEnd() methods change the original string"
+        },
+        "1": {
+          "name": "No. The trim(), trimStart(), and trimEnd() methods return a new string, not change the original string"
+        }
+      }
+    },
+    "2": {
+      "name": "Given string const str = ' I like JS '. Specify the variant when the code works correctly",
+      "variants": {
+        "0": {
+          "name": "console.log(str.trim().length); // 9"
+        },
+        "1": {
+          "name": "console.log(str.trim()); // 'I like JS'"
+        },
+        "2": {
+          "name": "console.log(str.trim()); // 'IlikeJS'"
+        }
+      }
+    },
+    "3": {
+      "name": "The method that allows you to remove spaces at the beginning of a line is called",
+      "variants": {
+        "0": {
+          "name": "trimStart()"
+        },
+        "1": {
+          "name": "trimBegin()"
+        },
+        "2": {
+          "name": "trimRight()"
+        },
+        "3": {
+          "name": "trimLeft()"
+        }
+      }
+    },
+    "4": {
+      "name": "Select options when the trim() method can remove spaces in the middle of a line?",
+      "variants": {
+        "0": {
+          "name": "str.trim()"
+        },
+        "1": {
+          "name": "str.trimAll()"
+        },
+        "2": {
+          "name": "str.trim(' ')"
+        },
+        "3": {
+          "name": "There is no option"
+        }
+      }
+    },
+    "5": {
+      "name": "Which method removes spaces at the end of a line?",
+      "variants": {
+        "0": {
+          "name": "trimLeft()"
+        },
+        "1": {
+          "name": "trimStart()"
+        },
+        "2": {
+          "name": "trimRight()"
+        },
+        "3": {
+          "name": "trimEnd()"
+        }
+      }
+    },
+    "6": {
+      "name": "Specify what the string length const str = ' PASV ' will be after applying the trimEnd() method",
+      "variants": {
+        "0": {
+          "name": "4"
+        },
+        "1": {
+          "name": "5"
+        },
+        "2": {
+          "name": "6"
+        }
+      }
+    },
+    "7": {
+      "name": "What the console.log(' I like JavaScript .'.trim()) expression will output to the console;",
+      "variants": {
+        "0": {
+          "name": "'I like JavaScript   .'"
+        },
+        "1": {
+          "name": "'I like JavaScript'"
+        },
+        "2": {
+          "name": "Outputs an error"
+        },
+        "3": {
+          "name": "undefined"
+        }
+      }
+    },
+    "8": {
+      "name": "How many spaces will be removed from the string let str = ' development ' after applying the trimStart() method?",
+      "variants": {
+        "0": {
+          "name": "All"
+        },
+        "1": {
+          "name": "All on the right side"
+        },
+        "2": {
+          "name": "All on the left side"
+        },
+        "3": {
+          "name": "None."
+        }
+      }
+    },
+    "9": {
+      "name": "Specify the method that removes spaces within a string",
+      "variants": {
+        "0": {
+          "name": "trim()"
+        },
+        "1": {
+          "name": "trimStart()"
+        },
+        "2": {
+          "name": "trimEnd()"
+        },
+        "3": {
+          "name": "None of the above"
+        }
+      }
+    }
+  }
+}

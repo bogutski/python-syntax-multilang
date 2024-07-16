@@ -1,0 +1,4 @@
+{
+  "name": "Clear array from boolean",
+  "instruction": "The `cleanFromBoolean` function takes the `arr` array as a parameter.\n\nThe array can contain the types: string, number, boolean...\n\nThe function should return a new array consisting only of strings and numbers. If the `arr` array contains only `boolean`, then the new array will be empty.\n\nUse the `continue` instruction to solve this problem.\n\nThe solution will be checked for the use of `continue`.\n\nAn example of running a function:\n``` javascript\ncleanFromBoolean([1, 2, 'a', 'b', false, 5]) // [1, 2, 'a', 'b', 5]\ncleanFromBoolean([1, 2, 3, 4]) // [1, 2, 3, 4]\ncleanFromBoolean([true, true]) // []\n```"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Исправьте ошибки в коде. Переменная line и пустая строка",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-20.png)\n\nТребуется написать команду, которая присваивает переменной `line`\nзначение пустой строки `''` с использованием\nключевого слова `let`.\n\nИсправьте ошибки в приведенном коде.",
+  "instructions": {},
+  "hint": "```javascript\nlet line = '';\n```"
+}

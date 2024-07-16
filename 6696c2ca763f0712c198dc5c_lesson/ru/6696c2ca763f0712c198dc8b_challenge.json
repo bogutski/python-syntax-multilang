@@ -1,0 +1,6 @@
+{
+  "name": "Конкатенация строк",
+  "instruction": "Создайте переменную с именем `firstWord` и присвойте ей значение `'Happy'`.\nСоздайте переменную с именем `secondWord` и присвойте ей значение `'New'`.\nСоздайте переменную с именем `thirdWord` и присвойте ей значение `'Year'`.\nСоздайте переменную с именем `greeting` и присвойте ей результат слияния трех указанных переменных\nс `пробелом` между ними и `восклицательным знаком` в конце.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst firstName = 'Anthony';\nconst lastName = 'Smith';\nconst fullName = firstName + ' ' + lastName;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst firstWord = 'Happy';\nconst secondWord = 'New';\nconst thirdWord = 'Year';\nconst greeting = firstWord + ' ' + secondWord + ' ' + thirdWord + '!';\n```"
+}

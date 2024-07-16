@@ -1,0 +1,448 @@
+{
+  "_id": "6696c2ca763f0712c198dbc9",
+  "description": {
+    "ru": "",
+    "en": "",
+    "es": ""
+  },
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198dbca",
+      "description": {
+        "ru": "```\nlet a;\n```",
+        "en": "```\nlet a;\n```",
+        "es": ""
+      },
+      "name": {
+        "ru": "Если переменной не присвоить значение (как показано в примере ниже), то она будет равна",
+        "en": "If no value is assigned to the variable (as shown in the example below), it will be equal to",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "null",
+            "en": "null",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbcb"
+        },
+        {
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbcc"
+        },
+        {
+          "name": {
+            "ru": "пустая строка",
+            "en": "blank line",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbcd"
+        },
+        {
+          "name": {
+            "ru": "получим ошибку",
+            "en": "we'll get an error",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbce"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbcf",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Переменную можно использовать до ее объявления.",
+        "en": "The variable can be used before it is declared.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbd0"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbd1"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbd2",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Значение одной переменной может быть скопировано в другую переменную.",
+        "en": "The value of one variable can be copied to another variable.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbd3"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbd4"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbd5",
+      "description": {
+        "ru": "```\nlet a = 2;\nlet b = 2;\na = b;\nb = a;\n```",
+        "en": "```\nlet a = 2;\nlet b = 2;\na = b;\nb = a;\n```",
+        "es": ""
+      },
+      "name": {
+        "ru": "Сможет ли такой код работать без ошибок?",
+        "en": "Can such code work without errors?",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbd6"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbd7"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbd8",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Выберите вариант(-ы), где создана переменная и в нее присвоена пустая строка.",
+        "en": "Select the option(s) where a variable is created and an empty string is assigned to it.",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "multi",
+      "variants": [
+        {
+          "name": {
+            "ru": "let name = '';   // тут две одиночные кавычки",
+            "en": "let name = ''; // two single quotes here",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbd9"
+        },
+        {
+          "name": {
+            "ru": "let name = ' ';  // тут две одиночные кавычки и между ними пробел",
+            "en": "let name = ' '; // here are two single quotes with a space between them",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbda"
+        },
+        {
+          "name": {
+            "ru": "const name = '';  // тут две одиночные кавычки",
+            "en": "const name = ''; // two single quotes here",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbdb"
+        },
+        {
+          "name": {
+            "ru": "let name;",
+            "en": "let name;",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbdc"
+        },
+        {
+          "name": {
+            "ru": "let name = null;",
+            "en": "let name = null;",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbdd"
+        },
+        {
+          "name": {
+            "ru": "var name = '';  // тут две одиночные кавычки",
+            "en": "var name = ''; // two single quotes here",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbde"
+        },
+        {
+          "name": {
+            "ru": "let name = empty;",
+            "en": "let name = empty;",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbdf"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbe0",
+      "description": {
+        "ru": "```\nlet a = 2;\na = a - a;\n```",
+        "en": "```\nlet a = 2;\na = a - a;\n```",
+        "es": ""
+      },
+      "name": {
+        "ru": "Сможет ли такой код работать без ошибок?",
+        "en": "Can such code work without errors?",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbe1"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbe2"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbe3",
+      "description": {
+        "ru": "```\nlet a = 1; // число\na = '1'; //изменили на строку\n```",
+        "en": "```\nlet a = 1; // number\na = '1'; //changed to a string\n```",
+        "es": ""
+      },
+      "name": {
+        "ru": "Можно ли изменять значение переменной и записывать в нее другой тип данных?",
+        "en": "Is it possible to change the value of a variable and write a different data type to it?",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbe4"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbe5"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbe6",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Можно ли в переменной присвоить функцию?",
+        "en": "Is it possible to assign a function in a variable?",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbe7"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbe8"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbe9",
+      "description": {
+        "ru": "```\nlet a;\na = 2 * 5 + 3;\n```",
+        "en": "```\nlet a;\na = 2 * 5 + 3;\n```",
+        "es": ""
+      },
+      "name": {
+        "ru": "Согласно таблице приоритетов действие присваивание (=) в примере ниже произойдет",
+        "en": "According to the priority table, the assignment action (=) in the example below will occur",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "первым",
+            "en": "first",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbea"
+        },
+        {
+          "name": {
+            "ru": "последним",
+            "en": "last",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbeb"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbec",
+      "description": {
+        "ru": "```\nlet a, b, c;\na = b = c = 2 + 2;\n```",
+        "en": "```\nlet a, b, c;\na = b = c = 2 + 2;\n```",
+        "es": ""
+      },
+      "name": {
+        "ru": "Какое действие в примере ниже произойдет первым?",
+        "en": "Which action in the example below happens first?",
+        "es": ""
+      },
+      "owner": "5c6278d25b633f00383b0dfb",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "вычислится 2 + 2",
+            "en": "will calculate 2 + 2",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dbed"
+        },
+        {
+          "name": {
+            "ru": "2 + 2 присвоится в c",
+            "en": "2 + 2 will be assigned in c",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbee"
+        },
+        {
+          "name": {
+            "ru": "c присвоится в b",
+            "en": "c will be assigned to b",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbef"
+        },
+        {
+          "name": {
+            "ru": "b присвоится в a",
+            "en": "b will be assigned to a",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dbf0"
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": false,
+  "name": {
+    "ru": "JS Syntax. Чудеса присваивания",
+    "en": "JS Syntax. Miracles of assignment",
+    "es": ""
+  }
+}

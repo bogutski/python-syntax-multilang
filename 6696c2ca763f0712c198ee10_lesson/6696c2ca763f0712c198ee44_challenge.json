@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ee44",
+  "name": {
+    "en": "Swap the first and the last word",
+    "ru": "Поменяйте первое и последнее слово местами"
+  },
+  "instruction": {
+    "en": "The `switchWords` function takes a string and swaps the first and the last word in the string.\n\nSolution order:\n1. Create a variable `index` and assign to it the index value of the first space in the string.\n2. Create a variable `firstWord` and assign it the value of an empty string.\n3. Create a variable `lastIndex` and give it the value of the index of the last space in the string.\n4. Create a variable `lastWord` and give it the value of an empty string.\n5. Create a variable `restOfWord` and give it the value of an empty string.\n6. Create a loop that goes through the characters of the string from 0 to `index - 1` (inclusive) and adds them to the variable `firstWord`.\n7. Create a loop that goes through the characters of the string from `lastIndex + 1` to the end of the string and adds them to the variable `lastWord`.\n8. Create a loop that goes through the characters of the string from `index + 1` to `lastIndex -1` (inclusive) and adds them to the variable `restOfWord`.\n9. Return `lastWord + ' ' + restOfWord + ' + firstWord`.\n\nThe examples use 3 or more words per line.\n\nAn example of running a function:\n```javascript\nswitchWords('Hello world, my name is John') // 'John world, my name is Hello'\n```",
+    "ru": "Функция `switchWords` принимает строку и меняет местами первое и последнее слово в строке.\n\nПорядок решения:\n1. Создайте переменную `index` и присвойте ей значение индекса первого пробела в строке.\n2. Создайте переменную `firstWord` и присвойте ей значение пустой строки.\n3. Создайте переменную `lastIndex` и присвойте ей значение индекса последнего пробела в строке.\n4. Создайте переменную `lastWord` и присвойте ей значение пустой строки.\n5. Создайте переменную `restOfWord` и присвойте ей значение пустой строки.\n6. Создайте цикл, который перебирает символы строки от 0 до `index - 1` (включительно) и добавляет их в переменную `firstWord`.\n7. Создайте цикл, который перебирает символы строки от `lastIndex + 1` до конца строки и добавляет их в переменную `lastWord`.\n8. Создайте цикл, который перебирает символы строки от `index + 1` до `lastIndex -1` (включительно) и добавляет их в переменную `restOfWord`.\n9. Верните `lastWord + ' ' + restOfWord + ' ' + firstWord`.\n\nВ примерах используется 3 и более слов в строке.\n\nПример запуска функции:\n```javascript\nswitchWords('Hello world, my name is John') // 'John world, my name is Hello'\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function switchWords(str) {\n  let index = str.indexOf(' ');\n  let firstWord = '';\n  let lastIndex = str.lastIndexOf(' ');\n  let lastWord = '';\n  let restOfWord = '';\n  for (let i = 0; i < index; i++) {\n    firstWord += str[i];\n  }\n  for (let i = lastIndex + 1; i < str.length; i++) {\n    lastWord += str[i];\n  }\n  for (let i = index + 1; i < lastIndex; i++) {\n    restOfWord += str[i];\n  }\n  return lastWord + ' ' + restOfWord + ' ' + firstWord;\n}",
+  "openTest": "it('Created function switchWords', () => {\n  expect(switchWords).to.be.a('function');\n});\n\nit('switchWords(\"Hello beautiful world\") returns \"world beautiful Hello\"', () => {\n  expect(switchWords('Hello beautiful world')).to.equal('world beautiful Hello');\n});\n\nit('switchWords(\"Hello world, my name is John\") returns \"John  my name is Hello\"', () => {\n  expect(switchWords('Hello world, my name is John')).to.equal('John world, my name is Hello');\n});\n\nit('switchWords(\"Wouldn\\'t Harm a Fly\") returns \"Fly Harm a Wouldn\\'t', () => {\n  expect(switchWords('Wouldn\\'t Harm a Fly')).to.equal('Fly Harm a Wouldn\\'t');\n});\n\nit('switchWords(\"Tea Cup of My\") returns \"My Cup of Tea\"', () => {\n  expect(switchWords('Tea Cup of My')).to.equal('My Cup of Tea');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Две функции вызываются внутри третьей функции",
+  "instruction": "Напиши первую функцию `positiveNumber`, которая возвращает число 123.\nНапиши вторую функцию `negativeNumber`, которая возвращает число -321.\n\nНапиши третью функцию `sum`, которая возвращает сумму двух чисел, которые возвращает функции `positiveNumber` и `negativeNumber`.\n\nС созданием первых двух функций возникнуть сложностей не должно.\n\nПринципиально похожий пример:\n\n```js\nfunction getFirstNumber() {\n  return 1\n}\n\nfunction getSecondNumber() {\n  return 2\n}\n\nfunction calculation() {\n  return getFirstNumber() * getSecondNumber()\n}\n```",
+  "instructions": {}
+}

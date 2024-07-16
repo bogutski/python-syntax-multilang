@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e431",
+  "name": {
+    "en": "Modify the string depending on the condition",
+    "ru": "Модифицировать строку в зависимости от условия"
+  },
+  "instruction": {
+    "en": "Write the function `modifyString`, which takes 2 parameters:\n\n* `str` - a string\n* `direction` - a string that can take the values `up` or `down`\n\nThe function should return the string in uppercase if `direction` is equal to `up`, and in lowercase if `direction` is equal to `down`.\n\nIf the second argument is not passed, the function should return the string unchanged.\n\nIf the second argument is not equal to `up` or `down`, the function should return the string `Wrong direction`.",
+    "ru": "Напишите функцию `modifyString`, которая принимает 2 параметра:\n\n* `str` - строка\n* `direction` - строка, которая может принимать значения `up` или `down`\n\nФункция должна возвращать строку в верхнем регистре, если `direction` равен `up`, и в нижнем регистре, если `direction` равен `down`.\n\nЕсли второй аргумент не передан, то функция должна возвращать строку без изменений.\n\nЕсли второй аргумент не равен `up` или `down`, то функция должна возвращать строку `Wrong direction`."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function modifyString(str, direction) {\n  if (!direction) return str;\n\n  if (direction === 'up') {\n    return str.toUpperCase();\n  } else if (direction === 'down') {\n    return str.toLowerCase();\n  }\n  return 'Wrong direction';\n}",
+  "openTest": "it('Created function modifyString', () => {\n  expect(modifyString).to.be.a('function');\n});\n\nit('modifyString(\"Hello\", \"up\") should return \"HELLO\"', () => {\n  expect(modifyString('Hello', 'up')).to.equal('HELLO');\n});\n\nit('modifyString(\"Hello\", \"down\") should return \"hello\"', () => {\n  expect(modifyString('Hello', 'down')).to.equal('hello');\n});\n\nit('modifyString(\"Hello\") should return \"Hello\"', () => {\n  expect(modifyString('Hello')).to.equal('Hello');\n});\n\nit('modifyString(\"Hello World\", \"up\") should return \"HELLO WORLD\"', () => {\n  expect(modifyString('Hello World', 'up')).to.equal('HELLO WORLD');\n});\n\nit('modifyString(\"Hello World\", \"down\") should return \"hello world\"', () => {\n  expect(modifyString('Hello World', 'down')).to.equal('hello world');\n});\n\nit('modifyString(\"AAA\", \"up\") should return \"AAA\"', () => {\n  expect(modifyString('AAA', 'up')).to.equal('AAA');\n});\n\nit('modifyString(\"AAA\", \"down\") should return \"aaa\"', () => {\n  expect(modifyString('AAA', 'down')).to.equal('aaa');\n});\n\nit('modifyString(\"AAA\", \"left\") should return \"Wrong direction\"', () => {\n  expect(modifyString('AAA', 'left')).to.equal('Wrong direction');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

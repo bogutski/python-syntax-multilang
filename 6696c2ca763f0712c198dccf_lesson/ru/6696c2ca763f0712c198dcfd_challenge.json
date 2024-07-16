@@ -1,0 +1,6 @@
+{
+  "name": "Верно ли, что строка начинается с 'A'?",
+  "instruction": "Создайте переменную с именем `str` и присвойте ей значение произвольной непустой строки.\nСоздайте переменную `firstSymbol` и присвойте ей значение первого символа строки.\n\nСоздайте переменную с именем `isStartWithA` и присвойте ей результат сравнения первого символа строки с `'A'`,\nт.е. переменная `isStartWithA` будет иметь значение `true`, если строка начинается с 'A', и `false` в противном случае.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst name = 'Andrew';\nconst first = name[0];\nconst comparison = first === 'A';\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst str = 'Andrew';\nconst firstSymbol = str[0];\nconst isStartWithA = firstSymbol === 'A';\n```"
+}

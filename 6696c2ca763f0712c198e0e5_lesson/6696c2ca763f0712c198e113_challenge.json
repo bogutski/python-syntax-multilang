@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e113",
+  "name": {
+    "en": "Circle length or perimeter of a circle",
+    "ru": "Длина окружности или периметр круга"
+  },
+  "instruction": {
+    "en": "A circle is a closed flat curve in which all its points are equidistant from a given point (center) and lie in the same plane with it.\n\nThe formula for calculating the length of a circle is `2 * PI * r`, where\n`PI` is the number 3.14,\n`r` is the radius of the circle.\n\nWrite a function `circleLength` that takes one argument `r` - the radius of the circle and returns the length of the circle.",
+    "ru": "Окружность — замкнутая плоская кривая у которой все ее точки удалены от данной точки (центра) на одинаковое расстояние и лежат с ней в одной плоскости.\n\nФормула для расчета длины окружности: `2 * PI * r`, где\n`PI` - число 3.14,\n`r` - радиус окружности.\n\nНапишите функцию `circleLength`, которая принимает один аргумент `r` - радиус окружности и возвращает длину окружности."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function circleLength(r) {\n  return 2 * 3.14 * r;\n}",
+  "openTest": "it('Created function circleLength', () => {\n  expect(circleLength).to.be.a('function');\n});\n\nit('circleLength(1) should return 6.28', () => {\n  expect(circleLength(1)).to.equal(6.28);\n});\n\nit('circleLength(2) should return 12.56', () => {\n  expect(circleLength(2)).to.equal(12.56);\n});\n\nit('circleLength(3) should return 18.84', () => {\n  expect(circleLength(3)).to.equal(18.84);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

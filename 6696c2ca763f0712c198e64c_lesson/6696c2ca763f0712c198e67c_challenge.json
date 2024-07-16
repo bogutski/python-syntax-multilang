@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e67c",
+  "name": {
+    "en": "Identical object references",
+    "ru": "Одинаковые ссылки на объекты"
+  },
+  "instruction": {
+    "en": "Create a function `isSameReference`.\n\nFunction parameters:\n* `obj1` - object\n* `obj2` - object\n\nIf `obj1` and `obj2` refer to the same object, the function must return `true`, otherwise `false`.\n\nAn example of running the function:\n```javascript\nconst obj = { a: 1 };\nisSameReference(obj, obj); // true\n\nconst obj1 = { a: 1 };\nconst obj2 = { a: 1 };\nisSameReference(obj1, obj2); // false\n\nconst obj1 = { a: 1 };\nconst obj2 = obj1;\nisSameReference(obj1, obj2); // true\n```\n\nThese examples will help you:\n```javascript\nconst obj1 = { a: 1 };\nconst obj2 = { a: 1 };\nconsole.log(obj1 === obj2); // false\n\nconst obj1 = { a: 1 };\nconst obj2 = obj1;\nconsole.log(obj1 === obj2); // true\n\nconst obj1 = { a: 1 };\nconst obj2 = obj1;\nconsole.log(obj1 === obj2); // true\n```",
+    "ru": "Создайте функцию `isSameReference`.\n\nПараметры функции:\n* `obj1` – объект\n* `obj2` – объект\n\nЕсли `obj1` и `obj2` ссылаются на один и тот же объект, то функция должна вернуть `true`, иначе `false`.\n\nПример запуска функции:\n```javascript\nconst obj = { a: 1 };\nisSameReference(obj, obj); // true\n\nconst obj1 = { a: 1 };\nconst obj2 = { a: 1 };\nisSameReference(obj1, obj2); // false\n\nconst obj1 = { a: 1 };\nconst obj2 = obj1;\nisSameReference(obj1, obj2); // true\n```\n\nВам помогут эти примеры:\n```javascript\nconst obj1 = { a: 1 };\nconst obj2 = { a: 1 };\nconsole.log(obj1 === obj2); // false\n\nconst obj1 = { a: 1 };\nconst obj2 = obj1;\nconsole.log(obj1 === obj2); // true\n\nconst obj1 = { a: 1 };\nconst obj2 = obj1;\nconsole.log(obj1 === obj2); // true\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isSameReference(a, b) {\n  return a === b;\n}",
+  "openTest": "it('Created function isSameReference', () => {\n  expect(isSameReference).to.be.a('function');\n});\n\nit('isSameReference({ a: 1 }, { a: 1 }) // false', () => {\n  expect(isSameReference({ a: 1 }, { a: 1 })).to.be.false;\n});\n\nit('isSameReference({}, {}) // false', () => {\n  expect(isSameReference({}, {})).to.be.false;\n});\n\nit('const obj = { a: 1 }; isSameReference(obj, obj) // true', () => {\n  const obj = { a: 1 };\n  expect(isSameReference(obj, obj)).to.be.true;\n});\n\nit('const obj1 = { a: 1 }; const obj2 = { a: 1 }; isSameReference(obj1, obj2) // false', () => {\n  const obj1 = { a: 1 };\n  const obj2 = { a: 1 };\n  expect(isSameReference(obj1, obj2)).to.be.false;\n});\n\nit('const obj1 = { a: 1 }; const obj2 = obj1; isSameReference(obj1, obj2) // true', () => {\n  const obj1 = { a: 1 };\n  const obj2 = obj1;\n  expect(isSameReference(obj1, obj2)).to.be.true;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

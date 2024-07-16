@@ -1,0 +1,6 @@
+{
+  "name": "Is it true that the string starts with 'A'?",
+  "instruction": "Create a variable named `str` and assign it a value of an arbitrary non-empty string.\nCreate a variable named `firstSymbol` and assign it the value of the first character of the string.\n\nCreate a variable named `isStartWithA` and assign it the result of comparing the first character of the string with `'A'`,\ni.e. the variable `isStartWithA` will have the value `true` if the string starts with 'A', and `false` otherwise.\n\nHere is an example that is conceptually similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst name = 'Andrew';\nconst first = name[0];\nconst comparison = first === 'A';\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst str = 'Andrew';\nconst firstSymbol = str[0];\nconst isStartWithA = firstSymbol === 'A';\n```"
+}

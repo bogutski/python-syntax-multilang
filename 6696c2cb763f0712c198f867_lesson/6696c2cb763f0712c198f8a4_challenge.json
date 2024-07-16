@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f8a4",
+  "name": {
+    "en": "/*",
+    "ru": "Найти индекс последнего объекта с максимальным значением заданного свойства"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findLastIndexByMaxProperty`, которая принимает массив объектов и строку, представляющую ключ свойства.\n\nФункция должна вернуть индекс последнего объекта в массиве, значение указанного свойства которого является максимальным среди всех объектов.\n\n\nПримеры запуска функции:\n```javascript\nfindLastIndexByMaxProperty([{x: 5, y: 10}, {x: 10, y: 30}, {x: 5, y: 25}], 'y'); // 1\nfindLastIndexByMaxProperty([{value: 100}, {value: 200}, {value: 150}], 'value'); // 1\nfindLastIndexByMaxProperty([{a: 10, b: 20}, {a: 15, b: 25}, {a: 20, b: 15}], 'a'); // 2\nfindLastIndexByMaxProperty([{name: 'Alice', age: 40}, {name: 'Bob', age: 25}, {name: 'Charlie', age: 35}], 'age'); // 0\n```"
+  },
+  "initialSolution": "function findLastIndexByMaxProperty(){\n\n}",
+  "completedSolution": "function findLastIndexByMaxProperty(arr, property) {\n  const sorted = arr.slice().sort((a, b) => b[property] - a[property]);\n  return arr.findLastIndex(object => object[property] === sorted[0][property]);\n}",
+  "openTest": "it('Created function findLastIndexByMaxProperty', () => {\n  expect(findLastIndexByMaxProperty).to.be.a('function');\n});\n\nit('findLastIndexByMaxProperty([{a: 10, b: 20}, {a: 15, b: 25}, {a: 20, b: 15}], \"a\") should return 2', function() {\n  expect(findLastIndexByMaxProperty([{a: 10, b: 20}, {a: 15, b: 25}, {a: 20, b: 15}], \"a\")).to.equal(2);\n});\n\nit('findLastIndexByMaxProperty([{x: 5, y: 10}, {x: 10, y: 20}, {x: 5, y: 25}], \"y\") should return 2', function() {\n  expect(findLastIndexByMaxProperty([{x: 5, y: 10}, {x: 10, y: 20}, {x: 5, y: 25}], \"y\")).to.equal(2);\n});\n\nit('findLastIndexByMaxProperty([{name: \"Alice\", age: 30}, {name: \"Bob\", age: 25}, {name: \"Charlie\", age: 35}], \"age\") should return 2', function() {\n  expect(findLastIndexByMaxProperty([{name: \"Alice\", age: 30}, {name: \"Bob\", age: 25}, {name: \"Charlie\", age: 35}], \"age\")).to.equal(2);\n});\n\nit('findLastIndexByMaxProperty([{value: 100}, {value: 200}, {value: 150}], \"value\") should return 1', function() {\n  expect(findLastIndexByMaxProperty([{value: 100}, {value: 200}, {value: 150}], \"value\")).to.equal(1);\n});\n\nit('findLastIndexByMaxProperty([{a: 1}, {a: 2}, {a: 3}, {a: 4}], \"a\") should return 3', function() {\n  expect(findLastIndexByMaxProperty([{a: 1}, {a: 2}, {a: 3}, {a: 4}], \"a\")).to.equal(3);\n});\n\nit('findLastIndexByMaxProperty([{x: 50}, {x: 100}, {x: 50}], \"x\") should return 1', function() {\n  expect(findLastIndexByMaxProperty([{x: 50}, {x: 100}, {x: 50}], \"x\")).to.equal(1);\n});\n\nit('findLastIndexByMaxProperty([{x: 50}, {y: 100}, {x: 50}], \"x\") should return 2', function() {\n  expect(findLastIndexByMaxProperty([{x: 50}, {y: 100}, {x: 50}], \"x\")).to.equal(2);\n});\n\nit('findLastIndexByMaxProperty([{value: 10}, {value: 20}, {value: 30}], \"value\") should return 2', function() {\n  expect(findLastIndexByMaxProperty([{value: 10}, {value: 20}, {value: 30}], \"value\")).to.equal(2);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

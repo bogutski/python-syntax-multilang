@@ -1,0 +1,236 @@
+{
+  "acceptableMistakes": 1,
+  "active": false,
+  "name": {
+    "ru": "JS Syntax. Играем в \"песочнице\"",
+    "en": "JS Syntax. Playing in the sandbox",
+    "es": ""
+  },
+  "_id": "6696c2ca763f0712c198dadf",
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198dae0",
+      "name": {
+        "ru": "Выберите верные утверждение о программах",
+        "en": "Select the correct statements about the programs",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Компьютерная программа – это набор инструкций, которые выполняются компьютером",
+            "en": "A computer program is a set of instructions that a computer executes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dae1"
+        },
+        {
+          "name": {
+            "ru": "Компьютерная программа – это набор инструкций, которые выполняются человеком",
+            "en": "A computer program is a set of instructions that are executed by a human",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dae2"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dae3",
+      "name": {
+        "ru": "Программы выполняются и состоят из",
+        "en": "Programs are executed and consist of",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Инструкций",
+            "en": "Instructions",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dae4"
+        },
+        {
+          "name": {
+            "ru": "Данных",
+            "en": "Data",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dae5"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dae6",
+      "name": {
+        "ru": "Программы пишутся на языках программирования",
+        "en": "Programs are written in programming languages",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198dae7"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198dae8"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dae9",
+      "name": {
+        "ru": "Каждая инструкция в программе",
+        "en": "Every instruction in the program",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Сообщает компьютеру, что он должен сделать",
+            "en": "Tells the computer what it should do",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198daea"
+        },
+        {
+          "name": {
+            "ru": "Сообщает, что должен сделать программист",
+            "en": "Tells you what you want the programmer to do",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198daeb"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198daec",
+      "name": {
+        "ru": "Язык программирования – это надстройка над языком компьютера, который позволяет программисту писать программы",
+        "en": "A programming language is an add-on to a computer language that allows a programmer to write programs",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198daed"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198daee"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198daef",
+      "name": {
+        "ru": "Языки программирования созданы людьми, чтобы помочь программистам писать программы человекочитаемым языком, а не языком компьютера",
+        "en": "Programming languages were created by humans to help programmers write programs in a human-readable language, not a computer language",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198daf0"
+        },
+        {
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is incorrect",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198daf1"
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198daf2",
+      "name": {
+        "ru": "Инструкции написанные на языке программирования компьютер не понимает, поэтому",
+        "en": "Instructions written in a programming language are not understood by the computer, so",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "multi",
+      "variants": [
+        {
+          "name": {
+            "ru": "Они будут переведены в язык компьютера",
+            "en": "They will translate them into the language of the computer",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "6696c2ca763f0712c198daf3"
+        },
+        {
+          "name": {
+            "ru": "Компьютер будет выполнять их в том виде, в котором они написаны",
+            "en": "The computer will execute them as they are written",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198daf4"
+        },
+        {
+          "name": {
+            "ru": "Программист должен сам перевести их в язык компьютера",
+            "en": "The programmer must translate them into computer language himself",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "6696c2ca763f0712c198daf5"
+        }
+      ]
+    }
+  ]
+}

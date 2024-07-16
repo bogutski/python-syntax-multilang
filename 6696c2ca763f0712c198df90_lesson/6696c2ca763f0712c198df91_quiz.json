@@ -1,0 +1,469 @@
+{
+  "_id": "6696c2ca763f0712c198df91",
+  "name": {
+    "ru": "Функции с параметрами по умолчанию",
+    "en": "Functions with default parameters",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198df92",
+      "name": {
+        "ru": "В выражении function sum(n1, n2) в скобках n1 и n2 это",
+        "en": "In the expression function sum(n1, n2) in parentheses n1 and n2 are",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198df93",
+          "name": {
+            "ru": "Параметры функции",
+            "en": "Function parameters",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198df94",
+          "name": {
+            "ru": "Аргументы функции",
+            "en": "Function arguments",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198df95",
+      "name": {
+        "ru": "Если при вызове функции один из аргументов не задан, он будет равен undefined",
+        "en": "If one of the arguments is not given when the function is called, it will be undefined",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198df96",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198df97",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198df98",
+      "name": {
+        "ru": "Что выведет в консоль?",
+        "en": "What will appear in the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction a(a1){\nconsole.log(a1)\n} \na(1,2,3);\n```",
+        "en": "```javascript\nfunction a(a1){\nconsole.log(a1)\n} \na(1,2,3);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198df99",
+          "name": {
+            "ru": "1,2,3",
+            "en": "1,2,3",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198df9a",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198df9b",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198df9c",
+          "name": {
+            "ru": "2, 3",
+            "en": "2, 3",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198df9d",
+      "name": {
+        "ru": "Что выведет в консоль?",
+        "en": "What will appear in the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction a(a1){\nconsole.log(a1)\n} \na();\n```",
+        "en": "```javascript\nfunction a(a1){\nconsole.log(a1)\n} \na();\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198df9e",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198df9f",
+          "name": {
+            "ru": "a1",
+            "en": "a1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfa0",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfa1",
+          "name": {
+            "ru": "Пустую строку",
+            "en": "Blank line",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dfa2",
+      "name": {
+        "ru": "Что выведет в консоль?",
+        "en": "What will appear in the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction a(a1 = 'a1'){\nconsole.log(a1)\n} \na();\n```",
+        "en": "```javascript\nfunction a(a1 = 'a1'){\nconsole.log(a1)\n} \na();\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dfa3",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfa4",
+          "name": {
+            "ru": "'a1'",
+            "en": "'a1'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfa5",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfa6",
+          "name": {
+            "ru": "Ошибка в коде",
+            "en": "Error in the code",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dfa7",
+      "name": {
+        "ru": "Что выведет в консоль?",
+        "en": "What will appear in the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction a(n1 = 1, n2 = 1){\nreturn n1 + n2\n} \nconsole.log(a());\n```",
+        "en": "```javascript\nfunction a(n1 = 1, n2 = 1){\nreturn n1 + n2\n} \nconsole.log(a());\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dfa8",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfa9",
+          "name": {
+            "ru": "2",
+            "en": "2",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfaa",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfab",
+          "name": {
+            "ru": "Ошибка в коде",
+            "en": "Error in the code",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dfac",
+      "name": {
+        "ru": "Что выведет в консоль?",
+        "en": "What will appear in the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction a(n1 = 1, n2 = 1){\nreturn n1 + n2\n} \nconsole.log(a(10));\n```",
+        "en": "```javascript\nfunction a(n1 = 1, n2 = 1){\nreturn n1 + n2\n} \nconsole.log(a(10));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dfad",
+          "name": {
+            "ru": "10",
+            "en": "10",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfae",
+          "name": {
+            "ru": "1",
+            "en": "1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfaf",
+          "name": {
+            "ru": "11",
+            "en": "11",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfb0",
+          "name": {
+            "ru": "a",
+            "en": "a",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dfb1",
+      "name": {
+        "ru": "Выберите верные варианты",
+        "en": "Select the correct options",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction a(n1 = 2, n2 = 1){\nreturn n2 + n1\n} \nconsole.log(a(1, 1));\n```",
+        "en": "```javascript\nfunction a(n1 = 2, n2 = 1){\nreturn n2 + n1\n} \nconsole.log(a(1, 1));\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dfb2",
+          "name": {
+            "ru": "a(1, 1) вернет 2",
+            "en": "a(1, 1) will return 2",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfb3",
+          "name": {
+            "ru": "a(1) вернет 2",
+            "en": "a(1) will return 2",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfb4",
+          "name": {
+            "ru": "a(2, 1) вернет 3",
+            "en": "a(2, 1) will return 3",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfb5",
+          "name": {
+            "ru": "a() вернет 3",
+            "en": "a() will return 3",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dfb6",
+      "name": {
+        "ru": "В качестве аргументов функции могут быть числа, строки и любые другие структуры.",
+        "en": "The function arguments can be numbers, strings and any other structures.",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dfb7",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfb8",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dfb9",
+      "name": {
+        "ru": "Если в функции один параметр, а при вызове передать два аргумента, что произойдет?",
+        "en": "If a function has one parameter and passes two arguments when called, what happens?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dfba",
+          "name": {
+            "ru": "Функция будет работать только с первым аргументом",
+            "en": "The function will only work with the first argument",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfbb",
+          "name": {
+            "ru": "Функция будет работать со всеми кроме первого аргумента",
+            "en": "The function will work with all but the first argument",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dfbc",
+          "name": {
+            "ru": "Ошибка при вызове функции",
+            "en": "Error when calling a function",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

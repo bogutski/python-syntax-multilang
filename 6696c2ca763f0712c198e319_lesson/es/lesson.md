@@ -1,0 +1,1 @@
+# Форматирование чисел. toFixed() language: es

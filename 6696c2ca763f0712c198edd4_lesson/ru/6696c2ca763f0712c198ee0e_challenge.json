@@ -1,0 +1,5 @@
+{
+  "name": "Удалить лишние пробелы между словами",
+  "instruction": "`removeExtraSpaces` - функция, которая принимает строку, состоящую из слов и пробелов.\nМежду словами в переданной строке может быть произвольное количество пробелов.\nВ начале и конце строки пробелов нет.\n\nФункция должна удалить лишние пробелы и вернуть строку, в которой между словами осталось по одному пробелу.\n\nПример вызова функции:\n```javascript\nremoveExtraSpaces('It  is   a  wonderful   world  !'); // 'It is a wonderful world !'\nremoveExtraSpaces('I  love  JavaScript');              // 'I love JavaScript'\nremoveExtraSpaces('The closest relative to bears are seals.');              // 'The closest relative to bears are seals.'\nremoveExtraSpaces('');                 // ''\n```\nДля решении не разрешается использовать методы строк.\n\nРазберитесь в предложенном решении, исправьте ошибки, попробуйте написать свое решение.",
+  "instructions": {}
+}

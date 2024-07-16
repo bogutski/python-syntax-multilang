@@ -1,0 +1,4 @@
+{
+  "name": "Partition the word. Correct the code",
+  "instruction": "The `wordSpec` function takes one parameter - a string.\n\nThe string can only contain lowercase vowels and consonants.\n\nThe function must return an object with three properties: `vowel`, `consonant` and `length`.\n\nThe `vowel` property contains all vowels in the string, `consonant` contains all consonants, and `length` contains the length of the string.\n\nFix the code to make it work correctly (no errors in the loop) and analyze it.\n\nExamples of running the function:\n```javascript\nwordSpec(\"hello\") // {vowel: \"eo\", consonant: \"hll\", length: 5}\n```"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Case-separated letters",
+  "instruction": "The `caseSeparation` function takes a string and returns an array of two strings: `['lowerCaseLetters', 'upperCaseLetters']`.\n\nThe function must go through the string and collect all lowercase letters on the first line, and all uppercase letters on the second line.\n\nThe result letters must not be repeated, if a letter already exists in a new string, it does not need to be added.\n\nFor example, for string `HelloWorld` the result will be `['elord', 'HW']`.\n\nThe function always receives a string consisting only of letters.\n\nFigure it out and fix the errors in the code.\nA total of 7 errors are made, find and fix them. (hint: incorrect brackets count as one error)\n\n\nExamples of running a function:\n```javascript\ncaseSeparation('HiThere'); // [ 'iher', 'HT' ]\ncaseSeparation('aaBBccDD'); // [ 'ac', 'BD' ]\ncaseSeparation('IIWWAACC'); // [ '', 'IWAC' ]\ncaseSeparation(''); // ['', '']\n```"
+}

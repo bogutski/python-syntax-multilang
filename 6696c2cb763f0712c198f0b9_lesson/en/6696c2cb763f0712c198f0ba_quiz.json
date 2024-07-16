@@ -1,0 +1,183 @@
+{
+  "name": "Remove all elements from the array that are not numbers",
+  "questions": {
+    "0": {
+      "name": "Select values that have the data type Number",
+      "variants": {
+        "0": {
+          "name": "99"
+        },
+        "1": {
+          "name": "NaN"
+        },
+        "2": {
+          "name": "(-5 / 0)"
+        },
+        "3": {
+          "name": "Infinity"
+        }
+      }
+    },
+    "1": {
+      "name": "Is it true that the result of running the code below is [7.3, 6, 2, 22, -5]?",
+      "description": "```javascript\nconst arr = [7.3, (-10 / 0), 'plus', 6, NaN, 2, (11 * 2), null, -5, (2 / 0)];\nconst numbers = [];\nfor(let i = 0; i < arr.length; i++){\n  if(typeof arr[i] === 'number' && !isNaN(arr[i])){\n    numbers.push(arr[i]);\n  }\n}\nconsole.log(numbers)\n```",
+      "variants": {
+        "0": {
+          "name": "Right, the result is [7.3, 6, 2, 22, -5]"
+        },
+        "1": {
+          "name": "Incorrect, the result is [7.3, -Infinity, 6, 2, 22, -5, Infinity]"
+        },
+        "2": {
+          "name": "Incorrect, the result is [7.3, (-10 / 0), 6, 2, (11 * 2), -5, (2 / 0)]"
+        },
+        "3": {
+          "name": "Incorrect, the result is [7.3, Infinity, 6, 2, 22, -5, -Infinity]"
+        }
+      }
+    },
+    "2": {
+      "name": "What will be output to the console as a result of running the code below?",
+      "description": "```javascript\nconst arr = [(5 - 7), NaN, 77, (-35 / 0), (2 * 7), (9 / 0)];\nconst numbers = [];\nfor(let i = 0; i < arr.length; i++){\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]) && arr[i] !== Infinity && arr[i] !== -Infinity){\n    numbers.push(arr[i]);\n  }\n}\nconsole.log(numbers)\n```",
+      "variants": {
+        "0": {
+          "name": "[-2, 77, (-35 / 0), 14, (9 / 0)]"
+        },
+        "1": {
+          "name": "[5, 7, 77, -35, 0, 2, 7, 9, 0]"
+        },
+        "2": {
+          "name": "[-2, 77, -Infinity, 14, Infinity]"
+        },
+        "3": {
+          "name": "[-2, 77, 14]"
+        }
+      }
+    },
+    "3": {
+      "name": "What will be the result if we go through the array in reverse order?",
+      "description": "```javascript\nconst arr = [(51 + 7), NaN, 17, (-35 / 0), (2 * 7), '3 * 2', (9 / 0)];\nconst numbers = [];\nfor(let i = arr.length - 1; i >= 0 ; i--){\n  if(typeof arr[i] === 'number' && !isNaN(arr[i]) && arr[i] !== Infinity && arr[i] !== -Infinity){\n    numbers.push(arr[i]);\n  }\n}\nconsole.log(numbers)\n```",
+      "variants": {
+        "0": {
+          "name": "[14, 17, 58]"
+        },
+        "1": {
+          "name": "[57, 7, 17, 2, 7, 3, 2]"
+        },
+        "2": {
+          "name": "[58, 17, 14]"
+        },
+        "3": {
+          "name": "[9, 14, 57, 58]"
+        }
+      }
+    },
+    "4": {
+      "name": "What does the splice() method do?",
+      "variants": {
+        "0": {
+          "name": "Reverses the order of array elements to the reverse order"
+        },
+        "1": {
+          "name": "Modifies the contents of the array by adding new elements"
+        },
+        "2": {
+          "name": "Modifies the contents of the array by deleting existing elements"
+        },
+        "3": {
+          "name": "Modifies the contents of the array by deleting existing elements and/or adding new elements"
+        }
+      }
+    },
+    "5": {
+      "name": "Select the correct result of running the code below",
+      "description": "```javascript\nconst arr = [(-10 / 0), 11, 'PASV', NaN, ((-1) ** 2), -5];\nfor(let i = 0; i < arr.length; i++){\n  if(typeof arr[i] !== 'number' || isNaN(arr[i])){\n    arr.splice(i, 1);\n    i--;\n  }\n}\nconsole.log(arr)\n```",
+      "variants": {
+        "0": {
+          "name": "[-Infinity, 11, 1, -5]"
+        },
+        "1": {
+          "name": "[-Infinity, 11, -1, -5]"
+        },
+        "2": {
+          "name": "[11, 1, -5]"
+        },
+        "3": {
+          "name": "[11, -1, -5]"
+        }
+      }
+    },
+    "6": {
+      "name": "What does the entry arr.splice(i, 1) mean in the code below?",
+      "description": "```javascript\nconst arr = [(-10 / 0), 11, 'PASV', NaN, ((-1) ** 2), -5];\nfor(let i = 0; i < arr.length; i++){\n  if(typeof arr[i] !== 'number' || isNaN(arr[i])){\n    arr.splice(i, 1);\n    i--;\n  }\n}\n```",
+      "variants": {
+        "0": {
+          "name": "Replace the element with index i by 1"
+        },
+        "1": {
+          "name": "Delete one element at index i in array arr"
+        },
+        "2": {
+          "name": "Replace element with index 1 with i"
+        },
+        "3": {
+          "name": "Delete i elements starting from the first index "
+        }
+      }
+    },
+    "7": {
+      "name": "What is written in the parentheses of the if condition in the code below?",
+      "description": "```javascript\nconst arr = [(10 / 0), 11, 'PASV', NaN, ((-1) ** 2), -5];\nfor(let i = arr.length - 1; i >= 0; i--){\n  if(typeof arr[i] !== 'number' || isNaN(arr[i]) || arr[i] === Infinity || arr[i] === -Infinity){\n    arr.splice(i, 1);\n    }\n}\n```",
+      "variants": {
+        "0": {
+          "name": "The data type of the array element is not number, or is not NaN, or is not equal to Infinity or -Infinity"
+        },
+        "1": {
+          "name": "The data type of the array element is number and is NaN and is equal to Infinity and -Infinity"
+        },
+        "2": {
+          "name": "The data type of the array element is number, and is not NaN, or equal to Infinity or -Infinity"
+        },
+        "3": {
+          "name": "The data type of the array element is not number, or is NaN, or is equal to Infinity or -Infinity"
+        }
+      }
+    },
+    "8": {
+      "name": "Select the correct result of running the code below",
+      "description": "```javascript\nconst arr = [(10 / 0), 11, 'PASV', NaN, ((-1) ** 2), -5];\nfor(let i = arr.length - 1; i >= 0; i--){\n  if(typeof arr[i] !== 'number' || isNaN(arr[i]) || arr[i] === Infinity || arr[i] === -Infinity){\n    arr.splice(i, 1);\n    }\n}\nconsole.log(arr)\n```",
+      "variants": {
+        "0": {
+          "name": "[11, -1, -5]"
+        },
+        "1": {
+          "name": "[Infinity, 11, 1, -5]"
+        },
+        "2": {
+          "name": "[11, 1, -5]"
+        },
+        "3": {
+          "name": "[-Infinity, 11, 1, -5]"
+        }
+      }
+    },
+    "9": {
+      "name": "Is it true that the result of running the code below will be [9, 12, 73]?",
+      "description": "```javascript\nconst arr = [9, (3 * 'a'), 12, (7 / 0), 73];\nfor(let i = arr.length - 1; i >= 0; i-=2){\n  if(typeof arr[i] !== 'number' || isNaN(arr[i]) || arr[i] === Infinity || arr[i] === -Infinity){\n    arr.splice(i, 1);\n    }\n}\nconsole.log(arr)\n```",
+      "variants": {
+        "0": {
+          "name": "Wrong, the result is [9, '3a', 12, Infinity, 73]"
+        },
+        "1": {
+          "name": "Right, the result is [9, 12, 73]"
+        },
+        "2": {
+          "name": "Wrong, the result is [9, NaN, 12, Infinity, 73]"
+        },
+        "3": {
+          "name": "Wrong, the result will be [NaN, Infinity]"
+        }
+      }
+    }
+  }
+}

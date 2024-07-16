@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eff7",
+  "name": {
+    "en": "",
+    "ru": "Найти среднее арифметическое чисел в массиве"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `average`, которая принимает один параметр - массив чисел.\n\nМассив может состоять из любого количества чисел как отрицательных, так и положительных.\n\nЧисла в массиве могут быть как целыми, так и дробными.\n\nФункция должна вернуть среднее арифметическое чисел в массиве, округленное до ближайшего целого.\n\nЕсли массив пустой, то функция должна вернуть строку вида `Empty array`.\n\nПример запуска функции:\n```javascript\naverage([1, 2, 3, 4, 5]); // 3\naverage([]); // 'Empty array'\naverage([2, 3, 4, 5, 1, 1]); // 3\naverage([200, 30, -40, 5]); // 49\naverage([21, 13, 4]); // 13\naverage([7]); // 7\naverage([7.5, 4.3, 5.1, 9.07, 1.1]); // 5\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function average(arr) {\n  if (!arr.length) return 'Empty array';\n  let sum = 0;\n  for (let i = 0; i < arr.length; i++) {\n    sum += arr[i];\n  }\n  return Math.round(sum / arr.length);\n}",
+  "openTest": "it('Created function average', () => {\n  expect(average).to.be.a('function');\n});\n\nit(\"average([1, 2, 3, 4, 5]) should return 3\", () => {\n  expect(average([1, 2, 3, 4, 5])).to.equal(3);\n});\n\nit(\"average([]) should return 'Empty array'\", () => {\n  expect(average([])).to.equal('Empty array');\n});\n\nit(\"average([2, 3, 4, 5, 1, 1]) should return 3\", () => {\n  expect(average([2, 3, 4, 5, 1, 1])).to.equal(3);\n});\n\nit(\"average([200, 30, -40, 5]) should return 49\", () => {\n  expect(average([200, 30, -40, 5])).to.equal(49);\n});\n\nit(\"average([21, 13, 4]) should return 13\", () => {\n  expect(average([21, 13, 4])).to.equal(13);\n});\n\nit(\"average([7]) should return 7\", () => {\n  expect(average([7])).to.equal(7);\n});\n\nit(\"average([7.5, 4.3, 5.1, 9.07, 1.1]) should return 5\", () => {\n  expect(average([7.5, 4.3, 5.1, 9.07, 1.1])).to.equal(5);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

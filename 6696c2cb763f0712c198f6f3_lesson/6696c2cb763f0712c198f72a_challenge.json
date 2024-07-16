@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f72a",
+  "name": {
+    "en": "/*",
+    "ru": "Поиск первого студента с оценкой выше заданного порога"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findStudentByGrade`, которая принимает массив студентов и пороговую оценку в качестве аргументов и возвращает объект первого студента с оценкой выше заданного порога.\n\nЕсли такой студент не найден, функция должна вернуть `null`.\n\n\nПример запуска функции:\n```javascript\nconst students = [\n  { name: \"Alice\", grade: 85 },\n  { name: \"Bob\", grade: 70 },\n  { name: \"Charlie\", grade: 90 }\n];\n\nconsole.log(findStudentByGrade(students, 80));\n// Вывод: { name: \"Alice\", grade: 85 }\n\nconsole.log(findStudentByGrade(students, 95));\n// Вывод: null\n```"
+  },
+  "initialSolution": "function findStudentByGrade(){\n\n}",
+  "completedSolution": "function findStudentByGrade(students, n) {\n  return students.find(obj => obj.grade > n) || null;\n}",
+  "openTest": "it('Created function findStudentByGrade', () => {\n  expect(findStudentByGrade).to.be.a('function');\n});\n\nit(\"Function findStudentByGrade should include find method\", () => {\n  const result = findStudentByGrade.toString();\n  expect(result).to.include('.find(');\n});\n\nit(\"findStudentByGrade([{ name: 'Alice', grade: 85 }, { name: 'Bob', grade: 70 }, { name: 'Charlie', grade: 90 }], 80) should return { name: 'Alice', grade: 85 }\", () => {\n  const students = [\n    { name: \"Alice\", grade: 85 },\n    { name: \"Bob\", grade: 70 },\n    { name: \"Charlie\", grade: 90 }\n  ];\n\n  expect(findStudentByGrade(students, 80)).to.deep.equal({ name: \"Alice\", grade: 85 });\n});\n\nit(\"findStudentByGrade([{ name: 'Alice', grade: 85 }, { name: 'Bob', grade: 70 }, { name: 'Charlie', grade: 90 }], 95) should return null\", () => {\n  const students = [\n    { name: \"Alice\", grade: 85 },\n    { name: \"Bob\", grade: 70 },\n    { name: \"Charlie\", grade: 90 }\n  ];\n\n  expect(findStudentByGrade(students, 95)).to.be.null;\n});\n\nit(\"findStudentByGrade([{ name: 'Alice', grade: 85 }, { name: 'Bob', grade: 70 }, { name: 'Charlie', grade: 90 }], 70) should return { name: 'Alice', grade: 85 } if threshold is 70\", () => {\n  const students = [\n    { name: \"Alice\", grade: 85 },\n    { name: \"Bob\", grade: 70 },\n    { name: \"Charlie\", grade: 90 }\n  ];\n\n  expect(findStudentByGrade(students, 70)).to.deep.equal({ name: \"Alice\", grade: 85 });\n});\n\nit(\"findStudentByGrade([{ name: 'Alice', grade: 85 }, { name: 'Bob', grade: 70 }, { name: 'Charlie', grade: 90 }], 60) should return { name: 'Alice', grade: 85 } if threshold is 60\", () => {\n  const students = [\n    { name: \"Alice\", grade: 85 },\n    { name: \"Bob\", grade: 70 },\n    { name: \"Charlie\", grade: 90 }\n  ];\n\n  expect(findStudentByGrade(students, 60)).to.deep.equal({ name: \"Alice\", grade: 85 });\n});\n\nit(\"findStudentByGrade([{ name: 'Alice', grade: 85 }, { name: 'Bob', grade: 70 }, { name: 'Charlie', grade: 90 }], 75) should return { name: 'Alice', grade: 85 }\", () => {\n  const students = [\n    { name: \"Alice\", grade: 85 },\n    { name: \"Bob\", grade: 70 },\n    { name: \"Charlie\", grade: 90 }\n  ];\n\n  expect(findStudentByGrade(students, 75)).to.deep.equal({ name: \"Alice\", grade: 85 });\n});\n\nit(\"findStudentByGrade([{ name: 'Alice', grade: 85 }, { name: 'Bob', grade: 70 }, { name: 'Charlie', grade: 90 }], 60) should return { name: 'Alice', grade: 85 }\", () => {\n  const students = [\n    { name: \"Alice\", grade: 85 },\n    { name: \"Bob\", grade: 70 },\n    { name: \"Charlie\", grade: 90 }\n  ];\n\n  expect(findStudentByGrade(students, 60)).to.deep.equal({ name: \"Alice\", grade: 85 });\n});\n\nit(\"findStudentByGrade([{ name: 'Alice', grade: 85 }, { name: 'Bob', grade: 70 }, { name: 'Charlie', grade: 90 }], 100) should return null if threshold is greater than any student's grade\", () => {\n  const students = [\n    { name: \"Alice\", grade: 85 },\n    { name: \"Bob\", grade: 70 },\n    { name: \"Charlie\", grade: 90 }\n  ];\n\n  expect(findStudentByGrade(students, 100)).to.be.null;\n});\n\nit(\"findStudentByGrade([], 80) should return null if array is empty\", () => {\n  const students = [];\n\n  expect(findStudentByGrade(students, 80)).to.be.null;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

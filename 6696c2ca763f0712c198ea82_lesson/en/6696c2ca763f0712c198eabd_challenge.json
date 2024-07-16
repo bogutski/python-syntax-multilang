@@ -1,0 +1,4 @@
+{
+  "name": "The sum of odd two-digit positive integers of the array from the 2nd to the 6th indexes inclusive",
+  "instruction": "The `from2IndTo6Ind` function takes one parameter, an array.\n\nThe array is of arbitrary length and consists of positive and negative integers.\n\nThe function returns the sum of odd positive two-digit numbers from the 2nd to the 6th `indices` of the array inclusive.\n\nCorrect the errors in the code so that the function works correctly.\n\nAn example of running the function:\n```javascript\nfrom2IndTo6Ind([0, 1, 21, 31, 41, 51, 61, 71]) // 21 + 31 + 41 + 51 + 61 = 205\nfrom2IndTo6Ind([0, 1, 2, 3, 4, 5, 6, 7]) // 0\nfrom2IndTo6Ind([0, 1, 21, 31, -41, 51, 61, 71]) // 21 + 31 + 51 + 61 = 164\n```"
+}

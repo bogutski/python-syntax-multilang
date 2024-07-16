@@ -1,0 +1,6 @@
+{
+  "name": "Creating a variable with the value NaN",
+  "instruction": "`NaN` refers to a computational error that occurs when performing an\narithmetic operation (for example, multiplication) with a variable that has a non-numeric value.\nCreate a variable `nan` and assign to it an expression with the value `NaN`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst notANumber = 'JS' / 2;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst nan = 'Hello' * 2;\n```"
+}

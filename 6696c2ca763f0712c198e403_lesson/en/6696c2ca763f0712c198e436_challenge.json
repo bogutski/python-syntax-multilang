@@ -1,0 +1,4 @@
+{
+  "name": "How many letters in upper and lower case in a string",
+  "instruction": "Write a function `countUpperLower` that takes 1 parameter - a string of 5 letters.\n\nExamples of running the function:\n```javascript\ncountUpperLower('aBcDe') // 'Upper: 2, Lower: 3'\ncountUpperLower('aBcDE') // 'Upper: 3, Lower: 2'\ncountUpperLower('aBcDeF') // 'Wrong string'\ncountUpperLower('aBc') // 'Wrong string'\n```\n\nFrom the example, you can see that the function should return a string of the form `Upper: 2, Lower: 3`, where `2` and `3` are the number of letters in upper and lower case respectively.\n\nIf a string other than 5 characters is passed to the function, the function should return the string `Wrong string`.\n\nThe function will always return the letters of the English alphabet."
+}

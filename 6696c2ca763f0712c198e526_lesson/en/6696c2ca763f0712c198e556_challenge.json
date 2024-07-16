@@ -1,0 +1,4 @@
+{
+  "name": "The sum of the two objects",
+  "instruction": "Write a function `sum` that takes two objects with two properties `a` and `b`.\n\nIn each object, the properties `a` and `b` are numbers.\n\nThe function should return the sum of the properties `a` and `b` of both objects.\n\nAn example of running the function:\n```javascript\nsum({a: 10, b: 20}, {a: 5, b: 8}) // 43\nsum({a: -10, b: 10}, {a: 5, b: 8}) // 7\n```\n\nA similar example:\n```javascript\nfunction multi(obj1, obj2) {\nreturn obj1.a * obj1.b * obj2.a * obj2.b;\n}\n\nconsole.log(multi({a: 10, b: 20}, {a: 5, b: 8})); // 8000\n````"
+}

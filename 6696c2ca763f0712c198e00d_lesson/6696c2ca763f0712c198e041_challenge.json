@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e041",
+  "name": {
+    "en": "Determine by how much one product is more expensive than another",
+    "ru": "Определить на сколько один товар дороже другого"
+  },
+  "instruction": {
+    "en": "Write a function `compareProducts` that takes the prices of two products and returns how much more expensive the first product is than the second.\n\nExample:\n```javascript\ncompareProducts(10, 5) // 5\ncompareProducts(5, 10) // -5\n```",
+    "ru": "Напиши функцию `compareProducts`, которая принимает цены двух товаров и возвращает на сколько первый товар дороже второго.\n\nПример:\n```javascript\ncompareProducts(10, 5) // 5\ncompareProducts(5, 10) // -5\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function compareProducts(num1, num2) {\n  return num1 - num2;\n}",
+  "openTest": "it('Created function compareProducts', () => {\n  expect(compareProducts).to.be.a('function');\n});\n\nit('compareProducts(10, 5) should return 5', () => {\n  expect(compareProducts(10, 5)).to.equal(5);\n} );\n\nit('compareProducts(5, 10) should return -5', () => {\n  expect(compareProducts(5, 10)).to.equal(-5);\n} );\n\nit('compareProducts(5, 5) should return 0', () => {\n  expect(compareProducts(5, 5)).to.equal(0);\n} );",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

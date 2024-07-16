@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f440",
+  "name": {
+    "en": "/*",
+    "ru": "Перестановка элементов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `rearrangeArray`, которая принимает массив и два индекса: `indexFrom` и `indexTo`.\n\nФункция должна переместить элемент из позиции `indexFrom` в позицию `indexTo`, используя метод `toSpliced()`, не изменяя исходный массив.\n\nВаша функция должна возвращать новый массив с измененным порядком элементов.\n\nЕсли один из индексов больше длины массива либо меньше нуля, функция должна вернуть строку: `Index is out of range`.\n\n\nПример запуска функции:\n```javascript\nconst originalArray = ['a', 'b', 'c', 'd', 'e'];\nconst resultArray = rearrangeArray(originalArray, 1, 3);\n\nconsole.log(originalArray); // Вывод: ['a', 'b', 'c', 'd', 'e']\nconsole.log(resultArray);   // Вывод: ['a', 'c', 'd', 'b', 'e']\n```"
+  },
+  "initialSolution": "function rearrangeArray(){\n\n}",
+  "completedSolution": "function rearrangeArray(arr, from, to) {\n  if (from < 0 || from >= arr.length || to < 0 || to >= arr.length) return 'Index is out of range'\n\n  const newArr = [...arr]\n  newArr.splice(from, 1)\n\n  return newArr.toSpliced(to, 0, arr[from])\n}",
+  "openTest": "Array.prototype.toSpliced = function(start, deleteCount, ...items) {\n  let newArray = this.slice();\n  if(deleteCount === undefined) deleteCount = newArray.length - start\n  newArray.splice(start, deleteCount, ...items);\n  return newArray;\n};\n\nit('Created function rearrangeArray', () => {\n  expect(rearrangeArray).to.be.a('function');\n});\n\nit('Function rearrangeArray should include method toSpliced()', () => {\n  const res = rearrangeArray.toString()\n  expect(res).to.include('.toSpliced(')\n});\n\nit(\"rearrangeArray(['a', 'b', 'c', 'd', 'e'], 1, 3) should return ['a', 'c', 'd', 'b', 'e']\", () => {\n  expect(rearrangeArray(['a', 'b', 'c', 'd', 'e'], 1, 3)).to.deep.equal(['a', 'c', 'd', 'b', 'e']);\n});\n\nit(\"rearrangeArray(['apple', 'banana', 'cherry'], 2, 0) should return ['cherry', 'apple', 'banana']\", () => {\n  expect(rearrangeArray(['apple', 'banana', 'cherry'], 2, 0)).to.deep.equal(['cherry', 'apple', 'banana']);\n});\n\nit(\"rearrangeArray([1, 2, 3, 4], 0, 3) should return [2, 3, 4, 1]\", () => {\n  expect(rearrangeArray([1, 2, 3, 4], 0, 3)).to.deep.equal([2, 3, 4, 1]);\n});\n\nit(\"rearrangeArray(['first', 'second', 'third'], 1, 1) should return ['first', 'second', 'third']\", () => {\n  expect(rearrangeArray(['first', 'second', 'third'], 1, 1)).to.deep.equal(['first', 'second', 'third']);\n});\n\nit(\"rearrangeArray(['x', 'y', 'z'], 2, 1) should return ['x', 'z', 'y']\", () => {\n  expect(rearrangeArray(['x', 'y', 'z'], 2, 1)).to.deep.equal(['x', 'z', 'y']);\n});\n\nit(\"should throw an error if indexFrom is out of bounds\", () => {\n  expect(rearrangeArray(['a', 'b', 'c'], -1, 2)).to.equal('Index is out of range');\n});\n\nit(\"should throw an error if indexTo is out of bounds\", () => {\n  expect(rearrangeArray(['a', 'b', 'c'], 0, 3)).to.equal('Index is out of range');\n});\n\nit(\"rearrangeArray([10, 20, 30, 40], 3, 0) should return [40, 10, 20, 30]\", () => {\n  expect(rearrangeArray([10, 20, 30, 40], 3, 0)).to.deep.equal([40, 10, 20, 30]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

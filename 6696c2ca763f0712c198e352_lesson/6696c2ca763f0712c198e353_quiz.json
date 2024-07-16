@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2ca763f0712c198e353",
+  "name": {
+    "ru": "Конкатенация строк",
+    "en": "String concatenation",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e354",
+      "name": {
+        "ru": "Выберите варианты, где происходит конкатенация",
+        "en": "Select the options where concatenation occurs",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e355",
+          "name": {
+            "ru": "'Hello' + 'World'",
+            "en": "'Hello' + 'World'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e356",
+          "name": {
+            "ru": "'123' + '456'",
+            "en": "'123' + '456'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e357",
+          "name": {
+            "ru": "123 + 456",
+            "en": "123 + 456",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e358",
+          "name": {
+            "ru": "123 + '456'",
+            "en": "123 + '456'",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e359",
+      "name": {
+        "ru": "Выберите варианты с корректной работой",
+        "en": "Select options with correct operation",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e35a",
+          "name": {
+            "ru": "console.log('Hello' + 'World'); // 'Hello World'",
+            "en": "console.log('Hello' + 'World'); // 'Hello World'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e35b",
+          "name": {
+            "ru": "console.log('Hello' + '' + 'World'); // 'Hello World'",
+            "en": "console.log('Hello' + '' + 'World'); // 'Hello World'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e35c",
+          "name": {
+            "ru": "console.log('Hello' + ' ' + 'World'); // 'Hello World'",
+            "en": "console.log('Hello' + ' ' + 'World'); // 'Hello World'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e35d",
+          "name": {
+            "ru": "console.log(Hello + World); // 'HelloWorld'",
+            "en": "console.log(Hello + World); // 'HelloWorld'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e35e",
+      "name": {
+        "ru": "Выберите варианты с корректной работой",
+        "en": "Select options with correct operation",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e35f",
+          "name": {
+            "ru": "const a = 'Hello'; const b = 'World'; console.log(a + b); // 'Hello World'",
+            "en": "const a = 'Hello'; const b = 'World'; console.log(a + b); // 'Hello World'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e360",
+          "name": {
+            "ru": "const a = 'Hello '; const b = 'World'; console.log(a + '' + b); // 'Hello World'",
+            "en": "const a = 'Hello '; const b = 'World'; console.log(a + '' + b); // 'Hello World'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e361",
+          "name": {
+            "ru": "const a = 'Hello '; const b = 'World'; console.log(a + a); // 'Hello Hello '",
+            "en": "const a = 'Hello '; const b = 'World'; console.log(a + a); // 'Hello Hello '",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e362",
+          "name": {
+            "ru": "const a = 'Hello ; const b = ' World'; console.log(a + b); // 'Hello World'",
+            "en": "const a = 'Hello ; const b = ' World'; console.log(a + b); // 'Hello World'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e363",
+      "name": {
+        "ru": "Выберите варианты с корректной работой",
+        "en": "Select options with correct operation",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e364",
+          "name": {
+            "ru": "const name = 'John'; console.log('Hello ' + name); // 'Hello John'",
+            "en": "const name = 'John'; console.log('Hello ' + name); // 'Hello John'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e365",
+          "name": {
+            "ru": "const name = 'John'; console.log('Hello ' + name + ' !'); // 'Hello John!'",
+            "en": "const name = 'John'; console.log('Hello ' + name + ' !'); // 'Hello John!'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e366",
+          "name": {
+            "ru": "const age = 30; console.log(Age: + age); // 'Age: 30'",
+            "en": "const age = 30; console.log(Age: + age); // 'Age: 30'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e367",
+          "name": {
+            "ru": "const code = 123; console.log('Code: ' + code + 1); // 'Code: 124'",
+            "en": "const code = 123; console.log('Code: ' + code + 1); // 'Code: 124'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e368",
+      "name": {
+        "ru": "Выберите варианты с корректной работой",
+        "en": "Select options with correct operation",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e369",
+          "name": {
+            "ru": "const PI = 3.14; console.log(PI = PI); // 'PI = 3.14'",
+            "en": "const PI = 3.14; console.log(PI = PI); // 'PI = 3.14'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e36a",
+          "name": {
+            "ru": "const 'PI' = 3.14; console.log('PI' = 3.15); // 'PI = 3.14'",
+            "en": "const 'PI' = 3.14; console.log('PI' = 3.15); // 'PI = 3.14'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e36b",
+          "name": {
+            "ru": "const result = 3 + 4 * 2; console.log('Result: ' + result); // 'Result: 11'",
+            "en": "const result = 3 + 4 * 2; console.log('Result: ' + result); // 'Result: 11'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e36c",
+          "name": {
+            "ru": "const result = (3 + 4) * 2; console.log(('Result: ') + (result)); // 'Result: 14'",
+            "en": "const result = (3 + 4) * 2; console.log(('Result: ') + (result)); // 'Result: 14'",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e36d",
+      "name": {
+        "ru": "Выберите варианты, которые не вызовут ошибку",
+        "en": "Choose options that will not cause an error",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e36e",
+          "name": {
+            "ru": "let a = 1; a = a + 1; console.log(a + ' - a');",
+            "en": "let a = 1; a = a + 1; console.log(a + ' - a');",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e36f",
+          "name": {
+            "ru": "let const = 2; console.log('Result: ' + const);",
+            "en": "let const = 2; console.log('Result: ' + const);",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e370",
+          "name": {
+            "ru": "let 1name = 'John'; console.log('Hello ' + 1name);",
+            "en": "let 1name = 'John'; console.log('Hello ' + 1name);",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e371",
+          "name": {
+            "ru": "let name = 'John'; console.log('+' + 'Hello ' + name + '+');",
+            "en": "let name = 'John'; console.log('+' + 'Hello ' + name + '+');",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e372",
+      "name": {
+        "ru": "Выберите варианты, которые не вызовут ошибку",
+        "en": "Choose options that will not cause an error",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e373",
+          "name": {
+            "ru": "const name1 = 'John' + ' ' + 'Doe'; console.log('++' + name1 + '++');",
+            "en": "const name1 = 'John' + ' ' + 'Doe'; console.log('++' + name1 + '++');",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e374",
+          "name": {
+            "ru": "const name2 = 'John' + ' + 'Doe'; console.log('++' + name2 + '++');",
+            "en": "const name2 = 'John' + ' + 'Doe'; console.log('++' + name2 + '++');",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e375",
+          "name": {
+            "ru": "const name1 = 'John'; const name2 = 'Alice'; console.log(name1 + ' + ' + name2);",
+            "en": "const name1 = 'John'; const name2 = 'Alice'; console.log(name1 + ' + ' + name2);",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e376",
+          "name": {
+            "ru": "const name1 = 'John', name2 = 'Alice'; console.log(name1 '+' name2);",
+            "en": "const name1 = 'John', name2 = 'Alice'; console.log(name1 '+' name2);",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e377",
+      "name": {
+        "ru": "Выберите варианты с корректным комментарием",
+        "en": "Select the options with the correct commentary",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e378",
+          "name": {
+            "ru": "console.log(123 * '10'); // 1230",
+            "en": "console.log(123 * '10'); // 1230",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e379",
+          "name": {
+            "ru": "console.log(123 * 'ten'); // NaN",
+            "en": "console.log(123 * 'ten'); // NaN",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e37a",
+          "name": {
+            "ru": "console.log(123 * '10' + '0'); // '12300'",
+            "en": "console.log(123 * '10' + '0'); // '12300'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e37b",
+          "name": {
+            "ru": "console.log(123 - '10' + 1); // 114",
+            "en": "console.log(123 - '10' + 1); // 114",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e37c",
+      "name": {
+        "ru": "Выберите варианты с корректным комментарием",
+        "en": "Select the options with the correct commentary",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e37d",
+          "name": {
+            "ru": "console.log('Result:' + '123' * '10'); // 'Result:1230'",
+            "en": "console.log('Result:' + '123' * '10'); // 'Result:1230'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e37e",
+          "name": {
+            "ru": "console.log('Result:' + '123' * 'ten'); // 'Result:NaN'",
+            "en": "console.log('Result:' + '123' * 'ten'); // 'Result:NaN'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e37f",
+          "name": {
+            "ru": "console.log('Result:' + '123' / '10' + '.'); // 'Result:12.3.'",
+            "en": "console.log('Result:' + '123' / '10' + '.'); // 'Result:12.3.'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e380",
+          "name": {
+            "ru": "console.log('Result:' + '12,3' * '10' + 1); // 'Result:1231'",
+            "en": "console.log('Result:' + '12,3' * '10' + 1); // 'Result:1231'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e381",
+      "name": {
+        "ru": "Выберите варианты, которые не вызовут ошибку",
+        "en": "Choose options that will not cause an error",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e382",
+          "name": {
+            "ru": "console.l0g('Result:' + '123' * '10'); // 'Result:1230'",
+            "en": "console.l0g('Result:' + '123' * '10'); // 'Result:1230'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e383",
+          "name": {
+            "ru": "const log = 'Line 1:' + 'console.log(OK)';",
+            "en": "const log = 'Line 1:' + 'console.log(OK)';",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e384",
+          "name": {
+            "ru": "console.log('const a = 2 * const')",
+            "en": "console.log('const a = 2 * const')",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e385",
+          "name": {
+            "ru": "console.log('(function f() {) (1 return; }');",
+            "en": "console.log('(function f() {) (1 return; }');",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df8d",
+  "name": {
+    "en": "Calculate the repair cost of a rectangular room",
+    "ru": "Рассчитать стоимость ремонта прямоугольной комнаты"
+  },
+  "instruction": {
+    "en": "Write a function `remodelingCost` that takes parameters:\n\n* `side1Foot` - length of one side of the room in feet,\n* `side2Foot` - length of the second side of the room in feet,\n* `costPerFoot` - repair cost per square foot\n\n\nExample of repair cost calculation:\n\n```javascript\nremodelingCost(10, 10, 100) // 10000\nremodelingCost(20, 20, 100) // 40000\nremodelingCost(30, 30, 100) // 90000\n```",
+    "ru": "Напиши функцию `remodelingCost`, которая принимает параметры:\n\n* `side1Foot` - длина одной стороны комнаты в футах,\n* `side2Foot` - длина второй стороны комнаты в футах,\n* `costPerFoot` - стоимость ремонта за 1 квадратный фут\n\n\nПример расчета стоимости ремонта:\n\n```javascript\nremodelingCost(10, 10, 100) // 10000\nremodelingCost(20, 20, 100) // 40000\nremodelingCost(30, 30, 100) // 90000\n```"
+  },
+  "initialSolution": "function (){\n\n}",
+  "completedSolution": "function remodelingCost(side1Foot, side2Foot, costPerFoot) {\n  return side1Foot * side2Foot * costPerFoot;\n}",
+  "openTest": "it('Created function remodelingCost', () => {\n  expect(remodelingCost).to.be.a('function');\n});\n\nit('remodelingCost(10, 10, 100) returns 10000', () => {\n  expect(remodelingCost(10, 10, 100)).to.equal(10000);\n});\n\nit('remodelingCost(20, 20, 100) returns 40000', () => {\n  expect(remodelingCost(20, 20, 100)).to.equal(40000);\n});\n\nit('remodelingCost(30, 30, 100) returns 90000', () => {\n  expect(remodelingCost(30, 30, 100)).to.equal(90000);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

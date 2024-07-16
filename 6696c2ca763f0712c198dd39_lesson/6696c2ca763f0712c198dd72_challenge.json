@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd72",
+  "name": {
+    "en": "Student notes",
+    "ru": "Конспект студента"
+  },
+  "instruction": {
+    "en": "The student takes notes in a very strange way during lectures: he abbreviates each word by leaving only the first and last letter, and puts a dash between them. Thus, for example, the word \"function\" becomes \"f-n\".\nYou are required to provide an arbitrary word and write it in the way the student does.\n\nCreate a variable `word` and assign it a value of an arbitrary string.\nCreate a variable `cut` and assign it the value of the concatenation of the first letter, dash, and last letter.\n\nExample provided, which is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst name = 'Moscow';\nconst shortName = name[0] + '.';\n```",
+    "ru": "Студент на лекциях ведет записи очень странным способом: каждое слово он сокращает,\nоставляя только первую и последнюю букву, и ставит между ними знак тире.\nТаким образом, например, из слова \"функция\" получается \"ф-я\".\nВам предстоит задать произвольное слово и записать его способом, который применяет студент.\n\nСоздайте переменную `word` и присвойте ей значение произвольной строки.\nСоздайте переменную `cut`, присвойте ей значение  результата конкатенации первой буквы, тире и последней буквы.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst name = 'Moscow';\nconst shortName = name[0] + '.';\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const word = 'Function';\nconst cut = word[0] + '-' + word[word.length - 1];",
+  "openTest": "it('The `word` variable exists and has a value', () => {\n  expect(word).not.undefined;\n});\n\nit('The variable `word` is a string', () => {\n  expect(word).a('string');\n});\n\nit('Variable `word` is a non-empty string', () => {\n  expect(word === '').false;\n});\n\nit('The `cut` variable exists and has a value', () => {\n  expect(cut).not.undefined;\n});\n\nit('The `cut` variable is a string', () => {\n  expect(cut).a('string');\n});\n\nit('Variable `cut` is correct', () => {\n  const expected = word[0] + '-' + word[word.length - 1];\n  expect(cut).equal(expected);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst word = 'Function';\nconst cut = word[0] + '-' + word[word.length - 1];\n```",
+    "ru": "```javascript\nconst word = 'Function';\nconst cut = word[0] + '-' + word[word.length - 1];\n```"
+  }
+}

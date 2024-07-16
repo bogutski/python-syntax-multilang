@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd34",
+  "name": {
+    "en": "Is null equal to itself?",
+    "ru": "Равен ли null самому себе?"
+  },
+  "instruction": {
+    "en": "Create a variable named `strictEqual` and assign it the result of strict comparison (===) of the values `null` and `null`.\nCreate a variable named `equal` and assign it the result of loose comparison (==) of the variable `null` and `null`.\n(Check the result in the console).\n\nLet's provide an example that is essentially similar to what needs to be done,\nbut adapt it to the task requirements:\n```javascript\nconst comparison = null === null ;\n```",
+    "ru": "Создайте переменную с именем `strictEqual` и присвойте ей результат строгого сравнения (===) значения `null` и `null`.\nСоздайте переменную с именем `equal` и присвойте ей результат нестрогого сравнения (==) переменной `null` и `null`.\n(Проверьте результат в консоли).\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst comparison = null === null ;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const strictEqual = null === null;\nconst equal = null == null;",
+  "openTest": "it('The `strictEqual` variable exists and has a value', () => {\n  expect(strictEqual).not.undefined;\n});\n\nit('The `strictEqual` variable is of type boolean', () => {\n  expect(strictEqual).a('boolean');\n});\n\nit('The `strictEqual` variable is true ', () => {\n  expect(strictEqual).true;\n});\n\nit('The `equal` variable exists and has a value ', () => {\n  expect(equal).not.undefined;\n});\n\nit('The `equal` variable is of type boolean', () => {\n  expect(equal).a('boolean');\n});\n\nit('The `equal` variable is true ', () => {\n  expect(equal).true;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst strictEqual = null === null;\nconst equal = null == null;\n```",
+    "ru": "```javascript\nconst strictEqual = null === null;\nconst equal = null == null;\n```"
+  }
+}

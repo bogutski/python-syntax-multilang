@@ -1,0 +1,5 @@
+{
+  "name": "Приветствие и возраст",
+  "instruction": "Напиши функцию `greetingAndAge`, которая принимает два параметра `name` и `age` и возвращает строку\n\n`Hello, my name is John, and I am 99 years old`.\n\nВместо `John` и `99` должны быть значения параметров `name` и `age`.\n\nДля решения используй конкатенацию строк.\n\nПример конкатенации строк:\n```javascript\nconst name = 'John';\nconst age = 99;\nconst str = 'Hi ' + name + ', you are ' + age + ' years old';\nconsole.log(str); // Hi John, you are 99 years old\n```",
+  "instructions": {}
+}

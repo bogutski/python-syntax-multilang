@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2ca763f0712c198e8de",
+  "name": {
+    "ru": "Перебор массива",
+    "en": "Array brute force",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e8df",
+      "name": {
+        "ru": "Что такое итерация?",
+        "en": "What is iteration?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e8e0",
+          "name": {
+            "ru": "Блок кода, который повторяет сам себя, пока известное условие остаётся истинным",
+            "en": "A block of code that repeats itself as long as a known condition remains true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8e1",
+          "name": {
+            "ru": "Блок кода, который повторяет только один раз",
+            "en": "A block of code that repeats only once",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8e2",
+          "name": {
+            "ru": "Блок кода, который не повторяется",
+            "en": "A block of code that does not repeat",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8e3",
+          "name": {
+            "ru": "Блок кода, который повторяет сам себя бесконечно",
+            "en": "A block of code that repeats itself endlessly",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e8e4",
+      "name": {
+        "ru": "Что выведет в консоль следующий код?",
+        "en": "What will the following code print to the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nfor (let i = 0; i <= arr.length; i++) {\n    console.log(arr[i]);\n}\n```",
+        "en": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nfor (let i = 0; i <= arr.length; i++) {\n    console.log(arr[i]);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e8e5",
+          "name": {
+            "ru": "1 2 3 4 5",
+            "en": "1 2 3 4 5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8e6",
+          "name": {
+            "ru": "1 2 3 4 5 undefined",
+            "en": "1 2 3 4 5 undefined",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8e7",
+          "name": {
+            "ru": "0 1 2 3 4 5 undefined",
+            "en": "0 1 2 3 4 5 undefined",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8e8",
+          "name": {
+            "ru": "0 1 2 3 4 5",
+            "en": "0 1 2 3 4 5",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e8e9",
+      "name": {
+        "ru": "Выберите верный вариант продолжения кода для нахождения суммы всех элементов массива arr",
+        "en": "Choose the correct way to continue the code to find the sum of all elements of the arr array",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nlet sum = 0;\n```",
+        "en": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nlet sum = 0;\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e8ea",
+          "name": {
+            "ru": "for (let i = 0; i < arr.length; i++) {\n    sum += arr[i];\n};\nconsole.log(sum);",
+            "en": "for (let i = 0; i < arr.length; i++) {\n    sum += arr[i];\n};\nconsole.log(sum);",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8eb",
+          "name": {
+            "ru": "for (let i = 0; i < arr.length; i++) {\n    sum = sum + arr[i];\n};\nconsole.log(sum);",
+            "en": "for (let i = 0; i < arr.length; i++) {\n    sum = sum + arr[i];\n};\nconsole.log(sum);",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8ec",
+          "name": {
+            "ru": "for (let i = 0; i <= arr.length; i++) {\n    sum += arr[i];\n};\nconsole.log(sum);",
+            "en": "for (let i = 0; i <= arr.length; i++) {\n    sum += arr[i];\n};\nconsole.log(sum);",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8ed",
+          "name": {
+            "ru": "for (let i = 0; i > arr.length; i++) {\n    sum += arr[i];\n};\nconsole.log(sum);",
+            "en": "for (let i = 0; i > arr.length; i++) {\n    sum += arr[i];\n};\nconsole.log(sum);",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e8ee",
+      "name": {
+        "ru": "Что надо написать в теле цикла, чтобы найти произведение всех элементов массива arr?",
+        "en": "What should be written in the body of the loop to find the product of all elements of the array arr?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nlet mult = 1;\nfor (let i = 0; i < arr.length; i++) {\n    ?????;\n};\nconsole.log(mult);\n```",
+        "en": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nlet mult = 1;\nfor (let i = 0; i < arr.length; i++) {\n    ?????;\n};\nconsole.log(mult);\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e8ef",
+          "name": {
+            "ru": "mult *= i;",
+            "en": "mult *= i;",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8f0",
+          "name": {
+            "ru": "mult *= arr[i];",
+            "en": "mult *= arr[i];",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8f1",
+          "name": {
+            "ru": "mult = mult * arr[i];",
+            "en": "mult = mult * arr[i];",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8f2",
+          "name": {
+            "ru": "mult *= arr;",
+            "en": "mult *= arr;",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e8f3",
+      "name": {
+        "ru": "Выберите верный вариант продолжения кода для разворачивания массива arr",
+        "en": "Choose the correct way to continue the code to expand the array arr",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nconst reverse = [];\n```",
+        "en": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nconst reverse = [];\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e8f4",
+          "name": {
+            "ru": "for (let i = arr.length; i >= 0; i--) {\n    reverse.push(arr[i]);\n};\nconsole.log(reverse);",
+            "en": "for (let i = arr.length; i >= 0; i--) {\n    reverse.push(arr[i]);\n};\nconsole.log(reverse);",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8f5",
+          "name": {
+            "ru": "for (let i = 0; i < arr.length; i++) {\n    reverse.push(arr[i]);\n};\nconsole.log(reverse);",
+            "en": "for (let i = 0; i < arr.length; i++) {\n    reverse.push(arr[i]);\n};\nconsole.log(reverse);",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8f6",
+          "name": {
+            "ru": "for (let i = 0; i < arr.length; i++) {\n    reverse.unshift(arr[i]);\n};\nconsole.log(reverse);",
+            "en": "for (let i = 0; i < arr.length; i++) {\n    reverse.unshift(arr[i]);\n};\nconsole.log(reverse);",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8f7",
+          "name": {
+            "ru": "for (let i = arr.length - 1; i >= 0; i--) {\n    reverse.push(arr[i]);\n};\nconsole.log(reverse);",
+            "en": "for (let i = arr.length - 1; i >= 0; i--) {\n    reverse.push(arr[i]);\n};\nconsole.log(reverse);",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e8f8",
+      "name": {
+        "ru": "Что выведет в консоль код ниже?",
+        "en": "What will the code below output to the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [2, 3, 4];\nlet sum = 0;\nfor (let i = 0; i <= arr.length; i++) {\n    sum += arr[i];\n};\nconsole.log(sum)\n```",
+        "en": "```javascript\nconst arr = [2, 3, 4];\nlet sum = 0;\nfor (let i = 0; i <= arr.length; i++) {\n    sum += arr[i];\n};\nconsole.log(sum)\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e8f9",
+          "name": {
+            "ru": "NaN",
+            "en": "NaN",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8fa",
+          "name": {
+            "ru": "9",
+            "en": "9",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8fb",
+          "name": {
+            "ru": "2 3 4",
+            "en": "2 3 4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8fc",
+          "name": {
+            "ru": "undefined",
+            "en": "undefined",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e8fd",
+      "name": {
+        "ru": "Выберите верный знак вместо знака вопроса в коде ниже",
+        "en": "Select the correct sign in place of the question mark in the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr= [10, 20, 30, 40];\nlet sum = 0;\nfor(let i = 0; i ? arr.length; i++){\n  sum += arr[i];\n}\nconsole.log(sum);\n```",
+        "en": "```javascript\nconst arr= [10, 20, 30, 40];\nlet sum = 0;\nfor(let i = 0; i ? arr.length; i++){\n  sum += arr[i];\n}\nconsole.log(sum);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e8fe",
+          "name": {
+            "ru": ">",
+            "en": ">",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e8ff",
+          "name": {
+            "ru": ">=",
+            "en": ">=",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e900",
+          "name": {
+            "ru": "<",
+            "en": "<",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e901",
+          "name": {
+            "ru": "<=",
+            "en": "<=",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e902",
+      "name": {
+        "ru": "Что выведет в консоль код ниже?",
+        "en": "What will the code below output to the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr= [10, 20, 30, 40];\nlet dif = 0;\nfor(let i = 0; i < arr.length; i++){\n  dif -= arr[i];\n}\nconsole.log(dif);\n```",
+        "en": "```javascript\nconst arr= [10, 20, 30, 40];\nlet dif = 0;\nfor(let i = 0; i < arr.length; i++){\n  dif -= arr[i];\n}\nconsole.log(dif);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e903",
+          "name": {
+            "ru": "-100",
+            "en": "-100",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e904",
+          "name": {
+            "ru": "-40",
+            "en": "-40",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e905",
+          "name": {
+            "ru": "-80",
+            "en": "-80",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e906",
+          "name": {
+            "ru": "NaN",
+            "en": "NaN",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e907",
+      "name": {
+        "ru": "Что выведет в консоль код ниже?",
+        "en": "What will the code below output to the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr= [10, 20, 30, 40];\nlet sum = 0;\nfor(let i = arr.length - 1; i >= 0 ; i--){\n  sum += arr[i];\n}\nconsole.log(sum);\n```",
+        "en": "```javascript\nconst arr= [10, 20, 30, 40];\nlet sum = 0;\nfor(let i = arr.length - 1; i >= 0 ; i--){\n  sum += arr[i];\n}\nconsole.log(sum);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e908",
+          "name": {
+            "ru": "NaN",
+            "en": "NaN",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e909",
+          "name": {
+            "ru": "100",
+            "en": "100",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e90a",
+          "name": {
+            "ru": "90",
+            "en": "90",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e90b",
+          "name": {
+            "ru": "Этот код не выполнится",
+            "en": "This code will not execute",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e90c",
+      "name": {
+        "ru": "Что выведет в консоль код ниже?",
+        "en": "What will the code below print to the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr= [10, 2, 50];\nlet mult = 0;\nfor(let i = 0; i < arr.length; i++){\n  mult *= arr[i];\n}\nconsole.log(mult);\n```",
+        "en": "```javascript\nconst arr= [10, 2, 50];\nlet mult = 0;\nfor(let i = 0; i < arr.length; i++){\n  mult *= arr[i];\n}\nconsole.log(mult);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e90d",
+          "name": {
+            "ru": "1000",
+            "en": "1000",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e90e",
+          "name": {
+            "ru": "62",
+            "en": "62",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e90f",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e910",
+          "name": {
+            "ru": "100",
+            "en": "100",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

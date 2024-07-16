@@ -1,0 +1,1 @@
+# Array.prototype.reverse() – переворачивает порядок элементов массива на месте language: en

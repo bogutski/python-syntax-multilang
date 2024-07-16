@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db42",
+  "name": {
+    "en": "The first variable. The number",
+    "ru": "Первая переменная. Число"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-1.png)\n\nCreate a variable named `price`, use the keyword `let`, assign the number `123` as a value",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-1.png)\n\nСоздайте переменную с именем `price`, используйте ключевое слово` let`, присвойте в качестве значения число `123`"
+  },
+  "initialSolution": "let price =",
+  "completedSolution": "let price = 123;",
+  "openTest": "it('is variable exists', () => {\n  expect(price).not.to.be.undefined;\n});\n\nit('should have a value of 123', () => {\n  expect(price).eq(123);\n});",
+  "hiddenTest": "  ",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet price = 123;\n```",
+    "ru": "```javascript\nlet price = 123;\n```"
+  }
+}

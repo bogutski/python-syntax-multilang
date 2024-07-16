@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f24f",
+  "name": {
+    "en": "Does the first array contain all elements of the second array (with repetitions)",
+    "ru": "Содержит ли первый массив все элементы второго массива (с повторениями)"
+  },
+  "instruction": {
+    "en": "The function `checkArrays` takes two arrays of numbers. The arrays cannot be empty, but the elements in the array can be repeated any number of times.\n\nThe function should check if the second array contains all the elements of the first array. The function should return `true` or `false`.\n\nExamples of function execution:\n```javascript\ncheckArrays([1,2,3,4,5,6,20,2,2], [1,2,2]) // true\ncheckArrays([1,2,3,4,5,6,20,2,2], [1,2,2,7]) // false\ncheckArrays([0,0,0,1], [0,0]) // true\n```\n\nAlgorithm for solving the problem:\n* Create an object that will store the elements of the second array as keys and the number of repetitions as values.\nTo do this, iterate through the second array and for each element, check if it exists in the object. If not, add it as a key and assign the value 1. If it exists, increase the value by 1.\n* Iterate through the first array and decrease the value in the object for each element.\n* Iterate through the values of the object using a loop and if at least one value is not equal to 0, return `false`.\nTo check the values of the object, you can use the method `Object.values(obj)`, which will return an array of the object's values.\n* If all values are equal to 0, return `true`.",
+    "ru": "Функция `checkArrays` принимает два массива чисел. Массивы не могут быть пустыми, но элементы в массиве могут повторяться любое количество раз.\n\nФункция должна проверить, содержит ли второй массив все элементы первого массива. Функция должна вернуть `true` или `false`.\n\nПримеры запуска функции:\n```javascript\ncheckArrays([1,2,3,4,5,6,20,2,2], [1,2,2]) // true\ncheckArrays([1,2,3,4,5,6,20,2,2], [1,2,2,7]) // false\ncheckArrays([0,0,0,1], [0,0]) // true\n```\n\nАлгоритм решения задачи:\n* Создать объект, в котором будут храниться элементы второго массива в качестве ключей, а количество повторений в качестве значений.\nДля этого надо пройтись по второму массиву и для каждого элемента проверить, есть ли он в объекте. Если нет, то добавить его в качестве ключа и присвоить значение 1. Если есть, то увеличить значение на 1.\n* Пройтись по первому массиву и уменьшить значение в объекте для каждого элемента.\n* Пройтись по значениям объекта циклом и если хотя бы одно значение не равно 0, вернуть `false`.\nДля того чтобы проверить значения объекта, можно воспользоваться методом `Object.values(obj)`, который вернет массив значений объекта.\n* Если все значения равны 0, вернуть `true`."
+  },
+  "initialSolution": "function",
+  "completedSolution": "function checkArrays(arr1, arr2) {\n\n    const obj = {};\n    for (let i = 0; i < arr2.length; i++) {\n        if (!obj[arr2[i]]) obj[arr2[i]] = 1;\n        else obj[arr2[i]]++;\n    }\n\n    for (let i = 0; i < arr1.length; i++) {\n        if (obj[arr1[i]]) {\n            obj[arr1[i]]--;\n        }\n    }\n\n    const values = Object.values(obj)\n\n    for (let i = 0; i < values.length; i++) {\n        if (values[i] !== 0) return false\n    }\n    return true;\n}",
+  "openTest": "it('Created function checkArrays', () => {\n    expect(checkArrays).to.be.a('function');\n});\n\nit('checkArrays([1,2,3,4,5], [1,2,3,4,5]) should return true', () => {\n    expect(checkArrays([1, 2, 3, 4, 5], [1, 2, 3, 4, 5])).to.equal(true);\n});\n\nit('checkArrays([1,2,3,4,5], [1,2,3,4,6]) should return false', () => {\n    expect(checkArrays([1, 2, 3, 4, 5], [1, 2, 3, 4, 6])).to.equal(false);\n});\n\nit('checkArrays([1,2,3,4,5,6,20,2,2], [1,2,2]) should return true', () => {\n    expect(checkArrays([1, 2, 3, 4, 5, 6, 20, 2, 2], [1, 2, 2])).to.equal(true);\n});\n\nit('checkArrays([1,2,3,4,5,6,20,2,2], [1,2,2,7]) should return false', () => {\n    expect(checkArrays([1, 2, 3, 4, 5, 6, 20, 2, 2], [1, 2, 2, 7])).to.equal(false);\n});\n\nit('checkArrays([0,0,0,1], [0,0]) should return true', () => {\n    expect(checkArrays([0, 0, 0, 1], [0, 0])).to.equal(true);\n});\n\nit('checkArrays([0,0,0,1], [0,0,0,0]) should return false', () => {\n    expect(checkArrays([0, 0, 0, 1], [0, 0, 0, 0])).to.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

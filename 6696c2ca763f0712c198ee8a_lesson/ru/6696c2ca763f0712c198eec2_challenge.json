@@ -1,0 +1,5 @@
+{
+  "name": "Перевод чисел от 20 до 99 в слова",
+  "instruction": "Напишите функцию `numToWord`, которая принимает массив чисел от `20` до `99``.\n\nФункция должна вернуть массив строк, где каждая строка - это перевод числа в слова.\n\n\nПримеры запуска функции:\n```javascript\nnumToWord([20, 30, 40]);             // ['twenty', 'thirty', 'forty']\nnumToWord([25, 97, 46, 73]);         // ['twenty-five', 'ninety-seven', 'forty-six', 'seventy-three']\nnumToWord([50, 47, 73, 34, 63, 88]); // ['fifty', 'forty-seven', 'seventy-three', 'thirty-four', 'sixty-three', 'eighty-eight']\n```",
+  "instructions": {}
+}

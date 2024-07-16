@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd1f",
+  "name": {
+    "en": "Create a variable with undefined value",
+    "ru": "Создайте переменную со значением undefined"
+  },
+  "instruction": {
+    "en": "A variable with the value `undefined` can be created without assigning any value to it.\nCreate a variable named `age` without assigning any value to it.\nCreate a variable named `typeOfAge` and assign it the value of the variable `age` type.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the task requirements:\n```javascript\nlet salary;\nconst typeOfSalary = typeof salary;\n```",
+    "ru": "Переменную со значением `undefined` можно создать, не присваивая ей никакого значения.\nСоздайте переменную с именем `age` без присваивания ей какого-либо значения.\nСоздайте переменную с именем `typeOfAge` и присвойте ей значение типа переменной `age`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet salary;\nconst typeOfSalary = typeof salary;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let age;\nconst typeOfAge = typeof age;",
+  "openTest": "it('Variable `age` exists and is undefined', () => {\n  expect(age).to.be.undefined;\n});\n\nit('The `age` variable is of type undefined', () => {\n  expect(typeof age).eq('undefined');\n});\n\nit('Variable `typeOfAge` exists and has a value', () => {\n  expect(typeOfAge).not.undefined;\n});\n\nit('Variable `typeOfAge` has type string', () => {\n  expect(typeOfAge).a('string');\n});\n\nit('Variable `typeOfAge` has value `undefined`', () => {\n  expect(typeOfAge).equal('undefined');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet age;\nconst typeOfAge = typeof age;\n```",
+    "ru": "```javascript\nlet age;\nconst typeOfAge = typeof age;\n```"
+  }
+}

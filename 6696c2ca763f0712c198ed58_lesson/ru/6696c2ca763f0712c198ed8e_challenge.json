@@ -1,0 +1,5 @@
+{
+  "name": "Записать второе слово",
+  "instruction": "Напишите функцию `secondWord` которая принимает строку `str` и возвращает новую строку со вторым словом из `str`.\n\nМежду словами есть лишь один пробел.\n\nЕсли в `str` одно слово (иными словами нет пробелов), то функция должна вернуть `'Second word was not found'`.\n\n\nПример запуска функции:\n```javascript\nsecondWord('first'); // 'Second word was not found'\nsecondWord('first second'); // 'second'\nsecondWord('Shawn Taylor Tanya Cleo'); // 'Taylor'\n```",
+  "instructions": {}
+}

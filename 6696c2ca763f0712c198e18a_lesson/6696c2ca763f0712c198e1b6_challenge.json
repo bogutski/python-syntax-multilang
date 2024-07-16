@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e1b6",
+  "name": {
+    "en": "Program of air conditioner operation",
+    "ru": "Программа работы кондиционера"
+  },
+  "instruction": {
+    "en": "Write a function `conditioner` that takes the air temperature in fahrenheit and returns the state of the air conditioner.\n\nIf the air temperature is less than 60, return `cold`, if from 60 to 80, return `normal`, if from 80 to 90, return `warm`, if from 90, return `hot`.",
+    "ru": "Напишите функцию `conditioner`, которая принимает температуру воздуха в фаренгейтах и возвращает состояние кондиционера.\n\nЕсли температура воздуха меньше 60, то возвращаем `cold`, если от 60 до 80, то `normal`, если от 80 до 90, то `warm`, если от 90, то `hot`."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function conditioner(temp) {\n  if (temp < 60) {\n    return 'cold';\n  } else if (temp < 80) {\n    return 'normal';\n  } else if (temp < 90) {\n    return 'warm';\n  } else {\n    return 'hot';\n  }\n}",
+  "openTest": "it('Created function conditioner', () => {\n  expect(conditioner).to.be.a('function');\n});\n\nit('conditioner(59) returns cold', () => {\n  expect(conditioner(59)).to.equal('cold');\n});\n\nit('conditioner(60) returns normal', () => {\n  expect(conditioner(60)).to.equal('normal');\n});\n\nit('conditioner(79) returns normal', () => {\n  expect(conditioner(79)).to.equal('normal');\n});\n\nit('conditioner(80) returns warm', () => {\n  expect(conditioner(80)).to.equal('warm');\n});\n\nit('conditioner(89) returns warm', () => {\n  expect(conditioner(89)).to.equal('warm');\n});\n\nit('conditioner(90) returns hot', () => {\n  expect(conditioner(90)).to.equal('hot');\n});\n\nit('conditioner(100) returns hot', () => {\n  expect(conditioner(100)).to.equal('hot');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f384",
+  "name": {
+    "en": "/*",
+    "ru": "Удаление элементов из массива чисел"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `trimArray`, которая принимает массив чисел.\n\nФункция должна удалить последние три элемента и вернуть массив.\n\nЕсли исходный массив содержит три или менее элементов, функция должна вернуть пустой массив.\n\nИспользуйте метод `pop()` для удаления элементов.\n\n\nПример запуска функции:\n```javascript\ntrimArray([1, 2, 3, 4, 5, 6, 7]); // [ 1, 2, 3, 4 ]\ntrimArray([10, 20, 30]); // []\ntrimArray([1, 2]); // []\ntrimArray([]); // []\n```"
+  },
+  "initialSolution": "function trimArray(){\n\n}",
+  "completedSolution": "function trimArray(arr){\n  if(arr.length < 3) return []\n\n  for(let i = 0; i < 3; i++){\n    arr.pop();\n  }\n\n  return arr;\n}",
+  "openTest": "it('Created function trimArray', () => {\n  expect(trimArray).to.be.a('function');\n});\n\nit(\"trimArray([1, 2, 3, 4, 5, 6, 7]) should return [1, 2, 3, 4]\", () => {\n  expect(trimArray([1, 2, 3, 4, 5, 6, 7])).to.deep.equal([1, 2, 3, 4]);\n});\n\nit(\"trimArray([10, 20, 30]) should return []\", () => {\n  expect(trimArray([10, 20, 30])).to.deep.equal([]);\n});\n\nit(\"trimArray([1, 2]) should return []\", () => {\n  expect(trimArray([1, 2])).to.deep.equal([]);\n});\n\nit(\"trimArray([5, 6, 7, 8, 9]) should return [5, 6]\", () => {\n  expect(trimArray([5, 6, 7, 8, 9])).to.deep.equal([5, 6]);\n});\n\nit(\"trimArray([]) should return []\", () => {\n  expect(trimArray([])).to.deep.equal([]);\n});\n\nit(\"trimArray([100]) should return [] for an array with a single element\", () => {\n  expect(trimArray([100])).to.deep.equal([]);\n});\n\nit(\"trimArray([1, 2, 3, 4]) should return [1] for an array with exactly four elements\", () => {\n  expect(trimArray([1, 2, 3, 4])).to.deep.equal([1]);\n});\n\nit(\"trimArray([9, 8, 7, 6, 5, 4, 3, 2, 1]) should return [9, 8, 7, 6, 5, 4] for an array with nine elements\", () => {\n  expect(trimArray([9, 8, 7, 6, 5, 4, 3, 2, 1])).to.deep.equal([9, 8, 7, 6, 5, 4]);\n});\n\nit(\"trimArray([0, 0, 0, 0, 0, 0]) should return [0, 0, 0]\", () => {\n  expect(trimArray([0, 0, 0, 0, 0, 0])).to.deep.equal([0, 0, 0]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

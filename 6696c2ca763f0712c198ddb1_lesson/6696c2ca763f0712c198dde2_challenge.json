@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dde2",
+  "name": {
+    "en": "Calculate and output to the console. 2 to the power of 10",
+    "ru": "Вычислите и выведите в консоль. 2 в степени 10"
+  },
+  "instruction": {
+    "en": "Only one line.\n\nWrite the command `console.log(2 ** 10);`\n\nObserve spaces and punctuation marks.",
+    "ru": "Только одна строка.\n\nНапишите команду `console.log(2 ** 10);`\n\nСоблюдайте пробелы и знаки пунктуации."
+  },
+  "initialSolution": "",
+  "completedSolution": "console.log(2 ** 10);",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal",
+  "hint": {
+    "en": "```javascript\nconsole.log(2 ** 10);\n```",
+    "ru": "```javascript\nconsole.log(2 ** 10);\n```"
+  }
+}

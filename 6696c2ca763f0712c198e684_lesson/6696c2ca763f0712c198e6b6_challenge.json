@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e6b6",
+  "name": {
+    "en": "Book card. Objects",
+    "ru": "Книжная карточка. Объекты"
+  },
+  "instruction": {
+    "en": "When a book arrives at the library, the librarian must fill out a form and determine the book's place on the shelf.\n\nWrite a function `bookSpec` that takes the following parameters:\n* `firstName` - author name, string\n* `lastName` - author's last name, string\n* `title` - book title, string\n* `genre` - genre, string\n\nThe function should return an object containing the data of the book:\n* `author` - author's first and last name (`firstName lastName`),\n* `title` - book title,\n* `genre` - genre,\n* `shelfIndex` - index of the shelf space, which consists of the first letter of the first name and full surname in upper case.\n\nAn example of running the function:\n```javascript\nbookSpec('Joanne', 'Rowling', 'Harry Potter', 'fantasy')\n// {author: 'Joanne Rowling', title: 'Harry Potter', genre: 'fantasy', shelfIndex: 'JROWLING'}\n```",
+    "ru": "Когда книга попадает в библиотеку, библиотекарь должен заполнить формуляр и определить место книги на полке.\n\nНапишите функцию `bookSpec`, которая принимает следующие параметры:\n* `firstName` - имя автора, строка\n* `lastName` - фамилия автора, строка\n* `title` - название книги, строка\n* `genre` - жанр, строка\n\nФункция должна вернуть объект, содержащий данные книги:\n* `author` - имя и фамилия автора (`firstName lastName`),\n* `title` - название книги,\n* `genre` - жанр,\n* `shelfIndex` - индекс места на полке, который состоит из первой буквы имени и полной фамилии в верхнем регистре.\n\nПример запуска функции:\n```javascript\nbookSpec('Joanne', 'Rowling', 'Harry Potter', 'fantasy')\n// {author: 'Joanne Rowling', title: 'Harry Potter', genre: 'fantasy', shelfIndex: 'JROWLING'}\n```"
+  },
+  "initialSolution": "function\n\n}",
+  "completedSolution": "function bookSpec(firstName, lastName, title, genre) {\n  return {\n    author: `${firstName} ${lastName}`,\n    title,\n    genre,\n    shelfIndex: firstName[0].toUpperCase() + lastName.toUpperCase(),\n  };\n}",
+  "openTest": "it('Created function bookSpec', () => {\n  expect(bookSpec).to.be.a('function');\n});\n\nit('bookSpec(`Joanne`, `Rowling`, `Harry Potter`, `fantasy`) should return {`author`: `Joanne Rowling`, `title`: `Harry Potter`, `genre`: `fantasy`, `shelfIndex`: `JROWLING`}', () => {\n  expect(bookSpec(`Joanne`, `Rowling`, `Harry Potter`, `fantasy`)).eql({\n    author: `Joanne Rowling`,\n    title: `Harry Potter`,\n    genre: `fantasy`,\n    shelfIndex: `JROWLING`,\n  });\n});\n\nit('bookSpec(`Stephen`, `King`, `The Shining`, `horror`) should return {`author`: `Stephen King`, `title`: `The Shining`, `genre`: `horror`, `shelfIndex`: `SKING`}', () => {\n  expect(bookSpec(`Stephen`, `King`, `The Shining`, `horror`)).eql({\n    author: `Stephen King`,\n    title: `The Shining`,\n    genre: `horror`,\n    shelfIndex: `SKING`,\n  });\n});\n\nit('bookSpec(`Freida`, `McFadden`, `The Housemaid`, `novel`) should return {`author`: `Freida McFadden`, `title`: `The Housemaid`, `genre`: `novel`, `shelfIndex`: `FMCFADDEN`}', () => {\n  expect(bookSpec(`Freida`, `McFadden`, `The Housemaid`, `novel`)).eql({\n    author: `Freida McFadden`,\n    title: `The Housemaid`,\n    genre: `novel`,\n    shelfIndex: `FMCFADDEN`,\n  });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

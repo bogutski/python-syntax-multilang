@@ -1,0 +1,5 @@
+{
+  "name": "Форматирование скидки в чеке",
+  "instruction": "Напишите функцию `formatDiscount`, которая принимает параметры:\n* `price` - число, цена товара\n* `discount` - число, скидка в процентах\n\nФункция должна возвращать строку вида `Price: $100.00, Discount: 10.00%. Total: $90.00`.\n\nДля форматирования чисел используйте метод `toFixed`.\n\n\nПримеры запуска функции:\n```javascript\nformatDiscount(100, 10) // 'Price: $100.00, Discount: 10.00%. Total: $90.00'\nformatDiscount(100, 0) // 'Price: $100.00, Discount: 0.00%. Total: $100.00'\nformatDiscount(99, 32.5) // 'Price: $99.00, Discount: 32.50%. Total: $66.75'\nformatDiscount(8, 17) // 'Price: $8.00, Discount: 17.00%. Total: $6.64'\n```",
+  "instructions": {}
+}

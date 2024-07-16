@@ -1,0 +1,5 @@
+{
+  "name": "The first \"Hello world\" program",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-course1-task-1.png)\n\nPrint the phrase \"Hello world\" to the console.\n\nTo do this, type the command:\n```\nconsole.log('Hello world');\n```\nAfter that, click the `Check Solution` button.\n\nIf any error messages appear in the window on the right, correct them.\n\nIf a green `passed` mark appears in the window on the right, you have done everything correctly.\n\nThen click the `Send Solution` button.\n\nThe task is considered completed (green `Completed` mark will appear next to the task name).",
+  "instructions": {}
+}

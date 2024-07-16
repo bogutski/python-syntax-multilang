@@ -1,0 +1,13 @@
+{
+  "_id": "6696c2ca763f0712c198dbc8",
+  "video": {
+    "ru": "https://youtu.be/fpeH7rwDGbA",
+    "en": "https://youtu.be/fpeH7rwDGbA",
+    "es": ""
+  },
+  "content": {
+    "ru": "В этом уроке мы узнаем, что означает выражение типа \"a = a + 5\" и чему же это равно.\n\nМы уже знаем из предыдущей темы, что в переменную можно поместить значение с помощью оператора присваивания – знака \"равно\" (`=`). Сначала выполняется правая часть кода, затем – левая (присваивание значения переменной): \n\nНапример: \n```\nlet a = 5;       // переменной a присвоено значение 5\na = a + 5;       // значение переменной a увеличено на 5\na = a * 5;       // значение переменной a увеличено в 5 раз\na = a / 10 + 20; // значение переменной a уменьшилось в 10 раз, затем увеличилось на 20\n                 // не забывайте про порядок выполнения операций\nconsole.log(a);  // в итоге всех изменений в консоль будет выведено 25\n\nlet b = true;   // переменной b присвоено значение true \nb = false;      // значение переменной b изменено\nconsole.log(b); // в консоль будет выведено false \n\nlet str = 'Hello';      // переменной str присвоено значение 'Hello'\nstr = str + ' world!';  // значение переменной str изменено\nconsole.log(str);       // в консоль будет выведено \"Hello world!\"\n```\n\n![](https://course-js-syntax.s3-us-west-1.amazonaws.com/reshai-zadachi.PNG)\n\n",
+    "en": "In this lesson we will learn what an expression like \"a = a + 5\" means and what it equals.\n\nWe already know from the previous topic that a value can be placed in a variable using the assignment operator, the \"equal\" sign (`=`). The right part of the code is executed first, followed by the left part (assignment of a variable value): \n\nFor example: \n```\nlet a = 5; // value 5 is assigned to the a variable\na = a + 5; // the value of the a variable is incremented by 5\na = a * 5; // a variable a has increased by 5 times\na = a / 10 + 20; // a variable a has decreased by a factor of 10, then increased by a factor of 20\n                 // do not forget about the order of operations\nconsole.log(a); // all the changes will result in 25 being output to the console\n\nlet b = true; // the b variable is assigned the value true \nb = false; // the b variable value has been changed\nconsole.log(b); // false will be displayed in the console \n\nlet str = 'Hello'; // value 'Hello' is assigned to the str variable\nstr = str + ' world!'; // value of str variable was changed\nconsole.log(str); // the console will print \"Hello world!\"\n```\n\n![](https://course-js-syntax.s3-us-west-1.amazonaws.com/reshai-zadachi.PNG)\n\n",
+    "es": "\n"
+  }
+}

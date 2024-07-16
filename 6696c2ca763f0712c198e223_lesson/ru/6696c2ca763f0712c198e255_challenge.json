@@ -1,0 +1,5 @@
+{
+  "name": "Делится на 3 и на 5",
+  "instruction": "Напишите функцию `isDivisibleByThreeAndFive`, которая принимает число и возвращает `true`, если число делится на `3` и на `5`. В противном случае возвращает `false`.\n\nЭту задачу можно решить с помощью `if`, но для тренировки попробуйте решить ее с помощью `&&`.\n\nПохожий пример:\n```javascript\nfunction isDivisibleByTwoAndThree(number) {\n  if (number % 2 === 0 && number % 3 === 0) {\n    return true;\n  }\n  return false;\n}\n```",
+  "instructions": {}
+}

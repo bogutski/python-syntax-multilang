@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e078",
+  "name": {
+    "en": "My favorite city",
+    "ru": "Мой любимый город"
+  },
+  "instruction": {
+    "en": "Write a function `myFavoriteCity` that takes one parameter `city` and returns the string `I love San Francisco!`.\n\nInstead of `San Francisco` it must be the value of the `city` parameter.",
+    "ru": "Напиши функцию `myFavoriteCity`, которая принимает один параметр `city` и возвращает строку `I love San Francisco!`.\n\nВместо `San Francisco` должно быть значение параметра `city`."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function myFavoriteCity(city) {\n  return 'I love ' + city + '!';\n}",
+  "openTest": "it('Created function myFavoriteCity', () => {\n  expect(myFavoriteCity).to.be.a('function');\n});\n\nit('Function returns I love San Francisco!', () => {\n  expect(myFavoriteCity('San Francisco')).to.equal('I love San Francisco!');\n});\n\nit('Function returns I love New York!', () => {\n  expect(myFavoriteCity('New York')).to.equal('I love New York!');\n});\n\nit('Function returns I love Paris!', () => {\n  expect(myFavoriteCity('Paris')).to.equal('I love Paris!');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

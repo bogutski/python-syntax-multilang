@@ -1,0 +1,5 @@
+{
+  "name": "Добавить перевернутую строку в массив",
+  "instruction": "Напишите функцию `reverseString`, которая принимает строку - `string` и символ - `breakPoint`.\n\nСоздайте цикл, который будет идти с конца строки и добавлять в массив символы, методом `push`.\n\nПри этом цикл должен остановиться, если встретит символ `breakPoint`.\n\nВерните массив.\n\n\nПример запуска функции:\n```js\nreverseString('hello', 'l') // ['o']\nreverseString('hello', 'w') // ['o', 'l', 'l', 'e', 'h']\nreverseString('javascript', 'a') // ['t', 'p', 'i', 'r', 'c', 's']\nreverseString('', 'p') // []\n```",
+  "instructions": {}
+}

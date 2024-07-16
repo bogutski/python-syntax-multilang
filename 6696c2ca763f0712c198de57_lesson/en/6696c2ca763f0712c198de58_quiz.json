@@ -1,0 +1,143 @@
+{
+  "questions": {
+    "0": {
+      "name": "Select the operator with the lowest priority among those listed below.",
+      "variants": {
+        "0": {
+          "name": "binary plus"
+        },
+        "1": {
+          "name": "unary plus"
+        },
+        "2": {
+          "name": "assignment"
+        },
+        "3": {
+          "name": "multiplication"
+        }
+      }
+    },
+    "1": {
+      "name": "Select the operator with the highest priority among those listed below.",
+      "variants": {
+        "0": {
+          "name": "assignment"
+        },
+        "1": {
+          "name": "division"
+        },
+        "2": {
+          "name": "grouping"
+        },
+        "3": {
+          "name": "unary minus"
+        }
+      }
+    },
+    "2": {
+      "description": "```\nlet a = 2 * (2 + 1);\n```",
+      "name": "Select the operator that will be executed LAST in the example below.",
+      "variants": {
+        "0": {
+          "name": "="
+        },
+        "1": {
+          "name": "*"
+        },
+        "2": {
+          "name": "( )"
+        },
+        "3": {
+          "name": "+"
+        }
+      }
+    },
+    "3": {
+      "description": "```\nlet a = -3 * 5 + 4;\n```",
+      "name": "Select the operator that will be executed FIRST in the example below.",
+      "variants": {
+        "0": {
+          "name": "="
+        },
+        "1": {
+          "name": "-"
+        },
+        "2": {
+          "name": "*"
+        },
+        "3": {
+          "name": "+"
+        }
+      }
+    },
+    "4": {
+      "name": "The entries x += y and x = x + y are equivalent.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    },
+    "5": {
+      "name": "The entries x -= y and x = x - y are equivalent.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    },
+    "6": {
+      "name": "The entries x *= y and x = x * y are equivalent.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    },
+    "7": {
+      "name": "The entries x /= y and x = x % y are equivalent.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    },
+    "8": {
+      "description": "```\nlet a;\nlet b = 2;\nlet c = 3 - (a = b + 1);\n```",
+      "name": "The entry below is valid in JavaScript and will return a numeric result.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    },
+    "9": {
+      "description": "```\nlet c = 3 - (a = d + 3);\n```",
+      "name": "The entry below is valid in JavaScript and will return a numeric result.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    }
+  },
+  "name": "JS Syntax. Priority of operations execution"
+}

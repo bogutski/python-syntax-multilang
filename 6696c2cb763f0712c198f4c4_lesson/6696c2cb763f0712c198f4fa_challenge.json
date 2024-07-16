@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f4fa",
+  "name": {
+    "en": "/*",
+    "ru": "Обновление элемента массива с проверкой границ"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `updateArrayElement`, которая принимает массив, индекс элемента для обновления и новое значение для этого элемента.\n\nФункция должна обновить элемент массива на указанном индексе, если индекс находится в пределах границ массива.\n\nЕсли индекс выходит за границы массива, функция должна возвращать строку `Index is out of bound`.\n\nФункция должна возвращать новый массив с обновленным элементом, не изменяя исходный массив.\n\n\nПримеры использования функции:\n```javascript\nupdateArrayElement(['January', 'February', 'March', 'April'], 2, 'Updated Month');\n// ['January', 'February', 'Updated Month', 'April']\n\nupdateArrayElement([1, 2, 3], 5, 10);\n// 'Index is out of bound'\n\nupdateArrayElement([1, 2, 3], -4, 10);\n// 'Index is out of bound'\n```"
+  },
+  "initialSolution": "function updateArrayElement(){\n\n}",
+  "completedSolution": "function updateArrayElement(arr, i, newEl) {\n  if(Math.abs(i) < arr.length) return arr.with(i, newEl)\n  else return 'Index is out of bound'\n}",
+  "openTest": "Array.prototype.with = function(index, value){\n  const newArray = this.slice();\n  newArray.splice(index, 1, value);\n  return newArray;\n}\n\nit('Created function updateArrayElement', () => {\n  expect(updateArrayElement).to.be.a('function');\n});\n\nit('Function updateArrayElement should include method with()', () => {\n  const res = updateArrayElement.toString()\n  expect(res).to.include('.with(')\n});\n\nit('updates the element when index is within bounds', () => {\n  const originalArray = ['January', 'February', 'March', 'April'];\n  const result = updateArrayElement(originalArray, 2, 'Updated Month');\n  expect(result).to.deep.equal(['January', 'February', 'Updated Month', 'April']);\n});\n\nit('does not modify the original array', () => {\n  const originalArray = ['January', 'February', 'March', 'April'];\n  updateArrayElement(originalArray, 1, 'Updated Month');\n  expect(originalArray).to.deep.equal(['January', 'February', 'March', 'April']);\n});\n\nit('returns \"Index is out of bound\" when index is out of bounds', () => {\n  const originalArray = ['January', 'February', 'March', 'April'];\n  const result = updateArrayElement(originalArray, 4, 'May');\n  expect(result).to.equal('Index is out of bound');\n});\n\nit('handles negative index correctly', () => {\n  const originalArray = ['January', 'February', 'March', 'April'];\n  const result = updateArrayElement(originalArray, -1, 'Updated Month');\n  expect(result).to.deep.equal(['January', 'February', 'March', 'Updated Month']);\n});\n\nit('returns a new array with updated value when index is zero', () => {\n  const originalArray = ['January', 'February', 'March', 'April'];\n  const result = updateArrayElement(originalArray, 0, 'Updated Month');\n  expect(result).to.deep.equal(['Updated Month', 'February', 'March', 'April']);\n});\n\nit('returns a new array with the first element updated when index is 0', () => {\n  const originalArray = ['Monday', 'Tuesday', 'Wednesday'];\n  const result = updateArrayElement(originalArray, 0, 'Sunday');\n  expect(result).to.deep.equal(['Sunday', 'Tuesday', 'Wednesday']);\n});\n\nit('returns \"Index is out of bound\" for negative index that is out of bounds', () => {\n  const originalArray = ['January', 'February', 'March'];\n  const result = updateArrayElement(originalArray, -4, 'December');\n  expect(result).to.equal('Index is out of bound');\n});\n\nit('updates the last element correctly using a negative index', () => {\n  const originalArray = ['Apple', 'Banana', 'Cherry'];\n  const result = updateArrayElement(originalArray, -1, 'Dragonfruit');\n  expect(result[result.length - 1]).to.equal('Dragonfruit');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

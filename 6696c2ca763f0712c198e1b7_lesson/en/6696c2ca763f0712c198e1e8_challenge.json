@@ -1,0 +1,4 @@
+{
+  "name": "Always even numbers",
+  "instruction": "Write a function `alwaysEven` that takes a number and returns the same number if it is even, and the next even number if it is odd.\n\nThis will help you:\n```javascript\nconst num = 10;\nconsole.log(num % 2); // 0\n```\n\nIf the number is even, then the remainder of division by 2 will be 0.\n\nIf the number is odd, the remainder of division by 2 will be greater than 0.\n\nExamples of function execution:\n```javascript\nalwaysEven(10); // 10\nalwaysEven(11); // 12\nalwaysEven(12); // 12\nalwaysEven(13); // 14\n```\n\nUse the `===` triple equal, strict equality operator to compare with zero.\n``javascript\nconst num = 0;\nconsole.log(num === 0); // true\n```"
+}

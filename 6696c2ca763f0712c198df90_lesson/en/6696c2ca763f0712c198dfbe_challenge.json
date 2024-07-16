@@ -1,0 +1,4 @@
+{
+  "name": "Discount on purchase. Default settings",
+  "instruction": "Write a function `discountCalculate` that takes two parameters:\n\n- `price` - product price. A number. The default is 0.\n- `discount` - discount in percent. A number. The default value is 10.\n\nThe function should return the price of the product including the discount.\n\nThe price of the product will always be greater than zero, and the discount will be from 0 to 100.\n\nExamples:\n```javascript.\ndiscountCalculate(100, 5); // 95\ndiscountCalculate(100); // 90\ndiscountCalculate(100, 0); // 100\ndiscountCalculate(100, 100); // 0\ndiscountCalculate(50, 10); // 45\ndiscountCalculate(50, 20); // 40\n```"
+}

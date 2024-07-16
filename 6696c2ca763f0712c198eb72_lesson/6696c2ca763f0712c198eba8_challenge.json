@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eba8",
+  "name": {
+    "en": "Are there any palindromes here?",
+    "ru": "Есть ли тут палиндромы?"
+  },
+  "instruction": {
+    "en": "The isAnyPalindrome function takes two arguments - str1 and str2.\n\nWe need to check which of these strings is a palindrome and which is not.\n\nThe function must return:\n* \"str1 is palindrome\" if the first string is a palindrome\n* \"str2 is palindrome\" if the second string is a palindrome\n* \"both are palindrome\" if both strings are palindromes\n* \"none of them is palindrome\" if neither of them is a palindrome\n\nExamples of function execution:\n```javascript\nisAnyPalindrome(\"madam\", \"racecar\") // \"both are palindrome\"\nisAnyPalindrome(\"madam\", \"hello\") // \"madam is palindrome\"\nisAnyPalindrome(\"hello\", \"racecar\") // \"racecar is palindrome\"\nisAnyPalindrome(\"hello\", \"world\") // \"none of them is palindrome\"\n```",
+    "ru": "Функция isAnyPalindrome принимает два аргумента - строки str1 и str2.\n\nНеобходимо проверить какая из этих строк является палиндромом, а какая нет.\n\nФункция должна вернуть:\n* \"str1 is palindrome\" если первая строка является палиндромом\n* \"str2 is palindrome\" если вторая строка является палиндромом\n* \"both are palindrome\" если обе строки являются палиндромами\n* \"none of them is palindrome\" если ни одна из строк не является палиндромом\n\nПримеры запуска функции:\n```javascript\nisAnyPalindrome(\"madam\", \"racecar\") // \"both are palindrome\"\nisAnyPalindrome(\"madam\", \"hello\") // \"madam is palindrome\"\nisAnyPalindrome(\"hello\", \"racecar\") // \"racecar is palindrome\"\nisAnyPalindrome(\"hello\", \"world\") // \"none of them is palindrome\"\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function isAnyPalindrome(str1, str2) {\n  let newStr1 = '';\n  for (let i = 0; i < str1.length; i++) {\n    newStr1 = str1[i] + newStr1;\n  }\n  let newStr2 = '';\n  for (let i = 0; i < str2.length; i++) {\n    newStr2 = str2[i] + newStr2;\n  }\n  return (newStr1 === str1 && newStr2 === str2) ? 'both are palindrome' : (newStr1 === str1) ? str1 + ' is palindrome' : (newStr2 === str2) ? str2 + ' is palindrome' : 'none of them is palindrome';\n}",
+  "openTest": "it('Created function isAnyPalindrome', () => {\n  expect(isAnyPalindrome).to.be.a('function');\n});\n\nit('isAnyPalindrome(\"madam\", \"racecar\") should return \"both are palindrome\"', () => {\n  expect(isAnyPalindrome(\"madam\", \"racecar\")).to.equal(\"both are palindrome\");\n});\n\nit('isAnyPalindrome(\"madam\", \"hello\") should return \"madam is palindrome\"', () => {\n  expect(isAnyPalindrome(\"madam\", \"hello\")).to.equal(\"madam is palindrome\");\n});\n\nit('isAnyPalindrome(\"hello\", \"racecar\") should return \"racecar is palindrome\"', () => {\n  expect(isAnyPalindrome(\"hello\", \"racecar\")).to.equal(\"racecar is palindrome\");\n});\n\nit('isAnyPalindrome(\"hello\", \"world\") should return \"none of them is palindrome\"', () => {\n  expect(isAnyPalindrome(\"hello\", \"world\")).to.equal(\"none of them is palindrome\");\n});\n\nit('isAnyPalindrome(\"madam\", \"madam\") should return \"both are palindrome\"', () => {\n  expect(isAnyPalindrome(\"madam\", \"madam\")).to.equal(\"both are palindrome\");\n});\n\nit('isAnyPalindrome(\"\", \"\") should return \"both are palindrome\"', () => {\n  expect(isAnyPalindrome(\"\", \"\")).to.equal(\"both are palindrome\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

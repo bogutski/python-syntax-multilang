@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e737",
+  "name": {
+    "en": "Mathematical operations with array elements",
+    "ru": "Математические операции с элементами массива"
+  },
+  "instruction": {
+    "en": "Write a function `mathOperations` that takes two parameters - 2 arrays with numbers.\n\nThe function should return the result of a mathematical operation with the last elements of the arrays.\n\n* If `the last element of the first array is greater than the last element of the second array`,\n  then the function should return the `difference` of those elements.\n* If the `last element of the first array is smaller than the last element of the second array`,\n  then the function should return `the sum` of these elements.\n* If the `last element of the first array is equal to the last element of the second array`,\n  then the function should return the `product' of those elements.\n\nAn example of how the function works:\n```javascript\nmathOperations([1, 2, 3], [4, 5, 12]); // 15\nmathOperations([11, 24, 63, 3], [4, 5, 1]); // 2\nmathOperations([10, 17, 87, 90, 3], [4, 41, 5, 3]); // 9\n```",
+    "ru": "Напишите функцию `mathOperations`, которая принимает два параметра - 2 массива с числами.\n\nФункция должна вернуть результат математической операции c последними элементами массивов.\n\n* Если `последний элемент первого массива больше последнего элемента второго массива`,\n  то функция должна вернуть `разницу` этих элементов.\n* Если `последний элемент первого массива меньше последнего элемента второго массива`,\n  то функция должна вернуть `сумму` этих элементов.\n* Если `последний элемент первого массива равен последнему элементу второго массива`,\n  то функция должна вернуть `произведение` этих элементов.\n\nПример работы функции:\n```javascript\nmathOperations([1, 2, 3], [4, 5, 12]); // 15\nmathOperations([11, 24, 63, 3], [4, 5, 1]); // 2\nmathOperations([10, 17, 87, 90, 3], [4, 41, 5, 3]); // 9\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function mathOperations(numbers1, numbers2) {\n    if (numbers1[numbers1.length - 1] > numbers2[numbers2.length - 1]) {\n        return numbers1[numbers1.length - 1] - numbers2[numbers2.length - 1];\n    } else if (numbers1[numbers1.length - 1] < numbers2[numbers2.length - 1]) {\n        return numbers1[numbers1.length - 1] + numbers2[numbers2.length - 1];\n    } else {\n        return numbers1[numbers1.length - 1] * numbers2[numbers2.length - 1];\n    }\n}",
+  "openTest": "it('Created function mathOperations', () => {\n    expect(mathOperations).to.be.a('function');\n});\n\nit('mathOperations([1, 2, 3], [4, 5, 12]) should return 15', () => {\n    expect(mathOperations([1, 2, 3], [4, 5, 12])).to.be.equal(15);\n});\n\nit('mathOperations([1, 2, 3], [4, 5, 1]) should return 2', () => {\n    expect(mathOperations([1, 2, 3], [4, 5, 1])).to.be.equal(2);\n});\n\nit('mathOperations([1, 2, 3], [4, 5, 3]) should return 9', () => {\n    expect(mathOperations([1, 2, 3], [4, 5, 3])).to.be.equal(9);\n});\n\nit('mathOperations([1, 2, 3, -3, 7, -15], [4, 5, 3, 8, 10, 11]) should return -4', () => {\n    expect(mathOperations([1, 2, 3, -3, 7, -15], [4, 5, 3, 8, 10, 11])).to.be.equal(-4);\n});\n\nit('mathOperations([1, 2, 3, -3, 7, -5], [4, 5, 3, 8, 10, -5]) should return 25', () => {\n    expect(mathOperations([1, 2, 3, -3, 7, -5], [4, 5, 3, 8, 10, -5])).to.be.equal(25);\n});\n\nit('mathOperations([1, 2, 3, -3, 7, 17], [4, 5, 3, 8, 10, -35]) should return 52', () => {\n    expect(mathOperations([1, 2, 3, -3, 7, 17], [4, 5, 3, 8, 10, -35])).to.be.equal(52);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

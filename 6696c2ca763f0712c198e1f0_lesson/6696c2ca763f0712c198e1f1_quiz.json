@@ -1,0 +1,433 @@
+{
+  "_id": "6696c2ca763f0712c198e1f1",
+  "name": {
+    "ru": "Сравнение на равенство и неравенство. Операторы ==, ===, !=, !==",
+    "en": "Equality and inequality comparison. Operators ==, ===, !=, !==",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e1f2",
+      "name": {
+        "ru": "Выберете правильные утверждения",
+        "en": "Choose the correct statements",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e1f3",
+          "name": {
+            "ru": "Оператор `===` проверяет на равенство без приведения типов.",
+            "en": "The `===` operator checks for equality without type conversion.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e1f4",
+          "name": {
+            "ru": "Оператор строгого равенства выглядит как `==`",
+            "en": "The strict equality operator looks like `==`.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e1f5",
+          "name": {
+            "ru": "Оператор `!=` проверяет на равенство без приведения типов.",
+            "en": "The `!=` operator checks for equality without type conversion.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e1f6",
+          "name": {
+            "ru": "При сравнении рекомендуется использовать оператор `===`",
+            "en": "When comparing it is recommended to use the operator `===`.",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e1f7",
+      "name": {
+        "ru": "Приведение типов — это",
+        "en": "Type coercion is",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e1f8",
+          "name": {
+            "ru": "представление значений в виде Boolean",
+            "en": "representation of values as Boolean",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e1f9",
+          "name": {
+            "ru": "неявное преобразование значений из одного типа данных в другой (например, строки в число)",
+            "en": "implicit conversion of values from one data type to another (e.g., string to number)",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e1fa",
+          "name": {
+            "ru": "представление значений в виде Number",
+            "en": "value representation as Number",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e1fb",
+      "name": {
+        "ru": "В приведенном ниже примере, в консоль выведется",
+        "en": "In the example below, the console will output",
+        "es": ""
+      },
+      "description": {
+        "ru": "```\nconsole.log('1' == 1);\n```",
+        "en": "```\nconsole.log('1' == 1);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e1fc",
+          "name": {
+            "ru": "true, строка '1' приводиться к числу 1",
+            "en": "true, the string '1' is cast to the number 1",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e1fd",
+          "name": {
+            "ru": "false, строка '1' не приводится к числу 1",
+            "en": "false, the string '1' is not reduced to number 1",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e1fe",
+      "name": {
+        "ru": "В приведенном ниже примере, в консоль выведется",
+        "en": "In the example below, the console will output",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconsole.log(false === !!'');\n```",
+        "en": "```javascript\nconsole.log(false === !!'');\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e1ff",
+          "name": {
+            "ru": "false, разные типы данных",
+            "en": "false, different data types",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e200",
+          "name": {
+            "ru": "true, строка '' приводится к false",
+            "en": "true, the string '' is cast to false",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e201",
+      "name": {
+        "ru": "Выберите варианты, где описана работа оператора `!==`.",
+        "en": "Select the options that describe how the operator `!==` works.",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e202",
+          "name": {
+            "ru": "проверяет неравенство без приведения типов",
+            "en": "checks for inequalities without type conversion",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e203",
+          "name": {
+            "ru": "возвращает `false` — если операнды имеют разные значения",
+            "en": "returns `false` - if the operands have different values",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e204",
+          "name": {
+            "ru": "возвращает `true` — если операнды имеют одинаковые значения и разные типы",
+            "en": "returns `true` - if the operands have the same values and different types",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e205",
+          "name": {
+            "ru": "проверяет неравенство с приведением типов",
+            "en": "checks inequalities with type conversion",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e206",
+      "name": {
+        "ru": "В приведенном ниже примере, в консоль выведется",
+        "en": "In the example below, the console will output",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction notEqual(a,b) {\nreturn a!==b;\n}\nconsole.log(notEqual(2,3));\nconsole.log(notEqual(1,1));\nconsole.log(notEqual(1,'1'));\n```",
+        "en": "```javascript\nfunction notEqual(a,b) {\nreturn a!==b;\n}\nconsole.log(notEqual(2,3));\nconsole.log(notEqual(1,1));\nconsole.log(notEqual(1,'1'));\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e207",
+          "name": {
+            "ru": "true, false, true",
+            "en": "true, false, true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e208",
+          "name": {
+            "ru": "false, false, true",
+            "en": "false, false, true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e209",
+          "name": {
+            "ru": "true, true, true",
+            "en": "true, true, true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e20a",
+          "name": {
+            "ru": "true, false, false",
+            "en": "true, false, false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e20b",
+      "name": {
+        "ru": "В приведенном ниже примере, в консоль выведется",
+        "en": "In the example below, the console will output",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconsole.log(!!'1' !== true)\n```",
+        "en": "```javascript\nconsole.log(!!'1' !== true)\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e20c",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e20d",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e20e",
+      "name": {
+        "ru": "Для сравнения значений на равенство/неравенство рекомендуется использовать `===`/`!==`",
+        "en": "To compare values for equality/inequality it is recommended to use `===`/`!==`.",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e20f",
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e210",
+          "name": {
+            "ru": "Нет, рекомендуется использовать `==`/`!=`",
+            "en": "No, it is recommended to use `==`/!=`",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e211",
+      "name": {
+        "ru": "Разница между оператором `==` и оператором `===` состоит в том, что",
+        "en": "The difference between the operator `==` and the operator `===` is that",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e212",
+          "name": {
+            "ru": "оператор `===` сравнивает значения после их приведения к одному типу, а оператор `==` — без такого приведения.",
+            "en": "The `===` operator compares values after they have been cast to the same type, and the `==` operator compares values without such a cast.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e213",
+          "name": {
+            "ru": "разницы нету",
+            "en": "there is no difference",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e214",
+          "name": {
+            "ru": "оператор `==` сравнивает значения после их приведения к одному типу, а оператор `===` — без такого приведения.",
+            "en": "The `==` operator compares values after they have been cast to the same type, and the `===` operator compares values without such a cast.",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e215",
+      "name": {
+        "ru": "Все операторы сравнения возвращают тип данных",
+        "en": "All comparison operators return the data type",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e216",
+          "name": {
+            "ru": "Boolean",
+            "en": "Boolean",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e217",
+          "name": {
+            "ru": "Number",
+            "en": "Number",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e218",
+          "name": {
+            "ru": "String",
+            "en": "String",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

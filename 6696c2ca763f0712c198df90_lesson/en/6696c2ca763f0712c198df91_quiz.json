@@ -1,0 +1,160 @@
+{
+  "name": "Functions with default parameters",
+  "questions": {
+    "0": {
+      "name": "In the expression function sum(n1, n2) in parentheses n1 and n2 are",
+      "variants": {
+        "0": {
+          "name": "Function parameters"
+        },
+        "1": {
+          "name": "Function arguments"
+        }
+      }
+    },
+    "1": {
+      "name": "If one of the arguments is not given when the function is called, it will be undefined",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "2": {
+      "name": "What will appear in the console?",
+      "description": "```javascript\nfunction a(a1){\nconsole.log(a1)\n} \na(1,2,3);\n```",
+      "variants": {
+        "0": {
+          "name": "1,2,3"
+        },
+        "1": {
+          "name": "1"
+        },
+        "2": {
+          "name": "undefined"
+        },
+        "3": {
+          "name": "2, 3"
+        }
+      }
+    },
+    "3": {
+      "name": "What will appear in the console?",
+      "description": "```javascript\nfunction a(a1){\nconsole.log(a1)\n} \na();\n```",
+      "variants": {
+        "0": {
+          "name": "1"
+        },
+        "1": {
+          "name": "a1"
+        },
+        "2": {
+          "name": "undefined"
+        },
+        "3": {
+          "name": "Blank line"
+        }
+      }
+    },
+    "4": {
+      "name": "What will appear in the console?",
+      "description": "```javascript\nfunction a(a1 = 'a1'){\nconsole.log(a1)\n} \na();\n```",
+      "variants": {
+        "0": {
+          "name": "1"
+        },
+        "1": {
+          "name": "'a1'"
+        },
+        "2": {
+          "name": "undefined"
+        },
+        "3": {
+          "name": "Error in the code"
+        }
+      }
+    },
+    "5": {
+      "name": "What will appear in the console?",
+      "description": "```javascript\nfunction a(n1 = 1, n2 = 1){\nreturn n1 + n2\n} \nconsole.log(a());\n```",
+      "variants": {
+        "0": {
+          "name": "1"
+        },
+        "1": {
+          "name": "2"
+        },
+        "2": {
+          "name": "undefined"
+        },
+        "3": {
+          "name": "Error in the code"
+        }
+      }
+    },
+    "6": {
+      "name": "What will appear in the console?",
+      "description": "```javascript\nfunction a(n1 = 1, n2 = 1){\nreturn n1 + n2\n} \nconsole.log(a(10));\n```",
+      "variants": {
+        "0": {
+          "name": "10"
+        },
+        "1": {
+          "name": "1"
+        },
+        "2": {
+          "name": "11"
+        },
+        "3": {
+          "name": "a"
+        }
+      }
+    },
+    "7": {
+      "name": "Select the correct options",
+      "description": "```javascript\nfunction a(n1 = 2, n2 = 1){\nreturn n2 + n1\n} \nconsole.log(a(1, 1));\n```",
+      "variants": {
+        "0": {
+          "name": "a(1, 1) will return 2"
+        },
+        "1": {
+          "name": "a(1) will return 2"
+        },
+        "2": {
+          "name": "a(2, 1) will return 3"
+        },
+        "3": {
+          "name": "a() will return 3"
+        }
+      }
+    },
+    "8": {
+      "name": "The function arguments can be numbers, strings and any other structures.",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "9": {
+      "name": "If a function has one parameter and passes two arguments when called, what happens?",
+      "variants": {
+        "0": {
+          "name": "The function will only work with the first argument"
+        },
+        "1": {
+          "name": "The function will work with all but the first argument"
+        },
+        "2": {
+          "name": "Error when calling a function"
+        }
+      }
+    }
+  }
+}

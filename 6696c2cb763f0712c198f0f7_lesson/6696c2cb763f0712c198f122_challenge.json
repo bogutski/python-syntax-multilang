@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f122",
+  "name": {
+    "en": "",
+    "ru": "Удалить дубликаты чисел из массива"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `deleteDuplicate` принимает массив чисел `arr` и возвращает новый массив, в котором удалены все дубликаты из массива `arr`.\n\nДанная задача решена с помощью цикла и объекта. Исправьте ошибки в коде, чтобы функция работала правильно.\n\nОшибок в цикле нет. Попробуйте повторить код самостоятельно.\n\nПример запуска функции:\n```javascript\ndeleteDuplicate([1, 2, 1, 3, 4, 1, 5, 3, 2]); // [1, 2, 3, 4, 5]\ndeleteDuplicate([1, 2, 3, 4, 5]); // [1, 2, 3, 4, 5]\n```"
+  },
+  "initialSolution": "Function deleteDuplicate([arr]) {\n  const newArr = [empty];\n  const obj = {empty};\n  for (let i = 0; i < arr.length; i++) {\n    if (!obj[arr[i]]) {\n      obj[arr[i]] = 1;\n      newArr.push(arr[i]);\n    }\n  }\n  return newArr;\n}",
+  "completedSolution": "function deleteDuplicate(arr) {\n  const newArr = [];\n  const obj = {};\n  for (let i = 0; i < arr.length; i++) {\n    if (!obj[arr[i]]) {\n      obj[arr[i]] = 1;\n      newArr.push(arr[i]);\n    }\n  }\n  return newArr;\n}",
+  "openTest": "it('Created function deleteDuplicate', () => {\n  expect(deleteDuplicate).to.be.a('function');\n});\n\nit('deleteDuplicate([1, 2, 1, 3, 4, 1, 5, 3, 2]) should return [1, 2, 3, 4, 5]', () => {\n  expect(deleteDuplicate([1, 2, 1, 3, 4, 1, 5, 3, 2])).to.deep.equal([1, 2, 3, 4, 5]);\n});\n\nit('deleteDuplicate([1, 2, 3, 4, 5]) should return [1, 2, 3, 4, 5]', () => {\n  expect(deleteDuplicate([1, 2, 3, 4, 5])).to.deep.equal([1, 2, 3, 4, 5]);\n});\n\nit('deleteDuplicate([1, 1, 1, 1, 1]) should return [1]', () => {\n  expect(deleteDuplicate([1, 1, 1, 1, 1])).to.deep.equal([1]);\n});\n\nit('deleteDuplicate([]) should return []', () => {\n  expect(deleteDuplicate([])).to.deep.equal([]);\n});\n\nit('deleteDuplicate([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]) should return [1, 2, 3, 4, 5]', () => {\n  expect(deleteDuplicate([1, 2, 3, 4, 5, 1, 2, 3, 4, 5])).to.deep.equal([1, 2, 3, 4, 5]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Is that a capital or a small letter?",
+  "instruction": "Write a function `letterDefiner` that takes one string.\n\nThe string always contains only one letter.\n\nThe function should return the string `lower` if the letter passed is lowercase, and `upper` if the letter passed is uppercase.\n\nExamples of running the function:\n```javascript\nletterDefiner('a') // 'lower'\nletterDefiner('A') // 'upper'\nletterDefiner('z') // 'lower'\nletterDefiner('Z') // 'upper'\n```\n\n\nUse the `toLowerCase` and `toUpperCase` methods to determine the case of a letter.\n\nA similar example:\n```javascript\nfunction isUpperCase(letter) {\nreturn letter === letter.toUpperCase();\n}\n```\n\nTranslate to uppercase and lowercase and compare to the original string."
+}

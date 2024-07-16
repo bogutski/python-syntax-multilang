@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f20f",
+  "name": {
+    "en": "",
+    "ru": "Разделить положительные и отрицательных числа в подмассивы"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Разделить массив целых чисел на два массива: массив положительных чисел и массив отрицательных чисел.\nФункция `splitPosNeg` принимает массив целых чисел и возвращает массив, содержащий два подмассива.\nВ первом подмассиве должны быть только положительные числа, а во втором только отрицательные.\nЕсли в массиве есть нули, то они не входят ни в один из подмассивов.\nПорядок чисел в подмассивах должен быть такой же, как и в исходном массиве.\n\nЕсли входящий массив пустой или в нем нет ни положительных, ни отрицательных чисел, то вернуть пустой массив.\n\nПримеры вызова функции:\n```javascript\nsplitPosNeg([1, 2, 3, -1, -2, -3, 0]); // [[1, 2, 3], [-1, -2, -3]]\nsplitPosNeg([1, 2, 3]); // [[1, 2, 3], []]\nsplitPosNeg([-1, -2, -3]); // [[], [-1, -2, -3]]\nsplitPosNeg([0, 0 , 0]); // []\nsplitPosNeg([]); // []\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function splitPosNeg(arr) {\n  const positive = [];\n  const negative = [];\n\n  for (let i = 0; i < arr.length; i++) {\n    if (arr[i] > 0) {\n      positive.push(arr[i]);\n    } else if (arr[i] < 0) {\n      negative.push(arr[i]);\n    }\n  }\n\n  if (arr.length === 0 || (positive.length === 0 && negative.length === 0)) {\n    return [];\n  }\n\n  return [positive, negative];\n\n}",
+  "openTest": "it('Created function splitPosNeg', () => {\n  expect(splitPosNeg).to.be.a('function');\n});\n\nit('splitPosNeg([1, 2, 3, -1, -2, -3, 0]) should return [[1, 2, 3], [-1, -2, -3]]', () => {\n  expect(splitPosNeg([1, 2, 3, -1, -2, -3, 0])).to.be.eql([[1, 2, 3], [-1, -2, -3]]);\n});\n\nit('splitPosNeg([1, 2, 3]) should return [[1, 2, 3], []]', () => {\n  expect(splitPosNeg([1, 2, 3])).to.be.eql([[1, 2, 3], []]);\n});\n\nit('splitPosNeg([-1, -2, -3]) should return [[], [-1, -2, -3]]', () => {\n  expect(splitPosNeg([-1, -2, -3])).to.be.eql([[], [-1, -2, -3]]);\n});\n\nit('splitPosNeg([0, 0 , 0]) should return []', () => {\n  expect(splitPosNeg([0, 0 , 0])).to.be.eql([]);\n});\n\nit('splitPosNeg([]) should return []', () => {\n  expect(splitPosNeg([])).to.be.eql([]);\n});\n\nit('splitPosNeg([1, -2, 0, 3, 11, 0, -22, -3, 0, -60, 110]) should return [[1, 3, 11, 110], [-2, -22, -3, -60]]', () => {\n  expect(splitPosNeg([1, -2, 0, 3, 11, 0, -22, -3, 0, -60, 110])).to.be.eql([[1, 3, 11, 110], [-2, -22, -3, -60]]);\n});\n\nit('splitPosNeg([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) should return [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], []]', () => {\n  expect(splitPosNeg([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).to.be.eql([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], []]);\n});\n\nit('splitPosNeg([0,-1, -2, -3, -4, -5, -6, -7, -8, -9, -10]) should return [[], [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10]]', () => {\n  expect(splitPosNeg([0,-1, -2, -3, -4, -5, -6, -7, -8, -9, -10])).to.be.eql([[], [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10]]);\n});\n\nit('splitPosNeg([0]) should return []', () => {\n  expect(splitPosNeg([0])).to.be.eql([]);\n});\n\nit('splitPosNeg([1]) should return [[1], []]', () => {\n  expect(splitPosNeg([1])).to.be.eql([[1], []]);\n});\n\nit('splitPosNeg([-1]) should return [[], [-1]]', () => {\n  expect(splitPosNeg([-1])).to.be.eql([[], [-1]]);\n});\n\nit('splitPosNeg([0, -10, 0, 10, 0, -10, 0, 10, 0, -10]) should return [[10, 10], [-10, -10, -10]]', () => {\n  expect(splitPosNeg([0, -10, 0, 10, 0, -10, 0, 10, 0, -10])).to.be.eql([[10, 10], [-10, -10, -10]]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

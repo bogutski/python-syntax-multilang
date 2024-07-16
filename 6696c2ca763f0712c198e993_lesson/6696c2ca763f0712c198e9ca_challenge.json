@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e9ca",
+  "name": {
+    "en": "Delete all rows from the array. The continue method",
+    "ru": "Удалите все строки из массива. Метод continue"
+  },
+  "instruction": {
+    "en": "The `deleteString` function takes an array as a parameter.\n\nThe array can contain numbers and strings.\n\nYou need to remove all elements that are not numbers from the array. Use the `continue` method to skip loop iteration.\n\nThe solution will check for the use of the `continue` method.\n\nThe function should return the updated array.\n\nHint:\nAfter an element is removed from an array, the length of the array is reduced by 1. Therefore it is necessary to decrease the index by 1, so as not to miss an element.\n\nAn example of running a function:\n```javascript\ndeleteString([1, 'a', 'b', 2, 'c', 3]); // [1, 2, 3]\ndeleteString([1, 2, 3, false]); // [1, 2, 3]\n```",
+    "ru": "Функция `deleteString` принимает массив в качестве параметра.\n\nМассив может содержать числа и строки.\n\nНеобходимо удалить из массива все элементы, которые не являются числами. Используйте метод `continue` для пропуска итерации цикла.\n\nРешение будет проверять на использование метода `continue`.\n\nФункция должна вернуть обновленный массив.\n\nПодсказка:\nПосле того как удаляется элемент из массива, длина массива уменьшается на 1. Поэтому необходимо уменьшать индекс на 1, чтобы не пропустить элемент.\n\nПример запуска функции:\n```javascript\ndeleteString([1, 'a', 'b', 2, 'c', 3]); // [1, 2, 3]\ndeleteString([1, 2, 3, false]); // [1, 2, 3]\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function deleteString(arr) {\n  for (let i = 0; i < arr.length; i++) {\n    if (typeof arr[i] === 'number') continue;\n    arr.splice(i, 1);\n    i--;\n  }\n  return arr;\n}",
+  "openTest": "it('Created function deleteString', () => {\n  expect(deleteString).to.be.a('function');\n});\n\nit('function deleteString should include continue', () => {\n  expect(deleteString.toString().includes('continue')).to.be.true;\n});\n\nit('function deleteString([1, \"a\", \"b\", 2, \"c\", 3]) should return [1, 2, 3]', () => {\n  expect(deleteString([1, \"a\", \"b\", 2, \"c\", 3])).to.be.eql([1, 2, 3]);\n});\n\nit('function deleteString([1, 2, 3]) should return [1, 2, 3]', () => {\n  expect(deleteString([1, 2, 3])).to.be.eql([1, 2, 3]);\n});\n\nit('function deleteString([10, \"zero\", \"null\", 0, \"c\", 100, 77]) should return [10, 0, 100, 77]', () => {\n  expect(deleteString([10, \"zero\", \"null\", 0, \"c\", 100, 77])).to.be.eql([10, 0, 100, 77]);\n});\n\nit('function deleteString([\"1\", \"null\", \"hello\", \"false\"]) should return []', () => {\n  expect(deleteString([\"1\", \"null\", \"hello\", \"false\"])).to.be.eql([]);\n});\n\nit('function deleteString([1, 2, 3, \"false\", \"true\", 10, 10, \"a\"]) should return [1, 2, 3, 10, 10]', () => {\n  expect(deleteString([1, 2, 3, \"false\", \"true\", 10, 10, \"a\"])).to.be.eql([1, 2, 3, 10, 10]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "By how much do the two arrays differ in length",
+  "instruction": "Write a function `differenceOfArrays` that takes two parameters:\n* `arr1` - array of elements,\n* `arr2` - array of elements.\n\nThe function should return a number - the difference between the lengths of the arrays.\nThe returned number must be positive.\n\nAn example of running the function:\n```javascript\ndifferenceOfArrays([14, 52, 1, 'abc', null], [12, 902, 'zx', 4, 'qwe', undefined]);\n// 1\n```\n\nSimilar example:\n```javascript\nfunction differenceOfStr(str1, str2) {\nif(str1.length > str2.length){\nreturn str1.length - str2.length\n} else {\nreturn str2.length - str1.length\n}\n}\n```"
+}

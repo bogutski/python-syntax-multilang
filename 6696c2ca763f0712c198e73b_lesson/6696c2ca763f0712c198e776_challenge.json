@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e776",
+  "name": {
+    "en": "Checking an array element",
+    "ru": "Проверка элемента массива"
+  },
+  "instruction": {
+    "en": "The function `searchStr` takes two parameters - the array `arr` and the string `str`.\n\nThe function must return a string specifying whether the `str` element is in the `arr` array:\n* If the element `str` is last in the array, the function should return the string `Element str is last in array\n* If the element `str` is the first in the array, the function should return the string `Element str is first in array`.\n* If the element `str` is neither the first nor the last in the array, the function should return the string `Element str is in the middle of array\n* If the element `str` is not found in the array, the function should return the string `Element str is not in array`.\n\nwhere `str` is the value of the `str` parameter.\n\nAn example of running the function:\n```javascript\nsearchStr(['a', 'b', 'c'], 'c'); // 'Element c is last in array'\n```",
+    "ru": "Функция `searchStr` принимает два параметра - массив `arr` и строку `str`.\n\nФункция должна вернуть строку, в которой будет указано, находится ли элемент `str` в массиве `arr`:\n* Если элемент `str` является последним в массиве, то функция должна вернуть строку `Element str is last in array`\n* Если элемент `str` является первым в массиве, то функция должна вернуть строку `Element str is first in array`\n* Если элемент `str` не является ни первым, ни последним в массиве, то функция должна вернуть строку `Element str is in the middle of array`\n* Если элемент `str` не найден в массиве, то функция должна вернуть строку `Element str is not in array`\n\nгде `str` - это значение параметра `str`.\n\nПример запуска функции:\n```javascript\nsearchStr(['a', 'b', 'c'], 'c'); // 'Element c is last in array'\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function searchStr(arr, str) {\n    if (arr.indexOf(str) === arr.length - 1) {\n        return `Element ${str} is last in array`\n    } else if (arr.indexOf(str) === 0) {\n        return `Element ${str} is first in array`\n    } else if (arr.indexOf(str) === -1) {\n        return `Element ${str} is not in array`\n    } else {\n        return `Element ${str} is in the middle of array`\n    }\n}",
+  "openTest": "it('Created function searchStr', () => {\n    expect(searchStr).to.be.a('function');\n});\n\nit(`searchStr(['a', 'b', 'c'], 'c') should return 'Element c is last in array'`, () => {\n    expect(searchStr(['a', 'b', 'c'], 'c')).eql('Element c is last in array');\n});\n\nit(`searchStr(['a', 'b', 'c'], 'a') should return 'Element a is first in array'`, () => {\n    expect(searchStr(['a', 'b', 'c'], 'a')).eql('Element a is first in array');\n});\n\nit(`searchStr(['a', 'b', 'c'], 'd') should return 'Element d is not in array'`, () => {\n    expect(searchStr(['a', 'b', 'c'], 'd')).eql('Element d is not in array');\n});\n\nit(`searchStr(['a', 'b', 'c'], 'b') should return 'Element b is in the middle of array'`, () => {\n    expect(searchStr(['a', 'b', 'c'], 'b')).eql('Element b is in the middle of array');\n});\n\nit(`searchStr(['34', '45', '56'], '67') should return 'Element 67 is not in array'`, () => {\n    expect(searchStr(['34', '45', '56'], '67')).eql('Element 67 is not in array');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

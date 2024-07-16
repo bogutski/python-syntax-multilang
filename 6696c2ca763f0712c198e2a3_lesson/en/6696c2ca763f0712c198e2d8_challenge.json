@@ -1,0 +1,4 @@
+{
+  "name": "Kind seller does not accept coins",
+  "instruction": "At the market, the seller only accepts bills, and coins are considered a discount.\n\nHe sells only three items at a time.\n\nWrite a function `finalPrice` that takes parameters:\n* `price1` - price of the first item\n* `price2` - price of the second item\n* `price3` - price of the third item\n\nThe prices of the goods can be integers or fractions.\n\nThe function should return the amount to be paid for all items including the discount.\n\nExamples of running the function:\n```javascript\nfinalPrice(10.5, 2.5, 3) // 16\nfinalPrice(10.5, 2.5, 3.5) // 16\nfinalPrice(10.5, 2.5, 3.5) // 16\nfinalPrice(10, 2, 3.1) // 15\n```"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Check if the functions are written correctly. Correct errors, if any.",
+  "instruction": "The program must have 4 functions `address`, `driverName`, `totalAmount`, `deliveryTime`.\n\nThe function `address` must return the string `533 Delia dr, Commerce, 30529 GA`.\n\nThe function `driverName` should return the string `Kroistiannsen Jouahn`.\n\nThe function `totalAmount` should return the number `1028`.\n\nThe function `deliveryTime` must return the string `2:30 PM`.\n\nBe careful with the small stuff."
+}

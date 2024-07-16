@@ -1,0 +1,4 @@
+{
+  "name": "Adding the result of the sum to the line",
+  "instruction": "Write a function `sumOfArray` that takes an array of numbers.\n\nThe function must calculate the sum of all the numbers in the array and return a string of the form:\n\n * `Sum of array is ${sum}`, where `sum` is the sum of all numbers in the array.\n\nOnly numbers will be passed in the array.\n\nAn example of running the function:\n```javascript\nsumOfArray([1,2,3,4,5]); // 'Sum of array is 15'\nsumOfArray([0,5,10,15,20,25]); // 'Sum of array is 75'\nsumOfArray([33, 74, 61, 78]); // 'Sum of array is 246'\n```"
+}

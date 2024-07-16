@@ -1,0 +1,5 @@
+{
+  "name": "The function converts any value to a boolean",
+  "instruction": "Write a function `toBoolean` that takes one value and converts it to `boolean` using `Boolean(value)`.",
+  "instructions": {}
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eaf2",
+  "name": {
+    "en": "Replacing spaces in a string with null",
+    "ru": "Замена пробелов в строке на null"
+  },
+  "instruction": {
+    "en": "Write a function `replaceSpaces` that takes a string and returns an array of characters from that string.\n\nThere may be spaces in the string. In the array these spaces must be replaced with `null`.\n\nAs a result, the function will return an array with the string reversed and `null` at the end in the number of spaces in the string.\n\nUse array methods: `push`, `unshift`.\n\nExamples of running a function:\n```js\nreplaceSpaces('hi there') // [ 'e', 'r', 'e', 'h', 't', 'i', 'h', null ]\nreplaceSpaces('abcdef') // [ 'f', 'e', 'd', 'c', 'b', 'a' ]\nreplaceSpaces('a b c d') // [ 'd', 'c', 'b', 'a', null, null, null ]\nreplaceSpaces(' ') // [ null, null, null, null ]\nreplaceSpaces('') // []\n```",
+    "ru": "Напишите функцию `replaceSpaces`, которая принимает строку и возвращает массив из символов этой строки.\n\nВ строке могут быть пробелы. В массиве эти пробелы должны быть заменены на `null`.\n\nВ результате функция вернет массив, в котором строка будет перевернута и в конце будут `null` в количестве пробелов в строке.\n\nИспользуйте методы массива: `push`, `unshift`.\n\nПримеры запуска функции:\n```js\nreplaceSpaces('hi there') // [ 'e', 'r',  'e', 'h', 't',  'i', 'h', null ]\nreplaceSpaces('abcdef') // [ 'f', 'e', 'd', 'c', 'b', 'a' ]\nreplaceSpaces('a b c d') // [ 'd', 'c', 'b', 'a', null, null, null ]\nreplaceSpaces('    ') // [ null, null, null, null ]\nreplaceSpaces('') // []\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function replaceSpaces(string) {\n  const arr = [];\n  for (let i = 0; i < string.length; i++) {\n    if (string[i] === ' ') arr.push(null);\n    else arr.unshift(string[i]);\n  }\n  return arr;\n}",
+  "openTest": "it('Created function replaceSpaces', () => {\n  expect(replaceSpaces).to.be.a('function');\n});\n\nit(\"replaceSpaces('hello world') should return ['d', 'l', 'r', 'o', 'w', 'o', 'l', 'l', 'e', 'h', null]\", () => {\n  expect(replaceSpaces('hello world')).to.deep.equal(['d', 'l', 'r', 'o', 'w', 'o', 'l', 'l', 'e', 'h', null]);\n});\n\nit(\"replaceSpaces('ca lif or nia') should return ['a', 'i', 'n', 'r', 'o', 'f', 'i', 'l', 'a', 'c', null, null, null]\", () => {\n  expect(replaceSpaces('ca lif or nia')).to.deep.equal(['a', 'i', 'n', 'r', 'o', 'f', 'i', 'l', 'a', 'c', null, null, null]);\n});\n\nit(\"replaceSpaces('new j e r s e y') should return ['y', 'e', 's', 'r', 'e', 'j', 'w', 'e', 'n', null, null, null, null, null, null]\", () => {\n  expect(replaceSpaces('new j e r s e y')).to.deep.equal(['y', 'e', 's', 'r', 'e', 'j', 'w', 'e', 'n', null, null, null, null, null, null]);\n});\n\nit(\"replaceSpaces('a b c d') should return ['d', 'c', 'b', 'a', null, null, null]\", () => {\n  expect(replaceSpaces('a b c d')).to.deep.equal(['d', 'c', 'b', 'a', null, null, null]);\n});\n\nit(\"replaceSpaces('APPLES') should return ['S', 'E', 'L', 'P', 'P', 'A']\", () => {\n  expect(replaceSpaces('APPLES')).to.deep.equal(['S', 'E', 'L', 'P', 'P', 'A']);\n});\n\nit(\"replaceSpaces('     ') should return [null, null, null, null, null]\", () => {\n  expect(replaceSpaces('     ')).to.deep.equal([null, null, null, null, null]);\n});\n\nit(\"replaceSpaces('') should return []\", () => {\n  expect(replaceSpaces('')).to.deep.equal([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

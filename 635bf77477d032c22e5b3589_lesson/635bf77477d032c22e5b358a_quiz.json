@@ -1,0 +1,271 @@
+{
+  "_id": "635bf77477d032c22e5b358a",
+  "description": {
+    "ru": "",
+    "en": "",
+    "es": ""
+  },
+  "questions": [
+    {
+      "_id": "635bf77477d032c22e5b358b",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Я установил и пользуюсь браузером Chrome.",
+        "en": "I have installed and am using the Chrome browser.",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b358c"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b358d"
+        }
+      ]
+    },
+    {
+      "_id": "635bf77477d032c22e5b358e",
+      "description": {
+        "ru": "- И закрыл рекламный блок.",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Я успешно открыл сайт jsbin.com.",
+        "en": "I have successfully discovered jsbin.com.",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b358f"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b3590"
+        }
+      ]
+    },
+    {
+      "_id": "635bf77477d032c22e5b3591",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "В jsbin я оставил включенными только вкладки JavaScript и Console.",
+        "en": "In jsbin, I left only the JavaScript and Console tabs enabled.",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b3592"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b3593"
+        }
+      ]
+    },
+    {
+      "_id": "635bf77477d032c22e5b3594",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "На jsbin я понял, как включать нумерацию строк.",
+        "en": "On jsbin I figured out how to enable line numbering.",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b3595"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b3596"
+        }
+      ]
+    },
+    {
+      "_id": "635bf77477d032c22e5b3597",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Я понял и смог открыть консоль браузера через Developer Tools.",
+        "en": "I understood and was able to open the browser console through Developer Tools.",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b3598"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b3599"
+        }
+      ]
+    },
+    {
+      "_id": "635bf77477d032c22e5b359a",
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Я повторил весь код из урока, и он работает точно также, как и ожидалось.",
+        "en": "I repeated all the code from the tutorial and it works exactly as expected.",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "single",
+      "variants": [
+        {
+          "name": {
+            "ru": "Да",
+            "en": "Yes",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b359b"
+        },
+        {
+          "name": {
+            "ru": "Нет",
+            "en": "No",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b359c"
+        }
+      ]
+    },
+    {
+      "_id": "635bf77477d032c22e5b359d",
+      "description": {
+        "ru": "Если, например, будет вызвана `console.log('Hello world!');`",
+        "en": "",
+        "es": ""
+      },
+      "name": {
+        "ru": "Где мы сможем видеть результат работы кода?",
+        "en": "Where will we be able to see the result of the code's work?",
+        "es": ""
+      },
+      "owner": "5b7366b42ffb85d6053b8649",
+      "answerType": "multi",
+      "variants": [
+        {
+          "name": {
+            "ru": "Консоль браузера",
+            "en": "Browser Console",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b359e"
+        },
+        {
+          "name": {
+            "ru": "Консоль jsbin",
+            "en": "Console jsbin",
+            "es": ""
+          },
+          "correct": true,
+          "_id": "635bf77477d032c22e5b359f"
+        },
+        {
+          "name": {
+            "ru": "Нигде",
+            "en": "Nowhere",
+            "es": ""
+          },
+          "correct": false,
+          "_id": "635bf77477d032c22e5b35a0"
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": false,
+  "name": {
+    "ru": "JS Syntax. Играем в \"песочнице\"",
+    "en": "JS Syntax. Playing in the sandbox",
+    "es": ""
+  }
+}

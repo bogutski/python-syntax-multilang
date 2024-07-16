@@ -1,0 +1,4 @@
+{
+  "name": "Even is zero, odd is ten",
+  "instruction": "Write a function `oddEvenTen` that takes one parameter `num` and returns `0` if the number is even, and `10` if the number is odd.\n\nYou need to use the operator `%` (remainder of division)\n\nYou cannot use the conditional operator `if` or the ternary operator `? :` and you cannot use `switch`.\n\nHint: Use the `%` operator (remainder of division) and the `*` operator (multiplication).\n\nIf you multiply any number by `0` the result will be `0`, and if you multiply any number by `1` the result will be equal to the number itself."
+}

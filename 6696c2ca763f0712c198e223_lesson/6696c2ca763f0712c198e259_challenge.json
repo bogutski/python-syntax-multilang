@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e259",
+  "name": {
+    "en": "",
+    "ru": "Параллельна ли прямая оси координат?"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Задача использует оси координат.\n\nОсь `x` направлена вправо, ось `y` – вверх.\n\nТочка `(0, 0)` – это начало координат.\n\nНапишите функцию `isParallelToAxes`, которая принимает параметры:\n- `x1` – координата `x` первой точки\n- `y1` – координата `y` первой точки\n- `x2` – координата `x` второй точки\n- `y2` – координата `y` второй точки\n\nФункция должна возвращать `true`, если прямая, проходящая через эти точки, параллельна оси `x` или оси `y`. В противном случае возвращает `false`.\n\nПримеры:\n```javascript\nisParallelToAxes(0, 0, 0, 1) // true\nisParallelToAxes(0, 0, 1, 0) // true\nisParallelToAxes(0, 0, 0, -1) // true\nisParallelToAxes(0, 0, -1, 0) // true\nisParallelToAxes(0, 0, 1, 1) // false\nisParallelToAxes(0, 0, 1, -1) // false\nisParallelToAxes(0, 0, -1, 1) // false\nisParallelToAxes(0, 0, -1, -1) // false\nisParallelToAxes(0, 0, 0, 0) // false\n\n```\n\nЕсли две точки совпадают, то прямая, проходящая через них, не существует – возвращаем `false`.\n\nДля решения задачи используйте только операторы сравнения и логические операторы.\n\nНарисуйте оси координат и прямую, проходящую через точки. Это поможет вам понять, какие условия должны выполняться, чтобы прямая была параллельна оси."
+  },
+  "initialSolution": "so much fun",
+  "completedSolution": "function isParallelToAxes(x1, y1, x2, y2) {\n  if (x1 === x2 && y1 === y2) return false;\n  return x1 === x2 || y1 === y2;\n}",
+  "openTest": "it('Created function isParallelToAxes', () => {\n  expect(isParallelToAxes).to.be.a('function');\n});\n\nit('isParallelToAxes(0, 0, 0, 1) // true', () => {\n  expect(isParallelToAxes(0, 0, 0, 1)).to.be.true;\n} );\n\nit('isParallelToAxes(0, 0, 1, 0) // true', () => {\n  expect(isParallelToAxes(0, 0, 1, 0)).to.be.true;\n} );\n\nit('isParallelToAxes(0, 0, 0, -1) // true', () => {\n  expect(isParallelToAxes(0, 0, 0, -1)).to.be.true;\n} );\n\nit('isParallelToAxes(0, 0, -1, 0) // true', () => {\n  expect(isParallelToAxes(0, 0, -1, 0)).to.be.true;\n} );\n\nit('isParallelToAxes(0, 0, 1, 1) // false', () => {\n  expect(isParallelToAxes(0, 0, 1, 1)).to.be.false;\n} );\n\nit('isParallelToAxes(0, 0, 1, -1) // false', () => {\n  expect(isParallelToAxes(0, 0, 1, -1)).to.be.false;\n} );\n\nit('isParallelToAxes(0, 0, -1, 1) // false', () => {\n  expect(isParallelToAxes(0, 0, -1, 1)).to.be.false;\n} );\n\nit('isParallelToAxes(0, 0, -1, -1) // false', () => {\n  expect(isParallelToAxes(0, 0, -1, -1)).to.be.false;\n} );\n\nit('isParallelToAxes(0, 0, 0, 0) // false', () => {\n  expect(isParallelToAxes(0, 0, 0, 0)).to.be.false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

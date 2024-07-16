@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f345",
+  "name": {
+    "en": "/*",
+    "ru": "Добавление приветствия"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `addGreeting`, которая принимает массив задач и добавляет в его начало задачу: `Say - Hello, World!`.\n\nФункция должна возвращать обновленный массив задач.\n\nПример запуска функции:\n```javascript\naddGreeting([]); // [\"Say - Hello, World!\"]\naddGreeting([\"Clean the room\"]); // [\"Say - Hello, World!\", \"Clean the room\"]\n```"
+  },
+  "initialSolution": "function addGreeting(){\n}",
+  "completedSolution": "function addGreeting(arr){\n  arr.unshift('Say - Hello, World!')\n  return arr\n}",
+  "openTest": "it('Created function addGreeting', () => {\n  expect(addGreeting).to.be.a('function');\n});\n\nit(\"addGreeting([]) should return ['Say - Hello, World!']\", () => {\n  expect(addGreeting([])).deep.equal([\"Say - Hello, World!\"]);\n});\n\nit(\"addGreeting(['Buy milk']) should return ['Say - Hello, World!', 'Buy milk']\", () => {\n  expect(addGreeting([\"Buy milk\"])).deep.equal([\"Say - Hello, World!\", \"Buy milk\"]);\n});\n\nit(\"addGreeting(['Clean the room', 'Buy groceries']) should return ['Say - Hello, World!', 'Clean the room', 'Buy groceries']\", () => {\n  expect(addGreeting([\"Clean the room\", \"Buy groceries\"])).deep.equal([\"Say - Hello, World!\", \"Clean the room\", \"Buy groceries\"]);\n});\n\nit(\"addGreeting(['Walk the dog']) should include 'Say - Hello, World!' as the first task\", () => {\n  expect(addGreeting([\"Walk the dog\"])[0]).eql(\"Say - Hello, World!\");\n});\n\nit(\"addGreeting(['Do homework']) should have a length of 2\", () => {\n  expect(addGreeting([\"Do homework\"]).length).eq(2);\n});\n\nit(\"addGreeting(['Read a book', 'Write a letter']) should not modify the other tasks' order\", () => {\n  const result = addGreeting([\"Read a book\", \"Write a letter\"]);\n  expect(result[1]).eql(\"Read a book\");\n  expect(result[2]).eql(\"Write a letter\");\n});\n\nit(\"addGreeting(['Go shopping']) should not return an empty array\", () => {\n  expect(addGreeting([\"Go shopping\"]).length).not.eql(0);\n});\n\nit(\"addGreeting(['Study JavaScript']) should return array with 'Say - Hello, World!' as the first element\", () => {\n  expect(addGreeting([\"Study JavaScript\"])[0]).eql(\"Say - Hello, World!\");\n});\n\nit(\"addGreeting(['Take a nap', 'Exercise']) should increase the array length by 1\", () => {\n  const initialLength = 2;\n  const result = addGreeting([\"Take a nap\", \"Exercise\"]);\n  expect(result.length).eql(initialLength + 1);\n});\n\nit(\"addGreeting(['Prepare dinner']) should return an array starting with 'Say - Hello, World!\", () => {\n  const result = addGreeting([\"Prepare dinner\"]);\n  expect(result[0]).eql(\"Say - Hello, World!\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

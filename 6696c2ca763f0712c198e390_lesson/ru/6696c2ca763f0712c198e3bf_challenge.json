@@ -1,0 +1,5 @@
+{
+  "name": "На сколько отличаются две строки по длине",
+  "instruction": "Напишите функцию `diffLength`, которая принимает две строки и возвращает разницу их длин.\n\nПримеры запуска функции:\n```javascript\ndiffLength('aaa', 'aa'); // 1\ndiffLength('aa', 'aaa'); // 1\ndiffLength('aaa', ''); // 3\ndiffLength('', 'aaa'); // 3\ndiffLength('aaa', 'aaa'); // 0\n```\n\nВозвращаемое значение должно быть положительным числом.",
+  "instructions": {}
+}

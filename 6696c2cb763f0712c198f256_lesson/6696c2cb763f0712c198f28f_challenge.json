@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f28f",
+  "name": {
+    "en": "Checking types in the first and last subarray",
+    "ru": "Проверка типов в первом и последнем подмассиве"
+  },
+  "instruction": {
+    "en": "Write a function `firstAndLast` that takes an array of arrays.\n\nThe function should return `true` if all elements of the first and last subarrays have the same data type.\nOtherwise, the function should return `false`.\n\nThere will either be more than two subarrays or the outer array will be empty.\n\nThe first and last subarrays will always contain at least one element.\n\nIf the array is empty, the function should return the string 'Array is empty'.\n\n\nExamples of function calls:\n```javascript\nfirstAndLast([ [1, 2], ['555'], [true], [5, 6] ]);          // true\nfirstAndLast([ ['a', 'b', 'c'], [true], [true] ]);          // false\nfirstAndLast([ ['undefined', 'Hello'], ['world', '123'] ]); // true\nfirstAndLast([ [5 > 3, false], [], ['test'], [5, 3] ]);     // false\nfirstAndLast([ ]);                                          // 'Array is empty'\n```",
+    "ru": "Напишите функцию `firstAndLast`, которая принимает массив массивов.\n\nФункция должна вернуть `true`, если все элементы первого и последнего подмассивов имеют одинаковый тип данных.\nВ противном случае функция должна вернуть `false`.\n\nПодмассивов будет либо больше двух, либо внешний массив будет пустой.\n\nПервый и последний подмассивы всегда будут содержать хотя бы один элемент.\n\nЕсли массив пустой, то функция должна вернуть строку 'Array is empty'.\n\n\nПримеры запуска функции:\n```javascript\nfirstAndLast([ [1, 2], ['555'], [true], [5, 6] ]);          // true\nfirstAndLast([ ['a', 'b', 'c'], [true], [true] ]);          // false\nfirstAndLast([ ['undefined', 'Hello'], ['world', '123'] ]); // true\nfirstAndLast([ [5 > 3, false], [], ['test'], [5, 3] ]);     // false\nfirstAndLast([ ]);                                          // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function firstAndLast(arr){\n  if(!arr.length) return 'Array is empty';\n  let firstType = '';\n\n  for(let i = 0; i < arr.length; i += arr.length - 1){\n    for(let j = 0; j < arr[i].length; j++){\n      if(firstType === '' && arr[i].length) firstType = typeof arr[i][j];\n      else if(firstType !== typeof arr[i][j]) return false;\n    }\n  }\n\n  return true;\n}",
+  "openTest": "it('Created function firstAndLast', () => {\n  expect(firstAndLast).to.be.a('function');\n});\n\nit(\"firstAndLast([ [0, 1, 2], [3, NaN, 5], [6, 7, 8, 9] ]) should return true\", () => {\n  expect(firstAndLast([ [0, 1, 2], [3, NaN, 5], [6, 7, 8, 9] ])).to.be.true;\n});\n\nit(\"firstAndLast([ ['test'], ['a', 1, 'c'], ['test', 'string'] ]) should return true\", () => {\n  expect(firstAndLast([ ['test'], ['a', 1, 'c'], ['test', 'string'] ])).to.be.true;\n});\n\nit(\"firstAndLast([ [true, false], [true, 5 > 10], [true, 5 > 10] ]) should return true\", () => {\n  expect(firstAndLast([ [true, false], [1, 2, 3], [true, 5 > 10] ])).to.be.true;\n});\n\nit(\"firstAndLast([ [undefined], [null], [undefined] ]) should return true\", () => {\n  expect(firstAndLast([ [undefined], [null], [undefined] ])).to.be.true;\n});\n\nit(\"firstAndLast([ [5], [10], [100], [0], [9999], ['123'] ]) should return false\", () => {\n  expect(firstAndLast([ [5], [10], [100], [0], [9999], ['123'] ])).to.be.false;\n});\n\nit(\"firstAndLast([ [NaN, 5, 10], [], [null], ['null'] ]) should return false\", () => {\n  expect(firstAndLast([ [NaN, 5, 10], [], [null], ['null'] ])).to.be.false;\n});\n\nit(\"firstAndLast([]) should return 'Array is empty'\", () => {\n  expect(firstAndLast([])).to.be.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

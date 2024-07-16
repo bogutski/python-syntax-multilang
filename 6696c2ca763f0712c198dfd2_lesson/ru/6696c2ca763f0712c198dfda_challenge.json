@@ -1,0 +1,5 @@
+{
+  "name": "Исправьте ошибку в функции contactFormat, чтобы она склеивала строки правильно.",
+  "instruction": "Исправьте ошибку в функции `contactFormat`, чтобы она склеивала строки правильно.\n\nОжидается что функция примет три параметра: `firstName`, `lastName` и `phone` и вернет строку в формате `'lastName firstName: phone'`\n\nПример запуска:\n```javascript\ncontactFormat('John', 'Doe', '+1234567890'); // 'Doe John: +1234567890'\ncontactFormat('Jane', 'Smith', '+17897897845'); // 'Smith Jane: +17897897845'\n```",
+  "instructions": {}
+}

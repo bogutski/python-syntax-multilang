@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198e2a4",
+  "name": {
+    "ru": "Округление в меньшую сторону. Math.floor()",
+    "en": "Rounding to the lower side. Math.floor()",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e2a5",
+      "name": {
+        "ru": "Math.floor() это...",
+        "en": "Math.floor() is...",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e2a6",
+          "name": {
+            "ru": "Свойство",
+            "en": "Property",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2a7",
+          "name": {
+            "ru": "Метод",
+            "en": "Method",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2a8",
+          "name": {
+            "ru": "Параметр",
+            "en": "Parameter",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2a9",
+          "name": {
+            "ru": "Инструкция",
+            "en": "Instruction",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e2aa",
+      "name": {
+        "ru": "Метод Math.floor() округляет число до ...",
+        "en": "The Math.floor() method rounds a number to ...",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e2ab",
+          "name": {
+            "ru": "Округляет число до ближайшего меньшего целого",
+            "en": "Rounds the number to the nearest integer",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2ac",
+          "name": {
+            "ru": "Округляет число до ближайшего большего целого",
+            "en": "Rounds the number to the nearest whole number",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e2ad",
+      "name": {
+        "ru": "Выберите верный(е) вариант(ы) работы метода Math.floor()",
+        "en": "Select the correct option(s) for the Math.floor() method",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e2ae",
+          "name": {
+            "ru": "Math.floor(45.95); // 46",
+            "en": "Math.floor(45.95); // 46",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2af",
+          "name": {
+            "ru": "Math.floor(45.95); // 45",
+            "en": "Math.floor(45.95); // 45",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2b0",
+          "name": {
+            "ru": "Math.floor(-45.95); // -45",
+            "en": "Math.floor(-45.95); // -45",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2b1",
+          "name": {
+            "ru": "Math.floor(-45.95); // -46",
+            "en": "Math.floor(-45.95); // -46",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e2b2",
+      "name": {
+        "ru": "Выберите вариант(ы) сравнения который вернет true",
+        "en": "Select the comparison option(s) that will return true",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e2b3",
+          "name": {
+            "ru": "Math.floor(-5.1) === -6",
+            "en": "Math.floor(-5.1) === -6",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2b4",
+          "name": {
+            "ru": "Math.floor(-5.1) === -5",
+            "en": "Math.floor(-5.1) === -5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2b5",
+          "name": {
+            "ru": "Math.floor(5.1) === 6",
+            "en": "Math.floor(5.1) === 6",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2b6",
+          "name": {
+            "ru": "Math.floor(5.1) === 5",
+            "en": "Math.floor(5.1) === 5",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e2b7",
+      "name": {
+        "ru": "Выберите вариант(ы) сравнения который вернет false",
+        "en": "Select the comparison option(s) that returns false",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e2b8",
+          "name": {
+            "ru": "Math.floor(0.90) === 1",
+            "en": "Math.floor(0.90) === 1",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2b9",
+          "name": {
+            "ru": "Math.floor(0.60) === 0",
+            "en": "Math.floor(0.60) === 0",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2ba",
+          "name": {
+            "ru": "Math.floor(5.6) === 6",
+            "en": "Math.floor(5.6) === 6",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2bb",
+          "name": {
+            "ru": "Math.floor(5.7) === 5",
+            "en": "Math.floor(5.7) === 5",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e2bc",
+      "name": {
+        "ru": "Выберите вариант(ы) сравнения который вернет true",
+        "en": "Select the comparison option(s) that will return true",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e2bd",
+          "name": {
+            "ru": "Math.floor(7.8) <= 8",
+            "en": "Math.floor(7.8) <= 8",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2be",
+          "name": {
+            "ru": "Math.floor(7.8) < 8",
+            "en": "Math.floor(7.8) < 8",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2bf",
+          "name": {
+            "ru": "Math.floor(7.8) <= 7",
+            "en": "Math.floor(7.8) <= 7",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2c0",
+          "name": {
+            "ru": "Math.floor(7.8) < 7",
+            "en": "Math.floor(7.8) < 7",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e2c1",
+      "name": {
+        "ru": "Выберите вариант(ы) сравнения который вернет true",
+        "en": "Select the comparison option(s) that will return true",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e2c2",
+          "name": {
+            "ru": "Math.floor(7.8) === Math.floor(7.5)",
+            "en": "Math.floor(7.8) === Math.floor(7.5)",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2c3",
+          "name": {
+            "ru": "Math.floor(7.8) <= Math.floor(7.5)",
+            "en": "Math.floor(7.8) <= Math.floor(7.5)",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2c4",
+          "name": {
+            "ru": "Math.floor(7.8) > Math.floor(7.5)",
+            "en": "Math.floor(7.8) > Math.floor(7.5)",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2c5",
+          "name": {
+            "ru": "Math.floor(7.8) >= Math.floor(7.5)",
+            "en": "Math.floor(7.8) >= Math.floor(7.5)",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e2c6",
+      "name": {
+        "ru": "Выберите вариант(ы) сравнения который вернет false",
+        "en": "Select the comparison option(s) that returns false",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e2c7",
+          "name": {
+            "ru": "Math.floor(5.9) === Math.floor(5.3)",
+            "en": "Math.floor(5.9) === Math.floor(5.3)",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2c8",
+          "name": {
+            "ru": "Math.floor(5.9) > Math.floor(5.3)",
+            "en": "Math.floor(5.9) > Math.floor(5.3)",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2c9",
+          "name": {
+            "ru": "Math.floor(5.9) !== Math.floor(5.3)",
+            "en": "Math.floor(5.9) !== Math.floor(5.3)",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2ca",
+          "name": {
+            "ru": "Math.floor(5.9) >= Math.floor(5.3)",
+            "en": "Math.floor(5.9) >= Math.floor(5.3)",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e2cb",
+      "name": {
+        "ru": "Выберите вариант(ы) сравнения который вернет false",
+        "en": "Select the comparison option(s) that returns false",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e2cc",
+          "name": {
+            "ru": "Math.floor(9.3) !== 9",
+            "en": "Math.floor(9.3) !== 9",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2cd",
+          "name": {
+            "ru": "Math.floor(9.3) === 9",
+            "en": "Math.floor(9.3) === 9",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2ce",
+          "name": {
+            "ru": "Math.floor(9.3) > 9",
+            "en": "Math.floor(9.3) > 9",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2cf",
+          "name": {
+            "ru": "Math.floor(9.3) < 9",
+            "en": "Math.floor(9.3) < 9",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e2d0",
+      "name": {
+        "ru": "Выберите верный вариант результата работы кода ниже",
+        "en": "Select the correct result of the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet num = 3.7;\nlet round = Math.floor(num);\nconsole.log(round);\n```",
+        "en": "```javascript\nlet num = 3.7;\nlet round = Math.floor(num);\nconsole.log(round);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e2d1",
+          "name": {
+            "ru": "4",
+            "en": "4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2d2",
+          "name": {
+            "ru": "3",
+            "en": "3",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2d3",
+          "name": {
+            "ru": "3.7",
+            "en": "3.7",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e2d4",
+          "name": {
+            "ru": "3.8",
+            "en": "3.8",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

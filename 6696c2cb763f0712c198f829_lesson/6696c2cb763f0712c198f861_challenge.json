@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f861",
+  "name": {
+    "en": "/*",
+    "ru": "Найти индекс первого элемента, сумма цифр которого равна заданному числу"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findIndexByDigitSum`, которая принимает массив (чисел и других типов элементы), и число.\n\nФункция должна вернуть индекс первого элемента массива, сумма цифр которого равна заданному числу.\n\nЕсли такой элемент не найден, функция должна вернуть строку `Element not found`.\n\n\nПримеры запуска функции:\n```javascript\nfindIndexByDigitSum([123, 'abc', 789, null, 'hello', 101, 202], 6); // 0\nfindIndexByDigitSum([34, true, 56, undefined, 78, NaN, 90], 9); // 2\nfindIndexByDigitSum([11, 'twenty-two', 33, 44], 5); // \"Element not found\"\nfindIndexByDigitSum([12, 34, 56, 78], 10); // \"Element not found\"\n```"
+  },
+  "initialSolution": "function findIndexByDigitSum(){\n\n}",
+  "completedSolution": "function findIndexByDigitSum(arr, n) {\n  const sumOfNums = num => {\n    let sum = 0\n    if(typeof num === 'number' && !isNaN(num)){\n      const toStr = num.toString()\n      for(let i = 0; i < toStr.length; i++){\n        sum += +toStr[i]\n      }\n    } else return false\n\n    return sum\n  }\n\n  const result = arr.findIndex(num => sumOfNums(num) === n)\n  return result !== -1 ? result : 'Element not found';\n}",
+  "openTest": "it('Created function findIndexByDigitSum', () => {\n  expect(findIndexByDigitSum).to.be.a('function');\n});\n\nit('findIndexByDigitSum([123, \"abc\", 789, null, \"hello\", 101, 202], 6) should return 0', function() {\n  expect(findIndexByDigitSum([123, \"abc\", 789, null, \"hello\", 101, 202], 6)).to.equal(0);\n});\n\nit('findIndexByDigitSum([34, true, 56, undefined, 78, NaN, 90], 9) should return 6', function() {\n  expect(findIndexByDigitSum([34, true, 56, undefined, 78, NaN, 90], 9)).to.equal(6);\n});\n\nit('findIndexByDigitSum([12, 34, 56, 78], 10) should return \"Element not found\"', function() {\n  expect(findIndexByDigitSum([12, 34, 56, 78], 10)).to.equal(\"Element not found\");\n});\n\nit('findIndexByDigitSum([11, \"twenty-two\", 33, 44], 5) should return \"Element not found\"', function() {\n  expect(findIndexByDigitSum([11, \"twenty-two\", 33, 44], 5)).to.equal(\"Element not found\");\n});\n\nit('findIndexByDigitSum([9, 18, \"twenty-seven\", 36], 9) should return 0', function() {\n  expect(findIndexByDigitSum([9, 18, \"twenty-seven\", 36], 9)).to.equal(0);\n});\n\nit('findIndexByDigitSum([123, 321, 213, 231], 6) should return 0', function() {\n  expect(findIndexByDigitSum([123, 321, 213, 231], 6)).to.equal(0);\n});\n\nit('findIndexByDigitSum([], 1) should return \"Element not found\"', function() {\n  expect(findIndexByDigitSum([], 1)).to.equal(\"Element not found\");\n});\n\nit('findIndexByDigitSum([15, 24, 33, 42], 6) should return 0', function() {\n  expect(findIndexByDigitSum([15, 24, 33, 42], 6)).to.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Format a number. Three decimal places. toFixed",
+  "instruction": "Write a function `formatNumber` that takes one number and returns it rounded to three decimal places.\n\nUse `toFixed` for rounding. Convert the result to a number using unary plus.\n\nExamples of running a function:\n```javascript\nformatNumber(1) // 1\nformatNumber(1.1) // 1.1\nformatNumber(1.11) // 1.11\nformatNumber(1.1111) // 1.111\nformatNumber(1.231) // 1.231\nformatNumber(1.2398) // 1.24\n```"
+}

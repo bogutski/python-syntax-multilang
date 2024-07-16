@@ -1,0 +1,4 @@
+{
+  "name": "Is the number an integer",
+  "instruction": "To check if a number is an integer the `%` (remainder of division) operator is used.\n\nIf the remainder of division by 1 is zero, the number is an integer.\n\nExample:\n```javascript\nconsole.log(10 % 1); // 0\nconsole.log(10.5 % 1); // 0.5\n```\n\nCreate a function `isInteger` that takes a single parameter - a number.\n\nThe function should return `true` if the number is an integer, and `false` if not."
+}

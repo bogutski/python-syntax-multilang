@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e3fd",
+  "name": {
+    "en": "",
+    "ru": "Палиндром для слова из пяти букв"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Палиндром — это слово или фраза, которые одинаково читаются в обоих направлениях.\n\nНапример, слово `kayak` является палиндромом, так как оно читается одинаково слева направо и справа налево.\n\nСлово `canoe` не является палиндромом.\n\nНапиши функцию `isPalindrome`, которая принимает строку и возвращает `true`, если строка является палиндромом, и `false` в противном случае.\n\nСтрока будет всегда состоять из пяти букв.\n\nДля решения это задачи сравните на равенство первый и последний символ строки, второй и предпоследний символ строки. Средний символ не учитывайте.\n\nПримеры запуска функции:\n```javascript\nisPalindrome('kayak'); // true\nisPalindrome('canoe'); // false\nisPalindrome('rutur'); // true\nisPalindrome('racer'); // false\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isPalindrome(str) {\n  return str[0] === str[4] && str[1] === str[3];\n}",
+  "openTest": "it('Created function isPalindrome', () => {\n  expect(isPalindrome).to.be.a('function');\n});\n\nit('isPalindrome(\"kayak\") should return true', () => {\n  expect(isPalindrome('kayak')).to.equal(true);\n});\n\nit('isPalindrome(\"canoe\") should return false', () => {\n  expect(isPalindrome('canoe')).to.equal(false);\n});\n\nit('isPalindrome(\"rutur\") should return true', () => {\n  expect(isPalindrome('rutur')).to.equal(true);\n});\n\nit('isPalindrome(\"racer\") should return false', () => {\n  expect(isPalindrome('racer')).to.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198edce",
+  "name": {
+    "en": "",
+    "ru": "Удалить дубликаты слов, включая цифры"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `checkDuplicates` принимает строку, которая содержит слова, числа и разные символы.\n\nНужно удалить все дубликаты и вернуть сроку состоящую из уникальных слов, чисел и символов, разделенных пробелом.\n\nПример запуска функции:\n```javascript\ncheckDuplicates(\"1 2 1 2 hello hello 1 1 1\") // \"1 2 hello\"\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function checkDuplicates(str) {\n  let result = '';\n  let word = '';\n  const obj = {};\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] !== ' ') word += str[i];\n\n    if (str[i] === ' ' || i === str.length - 1) {\n      if (word && !obj[word]) {\n        obj[word] = 1;\n        result += word + ' ';\n      }\n      word = '';\n    }\n  }\n  return result.trim()\n}",
+  "openTest": "it('Created function checkDuplicates', () => {\n  expect(checkDuplicates).to.be.a('function');\n});\n\nit('checkDuplicates(\"1 2 1 2 hello hello 1 1 1\") should returns \"1 2 hello\"', () => {\n  expect(checkDuplicates('1 2 1 2 hello hello 1 1 1')).to.be.equal('1 2 hello');\n});\n\nit('checkDuplicates(\"hello JS 2023\") should return \"hello JS 2023\"', () => {\n  expect(checkDuplicates('hello JS 2023')).to.be.equal('hello JS 2023');\n});\n\nit('checkDuplicates(\"hello\") should return \"hello\"', () => {\n  expect(checkDuplicates('hello')).to.be.equal('hello');\n});\n\nit('checkDuplicates(\"\") should return \"\"', () => {\n  expect(checkDuplicates('')).to.be.equal('');\n});\n\nit('checkDuplicates(\"1 ? ? JS coding JS\") should return \"1 ? JS coding\"', () => {\n  expect(checkDuplicates('1 ? ? JS coding JS')).to.be.equal('1 ? JS coding');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

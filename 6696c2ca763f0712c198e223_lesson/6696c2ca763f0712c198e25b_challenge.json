@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e25b",
+  "name": {
+    "en": "",
+    "ru": "Открыто в определенные промежутки времени"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `isOpen`, которая принимает параметры:\n* `time` – время в часах, число от 1 до 12;\n* `ampm` – строка, может быть либо `'am'`, либо `'pm'`;\n\nФункция должна возвращать `true`, если время находится в промежутке от 9 до 11 `am` или от 8 до 10 `pm`.\n\nВо всех остальных случаях функция должна возвращать `false`.\n\nПримеры запуска функции:\n```javascript\nisOpen(8, 'am'); // false\nisOpen(9, 'am'); // true\nisOpen(10, 'am'); // true\nisOpen(11, 'am'); // true\nisOpen(12, 'am'); // false\nisOpen(7, 'pm'); // false\nisOpen(8, 'pm'); // true\nisOpen(9, 'pm'); // true\nisOpen(10, 'pm'); // true\nisOpen(11, 'pm'); // false\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isOpen(time, ampm) {\n  if (ampm === 'am') {\n    return time >= 9 && time <= 11;\n  } else if (ampm === 'pm') {\n    return time >= 8 && time <= 10;\n  } else {\n    return false;\n  }\n}",
+  "openTest": "it('Created function isOpen', () => {\n  expect(isOpen).to.be.a('function');\n});\n\nit('isOpen(8, \"am\") should return false', () => {\n  expect(isOpen(8, 'am')).to.be.equal(false);\n});\n\nit('isOpen(9, \"am\") should return true', () => {\n  expect(isOpen(9, 'am')).to.be.equal(true);\n});\n\nit('isOpen(10, \"am\") should return true', () => {\n  expect(isOpen(10, 'am')).to.be.equal(true);\n});\n\nit('isOpen(11, \"am\") should return true', () => {\n  expect(isOpen(11, 'am')).to.be.equal(true);\n});\n\nit('isOpen(12, \"am\") should return false', () => {\n  expect(isOpen(12, 'am')).to.be.equal(false);\n});\n\nit('isOpen(7, \"pm\") should return false', () => {\n  expect(isOpen(7, 'pm')).to.be.equal(false);\n});\n\nit('isOpen(8, \"pm\") should return true', () => {\n  expect(isOpen(8, 'pm')).to.be.equal(true);\n});\n\nit('isOpen(9, \"pm\") should return true', () => {\n  expect(isOpen(9, 'pm')).to.be.equal(true);\n});\n\nit('isOpen(10, \"pm\") should return true', () => {\n  expect(isOpen(10, 'pm')).to.be.equal(true);\n});\n\nit('isOpen(11, \"pm\") should return false', () => {\n  expect(isOpen(11, 'pm')).to.be.equal(false);\n});\n\nit('isOpen(12, \"pm\") should return false', () => {\n  expect(isOpen(12, 'pm')).to.be.equal(false);\n});\n\nit('isOpen(1, \"pm\") should return false', () => {\n  expect(isOpen(1, 'pm')).to.be.equal(false);\n});\n\nit('isOpen(1, \"am\") should return false', () => {\n  expect(isOpen(1, 'am')).to.be.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

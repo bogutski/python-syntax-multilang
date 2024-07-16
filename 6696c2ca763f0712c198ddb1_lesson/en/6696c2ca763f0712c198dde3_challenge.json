@@ -1,0 +1,6 @@
+{
+  "name": "Calculate and output to the console. The remainder of the division",
+  "instruction": "Only one line.\n\nWrite the command `console.log(11 % 4);`\n\nObserve spaces and punctuation marks.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log(11 % 4);\n```"
+}

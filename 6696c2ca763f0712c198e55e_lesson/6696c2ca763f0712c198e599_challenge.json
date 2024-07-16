@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e599",
+  "name": {
+    "en": "Stone, scissors, paper",
+    "ru": "Камень, ножницы, бумага\n"
+  },
+  "instruction": {
+    "en": "The object is given:\n```javascript\nconst winner = {\nrock: \"scissors\",\npaper: \"rock\",\nscissors: \"paper\",\n};\n```\n\nThe object contains the algorithm for the game \"rock, scissors, paper\":\n* `rock` defeats `scissors`;\n* `scissors` defeats `paper`;\n* `paper` defeats `rock`.\n\nWrite a function `getWinner` that takes two arguments:\n* `player1` - choice of the first player, can take values `rock`, `paper` or `scissors`, string;\n* `player2` - selection of the second player, can take values `rock`, `paper` or `scissors`, string;\n\nThe function must return a string with the result of the game:\n* `Player 1 won` - if the first player won;\n* `Player 2 won` - if the second player won;\n* `Draw` - if there is a draw.\n\nConditions:\n* Must be solved without using the operators `&&` and `||`.\n\nExample of running a function:\n```javascript\ngetWinner(\"rock\", \"scissors\"); // \"Player 1 won\"\ngetWinner(\"paper\", \"scissors\"); // \"Player 2 won\"\ngetWinner(\"paper\", \"paper\"); // \"Draw\"\n```",
+    "ru": "Дан объект:\n```javascript\nconst winner = {\n  rock: \"scissors\",\n  paper: \"rock\",\n  scissors: \"paper\",\n};\n```\n\nОбъект содержит в себе алгоритм игры \"Камень, ножницы, бумага\":\n* `rock` побеждает `scissors`;\n* `scissors` побеждает `paper`;\n* `paper` побеждает `rock`.\n\nДопишите функцию `getWinner`, которая принимает два аргумента:\n* `player1` - выбор первого игрока, может принимать значения `rock`, `paper` или `scissors`, строка;\n* `player2` - выбор второго игрока, может принимать значения `rock`, `paper` или `scissors`, строка;\n\nФункция должна возвращать строку с результатом игры:\n* `Player 1 won` - если первый игрок победил;\n* `Player 2 won` - если второй игрок победил;\n* `Draw` - если ничья.\n\nУсловия:\n* Необходимо решить без использования операторов `&&` и `||`.\n\nПример запуска функции:\n```javascript\ngetWinner(\"rock\", \"scissors\"); // \"Player 1 won\"\ngetWinner(\"paper\", \"scissors\"); // \"Player 2 won\"\ngetWinner(\"paper\", \"paper\"); // \"Draw\"\n```"
+  },
+  "initialSolution": "const winner = {\n  rock: \"scissors\",\n  paper: \"rock\",\n  scissors: \"paper\",\n};\n\nfun",
+  "completedSolution": "const winner = {\n  rock: \"scissors\",\n  paper: \"rock\",\n  scissors: \"paper\",\n};\n\nfunction getWinner(player1, player2) {\n  if (winner[player1] === player2) {\n    return \"Player 1 won\";\n  } else if (winner[player2] === player1) {\n    return \"Player 2 won\";\n  } else {\n    return \"Draw\";\n  }\n}",
+  "openTest": "it(\"Created function `getWinner`\", () => {\n  expect(getWinner).to.be.a(\"function\");\n});\n\nit('getWinner(\"rock\", \"scissors\")  // \"Player 1 won\"', () => {\n  expect(getWinner(\"rock\", \"scissors\")).eq(\"Player 1 won\");\n});\n\nit('getWinner(\"scissors\", \"paper\")  // \"Player 1 won\"', () => {\n  expect(getWinner(\"scissors\", \"paper\")).eq(\"Player 1 won\");\n});\n\nit('getWinner(\"paper\", \"rock\")  // \"Player 1 won\"', () => {\n  expect(getWinner(\"paper\", \"rock\")).eq(\"Player 1 won\");\n});\n\nit('getWinner(\"rock\", \"paper\")  // \"Player 2 won\"', () => {\n  expect(getWinner(\"rock\", \"paper\")).eq(\"Player 2 won\");\n});\n\nit('getWinner(\"scissors\", \"rock\")  // \"Player 2 won\"', () => {\n  expect(getWinner(\"scissors\", \"rock\")).eq(\"Player 2 won\");\n});\n\nit('getWinner(\"paper\", \"scissors\")  // \"Player 2 won\"', () => {\n  expect(getWinner(\"paper\", \"scissors\")).eq(\"Player 2 won\");\n});\n\nit('getWinner(\"rock\", \"rock\")  // \"Draw\"', () => {\n  expect(getWinner(\"rock\", \"rock\")).eq(\"Draw\");\n});\n\nit('getWinner(\"scissors\", \"scissors\")  // \"Draw\"', () => {\n  expect(getWinner(\"scissors\", \"scissors\")).eq(\"Draw\");\n});\n\nit('getWinner(\"paper\", \"paper\")  // \"Draw\"', () => {\n  expect(getWinner(\"paper\", \"paper\")).eq(\"Draw\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

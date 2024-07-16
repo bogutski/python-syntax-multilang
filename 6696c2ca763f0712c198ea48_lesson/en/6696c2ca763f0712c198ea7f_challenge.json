@@ -1,0 +1,5 @@
+{
+  "name": "The length of all lines in the array",
+  "instruction": "Fix the `totalLength` function so that it returns the sum of the lengths of all strings in the array.\n\nExamples of running the function:\n```javascript\ntotalLength(['hello', 'hi', 'howdy']); // 12\ntotalLength(['orange', 'apple', 'pear']); // 15\ntotalLength([]); // 0\n```",
+  "instructions": {}
+}

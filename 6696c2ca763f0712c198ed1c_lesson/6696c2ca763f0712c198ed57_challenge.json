@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ed57",
+  "name": {
+    "en": "The object of the lines and their number",
+    "ru": "Объект строк и их количества"
+  },
+  "instruction": {
+    "en": "Write a function `objectCount` that takes an array and returns an object where the keys are the words in the array and the value of the key is the number of those words in the array.\n\nAll strings in the array are written without spaces and in lowercase.\n\nIf the array is empty, the function should return `\"No words - no object\"`.\n\nYou can use the `hasOwnProperty` method to check if there is a key in the object.\n\n\nExamples of running the function:\n```javascript\nobjectCount(['hello', 'hello', 'hello', 'bob', 'bob']); // {hello: 3, bob: 2}\nobjectCount(['a', 'b', 'b', 'k', 'a']); // {a: 2, b: 2, k: 1}\nobjectCount([]); // 'No words - no object'\n```",
+    "ru": "Напишите функцию `objectCount`, которая принимает массив и возвращает объект, где ключи - слова из массива, а значение ключа - количество этих слов в массиве.\n\nВсе строки в массиве написаны без пробелов и в нижнем регистре.\n\nЕсли массив пустой, то функция должна вернуть `\"No words - no object\"`.\n\nДля проверки наличия ключа в объекте можно использовать метод `hasOwnProperty`.\n\n\nПримеры запуска функции:\n```javascript\nobjectCount(['hello', 'hello', 'hello', 'bob', 'bob']); // {hello: 3, bob: 2}\nobjectCount(['a', 'b', 'b', 'k', 'a']); // {a: 2, b: 2, k: 1}\nobjectCount([]); // 'No words - no object'\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function objectCount(arr){\n  if(arr.length === 0) return 'No words - no object';\n  const obj = {};\n  for (let i = 0; i < arr.length; i++){\n    if(obj.hasOwnProperty(arr[i])){\n      obj[arr[i]] += 1;\n    } else obj[arr[i]] = 1;\n  }\n  return obj;\n}",
+  "openTest": "it('objectCount is a function', () => {\n  expect(objectCount).to.be.a('function');\n})\n\nit(\"objectCount(['hello', 'hello', 'bob'])) should return {hello: 3, bob: 2}\", () =>{\n  expect(objectCount(['hello', 'hello', 'hello', 'bob', 'bob'])).eql({hello: 3, bob: 2});\n});\n\nit(\"objectCount(['apple', 'fig', 'orange', 'apple', 'fig'])) should return {apple: 2, fig: 2, orange: 1}\", () =>{\n  expect(objectCount(['apple', 'fig', 'orange', 'apple', 'fig'])).eql({apple: 2, fig: 2, orange: 1});\n});\n\nit(\"objectCount(['a', 'b', 'b', 'k', 'a'])) should return {a: 2, b: 2, k: 1}\", () =>{\n  expect(objectCount(['a', 'b', 'b', 'k', 'a'])).eql({a: 2, b: 2, k: 1});\n});\n\nit(\"objectCount([])) should return 'No words - no object'\", () =>{\n  expect(objectCount([])).eql('No words - no object');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

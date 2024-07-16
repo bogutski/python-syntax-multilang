@@ -1,0 +1,4 @@
+{
+  "name": "Array with string and element indices",
+  "instruction": "The `stringAndElIndexes` function takes a string and an element.\n\nCorrect the function to return an array in which:\n\n* The first element is the original string from which the given element is removed,\n\n* All other elements are indexes of elements that were deleted from the original string\n\n\nFor example, string `apple` and element `p`, the function should return array `['ale', 1, 2]`.\n\nIn case of an empty string the function should return an empty array.\n\nThere are 5 errors in the code. From the `for` loop to the last `if` condition, everything is fine.\n\nTry to figure it out and rewrite the code yourself.\n\n\nExamples of running a function:\n```javascript\nstringAndElIndexes('apple', 'a'); // ['pple', 0]\nstringAndElIndexes('Hello World', 'o'); // ['Hell Wrld', 4, 7]\nstringAndElIndexes('', ''); // []\n```"
+}

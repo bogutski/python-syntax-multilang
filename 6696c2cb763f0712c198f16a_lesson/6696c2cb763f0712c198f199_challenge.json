@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f199",
+  "name": {
+    "en": "",
+    "ru": "Удаление цифр и проверка на симметричность"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `isArraySymmetrical`, которая принимает массив строк.\n\nФункция должна вернуть `true`, если массив является симметричным, и `false` в противном случае.\n\nВ строках могут цифры, от `0` до `9` и буквы.\n\nПеред проверкой на симметричность, нужно удалить все цифры из строк.\n\nЭта задача, повторяет алгоритм прошлой задачи, но вместо пробелов, нужно удалять цифры.\n\n\nПримеры запуска функции:\n```javascript\nisArraySymmetrical(['A8', 'B90B, 'C2', 'b4b', 'a55']);               // 'abbcbba' => true\nisArraySymmetrical(['true', 'aAa', 'EURT', '789123']);               // 'trueaaaeurt' => true\nisArraySymmetrical(['123TRUE', '5O6R9', '0b0e0', '79ro', '97eurt']); // 'trueorberoeurt' => false\nisArraySymmetrical([]);                                              // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isArraySymmetrical(arr) {\n  if(!arr.length) return 'Array is empty';\n  const str = arr.join('').toLowerCase();\n  let newStr = '';\n\n  for(let i = 0; i < str.length; i++) {\n    if(str[i] >= '0' && str[i] <= '9') continue;\n    else newStr += str[i];\n  }\n\n  for(let i = 0; i < newStr.length / 2; i++) {\n    if(newStr[i] !== newStr[newStr.length - i - 1]) return false;\n  }\n\n  return true;\n}",
+  "openTest": "it('Created function isArraySymmetrical', () => {\n  expect(isArraySymmetrical).to.be.a('function');\n});\n\nit(\"Function isArraySymmetrical does not include 'reverse' method\", () => {\n  expect(isArraySymmetrical.toString()).to.not.include('reverse');\n});\n\nit(\"isArraySymmetrical(['A42', 'b44', 'c', '74b', '90a']) should return true\", () => {\n  expect(isArraySymmetrical(['A42', 'b44', 'c', '74b', '90a'])).to.be.true;\n});\n\nit(\"isArraySymmetrical(['1te75st', 'S58H9OULD', 'be', 'false']) should return false\", () => {\n  expect(isArraySymmetrical(['1te75st', 'S58H9OULD', 'be', 'false'])).to.be.false;\n});\n\nit(\"isArraySymmetrical(['111TR5UE0', 'OR5', '1b2e3E4b5', '6r7o8', '9e0ur1t2']) should return true\", () => {\n  expect(isArraySymmetrical(['111TR5UE0', 'OR5', '1b2e3E4b5', '6r7o8', '9e0ur1t2'])).to.be.true;\n});\n\nit(\"isArraySymmetrical([' 12 ad3', '5fa5 5d', 'das1 23 ']) should return false\", () => {\n  expect(isArraySymmetrical([' 12 ad3', '5fa5 5d', 'das1 23 '])).to.be.false;\n});\n\nit(\"isArraySymmetrical(['789', 'abc', 'cba', '987']) should return true\", () => {\n  expect(isArraySymmetrical(['789', 'abc', 'cba', '987'])).to.be.true;\n});\n\nit(\"isArraySymmetrical([]) should return 'Array is empty'\", () => {\n  expect(isArraySymmetrical([])).to.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

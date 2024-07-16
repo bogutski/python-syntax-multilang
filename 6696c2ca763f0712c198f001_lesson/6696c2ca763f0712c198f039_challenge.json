@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198f039",
+  "name": {
+    "en": "",
+    "ru": "Найти минимальное и максимальное число из двух массивов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `minAndMax`, которая принимает два массива чисел.\n\nФункция должна вернуть массив из двух чисел, где:\n * первое число - это `минимальное` число из двух массивов,\n * второе число - это `максимальное` число из двух массивов.\n\nЕсли оба массива пустые, то функция должна вернуть массив из двух `undefined`.\n\n\nПримеры запуска функции:\n```javascript\nminAndMax([-125, -75, -45], [15, 12, 36]); // [-125, 36]\nminAndMax([11, 2, 3, 4, 5 ,-22], []);      // [-22, 11]\nminAndMax([1,2,3], [4,5,6]);               // [1,6]\nminAndMax([0], [0]);                       // [0, 0]\nminAndMax([], []);                         // [undefined, undefined]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function minAndMax(arr1, arr2){\n  const newArr = [...arr1, ...arr2];\n  let min = newArr[0];\n  let max = newArr[0];\n\n  for (let i = 1; i < newArr.length; i++){\n    if(newArr[i] < min) min = newArr[i];\n    if(newArr[i] > max) max = newArr[i];\n  }\n\n  return [min, max];\n}",
+  "openTest": "it('Created function minAndMax', () => {\n  expect(minAndMax).to.be.a('function');\n});\n\nit('Function minAndMax should not include Math.min', () => {\n  expect(minAndMax.toString()).to.not.include('Math.min');\n});\n\nit('Function minAndMax should not include Math.max', () => {\n  expect(minAndMax.toString()).to.not.include('Math.max');\n});\n\nit('minAndMax([1,2,3], [4,5,6]) should return [1,6]', () => {\n  expect(minAndMax([1,2,3], [4,5,6])).to.eql([1,6]);\n});\n\nit('minAndMax([-125, -75, -365, -4745, -1], [15, 423, 541, 12, 36, 888]) should return [-4745, 888]', () => {\n  expect(minAndMax([-125, -75, -365, -4745, -1], [15, 423, 541, 12, 36, 888])).to.eql([-4745, 888]);\n});\n\nit('minAndMax([111, 2, 3, 4, 5 ,-222], []) should return [-222, 111]', () => {\n  expect(minAndMax([111, 2, 3, 4, 5 ,-222], [])).to.eql([-222, 111]);\n});\n\nit('minAndMax([0], [0]) should return [0, 0]', () => {\n  expect(minAndMax([0], [0])).to.eql([0, 0]);\n});\n\nit('minAndMax([], []) should return [undefined, undefined]', () => {\n  expect(minAndMax([], [])).to.eql([undefined, undefined]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

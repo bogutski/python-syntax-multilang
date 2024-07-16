@@ -1,0 +1,433 @@
+{
+  "_id": "6696c2ca763f0712c198e0b3",
+  "name": {
+    "ru": "Результат работы функции в переменную",
+    "en": "The result of the function into a variable",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e0b4",
+      "name": {
+        "ru": "Результат работы функции можно присвоить в переменную",
+        "en": "The result of the function can be assigned to a variable",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e0b5",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0b6",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e0b7",
+      "name": {
+        "ru": "Функцию можно вызывать несколько раз и получать разные результаты, затем присвоить результаты в переменные",
+        "en": "You can call the function several times and get different results, then assign the results to variables",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e0b8",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0b9",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e0ba",
+      "name": {
+        "ru": "Если функция возвращает значение, то можно присвоить результат работы функции в переменную",
+        "en": "If the function returns a value, you can assign the result of the function to a variable",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e0bb",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0bc",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e0bd",
+      "name": {
+        "ru": "Если в функции нет return, то результат работы функции можно присвоить в переменную",
+        "en": "If there is no return in the function, the result of the function can be assigned to a variable",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e0be",
+          "name": {
+            "ru": "Будет ошибка",
+            "en": "There will be an error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0bf",
+          "name": {
+            "ru": "Будет присвоено undefined",
+            "en": "Will be assigned undefined",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0c0",
+          "name": {
+            "ru": "Присвоить не получится",
+            "en": "You can't assign it.",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e0c1",
+      "name": {
+        "ru": "Можно ли присвоить результат работы функции в переменную объявленную с помощью const?",
+        "en": "Is it possible to assign the result of a function to a variable declared with const?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e0c2",
+          "name": {
+            "ru": "Нет. Переменная объявленная с помощью const не может быть изменена",
+            "en": "No. A variable declared with const cannot be changed",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0c3",
+          "name": {
+            "ru": "Да. Сначала переменная объявляется, а потом присваивается результат работы функции",
+            "en": "Yes. First the variable is declared and then the result of the function is assigned",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0c4",
+          "name": {
+            "ru": "Да. Сначала вызывается функция, а потом присваивается значение переменной",
+            "en": "Yes. The function is called first and then the value is assigned to the variable",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0c5",
+          "name": {
+            "ru": "Будет ошибка",
+            "en": "There will be an error",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e0c6",
+      "name": {
+        "ru": "При вызове функции можно передать аргументы, а затем результат работы функции присвоить в переменную",
+        "en": "When you call a function, you can pass arguments and then assign the result of the function to a variable",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e0c7",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0c8",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0c9",
+          "name": {
+            "ru": "Будет ошибка",
+            "en": "There will be an error",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e0ca",
+      "name": {
+        "ru": "Функцию можно вызывать столько раз, сколько нужно",
+        "en": "The function can be called as many times as needed",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e0cb",
+          "name": {
+            "ru": "Есть лимит в 128 вызовов",
+            "en": "There is a limit of 128 calls",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0cc",
+          "name": {
+            "ru": "Есть лимит в 1024 вызова",
+            "en": "There is a limit of 1024 calls",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0cd",
+          "name": {
+            "ru": "Лимита нет",
+            "en": "There is no limit",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e0ce",
+      "name": {
+        "ru": "Переменная может называться так же, как и функция",
+        "en": "The variable can be called in the same way as the function",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e0cf",
+          "name": {
+            "ru": "Да. Если у них разные области видимости",
+            "en": "Yes. If they have different scopes",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0d0",
+          "name": {
+            "ru": "Да. Если у них одинаковые области видимости",
+            "en": "Yes. If they have the same scope",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0d1",
+          "name": {
+            "ru": "Нет. Нельзя ни при каких условиях",
+            "en": "No. You can't under any circumstances",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0d2",
+          "name": {
+            "ru": "Не рекомендуется, так как это может ввести в заблуждение",
+            "en": "Not recommended, as it can be misleading",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e0d3",
+      "name": {
+        "ru": "Переменную в которую присвоили результат работы функции нельзя изменить, даже если она объявлена с помощью ключевого слова let",
+        "en": "The variable to which the result of a function is assigned cannot be changed, even if it is declared with the let keyword.",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e0d4",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0d5",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e0d6",
+      "name": {
+        "ru": "Какой из вариантов не вызовет ошибку? Попробуйте ответить без запуска кода",
+        "en": "Which option won't cause an error? Try to answer without running the code",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e0d7",
+          "name": {
+            "ru": "function f(n) { return '2 * n'; }; const a = f();",
+            "en": "function f(n) { return '2 * n'; }; const a = f();",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0d8",
+          "name": {
+            "ru": "function f(n) { return 2 * n; }; const a = f(n);",
+            "en": "function f(n) { return 2 * n; }; const a = f(n);",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0d9",
+          "name": {
+            "ru": "function f(n) return 2 * n; }; let a = f(2); a = f(3);",
+            "en": "function f(n) return 2 * n; }; let a = f(2); a = f(3);",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e0da",
+          "name": {
+            "ru": "function f(n = 1) { return 2 * n; }; let a = f(2) + f();",
+            "en": "function f(n = 1) { return 2 * n; }; let a = f(2) + f();",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

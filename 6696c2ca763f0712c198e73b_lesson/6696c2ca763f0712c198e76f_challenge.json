@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e76f",
+  "name": {
+    "en": "Checking a number in a cube. Arrays",
+    "ru": "Проверка числа в кубе. Массивы"
+  },
+  "instruction": {
+    "en": "The `arrayCube` function takes 2 parameters\n* `arr` - array of numbers\n* `n` - number\n\nYou need to increment the number `n` to the third power and check if the result is equal to any number from the array `arr`.\n\nIf the array contains, to the third power, the parameter `n`, the function should return the string 'Yes'. If not - 'No'.\n\nAn example of how to start the function:\n``` javascript\narrayCube([1, 2, 3, 4, 5], 3) // 'No'\n\narrayCube([12, 20, 3, 64, 25], 4) // 'Yes'\n```",
+    "ru": "Функция `arrayCube` принимает 2 параметра\n* `arr` - массив чисел\n* `n` - число\n\nНеобходимо возвести число `n` в третью степень и проверить, равен ли результат какому-либо числу из массива `arr`.\n\nЕсли массив содержит, возведенный в третью степень параметр `n`, то функция должна вернуть строку `Yes`. Если нет – `No` .\n\nПример запуска функции:\n``` javascript\narrayCube([1, 2, 3, 4, 5], 3) // 'No'\n\narrayCube([12, 20, 3, 64, 25], 4) // 'Yes'\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function arrayCube(arr, n) {\n  const cube = n ** 3;\n  if (arr.includes(cube)) return 'Yes';\n  return 'No';\n}",
+  "openTest": "it('Created function arrayCube', () => {\n  expect(arrayCube).to.be.a('function');\n});\n\nit(`arrayCube([1, 2, 3, 4, 5], 3) // 'No'`, () => {\n    expect(arrayCube([1, 2, 3, 4, 5], 3)).eq('No');\n});\n\nit(`arrayCube([12, 20, 3, 64, 25], 4) // 'Yes'`, () => {\n    expect(arrayCube([12, 20, 3, 64, 25], 4)).eq('Yes');\n});\n\nit(`arrayCube([1, 2, 3, 4, 5], 5) // 'No'`, () => {\n    expect(arrayCube([1, 2, 3, 4, 5], 5)).eq('No');\n});\n\nit(`arrayCube([12, 20, 3, 64, 25], 5) // 'No'`, () => {\n    expect(arrayCube([12, 20, 3, 64, 25], 5)).eq('No');\n})\n\nit(`arrayCube([81, 27, 3, 64, 125], 3) // 'Yes'`, () => {\n    expect(arrayCube([81, 27, 3, 64, 125], 3)).eq('Yes');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Исправьте код по удалению дубликатов слов",
+  "instruction": "Функция findTheSameWord принимает строку. В строке могут быть дубликаты каких-то слов.\n\nФункция должна вернуть строку, в которой будут все слова из строки, но без дубликатов. Слова должны быть разделены дефисом.\n\nПримеры запуска функции:\n```javascript\nfindTheSameWord('hello hello world') // 'hello-world'\nfindTheSameWord('good morning good world from good people') // 'good-morning-world-from-people'\n```\n\nИсправьте код, чтобы функция работала правильно.",
+  "instructions": {}
+}

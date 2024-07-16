@@ -1,0 +1,6 @@
+{
+  "name": "Find the second side of the rectangle",
+  "instruction": "Set the variable `p` and assign it the value of the perimeter of the rectangle (an arbitrary non-negative number).\n\nSet the variable `a` and assign it the value of the first side of the rectangle (an arbitrary non-negative number that is less than `p`).\n\nSet the variable `b`, in which you calculate the second side of the rectangle using the formula `b = p / 2 - a`.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst z = 10;\nconst x = 1;\nconst y = z / 2 - x ;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst p = 40;\nconst a = 5;\nconst b = p / 2 - a;\n```"
+}

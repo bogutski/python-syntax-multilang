@@ -1,0 +1,5 @@
+{
+  "name": "The arithmetic mean of five rounded numbers",
+  "instruction": "Correct the function to return the arithmetic mean of the rounded five numbers.\n\nEach number is rounded down.\n\nThe result is rounded to the higher side.\n\nThe name of the function: `average`.",
+  "instructions": {}
+}

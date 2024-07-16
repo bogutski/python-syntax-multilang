@@ -1,0 +1,4 @@
+{
+  "name": "Separating letters into upper and lower case",
+  "instruction": "Write a function called lettersDivider that takes a string of upper- and lower-case letters.\n\nThe function should return an array of two strings. The first line should contain all letters in lowercase and the second line should contain all letters in uppercase.\n\nAn example of a letter case check:\n```javascript\nlet str = 'world';\nconsole.log(str[0] === str[0].toLowerCase()); // true\n```\n\nAn example of running the function:\n```javascript\nlettersDivider('HeLLOwoRLD'); // [ 'ewo', 'HLLORLD' ]\nlettersDivider('www'); // [ 'www', '' ]\nlettersDivider(''); // [ '', '' ]\n```"
+}

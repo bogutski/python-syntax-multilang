@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198e9d1",
+  "name": {
+    "ru": "Цикл от меньшего к большему",
+    "en": "Cycle from less to more",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e9d2",
+      "name": {
+        "ru": "Какое утверждение верно",
+        "en": "Which statement is true",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e9d3",
+          "name": {
+            "ru": "Чтобы пройтись циклом по числам нужно всегда их записывать в массив",
+            "en": "To loop through the numbers, you must always write them into an array",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9d4",
+          "name": {
+            "ru": "Циклы с числами не могут быть бесконечными, так как числа конечны",
+            "en": "Cycles with numbers cannot be infinite because numbers are finite",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9d5",
+          "name": {
+            "ru": "Цикл с числами позволяют получить все числа от и до с каким-то шагом",
+            "en": "Cycle with numbers allow you to get all numbers from and to in some increments",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9d6",
+          "name": {
+            "ru": "Цикл с числами всегда работает только с целыми числами",
+            "en": "The cycle with numbers always works only with integers",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e9d7",
+      "name": {
+        "ru": "Что получится в результате работы кода?",
+        "en": "What will be the result of the code?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfor (let i = 0; i < 10; i++) {\n  console.log(i);\n}\n```",
+        "en": "```javascript\nfor (let i = 0; i < 10; i++) {\n  console.log(i);\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e9d8",
+          "name": {
+            "ru": "012345678910",
+            "en": "012345678910",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9d9",
+          "name": {
+            "ru": "123456789",
+            "en": "123456789",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9da",
+          "name": {
+            "ru": "0123456789",
+            "en": "0123456789",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9db",
+          "name": {
+            "ru": "0 1 2 3 4 5 6 7 8 9",
+            "en": "0 1 2 3 4 5 6 7 8 9",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e9dc",
+      "name": {
+        "ru": "При работе цикла с числами нельзя применять операторы continue и break",
+        "en": "The continue and break operators must not be used when looping with numbers",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e9dd",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9de",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e9df",
+      "name": {
+        "ru": "Что получится в результате работы кода?",
+        "en": "What will be the result of the code?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfor (let i = 0; i < 10; i = i + 3) {\n  if (i % 2 === 0) {\n    console.log( i );\n  }\n}\n```",
+        "en": "```javascript\nfor (let i = 0; i < 10; i = i + 3) {\n  if (i % 2 === 0) {\n    console.log( i );\n  }\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e9e0",
+          "name": {
+            "ru": "ошибка",
+            "en": "mistake",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9e1",
+          "name": {
+            "ru": "0 2 4 6 8",
+            "en": "0 2 4 6 8",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9e2",
+          "name": {
+            "ru": "0 6",
+            "en": "0 6",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9e3",
+          "name": {
+            "ru": "0 4 8",
+            "en": "0 4 8",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e9e4",
+      "name": {
+        "ru": "Пропускать числа в цикле можно с помощью...",
+        "en": "Skipping numbers in a loop can be done by using...",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e9e5",
+          "name": {
+            "ru": "оператора break",
+            "en": "break operator",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9e6",
+          "name": {
+            "ru": "оператора continue",
+            "en": "continue operator",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9e7",
+          "name": {
+            "ru": "условий if",
+            "en": "if",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9e8",
+          "name": {
+            "ru": "изменения финального выражения (шага цикла)",
+            "en": "changing the final expression (loop step)",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e9e9",
+      "name": {
+        "ru": "Что получится в результате работы кода?",
+        "en": "What will be the result of the code?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst count = 0;\nfor (let i = 0; i < 10; i++) {\n  if (i % 2 === 0) {\ncount++;\n  }\n}console.log(count)\n```",
+        "en": "```javascript\nconst count = 0;\nfor (let i = 0; i < 10; i++) {\n  if (i % 2 === 0) {\ncount++;\n  }\n}console.log(count)\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e9ea",
+          "name": {
+            "ru": "Ошибка",
+            "en": "Error",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9eb",
+          "name": {
+            "ru": "5",
+            "en": "5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9ec",
+          "name": {
+            "ru": "4",
+            "en": "4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9ed",
+          "name": {
+            "ru": "20",
+            "en": "20",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e9ee",
+      "name": {
+        "ru": "В результате работы цикла с числами мы можем получить",
+        "en": "As a result of the loop with numbers we can get",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e9ef",
+          "name": {
+            "ru": "массив",
+            "en": "array",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9f0",
+          "name": {
+            "ru": "объект",
+            "en": "object",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9f1",
+          "name": {
+            "ru": "ошибку",
+            "en": "mistake",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9f2",
+          "name": {
+            "ru": "строку",
+            "en": "string",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e9f3",
+      "name": {
+        "ru": "Как получить числа от 22 до 32 из цикла приведенного ниже? Выберите верный вариант вместо ???",
+        "en": "How to get the numbers from 22 to 32 from the cycle given below? Choose the correct option instead of ????",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfor (let i = 12; i < 52; i++) {\n  if ??? \nconsole.log(i);\n  }\n```",
+        "en": "```javascript\nfor (let i = 12; i < 52; i++) {\n  if ??? \nconsole.log(i);\n  }\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e9f4",
+          "name": {
+            "ru": "if(i >= 22 && i <= 32)",
+            "en": "if(i >= 22 && i <= 32)",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9f5",
+          "name": {
+            "ru": "if(i >= 22 && i <= 32) continue;",
+            "en": "if(i >= 22 && i <= 32) continue;",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9f6",
+          "name": {
+            "ru": "if(i >= 22 && i <= 32) break;",
+            "en": "if(i >= 22 && i <= 32) break;",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9f7",
+          "name": {
+            "ru": "if(i >= 22 || i <= 32)",
+            "en": "if(i >= 22 || i <= 32)",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e9f8",
+      "name": {
+        "ru": "Как получить все числа кроме чисел от 22 до 32 из цикла приведенного ниже? Выберите верный вариант вместо ???",
+        "en": "How to get all numbers except numbers 22 to 32 from the loop given below? Choose the correct option instead of ???",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfor (let i = 12; i < 52; i++) {\n  if ??? \nconsole.log(i);\n  }\n```",
+        "en": "```javascript\nfor (let i = 12; i < 52; i++) {\n  if ??? \nconsole.log(i);\n  }\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e9f9",
+          "name": {
+            "ru": "if(i >= 22 && i <= 32)",
+            "en": "if(i >= 22 && i <= 32)",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9fa",
+          "name": {
+            "ru": "if(i >= 22 && i <= 32) continue;",
+            "en": "if(i >= 22 && i <= 32) continue;",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9fb",
+          "name": {
+            "ru": "if(i >= 22 && i <= 32) break",
+            "en": "if(i >= 22 && i <= 32) break",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9fc",
+          "name": {
+            "ru": "if(i >= 22 || i <= 32) continue;",
+            "en": "if(i >= 22 || i <= 32) continue;",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e9fd",
+      "name": {
+        "ru": "Какая запись цикла правильная?",
+        "en": "Which cycle entry is correct?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e9fe",
+          "name": {
+            "ru": "for(let i = 0; i < 10; i++)",
+            "en": "for(let i = 0; i < 10; i++)",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e9ff",
+          "name": {
+            "ru": "for(i === 0; i < 10; i++)",
+            "en": "for(i === 0; i < 10; i++)",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea00",
+          "name": {
+            "ru": "for(let i = 0, i < 10, i++)",
+            "en": "for(let i = 0, i < 10, i++)",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea01",
+          "name": {
+            "ru": "(for i = 0; i < 10; i++)",
+            "en": "(for i = 0; i < 10; i++)",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

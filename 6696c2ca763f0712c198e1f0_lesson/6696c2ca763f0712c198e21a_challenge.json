@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e21a",
+  "name": {
+    "en": "Equal, if strictly equal",
+    "ru": "Equal, если строго равны"
+  },
+  "instruction": {
+    "en": "Write a function `showIsEqual` that takes two arguments `a` and `b`.\n\nIn the body of the function, determine if the arguments are strictly equal.\n\nIf strictly equal, return `Equal`, if not, return `Not Equal`.",
+    "ru": "Напишите функцию `showIsEqual`, которая принимает два аргумента `a` и `b`.\n\nВ теле функции определите, если аргументы строго равны.\n\nЕсли строго равны — верните `Equal`, если нет — верните `Not Equal`."
+  },
+  "initialSolution": "function showIsEqual(a, b){\n  if (...) else\n}",
+  "completedSolution": "function showIsEqual(a, b) {\n  if (a === b) {\n    return 'Equal';\n  } else {\n    return 'Not Equal';\n  }\n}",
+  "openTest": "it('Created function showIsEqual', () => {\n  expect(showIsEqual).to.be.a('function');\n});\n\nit('Function returns correct result for arguments `1, 1', () => {\n  expect(showIsEqual(1, 1)).eq('Equal');\n});\n\nit('Function returns correct result for arguments `1, 2`', () => {\n  expect(showIsEqual(1, 2)).eq('Not Equal');\n});\n\nit('Function returns correct result for arguments `1, \"1\"`', () => {\n  expect(showIsEqual(1, '1')).eq('Not Equal');\n});\n\nit('The function returns the correct result for arguments `1, true`', () => {\n  expect(showIsEqual(1, true)).eq('Not Equal');\n});\n\nit('The function returns a valid result for arguments `0, null`', () => {\n  expect(showIsEqual(0, null)).eq('Not Equal');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

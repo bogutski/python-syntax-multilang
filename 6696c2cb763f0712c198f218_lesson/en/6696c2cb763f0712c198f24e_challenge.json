@@ -1,0 +1,5 @@
+{
+  "name": "Check if the first array contains all elements of the second array using the object",
+  "instruction": "The function `checkArrays` takes two arrays that may contain numbers or strings.\n\nArray 2 contains unique elements, meaning they only occur once in the array.\n\nIt is necessary to check if the first array contains all the elements of the second array.\n\nThe function returns `true` if it does and `false` if it doesn't.\n\nFix the errors in the code to make the function work correctly.\n\nExamples of function execution:\n```javascript\ncheckArrays([1,2,3,4,5,6,7,10], [1,2,3,4,5]) // true\ncheckArrays([1,2,5,-2,4,0,10,-10], [1,2,3,4,5,8]) // false\ncheckArrays([\"a\",\"b\",\"c\",\"d\",\"e\"], [\"a\",\"b\",\"c\",\"d\",\"e\"]) // true\n```",
+  "instructions": {}
+}

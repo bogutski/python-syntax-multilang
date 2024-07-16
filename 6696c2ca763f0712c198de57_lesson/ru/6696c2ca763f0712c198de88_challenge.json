@@ -1,0 +1,6 @@
+{
+  "name": "Объем кубоида",
+  "instruction": "Бобу нужен быстрый способ вычислить объем кубоида с тремя значениями: длина, ширина и высота кубоида.\n\nНапишите программу, чтобы помочь Бобу в этом расчете.\n\nСоздайте переменные с названиями: `length`, `width` и `height`. Присвойте им значения: 5, 7 и 12 соответственно.\n\nСоздайте переменную с названием `volumeOfCuboid`, присвойте ей значение, которое вычисляет объем кубоида.\n\nПриведем пример, который принципиально похож на то что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst first = 15;\nconst second = 20;\nconst third = 10;\nconst volume = first * second * third;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst length = 5;\nconst width = 7;\nconst height = 12;\nconst volumeOfCuboid = length * width * height;\n```"
+}

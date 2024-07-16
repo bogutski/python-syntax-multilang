@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dbf4",
+  "name": {
+    "en": "Delicious cake",
+    "ru": "Вкусный пирог"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-4.png)\n\nA hostess baked a pie weighing 1400 g and left it on the table.\nWhen she returned, only 1/8th of the pie was on the plate.\nFind the weight of the remaining part of the pie.\n\n\nCreate a variable `pieWeight` and assign it the value 1400.\nThen write a command that decreases the value of the `pieWeight` variable by a factor of 8.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nlet a = 100;\na = a / 5; // the command decreases the value of the variable `a` by a factor of 5.\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-4.png)\n\nХозяйка испекла пирог весом 1400 г и оставила на столе.\nКогда она вернулась, на блюде лежала только 1/8 часть пирога.\nНайдите вес оставшейся части пирога.\n\n\nСоздайте переменную `pieWeight` и присвойте ей значение 1400.\nЗатем запишите команду, уменьшающую значение переменной `pieWeight` в 8 раз.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet a = 100;\na = a / 5;    // команда уменьшает значение переменной `а` в 5 раз\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let pieWeight = 1400;\npieWeight = pieWeight / 8;",
+  "openTest": "it('the variable `pieWeight` exists and has a value', () => {\n  expect(pieWeight).not.undefined;\n});\n\nit('the variable `pieWeight` is not NaN', () => {\n  expect(isNaN(pieWeight)).false;\n});\n\nit('the variable `pieWeight` is of type number', () => {\n  expect(pieWeight).a('number');\n});\n\nit('the `pieWeight` variable is 175', () => {\n  expect(pieWeight).equal(175);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet pieWeight = 1400;\npieWeight = pieWeight / 8;\n```",
+    "ru": "```javascript\nlet pieWeight = 1400;\npieWeight = pieWeight / 8;\n```"
+  }
+}

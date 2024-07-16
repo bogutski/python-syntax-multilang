@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e2db",
+  "name": {
+    "en": "A beggar near a hot dog vendor",
+    "ru": "Попрошайка возле продавца хот-догов"
+  },
+  "instruction": {
+    "en": "Near the street hot dog vendor stands a beggar.\n\nHe asks customers to give him coins as change.\n\nOne third of all customers give him coins.\n\nIt is necessary to calculate the beggar's earnings for the month.\n\nWrite the function `monthCollected`.\n\nParameters:\n* `customers` - number of customers per day\n* `days` - number of days the vendor worked in the month\n* `hotDogPrice` - hot dog price\n\n* Earnings are possible only if the hot dog price contains a fractional part.\n* One person buys only one hot dog.\n* The customer only gives the vendor bills without coins.\n\n* If the hot dog price is $1.65, the customer gives $2 and receives $0.35 in change.\n* If the hot dog price is $1.25, the customer gives $2 and receives $0.75 in change.\n* If the hot dog price is $1.00, the customer gives $1 and receives no change.\n\nPerform the calculation algorithm according to the following pseudocode steps:\n```javascript\n// Calculate the number of hot dogs sold by the vendor in a month.\nDEALS = CUSTOMERS * DAYS\n\n// Calculate the number of customers who gave coins to the beggar as change.\nCUSTOMERS_WITH_COINS = RoundDown(DEALS / 3)\n\n// Calculate the beggar's earnings for one deal.\nONE_DEAL_PROFIT = RoundUp(HOT_DOG_PRICE) - HOT_DOG_PRICE\n\n// Calculate the beggar's earnings for the month.\nMONTH_COLLECTED = RoundDown(CUSTOMERS_WITH_COINS * ONE_DEAL_PROFIT)\n```\n\nPseudocode is not code, but a description of the algorithm in a free form without using a specific programming language.\n\n\nFunction execution examples:\n```javascript\nmonthCollected(70, 24, 1.15) // 476\nmonthCollected(100, 30, 1.65) // 350\nmonthCollected(100, 30, 1.25) // 750\nmonthCollected(100, 30, 1.00) // 0\n```",
+    "ru": "Возле уличного продавца хот-догов стоит попрошайка.\n\nОн просит у покупателей отдать ему монеты со сдачи.\n\nТреть всех покупателей отдает ему монеты.\n\nНужно рассчитать заработок попрошайки за месяц.\n\nНапишите функцию `monthCollected`.\n\nПараметры:\n* `customers` – количество покупателей в день\n* `days` – количество дней, которое продавец работал в месяце\n* `hotDogPrice` – цена хот-дога\n\n* Заработок возможен только если цена хот-дога содержит дробную часть.\n* Один человек покупает только один хот-дог.\n* Покупатель передает продавцу только купюры без монет.\n\n* Если цена хот-дога $1.65 то покупатель отдает $2 и получает сдачу $0.35.\n* Если цена хот-дога $1.25 то покупатель отдает $2 и получает сдачу $0.75.\n* Если цена хот-дога $1.00 то покупатель отдает $1 и получает сдачу $0.\n\nАлгоритм расчета выполните по следующим шагам псевдокода:\n```javascript\n// Рассчитать количество хот-догов, которые продал продавец за месяц.\nDEALS = CUSTOMERS * DAYS\n\n//Рассчитать количество покупателей, которые отдали попрошайке монеты со сдачи.\nCUSTOMERS_WITH_COINS = RoundDown(DEALS / 3)\n\n// Рассчитать заработок попрошайки за одну сделку.\nONE_DEAL_PROFIT = RoundUp(HOT_DOG_PRICE) - HOT_DOG_PRICE\n\n// Рассчитать заработок попрошайки за месяц.\nMONTH_COLLECTED = RoundDown(CUSTOMERS_WITH_COINS * ONE_DEAL_PROFIT)\n```\n\nПсевдокод – это не код, а описание алгоритма в свободной форме без использования конкретного языка программирования.\n\n\nПримеры запуска функции:\n```javascript\nmonthCollected(70, 24, 1.15) // 476\nmonthCollected(100, 30, 1.65) // 350\nmonthCollected(100, 30, 1.25) // 750\nmonthCollected(100, 30, 1.00) // 0\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function monthCollected(customers, days, hotDogPrice) {\n  const deals = customers * days;\n  const customersWithCoins = Math.floor(deals / 3);\n  const oneDealProfit = Math.ceil(hotDogPrice) - hotDogPrice;\n  return Math.floor(customersWithCoins * oneDealProfit);\n}",
+  "openTest": "it('Created function monthCollected', () => {\n  expect(monthCollected).to.be.a('function');\n});\n\nit('monthCollected(70, 24, 1.15) should return 476', () => {\n  expect(monthCollected(70, 24, 1.15)).to.equal(476);\n});\n\nit('monthCollected(100, 30, 1.65) should return 350', () => {\n  expect(monthCollected(100, 30, 1.65)).to.equal(350);\n});\n\nit('monthCollected(100, 30, 1.25) should return 750', () => {\n  expect(monthCollected(100, 30, 1.25)).to.equal(750);\n});\n\nit('monthCollected(100, 30, 1.00) should return 0', () => {\n  expect(monthCollected(100, 30, 1.0)).to.equal(0);\n});\n\nit('monthCollected(100, 30, 0.65) should return 350', () => {\n  expect(monthCollected(100, 30, 0.65)).to.equal(350);\n});\n\nit('monthCollected(300, 28, 0.65) should return 979', () => {\n  expect(monthCollected(300, 28, 0.65)).to.equal(979);\n});\n\nit('monthCollected(600, 29, 1.25) should return 4350', () => {\n  expect(monthCollected(600, 29, 1.25)).to.equal(4350);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

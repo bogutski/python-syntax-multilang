@@ -1,0 +1,5 @@
+{
+  "name": "Выведите в консоль (5 + 7) * 2",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-course-2-task-3.png)\n\nНапишите команду `console.log((5 + 7) * 2);`",
+  "instructions": {}
+}

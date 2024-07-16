@@ -1,0 +1,6 @@
+{
+  "name": "Correct errors in the code. Watch for quotation marks",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-3.png)\n\nThe following phrase should be printed to the console: \"Have a good day!\".\n\nMake sure that the phrase is framed in quotes.\n\nCorrect the errors in the given code.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log('Have a good day!');\n```"
+}

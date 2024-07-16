@@ -1,0 +1,6 @@
+{
+  "name": "Мистер и миссис Смит",
+  "instruction": "Создайте переменную `abbreviation` и присвойте ей значение `'Mr. & Mrs.'`\n\nСоздайте вторую переменную `lastName` и присвойте ей значение `'Smith'`.\n\nСоздайте третью переменную `familyName` и присвойте ей значение, получаемое в результате сложения переменных `abbreviation`, пробела и `lastName`\n\nПриведем пример, который принципиально похож на то что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst firstName = 'Ivan';\nconst lastName = 'Ivanov';\nconst name = firstName + ' ' + lastName;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst abbreviation = 'Mr. & Mrs.';\nconst lastName = 'Smith';\nconst familyName = abbreviation + ' ' + lastName;\n```"
+}

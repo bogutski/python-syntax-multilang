@@ -1,0 +1,4 @@
+{
+  "name": "Changing the 1st and 4th element of an array or the last element",
+  "instruction": "Write a function `changeArr` that takes one parameter, an array of numbers.\n\nIf the length of the array is greater than or equal to 5, change the value of the first element of the array to the value of the 5th element,\nand change the value of the 4th element of the array to the value of the 2nd element.\n\nIf the length of the array is less than or equal to 4, change the value of the first element of the array to the square of the last element.\n\nThe function should return the modified array.\n\nAn example of running the function:\n```javascript\nchangeArr([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // [5, 2, 3, 2, 5, 6, 7, 8, 9, 10]\nchangeArr([5, 6, 7, 8]) // [64, 6, 7, 8]\n```"
+}

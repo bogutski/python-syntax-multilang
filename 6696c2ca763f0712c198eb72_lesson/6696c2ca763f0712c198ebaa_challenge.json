@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ebaa",
+  "name": {
+    "en": "Creating a palindrome from a string",
+    "ru": "Cоздание палиндрома из строки"
+  },
+  "instruction": {
+    "en": "The `makePalindrome` function takes the string `str` as a parameter.\n\nThe `str` string consists only of lowercase letters and is not an empty string.\n\nThe function should return a new string that is a palindrome of the string `str`.\n\nTo do this, add the same string in reverse order to the string `str`.\n\nAn example of running the function:\n```javascript\nmakePalindrome(\"cat\") // \"cattac\"\nmakePalindrome(\"dog\") // \"doggod\"\n```",
+    "ru": "Функция `makePalindrome` принимает строку `str` в качестве параметра.\n\nСтрока `str` состоит только из строчных букв и не является пустой строкой.\n\nФункция должна вернуть новую строку, которая является палиндромом строки `str`.\n\nДля этого к строке `str` нужно добавить ее же в обратном порядке.\n\nПример запуска функции:\n```javascript\nmakePalindrome(\"cat\") // \"cattac\"\nmakePalindrome(\"dog\") // \"doggod\"\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function makePalindrome(str) {\n  let newStr = '';\n  for (let i = str.length - 1; i >= 0; i--) {\n    newStr += str[i];\n  }\n  return str + newStr;\n}",
+  "openTest": "it('Created function makePalindrome', () => {\n  expect(makePalindrome).to.be.a('function');\n});\n\nit('makePalindrome(\"cat\") should return \"cattac\"', () => {\n  expect(makePalindrome(\"cat\")).to.be.equal(\"cattac\");\n});\n\nit('makePalindrome(\"dog\") should return \"doggod\"', () => {\n  expect(makePalindrome(\"dog\")).to.be.equal(\"doggod\");\n});\n\nit('makePalindrome(\"racecar\") should return \"racecarracecar\"', () => {\n  expect(makePalindrome(\"racecar\")).to.be.equal(\"racecarracecar\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

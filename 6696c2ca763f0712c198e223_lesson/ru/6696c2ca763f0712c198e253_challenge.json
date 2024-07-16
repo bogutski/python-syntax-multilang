@@ -1,0 +1,5 @@
+{
+  "name": "Красный, синий или зеленый?",
+  "instruction": "Напишите функцию `isRedBlueGreen`, которая принимает цвет (строка) и возвращает true, если цвет `red`, `blue` или `green`. В противном случае возвращает false.\n\nЭту задачу можно решить с помощью `if`, но для тренировки попробуйте решить ее с помощью `||`.\n\nПохожий пример:\n```javascript\nfunction isOneTwoThree(number) {\n  if (number === 1 || number === 2 || number === 3) {\n    return true;\n  }\n  return false;\n}\n```",
+  "instructions": {}
+}

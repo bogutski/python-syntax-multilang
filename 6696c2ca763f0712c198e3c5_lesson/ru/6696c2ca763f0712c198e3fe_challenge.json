@@ -1,0 +1,5 @@
+{
+  "name": "Вернуть указанный индекс из строки",
+  "instruction": "Напишите функцию `getByIndex`, которая принимает строку и индекс и возвращает символ, который находится в этой строке по указанному индексу.\n\nПримеры запуска функции:\n```javascript\ngetByIndex('abc', 0); // 'a'\ngetByIndex('JS', 1); // 'S'\ngetByIndex('JS', 0); // 'J'\n```\n\n\nПохожий пример:\n```javascript\nconst i = 2;\nconst str = 'abc';\nconsole.log(str[i]); // 'c'\n```",
+  "instructions": {}
+}

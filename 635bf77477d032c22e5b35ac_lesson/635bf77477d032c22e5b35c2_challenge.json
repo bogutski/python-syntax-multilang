@@ -1,0 +1,23 @@
+{
+  "_id": "635bf77477d032c22e5b35c2",
+  "name": {
+    "ru": "Название компании",
+    "en": "Company's name",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "В 1997 г. основатели компании Ларри Пейдж и Сергей Брин обратились в Yahoo,\nчтобы продать свою разработку, но получили отказ.\n\nСоздайте переменную `nameOfCompany` и присвойте ей значение `'Google'`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```\nconst biggestOnlineShop = 'Amazon';",
+    "en": "In 1997, company founders Larry Page and Sergey Brin approached Yahoo,\nto sell their development, but they were turned down.\n\nCreate a variable `nameOfCompany` and assign to it the value `'Google'`.\n\nHere's an example that is fundamentally similar to what you need to do,\nbut adapt it to the needs of the task:\n```\nconst biggestOnlineShop = `'Amazon';",
+    "es": ""
+  },
+  "initialSolution": "",
+  "completedSolution": "const nameOfCompany = 'Google';",
+  "openTest": "it('The variable `nameOfCompany` exists and has a value', () => {\n  expect(nameOfCompany).not.undefined;\n});\n\nit('Variable `nameOfCompany` contains data type string', () => {\n  expect(nameOfCompany).a('string');\n});\n\nit('The `nameOfCompany` variable contains the value `Google`', () => {\n  expect(nameOfCompany).eq('Google');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit"
+}

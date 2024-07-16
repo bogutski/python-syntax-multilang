@@ -1,0 +1,5 @@
+{
+  "name": "Умножение в объекте",
+  "instruction": "Напишите функцию `multiObject`, которая принимает два параметра: `param1`, `param2`. Оба параметра - числа.\n\nФункция должна возвращать объект со свойствами `param1`, `param2`, которые будут равны соответствующим аргументам и `result`.\n\n`result` - это произведение `param1` и `param2`.\n\nПримеры запуска функции:\n```javascript\nmultiObject(2, 3); // { param1: 2, param2: 3, result: 6 }\nmultiObject(10, 10); // { param1: 10, param2: 10, result: 100 }\n```",
+  "instructions": {}
+}

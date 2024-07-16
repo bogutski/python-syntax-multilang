@@ -1,0 +1,6 @@
+{
+  "name": "Изменение типа переменной",
+  "instruction": "Создайте переменную `chameleon` с использованием ключевого слова `let` и присвойте ей числовое значение `123`.\n\nСоздайте переменную с именем `chameleonCopy` и присвойте ей значение переменной `chameleon`.\n\nСоздайте переменную с именем `typeOfChameleon` и присвойте ей значение типа переменной `chameleon`.\n\nЗапишите в переменную `chameleon` новое значение строку `\"i am chameleon\"`.\n\nСоздайте переменную `typeOfChameleonAfterChange` и присвойте ей значение типа переменной `chameleon`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet zero = 0;\nconst typeOfZero = typeof(zero);                      // \"number\"\nzero = \"zero\";\nconst typeOfZeroAfterChange = typeof(zero);           // \"string\"\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet chameleon = 123;\nconst chameleonCopy = chameleon;\nconst typeOfChameleon = typeof (chameleon);\nchameleon = \"i am chameleon\";\nconst typeOfChameleonAfterChange = typeof (chameleon);\n```"
+}

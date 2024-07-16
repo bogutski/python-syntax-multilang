@@ -1,0 +1,4 @@
+{
+  "name": "Sell pizza in slices. Version 1",
+  "instruction": "Write a function `pizzaSlice` that takes parameters:\n\n`pizzaPrice` - price of the pizza\n`numSlices` - number of slices the pizza is divided into\n`slicePrice` - the price of one slice of pizza\n\nUsually it is more profitable to sell slices, because the markup is higher.\n\nYou need to calculate how much more profitable to sell slices than to sell it whole.\n\nExamples:\n```javascript.\npizzaSlice(20, 8, 4) // 12\npizzaSlice(20, 8, 5) // 20\n```"
+}

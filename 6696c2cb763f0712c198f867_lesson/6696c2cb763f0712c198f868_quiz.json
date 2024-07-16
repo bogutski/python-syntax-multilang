@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2cb763f0712c198f868",
+  "name": {
+    "ru": "Array.prototype.findLastIndex() – индекс последнего элемента по условию",
+    "en": "",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2cb763f0712c198f869",
+      "name": {
+        "ru": "Что делает метод findLastIndex() в JavaScript?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f86a",
+          "name": {
+            "ru": "Возвращает последний элемент массива",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f86b",
+          "name": {
+            "ru": "Возвращает первый элемент массива, удовлетворяющий условию",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f86c",
+          "name": {
+            "ru": "Возвращает индекс первого элемента массива, удовлетворяющего условию",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f86d",
+          "name": {
+            "ru": "Возвращает индекс последнего элемента массива, удовлетворяющего условию",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f86e",
+      "name": {
+        "ru": "Что вернет метод findLastIndex(), если ни один элемент массива не удовлетворяет условию?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f86f",
+          "name": {
+            "ru": "null",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f870",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f871",
+          "name": {
+            "ru": "0",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f872",
+          "name": {
+            "ru": "-1",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f873",
+      "name": {
+        "ru": "Какой из следующих примеров вернет индекс последнего не четного числа в массиве?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = [1, 3, 5, 7, 8, 10];\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f874",
+          "name": {
+            "ru": "```javascript\nnumbers.findLastIndex(num => num % 2 === 1)\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f875",
+          "name": {
+            "ru": "```javascript\nnumbers.findLastIndex(num => num % 2 !== 1)\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f876",
+          "name": {
+            "ru": "```javascript\nnumbers.findLastIndex(num => num % 2 === 0)\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f877",
+          "name": {
+            "ru": "```javascript\nnumbers.findLastIndex(num => num % 2)\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f878",
+      "name": {
+        "ru": "Какое значение вернет findLastIndex(), если он вызывается на пустом массиве?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f879",
+          "name": {
+            "ru": "0",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f87a",
+          "name": {
+            "ru": "-1",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f87b",
+          "name": {
+            "ru": "undefined",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f87c",
+          "name": {
+            "ru": "null",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f87d",
+      "name": {
+        "ru": "Можно ли использовать метод findLastIndex() для работы с массивами объектов?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f87e",
+          "name": {
+            "ru": "Нет, findLastIndex() работает только с примитивными типами данных",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f87f",
+          "name": {
+            "ru": "Да, можно использовать для работы с массивами любых типов данных",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f880",
+          "name": {
+            "ru": "Да, но только с массивами строк",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f881",
+          "name": {
+            "ru": "Нет, findLastIndex() работает только с массивами чисел",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f882",
+      "name": {
+        "ru": "Какой метод массива лучше использовать, если нужно найти последний элемент, удовлетворяющий условию?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f883",
+          "name": {
+            "ru": "findLastIndex()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f884",
+          "name": {
+            "ru": "filter()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f885",
+          "name": {
+            "ru": "lastIndexOf()",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f886",
+          "name": {
+            "ru": "findLast()",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f887",
+      "name": {
+        "ru": "Какое значение можно передать в качестве первого аргумента функции обратного вызова метода findLastIndex()?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f888",
+          "name": {
+            "ru": "Значение, которое нужно найти в массиве",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f889",
+          "name": {
+            "ru": "Условие, которое должен удовлетворять элемент массива",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f88a",
+          "name": {
+            "ru": "Индекс, с которого нужно начать поиск",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f88b",
+          "name": {
+            "ru": "Длина массива",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f88c",
+      "name": {
+        "ru": "Какой из следующих примеров вернет индекс последнего элемента, начинающегося с буквы 'b' в массиве?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst fruits = ['apple', 'banana', 'cherry', 'blueberry'];\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f88d",
+          "name": {
+            "ru": "```javascript\nfruits.findLastIndex(fruit => fruit.startsWith('b'))\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f88e",
+          "name": {
+            "ru": "```javascript\nfruits.findLastIndex(fruit => fruit[0] === 'b')\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f88f",
+          "name": {
+            "ru": "```javascript\nfruits.findLastIndex(fruit => fruit[fruit.length - 1] === 'b')\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f890",
+          "name": {
+            "ru": "```javascript\nfruits.findLastIndex(fruit => fruit.startsWith('B'))\n```",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f891",
+      "name": {
+        "ru": "Какой будет результат выполнения кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst people = [{ name: 'Alice', age: 25 }, { name: 'Bob', age: 30 }, { name: 'Charlie', age: 20 }, { name: 'David', age: 35 }];\nconsole.log(people.findLastIndex((obj) => obj.age > 25 && obj.name.length < 4));\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f892",
+          "name": {
+            "ru": "-1",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f893",
+          "name": {
+            "ru": "1",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f894",
+          "name": {
+            "ru": "2",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f895",
+          "name": {
+            "ru": "3",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2cb763f0712c198f896",
+      "name": {
+        "ru": "Какой будет результат выполнения кода?",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst numbers = [[1, 2, 3, 4], [5, 5], [6, 7, 8]];\nconsole.log(numbers.findLastIndex(array => array.reduce((acc, el) => acc + el, 0) === 10));\n```",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2cb763f0712c198f897",
+          "name": {
+            "ru": "-1",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f898",
+          "name": {
+            "ru": "0",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2cb763f0712c198f899",
+          "name": {
+            "ru": "1",
+            "en": "",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2cb763f0712c198f89a",
+          "name": {
+            "ru": "2",
+            "en": "",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

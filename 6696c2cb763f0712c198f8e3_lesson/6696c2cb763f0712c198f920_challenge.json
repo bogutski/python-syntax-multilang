@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f920",
+  "name": {
+    "en": "/*",
+    "ru": "Проверка количества элементов разных типов в массивах"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `hasArrayWithMinTypesCount`, которая принимает несколько массивов и одно число.\n\nФункция должна возвращать `true`, если хотя бы один массив содержит элементы одного типа в количестве, равном или превышающем указанное число, и `false` в противном случае.\n\n\nПримеры запуска функции:\n```javascript\nhasArrayWithMinTypesCount(['a', 'b', 'c', 'd'], 4); // true\nhasArrayWithMinTypesCount([0, '1', true], [false, NaN], [undefined, true, 'hello'], 2); // false\nhasArrayWithMinTypesCount(['a', 'b'], [false, undefined, true], [1, 2, undefined, true, 3], 3); // true\n```"
+  },
+  "initialSolution": "function hasArrayWithMinTypesCount(){\n\n}",
+  "completedSolution": "function hasArrayWithMinTypesCount(...arrays) {\n  const result = [...arrays]\n  const min= result.pop()\n\n  return result.some(array => {\n    let object = {}\n    for(let el of array){\n      if(!object.hasOwnProperty(typeof el)) object[typeof el] = 1\n      else object[typeof el] += 1;\n    }\n\n    return Object.values(object).some(el => el >= min)\n  });\n}",
+  "openTest": "it('Created function hasArrayWithMinTypesCount', () => {\n  expect(hasArrayWithMinTypesCount).to.be.a('function');\n});\n\nit('hasArrayWithMinTypesCount([0, \"1\", true], [false, NaN], [undefined, true, \"hello\"], 2) should return false', function() {\n  expect(hasArrayWithMinTypesCount([0, \"1\", true], [false, NaN], [undefined, true, \"hello\"], 2)).to.equal(false);\n});\n\nit('hasArrayWithMinTypesCount([\"a\", \"b\"], [false, undefined, true], [1, 2, undefined, true, 3], 3) should return true', function() {\n  expect(hasArrayWithMinTypesCount([\"a\", \"b\"], [false, undefined, true], [1, 2, undefined, true, 3], 3)).to.equal(true);\n});\n\nit('hasArrayWithMinTypesCount([0, 1, 2], [true, true, true], [\"a\", \"b\", \"c\"], 3) should return true', function() {\n  expect(hasArrayWithMinTypesCount([0, 1, 2], [true, true, true], [\"a\", \"b\", \"c\"], 3)).to.equal(true);\n});\n\nit('hasArrayWithMinTypesCount([0, 1, 2], [true, \"true\", true], [\"a\", \"b\", \"c\"], 3) should return true', function() {\n  expect(hasArrayWithMinTypesCount([0, 1, 2], [true, \"true\", true], [\"a\", \"b\", \"c\"], 3)).to.equal(true);\n});\n\nit('hasArrayWithMinTypesCount([null, undefined], [NaN, \"NaN\"], [false, 0], 2) should return false', function() {\n  expect(hasArrayWithMinTypesCount([null, undefined], [NaN, \"NaN\"], [false, 0], 2)).to.equal(false);\n});\n\nit('hasArrayWithMinTypesCount([false, \"false\"], [1, 2, 3, 4], [null, undefined, null], 3) should return true', function() {\n  expect(hasArrayWithMinTypesCount([false, \"false\"], [1, 2, 3, 4], [null, undefined, null], 3)).to.equal(true);\n});\n\nit('hasArrayWithMinTypesCount([0, 1], [true], [\"a\"], 1) should return true', function() {\n  expect(hasArrayWithMinTypesCount([0, 1], [true], [\"a\"], 1)).to.equal(true);\n});\n\nit('hasArrayWithMinTypesCount([0], [true], [\"a\"], 2) should return false', function() {\n  expect(hasArrayWithMinTypesCount([0], [true], [\"a\"], 2)).to.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

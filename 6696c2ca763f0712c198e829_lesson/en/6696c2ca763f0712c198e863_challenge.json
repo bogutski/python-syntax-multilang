@@ -1,0 +1,4 @@
+{
+  "name": "The difference between copying an array",
+  "instruction": "Write a function `copyDifference` that takes an array and returns another array of two elements.\n\n* The first element is a surface copy of the first array. Use the `slice` method.\n* The second element is a deep copy of the first array. Use the `JSON.parse` and `JSON.stringify` methods.\n\nYou cannot return the original array; references to arrays will be checked for equality.\n\nAn example of running the function:\n```javascript\ncopyDifference([ 1, 2, 3 ]) // [ [ 1, 2, 3 ], [ 1, 2, 3 ] ]\ncopyDifference([ [true], [false] ]) // [ [[ true ], [ false ]], [[ true ], [ false ]] ]\n```"
+}

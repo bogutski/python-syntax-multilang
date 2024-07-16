@@ -1,0 +1,6 @@
+{
+  "name": "Create a variable with the value null",
+  "instruction": "The special value null means \"nothing\", \"value not specified\", or \"value intentionally missing\".\nCreate a variable named `name` and assign it the value `null`.\n\nLet's provide an example that is essentially similar to what needs to be done,\nbut adapt it to the task requirements:\n```javascript\nlet job = null;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet name = null;\n```"
+}

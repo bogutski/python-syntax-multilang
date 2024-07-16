@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198df57",
+  "name": {
+    "en": "Function with Circle Area Calculation",
+    "ru": "Функция с расчетами площади круга"
+  },
+  "instruction": {
+    "en": "Write a function `circleArea`.\nIn the function create a variable `pi` and give it a value of `3.14`.\nIn the function create a variable `radius` and give it a value of `20`.\n\nUse the formula `pi * radius * radius` to calculate the area of the circle.\n\nThe function should return the area of the circle.\n\nA fundamentally similar example is calculating the area of a rectangle:\n\n```javascript\nfunction cube() {\n  const side1 = 3;\n  const side2 = 5;\n  return side1 * side2;\n}\n```",
+    "ru": "Напишите функцию `circleArea`.\nВ функции создайте переменную `pi` и присвойте ей значение `3.14`.\nВ функции создайте переменную `radius` и присвойте ей значение `20`.\n\nДля вычисления площади круга используйте формулу `pi * radius * radius`.\n\nФункция должна возвращать площадь круга.\n\nПринципиально похожий пример вычисления площади прямоугольника:\n\n```javascript\nfunction cube() {\n  const side1 = 3;\n  const side2 = 5;\n  return side1 * side2;\n}\n```"
+  },
+  "initialSolution": "function volume(side){\n\n}",
+  "completedSolution": "function circleArea() {\n  const pi = 3.14;\n  const radius = 20;\n  return pi * radius * radius;\n}",
+  "openTest": "it('Created function circleArea', () => {\n  expect(circleArea).to.be.a('function');\n} );\n\nit('Function returns correct result', () => {\n  expect(circleArea()).eq(1256);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ed93",
+  "name": {
+    "en": "Find and correct mistakes",
+    "ru": "Найти и исправить ошибки"
+  },
+  "instruction": {
+    "en": "Fix the `copyDuplicate` function that takes a string and returns an array of letters that are repeated in the string.\n\nA letter can be repeated one or more times, but it should only be added to the array once.\n\nAll words are written in lowercase.\n\nThere is only one space between words.\n\nAn example of running a function:\n```javascript\ncopyDuplicate('hello world'); // [ 'l', 'o' ]\ncopyDuplicate('a leg up'); // []\ncopyDuplicate('jumping the gun'); // [ 'g', 'u', 'n' ]\n```",
+    "ru": "Исправьте функцию `copyDuplicate`, которая принимает строку и возвращает массив букв, которые повторяются в строке.\n\nБуква может повторятся один или более раз, но в массиве она должна быть добавлена только один раз.\n\nВсе слова написаны в нижнем регистре.\n\nМежду словами есть лишь один пробел.\n\n\nПример запуска функции:\n```javascript\ncopyDuplicate('hello world'); // [ 'l', 'o' ]\ncopyDuplicate('a leg up'); // []\ncopyDuplicate('jumping the gun'); // [ 'g', 'u', 'n' ]\n```"
+  },
+  "initialSolution": "function copyDuplicate(str) {\n  const arr = [];\n  const newStr = \"\";\n  for (let i = 0; i < str.length; i--) {\n    if (newStr.indexOf(str[i]) === 1 && str[i] === ' ') {\n      newStr += newStr[i];\n    } else {\n        if(arr.indexOf(str[i]) === -1){\n          arr.push(newStr[i]);\n        }\n    }\n  }\n  return arr;\n}",
+  "completedSolution": "function copyDuplicate(str) {\n  let arr = [];\n  let newStr = \"\";\n  for (let i = 0; i < str.length; i++) {\n    if (newStr.indexOf(str[i]) === -1 || str[i] === ' ') {\n      newStr += str[i];\n    } else {\n        if(arr.indexOf(str[i]) === -1){\n          arr.push(str[i]);\n        }\n    }\n  }\n  return arr;\n}",
+  "openTest": "it('Created function copyDuplicate', () => {\n  expect(copyDuplicate).to.be.a('function');\n});\n\nit(\"copyDuplicate('hello world') should return [ 'l', 'o' ]\", () => {\n  expect(copyDuplicate('hello world')).to.eql([ 'l', 'o' ]);\n});\n\nit(\"copyDuplicate('a leg up') should return []\", () => {\n  expect(copyDuplicate('a leg up')).to.eql([]);\n});\n\nit(\"copyDuplicate('what am i, chopped liver?') should return [ 'a', 'h', 'p', 'i', 'e' ]\", () => {\n  expect(copyDuplicate('what am i, chopped liver?')).to.eql([ 'a', 'h', 'p', 'i', 'e' ]);\n});\n\nit(\"copyDuplicate('hands down') should return [ 'd', 'n' ]\", () => {\n  expect(copyDuplicate('hands down')).to.eql([ 'd', 'n' ]);\n});\n\nit(\"copyDuplicate('jumping the gun') should return [ 'g', 'u', 'n' ]\", () => {\n  expect(copyDuplicate('jumping the gun')).to.eql([ 'g', 'u', 'n' ]);\n});\n\nit(\"copyDuplicate('apple apple apple') should return []\", () => {\n  expect(copyDuplicate('apple apple apple')).to.eql(['p', 'a', 'l', 'e']);\n});\n\nit(\"copyDuplicate('how') should return []\", () => {\n  expect(copyDuplicate('how')).to.eql([]);\n});\n\nit(\"copyDuplicate('a') should return []\", () => {\n  expect(copyDuplicate('a')).to.eql([]);\n});\n\nit(\"copyDuplicate('') should return []\", () => {\n  expect(copyDuplicate('')).to.eql([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

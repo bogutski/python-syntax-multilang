@@ -1,0 +1,174 @@
+{
+  "name": "Пропуск итерации. continue",
+  "questions": {
+    "0": {
+      "name": "Выберите верное утверждение",
+      "variants": {
+        "0": {
+          "name": "Инструкция continue прерывает весь цикл при наступлении определенного условия"
+        },
+        "1": {
+          "name": "Инструкция continue прерывает текущую итерацию цикла, когда выполняется определенное условие"
+        },
+        "2": {
+          "name": "Инструкция continue выполняет цикл только один раз"
+        },
+        "3": {
+          "name": "Инструкция continue будет продолжать цикл не смотря ни на какие условия"
+        }
+      }
+    },
+    "1": {
+      "name": "Выберите верный вариант написания инструкции continue в цикле",
+      "variants": {
+        "0": {
+          "name": "continue()"
+        },
+        "1": {
+          "name": "Continue"
+        },
+        "2": {
+          "name": "contineu"
+        },
+        "3": {
+          "name": "continue"
+        }
+      }
+    },
+    "2": {
+      "name": "Выберите правильный вариант, что вернет консоль",
+      "description": "```javascript\n const arr = [1, '2', 3, 4, 'zero']\n for (let i = 0; i < arr.length; i++) {\n   if (typeof arr[i] === 'string') {\n     continue;\n   }\n   console.log(arr[i]);\n }\n```",
+      "variants": {
+        "0": {
+          "name": "1, 3, 4"
+        },
+        "1": {
+          "name": "1, 2, 3, 4"
+        },
+        "2": {
+          "name": "'2', 'zero'"
+        },
+        "3": {
+          "name": "error"
+        }
+      }
+    },
+    "3": {
+      "name": "Для чего используются инструкции continue и break?",
+      "variants": {
+        "0": {
+          "name": "Эти инструкции позволяют прервать цикл и пропустить итерацию в определенный момент"
+        },
+        "1": {
+          "name": "Эти инструкции позволяют пропустить определенные итерации цикла"
+        },
+        "2": {
+          "name": "Эти инструкции позволяют управлять циклами и выводить только определенные результаты"
+        },
+        "3": {
+          "name": "Директивы continue и break используются только в бесконечных циклах"
+        }
+      }
+    },
+    "4": {
+      "name": "Continue - это",
+      "variants": {
+        "0": {
+          "name": "Метод"
+        },
+        "1": {
+          "name": "Инструкция"
+        },
+        "2": {
+          "name": "Оператор"
+        },
+        "3": {
+          "name": "Цикл"
+        }
+      }
+    },
+    "5": {
+      "name": "Continue и break могут использоваться в одном цикле",
+      "variants": {
+        "0": {
+          "name": "Это утверждение верно"
+        },
+        "1": {
+          "name": "Это утверждение неверно"
+        }
+      }
+    },
+    "6": {
+      "name": "Что вернет следующий код?",
+      "description": "```javascript\nconst str='hi, JavaScript Here!';\nlet acc='';\nfor(let i=0; i<str.length; i++){\n  if(str[i]===str[i].toUpperCase()){\n    continue;\n  }\n acc += str[i]\n console.log(acc);\n}\n```",
+      "variants": {
+        "0": {
+          "name": "JSH"
+        },
+        "1": {
+          "name": "hiavacriptere"
+        },
+        "2": {
+          "name": "hi, avacript ere!"
+        },
+        "3": {
+          "name": ", JS H!"
+        }
+      }
+    },
+    "7": {
+      "name": "Что вернет следующий код?",
+      "description": "```javascript\nconst str='hi, JavaScript Here!';\nlet acc='';\nfor(let i=0; i<str.length; i++){\n  if(str[i]!==str[i].toLowerCase()){\n    continue;\n  }\n acc += str[i]\n console.log(acc);\n}\n```",
+      "variants": {
+        "0": {
+          "name": "JSH"
+        },
+        "1": {
+          "name": "hiavacriptere"
+        },
+        "2": {
+          "name": "hi, avacript ere!"
+        },
+        "3": {
+          "name": ", JS H!"
+        }
+      }
+    },
+    "8": {
+      "name": "Какие индексы вернет следующий код?",
+      "description": "```javascript\nconst str = 'What a day!';\nfor(let i=str.length-1; i>=0; i--){\n  if(str[i] === ' '){\n    continue;\n  }\n  console.log(i);\n}\n```",
+      "variants": {
+        "0": {
+          "name": "6 4"
+        },
+        "1": {
+          "name": "0 1 2 3 5 7 8 9 10"
+        },
+        "2": {
+          "name": "10 9 8 7 5 3 2 1 0"
+        },
+        "3": {
+          "name": "4 6"
+        }
+      }
+    },
+    "9": {
+      "name": "Что выведет следующий код?",
+      "description": "```javascript\nlet str = 'A Busy Bee';\nlet count = 0;\nfor(let i = 0; i < str.length; i++){\n if(str[i] === ' ') continue; \n if(str[i] === 'e') break; \n  count++;\n}\nconsole.log(count);\n```",
+      "variants": {
+        "0": {
+          "name": "8"
+        },
+        "1": {
+          "name": "2"
+        },
+        "2": {
+          "name": "9"
+        },
+        "3": {
+          "name": "6"
+        }
+      }
+    }
+  }
+}

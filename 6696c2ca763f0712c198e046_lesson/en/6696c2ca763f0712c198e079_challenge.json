@@ -1,0 +1,4 @@
+{
+  "name": "Text calculator of the amount",
+  "instruction": "Write a function `textCalculatorSum` that takes two parameters `num1` and `num2` and returns the string `The sum of 2 and 3 is 5.`\n\nIn place of `2` and `3` there should be parameter values, and in place of `5` there should be parameter sum.\n\nA similar example:\n```javascript\nconst n1 = 2;\nconst n2 = 3;\nconst result = n1 * n2;\nconst multiplication = 'Multiplication of ' + n1 + ' and ' + n2 + ' is ' + result + '!'\nconsole.log(multiplication); // Multiplication of 2 and 3 is 6!\n```"
+}

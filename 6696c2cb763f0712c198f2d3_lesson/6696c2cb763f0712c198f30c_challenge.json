@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f30c",
+  "name": {
+    "en": "/*",
+    "ru": "Добавление треков в плейлист"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `addToPlaylist`, которая принимает два аргумента: массив с текущим плейлистом и массив новых треков для добавления.\n\nИспользуя метод `push()`, функция должна добавить новые треки в конец плейлиста.\n\nПеред добавлением, каждый новый трек следует проверять на уникальность без учета регистра букв, чтобы избежать дублирования.\n\nФункция должна возвращать обновленный плейлист.\n\nПримеры запуска функции:\n```javascript\naddToPlaylist([\"imagine dragons - Believer\", \"Queen - Bohemian Rhapsody\"], [\"queen - bohemian rhapsody\", \"Billie Eilish - bad guy\"])\n// [\"imagine dragons - Believer\", \"Queen - Bohemian Rhapsody\", \"Billie Eilish - bad guy\"]\n\naddToPlaylist([\"AC/DC - Thunderstruck\"], [\"Metallica - Enter Sandman\", \"ac/dc - thunderstruck\"])\n// [\"AC/DC - Thunderstruck\", \"Metallica - Enter Sandman\"]\n\naddToPlaylist([], [\"Eminem - Lose Yourself\"])\n// [\"Eminem - Lose Yourself\"]\n\naddToPlaylist([\"Linkin Park - In the End\"], [])\n// [\"Linkin Park - In the End\"]\n\naddToPlaylist([\"Coldplay - Paradise\"], [\"coldplay - paradise\"])\n// [\"Coldplay - Paradise\"]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function addToPlaylist(playlist, newTracks) {\n  for(let track of newTracks){\n\n    let needToAdd = true;\n\n    for(let original of playlist){\n      if(original.toLowerCase() === track.toLowerCase()){\n        needToAdd = false;\n        break;\n      }\n    }\n\n    if(needToAdd) playlist.push(track)\n  }\n\n  return playlist;\n}",
+  "openTest": "it('Created function addToPlaylist', () => {\n  expect(addToPlaylist).to.be.a('function');\n});\n\nit('Adds new unique tracks to the playlist ignoring case', () => {\n  expect(addToPlaylist([\"Track 1\", \"track 2\"], [\"Track 3\", \"TRACK 2\"])).to.deep.equal([\"Track 1\", \"track 2\", \"Track 3\"]);\n});\n\nit('Returns the original playlist if all new tracks are duplicates ignoring case', () => {\n  expect(addToPlaylist([\"Track 1\", \"Track 2\"], [\"track 1\", \"TRACK 2\"])).to.deep.equal([\"Track 1\", \"Track 2\"]);\n});\n\nit('Correctly adds tracks to an empty playlist', () => {\n  expect(addToPlaylist([], [\"New track 1\", \"new Track 2\"])).to.deep.equal([\"New track 1\", \"new Track 2\"]);\n});\n\nit('Handles adding no new tracks to the playlist', () => {\n  expect(addToPlaylist([\"Existing track\"], [])).to.deep.equal([\"Existing track\"]);\n});\n\nit('Adds a new track with different case when the playlist is empty', () => {\n  expect(addToPlaylist([], [\"SOLO TRACK\"])).to.deep.equal([\"SOLO TRACK\"]);\n});\n\nit('Does not add a duplicate track with different case', () => {\n  expect(addToPlaylist([\"Song A\"], [\"song a\"])).to.deep.equal([\"Song A\"]);\n});\n\nit('Adds multiple tracks ensuring uniqueness ignoring case', () => {\n  expect(addToPlaylist([\"Song 1\"], [\"SONG 2\", \"Song 3\", \"song 1\"])).to.deep.equal([\"Song 1\", \"SONG 2\", \"Song 3\"]);\n});\n\nit('Maintains the order of tracks after adding new ones ignoring case', () => {\n  const originalPlaylist = [\"First Song\", \"second song\"];\n  const newTracks = [\"SECOND SONG\", \"Third Song\", \"first song\"];\n  const updatedPlaylist = addToPlaylist(originalPlaylist, newTracks);\n  expect(updatedPlaylist[0]).to.equal(\"First Song\");\n  expect(updatedPlaylist[updatedPlaylist.length - 1]).to.equal(\"Third Song\");\n});\n\nit('Correctly handles adding a track with completely different case', () => {\n  expect(addToPlaylist([\"song\"], [\"SONG\"])).to.deep.equal([\"song\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

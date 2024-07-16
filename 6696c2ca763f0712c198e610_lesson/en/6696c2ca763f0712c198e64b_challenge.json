@@ -1,0 +1,4 @@
+{
+  "name": "Stocks of tiles in the store. Objects",
+  "instruction": "The `tileStash` function takes one parameter - the `tile` object, which contains the following properties:\n* `sold` - number of sold tiles, number;\n* `damaged` - number of damaged tiles, number;\n* `defect` - number of tiles with a defect, number;\n* `lost` - number of lost tiles, number;\n* `available` - number of available tiles, number;\n\nWe need to redo the object `tile` by combining the properties `damaged`, `defect` and `lost` into one property `nonConformance`.\n\nThe function should return an updated `tile` object with only `sold`, `nonConformance` and `available` properties.\n\nAn example of running the function:\n```javascript\ntileStash({\nsold:100,\ndamaged: 4,\ndefect: 5,\nlost: 1,\navailable: 90\n})\n\n// {sold: 100, nonConformance: 10, available: 90}\n```"
+}

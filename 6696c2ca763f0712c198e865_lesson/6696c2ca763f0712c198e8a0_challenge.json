@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e8a0",
+  "name": {
+    "en": "The Doggy Communiqué",
+    "ru": "Собачье коммюнике"
+  },
+  "instruction": {
+    "en": "Write a function `dogResponse` that takes one parameter:\n* `array` - an array with the dog's name and age in the format `[dogName, dogAge]`, where\n  * `dogName` - the dog's name, a string;\n  * `dogAge` - the dog's age, a number.\n\nThe function should return a string in the following format: `dogName: bark! bark! bark!`\n\nConditions:\n* The number of repetitions of the word `bark!` should correspond to the length of the `dogName` string minus `dogAge`;\n* There should be one space between the words `bark!`;\n* If the length of the `dogName` string minus `dogAge` is less than or equal to zero, the function should return a string in the following format: `dogName: hello!`.\n\n\nFunction call examples:\n```javascript\ndogResponse([\"Bobby\", 2]);  // 'Bobby: bark! bark! bark!'\ndogResponse([\"Daisy\", 11]);  // 'Daisy: hello!'\n```\n\nThe result in the first example is obtained as follows:\n* The length of the name `Bobby` = 5; age = 2; difference between the length of the name and age: 5 - 2 = 3; since (3 <= 0) = false, the number of words = 3; the final text with the answer is three times \"bark!\".",
+    "ru": "Напишите функцию `dogResponse`, которая принимает один параметр:\n* `array` - массив с кличкой собаки и возрастом в формате `[dogName, dogAge]`, где\n  * `dogName` - кличка собаки, строка;\n  * `dogAge` - возраст собаки, число.\n\nФункция должна возвращать строку вида: `dogName: bark! bark! bark!`\n\nУсловия:\n* Количество повторений слова `bark!` должно соответствовать длине строки `dogName` за вычетом `dogAge`;\n* Между словами `bark!` должен быть один пробел;\n* Если длина строки `dogName` минус `dogAge` меньше или равно нулю, то функция должна возвращать строку вида: `dogName: hello!`.\n\n\nПримеры запуска функции:\n```javascript\ndogResponse([\"Bobby\", 2]);  // 'Bobby: bark! bark! bark!'\ndogResponse([\"Daisy\", 11]);  // 'Daisy: hello!'\n```\n\nРезультат в первом примере получен следующим образом:\n* Длина клички `Bobby` = 5;  возраст = 2;  разница длины клички и возраста: 5 - 2 = 3;  так как (3 <= 0) = false, то количество слов = 3;  итого текст с ответом = три раза \"bark!\"."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function dogResponse(arr) {\n  const barkCount = arr[0].length - arr[1];\n  if (barkCount > 0) {\n    return `${arr[0]}: ${\"bark! \".repeat(barkCount).trimEnd()}`;\n  } else {\n    return `${arr[0]}: hello!`;\n  }\n}",
+  "openTest": "it('Created function dogResponse', () => {\n  expect(dogResponse).to.be.a('function');\n});\n\nit('dogResponse([\"Bobby\", 2]);  // \"Bobby: bark! bark! bark!\"', () => {\n  expect(dogResponse([\"Bobby\", 2])).eq(\"Bobby: bark! bark! bark!\");\n});\n\nit('dogResponse([\"Beethoven\", 10]);  // \"Beethoven: hello!\"', () => {\n  expect(dogResponse([\"Beethoven\", 10])).eq(\"Beethoven: hello!\");\n});\n\nit('dogResponse([\"Michelangelo\", 0]);  // \"Michelangelo: bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark!', () => {\n  expect(dogResponse([\"Michelangelo\", 0])).eq(\"Michelangelo: bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark!\");\n});\n\nit('dogResponse([\"Max\", 15]);  // \"Max: hello!\"', () => {\n  expect(dogResponse([\"Max\", 15])).eq(\"Max: hello!\");\n});\n\nit('dogResponse([\"Daisy\", 11]);  // \"Daisy: hello!\"', () => {\n  expect(dogResponse([\"Daisy\", 11])).eq(\"Daisy: hello!\");\n});\n\nit('dogResponse([\"\", 999999]);  // \": hello!\"', () => {\n  expect(dogResponse([\"\", 0])).eq(\": hello!\");\n});\n\nit('dogResponse([\"AAAAAAAAAAAAAAAAAAAAA\", -1]);  // \"AAAAAAAAAAAAAAAAAAAAA: bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark!\"', () => {\n  expect(dogResponse([\"AAAAAAAAAAAAAAAAAAAAA\", -1])).eq(\"AAAAAAAAAAAAAAAAAAAAA: bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark! bark!\");\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

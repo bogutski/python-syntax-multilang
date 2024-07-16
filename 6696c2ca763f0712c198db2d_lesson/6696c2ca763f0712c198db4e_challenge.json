@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db4e",
+  "name": {
+    "en": "Assign value 'Hello' to the `str` variable",
+    "ru": "Присвойте переменной `str` значение 'Hello'"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-13.png)\n\nCreate a variable named `str`. \nUse the keyword `let`.\nAssign a value - the string `Hello`.\n\nRelated example:\n```javascript\nlet string = 'World';\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-13.png)\n\nСоздайте переменную с именем `str`. \nИспользуйте ключевое слово` let`.\nПрисвойте значение - строку `Hello`.\n\nПохожий пример:\n```javascript\nlet string = 'World';\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let str = 'Hello';",
+  "openTest": "it('str is defined', () => {\n  expect (str).not.to.be.undefined;\n});\n\nit('str is a string', () => {\n  expect (str).to.be.a('string');\n});\n\nit('str is equal to \"Hello\"', () => {\n  expect (str).to.be.equal('Hello');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": false,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet str = 'Hello';\n```",
+    "ru": "```javascript\nlet str = 'Hello';\n```"
+  }
+}

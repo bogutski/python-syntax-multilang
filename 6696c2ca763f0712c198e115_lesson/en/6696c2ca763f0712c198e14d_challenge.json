@@ -1,0 +1,4 @@
+{
+  "name": "Format the answer about the boolean",
+  "instruction": "Write a function `booleanAnswer` that takes one value and returns a string like\n`'The value 2 converted to boolean is true'`, where `2` is the value that was passed to the function and `true` is the result of converting that value to `boolean`."
+}

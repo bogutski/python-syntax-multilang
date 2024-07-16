@@ -1,0 +1,5 @@
+{
+  "name": "Строка из 5-ти символов. Считаем вхождение определенной буквы",
+  "instruction": "Напишите функцию `letterCount`, которая принимает 2 параметра:\n* `str` - строка. Всегда будет состоять из 5-ти букв\n* `letter` - искомая буква\n\nФункция должна возвращать количество вхождений буквы `letter` в строку `str` без учета регистра.\n\nЕсли второй аргумент не передан, то функция должна возвращать строку `Wrong letter`.\n\nПримеры запуска функции:\n```javascript\nletterCount('Hello', 'l') // 2\nletterCount('Hello', 'L') // 2\nletterCount('HeLlo', 'l') // 2\nletterCount('HeLlo', 'L') // 2\nletterCount('Hello', 'h') // 1\nletterCount('Hello', 'H') // 1\nletterCount('Hello', 'e') // 1\nletterCount('Hello', 'E') // 1\nletterCount('Hello', 'b') // 0\n```\n\nПохожий пример:\n```javascript\nfunction isLetter(str) {\n  const l = 'a'\n  if (!str) {\n    return 'Wrong string';\n  }\n  return str.toLowerCase() === l.toLowerCase();\n}\n```\n\nПриведите все к одному регистру и сравнивайте.",
+  "instructions": {}
+}

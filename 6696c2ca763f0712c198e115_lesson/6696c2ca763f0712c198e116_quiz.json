@@ -1,0 +1,505 @@
+{
+  "_id": "6696c2ca763f0712c198e116",
+  "name": {
+    "ru": "Логический тип данных boolean",
+    "en": "Logical boolean data type",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198e117",
+      "name": {
+        "ru": "Boolean может быть только true или false",
+        "en": "Boolean can only be true or false",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e118",
+          "name": {
+            "ru": "Утверждение верно",
+            "en": "The statement is true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e119",
+          "name": {
+            "ru": "Утверждение неверно",
+            "en": "The statement is false",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e11a",
+      "name": {
+        "ru": "Выберите правильное написание вариантов boolean",
+        "en": "Choose the correct spelling of boolean options",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e11b",
+          "name": {
+            "ru": "True, False",
+            "en": "True, False",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e11c",
+          "name": {
+            "ru": "'true', 'false'",
+            "en": "'true', 'false'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e11d",
+          "name": {
+            "ru": "true, false",
+            "en": "true, false",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e11e",
+          "name": {
+            "ru": "TRUE, FALSE",
+            "en": "TRUE, FALSE",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e11f",
+      "name": {
+        "ru": "Для преобразования в boolean используется:",
+        "en": "To convert to boolean is used:",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e120",
+          "name": {
+            "ru": "Boolean()",
+            "en": "Boolean()",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e121",
+          "name": {
+            "ru": "!",
+            "en": "!",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e122",
+          "name": {
+            "ru": "!!",
+            "en": "!!",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e123",
+          "name": {
+            "ru": "toBoolean()",
+            "en": "toBoolean()",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e124",
+      "name": {
+        "ru": "Что вернет Boolean(0)?",
+        "en": "What does Boolean(0) return?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e125",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e126",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e127",
+          "name": {
+            "ru": "Ошибка",
+            "en": "Error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e128",
+          "name": {
+            "ru": "NaN",
+            "en": "NaN",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e129",
+      "name": {
+        "ru": "Что вернет !Boolean('')?",
+        "en": "What does !Boolean('') return?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e12a",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e12b",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e12c",
+          "name": {
+            "ru": "Ошибка",
+            "en": "Error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e12d",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e12e",
+      "name": {
+        "ru": "Что вернет Booleam('Hello')?",
+        "en": "What will Booleam('Hello') return?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e12f",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e130",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e131",
+          "name": {
+            "ru": "Ошибка",
+            "en": "Error",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e132",
+          "name": {
+            "ru": "Hello",
+            "en": "Hello",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e133",
+      "name": {
+        "ru": "Для чего используется ! в начале выражения?",
+        "en": "Why is ! at the beginning of an expression used?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e134",
+          "name": {
+            "ru": "Для преобразования в Boolean",
+            "en": "To convert to Boolean",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e135",
+          "name": {
+            "ru": "Для преобразования в противоположный boolean",
+            "en": "To convert to the opposite boolean",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e136",
+          "name": {
+            "ru": "Для преобразования в Number",
+            "en": "To convert to Number",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e137",
+          "name": {
+            "ru": "Для преобразования в String",
+            "en": "To convert to String",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e138",
+      "name": {
+        "ru": "Что вернет !!Boolean(0)?",
+        "en": "What does !!Boolean(0) return?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e139",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e13a",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e13b",
+          "name": {
+            "ru": "Ошибка",
+            "en": "Error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e13c",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e13d",
+      "name": {
+        "ru": "Что вернет Boolean('Hello')?",
+        "en": "What does Boolean('Hello') return?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e13e",
+          "name": {
+            "ru": "true",
+            "en": "true",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e13f",
+          "name": {
+            "ru": "false",
+            "en": "false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e140",
+          "name": {
+            "ru": "Ошибка",
+            "en": "Error",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e141",
+          "name": {
+            "ru": "Hello",
+            "en": "Hello",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198e142",
+      "name": {
+        "ru": "Что вернет console.log(!(1 / 0)) и почему?",
+        "en": "What will console.log(!(1 / 0)) return and why?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198e143",
+          "name": {
+            "ru": "false, потому что 1 / 0 = Infinity. Infinity это true. !Infinity = false",
+            "en": "false, because 1 / 0 = Infinity. Infinity is true. !Infinity = false",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198e144",
+          "name": {
+            "ru": "true, потому что 1 / 0 = Infinity. Infinity это false. !Infinity = true",
+            "en": "true, because 1 / 0 = Infinity. Infinity is false. !Infinity = true",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198e145",
+          "name": {
+            "ru": "Ошибка в коде",
+            "en": "Error in the code",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

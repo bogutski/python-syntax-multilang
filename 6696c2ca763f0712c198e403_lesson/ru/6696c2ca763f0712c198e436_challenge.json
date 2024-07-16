@@ -1,0 +1,5 @@
+{
+  "name": "Сколько букв в верхнем и нижнем регистре в строке",
+  "instruction": "Напишите функцию `countUpperLower`, которая принимает 1 параметр – строку из 5-ти букв.\n\nПримеры запуска функции:\n```javascript\ncountUpperLower('aBcDe') // 'Upper: 2, Lower: 3'\ncountUpperLower('aBcDE') // 'Upper: 3, Lower: 2'\ncountUpperLower('aBcDeF') // 'Wrong string'\ncountUpperLower('aBc') // 'Wrong string'\n```\n\nИз примера видно, что функция должна вернуть строку вида `Upper: 2, Lower: 3`, где `2` и `3` – количество букв в верхнем и нижнем регистре соответственно.\n\nЕсли в функцию передана строка не из 5-ти символов, то функция должна вернуть строку `Wrong string`.\n\nВ функцию всегда будут предаваться буквы английского алфавита.",
+  "instructions": {}
+}

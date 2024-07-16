@@ -1,0 +1,5 @@
+{
+  "name": "Сумма цифр в строке",
+  "instruction": "Исправьте функцию `stringOfNumbers` так, чтобы она возвращала сумму цифр в строке.\n\nВ строке будут только цифры.\n\nПримеры запуска функции:\n```javascript\nstringOfNumbers(\"123\") // 6\nstringOfNumbers(\"1234\") // 10\n```",
+  "instructions": {}
+}

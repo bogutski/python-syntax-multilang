@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e89e",
+  "name": {
+    "en": "Searching and multiplying strings",
+    "ru": "Поиск и умножение строк"
+  },
+  "instruction": {
+    "en": "Write a function `arrayModify` that takes two parameters:\n* `array` - array;\n* `str` - search string.\n\nThe `array` array can contain any number of strings, numbers and has the following structure (example):\n```javascript\n[0, \"E\", \"A\", \"F\", \"G\", \"A\", \"hello\", 777]\n```\n\nThe function should return a modified array ``array`` with a new element added to the end.\n\nConditions:\n* The function must search for the string `str` in the array `array`;\n* If a string `str` is found, a string `str` repeated `n` times, where `n` is equal to the index of the first found string `str` in the array `array`, should be added to the end of the array `array`.\n* If string `str` is not found, array `array` returns unchanged.\n\nExamples of running the function:\n```javascript\narrayModify([0, \"E\", \"A\", \"F\", \"G\", \"A\", \"hello\", 777], \"A\"); // [0, \"E\", \"A\", \"F\", \"G\", \"A\", \"hello\", 777, \"AA\"]\n```",
+    "ru": "Напишите функцию `arrayModify`, которая принимает два параметра:\n* `array` - массив;\n* `str` - строка для поиска.\n\nМассив `array` может содержать любое количество строк, чисел и имеет следующую структуру (пример):\n```javascript\n[0, \"E\", \"A\", \"F\", \"G\", \"A\", \"hello\", 777]\n```\n\nФункция должна вернуть измененный массив `array` с добавленным в конец новым элементом.\n\nУсловия:\n* Функция должна выполнять поиск строки `str` в массиве `array`;\n* Если строка `str` найдена, то в конец массива `array` должна быть добавлена строка `str`, повторенная `n` раз, где `n` равно индексу первой найденной строки `str` в массиве `array`.\n* Если строка `str` не найдена, то массив `array` возвращается без изменений.\n\nПримеры запуска функции:\n```javascript\narrayModify([0, \"E\", \"A\", \"F\", \"G\", \"A\", \"hello\", 777], \"A\");  // [0, \"E\", \"A\", \"F\", \"G\", \"A\", \"hello\", 777, \"AA\"]\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function arrayModify(array, str) {\n  const index = array.indexOf(str);\n  if (index !== -1) {\n    array.push(str.repeat(index));\n  }\n  return array;\n}",
+  "openTest": "it('Created function `arrayModify`', () => {\n  expect(typeof arrayModify).eq('function');\n});\n\nit('arrayModify([\"cat\", \"dog\", \"cat\", \"cat\", \"dog\", \"bird\"], \"bird\");  // [\"cat\", \"dog\", \"cat\", \"cat\", \"dog\", \"bird\", \"birdbirdbirdbirdbird\"]', () => {\n  expect(arrayModify([\"cat\", \"dog\", \"cat\", \"cat\", \"dog\", \"bird\"], \"bird\")).to.eql([\"cat\", \"dog\", \"cat\", \"cat\", \"dog\", \"bird\", \"birdbirdbirdbirdbird\"]);\n});\n\nit('arrayModify([\"A\", \"B\", \"B\", \"A\"], \"A\");  // [\"A\", \"B\", \"B\", \"A\", \"\"]', () => {\n  expect(arrayModify([\"A\", \"B\", \"B\", \"A\"], \"A\")).to.eql([\"A\", \"B\", \"B\", \"A\", \"\"]);\n});\n\nit('arrayModify([\"John\", \"Mary\", \"John\", \"John\", \"Mary\", \"Kate\"], \"KATE\");  // [\"John\", \"Mary\", \"John\", \"John\", \"Mary\", \"Kate\"]', () => {\n  expect(arrayModify([\"John\", \"Mary\", \"John\", \"John\", \"Mary\", \"Kate\"], \"KATE\")).to.eql([\"John\", \"Mary\", \"John\", \"John\", \"Mary\", \"Kate\"]);\n});\n\nit('arrayModify([0, 1, 0, 5, 0, 0, 1, \"1\"], \"1\");  // [0, 1, 0, 5, 0, 0, 1, \"1\", \"1111111\"]', () => {\n  expect(arrayModify([0, 1, 0, 5, 0, 0, 1, \"1\"], \"1\")).to.eql([0, 1, 0, 5, 0, 0, 1, \"1\", \"1111111\"]);\n});\n\nit('arrayModify([\"Alpha\", \"Beta\", \"Gamma\", \"Delta\", \"Beta\"], \"Beta\");  // [\"Alpha\", \"Beta\", \"Gamma\", \"Delta\", \"Beta\", \"Beta\"]', () => {\n  expect(arrayModify([\"Alpha\", \"Beta\", \"Gamma\", \"Delta\", \"Beta\"], \"Beta\")).to.eql([\"Alpha\", \"Beta\", \"Gamma\", \"Delta\", \"Beta\", \"Beta\"]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

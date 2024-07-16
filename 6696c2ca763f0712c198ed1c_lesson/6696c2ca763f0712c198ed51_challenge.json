@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ed51",
+  "name": {
+    "en": "Count the number of words in brackets",
+    "ru": "Посчитать количество слов в скобках"
+  },
+  "instruction": {
+    "en": "Write a function `insideBrackets` that takes a string and returns the number of words inside the brackets.\n\nA closing parenthesis cannot be in front of an opening one.\n\nThere will always be `minimum one word` inside the brackets.\n\nSolution algorithm:\n\n* Use the `indexOf` method to find the first bracket and write it to the variable `firstBracket`.\n\n* Using the `indexOf` method find the first bracket and write it into the `secondBracket` variable.\n\n* Run a loop that starts from the `firstBracket` index and ends at the `secondBracket` index.\n\nAn example of running a function:\n```javascript\ninsideBrackets('one (two) three') // 1\ninsideBrackets('everything is fine') // 3\n```",
+    "ru": "Напишите функцию `insideBrackets`, которая принимает строку и возвращает количество слов внутри скобок.\n\nЗакрывающая скобка не может находиться перед открывающейся.\n\nВ скобках всегда будет находиться `минимум одно слово`.\n\nАлгоритм решения:\n\n* С помощью метода `indexOf` найти первую скобку и записать ее в переменную `firstBracket`.\n\n* С помощью метода `indexOf` найти вторую скобку и записать ее в переменную `secondBracket`.\n\n* Запустить цикл, который начинает проверку с индекса `firstBracket` и заканчивается на индексе `secondBracket`.\n\nПример запуска функции:\n```javascript\ninsideBrackets('one (two) three') // 1\ninsideBrackets('(everything is fine)') // 3\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function insideBrackets(str){\n  let count = 1;\n  const firstBracket = str.indexOf('(');\n  const secondBracket = str.indexOf(')');\n  for (let i = firstBracket+1; i < secondBracket-1; i++){\n    if(str[i] === ' ' && str[i+1] !== ' ')count++;\n  }\n  return count;\n}",
+  "openTest": "it('countSymbols is a function', () => {\n  expect(insideBrackets).to.be.a('function');\n})\nit(\"insideBrackets('one (two) three') should return 1\", () =>{\n  expect(insideBrackets('one (two) three')).equal(1);\n});\nit(\"insideBrackets('hi (hi bob) bob') should return 2\", () =>{\n  expect(insideBrackets('hi (hi bob) bob')).equal(2);\n});\nit(\"insideBrackets('(everything is fine )') should return 3\", () =>{\n  expect(insideBrackets('(everything is fine)')).equal(3);\n});\nit(\"insideBrackets('(one)') should return 1\", () =>{\n  expect(insideBrackets('(one)')).equal(1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

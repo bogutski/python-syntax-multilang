@@ -1,0 +1,4 @@
+{
+  "name": "Robin Hood-style fair rounding",
+  "instruction": "In the fairy tale universe, a special cash register is made that rounds up purchase receipts so that the rich pay more.\n\nWrite a function `robinHoodRound` that takes a number and returns its rounded value.\n\nRounding rules:\n* If the number is greater than or equal to 100, round up and add 18%, the wealth tax\n* If the number is less than 100, round down and add 5% - poverty tax.\n\nThe tax is added from the previously rounded number.\n\nAfter the tax is added, the number is rounded up to a whole number.\n\n\nExamples of running the function:\n```javascript.\nrobinHoodRound(100); // 118\nrobinHoodRound(99); // 104\nrobinHoodRound(105.78); // 124\n```"
+}

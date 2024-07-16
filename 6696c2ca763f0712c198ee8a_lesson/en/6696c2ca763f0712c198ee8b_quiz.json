@@ -1,0 +1,174 @@
+{
+  "name": "Replace the numbers in the string with their verbal description",
+  "questions": {
+    "0": {
+      "name": "Choose the correct result of replacing numbers with words for the string below",
+      "description": "```javascript\nconst str = '1 + 3 = 5 - 1';\n```",
+      "variants": {
+        "0": {
+          "name": "'one + three = five - one'"
+        },
+        "1": {
+          "name": "'one plus three = five minus one'"
+        },
+        "2": {
+          "name": "'one + three equals five - one'"
+        },
+        "3": {
+          "name": "'one plus three equals five minus one'"
+        }
+      }
+    },
+    "1": {
+      "name": "What is the object below when you replace a number with a verbal description of it?",
+      "description": "```javascript\nconst numbers = {\n  0: 'zero',\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}\n```",
+      "variants": {
+        "0": {
+          "name": "The object is a matching table where the key is a verbal description of the number and the value is the number"
+        },
+        "1": {
+          "name": "An object is a matching table where the key is a number and the value is its verbal description"
+        }
+      }
+    },
+    "2": {
+      "name": "How many correspondences do you need to write in the object to replace all numbers from 0 to 5 with their verbal description?",
+      "variants": {
+        "0": {
+          "name": "It is enough to specify matches only for 0 and for 5, the other numbers will be replaced automatically"
+        },
+        "1": {
+          "name": "Matches must be spelled out from 0 to 10 inclusive"
+        },
+        "2": {
+          "name": "From 0 to 5 inclusive"
+        },
+        "3": {
+          "name": "const numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}"
+        }
+      }
+    },
+    "3": {
+      "name": "Where should you create an object with correspondences? Before the function or inside the function?",
+      "variants": {
+        "0": {
+          "name": "After the function"
+        },
+        "1": {
+          "name": "Before the function"
+        },
+        "2": {
+          "name": "Inside the function."
+        },
+        "3": {
+          "name": "Doesn't matter"
+        }
+      }
+    },
+    "4": {
+      "name": "Is it correct that the result of the code below is 'one + two = three'?",
+      "description": "```javascript\nconst numbers = {\n  0: 'zero',\n  1: 'one',\n  2: 'two'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\nlet word = '';\n\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word) {\n        if(numbers[word]) result += numbers[word];\n        else result += word;\n        word = '';\n    }\n\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\n\nconsole.log(changeNumberToWord('1 + 2 = 3'));\n",
+      "variants": {
+        "0": {
+          "name": "No, the result is 'one + two = 3'."
+        },
+        "1": {
+          "name": "No, the result will be 'one + two ='."
+        },
+        "2": {
+          "name": "No, the result is 'one plus two equals three'."
+        },
+        "3": {
+          "name": "Yes, the result will be 'one + two = three'."
+        }
+      }
+    },
+    "5": {
+      "name": "What should I add to the second if condition so that the last element of the string is not cut off?",
+      "description": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\n\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word) {\n        if(numbers[word]) result += numbers[word];\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\n\nconsole.log(changeNumberToWord('1 2 3 4 5 ready or not, here I come'));\n```",
+      "variants": {
+        "0": {
+          "name": "&& i === str.length - 1"
+        },
+        "1": {
+          "name": "|| i === str.length - 1 && word"
+        },
+        "2": {
+          "name": "|| i === str.length - 1"
+        },
+        "3": {
+          "name": "&& i === str.length - 1 && word"
+        }
+      }
+    },
+    "6": {
+      "name": "Is it correct that the result of the code below will be '!404! - !404! = five'?",
+      "description": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word || i === str.length - 1) {\n        if(numbers[word]) result += numbers[word];\n        else if(!Number.isNaN(+word)) result += '!404!';\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\nconsole.log(changeNumberToWord('100 - 95 = 5'));\n```",
+      "variants": {
+        "0": {
+          "name": "No, the result is 'one hundred - ninety five = five'."
+        },
+        "1": {
+          "name": "No, the result is '100 - 95 = five'."
+        },
+        "2": {
+          "name": "No, the result will be '!404! - !404! = !404!'"
+        },
+        "3": {
+          "name": "Yes, the result will be '!404! - !404! = five'"
+        }
+      }
+    },
+    "7": {
+      "name": "What is the result of running the code below?",
+      "description": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word || i === str.length - 1) {\n        if(numbers[word]) result += numbers[word];\n        else if(!Number.isNaN(+word)) result += 'SomeNumber';\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\nconsole.log(changeNumberToWord('On cloud 9'));\n```",
+      "variants": {
+        "0": {
+          "name": "'On cloud nine'"
+        },
+        "1": {
+          "name": "'On cloud 9'"
+        },
+        "2": {
+          "name": "'On cloud SomeNumber'"
+        },
+        "3": {
+          "name": "'On cloud '"
+        }
+      }
+    },
+    "8": {
+      "name": "What do you need to add to replace all the numbers with their verbal description?",
+      "description": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word || i === str.length - 1) {\n        if(numbers[word]) result += numbers[word];\n        else if(!Number.isNaN(+word)) result += 'SomeNumber';\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\nconsole.log(changeNumberToWord('1 2 Buckle my shoe 3 4 Shut the door'));\n\n```",
+      "variants": {
+        "0": {
+          "name": "Nothing needs to be added, all numbers will be replaced by their verbal description"
+        },
+        "1": {
+          "name": "In the numbers object, we need to add one more property, 4: 'four'"
+        },
+        "2": {
+          "name": "In the numbers object, we need to add one more property - 5: 'five'"
+        }
+      }
+    },
+    "9": {
+      "name": "Select the correct version of the result of the code run below",
+      "description": "```javascript\nconst numbers = {\n  1: 'one',\n  2: 'two',\n  3: 'three',\n  4: 'four',\n  5: 'five'\n}; \n\nfunction changeNumberToWord(str){\n  let result = '';\n  let word = '';\nfor(let i = 0; i < str.length; i++){\n    if(str[i] !== ' ') word += str[i];\n    if(str[i] === ' ' && word || i === str.length - 1) {\n        if(numbers[word]) result += numbers[word];\n        else if(!Number.isNaN(+word)) result += 'SomeNumber';\n        else result += word;\n        word = '';\n    }\n    if(str[i] === ' ') result += ' ';\n  }\n  return result;\n};\nconsole.log(changeNumberToWord('5 4 3 2 1 Start!'));\n```",
+      "variants": {
+        "0": {
+          "name": "five four three three two one Start!"
+        },
+        "1": {
+          "name": "'five four three two one '"
+        },
+        "2": {
+          "name": "'5 4 3 2 1 Start!'"
+        },
+        "3": {
+          "name": "'five four three two one Start!'"
+        }
+      }
+    }
+  }
+}

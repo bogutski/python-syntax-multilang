@@ -1,0 +1,4 @@
+{
+  "name": "Reverse the words without changing their order",
+  "instruction": "The `twoWords` function takes a string consisting of two words separated by a space.\n\nYou need to reverse each word in the string without changing the word order. The space must remain between the words.\n\nIf the string is empty, return an empty string.\n\n\nThere are 3 errors in the code below. Find them and fix them.\nThe loop and the code below have no errors.\nFigure out what is happening on each line and why.\n\nExamples of running a function:\n```javascript\ntwoWords('yerg etihw') // 'grey white'\ntwoWords('eulb yks') // 'blue sky'\ntwoWords('789') // '987'\ntwoWords('') // ''\n```"
+}

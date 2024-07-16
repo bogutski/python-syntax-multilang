@@ -1,0 +1,5 @@
+{
+  "name": "Вернуть массив удвоенных чисел",
+  "instruction": "Функция `doubleAndReturnNumbers` принимает массив, состоящий из элементов с разными типами данных.\n\nФункция возвращает массив чисел, умноженных на 2.\n\nПример запуска функции:\n```javascript\ndoubleAndReturnNumbers([1, 2, 3]) // [2, 4, 6]\ndoubleAndReturnNumbers([1, 2, 3, \"4\"]) // [2, 4, 6]\n```",
+  "instructions": {}
+}

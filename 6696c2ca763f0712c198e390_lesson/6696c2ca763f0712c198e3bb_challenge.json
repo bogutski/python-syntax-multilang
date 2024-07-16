@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e3bb",
+  "name": {
+    "en": "The function calculates the length of the string",
+    "ru": "Функция вычисляет длину строки"
+  },
+  "instruction": {
+    "en": "Write a function `stringLength` that takes a string and returns its length.",
+    "ru": "Напишите функцию `stringLength`, которая принимает строку и возвращает ее длину."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function stringLength(str) {\n  return str.length;\n}",
+  "openTest": "it('Created function stringLength', () => {\n  expect(stringLength).to.be.a('function');\n});\n\nit('stringLength(\"Hello\") should return 5', () => {\n  expect(stringLength('Hello')).to.equal(5);\n});\n\nit('stringLength(\"Hello World\") should return 11', () => {\n  expect(stringLength('Hello World')).to.equal(11);\n});\n\nit('stringLength(\"1234567890\") should return 10', () => {\n  expect(stringLength('1234567890')).to.equal(10);\n});\n\nit('stringLength(\"\") should return 0', () => {\n  expect(stringLength('')).to.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

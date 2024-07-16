@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ea0a",
+  "name": {
+    "en": "Number of positive and negative numbers",
+    "ru": "Количество положительных и отрицательных чисел"
+  },
+  "instruction": {
+    "en": "Fix the `positiveAndNegative` function so that it returns an array of two elements.\n\n * The first element is the number of positive numbers in the range from `n1` to `n2`,\n * second element - the number of negative numbers in the same range.\n\nZero is considered neither a positive nor a negative number.\n\nExamples of running the function:\n```javascript\npositiveAndNegative(-10, 5) // [ 5, 10 ]\npositiveAndNegative(-5, 10) // [ 10, 5 ]\n```",
+    "ru": "Исправьте функцию `positiveAndNegative` так, чтобы она возвращала массив, из двух элементов.\n\n * первый элемент - количество положительных чисел в диапазоне от `n1` до `n2`,\n * второй элемент - количество отрицательных чисел в этом же диапазоне.\n\nНоль не считается ни положительным, ни отрицательным числом.\n\nПримеры запуска функции:\n```javascript\npositiveAndNegative(-10, 5) // [ 5, 10 ]\npositiveAndNegative(-5, 10) // [ 10, 5 ]\n```"
+  },
+  "initialSolution": "function positiveAndNegative(n1, n2){\n  const positive = 0;\n  let negative = 0;\n  for (let i === n1; j <= n2; i+){\n    if (i > 0) positive++;\n    else (i < 0) negative++;\n  }\n  return (positive, negative);\n}",
+  "completedSolution": "function positiveAndNegative(n1, n2){\n  let positive = 0;\n  let negative = 0;\n  for (let i = n1; i <= n2; i++){\n    if (i > 0) positive++;\n    else if (i < 0) negative++;\n  }\n  return [positive, negative];\n}",
+  "openTest": "it('Created function positiveAndNegative', () => {\n  expect(positiveAndNegative).to.be.a('function');\n});\n\nit('positiveAndNegative(-10, 5) should return [ 5, 10 ]', () => {\n  expect(positiveAndNegative(-10, 5)).to.deep.equal([ 5, 10 ]);\n});\n\nit('positiveAndNegative(-5, 10) should return [ 10, 5 ]', () => {\n  expect(positiveAndNegative(-5, 10)).to.deep.equal([ 10, 5 ]);\n});\n\nit('positiveAndNegative(0, 15) should return [ 15, 0 ]', () => {\n  expect(positiveAndNegative(0, 15)).to.deep.equal([ 15, 0 ]);\n});\n\nit('positiveAndNegative(-12, -5) should return [ 0, 8 ]', () => {\n  expect(positiveAndNegative(-12, -5)).to.deep.equal([ 0, 8 ]);\n});\n\nit('positiveAndNegative(5, 5) should return [ 1, 0 ]', () => {\n  expect(positiveAndNegative(5, 5)).to.deep.equal([ 1, 0 ]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

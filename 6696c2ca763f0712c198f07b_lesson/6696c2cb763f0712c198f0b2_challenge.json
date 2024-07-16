@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f0b2",
+  "name": {
+    "en": "Multiply all numbers in the array by 2",
+    "ru": "Умножить все числа в массиве на 2"
+  },
+  "instruction": {
+    "en": "The function `allNumbers` takes an array `arr` as a parameter.\n\nThe array can contain elements such as numbers, strings, and arrays.\n\nA number can be written either as a number or as a string, for example: 1 or \"1\". But a string containing digits will not be encountered (for example `ab23cc`).\n\nThe function should return an array in which all numbers are multiplied by 2.\n\nIf an element of the array is an array itself, then all numbers in the nested array should also be multiplied by 2.\n\nIf an element of the array is not a number, it should remain unchanged.\n\nExample of function execution:\n```javascript\nallNumbers([1, [2, 3], 4]) // [2, [4, 6], 8]\nallNumbers([\"1\", \"4\", \"6\"]) // [2, 8, 12]\n```",
+    "ru": "Функция `allNumbers` принимает массив `arr` в качестве параметра.\n\nВ массив могут быть переданы элементы: числа, строки, массивы.\n\nЧисло может быть записано как в виде числа, так и в виде строки, например: 1 или \"1\". Но строка с содержанием цифр не будет встречаться (например `ab23cc`).\n\nФункция должна вернуть массив, в котором все числа умножены на 2.\n\nЕсли элемент массива является массивом, то все числа во вложенном массиве также должны быть умножены на 2.\n\nЕсли элемент массива не является числом, то он должен остаться неизменным.\n\nПример запуска функции:\n```javascript\nallNumbers([1, [2, 3], 4]) // [2, [4, 6], 8]\nallNumbers([\"1\", \"4\", \"6\"]) // [2, 8, 12]\n```"
+  },
+  "initialSolution": "function",
+  "completedSolution": "function allNumbers(arr) {\n  for (let i = 0; i < arr.length; i++) {\n    if (typeof arr[i] === 'number' || !isNaN(arr[i])) {\n      arr[i] = arr[i] * 2;\n    }\n    for (let j = 0; j < arr[i].length; j++) {\n      if (typeof arr[i][j] === 'number' ) {\n        arr[i][j] = arr[i][j] * 2;\n      }\n    }\n  }\n  return arr\n}",
+  "openTest": "it('Created function allNumbers', () => {\n    expect(allNumbers).to.be.a('function');\n  });\n\n  it('allNumbers([1, 2, 3]) should returns [2, 4, 6]', () => {\n    expect(allNumbers([1, 2, 3])).to.deep.equal([2, 4, 6]);\n  });\n\n  it('allNumbers([1, [2, 3], 4]) should returns [2, [4, 6], 8]', () => {\n    expect(allNumbers([1, [2, 3], 4])).to.deep.equal([2, [4, 6], 8]);\n  });\n\n  it('allNumbers([1, [2, 0, 5], 6]) should returns [2, [4, 0, 10], 12]', () => {\n    expect(allNumbers([1, [2, 0, 5], 6])).to.deep.equal([2, [4, 0, 10], 12]);\n  });\n\n  it('allNumbers([]) should returns []', () => {\n    expect(allNumbers([])).to.deep.equal([]);\n  });\n\n  it('allNumbers([\"1\", \"4\", \"6\") should returns [2, 8, 12]', () => {\n    expect(allNumbers([\"1\", \"4\", \"6\"])).to.deep.equal([2, 8, 12]);\n  });\n\n  it('allNumbers([\"1\", [2, 3], \"4\"]) should returns [2, [4, 6], 8]', () => {\n    expect(allNumbers([\"1\", [2, 3], \"4\"])).to.deep.equal([2, [4, 6], 8]);\n  });\n\n  it('allNumbers([[2, 2, 2], [2, 0, 5], [0, 0, 0]]) should returns [[4, 4, 4], [4, 0, 10], [0, 0 , 0]]', () => {\n    expect(allNumbers([[2, 2, 2], [2, 0, 5], [0, 0, 0]])).to.deep.equal([[4, 4, 4], [4, 0, 10], [0, 0 , 0]]);\n  });\n\n  it('allNumbers([\"hello\", \"js\", \"coding\"]) should returns [\"hello\", \"js\", \"coding\"]', () => {\n    expect(allNumbers([\"hello\", \"js\", \"coding\"])).to.deep.equal([\"hello\", \"js\", \"coding\"]);\n  });",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

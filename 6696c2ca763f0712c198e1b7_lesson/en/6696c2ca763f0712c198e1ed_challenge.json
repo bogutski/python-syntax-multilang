@@ -1,0 +1,4 @@
+{
+  "name": "Determine that this is a string",
+  "instruction": "Write a function `isString` that takes a string and returns a string:\n* `Empty string` if it is an empty string\n* `String` if it is a string\n* `Not a string` if it's not a string\n\nStick to the sequence of checks:\n* str === '' - empty string\n* typeof str === ' string' - a string\n* else - not a string"
+}

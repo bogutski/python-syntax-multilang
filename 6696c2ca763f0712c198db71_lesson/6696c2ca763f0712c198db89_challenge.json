@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198db89",
+  "name": {
+    "en": "Set variable `a` to 4.25",
+    "ru": "Присвойте переменной `a` значение 4.25"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-6.png)\n\nCreate a variable named `a`. Use the keyword ` let`. Assign a value - the number `4.25`.\n\nRelated example:\n```javascript\nlet b = 2.45;\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-6.png)\n\nСоздайте переменную с именем `a`. Используйте ключевое слово` let`. Присвойте значение - число `4.25`\n\nПохожий пример:\n```javascript\nlet b = 2.45;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let a = 4.25;",
+  "openTest": "",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal",
+  "hint": {
+    "en": "```javascript\nlet a = 4.25;\n```",
+    "ru": "```javascript\nlet a = 4.25;\n```"
+  }
+}

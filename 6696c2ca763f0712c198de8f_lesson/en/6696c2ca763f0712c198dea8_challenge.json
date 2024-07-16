@@ -1,0 +1,6 @@
+{
+  "name": "Is the number odd?",
+  "instruction": "Given number num. Is it true that the number is odd?\n\nCreate a variable `num` and assign it a value of any positive number.\n\nCreate a variable `isOdd` and assign it the result of comparing the remainder of dividing the number `num` by 2 with 1.\nThat is, if the number `num` is odd, then the value of the variable `isOdd` will be true.\n\nIf the number `num` is even, then the value of the variable `isOdd` will be false.\n\nLet's provide an example that is essentially similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst number = 9;\nconst isNumberOdd = number % 2 === 1; // true\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst num = 18;\nconst isOdd = num % 2 === 1;\n```"
+}

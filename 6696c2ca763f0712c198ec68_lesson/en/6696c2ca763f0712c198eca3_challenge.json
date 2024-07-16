@@ -1,0 +1,4 @@
+{
+  "name": "Break down the word into letters",
+  "instruction": "The function `specTheWord` takes a string.\nThe string consists only of lowercase letters and does not contain spaces.\n\n The function returns an object with 4 properties:\n\n* `vowel` - the string containing all vowel letters from the source string\n* `vowelCount` - number of vowels in the input string\n* `consonant` - a string containing all consonants from the source string\n* `consonantCount` - number of consonant letters in the source string\n\nAn example of the function start:\n```javascript\nspecTheWord(\"hello\") // {vowel: \"eo\", vowelCount: 2, consonant: \"hll\", consonantCount: 3}\n```"
+}

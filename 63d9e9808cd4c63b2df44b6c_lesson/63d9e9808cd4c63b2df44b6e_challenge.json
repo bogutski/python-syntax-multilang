@@ -1,0 +1,23 @@
+{
+  "_id": "63d9e9808cd4c63b2df44b6e",
+  "name": {
+    "ru": "",
+    "en": "",
+    "es": ""
+  },
+  "instruction": {
+    "ru": "",
+    "en": "",
+    "es": ""
+  },
+  "initialSolution": "function sum(num1, num2){\n\n}",
+  "completedSolution": "function sum(num1, num2) {\n  return num1 + num2;\n}",
+  "openTest": "it('Created function sum', () => {\n  expect(sum).to.be.a('function');\n});\n\nit('Function returns correct result for arguments `-10, 10', () => {\n  expect(sum(-10, 10)).eq(0);\n});\n\nit('Function returns correct result for arguments `5, 8`', () => {\n  expect(sum(5, 8)).eq(13);\n});\n\nit('Function returns correct result for arguments `-2, -35`', () => {\n  expect(sum(-2, -35)).eq(-37);\n});\n\nit('The function returns the correct result for arguments `20, -3`', () => {\n  expect(sum(20, -3)).eq(17);\n});\n\nit('The function returns a valid result for arguments `0, 0`', () => {\n  expect(sum(0, 0)).eq(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "equal"
+}

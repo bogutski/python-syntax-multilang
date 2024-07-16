@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e312",
+  "name": {
+    "en": "Find the average score",
+    "ru": "Найдите среднюю оценку"
+  },
+  "instruction": {
+    "en": "Write a function `averageGrade` that takes three numbers and returns the average grade.\n\nRound up the result to the nearest whole number using the `Math.round()` function.\n\nExamples of running the function:\n```javascript.\naverageGrade(77, 21, 45); // 48\naverageGrade(100, 100, 100); // 100\naverageGrade(23, 45, 67); // 45\n```",
+    "ru": "Напишите функцию `averageGrade`, которая принимает три числа и возвращает среднюю оценку.\n\nРезультат округлите до ближайшего целого числа, используя функцию `Math.round()`.\n\nПримеры запуска функции:\n```javascript\naverageGrade(77, 21, 45); // 48\naverageGrade(100, 100, 100); // 100\naverageGrade(23, 45, 67); // 45\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function averageGrade(grade1, grade2, grade3) {\n  let average = (grade1 + grade2 + grade3) / 3;\n  return Math.round(average);\n}",
+  "openTest": "it('Created function averageGrade', () => {\n  expect(averageGrade).to.be.a('function');\n});\n\nit('averageGrade(25, 25, 25) should contain Math.round', () => {\n  expect(averageGrade.toString().indexOf('Math.round')).to.not.be.equal(-1);\n});\n\nit('averageGrade(77, 21, 45) should return 48', () => {\n  expect(averageGrade(77, 21, 45)).to.be.equal(48);\n});\n\nit('averageGrade(100, 100, 100) should return 100', () => {\n  expect(averageGrade(100, 100, 100)).to.be.equal(100);\n});\n\nit('averageGrade(23, 45, 67) should return 45', () => {\n  expect(averageGrade(23, 45, 67)).to.be.equal(45);\n});\n\nit('averageGrade(216, 142, 178) should return 179', () => {\n  expect(averageGrade(216, 142, 178)).to.be.equal(179);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

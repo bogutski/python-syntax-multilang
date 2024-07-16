@@ -1,0 +1,5 @@
+{
+  "name": "Comparing arrays for repeating elements",
+  "instruction": "The `checkArrays` function must accept two arrays, which can contain strings and numbers.\n\nThe function must return the string:\n* `Array 1 includes all elements of array 2`, if the first array contains all elements of the second array\n* `Array 2 has unique elements`, if the second array contains unique elements\n* `false` if at least one of the arrays is empty\n\nExamples of how to run the function:\n```javascript\ncheckArrays([1, 2, 3], [3, 2]) // \"Array 1 includes all elements of array 2\"\ncheckArrays([\"hello\", \"hello\", \"js\"], [\"js\", \"practice\") // \"Array 2 has unique elements\"\ncheckArrays([1, 2, 3], []) // false\n```",
+  "instructions": {}
+}

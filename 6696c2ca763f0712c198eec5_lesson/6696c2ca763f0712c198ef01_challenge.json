@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ef01",
+  "name": {
+    "en": "",
+    "ru": "Сумма целых и дробных чисел в строке"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `sumOfFractionalNumbers`, которая принимает строку с различными символами, включая целые и дробные положительные числа.\n\nФункция должна вернуть сумму всех чисел.\n\nЭта задача принципиально похожа на предыдущее задание, но здесь еще нужно добавить проверку на точку `.`.\n\nНапример, строка `1, 2 3.5 and 4` должна вернуть `10.5`.\n\nВ данной задаче мы будем собирать во временную переменную не только числа, но и точку `.` и потом преобразовывать ее в число и суммировать с остальными числами.\n\n\nПример запуска функции:\n```javascript\nsumOfFractionalNumbers('1, 2 3.5 and 4') // 10.5\nsumOfFractionalNumbers('a 5b c 7.5') // 12.5\nsumOfFractionalNumbers('  9.1   5 abc3,2') // 19.1\nsumOfFractionalNumbers('#$ test $#') // 0\nsumOfFractionalNumbers('') // 0\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function sumOfFractionalNumbers(str){\n  const numbers = '0123456789';\n  let sum = 0;\n  let chunk = '';\n  for (let i = 0; i < str.length; i++) {\n    if (numbers.includes(str[i]) || str[i] === '.') chunk += str[i];\n    else {\n      sum += Number(chunk);\n      chunk = '';\n    }\n  }\n  if (chunk) sum += Number(chunk);\n  return sum;\n}",
+  "openTest": "it('Created function sumOfFractionalNumbers', () => {\n  expect(sumOfFractionalNumbers).to.be.a('function');\n});\n\nit(\"sumOfFractionalNumbers('1, 2 3.5 and 4') should return 10.5\", () => {\n  expect(sumOfFractionalNumbers('1, 2 3.5 and 4')).to.be.equal(10.5);\n});\n\nit(\"sumOfFractionalNumbers('a 5b c 7.5') should return 12.5\", () => {\n  expect(sumOfFractionalNumbers('a 5b c 7.5')).to.be.equal(12.5);\n});\n\nit(\"sumOfFractionalNumbers('1.5, 2.5, 3.5') should return 7.5\", () => {\n  expect(sumOfFractionalNumbers('1.5, 2.5, 3.5')).to.be.equal(7.5);\n});\n\nit(\"sumOfFractionalNumbers('1.55   35.123 test45,#123') should return 204.673\", () => {\n  expect(sumOfFractionalNumbers('1.55   35.123 test45,#123')).to.be.equal(204.673);\n});\n\nit(\"sumOfFractionalNumbers('# test no numbers #') should return 0\", () => {\n  expect(sumOfFractionalNumbers('# test no numbers #')).to.be.equal(0);\n});\n\nit(\"sumOfFractionalNumbers('') should return 0\", () => {\n  expect(sumOfFractionalNumbers('')).to.be.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

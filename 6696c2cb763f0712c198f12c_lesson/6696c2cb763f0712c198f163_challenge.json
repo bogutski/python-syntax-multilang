@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f163",
+  "name": {
+    "en": "",
+    "ru": "Проверить каждое число в массиве на палиндром"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `isPalindrome` принимает один параметр - массив чисел.\n\nМассив произвольной длины и содержит уникальные только положительные целые и/или дробные числа.\n\nФункция возвращает объект, в котором ключами являются числа из массива, а значениями - результат проверки числа на палиндром.\n\nЕсли массив пустой, то функция возвращает строку `Array is empty`.\n\nДля проверки числа на палиндром используется функция `checkPalindrome`, которая вызывается внутри функции `isPalindrome`.\n\nФункция `checkPalindrome` принимает один параметр - число.\n\nЕсли число является палиндромом, то функция возвращает строку вида `palindrome`.\n\nЕсли число не является палиндромом, то функция возвращает строку вида `not a palindrome`.\n\nПример запуска функции `isPalindrome`:\n```javascript\nisPalindrome([7]); // {7: \"palindrome\"}\nisPalindrome([1001, 5.5]); // {1001: \"palindrome\", 5.5: \"palindrome\"}\nisPalindrome([13, 11235]); // {11235: \"not a palindrome\", 13: \"not a palindrome\"}\nisPalindrome([]); // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function isPalindrome(arr) {\n  if (!arr.length) return 'Array is empty';\n  const obj = {};\n  for (let i = 0; i < arr.length; i++) {\n    obj[arr[i]] = checkPalindrome(arr[i]);\n  }\n  return obj;\n}\n\nfunction checkPalindrome(num) {\n  num = num.toString();\n  let middle = num.length / 2;\n  for (let i = 0; i < middle; i++) {\n    if (num[i] !== num[num.length - 1 - i]) {\n      return 'not a palindrome';\n    }\n  }\n  return 'palindrome';\n}",
+  "openTest": "it('Created function isPalindrome', () => {\n  expect(isPalindrome).to.be.a('function');\n});\n\nit('Created function checkPalindrome', () => {\n  expect(checkPalindrome).to.be.a('function');\n});\n\nit(\"isPalindrome([12, 131, 44, 5431]) returns {12: 'not a palindrome', 131: 'palindrome', 44: 'palindrome', 5431: 'not a palindrome'}\", () => {\n  expect(isPalindrome([12, 131, 44, 5431])).to.deep.equal({\n    12: 'not a palindrome',\n    131: 'palindrome',\n    44: 'palindrome',\n    5431: 'not a palindrome'\n  });\n});\n\nit(\"isPalindrome([7]) returns {7: 'palindrome'}\", () => {\n  expect(isPalindrome([7])).to.deep.equal({7: 'palindrome'});\n});\n\nit(\"isPalindrome([1001, 5.5]) returns {1001: 'palindrome', 5.5: 'palindrome'}\", () => {\n  expect(isPalindrome([1001, 5.5])).to.deep.equal({1001: 'palindrome', 5.5: 'palindrome'});\n});\n\nit(\"isPalindrome([0.5, 2.2, 17.71]) returns {0.5: 'not a palindrome', 17.71: 'palindrome', 2.2: 'palindrome'}\", () => {\n  expect(isPalindrome([0.5, 2.2, 17.71])).to.deep.equal({\n    0.5: 'not a palindrome',\n    17.71: 'palindrome',\n    2.2: 'palindrome'\n  });\n});\n\nit(\"isPalindrome([13, 11235]) returns {11235: 'not a palindrome', 13: 'not a palindrome'}\", () => {\n  expect(isPalindrome([13, 11235])).to.deep.equal({11235: 'not a palindrome', 13: 'not a palindrome'});\n});\n\nit(\"isPalindrome([]) returns 'Array is empty'\", () => {\n  expect(isPalindrome([])).to.equal('Array is empty');\n});\n\nit(\"checkPalindrome(121) should return 'palindrome'\", () => {\n  expect(checkPalindrome(121)).to.equal('palindrome');\n});\n\nit(\"checkPalindrome(123) should return 'not a palindrome'\", () => {\n  expect(checkPalindrome(123)).to.equal('not a palindrome');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

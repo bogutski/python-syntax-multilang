@@ -1,0 +1,6 @@
+{
+  "name": "Исправьте ошибки в коде. Переменная product",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-18.png)\n\nТребуется написать команду, которая присваивает переменной `product` значение числа `1` с использованием\nключевого слова `let`.\n\nИсправьте ошибки в приведенном коде.",
+  "instructions": {},
+  "hint": "```javascript\nlet product = 1;\n```"
+}

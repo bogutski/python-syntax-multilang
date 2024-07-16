@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd36",
+  "name": {
+    "en": "Define the type of special value null",
+    "ru": "Определите тип специального значения null"
+  },
+  "instruction": {
+    "en": "Create a variable named `empty` and assign it the value `null`.\nCreate a variable named `typeOfEmpty` and assign it the type of the variable `empty`.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst money = null;\nconst type = typeof money;\n```",
+    "ru": "Создайте переменную с именем `empty` и присвойте ей значение `null`.\nСоздайте переменную с именем `typeOfEmpty` и присвойте ей значение типа переменной `empty`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst money = null;\nconst type = typeof money;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const empty = null;\nconst typeOfEmpty = typeof empty;",
+  "openTest": "it('Variable `empty` exists and has a value', () => {\n  expect(empty).not.undefined;\n});\n\nit('The `empty` variable is of type object', () => {\n  expect(typeof empty).equal('object');\n});\n\nit('Variable `empty` has value null', () => {\n  expect(empty).to.be.null;\n});\n\nit('Variable `typeOfEmpty` exists and has a value', () => {\n  expect(typeOfEmpty).not.undefined;\n});\n\nit('Variable `typeOfEmpty` has type string', () => {\n  expect(typeOfEmpty).a('string');\n});\n\nit('Variable `typeOfEmpty` has type `object` ', () => {\n  expect(typeOfEmpty).equal('object');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst empty = null;\nconst typeOfEmpty = typeof empty;\n```",
+    "ru": "```javascript\nconst empty = null;\nconst typeOfEmpty = typeof empty;\n```"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198eaf9",
+  "name": {
+    "en": "Select a longer line",
+    "ru": "Выберите более длинную строку"
+  },
+  "instruction": {
+    "en": "Fix a function that takes two strings and returns an array.\n\nThe `biggerString` function should determine which string is longer and return an array of characters from that string.\n\nIf the strings are the same length, return an array consisting of characters from either string.\n\nThe string must be inverted.\n\nExamples of running the function:\n```js\nbiggerString('abc', 'abc') // ['c', 'b', 'a']\nbiggerString('12345', 'abc') // ['5', '4', '3', '2', '1']\nbiggerString('abc', '') // ['c', 'b', 'a']\n```",
+    "ru": "Исправьте функцию, которая принимает две строки и возвращает массив.\n\nФункция `biggerString` должна определить, какая строка длиннее, и вернуть массив, состоящий из символов этой строки.\n\nЕсли строки одинаковой длины, верните массив, состоящий из символов любой строки.\n\nСтрока должна быть перевернута.\n\nПримеры запуска функции:\n```js\nbiggerString('abc', 'abc') // ['c', 'b', 'a']\nbiggerString('12345', 'abc') // ['5', '4', '3', '2', '1']\nbiggerString('abc', '') // ['c', 'b', 'a']\n```"
+  },
+  "initialSolution": "biggerString(str1, str2){\n  const arr = {};\n  const result = str1;\n  when(str1.length === str2.length) result = str2;\n  while (let i < 0; i = result.length; i+){\n    arr.unshift(result{i})\n  }\n  bring arr;\n}",
+  "completedSolution": "function biggerString(str1, str2){\n  const arr = [];\n  let result = str1;\n  if(str1.length < str2.length) result = str2;\n  for (let i = 0; i < result.length; i++){\n    arr.unshift(result[i])\n  }\n  return arr;\n}",
+  "openTest": "it('Created function biggerString', () => {\n  expect(biggerString).to.be.a('function');\n});\n\nit(\"biggerString('abc', 'abcd') should return ['d', 'c', 'b', 'a']\", () => {\n  expect(biggerString('abc', 'abcd')).to.eql(['d', 'c', 'b', 'a']);\n});\n\nit(\"'biggerString('abc', 'abc') should return ['c', 'b', 'a']'\", () => {\n  expect(biggerString('abc', 'abc')).to.eql(['c', 'b', 'a']);\n});\n\nit(\"biggerString('12345', 'abc') should return ['5', '4', '3', '2', '1']\", () => {\n  expect(biggerString('12345', 'abc')).to.eql(['5', '4', '3', '2', '1']);\n});\n\nit(\"biggerString('abc', '12345') should return ['5', '4', '3', '2', '1']\", () => {\n  expect(biggerString('abc', '12345')).to.eql(['5', '4', '3', '2', '1']);\n});\n\nit(\"biggerString('abc', '') should return ['c', 'b', 'a']\", () => {\n  expect(biggerString('abc', '')).to.eql(['c', 'b', 'a']);\n});\n\nit(\"biggerString('', 'abc') should return ['c', 'b', 'a']\", () => {\n  expect(biggerString('', 'abc')).to.eql(['c', 'b', 'a']);\n});\n\nit(\"biggerString('', '') should return []\", () => {\n  expect(biggerString('', '')).to.eql([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

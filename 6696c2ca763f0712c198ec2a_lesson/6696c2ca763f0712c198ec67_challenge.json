@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec67",
+  "name": {
+    "en": "",
+    "ru": "Посчитать количество вхождений каждого элемента в массиве строк"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `objectEntries`, принимает один параметр - массив строк.\n\nВ массиве содержится произвольное количество строк, состоящих из букв и/или символов.\n\nСтроки произвольной длины и не содержат пробелов.\n\nФункция производит поиск количества вхождений каждого символа во всех строках массива.\n\nФункция возвращает массив, состоящий из свойств объекта, в формате [key, value].\n\nПоиск не должен быть чувствителен к регистру.\n\nИсправьте ошибки в коде, чтобы функция работала правильно.\n\nПример запуска функции:\n```javascript\nobjectEntries(['hOnOr', 'arena']); // [['h', 1], ['o', 2], ['n', 2], ['r', 2], ['a', 2], ['e', 1]]\nobjectEntries(['bow', 'row', 'sow']); // [['b', 1], ['o', 3], ['w', 3], ['r', 1], ['s', 1]]\nobjectEntries(['pooL', '']); // [['p', 1], ['o', 2], ['l', 1]]\nobjectEntries(['', '']); // []\n``"
+  },
+  "initialSolution": "function objectEntries(arr){\n  const obj = [];\n  for (let i = 0; i < arr.length - 1; i++){\n  for (let j = 0; j < arr[i].length - 1; j++) {\n  arr[i] === arr[i].toLowerCase();\n  if (obj[arr[i][j]]) obj[arr[i][j]]++\n  else obj[arr[i][j]] = 1;\n    }\n  }\n  return Object.Entries(obj);\n}",
+  "completedSolution": "function objectEntries(arr) {\n  const obj = {};\n  for (let i = 0; i < arr.length; i++) {\n    for (let j = 0; j < arr[i].length; j++) {\n      arr[i] = arr[i].toLowerCase();\n      if (obj[arr[i][j]]) obj[arr[i][j]]++\n      else obj[arr[i][j]] = 1;\n    }\n  }\n  return Object.entries(obj);\n}",
+  "openTest": "it('Created function objectEntries', () => {\n  expect(objectEntries).to.be.a('function');\n});\n\nit(\"objectEntries(['pooL', 'loud']) should return [['p', 1], ['o', 3], ['l', 2], ['u', 1], ['d', 1]]\", () => {\n  expect(objectEntries(['pooL', 'loud'])).to.deep.equal([['p', 1], ['o', 3], ['l', 2], ['u', 1], ['d', 1]]);\n});\n\nit(\"objectEntries(['clock', 'clerk', 'cup']) should return [['c', 4], ['l', 2], ['o', 1], ['k', 2], ['e', 1], ['r', 1], ['u', 1], ['p', 1]]\", () => {\n  expect(objectEntries(['clock', 'clerk', 'cup'])).to.deep.equal([['c', 4], ['l', 2], ['o', 1], ['k', 2], ['e', 1], ['r', 1], ['u', 1], ['p', 1]]);\n});\n\nit(\"objectEntries(['hOnOr', 'arena']) should return [['h', 1], ['o', 2], ['n', 2], ['r', 2], ['a', 2], ['e', 1]]\", () => {\n  expect(objectEntries(['hOnOr', 'arena'])).to.deep.equal([['h', 1], ['o', 2], ['n', 2], ['r', 2], ['a', 2], ['e', 1]]);\n});\n\nit(\"objectEntries(['loose', 'lip']) should return [['l', 2], ['o', 2], ['s', 1], ['e', 1], ['i', 1], ['p', 1]]\", () => {\n  expect(objectEntries(['loose', 'lip'])).to.deep.equal([['l', 2], ['o', 2], ['s', 1], ['e', 1], ['i', 1], ['p', 1]]);\n});\n\nit(\"objectEntries(['bow', 'row', 'sow']) should return [['b', 1], ['o', 3], ['w', 3], ['r', 1], ['s', 1]]\", () => {\n  expect(objectEntries(['bow', 'row', 'sow'])).to.deep.equal([['b', 1], ['o', 3], ['w', 3], ['r', 1], ['s', 1]]);\n});\n\nit(\"objectEntries(['kid', 'aid', 'bee', 'see']) should return [['k', 1], ['i', 2], ['d', 2], ['a', 1], ['b', 1], ['e', 4], ['s', 1]]\", () => {\n  expect(objectEntries(['kid', 'aid', 'bee', 'see'])).to.deep.equal([['k', 1], ['i', 2], ['d', 2], ['a', 1], ['b', 1], ['e', 4], ['s', 1]]);\n});\n\nit(\"objectEntries(['', 'loud']) should return [['l', 1], ['o', 1], ['u', 1], ['d', 1]]\", () => {\n  expect(objectEntries(['', 'loud'])).to.deep.equal([['l', 1], ['o', 1], ['u', 1], ['d', 1]]);\n});\n\nit(\"objectEntries(['pooL', '']) should return [['p', 1], ['o', 2], ['l', 1]]\", () => {\n  expect(objectEntries(['pooL', ''])).to.deep.equal([['p', 1], ['o', 2], ['l', 1]]);\n});\n\nit(\"objectEntries(['', '']) should return []\", () => {\n  expect(objectEntries(['', ''])).to.deep.equal([]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

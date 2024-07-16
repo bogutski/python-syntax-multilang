@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ee86",
+  "name": {
+    "en": "",
+    "ru": "Поменять порядок слов в строке на обратный"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `reverseLocationOfWords`, которая принимает строку слов, разделенных одним пробелом.\n\nФункция должна вернуть строку, в которой слова будут расположены в обратном порядке.\n\nНапример, если строка `one two three`, то функция должна вернуть строку `three two one`.\n\nВ начале и в конце строки пробелов быть не должно.\n\n\nПримеры запуска функции:\n```javascript\nreverseLocationOfWords('one two three four') // 'four three two one'\nreverseLocationOfWords('1 2 3 4 5')          // '5 4 3 2 1'\nreverseLocationOfWords('123 456')            // '456 123'\nreverseLocationOfWords('OneWord')            // 'OneWord'\nreverseLocationOfWords('')                   // ''\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseLocationOfWords(str){\n  let newString = '';\n  let chunk = '';\n  for (let i = 0; i < str.length ; i++) {\n    if(str[i] === ' '){\n      newString = chunk + ' ' + newString;\n      chunk = '';\n    } else chunk += str[i];\n  }\n  return (chunk + ' ' + newString).trim();\n}",
+  "openTest": "it('Created function reverseLocationOfWords', () => {\n  expect(reverseLocationOfWords).to.be.a('function');\n});\n\nit(\"reverseLocationOfWords('one two three four five') returns 'five four three two one'\", () => {\n  expect(reverseLocationOfWords('one two three four five')).to.equal('five four three two one');\n});\n\nit(\"reverseLocationOfWords('1 2 3 4 5 6 7 8 9 0') returns '0 9 8 7 6 5 4 3 2 1'\", () => {\n  expect(reverseLocationOfWords('1 2 3 4 5 6 7 8 9 0')).to.equal('0 9 8 7 6 5 4 3 2 1');\n});\n\nit(\"reverseLocationOfWords('!1 @2 #3 $4 %5') returns '%5 $4 #3 @2 !1'\", () => {\n  expect(reverseLocationOfWords('!1 @2 #3 $4 %5')).to.equal('%5 $4 #3 @2 !1');\n});\n\nit(\"reverseLocationOfWords('OneBigWord') returns 'OneBigWord'\", () => {\n  expect(reverseLocationOfWords('OneBigWord')).to.equal('OneBigWord');\n});\n\nit(\"reverseLocationOfWords('') returns ''\", () => {\n  expect(reverseLocationOfWords('')).to.equal('');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

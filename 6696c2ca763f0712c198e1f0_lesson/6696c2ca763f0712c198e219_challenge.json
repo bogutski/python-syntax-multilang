@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e219",
+  "name": {
+    "en": "Equality and Inequality Comparison",
+    "ru": "Сравнение на равенство и неравенство"
+  },
+  "instruction": {
+    "en": "Create a variable named `n1` and give it a value of number 1.\n\nCreate a variable named `n2` and give it the value string '1'.\n\nCreate a variable named `isStrictEqual` and assign to it the result of a comparison (strict equality) of the variable `n1`\nand variable `n2`.\n\nCreate a variable `isEqual` and assign to it the result of a comparison (non-strict equality) of the variable `n1`\nand variable `n2`.\n\nCreate a variable `isStrictNotEqual` and assign to it the result of a comparison (strict inequality) of the variable `n1`\nand variable `n2`.\n\nCreate a variable `isNotEqual` and assign to it the result of a comparison (non-strict inequality) of the variable `n1`\nand variable `n2`.",
+    "ru": "Создайте переменную с именем `n1` и присвойте ей значение число 1.\n\nСоздайте переменную с именем `n2` и присвойте ей значение строка '1'.\n\nСоздайте переменную `isStrictEqual` и присвойте ей результат сравнения (строгое равенство) переменной `n1`\nи переменной `n2`.\n\nСоздайте переменную `isEqual` и присвойте ей результат сравнения (нестрогое равенство) переменной `n1`\nи переменной `n2`.\n\nСоздайте переменную `isStrictNotEqual` и присвойте ей результат сравнения (строгое неравенство) переменной `n1`\nи переменной `n2`.\n\nСоздайте переменную `isNotEqual` и присвойте ей результат сравнения (нестрогое неравенство) переменной `n1`\nи переменной `n2`."
+  },
+  "initialSolution": "",
+  "completedSolution": "const n1 = 1;\nconst n2 = \"1\";\nconst isStrictEqual = n1 === n2;\nconst isEqual = n1 == n2;\nconst isStrictNotEqual = n1 !== n2;\nconst isNotEqual = n1 != n2;",
+  "openTest": "it(\"the `n1` variable exists and has a value\", () => {\n  expect(n1).not.undefined;\n});\n\nit(\"the variable `n1` is of type number\", () => {\n  expect(n1).a(\"number\");\n});\n\nit(\"the `n1` variable is 1\", () => {\n  expect(n1).eq(1);\n});\n\nit(\"the variable `n2` exists and has a value\", () => {\n  expect(n2).not.undefined;\n});\n\nit(\"the variable `n2` is of type string\", () => {\n  expect(n2).a(\"string\");\n});\n\nit(\"the `n2` variable is `1`\", () => {\n  expect(n2).eq(\"1\");\n});\n\nit(\"the variable `isStrictEqual` exists and has a value\", () => {\n  expect(isStrictEqual).not.undefined;\n});\n\nit(\"the variable `isStrictEqual` is of type boolean\", () => {\n  expect(isStrictEqual).a(\"boolean\");\n});\n\nit(\"the `isStrictEqual` variable is false\", () => {\n  expect(isStrictEqual).false;\n});\n\nit(\"the variable `isEqual` exists and has a value\", () => {\n  expect(isEqual).not.undefined;\n});\n\nit(\"the variable `isEqual` is of type boolean\", () => {\n  expect(isEqual).a(\"boolean\");\n});\n\nit(\"the `isEqual` variable is true\", () => {\n  expect(isEqual).true;\n});\n\nit(\"the variable `isStrictNotEqual` exists and has a value\", () => {\n  expect(isStrictNotEqual).not.undefined;\n});\n\nit(\"the variable `isStrictNotEqual` is of type boolean\", () => {\n  expect(isStrictNotEqual).a(\"boolean\");\n});\n\nit(\"the `isStrictNotEqual` variable is true\", () => {\n  expect(isStrictNotEqual).true;\n});\n\nit(\"the variable `isNotEqual` exists and has a value\", () => {\n  expect(isNotEqual).not.undefined;\n});\n\nit(\"the variable `isNotEqual` is of type boolean\", () => {\n  expect(isNotEqual).a(\"boolean\");\n});\n\nit(\"the `isNotEqual` variable is false\", () => {\n  expect(isNotEqual).false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

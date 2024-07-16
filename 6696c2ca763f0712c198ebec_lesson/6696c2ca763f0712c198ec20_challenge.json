@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ec20",
+  "name": {
+    "en": "Number of occurrences of the character in the string",
+    "ru": "Количество вхождений символа в строку"
+  },
+  "instruction": {
+    "en": "Write a function `numberOfOccurrences` that takes a string and a character and returns the number of occurrences of the character in the string.\n\nIf either the string or the character is empty, the function should return 0.\n\n\nExamples of this function:\n```javascript\nnumberOfOccurrences('hello', 'o'); // 1\nnumberOfOccurrences('apple', 'p'); // 2\nnumberOfOccurrences('', 'w'); // 0\nnumberOfOccurrences('', ''); // 0\n```",
+    "ru": "Напишите функцию `numberOfOccurrences`, которая принимает строку и символ и возвращает количество вхождений символа в строку.\n\nЕсли строка либо символ пустые, функция должна возвращать 0.\n\n\nПримеры запуска функции:\n```javascript\nnumberOfOccurrences('hello', 'o'); // 1\nnumberOfOccurrences('apple', 'p'); // 2\nnumberOfOccurrences('', 'w');      // 0\nnumberOfOccurrences('', '');       // 0\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function numberOfOccurrences(string, letter) {\n  let count = 0;\n  for (let i = 0; i < string.length; i++) {\n    if (string[i] === letter) {\n      count++;\n    }\n  }\n  return count;\n}",
+  "openTest": "it('Created function numberOfOccurrences', () => {\n  expect(numberOfOccurrences).to.be.a('function');\n});\n\nit('numberOfOccurrences(\"hello\", \"l\") should return 2', () => {\n  expect(numberOfOccurrences(\"hello\", \"l\")).to.equal(2);\n});\n\nit('numberOfOccurrences(\"hello\", \"t\") should return 0', () => {\n  expect(numberOfOccurrences(\"hello\", \"t\")).to.equal(0);\n});\n\nit('numberOfOccurrences(\"apple\", \"p\") should return 2', () => {\n  expect(numberOfOccurrences(\"apple\", \"p\")).to.equal(2);\n});\n\nit('numberOfOccurrences(\"java script\", \"a\") should return 2', () => {\n  expect(numberOfOccurrences(\"java script\", \"a\")).to.equal(2);\n});\n\nit('numberOfOccurrences(\"wwwwww\", \"w\") should return 6', () => {\n  expect(numberOfOccurrences(\"wwwwww\", \"w\")).to.equal(6);\n});\n\nit('numberOfOccurrences(\"\", \"w\") should return 0', () => {\n  expect(numberOfOccurrences(\"\", \"w\")).to.equal(0);\n});\n\nit('numberOfOccurrences(\"\", \"\") should return 0', () => {\n  expect(numberOfOccurrences(\"\", \"\")).to.equal(0);\n});\n\nit('numberOfOccurrences(\"hello\", \"\") should return 0', () => {\n  expect(numberOfOccurrences(\"hello\", \"\")).to.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

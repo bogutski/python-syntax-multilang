@@ -1,0 +1,6 @@
+{
+  "name": "Define and output to the console the type undefined",
+  "instruction": "We haven't gone through this type yet. All in good time. Just write and observe what may be in the console when `typeof` works.\n\nOnly one line.\n\nWrite the command `console.log(typeof undefined);`\n\nObserve spaces and punctuation marks. There is a semicolon at the end.",
+  "instructions": {},
+  "hint": "```javascript\nconsole.log(typeof undefined);\n```"
+}

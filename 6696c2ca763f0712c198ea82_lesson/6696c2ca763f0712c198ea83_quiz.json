@@ -1,0 +1,532 @@
+{
+  "_id": "6696c2ca763f0712c198ea83",
+  "name": {
+    "ru": "Сумма четных, нечетных, простых чисел от и до",
+    "en": "Sum of even, odd, prime numbers from and to",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198ea84",
+      "name": {
+        "ru": "Какие числа будут складываться в коде ниже и каким будет результат?",
+        "en": "What numbers will be added together in the code below and what will be the result?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet max = 7;\nlet min = 1;\nlet sum = 0;\nfor(let i = min; i <= max; i++){\n  if(i % 2 === 0){\n    sum += i;\n  }\n}\nconsole.log(sum)\n```",
+        "en": "```javascript\nlet max = 7;\nlet min = 1;\nlet sum = 0;\nfor(let i = min; i <= max; i++){\n  if(i % 2 === 0){\n    sum += i;\n  }\n}\nconsole.log(sum)\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ea85",
+          "name": {
+            "ru": "Складываться будут только чётные числа в диапазоне от 1 до 7, результат будет 12",
+            "en": "Only even numbers between 1 and 7 will be added together, the result will be 12",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea86",
+          "name": {
+            "ru": "Складываться будут только нечётные числа в диапазоне от 1 до 7, результат будет 16",
+            "en": "Only odd numbers between 1 and 7 will be added up, the result will be 16",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea87",
+          "name": {
+            "ru": "Складываться будут 2, 4, 6 и результат будет 12",
+            "en": "Add up 2, 4, 6 and the result is 12",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea88",
+          "name": {
+            "ru": "Складываться будут 1, 3, 5, 7 и результат будет 16",
+            "en": "Add up 1, 3, 5, 7 and the result is 16",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ea89",
+      "name": {
+        "ru": "Какие цифры будут складываться в коде ниже и в какой последовательности?",
+        "en": "Which digits will add up in the code below and in what sequence?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet sum = 0;\nfor(let i = 7; i >= 1; i--){\n  if(i % 2 === 0){\n    sum += i;\n  }\n}\nconsole.log(sum);\n```",
+        "en": "```javascript\nlet sum = 0;\nfor(let i = 7; i >= 1; i--){\n  if(i % 2 === 0){\n    sum += i;\n  }\n}\nconsole.log(sum);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ea8a",
+          "name": {
+            "ru": "1 3 5 7",
+            "en": "1 3 5 7",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea8b",
+          "name": {
+            "ru": "6 4 2",
+            "en": "6 4 2",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea8c",
+          "name": {
+            "ru": "7 5 3 1",
+            "en": "7 5 3 1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea8d",
+          "name": {
+            "ru": "2 4 6",
+            "en": "2 4 6",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ea8e",
+      "name": {
+        "ru": "Какие числа будут складываться в коде ниже и каким будет результат?",
+        "en": "What numbers will be added together in the code below and what will be the result?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet max = 7;\nlet min = 1;\nlet sum = 0;\nfor(let i = min; i <= max; i++){\n  if(i % 2 !== 0){\n    sum += i;\n  }\n}\nconsole.log(sum);\n```",
+        "en": "```javascript\nlet max = 7;\nlet min = 1;\nlet sum = 0;\nfor(let i = min; i <= max; i++){\n  if(i % 2 !== 0){\n    sum += i;\n  }\n}\nconsole.log(sum);\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ea8f",
+          "name": {
+            "ru": "Числа 1, 3, 5, 7, результат 16",
+            "en": "Numbers 1, 3, 5, 7, result 16",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea90",
+          "name": {
+            "ru": "Нечетные числа в диапазоне от 1 до 7, результат 16",
+            "en": "Odd numbers between 1 and 7, result 16",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea91",
+          "name": {
+            "ru": "Числа 2, 4, 6, результат 12",
+            "en": "Numbers 2, 4, 6, result 12",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea92",
+          "name": {
+            "ru": "Четные числа в диапазоне от 1 до 7, результат 12",
+            "en": "Even numbers between 1 and 7, result 12",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ea93",
+      "name": {
+        "ru": "Выберите верный результат запуска кода ниже",
+        "en": "Select the correct result of running the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet sum = 0;\nfor(let i = 7; i >= 1; i--){\n  if(i % 2 !== 0){\n    sum += i;\n  }\n}\nconsole.log(sum);\n```",
+        "en": "```javascript\nlet sum = 0;\nfor(let i = 7; i >= 1; i--){\n  if(i % 2 !== 0){\n    sum += i;\n  }\n}\nconsole.log(sum);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ea94",
+          "name": {
+            "ru": "12",
+            "en": "12",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea95",
+          "name": {
+            "ru": "16",
+            "en": "16",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea96",
+          "name": {
+            "ru": "9",
+            "en": "9",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea97",
+          "name": {
+            "ru": "28",
+            "en": "28",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ea98",
+      "name": {
+        "ru": "Почему в коде ниже sum равен 0?",
+        "en": "Why is sum equal to 0 in the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet sum = 0;\nfor(let i = 1; i <= 5; i+=2){\n  if(i % 2 === 0){\n    sum += i;\n  }\n}\nconsole.log(sum);\n```",
+        "en": "```javascript\nlet sum = 0;\nfor(let i = 1; i <= 5; i+=2){\n  if(i % 2 === 0){\n    sum += i;\n  }\n}\nconsole.log(sum);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ea99",
+          "name": {
+            "ru": "Потому что код написан с ошибками",
+            "en": "Because the code is misspelled",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea9a",
+          "name": {
+            "ru": "Потому что цикл выводит только нечетные числа, а складываются только четные",
+            "en": "Because the loop outputs only odd numbers, but only even numbers are added together",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea9b",
+          "name": {
+            "ru": "Потому что цикл выводит только четные числа, а складываются только нечетные",
+            "en": "Because the loop only outputs even numbers, but only odd numbers are added together",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea9c",
+          "name": {
+            "ru": "Потому что цикл бесконечный",
+            "en": "Because the cycle is endless",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ea9d",
+      "name": {
+        "ru": "Что получится в результате запуска цикла ниже?",
+        "en": "What is the result of running the loop below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nlet sum = 0;\nfor(let i = 1; i <= 5; i+=2){\n  if(i % 2 !== 0){\n    sum += i;\n  }\n}\nconsole.log(sum)\n```",
+        "en": "```javascript\nlet sum = 0;\nfor(let i = 1; i <= 5; i+=2){\n  if(i % 2 !== 0){\n    sum += i;\n  }\n}\nconsole.log(sum)\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ea9e",
+          "name": {
+            "ru": "0",
+            "en": "0",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ea9f",
+          "name": {
+            "ru": "4",
+            "en": "4",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaa0",
+          "name": {
+            "ru": "9",
+            "en": "9",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaa1",
+          "name": {
+            "ru": "8",
+            "en": "8",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eaa2",
+      "name": {
+        "ru": "Выберите верное определение что такое простое число",
+        "en": "Choose the correct definition of what a prime number is",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eaa3",
+          "name": {
+            "ru": "Натуральное число, единственными делителями которого являются только оно само и 1",
+            "en": "A natural number whose only divisors are itself and 1",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaa4",
+          "name": {
+            "ru": "Четное число, единственными делителями которого являются только оно само и 1",
+            "en": "An even number whose only divisors are itself and 1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaa5",
+          "name": {
+            "ru": "Нечетное число, единственными делителями которого являются только оно само и 1",
+            "en": "An odd number whose only divisors are itself and 1",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaa6",
+          "name": {
+            "ru": "Отрицательное число, единственными делителями которого являются только оно само и 1",
+            "en": "A negative number whose only divisors are itself and 1",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eaa7",
+      "name": {
+        "ru": "В функции isPrime происходит проверка на простые числа. Какие числа будут складываться в пeременной sum?",
+        "en": "The isPrime function checks for prime numbers. Which numbers will be summed up in the sum variable?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction isPrime(n){\n  if(n < 3) return true\n  for(let i = 2; i < n; i++){\n    if(n % i === 0) return false\n  }\n    return true\n}\n\nlet sum = 0\nfor(let i = 2; i < 8; i++){\n  if(isPrime(i)){\n    sum += i\n  }\n}\nconsole.log(sum);\n```",
+        "en": "```javascript\nfunction isPrime(n){\n  if(n < 3) return true\n  for(let i = 2; i < n; i++){\n    if(n % i === 0) return false\n  }\n    return true\n}\n\nlet sum = 0\nfor(let i = 2; i < 8; i++){\n  if(isPrime(i)){\n    sum += i\n  }\n}\nconsole.log(sum);\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eaa8",
+          "name": {
+            "ru": "Простые числа в диапазоне от 2 до 7",
+            "en": "Simple numbers between 2 and 7",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaa9",
+          "name": {
+            "ru": "2 3 5 7",
+            "en": "2 3 5 7",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaaa",
+          "name": {
+            "ru": "2 4 6",
+            "en": "2 4 6",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaab",
+          "name": {
+            "ru": "Нечетные числа в диапазоне от 2 до 7",
+            "en": "Odd numbers between 2 and 7",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eaac",
+      "name": {
+        "ru": "В функции isPrime происходит проверка на простые числа. Какие числа будут выведены в массив arr?",
+        "en": "The isPrime function checks for prime numbers. Which numbers will be output to the arr array?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nfunction isPrime(n){\n  if(n < 3) return true\n  for(let i = 2; i < n; i++){\n    if(n % i === 0) return false\n  }\n    return true\n}\n\nlet sum = 0\nlet arr = []\nfor(let i = 2; i <= 6; i++){\n  if(isPrime(i)){\n    arr.push(i)\n    sum += i\n  }\n}\nconsole.log(arr);\n```",
+        "en": "```javascript\nfunction isPrime(n){\n  if(n < 3) return true\n  for(let i = 2; i < n; i++){\n    if(n % i === 0) return false\n  }\n    return true\n}\n\nlet sum = 0\nlet arr = []\nfor(let i = 2; i <= 6; i++){\n  if(isPrime(i)){\n    arr.push(i)\n    sum += i\n  }\n}\nconsole.log(arr);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eaad",
+          "name": {
+            "ru": "[3, 5, 7]",
+            "en": "[3, 5, 7]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaae",
+          "name": {
+            "ru": "[2, 4, 6]",
+            "en": "[2, 4, 6]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eaaf",
+          "name": {
+            "ru": "[2, 3, 5, 7]",
+            "en": "[2, 3, 5, 7]",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eab0",
+          "name": {
+            "ru": "[2, 3, 5]",
+            "en": "[2, 3, 5]",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eab1",
+      "name": {
+        "ru": "Что выведет в консоль запуск цикла ниже?",
+        "en": "What will running the loop below output to the console?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [0, 1, 2, 3, 4, 5, 6]\nlet sum = 0;\nfor(let i = 1; i < arr.length; i++){\n  console.log(i);\n  if(i % 2 !== 0){\n    sum += i;\n  }\n};\nconsole.log(sum);\n```",
+        "en": "```javascript\nconst arr = [0, 1, 2, 3, 4, 5, 6]\nlet sum = 0;\nfor(let i = 1; i < arr.length; i++){\n  console.log(i);\n  if(i % 2 !== 0){\n    sum += i;\n  }\n};\nconsole.log(sum);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eab2",
+          "name": {
+            "ru": "16",
+            "en": "16",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eab3",
+          "name": {
+            "ru": "9",
+            "en": "9",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eab4",
+          "name": {
+            "ru": "18",
+            "en": "18",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eab5",
+          "name": {
+            "ru": "12",
+            "en": "12",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

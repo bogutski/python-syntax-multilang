@@ -1,0 +1,185 @@
+{
+  "name": "Sum of the numbers in the string",
+  "questions": {
+    "0": {
+      "name": "Choose the correct result for the sum of the numbers for the row below",
+      "description": "```javascript\nconst str = '1 + 3a = 4b, 11c - 10 = 3';\n```",
+      "variants": {
+        "0": {
+          "name": "32"
+        },
+        "1": {
+          "name": "12"
+        },
+        "2": {
+          "name": "-6"
+        },
+        "3": {
+          "name": "18"
+        }
+      }
+    },
+    "1": {
+      "name": "What does the unary plus do to the number written as the string below?",
+      "description": "```javascript\nconst strNum = '200';\nconsole.log(+strNum);\n```",
+      "variants": {
+        "0": {
+          "name": "Nothing will happen. The result will be a number written as a string"
+        },
+        "1": {
+          "name": "A number written as a string will be converted to the number data type"
+        },
+        "2": {
+          "name": "The number written as a string will be converted to the boolean data type"
+        },
+        "3": {
+          "name": "Prints an error because the unary plus cannot be applied to the string"
+        }
+      }
+    },
+    "2": {
+      "name": "Is it correct that the result of running the code below is 8 (data type number)?",
+      "description": "```javascript\nconst str = '-1, 9'\nconst digits = '0123456789';\nlet acc = 0;\nlet number = '';\nfor(let i = 0; i &lt; str.length; i++){\n  if(digits.includes(str[i])) number += str[i];\n  else{\n    acc += +number;\n    number = '';\n  }\n  if(i === str.length - 1) acc += +number; \n}\nconsole.log(acc);\n\n```",
+      "variants": {
+        "0": {
+          "name": "No, the result will be '10' (data type string)"
+        },
+        "1": {
+          "name": "Yes, the result is 8 (data type number)"
+        },
+        "2": {
+          "name": "No, the result is 10 (data type number)"
+        },
+        "3": {
+          "name": "No, the result will be '8' (data type string)"
+        }
+      }
+    },
+    "3": {
+      "name": "What does the `if(digits.includes(str[i]))` condition mean in the code below",
+      "description": "```javascript\nconst str = '3 cats, 5 dogs, 12 mice'\nconst digits = '0123456789';\nlet acc = 0;\nlet number = '';\nfor(let i = 0; i < str.length; i++){\n  if(digits.includes(str[i])) number += str[i];\n  else{\n    acc += +number;\n    number = '';\n  }\n  if(i === str.length - 1) acc += +number; \n}\n```",
+      "variants": {
+        "0": {
+          "name": "If the string element str is contained in the variable digits"
+        },
+        "1": {
+          "name": "If the digits variable is contained in the string str"
+        },
+        "2": {
+          "name": "If the string element str is not contained in the digits variable"
+        },
+        "3": {
+          "name": "If the digits variable is not contained in the string str"
+        }
+      }
+    },
+    "4": {
+      "name": "What is the purpose of the acc variable in the code below?",
+      "description": "```javascript\nconst str = '3 cats, 5 dogs, 12 mice'\nconst digits = '0123456789';\nlet acc = 0;\nlet number = '';\nfor(let i = 0; i < str.length; i++){\n  if(digits.includes(str[i])) number += str[i];\n  else{\n    acc += +number;\n    number = '';\n  }\n  if(i === str.length - 1) acc += +number; \n}\n```",
+      "variants": {
+        "0": {
+          "name": "The variable acc is created to collect all non-numeric values found in the string str"
+        },
+        "1": {
+          "name": "The variable acc is created to summarize all numbers found in the string str"
+        },
+        "2": {
+          "name": "The variable acc is created to collect all spaces found in the string str"
+        },
+        "3": {
+          "name": "The variable acc is created to remove all non-numeric values and spaces found in the string str"
+        }
+      }
+    },
+    "5": {
+      "name": "What is the purpose of the `+` before the `num` variable in the loop in the code below and what is the result of running the function?",
+      "description": "```javascript\nfunction sumNumbers(str){\n  const digits = '0123456789';\n  let acc = 0;\n  let num = '';\n  for(let i = 0; i < str.length; i++){\n    if(digits.includes(str[i])) num += str[i];\n    else{\n      acc += +num;\n      num = '';\n    }\n    if(i === str.length - 1) acc += +num; \n  }\n  return acc;\n}\nconsole.log(sumNumbers('herbivores - 7 cows, carnivores - 3 bears'));\n```",
+      "variants": {
+        "0": {
+          "name": "The + sign adds up all elements found in the str string. The result is -10"
+        },
+        "1": {
+          "name": "The + sign converts all found numbers to positive numbers. The result is 10"
+        },
+        "2": {
+          "name": "The + sign converts numbers to the string data type. The result is '4'"
+        },
+        "3": {
+          "name": "The + sign converts numbers written as a string to the number data type. The result is 10"
+        }
+      }
+    },
+    "6": {
+      "name": "Select the correct result of the function below",
+      "description": "```javascript\nfunction sumNumbers(str){\n  const digits = '0123456789';\n  let acc = 0;\n  let number = '';\n  for(let i = 0; i < str.length; i+=2){\n    if(digits.includes(str[i])) number += str[i];\n    else{\n      acc += +number;\n      number = '';\n    }\n    if(i === str.length - 1) acc += +number;\n  }\n  return acc;\n}\nconsole.log(sumNumbers('1st, 2nd, 3rd, 4th, 5th'));\n```",
+      "variants": {
+        "0": {
+          "name": "9"
+        },
+        "1": {
+          "name": "15"
+        },
+        "2": {
+          "name": "6"
+        },
+        "3": {
+          "name": "NaN"
+        }
+      }
+    },
+    "7": {
+      "name": "What will be the result of running the code below if you go through the str string in reverse order, adding up all the numbers?",
+      "description": "```javascript\nfunction sumNumbers(str){\n  const digits = '0123456789';\n  let acc = 0;\n  let number = '';\n  for(let i = str.length - 1; i >=0; i--){\n    if(digits.includes(str[i])) number += str[i];\n    else{\n      acc += +number;\n      number = '';\n    }\n    if(str[i] === str[0]) acc += +number; \n  }\n  return acc;\n}\nconsole.log(sumNumbers('3 cats, 5 dogs, 12 mice')); \n```",
+      "variants": {
+        "0": {
+          "name": "NaN"
+        },
+        "1": {
+          "name": "20"
+        },
+        "2": {
+          "name": "17"
+        },
+        "3": {
+          "name": "29"
+        }
+      }
+    },
+    "8": {
+      "name": "Select the correct result of running the code below",
+      "description": "```javascript\nfunction sumNumbers(str){\n  const digits = '0123456789';\n  let acc = 0;\n  let number = '';\n  for(let i = str.length - 1; i >= 0; i = i - 2){\n    if(digits.includes(str[i])) number += str[i];\n    else{\n      acc += +number;\n      number = '';\n    }\n    if(str[i] === str[0]) acc += +number;\n  }\n  return acc;\n}\nconsole.log(sumNumbers('1st, 2nd, 3rd, 4th, 5th, 7th, 8th, 3th')); \n\n```",
+      "variants": {
+        "0": {
+          "name": "17"
+        },
+        "1": {
+          "name": "16"
+        },
+        "2": {
+          "name": "33"
+        },
+        "3": {
+          "name": "NaN"
+        }
+      }
+    },
+    "9": {
+      "name": "What is the result of running the code below?",
+      "description": "```javascript\nfunction sumNumbers(str){\n  const digits = '0123456789';\n  let acc = 0;\n  let number = '';\n  for(let i = 0; i < str.length; i++){\n    if(digits.includes(str[i])) number += str[i];\n    else{\n      acc += +number;\n      number = '';\n    }\n    if(i === str.length - 1) acc += +number; \n  }\n  return acc;\n}\nconsole.log(sumNumbers('YOU 83COM3 WH47 YOU 83L1V3!'));\n```",
+      "variants": {
+        "0": {
+          "name": "NaN"
+        },
+        "1": {
+          "name": "40"
+        },
+        "2": {
+          "name": "157"
+        },
+        "3": {
+          "name": "220"
+        }
+      }
+    }
+  }
+}

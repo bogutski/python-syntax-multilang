@@ -1,0 +1,168 @@
+{
+  "name": "The for loop. Filling an array with numbers",
+  "questions": {
+    "0": {
+      "name": "The for loop is used to repeat the same action several times.",
+      "variants": {
+        "0": {
+          "name": "This statement is true"
+        },
+        "1": {
+          "name": "This statement is false"
+        }
+      }
+    },
+    "1": {
+      "name": "Choose the correct version of the for loop syntax",
+      "variants": {
+        "0": {
+          "name": "for(initial value; step; condition){cycle body}"
+        },
+        "1": {
+          "name": "for(condition; initial value; step){cycle body}"
+        },
+        "2": {
+          "name": "for(initial value; condition; step){cycle body}"
+        },
+        "3": {
+          "name": "for{cycle body}(initial value; condition; step)"
+        }
+      }
+    },
+    "2": {
+      "name": "The initial value is triggered once before the start of the cycle",
+      "variants": {
+        "0": {
+          "name": "This statement is false"
+        },
+        "1": {
+          "name": "This statement is true"
+        }
+      }
+    },
+    "3": {
+      "name": "If the condition is true, then ... is executed",
+      "variants": {
+        "0": {
+          "name": "The initial value and step"
+        },
+        "1": {
+          "name": "The step"
+        },
+        "2": {
+          "name": "The body of the cycle"
+        },
+        "3": {
+          "name": "The condition"
+        }
+      }
+    },
+    "4": {
+      "name": "Choose the correct version of the infinite loop",
+      "variants": {
+        "0": {
+          "name": "for(let i = 5; i <= 0; i++){\n  console.log('Count ' + i);\n}"
+        },
+        "1": {
+          "name": "for(let i = 5; i >= 0; i++){\n  console.log('Count ' + i);\n}"
+        },
+        "2": {
+          "name": "for(let i = 5; i >= 0; i--){\n  console.log('Count ' + i);\n}"
+        },
+        "3": {
+          "name": "for(let i = 5; i >= 0; i = i - 2){\n  console.log('Count ' + i);\n}"
+        }
+      }
+    },
+    "5": {
+      "name": "What happens as a result of executing the code below and why?",
+      "description": "```javascript\nfor(let i = 5; i <= 0; i--){\n  console.log('Count ' + i);\n}\n```",
+      "variants": {
+        "0": {
+          "name": "The sequence from 5 to 0 will be displayed because the initial value is greater than the final value"
+        },
+        "1": {
+          "name": "It's a never-ending cycle"
+        },
+        "2": {
+          "name": "The sequence from 0 to 5 is displayed, because the step is reduced by 1"
+        },
+        "3": {
+          "name": "The loop will not start because the condition is false"
+        }
+      }
+    },
+    "6": {
+      "name": "Select the correct result of running the code below",
+      "description": "```javascript\nfor(let i = 5; i >= 0; i--){\n  console.log(i);\n}\n```",
+      "variants": {
+        "0": {
+          "name": "0 1 2 3 4 5"
+        },
+        "1": {
+          "name": "5 4 3 2 1 0"
+        },
+        "2": {
+          "name": "1 2 3 4 5"
+        },
+        "3": {
+          "name": "5 4 3 2 1"
+        }
+      }
+    },
+    "7": {
+      "name": "Select the correct result of the code below",
+      "description": "```javascript\nfor(let i = 0; i < 5; i++){\n  console.log(i);\n}\n```",
+      "variants": {
+        "0": {
+          "name": "0 to 4 inclusive"
+        },
+        "1": {
+          "name": "0 to 5 inclusive"
+        },
+        "2": {
+          "name": "1 to 5 inclusive"
+        },
+        "3": {
+          "name": "1 to 4 inclusive"
+        }
+      }
+    },
+    "8": {
+      "name": "Select the correct result of the code below",
+      "description": "```javascript\nconst arr = [];\nfor(let i = 0; i <= 5; i++){\n  arr.push(i);\n};\nconsole.log(arr);\n```",
+      "variants": {
+        "0": {
+          "name": "[1, 2, 3, 4, 5]"
+        },
+        "1": {
+          "name": "[0, 1, 2, 3, 4, 5]"
+        },
+        "2": {
+          "name": "[5, 4, 3, 2, 1]"
+        },
+        "3": {
+          "name": "[5, 4, 3, 2, 1, 0]"
+        }
+      }
+    },
+    "9": {
+      "name": "What will be displayed in the console when you run the code below?",
+      "description": "```javascript\nconst arr = [];\nfor(let i = 0; i <= 5; i++){\n  arr.unshift(i);\n};\nconsole.log(arr);\n```",
+      "variants": {
+        "0": {
+          "name": "[1, 2, 3, 4, 5]"
+        },
+        "1": {
+          "name": "[0, 1, 2, 3, 4, 5]"
+        },
+        "2": {
+          "name": "[5, 4, 3, 2, 1]"
+        },
+        "3": {
+          "name": "[5, 4, 3, 2, 1, 0]"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "A special greeting for a 100+ year old man",
+  "instruction": "Write a function `greeting` that takes two parameters: `age` and `name`.\n\nIf `age` is greater than or equal to 100, then return the string `'Wow! Our special guest Sam!'`.\n\nIf `age` is less than 100, then return the string `'Hello, Sam!'`.\n\nInstead of `Sam` it must be the name that is passed in the second parameter."
+}

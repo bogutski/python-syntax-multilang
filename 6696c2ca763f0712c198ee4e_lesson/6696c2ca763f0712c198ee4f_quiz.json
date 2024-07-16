@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198ee4f",
+  "name": {
+    "ru": "Перевернуть в строке каждое слово",
+    "en": "Turn over every word in the line",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198ee50",
+      "name": {
+        "ru": "Для строки ниже элементы должны перевернуться, но остаться на прежних индексах. Выберите верный вариант результирующей строки.",
+        "en": "For the row below, the elements should flip but remain at the same indices. Select the correct variant of the resulting row.",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = '41 + 52 = 93';\n```",
+        "en": "```javascript\nconst str = '41 + 52 = 93';\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee51",
+          "name": {
+            "ru": "'93 = 52 + 41'",
+            "en": "'93 = 52 + 41'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee52",
+          "name": {
+            "ru": "'14 + 25 = 39'",
+            "en": "'14 + 25 = 39'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee53",
+          "name": {
+            "ru": "'39 = 25 + 14'",
+            "en": "'39 = 25 + 14'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee54",
+          "name": {
+            "ru": "'25 + 14 = 39'",
+            "en": "'25 + 14 = 39'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee55",
+      "name": {
+        "ru": "Что надо написать вместо ??? ниже, чтобы получилось 'wolf' в результате?",
+        "en": "What should be written instead of ??? below to get 'wolf' as a result?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'flow';\n  let res = '';\n  for(let i = ?; i < ?????; i??){\n    res ???;\n  }\nconsole.log(res);\n```",
+        "en": "```javascript\nconst str = 'flow';\n  let res = '';\n  for(let i = ?; i < ?????; i??){\n    res ???;\n  }\nconsole.log(res);\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee56",
+          "name": {
+            "ru": "for(let i = 0; i < str.length; i++){ \n    res = str[i] + res;\n  }",
+            "en": "for(let i = 0; i < str.length; i++){ \n    res = str[i] + res;\n  }",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee57",
+          "name": {
+            "ru": "for(let i = str.length - 1; i >= 0; i--){\n    res += str[i];\n  }",
+            "en": "for(let i = str.length - 1; i >= 0; i--){\n    res += str[i];\n  }",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee58",
+          "name": {
+            "ru": "for(let i = 0; i < str.length; i++){\n    res += str[i];\n  }",
+            "en": "for(let i = 0; i < str.length; i++){\n    res += str[i];\n  }",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee59",
+          "name": {
+            "ru": "for(let i = str.length - 1; i >= 0; i--){\n    res = str[i] + str;\n  }",
+            "en": "for(let i = str.length - 1; i >= 0; i--){\n    res = str[i] + str;\n  }",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee5a",
+      "name": {
+        "ru": "Верно ли что можно использовать функцию в коде до ее объявления?",
+        "en": "Is it true that you can use a function in code before it is declared?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee5b",
+          "name": {
+            "ru": "Верно, это называется 'всплытие функции'",
+            "en": "That's right, it's called 'feature surfacing'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee5c",
+          "name": {
+            "ru": "Неверно, код не будет работать",
+            "en": "Incorrect, the code will not work",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee5d",
+          "name": {
+            "ru": "Верно, это называется 'hoisting'",
+            "en": "That's right, it's called 'hoisting'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee5e",
+          "name": {
+            "ru": "Неверно, функцию можно использовать только после ее объявления",
+            "en": "Incorrect, a function can only be used after it has been declared",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee5f",
+      "name": {
+        "ru": "Выберите верный вариант результата запуска кода ниже",
+        "en": "Select the correct version of the result of the code run below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = '123 + 234 = 357';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+        "en": "```javascript\nconst str = '123 + 234 = 357';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee60",
+          "name": {
+            "ru": "'321 + 432 = 753'",
+            "en": "'321 + 432 = 753'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee61",
+          "name": {
+            "ru": "'357 = 234 + 123'",
+            "en": "'357 = 234 + 123'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee62",
+          "name": {
+            "ru": "'753 = 432 + 321'",
+            "en": "'753 = 432 + 321'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee63",
+          "name": {
+            "ru": "'123 + 234 = 357'",
+            "en": "'123 + 234 = 357'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee64",
+      "name": {
+        "ru": "Для чего надо очищать переменную `word` внутри цикла `for`, которая аккумулирует найденные слова?",
+        "en": "What is the purpose of clearing the `word` variable inside the `for` loop, which accumulates the words found?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = '123 + 234 = 357';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+        "en": "```javascript\nconst str = '123 + 234 = 357';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee65",
+          "name": {
+            "ru": "Для предотвращения перегрузки памяти",
+            "en": "To prevent memory overload",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee66",
+          "name": {
+            "ru": "Для предотвращения конкатенации всех последующих найденных слов с уже переданными в `res`",
+            "en": "To prevent concatenation of all subsequent found words with those already passed to `res`",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee67",
+          "name": {
+            "ru": "Для предотвращения конкатенации всех последующих найденных слов с уже переданными в `word`",
+            "en": "To prevent concatenation of all subsequent words found with words already passed in `word`",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee68",
+          "name": {
+            "ru": "Для предотвращения бесконечного цикла",
+            "en": "To prevent an endless cycle",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee69",
+      "name": {
+        "ru": "Верно ли, что результатом работы кода ниже будет 'sub rats drawer'?",
+        "en": "Is it correct that the result of the code below will be 'sub rats drawer'?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'bus star reward';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+        "en": "```javascript\nconst str = 'bus star reward';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee6a",
+          "name": {
+            "ru": "Нет, результатом будет 'drawer rats sub'",
+            "en": "No, the result is 'drawer rats sub'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee6b",
+          "name": {
+            "ru": "Нет, результатом будет 'reward star bus'",
+            "en": "No, the result will be 'reward star bus'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee6c",
+          "name": {
+            "ru": "Нет, результатом будет 'drawer star sub'",
+            "en": "No, the result is 'drawer star sub'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee6d",
+          "name": {
+            "ru": "Да, результатом будет 'sub rats drawer'",
+            "en": "Yes, the result is 'sub rats drawer'.",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee6e",
+      "name": {
+        "ru": "Влияет ли в каком регистре написаны буквы при переворачивании слова?",
+        "en": "Does what case the letters are written in affect when flipping a word?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee6f",
+          "name": {
+            "ru": "Нет, не зависит, но регистр каждой буквы останется прежним, если слово не было приведено к одному регистру",
+            "en": "No, it doesn't, but the case of each letter will remain the same unless the word has been reduced to the same case",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee70",
+          "name": {
+            "ru": "Да, если буквы не приведены к одному регистру, то слово перевернется частично",
+            "en": "Yes, if the letters are not brought to the same case, the word will flip part way through",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee71",
+      "name": {
+        "ru": "Что выведется в консоль при выполнении кода ниже?",
+        "en": "What will be output to the console when the code below is executed?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'NadiA saw a doG';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+        "en": "```javascript\nconst str = 'NadiA saw a doG';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee72",
+          "name": {
+            "ru": "'AidaN was a God'",
+            "en": "'AidaN was a God'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee73",
+          "name": {
+            "ru": "'AidaN was a goD'",
+            "en": "'AidaN was a goD'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee74",
+          "name": {
+            "ru": "'God a was AidaN'",
+            "en": "'God a was AidaN'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee75",
+          "name": {
+            "ru": "'NadiA was a God'",
+            "en": "'NadiA was a God'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee76",
+      "name": {
+        "ru": "Верно ли что результатом работы кода ниже будет 'desserts LIVE'?",
+        "en": "Is it correct that the result of the code below is 'desserts LIVE'?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'LIVE stressed';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+        "en": "```javascript\nconst str = 'LIVE stressed';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee77",
+          "name": {
+            "ru": "Да, результатом будет 'desserts LIVE'",
+            "en": "Yes, the result will be 'desserts LIVE'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee78",
+          "name": {
+            "ru": "Нет, результатом будет 'evil desserts'",
+            "en": "No, the result will be 'evil desserts'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee79",
+          "name": {
+            "ru": "Нет, результатом будет 'EVIL desserts'",
+            "en": "No, the result is 'EVIL desserts'.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee7a",
+          "name": {
+            "ru": "Нет, результатом будет 'desserts EVIL'",
+            "en": "No, the result is 'desserts EVIL'.",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ee7b",
+      "name": {
+        "ru": "Выберите верный результат запуска кода ниже",
+        "en": "Select the correct result of running the code below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = '12 pans 23 nuts';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n",
+        "en": "```javascript\nconst str = '12 pans 23 nuts';\nlet res = '';\nlet word = '';\nfor(let i = 0; i < str.length; i++){\n  if(str[i] === ' '){\n    res +=reverse(word);\n    word = '';\n    res += ' ';\n  } else if(i === str.length - 1) {\n    word += str[i];\n    res +=reverse(word);\n    word = '';\n  } else {\n    word += str[i];\n  }\n}\nfunction reverse(str){\n  let res = '';\n  for(let i = 0; i < str.length; i++){\n    res = str[i] + res;\n  }\n  return res;\n}\nconsole.log(res);\n",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ee7c",
+          "name": {
+            "ru": "'21 snap 32 stun'",
+            "en": "'21 snap 32 stun'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee7d",
+          "name": {
+            "ru": "'12 snap 23 stun'",
+            "en": "'12 snap 23 stun'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee7e",
+          "name": {
+            "ru": "'stun 32 snap 21'",
+            "en": "'stun 32 snap 21'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ee7f",
+          "name": {
+            "ru": "'stun 21 snap 32",
+            "en": "'stun 21 snap 32",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

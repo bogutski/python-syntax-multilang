@@ -1,0 +1,130 @@
+{
+  "name": "Assigning and changing variables",
+  "questions": {
+    "0": {
+      "name": "During the execution of a program, variables are used to",
+      "variants": {
+        "0": {
+          "name": "program correctness checks"
+        },
+        "1": {
+          "name": "output the value to the console"
+        },
+        "2": {
+          "name": "data storage"
+        },
+        "3": {
+          "name": "for clarity"
+        }
+      }
+    },
+    "1": {
+      "name": "Which keyword in modern JavaScript is used to create a variable",
+      "variants": {
+        "0": {
+          "name": "const"
+        },
+        "1": {
+          "name": "var"
+        },
+        "2": {
+          "name": "let"
+        }
+      }
+    },
+    "2": {
+      "name": "With which keyword the value of a variable cannot be changed",
+      "variants": {
+        "0": {
+          "name": "let"
+        },
+        "1": {
+          "name": "const"
+        }
+      }
+    },
+    "3": {
+      "name": "What happens when you try to change the value of a variable created with the const keyword",
+      "variants": {
+        "0": {
+          "name": "The value of the variable will change"
+        },
+        "1": {
+          "name": "The value of the variable will not change"
+        },
+        "2": {
+          "name": "Error message: Uncaught TypeError: Assignment to constant variable"
+        }
+      }
+    },
+    "4": {
+      "name": "Can I create a variable without assigning a value to it?",
+      "variants": {
+        "0": {
+          "name": "Yes, you can."
+        },
+        "1": {
+          "name": "No, you can't."
+        }
+      }
+    },
+    "5": {
+      "name": "The modern standard does not use the var keyword.",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "6": {
+      "name": "How to output the value of const year = 2100 to the console",
+      "variants": {
+        "0": {
+          "name": "console.log(year)"
+        },
+        "1": {
+          "name": "console.log('year')"
+        },
+        "2": {
+          "name": "console.log(const year)"
+        }
+      }
+    },
+    "7": {
+      "name": "What is the result of the code: const year = 2100; year = 2200;",
+      "variants": {
+        "0": {
+          "name": "Error. You cannot override the value of a const variable"
+        },
+        "1": {
+          "name": "The code will run without errors"
+        }
+      }
+    },
+    "8": {
+      "name": "If a variable is declared with the let keyword, its value can be changed",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "9": {
+      "name": "What is the result of the code: let year = 2100; year = 2200;",
+      "variants": {
+        "0": {
+          "name": "Error. You cannot override the value of the let variable"
+        },
+        "1": {
+          "name": "The code will run without errors"
+        }
+      }
+    }
+  }
+}

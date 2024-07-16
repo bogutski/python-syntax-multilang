@@ -1,0 +1,4 @@
+{
+  "name": "Remove elements from a two-dimensional array",
+  "instruction": "The `doubleArray` function takes a two-dimensional array and a number.\n\nYou need to remove a given number of elements from each array from the beginning of the array and return the resulting two-dimensional array.\n\nThe number of subarrays is 2.\n\nAn example of a function with two subarrays:\n```javascript\ndoubleArray([[\"a\", \"a\", \"a\", \"a\", \"a\"], [\"b\", \"b\", \"b\", \"b\", \"b\"]], 2)\n```\n\nAn example of running a function:\n```javascript\ndoubleArray([[\"a\", \"b\", \"c\", \"d\", \"e\"], [\"f\", \"g\", \"h\", \"i\", \"j\"]], 2) // [[\"c\", \"d\", \"e\"], [\"h\", \"i\", \"j\"]]\ndoubleArray([[0, 0, 0, 0, 0], [1, 1]], 3) // [[0, 0], []]\n```"
+}

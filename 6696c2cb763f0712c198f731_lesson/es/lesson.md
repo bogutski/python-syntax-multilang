@@ -1,0 +1,1 @@
+# Array.prototype.findLast() – последний элемент по условию language: es

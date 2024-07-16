@@ -1,0 +1,5 @@
+{
+  "name": "The function counts half a quarter degree of a number",
+  "instruction": "The function takes one number as input.\n\nWrite a function `halfCube` that takes a number to the fourth power and returns half.",
+  "instructions": {}
+}

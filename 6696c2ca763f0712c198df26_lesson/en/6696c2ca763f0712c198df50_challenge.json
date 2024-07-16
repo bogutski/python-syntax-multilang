@@ -1,0 +1,4 @@
+{
+  "name": "Correct errors in the function with return",
+  "instruction": "The programmer was writing a program.\nHe distracted himself for a few minutes to make some tea.\nThe cat jumped on the keyboard and walked over the buttons.\n\nNow we have to fix everything.\n\nRequirements:\n\n* The function name is `businessHours`.\n* The function must return the string `8.00 - 11.30`\n* There must be no output to the console in the function body\n* There must be only one `return` in the function body\n\nCorrect the errors or rewrite the entire function as required."
+}

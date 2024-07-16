@@ -1,0 +1,478 @@
+{
+  "_id": "6696c2ca763f0712c198ef8c",
+  "name": {
+    "ru": "Сумма чисел в массиве",
+    "en": "Sum of numbers in the array",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198ef8d",
+      "name": {
+        "ru": "Выберите верный вариант типа данных NaN",
+        "en": "Select the correct variant of the NaN data type",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef8e",
+          "name": {
+            "ru": "'string'",
+            "en": "'string'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef8f",
+          "name": {
+            "ru": "'number'",
+            "en": "'number'.",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef90",
+          "name": {
+            "ru": "'boolean'",
+            "en": "'boolean'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef91",
+          "name": {
+            "ru": "'object'",
+            "en": "'object'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ef92",
+      "name": {
+        "ru": "Что определяет метод Number.isNaN()?",
+        "en": "What does the Number.isNaN() method define?",
+        "es": ""
+      },
+      "description": {
+        "ru": "",
+        "en": "",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef93",
+          "name": {
+            "ru": "Является ли переданное значение NaN",
+            "en": "Is the transferred value NaN",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef94",
+          "name": {
+            "ru": "Является ли переданное значение числом",
+            "en": "Whether the passed value is a number",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef95",
+          "name": {
+            "ru": "Является ли переданное значение строкой",
+            "en": "Whether the passed value is a string",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef96",
+          "name": {
+            "ru": "Является ли переданное значение null",
+            "en": "Whether the passed value is null",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ef97",
+      "name": {
+        "ru": "Что получится в результате выполнения кода ниже?",
+        "en": "What will be the result of executing the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nfor(let i = 0; i < arr.length; i++) {\n  console.log(arr[i]);\n}\nfor(let i = arr.length - 1; i >= 0; i--) {\n  console.log(arr[i]);\n}\n```",
+        "en": "```javascript\nconst arr = [1, 2, 3, 4, 5];\nfor(let i = 0; i < arr.length; i++) {\n  console.log(arr[i]);\n}\nfor(let i = arr.length - 1; i >= 0; i--) {\n  console.log(arr[i]);\n}\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef98",
+          "name": {
+            "ru": "5 4 3 2 1\n1 2 3 4 5",
+            "en": "5 4 3 2 1\n1 2 3 4 5",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef99",
+          "name": {
+            "ru": "Первый и второй циклы пройдутся по массиву слева направо",
+            "en": "The first and second cycles will traverse the array from left to right",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef9a",
+          "name": {
+            "ru": "1 2 3 4 5\n5 4 3 2 1",
+            "en": "1 2 3 4 5\n5 4 3 2 1",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef9b",
+          "name": {
+            "ru": "Первый цикл пройдется по массиву слева направо, второй - справа налево",
+            "en": "The first loop will traverse the array from left to right, the second from right to left",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198ef9c",
+      "name": {
+        "ru": "Что получится в результате запуска кода ниже?",
+        "en": "What is the result of running the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [2, 4, 6];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  console.log(`${acc} + ${arr[i]} = ${acc + arr[i]}`);\n  acc += arr[i];\n}\n```",
+        "en": "```javascript\nconst arr = [2, 4, 6];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  console.log(`${acc} + ${arr[i]} = ${acc + arr[i]}`);\n  acc += arr[i];\n}\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198ef9d",
+          "name": {
+            "ru": "'2 + 2 = 4'\n'4 + 4 = 8'\n'8 + 6 = 14'",
+            "en": "'2 + 2 = 4'\n'4 + 4 = 8'\n'8 + 6 = 14'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef9e",
+          "name": {
+            "ru": "'0 + 2 = 2'\n'2 + 4 = 6'\n'6 + 6 = 12'",
+            "en": "'0 + 2 = 2'\n'2 + 4 = 6'\n'6 + 6 = 12'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198ef9f",
+          "name": {
+            "ru": "2 6 12",
+            "en": "2 6 12",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198efa0",
+          "name": {
+            "ru": "2 4 6",
+            "en": "2 4 6",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198efa1",
+      "name": {
+        "ru": "Верно ли, что сумма элементов одного и того же массива слева направо и справа налево одинакова\nи результатом работы кода ниже будет true?",
+        "en": "Is it true that the sum of the elements of the same array from left to right and from right to left is the same?\nand the result of the code below is true?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [1, 3, -7];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  acc += arr[i];\n}\nlet acc2 = 0;\nfor(let i = arr.length - 1; i >= 0; i--) {\n  acc2 += arr[i];\n}\nconsole.log(acc === acc2);\n```",
+        "en": "```javascript\nconst arr = [1, 3, -7];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  acc += arr[i];\n}\nlet acc2 = 0;\nfor(let i = arr.length - 1; i >= 0; i--) {\n  acc2 += arr[i];\n}\nconsole.log(acc === acc2);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198efa2",
+          "name": {
+            "ru": "Нет, сумма элементов слева направо и справа налево будет разной, результатом работы кода будет false",
+            "en": "No, the sum of elements from left to right and from right to left will be different, the result of the code will be false",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198efa3",
+          "name": {
+            "ru": "Да, сумма элементов слева направо и справа налево одинаковая, результатом работы кода будет true",
+            "en": "Yes, the sum of elements from left to right and from right to left is the same, the result of the code will be true",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198efa4",
+      "name": {
+        "ru": "Что произойдет если в массиве помимо чисел будут и строки и каким будет результат для кода ниже?",
+        "en": "What happens if the array contains strings in addition to numbers and what is the result for the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [400, 4, ' error'];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  acc += arr[i];\n}\nconsole.log(acc)\n```",
+        "en": "```javascript\nconst arr = [400, 4, ' error'];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  acc += arr[i];\n}\nconsole.log(acc)\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198efa5",
+          "name": {
+            "ru": "Произойдет конкатенация. Результатом будет '4004 error'",
+            "en": "A concatenation will occur. The result will be '4004 error'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198efa6",
+          "name": {
+            "ru": "Строки не учтутся, а все числа в массиве сложатся. Результатом будет 404",
+            "en": "The rows will not be counted, but all numbers in the array will add up. The result will be a 404",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198efa7",
+          "name": {
+            "ru": "Числа, идущие до строки сложатся и дальше произойдет конкатенация. Результатом будет '404 error'",
+            "en": "The numbers up to the string will be added together and then concatenation will occur. The result will be a '404 error'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198efa8",
+          "name": {
+            "ru": "Сложение чисел в таком случае невозможно. Результатом будет NaN",
+            "en": "Adding numbers in this case is impossible. The result is NaN",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198efa9",
+      "name": {
+        "ru": "Почему результатом работы кода ниже будет '0error 4004'?",
+        "en": "Why would the result of the code below be '0error 4004'?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = ['error ', 400, 4];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  acc += arr[i];\n}\nconsole.log(acc)\n```",
+        "en": "```javascript\nconst arr = ['error ', 400, 4];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  acc += arr[i];\n}\nconsole.log(acc)\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198efaa",
+          "name": {
+            "ru": "Первый элемент массива - строка, сложение строки и числа приводит к конкатенации,\nа 0 в начале результирующий строки - это первоначальное значение переменной acc",
+            "en": "The first element of the array is a string, adding a string and a number results in concatenation,\nand 0 at the beginning of the resulting string is the initial value of the variable acc",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198efab",
+          "name": {
+            "ru": "Результатом будет 'error 4004', потому что первый элемент массива строка, а сложение строк приводит к конкатенации",
+            "en": "The result is 'error 4004' because the first element of the array is a string, and adding strings results in concatenation",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198efac",
+          "name": {
+            "ru": "Результатом будет 'error 404'. Числа в конце массива сложатся, а соединившись со строкой, приведут к конкатенации",
+            "en": "The result will be 'error 404'. The numbers at the end of the array will be stacked, and joining the string will result in concatenation",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198efad",
+          "name": {
+            "ru": "Результатом будет 404. Строка не учтется, а все числа в массиве сложатся",
+            "en": "The result will be 404. The string will not be counted, but all numbers in the array will add up",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198efae",
+      "name": {
+        "ru": "Верно ли, что результатом работы кода ниже будет 111?",
+        "en": "Is it true that the result of the code below is 111?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [1, 10, 100, NaN];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  acc += arr[i];\n}\nconsole.log(acc)\n```",
+        "en": "```javascript\nconst arr = [1, 10, 100, NaN];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  acc += arr[i];\n}\nconsole.log(acc)\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198efaf",
+          "name": {
+            "ru": "Верно, результатом будет 111. NaN не участвует в вычислениях, а все числа в массиве сложатся",
+            "en": "Correct, the result will be 111. NaN does not participate in the calculations, and all numbers in the array will add up",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198efb0",
+          "name": {
+            "ru": "Неверно, результатом будет NaN. Сложение чисел с NaN приводит к NaN",
+            "en": "Incorrect, the result is NaN. Adding numbers with NaN results in NaN",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198efb1",
+      "name": {
+        "ru": "Верно ли исправлен код ниже и результатом работы будет 111?",
+        "en": "Is the code below correct and the result of the work is 111?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [1, 10, 100, NaN];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number') acc += arr[i];\n}\nconsole.log(acc)\n```",
+        "en": "```javascript\nconst arr = [1, 10, 100, NaN];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number') acc += arr[i];\n}\nconsole.log(acc)\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198efb2",
+          "name": {
+            "ru": "Нет, результатом будет NaN, потому что тип данных NaN - number, а сложение чисел с NaN приводит к NaN",
+            "en": "No, the result is NaN because the NaN data type is number, and adding numbers with NaN results in NaN",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198efb3",
+          "name": {
+            "ru": "Верно, результатом будет 111. Условие if внутри цикла исключает NaN из вычислений",
+            "en": "Correct, the result is 111. The if clause inside the loop excludes NaN from calculations",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198efb4",
+      "name": {
+        "ru": "Выберите верный вариант исправления условия if внутри цикла ниже, чтобы результатом было -222",
+        "en": "Choose the correct option to fix the if condition inside the loop below so that the result is -222",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst arr = [-2, -20, -200, NaN];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number') acc += arr[i];\n}\nconsole.log(acc)\n```",
+        "en": "```javascript\nconst arr = [-2, -20, -200, NaN];\nlet acc = 0;\nfor(let i = 0; i < arr.length; i++) {\n  if(typeof arr[i] === 'number') acc += arr[i];\n}\nconsole.log(acc)\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198efb5",
+          "name": {
+            "ru": "if(!Number.isNaN(i))",
+            "en": "if(!Number.isNaN(i))",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198efb6",
+          "name": {
+            "ru": "if(Number.isNaN(+arr[i]))",
+            "en": "if(Number.isNaN(+arr[i]))",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198efb7",
+          "name": {
+            "ru": "if(!Number.isNaN(+arr[i]))",
+            "en": "if(!Number.isNaN(+arr[i]))",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198efb8",
+          "name": {
+            "ru": "if(!Number.isNaN(arr[i]))",
+            "en": "if(!Number.isNaN(arr[i]))",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

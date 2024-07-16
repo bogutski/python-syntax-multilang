@@ -1,0 +1,5 @@
+{
+  "name": "Весёлая собака",
+  "instruction": "Напишите функцию function dog(), которая возвращает строку 'Bark!'",
+  "instructions": {}
+}

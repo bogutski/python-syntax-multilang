@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e1e6",
+  "name": {
+    "en": "If a negative number, return a positive number",
+    "ru": "Если отрицательное число, то вернуть положительное"
+  },
+  "instruction": {
+    "en": "Write a function `abs` that takes a number and returns its absolute value.\n\nIf the number is negative, return a positive number.\n\nIf the number is positive, return the same number.\n\nThis will help you:\n```javascript\nconst num = -10;\nconsole.log(-num); // 10\n```",
+    "ru": "Напишите функцию `abs`, которая принимает число и возвращает его абсолютное значение.\n\nЕсли число отрицательное, то вернуть положительное.\n\nЕсли число положительное, то вернуть его же.\n\nВам это поможет:\n```javascript\nconst num = -10;\nconsole.log(-num); // 10\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function abs(num) {\n  return num < 0 ? -num : num;\n}",
+  "openTest": "it('Created function abs', () => {\n  expect(abs).to.be.a('function');\n});\n\nit('abs(-10) should return 10', () => {\n  expect(abs(-10)).to.equal(10);\n});\n\nit('abs(10) should return 10', () => {\n  expect(abs(10)).to.equal(10);\n});\n\nit('abs(0) should return 0', () => {\n  expect(abs(0)).to.equal(0);\n});\n\nit('abs(-0) should return 0', () => {\n  expect(abs(-0)).to.equal(0);\n});\n\nit('abs(1) should return 1', () => {\n  expect(abs(1)).to.equal(1);\n});\n\nit('abs(-1) should return 1', () => {\n  expect(abs(-1)).to.equal(1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,1 @@
+# Array.prototype.indexOf() – индекс искомого элемента language: es

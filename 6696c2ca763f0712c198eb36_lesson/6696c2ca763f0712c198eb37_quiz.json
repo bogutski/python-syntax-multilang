@@ -1,0 +1,514 @@
+{
+  "_id": "6696c2ca763f0712c198eb37",
+  "name": {
+    "ru": "Перевернуть строку",
+    "en": "Reverse the line",
+    "es": ""
+  },
+  "acceptableMistakes": 1,
+  "active": true,
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198eb38",
+      "name": {
+        "ru": "Выберите верный вариант результата запуска кода ниже",
+        "en": "Select the correct version of the result of the code run below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'PASV';\nlet rev = '';\nfor(let i = 0; i < str.length; i++){\n  rev = str[i] + rev;\n};\nconsole.log(rev);\n```",
+        "en": "```javascript\nconst str = 'PASV';\nlet rev = '';\nfor(let i = 0; i < str.length; i++){\n  rev = str[i] + rev;\n};\nconsole.log(rev);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb39",
+          "name": {
+            "ru": "'VSAP'",
+            "en": "'VSAP'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb3a",
+          "name": {
+            "ru": "'PASV'",
+            "en": "'PASV'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb3b",
+          "name": {
+            "ru": "'V,S,A,P'",
+            "en": "'V,S,A,P'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb3c",
+          "name": {
+            "ru": "'P A S V'",
+            "en": "'P A S V'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb3d",
+      "name": {
+        "ru": "Верно ли что результатом кода ниже будет 'tpircS avaJ'?",
+        "en": "Is it correct that the result of the code below is 'tpircS avaJ'?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'Java Script';\nlet rev = '';\nfor(let i = 0; i < str.length; i++){\n  rev += str[i];\n};\nconsole.log(rev);\n```",
+        "en": "```javascript\nconst str = 'Java Script';\nlet rev = '';\nfor(let i = 0; i < str.length; i++){\n  rev += str[i];\n};\nconsole.log(rev);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb3e",
+          "name": {
+            "ru": "Верно, результатом будет 'tpircS avaJ'",
+            "en": "Right, the result is 'tpircS avaJ'.",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb3f",
+          "name": {
+            "ru": "Нет, результатом будет 'Java Script'",
+            "en": "No, the result is 'Java Script'",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb40",
+      "name": {
+        "ru": "Выберите верный вариант заполнения цикла for для кода ниже, чтобы строка 'Coding' стала 'gnidoC'",
+        "en": "Select the correct for loop completion for the code below to make the 'Coding' string become 'gnidoC'",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'Coding';\nlet rev = '';\nfor(let i = ???; i ???; i??){\n  rev ???;\n};\nconsole.log(rev);\n```",
+        "en": "```javascript\nconst str = 'Coding';\nlet rev = '';\nfor(let i = ???; i ???; i??){\n  rev ???;\n};\nconsole.log(rev);\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb41",
+          "name": {
+            "ru": "for(let i = 0; i < str.length; i++){\n  rev += str[i];\n};",
+            "en": "for(let i = 0; i < str.length; i++){\n  rev += str[i];\n};",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb42",
+          "name": {
+            "ru": "for(let i = 0; i < str.length; i++){\n  rev = str[i] + rev;\n};",
+            "en": "for(let i = 0; i < str.length; i++){\n  rev = str[i] + rev;\n};",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb43",
+          "name": {
+            "ru": "for(let i = str.length - 1; i >= 0; i--){\n  rev = str[i] + rev;\n};",
+            "en": "for(let i = str.length - 1; i >= 0; i--){\n  rev = str[i] + rev;\n};",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb44",
+          "name": {
+            "ru": "for(let i = str.length - 1; i >= 0; i--){\n  rev += str[i];\n};",
+            "en": "for(let i = str.length - 1; i >= 0; i--){\n  rev += str[i];\n};",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb45",
+      "name": {
+        "ru": "Что будет выведено в консоль после выполнения кода ниже?",
+        "en": "What will be output to the console after executing the code below?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'Lemon';\nlet rev = '';\nfor(let i = str.length - 1; i >= 0; i--){\n  rev = str[i] + rev;\n};\nconsole.log(rev);\n```",
+        "en": "```javascript\nconst str = 'Lemon';\nlet rev = '';\nfor(let i = str.length - 1; i >= 0; i--){\n  rev = str[i] + rev;\n};\nconsole.log(rev);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb46",
+          "name": {
+            "ru": "'Lemon'",
+            "en": "'Lemon'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb47",
+          "name": {
+            "ru": "'nemoL'",
+            "en": "'nemoL'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb48",
+          "name": {
+            "ru": "Nemol",
+            "en": "Nemol",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb49",
+          "name": {
+            "ru": "L e m o n",
+            "en": "L e m o n",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb4a",
+      "name": {
+        "ru": "Выберите верный вариант преобразования числа в строку",
+        "en": "Choose the correct option for converting a number to a string",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst num = 123;\n```",
+        "en": "```javascript\nconst num = 123;\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb4b",
+          "name": {
+            "ru": "const numToStr = String(num);",
+            "en": "const numToStr = String(num);",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb4c",
+          "name": {
+            "ru": "const numToStr = num + '';",
+            "en": "const numToStr = num + '';",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb4d",
+          "name": {
+            "ru": "const numToStr = num.toString();",
+            "en": "const numToStr = num.toString();",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb4e",
+          "name": {
+            "ru": "const numToStr = 'num';",
+            "en": "const numToStr = 'num';",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb4f",
+      "name": {
+        "ru": "Выберите верный вариант преобразования строки в число",
+        "en": "Select the correct option for converting a string to a number",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst num = '123';\n```",
+        "en": "```javascript\nconst num = '123';\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb50",
+          "name": {
+            "ru": "const numToStr = Number(num);",
+            "en": "const numToStr = Number(num);",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb51",
+          "name": {
+            "ru": "const numToStr = num+;",
+            "en": "const numToStr = num+;",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb52",
+          "name": {
+            "ru": "const numToStr = number(num);",
+            "en": "const numToStr = number(num);",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb53",
+          "name": {
+            "ru": "const numToStr = +num;",
+            "en": "const numToStr = +num;",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb54",
+      "name": {
+        "ru": "Выберите верный вариант результата выполнения кода ниже",
+        "en": "Select the correct option for the result of the code execution below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst num = 123;\nconst str = num + '';\nlet rev = '';\nfor(let i = str.length - 1; i >= 0; i--){\n  rev += str[i];\n};\nconsole.log(+rev);\n```",
+        "en": "```javascript\nconst num = 123;\nconst str = num + '';\nlet rev = '';\nfor(let i = str.length - 1; i >= 0; i--){\n  rev += str[i];\n};\nconsole.log(+rev);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb55",
+          "name": {
+            "ru": "321",
+            "en": "321",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb56",
+          "name": {
+            "ru": "123",
+            "en": "123",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb57",
+          "name": {
+            "ru": "'321'",
+            "en": "'321'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb58",
+          "name": {
+            "ru": "'123'",
+            "en": "'123'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb59",
+      "name": {
+        "ru": "Верно ли что результатом работы кода ниже будет 007?",
+        "en": "Is it true that the result of the code below is 007?",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst num = 700;\nconst numToStr = num + '';\nlet rev = ''; \nfor(let i = numToStr.length - 1; i >= 0; i--){\n  rev += numToStr[i];\n};\nconsole.log(+rev);\n```",
+        "en": "```javascript\nconst num = 700;\nconst numToStr = num + '';\nlet rev = ''; \nfor(let i = numToStr.length - 1; i >= 0; i--){\n  rev += numToStr[i];\n};\nconsole.log(+rev);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb5a",
+          "name": {
+            "ru": "Да, результат будет 007",
+            "en": "Yes, the result will be 007",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb5b",
+          "name": {
+            "ru": "Нет, результат будет '007'",
+            "en": "No, the result will be '007'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb5c",
+          "name": {
+            "ru": "Нет, результат будет 7",
+            "en": "No, the result will be 7",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb5d",
+          "name": {
+            "ru": "Нет, результат будет '7'",
+            "en": "No, the result will be a '7'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb5e",
+      "name": {
+        "ru": "Выберите верный результат выполнения кода ниже",
+        "en": "Select the correct result of the code execution below",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst num = '700';\nlet rev = ''; \nfor(let i = num.length - 1; i >= 0; i--){\n  rev += num[i];\n};\nconsole.log(rev);\n```",
+        "en": "```javascript\nconst num = '700';\nlet rev = ''; \nfor(let i = num.length - 1; i >= 0; i--){\n  rev += num[i];\n};\nconsole.log(rev);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb5f",
+          "name": {
+            "ru": "007",
+            "en": "007",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb60",
+          "name": {
+            "ru": "700",
+            "en": "700",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb61",
+          "name": {
+            "ru": "'700'",
+            "en": "'700'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb62",
+          "name": {
+            "ru": "'007'",
+            "en": "'007'",
+            "es": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198eb63",
+      "name": {
+        "ru": "Выберите верную последовательность того, что происходит в переменной rev",
+        "en": "Choose the correct sequence of what happens in the rev variable",
+        "es": ""
+      },
+      "description": {
+        "ru": "```javascript\nconst str = 'Do it';\nlet rev = str.split('').reverse().join(''); \nconsole.log(rev);\n```",
+        "en": "```javascript\nconst str = 'Do it';\nlet rev = str.split('').reverse().join(''); \nconsole.log(rev);\n```",
+        "es": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198eb64",
+          "name": {
+            "ru": "['D', 'o', ' ', 'i', 't']\n['t', 'i', ' ', 'o', 'D']\n'ti oD'",
+            "en": "['D', 'o', ' ', 'i', 't']\n['t', 'i', ' ', 'o', 'D']\n'ti oD'",
+            "es": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb65",
+          "name": {
+            "ru": "['t', 'i', ' ', 'o', 'D']\n['D', 'o', ' ', 'i', 't']\n'ti oD'",
+            "en": "['t', 'i', ' ', 'o', 'D']\n['D', 'o', ' ', 'i', 't']\n'ti oD'",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb66",
+          "name": {
+            "ru": "'ti oD'\n['D', 'o', ' ', 'i', 't']\n['t', 'i', ' ', 'o', 'D']",
+            "en": "'ti oD'\n['D', 'o', ' ', 'i', 't']\n['t', 'i', ' ', 'o', 'D']",
+            "es": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198eb67",
+          "name": {
+            "ru": "['D', 'o', ' ', 'i', 't']\n['D', 'o', ' ', 'i', 't']\n'ti oD'",
+            "en": "['D', 'o', ' ', 'i', 't']\n['D', 'o', ' ', 'i', 't']\n'ti oD'",
+            "es": ""
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

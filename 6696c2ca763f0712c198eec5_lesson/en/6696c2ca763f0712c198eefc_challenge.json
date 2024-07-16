@@ -1,0 +1,5 @@
+{
+  "name": "Sorting numbers in a string",
+  "instruction": "Write a function `sortNumbers` that takes a string with various characters, including numbers.\n\nThe function should sort only the numbers and add them to two strings:\n\n* `from 0 to 4` inclusive, in the first string\n* `from 5 to 9` inclusive, in the second string\n\nReturn an array of two strings, where the first element is the string from 0 to 4, and the second element is the string from 5 to 9.\n\n\nExample function calls:\n```javascript\nsortNumbers(' 3 4 5 6 7 8 0 ') // ['340', '5678']\nsortNumbers('1, 2, 9, 8, 3, 0, 5, 6, 7, 4') // ['12304', '98567']\nsortNumbers('1abc asd29, $4ngb92 762') // ['12422', '9976']\nsortNumbers('abc') // ['', '']\nsortNumbers('') // ['', '']\n```",
+  "instructions": {}
+}

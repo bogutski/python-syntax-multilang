@@ -1,0 +1,146 @@
+{
+  "questions": {
+    "0": {
+      "name": "An example of operator in JavaScript is",
+      "variants": {
+        "0": {
+          "name": "+"
+        },
+        "1": {
+          "name": ";"
+        },
+        "2": {
+          "name": "/"
+        },
+        "3": {
+          "name": "#"
+        }
+      }
+    },
+    "1": {
+      "name": "The operand is what the operator applies to.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    },
+    "2": {
+      "name": "An operator is called \"unary\" if it applies to ",
+      "variants": {
+        "0": {
+          "name": "one operative"
+        },
+        "1": {
+          "name": "two operands"
+        },
+        "2": {
+          "name": "three operands"
+        },
+        "3": {
+          "name": "four operands"
+        }
+      }
+    },
+    "3": {
+      "name": "Operands are also called",
+      "variants": {
+        "0": {
+          "name": "signs"
+        },
+        "1": {
+          "name": "numbers"
+        },
+        "2": {
+          "name": "results"
+        },
+        "3": {
+          "name": "operator arguments"
+        }
+      }
+    },
+    "4": {
+      "name": "The unary minus \"-\" reverses the sign of the operand.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    },
+    "5": {
+      "name": "The unary plus \"+\" changes the sign of the operand to positive.",
+      "variants": {
+        "0": {
+          "name": "yes"
+        },
+        "1": {
+          "name": "no"
+        }
+      }
+    },
+    "6": {
+      "name": "Binary plus \"+\"",
+      "variants": {
+        "0": {
+          "name": "changes the sign of the operands"
+        },
+        "1": {
+          "name": "adds up the numbers"
+        },
+        "2": {
+          "name": "combines the strings"
+        }
+      }
+    },
+    "7": {
+      "name": "If at least one of the arguments is a string when using binary plus, the result will be",
+      "variants": {
+        "0": {
+          "name": "line"
+        },
+        "1": {
+          "name": "by the number"
+        },
+        "2": {
+          "name": "error"
+        }
+      }
+    },
+    "8": {
+      "description": "```\nlet a = 1;\na = -a;\nconsole.log( a );\n```",
+      "name": "What result will be displayed in the console after running the example below?",
+      "variants": {
+        "0": {
+          "name": "a"
+        },
+        "1": {
+          "name": "-a"
+        },
+        "2": {
+          "name": "1"
+        },
+        "3": {
+          "name": "-1"
+        }
+      }
+    },
+    "9": {
+      "name": "The operator \"=\" is used for",
+      "variants": {
+        "0": {
+          "name": "comparisons"
+        },
+        "1": {
+          "name": "assignments"
+        }
+      }
+    }
+  },
+  "name": "JS Syntax. Unary and Binary Operators"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Двойное имя",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-9.png)\n\nЧасто американцы имеют два личных имени.\nПредположим, что в переменной `name` хранится первое имя.\nТребуется в переменной `name` получить два первых имени через пробел.\n\nНапишите команду, создающую переменную `name` со значением `Ivan`.\n\nЗапишите команду, которая изменяет имеющееся значение переменной `name`, соединяя его с именем 'Francis' через пробел.\n\nПохожий пример:\n```javascript\nlet name = 'Alice';\nname = name + ' ' + 'Marie';\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet name = 'Ivan';\nname = name + ' ' + 'Francis';\n```"
+}

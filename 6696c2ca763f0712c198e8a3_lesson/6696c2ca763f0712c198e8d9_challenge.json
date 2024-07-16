@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e8d9",
+  "name": {
+    "en": "Filling the array with negative integers from -n to -1.",
+    "ru": "Заполнение массива отрицательными целыми числами от -n до -1."
+  },
+  "instruction": {
+    "en": "We need to create a function `negativeArray` that takes a single positive integer `n` and returns an array filled with consecutive integers from `-n` to `-1`.\n\nExamples of running the function:\n\n```javascript\nnegativeArray(5); // [-5, -4, -3, -2, -1]\nnegativeArray(10); // [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1]\nnegativeArray(1); // [-1]\nnegativeArray(0); // []\n```",
+    "ru": "Нужно создать функцию `negativeArray`, которая принимает одно целое положительное число `n` и возвращает массив, заполненный целыми последовательными числами от `-n` до `-1`.\n\nПримеры запуска функции:\n\n```javascript\nnegativeArray(5);   // [-5, -4, -3, -2, -1]\nnegativeArray(10);  // [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1]\nnegativeArray(1);   // [-1]\nnegativeArray(0);   // []\n```"
+  },
+  "initialSolution": "func",
+  "completedSolution": "function negativeArray(n) {\n  const result = [];\n  for (let i = -n; i <= -1; i += 1) {\n    result.push(i);\n  }\n  return result;\n}",
+  "openTest": "it('Created function negativeArray', () => {\n  expect(negativeArray).to.be.a('function');\n});\n\nit('negativeArray(5) should return [-5, -4, -3, -2, -1]', () => {\n  expect(negativeArray(5)).to.deep.equal([-5, -4, -3, -2, -1]);\n});\n\nit('negativeArray(15) should return [-15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1]', () => {\n  expect(negativeArray(15)).to.deep.equal([-15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1]);\n});\n\nit('negativeArray(1) should return [-1]', () => {\n  expect(negativeArray(1)).to.deep.equal([-1]);\n});\n\nit('negativeArray(0) should return []', () => {\n  expect(negativeArray(0)).to.deep.equal([]);\n});\n\nit('negativeArray(10) should return [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1]', () => {\n  expect(negativeArray(10)).to.deep.equal([-10, -9, -8, -7, -6, -5, -4, -3, -2, -1]);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

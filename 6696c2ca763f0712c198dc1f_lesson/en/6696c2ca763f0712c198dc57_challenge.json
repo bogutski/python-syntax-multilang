@@ -1,0 +1,6 @@
+{
+  "name": "What is three plus five?",
+  "instruction": "*Now let's do the math\n\n*What's three plus five!\n\nCreate a variable named `number1` and assign it the value 3.\n\nCreate a variable named `number2` and assign it the value 5.\n\nCreate a variable named `sum` and assign it the value of the sum of variables `number1` and `number2`.\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the task:\n```javascript\nlet num1 = 1;\nlet num2 = 2;\nlet result = num1 + num2;\n```",
+  "instructions": {},
+  "hint": "```javascript\nlet number1 = 3;\nlet number2 = 5;\nlet sum = number1 + number2;\n```"
+}

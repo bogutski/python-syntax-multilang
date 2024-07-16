@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f8e0",
+  "name": {
+    "en": "/*",
+    "ru": "Проверка, что все строки в массиве содержат хотя бы одну заглавную букву"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `areAllStringsContainingUpperCase`, которая принимает массив строк и возвращает `true`, если все строки в массиве содержат хотя бы одну заглавную букву, и `false` в противном случае.\n\n\nПримеры запуска функции:\n```javascript\nareAllStringsContainingUpperCase(['hEllo', 'worlD', 'JavaScript']); // true\nareAllStringsContainingUpperCase(['hello', 'world', 'JavaScript']); // false\nareAllStringsContainingUpperCase(['HELLO', 'WORLD', 'JAVASCRIPT']); // true\nareAllStringsContainingUpperCase(['Hello', 'world', 'JavaScript']); // false\n```"
+  },
+  "initialSolution": "function areAllStringsContainingUpperCase(){\n\n}",
+  "completedSolution": "function areAllStringsContainingUpperCase(arr) {\n  return arr.every(word => word.toLowerCase() !== word);\n}",
+  "openTest": "it('Created function areAllStringsContainingUpperCase', () => {\n  expect(areAllStringsContainingUpperCase).to.be.a('function');\n});\n\nit('areAllStringsContainingUpperCase([\"Hello\", \"World\", \"JavaScript\"]) should return true', function() {\n  expect(areAllStringsContainingUpperCase([\"Hello\", \"World\", \"JavaScript\"])).to.equal(true);\n});\n\nit('areAllStringsContainingUpperCase([\"hello\", \"world\", \"JavaScript\"]) should return false', function() {\n  expect(areAllStringsContainingUpperCase([\"hello\", \"world\", \"JavaScript\"])).to.equal(false);\n});\n\nit('areAllStringsContainingUpperCase([\"HELLO\", \"WORLD\", \"JAVASCRIPT\"]) should return true', function() {\n  expect(areAllStringsContainingUpperCase([\"HELLO\", \"WORLD\", \"JAVASCRIPT\"])).to.equal(true);\n});\n\nit('areAllStringsContainingUpperCase([\"Hello\", \"world\", \"JavaScript\"]) should return false', function() {\n  expect(areAllStringsContainingUpperCase([\"Hello\", \"world\", \"JavaScript\"])).to.equal(false);\n});\n\nit('areAllStringsContainingUpperCase([\"UpperCase\", \"InEvery\", \"String\"]) should return true', function() {\n  expect(areAllStringsContainingUpperCase([\"UpperCase\", \"InEvery\", \"String\"])).to.equal(true);\n});\n\nit('areAllStringsContainingUpperCase([\"nocapitals\", \"insome\", \"strings\"]) should return false', function() {\n  expect(areAllStringsContainingUpperCase([\"nocapitals\", \"insome\", \"strings\"])).to.equal(false);\n});\n\nit('areAllStringsContainingUpperCase([\"AaAa\", \"BbBb\", \"CcCc\"]) should return true', function() {\n  expect(areAllStringsContainingUpperCase([\"AaAa\", \"BbBb\", \"CcCc\"])).to.equal(true);\n});\n\nit('areAllStringsContainingUpperCase([\"lowercase\", \"uppercase\", \"mixedCASE\"]) should return false', function() {\n  expect(areAllStringsContainingUpperCase([\"lowercase\", \"uppercase\", \"mixedCASE\"])).to.equal(false);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

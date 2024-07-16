@@ -1,0 +1,6 @@
+{
+  "name": "Correct the errors in the code. Number zero",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-19.png)\n\nYou need to write a command that assigns the variable `sum` to the value of the number `0` using the keyword `let`.\n\nCorrect the errors in the given code.",
+  "instructions": {},
+  "hint": "```javascript\nlet sum = 0;\n```"
+}

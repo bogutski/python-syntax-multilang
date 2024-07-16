@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f85f",
+  "name": {
+    "en": "/*",
+    "ru": "Найти индекс первого четного числа"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findFirstEvenIndex`, которая принимает многоуровневый массив чисел.\n\nФункция должна вернуть индекс первого четного числа в массиве после его \"выпрямления\".\n\nЕсли такого числа нет, функция должна вернуть строку \"Even number not found\".\n\n\nПримеры запуска функции:\n```javascript\nfindFirstEvenIndex([[2], 4, [6, 8]]); // 0\nfindFirstEvenIndex([[11, 13], [15, 18]]); // 3\nfindFirstEvenIndex([1, [3, 5], [7, 8, 10]]); // 4\nfindFirstEvenIndex([1, [3, 5], [7, 9]]); // \"Even number not found\"\n```"
+  },
+  "initialSolution": "function findFirstEvenIndex(){\n\n}",
+  "completedSolution": "function findFirstEvenIndex(arr) {\n  const result = arr.flat(Infinity).findIndex(num => num % 2 === 0)\n  return result !== -1 ? result : 'Even number not found';\n}",
+  "openTest": "it('Created function findFirstEvenIndex', () => {\n  expect(findFirstEvenIndex).to.be.a('function');\n});\n\nit(\"Function findFirstEvenIndex should include findIndex method\", () => {\n  const result = findFirstEvenIndex.toString();\n  expect(result).to.include('.findIndex(');\n});\n\nit('findFirstEvenIndex([1, [3, 5], [7, 8, 10]]) should return 4', function() {\n  expect(findFirstEvenIndex([1, [3, 5], [7, 8, 10]])).to.equal(4);\n});\n\nit('findFirstEvenIndex([1, [3, 5], [7, 9]]) should return \"Even number not found\"', function() {\n  expect(findFirstEvenIndex([1, [3, 5], [7, 9]])).to.equal(\"Even number not found\");\n});\n\nit('findFirstEvenIndex([[2], 4, [6, 8]]) should return 0', function() {\n  expect(findFirstEvenIndex([[2], 4, [6, 8]])).to.equal(0);\n});\n\nit('findFirstEvenIndex([[11, 13], [15, 18]]) should return 3', function() {\n  expect(findFirstEvenIndex([[11, 13], [15, 18]])).to.equal(3);\n});\n\nit('findFirstEvenIndex([[5], 7, 9, [10]]) should return 3', function() {\n  expect(findFirstEvenIndex([[5], 7, 9, [10]])).to.equal(3);\n});\n\nit('findFirstEvenIndex([1, [2, 3], 4, 5, [6]]) should return 1', function() {\n  expect(findFirstEvenIndex([1, [2, 3], 4, 5, [6]])).to.equal(1);\n});\n\nit('findFirstEvenIndex([[3], 5, [7, 9]]) should return \"Even number not found\"', function() {\n  expect(findFirstEvenIndex([[3], 5, [7, 9]])).to.equal(\"Even number not found\");\n});\n\nit('findFirstEvenIndex([[0, 2], 4, [6]]) should return 0', function() {\n  expect(findFirstEvenIndex([[0, 2], 4, [6]])).to.equal(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

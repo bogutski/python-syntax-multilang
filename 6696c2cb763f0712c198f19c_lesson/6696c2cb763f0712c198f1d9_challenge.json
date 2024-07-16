@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f1d9",
+  "name": {
+    "en": "Reverse only the middle element of the array",
+    "ru": "Перевернуть только средний элемент массива"
+  },
+  "instruction": {
+    "en": "Write a function `reverseOnlyMiddle` that takes an array of strings.\n\nThe function should return a new array:\n\n* All elements except the middle one should remain unchanged.\n\n* The string in the middle of the array should be reversed.\n\nThe array will always have an odd number of elements.\n\nUse the function `Math.floor(arr.length / 2)` to find the index of the middle element.\n\nIf the array is empty, return the string `'Array is empty'`.\n\n\nExamples of function calls:\n```javascript\nreverseOnlyMiddle(['123', '456', '789']);          // ['123', '654', '789']\nreverseOnlyMiddle(['123', 'abc', 'def']);          // ['123', 'cba', 'def']\nreverseOnlyMiddle(['12', '34', '56', '78', '90']); // ['12', '34', '65', '78', '90']\nreverseOnlyMiddle(['drow']);                       // ['word']\nreverseOnlyMiddle([]);                             // 'Array is empty'\n```",
+    "ru": "Напишите функцию `reverseOnlyMiddle`, которая принимает массив строк.\n\nФункция должна вернуть новый массив:\n\n* Все элементы, кроме среднего, должны остаться без изменений.\n\n* Строка, находящаяся посередине массива, должна быть перевернута.\n\nВ массиве будет гарантированно нечетное количество элементов.\n\nДля нахождения индекса элемента посередине используйте функцию `Math.floor(arr.length / 2)`.\n\nЕсли массив пустой, то вернуть строку `'Array is empty'`.\n\n\nПримеры запуска функции:\n```javascript\nreverseOnlyMiddle(['123', '456', '789']);          // ['123', '654', '789']\nreverseOnlyMiddle(['123', 'abc', 'def']);          // ['123', 'cba', 'def']\nreverseOnlyMiddle(['12', '34', '56', '78', '90']); // ['12', '34', '65', '78', '90']\nreverseOnlyMiddle(['drow']);                       // ['word']\nreverseOnlyMiddle([]);                             // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseOnlyMiddle(arr){\n  if(!arr.length) return 'Array is empty';\n  const index = Math.floor(arr.length / 2)\n  const newArr = [];\n\n  for(let i = 0; i < arr.length; i++){\n    if(i === index){\n      let revWord = '';\n      for(let j = arr[i].length - 1; j >= 0; j--){\n        revWord += arr[i][j];\n      }\n      newArr.push(revWord);\n    }\n    else newArr.push(arr[i])\n  }\n\n  return newArr;\n}",
+  "openTest": "it('Created function reverseOnlyMiddle', () => {\n  expect(reverseOnlyMiddle).to.be.a('function');\n});\n\nit(\"reverseOnlyMiddle(['123', 'abc', '456']) should return ['123', 'cba', '456']\", () => {\n  const arr = ['123', 'abc', '456'];\n  expect(reverseOnlyMiddle(arr)).to.not.equal(arr);\n});\n\nit(\"reverseOnlyMiddle(['123', '456', '789']) should return ['123', '654', '789']\", () => {\n  expect(reverseOnlyMiddle(['123', '456', '789'])).to.deep.equal(['123', '654', '789']);\n});\n\nit(\"reverseOnlyMiddle(['123', 'qwe', '789', 'abc', '225']) should return ['123', 'qwe', '987', 'abc', '225']\", () => {\n  expect(reverseOnlyMiddle(['123', 'qwe', '789', 'abc', '225'])).to.deep.equal(['123', 'qwe', '987', 'abc', '225']);\n});\n\nit(\"reverseOnlyMiddle(['12', '34', '56', '78', '90']) should return ['12', '34', '65', '78', '90']\", () => {\n  expect(reverseOnlyMiddle(['12', '34', '56', '78', '90'])).to.deep.equal(['12', '34', '65', '78', '90']);\n});\n\nit(\"reverseOnlyMiddle(['ab', 'cd', 'ea', 'elddim', 'mnb', 'ij', 'kl']) should return ['ab', 'cd', 'ea', 'middle', 'mnb', 'ij', 'kl']\", () => {\n  expect(reverseOnlyMiddle(['ab', 'cd', 'ea', 'elddim', 'mnb', 'ij', 'kl'])).to.deep.equal(['ab', 'cd', 'ea', 'middle', 'mnb', 'ij', 'kl']);\n});\n\nit(\"reverseOnlyMiddle(['drow eno ylno']) should return ['only one word']\", () => {\n  expect(reverseOnlyMiddle(['drow eno ylno'])).to.deep.equal(['only one word']);\n});\n\nit(\"reverseOnlyMiddle([]) should return 'Array is empty'\", () => {\n  expect(reverseOnlyMiddle([])).to.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

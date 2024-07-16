@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e14a",
+  "name": {
+    "en": "Converting to a Boolean value using double negation",
+    "ru": "Преобразование в булево значение с помощью двойного отрицания"
+  },
+  "instruction": {
+    "en": "Write a function `toBoolean` that takes one value and converts it to `boolean`.\n\nUse: `!!`.\n\nExample function call:\n```javascript\ntoBoolean(1);    // true\ntoBoolean(0);    // false\ntoBoolean('');   // false\ntoBoolean(' ');  // true\ntoBoolean(true); // true\n```",
+    "ru": "Напишите функцию `toBoolean`, которая принимает одно значение и преобразует его в `boolean`.\n\nИспользуйте: `!!`.\n\nПример запуска функции:\n```javascript\ntoBoolean(1);    // true\ntoBoolean(0);    // false\ntoBoolean('');   // false\ntoBoolean(' ');  // true\ntoBoolean(true); // true\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function toBoolean(value) {\n  return !!value;\n}",
+  "openTest": "it('Created function toBoolean', () => {\n  expect(toBoolean).to.be.a('function');\n} );\n\nit('toBoolean(true) should return true', () => {\n  expect(toBoolean(true)).to.equal(true);\n} );\n\nit('toBoolean(false) should return false', () => {\n  expect(toBoolean(false)).to.equal(false);\n} );\n\nit('toBoolean(1) should return true', () => {\n  expect(toBoolean(1)).to.equal(true);\n});\n\nit('toBoolean(0) should return false', () => {\n  expect(toBoolean(0)).to.equal(false);\n});\n\nit('toBoolean(\"\") should return false', () => {\n  expect(toBoolean('')).to.equal(false);\n});\n\nit('toBoolean(\" \") should return true', () => {\n  expect(toBoolean(' ')).to.equal(true);\n});\n\nit('function should contain !!', function () {\n  expect(toBoolean.toString().indexOf('!!')).to.not.equal(-1);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e738",
+  "name": {
+    "en": "The arithmetic mean of some numbers from the arrays",
+    "ru": "Среднее арифметическое некоторых чисел из массивов"
+  },
+  "instruction": {
+    "en": "Write a function `average` that takes three parameters - arrays with numbers.\n\nEach array contains at least 3 numbers, which can be both positive and negative.\n\nFind the sum of the defined elements of the arrays and `divide it by 3`:\n* First element of the first array\n* Second element of the second array\n* Last element of the third array\n\nUse the function `Math.round()` to round the result.\n\nAn example of running the function:\n```javascript\naverage([1, 2, 3], [4, 5, 6], [7, 8, 9]) // 5\n```",
+    "ru": "Напишите функцию `average`, которая принимает три параметра - массивы с числами.\n\nВ каждом массиве находится не менее 3 чисел, которые могут быть как положительными, так и отрицательными.\n\nНайдите сумму определенных элементов массивов и `разделите ее на 3`:\n* Первый элемент первого массива\n* Второй элемент второго массива\n* Последний элемент третьего массива\n\nДля округления результата используйте функцию `Math.round()`\n\nПример запуска функции:\n```javascript\naverage([1, 2, 3], [4, 5, 6], [7, 8, 9]) // 5\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function average(arr1, arr2, arr3) {\n    return Math.round((arr1[0] + arr2[1] + arr3[arr3.length - 1]) / 3)\n}",
+  "openTest": "it('Created function average', () => {\n    expect(average).to.be.a('function');\n});\n\nit('average `[-1, 2, 3], [4, 5, 6], [7, 8, 9]` should return 4', () => {\n    expect(average([-1, 2, 3], [4, 5, 6], [7, 8, 9])).to.be.equal(4);\n});\n\nit('average `[11, 2, 3], [4, 5, 6], [7, 8, 9]` should return 8', () => {\n    expect(average([11, 2, 3], [4, 5, 6], [7, 8, 9])).to.be.equal(8);\n});\n\nit('average `[17, 30, 48], [140, 10, 0, 1], [126, 138, 17]` should return 15', () => {\n    expect(average([17, 30, 48], [140, 10, 0, 1], [126, 138, 17])).to.be.equal(15);\n});\n\nit('average `[115, 2, 3], [4, -57, 6], [7, 8, 19]` should return 26', () => {\n    expect(average([115, 2, 3], [4, -57, 6], [7, 8, 19])).to.be.equal(26);\n});\n\nit('average `[23, 2, 3], [4, 3, 6], [7, 8, 16]` should return 14', () => {\n    expect(average([23, 2, 3], [4, 3, 6], [7, 8, 16])).to.be.equal(14);\n});\n\nit('average `[100, 2, 3], [4, 7, 6], [7, 8, -9]` should return 33', () => {\n    expect(average([100, 2, 3], [4, 7, 6], [7, 8, -9])).to.be.equal(33);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

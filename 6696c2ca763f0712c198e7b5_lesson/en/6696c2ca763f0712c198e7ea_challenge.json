@@ -1,0 +1,4 @@
+{
+  "name": "Adding new elements to the beginning of an array",
+  "instruction": "Create a function `addNewElements`.\n\nThe function takes 3 parameters:\n* `array` - array of numbers\n* `elm1` and `elm2` - numbers\n\nAdd 3 new elements to the beginning of the `array` array: `elm1`, `elm2`, sum of `elm1` and `elm2`.\n\nThe function should return the array resulting from the addition of new elements.\n\nThe `array` array can be empty.\n\nUse the `unshift` method to solve the problem.\n\nExamples of running a function:\n\n```javascript\naddNewElements([1, 2, 3 ,4], -1, 1); // [-1, 1, 0, 1, 2, 3, 4]\naddNewElements([22, 53, 64], 3, 12); // [3, 12, 15, 22, 53, 64]\naddNewElements([10], 3, 4); // [3, 4, 7, 10]\naddNewElements([], 4, 6); // [4, 6, 10]\n```"
+}

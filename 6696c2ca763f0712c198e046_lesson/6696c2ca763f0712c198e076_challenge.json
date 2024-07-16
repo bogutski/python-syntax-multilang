@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e076",
+  "name": {
+    "en": "Calculate the cost of Americans traveling by car in Europe",
+    "ru": "Рассчитать стоимость поездки американцев на машине по Европе"
+  },
+  "instruction": {
+    "en": "Write a function `tripCost` that takes parameters\n\n`literPer100Km` - the number of liters for the car to drive 100 kilometers.\n`pricePerLiter` - the price of one liter of gasoline.\n`distanceKm` - distance in kilometers to be driven from point A to point B.\n\n* In one gallon of gasoline `3.785` liters.\n* In one mile `1.609` kilometers.\n* The maximum capacity of a car's tank is 60 liters.\n\nThe function should return the cost of a car trip from point A to point B and back.\n\nExamples:\n```javascript\ntripCost(10, 2, 100) // 40\ntripCost(20, 3, 100) // 30\n```\n\nFormula for calculating the cost of one way trip:\n``distanceKm / 100 * literPer100Km * pricePerLiter",
+    "ru": "Напиши функцию `tripCost`, которая принимает параметры\n\n`literPer100Km` - количество литров, чтобы автомобиль проехал 100 километров.\n`pricePerLiter` - цена одного литра бензина.\n`distanceKm` - расстояние в километрах, которое нужно проехать от пункта А до пункта Б.\n\n\nФункция должна возвращать стоимость поездки на машине от пункта А до пункта Б и обратно.\n\nПримеры:\n```javascript\ntripCost(10, 2, 100) // 40\ntripCost(20, 3, 100) // 120\n```\n\nФормула расчета стоимости поездки в одну сторону:\n`distanceKm / 100 * literPer100Km * pricePerLiter`"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function tripCost(literPer100Km, pricePerLiter, distanceKm) {\n  return distanceKm / 100 * literPer100Km * pricePerLiter * 2;\n}",
+  "openTest": "it('Created function tripCost', () => {\n  expect(tripCost).to.be.a('function');\n});\n\nit('tripCost(10, 2, 100) should return 40', () => {\n  expect(tripCost(10, 2, 100)).to.equal(40);\n});\n\nit('tripCost(20, 3, 100) should return 120', () => {\n  expect(tripCost(20, 3, 100)).to.equal(120);\n});\n\nit('tripCost(30, 4, 100) should return 240', () => {\n  expect(tripCost(30, 4, 100)).to.equal(240);\n});\n\nit('tripCost(40, 5, 100) should return 400', () => {\n  expect(tripCost(40, 5, 100)).to.equal(400);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

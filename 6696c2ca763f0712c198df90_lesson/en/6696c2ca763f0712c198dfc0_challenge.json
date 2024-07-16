@@ -1,0 +1,4 @@
+{
+  "name": "Modify the division function with the default parameters",
+  "instruction": "Modify the `div` function so that it returns the result of dividing the two numbers passed as arguments, even if the second argument is not passed.\n\nExamples:\n```javascript\ndiv(10, 2) // 5\ndiv(10) // 10\ndiv() // 0\n```"
+}

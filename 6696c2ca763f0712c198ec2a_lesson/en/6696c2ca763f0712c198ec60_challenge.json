@@ -1,0 +1,5 @@
+{
+  "name": "Count the number of occurrences of elements in the string from the 4th index of the string to the end of the string",
+  "instruction": "The `countElFrom4Ind` function takes 1 parameter - the string `str`.\n\nThe string is of arbitrary length and consists of words in upper or lower case, separated by spaces.\n\nThe function returns an object in which the keys are letters and the values are the number of occurrences of these letters.\n\nThe counting starts from the 4th index of the string to the end.\n\nCorrect the errors in the code to make the function work correctly.\n\nExample of running the function:\n```javascript\ncountElFrom4Ind('REPAPER'); // {E: 1, P: 1, R: 1}\ncountElFrom4Ind('Love Birds'); // {\" \": 1, B: 1, d: 1, i: 1, r: 1, s: 1}\ncountElFrom4Ind('4 you'); // {u: 1}\ncountElFrom4Ind('Anna'); // 'The string is not long enough'\ncountElFrom4Ind('Up'); // 'The string is not long enough'\n```",
+  "instructions": {}
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e642",
+  "name": {
+    "en": "Editing a driver's license. Deleting object properties.",
+    "ru": "Редактирование водительских прав. Удаление свойств объекта."
+  },
+  "instruction": {
+    "en": "The driver's license inadvertently has information about the current year,\nbut there is no information about the color of the eyes.\n\nYou need to write a function `driverLicense` that takes 2 parameters:\n\n* `profile` - object with driver information\n* `color` - eye color, string\n\nThe object `profile` has the following properties:\n* `name` - user name, string;\n* `lastName` - last name of the user, string;\n* `currentYear` - current year, number;\n* `yearOfBirth` - user's year of birth, number;\n* `Height` - the height of the user, number.\nWe need to remove the `currentYear` property from the `profile` object and add the `eyeColor` property with value `color`;\n\nThe function should return the object with the changed properties.\n\nAn example of running the function:\n```javascript\n\ndriverLicense({name: 'John', lastName: 'Lee', currentYear: 2023, yearOfBirth: 1989, height: 189}, 'blue') // {name: 'John', lastName: 'Lee', yearOfBirth: 1989, height: 189, eyeColor: 'blue' }\ncarProfile({model: 'BMW', currentYear: 2023, productionYear:2023}, 'silver') // { model: 'BMW', productionYear:2023, color: 'silver' }\n```",
+    "ru": "В водительские права нечаянно попала информация о текущем годе,\nно при этом отсутствует информация о цвете глаз.\n\nНеобходимо написать функцию `driverLicense` которая принимает 2 параметра:\n\n* `profile` – объект с информацией о водителе\n* `color` - цвет глаз, строка\n\nОбъект `profile` имеет следующие свойства:\n* `name` - имя пользователя, строка;\n* `lastName` - фамилия пользователя, строка;\n* `currentYear` - текущий год, число;\n* `yearOfBirth` - год рождения пользователя, число;\n* `height` - рост пользователя, число.\nНеобходимо удалить свойство `currentYear` из объекта `profile` и добавить свойство `eyeColor` со значением `color`;\n\nФункция должна возвращать объект с измененными свойствами.\n\nПример запуска функции:\n```javascript\n\ndriverLicense({name: 'John', lastName: 'Lee', currentYear: 2023, yearOfBirth: 1989, height: 189}, 'blue') // {name: 'John', lastName: 'Lee', yearOfBirth: 1989, height: 189, eyeColor: 'blue' }\ncarProfile({model: 'BMW', currentYear: 2023, productionYear:2023}, 'silver') // { model: 'BMW', productionYear:2023, color: 'silver' }\n```"
+  },
+  "initialSolution": "function\n\n}",
+  "completedSolution": "function driverLicense(profile, color) {\n  delete profile.currentYear;\n  profile.eyeColor = color;\n  return profile;\n}",
+  "openTest": "it(`Created function driverLicense`, () => {\n  expect(driverLicense).to.be.a('function');\n});\n\nit(`driverLicense({name: 'John', lastName: 'Lee', currentYear: 2022, yearOfBirth: 1989, height: 189}, 'brown') return { name: 'John', lastName: 'Lee', yearOfBirth: 1989, height: 189, eyeColor: 'brown' }`, () => {\n  expect(\n    driverLicense(\n      {\n        name: 'John',\n        lastName: 'Lee',\n        currentYear: 2022,\n        yearOfBirth: 1989,\n        height: 189,\n      },\n      'brown',\n    ),\n  ).eql({\n    name: 'John',\n    lastName: 'Lee',\n    yearOfBirth: 1989,\n    height: 189,\n    eyeColor: 'brown',\n  });\n});\n\nit(`driverLicense({name: 'Leo', lastName: 'DiCaprio', currentYear: 2023, yearOfBirth: 1974, height: 183}, 'blue') return { name: 'Leo', lastName: 'DiCaprio', yearOfBirth: 1974, height: 183, eyeColor: 'blue' }`, () => {\n  expect(\n    driverLicense(\n      {\n        name: 'Leo',\n        lastName: 'DiCaprio',\n        currentYear: 2023,\n        yearOfBirth: 1974,\n        height: 183,\n      },\n      'blue',\n    ),\n  ).eql({\n    name: 'Leo',\n    lastName: 'DiCaprio',\n    yearOfBirth: 1974,\n    height: 183,\n    eyeColor: 'blue',\n  });\n});\n\nit(`driverLicense({name: 'Tom', lastName: 'Cruise', currentYear: 2023, yearOfBirth: 1962, height: 175}, 'green') return { name: 'Tom', lastName: 'Cruise', yearOfBirth: 1962, height: 175, eyeColor: 'green' }`, () => {\n  expect(\n    driverLicense(\n      {\n        name: 'Tom',\n        lastName: 'Cruise',\n        currentYear: 2023,\n        yearOfBirth: 1962,\n        height: 175,\n      },\n      'green',\n    ),\n  ).eql({\n    name: 'Tom',\n    lastName: 'Cruise',\n    yearOfBirth: 1962,\n    height: 175,\n    eyeColor: 'green',\n  });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

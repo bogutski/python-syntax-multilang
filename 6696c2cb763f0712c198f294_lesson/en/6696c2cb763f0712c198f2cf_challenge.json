@@ -1,0 +1,5 @@
+{
+  "name": "How many kinds of elements are in the array",
+  "instruction": "The function `countEachEl` takes an array of integers and returns a string in the format `Array has NN elements and N kinds of them\", where NN is the number of elements in the array, and the second number is the count of different elements in the array.\n\nExample of function execution:\n```javascript\ncountEachEl([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // \"Array has 10 elements and 10 kinds of them\"\ncountEachEl([1, 1, 1, 1, 1])                 // \"Array has 5 elements and 1 kinds of them\"\ncountEachEl([])                              // \"Array has 0 elements and 0 kinds of them\"\ncountEachEl([1, 1, 1, 2, 2, 2])  // \"Array has 6 elements and 2 kinds of them\"\n```",
+  "instructions": {}
+}

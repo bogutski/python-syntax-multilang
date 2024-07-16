@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f1d3",
+  "name": {
+    "en": "Reverse the elements of internal arrays",
+    "ru": "Перевернуть элементы внутренних массивов"
+  },
+  "instruction": {
+    "en": "Write a function `reverseInnerArrays` that takes an array of arrays with different data types.\n\nThe function should return a new array where the elements in the inner arrays are reversed.\n\nFor example: `[[1, 2, 3], ['a', 'b', 'c']]` => `[[3, 2, 1], ['c', 'b', 'a']]`\n\nIf the outer array is empty, return the string `'Array is empty'`.\n\nThe use of the `reverse` method is prohibited.\n\n\nFunction execution examples:\n```javascript\nreverseInnerArrays([[1,2,3], [7,8,9]]);                  // [[3,2,1], [9,8,7]]\nreverseInnerArrays([['one', 'two'], ['three', 'four']]); // [['two', 'one'], ['four', 'three']]\nreverseInnerArrays([[true, false], [false, false]]);     // [[false, true], [false, false]]\nreverseInnerArrays([]);                                  // 'Array is empty'\n```",
+    "ru": "Напишите функцию `reverseInnerArrays`, которая принимает массив массивов c разными типами данных.\n\nФункция должна вернуть новый массив, в котором во внутренних массивах элементы будут расположены в обратном порядке.\n\nНапример: `[[1, 2, 3], ['a', 'b', 'c']]` => `[[3, 2, 1], ['c', 'b', 'a']]`\n\nЕсли внешний массив пустой, то вернуть строку `'Array is empty'`.\n\nИспользование метода `reverse` запрещено.\n\n\nПримеры запуска функции:\n```javascript\nreverseInnerArrays([[1,2,3], [7,8,9]]);                  // [[3,2,1], [9,8,7]]\nreverseInnerArrays([['one', 'two'], ['three', 'four']]); // [['two', 'one'], ['four', 'three']]\nreverseInnerArrays([[true, false], [false, false]]);     // [[false, true], [false, false]]\nreverseInnerArrays([]);                                  // 'Array is empty'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function reverseInnerArrays(arr){\n  if(!arr.length) return 'Array is empty';\n  let newArr = [];\n  for(let i = 0; i < arr.length; i++){\n    let chunk = [];\n    for(let j = 0; j < arr[i].length; j++){\n      chunk.unshift(arr[i][j]);\n    }\n    newArr.push(chunk);\n  }\n  return newArr;\n}",
+  "openTest": "it('Created function reverseInnerArrays', () => {\n  expect(reverseInnerArrays).to.be.a('function');\n});\n\nit(\"Function reverseInnerArrays does not include '.reverse' method\", () => {\n  expect(reverseInnerArrays.toString()).to.not.include('.reverse');\n});\n\nit(\"reverseInnerArrays([[1,2,3], [4,5,6], [7,8,9]]) should return [[3,2,1], [6,5,4], [9,8,7]]\", () => {\n  expect(reverseInnerArrays([[1,2,3], [4,5,6], [7,8,9]])).to.deep.equal([[3,2,1], [6,5,4], [9,8,7]]);\n});\n\nit(\"reverseInnerArrays([['one', 'two'], ['three', 'four']]) should return [['two', 'one'], ['four', 'three']]\", () => {\n  expect(reverseInnerArrays([['one', 'two'], ['three', 'four']])).to.deep.equal([['two', 'one'], ['four', 'three']]);\n});\n\nit(\"reverseInnerArrays([[true, false], [false, false], [5 > 6, 5 < 6]]) should return [[false, true], [false, false], [true, false]]\", () => {\n  expect(reverseInnerArrays([[true, false], [false, false], [5 > 6, 5 < 6]])).to.deep.equal([[false, true], [false, false], [true, false]]);\n});\n\nit(\"reverseInnerArrays([['one', 'two'], [1, 2, 3], []]) should return [['two', 'one'], [3, 2, 1], []]\", () => {\n  expect(reverseInnerArrays([['one', 'two'], [1, 2, 3], []])).to.deep.equal([['two', 'one'], [3, 2, 1], []]);\n});\n\nit(\"reverseInnerArrays([]) should return 'Array is empty'\", () => {\n  expect(reverseInnerArrays([])).to.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

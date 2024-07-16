@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de86",
+  "name": {
+    "en": "Given the known perimeter P of an equilateral triangle, determine its side",
+    "ru": "По известному периметру Р равностороннего треугольника определить его сторону"
+  },
+  "instruction": {
+    "en": "Given perimeter of an equilateral triangle. Find the length of its side.\n\nSet the variable `perimeter` and assign it a value of an arbitrary non-negative number (the perimeter of the triangle).\n\nSet the variable `side`, in which you calculate the length of the triangle's side (the side of the triangle is equal to 1/3 of the perimeter).\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst s = 1000;\nconst a = s / 4;\n```",
+    "ru": "Дан периметр равностороннего треугольника. Найти длину его стороны.\n\nЗадайте переменную `perimeter` и присвойте ей значение произвольного неотрицательного числа (периметр треугльника).\n\nЗадайте переменную `side`, в которой вычислите длину стороны треугольника (сторона треугольника равна 1/3 периметра).\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst s = 1000;\nconst a = s / 4;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const perimeter = 99;\nconst side = perimeter / 3;",
+  "openTest": "it('The `perimeter` variable contains a value', () => {\n  expect(perimeter).not.undefined;\n});\n\nit('the variable type `perimeter` is a number', () => {\n  expect(perimeter).a('number');\n});\n\nit('the variable type `perimeter` is not NaN', () => {\n  expect(isNaN(perimeter)).false;\n});\n\nit('Variable `perimeter` has value >= 0', () => {\n  expect(perimeter >= 0).true;\n});\n\nit('Variable `side` has a value', () => {\n  expect(side).not.undefined;\n});\n\nit('Variable type `side` is a number', () => {\n  expect(side).a('number');\n});\n\nit('the variable `side` has the correct value', () => {\n  expect(side).equal(perimeter / 3);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst perimeter = 99;\nconst side = perimeter / 3;\n```",
+    "ru": "```javascript\nconst perimeter = 99;\nconst side = perimeter / 3;\n```"
+  }
+}

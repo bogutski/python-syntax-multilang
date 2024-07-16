@@ -1,0 +1,5 @@
+{
+  "name": "Замена почтового индекса. Объекты.",
+  "instruction": "Функция `clientInfo` принимает два параметра:\n* `address` – объект, содержащий информацию об адресе\n* `postalCode` – почтовый индекс, строка\n\nОбъект `address` имеет следующую структуру:\n* `flat` – номер квартиры, строка\n* `city` – город, строка\n* `country` – страна, строка.\n\nСвойство `flat` нам не нужно, но в объекте не хватает почтового индекса. Необходимо исправить объект: удалить свойство\n`flat` и добавить свойство `postalCode` со значением `postalCode`.\n\nФункция должна вернуть измененный объект `address`\n\nПример запуска функции:\n```javascript\nclientInfo({\nflat: '35',\ncity: 'London',\ncountry: 'Great Britain'},\n'NW1 6XE') //\n{city: 'London',\ncountry: 'Great Britain',\npostalCode: 'NW1 6XE'}\n```",
+  "instructions": {}
+}

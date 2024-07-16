@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dcfc",
+  "name": {
+    "en": "Is it true that the first character of a string is equal to the last character?",
+    "ru": "Верно ли, что первый символ строки равен последнему символу?"
+  },
+  "instruction": {
+    "en": "Create a variable named `str` and assign it a value of an arbitrary non-empty string.\nCreate a variable `firstSymbol` and assign it the value of the first character of the string.\nCreate a variable `lastSymbol` and assign it the value of the last character of the string.\n\nCreate a variable named `areTheSame` and assign it the result of comparing the first character of the string with the last character,\ni.e. the variable `areTheSame` will have the value `true` if the first character is equal to the last character, and `false` otherwise.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst name = 'Andrew';\nconst first = name[0];\nconst last = name[name.length - 1];\nconst comparison = first === last;\n```",
+    "ru": "Создайте переменную с именем `str` и присвойте ей значение произвольной непустой строки.\nСоздайте переменную `firstSymbol` и присвойте ей значение первого символа строки.\nСоздайте переменную `lastSymbol` и присвойте ей значение последнего символа строки.\n\nСоздайте переменную с именем `areTheSame` и присвойте ей результат сравнения первого символа строки с последним,\nт.е. переменная `areTheSame` будет иметь значение `true`, если первый символ равен последнему, и `false` в противном случае.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nconst name = 'Andrew';\nconst first = name[0];\nconst last = name[name.length - 1];\nconst comparison = first === last;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const str = 'abracadabra';\nconst firstSymbol = str[0];\nconst lastSymbol = str[str.length - 1];\nconst areTheSame = firstSymbol === lastSymbol;",
+  "openTest": "it('Variable `str` exists and has a value', () => {\n  expect(str).not.undefined;\n});\n\nit('Variable `str` has type string', () => {\n  expect(str).a('string');\n});\n\nit('Variable `str` is a non-empty string', () => {\n  expect(str === '').false;\n});\n\nit('The variable `firstSymbol` exists and has a value', () => {\n  expect(firstSymbol).not.undefined;\n});\n\nit('The `firstSymbol` variable is of type string', () => {\n  expect(firstSymbol).a('string');\n});\n\nit('The `firstSymbol` variable is equal to the first character', () => {\n  expect(firstSymbol).equal(str[0]);\n});\n\nit('The `lastSymbol` variable exists and has a value', () => {\n  expect(lastSymbol).not.undefined;\n});\n\nit('The `lastSymbol` variable is of type string', () => {\n  expect(lastSymbol).a('string');\n});\n\nit('Variable `lastSymbol` is equal to the last character', () => {\n  expect(lastSymbol).equal(str[str.length - 1]);\n});\n\nit('The variable `areTheSame` exists and has a value', () => {\n  expect(areTheSame).not.undefined;\n});\n\nit('TheTheSame` variable is of type boolean', () => {\n  expect(areTheSame).a('boolean');\n});\n\nit('Variable `areTheSame` has the correct value', () => {\n  expect(areTheSame).equal(firstSymbol === lastSymbol);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst str = 'abracadabra';\nconst firstSymbol = str[0];\nconst lastSymbol = str[str.length - 1];\nconst areTheSame = firstSymbol === lastSymbol;\n```",
+    "ru": "```javascript\nconst str = 'abracadabra';\nconst firstSymbol = str[0];\nconst lastSymbol = str[str.length - 1];\nconst areTheSame = firstSymbol === lastSymbol;\n```"
+  }
+}

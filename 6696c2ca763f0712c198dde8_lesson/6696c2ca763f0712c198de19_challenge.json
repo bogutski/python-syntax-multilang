@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de19",
+  "name": {
+    "en": "Increasing the number by 3",
+    "ru": "Увеличение числа на 3"
+  },
+  "instruction": {
+    "en": "Samantha was 13 years old, but she really wanted to go to the cinema, where only 16-year-olds were allowed, so she added 3 to her age.\n\nSet the variable `age` and assign it the value of 13.\nThen write the command that increases the value of the variable `age` by 3.\n\nHere is an example that is essentially similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nlet number = 8;\nnumber += 5;\n```",
+    "ru": "Саманте было 13 лет, но ей очень хотелось попасть в кино, куда пускали только с 16 лет,\nи она прибавила к своему возрасту 3.\n\nЗадайте переменную `age` и присвойте ей значение числа 13.\nЗатем запишите команду, увеличивающую значение переменной `age` на 3.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet number = 8;\nnumber += 5;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "let age = 13;\nage += 3;",
+  "openTest": "it('Variable `age` contains a value', () => {\n  expect(age).not.undefined;\n});\n\nit('The variable `age` type is a number', () => {\n  expect(age).a('number');\n});\n\nit('the variable `age` is not NaN', () => {\n  expect(isNaN(age)).false;\n});\n\nit('the variable `age` is incremented by 3', () => {\n  expect(age).equal(16);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nlet age = 13;\nage += 3;\n```",
+    "ru": "```javascript\nlet age = 13;\nage += 3;\n```"
+  }
+}

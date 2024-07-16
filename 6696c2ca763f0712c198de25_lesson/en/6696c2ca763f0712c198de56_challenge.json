@@ -1,0 +1,6 @@
+{
+  "name": "Doesn't the sum change by changing the places of the terms?",
+  "instruction": "Set the variable `a` and assign it the value of the string `'2'`.\nSet the variable `b` and assign it the value of the string `'3'`.\n\nSet the variable `aPlusB` and assign it the result of merging the variables `a` and `b`.\nSet the variable `bPlusA` and assign it the result of merging the variables `b` and `a`.\n\nSet the variable `isEqual` and assign it the result of comparing the variables `aPlusB` and `bPlusA`.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst x = '1';\nconst y = '2';\nconst sum1 = x + y;\nconst sum2 = y + x;\nconst comparison = sum1 === sum2;\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst a = '2';\nconst b = '3';\nconst aPlusB = a + b;\nconst bPlusA = b + a;\nconst isEqual = aPlusB === bPlusA;\n```"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Fix bugs in the code",
+  "instruction": "The function `stopAt7` takes one parameter - an array of numbers `arr`.\n\nThe array `arr` consists of at least two numbers.\n\nThe function will return a filled array `arr2`.\n\nThe new array is filled from `arr[0]` to `arr[arr.length - 1]`, including these values.\n\nThe filling of the array `arr2` should stop if the number `7` is encountered.\nNote that the number `7` should be included in the array `arr2` and the loop should be stopped after it.\n\nFor example,\n\n* if `arr = [2, 15]`, then `arr2 = [2, 3, 4, 5, 6, 7]`.\n\n* if `arr = [0, 10, 15, 5]`, then `arr2 = [0, 1, 2, 3, 4, 5]`.\n\n\nFix the errors in the code to make it comply with the task requirements.\n\n\nFunction execution examples:\n```javascript\nstopAt7([2, 10, 15, 3]);     // [2, 3]\nstopAt7([2, 15]);            // [2, 3, 4, 5, 6, 7]\nstopAt7([2, 5, 34, 107, 8]); // [2, 3, 4, 5, 6, 7]\nstopAt7([-2, 15]);           // [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7]\nstopAt7([30, 20, 40]);       // [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]\n```",
+  "instructions": {}
+}

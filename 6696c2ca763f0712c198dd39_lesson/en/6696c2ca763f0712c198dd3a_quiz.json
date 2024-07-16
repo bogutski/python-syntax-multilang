@@ -1,0 +1,177 @@
+{
+  "questions": {
+    "0": {
+      "name": "Select the variables that contain the `string` data type",
+      "variants": {
+        "0": {
+          "name": "const a = '1';"
+        },
+        "1": {
+          "name": "const b = \"number\";"
+        },
+        "2": {
+          "name": "const _ = 'null';"
+        },
+        "3": {
+          "name": "const  c = 'NaN';"
+        },
+        "4": {
+          "name": "const what = 2 + '2';"
+        },
+        "5": {
+          "name": "const realString = undefined;"
+        }
+      }
+    },
+    "1": {
+      "name": "Select the variables that contain the `number` data type",
+      "variants": {
+        "0": {
+          "name": "const num = 1;"
+        },
+        "1": {
+          "name": "const notANumber = NaN;"
+        },
+        "2": {
+          "name": "const i = Infinity;"
+        },
+        "3": {
+          "name": "const trueNumber = '1000';"
+        }
+      }
+    },
+    "2": {
+      "name": "The Boolean logical data type implies only 2 possible states",
+      "variants": {
+        "0": {
+          "name": "The statement is true"
+        },
+        "1": {
+          "name": "The statement is false"
+        }
+      }
+    },
+    "3": {
+      "name": "null is a data type in JS",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "4": {
+      "name": "undefined is a data type in JS",
+      "variants": {
+        "0": {
+          "name": "Yes"
+        },
+        "1": {
+          "name": "No"
+        }
+      }
+    },
+    "5": {
+      "name": "When checked using the `typeof` operator, null is defined as",
+      "variants": {
+        "0": {
+          "name": "null"
+        },
+        "1": {
+          "name": "undefined"
+        },
+        "2": {
+          "name": "object"
+        },
+        "3": {
+          "name": "number"
+        },
+        "4": {
+          "name": "typeof error"
+        }
+      }
+    },
+    "6": {
+      "name": "The data type `null ` can only be in one value - `null`",
+      "variants": {
+        "0": {
+          "name": "Right"
+        },
+        "1": {
+          "name": "Incorrect"
+        }
+      }
+    },
+    "7": {
+      "name": "What the `null == undefined` comparison will return",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        }
+      }
+    },
+    "8": {
+      "name": "What the `null === undefined` comparison will return",
+      "variants": {
+        "0": {
+          "name": "true"
+        },
+        "1": {
+          "name": "false"
+        }
+      }
+    },
+    "9": {
+      "name": "In JS when you create a variable you have to specify its type",
+      "variants": {
+        "0": {
+          "name": "JS is a dynamically typed language and there is no need to specify the type explicitly"
+        },
+        "1": {
+          "name": "JS requires specifying the type of"
+        }
+      }
+    },
+    "10": {
+      "name": "Specify the data types in the Java Script language:",
+      "variants": {
+        "0": {
+          "name": "number"
+        },
+        "1": {
+          "name": "bigint"
+        },
+        "2": {
+          "name": "string"
+        },
+        "3": {
+          "name": "null"
+        },
+        "4": {
+          "name": "undefined"
+        },
+        "5": {
+          "name": "boolean"
+        },
+        "6": {
+          "name": "object"
+        },
+        "7": {
+          "name": "symbol"
+        },
+        "8": {
+          "name": "NaN"
+        },
+        "9": {
+          "name": "infinity"
+        }
+      }
+    }
+  },
+  "name": "JS Syntax. Data Types: 5 of 8"
+}

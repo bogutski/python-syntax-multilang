@@ -1,0 +1,5 @@
+{
+  "name": "The result of dividing two numbers",
+  "instruction": "Create a function `div` that takes 2 parameters and returns the result of dividing the first parameter by the second.",
+  "instructions": {}
+}

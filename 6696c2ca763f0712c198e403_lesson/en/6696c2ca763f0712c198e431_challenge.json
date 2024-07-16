@@ -1,0 +1,5 @@
+{
+  "name": "Modify the string depending on the condition",
+  "instruction": "Write the function `modifyString`, which takes 2 parameters:\n\n* `str` - a string\n* `direction` - a string that can take the values `up` or `down`\n\nThe function should return the string in uppercase if `direction` is equal to `up`, and in lowercase if `direction` is equal to `down`.\n\nIf the second argument is not passed, the function should return the string unchanged.\n\nIf the second argument is not equal to `up` or `down`, the function should return the string `Wrong direction`.",
+  "instructions": {}
+}

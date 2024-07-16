@@ -1,0 +1,4 @@
+{
+  "name": "Changing an array element",
+  "instruction": "Write a function `changeElement` that takes two parameters, an array and a number.\n\nThe array is of arbitrary length and consists of numbers.\n\nIf the desired number is in the array, the function should replace it with the opposite sign.\n\nIf the desired number is not in the array, assign the value of the sought number to the value of the last element of the array.\n\nThe function should return the changed array.\n\nAn example of running the function:\n```javascript\nchangeElement([1, 2, 3, 4, 5], 3) // [1, 2, -3, 4, 5]\nchangeElement([1, 2, 3, 4, 5], 6) // [1, 2, 3, 4, 6]\nchangeElement([1, 2, 3, 4, 5, 7, 9, 13, 8], 0) // [1, 2, 3, 4, 5, 7, 9, 13, 0]\nchangeElement([1, 2, 3, 4, 5, 7, 9, 13, 8], 8) // [1, 2, 3, 4, 5, 7, 9, 13, -8]\n```"
+}

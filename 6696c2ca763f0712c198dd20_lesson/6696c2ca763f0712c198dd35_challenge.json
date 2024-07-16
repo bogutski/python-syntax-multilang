@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd35",
+  "name": {
+    "en": "Compare null to zero",
+    "ru": "Сравните null с нулем"
+  },
+  "instruction": {
+    "en": "Create a variable named `empty` and assign it the value `null`.\nCreate a variable named `strictEqualToZero` and assign it the result of the strict comparison (===) between the variable `empty` and 0.\nCreate a variable named `equalToZero` and assign it the result of the loose comparison (==) between the variable `empty` and 0.\n(Check the result in the console).\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the task requirements:\n```javascript\nconst money = null;\nconst comparison = money === 0;\n```",
+    "ru": "Создайте переменную с именем `empty` и присвойте ей значение `null`.\nСоздайте переменную с именем `strictEqualToZero` и присвойте ей результат строгого сравнения (===) переменной `empty` и 0.\nСоздайте переменную с именем `equalToZero` и присвойте ей результат нестрогого сравнения (==) переменной `empty` и 0.\n(Проверьте результат в консоли).\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst money = null;\nconst comparison = money === 0;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const empty = null;\nconst strictEqualToZero = empty === 0;\nconst equalToZero = empty == 0;",
+  "openTest": "it('Variable `empty` exists and has a value', () => {\n  expect(empty).not.undefined;\n});\n\nit('The `empty` variable is of type object', () => {\n  expect(typeof empty).equal('object');\n});\n\nit('Variable `empty` has value null', () => {\n  expect(empty).to.be.null;\n});\n\nit('The variable `strictEqualToZero` exists and has a value', () => {\n  expect(strictEqualToZero).not.undefined;\n});\n\nit('The `strictEqualToZero` variable is of type boolean', () => {\n  expect(strictEqualToZero).a('boolean');\n});\n\nit('The `strictEqualToZero` variable is false ', () => {\n  expect(strictEqualToZero).false;\n});\n\nit('The `equalToZero` variable exists and has a value ', () => {\n  expect(equalToZero).not.undefined;\n});\n\nit('Variable `equalToZero` is of type boolean', () => {\n  expect(equalToZero).a('boolean');\n});\n\nit('Variable `equalToZero` is false ', () => {\n  expect(equalToZero).false;\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst empty = null;\nconst strictEqualToZero = empty === 0;\nconst equalToZero = empty == 0;\n```",
+    "ru": "```javascript\nconst empty = null;\nconst strictEqualToZero = empty === 0;\nconst equalToZero = empty == 0;\n```"
+  }
+}

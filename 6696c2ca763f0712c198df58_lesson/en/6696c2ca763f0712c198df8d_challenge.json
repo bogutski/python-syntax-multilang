@@ -1,0 +1,4 @@
+{
+  "name": "Calculate the repair cost of a rectangular room",
+  "instruction": "Write a function `remodelingCost` that takes parameters:\n\n* `side1Foot` - length of one side of the room in feet,\n* `side2Foot` - length of the second side of the room in feet,\n* `costPerFoot` - repair cost per square foot\n\n\nExample of repair cost calculation:\n\n```javascript\nremodelingCost(10, 10, 100) // 10000\nremodelingCost(20, 20, 100) // 40000\nremodelingCost(30, 30, 100) // 90000\n```"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "\"Стильные\" переменные",
+  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-2.png)\n\n`Camel case` - это практика написания фраз таким образом, что каждое слово или аббревиатура в середине фразы\n начинается с заглавной буквы, без промежуточных пробелов или знаков препинания. Например, `camelCase`.\nСтиль `camelCase` используется для имен переменных в программировании.\n\nДля выполнения задания выберите из списка переменные, имена которых записаны в стиле camelCase,\nсоздайте переменные с этими именами и присвойте переменным значения в виде строки, соответствующей имени.\n\nСписок имен:\n`eBay`;  `dayReport`; `number_of_tasks`; `dayOfWeek`; `redbook`; `userLogin`.\n\nПриведем пример, который принципиально похож на то что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst iPhone  = 'iPhone';\n```",
+  "instructions": {},
+  "hint": "```javascript\nconst eBay = 'eBay';\nconst dayReport = 'dayReport';\nconst dayOfWeek = 'dayOfWeek';\nconst userLogin = 'userLogin';\n```"
+}

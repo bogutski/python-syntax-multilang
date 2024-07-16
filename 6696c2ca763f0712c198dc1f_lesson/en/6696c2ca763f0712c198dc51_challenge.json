@@ -1,0 +1,6 @@
+{
+  "name": "Create a variable named `distanceToSun` and assign a value of 92960000",
+  "instruction": "Create a variable named `distanceToSun` and assign a value of `92960000` to it.",
+  "instructions": {},
+  "hint": "```javascript\nconst distanceToSun = 92960000;\n```"
+}

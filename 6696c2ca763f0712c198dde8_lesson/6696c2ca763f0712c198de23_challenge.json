@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198de23",
+  "name": {
+    "en": "How many apples have you picked?",
+    "ru": "Сколько собрано яблок?"
+  },
+  "instruction": {
+    "en": "Lena and Maria were picking apples. Lena collected 2 baskets of apples, while Maria collected 3 baskets more.\nHow many baskets of apples did Maria collect? How many baskets did the girls collect together?\n\nCreate a variable `applesLena` and assign it a value of 2.\n\nCreate a variable `applesMaria` and calculate its value.\n\nCreate a variable `applesTotal` and assign it the sum of variables `applesLena` and `applesMaria`.\n\nHere is an example that is essentially similar to what needs to be done.\nAdapt it to the task requirements.\n\n```javascript\nconst bananasPeter = 5;\nconst bananasNick = bananasPeter + 3;\nconst bananasTotal = bananasPeter + bananasNick;\n```",
+    "ru": "Лена и Мария собирали яблоки. Лена собрала 2 корзинки яблок, а Мария собрала на 3 корзинки больше.\nСколько корзинок яблок собрала Мария? Сколько корзинок собрали девушки вместе?\n\nСоздайте переменную `applesLena` и присвойте ей значение 2.\n\nСоздайте переменную `applesMaria` и посчитайте ее значение.\n\nСоздайте переменную `applesTotal` и присвойте в нее сумму переменных `applesLena` и `applesMaria`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать.\nАдаптируйте его к требованиям задачи.\n\n```javascript\nconst bananasPeter = 5;\nconst bananasNick = bananasPeter + 3;\nconst bananasTotal = bananasPeter + bananasNick;\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const applesLena = 2;\nconst applesMaria = applesLena + 3;\nconst applesTotal = applesLena + applesMaria;",
+  "openTest": "it('The `applesLena` variable contains a value', () => {\n  expect(applesLena).not.undefined;\n});\n\nit('The `applesLena` variable contains a number', () => {\n  expect(applesLena).a('number');\n});\n\nit('The `applesLena` variable has a value of 2', () => {\n  expect(applesLena).eq(2);\n});\n\nit('The `applesMaria` variable has a value', () => {\n  expect(applesMaria).not.undefined;\n});\n\nit('The `applesMaria` variable contains a number', () => {\n  expect(applesMaria).a('number');\n});\n\nit('The `applesMaria` variable is greater than `applesLena` by 3', () => {\n  expect(applesLena + 3).eq(applesMaria);\n});\n\nit('The `applesMaria` variable has a value of 5', () => {\n  expect(applesMaria).eq(5);\n});\n\nit('The `applesTotal` variable has a value', () => {\n  expect(applesTotal).not.undefined;\n});\n\nit('The `applesTotal` variable contains a number', () => {\n  expect(applesTotal).a('number');\n});\n\nit('The `applesTotal` variable has a value of 7', () => {\n  expect(applesTotal).eq(7);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst applesLena = 2;\nconst applesMaria = applesLena + 3;\nconst applesTotal = applesLena + applesMaria;\n```",
+    "ru": "```javascript\nconst applesLena = 2;\nconst applesMaria = applesLena + 3;\nconst applesTotal = applesLena + applesMaria;\n```"
+  }
+}

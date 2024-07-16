@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dd70",
+  "name": {
+    "en": "Am I an adult now?",
+    "ru": "Я уже взрослый?"
+  },
+  "instruction": {
+    "en": "Create a variable named `age` and assign it a value of any number.\nCreate a variable named `isAdult` and assign it the value `true`\nif the age is greater than or equal to 18, and `false` otherwise.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst salary = 80 ;\nconst haveJob = salary > 0;   // true, if salary > 0; false, if salary <= 0,\n```",
+    "ru": "Создайте переменную с именем `age` и присвойте ей значение произвольного числа.\nСоздайте переменную с именем `isAdult` и присвойте ей значение `true`,\nесли возраст больше или равен 18, и `false` в противном случае.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst salary = 80 ;\nconst haveJob = salary > 0;   // true, если salary > 0; false, если salary <= 0,\n```"
+  },
+  "initialSolution": "",
+  "completedSolution": "const age = 25;\nconst isAdult = age >= 18;",
+  "openTest": "it('Переменная `age` существует и имеет значение', () => {\n  expect(age).not.undefined;\n});\n\nit('Значение переменной `age` является числом', () => {\n  expect(age).a('number');\n});\n\nit('Значение переменной `age` не является NaN', () => {\n  expect(isNaN(age)).false;\n});\n\nit('Переменная `isAdult` существует и имеет значение', () => {\n  expect(isAdult).not.undefined;\n});\n\nit('Значение переменной `isAdult` является boolean', () => {\n  expect(isAdult).a('boolean');\n});\n\nit('Значение переменной `isAdult` верно', () => {\n  expect(isAdult).equal(age >= 18);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst age = 25;\nconst isAdult = age >= 18;\n```",
+    "ru": "```javascript\nconst age = 25;\nconst isAdult = age >= 18;\n```"
+  }
+}

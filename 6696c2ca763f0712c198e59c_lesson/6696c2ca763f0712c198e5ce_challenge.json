@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e5ce",
+  "name": {
+    "en": "Modify the object. Calculate the sum of the properties",
+    "ru": "Модифицируйте объект. Вычислите сумму свойств"
+  },
+  "instruction": {
+    "en": "Write a function `calculateSumObject` that takes an object.\n\nThe object has three properties:\n* `n1` - number\n* `n2` - number\n* `sum` - number zero\n\nAn example of an object that will be passed to the function:\n```javascript\n{\n  n1: 10,\n  n2: 20,\n  sum: 0\n}\n```\n\nThe function should return an object in which the `sum` property is equal to the sum of the `n1` and `n2` properties of the object.\n\nAn example of running the function:\n```javascript\ncalculateSumObject({n1: 10, n2: 20, sum: 0}) // { n1: 10, n2: 20, sum: 30 }\n```",
+    "ru": "Напишите функцию `calculateSumObject`, которая принимает объект.\n\nВ объекте есть три свойства:\n* `n1` - число\n* `n2` - число\n* `sum` - число ноль\n\nПример объекта, который будет передан в функцию:\n```javascript\n{\n  n1: 10,\n  n2: 20,\n  sum: 0\n}\n```\n\nФункция должна вернуть объект, в котором свойство `sum` будет равно сумме свойств `n1` и `n2` объекта.\n\nПример запуска функции:\n```javascript\ncalculateSumObject({n1: 10,  n2: 20, sum: 0}) // { n1: 10, n2: 20, sum: 30 }\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function calculateSumObject(obj) {\n  // obj = { n1: 10, n2: 20, sum: 0 }\n  obj.sum = obj.n1 + obj.n2;\n  return obj;\n}",
+  "openTest": "it('Created function calculateSumObject', () => {\n  expect(calculateSumObject).to.be.a('function');\n});\n\nit('calculateSumObject({n1: 10,  n2: 20, sum: 0}) should return { n1: 10, n2: 20, sum: 30 }', () => {\n  expect(calculateSumObject({ n1: 10, n2: 20, sum: 0 })).to.deep.equal({\n    n1: 10,\n    n2: 20,\n    sum: 30,\n  });\n});\n\nit('calculateSumObject({n1: 1,  n2: 2, sum: 0}) should return { n1: 1, n2: 2, sum: 3 }', () => {\n  expect(calculateSumObject({ n1: 1, n2: 2, sum: 0 })).to.deep.equal({\n    n1: 1,\n    n2: 2,\n    sum: 3,\n  });\n});\n\nit('calculateSumObject({n1: 100,  n2: 200, sum: 0}) should return { n1: 100, n2: 200, sum: 300 }', () => {\n  expect(calculateSumObject({ n1: 100, n2: 200, sum: 0 })).to.deep.equal({\n    n1: 100,\n    n2: 200,\n    sum: 300,\n  });\n});\n\nit('calculateSumObject({n1: 1000,  n2: 2000, sum: 0}) should return { n1: 1000, n2: 2000, sum: 3000 }', () => {\n  expect(calculateSumObject({ n1: 1000, n2: 2000, sum: 0 })).to.deep.equal({\n    n1: 1000,\n    n2: 2000,\n    sum: 3000,\n  });\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

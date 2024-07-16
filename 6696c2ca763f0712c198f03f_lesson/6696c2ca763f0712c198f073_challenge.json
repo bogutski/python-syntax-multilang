@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198f073",
+  "name": {
+    "en": "",
+    "ru": "Найти второе минимальное число с помощью циклов"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Функция `secondMinNumber` принимает массив чисел и возвращает второе минимальное число из массива.\n\nВ этой задаче было использовано два цикла, первый цикл находит первое минимальное число в массиве, второй цикл находит\n второе минимальное число в массиве.\n\n* Если массив пустой, то функция возвращает строку `'Array is empty'`.\n* Если в массиве нет второго минимального числа, то функция возвращает строку `'There is no second min number'`.\n\nДобавьте нужный код на место пропусков: `<code here...>`, чтобы функция работала правильно.\n\nРазберите код и попробуйте переписать его самостоятельно.\n\n\nПримеры запуска функции:\n```javascript\nsecondMinNumber([1, 2, 3, 4, 5]);    // 2\nsecondMinNumber([-5, 2, -1, 10, 4]); // -1\nsecondMinNumber([1, 1, 1, 1, 1]);    // 'There is no second min number'\nsecondMinNumber([1]);                // 'There is no second min number'\nsecondMinNumber([]);                 // 'Array is empty'\n```"
+  },
+  "initialSolution": "function secondMinNumber(arr){\n  if( <code here...> ) return 'Array is empty';\n  if( <code here...> ) return 'There is no second min number';\n\n  let min = arr[0];\n  let secondMin = arr[0];\n\n  for(let i = 1; i < arr.length; i++){\n    if(arr[i] < min) min = arr[i];\n  }\n\n  for(let i = 1; i < arr.length; i++){\n    if((secondMin === min || arr[i] < secondMin) && arr[i] !== min) secondMin = arr[i];\n  }\n\n  if( <code here...> ) return 'There is no second min number';\n  else <code here...>\n}",
+  "completedSolution": "function secondMinNumber(arr){\n  if(arr.length === 0) return 'Array is empty';\n  if(arr.length === 1) return 'There is no second min number';\n\n  let min = arr[0];\n  let secondMin = arr[0];\n\n  for(let i = 1; i < arr.length; i++){\n    if(arr[i] < min) min = arr[i];\n  }\n\n  for(let i = 1; i < arr.length; i++){\n    if((secondMin === min || arr[i] < secondMin) && arr[i] !== min) secondMin = arr[i];\n  }\n\n  if(secondMin === min) return 'There is no second min number';\n  else return secondMin;\n}",
+  "openTest": "it('Created function secondMinNumber', () => {\n  expect(secondMinNumber).to.be.a('function');\n});\n\nit('Function secondMinNumber does not include method sort', () => {\n  expect(secondMinNumber.toString()).to.not.include('sort');\n});\n\nit('Function secondMinNumber does not include method Math.min', () => {\n  expect(secondMinNumber.toString()).to.not.include('Math.min');\n});\n\nit('secondMinNumber([5, 3, 4, 1, -5, -2, -10]) should return -5', () => {\n  expect(secondMinNumber([5, 3, 4, 1, -5, -2, -10])).to.equal(-5);\n});\n\nit('secondMinNumber([5, 7, 66, 12, 3, 6, 47, 85]) should return 5', () => {\n  expect(secondMinNumber([5, 7, 66, 12, 3, 6, 47, 85])).to.equal(5);\n});\n\nit('secondMinNumber([-25, 36, -42, 62, 1, 0, -40]) should return -40', () => {\n  expect(secondMinNumber([-25, 36, -42, 62, 1, 0, -40])).to.equal(-40);\n});\n\nit('secondMinNumber([-11, -Infinity, -5, 3, 14, -55]) should return -55', () => {\n  expect(secondMinNumber([-11, -Infinity, -5, 3, 14, -55])).to.equal(-55);\n});\n\nit('secondMinNumber([-Infinity, 50, 13, 0, Infinity, -Infinity, Infinity, -12, 6]) should return -12', () => {\n  expect(secondMinNumber([-Infinity, 50, 13, 0, Infinity, -Infinity, Infinity, -12, 6])).to.equal(-12);\n});\n\nit('secondMinNumber([100, 125, 55, 35, 120, 654]) should return 55', () => {\n  expect(secondMinNumber([100, 125, 55, 35, 120, 654])).to.equal(55);\n});\n\nit('secondMinNumber([5, 5, 5]) should return \"There is no second min number\"', () => {\n  expect(secondMinNumber([5, 5, 5])).to.equal('There is no second min number');\n});\n\nit('secondMinNumber([10]) should return \"There is no second min number\"', () => {\n  expect(secondMinNumber([10])).to.equal('There is no second min number');\n});\n\nit('secondMinNumber([]) should return \"Array is empty\"', () => {\n  expect(secondMinNumber([])).to.equal('Array is empty');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198ea02",
+  "name": {
+    "en": "A string of numbers from 0 to n",
+    "ru": "Строка из чисел от 0 до n"
+  },
+  "instruction": {
+    "en": "Write a function `fromZeroToN` that takes a number `n` and returns a string consisting of numbers from `0` to `n` inclusive.\n\nExamples of running the function:\n```javascript\nfromZeroToN(0) // '0'\nfromZeroToN(5) // '012345'\nfromZeroToN(10) // '012345678910'\n```",
+    "ru": "Напишите функцию `fromZeroToN`, которая принимает число `n` и возвращает строку, состоящую из чисел от `0` до `n` включительно.\n\nПримеры запуска функции:\n```javascript\nfromZeroToN(0) // '0'\nfromZeroToN(5) // '012345'\nfromZeroToN(10) // '012345678910'\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function fromZeroToN(n) {\n  let string = '';\n  for (let i = 0; i <= n; i++) {\n    string += i;\n  }\n  return string;\n}",
+  "openTest": "it('Created function fromZeroToN', () => {\n  expect(fromZeroToN).to.be.a('function');\n});\n\nit('fromZeroToN(5) should return 012345', () => {\n  expect(fromZeroToN(5)).to.equal('012345');\n});\n\nit('fromZeroToN(10) should return 012345678910', () => {\n  expect(fromZeroToN(10)).to.equal('012345678910');\n});\n\nit('fromZeroToN(20) should return 01234567891011121314151617181920', () => {\n  expect(fromZeroToN(20)).to.equal('01234567891011121314151617181920');\n});\nit('fromZeroToN(0) should return 0', () => {\n  expect(fromZeroToN(0)).to.equal('0');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

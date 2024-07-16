@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198dc4f",
+  "name": {
+    "en": "Create a variable named `zero` and set it to 0",
+    "ru": "Создайте переменную с именем `zero` и присвойте ей значение 0"
+  },
+  "instruction": {
+    "en": "Create a variable named `zero` and give it a value of `0` by number.",
+    "ru": "Создайте переменную с именем `zero` и присвойте ей значение `0` числом."
+  },
+  "initialSolution": "",
+  "completedSolution": "const zero = 0;",
+  "openTest": "it('is variable `zero` exists', () => {\n  expect(zero).not.to.be.undefined;\n});\n\nit('should variable `zero` be a number', () => {\n  expect(zero).a('number');\n});\n\nit('should the variable `zero` be equal 0', () => {\n  expect(zero).eq(0);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "```javascript\nconst zero = 0;\n```",
+    "ru": "```javascript\nconst zero = 0;\n```"
+  }
+}

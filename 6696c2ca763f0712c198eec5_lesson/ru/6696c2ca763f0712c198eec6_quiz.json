@@ -1,0 +1,185 @@
+{
+  "name": "Сумма чисел в строке",
+  "questions": {
+    "0": {
+      "name": "Выберите верный вариант результата подсчета суммы чисел для строки ниже",
+      "description": "```javascript\nconst str = '1 + 3a = 4b, 11c - 10 = 3';\n```",
+      "variants": {
+        "0": {
+          "name": "32"
+        },
+        "1": {
+          "name": "12"
+        },
+        "2": {
+          "name": "-6"
+        },
+        "3": {
+          "name": "18"
+        }
+      }
+    },
+    "1": {
+      "name": "Что делает унарный плюс с числом, записанным в виде строки ниже?",
+      "description": "```javascript\nconst strNum = '200';\nconsole.log(+strNum);\n```",
+      "variants": {
+        "0": {
+          "name": "Ничего не произойдет. Результатом будет число, записанное в виде строки"
+        },
+        "1": {
+          "name": "Число, записанное в виде строки, будет преобразовано в тип данных number"
+        },
+        "2": {
+          "name": "Число, записанное в виде строки, будет преобразовано в тип данных boolean"
+        },
+        "3": {
+          "name": "Выведет ошибку, так как унарный плюс не может быть применен к строке"
+        }
+      }
+    },
+    "2": {
+      "name": "Верно ли что результатом запуска кода ниже будет 8 (тип данных number)?",
+      "description": "```javascript\nconst str = '-1, 9'\nconst digits = '0123456789';\nlet acc = 0;\nlet number = '';\nfor(let i = 0; i < str.length; i++){\n  if(digits.includes(str[i])) number += str[i];\n  else{\n    acc += +number;\n    number = '';\n  }\n  if(i === str.length - 1) acc += +number; \n}\nconsole.log(acc);\n\n```",
+      "variants": {
+        "0": {
+          "name": "Нет, результатом будет '10' (тип данных string)"
+        },
+        "1": {
+          "name": "Да, результатом будет 8 (тип данных number)"
+        },
+        "2": {
+          "name": "Нет, результатом будет 10 (тип данных number)"
+        },
+        "3": {
+          "name": "Нет, результатом будет '8' (тип данных string)"
+        }
+      }
+    },
+    "3": {
+      "name": "Что означает условие `if(digits.includes(str[i]))` в коде ниже",
+      "description": "```javascript\nconst str = '3 cats, 5 dogs, 12 mice'\nconst digits = '0123456789';\nlet acc = 0;\nlet number = '';\nfor(let i = 0; i < str.length; i++){\n  if(digits.includes(str[i])) number += str[i];\n  else{\n    acc += +number;\n    number = '';\n  }\n  if(i === str.length - 1) acc += +number; \n}\n```",
+      "variants": {
+        "0": {
+          "name": "Если элемент строки str содержится в переменной digits"
+        },
+        "1": {
+          "name": "Если переменная digits содержится в строке str"
+        },
+        "2": {
+          "name": "Если элемент строки str не содержится в переменной digits"
+        },
+        "3": {
+          "name": "Если переменная digits не содержится в строке str"
+        }
+      }
+    },
+    "4": {
+      "name": "Для чего создана переменная acc в коде ниже?",
+      "description": "```javascript\nconst str = '3 cats, 5 dogs, 12 mice'\nconst digits = '0123456789';\nlet acc = 0;\nlet number = '';\nfor(let i = 0; i < str.length; i++){\n  if(digits.includes(str[i])) number += str[i];\n  else{\n    acc += +number;\n    number = '';\n  }\n  if(i === str.length - 1) acc += +number; \n}\n```",
+      "variants": {
+        "0": {
+          "name": "Переменная acc создана для сбора всех нечисловых значений, найденных в строке str"
+        },
+        "1": {
+          "name": "Переменная acc создана для суммирования всех чисел, найденных в строке str"
+        },
+        "2": {
+          "name": "Переменная acc создана для сбора всех пробелов, найденных в строке str"
+        },
+        "3": {
+          "name": "Переменная acc создана для удаления всех нечисловых значений и пробелов, найденных в строке str"
+        }
+      }
+    },
+    "5": {
+      "name": "Для чего нужен `+` перед переменной `num` в цикле в коде ниже и каким будет результат запуска функции?",
+      "description": "```javascript\nfunction sumNumbers(str){\n  const digits = '0123456789';\n  let acc = 0;\n  let num = '';\n  for(let i = 0; i < str.length; i++){\n    if(digits.includes(str[i])) num += str[i];\n    else{\n      acc += +num;\n      num = '';\n    }\n    if(i === str.length - 1) acc += +num; \n  }\n  return acc;\n}\nconsole.log(sumNumbers('herbivores - 7 cows, carnivores - 3 bears'));\n```",
+      "variants": {
+        "0": {
+          "name": "Знак + складывает все элементы, найденные в строке str. Результатом будет -10"
+        },
+        "1": {
+          "name": "Знак + преобразует все найденные числа в положительные. Результатом будет 10"
+        },
+        "2": {
+          "name": "Знак + преобразует числа, в тип данных string. Результатом будет '4'"
+        },
+        "3": {
+          "name": "Знак + преобразует числа, записанные в виде строки, в тип данных number. Результатом будет 10"
+        }
+      }
+    },
+    "6": {
+      "name": "Выберите верный вариант результата запуска функции ниже",
+      "description": "```javascript\nfunction sumNumbers(str){\n  const digits = '0123456789';\n  let acc = 0;\n  let number = '';\n  for(let i = 0; i < str.length; i+=2){\n    if(digits.includes(str[i])) number += str[i];\n    else{\n      acc += +number;\n      number = '';\n    }\n    if(i === str.length - 1) acc += +number;\n  }\n  return acc;\n}\nconsole.log(sumNumbers('1st, 2nd, 3rd, 4th, 5th'));\n```",
+      "variants": {
+        "0": {
+          "name": "9"
+        },
+        "1": {
+          "name": "15"
+        },
+        "2": {
+          "name": "6"
+        },
+        "3": {
+          "name": "NaN"
+        }
+      }
+    },
+    "7": {
+      "name": "Каким будет результат запуска кода ниже, если пройтись по строке str в обратном порядке, сложив все числа?",
+      "description": "```javascript\nfunction sumNumbers(str){\n  const digits = '0123456789';\n  let acc = 0;\n  let number = '';\n  for(let i = str.length - 1; i >=0; i--){\n    if(digits.includes(str[i])) number += str[i];\n    else{\n      acc += +number;\n      number = '';\n    }\n    if(str[i] === str[0]) acc += +number; \n  }\n  return acc;\n}\nconsole.log(sumNumbers('3 cats, 5 dogs, 12 mice')); \n```",
+      "variants": {
+        "0": {
+          "name": "NaN"
+        },
+        "1": {
+          "name": "20"
+        },
+        "2": {
+          "name": "17"
+        },
+        "3": {
+          "name": "29"
+        }
+      }
+    },
+    "8": {
+      "name": "Выберите верный результат запуска кода ниже",
+      "description": "```javascript\nfunction sumNumbers(str){\n  const digits = '0123456789';\n  let acc = 0;\n  let number = '';\n  for(let i = str.length - 1; i >= 0; i = i - 2){\n    if(digits.includes(str[i])) number += str[i];\n    else{\n      acc += +number;\n      number = '';\n    }\n    if(str[i] === str[0]) acc += +number;\n  }\n  return acc;\n}\nconsole.log(sumNumbers('1st, 2nd, 3rd, 4th, 5th, 7th, 8th, 3th')); \n\n```",
+      "variants": {
+        "0": {
+          "name": "17"
+        },
+        "1": {
+          "name": "16"
+        },
+        "2": {
+          "name": "33"
+        },
+        "3": {
+          "name": "NaN"
+        }
+      }
+    },
+    "9": {
+      "name": "Что получится в результате запуска кода ниже?",
+      "description": "```javascript\nfunction sumNumbers(str){\n  const digits = '0123456789';\n  let acc = 0;\n  let number = '';\n  for(let i = 0; i < str.length; i++){\n    if(digits.includes(str[i])) number += str[i];\n    else{\n      acc += +number;\n      number = '';\n    }\n    if(i === str.length - 1) acc += +number; \n  }\n  return acc;\n}\nconsole.log(sumNumbers('YOU 83COM3 WH47 YOU 83L1V3!'));\n```",
+      "variants": {
+        "0": {
+          "name": "NaN"
+        },
+        "1": {
+          "name": "40"
+        },
+        "2": {
+          "name": "157"
+        },
+        "3": {
+          "name": "220"
+        }
+      }
+    }
+  }
+}

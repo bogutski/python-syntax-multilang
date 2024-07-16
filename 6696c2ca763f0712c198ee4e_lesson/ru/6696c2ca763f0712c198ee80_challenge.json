@@ -1,0 +1,5 @@
+{
+  "name": "Перевернуть строку с одним словом",
+  "instruction": "Напишите функцию `reverseAWord`, которая принимает строку с одним словом и возвращает перевернутое слово.\n\nПримеры запуска функции:\n```javascript\nreverseAWord('olleh') // 'hello'\nreverseAWord('dlrow') // 'world'\nreverseAWord('98765') // '56789'\n```",
+  "instructions": {}
+}

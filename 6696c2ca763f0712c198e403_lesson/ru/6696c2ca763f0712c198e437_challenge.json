@@ -1,0 +1,5 @@
+{
+  "name": "Инвертировать регистр буквы",
+  "instruction": "Напишите функцию `invertCase`, которая принимает 1 параметр – строку из 4-х букв.\n\nФункция должна возвращать строку, в которой каждая буква заменена на противоположный регистр.\n\nПримеры запуска функции:\n```javascript\ninvertCase('ABCD') // 'abcd'\ninvertCase('AbCd') // 'aBcD'\ninvertCase('aBcD') // 'AbCd'\n\ninvertCase('aBcDq') // 'Long string'\n```\n\nКак вы поняли из примеров, функция должна работать со строками только из 4-х букв.\n\nЕсли строка больше 4-х букв, то функция должна возвращать строку 'Long string'.\n\nИспользуйте конкатенацию строк для решения задачи. Пример:\n```javascript\nlet str = 'abc';\nstr = str + '123';\nconsole.log(str); // 'abc123'\nstr = str + '456';\nconsole.log(str); // 'abc123456'\n```\n\nили более короткий вариант:\n```javascript\nlet str = 'abc';\nstr += '123';\nconsole.log(str); // 'abc123'\nstr += '456';\nconsole.log(str); // 'abc123456'\n```",
+  "instructions": {}
+}

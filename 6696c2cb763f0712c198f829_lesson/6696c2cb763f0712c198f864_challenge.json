@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2cb763f0712c198f864",
+  "name": {
+    "en": "/*",
+    "ru": "Найти индекс первой строки, содержащей заданное количество букв в верхнем и нижнем регистре"
+  },
+  "instruction": {
+    "en": "",
+    "ru": "Напишите функцию `findIndexByCaseCount`, которая принимает массив строк и объект с двумя свойствами: `upperCase` и `lowerCase`.\n\nФункция должна вернуть индекс первой строки в массиве, которая содержит заданное или больше количество букв в верхнем и нижнем регистре.\n\nЕсли такой строки нет, функция должна вернуть строку `Element not found`.\n\n\nПримеры запуска функции:\n```javascript\nfindIndexByCaseCount([' AlicE ', 'a  PP le', 'bla c k  '], { upperCase: 2, lowerCase: 3 }); // 0\nfindIndexByCaseCount(['cat', ' D O G', 'ElepHaNt'], { upperCase: 3, lowerCase: 5 }); // 2\nfindIndexByCaseCount(['  hEllo', 'WORLD  ', ' hi'], { upperCase: 5, lowerCase: 0 }); // 1\nfindIndexByCaseCount(['one', ' two', '  three '], { upperCase: 1, lowerCase: 4 }); // \"Element not found\"\n```"
+  },
+  "initialSolution": "function findIndexByCaseCount(){\n\n}",
+  "completedSolution": "function findIndexByCaseCount(arr, obj) {\n  const res = arr.findIndex(string => {\n    let lower = 0\n    let upper = 0\n\n    for(let char of string){\n      if(char !== ' ' && char.toLowerCase() === char) lower++\n      else if(char !== ' ') upper++\n    }\n\n    return lower >= obj.lowerCase && upper >= obj.upperCase\n  })\n\n  return res !== -1 ? res : 'Element not found';\n}",
+  "openTest": "it('Created function findIndexByCaseCount', () => {\n  expect(findIndexByCaseCount).to.be.a('function');\n});\n\nit('findIndexByCaseCount([\" AlicE \", \"a  PP le\", \"bla c k  \"], { upperCase: 2, lowerCase: 3 }) should return 0', function() {\n  expect(findIndexByCaseCount([\" AlicE \", \"a  PP le\", \"bla c k  \"], { upperCase: 2, lowerCase: 3 })).to.equal(0);\n});\n\nit('findIndexByCaseCount([\"cat\", \" D O G\", \"ElepHaNt\"], { upperCase: 3, lowerCase: 5 }) should return 2', function() {\n  expect(findIndexByCaseCount([\"cat\", \" D O G\", \"ElepHaNt\"], { upperCase: 3, lowerCase: 5 })).to.equal(2);\n});\n\nit('findIndexByCaseCount([\"  hEllo\", \"WORLD  \", \" hi\"], { upperCase: 5, lowerCase: 0 }) should return 1', function() {\n  expect(findIndexByCaseCount([\"  hEllo\", \"WORLD  \", \" hi\"], { upperCase: 5, lowerCase: 0 })).to.equal(1);\n});\n\nit('findIndexByCaseCount([\"one\", \" two\", \"  three \"], { upperCase: 1, lowerCase: 4 }) should return \"Element not found\"', function() {\n  expect(findIndexByCaseCount([\"one\", \" two\", \"  three \"], { upperCase: 1, lowerCase: 4 })).to.equal(\"Element not found\");\n});\n\nit('findIndexByCaseCount([\"ShOrt\", \"tiny\", \"sMall\", \"big\"], { upperCase: 2, lowerCase: 3 }) should return 0', function() {\n  expect(findIndexByCaseCount([\"ShOrt\", \"tiny\", \"sMall\", \"big\"], { upperCase: 2, lowerCase: 3 })).to.equal(0);\n});\n\nit('findIndexByCaseCount([\"Long\", \"longer\", \"Longest\"], { upperCase: 1, lowerCase: 5 }) should return 2', function() {\n  expect(findIndexByCaseCount([\"Long\", \"longer\", \"Longest\"], { upperCase: 1, lowerCase: 5 })).to.equal(2);\n});\n\nit('findIndexByCaseCount([\"ThiS\", \"Is\", \"A\", \"teST\"], { upperCase: 2, lowerCase: 2 }) should return 0', function() {\n  expect(findIndexByCaseCount([\"ThiS\", \"Is\", \"A\", \"teST\"], { upperCase: 2, lowerCase: 2 })).to.equal(0);\n});\n\nit('findIndexByCaseCount([\"A\", \"AB\", \"abc\", \"abCd\"], { upperCase: 1, lowerCase: 3 }) should return 3', function() {\n  expect(findIndexByCaseCount([\"A\", \"AB\", \"abc\", \"abCd\"], { upperCase: 1, lowerCase: 3 })).to.equal(3);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

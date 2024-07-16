@@ -1,0 +1,4 @@
+{
+  "name": "Cost per square inch of pizza",
+  "instruction": "Write a function `pizzaInchPrice`.\n\nParameters of the function:\n- `diameter` - pizza diameter in inches\n- `slicePrice` - price of the pizza per slice\n- `slices` - number of pizza slices\n\nThe function should return the cost per square inch of pizza.\n\nUse a value of `PI` equal to `3.14`.\n\nFunction requirements:\n- create a variable `pizzaPrice` and calculate the whole pizza cost in it.\n- Create a variable `PI` and give it a value of `3.14`.\n- Create a variable `area` and calculate the area of the pizza in it.\n- Create a variable `inchPrice` and calculate in it the cost per square inch of pizza.\n- Return the variable `inchPrice` from the function.\n\nHint:\n- The square conversion can be calculated using the `** 2` operator\n- Recall the formula for the area of a circle."
+}

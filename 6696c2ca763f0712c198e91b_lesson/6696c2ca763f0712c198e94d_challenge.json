@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e94d",
+  "name": {
+    "en": "Removing spaces from a string",
+    "ru": "Удаление пробелов из строки"
+  },
+  "instruction": {
+    "en": "Write a function `noSpaces` that takes a string that may contain spaces and returns a new one, a copy of the original string, but without spaces.\n\nIf the input string is empty, return an empty string.\n\nExamples of running the function:\n```javascript\nnoSpaces('Hello World') // 'HelloWorld'\nnoSpaces('a b c') // 'abc'\nnoSpaces('') // ''\n```",
+    "ru": "Напишите функцию `noSpaces`, которая принимает строку, в которой могут быть пробелы, и возвращает новую, копию оригинальной строки, но без пробелов.\n\nЕсли входная строка пустая, верните пустую строку.\n\nПримеры запуска функции:\n```javascript\nnoSpaces('Hello World') // 'HelloWorld'\nnoSpaces('a b c') // 'abc'\nnoSpaces('') // ''\n```"
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function noSpaces(sting){\n  let newString = '';\n  for (let i = 0; i < sting.length; i++) {\n    if(sting[i] !== ' '){\n      newString += sting[i]\n    }\n  }\n  return newString;\n}",
+  "openTest": "it('Created function noSpaces', () => {\n  expect(noSpaces).to.be.a('function');\n});\n\nit(\"noSpaces('Hello World') should return 'HelloWorld'\", () => {\n  expect(noSpaces('Hello World')).to.equal('HelloWorld');\n});\n\nit(\"noSpaces('J a v a S c r i p t') should return 'JavaScript'\", () => {\n  expect(noSpaces('J a v a S c r i p t')).to.equal('JavaScript');\n});\n\nit(\"noSpaces('A p p l e') should return 'Apple'\", () => {\n  expect(noSpaces('A p p l e')).to.equal('Apple');\n});\n\nit(\"noSpaces('1 2 3 4 5') should return '12345'\", () => {\n  expect(noSpaces('1 2 3 4 5')).to.equal('12345');\n});\n\nit(\"noSpaces(' ') should return ''\", () => {\n  expect(noSpaces(' ')).to.equal('');\n});\n\nit(\"noSpaces('') should return ''\", () => {\n  expect(noSpaces('')).to.equal('');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

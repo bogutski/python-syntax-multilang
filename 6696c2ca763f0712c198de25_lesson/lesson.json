@@ -1,0 +1,13 @@
+{
+  "_id": "6696c2ca763f0712c198de25",
+  "video": {
+    "ru": "https://youtu.be/dXhVgHzfxgk",
+    "en": "https://youtu.be/dXhVgHzfxgk",
+    "es": ""
+  },
+  "content": {
+    "ru": "В этом уроке мы узнаем об удивительном “побочном эффекте” унарного оператора `+`, а также можно ли складывать строки.\n\nВ отличие от оператора `-` унарный плюс `+` (примененный только к одному значению) *ничего не делает с числами*. Зато этот оператор может изменять некоторые строки.  \nПредставьте, что у нас есть числа, записанные в виде строк:\n```\nlet a = '2';\nlet b = '3';\n```\nЕсли мы попытаемся сложить эти строки, то произойдет конкатенация (приписывание одной строки к другой):\n```\nconsole.log(a + b); // \"23\"\n```\nКак же нам действительно сложить эту двойку и тройку, ведь мы же понимаем, что за этими строками скрываются числа! Для преобразования строк к числу используется унарный плюс:\n```\nconsole.log(+a + +b); //это равносильно console.log(2 + 3) => даст нам 5\n```\nТакое количество плюсов может показаться странным, но для JavaScript это не проблема: сперва выполнятся унарные плюсы (строки станут числами), а затем уже бинарный плюс сложит их.  \nО порядке выполнения операций мы поговорим в следующем уроке.\n",
+    "en": "In this lesson we will learn about a surprising \"side effect\" of the unary operator `+` and whether it is possible to add strings.\n\nUnlike the `-` operator, the unary plus `+` (applied to only one value) *doesn't do anything to numbers*. But this operator can change some strings.  \nImagine that we have numbers written as strings:\n```\nlet a = '2';\nlet b = '3';\n```\nIf we try to combine these lines, concatenation (attaching one line to another) will occur:\n```\nconsole.log(a + b); // \"23\"\n```\nHow can we really add this two and three, because we understand that numbers are hidden behind these lines! The unary plus is used to convert strings to numbers.\n```\nconsole.log(+a + + +b); //this is equivalent to console.log(2 + 3) => gives us 5\n```\nSuch a number of pluses may seem strange, but for JavaScript it is not a problem: first unary pluses will be executed (strings will become numbers), and then the binary plus will add them.  \nWe will talk about the order of operations in the next lesson.\n",
+    "es": "\n"
+  }
+}

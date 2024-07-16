@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e007",
+  "name": {
+    "en": "Calculation of circle area by diameter",
+    "ru": "Вычисление площади круга по диаметру"
+  },
+  "instruction": {
+    "en": "Create a variable `PI` outside the function and assign it the value `3.14`.\n\nCreate a function `circleArea` with one parameter `diameter`.\n\nLet the function return the area of the circle.",
+    "ru": "Создайте переменную `PI` вне функции и присвойте ей значение `3.14`.\n\nСоздайте функцию `circleArea` с одним параметром `diameter`.\n\nПусть функция возвращает площадь круга."
+  },
+  "initialSolution": "fun circle!",
+  "completedSolution": "const PI = 3.14;\n\nfunction circleArea(diameter) {\n  return PI * (diameter / 2) ** 2;\n}",
+  "openTest": "it('Created function circleArea', () => {\n  expect(circleArea).to.be.a('function');\n});\n\nit('Function circleArea has one parameter', () => {\n  expect(circleArea.length).to.be.equal(1);\n});\n\nit('Function circleArea has one parameter diameter', () => {\n  // function to string and then to array of arguments\n  const args = circleArea.toString().match(/\\(([^)]*)\\)/)[1].split(',').map(arg => arg.trim());\n  expect(args).to.be.eql(['diameter']);\n});\n\nit('Function circleArea returns area of circle for diameter 10', () => {\n  expect(circleArea(10)).to.be.equal(78.5);\n});\n\nit('Function circleArea returns area of circle for diameter 20', () => {\n  expect(circleArea(20)).to.be.equal(314);\n});\n\nit('Function circleArea returns area of circle for diameter 30', () => {\n  expect(circleArea(30)).to.be.equal(706.5);\n});\n\nit('Created variable PI', () => {\n  expect(PI).equal(3.14);\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

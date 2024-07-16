@@ -1,0 +1,25 @@
+{
+  "_id": "6696c2ca763f0712c198e436",
+  "name": {
+    "en": "How many letters in upper and lower case in a string",
+    "ru": "Сколько букв в верхнем и нижнем регистре в строке"
+  },
+  "instruction": {
+    "en": "Write a function `countUpperLower` that takes 1 parameter - a string of 5 letters.\n\nExamples of running the function:\n```javascript\ncountUpperLower('aBcDe') // 'Upper: 2, Lower: 3'\ncountUpperLower('aBcDE') // 'Upper: 3, Lower: 2'\ncountUpperLower('aBcDeF') // 'Wrong string'\ncountUpperLower('aBc') // 'Wrong string'\n```\n\nFrom the example, you can see that the function should return a string of the form `Upper: 2, Lower: 3`, where `2` and `3` are the number of letters in upper and lower case respectively.\n\nIf a string other than 5 characters is passed to the function, the function should return the string `Wrong string`.\n\nThe function will always return the letters of the English alphabet.",
+    "ru": "Напишите функцию `countUpperLower`, которая принимает 1 параметр – строку из 5-ти букв.\n\nПримеры запуска функции:\n```javascript\ncountUpperLower('aBcDe') // 'Upper: 2, Lower: 3'\ncountUpperLower('aBcDE') // 'Upper: 3, Lower: 2'\ncountUpperLower('aBcDeF') // 'Wrong string'\ncountUpperLower('aBc') // 'Wrong string'\n```\n\nИз примера видно, что функция должна вернуть строку вида `Upper: 2, Lower: 3`, где `2` и `3` – количество букв в верхнем и нижнем регистре соответственно.\n\nЕсли в функцию передана строка не из 5-ти символов, то функция должна вернуть строку `Wrong string`.\n\nВ функцию всегда будут предаваться буквы английского алфавита."
+  },
+  "initialSolution": "fun",
+  "completedSolution": "function countUpperLower(str) {\n  if (str.length !== 5) {\n    return 'Wrong string';\n  }\n\n  let upper = 0;\n  let lower = 0;\n\n  if (str[0] === str[0].toUpperCase()) upper++;\n  else lower++;\n\n  if (str[1] === str[1].toUpperCase()) upper++;\n  else lower++;\n\n  if (str[2] === str[2].toUpperCase()) upper++;\n  else lower++;\n\n  if (str[3] === str[3].toUpperCase()) upper++;\n  else lower++;\n\n  if (str[4] === str[4].toUpperCase()) upper++;\n  else lower++;\n\n  return `Upper: ${upper}, Lower: ${lower}`;\n}",
+  "openTest": "it('Created function countUpperLower', () => {\n  expect(countUpperLower).to.be.a('function');\n});\n\nit('countUpperLower(\"aBcDe\") should return \"Upper: 2, Lower: 3\"', () => {\n  expect(countUpperLower('aBcDe')).to.be.equal('Upper: 2, Lower: 3');\n});\n\nit('countUpperLower(\"aBcDE\") should return \"Upper: 3, Lower: 2\"', () => {\n  expect(countUpperLower('aBcDE')).to.be.equal('Upper: 3, Lower: 2');\n});\n\nit('countUpperLower(\"aBcDeF\") should return \"Wrong string\"', () => {\n  expect(countUpperLower('aBcDeF')).to.be.equal('Wrong string');\n});\n\nit('countUpperLower(\"aBc\") should return \"Wrong string\"', () => {\n  expect(countUpperLower('aBc')).to.be.equal('Wrong string');\n});\n\nit('countUpperLower(\"aBcDe\") should return \"Upper: 2, Lower: 3\"', () => {\n  expect(countUpperLower('aBcDe')).to.be.equal('Upper: 2, Lower: 3');\n});\n\nit('countUpperLower(\"aBcDE\") should return \"Upper: 3, Lower: 2\"', () => {\n  expect(countUpperLower('aBcDE')).to.be.equal('Upper: 3, Lower: 2');\n});\n\nit('countUpperLower(\"aBcDeF\") should return \"Wrong string\"', () => {\n  expect(countUpperLower('aBcDeF')).to.be.equal('Wrong string');\n});\n\nit('countUpperLower(\"aBc\") should return \"Wrong string\"', () => {\n  expect(countUpperLower('aBc')).to.be.equal('Wrong string');\n});",
+  "hiddenTest": "",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "showOpenTest": true,
+  "active": false,
+  "checker": "unit",
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}
