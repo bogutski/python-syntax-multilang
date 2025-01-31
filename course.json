@@ -2,7 +2,7 @@
   "image": "https://course-qa-basics.s3.us-west-1.amazonaws.com/js-syntax-thumb.jpg",
   "sections": [
     {
-      "_id": "635c05ba659f6d77abf1f4e8",
+      "_id": "6696c2ca763f0712c198dac8",
       "name": {
         "ru": "Начало",
         "en": "Introduction",
@@ -10,54 +10,54 @@
       },
       "lessons": [
         {
-          "_id": "635c05ba659f6d77abf1f4e9",
+          "_id": "6696c2ca763f0712c198dac9",
           "name": {
             "ru": "Первый урок",
             "en": "First Lesson",
             "es": ""
           },
           "questionGroups": [
-            "635c05ba659f6d77abf1f4ea"
+            "6696c2ca763f0712c198daca"
           ],
           "challenges": []
         },
         {
-          "_id": "635c05ba659f6d77abf1f4fe",
+          "_id": "6696c2ca763f0712c198dade",
           "name": {
             "ru": "Программисты и программы. Консоль",
             "en": "Programmers and programs. Console",
             "es": ""
           },
           "questionGroups": [
-            "635c05ba659f6d77abf1f4ff"
+            "6696c2ca763f0712c198dadf"
           ],
           "challenges": [
-            "635c05ba659f6d77abf1f516",
-            "635c05ba659f6d77abf1f517",
-            "635c05ba659f6d77abf1f518",
-            "635c05ba659f6d77abf1f519",
-            "635c05ba659f6d77abf1f51a",
-            "635c05ba659f6d77abf1f51b",
-            "635c05ba659f6d77abf1f51c",
-            "635c05ba659f6d77abf1f51d",
-            "635c05ba659f6d77abf1f51e",
-            "635c05ba659f6d77abf1f51f"
+            "6696c2ca763f0712c198daf6",
+            "6696c2ca763f0712c198daf7",
+            "6696c2ca763f0712c198daf8",
+            "6696c2ca763f0712c198daf9",
+            "6696c2ca763f0712c198dafa",
+            "6696c2ca763f0712c198dafb",
+            "6696c2ca763f0712c198dafc",
+            "6696c2ca763f0712c198dafd",
+            "6696c2ca763f0712c198dafe",
+            "6696c2ca763f0712c198daff"
           ]
         },
         {
-          "_id": "635f26d0cf4ae3cbc5e5666c",
+          "_id": "6696c2ca763f0712c198db00",
           "name": {
             "ru": "Первая программа Hello World",
-            "en": "",
+            "en": "First program Hello World",
             "es": ""
           },
           "questionGroups": [
-            "635f26d0cf4ae3cbc5e5666d"
+            "6696c2ca763f0712c198db01"
           ],
           "challenges": [
-            "635f26d0cf4ae3cbc5e5666e",
-            "635f26d0cf4ae3cbc5e5666f",
-            "635f26d0cf4ae3cbc5e56670"
+            "6696c2ca763f0712c198db29",
+            "6696c2ca763f0712c198db2a",
+            "6696c2ca763f0712c198db2b"
           ]
         }
       ]
@@ -70,109 +70,109 @@
       },
       "lessons": [
         {
-          "_id": "642c93bf524c052731ea8070",
+          "_id": "6696c2ca763f0712c198db2d",
           "name": {
             "ru": "Что такое переменная?",
             "en": "What is a variable?",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea8085",
-            "642c93bf524c052731ea8086",
-            "642c93bf524c052731ea8087",
-            "642c93bf524c052731ea8088",
-            "642c93bf524c052731ea8089",
-            "642c93bf524c052731ea808a",
-            "642c93bf524c052731ea808b",
-            "642c93bf524c052731ea808c",
-            "642c93bf524c052731ea808d",
-            "642c93bf524c052731ea808e",
-            "642c93bf524c052731ea808f",
-            "642c93bf524c052731ea8090",
-            "642c93bf524c052731ea8091",
-            "642c93bf524c052731ea8092",
-            "642c93bf524c052731ea8093",
-            "642c93bf524c052731ea8094",
-            "642c93bf524c052731ea8095",
-            "642c93bf524c052731ea8096",
-            "642c93bf524c052731ea8097",
-            "642c93bf524c052731ea8098",
-            "642c93bf524c052731ea8099"
+            "6696c2ca763f0712c198db42",
+            "6696c2ca763f0712c198db43",
+            "6696c2ca763f0712c198db44",
+            "6696c2ca763f0712c198db45",
+            "6696c2ca763f0712c198db46",
+            "6696c2ca763f0712c198db47",
+            "6696c2ca763f0712c198db48",
+            "6696c2ca763f0712c198db49",
+            "6696c2ca763f0712c198db4a",
+            "6696c2ca763f0712c198db4b",
+            "6696c2ca763f0712c198db4c",
+            "6696c2ca763f0712c198db4d",
+            "6696c2ca763f0712c198db4e",
+            "6696c2ca763f0712c198db4f",
+            "6696c2ca763f0712c198db50",
+            "6696c2ca763f0712c198db51",
+            "6696c2ca763f0712c198db52",
+            "6696c2ca763f0712c198db53",
+            "6696c2ca763f0712c198db54",
+            "6696c2ca763f0712c198db55",
+            "6696c2ca763f0712c198db56"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea8071"
+            "6696c2ca763f0712c198db2e"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea809a",
+          "_id": "6696c2ca763f0712c198db57",
           "name": {
             "ru": "Разница между let и const",
             "en": "Difference between let and const",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea80ac",
-            "642c93bf524c052731ea80ad",
-            "642c93bf524c052731ea80ae",
-            "642c93bf524c052731ea80af",
-            "642c93bf524c052731ea80b0",
-            "642c93bf524c052731ea80b1",
-            "642c93bf524c052731ea80b2",
-            "642c93bf524c052731ea80b3"
+            "6696c2ca763f0712c198db69",
+            "6696c2ca763f0712c198db6a",
+            "6696c2ca763f0712c198db6b",
+            "6696c2ca763f0712c198db6c",
+            "6696c2ca763f0712c198db6d",
+            "6696c2ca763f0712c198db6e",
+            "6696c2ca763f0712c198db6f",
+            "6696c2ca763f0712c198db70"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea809b"
+            "6696c2ca763f0712c198db58"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea80b4",
+          "_id": "6696c2ca763f0712c198db71",
           "name": {
             "ru": "Область видимости переменных",
             "en": "Variable scope",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea80c7",
-            "642c93bf524c052731ea80c8",
-            "642c93bf524c052731ea80c9",
-            "642c93bf524c052731ea80ca",
-            "642c93bf524c052731ea80cb",
-            "642c93bf524c052731ea80cc",
-            "642c93bf524c052731ea80cd",
-            "642c93bf524c052731ea80ce"
+            "6696c2ca763f0712c198db84",
+            "6696c2ca763f0712c198db85",
+            "6696c2ca763f0712c198db86",
+            "6696c2ca763f0712c198db87",
+            "6696c2ca763f0712c198db88",
+            "6696c2ca763f0712c198db89",
+            "6696c2ca763f0712c198db8a",
+            "6696c2ca763f0712c198db8b"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea80b5"
+            "6696c2ca763f0712c198db72"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea80cf",
+          "_id": "6696c2ca763f0712c198db8c",
           "name": {
             "ru": "Правила именования переменных",
             "en": "Variable naming rules",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea80fe",
-            "642c93bf524c052731ea80ff",
-            "642c93bf524c052731ea8100",
-            "642c93bf524c052731ea8101",
-            "642c93bf524c052731ea8102",
-            "642c93bf524c052731ea8103",
-            "642c93bf524c052731ea8104",
-            "642c93bf524c052731ea8105",
-            "642c93bf524c052731ea8106",
-            "642c93bf524c052731ea8107",
-            "642c93bf524c052731ea8108",
-            "642c93bf524c052731ea8109",
-            "642c93bf524c052731ea810a"
+            "6696c2ca763f0712c198dbbb",
+            "6696c2ca763f0712c198dbbc",
+            "6696c2ca763f0712c198dbbd",
+            "6696c2ca763f0712c198dbbe",
+            "6696c2ca763f0712c198dbbf",
+            "6696c2ca763f0712c198dbc0",
+            "6696c2ca763f0712c198dbc1",
+            "6696c2ca763f0712c198dbc2",
+            "6696c2ca763f0712c198dbc3",
+            "6696c2ca763f0712c198dbc4",
+            "6696c2ca763f0712c198dbc5",
+            "6696c2ca763f0712c198dbc6",
+            "6696c2ca763f0712c198dbc7"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea80d0"
+            "6696c2ca763f0712c198db8d"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea810b",
+          "_id": "6696c2ca763f0712c198dbc8",
           "edgeFree": true,
           "name": {
             "ru": "Особенности присваивания",
@@ -180,32 +180,32 @@
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea8134",
-            "642c93bf524c052731ea8135",
-            "642c93bf524c052731ea8136",
-            "642c93bf524c052731ea8137",
-            "642c93bf524c052731ea8138",
-            "642c93bf524c052731ea8139",
-            "642c93bf524c052731ea813a",
-            "642c93bf524c052731ea813b",
-            "642c93bf524c052731ea813c",
-            "642c93bf524c052731ea813d",
-            "642c93bf524c052731ea813e",
-            "642c93bf524c052731ea813f",
-            "642c93bf524c052731ea8140",
-            "642c93bf524c052731ea8141",
-            "642c93bf524c052731ea8142",
-            "642c93bf524c052731ea8143"
+            "6696c2ca763f0712c198dbf1",
+            "6696c2ca763f0712c198dbf2",
+            "6696c2ca763f0712c198dbf3",
+            "6696c2ca763f0712c198dbf4",
+            "6696c2ca763f0712c198dbf5",
+            "6696c2ca763f0712c198dbf6",
+            "6696c2ca763f0712c198dbf7",
+            "6696c2ca763f0712c198dbf8",
+            "6696c2ca763f0712c198dbf9",
+            "6696c2ca763f0712c198dbfa",
+            "6696c2ca763f0712c198dbfb",
+            "6696c2ca763f0712c198dbfc",
+            "6696c2ca763f0712c198dbfd",
+            "6696c2ca763f0712c198dbfe",
+            "6696c2ca763f0712c198dbff",
+            "6696c2ca763f0712c198dc00"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea810c"
+            "6696c2ca763f0712c198dbc9"
           ]
         }
       ],
-      "_id": "642c93bf524c052731ea806f"
+      "_id": "6696c2ca763f0712c198db2c"
     },
     {
-      "_id": "642c93bf524c052731ea8144",
+      "_id": "6696c2ca763f0712c198dc01",
       "name": {
         "ru": "Примитивные типы данных",
         "en": "Primitive data types",
@@ -213,207 +213,207 @@
       },
       "lessons": [
         {
-          "_id": "642c93bf524c052731ea8145",
+          "_id": "6696c2ca763f0712c198dc02",
           "name": {
             "ru": "Динамически типизированные переменные",
             "en": "Dynamically typed variables",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea8160",
-            "642c93bf524c052731ea8161",
-            "642c93bf524c052731ea8162",
-            "642c93bf524c052731ea8163",
-            "642c93bf524c052731ea8164"
+            "6696c2ca763f0712c198dc1a",
+            "6696c2ca763f0712c198dc1b",
+            "6696c2ca763f0712c198dc1c",
+            "6696c2ca763f0712c198dc1d",
+            "6696c2ca763f0712c198dc1e"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea8146"
+            "6696c2ca763f0712c198dc03"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea8165",
+          "_id": "6696c2ca763f0712c198dc1f",
           "name": {
             "ru": "Тип \"number\" (Число)",
             "en": "Type number",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea8195",
-            "642c93bf524c052731ea8196",
-            "642c93bf524c052731ea8197",
-            "642c93bf524c052731ea8198",
-            "642c93bf524c052731ea8199",
-            "642c93bf524c052731ea819a",
-            "642c93bf524c052731ea819b",
-            "642c93bf524c052731ea819c",
-            "642c93bf524c052731ea819d",
-            "642c93bf524c052731ea819e",
-            "642c93bf524c052731ea819f",
-            "642c93bf524c052731ea81a0",
-            "642c93bf524c052731ea81a1"
+            "6696c2ca763f0712c198dc4f",
+            "6696c2ca763f0712c198dc50",
+            "6696c2ca763f0712c198dc51",
+            "6696c2ca763f0712c198dc52",
+            "6696c2ca763f0712c198dc53",
+            "6696c2ca763f0712c198dc54",
+            "6696c2ca763f0712c198dc55",
+            "6696c2ca763f0712c198dc56",
+            "6696c2ca763f0712c198dc57",
+            "6696c2ca763f0712c198dc58",
+            "6696c2ca763f0712c198dc59",
+            "6696c2ca763f0712c198dc5a",
+            "6696c2ca763f0712c198dc5b"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea8166"
+            "6696c2ca763f0712c198dc20"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea81a2",
+          "_id": "6696c2ca763f0712c198dc5c",
           "name": {
             "ru": "Тип \"string\" (Строка)",
             "en": "Type \"string\"",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea81d0",
-            "642c93bf524c052731ea81d1",
-            "642c93bf524c052731ea81d2",
-            "642c93bf524c052731ea81d3",
-            "642c93bf524c052731ea81d4",
-            "642c93bf524c052731ea81d5",
-            "642c93bf524c052731ea81d6",
-            "642c93bf524c052731ea81d7",
-            "642c93bf524c052731ea81d8",
-            "642c93bf524c052731ea81d9",
-            "642c93bf524c052731ea81da",
-            "642c93bf524c052731ea81db",
-            "642c93bf524c052731ea81dc",
-            "642c93bf524c052731ea81dd",
-            "642c93bf524c052731ea81de",
-            "642c93bf524c052731ea81df"
+            "6696c2ca763f0712c198dc8a",
+            "6696c2ca763f0712c198dc8b",
+            "6696c2ca763f0712c198dc8c",
+            "6696c2ca763f0712c198dc8d",
+            "6696c2ca763f0712c198dc8e",
+            "6696c2ca763f0712c198dc8f",
+            "6696c2ca763f0712c198dc90",
+            "6696c2ca763f0712c198dc91",
+            "6696c2ca763f0712c198dc92",
+            "6696c2ca763f0712c198dc93",
+            "6696c2ca763f0712c198dc94",
+            "6696c2ca763f0712c198dc95",
+            "6696c2ca763f0712c198dc96",
+            "6696c2ca763f0712c198dc97",
+            "6696c2ca763f0712c198dc98",
+            "6696c2ca763f0712c198dc99"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea81a3"
+            "6696c2ca763f0712c198dc5d"
           ]
         },
         {
-          "_id": "635f26d0cf4ae3cbc5e56671",
+          "_id": "6696c2ca763f0712c198dc9a",
           "name": {
             "ru": "Задачи на Числа и Строки",
-            "en": "",
+            "en": "Exercises on Numbers and Strings",
             "es": ""
           },
           "questionGroups": [
-            "635f26d0cf4ae3cbc5e56672"
+            "6696c2ca763f0712c198dc9b"
           ],
           "challenges": [
-            "635f26d0cf4ae3cbc5e56673",
-            "635f26d0cf4ae3cbc5e56674",
-            "635f26d0cf4ae3cbc5e56675",
-            "635f26d0cf4ae3cbc5e56676",
-            "635f26d0cf4ae3cbc5e56677",
-            "635f26d0cf4ae3cbc5e56678",
-            "635f26d0cf4ae3cbc5e56679",
-            "635f26d0cf4ae3cbc5e5667a",
-            "635f26d0cf4ae3cbc5e5667b",
-            "635f26d0cf4ae3cbc5e5667c"
+            "6696c2ca763f0712c198dcc5",
+            "6696c2ca763f0712c198dcc6",
+            "6696c2ca763f0712c198dcc7",
+            "6696c2ca763f0712c198dcc8",
+            "6696c2ca763f0712c198dcc9",
+            "6696c2ca763f0712c198dcca",
+            "6696c2ca763f0712c198dccb",
+            "6696c2ca763f0712c198dccc",
+            "6696c2ca763f0712c198dccd",
+            "6696c2ca763f0712c198dcce"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea81e0",
+          "_id": "6696c2ca763f0712c198dccf",
           "name": {
             "ru": "Тип \"boolean\" (Логический тип данных)",
             "en": "Boolean",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea820d",
-            "642c93bf524c052731ea820e",
-            "642c93bf524c052731ea820f",
-            "642c93bf524c052731ea8210",
-            "642c93bf524c052731ea8211",
-            "642c93bf524c052731ea8212",
-            "642c93bf524c052731ea8213",
-            "642c93bf524c052731ea8214",
-            "642c93bf524c052731ea8215",
-            "642c93bf524c052731ea8216",
-            "642c93bf524c052731ea8217"
+            "6696c2ca763f0712c198dcfc",
+            "6696c2ca763f0712c198dcfd",
+            "6696c2ca763f0712c198dcfe",
+            "6696c2ca763f0712c198dcff",
+            "6696c2ca763f0712c198dd00",
+            "6696c2ca763f0712c198dd01",
+            "6696c2ca763f0712c198dd02",
+            "6696c2ca763f0712c198dd03",
+            "6696c2ca763f0712c198dd04",
+            "6696c2ca763f0712c198dd05",
+            "6696c2ca763f0712c198dd06"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea81e1"
+            "6696c2ca763f0712c198dcd0"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea8218",
+          "_id": "6696c2ca763f0712c198dd07",
           "name": {
             "ru": "Тип \"Undefined\"",
             "en": "Undefined",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea822d",
-            "642c93bf524c052731ea822e",
-            "642c93bf524c052731ea822f",
-            "642c93bf524c052731ea8230"
+            "6696c2ca763f0712c198dd1c",
+            "6696c2ca763f0712c198dd1d",
+            "6696c2ca763f0712c198dd1e",
+            "6696c2ca763f0712c198dd1f"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea8219"
+            "6696c2ca763f0712c198dd08"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea8231",
+          "_id": "6696c2ca763f0712c198dd20",
           "name": {
             "ru": "Тип \"Null\"",
             "en": "Null",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea8244",
-            "642c93bf524c052731ea8245",
-            "642c93bf524c052731ea8246",
-            "642c93bf524c052731ea8247",
-            "642c93bf524c052731ea8248",
-            "642c93bf524c052731ea8249"
+            "6696c2ca763f0712c198dd33",
+            "6696c2ca763f0712c198dd34",
+            "6696c2ca763f0712c198dd35",
+            "6696c2ca763f0712c198dd36",
+            "6696c2ca763f0712c198dd37",
+            "6696c2ca763f0712c198dd38"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea8232"
+            "6696c2ca763f0712c198dd21"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea824a",
+          "_id": "6696c2ca763f0712c198dd39",
           "name": {
             "ru": "Типы данных: 5 из 8-ми",
             "en": "Data types: 5 out of 8",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea827e",
-            "642c93bf524c052731ea827f",
-            "642c93bf524c052731ea8280",
-            "642c93bf524c052731ea8281",
-            "642c93bf524c052731ea8282",
-            "642c93bf524c052731ea8283"
+            "6696c2ca763f0712c198dd6d",
+            "6696c2ca763f0712c198dd6e",
+            "6696c2ca763f0712c198dd6f",
+            "6696c2ca763f0712c198dd70",
+            "6696c2ca763f0712c198dd71",
+            "6696c2ca763f0712c198dd72"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea824b"
+            "6696c2ca763f0712c198dd3a"
           ]
         },
         {
-          "_id": "635f26d0cf4ae3cbc5e5667d",
+          "_id": "6696c2ca763f0712c198dd73",
           "name": {
             "ru": "Определение типа данных",
-            "en": "",
+            "en": "Defining data types",
             "es": ""
           },
           "questionGroups": [
-            "635f26d0cf4ae3cbc5e5667e"
+            "6696c2ca763f0712c198dd74"
           ],
           "challenges": [
-            "635f26d0cf4ae3cbc5e5667f",
-            "635f26d0cf4ae3cbc5e56680",
-            "635f26d0cf4ae3cbc5e56681",
-            "635f26d0cf4ae3cbc5e56682",
-            "635f26d0cf4ae3cbc5e56684",
-            "635f26d0cf4ae3cbc5e56683",
-            "635f26d0cf4ae3cbc5e56685",
-            "635f26d0cf4ae3cbc5e56686",
-            "635f26d0cf4ae3cbc5e56687",
-            "635f26d0cf4ae3cbc5e56688"
+            "6696c2ca763f0712c198dda6",
+            "6696c2ca763f0712c198dda7",
+            "6696c2ca763f0712c198dda8",
+            "6696c2ca763f0712c198dda9",
+            "6696c2ca763f0712c198ddaa",
+            "6696c2ca763f0712c198ddab",
+            "6696c2ca763f0712c198ddac",
+            "6696c2ca763f0712c198ddad",
+            "6696c2ca763f0712c198ddae",
+            "6696c2ca763f0712c198ddaf"
           ]
         }
       ]
     },
     {
-      "_id": "642c93bf524c052731ea8284",
+      "_id": "6696c2ca763f0712c198ddb0",
       "name": {
         "ru": "Операторы",
         "en": "Operators",
@@ -421,171 +421,171 @@
       },
       "lessons": [
         {
-          "_id": "635f26d0cf4ae3cbc5e56689",
+          "_id": "6696c2ca763f0712c198ddb1",
           "name": {
             "ru": "Математические операторы. NaN",
-            "en": "",
+            "en": "Mathematical operators. NaN",
             "es": ""
           },
           "questionGroups": [
-            "635f26d0cf4ae3cbc5e5668a"
+            "6696c2ca763f0712c198ddb2"
           ],
           "challenges": [
-            "635f26d0cf4ae3cbc5e5668b",
-            "635f26d0cf4ae3cbc5e5668c",
-            "635f26d0cf4ae3cbc5e5668d",
-            "635f26d0cf4ae3cbc5e5668e",
-            "635f26d0cf4ae3cbc5e5668f",
-            "635f26d0cf4ae3cbc5e56690",
-            "635f26d0cf4ae3cbc5e56691",
-            "635f26d0cf4ae3cbc5e56692",
-            "635f26d0cf4ae3cbc5e56693",
-            "635f26d0cf4ae3cbc5e56694"
+            "6696c2ca763f0712c198ddde",
+            "6696c2ca763f0712c198dddf",
+            "6696c2ca763f0712c198dde0",
+            "6696c2ca763f0712c198dde1",
+            "6696c2ca763f0712c198dde2",
+            "6696c2ca763f0712c198dde3",
+            "6696c2ca763f0712c198dde4",
+            "6696c2ca763f0712c198dde5",
+            "6696c2ca763f0712c198dde6",
+            "6696c2ca763f0712c198dde7"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea8285",
+          "_id": "6696c2ca763f0712c198dde8",
           "name": {
             "ru": "Унарные и бинарные операторы",
             "en": "Unary and Binary Operators",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea82af",
-            "642c93bf524c052731ea82b0",
-            "642c93bf524c052731ea82b1",
-            "642c93bf524c052731ea82b2",
-            "642c93bf524c052731ea82b3",
-            "642c93bf524c052731ea82b4",
-            "642c93bf524c052731ea82b5",
-            "642c93bf524c052731ea82b6",
-            "642c93bf524c052731ea82b7",
-            "642c93bf524c052731ea82b8",
-            "642c93bf524c052731ea82b9",
-            "642c93bf524c052731ea82ba",
-            "642c93bf524c052731ea82bb",
-            "642c93bf524c052731ea82bc",
-            "642c93bf524c052731ea82bd",
-            "642c93bf524c052731ea82be",
-            "642c93bf524c052731ea82bf",
-            "642c93bf524c052731ea82c0",
-            "642c93bf524c052731ea82c1"
+            "6696c2ca763f0712c198de12",
+            "6696c2ca763f0712c198de13",
+            "6696c2ca763f0712c198de14",
+            "6696c2ca763f0712c198de15",
+            "6696c2ca763f0712c198de16",
+            "6696c2ca763f0712c198de17",
+            "6696c2ca763f0712c198de18",
+            "6696c2ca763f0712c198de19",
+            "6696c2ca763f0712c198de1a",
+            "6696c2ca763f0712c198de1b",
+            "6696c2ca763f0712c198de1c",
+            "6696c2ca763f0712c198de1d",
+            "6696c2ca763f0712c198de1e",
+            "6696c2ca763f0712c198de1f",
+            "6696c2ca763f0712c198de20",
+            "6696c2ca763f0712c198de21",
+            "6696c2ca763f0712c198de22",
+            "6696c2ca763f0712c198de23",
+            "6696c2ca763f0712c198de24"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea8286"
+            "6696c2ca763f0712c198dde9"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea82c2",
+          "_id": "6696c2ca763f0712c198de25",
           "name": {
             "ru": "Оператор + в разных ситуациях",
             "en": "Operator + in different situations",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea82ed",
-            "642c93bf524c052731ea82ee",
-            "642c93bf524c052731ea82ef",
-            "642c93bf524c052731ea82f0",
-            "642c93bf524c052731ea82f1",
-            "642c93bf524c052731ea82f2",
-            "642c93bf524c052731ea82f3"
+            "6696c2ca763f0712c198de50",
+            "6696c2ca763f0712c198de51",
+            "6696c2ca763f0712c198de52",
+            "6696c2ca763f0712c198de53",
+            "6696c2ca763f0712c198de54",
+            "6696c2ca763f0712c198de55",
+            "6696c2ca763f0712c198de56"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea82c3"
+            "6696c2ca763f0712c198de26"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea82f4",
+          "_id": "6696c2ca763f0712c198de57",
           "name": {
             "ru": "Приоритет выполнения операций",
             "en": "Priority of operations",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea831c",
-            "642c93bf524c052731ea831d",
-            "642c93bf524c052731ea831e",
-            "642c93bf524c052731ea831f",
-            "642c93bf524c052731ea8320",
-            "642c93bf524c052731ea8321",
-            "642c93bf524c052731ea8322",
-            "642c93bf524c052731ea8323",
-            "642c93bf524c052731ea8324",
-            "642c93bf524c052731ea8325",
-            "642c93bf524c052731ea8326",
-            "642c93bf524c052731ea8327",
-            "642c93bf524c052731ea8328",
-            "642c93bf524c052731ea8329",
-            "642c93bf524c052731ea832a",
-            "642c93bf524c052731ea832b"
+            "6696c2ca763f0712c198de7f",
+            "6696c2ca763f0712c198de80",
+            "6696c2ca763f0712c198de81",
+            "6696c2ca763f0712c198de82",
+            "6696c2ca763f0712c198de83",
+            "6696c2ca763f0712c198de84",
+            "6696c2ca763f0712c198de85",
+            "6696c2ca763f0712c198de86",
+            "6696c2ca763f0712c198de87",
+            "6696c2ca763f0712c198de88",
+            "6696c2ca763f0712c198de89",
+            "6696c2ca763f0712c198de8a",
+            "6696c2ca763f0712c198de8b",
+            "6696c2ca763f0712c198de8c",
+            "6696c2ca763f0712c198de8d",
+            "6696c2ca763f0712c198de8e"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea82f5"
+            "6696c2ca763f0712c198de58"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea832c",
+          "_id": "6696c2ca763f0712c198de8f",
           "name": {
             "ru": "Остаток от деления. Возведение в степень",
             "en": "Remainder of division. Exponentiation",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea8345",
-            "642c93bf524c052731ea8346",
-            "642c93bf524c052731ea8347",
-            "642c93bf524c052731ea8348",
-            "642c93bf524c052731ea8349",
-            "642c93bf524c052731ea834a",
-            "642c93bf524c052731ea834b",
-            "642c93bf524c052731ea834c",
-            "642c93bf524c052731ea834d",
-            "642c93bf524c052731ea834e",
-            "642c93bf524c052731ea834f",
-            "642c93bf524c052731ea8350",
-            "642c93bf524c052731ea8351",
-            "642c93bf524c052731ea8352",
-            "642c93bf524c052731ea8353",
-            "642c93bf524c052731ea8354",
-            "642c93bf524c052731ea8355",
-            "642c93bf524c052731ea8356",
-            "642c93bf524c052731ea8357",
-            "642c93bf524c052731ea8358",
-            "642c93bf524c052731ea8359"
+            "6696c2ca763f0712c198dea8",
+            "6696c2ca763f0712c198dea9",
+            "6696c2ca763f0712c198deaa",
+            "6696c2ca763f0712c198deab",
+            "6696c2ca763f0712c198deac",
+            "6696c2ca763f0712c198dead",
+            "6696c2ca763f0712c198deae",
+            "6696c2ca763f0712c198deaf",
+            "6696c2ca763f0712c198deb0",
+            "6696c2ca763f0712c198deb1",
+            "6696c2ca763f0712c198deb2",
+            "6696c2ca763f0712c198deb3",
+            "6696c2ca763f0712c198deb4",
+            "6696c2ca763f0712c198deb5",
+            "6696c2ca763f0712c198deb6",
+            "6696c2ca763f0712c198deb7",
+            "6696c2ca763f0712c198deb8",
+            "6696c2ca763f0712c198deb9",
+            "6696c2ca763f0712c198deba",
+            "6696c2ca763f0712c198debb",
+            "6696c2ca763f0712c198debc"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea832d"
+            "6696c2ca763f0712c198de90"
           ]
         },
         {
-          "_id": "642c93bf524c052731ea835a",
+          "_id": "6696c2ca763f0712c198debd",
           "name": {
             "ru": "Вызов с присваиванием",
             "en": "Assignment call",
             "es": ""
           },
           "challenges": [
-            "642c93bf524c052731ea838a",
-            "642c93bf524c052731ea838b",
-            "642c93bf524c052731ea838c",
-            "642c93bf524c052731ea838d",
-            "642c93bf524c052731ea838e",
-            "642c93bf524c052731ea838f",
-            "642c93bf524c052731ea8390",
-            "642c93bf524c052731ea8391",
-            "642c93bf524c052731ea8392",
-            "642c93bf524c052731ea8393",
-            "642c93bf524c052731ea8394"
+            "6696c2ca763f0712c198deed",
+            "6696c2ca763f0712c198deee",
+            "6696c2ca763f0712c198deef",
+            "6696c2ca763f0712c198def0",
+            "6696c2ca763f0712c198def1",
+            "6696c2ca763f0712c198def2",
+            "6696c2ca763f0712c198def3",
+            "6696c2ca763f0712c198def4",
+            "6696c2ca763f0712c198def5",
+            "6696c2ca763f0712c198def6",
+            "6696c2ca763f0712c198def7"
           ],
           "questionGroups": [
-            "642c93bf524c052731ea835b"
+            "6696c2ca763f0712c198debe"
           ]
         }
       ]
     },
     {
-      "_id": "635c05ba659f6d77abf1fc21",
+      "_id": "6696c2ca763f0712c198def8",
       "name": {
         "ru": "Функции",
         "en": "Functions",
@@ -593,143 +593,143 @@
       },
       "lessons": [
         {
-          "_id": "635f2a362c8a9b00b7a9d8a2",
+          "_id": "6696c2ca763f0712c198def9",
           "name": {
             "ru": "Создание и вызов функции",
-            "en": "",
+            "en": "Creating and calling a function",
             "es": ""
           },
           "questionGroups": [
-            "635f2a362c8a9b00b7a9d8a3"
+            "6696c2ca763f0712c198defa"
           ],
           "challenges": [
-            "635f2a362c8a9b00b7a9d8a4",
-            "635f2a362c8a9b00b7a9d8a5",
-            "635f2a362c8a9b00b7a9d8a6",
-            "635f2a362c8a9b00b7a9d8a7",
-            "635f2a362c8a9b00b7a9d8a8",
-            "635f2a362c8a9b00b7a9d8a9",
-            "635f2a362c8a9b00b7a9d8aa",
-            "635f2a362c8a9b00b7a9d8ab",
-            "635f2a362c8a9b00b7a9d8ac",
-            "635f2a362c8a9b00b7a9d8ad"
+            "6696c2ca763f0712c198df1c",
+            "6696c2ca763f0712c198df1d",
+            "6696c2ca763f0712c198df1e",
+            "6696c2ca763f0712c198df1f",
+            "6696c2ca763f0712c198df20",
+            "6696c2ca763f0712c198df21",
+            "6696c2ca763f0712c198df22",
+            "6696c2ca763f0712c198df23",
+            "6696c2ca763f0712c198df24",
+            "6696c2ca763f0712c198df25"
           ]
         },
         {
-          "_id": "635f2a362c8a9b00b7a9d8ae",
+          "_id": "6696c2ca763f0712c198df26",
           "name": {
             "ru": "Возвращаемое значение",
-            "en": "",
+            "en": "Return value",
             "es": ""
           },
           "questionGroups": [
-            "635f2a362c8a9b00b7a9d8bb"
+            "6696c2ca763f0712c198df27"
           ],
           "challenges": [
-            "635f2a362c8a9b00b7a9d8b0",
-            "635f2a362c8a9b00b7a9d8b1",
-            "635f2a362c8a9b00b7a9d8b2",
-            "635f2a362c8a9b00b7a9d8b3",
-            "635f2a362c8a9b00b7a9d8b4",
-            "635f2a362c8a9b00b7a9d8b5",
-            "635f2a362c8a9b00b7a9d8b6",
-            "635f2a362c8a9b00b7a9d8b7",
-            "635f2a362c8a9b00b7a9d8b8",
-            "635f2a362c8a9b00b7a9d8b9"
+            "6696c2ca763f0712c198df4e",
+            "6696c2ca763f0712c198df4f",
+            "6696c2ca763f0712c198df50",
+            "6696c2ca763f0712c198df51",
+            "6696c2ca763f0712c198df52",
+            "6696c2ca763f0712c198df53",
+            "6696c2ca763f0712c198df54",
+            "6696c2ca763f0712c198df55",
+            "6696c2ca763f0712c198df56",
+            "6696c2ca763f0712c198df57"
           ]
         },
         {
-          "_id": "635f2a362c8a9b00b7a9d8ba",
+          "_id": "6696c2ca763f0712c198df58",
           "name": {
             "ru": "Параметры и аргументы функции",
-            "en": "",
+            "en": "Function parameters and arguments",
             "es": ""
           },
           "questionGroups": [
-            "635f2a362c8a9b00b7a9d8af"
+            "6696c2ca763f0712c198df59"
           ],
           "challenges": [
-            "635f2a362c8a9b00b7a9d8bc",
-            "635f2a362c8a9b00b7a9d8bd",
-            "635f2a362c8a9b00b7a9d8be",
-            "635f2a362c8a9b00b7a9d8bf",
-            "635f2a362c8a9b00b7a9d8c0",
-            "635f2a362c8a9b00b7a9d8c1",
-            "635f2a362c8a9b00b7a9d8c2",
-            "635f2a362c8a9b00b7a9d8c3",
-            "635f2a362c8a9b00b7a9d8c4",
-            "635f2a362c8a9b00b7a9d8c5"
+            "6696c2ca763f0712c198df86",
+            "6696c2ca763f0712c198df87",
+            "6696c2ca763f0712c198df88",
+            "6696c2ca763f0712c198df89",
+            "6696c2ca763f0712c198df8a",
+            "6696c2ca763f0712c198df8b",
+            "6696c2ca763f0712c198df8c",
+            "6696c2ca763f0712c198df8d",
+            "6696c2ca763f0712c198df8e",
+            "6696c2ca763f0712c198df8f"
           ]
         },
         {
-          "_id": "635f2a362c8a9b00b7a9d8c6",
+          "_id": "6696c2ca763f0712c198df90",
           "name": {
             "ru": "Функции с параметрами по умолчанию",
-            "en": "",
+            "en": "Functions with default parameters",
             "es": ""
           },
           "questionGroups": [
-            "635f2a362c8a9b00b7a9d8c7"
+            "6696c2ca763f0712c198df91"
           ],
           "challenges": [
-            "635f2a362c8a9b00b7a9d8c8",
-            "635f2a362c8a9b00b7a9d8c9",
-            "635f2a362c8a9b00b7a9d8ca",
-            "635f2a362c8a9b00b7a9d8cb",
-            "635f2a362c8a9b00b7a9d8cc",
-            "635f2a362c8a9b00b7a9d8cd",
-            "635f2a362c8a9b00b7a9d8ce",
-            "635f2a362c8a9b00b7a9d8cf",
-            "635f2a362c8a9b00b7a9d8d0",
-            "635f2a362c8a9b00b7a9d8d1"
+            "6696c2ca763f0712c198dfbd",
+            "6696c2ca763f0712c198dfbe",
+            "6696c2ca763f0712c198dfbf",
+            "6696c2ca763f0712c198dfc0",
+            "6696c2ca763f0712c198dfc1",
+            "6696c2ca763f0712c198dfc2",
+            "6696c2ca763f0712c198dfc3",
+            "6696c2ca763f0712c198dfc4",
+            "6696c2ca763f0712c198dfc5",
+            "6696c2ca763f0712c198dfc6"
           ]
         },
         {
-          "_id": "635f2a362c8a9b00b7a9d8de",
+          "_id": "6696c2ca763f0712c198dfc7",
           "name": {
             "ru": "Дополнительные задания на функции и числа",
-            "en": "",
+            "en": "Extra tasks on functions and numbers",
             "es": ""
           },
           "questionGroups": [],
           "challenges": [
-            "635f2a362c8a9b00b7a9d8e0",
-            "635f2a362c8a9b00b7a9d8e1",
-            "635f2a362c8a9b00b7a9d8e2",
-            "635f2a362c8a9b00b7a9d8e3",
-            "635f2a362c8a9b00b7a9d8e4",
-            "635f2a362c8a9b00b7a9d8e5",
-            "635f2a362c8a9b00b7a9d8e6",
-            "635f2a362c8a9b00b7a9d8e7",
-            "635f2a362c8a9b00b7a9d8e8",
-            "635f2a362c8a9b00b7a9d8e9"
+            "6696c2ca763f0712c198dfc8",
+            "6696c2ca763f0712c198dfc9",
+            "6696c2ca763f0712c198dfca",
+            "6696c2ca763f0712c198dfcb",
+            "6696c2ca763f0712c198dfcc",
+            "6696c2ca763f0712c198dfcd",
+            "6696c2ca763f0712c198dfce",
+            "6696c2ca763f0712c198dfcf",
+            "6696c2ca763f0712c198dfd0",
+            "6696c2ca763f0712c198dfd1"
           ]
         },
         {
-          "_id": "635f2a362c8a9b00b7a9d8ea",
+          "_id": "6696c2ca763f0712c198dfd2",
           "name": {
             "ru": "И еще задания на функции и строки",
-            "en": "",
+            "en": "And more tasks on functions and strings",
             "es": ""
           },
           "questionGroups": [],
           "challenges": [
-            "635f2a362c8a9b00b7a9d8ec",
-            "635f2a362c8a9b00b7a9d8ed",
-            "635f2a362c8a9b00b7a9d8ee",
-            "635f2a362c8a9b00b7a9d8ef",
-            "635f2a362c8a9b00b7a9d8f0",
-            "635f2a362c8a9b00b7a9d8f1",
-            "635f2a362c8a9b00b7a9d8f2",
-            "635f2a362c8a9b00b7a9d8f3",
-            "635f2a362c8a9b00b7a9d8f4",
-            "635f2a362c8a9b00b7a9d8f5"
+            "6696c2ca763f0712c198dfd3",
+            "6696c2ca763f0712c198dfd4",
+            "6696c2ca763f0712c198dfd5",
+            "6696c2ca763f0712c198dfd6",
+            "6696c2ca763f0712c198dfd7",
+            "6696c2ca763f0712c198dfd8",
+            "6696c2ca763f0712c198dfd9",
+            "6696c2ca763f0712c198dfda",
+            "6696c2ca763f0712c198dfdb",
+            "6696c2ca763f0712c198dfdc"
           ]
         }
       ]
     },
     {
-      "_id": "635c05ba659f6d77abf1f520",
+      "_id": "6696c2ca763f0712c198dfdd",
       "name": {
         "ru": "Переменные и функции",
         "en": "Variables and functions",
@@ -737,147 +737,147 @@
       },
       "lessons": [
         {
-          "_id": "63683072577d41fa4da0e9cb",
+          "_id": "6696c2ca763f0712c198dfde",
           "name": {
             "ru": "Задачи. Переменные, функции, let и const",
-            "en": "",
+            "en": "Tasks. Variables, functions, let and const",
             "es": ""
           },
           "questionGroups": [
-            "63683072577d41fa4da0e9cc"
+            "6696c2ca763f0712c198dfdf"
           ],
           "challenges": [
-            "63683072577d41fa4da0e9cd",
-            "63683072577d41fa4da0e9ce",
-            "63683072577d41fa4da0e9cf",
-            "63683072577d41fa4da0e9d0",
-            "63683072577d41fa4da0e9d1",
-            "63683072577d41fa4da0e9d2",
-            "63683072577d41fa4da0e9d3",
-            "63683072577d41fa4da0e9d4",
-            "63683072577d41fa4da0e9d5",
-            "63683072577d41fa4da0e9d6"
+            "6696c2ca763f0712c198e003",
+            "6696c2ca763f0712c198e004",
+            "6696c2ca763f0712c198e005",
+            "6696c2ca763f0712c198e006",
+            "6696c2ca763f0712c198e007",
+            "6696c2ca763f0712c198e008",
+            "6696c2ca763f0712c198e009",
+            "6696c2ca763f0712c198e00a",
+            "6696c2ca763f0712c198e00b",
+            "6696c2ca763f0712c198e00c"
           ]
         },
         {
-          "_id": "63683072577d41fa4da0e9d7",
+          "_id": "6696c2ca763f0712c198e00d",
           "name": {
             "ru": "Задачи. Функции, переменные, числа",
-            "en": "",
+            "en": "Tasks. Functions, variables, numbers",
             "es": ""
           },
           "questionGroups": [
-            "63683072577d41fa4da0e9d8"
+            "6696c2ca763f0712c198e00e"
           ],
           "challenges": [
-            "63683072577d41fa4da0e9d9",
-            "63683072577d41fa4da0e9da",
-            "63683072577d41fa4da0e9db",
-            "63683072577d41fa4da0e9dc",
-            "63683072577d41fa4da0e9dd",
-            "63683072577d41fa4da0e9de",
-            "63683072577d41fa4da0e9df",
-            "63683072577d41fa4da0e9e0",
-            "63683072577d41fa4da0e9e1",
-            "63683072577d41fa4da0e9e2"
+            "6696c2ca763f0712c198e03c",
+            "6696c2ca763f0712c198e03d",
+            "6696c2ca763f0712c198e03e",
+            "6696c2ca763f0712c198e03f",
+            "6696c2ca763f0712c198e040",
+            "6696c2ca763f0712c198e041",
+            "6696c2ca763f0712c198e042",
+            "6696c2ca763f0712c198e043",
+            "6696c2ca763f0712c198e044",
+            "6696c2ca763f0712c198e045"
           ]
         },
         {
-          "_id": "63683072577d41fa4da0e9e3",
+          "_id": "6696c2ca763f0712c198e046",
           "name": {
             "ru": "Задачи. Функции, переменные, строки",
-            "en": "",
+            "en": "Tasks. Functions, variables, strings",
             "es": ""
           },
           "questionGroups": [
-            "63683072577d41fa4da0e9e4"
+            "6696c2ca763f0712c198e047"
           ],
           "challenges": [
-            "63683072577d41fa4da0e9e5",
-            "63683072577d41fa4da0e9e6",
-            "63683072577d41fa4da0e9e7",
-            "63683072577d41fa4da0e9e8",
-            "63683072577d41fa4da0e9e9",
-            "63683072577d41fa4da0e9ea",
-            "63683072577d41fa4da0e9eb",
-            "63683072577d41fa4da0e9ec",
-            "63683072577d41fa4da0e9ed",
-            "63683072577d41fa4da0e9ee"
+            "6696c2ca763f0712c198e072",
+            "6696c2ca763f0712c198e073",
+            "6696c2ca763f0712c198e074",
+            "6696c2ca763f0712c198e075",
+            "6696c2ca763f0712c198e076",
+            "6696c2ca763f0712c198e077",
+            "6696c2ca763f0712c198e078",
+            "6696c2ca763f0712c198e079",
+            "6696c2ca763f0712c198e07a",
+            "6696c2ca763f0712c198e07b"
           ]
         },
         {
-          "_id": "63683072577d41fa4da0e9ef",
+          "_id": "6696c2ca763f0712c198e07c",
           "name": {
             "ru": "Область видимости переменных c функциями",
-            "en": "",
+            "en": "Scope of variables with functions",
             "es": ""
           },
           "questionGroups": [
-            "63683072577d41fa4da0e9f0"
+            "6696c2ca763f0712c198e07d"
           ],
           "challenges": [
-            "63683072577d41fa4da0e9f1",
-            "63683072577d41fa4da0e9f2",
-            "63683072577d41fa4da0e9f3",
-            "63683072577d41fa4da0e9f4",
-            "63683072577d41fa4da0e9f5",
-            "63683072577d41fa4da0e9f6",
-            "63683072577d41fa4da0e9f7",
-            "63683072577d41fa4da0e9f8",
-            "63683072577d41fa4da0e9f9",
-            "63683072577d41fa4da0e9fa"
+            "6696c2ca763f0712c198e0a8",
+            "6696c2ca763f0712c198e0a9",
+            "6696c2ca763f0712c198e0aa",
+            "6696c2ca763f0712c198e0ab",
+            "6696c2ca763f0712c198e0ac",
+            "6696c2ca763f0712c198e0ad",
+            "6696c2ca763f0712c198e0ae",
+            "6696c2ca763f0712c198e0af",
+            "6696c2ca763f0712c198e0b0",
+            "6696c2ca763f0712c198e0b1"
           ]
         },
         {
-          "_id": "63683072577d41fa4da0e9fb",
+          "_id": "6696c2ca763f0712c198e0b2",
           "name": {
             "ru": "Результат работы функции в переменную",
-            "en": "",
+            "en": "Result of a function in a variable",
             "es": ""
           },
           "questionGroups": [
-            "63683072577d41fa4da0e9fc"
+            "6696c2ca763f0712c198e0b3"
           ],
           "challenges": [
-            "63683072577d41fa4da0e9fd",
-            "63683072577d41fa4da0e9fe",
-            "63683072577d41fa4da0e9ff",
-            "63683072577d41fa4da0ea00",
-            "63683072577d41fa4da0ea01",
-            "63683072577d41fa4da0ea02",
-            "63683072577d41fa4da0ea03",
-            "63683072577d41fa4da0ea04",
-            "63683072577d41fa4da0ea05",
-            "63683072577d41fa4da0ea06"
+            "6696c2ca763f0712c198e0db",
+            "6696c2ca763f0712c198e0dc",
+            "6696c2ca763f0712c198e0dd",
+            "6696c2ca763f0712c198e0de",
+            "6696c2ca763f0712c198e0df",
+            "6696c2ca763f0712c198e0e0",
+            "6696c2ca763f0712c198e0e1",
+            "6696c2ca763f0712c198e0e2",
+            "6696c2ca763f0712c198e0e3",
+            "6696c2ca763f0712c198e0e4"
           ]
         },
         {
-          "_id": "63683072577d41fa4da0ea07",
+          "_id": "6696c2ca763f0712c198e0e5",
           "name": {
             "ru": "Результат работы функции в другую функцию",
-            "en": "",
+            "en": "Result of a function in another function",
             "es": ""
           },
           "questionGroups": [
-            "63683072577d41fa4da0ea08"
+            "6696c2ca763f0712c198e0e6"
           ],
           "challenges": [
-            "63683072577d41fa4da0ea09",
-            "63683072577d41fa4da0ea0a",
-            "63683072577d41fa4da0ea0b",
-            "63683072577d41fa4da0ea0c",
-            "63683072577d41fa4da0ea0d",
-            "63683072577d41fa4da0ea0e",
-            "63683072577d41fa4da0ea0f",
-            "63683072577d41fa4da0ea10",
-            "63683072577d41fa4da0ea11",
-            "63683072577d41fa4da0ea12"
+            "6696c2ca763f0712c198e10a",
+            "6696c2ca763f0712c198e10b",
+            "6696c2ca763f0712c198e10c",
+            "6696c2ca763f0712c198e10d",
+            "6696c2ca763f0712c198e10e",
+            "6696c2ca763f0712c198e10f",
+            "6696c2ca763f0712c198e110",
+            "6696c2ca763f0712c198e111",
+            "6696c2ca763f0712c198e112",
+            "6696c2ca763f0712c198e113"
           ]
         }
       ]
     },
     {
-      "_id": "635c05ba659f6d77abf1f9f4",
+      "_id": "6696c2ca763f0712c198e114",
       "name": {
         "ru": "Логические операторы. Ветвление. Сравнение",
         "en": "Logical operators. Branching. Comparison",
@@ -885,2575 +885,2575 @@
       },
       "lessons": [
         {
-          "_id": "63689267157a0ef5c22aa31f",
+          "_id": "6696c2ca763f0712c198e115",
           "name": {
             "ru": "Логический тип данных boolean",
-            "en": "",
+            "en": "Logical data type boolean",
             "es": ""
           },
           "questionGroups": [
-            "63689267157a0ef5c22aa320"
+            "6696c2ca763f0712c198e116"
           ],
           "challenges": [
-            "63689267157a0ef5c22aa321",
-            "63689267157a0ef5c22aa322",
-            "63689267157a0ef5c22aa323",
-            "63689267157a0ef5c22aa324",
-            "63689267157a0ef5c22aa325",
-            "63689267157a0ef5c22aa326",
-            "63689267157a0ef5c22aa327",
-            "63689267157a0ef5c22aa328",
-            "63689267157a0ef5c22aa329",
-            "63689267157a0ef5c22aa32a"
+            "6696c2ca763f0712c198e146",
+            "6696c2ca763f0712c198e147",
+            "6696c2ca763f0712c198e148",
+            "6696c2ca763f0712c198e149",
+            "6696c2ca763f0712c198e14a",
+            "6696c2ca763f0712c198e14b",
+            "6696c2ca763f0712c198e14c",
+            "6696c2ca763f0712c198e14d",
+            "6696c2ca763f0712c198e14e",
+            "6696c2ca763f0712c198e14f"
           ]
         },
         {
-          "_id": "63689267157a0ef5c22aa32b",
+          "_id": "6696c2ca763f0712c198e150",
           "name": {
             "ru": "Сравнение чисел. Операторы >, <, >=, <=, ===, !==",
-            "en": "",
+            "en": "Comparison of numbers. Operators >, <, >=, <=, ===, !==",
             "es": ""
           },
           "questionGroups": [
-            "63689267157a0ef5c22aa32c"
+            "6696c2ca763f0712c198e151"
           ],
           "challenges": [
-            "63689267157a0ef5c22aa32d",
-            "63689267157a0ef5c22aa32e",
-            "63689267157a0ef5c22aa32f",
-            "63689267157a0ef5c22aa330",
-            "63689267157a0ef5c22aa331",
-            "63689267157a0ef5c22aa332",
-            "63689267157a0ef5c22aa333",
-            "63689267157a0ef5c22aa334",
-            "63689267157a0ef5c22aa335",
-            "63689267157a0ef5c22aa336"
+            "6696c2ca763f0712c198e180",
+            "6696c2ca763f0712c198e181",
+            "6696c2ca763f0712c198e182",
+            "6696c2ca763f0712c198e183",
+            "6696c2ca763f0712c198e184",
+            "6696c2ca763f0712c198e185",
+            "6696c2ca763f0712c198e186",
+            "6696c2ca763f0712c198e187",
+            "6696c2ca763f0712c198e188",
+            "6696c2ca763f0712c198e189"
           ]
         },
         {
-          "_id": "63689267157a0ef5c22aa337",
+          "_id": "6696c2ca763f0712c198e18a",
           "name": {
             "ru": "Ветвление. Операторы if, else, else if",
-            "en": "",
+            "en": "Branching. Operators if, else, else if",
             "es": ""
           },
           "questionGroups": [
-            "63c094c582c84077cf804e89"
+            "6696c2ca763f0712c198e18b"
           ],
           "challenges": [
-            "63689267157a0ef5c22aa339",
-            "63689267157a0ef5c22aa33a",
-            "63689267157a0ef5c22aa33b",
-            "63689267157a0ef5c22aa33c",
-            "63689267157a0ef5c22aa33d",
-            "63689267157a0ef5c22aa33e",
-            "63689267157a0ef5c22aa33f",
-            "63689267157a0ef5c22aa340",
-            "63689267157a0ef5c22aa341",
-            "63689267157a0ef5c22aa342"
+            "6696c2ca763f0712c198e1ad",
+            "6696c2ca763f0712c198e1ae",
+            "6696c2ca763f0712c198e1af",
+            "6696c2ca763f0712c198e1b0",
+            "6696c2ca763f0712c198e1b1",
+            "6696c2ca763f0712c198e1b2",
+            "6696c2ca763f0712c198e1b3",
+            "6696c2ca763f0712c198e1b4",
+            "6696c2ca763f0712c198e1b5",
+            "6696c2ca763f0712c198e1b6"
           ]
         },
         {
-          "_id": "63689267157a0ef5c22aa343",
+          "_id": "6696c2ca763f0712c198e1b7",
           "name": {
             "ru": "Оператор НЕ. Операторы !, !!",
-            "en": "",
+            "en": "NOT operator. Operators !, !!",
             "es": ""
           },
           "questionGroups": [
-            "63689267157a0ef5c22aa344"
+            "6696c2ca763f0712c198e1b8"
           ],
           "challenges": [
-            "63689267157a0ef5c22aa345",
-            "63689267157a0ef5c22aa346",
-            "63689267157a0ef5c22aa347",
-            "63689267157a0ef5c22aa348",
-            "63689267157a0ef5c22aa349",
-            "63689267157a0ef5c22aa34a",
-            "63689267157a0ef5c22aa34b",
-            "63689267157a0ef5c22aa34c",
-            "63689267157a0ef5c22aa34d",
-            "63689267157a0ef5c22aa34e"
+            "6696c2ca763f0712c198e1e6",
+            "6696c2ca763f0712c198e1e7",
+            "6696c2ca763f0712c198e1e8",
+            "6696c2ca763f0712c198e1e9",
+            "6696c2ca763f0712c198e1ea",
+            "6696c2ca763f0712c198e1eb",
+            "6696c2ca763f0712c198e1ec",
+            "6696c2ca763f0712c198e1ed",
+            "6696c2ca763f0712c198e1ee",
+            "6696c2ca763f0712c198e1ef"
           ]
         },
         {
-          "_id": "63689267157a0ef5c22aa34f",
+          "_id": "6696c2ca763f0712c198e1f0",
           "name": {
             "ru": "Разница между ==, === и !=, !==",
-            "en": "",
+            "en": "Difference between ==, === and !=, !==",
             "es": ""
           },
           "questionGroups": [
-            "63689267157a0ef5c22aa350"
+            "6696c2ca763f0712c198e1f1"
           ],
           "challenges": [
-            "63689267157a0ef5c22aa351",
-            "63689267157a0ef5c22aa352",
-            "63689267157a0ef5c22aa353",
-            "63689267157a0ef5c22aa354",
-            "63689267157a0ef5c22aa355",
-            "63689267157a0ef5c22aa356",
-            "63689267157a0ef5c22aa357",
-            "63689267157a0ef5c22aa359",
-            "63689267157a0ef5c22aa35a",
-            "63689267157a0ef5c22aa358"
+            "6696c2ca763f0712c198e219",
+            "6696c2ca763f0712c198e21a",
+            "6696c2ca763f0712c198e21b",
+            "6696c2ca763f0712c198e21c",
+            "6696c2ca763f0712c198e21d",
+            "6696c2ca763f0712c198e21e",
+            "6696c2ca763f0712c198e21f",
+            "6696c2ca763f0712c198e220",
+            "6696c2ca763f0712c198e221",
+            "6696c2ca763f0712c198e222"
           ]
         },
         {
-          "_id": "63689267157a0ef5c22aa35b",
+          "_id": "6696c2ca763f0712c198e223",
           "name": {
             "ru": "Логическое ИЛИ и И. Операторы ||, &&",
-            "en": "",
+            "en": "Logical OR and AND. Operators ||, &&",
             "es": ""
           },
           "questionGroups": [
-            "63689267157a0ef5c22aa35c"
+            "6696c2ca763f0712c198e224"
           ],
           "challenges": [
-            "63689267157a0ef5c22aa35d",
-            "63689267157a0ef5c22aa35e",
-            "63689267157a0ef5c22aa35f",
-            "63689267157a0ef5c22aa360",
-            "63689267157a0ef5c22aa361",
-            "63689267157a0ef5c22aa362",
-            "63689267157a0ef5c22aa363",
-            "63689267157a0ef5c22aa364",
-            "63689267157a0ef5c22aa365",
-            "63689267157a0ef5c22aa366"
+            "6696c2ca763f0712c198e253",
+            "6696c2ca763f0712c198e254",
+            "6696c2ca763f0712c198e255",
+            "6696c2ca763f0712c198e256",
+            "6696c2ca763f0712c198e257",
+            "6696c2ca763f0712c198e258",
+            "6696c2ca763f0712c198e259",
+            "6696c2ca763f0712c198e25a",
+            "6696c2ca763f0712c198e25b",
+            "6696c2ca763f0712c198e25c"
           ]
         },
         {
-          "_id": "63689267157a0ef5c22aa367",
+          "_id": "6696c2ca763f0712c198e25d",
           "name": {
             "ru": "Логические операторы в функциях",
-            "en": "",
+            "en": "Logical operators in functions",
             "es": ""
           },
           "questionGroups": [],
           "challenges": [
-            "63689267157a0ef5c22aa369",
-            "63689267157a0ef5c22aa36a",
-            "63689267157a0ef5c22aa36b",
-            "63689267157a0ef5c22aa36c",
-            "63689267157a0ef5c22aa36d",
-            "63689267157a0ef5c22aa36e",
-            "63689267157a0ef5c22aa36f",
-            "63689267157a0ef5c22aa370",
-            "63689267157a0ef5c22aa371",
-            "63689267157a0ef5c22aa372"
+            "6696c2ca763f0712c198e25e",
+            "6696c2ca763f0712c198e25f",
+            "6696c2ca763f0712c198e260",
+            "6696c2ca763f0712c198e261",
+            "6696c2ca763f0712c198e262",
+            "6696c2ca763f0712c198e263",
+            "6696c2ca763f0712c198e264",
+            "6696c2ca763f0712c198e265",
+            "6696c2ca763f0712c198e266",
+            "6696c2ca763f0712c198e267"
           ]
         }
       ]
     },
     {
-      "_id": "6439601a98dfa6acc27fc3f7",
+      "_id": "6696c2ca763f0712c198e268",
       "name": {
         "ru": "Округление чисел",
-        "en": "",
+        "en": "Rounding numbers",
         "es": ""
       },
       "lessons": [
         {
-          "_id": "6439601a98dfa6acc27fc3f8",
+          "_id": "6696c2ca763f0712c198e269",
           "name": {
             "ru": "Округление в большую сторону. Math.ceil()",
-            "en": "",
+            "en": "Rounding up. Math.ceil()",
             "es": ""
           },
           "questionGroups": [
-            "6439601a98dfa6acc27fc3f9"
+            "6696c2ca763f0712c198e26a"
           ],
           "challenges": [
-            "6439601a98dfa6acc27fc3fa",
-            "6439601a98dfa6acc27fc3fb",
-            "6439601a98dfa6acc27fc3fc",
-            "6439601a98dfa6acc27fc3fd",
-            "6439601a98dfa6acc27fc3fe",
-            "6439601a98dfa6acc27fc3ff",
-            "6439601a98dfa6acc27fc400",
-            "6439601a98dfa6acc27fc401",
-            "6439601a98dfa6acc27fc402",
-            "6439601a98dfa6acc27fc403"
+            "6696c2ca763f0712c198e299",
+            "6696c2ca763f0712c198e29a",
+            "6696c2ca763f0712c198e29b",
+            "6696c2ca763f0712c198e29c",
+            "6696c2ca763f0712c198e29d",
+            "6696c2ca763f0712c198e29e",
+            "6696c2ca763f0712c198e29f",
+            "6696c2ca763f0712c198e2a0",
+            "6696c2ca763f0712c198e2a1",
+            "6696c2ca763f0712c198e2a2"
           ]
         },
         {
-          "_id": "6439601a98dfa6acc27fc404",
+          "_id": "6696c2ca763f0712c198e2a3",
           "name": {
             "ru": "Округление в меньшую сторону. Math.floor()",
-            "en": "",
+            "en": "Rounding down. Math.floor()",
             "es": ""
           },
           "questionGroups": [
-            "6439601a98dfa6acc27fc405"
+            "6696c2ca763f0712c198e2a4"
           ],
           "challenges": [
-            "6439601a98dfa6acc27fc406",
-            "6439601a98dfa6acc27fc407",
-            "6439601a98dfa6acc27fc408",
-            "6439601a98dfa6acc27fc409",
-            "6439601a98dfa6acc27fc40a",
-            "6439601a98dfa6acc27fc40b",
-            "6439601a98dfa6acc27fc40c",
-            "6439601a98dfa6acc27fc40d",
-            "6439601a98dfa6acc27fc40e",
-            "6439601a98dfa6acc27fc40f"
+            "6696c2ca763f0712c198e2d5",
+            "6696c2ca763f0712c198e2d6",
+            "6696c2ca763f0712c198e2d7",
+            "6696c2ca763f0712c198e2d8",
+            "6696c2ca763f0712c198e2d9",
+            "6696c2ca763f0712c198e2da",
+            "6696c2ca763f0712c198e2db",
+            "6696c2ca763f0712c198e2dc",
+            "6696c2ca763f0712c198e2dd",
+            "6696c2ca763f0712c198e2de"
           ]
         },
         {
-          "_id": "6439601a98dfa6acc27fc410",
+          "_id": "6696c2ca763f0712c198e2df",
           "name": {
             "ru": "Округление до ближайшего целого. Math.round()",
-            "en": "",
+            "en": "Rounding to the nearest integer. Math.round()",
             "es": ""
           },
           "questionGroups": [
-            "6439601a98dfa6acc27fc411"
+            "6696c2ca763f0712c198e2e0"
           ],
           "challenges": [
-            "6439601a98dfa6acc27fc412",
-            "6439601a98dfa6acc27fc413",
-            "6439601a98dfa6acc27fc414",
-            "6439601a98dfa6acc27fc415",
-            "6439601a98dfa6acc27fc416",
-            "6439601a98dfa6acc27fc417",
-            "6439601a98dfa6acc27fc418",
-            "6439601a98dfa6acc27fc419",
-            "6439601a98dfa6acc27fc41a",
-            "6439601a98dfa6acc27fc41b"
+            "6696c2ca763f0712c198e30f",
+            "6696c2ca763f0712c198e310",
+            "6696c2ca763f0712c198e311",
+            "6696c2ca763f0712c198e312",
+            "6696c2ca763f0712c198e313",
+            "6696c2ca763f0712c198e314",
+            "6696c2ca763f0712c198e315",
+            "6696c2ca763f0712c198e316",
+            "6696c2ca763f0712c198e317",
+            "6696c2ca763f0712c198e318"
           ]
         },
         {
-          "_id": "6439601a98dfa6acc27fc41c",
+          "_id": "6696c2ca763f0712c198e319",
           "name": {
             "ru": "Форматирование чисел. toFixed()",
-            "en": "",
+            "en": "Formatting numbers. toFixed()",
             "es": ""
           },
           "questionGroups": [
-            "6439601a98dfa6acc27fc41d"
+            "6696c2ca763f0712c198e31a"
           ],
           "challenges": [
-            "6439601a98dfa6acc27fc41e",
-            "6439601a98dfa6acc27fc41f",
-            "6439601a98dfa6acc27fc420",
-            "6439601a98dfa6acc27fc421",
-            "6439601a98dfa6acc27fc422",
-            "6439601a98dfa6acc27fc423",
-            "6439601a98dfa6acc27fc424",
-            "6439601a98dfa6acc27fc425",
-            "6439601a98dfa6acc27fc426",
-            "6439601a98dfa6acc27fc427"
+            "6696c2ca763f0712c198e347",
+            "6696c2ca763f0712c198e348",
+            "6696c2ca763f0712c198e349",
+            "6696c2ca763f0712c198e34a",
+            "6696c2ca763f0712c198e34b",
+            "6696c2ca763f0712c198e34c",
+            "6696c2ca763f0712c198e34d",
+            "6696c2ca763f0712c198e34e",
+            "6696c2ca763f0712c198e34f",
+            "6696c2ca763f0712c198e350"
           ]
         }
       ]
     },
     {
-      "_id": "63c094c582c84077cf804e4b",
+      "_id": "6696c2ca763f0712c198e351",
       "name": {
         "ru": "Строки",
-        "en": "",
+        "en": "Strings",
         "es": ""
       },
       "lessons": [
         {
-          "_id": "63c094c582c84077cf804e4c",
+          "_id": "6696c2ca763f0712c198e352",
           "name": {
             "ru": "Конкатенация строк",
-            "en": "",
+            "en": "String concatenation",
             "es": ""
           },
           "questionGroups": [
-            "63c094c582c84077cf804e4d"
+            "6696c2ca763f0712c198e353"
           ],
           "challenges": [
-            "63c094c582c84077cf804e4e",
-            "63c094c582c84077cf804e4f",
-            "63c094c582c84077cf804e50",
-            "63c094c582c84077cf804e51",
-            "63c094c582c84077cf804e52",
-            "63c094c582c84077cf804e53",
-            "63c094c582c84077cf804e54",
-            "63c094c582c84077cf804e55",
-            "63c094c582c84077cf804e56",
-            "63c094c582c84077cf804e57"
+            "6696c2ca763f0712c198e386",
+            "6696c2ca763f0712c198e387",
+            "6696c2ca763f0712c198e388",
+            "6696c2ca763f0712c198e389",
+            "6696c2ca763f0712c198e38a",
+            "6696c2ca763f0712c198e38b",
+            "6696c2ca763f0712c198e38c",
+            "6696c2ca763f0712c198e38d",
+            "6696c2ca763f0712c198e38e",
+            "6696c2ca763f0712c198e38f"
           ]
         },
         {
-          "_id": "63c094c582c84077cf804e58",
+          "_id": "6696c2ca763f0712c198e390",
           "name": {
             "ru": "Длина строки",
-            "en": "",
+            "en": "String length",
             "es": ""
           },
           "questionGroups": [
-            "63c094c582c84077cf804e59"
+            "6696c2ca763f0712c198e391"
           ],
           "challenges": [
-            "63c094c582c84077cf804e5a",
-            "63c094c582c84077cf804e5b",
-            "63c094c582c84077cf804e5c",
-            "63c094c582c84077cf804e5d",
-            "63c094c582c84077cf804e5e",
-            "63c094c582c84077cf804e5f",
-            "63c094c582c84077cf804e60",
-            "63c094c582c84077cf804e61",
-            "63c094c582c84077cf804e62",
-            "63c094c582c84077cf804e63"
+            "6696c2ca763f0712c198e3bb",
+            "6696c2ca763f0712c198e3bc",
+            "6696c2ca763f0712c198e3bd",
+            "6696c2ca763f0712c198e3be",
+            "6696c2ca763f0712c198e3bf",
+            "6696c2ca763f0712c198e3c0",
+            "6696c2ca763f0712c198e3c1",
+            "6696c2ca763f0712c198e3c2",
+            "6696c2ca763f0712c198e3c3",
+            "6696c2ca763f0712c198e3c4"
           ]
         },
         {
-          "_id": "63c094c582c84077cf804e64",
+          "_id": "6696c2ca763f0712c198e3c5",
           "name": {
             "ru": "Индексы в строке",
-            "en": "",
+            "en": "Indexes in a string",
             "es": ""
           },
           "questionGroups": [
-            "63c094c582c84077cf804e65"
+            "6696c2ca763f0712c198e3c6"
           ],
           "challenges": [
-            "63c094c582c84077cf804e66",
-            "63c094c582c84077cf804e67",
-            "63c094c582c84077cf804e68",
-            "63c094c582c84077cf804e69",
-            "63c094c582c84077cf804e6a",
-            "63c094c582c84077cf804e6b",
-            "63c094c582c84077cf804e6c",
-            "63c094c582c84077cf804e6d",
-            "63c094c582c84077cf804e6e",
-            "63c094c582c84077cf804e6f"
+            "6696c2ca763f0712c198e3f9",
+            "6696c2ca763f0712c198e3fa",
+            "6696c2ca763f0712c198e3fb",
+            "6696c2ca763f0712c198e3fc",
+            "6696c2ca763f0712c198e3fd",
+            "6696c2ca763f0712c198e3fe",
+            "6696c2ca763f0712c198e3ff",
+            "6696c2ca763f0712c198e400",
+            "6696c2ca763f0712c198e401",
+            "6696c2ca763f0712c198e402"
           ]
         },
         {
-          "_id": "63c094c582c84077cf804e70",
+          "_id": "6696c2ca763f0712c198e403",
           "name": {
             "ru": "Изменение регистра. Методы toUpperCase, toLowerCase",
-            "en": "",
+            "en": "Changing the case. Methods toUpperCase, toLowerCase",
             "es": ""
           },
           "questionGroups": [
-            "63c094c582c84077cf804e71"
+            "6696c2ca763f0712c198e404"
           ],
           "challenges": [
-            "63c094c582c84077cf804e72",
-            "63c094c582c84077cf804e73",
-            "63c094c582c84077cf804e74",
-            "63c094c582c84077cf804e75",
-            "63c094c582c84077cf804e76",
-            "63c094c582c84077cf804e77",
-            "63c094c582c84077cf804e78",
-            "63c094c582c84077cf804e79",
-            "63c094c582c84077cf804e7a",
-            "63c094c582c84077cf804e7b"
+            "6696c2ca763f0712c198e42e",
+            "6696c2ca763f0712c198e42f",
+            "6696c2ca763f0712c198e430",
+            "6696c2ca763f0712c198e431",
+            "6696c2ca763f0712c198e432",
+            "6696c2ca763f0712c198e433",
+            "6696c2ca763f0712c198e434",
+            "6696c2ca763f0712c198e435",
+            "6696c2ca763f0712c198e436",
+            "6696c2ca763f0712c198e437"
           ]
         },
         {
-          "_id": "63c094c582c84077cf804e7c",
+          "_id": "6696c2ca763f0712c198e438",
           "name": {
             "ru": "Повторение строки. Метод repeat",
-            "en": "",
+            "en": "Repeat string. Method repeat",
             "es": ""
           },
           "questionGroups": [
-            "63c094c582c84077cf804e7d"
+            "6696c2ca763f0712c198e439"
           ],
           "challenges": [
-            "63c094c582c84077cf804e7e",
-            "63c094c582c84077cf804e7f",
-            "63c094c582c84077cf804e80",
-            "63c094c582c84077cf804e81",
-            "63c094c582c84077cf804e82",
-            "63c094c582c84077cf804e83",
-            "63c094c582c84077cf804e84",
-            "63c094c582c84077cf804e85",
-            "63c094c582c84077cf804e86",
-            "63c094c582c84077cf804e87"
+            "6696c2ca763f0712c198e469",
+            "6696c2ca763f0712c198e46a",
+            "6696c2ca763f0712c198e46b",
+            "6696c2ca763f0712c198e46c",
+            "6696c2ca763f0712c198e46d",
+            "6696c2ca763f0712c198e46e",
+            "6696c2ca763f0712c198e46f",
+            "6696c2ca763f0712c198e470",
+            "6696c2ca763f0712c198e471",
+            "6696c2ca763f0712c198e472"
           ]
         },
         {
-          "_id": "63c094c582c84077cf804e88",
+          "_id": "6696c2ca763f0712c198e473",
           "name": {
             "ru": "Удаление пробелов. Методы trim, trimStart, trimEnd",
-            "en": "",
+            "en": "Removing spaces. Methods trim, trimStart, trimEnd",
             "es": ""
           },
           "questionGroups": [
-            "63689267157a0ef5c22aa338"
+            "6696c2ca763f0712c198e474"
           ],
           "challenges": [
-            "63c094c582c84077cf804e8a",
-            "63c094c582c84077cf804e8b",
-            "63c094c582c84077cf804e8c",
-            "63c094c582c84077cf804e8d",
-            "63c094c582c84077cf804e8e",
-            "63c094c582c84077cf804e8f",
-            "63c094c582c84077cf804e90",
-            "63c094c582c84077cf804e91",
-            "63c094c582c84077cf804e92",
-            "63c094c582c84077cf804e93"
+            "6696c2ca763f0712c198e4a3",
+            "6696c2ca763f0712c198e4a4",
+            "6696c2ca763f0712c198e4a5",
+            "6696c2ca763f0712c198e4a6",
+            "6696c2ca763f0712c198e4a7",
+            "6696c2ca763f0712c198e4a8",
+            "6696c2ca763f0712c198e4a9",
+            "6696c2ca763f0712c198e4aa",
+            "6696c2ca763f0712c198e4ab",
+            "6696c2ca763f0712c198e4ac"
           ]
         },
         {
-          "_id": "63c094c582c84077cf804e94",
+          "_id": "6696c2ca763f0712c198e4ad",
           "name": {
             "ru": "Поиск индекса. Методы indexOf, lastIndexOf",
-            "en": "",
+            "en": "Search index. Methods indexOf, lastIndexOf",
             "es": ""
           },
           "questionGroups": [
-            "63c094c582c84077cf804e95"
+            "6696c2ca763f0712c198e4ae"
           ],
           "challenges": [
-            "63c094c582c84077cf804e96",
-            "63c094c582c84077cf804e97",
-            "63c094c582c84077cf804e98",
-            "63c094c582c84077cf804e99",
-            "63c094c582c84077cf804e9a",
-            "63c094c582c84077cf804e9b",
-            "63c094c582c84077cf804e9c",
-            "63c094c582c84077cf804e9d",
-            "63c094c582c84077cf804e9e",
-            "63c094c582c84077cf804e9f"
+            "6696c2ca763f0712c198e4e0",
+            "6696c2ca763f0712c198e4e1",
+            "6696c2ca763f0712c198e4e2",
+            "6696c2ca763f0712c198e4e3",
+            "6696c2ca763f0712c198e4e4",
+            "6696c2ca763f0712c198e4e5",
+            "6696c2ca763f0712c198e4e6",
+            "6696c2ca763f0712c198e4e7",
+            "6696c2ca763f0712c198e4e8",
+            "6696c2ca763f0712c198e4e9"
           ]
         }
       ]
     },
     {
-      "_id": "63c09a67c7887ca79e289f67",
+      "_id": "6696c2ca763f0712c198e4ea",
       "name": {
         "ru": "Объекты",
-        "en": "",
+        "en": "Objects",
         "es": ""
       },
       "lessons": [
         {
-          "_id": "63c09a67c7887ca79e289f68",
+          "_id": "6696c2ca763f0712c198e4eb",
           "name": {
             "ru": "Создание объекта",
-            "en": "",
+            "en": "Creating an object",
             "es": ""
           },
           "questionGroups": [
-            "63c09a67c7887ca79e289f69"
+            "6696c2ca763f0712c198e4ec"
           ],
           "challenges": [
-            "63c09a67c7887ca79e289f6a",
-            "63c09a67c7887ca79e289f83",
-            "63c09a67c7887ca79e289f84",
-            "63c09a67c7887ca79e289f85",
-            "63c09a67c7887ca79e289f86",
-            "63c09a67c7887ca79e289f87",
-            "63c09a67c7887ca79e289f88",
-            "63c09a67c7887ca79e289f89",
-            "63c09a67c7887ca79e289f8a",
-            "63c09a67c7887ca79e289f8b"
+            "6696c2ca763f0712c198e51c",
+            "6696c2ca763f0712c198e51d",
+            "6696c2ca763f0712c198e51e",
+            "6696c2ca763f0712c198e51f",
+            "6696c2ca763f0712c198e520",
+            "6696c2ca763f0712c198e521",
+            "6696c2ca763f0712c198e522",
+            "6696c2ca763f0712c198e523",
+            "6696c2ca763f0712c198e524",
+            "6696c2ca763f0712c198e525"
           ]
         },
         {
-          "_id": "63c09a67c7887ca79e289f74",
+          "_id": "6696c2ca763f0712c198e526",
           "name": {
             "ru": "Доступ к свойствам объекта",
-            "en": "",
+            "en": "Access to object properties",
             "es": ""
           },
           "questionGroups": [
-            "63c09a67c7887ca79e289f75"
+            "6696c2ca763f0712c198e527"
           ],
           "challenges": [
-            "63c09a67c7887ca79e289f76",
-            "63c09a67c7887ca79e289f77",
-            "63c09a67c7887ca79e289f78",
-            "63c09a67c7887ca79e289f79",
-            "63c09a67c7887ca79e289f7a",
-            "63c09a67c7887ca79e289f7b",
-            "63c09a67c7887ca79e289f7c",
-            "63c09a67c7887ca79e289f7d",
-            "63c09a67c7887ca79e289f7e",
-            "63c09a67c7887ca79e289f7f"
+            "6696c2ca763f0712c198e554",
+            "6696c2ca763f0712c198e555",
+            "6696c2ca763f0712c198e556",
+            "6696c2ca763f0712c198e557",
+            "6696c2ca763f0712c198e558",
+            "6696c2ca763f0712c198e559",
+            "6696c2ca763f0712c198e55a",
+            "6696c2ca763f0712c198e55b",
+            "6696c2ca763f0712c198e55c",
+            "6696c2ca763f0712c198e55d"
           ]
         },
         {
-          "_id": "63c09a67c7887ca79e289f80",
+          "_id": "6696c2ca763f0712c198e55e",
           "name": {
             "ru": "Проверка наличия свойства в объекте",
-            "en": "",
+            "en": "Checking for the presence of a property in an object",
             "es": ""
           },
           "questionGroups": [
-            "63c09a67c7887ca79e289f81"
+            "6696c2ca763f0712c198e55f"
           ],
           "challenges": [
-            "63c09a67c7887ca79e289f82",
-            "63c09a67c7887ca79e289f6b",
-            "63c09a67c7887ca79e289f6c",
-            "63c09a67c7887ca79e289f6d",
-            "63c09a67c7887ca79e289f6e",
-            "63c09a67c7887ca79e289f6f",
-            "63c09a67c7887ca79e289f70",
-            "63c09a67c7887ca79e289f71",
-            "63c09a67c7887ca79e289f72",
-            "63c09a67c7887ca79e289f73"
+            "6696c2ca763f0712c198e592",
+            "6696c2ca763f0712c198e593",
+            "6696c2ca763f0712c198e594",
+            "6696c2ca763f0712c198e595",
+            "6696c2ca763f0712c198e596",
+            "6696c2ca763f0712c198e597",
+            "6696c2ca763f0712c198e598",
+            "6696c2ca763f0712c198e599",
+            "6696c2ca763f0712c198e59a",
+            "6696c2ca763f0712c198e59b"
           ]
         },
         {
-          "_id": "63c09a67c7887ca79e289f8c",
+          "_id": "6696c2ca763f0712c198e59c",
           "name": {
             "ru": "Изменение свойств объекта",
-            "en": "",
+            "en": "Changing object properties",
             "es": ""
           },
           "questionGroups": [
-            "63c09a67c7887ca79e289f8d"
+            "6696c2ca763f0712c198e59d"
           ],
           "challenges": [
-            "63c09a67c7887ca79e289f8e",
-            "63c09a67c7887ca79e289f8f",
-            "63c09a67c7887ca79e289f90",
-            "63c09a67c7887ca79e289f91",
-            "63c09a67c7887ca79e289f92",
-            "63c09a67c7887ca79e289f93",
-            "63c09a67c7887ca79e289f94",
-            "63c09a67c7887ca79e289f95",
-            "63c09a67c7887ca79e289f96",
-            "63c09a67c7887ca79e289f97"
+            "6696c2ca763f0712c198e5ce",
+            "6696c2ca763f0712c198e5cf",
+            "6696c2ca763f0712c198e5d0",
+            "6696c2ca763f0712c198e5d1",
+            "6696c2ca763f0712c198e5d2",
+            "6696c2ca763f0712c198e5d3",
+            "6696c2ca763f0712c198e5d4",
+            "6696c2ca763f0712c198e5d5",
+            "6696c2ca763f0712c198e5d6",
+            "6696c2ca763f0712c198e5d7"
           ]
         },
         {
-          "_id": "63c09a67c7887ca79e289f98",
+          "_id": "6696c2ca763f0712c198e5d8",
           "name": {
             "ru": "Добавление свойств объекта",
-            "en": "",
+            "en": "Adding object properties",
             "es": ""
           },
           "questionGroups": [
-            "63c09a67c7887ca79e289f99"
+            "6696c2ca763f0712c198e5d9"
           ],
           "challenges": [
-            "63c09a67c7887ca79e289f9a",
-            "63c09a67c7887ca79e289f9b",
-            "63c09a67c7887ca79e289f9c",
-            "63c09a67c7887ca79e289f9d",
-            "63c09a67c7887ca79e289f9e",
-            "63c09a67c7887ca79e289f9f",
-            "63c09a67c7887ca79e289fa0",
-            "63c09a67c7887ca79e289fa1",
-            "63c09a67c7887ca79e289fa2",
-            "63c09a67c7887ca79e289fa3"
+            "6696c2ca763f0712c198e606",
+            "6696c2ca763f0712c198e607",
+            "6696c2ca763f0712c198e608",
+            "6696c2ca763f0712c198e609",
+            "6696c2ca763f0712c198e60a",
+            "6696c2ca763f0712c198e60b",
+            "6696c2ca763f0712c198e60c",
+            "6696c2ca763f0712c198e60d",
+            "6696c2ca763f0712c198e60e",
+            "6696c2ca763f0712c198e60f"
           ]
         },
         {
-          "_id": "63c09a67c7887ca79e289fa4",
+          "_id": "6696c2ca763f0712c198e610",
           "name": {
             "ru": "Удаление свойств объекта",
-            "en": "",
+            "en": "Deleting object properties",
             "es": ""
           },
           "questionGroups": [
-            "63c09a67c7887ca79e289fa5"
+            "6696c2ca763f0712c198e611"
           ],
           "challenges": [
-            "63c09a67c7887ca79e289fa6",
-            "63c09a67c7887ca79e289fa7",
-            "63c09a67c7887ca79e289fa8",
-            "63c09a67c7887ca79e289fa9",
-            "63c09a67c7887ca79e289faa",
-            "63c09a67c7887ca79e289fab",
-            "63c09a67c7887ca79e289fac",
-            "63c09a67c7887ca79e289fad",
-            "63c09a67c7887ca79e289fae",
-            "63c09a67c7887ca79e289faf"
+            "6696c2ca763f0712c198e642",
+            "6696c2ca763f0712c198e643",
+            "6696c2ca763f0712c198e644",
+            "6696c2ca763f0712c198e645",
+            "6696c2ca763f0712c198e646",
+            "6696c2ca763f0712c198e647",
+            "6696c2ca763f0712c198e648",
+            "6696c2ca763f0712c198e649",
+            "6696c2ca763f0712c198e64a",
+            "6696c2ca763f0712c198e64b"
           ]
         },
         {
-          "_id": "63c09a67c7887ca79e289fb0",
+          "_id": "6696c2ca763f0712c198e64c",
           "name": {
             "ru": "Ссылочный тип данных. Копирование объектов",
-            "en": "",
+            "en": "Reference data type. Copying objects",
             "es": ""
           },
           "questionGroups": [
-            "63c09a67c7887ca79e289fb1"
+            "6696c2ca763f0712c198e64d"
           ],
           "challenges": [
-            "63c09a67c7887ca79e289fb2",
-            "63c09a67c7887ca79e289fb3",
-            "63c09a67c7887ca79e289fb4",
-            "63c09a67c7887ca79e289fb5",
-            "63c09a67c7887ca79e289fb6",
-            "63c09a67c7887ca79e289fb7",
-            "63c09a67c7887ca79e289fb8",
-            "63c09a67c7887ca79e289fb9",
-            "63c09a67c7887ca79e289fba",
-            "63c09a67c7887ca79e289fbb"
+            "6696c2ca763f0712c198e67a",
+            "6696c2ca763f0712c198e67b",
+            "6696c2ca763f0712c198e67c",
+            "6696c2ca763f0712c198e67d",
+            "6696c2ca763f0712c198e67e",
+            "6696c2ca763f0712c198e67f",
+            "6696c2ca763f0712c198e680",
+            "6696c2ca763f0712c198e681",
+            "6696c2ca763f0712c198e682",
+            "6696c2ca763f0712c198e683"
           ]
         },
         {
-          "_id": "63c09a67c7887ca79e289fbc",
+          "_id": "6696c2ca763f0712c198e684",
           "name": {
             "ru": "Задания на комбинирование всего, что мы знаем",
-            "en": "",
+            "en": "Tasks for combining everything we know",
             "es": ""
           },
           "questionGroups": [
-            "63c09a67c7887ca79e289fbd"
+            "6696c2ca763f0712c198e685"
           ],
           "challenges": [
-            "63c09a67c7887ca79e289fbe",
-            "63c09a67c7887ca79e289fbf",
-            "63c09a67c7887ca79e289fc0",
-            "63c09a67c7887ca79e289fc1",
-            "63c09a67c7887ca79e289fc2",
-            "63c09a67c7887ca79e289fc3",
-            "63c09a67c7887ca79e289fc4",
-            "63c09a67c7887ca79e289fc5",
-            "63c09a67c7887ca79e289fc6",
-            "63c09a67c7887ca79e289fc7"
+            "6696c2ca763f0712c198e6b6",
+            "6696c2ca763f0712c198e6b7",
+            "6696c2ca763f0712c198e6b8",
+            "6696c2ca763f0712c198e6b9",
+            "6696c2ca763f0712c198e6ba",
+            "6696c2ca763f0712c198e6bb",
+            "6696c2ca763f0712c198e6bc",
+            "6696c2ca763f0712c198e6bd",
+            "6696c2ca763f0712c198e6be",
+            "6696c2ca763f0712c198e6bf"
           ]
         }
       ]
     },
     {
-      "_id": "63c09b2fcf0eea67a07bcec7",
+      "_id": "6696c2ca763f0712c198e6c0",
       "name": {
         "ru": "Массивы",
-        "en": "",
+        "en": "Arrays",
         "es": ""
       },
       "lessons": [
         {
-          "_id": "63c09b2fcf0eea67a07bcec8",
+          "_id": "6696c2ca763f0712c198e6c1",
           "name": {
             "ru": "Создание массива. Свойство length",
-            "en": "",
+            "en": "Creating an array. Length property",
             "es": ""
           },
           "questionGroups": [
-            "63c09b2fcf0eea67a07bcec9"
+            "6696c2ca763f0712c198e6c2"
           ],
           "challenges": [
-            "63c09b2fcf0eea67a07bceca",
-            "63c09b2fcf0eea67a07bcecb",
-            "63c09b2fcf0eea67a07bcecc",
-            "63c09b2fcf0eea67a07bcecd",
-            "63c09b2fcf0eea67a07bcece",
-            "63c09b2fcf0eea67a07bcecf",
-            "63c09b2fcf0eea67a07bced0",
-            "63c09b2fcf0eea67a07bced1",
-            "63c09b2fcf0eea67a07bced2",
-            "63c09b2fcf0eea67a07bced3"
+            "6696c2ca763f0712c198e6f3",
+            "6696c2ca763f0712c198e6f4",
+            "6696c2ca763f0712c198e6f5",
+            "6696c2ca763f0712c198e6f6",
+            "6696c2ca763f0712c198e6f7",
+            "6696c2ca763f0712c198e6f8",
+            "6696c2ca763f0712c198e6f9",
+            "6696c2ca763f0712c198e6fa",
+            "6696c2ca763f0712c198e6fb",
+            "6696c2ca763f0712c198e6fc"
           ]
         },
         {
-          "_id": "63c09b2fcf0eea67a07bced4",
+          "_id": "6696c2ca763f0712c198e6fd",
           "name": {
             "ru": "Доступ к элементам массива",
-            "en": "",
+            "en": "Access to array elements",
             "es": ""
           },
           "questionGroups": [
-            "63c09b2fcf0eea67a07bced5"
+            "6696c2ca763f0712c198e6fe"
           ],
           "challenges": [
-            "63c09b2fcf0eea67a07bced6",
-            "63c09b2fcf0eea67a07bced7",
-            "63c09b2fcf0eea67a07bced8",
-            "63c09b2fcf0eea67a07bced9",
-            "63c09b2fcf0eea67a07bceda",
-            "63c09b2fcf0eea67a07bcedb",
-            "63c09b2fcf0eea67a07bcedc",
-            "63c09b2fcf0eea67a07bcedd",
-            "63c09b2fcf0eea67a07bcede",
-            "63c09b2fcf0eea67a07bcedf"
+            "6696c2ca763f0712c198e731",
+            "6696c2ca763f0712c198e732",
+            "6696c2ca763f0712c198e733",
+            "6696c2ca763f0712c198e734",
+            "6696c2ca763f0712c198e735",
+            "6696c2ca763f0712c198e736",
+            "6696c2ca763f0712c198e737",
+            "6696c2ca763f0712c198e738",
+            "6696c2ca763f0712c198e739",
+            "6696c2ca763f0712c198e73a"
           ]
         },
         {
-          "_id": "63c09b2fcf0eea67a07bcee0",
+          "_id": "6696c2ca763f0712c198e73b",
           "name": {
             "ru": "Проверка наличия элемента в массиве",
-            "en": "",
+            "en": "Checking for the presence of an element in an array",
             "es": ""
           },
           "questionGroups": [
-            "63c09b2fcf0eea67a07bcee1"
+            "6696c2ca763f0712c198e73c"
           ],
           "challenges": [
-            "63c09b2fcf0eea67a07bcee2",
-            "63c09b2fcf0eea67a07bcee3",
-            "63c09b2fcf0eea67a07bcee4",
-            "63c09b2fcf0eea67a07bcee5",
-            "63c09b2fcf0eea67a07bcee6",
-            "63c09b2fcf0eea67a07bcee7",
-            "63c09b2fcf0eea67a07bcee8",
-            "63c09b2fcf0eea67a07bcee9",
-            "63c09b2fcf0eea67a07bceea",
-            "63c09b2fcf0eea67a07bceeb"
+            "6696c2ca763f0712c198e76d",
+            "6696c2ca763f0712c198e76e",
+            "6696c2ca763f0712c198e76f",
+            "6696c2ca763f0712c198e770",
+            "6696c2ca763f0712c198e771",
+            "6696c2ca763f0712c198e772",
+            "6696c2ca763f0712c198e773",
+            "6696c2ca763f0712c198e774",
+            "6696c2ca763f0712c198e775",
+            "6696c2ca763f0712c198e776"
           ]
         },
         {
-          "_id": "63c09b2fcf0eea67a07bceec",
+          "_id": "6696c2ca763f0712c198e777",
           "name": {
             "ru": "Изменение элементов массива",
-            "en": "",
+            "en": "Changing array elements",
             "es": ""
           },
           "questionGroups": [
-            "63c09b2fcf0eea67a07bceed"
+            "6696c2ca763f0712c198e778"
           ],
           "challenges": [
-            "63c09b2fcf0eea67a07bceee",
-            "63c09b2fcf0eea67a07bceef",
-            "63c09b2fcf0eea67a07bcef0",
-            "63c09b2fcf0eea67a07bcef1",
-            "63c09b2fcf0eea67a07bcef2",
-            "63c09b2fcf0eea67a07bcef3",
-            "63c09b2fcf0eea67a07bcef4",
-            "63c09b2fcf0eea67a07bcef5",
-            "63c09b2fcf0eea67a07bcef6",
-            "63c09b2fcf0eea67a07bcef7"
+            "6696c2ca763f0712c198e7ab",
+            "6696c2ca763f0712c198e7ac",
+            "6696c2ca763f0712c198e7ad",
+            "6696c2ca763f0712c198e7ae",
+            "6696c2ca763f0712c198e7af",
+            "6696c2ca763f0712c198e7b0",
+            "6696c2ca763f0712c198e7b1",
+            "6696c2ca763f0712c198e7b2",
+            "6696c2ca763f0712c198e7b3",
+            "6696c2ca763f0712c198e7b4"
           ]
         },
         {
-          "_id": "63c09b2fcf0eea67a07bcef8",
+          "_id": "6696c2ca763f0712c198e7b5",
           "name": {
             "ru": "Добавление элементов в массив",
-            "en": "",
+            "en": "Adding elements to an array",
             "es": ""
           },
           "questionGroups": [
-            "63c09b2fcf0eea67a07bcef9"
+            "6696c2ca763f0712c198e7b6"
           ],
           "challenges": [
-            "63c09b2fcf0eea67a07bcefa",
-            "63c09b2fcf0eea67a07bcefb",
-            "63c09b2fcf0eea67a07bcefc",
-            "63c09b2fcf0eea67a07bcefd",
-            "63c09b2fcf0eea67a07bcefe",
-            "63c09b2fcf0eea67a07bceff",
-            "63c09b2fcf0eea67a07bcf00",
-            "63c09b2fcf0eea67a07bcf01",
-            "63c09b2fcf0eea67a07bcf02",
-            "63c09b2fcf0eea67a07bcf03"
+            "6696c2ca763f0712c198e7e7",
+            "6696c2ca763f0712c198e7e8",
+            "6696c2ca763f0712c198e7e9",
+            "6696c2ca763f0712c198e7ea",
+            "6696c2ca763f0712c198e7eb",
+            "6696c2ca763f0712c198e7ec",
+            "6696c2ca763f0712c198e7ed",
+            "6696c2ca763f0712c198e7ee",
+            "6696c2ca763f0712c198e7ef",
+            "6696c2ca763f0712c198e7f0"
           ]
         },
         {
-          "_id": "63c09b2fcf0eea67a07bcf04",
+          "_id": "6696c2ca763f0712c198e7f1",
           "name": {
             "ru": "Удаление элементов из массива",
-            "en": "",
+            "en": "Removing items from an array",
             "es": ""
           },
           "questionGroups": [
-            "63c09b2fcf0eea67a07bcf05"
+            "6696c2ca763f0712c198e7f2"
           ],
           "challenges": [
-            "63c09b2fcf0eea67a07bcf06",
-            "63c09b2fcf0eea67a07bcf07",
-            "63c09b2fcf0eea67a07bcf08",
-            "63c09b2fcf0eea67a07bcf09",
-            "63c09b2fcf0eea67a07bcf0a",
-            "63c09b2fcf0eea67a07bcf0b",
-            "63c09b2fcf0eea67a07bcf0c",
-            "63c09b2fcf0eea67a07bcf0d",
-            "63c09b2fcf0eea67a07bcf0e",
-            "63c09b2fcf0eea67a07bcf0f"
+            "6696c2ca763f0712c198e81f",
+            "6696c2ca763f0712c198e820",
+            "6696c2ca763f0712c198e821",
+            "6696c2ca763f0712c198e822",
+            "6696c2ca763f0712c198e823",
+            "6696c2ca763f0712c198e824",
+            "6696c2ca763f0712c198e825",
+            "6696c2ca763f0712c198e826",
+            "6696c2ca763f0712c198e827",
+            "6696c2ca763f0712c198e828"
           ]
         },
         {
-          "_id": "63c09b2fcf0eea67a07bcf10",
+          "_id": "6696c2ca763f0712c198e829",
           "name": {
             "ru": "Копирование массивов",
-            "en": "",
+            "en": "Copying arrays",
             "es": ""
           },
           "questionGroups": [
-            "63c09b2fcf0eea67a07bcf11"
+            "6696c2ca763f0712c198e82a"
           ],
           "challenges": [
-            "63c09b2fcf0eea67a07bcf12",
-            "63c09b2fcf0eea67a07bcf13",
-            "63c09b2fcf0eea67a07bcf14",
-            "63c09b2fcf0eea67a07bcf15",
-            "63c09b2fcf0eea67a07bcf16",
-            "63c09b2fcf0eea67a07bcf17",
-            "63c09b2fcf0eea67a07bcf18",
-            "63c09b2fcf0eea67a07bcf19",
-            "63c09b2fcf0eea67a07bcf1a",
-            "63c09b2fcf0eea67a07bcf1b"
+            "6696c2ca763f0712c198e85b",
+            "6696c2ca763f0712c198e85c",
+            "6696c2ca763f0712c198e85d",
+            "6696c2ca763f0712c198e85e",
+            "6696c2ca763f0712c198e85f",
+            "6696c2ca763f0712c198e860",
+            "6696c2ca763f0712c198e861",
+            "6696c2ca763f0712c198e862",
+            "6696c2ca763f0712c198e863",
+            "6696c2ca763f0712c198e864"
           ]
         },
         {
-          "_id": "63c09b2fcf0eea67a07bcf1c",
+          "_id": "6696c2ca763f0712c198e865",
           "name": {
             "ru": "Задания на комбинирование всего, что мы знаем",
-            "en": "",
+            "en": "Exercises on combining everything we know",
             "es": ""
           },
           "questionGroups": [
-            "63c09b2fcf0eea67a07bcf1d"
+            "6696c2ca763f0712c198e866"
           ],
           "challenges": [
-            "63c09b2fcf0eea67a07bcf1e",
-            "63c09b2fcf0eea67a07bcf1f",
-            "63c09b2fcf0eea67a07bcf20",
-            "63c09b2fcf0eea67a07bcf21",
-            "63c09b2fcf0eea67a07bcf22",
-            "63c09b2fcf0eea67a07bcf23",
-            "63c09b2fcf0eea67a07bcf24",
-            "63c09b2fcf0eea67a07bcf25",
-            "63c09b2fcf0eea67a07bcf26",
-            "63c09b2fcf0eea67a07bcf27"
+            "6696c2ca763f0712c198e898",
+            "6696c2ca763f0712c198e899",
+            "6696c2ca763f0712c198e89a",
+            "6696c2ca763f0712c198e89b",
+            "6696c2ca763f0712c198e89c",
+            "6696c2ca763f0712c198e89d",
+            "6696c2ca763f0712c198e89e",
+            "6696c2ca763f0712c198e89f",
+            "6696c2ca763f0712c198e8a0",
+            "6696c2ca763f0712c198e8a1"
           ]
         }
       ]
     },
     {
-      "_id": "642247bf255c1d196990e5a6",
+      "_id": "6696c2ca763f0712c198e8a2",
       "name": {
         "ru": "Цикл for",
-        "en": "",
+        "en": "For loop",
         "es": ""
       },
       "lessons": [
         {
-          "_id": "642247bf255c1d196990e5a7",
+          "_id": "6696c2ca763f0712c198e8a3",
           "name": {
             "ru": "Цикл for. Наполнение массива числами",
-            "en": "",
+            "en": "For loop. Filling an array with numbers",
             "es": ""
           },
           "questionGroups": [
-            "642247bf255c1d196990e5a8"
+            "6696c2ca763f0712c198e8a4"
           ],
           "challenges": [
-            "642247bf255c1d196990e5a9",
-            "642247bf255c1d196990e5aa",
-            "642247bf255c1d196990e5ab",
-            "642247bf255c1d196990e5ac",
-            "642247bf255c1d196990e5ad",
-            "642247bf255c1d196990e5ae",
-            "642247bf255c1d196990e5af",
-            "642247bf255c1d196990e5b0",
-            "642247bf255c1d196990e5b1",
-            "642247bf255c1d196990e5b2"
+            "6696c2ca763f0712c198e8d3",
+            "6696c2ca763f0712c198e8d4",
+            "6696c2ca763f0712c198e8d5",
+            "6696c2ca763f0712c198e8d6",
+            "6696c2ca763f0712c198e8d7",
+            "6696c2ca763f0712c198e8d8",
+            "6696c2ca763f0712c198e8d9",
+            "6696c2ca763f0712c198e8da",
+            "6696c2ca763f0712c198e8db",
+            "6696c2ca763f0712c198e8dc"
           ]
         },
         {
-          "_id": "642247bf255c1d196990e5b3",
+          "_id": "6696c2ca763f0712c198e8dd",
           "name": {
             "ru": "Перебор массива",
-            "en": "",
+            "en": "Array traversal",
             "es": ""
           },
           "questionGroups": [
-            "642247bf255c1d196990e5b4"
+            "6696c2ca763f0712c198e8de"
           ],
           "challenges": [
-            "642247bf255c1d196990e5b5",
-            "642247bf255c1d196990e5b6",
-            "642247bf255c1d196990e5b7",
-            "642247bf255c1d196990e5b8",
-            "642247bf255c1d196990e5b9",
-            "642247bf255c1d196990e5ba",
-            "642247bf255c1d196990e5bb",
-            "642247bf255c1d196990e5bc",
-            "642247bf255c1d196990e5bd",
-            "642247bf255c1d196990e5be"
+            "6696c2ca763f0712c198e911",
+            "6696c2ca763f0712c198e912",
+            "6696c2ca763f0712c198e913",
+            "6696c2ca763f0712c198e914",
+            "6696c2ca763f0712c198e915",
+            "6696c2ca763f0712c198e916",
+            "6696c2ca763f0712c198e917",
+            "6696c2ca763f0712c198e918",
+            "6696c2ca763f0712c198e919",
+            "6696c2ca763f0712c198e91a"
           ]
         },
         {
-          "_id": "642247bf255c1d196990e5bf",
+          "_id": "6696c2ca763f0712c198e91b",
           "name": {
             "ru": "Перебор строки",
-            "en": "",
+            "en": "String traversal",
             "es": ""
           },
           "questionGroups": [
-            "642247bf255c1d196990e5c0"
+            "6696c2ca763f0712c198e91c"
           ],
           "challenges": [
-            "642247bf255c1d196990e5c1",
-            "642247bf255c1d196990e5c2",
-            "642247bf255c1d196990e5c3",
-            "642247bf255c1d196990e5c4",
-            "642247bf255c1d196990e5c5",
-            "642247bf255c1d196990e5c6",
-            "642247bf255c1d196990e5c7",
-            "642247bf255c1d196990e5c8",
-            "642247bf255c1d196990e5c9",
-            "642247bf255c1d196990e5ca"
+            "6696c2ca763f0712c198e94d",
+            "6696c2ca763f0712c198e94e",
+            "6696c2ca763f0712c198e94f",
+            "6696c2ca763f0712c198e950",
+            "6696c2ca763f0712c198e951",
+            "6696c2ca763f0712c198e952",
+            "6696c2ca763f0712c198e953",
+            "6696c2ca763f0712c198e954",
+            "6696c2ca763f0712c198e955",
+            "6696c2ca763f0712c198e956"
           ]
         },
         {
-          "_id": "642247bf255c1d196990e5cb",
+          "_id": "6696c2ca763f0712c198e957",
           "name": {
             "ru": "Прерывание цикла. break",
-            "en": "",
+            "en": "Loop break. break",
             "es": ""
           },
           "questionGroups": [
-            "642247bf255c1d196990e5cc"
+            "6696c2ca763f0712c198e958"
           ],
           "challenges": [
-            "642247bf255c1d196990e5cd",
-            "642247bf255c1d196990e5ce",
-            "642247bf255c1d196990e5cf",
-            "642247bf255c1d196990e5d0",
-            "642247bf255c1d196990e5d1",
-            "642247bf255c1d196990e5d2",
-            "642247bf255c1d196990e5d3",
-            "642247bf255c1d196990e5d4",
-            "642247bf255c1d196990e5d5",
-            "642247bf255c1d196990e5d6"
+            "6696c2ca763f0712c198e989",
+            "6696c2ca763f0712c198e98a",
+            "6696c2ca763f0712c198e98b",
+            "6696c2ca763f0712c198e98c",
+            "6696c2ca763f0712c198e98d",
+            "6696c2ca763f0712c198e98e",
+            "6696c2ca763f0712c198e98f",
+            "6696c2ca763f0712c198e990",
+            "6696c2ca763f0712c198e991",
+            "6696c2ca763f0712c198e992"
           ]
         },
         {
-          "_id": "642247bf255c1d196990e5d7",
+          "_id": "6696c2ca763f0712c198e993",
           "name": {
             "ru": "Пропуск итерации. continue",
-            "en": "",
+            "en": "Skipping iteration. continue",
             "es": ""
           },
           "questionGroups": [
-            "642247bf255c1d196990e5d8"
+            "6696c2ca763f0712c198e994"
           ],
           "challenges": [
-            "642247bf255c1d196990e5d9",
-            "642247bf255c1d196990e5da",
-            "642247bf255c1d196990e5db",
-            "642247bf255c1d196990e5dc",
-            "642247bf255c1d196990e5dd",
-            "642247bf255c1d196990e5de",
-            "642247bf255c1d196990e5df",
-            "642247bf255c1d196990e5e0",
-            "642247bf255c1d196990e5e1",
-            "642247bf255c1d196990e5e2"
+            "6696c2ca763f0712c198e9c5",
+            "6696c2ca763f0712c198e9c6",
+            "6696c2ca763f0712c198e9c7",
+            "6696c2ca763f0712c198e9c8",
+            "6696c2ca763f0712c198e9c9",
+            "6696c2ca763f0712c198e9ca",
+            "6696c2ca763f0712c198e9cb",
+            "6696c2ca763f0712c198e9cc",
+            "6696c2ca763f0712c198e9cd",
+            "6696c2ca763f0712c198e9ce"
           ]
         }
       ]
     },
     {
-      "_id": "6422486ac4d22302354c2a8c",
+      "_id": "6696c2ca763f0712c198e9cf",
       "name": {
         "ru": "Применение циклов с числами",
-        "en": "",
+        "en": "Application of loops with numbers",
         "es": ""
       },
       "lessons": [
         {
-          "_id": "6422486ac4d22302354c2a8d",
+          "_id": "6696c2ca763f0712c198e9d0",
           "name": {
             "ru": "Цикл от меньшего к большему",
-            "en": "",
+            "en": "Loop from smaller to larger",
             "es": ""
           },
           "questionGroups": [
-            "6422486ac4d22302354c2a8e"
+            "6696c2ca763f0712c198e9d1"
           ],
           "challenges": [
-            "6422486ac4d22302354c2a8f",
-            "6422486ac4d22302354c2a90",
-            "6422486ac4d22302354c2a91",
-            "6422486ac4d22302354c2a92",
-            "6422486ac4d22302354c2a93",
-            "6422486ac4d22302354c2a94",
-            "6422486ac4d22302354c2a95",
-            "6422486ac4d22302354c2a96",
-            "6422486ac4d22302354c2a97",
-            "6422486ac4d22302354c2a98"
+            "6696c2ca763f0712c198ea02",
+            "6696c2ca763f0712c198ea03",
+            "6696c2ca763f0712c198ea04",
+            "6696c2ca763f0712c198ea05",
+            "6696c2ca763f0712c198ea06",
+            "6696c2ca763f0712c198ea07",
+            "6696c2ca763f0712c198ea08",
+            "6696c2ca763f0712c198ea09",
+            "6696c2ca763f0712c198ea0a",
+            "6696c2ca763f0712c198ea0b"
           ]
         },
         {
-          "_id": "6422486ac4d22302354c2a99",
+          "_id": "6696c2ca763f0712c198ea0c",
           "name": {
             "ru": "Цикл от большего к меньшему",
-            "en": "",
+            "en": "Loop from larger to smaller",
             "es": ""
           },
           "questionGroups": [
-            "6422486ac4d22302354c2a9a"
+            "6696c2ca763f0712c198ea0d"
           ],
           "challenges": [
-            "6422486ac4d22302354c2a9b",
-            "6422486ac4d22302354c2a9c",
-            "6422486ac4d22302354c2a9d",
-            "6422486ac4d22302354c2a9e",
-            "6422486ac4d22302354c2a9f",
-            "6422486ac4d22302354c2aa0",
-            "6422486ac4d22302354c2aa1",
-            "6422486ac4d22302354c2aa2",
-            "6422486ac4d22302354c2aa3",
-            "6422486ac4d22302354c2aa4"
+            "6696c2ca763f0712c198ea3e",
+            "6696c2ca763f0712c198ea3f",
+            "6696c2ca763f0712c198ea40",
+            "6696c2ca763f0712c198ea41",
+            "6696c2ca763f0712c198ea42",
+            "6696c2ca763f0712c198ea43",
+            "6696c2ca763f0712c198ea44",
+            "6696c2ca763f0712c198ea45",
+            "6696c2ca763f0712c198ea46",
+            "6696c2ca763f0712c198ea47"
           ]
         },
         {
-          "_id": "6422486ac4d22302354c2aa5",
+          "_id": "6696c2ca763f0712c198ea48",
           "name": {
             "ru": "Сумма чисел от и до",
-            "en": "",
+            "en": "Sum of numbers from and to",
             "es": ""
           },
           "questionGroups": [
-            "6422486ac4d22302354c2aa6"
+            "6696c2ca763f0712c198ea49"
           ],
           "challenges": [
-            "6422486ac4d22302354c2aa7",
-            "6422486ac4d22302354c2aa8",
-            "6422486ac4d22302354c2aa9",
-            "6422486ac4d22302354c2aaa",
-            "6422486ac4d22302354c2aab",
-            "6422486ac4d22302354c2aac",
-            "6422486ac4d22302354c2aad",
-            "6422486ac4d22302354c2aae",
-            "6422486ac4d22302354c2aaf",
-            "6422486ac4d22302354c2ab0"
+            "6696c2ca763f0712c198ea78",
+            "6696c2ca763f0712c198ea79",
+            "6696c2ca763f0712c198ea7a",
+            "6696c2ca763f0712c198ea7b",
+            "6696c2ca763f0712c198ea7c",
+            "6696c2ca763f0712c198ea7d",
+            "6696c2ca763f0712c198ea7e",
+            "6696c2ca763f0712c198ea7f",
+            "6696c2ca763f0712c198ea80",
+            "6696c2ca763f0712c198ea81"
           ]
         },
         {
-          "_id": "6422486ac4d22302354c2ab1",
+          "_id": "6696c2ca763f0712c198ea82",
           "name": {
             "ru": "Сумма четных, нечетных, простых чисел от и до",
-            "en": "",
+            "en": "Sum of even, odd, prime numbers from and to",
             "es": ""
           },
           "questionGroups": [
-            "6422486ac4d22302354c2ab2"
+            "6696c2ca763f0712c198ea83"
           ],
           "challenges": [
-            "6422486ac4d22302354c2ab3",
-            "6422486ac4d22302354c2ab4",
-            "6422486ac4d22302354c2ab5",
-            "6422486ac4d22302354c2ab6",
-            "6422486ac4d22302354c2ab7",
-            "6422486ac4d22302354c2ab8",
-            "6422486ac4d22302354c2ab9",
-            "6422486ac4d22302354c2aba",
-            "6422486ac4d22302354c2abb",
-            "6422486ac4d22302354c2abc"
+            "6696c2ca763f0712c198eab6",
+            "6696c2ca763f0712c198eab7",
+            "6696c2ca763f0712c198eab8",
+            "6696c2ca763f0712c198eab9",
+            "6696c2ca763f0712c198eaba",
+            "6696c2ca763f0712c198eabb",
+            "6696c2ca763f0712c198eabc",
+            "6696c2ca763f0712c198eabd",
+            "6696c2ca763f0712c198eabe",
+            "6696c2ca763f0712c198eabf"
           ]
         }
       ]
     },
     {
-      "_id": "64224a47af2b9e1aaccfd8cc",
+      "_id": "6696c2ca763f0712c198eac0",
       "name": {
         "ru": "Применение циклов со строками",
-        "en": "",
+        "en": "Application of loops with strings",
         "es": ""
       },
       "lessons": [
         {
-          "_id": "64224a47af2b9e1aaccfd8cd",
+          "_id": "6696c2ca763f0712c198eac1",
           "name": {
             "ru": "Преобразовать строку в массив",
-            "en": "",
+            "en": "Convert a string to an array",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd8ce"
+            "6696c2ca763f0712c198eac2"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd8cf",
-            "64224a47af2b9e1aaccfd8d0",
-            "64224a47af2b9e1aaccfd8d1",
-            "64224a47af2b9e1aaccfd8d2",
-            "64224a47af2b9e1aaccfd8d3",
-            "64224a47af2b9e1aaccfd8d4",
-            "64224a47af2b9e1aaccfd8d5",
-            "64224a47af2b9e1aaccfd8d6",
-            "64224a47af2b9e1aaccfd8d7",
-            "64224a47af2b9e1aaccfd8d8"
+            "6696c2ca763f0712c198eaf0",
+            "6696c2ca763f0712c198eaf1",
+            "6696c2ca763f0712c198eaf2",
+            "6696c2ca763f0712c198eaf3",
+            "6696c2ca763f0712c198eaf4",
+            "6696c2ca763f0712c198eaf5",
+            "6696c2ca763f0712c198eaf6",
+            "6696c2ca763f0712c198eaf7",
+            "6696c2ca763f0712c198eaf8",
+            "6696c2ca763f0712c198eaf9"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd8d9",
+          "_id": "6696c2ca763f0712c198eafa",
           "name": {
             "ru": "Преобразовать массив в строку",
-            "en": "",
+            "en": "Convert an array to a string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd8da"
+            "6696c2ca763f0712c198eafb"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd8db",
-            "64224a47af2b9e1aaccfd8dc",
-            "64224a47af2b9e1aaccfd8dd",
-            "64224a47af2b9e1aaccfd8de",
-            "64224a47af2b9e1aaccfd8df",
-            "64224a47af2b9e1aaccfd8e0",
-            "64224a47af2b9e1aaccfd8e1",
-            "64224a47af2b9e1aaccfd8e2",
-            "64224a47af2b9e1aaccfd8e3",
-            "64224a47af2b9e1aaccfd8e4"
+            "6696c2ca763f0712c198eb2c",
+            "6696c2ca763f0712c198eb2d",
+            "6696c2ca763f0712c198eb2e",
+            "6696c2ca763f0712c198eb2f",
+            "6696c2ca763f0712c198eb30",
+            "6696c2ca763f0712c198eb31",
+            "6696c2ca763f0712c198eb32",
+            "6696c2ca763f0712c198eb33",
+            "6696c2ca763f0712c198eb34",
+            "6696c2ca763f0712c198eb35"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd8e5",
+          "_id": "6696c2ca763f0712c198eb36",
           "name": {
             "ru": "Перевернуть строку",
-            "en": "",
+            "en": "Reverse the string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd8e6"
+            "6696c2ca763f0712c198eb37"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd8e7",
-            "64224a47af2b9e1aaccfd8e8",
-            "64224a47af2b9e1aaccfd8e9",
-            "64224a47af2b9e1aaccfd8ea",
-            "64224a47af2b9e1aaccfd8eb",
-            "64224a47af2b9e1aaccfd8ec",
-            "64224a47af2b9e1aaccfd8ed",
-            "64224a47af2b9e1aaccfd8ee",
-            "64224a47af2b9e1aaccfd8ef",
-            "64224a47af2b9e1aaccfd8f0"
+            "6696c2ca763f0712c198eb68",
+            "6696c2ca763f0712c198eb69",
+            "6696c2ca763f0712c198eb6a",
+            "6696c2ca763f0712c198eb6b",
+            "6696c2ca763f0712c198eb6c",
+            "6696c2ca763f0712c198eb6d",
+            "6696c2ca763f0712c198eb6e",
+            "6696c2ca763f0712c198eb6f",
+            "6696c2ca763f0712c198eb70",
+            "6696c2ca763f0712c198eb71"
           ]
         },
         {
           "edge": false,
-          "_id": "64224a47af2b9e1aaccfd8f1",
+          "_id": "6696c2ca763f0712c198eb72",
           "name": {
             "ru": "Проверить, является ли строка палиндромом",
-            "en": "",
+            "en": "Check if a string is a palindrome",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd8f2"
+            "6696c2ca763f0712c198eb73"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd8f3",
-            "64224a47af2b9e1aaccfd8f4",
-            "64224a47af2b9e1aaccfd8f5",
-            "64224a47af2b9e1aaccfd8f6",
-            "64224a47af2b9e1aaccfd8f7",
-            "64224a47af2b9e1aaccfd8f8",
-            "64224a47af2b9e1aaccfd8f9",
-            "64224a47af2b9e1aaccfd8fa",
-            "64224a47af2b9e1aaccfd8fb",
-            "64224a47af2b9e1aaccfd8fc"
+            "6696c2ca763f0712c198eba6",
+            "6696c2ca763f0712c198eba7",
+            "6696c2ca763f0712c198eba8",
+            "6696c2ca763f0712c198eba9",
+            "6696c2ca763f0712c198ebaa",
+            "6696c2ca763f0712c198ebab",
+            "6696c2ca763f0712c198ebac",
+            "6696c2ca763f0712c198ebad",
+            "6696c2ca763f0712c198ebae",
+            "6696c2ca763f0712c198ebaf"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd8fd",
+          "_id": "6696c2ca763f0712c198ebb0",
           "name": {
             "ru": "Проверить, является ли строка анаграммой",
-            "en": "",
+            "en": "Check if a string is an anagram",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd8fe"
+            "6696c2ca763f0712c198ebb1"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd8ff",
-            "64224a47af2b9e1aaccfd900",
-            "64224a47af2b9e1aaccfd901",
-            "64224a47af2b9e1aaccfd902",
-            "64224a47af2b9e1aaccfd903",
-            "64224a47af2b9e1aaccfd904",
-            "64224a47af2b9e1aaccfd905",
-            "64224a47af2b9e1aaccfd906",
-            "64224a47af2b9e1aaccfd907",
-            "64224a47af2b9e1aaccfd908"
+            "6696c2ca763f0712c198ebe2",
+            "6696c2ca763f0712c198ebe3",
+            "6696c2ca763f0712c198ebe4",
+            "6696c2ca763f0712c198ebe5",
+            "6696c2ca763f0712c198ebe6",
+            "6696c2ca763f0712c198ebe7",
+            "6696c2ca763f0712c198ebe8",
+            "6696c2ca763f0712c198ebe9",
+            "6696c2ca763f0712c198ebea",
+            "6696c2ca763f0712c198ebeb"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd909",
+          "_id": "6696c2ca763f0712c198ebec",
           "name": {
             "ru": "Посчитать количество вхождений символа в строку",
-            "en": "",
+            "en": "Count the number of occurrences of a character in a string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd90a"
+            "6696c2ca763f0712c198ebed"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd90b",
-            "64224a47af2b9e1aaccfd90c",
-            "64224a47af2b9e1aaccfd90d",
-            "64224a47af2b9e1aaccfd90e",
-            "64224a47af2b9e1aaccfd90f",
-            "64224a47af2b9e1aaccfd910",
-            "64224a47af2b9e1aaccfd911",
-            "64224a47af2b9e1aaccfd912",
-            "64224a47af2b9e1aaccfd913",
-            "64224a47af2b9e1aaccfd914"
+            "6696c2ca763f0712c198ec20",
+            "6696c2ca763f0712c198ec21",
+            "6696c2ca763f0712c198ec22",
+            "6696c2ca763f0712c198ec23",
+            "6696c2ca763f0712c198ec24",
+            "6696c2ca763f0712c198ec25",
+            "6696c2ca763f0712c198ec26",
+            "6696c2ca763f0712c198ec27",
+            "6696c2ca763f0712c198ec28",
+            "6696c2ca763f0712c198ec29"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd915",
+          "_id": "6696c2ca763f0712c198ec2a",
           "name": {
             "ru": "Посчитать количество вхождений каждого символа в строку",
-            "en": "",
+            "en": "Count the number of occurrences of each character in a string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd916"
+            "6696c2ca763f0712c198ec2b"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd917",
-            "64224a47af2b9e1aaccfd918",
-            "64224a47af2b9e1aaccfd919",
-            "64224a47af2b9e1aaccfd91a",
-            "64224a47af2b9e1aaccfd91b",
-            "64224a47af2b9e1aaccfd91c",
-            "64224a47af2b9e1aaccfd91d",
-            "64224a47af2b9e1aaccfd91e",
-            "64224a47af2b9e1aaccfd91f",
-            "64224a47af2b9e1aaccfd920"
+            "6696c2ca763f0712c198ec5e",
+            "6696c2ca763f0712c198ec5f",
+            "6696c2ca763f0712c198ec60",
+            "6696c2ca763f0712c198ec61",
+            "6696c2ca763f0712c198ec62",
+            "6696c2ca763f0712c198ec63",
+            "6696c2ca763f0712c198ec64",
+            "6696c2ca763f0712c198ec65",
+            "6696c2ca763f0712c198ec66",
+            "6696c2ca763f0712c198ec67"
           ]
         },
         {
           "edge": false,
-          "_id": "64224a47af2b9e1aaccfd921",
+          "_id": "6696c2ca763f0712c198ec68",
           "name": {
             "ru": "Посчитать количество гласных и согласных в строке",
-            "en": "",
+            "en": "Count the number of vowels and consonants in a string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd922"
+            "6696c2ca763f0712c198ec69"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd923",
-            "64224a47af2b9e1aaccfd924",
-            "64224a47af2b9e1aaccfd925",
-            "64224a47af2b9e1aaccfd926",
-            "64224a47af2b9e1aaccfd927",
-            "64224a47af2b9e1aaccfd928",
-            "64224a47af2b9e1aaccfd929",
-            "64224a47af2b9e1aaccfd92a",
-            "64224a47af2b9e1aaccfd92b",
-            "64224a47af2b9e1aaccfd92c"
+            "6696c2ca763f0712c198ec9a",
+            "6696c2ca763f0712c198ec9b",
+            "6696c2ca763f0712c198ec9c",
+            "6696c2ca763f0712c198ec9d",
+            "6696c2ca763f0712c198ec9e",
+            "6696c2ca763f0712c198ec9f",
+            "6696c2ca763f0712c198eca0",
+            "6696c2ca763f0712c198eca1",
+            "6696c2ca763f0712c198eca2",
+            "6696c2ca763f0712c198eca3"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd92d",
+          "_id": "6696c2ca763f0712c198eca4",
           "name": {
             "ru": "Посчитать количество заглавных и строчных букв в строке",
-            "en": "",
+            "en": "Count the number of uppercase and lowercase letters in a string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd92e"
+            "6696c2ca763f0712c198eca5"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd92f",
-            "64224a47af2b9e1aaccfd930",
-            "64224a47af2b9e1aaccfd931",
-            "64224a47af2b9e1aaccfd932",
-            "64224a47af2b9e1aaccfd933",
-            "64224a47af2b9e1aaccfd934",
-            "64224a47af2b9e1aaccfd935",
-            "64224a47af2b9e1aaccfd936",
-            "64224a47af2b9e1aaccfd937",
-            "64224a47af2b9e1aaccfd938"
+            "6696c2ca763f0712c198ecd6",
+            "6696c2ca763f0712c198ecd7",
+            "6696c2ca763f0712c198ecd8",
+            "6696c2ca763f0712c198ecd9",
+            "6696c2ca763f0712c198ecda",
+            "6696c2ca763f0712c198ecdb",
+            "6696c2ca763f0712c198ecdc",
+            "6696c2ca763f0712c198ecdd",
+            "6696c2ca763f0712c198ecde",
+            "6696c2ca763f0712c198ecdf"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd939",
+          "_id": "6696c2ca763f0712c198ece0",
           "name": {
             "ru": "Получить числа из строки",
-            "en": "",
+            "en": "Get numbers from a string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd93a"
+            "6696c2ca763f0712c198ece1"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd93b",
-            "64224a47af2b9e1aaccfd93c",
-            "64224a47af2b9e1aaccfd93d",
-            "64224a47af2b9e1aaccfd93e",
-            "64224a47af2b9e1aaccfd93f",
-            "64224a47af2b9e1aaccfd940",
-            "64224a47af2b9e1aaccfd941",
-            "64224a47af2b9e1aaccfd942",
-            "64224a47af2b9e1aaccfd943",
-            "64224a47af2b9e1aaccfd944"
+            "6696c2ca763f0712c198ed12",
+            "6696c2ca763f0712c198ed13",
+            "6696c2ca763f0712c198ed14",
+            "6696c2ca763f0712c198ed15",
+            "6696c2ca763f0712c198ed16",
+            "6696c2ca763f0712c198ed17",
+            "6696c2ca763f0712c198ed18",
+            "6696c2ca763f0712c198ed19",
+            "6696c2ca763f0712c198ed1a",
+            "6696c2ca763f0712c198ed1b"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd945",
+          "_id": "6696c2ca763f0712c198ed1c",
           "name": {
             "ru": "Получить слова из строки",
-            "en": "",
+            "en": "Get words from a string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd946"
+            "6696c2ca763f0712c198ed1d"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd947",
-            "64224a47af2b9e1aaccfd948",
-            "64224a47af2b9e1aaccfd949",
-            "64224a47af2b9e1aaccfd94a",
-            "64224a47af2b9e1aaccfd94b",
-            "64224a47af2b9e1aaccfd94c",
-            "64224a47af2b9e1aaccfd94d",
-            "64224a47af2b9e1aaccfd94e",
-            "64224a47af2b9e1aaccfd94f",
-            "64224a47af2b9e1aaccfd950"
+            "6696c2ca763f0712c198ed4e",
+            "6696c2ca763f0712c198ed4f",
+            "6696c2ca763f0712c198ed50",
+            "6696c2ca763f0712c198ed51",
+            "6696c2ca763f0712c198ed52",
+            "6696c2ca763f0712c198ed53",
+            "6696c2ca763f0712c198ed54",
+            "6696c2ca763f0712c198ed55",
+            "6696c2ca763f0712c198ed56",
+            "6696c2ca763f0712c198ed57"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd951",
+          "_id": "6696c2ca763f0712c198ed58",
           "name": {
             "ru": "Удалить из строки все символы дубликаты",
-            "en": "",
+            "en": "Remove all duplicate characters from a string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd952"
+            "6696c2ca763f0712c198ed59"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd953",
-            "64224a47af2b9e1aaccfd954",
-            "64224a47af2b9e1aaccfd955",
-            "64224a47af2b9e1aaccfd956",
-            "64224a47af2b9e1aaccfd957",
-            "64224a47af2b9e1aaccfd958",
-            "64224a47af2b9e1aaccfd959",
-            "64224a47af2b9e1aaccfd95a",
-            "64224a47af2b9e1aaccfd95b",
-            "64224a47af2b9e1aaccfd95c"
+            "6696c2ca763f0712c198ed8c",
+            "6696c2ca763f0712c198ed8d",
+            "6696c2ca763f0712c198ed8e",
+            "6696c2ca763f0712c198ed8f",
+            "6696c2ca763f0712c198ed90",
+            "6696c2ca763f0712c198ed91",
+            "6696c2ca763f0712c198ed92",
+            "6696c2ca763f0712c198ed93",
+            "6696c2ca763f0712c198ed94",
+            "6696c2ca763f0712c198ed95"
           ]
         },
         {
           "edge": false,
-          "_id": "645e942a19ffe89585cb1f5b",
+          "_id": "6696c2ca763f0712c198ed96",
           "name": {
             "ru": "Удаление дубликатов слов из строки",
-            "en": "",
+            "en": "Removing duplicate words from a string",
             "es": ""
           },
           "questionGroups": [
-            "645e942a19ffe89585cb1f5c"
+            "6696c2ca763f0712c198ed97"
           ],
           "challenges": [
-            "645e942a19ffe89585cb1f5d",
-            "645e942a19ffe89585cb1f5e",
-            "645e942a19ffe89585cb1f5f",
-            "645e942a19ffe89585cb1f60",
-            "645e942a19ffe89585cb1f61",
-            "645e942a19ffe89585cb1f62",
-            "645e942a19ffe89585cb1f63",
-            "645e942a19ffe89585cb1f64",
-            "645e942a19ffe89585cb1f65",
-            "645e942a19ffe89585cb1f66"
+            "6696c2ca763f0712c198edca",
+            "6696c2ca763f0712c198edcb",
+            "6696c2ca763f0712c198edcc",
+            "6696c2ca763f0712c198edcd",
+            "6696c2ca763f0712c198edce",
+            "6696c2ca763f0712c198edcf",
+            "6696c2ca763f0712c198edd0",
+            "6696c2ca763f0712c198edd1",
+            "6696c2ca763f0712c198edd2",
+            "6696c2ca763f0712c198edd3"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd95d",
+          "_id": "6696c2ca763f0712c198edd4",
           "name": {
             "ru": "Замена символов в строке",
-            "en": "",
+            "en": "Replacing characters in a string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd95e"
+            "6696c2ca763f0712c198edd5"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd95f",
-            "64224a47af2b9e1aaccfd960",
-            "64224a47af2b9e1aaccfd961",
-            "64224a47af2b9e1aaccfd962",
-            "64224a47af2b9e1aaccfd963",
-            "64224a47af2b9e1aaccfd964",
-            "64224a47af2b9e1aaccfd965",
-            "64224a47af2b9e1aaccfd966",
-            "64224a47af2b9e1aaccfd967",
-            "64224a47af2b9e1aaccfd968"
+            "6696c2ca763f0712c198ee06",
+            "6696c2ca763f0712c198ee07",
+            "6696c2ca763f0712c198ee08",
+            "6696c2ca763f0712c198ee09",
+            "6696c2ca763f0712c198ee0a",
+            "6696c2ca763f0712c198ee0b",
+            "6696c2ca763f0712c198ee0c",
+            "6696c2ca763f0712c198ee0d",
+            "6696c2ca763f0712c198ee0e",
+            "6696c2ca763f0712c198ee0f"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd969",
+          "_id": "6696c2ca763f0712c198ee10",
           "name": {
             "ru": "Поменять местами первое и последнее слово в строке",
-            "en": "",
+            "en": "Swap the first and last word in a string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd96a"
+            "6696c2ca763f0712c198ee11"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd96b",
-            "64224a47af2b9e1aaccfd96c",
-            "64224a47af2b9e1aaccfd96d",
-            "64224a47af2b9e1aaccfd96e",
-            "64224a47af2b9e1aaccfd96f",
-            "64224a47af2b9e1aaccfd970",
-            "64224a47af2b9e1aaccfd971",
-            "64224a47af2b9e1aaccfd972",
-            "64224a47af2b9e1aaccfd973",
-            "64224a47af2b9e1aaccfd974"
+            "6696c2ca763f0712c198ee44",
+            "6696c2ca763f0712c198ee45",
+            "6696c2ca763f0712c198ee46",
+            "6696c2ca763f0712c198ee47",
+            "6696c2ca763f0712c198ee48",
+            "6696c2ca763f0712c198ee49",
+            "6696c2ca763f0712c198ee4a",
+            "6696c2ca763f0712c198ee4b",
+            "6696c2ca763f0712c198ee4c",
+            "6696c2ca763f0712c198ee4d"
           ]
         },
         {
           "edge": false,
-          "_id": "64224a47af2b9e1aaccfd975",
+          "_id": "6696c2ca763f0712c198ee4e",
           "name": {
             "ru": "Перевернуть в строке каждое слово",
-            "en": "",
+            "en": "Reverse each word in a string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd976"
+            "6696c2ca763f0712c198ee4f"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd977",
-            "64224a47af2b9e1aaccfd978",
-            "64224a47af2b9e1aaccfd979",
-            "64224a47af2b9e1aaccfd97a",
-            "64224a47af2b9e1aaccfd97b",
-            "64224a47af2b9e1aaccfd97c",
-            "64224a47af2b9e1aaccfd97d",
-            "64224a47af2b9e1aaccfd97e",
-            "64224a47af2b9e1aaccfd97f",
-            "64224a47af2b9e1aaccfd980"
+            "6696c2ca763f0712c198ee80",
+            "6696c2ca763f0712c198ee81",
+            "6696c2ca763f0712c198ee82",
+            "6696c2ca763f0712c198ee83",
+            "6696c2ca763f0712c198ee84",
+            "6696c2ca763f0712c198ee85",
+            "6696c2ca763f0712c198ee86",
+            "6696c2ca763f0712c198ee87",
+            "6696c2ca763f0712c198ee88",
+            "6696c2ca763f0712c198ee89"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd981",
+          "_id": "6696c2ca763f0712c198ee8a",
           "name": {
             "ru": "Заменить в строке числа на их словесное описание",
-            "en": "",
+            "en": "Replace numbers in a string with their verbal description",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd982"
+            "6696c2ca763f0712c198ee8b"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd983",
-            "64224a47af2b9e1aaccfd984",
-            "64224a47af2b9e1aaccfd985",
-            "64224a47af2b9e1aaccfd986",
-            "64224a47af2b9e1aaccfd987",
-            "64224a47af2b9e1aaccfd988",
-            "64224a47af2b9e1aaccfd989",
-            "64224a47af2b9e1aaccfd98a",
-            "64224a47af2b9e1aaccfd98b",
-            "64224a47af2b9e1aaccfd98c"
+            "6696c2ca763f0712c198eebb",
+            "6696c2ca763f0712c198eebc",
+            "6696c2ca763f0712c198eebd",
+            "6696c2ca763f0712c198eebe",
+            "6696c2ca763f0712c198eebf",
+            "6696c2ca763f0712c198eec0",
+            "6696c2ca763f0712c198eec1",
+            "6696c2ca763f0712c198eec2",
+            "6696c2ca763f0712c198eec3",
+            "6696c2ca763f0712c198eec4"
           ]
         },
         {
-          "_id": "64224a47af2b9e1aaccfd98d",
+          "_id": "6696c2ca763f0712c198eec5",
           "name": {
             "ru": "Сумма чисел в строке",
-            "en": "",
+            "en": "Sum of numbers in a string",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd98e"
+            "6696c2ca763f0712c198eec6"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd98f",
-            "64224a47af2b9e1aaccfd990",
-            "64224a47af2b9e1aaccfd991",
-            "64224a47af2b9e1aaccfd992",
-            "64224a47af2b9e1aaccfd993",
-            "64224a47af2b9e1aaccfd994",
-            "64224a47af2b9e1aaccfd995",
-            "64224a47af2b9e1aaccfd996",
-            "64224a47af2b9e1aaccfd997",
-            "64224a47af2b9e1aaccfd998"
+            "6696c2ca763f0712c198eef9",
+            "6696c2ca763f0712c198eefa",
+            "6696c2ca763f0712c198eefb",
+            "6696c2ca763f0712c198eefc",
+            "6696c2ca763f0712c198eefd",
+            "6696c2ca763f0712c198eefe",
+            "6696c2ca763f0712c198eeff",
+            "6696c2ca763f0712c198ef00",
+            "6696c2ca763f0712c198ef01",
+            "6696c2ca763f0712c198ef02"
           ]
         },
         {
           "edge": false,
-          "_id": "645e942a19ffe89585cb1f67",
+          "_id": "6696c2ca763f0712c198ef03",
           "name": {
             "ru": "Задания на комбинирование всего, что мы знаем",
-            "en": "",
+            "en": "Tasks for combining everything we know",
             "es": ""
           },
           "questionGroups": [],
           "challenges": [
-            "645e942a19ffe89585cb1f68",
-            "645e942a19ffe89585cb1f69",
-            "645e942a19ffe89585cb1f6a",
-            "645e942a19ffe89585cb1f6b",
-            "645e942a19ffe89585cb1f6c",
-            "645e942a19ffe89585cb1f6d",
-            "645e942a19ffe89585cb1f6e",
-            "645e942a19ffe89585cb1f6f",
-            "645e942a19ffe89585cb1f70",
-            "645e942a19ffe89585cb1f71"
+            "6696c2ca763f0712c198ef04",
+            "6696c2ca763f0712c198ef05",
+            "6696c2ca763f0712c198ef06",
+            "6696c2ca763f0712c198ef07",
+            "6696c2ca763f0712c198ef08",
+            "6696c2ca763f0712c198ef09",
+            "6696c2ca763f0712c198ef0a",
+            "6696c2ca763f0712c198ef0b",
+            "6696c2ca763f0712c198ef0c",
+            "6696c2ca763f0712c198ef0d"
           ]
         }
       ]
     },
     {
-      "_id": "64224d1429c4ec06f04f761e",
+      "_id": "6696c2ca763f0712c198ef0e",
       "name": {
         "ru": "Применение циклов с массивами",
-        "en": "",
+        "en": "Application of loops with arrays",
         "es": ""
       },
       "lessons": [
         {
-          "_id": "64224d1429c4ec06f04f761f",
+          "_id": "6696c2ca763f0712c198ef0f",
           "name": {
             "ru": "Перебор массива",
-            "en": "",
+            "en": "Array traversal",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f7620"
+            "6696c2ca763f0712c198ef10"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f7621",
-            "64224d1429c4ec06f04f7622",
-            "64224d1429c4ec06f04f7623",
-            "64224d1429c4ec06f04f7624",
-            "64224d1429c4ec06f04f7625",
-            "64224d1429c4ec06f04f7626",
-            "64224d1429c4ec06f04f7627",
-            "64224d1429c4ec06f04f7628",
-            "64224d1429c4ec06f04f7629",
-            "64224d1429c4ec06f04f762a"
+            "6696c2ca763f0712c198ef43",
+            "6696c2ca763f0712c198ef44",
+            "6696c2ca763f0712c198ef45",
+            "6696c2ca763f0712c198ef46",
+            "6696c2ca763f0712c198ef47",
+            "6696c2ca763f0712c198ef48",
+            "6696c2ca763f0712c198ef49",
+            "6696c2ca763f0712c198ef4a",
+            "6696c2ca763f0712c198ef4b",
+            "6696c2ca763f0712c198ef4c"
           ]
         },
         {
-          "_id": "64224d1429c4ec06f04f762b",
+          "_id": "6696c2ca763f0712c198ef4d",
           "name": {
             "ru": "Перебор массива в обратном порядке",
-            "en": "",
+            "en": "Traversing an array in reverse order",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f762c"
+            "6696c2ca763f0712c198ef4e"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f762d",
-            "64224d1429c4ec06f04f762e",
-            "64224d1429c4ec06f04f762f",
-            "64224d1429c4ec06f04f7630",
-            "64224d1429c4ec06f04f7631",
-            "64224d1429c4ec06f04f7632",
-            "64224d1429c4ec06f04f7633",
-            "64224d1429c4ec06f04f7634",
-            "64224d1429c4ec06f04f7635",
-            "64224d1429c4ec06f04f7636"
+            "6696c2ca763f0712c198ef81",
+            "6696c2ca763f0712c198ef82",
+            "6696c2ca763f0712c198ef83",
+            "6696c2ca763f0712c198ef84",
+            "6696c2ca763f0712c198ef85",
+            "6696c2ca763f0712c198ef86",
+            "6696c2ca763f0712c198ef87",
+            "6696c2ca763f0712c198ef88",
+            "6696c2ca763f0712c198ef89",
+            "6696c2ca763f0712c198ef8a"
           ]
         },
         {
-          "_id": "64224d1429c4ec06f04f7637",
+          "_id": "6696c2ca763f0712c198ef8b",
           "name": {
             "ru": "Сумма чисел в массиве",
-            "en": "",
+            "en": "Sum of numbers in an array",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f7638"
+            "6696c2ca763f0712c198ef8c"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f7639",
-            "64224d1429c4ec06f04f763a",
-            "64224d1429c4ec06f04f763b",
-            "64224d1429c4ec06f04f763c",
-            "64224d1429c4ec06f04f763d",
-            "64224d1429c4ec06f04f763e",
-            "64224d1429c4ec06f04f763f",
-            "64224d1429c4ec06f04f7640",
-            "64224d1429c4ec06f04f7641",
-            "64224d1429c4ec06f04f7642"
+            "6696c2ca763f0712c198efb9",
+            "6696c2ca763f0712c198efba",
+            "6696c2ca763f0712c198efbb",
+            "6696c2ca763f0712c198efbc",
+            "6696c2ca763f0712c198efbd",
+            "6696c2ca763f0712c198efbe",
+            "6696c2ca763f0712c198efbf",
+            "6696c2ca763f0712c198efc0",
+            "6696c2ca763f0712c198efc1",
+            "6696c2ca763f0712c198efc2"
           ]
         },
         {
-          "_id": "64224d1429c4ec06f04f7643",
+          "_id": "6696c2ca763f0712c198efc3",
           "name": {
             "ru": "Среднее арифметическое чисел в массиве",
-            "en": "",
+            "en": "Arithmetic mean of numbers in an array",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f7644"
+            "6696c2ca763f0712c198efc4"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f7645",
-            "64224d1429c4ec06f04f7646",
-            "64224d1429c4ec06f04f7647",
-            "64224d1429c4ec06f04f7648",
-            "64224d1429c4ec06f04f7649",
-            "64224d1429c4ec06f04f764a",
-            "64224d1429c4ec06f04f764b",
-            "64224d1429c4ec06f04f764c",
-            "64224d1429c4ec06f04f764d",
-            "64224d1429c4ec06f04f764e"
+            "6696c2ca763f0712c198eff7",
+            "6696c2ca763f0712c198eff8",
+            "6696c2ca763f0712c198eff9",
+            "6696c2ca763f0712c198effa",
+            "6696c2ca763f0712c198effb",
+            "6696c2ca763f0712c198effc",
+            "6696c2ca763f0712c198effd",
+            "6696c2ca763f0712c198effe",
+            "6696c2ca763f0712c198efff",
+            "6696c2ca763f0712c198f000"
           ]
         },
         {
-          "_id": "64224d1429c4ec06f04f764f",
+          "_id": "6696c2ca763f0712c198f001",
           "name": {
             "ru": "Поиск максимального/минимального числа в массиве",
-            "en": "",
+            "en": "Finding the maximum/minimum number in an array",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f7650"
+            "6696c2ca763f0712c198f002"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f7651",
-            "64224d1429c4ec06f04f7652",
-            "64224d1429c4ec06f04f7653",
-            "64224d1429c4ec06f04f7654",
-            "64224d1429c4ec06f04f7655",
-            "64224d1429c4ec06f04f7656",
-            "64224d1429c4ec06f04f7657",
-            "64224d1429c4ec06f04f7658",
-            "64224d1429c4ec06f04f7659",
-            "64224d1429c4ec06f04f765a"
+            "6696c2ca763f0712c198f035",
+            "6696c2ca763f0712c198f036",
+            "6696c2ca763f0712c198f037",
+            "6696c2ca763f0712c198f038",
+            "6696c2ca763f0712c198f039",
+            "6696c2ca763f0712c198f03a",
+            "6696c2ca763f0712c198f03b",
+            "6696c2ca763f0712c198f03c",
+            "6696c2ca763f0712c198f03d",
+            "6696c2ca763f0712c198f03e"
           ]
         },
         {
-          "_id": "64224d1429c4ec06f04f765b",
+          "_id": "6696c2ca763f0712c198f03f",
           "name": {
             "ru": "Поиск второго максимального/минимального числа в массиве",
-            "en": "",
+            "en": "Finding the second maximum/minimum number in an array",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f765c"
+            "6696c2ca763f0712c198f040"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f765d",
-            "64224d1429c4ec06f04f765e",
-            "64224d1429c4ec06f04f765f",
-            "64224d1429c4ec06f04f7660",
-            "64224d1429c4ec06f04f7661",
-            "64224d1429c4ec06f04f7662",
-            "64224d1429c4ec06f04f7663",
-            "64224d1429c4ec06f04f7664",
-            "64224d1429c4ec06f04f7665",
-            "64224d1429c4ec06f04f7666"
+            "6696c2ca763f0712c198f071",
+            "6696c2ca763f0712c198f072",
+            "6696c2ca763f0712c198f073",
+            "6696c2ca763f0712c198f074",
+            "6696c2ca763f0712c198f075",
+            "6696c2ca763f0712c198f076",
+            "6696c2ca763f0712c198f077",
+            "6696c2ca763f0712c198f078",
+            "6696c2ca763f0712c198f079",
+            "6696c2ca763f0712c198f07a"
           ]
         },
         {
-          "_id": "64224d1429c4ec06f04f7667",
+          "_id": "6696c2ca763f0712c198f07b",
           "name": {
             "ru": "Удвоить каждый элемент массива, если это число",
-            "en": "",
+            "en": "Double each element of the array if it is a number",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f7668"
+            "6696c2ca763f0712c198f07c"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f7669",
-            "64224d1429c4ec06f04f766a",
-            "64224d1429c4ec06f04f766b",
-            "64224d1429c4ec06f04f766c",
-            "64224d1429c4ec06f04f766d",
-            "64224d1429c4ec06f04f766e",
-            "64224d1429c4ec06f04f766f",
-            "64224d1429c4ec06f04f7670",
-            "64224d1429c4ec06f04f7671",
-            "64224d1429c4ec06f04f7672"
+            "6696c2cb763f0712c198f0af",
+            "6696c2cb763f0712c198f0b0",
+            "6696c2cb763f0712c198f0b1",
+            "6696c2cb763f0712c198f0b2",
+            "6696c2cb763f0712c198f0b3",
+            "6696c2cb763f0712c198f0b4",
+            "6696c2cb763f0712c198f0b5",
+            "6696c2cb763f0712c198f0b6",
+            "6696c2cb763f0712c198f0b7",
+            "6696c2cb763f0712c198f0b8"
           ]
         },
         {
           "edge": false,
-          "_id": "64224d1429c4ec06f04f7673",
+          "_id": "6696c2cb763f0712c198f0b9",
           "name": {
             "ru": "Удалить из массива все элементы, которые не являются числами",
-            "en": "",
+            "en": "Remove from the array all elements that are not numbers",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f7674"
+            "6696c2cb763f0712c198f0ba"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f7675",
-            "64224d1429c4ec06f04f7676",
-            "64224d1429c4ec06f04f7677",
-            "64224d1429c4ec06f04f7678",
-            "64224d1429c4ec06f04f7679",
-            "64224d1429c4ec06f04f767a",
-            "64224d1429c4ec06f04f767b",
-            "64224d1429c4ec06f04f767c",
-            "64224d1429c4ec06f04f767d",
-            "64224d1429c4ec06f04f767e"
+            "6696c2cb763f0712c198f0ed",
+            "6696c2cb763f0712c198f0ee",
+            "6696c2cb763f0712c198f0ef",
+            "6696c2cb763f0712c198f0f0",
+            "6696c2cb763f0712c198f0f1",
+            "6696c2cb763f0712c198f0f2",
+            "6696c2cb763f0712c198f0f3",
+            "6696c2cb763f0712c198f0f4",
+            "6696c2cb763f0712c198f0f5",
+            "6696c2cb763f0712c198f0f6"
           ]
         },
         {
-          "_id": "64224d1429c4ec06f04f767f",
+          "_id": "6696c2cb763f0712c198f0f7",
           "name": {
             "ru": "Удалить из массива все дубликаты",
-            "en": "",
+            "en": "Remove all duplicates from the array",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f7680"
+            "6696c2cb763f0712c198f0f8"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f7681",
-            "64224d1429c4ec06f04f7682",
-            "64224d1429c4ec06f04f7683",
-            "64224d1429c4ec06f04f7684",
-            "64224d1429c4ec06f04f7685",
-            "64224d1429c4ec06f04f7686",
-            "64224d1429c4ec06f04f7687",
-            "64224d1429c4ec06f04f7688",
-            "64224d1429c4ec06f04f7689",
-            "64224d1429c4ec06f04f768a"
+            "6696c2cb763f0712c198f122",
+            "6696c2cb763f0712c198f123",
+            "6696c2cb763f0712c198f124",
+            "6696c2cb763f0712c198f125",
+            "6696c2cb763f0712c198f126",
+            "6696c2cb763f0712c198f127",
+            "6696c2cb763f0712c198f128",
+            "6696c2cb763f0712c198f129",
+            "6696c2cb763f0712c198f12a",
+            "6696c2cb763f0712c198f12b"
           ]
         },
         {
           "edge": false,
-          "_id": "64224d1429c4ec06f04f768b",
+          "_id": "6696c2cb763f0712c198f12c",
           "name": {
             "ru": "Проверить, является ли массив палиндромом / анаграммой",
-            "en": "",
+            "en": "Check if an array is a palindrome / anagram",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f768c"
+            "6696c2cb763f0712c198f12d"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f768d",
-            "64224d1429c4ec06f04f768e",
-            "64224d1429c4ec06f04f768f",
-            "64224d1429c4ec06f04f7690",
-            "64224d1429c4ec06f04f7691",
-            "64224d1429c4ec06f04f7692",
-            "64224d1429c4ec06f04f7693",
-            "64224d1429c4ec06f04f7694",
-            "64224d1429c4ec06f04f7695",
-            "64224d1429c4ec06f04f7696"
+            "6696c2cb763f0712c198f160",
+            "6696c2cb763f0712c198f161",
+            "6696c2cb763f0712c198f162",
+            "6696c2cb763f0712c198f163",
+            "6696c2cb763f0712c198f164",
+            "6696c2cb763f0712c198f165",
+            "6696c2cb763f0712c198f166",
+            "6696c2cb763f0712c198f167",
+            "6696c2cb763f0712c198f168",
+            "6696c2cb763f0712c198f169"
           ]
         },
         {
-          "_id": "64224d1429c4ec06f04f7697",
+          "_id": "6696c2cb763f0712c198f16a",
           "name": {
             "ru": "Проверить, является ли массив симметричным",
-            "en": "",
+            "en": "Check if an array is symmetric",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f7698"
+            "6696c2cb763f0712c198f16b"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f7699",
-            "64224d1429c4ec06f04f769a",
-            "64224d1429c4ec06f04f769b",
-            "64224d1429c4ec06f04f769c",
-            "64224d1429c4ec06f04f769d",
-            "64224d1429c4ec06f04f769e",
-            "64224d1429c4ec06f04f769f",
-            "64224d1429c4ec06f04f76a0",
-            "64224d1429c4ec06f04f76a1",
-            "64224d1429c4ec06f04f76a2"
+            "6696c2cb763f0712c198f192",
+            "6696c2cb763f0712c198f193",
+            "6696c2cb763f0712c198f194",
+            "6696c2cb763f0712c198f195",
+            "6696c2cb763f0712c198f196",
+            "6696c2cb763f0712c198f197",
+            "6696c2cb763f0712c198f198",
+            "6696c2cb763f0712c198f199",
+            "6696c2cb763f0712c198f19a",
+            "6696c2cb763f0712c198f19b"
           ]
         },
         {
-          "_id": "64224d1429c4ec06f04f76a3",
+          "_id": "6696c2cb763f0712c198f19c",
           "name": {
             "ru": "Перевернуть массив",
-            "en": "",
+            "en": "Reverse an array",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f76a4"
+            "6696c2cb763f0712c198f19d"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f76a5",
-            "64224d1429c4ec06f04f76a6",
-            "64224d1429c4ec06f04f76a7",
-            "64224d1429c4ec06f04f76a8",
-            "64224d1429c4ec06f04f76a9",
-            "64224d1429c4ec06f04f76aa",
-            "64224d1429c4ec06f04f76ab",
-            "64224d1429c4ec06f04f76ac",
-            "64224d1429c4ec06f04f76ad",
-            "64224d1429c4ec06f04f76ae"
+            "6696c2cb763f0712c198f1d0",
+            "6696c2cb763f0712c198f1d1",
+            "6696c2cb763f0712c198f1d2",
+            "6696c2cb763f0712c198f1d3",
+            "6696c2cb763f0712c198f1d4",
+            "6696c2cb763f0712c198f1d5",
+            "6696c2cb763f0712c198f1d6",
+            "6696c2cb763f0712c198f1d7",
+            "6696c2cb763f0712c198f1d8",
+            "6696c2cb763f0712c198f1d9"
           ]
         },
         {
           "edge": false,
-          "_id": "64224d1429c4ec06f04f76af",
+          "_id": "6696c2cb763f0712c198f1da",
           "name": {
             "ru": "Разделить массив на подмассивы",
-            "en": "",
+            "en": "Split an array into subarrays",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f76b0"
+            "6696c2cb763f0712c198f1db"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f76b1",
-            "64224d1429c4ec06f04f76b2",
-            "64224d1429c4ec06f04f76b3",
-            "64224d1429c4ec06f04f76b4",
-            "64224d1429c4ec06f04f76b5",
-            "64224d1429c4ec06f04f76b6",
-            "64224d1429c4ec06f04f76b7",
-            "64224d1429c4ec06f04f76b8",
-            "64224d1429c4ec06f04f76b9",
-            "64224d1429c4ec06f04f76ba"
+            "6696c2cb763f0712c198f20e",
+            "6696c2cb763f0712c198f20f",
+            "6696c2cb763f0712c198f210",
+            "6696c2cb763f0712c198f211",
+            "6696c2cb763f0712c198f212",
+            "6696c2cb763f0712c198f213",
+            "6696c2cb763f0712c198f214",
+            "6696c2cb763f0712c198f215",
+            "6696c2cb763f0712c198f216",
+            "6696c2cb763f0712c198f217"
           ]
         },
         {
-          "_id": "64224d1429c4ec06f04f76bb",
+          "_id": "6696c2cb763f0712c198f218",
           "name": {
             "ru": "Проверить, содержит ли массив все элементы другого массива",
-            "en": "",
+            "en": "Check if an array contains all elements of another array",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f76bc"
+            "6696c2cb763f0712c198f219"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f76bd",
-            "64224d1429c4ec06f04f76be",
-            "64224d1429c4ec06f04f76bf",
-            "64224d1429c4ec06f04f76c0",
-            "64224d1429c4ec06f04f76c1",
-            "64224d1429c4ec06f04f76c2",
-            "64224d1429c4ec06f04f76c3",
-            "64224d1429c4ec06f04f76c4",
-            "64224d1429c4ec06f04f76c5",
-            "64224d1429c4ec06f04f76c6"
+            "6696c2cb763f0712c198f24c",
+            "6696c2cb763f0712c198f24d",
+            "6696c2cb763f0712c198f24e",
+            "6696c2cb763f0712c198f24f",
+            "6696c2cb763f0712c198f250",
+            "6696c2cb763f0712c198f251",
+            "6696c2cb763f0712c198f252",
+            "6696c2cb763f0712c198f253",
+            "6696c2cb763f0712c198f254",
+            "6696c2cb763f0712c198f255"
           ]
         },
         {
-          "_id": "64224d1429c4ec06f04f76c7",
+          "_id": "6696c2cb763f0712c198f256",
           "name": {
             "ru": "Проверить, содержит ли массив значения одного типа",
-            "en": "",
+            "en": "Check if an array contains values of one type",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f76c8"
+            "6696c2cb763f0712c198f257"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f76c9",
-            "64224d1429c4ec06f04f76ca",
-            "64224d1429c4ec06f04f76cb",
-            "64224d1429c4ec06f04f76cc",
-            "64224d1429c4ec06f04f76cd",
-            "64224d1429c4ec06f04f76ce",
-            "64224d1429c4ec06f04f76cf",
-            "64224d1429c4ec06f04f76d0",
-            "64224d1429c4ec06f04f76d1",
-            "64224d1429c4ec06f04f76d2"
+            "6696c2cb763f0712c198f28a",
+            "6696c2cb763f0712c198f28b",
+            "6696c2cb763f0712c198f28c",
+            "6696c2cb763f0712c198f28d",
+            "6696c2cb763f0712c198f28e",
+            "6696c2cb763f0712c198f28f",
+            "6696c2cb763f0712c198f290",
+            "6696c2cb763f0712c198f291",
+            "6696c2cb763f0712c198f292",
+            "6696c2cb763f0712c198f293"
           ]
         },
         {
           "edge": false,
-          "_id": "64224d1429c4ec06f04f76d3",
+          "_id": "6696c2cb763f0712c198f294",
           "name": {
             "ru": "Посчитать количество вхождений каждого элемента в массив",
-            "en": "",
+            "en": "Count the number of occurrences of each element in an array",
             "es": ""
           },
           "questionGroups": [
-            "64224d1429c4ec06f04f76d4"
+            "6696c2cb763f0712c198f295"
           ],
           "challenges": [
-            "64224d1429c4ec06f04f76d5",
-            "64224d1429c4ec06f04f76d6",
-            "64224d1429c4ec06f04f76d7",
-            "64224d1429c4ec06f04f76d8",
-            "64224d1429c4ec06f04f76d9",
-            "64224d1429c4ec06f04f76da",
-            "64224d1429c4ec06f04f76db",
-            "64224d1429c4ec06f04f76dc",
-            "64224d1429c4ec06f04f76dd",
-            "64224d1429c4ec06f04f76de"
+            "6696c2cb763f0712c198f2c8",
+            "6696c2cb763f0712c198f2c9",
+            "6696c2cb763f0712c198f2ca",
+            "6696c2cb763f0712c198f2cb",
+            "6696c2cb763f0712c198f2cc",
+            "6696c2cb763f0712c198f2cd",
+            "6696c2cb763f0712c198f2ce",
+            "6696c2cb763f0712c198f2cf",
+            "6696c2cb763f0712c198f2d0",
+            "6696c2cb763f0712c198f2d1"
           ]
         }
       ]
     },
     {
-      "_id": "64894a742f64d35dee52accd",
+      "_id": "6696c2cb763f0712c198f2d2",
       "name": {
         "ru": "Методы массивов. Добавление и удаление элементов",
-        "en": "",
+        "en": "Array methods. Adding and removing elements",
         "es": ""
       },
       "lessons": [
         {
-          "_id": "64894a742f64d35dee52acce",
+          "_id": "6696c2cb763f0712c198f2d3",
           "name": {
             "ru": "Array.prototype.push() – добавляет элемент в конец массива",
-            "en": "",
+            "en": "Array.prototype.push() – adds an element to the end of the array",
             "es": ""
           },
           "questionGroups": [
-            "64894a742f64d35dee52accf"
+            "6696c2cb763f0712c198f2d4"
           ],
           "challenges": [
-            "64894a742f64d35dee52acd0",
-            "64894a742f64d35dee52acd1",
-            "64894a742f64d35dee52acd2",
-            "64894a742f64d35dee52acd3",
-            "64894a742f64d35dee52acd4",
-            "64894a742f64d35dee52acd5",
-            "64894a742f64d35dee52acd6",
-            "64894a742f64d35dee52acd7",
-            "64894a742f64d35dee52acd8",
-            "64894a742f64d35dee52acd9"
+            "6696c2cb763f0712c198f307",
+            "6696c2cb763f0712c198f308",
+            "6696c2cb763f0712c198f309",
+            "6696c2cb763f0712c198f30a",
+            "6696c2cb763f0712c198f30b",
+            "6696c2cb763f0712c198f30c",
+            "6696c2cb763f0712c198f30d",
+            "6696c2cb763f0712c198f30e",
+            "6696c2cb763f0712c198f30f",
+            "6696c2cb763f0712c198f310"
           ]
         },
         {
-          "_id": "64894a742f64d35dee52acda",
+          "_id": "6696c2cb763f0712c198f311",
           "name": {
             "ru": "Array.prototype.unshift() – добавляет элемент в начала массива",
-            "en": "",
+            "en": "Array.prototype.unshift() – adds an element to the beginning of the array",
             "es": ""
           },
           "questionGroups": [
-            "64894a742f64d35dee52acdb"
+            "6696c2cb763f0712c198f312"
           ],
           "challenges": [
-            "64894a742f64d35dee52acdc",
-            "64894a742f64d35dee52acdd",
-            "64894a742f64d35dee52acde",
-            "64894a742f64d35dee52acdf",
-            "64894a742f64d35dee52ace0",
-            "64894a742f64d35dee52ace1",
-            "64894a742f64d35dee52ace2",
-            "64894a742f64d35dee52ace3",
-            "64894a742f64d35dee52ace4",
-            "64894a742f64d35dee52ace5"
+            "6696c2cb763f0712c198f345",
+            "6696c2cb763f0712c198f346",
+            "6696c2cb763f0712c198f347",
+            "6696c2cb763f0712c198f348",
+            "6696c2cb763f0712c198f349",
+            "6696c2cb763f0712c198f34a",
+            "6696c2cb763f0712c198f34b",
+            "6696c2cb763f0712c198f34c",
+            "6696c2cb763f0712c198f34d",
+            "6696c2cb763f0712c198f34e"
           ]
         },
         {
-          "_id": "64894a742f64d35dee52ace6",
+          "_id": "6696c2cb763f0712c198f34f",
           "name": {
             "ru": "Array.prototype.pop() – удаляет последний элемент массива",
-            "en": "",
+            "en": "Array.prototype.pop() – removes the last element of the array",
             "es": ""
           },
           "questionGroups": [
-            "64894a742f64d35dee52ace7"
+            "6696c2cb763f0712c198f350"
           ],
           "challenges": [
-            "64894a742f64d35dee52ace8",
-            "64894a742f64d35dee52ace9",
-            "64894a742f64d35dee52acea",
-            "64894a742f64d35dee52aceb",
-            "64894a742f64d35dee52acec",
-            "64894a742f64d35dee52aced",
-            "64894a742f64d35dee52acee",
-            "64894a742f64d35dee52acef",
-            "64894a742f64d35dee52acf0",
-            "64894a742f64d35dee52acf1"
+            "6696c2cb763f0712c198f383",
+            "6696c2cb763f0712c198f384",
+            "6696c2cb763f0712c198f385",
+            "6696c2cb763f0712c198f386",
+            "6696c2cb763f0712c198f387",
+            "6696c2cb763f0712c198f388",
+            "6696c2cb763f0712c198f389",
+            "6696c2cb763f0712c198f38a",
+            "6696c2cb763f0712c198f38b",
+            "6696c2cb763f0712c198f38c"
           ]
         },
         {
-          "_id": "64894a742f64d35dee52acf2",
+          "_id": "6696c2cb763f0712c198f38d",
           "name": {
             "ru": "Array.prototype.shift() – удаляет первый элемент массива",
-            "en": "",
+            "en": "Array.prototype.shift() – removes the first element of the array",
             "es": ""
           },
           "questionGroups": [
-            "64894a742f64d35dee52acf3"
+            "6696c2cb763f0712c198f38e"
           ],
           "challenges": [
-            "64894a742f64d35dee52acf4",
-            "64894a742f64d35dee52acf5",
-            "64894a742f64d35dee52acf6",
-            "64894a742f64d35dee52acf7",
-            "64894a742f64d35dee52acf8",
-            "64894a742f64d35dee52acf9",
-            "64894a742f64d35dee52acfa",
-            "64894a742f64d35dee52acfb",
-            "64894a742f64d35dee52acfc",
-            "64894a742f64d35dee52acfd"
+            "6696c2cb763f0712c198f3c1",
+            "6696c2cb763f0712c198f3c2",
+            "6696c2cb763f0712c198f3c3",
+            "6696c2cb763f0712c198f3c4",
+            "6696c2cb763f0712c198f3c5",
+            "6696c2cb763f0712c198f3c6",
+            "6696c2cb763f0712c198f3c7",
+            "6696c2cb763f0712c198f3c8",
+            "6696c2cb763f0712c198f3c9",
+            "6696c2cb763f0712c198f3ca"
           ]
         },
         {
-          "_id": "64894a742f64d35dee52acfe",
+          "_id": "6696c2cb763f0712c198f3cb",
           "name": {
             "ru": "Array.prototype.splice() – добавляет, удаляет элементы массива",
-            "en": "",
+            "en": "Array.prototype.splice() – adds, removes elements of the array",
             "es": ""
           },
           "questionGroups": [
-            "64894a742f64d35dee52acff"
+            "6696c2cb763f0712c198f3cc"
           ],
           "challenges": [
-            "64894a742f64d35dee52ad00",
-            "64894a742f64d35dee52ad01",
-            "64894a742f64d35dee52ad02",
-            "64894a742f64d35dee52ad03",
-            "64894a742f64d35dee52ad04",
-            "64894a742f64d35dee52ad05",
-            "64894a742f64d35dee52ad06",
-            "64894a742f64d35dee52ad07",
-            "64894a742f64d35dee52ad08",
-            "64894a742f64d35dee52ad09"
+            "6696c2cb763f0712c198f3ff",
+            "6696c2cb763f0712c198f400",
+            "6696c2cb763f0712c198f401",
+            "6696c2cb763f0712c198f402",
+            "6696c2cb763f0712c198f403",
+            "6696c2cb763f0712c198f404",
+            "6696c2cb763f0712c198f405",
+            "6696c2cb763f0712c198f406",
+            "6696c2cb763f0712c198f407",
+            "6696c2cb763f0712c198f408"
           ]
         },
         {
           "edge": false,
-          "_id": "648b99ea16cb56a165fb90a0",
+          "_id": "6696c2cb763f0712c198f409",
           "name": {
             "ru": "Array.prototype.toSpliced() – возвращает массив с добавленными или удаленными элементами",
-            "en": "",
+            "en": "Array.prototype.toSpliced() – returns an array with added or removed elements",
             "es": ""
           },
           "questionGroups": [
-            "648b99ea16cb56a165fb90a1"
+            "6696c2cb763f0712c198f40a"
           ],
           "challenges": [
-            "648b99ea16cb56a165fb90a2",
-            "648b99ea16cb56a165fb90a3",
-            "648b99ea16cb56a165fb90a4",
-            "648b99ea16cb56a165fb90a5",
-            "648b99ea16cb56a165fb90a6",
-            "648b99ea16cb56a165fb90a7",
-            "648b99ea16cb56a165fb90a8",
-            "648b99ea16cb56a165fb90a9",
-            "648b99ea16cb56a165fb90aa",
-            "648b99ea16cb56a165fb90ab"
+            "6696c2cb763f0712c198f43d",
+            "6696c2cb763f0712c198f43e",
+            "6696c2cb763f0712c198f43f",
+            "6696c2cb763f0712c198f440",
+            "6696c2cb763f0712c198f441",
+            "6696c2cb763f0712c198f442",
+            "6696c2cb763f0712c198f443",
+            "6696c2cb763f0712c198f444",
+            "6696c2cb763f0712c198f445",
+            "6696c2cb763f0712c198f446"
           ]
         }
       ]
     },
     {
-      "_id": "648b99ea16cb56a165fb909f",
+      "_id": "6696c2cb763f0712c198f447",
       "name": {
         "ru": "Методы массивов. Модификация",
-        "en": "",
+        "en": "Array methods. Modification",
         "es": ""
       },
       "lessons": [
         {
-          "_id": "648b99ea16cb56a165fb90ac",
+          "_id": "6696c2cb763f0712c198f448",
           "name": {
             "ru": "Array.prototype.map() – преобразует каждый элемент массива по условию",
-            "en": "",
+            "en": "Array.prototype.map() – transforms each element of the array according to the condition",
             "es": ""
           },
           "questionGroups": [
-            "648b99ea16cb56a165fb90ad"
+            "6696c2cb763f0712c198f449"
           ],
           "challenges": [
-            "648b99ea16cb56a165fb90ae",
-            "648b99ea16cb56a165fb90af",
-            "648b99ea16cb56a165fb90b0",
-            "648b99ea16cb56a165fb90b1",
-            "648b99ea16cb56a165fb90b2",
-            "648b99ea16cb56a165fb90b3",
-            "648b99ea16cb56a165fb90b4",
-            "648b99ea16cb56a165fb90b5",
-            "648b99ea16cb56a165fb90b6",
-            "648b99ea16cb56a165fb90b7"
+            "6696c2cb763f0712c198f47c",
+            "6696c2cb763f0712c198f47d",
+            "6696c2cb763f0712c198f47e",
+            "6696c2cb763f0712c198f47f",
+            "6696c2cb763f0712c198f480",
+            "6696c2cb763f0712c198f481",
+            "6696c2cb763f0712c198f482",
+            "6696c2cb763f0712c198f483",
+            "6696c2cb763f0712c198f484",
+            "6696c2cb763f0712c198f485"
           ]
         },
         {
-          "_id": "648b99ea16cb56a165fb90b8",
+          "_id": "6696c2cb763f0712c198f486",
           "name": {
             "ru": "Array.prototype.forEach() – выполняет функцию для каждого элемента массива",
-            "en": "",
+            "en": "Array.prototype.forEach() – executes a function for each element of the array",
             "es": ""
           },
           "questionGroups": [
-            "648b99ea16cb56a165fb90b9"
+            "6696c2cb763f0712c198f487"
           ],
           "challenges": [
-            "648b99ea16cb56a165fb90ba",
-            "648b99ea16cb56a165fb90bb",
-            "648b99ea16cb56a165fb90bc",
-            "648b99ea16cb56a165fb90bd",
-            "648b99ea16cb56a165fb90be",
-            "648b99ea16cb56a165fb90bf",
-            "648b99ea16cb56a165fb90c0",
-            "648b99ea16cb56a165fb90c1",
-            "648b99ea16cb56a165fb90c2",
-            "648b99ea16cb56a165fb90c3"
+            "6696c2cb763f0712c198f4ba",
+            "6696c2cb763f0712c198f4bb",
+            "6696c2cb763f0712c198f4bc",
+            "6696c2cb763f0712c198f4bd",
+            "6696c2cb763f0712c198f4be",
+            "6696c2cb763f0712c198f4bf",
+            "6696c2cb763f0712c198f4c0",
+            "6696c2cb763f0712c198f4c1",
+            "6696c2cb763f0712c198f4c2",
+            "6696c2cb763f0712c198f4c3"
           ]
         },
         {
-          "_id": "648b99ea16cb56a165fb90c4",
+          "_id": "6696c2cb763f0712c198f4c4",
           "name": {
             "ru": "Array.prototype.with() – изменяет элемент по индексу",
-            "en": "",
+            "en": "Array.prototype.with() – changes an element by index",
             "es": ""
           },
           "questionGroups": [
-            "648b99ea16cb56a165fb90c5"
+            "6696c2cb763f0712c198f4c5"
           ],
           "challenges": [
-            "648b99ea16cb56a165fb90c6",
-            "648b99ea16cb56a165fb90c7",
-            "648b99ea16cb56a165fb90c8",
-            "648b99ea16cb56a165fb90c9",
-            "648b99ea16cb56a165fb90ca",
-            "648b99ea16cb56a165fb90cb",
-            "648b99ea16cb56a165fb90cc",
-            "648b99ea16cb56a165fb90cd",
-            "648b99ea16cb56a165fb90ce",
-            "648b99ea16cb56a165fb90cf"
+            "6696c2cb763f0712c198f4f8",
+            "6696c2cb763f0712c198f4f9",
+            "6696c2cb763f0712c198f4fa",
+            "6696c2cb763f0712c198f4fb",
+            "6696c2cb763f0712c198f4fc",
+            "6696c2cb763f0712c198f4fd",
+            "6696c2cb763f0712c198f4fe",
+            "6696c2cb763f0712c198f4ff",
+            "6696c2cb763f0712c198f500",
+            "6696c2cb763f0712c198f501"
           ]
         },
         {
-          "_id": "648b99ea16cb56a165fb90d0",
+          "_id": "6696c2cb763f0712c198f502",
           "name": {
             "ru": "Array.prototype.fill() – заполняет массив значением",
-            "en": "",
+            "en": "Array.prototype.fill() – fills the array with a value",
             "es": ""
           },
           "questionGroups": [
-            "648b99ea16cb56a165fb90d1"
+            "6696c2cb763f0712c198f503"
           ],
           "challenges": [
-            "648b99ea16cb56a165fb90d2",
-            "648b99ea16cb56a165fb90d3",
-            "648b99ea16cb56a165fb90d4",
-            "648b99ea16cb56a165fb90d5",
-            "648b99ea16cb56a165fb90d6",
-            "648b99ea16cb56a165fb90d7",
-            "648b99ea16cb56a165fb90d8",
-            "648b99ea16cb56a165fb90d9",
-            "648b99ea16cb56a165fb90da",
-            "648b99ea16cb56a165fb90db"
+            "6696c2cb763f0712c198f536",
+            "6696c2cb763f0712c198f537",
+            "6696c2cb763f0712c198f538",
+            "6696c2cb763f0712c198f539",
+            "6696c2cb763f0712c198f53a",
+            "6696c2cb763f0712c198f53b",
+            "6696c2cb763f0712c198f53c",
+            "6696c2cb763f0712c198f53d",
+            "6696c2cb763f0712c198f53e",
+            "6696c2cb763f0712c198f53f"
           ]
         },
         {
-          "_id": "648b99ea16cb56a165fb90dc",
+          "_id": "6696c2cb763f0712c198f540",
           "name": {
             "ru": "Array.prototype.flat() – убирает вложенность массива",
-            "en": "",
+            "en": "Array.prototype.flat() – removes the nesting of the array",
             "es": ""
           },
           "questionGroups": [
-            "648b99ea16cb56a165fb90dd"
+            "6696c2cb763f0712c198f541"
           ],
           "challenges": [
-            "648b99ea16cb56a165fb90de",
-            "648b99ea16cb56a165fb90df",
-            "648b99ea16cb56a165fb90e0",
-            "648b99ea16cb56a165fb90e1",
-            "648b99ea16cb56a165fb90e2",
-            "648b99ea16cb56a165fb90e3",
-            "648b99ea16cb56a165fb90e4",
-            "648b99ea16cb56a165fb90e5",
-            "648b99ea16cb56a165fb90e6",
-            "648b99ea16cb56a165fb90e7"
+            "6696c2cb763f0712c198f574",
+            "6696c2cb763f0712c198f575",
+            "6696c2cb763f0712c198f576",
+            "6696c2cb763f0712c198f577",
+            "6696c2cb763f0712c198f578",
+            "6696c2cb763f0712c198f579",
+            "6696c2cb763f0712c198f57a",
+            "6696c2cb763f0712c198f57b",
+            "6696c2cb763f0712c198f57c",
+            "6696c2cb763f0712c198f57d"
           ]
         },
         {
-          "_id": "648b99ea16cb56a165fb90e8",
+          "_id": "6696c2cb763f0712c198f57e",
           "name": {
             "ru": "Array.prototype.flatMap() – комбинация map и flat",
-            "en": "",
+            "en": "Array.prototype.flatMap() – a combination of map and flat",
             "es": ""
           },
           "questionGroups": [
-            "648b99ea16cb56a165fb90e9"
+            "6696c2cb763f0712c198f57f"
           ],
           "challenges": [
-            "648b99ea16cb56a165fb90ea",
-            "648b99ea16cb56a165fb90eb",
-            "648b99ea16cb56a165fb90ec",
-            "648b99ea16cb56a165fb90ed",
-            "648b99ea16cb56a165fb90ee",
-            "648b99ea16cb56a165fb90ef",
-            "648b99ea16cb56a165fb90f0",
-            "648b99ea16cb56a165fb90f1",
-            "648b99ea16cb56a165fb90f2",
-            "648b99ea16cb56a165fb90f3"
+            "6696c2cb763f0712c198f5b2",
+            "6696c2cb763f0712c198f5b3",
+            "6696c2cb763f0712c198f5b4",
+            "6696c2cb763f0712c198f5b5",
+            "6696c2cb763f0712c198f5b6",
+            "6696c2cb763f0712c198f5b7",
+            "6696c2cb763f0712c198f5b8",
+            "6696c2cb763f0712c198f5b9",
+            "6696c2cb763f0712c198f5ba",
+            "6696c2cb763f0712c198f5bb"
           ]
         },
         {
-          "_id": "648b99ea16cb56a165fb90f4",
+          "_id": "6696c2cb763f0712c198f5bc",
           "name": {
             "ru": "Array.prototype.sort() – сортирует элементы массива на месте",
-            "en": "",
+            "en": "Array.prototype.sort() – sorts the elements of the array in place",
             "es": ""
           },
           "questionGroups": [
-            "648b99ea16cb56a165fb90f5"
+            "6696c2cb763f0712c198f5bd"
           ],
           "challenges": [
-            "648b99ea16cb56a165fb90f6",
-            "648b99ea16cb56a165fb90f7",
-            "648b99ea16cb56a165fb90f8",
-            "648b99ea16cb56a165fb90f9",
-            "648b99ea16cb56a165fb90fa",
-            "648b99ea16cb56a165fb90fb",
-            "648b99ea16cb56a165fb90fc",
-            "648b99ea16cb56a165fb90fd",
-            "648b99ea16cb56a165fb90fe",
-            "648b99ea16cb56a165fb90ff"
+            "6696c2cb763f0712c198f5f0",
+            "6696c2cb763f0712c198f5f1",
+            "6696c2cb763f0712c198f5f2",
+            "6696c2cb763f0712c198f5f3",
+            "6696c2cb763f0712c198f5f4",
+            "6696c2cb763f0712c198f5f5",
+            "6696c2cb763f0712c198f5f6",
+            "6696c2cb763f0712c198f5f7",
+            "6696c2cb763f0712c198f5f8",
+            "6696c2cb763f0712c198f5f9"
           ]
         },
         {
-          "_id": "648b99ea16cb56a165fb9100",
+          "_id": "6696c2cb763f0712c198f5fa",
           "name": {
             "ru": "Array.prototype.toSorted() – возвращает отсортированный массив",
-            "en": "",
+            "en": "Array.prototype.toSorted() – returns a sorted array",
             "es": ""
           },
           "questionGroups": [
-            "648b99ea16cb56a165fb9101"
+            "6696c2cb763f0712c198f5fb"
           ],
           "challenges": [
-            "648b99ea16cb56a165fb9102",
-            "648b99ea16cb56a165fb9103",
-            "648b99ea16cb56a165fb9104",
-            "648b99ea16cb56a165fb9105",
-            "648b99ea16cb56a165fb9106",
-            "648b99ea16cb56a165fb9107",
-            "648b99ea16cb56a165fb9108",
-            "648b99ea16cb56a165fb9109",
-            "648b99ea16cb56a165fb910a",
-            "648b99ea16cb56a165fb910b"
+            "6696c2cb763f0712c198f62e",
+            "6696c2cb763f0712c198f62f",
+            "6696c2cb763f0712c198f630",
+            "6696c2cb763f0712c198f631",
+            "6696c2cb763f0712c198f632",
+            "6696c2cb763f0712c198f633",
+            "6696c2cb763f0712c198f634",
+            "6696c2cb763f0712c198f635",
+            "6696c2cb763f0712c198f636",
+            "6696c2cb763f0712c198f637"
           ]
         },
         {
-          "_id": "648b99ea16cb56a165fb910c",
+          "_id": "6696c2cb763f0712c198f638",
           "name": {
             "ru": "Array.prototype.reverse() – переворачивает порядок элементов массива на месте",
-            "en": "",
+            "en": "Array.prototype.reverse() – reverses the order of the elements of the array in place",
             "es": ""
           },
           "questionGroups": [
-            "648b99ea16cb56a165fb910d"
+            "6696c2cb763f0712c198f639"
           ],
           "challenges": [
-            "648b99ea16cb56a165fb910e",
-            "648b99ea16cb56a165fb910f",
-            "648b99ea16cb56a165fb9110",
-            "648b99ea16cb56a165fb9111",
-            "648b99ea16cb56a165fb9112",
-            "648b99ea16cb56a165fb9113",
-            "648b99ea16cb56a165fb9114",
-            "648b99ea16cb56a165fb9115",
-            "648b99ea16cb56a165fb9116",
-            "648b99ea16cb56a165fb9117"
+            "6696c2cb763f0712c198f66c",
+            "6696c2cb763f0712c198f66d",
+            "6696c2cb763f0712c198f66e",
+            "6696c2cb763f0712c198f66f",
+            "6696c2cb763f0712c198f670",
+            "6696c2cb763f0712c198f671",
+            "6696c2cb763f0712c198f672",
+            "6696c2cb763f0712c198f673",
+            "6696c2cb763f0712c198f674",
+            "6696c2cb763f0712c198f675"
           ]
         },
         {
           "edge": false,
-          "_id": "648b99ea16cb56a165fb9118",
+          "_id": "6696c2cb763f0712c198f676",
           "name": {
             "ru": "Array.prototype.toReversed() – возвращает массив с обратным порядком элементов",
-            "en": "",
+            "en": "Array.prototype.toReversed() – returns an array with the reverse order of elements",
             "es": ""
           },
           "questionGroups": [
-            "648b99ea16cb56a165fb9119"
+            "6696c2cb763f0712c198f677"
           ],
           "challenges": [
-            "648b99ea16cb56a165fb911a",
-            "648b99ea16cb56a165fb911b",
-            "648b99ea16cb56a165fb911c",
-            "648b99ea16cb56a165fb911d",
-            "648b99ea16cb56a165fb911e",
-            "648b99ea16cb56a165fb911f",
-            "648b99ea16cb56a165fb9120",
-            "648b99ea16cb56a165fb9121",
-            "648b99ea16cb56a165fb9122",
-            "648b99ea16cb56a165fb9123"
+            "6696c2cb763f0712c198f6aa",
+            "6696c2cb763f0712c198f6ab",
+            "6696c2cb763f0712c198f6ac",
+            "6696c2cb763f0712c198f6ad",
+            "6696c2cb763f0712c198f6ae",
+            "6696c2cb763f0712c198f6af",
+            "6696c2cb763f0712c198f6b0",
+            "6696c2cb763f0712c198f6b1",
+            "6696c2cb763f0712c198f6b2",
+            "6696c2cb763f0712c198f6b3"
           ]
         }
       ]
     },
     {
-      "_id": "648cf47fd88a18d9651ce355",
+      "_id": "6696c2cb763f0712c198f6b4",
       "name": {
         "ru": "Методы массивов. Фильтрация и поиск",
-        "en": "",
+        "en": "Array methods. Filtering and searching",
         "es": ""
       },
       "lessons": [
         {
-          "_id": "648cf47fd88a18d9651ce356",
+          "_id": "6696c2cb763f0712c198f6b5",
           "name": {
             "ru": "Array.prototype.filter() – фильтрует массив по условию",
-            "en": "",
+            "en": "Array.prototype.filter() – filters the array according to the condition",
             "es": ""
           },
           "questionGroups": [
-            "648cf47fd88a18d9651ce357"
+            "6696c2cb763f0712c198f6b6"
           ],
           "challenges": [
-            "648cf47fd88a18d9651ce358",
-            "648cf47fd88a18d9651ce359",
-            "648cf47fd88a18d9651ce35a",
-            "648cf47fd88a18d9651ce35b",
-            "648cf47fd88a18d9651ce35c",
-            "648cf47fd88a18d9651ce35d",
-            "648cf47fd88a18d9651ce35e",
-            "648cf47fd88a18d9651ce35f",
-            "648cf47fd88a18d9651ce360",
-            "648cf47fd88a18d9651ce361"
+            "6696c2cb763f0712c198f6e9",
+            "6696c2cb763f0712c198f6ea",
+            "6696c2cb763f0712c198f6eb",
+            "6696c2cb763f0712c198f6ec",
+            "6696c2cb763f0712c198f6ed",
+            "6696c2cb763f0712c198f6ee",
+            "6696c2cb763f0712c198f6ef",
+            "6696c2cb763f0712c198f6f0",
+            "6696c2cb763f0712c198f6f1",
+            "6696c2cb763f0712c198f6f2"
           ]
         },
         {
-          "_id": "648cf47fd88a18d9651ce362",
+          "_id": "6696c2cb763f0712c198f6f3",
           "name": {
             "ru": "Array.prototype.find() – первый элемент по условию",
-            "en": "",
+            "en": "Array.prototype.find() – the first element according to the condition",
             "es": ""
           },
           "questionGroups": [
-            "648cf47fd88a18d9651ce363"
+            "6696c2cb763f0712c198f6f4"
           ],
           "challenges": [
-            "648cf47fd88a18d9651ce364",
-            "648cf47fd88a18d9651ce365",
-            "648cf47fd88a18d9651ce366",
-            "648cf47fd88a18d9651ce367",
-            "648cf47fd88a18d9651ce368",
-            "648cf47fd88a18d9651ce369",
-            "648cf47fd88a18d9651ce36a",
-            "648cf47fd88a18d9651ce36b",
-            "648cf47fd88a18d9651ce36c",
-            "648cf47fd88a18d9651ce36d"
+            "6696c2cb763f0712c198f727",
+            "6696c2cb763f0712c198f728",
+            "6696c2cb763f0712c198f729",
+            "6696c2cb763f0712c198f72a",
+            "6696c2cb763f0712c198f72b",
+            "6696c2cb763f0712c198f72c",
+            "6696c2cb763f0712c198f72d",
+            "6696c2cb763f0712c198f72e",
+            "6696c2cb763f0712c198f72f",
+            "6696c2cb763f0712c198f730"
           ]
         },
         {
-          "_id": "648cf47fd88a18d9651ce36e",
+          "_id": "6696c2cb763f0712c198f731",
           "name": {
             "ru": "Array.prototype.findLast() – последний элемент по условию",
-            "en": "",
+            "en": "Array.prototype.findLast() – the last element according to the condition",
             "es": ""
           },
           "questionGroups": [
-            "648cf47fd88a18d9651ce36f"
+            "6696c2cb763f0712c198f732"
           ],
           "challenges": [
-            "648cf47fd88a18d9651ce370",
-            "648cf47fd88a18d9651ce371",
-            "648cf47fd88a18d9651ce372",
-            "648cf47fd88a18d9651ce373",
-            "648cf47fd88a18d9651ce374",
-            "648cf47fd88a18d9651ce375",
-            "648cf47fd88a18d9651ce376",
-            "648cf47fd88a18d9651ce377",
-            "648cf47fd88a18d9651ce378",
-            "648cf47fd88a18d9651ce379"
+            "6696c2cb763f0712c198f765",
+            "6696c2cb763f0712c198f766",
+            "6696c2cb763f0712c198f767",
+            "6696c2cb763f0712c198f768",
+            "6696c2cb763f0712c198f769",
+            "6696c2cb763f0712c198f76a",
+            "6696c2cb763f0712c198f76b",
+            "6696c2cb763f0712c198f76c",
+            "6696c2cb763f0712c198f76d",
+            "6696c2cb763f0712c198f76e"
           ]
         },
         {
-          "_id": "648cf47fd88a18d9651ce37a",
+          "_id": "6696c2cb763f0712c198f76f",
           "name": {
             "ru": "Array.prototype.includes() – содержит ли массив искомый элемент",
-            "en": "",
+            "en": "Array.prototype.includes() – contains the sought element",
             "es": ""
           },
           "questionGroups": [
-            "648cf47fd88a18d9651ce37b"
+            "6696c2cb763f0712c198f770"
           ],
           "challenges": [
-            "648cf47fd88a18d9651ce37c",
-            "648cf47fd88a18d9651ce37d",
-            "648cf47fd88a18d9651ce37e",
-            "648cf47fd88a18d9651ce37f",
-            "648cf47fd88a18d9651ce380",
-            "648cf47fd88a18d9651ce381",
-            "648cf47fd88a18d9651ce382",
-            "648cf47fd88a18d9651ce383",
-            "648cf47fd88a18d9651ce384",
-            "648cf47fd88a18d9651ce385"
+            "6696c2cb763f0712c198f7a3",
+            "6696c2cb763f0712c198f7a4",
+            "6696c2cb763f0712c198f7a5",
+            "6696c2cb763f0712c198f7a6",
+            "6696c2cb763f0712c198f7a7",
+            "6696c2cb763f0712c198f7a8",
+            "6696c2cb763f0712c198f7a9",
+            "6696c2cb763f0712c198f7aa",
+            "6696c2cb763f0712c198f7ab",
+            "6696c2cb763f0712c198f7ac"
           ]
         },
         {
-          "_id": "648cf47fd88a18d9651ce386",
+          "_id": "6696c2cb763f0712c198f7ad",
           "name": {
             "ru": "Array.prototype.indexOf() – индекс искомого элемента",
-            "en": "",
+            "en": "Array.prototype.indexOf() – the index of the sought element",
             "es": ""
           },
           "questionGroups": [
-            "648cf47fd88a18d9651ce387"
+            "6696c2cb763f0712c198f7ae"
           ],
           "challenges": [
-            "648cf47fd88a18d9651ce388",
-            "648cf47fd88a18d9651ce389",
-            "648cf47fd88a18d9651ce38a",
-            "648cf47fd88a18d9651ce38b",
-            "648cf47fd88a18d9651ce38c",
-            "648cf47fd88a18d9651ce38d",
-            "648cf47fd88a18d9651ce38e",
-            "648cf47fd88a18d9651ce38f",
-            "648cf47fd88a18d9651ce390",
-            "648cf47fd88a18d9651ce391"
+            "6696c2cb763f0712c198f7e1",
+            "6696c2cb763f0712c198f7e2",
+            "6696c2cb763f0712c198f7e3",
+            "6696c2cb763f0712c198f7e4",
+            "6696c2cb763f0712c198f7e5",
+            "6696c2cb763f0712c198f7e6",
+            "6696c2cb763f0712c198f7e7",
+            "6696c2cb763f0712c198f7e8",
+            "6696c2cb763f0712c198f7e9",
+            "6696c2cb763f0712c198f7ea"
           ]
         },
         {
           "edge": false,
-          "_id": "648cf47fd88a18d9651ce392",
+          "_id": "6696c2cb763f0712c198f7eb",
           "name": {
             "ru": "Array.prototype.lastIndexOf() – индекс искомого элемента, начиная с конца массива",
-            "en": "",
+            "en": "Array.prototype.lastIndexOf() – the index of the sought element, starting from the end of the array",
             "es": ""
           },
           "questionGroups": [
-            "648cf47fd88a18d9651ce393"
+            "6696c2cb763f0712c198f7ec"
           ],
           "challenges": [
-            "648cf47fd88a18d9651ce394",
-            "648cf47fd88a18d9651ce395",
-            "648cf47fd88a18d9651ce396",
-            "648cf47fd88a18d9651ce397",
-            "648cf47fd88a18d9651ce398",
-            "648cf47fd88a18d9651ce399",
-            "648cf47fd88a18d9651ce39a",
-            "648cf47fd88a18d9651ce39b",
-            "648cf47fd88a18d9651ce39c",
-            "648cf47fd88a18d9651ce39d"
+            "6696c2cb763f0712c198f81f",
+            "6696c2cb763f0712c198f820",
+            "6696c2cb763f0712c198f821",
+            "6696c2cb763f0712c198f822",
+            "6696c2cb763f0712c198f823",
+            "6696c2cb763f0712c198f824",
+            "6696c2cb763f0712c198f825",
+            "6696c2cb763f0712c198f826",
+            "6696c2cb763f0712c198f827",
+            "6696c2cb763f0712c198f828"
           ]
         },
         {
-          "_id": "648cf47fd88a18d9651ce39e",
+          "_id": "6696c2cb763f0712c198f829",
           "name": {
             "ru": "Array.prototype.findIndex() – индекс элемента по условию",
-            "en": "",
+            "en": "Array.prototype.findIndex() – the index of the element according to the condition",
             "es": ""
           },
           "questionGroups": [
-            "648cf47fd88a18d9651ce39f"
+            "6696c2cb763f0712c198f82a"
           ],
           "challenges": [
-            "648cf47fd88a18d9651ce3a0",
-            "648cf47fd88a18d9651ce3a1",
-            "648cf47fd88a18d9651ce3a2",
-            "648cf47fd88a18d9651ce3a3",
-            "648cf47fd88a18d9651ce3a4",
-            "648cf47fd88a18d9651ce3a5",
-            "648cf47fd88a18d9651ce3a6",
-            "648cf47fd88a18d9651ce3a7",
-            "648cf47fd88a18d9651ce3a8",
-            "648cf47fd88a18d9651ce3a9"
+            "6696c2cb763f0712c198f85d",
+            "6696c2cb763f0712c198f85e",
+            "6696c2cb763f0712c198f85f",
+            "6696c2cb763f0712c198f860",
+            "6696c2cb763f0712c198f861",
+            "6696c2cb763f0712c198f862",
+            "6696c2cb763f0712c198f863",
+            "6696c2cb763f0712c198f864",
+            "6696c2cb763f0712c198f865",
+            "6696c2cb763f0712c198f866"
           ]
         },
         {
-          "_id": "648cf47fd88a18d9651ce3aa",
+          "_id": "6696c2cb763f0712c198f867",
           "name": {
             "ru": "Array.prototype.findLastIndex() – индекс последнего элемента по условию",
-            "en": "",
+            "en": "Array.prototype.findLastIndex() – the index of the last element according to the condition",
             "es": ""
           },
           "questionGroups": [
-            "648cf47fd88a18d9651ce3ab"
+            "6696c2cb763f0712c198f868"
           ],
           "challenges": [
-            "648cf47fd88a18d9651ce3ac",
-            "648cf47fd88a18d9651ce3ad",
-            "648cf47fd88a18d9651ce3ae",
-            "648cf47fd88a18d9651ce3af",
-            "648cf47fd88a18d9651ce3b0",
-            "648cf47fd88a18d9651ce3b1",
-            "648cf47fd88a18d9651ce3b2",
-            "648cf47fd88a18d9651ce3b3",
-            "648cf47fd88a18d9651ce3b4",
-            "648cf47fd88a18d9651ce3b5"
+            "6696c2cb763f0712c198f89b",
+            "6696c2cb763f0712c198f89c",
+            "6696c2cb763f0712c198f89d",
+            "6696c2cb763f0712c198f89e",
+            "6696c2cb763f0712c198f89f",
+            "6696c2cb763f0712c198f8a0",
+            "6696c2cb763f0712c198f8a1",
+            "6696c2cb763f0712c198f8a2",
+            "6696c2cb763f0712c198f8a3",
+            "6696c2cb763f0712c198f8a4"
           ]
         },
         {
-          "_id": "648cf47fd88a18d9651ce3b6",
+          "_id": "6696c2cb763f0712c198f8a5",
           "name": {
             "ru": "Array.prototype.every() – каждый элемент массива удовлетворяет условию",
-            "en": "",
+            "en": "Array.prototype.every() – every element of the array satisfies the condition",
             "es": ""
           },
           "questionGroups": [
-            "648cf47fd88a18d9651ce3b7"
+            "6696c2cb763f0712c198f8a6"
           ],
           "challenges": [
-            "648cf47fd88a18d9651ce3b8",
-            "648cf47fd88a18d9651ce3b9",
-            "648cf47fd88a18d9651ce3ba",
-            "648cf47fd88a18d9651ce3bb",
-            "648cf47fd88a18d9651ce3bc",
-            "648cf47fd88a18d9651ce3bd",
-            "648cf47fd88a18d9651ce3be",
-            "648cf47fd88a18d9651ce3bf",
-            "648cf47fd88a18d9651ce3c0",
-            "648cf47fd88a18d9651ce3c1"
+            "6696c2cb763f0712c198f8d9",
+            "6696c2cb763f0712c198f8da",
+            "6696c2cb763f0712c198f8db",
+            "6696c2cb763f0712c198f8dc",
+            "6696c2cb763f0712c198f8dd",
+            "6696c2cb763f0712c198f8de",
+            "6696c2cb763f0712c198f8df",
+            "6696c2cb763f0712c198f8e0",
+            "6696c2cb763f0712c198f8e1",
+            "6696c2cb763f0712c198f8e2"
           ]
         },
         {
-          "_id": "648cf47fd88a18d9651ce3c2",
+          "_id": "6696c2cb763f0712c198f8e3",
           "name": {
             "ru": "Array.prototype.some() – хотя бы один элемент массива удовлетворяет условию",
-            "en": "",
+            "en": "Array.prototype.some() – at least one element of the array satisfies the condition",
             "es": ""
           },
           "questionGroups": [
-            "648cf47fd88a18d9651ce3c3"
+            "6696c2cb763f0712c198f8e4"
           ],
           "challenges": [
-            "648cf47fd88a18d9651ce3c4",
-            "648cf47fd88a18d9651ce3c5",
-            "648cf47fd88a18d9651ce3c6",
-            "648cf47fd88a18d9651ce3c7",
-            "648cf47fd88a18d9651ce3c8",
-            "648cf47fd88a18d9651ce3c9",
-            "648cf47fd88a18d9651ce3ca",
-            "648cf47fd88a18d9651ce3cb",
-            "648cf47fd88a18d9651ce3cc",
-            "648cf47fd88a18d9651ce3cd"
+            "6696c2cb763f0712c198f917",
+            "6696c2cb763f0712c198f918",
+            "6696c2cb763f0712c198f919",
+            "6696c2cb763f0712c198f91a",
+            "6696c2cb763f0712c198f91b",
+            "6696c2cb763f0712c198f91c",
+            "6696c2cb763f0712c198f91d",
+            "6696c2cb763f0712c198f91e",
+            "6696c2cb763f0712c198f91f",
+            "6696c2cb763f0712c198f920"
           ]
         },
         {
-          "_id": "648cf47fd88a18d9651ce3ce",
+          "_id": "6696c2cb763f0712c198f921",
           "name": {
             "ru": "Array.prototype.slice() – возвращает часть массива",
-            "en": "",
+            "en": "Array.prototype.slice() – returns a part of the array",
             "es": ""
           },
           "questionGroups": [
-            "648cf47fd88a18d9651ce3cf"
+            "6696c2cb763f0712c198f922"
           ],
           "challenges": [
-            "648cf47fd88a18d9651ce3d0",
-            "648cf47fd88a18d9651ce3d1",
-            "648cf47fd88a18d9651ce3d2",
-            "648cf47fd88a18d9651ce3d3",
-            "648cf47fd88a18d9651ce3d4",
-            "648cf47fd88a18d9651ce3d5",
-            "648cf47fd88a18d9651ce3d6",
-            "648cf47fd88a18d9651ce3d7",
-            "648cf47fd88a18d9651ce3d8",
-            "648cf47fd88a18d9651ce3d9"
+            "6696c2cb763f0712c198f955",
+            "6696c2cb763f0712c198f956",
+            "6696c2cb763f0712c198f957",
+            "6696c2cb763f0712c198f958",
+            "6696c2cb763f0712c198f959",
+            "6696c2cb763f0712c198f95a",
+            "6696c2cb763f0712c198f95b",
+            "6696c2cb763f0712c198f95c",
+            "6696c2cb763f0712c198f95d",
+            "6696c2cb763f0712c198f95e"
           ]
         }
       ]
     },
     {
-      "_id": "635f26d0cf4ae3cbc5e5666b",
+      "_id": "6696c2cb763f0712c198f95f",
       "name": {
         "ru": "Задачи с кодинг-интервью",
-        "en": "",
+        "en": "Coding interview tasks",
         "es": ""
       },
       "lessons": [
         {
-          "_id": "64224a47af2b9e1aaccfd999",
+          "_id": "6696c2cb763f0712c198f960",
           "name": {
             "ru": "Практика по решению задач с кодинг-интервью",
-            "en": "",
+            "en": "Practice in solving coding interview tasks",
             "es": ""
           },
           "questionGroups": [
-            "64224a47af2b9e1aaccfd99a"
+            "6696c2cb763f0712c198f961"
           ],
           "challenges": [
-            "64224a47af2b9e1aaccfd99b",
-            "64224a47af2b9e1aaccfd99c",
-            "64224a47af2b9e1aaccfd99d",
-            "64224a47af2b9e1aaccfd99e",
-            "64224a47af2b9e1aaccfd99f",
-            "64224a47af2b9e1aaccfd9a0",
-            "64224a47af2b9e1aaccfd9a1",
-            "64224a47af2b9e1aaccfd9a2",
-            "64224a47af2b9e1aaccfd9a3",
-            "64224a47af2b9e1aaccfd9a4"
+            "6696c2cb763f0712c198f994",
+            "6696c2cb763f0712c198f995",
+            "6696c2cb763f0712c198f996",
+            "6696c2cb763f0712c198f997",
+            "6696c2cb763f0712c198f998",
+            "6696c2cb763f0712c198f999",
+            "6696c2cb763f0712c198f99a",
+            "6696c2cb763f0712c198f99b",
+            "6696c2cb763f0712c198f99c",
+            "6696c2cb763f0712c198f99d"
           ]
         }
       ]
     }
   ],
-  "_id": "635c05ba659f6d77abf1f4e7",
+  "_id": "6696c2ca763f0712c198dac7",
   "description": {
     "ru": "Учим JavaScript для работы и собеседований. Практические задания с моментальной проверкой. Подходит для начинающих. Первый шаг к профессии Front-End и QA Automation.",
     "en": "Learn JavaScript for work and interviews. Practical tasks with instant verification. Suitable for beginners. The first step towards the profession of Front-End and QA Automation.",

@@ -48,7 +48,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198db00",
           "name": {
             "ru": "Первая программа Hello World",
-            "en": "",
+            "en": "First program Hello World",
             "es": ""
           },
           "questionGroups": [
@@ -289,7 +289,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198dc9a",
           "name": {
             "ru": "Задачи на Числа и Строки",
-            "en": "",
+            "en": "Exercises on Numbers and Strings",
             "es": ""
           },
           "questionGroups": [
@@ -391,7 +391,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198dd73",
           "name": {
             "ru": "Определение типа данных",
-            "en": "",
+            "en": "Defining data types",
             "es": ""
           },
           "questionGroups": [
@@ -424,7 +424,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ddb1",
           "name": {
             "ru": "Математические операторы. NaN",
-            "en": "",
+            "en": "Mathematical operators. NaN",
             "es": ""
           },
           "questionGroups": [
@@ -596,7 +596,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198def9",
           "name": {
             "ru": "Создание и вызов функции",
-            "en": "",
+            "en": "Creating and calling a function",
             "es": ""
           },
           "questionGroups": [
@@ -619,7 +619,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198df26",
           "name": {
             "ru": "Возвращаемое значение",
-            "en": "",
+            "en": "Return value",
             "es": ""
           },
           "questionGroups": [
@@ -642,7 +642,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198df58",
           "name": {
             "ru": "Параметры и аргументы функции",
-            "en": "",
+            "en": "Function parameters and arguments",
             "es": ""
           },
           "questionGroups": [
@@ -665,7 +665,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198df90",
           "name": {
             "ru": "Функции с параметрами по умолчанию",
-            "en": "",
+            "en": "Functions with default parameters",
             "es": ""
           },
           "questionGroups": [
@@ -688,7 +688,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198dfc7",
           "name": {
             "ru": "Дополнительные задания на функции и числа",
-            "en": "",
+            "en": "Extra tasks on functions and numbers",
             "es": ""
           },
           "questionGroups": [],
@@ -709,7 +709,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198dfd2",
           "name": {
             "ru": "И еще задания на функции и строки",
-            "en": "",
+            "en": "And more tasks on functions and strings",
             "es": ""
           },
           "questionGroups": [],
@@ -740,7 +740,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198dfde",
           "name": {
             "ru": "Задачи. Переменные, функции, let и const",
-            "en": "",
+            "en": "Tasks. Variables, functions, let and const",
             "es": ""
           },
           "questionGroups": [
@@ -763,7 +763,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e00d",
           "name": {
             "ru": "Задачи. Функции, переменные, числа",
-            "en": "",
+            "en": "Tasks. Functions, variables, numbers",
             "es": ""
           },
           "questionGroups": [
@@ -786,7 +786,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e046",
           "name": {
             "ru": "Задачи. Функции, переменные, строки",
-            "en": "",
+            "en": "Tasks. Functions, variables, strings",
             "es": ""
           },
           "questionGroups": [
@@ -809,7 +809,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e07c",
           "name": {
             "ru": "Область видимости переменных c функциями",
-            "en": "",
+            "en": "Scope of variables with functions",
             "es": ""
           },
           "questionGroups": [
@@ -832,7 +832,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e0b2",
           "name": {
             "ru": "Результат работы функции в переменную",
-            "en": "",
+            "en": "Result of a function in a variable",
             "es": ""
           },
           "questionGroups": [
@@ -855,7 +855,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e0e5",
           "name": {
             "ru": "Результат работы функции в другую функцию",
-            "en": "",
+            "en": "Result of a function in another function",
             "es": ""
           },
           "questionGroups": [
@@ -888,7 +888,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e115",
           "name": {
             "ru": "Логический тип данных boolean",
-            "en": "",
+            "en": "Logical data type boolean",
             "es": ""
           },
           "questionGroups": [
@@ -911,7 +911,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e150",
           "name": {
             "ru": "Сравнение чисел. Операторы >, <, >=, <=, ===, !==",
-            "en": "",
+            "en": "Comparison of numbers. Operators >, <, >=, <=, ===, !==",
             "es": ""
           },
           "questionGroups": [
@@ -934,7 +934,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e18a",
           "name": {
             "ru": "Ветвление. Операторы if, else, else if",
-            "en": "",
+            "en": "Branching. Operators if, else, else if",
             "es": ""
           },
           "questionGroups": [
@@ -957,7 +957,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e1b7",
           "name": {
             "ru": "Оператор НЕ. Операторы !, !!",
-            "en": "",
+            "en": "NOT operator. Operators !, !!",
             "es": ""
           },
           "questionGroups": [
@@ -980,7 +980,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e1f0",
           "name": {
             "ru": "Разница между ==, === и !=, !==",
-            "en": "",
+            "en": "Difference between ==, === and !=, !==",
             "es": ""
           },
           "questionGroups": [
@@ -1003,7 +1003,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e223",
           "name": {
             "ru": "Логическое ИЛИ и И. Операторы ||, &&",
-            "en": "",
+            "en": "Logical OR and AND. Operators ||, &&",
             "es": ""
           },
           "questionGroups": [
@@ -1026,7 +1026,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e25d",
           "name": {
             "ru": "Логические операторы в функциях",
-            "en": "",
+            "en": "Logical operators in functions",
             "es": ""
           },
           "questionGroups": [],
@@ -1049,7 +1049,7 @@ module.exports = {
       "_id": "6696c2ca763f0712c198e268",
       "name": {
         "ru": "Округление чисел",
-        "en": "",
+        "en": "Rounding numbers",
         "es": ""
       },
       "lessons": [
@@ -1057,7 +1057,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e269",
           "name": {
             "ru": "Округление в большую сторону. Math.ceil()",
-            "en": "",
+            "en": "Rounding up. Math.ceil()",
             "es": ""
           },
           "questionGroups": [
@@ -1080,7 +1080,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e2a3",
           "name": {
             "ru": "Округление в меньшую сторону. Math.floor()",
-            "en": "",
+            "en": "Rounding down. Math.floor()",
             "es": ""
           },
           "questionGroups": [
@@ -1103,7 +1103,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e2df",
           "name": {
             "ru": "Округление до ближайшего целого. Math.round()",
-            "en": "",
+            "en": "Rounding to the nearest integer. Math.round()",
             "es": ""
           },
           "questionGroups": [
@@ -1126,7 +1126,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e319",
           "name": {
             "ru": "Форматирование чисел. toFixed()",
-            "en": "",
+            "en": "Formatting numbers. toFixed()",
             "es": ""
           },
           "questionGroups": [
@@ -1151,7 +1151,7 @@ module.exports = {
       "_id": "6696c2ca763f0712c198e351",
       "name": {
         "ru": "Строки",
-        "en": "",
+        "en": "Strings",
         "es": ""
       },
       "lessons": [
@@ -1159,7 +1159,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e352",
           "name": {
             "ru": "Конкатенация строк",
-            "en": "",
+            "en": "String concatenation",
             "es": ""
           },
           "questionGroups": [
@@ -1182,7 +1182,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e390",
           "name": {
             "ru": "Длина строки",
-            "en": "",
+            "en": "String length",
             "es": ""
           },
           "questionGroups": [
@@ -1205,7 +1205,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e3c5",
           "name": {
             "ru": "Индексы в строке",
-            "en": "",
+            "en": "Indexes in a string",
             "es": ""
           },
           "questionGroups": [
@@ -1228,7 +1228,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e403",
           "name": {
             "ru": "Изменение регистра. Методы toUpperCase, toLowerCase",
-            "en": "",
+            "en": "Changing the case. Methods toUpperCase, toLowerCase",
             "es": ""
           },
           "questionGroups": [
@@ -1251,7 +1251,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e438",
           "name": {
             "ru": "Повторение строки. Метод repeat",
-            "en": "",
+            "en": "Repeat string. Method repeat",
             "es": ""
           },
           "questionGroups": [
@@ -1274,7 +1274,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e473",
           "name": {
             "ru": "Удаление пробелов. Методы trim, trimStart, trimEnd",
-            "en": "",
+            "en": "Removing spaces. Methods trim, trimStart, trimEnd",
             "es": ""
           },
           "questionGroups": [
@@ -1297,7 +1297,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e4ad",
           "name": {
             "ru": "Поиск индекса. Методы indexOf, lastIndexOf",
-            "en": "",
+            "en": "Search index. Methods indexOf, lastIndexOf",
             "es": ""
           },
           "questionGroups": [
@@ -1322,7 +1322,7 @@ module.exports = {
       "_id": "6696c2ca763f0712c198e4ea",
       "name": {
         "ru": "Объекты",
-        "en": "",
+        "en": "Objects",
         "es": ""
       },
       "lessons": [
@@ -1330,7 +1330,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e4eb",
           "name": {
             "ru": "Создание объекта",
-            "en": "",
+            "en": "Creating an object",
             "es": ""
           },
           "questionGroups": [
@@ -1353,7 +1353,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e526",
           "name": {
             "ru": "Доступ к свойствам объекта",
-            "en": "",
+            "en": "Access to object properties",
             "es": ""
           },
           "questionGroups": [
@@ -1376,7 +1376,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e55e",
           "name": {
             "ru": "Проверка наличия свойства в объекте",
-            "en": "",
+            "en": "Checking for the presence of a property in an object",
             "es": ""
           },
           "questionGroups": [
@@ -1399,7 +1399,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e59c",
           "name": {
             "ru": "Изменение свойств объекта",
-            "en": "",
+            "en": "Changing object properties",
             "es": ""
           },
           "questionGroups": [
@@ -1422,7 +1422,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e5d8",
           "name": {
             "ru": "Добавление свойств объекта",
-            "en": "",
+            "en": "Adding object properties",
             "es": ""
           },
           "questionGroups": [
@@ -1445,7 +1445,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e610",
           "name": {
             "ru": "Удаление свойств объекта",
-            "en": "",
+            "en": "Deleting object properties",
             "es": ""
           },
           "questionGroups": [
@@ -1468,7 +1468,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e64c",
           "name": {
             "ru": "Ссылочный тип данных. Копирование объектов",
-            "en": "",
+            "en": "Reference data type. Copying objects",
             "es": ""
           },
           "questionGroups": [
@@ -1491,7 +1491,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e684",
           "name": {
             "ru": "Задания на комбинирование всего, что мы знаем",
-            "en": "",
+            "en": "Tasks for combining everything we know",
             "es": ""
           },
           "questionGroups": [
@@ -1516,7 +1516,7 @@ module.exports = {
       "_id": "6696c2ca763f0712c198e6c0",
       "name": {
         "ru": "Массивы",
-        "en": "",
+        "en": "Arrays",
         "es": ""
       },
       "lessons": [
@@ -1524,7 +1524,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e6c1",
           "name": {
             "ru": "Создание массива. Свойство length",
-            "en": "",
+            "en": "Creating an array. Length property",
             "es": ""
           },
           "questionGroups": [
@@ -1547,7 +1547,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e6fd",
           "name": {
             "ru": "Доступ к элементам массива",
-            "en": "",
+            "en": "Access to array elements",
             "es": ""
           },
           "questionGroups": [
@@ -1570,7 +1570,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e73b",
           "name": {
             "ru": "Проверка наличия элемента в массиве",
-            "en": "",
+            "en": "Checking for the presence of an element in an array",
             "es": ""
           },
           "questionGroups": [
@@ -1593,7 +1593,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e777",
           "name": {
             "ru": "Изменение элементов массива",
-            "en": "",
+            "en": "Changing array elements",
             "es": ""
           },
           "questionGroups": [
@@ -1616,7 +1616,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e7b5",
           "name": {
             "ru": "Добавление элементов в массив",
-            "en": "",
+            "en": "Adding elements to an array",
             "es": ""
           },
           "questionGroups": [
@@ -1639,7 +1639,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e7f1",
           "name": {
             "ru": "Удаление элементов из массива",
-            "en": "",
+            "en": "Removing items from an array",
             "es": ""
           },
           "questionGroups": [
@@ -1662,7 +1662,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e829",
           "name": {
             "ru": "Копирование массивов",
-            "en": "",
+            "en": "Copying arrays",
             "es": ""
           },
           "questionGroups": [
@@ -1685,7 +1685,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e865",
           "name": {
             "ru": "Задания на комбинирование всего, что мы знаем",
-            "en": "",
+            "en": "Exercises on combining everything we know",
             "es": ""
           },
           "questionGroups": [
@@ -1710,7 +1710,7 @@ module.exports = {
       "_id": "6696c2ca763f0712c198e8a2",
       "name": {
         "ru": "Цикл for",
-        "en": "",
+        "en": "For loop",
         "es": ""
       },
       "lessons": [
@@ -1718,7 +1718,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e8a3",
           "name": {
             "ru": "Цикл for. Наполнение массива числами",
-            "en": "",
+            "en": "For loop. Filling an array with numbers",
             "es": ""
           },
           "questionGroups": [
@@ -1741,7 +1741,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e8dd",
           "name": {
             "ru": "Перебор массива",
-            "en": "",
+            "en": "Array traversal",
             "es": ""
           },
           "questionGroups": [
@@ -1764,7 +1764,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e91b",
           "name": {
             "ru": "Перебор строки",
-            "en": "",
+            "en": "String traversal",
             "es": ""
           },
           "questionGroups": [
@@ -1787,7 +1787,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e957",
           "name": {
             "ru": "Прерывание цикла. break",
-            "en": "",
+            "en": "Loop break. break",
             "es": ""
           },
           "questionGroups": [
@@ -1810,7 +1810,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e993",
           "name": {
             "ru": "Пропуск итерации. continue",
-            "en": "",
+            "en": "Skipping iteration. continue",
             "es": ""
           },
           "questionGroups": [
@@ -1835,7 +1835,7 @@ module.exports = {
       "_id": "6696c2ca763f0712c198e9cf",
       "name": {
         "ru": "Применение циклов с числами",
-        "en": "",
+        "en": "Application of loops with numbers",
         "es": ""
       },
       "lessons": [
@@ -1843,7 +1843,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198e9d0",
           "name": {
             "ru": "Цикл от меньшего к большему",
-            "en": "",
+            "en": "Loop from smaller to larger",
             "es": ""
           },
           "questionGroups": [
@@ -1866,7 +1866,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ea0c",
           "name": {
             "ru": "Цикл от большего к меньшему",
-            "en": "",
+            "en": "Loop from larger to smaller",
             "es": ""
           },
           "questionGroups": [
@@ -1889,7 +1889,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ea48",
           "name": {
             "ru": "Сумма чисел от и до",
-            "en": "",
+            "en": "Sum of numbers from and to",
             "es": ""
           },
           "questionGroups": [
@@ -1912,7 +1912,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ea82",
           "name": {
             "ru": "Сумма четных, нечетных, простых чисел от и до",
-            "en": "",
+            "en": "Sum of even, odd, prime numbers from and to",
             "es": ""
           },
           "questionGroups": [
@@ -1937,7 +1937,7 @@ module.exports = {
       "_id": "6696c2ca763f0712c198eac0",
       "name": {
         "ru": "Применение циклов со строками",
-        "en": "",
+        "en": "Application of loops with strings",
         "es": ""
       },
       "lessons": [
@@ -1945,7 +1945,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198eac1",
           "name": {
             "ru": "Преобразовать строку в массив",
-            "en": "",
+            "en": "Convert a string to an array",
             "es": ""
           },
           "questionGroups": [
@@ -1968,7 +1968,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198eafa",
           "name": {
             "ru": "Преобразовать массив в строку",
-            "en": "",
+            "en": "Convert an array to a string",
             "es": ""
           },
           "questionGroups": [
@@ -1991,7 +1991,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198eb36",
           "name": {
             "ru": "Перевернуть строку",
-            "en": "",
+            "en": "Reverse the string",
             "es": ""
           },
           "questionGroups": [
@@ -2015,7 +2015,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198eb72",
           "name": {
             "ru": "Проверить, является ли строка палиндромом",
-            "en": "",
+            "en": "Check if a string is a palindrome",
             "es": ""
           },
           "questionGroups": [
@@ -2038,7 +2038,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ebb0",
           "name": {
             "ru": "Проверить, является ли строка анаграммой",
-            "en": "",
+            "en": "Check if a string is an anagram",
             "es": ""
           },
           "questionGroups": [
@@ -2061,7 +2061,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ebec",
           "name": {
             "ru": "Посчитать количество вхождений символа в строку",
-            "en": "",
+            "en": "Count the number of occurrences of a character in a string",
             "es": ""
           },
           "questionGroups": [
@@ -2084,7 +2084,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ec2a",
           "name": {
             "ru": "Посчитать количество вхождений каждого символа в строку",
-            "en": "",
+            "en": "Count the number of occurrences of each character in a string",
             "es": ""
           },
           "questionGroups": [
@@ -2108,7 +2108,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ec68",
           "name": {
             "ru": "Посчитать количество гласных и согласных в строке",
-            "en": "",
+            "en": "Count the number of vowels and consonants in a string",
             "es": ""
           },
           "questionGroups": [
@@ -2131,7 +2131,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198eca4",
           "name": {
             "ru": "Посчитать количество заглавных и строчных букв в строке",
-            "en": "",
+            "en": "Count the number of uppercase and lowercase letters in a string",
             "es": ""
           },
           "questionGroups": [
@@ -2154,7 +2154,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ece0",
           "name": {
             "ru": "Получить числа из строки",
-            "en": "",
+            "en": "Get numbers from a string",
             "es": ""
           },
           "questionGroups": [
@@ -2177,7 +2177,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ed1c",
           "name": {
             "ru": "Получить слова из строки",
-            "en": "",
+            "en": "Get words from a string",
             "es": ""
           },
           "questionGroups": [
@@ -2200,7 +2200,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ed58",
           "name": {
             "ru": "Удалить из строки все символы дубликаты",
-            "en": "",
+            "en": "Remove all duplicate characters from a string",
             "es": ""
           },
           "questionGroups": [
@@ -2224,7 +2224,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ed96",
           "name": {
             "ru": "Удаление дубликатов слов из строки",
-            "en": "",
+            "en": "Removing duplicate words from a string",
             "es": ""
           },
           "questionGroups": [
@@ -2247,7 +2247,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198edd4",
           "name": {
             "ru": "Замена символов в строке",
-            "en": "",
+            "en": "Replacing characters in a string",
             "es": ""
           },
           "questionGroups": [
@@ -2270,7 +2270,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ee10",
           "name": {
             "ru": "Поменять местами первое и последнее слово в строке",
-            "en": "",
+            "en": "Swap the first and last word in a string",
             "es": ""
           },
           "questionGroups": [
@@ -2294,7 +2294,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ee4e",
           "name": {
             "ru": "Перевернуть в строке каждое слово",
-            "en": "",
+            "en": "Reverse each word in a string",
             "es": ""
           },
           "questionGroups": [
@@ -2317,7 +2317,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ee8a",
           "name": {
             "ru": "Заменить в строке числа на их словесное описание",
-            "en": "",
+            "en": "Replace numbers in a string with their verbal description",
             "es": ""
           },
           "questionGroups": [
@@ -2340,7 +2340,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198eec5",
           "name": {
             "ru": "Сумма чисел в строке",
-            "en": "",
+            "en": "Sum of numbers in a string",
             "es": ""
           },
           "questionGroups": [
@@ -2364,7 +2364,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ef03",
           "name": {
             "ru": "Задания на комбинирование всего, что мы знаем",
-            "en": "",
+            "en": "Tasks for combining everything we know",
             "es": ""
           },
           "questionGroups": [],
@@ -2387,7 +2387,7 @@ module.exports = {
       "_id": "6696c2ca763f0712c198ef0e",
       "name": {
         "ru": "Применение циклов с массивами",
-        "en": "",
+        "en": "Application of loops with arrays",
         "es": ""
       },
       "lessons": [
@@ -2395,7 +2395,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ef0f",
           "name": {
             "ru": "Перебор массива",
-            "en": "",
+            "en": "Array traversal",
             "es": ""
           },
           "questionGroups": [
@@ -2418,7 +2418,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ef4d",
           "name": {
             "ru": "Перебор массива в обратном порядке",
-            "en": "",
+            "en": "Traversing an array in reverse order",
             "es": ""
           },
           "questionGroups": [
@@ -2441,7 +2441,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198ef8b",
           "name": {
             "ru": "Сумма чисел в массиве",
-            "en": "",
+            "en": "Sum of numbers in an array",
             "es": ""
           },
           "questionGroups": [
@@ -2464,7 +2464,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198efc3",
           "name": {
             "ru": "Среднее арифметическое чисел в массиве",
-            "en": "",
+            "en": "Arithmetic mean of numbers in an array",
             "es": ""
           },
           "questionGroups": [
@@ -2487,7 +2487,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198f001",
           "name": {
             "ru": "Поиск максимального/минимального числа в массиве",
-            "en": "",
+            "en": "Finding the maximum/minimum number in an array",
             "es": ""
           },
           "questionGroups": [
@@ -2510,7 +2510,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198f03f",
           "name": {
             "ru": "Поиск второго максимального/минимального числа в массиве",
-            "en": "",
+            "en": "Finding the second maximum/minimum number in an array",
             "es": ""
           },
           "questionGroups": [
@@ -2533,7 +2533,7 @@ module.exports = {
           "_id": "6696c2ca763f0712c198f07b",
           "name": {
             "ru": "Удвоить каждый элемент массива, если это число",
-            "en": "",
+            "en": "Double each element of the array if it is a number",
             "es": ""
           },
           "questionGroups": [
@@ -2557,7 +2557,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f0b9",
           "name": {
             "ru": "Удалить из массива все элементы, которые не являются числами",
-            "en": "",
+            "en": "Remove from the array all elements that are not numbers",
             "es": ""
           },
           "questionGroups": [
@@ -2580,7 +2580,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f0f7",
           "name": {
             "ru": "Удалить из массива все дубликаты",
-            "en": "",
+            "en": "Remove all duplicates from the array",
             "es": ""
           },
           "questionGroups": [
@@ -2604,7 +2604,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f12c",
           "name": {
             "ru": "Проверить, является ли массив палиндромом / анаграммой",
-            "en": "",
+            "en": "Check if an array is a palindrome / anagram",
             "es": ""
           },
           "questionGroups": [
@@ -2627,7 +2627,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f16a",
           "name": {
             "ru": "Проверить, является ли массив симметричным",
-            "en": "",
+            "en": "Check if an array is symmetric",
             "es": ""
           },
           "questionGroups": [
@@ -2650,7 +2650,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f19c",
           "name": {
             "ru": "Перевернуть массив",
-            "en": "",
+            "en": "Reverse an array",
             "es": ""
           },
           "questionGroups": [
@@ -2674,7 +2674,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f1da",
           "name": {
             "ru": "Разделить массив на подмассивы",
-            "en": "",
+            "en": "Split an array into subarrays",
             "es": ""
           },
           "questionGroups": [
@@ -2697,7 +2697,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f218",
           "name": {
             "ru": "Проверить, содержит ли массив все элементы другого массива",
-            "en": "",
+            "en": "Check if an array contains all elements of another array",
             "es": ""
           },
           "questionGroups": [
@@ -2720,7 +2720,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f256",
           "name": {
             "ru": "Проверить, содержит ли массив значения одного типа",
-            "en": "",
+            "en": "Check if an array contains values of one type",
             "es": ""
           },
           "questionGroups": [
@@ -2744,7 +2744,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f294",
           "name": {
             "ru": "Посчитать количество вхождений каждого элемента в массив",
-            "en": "",
+            "en": "Count the number of occurrences of each element in an array",
             "es": ""
           },
           "questionGroups": [
@@ -2769,7 +2769,7 @@ module.exports = {
       "_id": "6696c2cb763f0712c198f2d2",
       "name": {
         "ru": "Методы массивов. Добавление и удаление элементов",
-        "en": "",
+        "en": "Array methods. Adding and removing elements",
         "es": ""
       },
       "lessons": [
@@ -2777,7 +2777,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f2d3",
           "name": {
             "ru": "Array.prototype.push() – добавляет элемент в конец массива",
-            "en": "",
+            "en": "Array.prototype.push() – adds an element to the end of the array",
             "es": ""
           },
           "questionGroups": [
@@ -2800,7 +2800,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f311",
           "name": {
             "ru": "Array.prototype.unshift() – добавляет элемент в начала массива",
-            "en": "",
+            "en": "Array.prototype.unshift() – adds an element to the beginning of the array",
             "es": ""
           },
           "questionGroups": [
@@ -2823,7 +2823,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f34f",
           "name": {
             "ru": "Array.prototype.pop() – удаляет последний элемент массива",
-            "en": "",
+            "en": "Array.prototype.pop() – removes the last element of the array",
             "es": ""
           },
           "questionGroups": [
@@ -2846,7 +2846,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f38d",
           "name": {
             "ru": "Array.prototype.shift() – удаляет первый элемент массива",
-            "en": "",
+            "en": "Array.prototype.shift() – removes the first element of the array",
             "es": ""
           },
           "questionGroups": [
@@ -2869,7 +2869,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f3cb",
           "name": {
             "ru": "Array.prototype.splice() – добавляет, удаляет элементы массива",
-            "en": "",
+            "en": "Array.prototype.splice() – adds, removes elements of the array",
             "es": ""
           },
           "questionGroups": [
@@ -2893,7 +2893,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f409",
           "name": {
             "ru": "Array.prototype.toSpliced() – возвращает массив с добавленными или удаленными элементами",
-            "en": "",
+            "en": "Array.prototype.toSpliced() – returns an array with added or removed elements",
             "es": ""
           },
           "questionGroups": [
@@ -2918,7 +2918,7 @@ module.exports = {
       "_id": "6696c2cb763f0712c198f447",
       "name": {
         "ru": "Методы массивов. Модификация",
-        "en": "",
+        "en": "Array methods. Modification",
         "es": ""
       },
       "lessons": [
@@ -2926,7 +2926,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f448",
           "name": {
             "ru": "Array.prototype.map() – преобразует каждый элемент массива по условию",
-            "en": "",
+            "en": "Array.prototype.map() – transforms each element of the array according to the condition",
             "es": ""
           },
           "questionGroups": [
@@ -2949,7 +2949,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f486",
           "name": {
             "ru": "Array.prototype.forEach() – выполняет функцию для каждого элемента массива",
-            "en": "",
+            "en": "Array.prototype.forEach() – executes a function for each element of the array",
             "es": ""
           },
           "questionGroups": [
@@ -2972,7 +2972,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f4c4",
           "name": {
             "ru": "Array.prototype.with() – изменяет элемент по индексу",
-            "en": "",
+            "en": "Array.prototype.with() – changes an element by index",
             "es": ""
           },
           "questionGroups": [
@@ -2995,7 +2995,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f502",
           "name": {
             "ru": "Array.prototype.fill() – заполняет массив значением",
-            "en": "",
+            "en": "Array.prototype.fill() – fills the array with a value",
             "es": ""
           },
           "questionGroups": [
@@ -3018,7 +3018,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f540",
           "name": {
             "ru": "Array.prototype.flat() – убирает вложенность массива",
-            "en": "",
+            "en": "Array.prototype.flat() – removes the nesting of the array",
             "es": ""
           },
           "questionGroups": [
@@ -3041,7 +3041,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f57e",
           "name": {
             "ru": "Array.prototype.flatMap() – комбинация map и flat",
-            "en": "",
+            "en": "Array.prototype.flatMap() – a combination of map and flat",
             "es": ""
           },
           "questionGroups": [
@@ -3064,7 +3064,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f5bc",
           "name": {
             "ru": "Array.prototype.sort() – сортирует элементы массива на месте",
-            "en": "",
+            "en": "Array.prototype.sort() – sorts the elements of the array in place",
             "es": ""
           },
           "questionGroups": [
@@ -3087,7 +3087,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f5fa",
           "name": {
             "ru": "Array.prototype.toSorted() – возвращает отсортированный массив",
-            "en": "",
+            "en": "Array.prototype.toSorted() – returns a sorted array",
             "es": ""
           },
           "questionGroups": [
@@ -3110,7 +3110,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f638",
           "name": {
             "ru": "Array.prototype.reverse() – переворачивает порядок элементов массива на месте",
-            "en": "",
+            "en": "Array.prototype.reverse() – reverses the order of the elements of the array in place",
             "es": ""
           },
           "questionGroups": [
@@ -3134,7 +3134,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f676",
           "name": {
             "ru": "Array.prototype.toReversed() – возвращает массив с обратным порядком элементов",
-            "en": "",
+            "en": "Array.prototype.toReversed() – returns an array with the reverse order of elements",
             "es": ""
           },
           "questionGroups": [
@@ -3159,7 +3159,7 @@ module.exports = {
       "_id": "6696c2cb763f0712c198f6b4",
       "name": {
         "ru": "Методы массивов. Фильтрация и поиск",
-        "en": "",
+        "en": "Array methods. Filtering and searching",
         "es": ""
       },
       "lessons": [
@@ -3167,7 +3167,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f6b5",
           "name": {
             "ru": "Array.prototype.filter() – фильтрует массив по условию",
-            "en": "",
+            "en": "Array.prototype.filter() – filters the array according to the condition",
             "es": ""
           },
           "questionGroups": [
@@ -3190,7 +3190,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f6f3",
           "name": {
             "ru": "Array.prototype.find() – первый элемент по условию",
-            "en": "",
+            "en": "Array.prototype.find() – the first element according to the condition",
             "es": ""
           },
           "questionGroups": [
@@ -3213,7 +3213,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f731",
           "name": {
             "ru": "Array.prototype.findLast() – последний элемент по условию",
-            "en": "",
+            "en": "Array.prototype.findLast() – the last element according to the condition",
             "es": ""
           },
           "questionGroups": [
@@ -3236,7 +3236,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f76f",
           "name": {
             "ru": "Array.prototype.includes() – содержит ли массив искомый элемент",
-            "en": "",
+            "en": "Array.prototype.includes() – contains the sought element",
             "es": ""
           },
           "questionGroups": [
@@ -3259,7 +3259,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f7ad",
           "name": {
             "ru": "Array.prototype.indexOf() – индекс искомого элемента",
-            "en": "",
+            "en": "Array.prototype.indexOf() – the index of the sought element",
             "es": ""
           },
           "questionGroups": [
@@ -3283,7 +3283,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f7eb",
           "name": {
             "ru": "Array.prototype.lastIndexOf() – индекс искомого элемента, начиная с конца массива",
-            "en": "",
+            "en": "Array.prototype.lastIndexOf() – the index of the sought element, starting from the end of the array",
             "es": ""
           },
           "questionGroups": [
@@ -3306,7 +3306,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f829",
           "name": {
             "ru": "Array.prototype.findIndex() – индекс элемента по условию",
-            "en": "",
+            "en": "Array.prototype.findIndex() – the index of the element according to the condition",
             "es": ""
           },
           "questionGroups": [
@@ -3329,7 +3329,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f867",
           "name": {
             "ru": "Array.prototype.findLastIndex() – индекс последнего элемента по условию",
-            "en": "",
+            "en": "Array.prototype.findLastIndex() – the index of the last element according to the condition",
             "es": ""
           },
           "questionGroups": [
@@ -3352,7 +3352,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f8a5",
           "name": {
             "ru": "Array.prototype.every() – каждый элемент массива удовлетворяет условию",
-            "en": "",
+            "en": "Array.prototype.every() – every element of the array satisfies the condition",
             "es": ""
           },
           "questionGroups": [
@@ -3375,7 +3375,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f8e3",
           "name": {
             "ru": "Array.prototype.some() – хотя бы один элемент массива удовлетворяет условию",
-            "en": "",
+            "en": "Array.prototype.some() – at least one element of the array satisfies the condition",
             "es": ""
           },
           "questionGroups": [
@@ -3398,7 +3398,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f921",
           "name": {
             "ru": "Array.prototype.slice() – возвращает часть массива",
-            "en": "",
+            "en": "Array.prototype.slice() – returns a part of the array",
             "es": ""
           },
           "questionGroups": [
@@ -3423,7 +3423,7 @@ module.exports = {
       "_id": "6696c2cb763f0712c198f95f",
       "name": {
         "ru": "Задачи с кодинг-интервью",
-        "en": "",
+        "en": "Coding interview tasks",
         "es": ""
       },
       "lessons": [
@@ -3431,7 +3431,7 @@ module.exports = {
           "_id": "6696c2cb763f0712c198f960",
           "name": {
             "ru": "Практика по решению задач с кодинг-интервью",
-            "en": "",
+            "en": "Practice in solving coding interview tasks",
             "es": ""
           },
           "questionGroups": [
