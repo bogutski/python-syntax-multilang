@@ -1,0 +1,18 @@
+{
+  "completedSolution": "def reverse_words(arr):\r\n     tmp = arr.split(\" \")\r\n     return \" \".join(tmp[::-1])",
+  "initialSolution": "def reverse_words(arr):",
+  "openTest": "def test_reverse_words_1():\r\n       assert (reverse_words('hello localcoding') == 'localcoding hello')\r\n\r\n   def test_reverse_words_2():\r\n       assert (reverse_words('what we will do in the templates') == 'templates the in do will we what')",
+  "name": {
+    "en": "Print all words in a sentence in reverse order",
+    "ru": "Вывести все слова в предложении в обратном порядке"
+  },
+  "instruction": {
+    "en": "Instructions EN",
+    "ru": "Instructions RU"
+  },
+  "hint": {
+    "en": "Hint EN",
+    "ru": "Hint RU"
+  },
+  "_id": "682b9481ee3f7eb5776d4d7f"
+}
