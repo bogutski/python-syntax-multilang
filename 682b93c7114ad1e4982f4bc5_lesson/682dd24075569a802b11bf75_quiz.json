@@ -114,7 +114,7 @@
         "en": "After passing the test ",
         "ru": "После прохождения теста "
       },
-      "answerType": "multiple",
+      "answerType": "multi",
       "variants": [
         {
           "_id": "682dd84be3cce756275db940",
