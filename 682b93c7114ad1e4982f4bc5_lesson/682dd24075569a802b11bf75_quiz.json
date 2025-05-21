@@ -1,0 +1,171 @@
+{
+  "_id": "682dd24075569a802b11bf75",
+  "questions": [
+    {
+      "_id": "682dd7e9ed9216e82b9b03eb",
+      "name": {
+        "en": "The goal of the Python Syntax course is",
+        "ru": "Целью курса Python Syntax является"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "682dd7f2d01082bac9e9254b",
+          "name": {
+            "en": "Learning the basics of programming",
+            "ru": "Изучение основ программирования"
+          },
+          "correct": true
+        },
+        {
+          "_id": "682dd7fa86ca2a19ce116736",
+          "name": {
+            "en": "Learning the basic principles of testing",
+            "ru": "Изучение основных принципов тестирования"
+          }
+        }
+      ]
+    },
+    {
+      "_id": "682dd804b3f5b3719f7443d2",
+      "name": {
+        "en": "To go to the next lesson",
+        "ru": "Для перехода к следующему уроку"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "682dd809723c8442f8fcc72e",
+          "name": {
+            "en": "You must successfully complete the test",
+            "ru": "Необходимо успешно завершить тест"
+          },
+          "correct": true
+        },
+        {
+          "_id": "682dd80e524225fd77e3a3a7",
+          "name": {
+            "en": "You can skip the test ",
+            "ru": "Можно пропустить тест "
+          }
+        }
+      ]
+    },
+    {
+      "_id": "682dd815468e0752225c4561",
+      "name": {
+        "en": "You can take the test",
+        "ru": "Тест можно пройти"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "682dd81a1c0f25b9d1fb3bfc",
+          "name": {
+            "en": "Only once.",
+            "ru": "Только один раз"
+          }
+        },
+        {
+          "_id": "682dd81f316743aee65e7720",
+          "name": {
+            "en": "Twice.",
+            "ru": "Два раза"
+          }
+        },
+        {
+          "_id": "682dd826d0e16262391b1886",
+          "name": {
+            "en": "As many times as it takes to successfully complete",
+            "ru": "Столько раз, сколько требуется для успешного завершения"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "682dd82cb45839541b69e512",
+      "name": {
+        "en": "I understand that during the lecture it is desirable: to repeat the code shown on the screen, to pay attention to the code of errors that occur during the execution of programs",
+        "ru": "Я понимаю, что во время лекции желательно: повторять код, показываемый на экране, обращать внимание на код ошибок, возникающих при выполнении программ"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "682dd838c35086bc793de61b",
+          "name": {
+            "en": "Yes",
+            "ru": "Да"
+          },
+          "correct": true
+        },
+        {
+          "_id": "682dd83e40796de66911a619",
+          "name": {
+            "en": "No",
+            "ru": "Нет"
+          }
+        }
+      ]
+    },
+    {
+      "_id": "682dd845a326ac260324da87",
+      "name": {
+        "en": "After passing the test ",
+        "ru": "После прохождения теста "
+      },
+      "answerType": "multiple",
+      "variants": [
+        {
+          "_id": "682dd84be3cce756275db940",
+          "name": {
+            "en": "you can see the mistakes you've made",
+            "ru": "можно увидеть сделанные ошибки"
+          },
+          "correct": true
+        },
+        {
+          "_id": "682dd851b6be89084cb3fc5d",
+          "name": {
+            "en": "retest",
+            "ru": "выполнить тест повторно"
+          },
+          "correct": true
+        },
+        {
+          "_id": "682dd8581809e20992ef5608",
+          "name": {
+            "en": "you can read more information and perform the test again",
+            "ru": "можно почитать дополнительную информацию и выполнить тест еще раз"
+          },
+          "correct": true
+        },
+        {
+          "_id": "682dd85df48a0c13766874be",
+          "name": {
+            "en": "revise the lecture for a better understanding of the material and perform the test again",
+            "ru": "пересмотреть лекцию для лучшего понимания материала и выполнить тест снова"
+          },
+          "correct": true
+        },
+        {
+          "_id": "682dd8684ad431d53bc07770",
+          "name": {
+            "en": "nothing can be fixed",
+            "ru": "ничего исправить нельзя"
+          }
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": true,
+  "description": {
+    "en": "Summary of the Python Syntax course",
+    "ru": "Краткая информация о курсе Python Syntax"
+  },
+  "name": {
+    "en": "Python Syntax. About the course",
+    "ru": "Python Syntax. Первый урок"
+  }
+}

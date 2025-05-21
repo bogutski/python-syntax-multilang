@@ -28,7 +28,8 @@ module.exports = {
             en: 'First Lesson',
             es: ''
           },
-          challenges: ['682b9481ee3f7eb5776d4d7f']
+          challenges: ['682b9481ee3f7eb5776d4d7f'],
+          questionGroups: ["682dd24075569a802b11bf75"]
         }
       ]
     }
