@@ -39,11 +39,16 @@ def reverse_words(arr):
 
 
 // OPENTESTSSTART
-def test_reverse_words_1():
-    assert (reverse_words('hello localcoding') == 'localcoding hello')
+class TestClass(object):
+    def test_1(self):
+        """reverse_words correctly reverses 'hello localcoding'"""
+        assert reverse_words('hello localcoding') == 'localcoding hello', \
+            "Expected reversed result to be 'localcoding hello'"
 
-def test_reverse_words_2():
-    assert (reverse_words('what we will do in the templates') == 'templates the in do will we what')
+    def test_2(self):
+        """reverse_words correctly reverses 'what we will do in the templates'"""
+        assert reverse_words('what we will do in the templates') == 'templates the in do will we what', \
+            "Expected reversed result to be 'templates the in do will we what'"
 // OPENTESTSEND
 
 // HIDDENTESTSSTART

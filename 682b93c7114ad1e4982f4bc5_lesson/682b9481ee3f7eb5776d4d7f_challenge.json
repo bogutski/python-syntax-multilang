@@ -1,7 +1,7 @@
 {
   "completedSolution": "def reverse_words(arr):\r\n    tmp = arr.split(\" \")\r\n    return \" \".join(tmp[::-1])",
   "initialSolution": "def reverse_words(arr):",
-  "openTest": "def test_reverse_words_1():\r\n    assert (reverse_words('hello localcoding') == 'localcoding hello')\r\n\r\ndef test_reverse_words_2():\r\n    assert (reverse_words('what we will do in the templates') == 'templates the in do will we what')",
+  "openTest": "class TestClass(object):\r\n    def test_1(self):\r\n        \"\"\"reverse_words correctly reverses 'hello localcoding'\"\"\"\r\n        assert reverse_words('hello localcoding') == 'localcoding hello', \\\r\n            \"Expected reversed result to be 'localcoding hello'\"\r\n\r\n    def test_2(self):\r\n        \"\"\"reverse_words correctly reverses 'what we will do in the templates'\"\"\"\r\n        assert reverse_words('what we will do in the templates') == 'templates the in do will we what', \\\r\n            \"Expected reversed result to be 'templates the in do will we what'\"",
   "name": {
     "en": "Print all words in a sentence in reverse order",
     "ru": "Вывести все слова в предложении в обратном порядке"
@@ -17,5 +17,6 @@
   "checker": "unit",
   "programmingLang": "Python",
   "status": "new",
+  "level": "Easy",
   "_id": "682b9481ee3f7eb5776d4d7f"
 }
