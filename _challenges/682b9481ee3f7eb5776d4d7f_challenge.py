@@ -40,10 +40,10 @@ def reverse_words(arr):
 
 // OPENTESTSSTART
 def test_reverse_words_1():
-       assert (reverse_words('hello localcoding') == 'localcoding hello')
+    assert (reverse_words('hello localcoding') == 'localcoding hello')
 
-   def test_reverse_words_2():
-       assert (reverse_words('what we will do in the templates') == 'templates the in do will we what')
+def test_reverse_words_2():
+    assert (reverse_words('what we will do in the templates') == 'templates the in do will we what')
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
