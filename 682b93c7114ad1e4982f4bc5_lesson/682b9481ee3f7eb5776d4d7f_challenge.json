@@ -15,5 +15,7 @@
     "ru": "Hint RU"
   },
   "checker": "unit",
+  "programmingLang": "Python",
+  "status": "new",
   "_id": "682b9481ee3f7eb5776d4d7f"
 }
