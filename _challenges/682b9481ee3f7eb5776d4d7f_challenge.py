@@ -33,8 +33,8 @@ INITIALSOLUTIONEND
 
 // SOLUTIONSTART
 def reverse_words(arr):
-     tmp = arr.split(" ")
-     return " ".join(tmp[::-1])
+    tmp = arr.split(" ")
+    return " ".join(tmp[::-1])
 // SOLUTIONEND
 
 
