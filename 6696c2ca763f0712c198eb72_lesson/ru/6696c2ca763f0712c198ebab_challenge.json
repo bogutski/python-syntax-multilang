@@ -1,5 +1,0 @@
-{
-  "name": "Является ли массив палиндромом",
-  "instruction": "Функция `isArrayPalindrome` принимает массив `arr` в качестве параметра. Массив не может быть пустым.\n\nФункция должна вернуть `true`, если массив является палиндромом, и `false` в противном случае.\n\nПримеры запуска функции:\n```javascript\nisArrayPalindrome([1, 2, 3, 2, 1]) // true\nisArrayPalindrome([1, 2, 3, 4, 5]) // false\nisArrayPalindrome([\"m\", \"a\", \"d\", \"a\", \"m\"]) // true\n```",
-  "instructions": {}
-}

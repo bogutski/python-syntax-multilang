@@ -1,5 +1,0 @@
-{
-  "name": "Это большая или маленькая буква?",
-  "instruction": "Напишите функцию `letterDefiner`, которая принимает одну строку.\n\nСтрока содержит всегда только одну букву.\n\nФункция должна возвращать строку `lower`, если переданная буква написана в нижнем регистре, и `upper`, если переданная буква в верхнем регистре.\n\nПримеры запуска функции:\n```javascript\nletterDefiner('a') // 'lower'\nletterDefiner('A') // 'upper'\nletterDefiner('z') // 'lower'\nletterDefiner('Z') // 'upper'\n```\n\nДля определения регистра буквы используйте методы `toLowerCase` и `toUpperCase`.\n\nПохожий пример:\n```javascript\nfunction isUpperCase(letter) {\n  return letter === letter.toUpperCase();\n}\n```\n\nПереводите в верхний и нижний регистр и сравнивайте с исходной строкой.",
-  "instructions": {}
-}

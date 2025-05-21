@@ -1,1 +1,0 @@
-# Array.prototype.group() – группирует элементы массива по заданному условию language: ru

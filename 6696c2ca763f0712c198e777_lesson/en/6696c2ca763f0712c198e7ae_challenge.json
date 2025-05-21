@@ -1,4 +1,0 @@
-{
-  "name": "Changing an element in an array using the indexOf() method",
-  "instruction": "Write a function `onlyFruits` that takes one parameter - an array.\n\nThe array contains any number of lines with fruit names, among which there is only one line with `cucumber`.\nExample array: `['apple', 'banana', 'cucumber', 'orange', 'melon']`\n\nThe function should return an array with `cucumber` changed to `kiwi`.\n\nUse the `indexOf()` method to find the `cucumber` element in the array\n\nAn example of running the function:\n```javascript\nonlyFruits(['banana', 'cucumber', 'orange', 'melon']); // ['banana', 'kiwi', 'orange', 'melon']\n```"
-}

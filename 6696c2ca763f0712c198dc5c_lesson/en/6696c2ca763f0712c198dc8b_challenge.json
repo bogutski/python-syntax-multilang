@@ -1,6 +1,0 @@
-{
-  "name": "String concatenation",
-  "instruction": "Create a variable named `firstWord` and give it the value `'Happy'`.\nCreate a variable named `secondWord` and give it the value `'New'`.\nCreate a variable named `thirdWord` and give it the value `'Year'`.\nCreate a variable named `greeting` and assign it the result of merging the three specified variables\nwith a `space` between them and an `exclamation mark` at the end.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the problem:\n```javascript\nconst firstName = 'Anthony';\nconst lastName = 'Smith';\nconst fullName = firstName + ' ' + lastName;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst firstWord = 'Happy';\nconst secondWord = 'New';\nconst thirdWord = 'Year';\nconst greeting = firstWord + ' ' + secondWord + ' ' + thirdWord + '!';\n```"
-}

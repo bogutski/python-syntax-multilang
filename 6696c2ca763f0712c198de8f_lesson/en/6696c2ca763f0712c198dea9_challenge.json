@@ -1,6 +1,0 @@
-{
-  "name": "Is the number an even number?",
-  "instruction": "Given number num. Is the number even?\n\nCreate a variable `num` and assign it a value of any positive number.\nCreate a variable `isEven` and assign it the result of comparing the remainder of dividing the number `num` by 2 with zero.\nThat is, if the number `num` is even, then the value of the variable `isEven` will be true.\nIf the number `num` is odd, then the value of the variable `isEven` will be false.\n\nLet's provide an example that is essentially similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst number = 90;\nconst isNumberEven = number % 2 === 0; // true\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst num = 19;\nconst isEven = num % 2 === 0;\n```"
-}

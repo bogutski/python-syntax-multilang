@@ -1,5 +1,0 @@
-{
-  "name": "Sum of numbers in an array of arrays",
-  "instruction": "Write a function `sumOfNumbers` that takes an array of arrays.\n\nThere are no elements in the outer array except arrays.\n\nAll elements in the inner arrays are numbers.\n\nThe function should return the sum of all numbers in the inner arrays.\n\nIf the array is empty, return the string 'Array is empty'.\n\n\nExamples of function calls:\n```javascript\nsumOfNumbers([ [1,2,3], [4,5,6], [7,8,9] ]) // 45\nsumOfNumbers([ [10, 20, 50], [], [0, 0, 0] ]) // 80\nsumOfNumbers([ [10,20,30], [-4,-5,-6], [70,80,90], [-10,-11,-12] ]) // 252\nsumOfNumbers([]) // 'Array is empty'\n```",
-  "instructions": {}
-}

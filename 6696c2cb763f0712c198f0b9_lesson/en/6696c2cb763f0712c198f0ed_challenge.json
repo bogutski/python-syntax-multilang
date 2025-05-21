@@ -1,5 +1,0 @@
-{
-  "name": "Delete all array elements except numbers",
-  "instruction": "Write a function `onlyNumbers` that takes an array with different data types and returns an array only with numbers.\n\nIf the array is empty or does not contain any numbers, the function should return an empty array.\n\n\nExamples of function calls:\n```javascript\nonlyNumbers([1, 'test', 42, false, 4, undefined]); // [1, 42, 4]\nonlyNumbers([1, 2, '3', 4, 5]);                    // [1, 2, 4, 5]\nonlyNumbers([10]);                                 // [10]\nonlyNumbers([]);                                   // []\n```",
-  "instructions": {}
-}

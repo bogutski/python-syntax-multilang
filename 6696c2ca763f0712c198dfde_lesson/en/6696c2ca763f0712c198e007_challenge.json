@@ -1,5 +1,0 @@
-{
-  "name": "Calculation of circle area by diameter",
-  "instruction": "Create a variable `PI` outside the function and assign it the value `3.14`.\n\nCreate a function `circleArea` with one parameter `diameter`.\n\nLet the function return the area of the circle.",
-  "instructions": {}
-}

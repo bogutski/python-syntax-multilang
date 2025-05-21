@@ -1,5 +1,0 @@
-{
-  "name": "Сумма из объекта",
-  "instruction": "Создайте функцию `sumFromObject`, которая принимает объект с двумя свойствами `a` и `b`.\n\nПример объекта, который будет передан в функцию:\n```javascript\n{\n  a: 10,\n  b: 20\n}\n```\n\nФункция должна вернуть сумму свойств `a` и `b` объекта.\n\nПример запуска функции:\n```javascript\nsumFromObject({a: 10,  b: 20}) // 30\n```\n\n\nПохожий пример:\n```javascript\nfunction multi(obj) {\n  return obj.a * obj.b;\n}\n```",
-  "instructions": {}
-}

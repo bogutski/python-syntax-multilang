@@ -1,4 +1,0 @@
-{
-  "name": "The sequence number of an element. Arrays",
-  "instruction": "The elementNumber function must accept two parameters:\n* arr - string array\n* str - string\n\nBring the string `str` to lowercase and remove all spaces.\n\nYou need to determine whether the given string is contained in the array and return its sequence number of the element. The sequence number is not equal to the element index.\n\nIf the string is not contained in the array, return the string 'Not found'.\n\n```javascript\nelementNumber(['one', 'two', 'three'], 'Two'); // 2\nelementNumber(['one', 'two', 'three'], ' four'); // 'Not found'\n```"
-}

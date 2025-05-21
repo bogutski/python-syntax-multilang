@@ -1,4 +1,0 @@
-{
-  "name": "Percentage of number with formatting",
-  "instruction": "Write a function `getPercent` that takes two numbers: `num` and `percent`.\n\nThe function should return the percentage of `num` rounded to two decimal places.\n\nExamples of running the function:\n```javascript\ngetPercent(100, 10) // 10\ngetPercent(100, 20) // `` 20\ngetPercent(99, 32) // 31.68\ngetPercent(8, 17) // 1.36\ngetPercent(40, 25) // 10\ngetPercent(40, 13) // 5.2\n```"
-}

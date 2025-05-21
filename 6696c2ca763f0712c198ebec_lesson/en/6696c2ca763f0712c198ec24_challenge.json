@@ -1,4 +1,0 @@
-{
-  "name": "Indexes of element occurrences in a string",
-  "instruction": "Write a function `indexOfOccurrences` that takes a string and a character.\n\nThe function should return a string that lists indexes of occurrences of the character in the string, separated by a space. There should be no space at the end.\n\nFor example, `indexOfOccurrences('abc abc', 'a')` should return `'0 4'` because the character `a` occurs in the string at indices `0` and `4`\n\nIn case the string or character is empty, the function should return an empty string.\n\nExamples of running the function:\n```javascript\nindexOfOccurrences('hello', 'l'); // '2 3'\nindexOfOccurrences('abcaacba', 'a'); // '0 3 4 7'\nindexOfOccurrences('', 'a'); // ''\nindexOfOccurrences('abc', ''); // ''\n```"
-}

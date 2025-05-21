@@ -1,4 +1,0 @@
-{
-  "name": "Checking an array element",
-  "instruction": "The function `searchStr` takes two parameters - the array `arr` and the string `str`.\n\nThe function must return a string specifying whether the `str` element is in the `arr` array:\n* If the element `str` is last in the array, the function should return the string `Element str is last in array\n* If the element `str` is the first in the array, the function should return the string `Element str is first in array`.\n* If the element `str` is neither the first nor the last in the array, the function should return the string `Element str is in the middle of array\n* If the element `str` is not found in the array, the function should return the string `Element str is not in array`.\n\nwhere `str` is the value of the `str` parameter.\n\nAn example of running the function:\n```javascript\nsearchStr(['a', 'b', 'c'], 'c'); // 'Element c is last in array'\n```"
-}

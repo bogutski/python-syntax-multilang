@@ -1,4 +1,0 @@
-{
-  "name": "What is the remainder of dividing an odd number by 2?",
-  "instruction": "An odd number b is given. Is it true that the residue from dividing an odd number by 2 is one?\n\nCreate a variable `b` and assign to it the value of an arbitrary odd positive number.\n\nCreate a variable `remainder` and assign to it an expression to find the remainder of division `b` by 2.\n\nCreate a variable `isOne` and assign to it the result of comparison of variable `remainder` with number 1 (strict equality ===).\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n```\nconst x = 9;\nconst rest = x % 2;\nconst isEqualOne = rest === 1;\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Отсортировать 2 строки по длине",
-  "instruction": "Напишите функцию `sortStringsByLength`, которая принимает две строки и возвращает строку, где первая строка будет короче, а вторая длиннее.\n\nПримеры запуска функции:\n```javascript\nsortStringsByLength('aaa', 'aa'); // 'aa, aaa'\nsortStringsByLength('aa', 'aaa'); // 'aa, aaa'\n\nsortStringsByLength('aaa', ''); // ', aaa'\nsortStringsByLength('', 'aaa'); // ', aaa'\n\nsortStringsByLength('aaa', 'bbb'); // 'aaa, bbb'\nsortStringsByLength('bbb', 'aaa'); // 'bbb, aaa'\n```\n\nЕсли строки одинаковой длины, то возвращаем их в том порядке, в котором они были переданы в функцию.",
-  "instructions": {}
-}

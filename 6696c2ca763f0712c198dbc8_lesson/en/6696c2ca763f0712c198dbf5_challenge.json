@@ -1,6 +1,0 @@
-{
-  "name": "Population growth in the city",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-5.png)\n\nThere are 180000 people living in the city. The population is increasing by 3% per year due to natural increase.\nWhat will be the population of the city one year from now?\n\nCreate a `people` variable and assign it the value 180000.\nThen write a command that increases the value of the `people` variable by 3%.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nlet a = 100;\na = a + a * 0.05; // the command increases the value of the variable `a` by 5 percent.\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet people = 180000;\npeople = people * 1.03;\n```"
-}

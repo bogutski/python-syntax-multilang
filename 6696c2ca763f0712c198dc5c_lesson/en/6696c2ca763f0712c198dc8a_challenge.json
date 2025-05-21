@@ -1,6 +1,0 @@
-{
-  "name": "Blank line",
-  "instruction": "Create a variable named `empty` and assign it the value of the empty string `''`.\nCreate a variable named `emptyLength` and assign it the value of the string length `empty`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst address = '';\nconst addressLength = address.length;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst empty = '';\nconst emptyLength = empty.length;\n```"
-}

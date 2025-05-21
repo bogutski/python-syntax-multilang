@@ -1,5 +1,0 @@
-{
-  "name": "Заполнить массив квадратами четных чисел от n до n*3",
-  "instruction": "Напишите функцию `squaresOfEven`, которая принимает целое число `n` и возвращает массив, заполненный квадратами четных чисел от `n` до `n*3` включительно.\n\nЕсли `n` отрицательное число или ноль, то функция должна вернуть сообщение об ошибке: `'Error: n must be a positive number'`.\n\nДля возведения числа в квадрат можно использовать оператор `**` или функцию `Math.pow(x,power)`.\n\nПримеры запуска функции:\n\n```javascript\nsquaresOfEven(0);   // \"Error: n must be a positive number\"\nsquaresOfEven(-1);  // \"Error: n must be a positive number\"\nsquaresOfEven(1);   // [4]\nsquaresOfEven(2);   // [4, 16, 36]\nsquaresOfEven(5);   // [36, 64, 100, 144, 196]\n```",
-  "instructions": {}
-}

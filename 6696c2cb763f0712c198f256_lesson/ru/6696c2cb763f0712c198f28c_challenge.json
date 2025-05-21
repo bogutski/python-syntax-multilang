@@ -1,5 +1,0 @@
-{
-  "name": "Проверить тип данных в двух массивах",
-  "instruction": "Напишите функцию `sameTypeForAll`, которая принимает два массива.\n\nФункция должна вернуть `true`, если все элементы обоих массивов имеют одинаковый тип данных. Иначе вернуть `false`.\n\nКоличество элементов в массивах не имеет значения, проверка должна быть только по типу данных.\n\nЕсли оба массива пустые, то вернуть строку `'Both arrays are empty'`.\n\n\nПримеры запуска функции:\n```javascript\nsameTypeForAll([true, false, true], [true, false, true]);         // true\nsameTypeForAll([1, true, 3, false, 5], [1, 'true', 3, false, 5]); // false\nsameTypeForAll([1, 2, 3], [-6, 0, 4]);                            // true\nsameTypeForAll([], []);                                           // 'Both arrays are empty'\n```",
-  "instructions": {}
-}

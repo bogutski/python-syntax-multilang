@@ -1,6 +1,0 @@
-{
-  "name": "What type does infinity have?",
-  "instruction": "Create a `infinity` variable and assign it the value of the result of dividing an arbitrary positive number by 0.\nCreate a `typeOfInfinity` variable and assign it the value of the `infinity` variable type.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst inf = 2 / 0;\nconst typeOfInf = typeof (inf);\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst infinity = 1 / 0;\nconst typeOfInfinity = typeof (infinity);\n```"
-}

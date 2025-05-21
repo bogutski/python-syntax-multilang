@@ -1,6 +1,0 @@
-{
-  "name": "Define and display the array type in the console",
-  "instruction": "We haven't gone through this type yet. All in good time. Just write and observe what may be in the console when `typeof` works.\n\nOnly one line.\n\nWrite the command `console.log(typeof [1, 2, 3]);`\n\nSquare brackets.\n\nObserve spaces and punctuation marks. A semicolon at the end.",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log(typeof [1, 2, 3]);\n```"
-}

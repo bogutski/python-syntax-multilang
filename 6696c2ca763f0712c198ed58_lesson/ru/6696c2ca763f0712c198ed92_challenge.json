@@ -1,5 +1,0 @@
-{
-  "name": "Удалить повторяющийся буквы",
-  "instruction": "Напишите функцию `removeDuplicates` которая принимает строку.\n\nФункция должна вернуть новую строку в которой удалены повторяющиеся символы.\n\nПробелы между словами должны остаться.\n\nНачинайте цикл с начала строки, например: строка `123 145 156` должна вернуть `123 45 6`.\n\n\nПример запуска функции:\n```javascript\nremoveDuplicates('hello world'); // 'helo wrd'\nremoveDuplicates('a leg up'); // 'a leg up'\nremoveDuplicates('hands down'); // 'hands ow'\n```",
-  "instructions": {}
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Check if the property exists in the object and return its value",
-  "instruction": "Write a function `hasProperty` that takes parameters:\n* `object` - object, can have any number of properties;\n* `propCheck` - name of the property to check, string.\n\nIf the property `propCheck` is present in the object, the function must return the value `value`.\n\nIf the property `propCheck` is not present in the object, the function should return\nReturn the string `No such property: propCheck`, where:\n`propCheck` is the name of the property that was not found.\n\nExamples of running the function:\n```javascript\nhasProperty({first: \"mushroom\"}, \"first\"); // 'mushroom'\nhasProperty({cat: \"meow\", bird: \"tweet\"}, \"dog\"); // 'No such property: dog'\n```"
-}

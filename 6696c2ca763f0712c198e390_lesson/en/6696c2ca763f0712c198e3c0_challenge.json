@@ -1,4 +1,0 @@
-{
-  "name": "If among the four lines there are the same length",
-  "instruction": "Write a function `hasEqualLength` that takes four strings and returns `true` if there are at least two with the same length among them, and `false` otherwise.\n\nExamples of running the function:\n```javascript\nhasEqualLength('aaa', 'aa', 'aa', 'aaaa'); // true\nhasEqualLength('aaa', 'aa', 'aaa', 'aa'); // true\nhasEqualLength('aaa', 'aa', 'aaaa', 'aaaaa'); // false\n```\nCheck each pair of strings for equality in length. If at least one pair of strings has the same length, the function should return `true`.\n\nIf no pair of strings has the same length, the function should return `false`."
-}

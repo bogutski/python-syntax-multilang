@@ -1,4 +1,0 @@
-{
-  "name": "Finding the first element of a nested array",
-  "instruction": "Write a function `innerArray` that takes one parameter, an array.\n\nThe array contains a nested array at the end.\n\nFor example: `[1, 2, 3, [4, 5, 6]]`\n\nThe function must return the first element of the nested array.\n\nAn example of running the function:\n```javascript\nnestedArray([1, 2, 3, [4, 5, 6]]); // 4\n```"
-}

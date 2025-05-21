@@ -1,5 +1,0 @@
-{
-  "name": "Найти второе максимальное число в массиве",
-  "instruction": "Напишите функцию `secondMaxNumber`, которая принимает массив с числами и возвращает второе максимальное число из массива.\n\n* Если массив пустой, то функция должна вернуть `false`.\n* Если в массиве нет второго максимального числа, которое не равно максимальному, то функция должна вернуть `There is no second max number`.\n\n\nПримеры запуска функции:\n```javascript\nsecondMaxNumber([-1, -42, -2, -4, 10, 5]); // 5\nsecondMaxNumber([22, 36, 45, 31, 71, 18]); // 45\nsecondMaxNumber([5, 5, 5]);                // 'There is no second max number'\nsecondMaxNumber([]);                       // false\n```",
-  "instructions": {}
-}

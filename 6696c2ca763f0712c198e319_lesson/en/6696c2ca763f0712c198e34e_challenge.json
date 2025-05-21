@@ -1,4 +1,0 @@
-{
-  "name": "Inverse rounding",
-  "instruction": "Write a function `swapRound` that takes a number and returns its rounded value.\n\nRounding rules:\n* If the fractional part of a number is greater than or equal to 0.5, then round down.\n* If the fractional part of the number is less than 0.5, round up."
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Вывод в консоль числа",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-6.png)\n\nНапишите команду, которая выводит в консоль число 2020.\nЧисло должно быть без кавычек.",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log(2020);\n```"
-}

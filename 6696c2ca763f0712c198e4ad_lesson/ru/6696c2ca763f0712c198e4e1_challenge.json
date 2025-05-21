@@ -1,5 +1,0 @@
-{
-  "name": "Убрать пробелы и перевести в нижний регистр",
-  "instruction": "Напишите функцию `cleanAndLower`, которая принимает строку и возвращает ее без пробелов в начале и конце, и в нижнем регистре.\n\nПример:\n```javascript\ncleanAndLower('  Hello World  ') // 'hello world'\ncleanAndLower('  tESt  ') // 'test'\n```",
-  "instructions": {}
-}

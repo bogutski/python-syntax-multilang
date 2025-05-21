@@ -1,4 +1,0 @@
-{
-  "name": "Counting the sum of the numbers in the array is interrupted when encountering a three-digit number",
-  "instruction": "Write a function `stopAt3DigitNum` that takes one parameter, an array of numbers.\n\nThe function returns the sum of all the numbers in the array.\n\nIf there is a positive three-digit number in the array, the summation stops and the current sum is returned.\n\nAn example of running the function:\n```javascript\nstopAt3DigitNum([1, 12, 35, 57, 123, 36, 3, 4, 2345]) // 1 + 12 + 35 + 57 = 105\nstopAt3DigitNum([1, 35, -123, 36, 3, 4]) // 1 + 35 + (-123) + 36 + 3 + 4 = -44\nstopAt3DigitNum([1, 35, 3, 4]) // 1 + 35 + 3 + 4 = 43\n```"
-}

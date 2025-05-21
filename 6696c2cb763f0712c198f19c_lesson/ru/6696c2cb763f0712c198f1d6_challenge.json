@@ -1,5 +1,0 @@
-{
-  "name": "Перевернуть элементы массива строк",
-  "instruction": "Напишите функцию `reverseArrayOfStrings`, которая принимает массив строк.\n\nФункция должна вернуть новый массив, в котором элементы строк перевернуты.\n\nЕсли в строке есть цифры, то эта строка должна остаться без изменений.\n\nСмешанных строк (символы и цифры) в массиве не будет.\n\nНапример: `['123', 'hello', 'false']` => `['123', 'olleh', 'eslaf']`\n\nЕсли массив пустой, то вернуть строку `'Array is empty'`.\n\nМетод `reverse` использовать нельзя.\n\n\nПример запуска функции:\n```javascript\nreverseArrayOfStrings(['123', 'test', 'abc']); // ['123', 'tset', 'cba']\nreverseArrayOfStrings(['12345']);             // ['12345']\nreverseArrayOfStrings(['dlrow', 'olleh']);    // ['world', 'hello']\nreverseArrayOfStrings([]);                    // 'Array is empty'\n```",
-  "instructions": {}
-}

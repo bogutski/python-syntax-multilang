@@ -1,5 +1,0 @@
-{
-  "name": "В каком числе дробная часть больше",
-  "instruction": "Напишите функцию `compareFractionalParts`.\n\nФункция принимает два числа, возвращает число, у которого дробная часть больше.\n\nЕсли дробные части равны, то возвращается первое число.\n\nПримеры запуска функции:\n```javascript\ncompareFractionalParts(1.10, 1.2) // 1.2\ncompareFractionalParts(1.2, 1.1) // 1.2\ncompareFractionalParts(2.1, 1.1) // 2.1\ncompareFractionalParts(10.1, 2.3) // 2.3\n```",
-  "instructions": {}
-}

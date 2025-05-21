@@ -1,4 +1,0 @@
-{
-  "name": "Cube volume",
-  "instruction": "Find the volume of a cube if the length of its edge is known.\n\nDefine a variable `edge` and give it a value of an arbitrary non-negative number (an edge of the cube).\nDefine a variable `volume` in which calculate the volume of the cube.\n\nHere is an example, which is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n```\nconst x = 6;\nconst v = x ** 3;\n```"
-}

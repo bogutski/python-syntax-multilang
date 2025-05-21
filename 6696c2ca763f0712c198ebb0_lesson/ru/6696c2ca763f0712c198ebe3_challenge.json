@@ -1,5 +1,0 @@
-{
-  "name": "Определить, являются ли строки анаграммами с помощью методов",
-  "instruction": "В этой задаче нужно использовать те же методы, что и в прошлой, только добавить еще проверки.\n\nНапишите функцию `isAnagram`, которая принимает две строки и возвращает `true`, если они являются анаграммами, и `false`, если нет.\n\nВ строке могут быть пробелы, заглавные и строчные буквы.\n\nЕсли одна или обе строки пустые, то функция должна вернуть строку: `'One or both strings are empty'`.\n\n\nПримеры запуска функции:\n```javascript\nisAnagram('   elbOw', 'beloW ');     // true\nisAnagram('LISTEN', 'silent     ');  // true\nisAnagram('1 2 3', '  1 2 3   ');    // true\nisAnagram('laptop', 'Apple');        // false\nisAnagram('', '');                   // 'One or both strings are empty'\n```",
-  "instructions": {}
-}

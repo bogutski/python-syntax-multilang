@@ -1,5 +1,0 @@
-{
-  "name": "Adding an array as a new element in another array",
-  "instruction": "Create the function `addArray` that should accept two arrays `arr1` and `arr2` containing mixed types of values.\n\nAdd the array `arr2` as the last element in the array `arr1`.\n\nThe function should return the modified array `arr1`.\n\nExample of adding one array as an element to another array:\n\n```javascript\nconst array1 = [1, 2, 3];\nconst array2 = [4, 5, 6];\n\n// add array2 as a new element at the end of array1\narray1.push(array2);\n\nconsole.log(array1);    // [1, 2, 3, [4, 5, 6]]\nconsole.log(array1[3]); // [4, 5, 6]\n```\n\nExamples of function execution:\n\n```javascript\naddArray([1, 2, 3], [4, 5, 6]);         // [1, 2, 3, [4, 5, 6]]\naddArray([10], [false, true, 0, 'ed']); // [10, [false, true, 0, 'ed']]\naddArray([], [false, 5, -6, 'd']);      // [[false, 5, -6, 'd']]\naddArray([1, 2, 3], []);                // [1, 2, 3, []]\naddArray([], []);                       // [[]]\n```",
-  "instructions": {}
-}

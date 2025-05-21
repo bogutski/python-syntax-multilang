@@ -1,6 +1,0 @@
-{
-  "name": "What is the sum of undefined and the number?",
-  "instruction": "Create a variable named `unknown` and assign it the value `undefined`.\nCreate a variable named `sum` and assign it the sum of the variable `unknown` and a random number.\nCreate a variable named `typeOfSum` and assign it the type of the variable `sum`.\nCheck in jsbin.com what the result of adding a number and undefined is.\nCreate a variable named `result` and assign it a string containing the result of adding a number and undefined.\n\nHere is an example that is essentially similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nlet salary;\nlet newSalary = salary + 100;\nlet type = typeof newSalary;\nconst result = 'NaN';\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet unknown;\nlet sum = unknown + 1;\nconst typeOfSum = typeof sum;\nconst result = 'NaN';\n```"
-}

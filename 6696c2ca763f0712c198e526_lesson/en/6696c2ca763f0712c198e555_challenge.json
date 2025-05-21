@@ -1,4 +1,0 @@
-{
-  "name": "The arithmetic mean of the object",
-  "instruction": "Write a function `averageFromObject` that takes an object with three properties `a`, `b` and `c`.\n\nAn example of an object that will be passed to the function:\n```javascript\n{\n  a: 10,\n  b: 20,\n  c: 30\n}\n```\n\nThe function should return the arithmetic mean of the properties `a`, `b` and `c` of the object.\n\nAn example of running the function:\n```javascript\naverageFromObject({a: 10, b: 20, c: 30}) // 20\n```"
-}

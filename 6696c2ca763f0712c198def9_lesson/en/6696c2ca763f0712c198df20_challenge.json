@@ -1,5 +1,0 @@
-{
-  "name": "Correct errors in the `greeting` function",
-  "instruction": "You got the code of novice programmers.\n\nThey wanted to write a `greeting` function, but something went wrong.\n\nCorrect the mistakes.",
-  "instructions": {}
-}

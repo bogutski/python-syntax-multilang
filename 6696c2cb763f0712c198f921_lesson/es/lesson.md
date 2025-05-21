@@ -1,1 +1,0 @@
-# Array.prototype.slice() – возвращает часть массива language: es

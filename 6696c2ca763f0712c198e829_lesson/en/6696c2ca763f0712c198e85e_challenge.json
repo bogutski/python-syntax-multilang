@@ -1,5 +1,0 @@
-{
-  "name": "'Deep Copy' of an array",
-  "instruction": "Write a function `deepCopy` that takes an array and returns a copy of it.\n\nUse JSON.stringify and JSON.parse to solve this problem.\n\nExample runtime:\n```javascript\ndeepCopy([1, 2, 3]); // [1, 2, 3]\n```",
-  "instructions": {}
-}

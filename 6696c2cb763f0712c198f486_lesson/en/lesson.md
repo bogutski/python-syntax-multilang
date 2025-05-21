@@ -1,1 +1,0 @@
-# Array.prototype.forEach() – выполняет функцию для каждого элемента массива language: en

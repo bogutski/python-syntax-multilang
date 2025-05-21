@@ -1,5 +1,0 @@
-{
-  "name": "Из массива в строку",
-  "instruction": "Напишите функцию `arrayToString`, которая принимает массив.\n\nФункция должна вернуть строку, состоящую из элементов массива.\n\nЕсли массив пустой, то функция должна вернуть строку `'Array is empty'`.\n\nМетод `join` использовать нельзя.\n\n\nПримеры запуска функции:\n```javascript\narrayToString(['a', 'b', 'c']) // 'abc'\narrayToString([1, 2, 3]) // '123'\narrayToString([]) // 'Array is empty'\n```",
-  "instructions": {}
-}

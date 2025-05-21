@@ -1,5 +1,0 @@
-{
-  "name": "Использование объекта с заготовленными значениями",
-  "instruction": "Напишите функцию `numToWord`, которая принимает массив чисел от `10` до `19`.\n\nФункция должна вернуть массив строк, где каждая строка - это слово, соответствующее числу из массива.\n\nМассив пустым не будет.\n\nПримеры запуска функции:\n```javascript\nnumToWord([10, 11, 12, 13]); // ['ten', 'eleven', 'twelve', 'thirteen']\nnumToWord([15, 17, 19]);     // ['fifteen', 'seventeen', 'nineteen']\nnumToWord([18, 11, 16, 17]); // ['eighteen', 'eleven', 'sixteen', 'seventeen']\n```",
-  "instructions": {}
-}

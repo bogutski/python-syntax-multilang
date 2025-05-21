@@ -1,5 +1,0 @@
-{
-  "name": "Reverse an array of strings",
-  "instruction": "Write a function `reverseArrayOfStrings` that takes an array of strings.\n\nThe function should return a new array where the array is reversed in reverse order, and each string inside the array is reversed in reverse order.\n\nFor example: `['abc', '123', 'false']` => `['eslaf', '321', 'cba']`\n\nIf the array is empty, return the string `'Array is empty'`.\n\nThe `reverse` method cannot be used.\n\nExample of function execution:\n```javascript\nreverseArrayOfStrings(['123', 'test', abc']); // ['cba', 'tset', '321']\nreverseArrayOfStrings(['12345']);             // ['54321']\nreverseArrayOfStrings(['dlrow', 'olleh']);    // ['hello', 'world']\nreverseArrayOfStrings([]);                    // 'Array is empty'\n```",
-  "instructions": {}
-}

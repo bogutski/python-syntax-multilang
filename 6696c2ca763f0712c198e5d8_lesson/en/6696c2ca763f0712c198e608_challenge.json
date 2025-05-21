@@ -1,4 +1,0 @@
-{
-  "name": "Sum of object properties",
-  "instruction": "Write a function `sumOfTwoObjects` that takes two objects:\n* `obj1` - object which can have properties `a` and `b`.\n* `obj2` - object which can have properties `a` and `b`\n\nThe function must return a number which is the sum of values of properties `a` and `b` from objects `obj1` and `obj2`.\n\nWe need to take into account:\n * some properties: `a` or `b`, may not be in the objects\n * Values of properties `a` and `b` may not be numbers, but `null` or `undefined`\n\nAn example of running a function:\n```javascript\nsumOfTwoObjects({ a: null, b: 8 }, { a: 3, b: undefined }); // 11\nsumOfTwoObjects({ a: 1, b: 2 }, { a: 3, b: 4 }); // 10\nsumOfTwoObjects({ b: 2 }, { a: 3 }); // 5\n```"
-}

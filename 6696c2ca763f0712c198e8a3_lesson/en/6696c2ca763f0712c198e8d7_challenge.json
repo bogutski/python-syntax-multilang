@@ -1,4 +1,0 @@
-{
-  "name": "Fill the array with integers divisible by 5.",
-  "instruction": "Create a function `multiplesOf5`.\n\nThe function takes a non-negative integer `n`.\n\nThe function must return an array filled with integers from `0` to `n` inclusive, multiples of `5`.\n\nIf there are no numbers divisible by 5 in the range, the function should return an empty array.\n\nA number is a multiple of 5 if the remainder of the division of that number by 5 is 0.\n\nExamples of running the function:\n\n```javascript\nmultiplesOf5(10); // [0, 5, 10]\nmultiplesOf5(37); // [0, 5, 10, 15, 20, 25, 30, 35]\nmultiplesOf5(0); // [0]\nmultiplesOf5(1); // [0]\n```"
-}

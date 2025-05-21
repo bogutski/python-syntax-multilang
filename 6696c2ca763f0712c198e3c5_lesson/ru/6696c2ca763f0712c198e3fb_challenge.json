@@ -1,5 +1,0 @@
-{
-  "name": "Первый и последний символ строки",
-  "instruction": "Напиши функцию `firstAndLastSymbol`, которая принимает строку и возвращает строку, состоящую из первого и последнего символа этой строки.\n\nПримеры запуска функции:\n```javascript\nfirstAndLastSymbol('abc'); // 'ac'\nfirstAndLastSymbol('JS'); // 'JS'\nfirstAndLastSymbol('Hello world'); // 'Hd'\n```",
-  "instructions": {}
-}

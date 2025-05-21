@@ -1,4 +1,0 @@
-{
-  "name": "Concatenation of three lines",
-  "instruction": "Write a function `concat` that takes three parameters: `first`, `second`, `third` - strings.\nLet the function return concatenation of three strings.\n\nExamples of running the function:\n```javascript\nconcat('a', 'b', 'c'); // 'abc'\nconcat('hello', ' ', 'world'); // 'hello world'\nconcat('qwe', 'rty', 'uio'); // 'qwertyuio'\n```"
-}

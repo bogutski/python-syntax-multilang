@@ -1,4 +1,0 @@
-{
-  "name": "Checking for inverted lines",
-  "instruction": "Write a function `reversedString` that takes two arguments: `string` and `reversedString`.\n\nIn this problem you will need to check whether `string` is an inverted version of `reversedString`.\n\nReverse `string` and compare it with `reversedString`. If they match, return `true`, otherwise `false`.\n\nExamples of running a function:\n```javascript\nreversedString('hello', 'olleh'); // true\nreversedString('apple', 'apple'); // false\nreversedString('123', ''); // false\n```"
-}

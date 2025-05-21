@@ -1,6 +1,0 @@
-{
-  "name": "Cost of balls",
-  "instruction": "Let's assume you bought 6 balls at a price of $7 each.\nYou need to obtain a string of the following form: `The cost of 6 balls is equal to 42 dollars`.\nBut the number 6 and the expression to obtain the result (42) should be \"embedded\" in the string using `${...}`.\n\nCreate a variable `price` and assign it a value of an arbitrary number (the cost of one ball).\nCreate a variable `count` and assign it a value of an arbitrary number (the number of balls).\nCreate a variable named `message` and assign it a string value using backticks,\ncontaining the text `The cost of XX balls is equal to YY dollars`,\nwhere XX and YY are expressions obtained using `${...}`.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the task requirements:\n```javascript\nconst weight = 5;\nconst amount = 8;\nlet result = `Total weight of ${amount} watermelons is equal to ${weight*amount} pounds`;\n// the console will output the string: \"Total weight of 8 watermelons is equal to 40 pounds\"\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst price = 7;\nconst count = 6;\nconst message = `The cost of ${count} balls is equal to ${price * count} dollars`;\n```"
-}

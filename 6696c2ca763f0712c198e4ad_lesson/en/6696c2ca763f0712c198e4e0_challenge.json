@@ -1,4 +1,0 @@
-{
-  "name": "The function looks for the index of an element in a string. The case is not taken into account.",
-  "instruction": "Write a function `searchIndex` that takes two arguments: a string and a substring.\n\nThe function should return the index of the first occurrence of the substring in the string.\n\nIf no substring is found, the function should return `-1`.\n\nThe search must be case insensitive.\n\nExamples:\n```javascript\nsearchIndex('HeLlo', 'll'); // 2\nsearchIndex('HeLlo', 'lL'); // 2\nsearchIndex('HeLlo', 'LL'); // 2\nsearchIndex('HeLlo', 'Ll'); // 2\n```"
-}

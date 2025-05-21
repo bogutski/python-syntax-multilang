@@ -1,4 +1,0 @@
-{
-  "name": "Splitting an array into numbers and strings",
-  "instruction": "Write a function `numbersAndStrings` that takes an array and returns an array of two arrays:\n\n* the first array contains all numbers from the original array,\n* the second array contains all strings.\n\nThe array can contain any type of data, but only numbers and strings must fall into the corresponding arrays.\n\nIf there are no numbers or strings in the original array, the corresponding array must be empty.\n\nAn example of running a function:\n```javascript\nnumbersAndStrings([1, 'e', 2, 'r', 3]) // [[1, 2, 3], ['e', 'r']]\nnumbersAndStrings([1, 2, 3, 4, 5]) // [[1, 2, 3, 4, 5], []]\nnumbersAndStrings(['a', 'b', 'c']) // [[], ['a', 'b', 'c']]\nnumbersAndStrings([true, undefined, 123, 'abc']) // [[123], ['abc']]\n```"
-}

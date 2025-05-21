@@ -1,4 +1,0 @@
-{
-  "name": "Repeat depending on the case of the first letter",
-  "instruction": "Write a function `repeatString` that takes a string.\n\nHave the function take the first character of the string and repeat it.\n\nIf the first character is written in upper case, repeat it 3 times, if in lower case, repeat it 2 times.\n\n\nAn example of how to start the function:\n```javascript\nrepeatString('abc'); // 'aa'\nrepeatString('Abc'); // 'AAA'\n```"
-}

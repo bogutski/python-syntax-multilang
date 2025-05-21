@@ -1,6 +1,0 @@
-{
-  "name": "Is null equal to itself?",
-  "instruction": "Create a variable named `strictEqual` and assign it the result of strict comparison (===) of the values `null` and `null`.\nCreate a variable named `equal` and assign it the result of loose comparison (==) of the variable `null` and `null`.\n(Check the result in the console).\n\nLet's provide an example that is essentially similar to what needs to be done,\nbut adapt it to the task requirements:\n```javascript\nconst comparison = null === null ;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst strictEqual = null === null;\nconst equal = null == null;\n```"
-}

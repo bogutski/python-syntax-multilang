@@ -1,6 +1,0 @@
-{
-  "name": "Variable with value true",
-  "instruction": "Create a variable named `isStudy` and assign it the value `true`.\nCreate a variable named `typeOfIsStudy` and assign it the variable type of `isStudy`.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst isAdult = true;\nconst typeOfIsAdult = typeof isAdult;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst isStudy = true;\nconst typeOfIsStudy = typeof isStudy;\n```"
-}

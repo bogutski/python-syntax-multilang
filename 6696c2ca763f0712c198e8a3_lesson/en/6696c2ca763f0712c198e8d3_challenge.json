@@ -1,4 +1,0 @@
-{
-  "name": "An array of integers from 0 to n",
-  "instruction": "The function `consecutiveNumbers` takes one parameter - the number `n`.\n\nThe function must return an array of integers from 0 to `n` inclusive.\n\nIf the passed number `n` is less than zero, the function should return an empty array.\n\nAn example of filling an array with numbers from 1 to 5:\n\n```javascript\nconst arr = [];\nfor (let i = 1; i <= 5; i++) {\narr.push(i);\n}\nconsole.log(arr); // [1, 2, 3, 4, 5]\n```\n\nExamples of running a function:\n\n```javascript\nconsecutiveNumbers(5); // [0, 1, 2, 3, 4, 5]\nconsecutiveNumbers(10); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nconsecutiveNumbers(0); // [0]\n```"
-}

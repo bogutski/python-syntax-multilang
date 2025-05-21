@@ -1,6 +1,0 @@
-{
-  "name": "Calculate and output to the console. The area of a circle with radius 4",
-  "instruction": "Only one line.\n\nWrite the command `console.log(4 ** 2 * 3.14);`\n\nObserve spaces and punctuation marks.",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log(4 ** 2 * 3.14);\n```"
-}

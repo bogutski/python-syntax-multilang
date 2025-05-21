@@ -1,5 +1,0 @@
-{
-  "name": "The function returns a number multiplied by 2",
-  "instruction": "Write a function `double` that takes a number and returns its doubled value.\n\nExample:\n```js.\ndouble(2) // 4\ndouble(3) // 6\n```",
-  "instructions": {}
-}

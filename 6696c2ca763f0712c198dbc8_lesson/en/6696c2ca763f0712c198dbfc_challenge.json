@@ -1,6 +1,0 @@
-{
-  "name": "How much money is left over from shopping?",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-12.png)\n\nAfter the purchases made at the store, the amount of money available decreased by $48.\n\nCreate a `cash` variable with the value `200`.\n\nWrite a command that decreases the available value of the `cash` variable by `48`.",
-  "instructions": {},
-  "hint": "```javascript\nlet cash = 200\ncash = cash - 48;\n```"
-}

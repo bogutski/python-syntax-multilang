@@ -1,6 +1,0 @@
-{
-  "name": "Calculate and output to the console. 5 percent of 1140",
-  "instruction": "Only one line.\n\nWrite the command `console.log(1140 * 5 / 100);`\n\nObserve spaces and punctuation marks.",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log(1140 * 5 / 100);\n```"
-}

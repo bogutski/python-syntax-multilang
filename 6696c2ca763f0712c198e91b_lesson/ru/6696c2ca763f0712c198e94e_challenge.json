@@ -1,5 +1,0 @@
-{
-  "name": "Разделение букв на верхний и нижний регистр",
-  "instruction": "Напиши функцию `lettersDivider`, которая принимает строку с верхним и нижним регистром букв.\n\nФункция должна вернуть массив из двух строк. Первая строка должна содержать все буквы в нижнем регистре, а вторая - в верхнем.\n\nПример проверки на регистр буквы:\n```javascript\nlet str = 'world';\nconsole.log(str[0] === str[0].toLowerCase()); // true\n```\n\nПример запуска функции:\n```javascript\nlettersDivider('HeLLOwoRLD'); // [ 'ewo', 'HLLORLD' ]\nlettersDivider('www'); // [ 'www', '' ]\nlettersDivider(''); // [ '', '' ]\n```",
-  "instructions": {}
-}

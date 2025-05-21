@@ -1,1 +1,0 @@
-# Первая программа Hello World language: es

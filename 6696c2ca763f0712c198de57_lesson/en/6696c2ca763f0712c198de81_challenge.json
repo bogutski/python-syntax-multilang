@@ -1,6 +1,0 @@
-{
-  "name": "Forks and spoons",
-  "instruction": "Given the number of spoons. How many forks and spoons are there on the table in total if there are twice as many forks as spoons?\n\nSet the variable `spoon` and assign it a value of any non-negative number (the number of spoons).\n\nSet the variable `fork` and assign it an expression to calculate the number of forks.\n\nSet the variable `tableware` in which you will calculate the total number of forks and spoons.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst apple = 10;\nconst orange = apple * 4;\nconst fruits = apple + orange;\n\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst spoon = 99;\nconst fork = spoon * 2;\nconst tableware = spoon + fork;\n```"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Find the area of a right triangle",
-  "instruction": "In a right triangle, two legs `a` and `b` are given. Find its area.\n\nAssign a variable `a` and give it a value of any non-negative number (the first leg).\n\nAssign a variable `b` and give it a value of any non-negative number (the second leg).\n\nAssign a variable `area` in which you calculate the area of the triangle (half of the product of the legs).\n\nLet's provide an example that is essentially similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst x = 3;\nconst y = 5;\nconst z = x * y / 2 ;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst a = 3;\nconst b = 5;\nconst area = a * b / 2;\n```"
-}

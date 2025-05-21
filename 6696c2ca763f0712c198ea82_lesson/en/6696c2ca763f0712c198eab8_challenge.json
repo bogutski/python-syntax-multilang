@@ -1,4 +1,0 @@
-{
-  "name": "The sum of all even numbers in the array",
-  "instruction": "Write a function `sumEven` that takes one parameter, an array.\n\nThe array is of arbitrary length and consists only of positive or negative integers.\n\nThe function should return the sum of all even numbers in the array.\n\nAn example of running the function:\n```javascript\nsumEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // 2 + 4 + 6 + 8 + 10 = 30\nsumEven([1, -2, 3, 4, 5, -6, 7, 8, 9]) // (-2) + 4 + (-6) + 8 = 4\n```"
-}

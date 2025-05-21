@@ -1,4 +1,0 @@
-{
-  "name": "Fill the array with squares of even numbers from n to n*3",
-  "instruction": "Write a function `squaresOfEven` that takes an integer `n` and returns an array filled with squares of even numbers from `n` to `n*3` inclusive.\n\nIf `n` is a negative number or zero, the function should return an error message: `'Error: n must be a positive number'`.\n\nYou can use the `**` operator or the function `Math.pow(x,power)` to square a number.\n\nExamples of running the function:\n\n```javascript\nsquaresOfEven(0); // \"Error: n must be a positive number\"\nsquaresOfEven(-1); // \"Error: n must be a positive number\"\nsquaresOfEven(1); // [4]\nsquaresOfEven(2); // [4, 16, 36]\nsquaresOfEven(5); // [36, 64, 100, 144, 196]\n```"
-}

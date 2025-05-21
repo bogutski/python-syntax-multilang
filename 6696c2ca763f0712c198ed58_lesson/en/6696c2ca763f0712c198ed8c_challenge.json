@@ -1,4 +1,0 @@
-{
-  "name": "Remove spaces in the line",
-  "instruction": "Write a function `deleteSpace` that takes a string `str` and returns a new string with the same text as `str`, but without spaces.\n\nExamples of running the function:\n```javascript\ndeleteSpace('two strings'); // 'twostrings'\ndeleteSpace(' a very long word'); // 'averylongword'\ndeleteSpace(' '); // ''\n```"
-}

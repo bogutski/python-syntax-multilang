@@ -1,5 +1,0 @@
-{
-  "name": "Sum of numbers in the array and in internal arrays",
-  "instruction": "Write a function sumOfNumbers that takes an array of numbers and inner arrays.\n\n* The outer array can only contain numbers and other arrays with numbers.\n* The inner arrays can only contain numbers.\n\nThe function should return the sum of all the numbers.\n\nIf the array is empty, return the string \"Array is empty\".\n\nExamples of function calls:\n```javascript\nsumOfNumbers([1, 2, [1, 2, 3], 3, 4, [1, 2, 3], 5, 10]); // 37\nsumOfNumbers([1, 2, 3, 4, 5, 10]);                       // 25\nsumOfNumbers([1, [], 2, [], 3, []]);                     // 6\nsumOfNumbers([]);                                        // \"Array is empty\"\n```",
-  "instructions": {}
-}

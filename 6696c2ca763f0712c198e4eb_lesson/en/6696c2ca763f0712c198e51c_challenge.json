@@ -1,5 +1,0 @@
-{
-  "name": "The function returns an empty object",
-  "instruction": "Write a function `emptyObject` that returns an empty object.\n\nEmpty object `{}`\n\nAn empty object has no properties.",
-  "instructions": {}
-}

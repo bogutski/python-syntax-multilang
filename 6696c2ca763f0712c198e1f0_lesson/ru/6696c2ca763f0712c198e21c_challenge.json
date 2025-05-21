@@ -1,5 +1,0 @@
-{
-  "name": "Функция на определение арифметической операции",
-  "instruction": "Напишите функцию `evalNumbers()` , которая принимает три аргумента: `num1, num2` (два числа) и `operation` (арифметическая операция : \"add\" или \"subtract\", или \"multiply\", или \"divide\").\n\nЕсли `operation` задан, функция должна вернуть результат арифметической операции между двумя числами `num1, num2`.\nЕсли `operation` задан, но это не арифметическая операция, функция должна вернуть `Invalid operation`.\nЕсли `operation` не задан, функция должна вернуть `Please, pass the operation`\n\nПримеры:\n- функция `evalNumbers(1, 23, \"add\")` должна возвратить 24;\n- функция `evalNumbers(1, 3)` должна возвратить `Please, pass the operation`.\n- функция `evalNumbers(1, 2, 'hello')` должна возвратить `Invalid operation`.\n- функция `evalNumbers(22, 11, \"divide\")` должна возвратить 2.",
-  "instructions": {}
-}

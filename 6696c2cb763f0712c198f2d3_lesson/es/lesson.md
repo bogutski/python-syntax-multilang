@@ -1,1 +1,0 @@
-# Array.prototype.push() – добавляет элемент в конец массива language: es

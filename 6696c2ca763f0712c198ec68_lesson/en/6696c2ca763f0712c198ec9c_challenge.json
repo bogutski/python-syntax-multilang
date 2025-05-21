@@ -1,5 +1,0 @@
-{
-  "name": "Count the vowels",
-  "instruction": "The `countVowels` function takes a string and returns the number of vowels in the string.\n\nThe string consists of lowercase letters only.\n\nExamples of running the function:\n```javascript\ncountVowels(\"hello\") // 2\ncountVowels(\"why\") // 0\n```",
-  "instructions": {}
-}

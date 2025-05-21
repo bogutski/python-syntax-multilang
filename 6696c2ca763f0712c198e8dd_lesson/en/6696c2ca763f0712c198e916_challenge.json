@@ -1,4 +1,0 @@
-{
-  "name": "Find a string or a Boolean value in an array",
-  "instruction": "Write a function `findStringOrBoolean` that takes an array.\n\nThe function should return the index of the last element found in the array, which is a string or a boolean value.\n\nIf there is no such element, the function should return the string `No string or boolean found`.\n\nAn example of running the function:\n```javascript\nfindStringOrBoolean([true, 2, '3', 4, false]) // 4\nfindStringOrBoolean(['dev', 132, 'abc', 345]) // 2\nfindStringOrBoolean([1, 2, 3, 4, 5]) // 'No string or boolean found'\n```"
-}

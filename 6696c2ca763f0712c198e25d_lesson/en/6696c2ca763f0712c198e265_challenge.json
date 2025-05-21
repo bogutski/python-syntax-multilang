@@ -1,4 +1,0 @@
-{
-  "name": "Three administrators on the site",
-  "instruction": "There are three administrators on the site. Each of them has his own email and his own password.\n\nThe function should return `true` only if the user is an administrator.\n\nWrite a function `isAdmin` that takes two parameters: `email` and `password`.\n\nThe function should return `true` if:\n* `email` is `admin@pasv.us` and `password` is `12345`\n* Or `email` equals `admin2@pasv.us` and `password` equals `12345_`\n* or `email` equals `admin3@pasv.us` and `password` equals `12345__`\n\nIn all other cases the function should return `false`."
-}

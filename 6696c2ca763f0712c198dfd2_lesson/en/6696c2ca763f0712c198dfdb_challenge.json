@@ -1,5 +1,0 @@
-{
-  "name": "Correct the errors in the function. Address concatenation with formatting",
-  "instruction": "There are typos in the function, correct them.\n\n\nAn example of a function call:\n```javascript\naddressFormat('NY', '10001', '1', '40.7128', '74.0060');\n```\nShould return the line: ``NY 10001 // 1 (40.7128 - 74.0060)`",
-  "instructions": {}
-}

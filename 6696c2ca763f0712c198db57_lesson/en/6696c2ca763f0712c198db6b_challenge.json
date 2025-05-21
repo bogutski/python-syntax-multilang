@@ -1,6 +1,0 @@
-{
-  "name": "Ludolph's number, or Pi number.",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-3.png)\n\nPi is a mathematical constant expressing the ratio of the length of a circle to the length of its diameter.\nThere is an obsolete name for the number Pi: the Ludolph number, but this name is hardly used anymore.\nMathematicians still continue to discover new digits of this infinite number.\nThe approximate value of Pi is 3.1415.\n\nCreate a constant named `pi` and assign it the value `3.1415`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst si = 3.878323;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst pi = 3.1415;\n```"
-}

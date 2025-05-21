@@ -1,5 +1,0 @@
-{
-  "name": "Counting the number of even elements",
-  "instruction": "The function `countEachEvenEl` takes an array of numbers.\n\nThe function should return an object, where the keys are the even elements of the array, and the values are the number of their occurrences in the array.\n\nThe function will not receive zero or an empty array.\n\nFix the errors for the function to work correctly.\n\nExamples of function calls:\n```javascript\ncountEachEvenEl([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); // {2: 1, 4: 1, 6: 1, 8: 1, 10: 1}\ncountEachEvenEl([2, 2, 4, 4, 4, 4]); // {2: 2, 4: 4}\ncountEachEvenEl([1, 1, 1, 1, 1, 1]); // {}\n```",
-  "instructions": {}
-}

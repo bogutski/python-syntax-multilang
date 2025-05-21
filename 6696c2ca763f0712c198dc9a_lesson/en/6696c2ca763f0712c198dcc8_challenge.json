@@ -1,6 +1,0 @@
-{
-  "name": "Print in the console the line with the slant quotation marks `Hello JavaScript`",
-  "instruction": "Just one line.\n\nObserve spaces and punctuation marks. Semicolon at the end. Slanted quotation marks.\n\n```javascript\nconsole.log(``Hello JavaScript'');\n```",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log(`Hello JavaScript`);\n```"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Subtraction of numbers written as strings",
-  "instruction": "Set variables `a` and `b` and assign them values as strings containing arbitrary numbers.\n\nSet variable `difference` and assign it the result of subtracting the numbers (subtract `b` from `a`), after converting the strings to numbers.\nFor example, the result of `'5' - '3'` should be 2.\n\nHere is an example that is conceptually similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst num1 = '13';\nconst num2 = '15';\nconst result = +num1 - +num2;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst a = '20';\nconst b = '22';\nconst difference = +a - +b;\n```"
-}

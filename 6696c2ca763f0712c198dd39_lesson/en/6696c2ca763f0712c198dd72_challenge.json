@@ -1,6 +1,0 @@
-{
-  "name": "Student notes",
-  "instruction": "The student takes notes in a very strange way during lectures: he abbreviates each word by leaving only the first and last letter, and puts a dash between them. Thus, for example, the word \"function\" becomes \"f-n\".\nYou are required to provide an arbitrary word and write it in the way the student does.\n\nCreate a variable `word` and assign it a value of an arbitrary string.\nCreate a variable `cut` and assign it the value of the concatenation of the first letter, dash, and last letter.\n\nExample provided, which is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst name = 'Moscow';\nconst shortName = name[0] + '.';\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst word = 'Function';\nconst cut = word[0] + '-' + word[word.length - 1];\n```"
-}

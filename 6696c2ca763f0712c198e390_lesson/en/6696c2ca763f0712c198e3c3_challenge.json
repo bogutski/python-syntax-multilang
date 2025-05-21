@@ -1,4 +1,0 @@
-{
-  "name": "Determine a rising or falling trend",
-  "instruction": "Write a function `trend` that takes three strings and returns the string `Up` if the length of the second string is longer than the first, and the length of the third string is longer than the second.\n\nIf the length of the second line is less than the first and the length of the third line is less than the second, the `Down` line is returned.\n\nIf none of the conditions are met, the string `Not sure` is returned.\n\nExamples of running the function:\n```javascript\ntrend('aaa', 'aa', 'a'); // 'Down'\ntrend('aaa', 'bbbb', 'bbbbb'); // 'Up'\ntrend('aaa', 'qqq', 'qqqqq'); // 'Not sure'\n```"
-}

@@ -1,4 +1,0 @@
-{
-  "name": "The line starts and ends with the same character",
-  "instruction": "Write a function `isSameStartAndEnd` that accepts a string and returns `true` if the string begins and ends with the same character.\n\nDo not count spaces at the beginning and end of the string.\n\nNot case sensitive.\n\nExamples:\n```javascript\nisSameStartAndEnd('a'); // true\nisSameStartAndEnd(' aa'); // true\nisSameStartAndEnd('abA '); // true\nisSameStartAndEnd('a b a '); // true\nisSameStartAndEnd('a b b'); // false\nisSameStartAndEnd('a b a b'); // false\n```"
-}

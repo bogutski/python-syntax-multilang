@@ -1,4 +1,0 @@
-{
-  "name": "Which line contains more vowels",
-  "instruction": "The function `whatWin` takes 2 parameters - strings\n\nStrings can contain words consisting only of lowercase letters and spaces\n\nIt is necessary to determine which of the strings contains more vowels (a, e, i, o, u)\n\nThe function must return the string:\n* \"First word wins!\" if the first string contains more vowels\n* \"Second word wins!\" if the second line contains more vowels\n* \"It's a draw!\" if the number of vowels in both lines is the same\n\nAn example of function call:\n```javascript\nwhatWin(\"a\", \"b\") // \"First word wins!\"\nwhatWin(\"a\", \"a\") // \"It's a draw!\"\nwhatWin(\"a\", \"aa\") // \"Second word wins!\"\n```"
-}

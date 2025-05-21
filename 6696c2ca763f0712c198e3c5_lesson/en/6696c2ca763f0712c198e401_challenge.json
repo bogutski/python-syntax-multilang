@@ -1,5 +1,0 @@
-{
-  "name": "Reformat phone number",
-  "instruction": "A string containing a phone number is passed to the `formatPhoneNumber` function.\n\nThe incoming string will always be of the form `+XXXXXXXXXXX`, where `X` is a digit.\nIt is necessary to reformat the phone number into the format `+1 (XXX) XXX-XXXX`, where `X` is a digit.\n\nExamples of how to run the function:\n```javascript\nformatPhoneNumber('+17071234567'); // '+1 (707) 123-4567'\nformatPhoneNumber('+24151234567'); // '+2 (415) 123-4567'\nformatPhoneNumber('+36501234567'); // '+3 (650) 123-4567'\n```\n\nUse string concatenation and refer to each character in the string by index.",
-  "instructions": {}
-}

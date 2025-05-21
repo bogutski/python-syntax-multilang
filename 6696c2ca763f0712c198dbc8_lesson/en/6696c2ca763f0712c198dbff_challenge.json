@@ -1,6 +1,0 @@
-{
-  "name": "Weight after weight loss",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-15.png)\n\nWith proper diet and exercise, Claudia managed to lose 25 pounds.\nHow much does she weigh now?\n\nCreate a variable `klaudiaWeight` with a value of `220`.\n\nWrite a command that decreases the existing value of the `klaudiaWeight` variable by `25`.",
-  "instructions": {},
-  "hint": "```javascript\nlet klaudiaWeight = 220\nklaudiaWeight = klaudiaWeight - 25;\n```"
-}

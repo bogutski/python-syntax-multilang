@@ -1,4 +1,0 @@
-{
-  "name": "Swap the first and nth elements of the array",
-  "instruction": "Write a function `switchElem` that takes two parameters, an array and a number.\n\nAn array of arbitrary length that can contain any values.\n\nThe number is the sequence number of the element in the array (not to be confused with the element index).\n\nSwap the first and the nth elements of the array.\n\nThe function should return the changed array.\n\nExample of running the function:\n```ja\nswitchElem([1, 2, 3, 4, 5], 3) // [3, 2, 1, 4, 5]\nswitchElem([1, 2, 3, 4, 5, ['a', 'b', 'c']], 6) // [['a', 'b', 'c'], 2, 3, 4, 5, 1]\nswitchElem(['a', 2, true, 4, '5', false, 113, 'k'], 7) // [113, 2, true, 4, '5', false, 'a', 'k']\n```"
-}

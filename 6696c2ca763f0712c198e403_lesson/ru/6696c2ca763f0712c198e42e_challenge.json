@@ -1,5 +1,0 @@
-{
-  "name": "Перевести строку в верхний регистр",
-  "instruction": "Напишите функцию `allUpper`, которая принимает строку и возвращает эту же строку, но в верхнем регистре.\n\nПримеры запуска функции:\n```javascript\nallUpper('Hello') // 'HELLO'\nallUpper('Hello World') // 'HELLO WORLD'\nallUpper('aaa') // 'AAA'\n```",
-  "instructions": {}
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Adding a new element to the end of an array",
-  "instruction": "Create a function `addElement`.\n\nFunction parameters:\n* `array` - array of numbers\n* `endElement` - the number to add to the end of the array\n\nThe function should return the array resulting from the addition of `endElement`.\nUse the `push` method to solve the problem.\n\nExamples of running the function:\n\n```javascript\naddElement([1, 2, 3 ,4], 5); // [1, 2, 3, 4, 5]\naddElement([2, 13, 64], 0); // [2, 13, 64, 0]\naddElement([2, 0], 56); // [2, 0, 56]\naddElement([], 56); // [56]\n```"
-}

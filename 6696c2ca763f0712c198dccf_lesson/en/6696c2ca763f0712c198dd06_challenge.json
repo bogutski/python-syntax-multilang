@@ -1,6 +1,0 @@
-{
-  "name": "Which friend picked the most mushrooms?",
-  "instruction": "Two friends went to the forest for mushrooms, and after collecting them, they decided to count who collected more.\n\nThe first friend counted 20 mushrooms in her basket, and the second friend counted 23.\n\nCreate two variables `firstCart` and `secondCart` and assign them the corresponding values of 20 and 23.\n\nCreate a third variable `trueOrFalse` and check: is it true that the second friend collected more mushrooms?\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst deckOfCardsForPoker = 52;\nconst deckOfCardsForJass = 36;\nconst trueOrFalse = deckOfCardsForPoker < deckOfCardsForJass; //false\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst firstCart = 20;\nconst secondCart = 23;\nconst trueOrFalse = firstCart < secondCart;\n```"
-}

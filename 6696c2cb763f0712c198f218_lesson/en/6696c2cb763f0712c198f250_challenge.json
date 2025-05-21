@@ -1,5 +1,0 @@
-{
-  "name": "Check for insertion of elements of one array into another array",
-  "instruction": "The problem is similar to the previous one, but without a solution algorithm.\n\nThe `isFirstContainsSecond` function must accept two arrays that can contain strings and numbers\n\nThe function must return `true` if the first array contains all the elements of the second array, otherwise `false`.\n\nIf at least one of the arrays is empty, the function must return `false`.\n\nExamples of how to run the function:\n```javascript\nisFirstContainsSecond([1, 2, 3], [3, 2]) // true\nisFirstContainsSecond([\"hello\", \"hello\", \"js\"], [\"js\", \"practice\") // false\nisFirstContainsSecond([1, 2, 3], []) // false\n```",
-  "instructions": {}
-}

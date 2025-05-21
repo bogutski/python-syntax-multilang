@@ -1,6 +1,0 @@
-{
-  "name": "Perimeter and area of a rectangle",
-  "instruction": "Given sides of a rectangle `a` and `b`.\nMake a program that calculates its perimeter `p` and area `s`.\n\nCreate variables named `a` and `b` and assign them values of arbitrary positive numbers.\nCreate a variable `p` and assign to it the value of the expression for calculating the perimeter of a rectangle.\nCreate a variable `s` and assign to it the value of the expression to calculate the area of the rectangle.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst side1 = 4;\nconst side2 = 9;\nconst square = side1 * side2;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst a = 7;\nconst b = 7;\nconst p = (a + b) * 2;\nconst s = a * b;\n```"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Стоимость мячей",
-  "instruction": "Предположим, вы купили в магазине 6 мячей по цене $7/шт.\nНадо получить строку следующего вида: `The cost of 6 balls is equal to 42 dollars`.\nНо число 6 и выражение для получения результата (42) надо \"встроить\" в строку при помощи `${…}`.\n\nСоздайте переменную `price`, присвойте ей значение произвольного числа (стоимость одного мяча).\nСоздайте переменную `count` и присвойте ей значение произвольного числа (количество мячей).\nСоздайте переменную с именем `message` и присвойте ей значение строки c использованием обратных кавычек,\nсодержащую текст `The cost of XX balls is equal to YY dollars`,\nгде XX, YY - выражения полученные при помощи ${…}.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst weight = 5;\nconst amount = 8;\nlet result = `Total weight of ${amount} watermelons is equal to ${weight*amount} pounds`;\n// в консоль будет выведена строка: \"Total weight of 8 watermelons is equal to 40 pounds\"\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst price = 7;\nconst count = 6;\nconst message = `The cost of ${count} balls is equal to ${price * count} dollars`;\n```"
-}

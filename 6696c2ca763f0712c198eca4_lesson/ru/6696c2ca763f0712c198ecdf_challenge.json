@@ -1,5 +1,0 @@
-{
-  "name": "Количество строчных и заглавных букв, не считая остальных символов",
-  "instruction": "Напишите функцию `numOfLowerAndUpperCase`, которая принимает строку и возвращает массив.\n\nМассив должен содержать два элемента, где первый элемент - количество строчных букв, а второй - количество прописных букв.\n\nВ строке могут быть любые символы.\n\nЕсли в строке нет строчных или прописных букв, то в массиве должен быть 0 на соответствующем месте.\n\n\nПримеры запуска функции:\n```javascript\nnumOfLowerAndUpperCase('aBc De Fg!H') // [4, 4]\nnumOfLowerAndUpperCase(' J@a1#v4%a ') // [3, 1]\nnumOfLowerAndUpperCase('apple')       // [5, 0]\nnumOfLowerAndUpperCase('PASV')        // [0, 4]\nnumOfLowerAndUpperCase('')            // [0, 0]\n```",
-  "instructions": {}
-}

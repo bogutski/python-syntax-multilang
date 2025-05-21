@@ -1,5 +1,0 @@
-{
-  "name": "Reverse the array",
-  "instruction": "The `reverseArray` function takes an array that may contain different data types.\n\nThe function should return a new array with the elements in reverse order.\n\nExample function calls:\n```javascript\nreverseArray([1, 2, 3]) // [3, 2, 1]\nreverseArray([\"hello\" , 12, \"world\", 234, false]) // [false, 234, \"world\", 12, \"hello\"]\n```",
-  "instructions": {}
-}

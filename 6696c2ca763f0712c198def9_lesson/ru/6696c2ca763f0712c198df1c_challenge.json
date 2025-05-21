@@ -1,5 +1,0 @@
-{
-  "name": "Напишите пустую функцию `hello`",
-  "instruction": "Напишите пустую функцию `hello`.\n\nПример пустой функции `time`:\n```javascript\nfunction time() {}\n```",
-  "instructions": {}
-}

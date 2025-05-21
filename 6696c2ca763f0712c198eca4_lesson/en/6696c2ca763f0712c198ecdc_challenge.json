@@ -1,4 +1,0 @@
-{
-  "name": "Which line has more capital letters?",
-  "instruction": "Write a function `twoStringsBattle` that takes two strings.\n\nThe function should count how many capital letters are in the first and second lines and return a string of the form:\n\n* `${str1} has won with number of ${countStr1}` - if the first line has more capital letters\n* `${str2} has won with number of ${countStr2}` - if the second line has more capital letters\n* `Draw` - if the number of capital letters in both lines is equal or the lines are empty\n\nBefore the loop, check which line is longer and use its length in the loop.\n\n\nExamples of function execute:\n```javascript\ntwoStringsBattle('AAA', 'Hello'); // 'AAA has won with number of 3'\ntwoStringsBattle('', 'aBc'); // 'aBc has won with number of 1'\ntwoStringsBattle('', ''); // 'Draw'\n```"
-}

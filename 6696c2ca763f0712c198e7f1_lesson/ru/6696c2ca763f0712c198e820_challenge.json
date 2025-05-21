@@ -1,5 +1,0 @@
-{
-  "name": "Alice последнее имя в массиве",
-  "instruction": "Функция `names` принимает массив строк с именами.\n\nНеобходимо определить содержит ли массив строку `Alice` и если нет, то добавить ее в конец массива.\n\nЕсли же массив содержит имя `Alice`, то необходимо удалить все элементы массива, после имени `Alice`.\n\nИспользуйте методы `push` и `splice`.\n\nПример похожей задачи:\n```javascript\nconst animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];\nconst index = animals.indexOf('camel');\nif (index > -1) {animals.splice(index +1);} // Если camel присутствует в массиве, то удалить все элементы после camel, сам элемент camel останется\nelse {animals.push('camel');} // добавит camel в конец массива\nconsole.log(animals); // [\"ant\", \"bison\", \"camel\"]\n```\n\nПримеры запуска функции:\n```javascript\nnames(['Bob', 'Alice', 'Kate']) // ['Bob', 'Alice']\nnames(['Bob', 'Kate']) // ['Bob', 'Kate', 'Alice']\n```",
-  "instructions": {}
-}

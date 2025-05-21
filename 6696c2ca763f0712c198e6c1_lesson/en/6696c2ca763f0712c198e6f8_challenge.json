@@ -1,5 +1,0 @@
-{
-  "name": "By how many percent is one array longer than the other?",
-  "instruction": "Write the function `calculateLength`, which takes two parameters:\n* `arr1` - an array\n* `arr2` - an array\n\nThe function should return a string that indicates by how much one array is longer than the other:\n\n* For example, if the first array is 20% longer than the second array, the function should return the string\n`The first array is 20% longer than the second array`.\n\n* If the second array is 50% longer than the first array, the function should return the string\n`The second array is 50% longer than the first array`.\n\n* If the arrays are of the same length, the function should return the string `The arrays are the same length`.\n\n* If one of the arrays is empty, the function should return the string `One of the arrays is empty`.\n\nUse the `Math.round()` function to round numbers.",
-  "instructions": {}
-}

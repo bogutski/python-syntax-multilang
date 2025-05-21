@@ -1,5 +1,0 @@
-{
-  "name": "Double all numbers, including number lines",
-  "instruction": "The function `doubleAllNumbers` takes an array as a parameter.\n\nThe array can contain strings, numbers, NaN, and numbers in the form of strings.\n\nThe function should double all numbers, including numbers in the form of strings, and return an array with the doubled numbers.\n\nIf an element of the array is not a number, it should remain unchanged.\n\nExample function calls:\n```javascript\ndoubleAllNumbers([1, 2, \"3\"]) // [2, 4, 6]\ndoubleAllNumbers([1, \"hello\", \"true\", \"5\"]) // [2, \"hello\", \"true\", 10]\ndoubleAllNumbers([\"hello\", \"35a\", NaN]) // [\"hello\", \"35a\", NaN]\n```",
-  "instructions": {}
-}

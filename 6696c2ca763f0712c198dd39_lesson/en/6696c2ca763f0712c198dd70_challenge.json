@@ -1,6 +1,0 @@
-{
-  "name": "Am I an adult now?",
-  "instruction": "Create a variable named `age` and assign it a value of any number.\nCreate a variable named `isAdult` and assign it the value `true`\nif the age is greater than or equal to 18, and `false` otherwise.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst salary = 80 ;\nconst haveJob = salary > 0;   // true, if salary > 0; false, if salary <= 0,\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst age = 25;\nconst isAdult = age >= 18;\n```"
-}

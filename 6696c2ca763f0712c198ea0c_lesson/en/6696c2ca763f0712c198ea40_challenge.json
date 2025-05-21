@@ -1,4 +1,0 @@
-{
-  "name": "From higher to lower even numbers",
-  "instruction": "The function `decreaseEven` takes two numbers `num1` and `num2`.\n\nThe number `num1` will always be greater than or equal to `num2` and both numbers will always be positive.\n\nThe function should return an array containing all even numbers in the range num1 to num2 inclusive.\n\nThe numbers must be in descending order.\n\nAn example of running the function:\n```javascript\ndecreaseEven(10, 2) // [10, 8, 6, 4, 2]\ndecreaseEven(8, 4) // [8, 6, 4]\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Проверка наличия элемента в массиве. Фрукты",
-  "instruction": "Функция `list` принимает два параметра:\n* `fruits` - массив строк\n* `key` - строка\n\nФункция должна вернуть `true`, если `key` есть в массиве `fruits`, и `false` в противном случае.\n\nПример запуска функции:\n``` javascript\nlist(['apple', 'banana', 'orange'], 'apple') // true\n\nlist(['apple', 'banana', 'orange'], 'pear') // false\n```",
-  "instructions": {}
-}

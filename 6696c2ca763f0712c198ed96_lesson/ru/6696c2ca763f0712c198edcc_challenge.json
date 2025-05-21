@@ -1,5 +1,0 @@
-{
-  "name": "Найти и вернуть дубликаты",
-  "instruction": "Функция `returnDuplicates` принимает строку и возвращает новую строку, содержащую все слова, которые повторяются в исходной строке.\n\nСлова в возвращаемой строке должны быть разделены пробелом. Если в строке нет повторяющихся слов, функция должна вернуть пустую строку.\n\nПримеры запуска функции:\n```javascript\nreturnDuplicates(\"hello world hello code\") // \"hello\"\nreturnDuplicates(\"one two three one two three four\") // \"one two three\"\n```",
-  "instructions": {}
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Комментарий в программе",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-8.png)\n\nНапишите команду вывода в консоль слова \"Testing\" и закомментируйте эту строку.\n\nПохожий пример решения:\n```javascript\n//console.log('Hello JS');\n```",
-  "instructions": {},
-  "hint": "```javascript\n//console.log('Testing');\n```"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Variable with a logical value",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-4.png)\n\nCreate a variable named `isRainy` using the `const` keyword and assign it the boolean value `true`.",
-  "instructions": {},
-  "hint": "```javascript\nconst isRainy = true;\n```"
-}

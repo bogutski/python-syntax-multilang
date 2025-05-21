@@ -1,6 +1,0 @@
-{
-  "name": "Вес после похудения",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-15.png)\n\nС помощью правильного питания и физических упражнений Клавдии удалось похудеть на 25 фунтов.\nСколько она весит теперь?\n\nСоздайте переменную `klaudiaWeight` со значением `220`.\n\nЗапишите команду, которая уменьшает имеющееся значение переменной `klaudiaWeight` на `25`.",
-  "instructions": {},
-  "hint": "```javascript\nlet klaudiaWeight = 220\nklaudiaWeight = klaudiaWeight - 25;\n```"
-}

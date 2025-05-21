@@ -1,5 +1,0 @@
-{
-  "name": "Translate string to uppercase",
-  "instruction": "Write a function `allUpper` that takes a string and returns the same string, but in uppercase.\n\nExamples of running the function:\n```javascript\nallUpper('Hello') // 'HELLO'\nallUpper('Hello World') // 'HELLO WORLD'\nallUpper('aaa') // 'AAA'\n```",
-  "instructions": {}
-}

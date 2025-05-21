@@ -1,5 +1,0 @@
-{
-  "name": "Array of numbers from larger to smaller",
-  "instruction": "The `decreaseArray` function takes two numbers `num1` and `num2`.\n\n The function must return an array of numbers from the larger to the smaller, including `num1` and `num2`.\n\n First we need to determine which of the numbers is larger and which is smaller and apply the `for` loop to fill the array.\n\n Example of how to run the function:\n ```javascript\n  decreaseArray(5, 2) // [5, 4, 3, 2]\n  decreaseArray(2, 5) // [5, 4, 3, 2]\n  ```",
-  "instructions": {}
-}

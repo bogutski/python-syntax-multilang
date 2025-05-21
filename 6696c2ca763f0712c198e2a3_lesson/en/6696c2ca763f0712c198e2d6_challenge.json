@@ -1,4 +1,0 @@
-{
-  "name": "How many full kilograms are in a given number of grams",
-  "instruction": "Write a function `howManyKilograms` that takes one number - the number of grams and returns the number of full kilograms that can be obtained from that number of grams.\n\nThe numbers can be integers or fractions.\n\nExamples of running the function:\n```javascript\n\nhowManyKilograms(700) // 0\nhowManyKilograms(1000) // 1\nhowManyKilograms(1001) // 1\nhowManyKilograms(1002) // 1\nhowManyKilograms(10003) // 10\nhowManyKilograms(14555) // 14\n```"
-}

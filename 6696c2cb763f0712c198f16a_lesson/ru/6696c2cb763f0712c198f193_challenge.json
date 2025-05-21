@@ -1,5 +1,0 @@
-{
-  "name": "Проверка массива строк на симметричность",
-  "instruction": "Напишите функцию `isArraySymmetrical`, которая принимает массив строк.\n\nСтроки передаются в разном регистре, для правильной проверки на симметричность, регистр не должен учитываться.\n\nДля этого, перед проверкой, преобразуйте строку к одному регистру.\n\nФункция должна вернуть `true`, если массив симметричный и `false` если не симметричный.\n\nЕсли массив пустой, то функция должна вернуть строку `Array is empty`.\n\n\nПримеры запуска функции:\n```javascript\nisArraySymmetrical(['a', 'B', 'C', 'b', 'A']);         // true\nisArraySymmetrical(['ONE', 'two', 'A', 'Two', 'ONE']); // true\nisArraySymmetrical(['FALSE', 'true', 'false']);        // true\nisArraySymmetrical(['a', 'B', 'c', 't', 'A']);         // false\nisArraySymmetrical([]);                                // 'Array is empty'\n```",
-  "instructions": {}
-}

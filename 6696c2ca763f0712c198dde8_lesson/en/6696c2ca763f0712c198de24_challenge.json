@@ -1,6 +1,0 @@
-{
-  "name": "Rolls in a restaurant",
-  "instruction": "Katya and Sasha went to a sushi restaurant. Katya said she wasn't hungry.\nSasha ordered 20 rolls, but Katya still ate 5 of Sasha's rolls.\nHow many rolls does Sasha have left?\n\nCreate a variable `rolls` and assign it a value of 20.\n\nCreate a variable `leftoverRolls` and calculate how many rolls Sasha has left.\n\nHere is an example that is essentially similar to what needs to be done.\nAdapt it to the task requirements.\n\n```javascript\nconst cupcakes = 8;\nconst leftoverCupcakes = cupcakes - 3;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst rolls = 20;\nconst leftoverRolls = rolls - 5;\n```"
-}

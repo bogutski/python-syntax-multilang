@@ -1,5 +1,0 @@
-{
-  "name": "Камень, ножницы, бумага\n",
-  "instruction": "Дан объект:\n```javascript\nconst winner = {\n  rock: \"scissors\",\n  paper: \"rock\",\n  scissors: \"paper\",\n};\n```\n\nОбъект содержит в себе алгоритм игры \"Камень, ножницы, бумага\":\n* `rock` побеждает `scissors`;\n* `scissors` побеждает `paper`;\n* `paper` побеждает `rock`.\n\nДопишите функцию `getWinner`, которая принимает два аргумента:\n* `player1` - выбор первого игрока, может принимать значения `rock`, `paper` или `scissors`, строка;\n* `player2` - выбор второго игрока, может принимать значения `rock`, `paper` или `scissors`, строка;\n\nФункция должна возвращать строку с результатом игры:\n* `Player 1 won` - если первый игрок победил;\n* `Player 2 won` - если второй игрок победил;\n* `Draw` - если ничья.\n\nУсловия:\n* Необходимо решить без использования операторов `&&` и `||`.\n\nПример запуска функции:\n```javascript\ngetWinner(\"rock\", \"scissors\"); // \"Player 1 won\"\ngetWinner(\"paper\", \"scissors\"); // \"Player 2 won\"\ngetWinner(\"paper\", \"paper\"); // \"Draw\"\n```",
-  "instructions": {}
-}

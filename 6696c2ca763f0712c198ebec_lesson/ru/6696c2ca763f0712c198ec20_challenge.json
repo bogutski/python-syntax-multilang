@@ -1,5 +1,0 @@
-{
-  "name": "Количество вхождений символа в строку",
-  "instruction": "Напишите функцию `numberOfOccurrences`, которая принимает строку и символ и возвращает количество вхождений символа в строку.\n\nЕсли строка либо символ пустые, функция должна возвращать 0.\n\n\nПримеры запуска функции:\n```javascript\nnumberOfOccurrences('hello', 'o'); // 1\nnumberOfOccurrences('apple', 'p'); // 2\nnumberOfOccurrences('', 'w');      // 0\nnumberOfOccurrences('', '');       // 0\n```",
-  "instructions": {}
-}

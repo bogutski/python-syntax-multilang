@@ -1,5 +1,0 @@
-{
-  "name": "Flip the line with one word",
-  "instruction": "Write a function `reverseAWord` that takes a single-word string and returns an inverted word.\n\nExamples of running the function:\n```javascript\nreverseAWord('olleh') // 'hello'\nreverseAWord('dlrow') // 'world'\nreverseAWord('98765') // '56789'\n```",
-  "instructions": {}
-}

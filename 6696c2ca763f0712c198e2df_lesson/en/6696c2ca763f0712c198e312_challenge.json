@@ -1,4 +1,0 @@
-{
-  "name": "Find the average score",
-  "instruction": "Write a function `averageGrade` that takes three numbers and returns the average grade.\n\nRound up the result to the nearest whole number using the `Math.round()` function.\n\nExamples of running the function:\n```javascript.\naverageGrade(77, 21, 45); // 48\naverageGrade(100, 100, 100); // 100\naverageGrade(23, 45, 67); // 45\n```"
-}

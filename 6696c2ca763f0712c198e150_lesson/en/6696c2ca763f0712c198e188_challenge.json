@@ -1,4 +1,0 @@
-{
-  "name": "Will there be enough money at the cash register?",
-  "instruction": "Write a function `isEnoughMoney` that takes as parameters:\n* `money` - the amount of money in the wallet,\n* `price` - price of goods,\n* `quantity` - quantity of goods,\n* `tax` - tax in percent,\n* `coupon` - a coupon for a discount in percent, by default 0.\n\nLet the function return `true` if there is enough money to buy, and `false` otherwise.\n\nExample:\n```javascript\nisEnoughMoney(108, 50, 2, 10, 3)\nsubtotal = 100\ntaxAmount = 10\ncouponAmount = 3\n108 >= 100 + 10 - 3 // true\n```"
-}

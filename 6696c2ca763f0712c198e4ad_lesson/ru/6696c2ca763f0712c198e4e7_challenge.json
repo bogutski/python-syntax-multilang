@@ -1,5 +1,0 @@
-{
-  "name": "Подстрока повторяется в строке 2 раза",
-  "instruction": "Напишите функцию `isContainsTwice`, которая принимает строку и подстроку и возвращает `true`, если подстрока встречается в строке 2 раза.\n\nНе чувствительна к регистру.\n\nПримеры:\n```javascript\nisContainsTwice('a', 'a'); // false\nisContainsTwice('aa', 'A'); // true\nisContainsTwice('aAa', 'a'); // true\nisContainsTwice('aAa', 'A'); // true\n\nisContainsTwice('aAa', 'aa'); // true\nisContainsTwice('aAaA', 'aa'); // true\n```\nДля решения задачи используйте метод `indexOf`.\n\nПодсказка:\n\n* Найдите подстроку в строке, начиная с позиции `0`, и запишите ее в переменную `firstIndex`.\n* Если `firstIndex` равен `-1`, то подстрока не найдена, возвращаем `false`.\n* Потом найдите подстроку в строке, начиная с позиции `firstIndex + 1`, и запишите ее в переменную `secondIndex`.\n* Если `secondIndex` равен `-1`, то подстрока не найдена, возвращаем `false`, иначе возвращаем `true`.",
-  "instructions": {}
-}

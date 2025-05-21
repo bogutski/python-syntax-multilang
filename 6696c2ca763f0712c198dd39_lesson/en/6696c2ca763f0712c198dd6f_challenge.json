@@ -1,6 +1,0 @@
-{
-  "name": "Let's take null to the power of 2",
-  "instruction": "\"Zero, raised to the power,\nRemains zero...\" (poet Stanisław Jerzy Lec)\n\nCreate a variable named `zero` and assign it the value `null`.\nCreate a variable named `power` and assign it the value of the variable `zero` raised to the power of 2.\nCreate a variable named `type` and assign it the type of the variable `power`.\n\nHere is an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst money = null;\nconst extraMoney = money ** 2;\nconst type = typeof extraMoney;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst zero = null;\nconst power = zero ** 2;\nconst type = typeof power;\n```"
-}

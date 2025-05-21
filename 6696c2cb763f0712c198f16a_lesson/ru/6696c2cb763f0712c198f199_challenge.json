@@ -1,5 +1,0 @@
-{
-  "name": "Удаление цифр и проверка на симметричность",
-  "instruction": "Напишите функцию `isArraySymmetrical`, которая принимает массив строк.\n\nФункция должна вернуть `true`, если массив является симметричным, и `false` в противном случае.\n\nВ строках могут цифры, от `0` до `9` и буквы.\n\nПеред проверкой на симметричность, нужно удалить все цифры из строк.\n\nЭта задача, повторяет алгоритм прошлой задачи, но вместо пробелов, нужно удалять цифры.\n\n\nПримеры запуска функции:\n```javascript\nisArraySymmetrical(['A8', 'B90B, 'C2', 'b4b', 'a55']);               // 'abbcbba' => true\nisArraySymmetrical(['true', 'aAa', 'EURT', '789123']);               // 'trueaaaeurt' => true\nisArraySymmetrical(['123TRUE', '5O6R9', '0b0e0', '79ro', '97eurt']); // 'trueorberoeurt' => false\nisArraySymmetrical([]);                                              // 'Array is empty'\n```",
-  "instructions": {}
-}

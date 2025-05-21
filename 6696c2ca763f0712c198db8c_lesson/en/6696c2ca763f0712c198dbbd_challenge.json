@@ -1,6 +1,0 @@
-{
-  "name": "Consumers of the 7 Up drink",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-3.png)\n\nYou need to create a variable to store the number of users of the drink \"7 Up\".\n\nCreate a variable using the `let` keyword without assigning a value to the variable.\n\nChoose the correct and most understandable name to create the variable from the following list:\n`kolichestvo`, `number`, `7Up`, `7UpTotal`, `totalNumberOf7UpConsumers`, `7UpConsumersTotal`.",
-  "instructions": {},
-  "hint": "```javascript\nlet totalNumberOf7UpConsumers;\n```"
-}

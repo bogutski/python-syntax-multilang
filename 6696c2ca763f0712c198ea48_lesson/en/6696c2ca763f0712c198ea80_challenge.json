@@ -1,4 +1,0 @@
-{
-  "name": "Sum of single and two-digit numbers",
-  "instruction": "Write a function `oneAndTwoDigits` that takes two numbers `n1` and `n2`.\n\nThe function should count the sum of all numbers in the range `n1` to `n2`, not including `n1` and `n2`.\n\nCreate two variables `sumOfOne` and `sumOfTwo` to store the sums of single and two-digit numbers, respectively.\n\nReturn a string in the format `Sum of one digit: sumOfOne, sum of two digits: sumOfTwo`.\n\nNegative and positive numbers, one-digit and two-digit numbers will be passed to the function.\n\n\nExamples of running the function:\n```javascript\noneAndTwoDigits(1, 15); // \"Sum of one digit: 44, sum of two digits: 60\"\noneAndTwoDigits(-10, 10); // \"Sum of one digit: 0, sum of two digits: 0\"\noneAndTwoDigits(-25, 30); // \"Sum of one digit: 0, sum of two digits: 135\"\n```"
-}

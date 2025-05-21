@@ -1,5 +1,0 @@
-{
-  "name": "Умножение от 1 до n",
-  "instruction": "Напишите функцию `multiplication`, которая принимает число `n` и возвращает произведение чисел от `1` до `n` включительно.\n\nВ цикле `for` используйте шаг итерации `2`.\n\nПример цикла `for` с шагом итерации `5`:\n```javascript\nfor (let i = 0; i <= 50; i += 5) {\n  console.log(i);\n}\n```\n\nПримеры запуска функции:\n```javascript\nmultiplication(1) // 1\nmultiplication(5) // 15\nmultiplication(7) // 105\nmultiplication(9) // 945\n```",
-  "instructions": {}
-}

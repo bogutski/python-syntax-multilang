@@ -1,5 +1,0 @@
-{
-  "name": "Counting the most profitable pizza again",
-  "instruction": "The function `pizzaCompetition` takes:\n- `pizza1Name` - the name of the first pizza\n- `pizza1Price` - the price of the first pizza\n- `pizza1Diameter` - the diameter of the first pizza in inches\n\n- `pizza2Name` - the name of the second pizza\n- `pizza2Price` - the price of the second pizza\n- `pizza2Diameter` - the diameter of the second pizza in inches\n\nThe function should return a string in the format `MarioPizza cheaper than LuigiPizza.`\n\nAs you understood from the example, the name of the cheaper pizza should be at the beginning of the string.\n\nIf the pizzas cost the same, then return the string `Both pizzas are equally cheap.`\n\nTo calculate the area of the pizza, use the formula for the area of a circle. PI = 3.14\n\nCompare the cost of the pizza based on the price per square inch.",
-  "instructions": {}
-}

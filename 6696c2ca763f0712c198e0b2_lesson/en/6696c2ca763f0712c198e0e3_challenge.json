@@ -1,4 +1,0 @@
-{
-  "name": "The profitCalculation function with the formula calculation",
-  "instruction": "Create a function `profitCalculation` that takes three arguments: `income`, `cost`, `taxPercent`.\n\nThe function should calculate profits according to the formula: `income - cost - (income - cost) * (taxPercent / 100)`.\n\nIf possible, use variables in the function to store intermediate values.\n\nCreate variables `client1` and `client2` and assign them to the results of a call to the function `profitCalculation` with different arguments.\n\n```javascript\nconst client1 = profitCalculation(1000, 500, 10);\nconst client2 = profitCalculation(1000, 500, 20);\n```"
-}

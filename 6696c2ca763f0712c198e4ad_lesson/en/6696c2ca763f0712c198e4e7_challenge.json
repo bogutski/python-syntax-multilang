@@ -1,4 +1,0 @@
-{
-  "name": "The substring is repeated twice in the line",
-  "instruction": "Write a function `isContainsTwice` that takes a string and a substring and returns `true` if the substring occurs 2 times in the string.\n\nIt is not case sensitive.\n\nExamples:\n```javascript\nisContainsTwice('a', 'a'); // false\nisContainsTwice('aa', 'A'); // true\nisContainsTwice('aAa', 'a'); // true\nisContainsTwice('aAa', 'A'); // true\n\nisContainsTwice('aAa', 'aa'); // true\nisContainsTwice('aAaA', 'aa'); // true\n```\nUse the `indexOf` method to solve the problem.\n\nHint:\n\n* Find a substring in the string, starting from position `0`, and write it to the variable `firstIndex`.\n* If `firstIndex` is `-1`, the substring is not found, return `false`.\n* Then find a substring in the string, starting from position `firstIndex + 1`, and write it to the variable `secondIndex`.\n* If `secondIndex` is `-1` the substring is not found, return `false`, otherwise return `true`."
-}

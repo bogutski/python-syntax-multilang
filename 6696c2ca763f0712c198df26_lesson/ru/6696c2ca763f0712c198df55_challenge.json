@@ -1,5 +1,0 @@
-{
-  "name": "Проверьте правильно ли написаны функции. Исправьте ошибки, если они есть.",
-  "instruction": "В программе должны быть 4 функции `address`, `driverName`, `totalAmount`, `deliveryTime`.\n\nФункция `address` должна возвращать строку `533 Delia dr, Commerce, 30529 GA`.\n\nФункция `driverName` должна возвращать строку `Kroistiannsen Jouahn`.\n\nФункция `totalAmount` должна возвращать число `1028`.\n\nФункция `deliveryTime` должна возвращать строку `2:30 PM`.\n\nБудьте внимательны к мелочам.",
-  "instructions": {}
-}

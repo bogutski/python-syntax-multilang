@@ -1,4 +1,0 @@
-{
-  "name": "The function returns glued strings with and between them",
-  "instruction": "If you use the `+` sign between two lines, they are concatenated into one line.\nThis is called concatenation. We haven't gone over this topic yet, but let's give it a try.\nYou can concatenate several lines into one by using `+` between them.\n\n\nIn this example, we're concatenating three strings:\n```javascript\nconsole.log('String1' + ' and ' + 'String2') // 'String1 and String2'\n```\n\nWrite a function `glueAndString` that takes two arguments `str1` and `str2` and returns them glued into one string and adds a string ` and ` between them.\n\nAn example of concatenating strings:\n```javascript\nfunction connection(string1, string2) {\n  return string1 + ' something ' +string2;\n}\n\nconsole.log(connection('Hello', 'World')); // 'Hello something World'\n```\n\nDo the same thing."
-}

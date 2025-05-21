@@ -1,4 +1,0 @@
-{
-  "name": "Correct the rounding error",
-  "instruction": "The `roundSum` function takes two numbers and returns their sum rounded down.\n\nFind an error in the function code and fix it.\n\nExamples of running the function:\n```javascript.\nroundSum(1.1, 2.3) // 3\nroundSum(1.5, 2.5) // 4\nroundSum(1.9, 2.1) // 4\n```"
-}

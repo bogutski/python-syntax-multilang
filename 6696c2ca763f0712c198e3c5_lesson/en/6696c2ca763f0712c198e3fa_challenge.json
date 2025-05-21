@@ -1,5 +1,0 @@
-{
-  "name": "The function returns the last character of the string",
-  "instruction": "Write a `lastSymbol` function that takes a string and returns the last character of that string.\n\nExamples of how to run the function:\n```javascript\nlastSymbol('abc'); // 'c'\nlastSymbol('JS'); // 'S'\nlastSymbol('Hello world'); // 'd'\n```",
-  "instructions": {}
-}

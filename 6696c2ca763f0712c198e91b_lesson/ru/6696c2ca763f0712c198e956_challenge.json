@@ -1,5 +1,0 @@
-{
-  "name": "Является ли строка палиндромом?",
-  "instruction": "Напишите функцию `palindrome`, которая принимает строку и возвращает `true`, если строка является палиндромом, и `false`, если нет.\n\n`Палиндром` - это строка, которая читается одинаково слева направо и справа налево.\n\nПустая строка проверятся не будет.\n\nПримеры палиндромов:\n* `racecar`\n* `kayak`\n* `level`\n\nПримеры запуска функции:\n```javascript\npalindrome('racecar'); // true\npalindrome('kayak'); // true\npalindrome('hello'); // false\npalindrome('apple'); // false\n```",
-  "instructions": {}
-}

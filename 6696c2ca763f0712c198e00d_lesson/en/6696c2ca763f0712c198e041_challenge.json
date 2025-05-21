@@ -1,5 +1,0 @@
-{
-  "name": "Determine by how much one product is more expensive than another",
-  "instruction": "Write a function `compareProducts` that takes the prices of two products and returns how much more expensive the first product is than the second.\n\nExample:\n```javascript\ncompareProducts(10, 5) // 5\ncompareProducts(5, 10) // -5\n```",
-  "instructions": {}
-}

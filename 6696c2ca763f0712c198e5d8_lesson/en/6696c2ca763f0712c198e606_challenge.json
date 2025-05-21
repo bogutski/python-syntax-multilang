@@ -1,4 +1,0 @@
-{
-  "name": "Add a property to the object",
-  "instruction": "Write a function `addProperty` that takes three parameters:\n* `obj` - object\n* `key` - key\n* `value` - value\n\nThe function must add a new property with key `key` and value `value` to the object.\n\nThe function must return the updated object.\n\nAn example of running the function:\n```javascript\naddProperty({ name: \"Mike\" }, \"age\", 45); // { name: \"Mike\", age: 45 }\naddProperty({ car: \"BMW\" }, \"year\", 2020); // { car: \"BMW\", year: 2020 }\n```\n\nSimilar example:\n```javascript\nfunction addField(car, fieldKey, fieldValue) {\ncar[fieldKey] = fieldValue;\nreturn car;\n}\n\nconsole.log(addField({ car: \"BMW\" }, \"year\", 2020)); // { car: \"BMW\", year: 2020 }\n```"
-}

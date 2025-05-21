@@ -1,4 +1,0 @@
-{
-  "name": "Amount from the object",
-  "instruction": "Create a function `sumFromObject` that takes an object with two properties `a` and `b`.\n\nAn example of an object that will be passed to the function:\n```javascript\n{\n  a: 10,\n  b: 20\n}\n```\n\nThe function should return the sum of the properties `a` and `b` of the object.\n\nAn example of running the function:\n```javascript\nsumFromObject({a: 10, b: 20}) // 30\n```\n\n\nA similar example:\n```javascript\nfunction multi(obj) {\n  return obj.a * obj.b;\n}\n```"
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Geolocation. Removing a property from an object.",
-  "instruction": "The GPS sensor sends data with the coordinates of the point on the map.\n\nWrite a function `geoLocation` that takes one parameter:\n* `location` - object that contains information about the point on the map;\n\nThe `location` object has the following structure:\n* `country` - country, string\n* `alt` - altitude above sea level, string\n* `lat` - latitude, string\n* `lon` - longitude, string\n\nThe function should return an object in which geolocation will not be tied to the country - remove the `country` property from the `location` object.\n\nExample of running the function:\n```javascript\ngeoLocation({country: \"Canada\", alt: \"1387.2\", lat: \"51.1815723\", lon: \"-115.5846221\"})\n// {alt: \"1387.2\", lat: \"1387.2\", lon: \"51.1815723\"}\n```"
-}

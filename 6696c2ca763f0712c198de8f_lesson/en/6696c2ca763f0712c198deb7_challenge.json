@@ -1,4 +1,0 @@
-{
-  "name": "Square side",
-  "instruction": "The area of the square is given. Find its side.\n\nSet variable `square` and give it a value of an arbitrary non-negative number (the area of the square).\n\nDefine a variable `a` in which calculate the side of the square (the side of the square is equal to the square root of its area).\n\nHere is an example which is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n```\nconst s = 9;\nconst a = s ** 0.5;\n```"
-}

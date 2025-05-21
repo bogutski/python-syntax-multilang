@@ -1,4 +1,0 @@
-{
-  "name": "Decrease the variable by 1",
-  "instruction": "Assign a value of 55 to the `num` variable, then write a command that decreases the value of the variable by 1.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the problem:\n```\nlet x = 20;\nx = x - 1;\n\n```"
-}

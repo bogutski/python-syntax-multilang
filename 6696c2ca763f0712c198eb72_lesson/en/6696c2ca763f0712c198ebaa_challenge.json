@@ -1,4 +1,0 @@
-{
-  "name": "Creating a palindrome from a string",
-  "instruction": "The `makePalindrome` function takes the string `str` as a parameter.\n\nThe `str` string consists only of lowercase letters and is not an empty string.\n\nThe function should return a new string that is a palindrome of the string `str`.\n\nTo do this, add the same string in reverse order to the string `str`.\n\nAn example of running the function:\n```javascript\nmakePalindrome(\"cat\") // \"cattac\"\nmakePalindrome(\"dog\") // \"doggod\"\n```"
-}

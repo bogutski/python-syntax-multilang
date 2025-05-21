@@ -1,5 +1,0 @@
-{
-  "name": "Очень рад вас видеть",
-  "instruction": "Напиши функцию `veryHappy`, которая принимает два параметра:\n`name` - имя человека\n`count` - количество раз, которое нужно повторить слово `very`\n\nПримеры запуска функции:\n```javascript\nveryHappy('John', 1); // 'I\\'m very happy to see you, John!'\nveryHappy('John', 3); // 'I\\'m very very very happy to see you, John!'\nveryHappy('John', 5); // 'I\\'m very very very very very happy to see you, John!'\n```\n\nЕсли в одинарных кавычках внутри строки встречается одинарная кавычка, то ее нужно экранировать символом `\\`.\n\n```javascript\nconsole.log('I\\'m very happy to see you, John!'); // I'm very happy to see you, John!\nconsole.log('I\\'m \\'very\\' happy to see you, John!'); // I'm 'very' happy to see you, John!\n```",
-  "instructions": {}
-}

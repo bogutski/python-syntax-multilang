@@ -1,4 +1,0 @@
-{
-  "name": "Write a function without a description, but with examples",
-  "instruction": "Write a function `round` that takes one number and returns its rounded value.\n\nLook at the examples to see how the function should work.\n\nFind a pattern.\n\nExamples of running a function:\n```javascript.\nround(1.1) // 2\nround(-1.5) // -2\nround(1.5) // 2\nround(-1.6) // 2\nround(10.9) // 11\nround(-7.1) // -8\n```"
-}

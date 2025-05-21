@@ -1,1 +1,0 @@
-# Array.prototype.flatMap() – комбинация map и flat language: es

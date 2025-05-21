@@ -1,4 +1,0 @@
-{
-  "name": "Rounding to the next next even number",
-  "instruction": "Write a function `roundToNearestEven` that takes one number and returns that number rounded to the nearest even number.\n\nThe numbers can be integers or fractions.\n\nTake a look at the examples to see how the function should work.\n```javascript.\nroundToNearestEven(0) // 0\nroundToNearestEven(0.1) // 2\n\nroundToNearestEven(1) // 2\nroundToNearestEven(1.1) // 2\n\nroundToNearestEven(2) // 2\nroundToNearestEven(2.1) // 4\n\nroundToNearestEven(3) // 4\nroundToNearestEven(3.1) // 4\n\nroundToNearestEven(4) // 4\nroundToNearestEven(4.1) // 6"
-}

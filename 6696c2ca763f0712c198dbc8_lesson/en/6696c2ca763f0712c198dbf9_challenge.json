@@ -1,6 +1,0 @@
-{
-  "name": "Double name",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-9.png)\n\nOften Americans have two personal names.\nSuppose the `name` variable stores the first name.\nWe need to get the first two names in the `name` variable separated by a space.\n\nWrite a command that creates a `name` variable with the value `Ivan`.\n\nWrite a command that changes the existing value of the variable `name` by concatenating it with the name 'Francis' through a space.\n\nRelated example:\n```javascript\nlet name = 'Alice';\nname = name + ' ' + 'Marie';\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet name = 'Ivan';\nname = name + ' ' + 'Francis';\n```"
-}

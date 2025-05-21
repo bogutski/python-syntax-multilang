@@ -1,6 +1,0 @@
-{
-  "name": "Output the expression 20 % 7 to the console",
-  "instruction": "Only one line. Observe spaces and punctuation marks. A semicolon at the end.\n```javascript\nconsole.log(20 % 7);\n```\n\nThe remainder of the division of 20 by 7 = 6. Since 7 * 2 = 14, 20 - 14 = 6.",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log(20 % 7);\n```"
-}

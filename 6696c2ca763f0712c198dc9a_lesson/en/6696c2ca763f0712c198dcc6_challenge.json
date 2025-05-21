@@ -1,6 +1,0 @@
-{
-  "name": "Print 100 + 100 + 1000 in the console",
-  "instruction": "Only one line. Observe spaces and punctuation marks. A semicolon at the end. Write the command `console.log(100 + 100 + 1000);`",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log(100 + 100 + 1000);\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Проверка строк на равенство",
-  "instruction": "Напишите функцию `reverseAndCompare`, которая принимает две строки `str1` и `str2` в качестве аргументов.\n\nФункция должна перевернуть строку `str1` и сравнить ее с `str2`.\n\n\nСравнение должно происходить по следующим правилам:\n\n* Перевернутая строка должна быть приведена к верхнему регистру и сравнена с `str2`, если они равны, то функция должна вернуть строку 'Strings are equal with uppercase'.\n\n* Перевернутая строка должна быть приведена к нижнему регистру и сравнена с `str2`, если они равны, то функция должна вернуть строку 'Strings are equal with lowercase'.\n\n* Если строки не равны, то функция должна вернуть строку 'Strings are not equal'.\n\n\nПримеры запуска функции:\n```javascript\nreverseAndCompare('Hello', 'olleh'); // 'Strings are equal with lowercase'\nreverseAndCompare('Hello', 'OLLEH'); // 'Strings are equal with uppercase'\nreverseAndCompare('abc', 'dfg'); // 'Strings are not equal'\n```",
-  "instructions": {}
-}

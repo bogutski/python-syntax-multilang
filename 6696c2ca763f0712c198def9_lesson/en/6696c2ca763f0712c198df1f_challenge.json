@@ -1,5 +1,0 @@
-{
-  "name": "The `hello` function outputs `Hello, world!` to the console.",
-  "instruction": "Write a function `hello` that outputs the string `Hello, world!` to the console.\n\n* Use single quotes.",
-  "instructions": {}
-}

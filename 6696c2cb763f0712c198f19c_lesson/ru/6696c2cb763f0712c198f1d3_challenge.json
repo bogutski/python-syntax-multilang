@@ -1,5 +1,0 @@
-{
-  "name": "Перевернуть элементы внутренних массивов",
-  "instruction": "Напишите функцию `reverseInnerArrays`, которая принимает массив массивов c разными типами данных.\n\nФункция должна вернуть новый массив, в котором во внутренних массивах элементы будут расположены в обратном порядке.\n\nНапример: `[[1, 2, 3], ['a', 'b', 'c']]` => `[[3, 2, 1], ['c', 'b', 'a']]`\n\nЕсли внешний массив пустой, то вернуть строку `'Array is empty'`.\n\nИспользование метода `reverse` запрещено.\n\n\nПримеры запуска функции:\n```javascript\nreverseInnerArrays([[1,2,3], [7,8,9]]);                  // [[3,2,1], [9,8,7]]\nreverseInnerArrays([['one', 'two'], ['three', 'four']]); // [['two', 'one'], ['four', 'three']]\nreverseInnerArrays([[true, false], [false, false]]);     // [[false, true], [false, false]]\nreverseInnerArrays([]);                                  // 'Array is empty'\n```",
-  "instructions": {}
-}

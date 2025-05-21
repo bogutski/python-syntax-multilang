@@ -1,6 +1,0 @@
-{
-  "name": "The unpredictability of the game",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-8.png)\nA tourist in Las Vegas started the game with some amount of money.\n\nCreate a variable `startMoney` and assign it a value greater than or equal to 100.\n\nAt the end of the game he lost some amount of money.\n\nCreate a variable `lostMoney` and give it a value between 50 and 80.\n\nCreate a variable `endMoney` and assign to it the calculated value of the remaining money as the difference between `startMoney` and `lostMoney`.\n\nA similar example:\n```javascript\nconst start = 55;\nconst lost = 10;\nconst end = start - 10;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst startMoney = 100;\nconst lostMoney = 76;\nconst endMoney = startMoney - lostMoney;\n```"
-}

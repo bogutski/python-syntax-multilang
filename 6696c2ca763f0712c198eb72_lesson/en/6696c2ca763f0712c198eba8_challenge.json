@@ -1,4 +1,0 @@
-{
-  "name": "Are there any palindromes here?",
-  "instruction": "The isAnyPalindrome function takes two arguments - str1 and str2.\n\nWe need to check which of these strings is a palindrome and which is not.\n\nThe function must return:\n* \"str1 is palindrome\" if the first string is a palindrome\n* \"str2 is palindrome\" if the second string is a palindrome\n* \"both are palindrome\" if both strings are palindromes\n* \"none of them is palindrome\" if neither of them is a palindrome\n\nExamples of function execution:\n```javascript\nisAnyPalindrome(\"madam\", \"racecar\") // \"both are palindrome\"\nisAnyPalindrome(\"madam\", \"hello\") // \"madam is palindrome\"\nisAnyPalindrome(\"hello\", \"racecar\") // \"racecar is palindrome\"\nisAnyPalindrome(\"hello\", \"world\") // \"none of them is palindrome\"\n```"
-}

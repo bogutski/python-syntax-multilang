@@ -1,4 +1,0 @@
-{
-  "name": "An array of odd numbers from higher to lower",
-  "instruction": "The `arrayOdd` function takes two numbers `num1` and `num2`.\n\nThe function should return an array of all odd numbers between `num1` and `num2` inclusive in descending order.\n\nInitially, you should check which number is larger and which is smaller and apply the `for` loop to try the numbers in the desired range.\n\nCorrect the errors in the code to make it work correctly.\n\nAn example of running a function:\n```javascript\narrayOdd(1, 4) // [3, 1]\narrayOdd(7, 1) // [7, 5, 3, 1]\n```"
-}

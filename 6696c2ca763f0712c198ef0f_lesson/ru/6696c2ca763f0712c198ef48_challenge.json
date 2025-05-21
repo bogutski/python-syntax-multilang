@@ -1,5 +1,0 @@
-{
-  "name": "Определить типы элементов массива",
-  "instruction": "Напишите функцию `typesOfElements`, которая принимает массив элементов произвольного типа.\n\nФункция должна вернуть массив строк, в котором будут перечислены типы элементов исходного массива.\n\nНапример, массив `[1, 'a', true]` должен вернуть `['number', 'string', 'boolean']`.\n\nЕсли массив пустой, то функция должна вернуть строку `'Array is empty'`.\n\n\nПример запуска функции:\n```javascript\ntypesOfElements([123, 'test', true, null, undefined]); // ['number', 'string', 'boolean', 'object', 'undefined']\ntypesOfElements([[1, 2, 3], {a: 1, b: 2, c: 3}]);      // ['object', 'object']\ntypesOfElements([123, 'abc', false]);                  // ['number', 'string', 'boolean']\ntypesOfElements([true, false, true]);                  // ['boolean', 'boolean', 'boolean']\ntypesOfElements([]);                                   // 'Array is empty'\n```",
-  "instructions": {}
-}

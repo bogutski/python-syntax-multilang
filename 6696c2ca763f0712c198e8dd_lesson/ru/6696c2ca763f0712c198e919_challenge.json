@@ -1,5 +1,0 @@
-{
-  "name": "Индекс первого 'null' в массиве",
-  "instruction": "Найдите и исправьте ошибки в коде.\n\nФункция `findNull` должна принимать массив `arr` и возвращать индекс первого `null` или строку `'null not\n found'` если `null` не найден.\n\nПримеры запуска функции:\n```javascript\nfindNull([1,2,3,null,5,6,7,8,9]); // 3\nfindNull([1,2,3,4,5,6,7,8,9]); // 'null not found'\n```",
-  "instructions": {}
-}

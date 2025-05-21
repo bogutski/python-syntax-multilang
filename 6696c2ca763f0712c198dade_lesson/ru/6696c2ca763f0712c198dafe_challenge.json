@@ -1,6 +1,0 @@
-{
-  "name": "Удалите лишние пробелы",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-9.png)\n\nТребуется написать команду, которая выводит в консоль слово \"Coding\".\n\nУдалите лишние пробелы в приведенном коде.",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log('Coding');\n```"
-}

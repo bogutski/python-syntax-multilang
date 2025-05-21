@@ -1,4 +1,0 @@
-{
-  "name": "Checking a number in a cube. Arrays",
-  "instruction": "The `arrayCube` function takes 2 parameters\n* `arr` - array of numbers\n* `n` - number\n\nYou need to increment the number `n` to the third power and check if the result is equal to any number from the array `arr`.\n\nIf the array contains, to the third power, the parameter `n`, the function should return the string 'Yes'. If not - 'No'.\n\nAn example of how to start the function:\n``` javascript\narrayCube([1, 2, 3, 4, 5], 3) // 'No'\n\narrayCube([12, 20, 3, 64, 25], 4) // 'Yes'\n```"
-}

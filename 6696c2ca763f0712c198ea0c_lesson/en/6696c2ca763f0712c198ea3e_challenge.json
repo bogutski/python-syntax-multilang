@@ -1,4 +1,0 @@
-{
-  "name": "Array from number to zero",
-  "instruction": "The function `fromNumberToZero` takes the number `num`.\n\nThe function should return an array that contains all numbers from num to 0 inclusive.\n\nIf `num` is less than 0, the function should return an empty array.\n\nExamples of running the function:\n```javascript\nfromNumberToZero(5) // [5, 4, 3, 2, 1, 0]\nfromNumberToZero(10) // [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]\n```"
-}

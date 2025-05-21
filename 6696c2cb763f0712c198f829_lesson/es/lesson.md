@@ -1,1 +1,0 @@
-# Array.prototype.findIndex() – индекс элемента по условию language: es

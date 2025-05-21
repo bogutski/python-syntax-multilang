@@ -1,5 +1,0 @@
-{
-  "name": "Найти максимальную длину строк",
-  "instruction": "Напишите функцию `firstAndSecondMax`, которая принимает массив строк разной длины.\n\nФункция должна вернуть массив из двух элементов:\n\n* первый элемент - это длина самой длинной строки\n* второй элемент - это длина второй по длине строки\n\nЕсли массив пустой, то верните строку 'Array is empty'.\n\nЕсли все строки в массиве имеют одинаковую длину, то верните строку 'Strings are equal'.\n\n\nПримеры запуска функции:\n```javascript\nfirstAndSecondMax(['a', 'aa', 'abcd']);      // [4, 2]\nfirstAndSecondMax(['qwert', 'abc', 'a', 'a); // [5, 3]\nfirstAndSecondMax(['aaa', 'aaa', 'aaa']);    // 'Strings are equal'\nfirstAndSecondMax(['', '', '']);             // 'Strings are equal'\nfirstAndSecondMax([]);                       // 'Array is empty'\n```",
-  "instructions": {}
-}

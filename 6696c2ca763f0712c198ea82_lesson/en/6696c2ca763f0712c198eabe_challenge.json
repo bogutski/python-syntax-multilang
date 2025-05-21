@@ -1,4 +1,0 @@
-{
-  "name": "The sum of even two-digit positive and three-digit negative numbers of the array",
-  "instruction": "The `sumEven3DigPositiveAnd2DigNegative` function takes one parameter, the `arr` array.\n\nThe array is of arbitrary length and consists of positive and negative integers.\n\nThe function returns the sum of even two-digit positive and three-digit negative integers in the array.\n\nCorrect the errors in the code so that the function works correctly.\n\nAn example of running the function:\n```javascript\nsumEven3DigPositiveAnd2DigNegative([20, 30, 40, -100, -110]) // 20 + 30 + 40 + (-100) + (-110) = -120\nsumEven3DigPositiveAnd2DigNegative([-20, -30, -40, 100, 110]) // 0\nsumEven3DigPositiveAnd2DigNegative([1, 2, 18, 13, 90, 100, -102, 3000]) // 18 + 90 + (-102) = 6\n```"
-}

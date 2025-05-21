@@ -1,5 +1,0 @@
-{
-  "name": "Найти минимальное и максимальное отрицательное число",
-  "instruction": "Напишите функцию `minAndMaxOfNegatives`, которая принимает массив целых чисел.\n\nФункция должна вернуть массив из двух чисел, где первое число - `минимальное отрицательное` число, а второе - `максимальное отрицательное` число.\n\nЕсли массив пустой или нет отрицательных чисел, то верните массив: `[undefined, undefined]`.\n\nМетоды использовать нельзя.\n\n\nПримеры запуска функции:\n```javascript\nminAndMaxOfNegatives([1, 2, 3, 4, -1, -1, 2, 3, 4]) // [-1, -1]\nminAndMaxOfNegatives([-3, 2, 3, -10])               // [-10, -3]\nminAndMaxOfNegatives([-5, -2, -1])                  // [-5, -1]\nminAndMaxOfNegatives([1, 2, 3])                     // [undefined, undefined]\nminAndMaxOfNegatives([])                            // [undefined, undefined]\n```",
-  "instructions": {}
-}

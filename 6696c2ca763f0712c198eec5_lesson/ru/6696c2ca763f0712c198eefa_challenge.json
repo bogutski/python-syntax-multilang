@@ -1,5 +1,0 @@
-{
-  "name": "Сумма четных и нечетных цифр в строке",
-  "instruction": "Напишите функцию `sumOfEvenAndOdd`, которая принимает строку с цифрами.\n\nВ строке нет пробелов или других символов, только цифры от 0 до 9.\n\nФункция должна посчитать сумму четных и нечетных цифр и вернуть строку вида:\n\n* `Sum of even numbers is <sumOfEven>, sum of odd numbers is <sumOfOdd>`, где <sumOfEven> и <sumOfOdd> - это суммы четных и нечетных цифр соответственно.\n\n* `String is empty` - если строка пустая\n\n\nПримеры запуска функции:\n```javascript\nsumOfEvenAndOdd('') // 'String is empty'\nsumOfEvenAndOdd('1234') // 'Sum of even numbers is 6, sum of odd numbers is 4'\nsumOfEvenAndOdd('02468') // 'Sum of even numbers is 20, sum of odd numbers is 0'\nsumOfEvenAndOdd('13579') // 'Sum of even numbers is 0, sum of odd numbers is 25'\n```",
-  "instructions": {}
-}

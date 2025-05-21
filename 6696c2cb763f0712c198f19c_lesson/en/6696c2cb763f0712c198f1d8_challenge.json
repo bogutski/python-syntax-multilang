@@ -1,5 +1,0 @@
-{
-  "name": "Reverse the array elements if there is an element with the reverse value in the array",
-  "instruction": "Write a function `reverseOnlyMarkedArr` that takes an array of arrays with different data types.\n\nThe function should return a new array that includes all the arrays from the original array, in the same order.\n\nThe elements of those sub-arrays that contain an element with the value 'reverse' should be reversed, while all other elements should be left unchanged.\n\nFor example: `[[1, 2, 3], [5, 6, 7, 'reverse'], [8, 9, 10]]` should return `[[1, 2, 3], ['reverse', 7, 6, 5], [8, 9, 10]]`.\n\nYou can use the methods `includes`, `indexOf`, `reverse`.\n\nIf the outer array is empty, return the string 'Array is empty'.\n\nExamples of function calls:\n```javascript\nreverseOnlyMarkedArr([[1, 2, 3], [4, 5], ['reverse', 6, 7]]); // [[1, 2, 3], [4, 5], [7, 6, 'reverse']]\nreverseOnlyMarkedArr([['a', 'b', 'c', 'd' reverse]]);         // [['reverse', 'd', 'c', 'b', 'a']]\nreverseOnlyMarkedArr([]);                                     // 'Array is empty'\n```",
-  "instructions": {}
-}

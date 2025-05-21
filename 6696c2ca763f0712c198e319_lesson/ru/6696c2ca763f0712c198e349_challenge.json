@@ -1,5 +1,0 @@
-{
-  "name": "Процент от числа с форматированием",
-  "instruction": "Напишите функцию `getPercent`, которая принимает два числа: `num` и `percent`.\n\nФункция должна возвращать процент от `num`, округленный до двух знаков после запятой.\n\nПримеры запуска функции:\n```javascript\ngetPercent(100, 10) // 10\ngetPercent(100, 20) // 20\ngetPercent(99, 32) // 31.68\ngetPercent(8, 17) // 1.36\ngetPercent(40, 25) // 10\ngetPercent(40, 13) // 5.2\n```",
-  "instructions": {}
-}

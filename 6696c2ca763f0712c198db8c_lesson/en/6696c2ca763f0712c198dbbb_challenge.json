@@ -1,6 +1,0 @@
-{
-  "name": "Selecting a variable name",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-1.png)\n\nWe come up with a name for our child, a nickname for our pet, a nickname for our boss....\nProgrammers and testers also think of names for variables.\nNow let's choose names that can be used as variable names.\n\nFor the assignment, you must create variables with names that can be used in the JS language.\n\nCreate variables with valid names from the following list:\n\n  `greenColor`; `12month`; `_`; `amount`; `first_page`; `$50`; `const`; `null`; `camelCase`;\n`chapter-1`.\n\nAssign the value 1 to all created variables.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nlet pencil = 1;\nlet redBook = 1;\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet greenColor = 1;\nlet _ = 1;\nlet amount = 1;\nlet first_page = 1;\nlet $50 = 1;\nlet camelCase = 1;\n```"
-}

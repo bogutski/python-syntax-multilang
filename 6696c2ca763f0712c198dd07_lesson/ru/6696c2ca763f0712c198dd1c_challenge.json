@@ -1,6 +1,0 @@
-{
-  "name": "Чему равна сумма undefined и числа?",
-  "instruction": "Создайте переменную с именем `unknown` и присвойте ей значение `undefined`.\nСоздайте переменную с именем `sum` и присвойте ей значение суммы переменной `unknown` и произвольного числа.\nСоздайте переменную с именем `typeOfSum` и присвойте ей значение типа переменной `sum`.\nПроверьте в jsbin.com, чему равен результат сложения числа и undefined.\nСоздайте переменную с именем `result` и присвойте ей строку, содержащую результат сложения числа и undefined.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nlet salary;\nlet newSalary = salary + 100;\nlet type = typeof newSalary;\nconst result = 'NaN';\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet unknown;\nlet sum = unknown + 1;\nconst typeOfSum = typeof sum;\nconst result = 'NaN';\n```"
-}

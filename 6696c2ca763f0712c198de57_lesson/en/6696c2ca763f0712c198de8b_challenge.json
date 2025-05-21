@@ -1,6 +1,0 @@
-{
-  "name": "Salary for the first working month",
-  "instruction": "When applying for the next job, you were offered $75 per hour. How much will you earn in your first working month?\n\nCreate a variable `salary` and assign it the value of 75.\n\nCreate a variable `hours` and assign it the value of 8.\n\nCreate a variable `days` and assign it the value of 21 (number of working days).\n\nCreate a variable `monthSalary`, in which you will calculate the result of the money you earned for the month.\n\nLet's provide an example that is essentially similar to what needs to be done, but adapt it to the task requirements.\n\n```javascript\nconst lessons = 12;\nconst months = 3;\nconst  class = lessons * months;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst salary = 75;\nconst hours = 8;\nconst days = 21;\nconst monthSalary = salary * hours * days;\n```"
-}

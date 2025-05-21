@@ -1,6 +1,0 @@
-{
-  "name": "Присвойте переменной `str` значение 'Hello'",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-13.png)\n\nСоздайте переменную с именем `str`. \nИспользуйте ключевое слово` let`.\nПрисвойте значение - строку `Hello`.\n\nПохожий пример:\n```javascript\nlet string = 'World';\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet str = 'Hello';\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Два слова в строке разделены одним пробелом",
-  "instruction": "Нужно определить, что между двумя словами в строке есть только один пробел.\n\nНапишите функцию `isOneSpace`, которая принимает строку и возвращает `true`, если между двумя словами в строке есть только один пробел.\n\nВ функцию всегда передается строка, в которой есть два слова, разделенных пробелом или несколькими пробелами.\n\nПримеры:\n```javascript\nisOneSpace('a b'); // true\nisOneSpace('a  b'); // false\nisOneSpace('a   b'); // false\nisOneSpace('a    b'); // false\n\nisOneSpace('hello world'); // true\nisOneSpace('hello  world'); // false\n```",
-  "instructions": {}
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Calculate a to the power of b",
-  "instruction": "The numbers a and b are given. Calculate a to the power of b\n\nDefine variables `a` and `b` and assign to them the value of arbitrary numbers.\nDefine a variable `power` in which calculate `a` to the power of `b`.\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n```\nconst x = 2;\nconst y = 3;\nconst power = x ** y;\n```"
-}

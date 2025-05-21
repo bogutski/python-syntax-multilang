@@ -1,4 +1,0 @@
-{
-  "name": "Number of vowel and consonant letters",
-  "instruction": "The `countLetters` function takes a string and returns an object with the number of vowels and consonants in the string:\n\n```javascript\n{\nvowel: countVowel,\nconsonant: countConsonant\n}\n```\n\nwhere `countVowel` is the number of vowels in the string, `countConsonant` is the number of consonants in the string.\n\nThe string can contain letters of the Latin alphabet and spaces. The letters in the string can be in different case.\n\nExamples of function execution:\n```javascript\ncountLetters('Hello') // {vowel: 2, consonant: 3}\ncountLetters('Why') // {vowel: 0, consonant: 3}\n```"
-}

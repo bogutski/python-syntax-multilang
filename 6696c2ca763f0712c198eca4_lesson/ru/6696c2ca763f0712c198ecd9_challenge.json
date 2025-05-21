@@ -1,5 +1,0 @@
-{
-  "name": "Количество строчных букв и остальных символов",
-  "instruction": "Функция `numOfLowerCase` принимает строку и возвращает количество `букв` в нижнем регистре и количество `остальных букв/символов` в строке.\n\nФункция должна возвращать строку в формате: `Lowercase: ${count} and other symbols: ${count}`\nЕсли строка пустая, то функция должна возвращать строку: `String is empty`\n\nИсправьте функцию, что бы она работала правильно.\n\nСделано всего три ошибки, цикл и все что после него - верно.\n\nПостарайтесь разобраться в коде и переписать его самостоятельно.\n\n\nПримеры запуска функции:\n```javascript\nnumOfLowerCase('Hello World!') // 'Lowercase: 8 and other symbols: 4'\nnumOfLowerCase(' 135 8!0 %^')  // 'Lowercase: 0 and other symbols: 11'\nnumOfLowerCase('aBcDeFgHi')    // 'Lowercase: 5 and other symbols: 4'\nnumOfLowerCase('ICE')          // 'Lowercase: 0 and other symbols: 3'\nnumOfLowerCase('')             // 'String is empty'\n```",
-  "instructions": {}
-}

@@ -1,1 +1,0 @@
-# Array.prototype.splice() – добавляет, удаляет элементы массива language: es

@@ -1,6 +1,0 @@
-{
-  "name": "Correct the errors in the code. Outputting a number to the console",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-7.png)\n\nYou need to write a command that outputs the number 125 to the console.\n\nCorrect the errors in the given code.",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log(125);\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Округленная площадь круга",
-  "instruction": "Напишите функцию `roundCircleArea`, которая принимает один параметр – радиус круга, и возвращает его площадь, округленную в большую сторону.\n\nЧисла могут быть целыми или дробными. Название параметра функции выберите сами.\n\nЗначение `π` в JavaScript можно получить так: `Math.PI`.\n\n```javascript\nconst square = Math.PI * radius ** 2;\n```\n\nПримеры вызова функции:\n```javascript\nroundCircleArea(1) // 4\nroundCircleArea(1.5) // 7\nroundCircleArea(2) // 13\n```",
-  "instructions": {}
-}

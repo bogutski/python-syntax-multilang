@@ -1,4 +1,0 @@
-{
-  "name": "Translate a string consisting of numbers into an array",
-  "instruction": "The `StrToArray` function takes a string consisting of numbers. The string does not contain spaces.\n\nThe function should return an array consisting of the digits of that string written in reverse order.\n\nTo convert numbers from `string` type to `number` type, use unary plus `+`.\n\nExamples of running the function:\n```javascript\nstrToArray(\"123\") // [3, 2, 1]\nstrToArray(\"1234\") // [4, 3, 2, 1]\n```"
-}

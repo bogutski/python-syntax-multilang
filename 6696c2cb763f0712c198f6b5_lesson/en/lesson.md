@@ -1,1 +1,0 @@
-# Array.prototype.filter() – фильтрует массив по условию language: en

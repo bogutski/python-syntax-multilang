@@ -1,6 +1,0 @@
-{
-  "name": "Life is good!",
-  "instruction": "Создайте переменную `word1` и запишите в нее слово `'Life'`.\n\nСоздайте переменную `word2` и запишите в нее слово `'is'`.\n\nСоздайте переменную `word3` и запишите в нее слово `'good!'`.\n\nСоздайте переменную `myGoal` и запишите в результат конкатенации (склеивания) трех предыдущих переменных с добавление пробелов между ними.\n\nПриведем пример, который принципиально похож на то что нужно сделать,\nно адаптируйте его к требованиям задачи\n\n```javascript\nconst before = \"Be\";\nconst after = \"Happy!\";\nconst together = before + ' ' + after;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst word1 = 'Life';\nconst word2 = 'is';\nconst word3 = 'good!';\nconst myGoal = word1 + ' ' + word2 + ' ' + word3;\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Посчитать сколько раз заданная цифра входит в число",
-  "instruction": "Функция `countDigitInNumber` должна принимать два аргумента: число `number` и цифру `digit`.\n\nОба аргумента должны быть целыми неотрицательными числами.\n\nФункция должна посчитать сколько раз цифра `digit` встречается в числе `number` и вернуть результат в виде строки следующего формата:\n\n \\`In number ${number} digit ${digit} occurs ${count} times\\`\n\nГде `number` и `digit` - аргументы функции, а `count` - количество вхождений цифры `digit` в число `number`.\n\nДля решения задачи приведите оба аргумента к типу String.\n\nПримеры преобразования чисел в строки:\n\n```javascript\nconst number = 123123123;\nconst digit = 3;\nconst numberAsString = number.toString(); // '123123123'\nconst digitAsString = String(digit);   // '3'\n```\n\nПримеры запуска функции:\n\n```javascript\ncountDigitInNumber(123123, 3) должна вернуть `In number 123123 digit 3 occurs 2 times`\ncountDigitInNumber(302, 0) должна вернуть `In number 302 digit 0 occurs 1 times`\ncountDigitInNumber(111, 5) должна вернуть `In number 111 digit 5 occurs 0 times`\n```",
-  "instructions": {}
-}

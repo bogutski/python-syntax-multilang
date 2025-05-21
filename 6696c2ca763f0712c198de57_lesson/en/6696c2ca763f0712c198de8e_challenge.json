@@ -1,6 +1,0 @@
-{
-  "name": "\"Train\" attraction",
-  "instruction": "In Disneyland, there is a wonderful attraction called \"Train\" that always has a long queue.\nThe train has 48 seats, and there are 60 people in line.\nThe clerk should only allow the number of people that can occupy the seats.\nHow many people from the queue will not ride in the first trip?\n\nCreate a variable `line` and assign it the value of 60.\n\nCreate a variable `seats` and assign it the value of the number of seats in the train.\n\nCreate a variable `unhappyRiders` and return the result: how many people will wait for the next trip?\nOnly return the number of people who did not leave in the first train.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst allApples = 80;\nconst placeInBasket = 64;\nconst leftOver = allApples - placeInBaskets;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst line = 60;\nconst seats = 48;\nconst unhappyRiders = line - seats;\n```"
-}

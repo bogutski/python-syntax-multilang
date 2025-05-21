@@ -1,5 +1,0 @@
-{
-  "name": "True если первый больше или равен второму",
-  "instruction": "Напишите функцию `firstIsBiggerOrEqual`, которая принимает два числа `first` и `second` и возвращает `true`, если первое число `first` больше или равно второму `second`, и `false` если меньше.",
-  "instructions": {}
-}

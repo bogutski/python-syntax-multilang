@@ -1,4 +1,0 @@
-{
-  "name": "Execute the command above the line",
-  "instruction": "Write a function `stringAndCommand` that takes two arguments: a string and a command.\n\nThe command can be of two kinds:\n* `'countUpperCase'` - count the number of uppercase characters in the string.\n* `'countLowerCase'` - count the number of lowercase characters in a string.\n\nThe function must return a string of the form: `Command: ${command}, result: ${count}`.\n\nIf the string is empty, it should return `'String is empty'`.\n\nThe string will contain only letters.\n\n\nExamples of running the function:\n```javascript\nstringAndCommand('', 'countLowerCase'); // 'String is empty'\nstringAndCommand('sun', 'countUpperCase'); // 'Command: countUpperCase, result: 0'\nstringAndCommand('HelloWorld', 'countLowerCase'); // 'Command: countLowerCase, result: 8'\nstringAndCommand('JAVAscript', 'countUpperCase'); // 'Command: countUpperCase, result: 4'\n```"
-}

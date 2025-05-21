@@ -1,4 +1,0 @@
-{
-  "name": "Number of the century by year",
-  "instruction": "Write a function `century` that takes a positive integer `year` - the number of the year\nas a parameter and returns the number of the century.\n\nExamples of function calls:\n```javascript\ncentury(1900) // 19\ncentury(1901) // 20\ncentury(2000) // 20\ncentury(2001) // 21\n```\n\nIn the solution, `Math.ceil()` will come in handy."
-}

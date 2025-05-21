@@ -1,6 +1,0 @@
-{
-  "name": "Переменная с названием футбольной команды",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-12.png)\n\nСоздайте переменную `soccerTeam` и присвойте ей значение `'Barcelona'`.\n\nПриведем пример, который принципиально похож на то что нужно сделать,\nно адаптируйте его к требованиям задачи\n```javascript\nconst hockeyTeam = 'Panthers';\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst soccerTeam = 'Barcelona';\n```"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "How many boys are in the class?",
-  "instruction": "In the class, there are 30 children. One-third of all the children are girls.\n\nCreate a variable `kids` with a value of 30.\nCreate a variable `girls` in which you calculate the number of girls in the class.\nCreate a variable `boys` in which you calculate the number of boys in the class.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst a = 30;\nconst b = a / 3;\nconst c = a - b ;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst kids = 30;\nconst girls = kids / 3;\nconst boys = kids - girls;\n```"
-}

@@ -1,4 +1,0 @@
-{
-  "name": "The lengths of the lines increase sequentially",
-  "instruction": "Write a function `stringSequence` that takes three strings and returns `true` if the strings are incremented by 1 in sequence, and `false` otherwise.\n\nConsider the example to understand the problem condition.\n\nExamples of running the function:\n```javascript\nstringSequence('', 'a', 'aa'); // true\nstringSequence('a', 'aa', 'aaa'); // true\nstringSequence('aaa', 'aaaa', 'aaaaa'); // true\n\nstringSequence('a', 'aa', 'aaaa'); // false\nstringSequence('a', 'aa', 'a'); // false\nstringSequence('a', 'a', 'a'); // false\n```"
-}

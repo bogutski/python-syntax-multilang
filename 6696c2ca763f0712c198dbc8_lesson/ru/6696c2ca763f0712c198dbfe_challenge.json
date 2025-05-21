@@ -1,6 +1,0 @@
-{
-  "name": "Рост ребенка",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-14.png)\n\nЗа год рост мальчика Майка увеличился на 9 см. Найдите рост мальчика.\n\nСоздайте переменную `mikeHeight` со значением `120`:\n\nЗапишите команду, которая увеличивает имеющееся значение переменной `mikeHeight` на `9`.",
-  "instructions": {},
-  "hint": "```javascript\nlet mikeHeight = 120;\nmikeHeight = mikeHeight + 9;\n```"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Convert a string containing a number to a number",
-  "instruction": "Set the variable `str` and assign it the value of a string containing a number, for example, `'23'`.\n\nSet the variable `num` and assign it the value of the variable `str`, converted to a number.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst x = '1';\nconst y = +x;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst str = '23';\nconst num = +str;\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "В какой строке больше заглавных букв?",
-  "instruction": "Напишите функцию `twoStringsBattle`, которая принимает две строки.\n\nФункция должна посчитать сколько заглавных букв в первой и второй строке и вернуть строку вида:\n\n* `${str1} has won with number of ${countStr1}` - если в первой строке больше заглавных букв\n* `${str2} has won with number of ${countStr2}` - если во второй строке больше заглавных букв\n* `Draw` - если количество заглавных букв в обеих строках равно или строки пустые\n\nПеред циклом проверьте какая строка длиннее и используйте ее длину в цикле.\n\n\nПримеры запуска функции:\n```javascript\ntwoStringsBattle('AAA', 'Hello'); // 'AAA has won with number of 3'\ntwoStringsBattle('', 'aBc'); // 'aBc has won with number of 1'\ntwoStringsBattle('', ''); // 'Draw'\n```",
-  "instructions": {}
-}

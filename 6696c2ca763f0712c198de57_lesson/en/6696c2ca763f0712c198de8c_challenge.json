@@ -1,6 +1,0 @@
-{
-  "name": "Hungry guests on the doorstep. Sharing pies fairly",
-  "instruction": "The hostess baked pies, and then guests arrived. How many pies will each guest get?\n\nCreate a variable `pies` and assign it a value of 28.\n\nCreate a variable `guests` and assign it a value of 7 (number of guests).\n\nCreate a variable `result` and calculate in it how many pies each guest will get.\n\nLet's provide an example that is essentially similar to what needs to be done,\nbut adapt it to the requirements of the task:\n\n```javascript\nconst months = 12;\nconst seasons = 4;\nconst oneSeason = months / seasons;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst pies = 28;\nconst guests = 7;\nconst result = pies / guests;\n```"
-}

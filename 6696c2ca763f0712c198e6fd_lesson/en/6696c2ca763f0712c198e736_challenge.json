@@ -1,4 +1,0 @@
-{
-  "name": "As a result of merging the elements of the array, get a string.",
-  "instruction": "Write a function `newString` that takes one parameter, an array.\n\nThe array consists of 3 or more strings.\n\nThe function should return the addition of the first three elements of the array, `divided by a space`.\n\n* The second element of the array must be repeated `3` times.\n* The third element of the array must be repeated `4` times.\n\nAn example of running a function:\n```javascript\nnewString(['1', '2', '3', '4']); // '1 222 3333'\n```"
-}

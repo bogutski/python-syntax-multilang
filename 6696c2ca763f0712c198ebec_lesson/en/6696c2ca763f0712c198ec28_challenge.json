@@ -1,4 +1,0 @@
-{
-  "name": "Split string by element",
-  "instruction": "Fix the function `divideByEl` that takes two arguments: a string and an element.\n\nThe function should split a string every time it encounters an element. The division occurs after the element.\n\nFor example:\n* `1w2w3w` split by `w` should return `['1w', '2w', '3w']`\n* `abcabcabc` split by `a` should return `['a', 'bca', 'bca', 'bc']`\n\nAfter splitting, each individual part of the string should be added to the array.\n\nThere are only 3 errors in the function. The `for' loop and the code below are correct.\n\nTry to parse each line of code and understand what it does.\n\n\nExamples of running a function:\n```javascript\ndivideByEl('w12w34w56', 'w'); // ['w', '12w', '34w', '56']\ndivideByEl('abcabcabc', 'b'); // ['ab', 'cab', 'cab', 'c']\ndivideByEl('abc', ''); // ['abc']\n```"
-}

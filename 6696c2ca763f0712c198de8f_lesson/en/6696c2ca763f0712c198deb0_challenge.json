@@ -1,4 +1,0 @@
-{
-  "name": "Remainder of dividing an even number by 2",
-  "instruction": "An even number 'a' is given. Find the residue from dividing 'a' by 2.\n\nCreate a variable `a` and assign to it the value of an arbitrary even positive number.\nCreate a variable `remainder` and assign to it an expression to find the remainder of division of `a` by 2.\n\nHere is an example, which is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n```\nconst x = 6;\nconst rest = x % 2;\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Какая буква не дает быть палиндромом?",
-  "instruction": "Функция `findWrongLetter` принимает строку.\n\nДанная строка почти является палиндромом, но одна буква в ней неправильная.\n\nНеобходимо найти индекс этой буквы и вернуть строку следующего вида:\n\n`${str} is not palindrome because of wrong letter at position ${wrongLetter}`, где `str` - исходная строка, `wrongLetter` - индекс неправильной буквы.\n\nСтрока содержит только одну неправильную букву.\n\nПример:\n```javascript\nfindWrongLetter('alba') // 'alba is not palindrome because of wrong letter at position 1'\nfindWrongLetter('midam') // 'midam is not palindrome because of wrong letter at position 1'\n```",
-  "instructions": {}
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Посчитать гласные строчные и прописные",
-  "instruction": "Функция `countLetters` принимает строку\n\nСтрока может состоять из букв латинского алфавита в разных регистрах и символов.\n\nФункция должна возвращать объект со следующими свойствами:\n* `vowelLowerCase` - количество гласных букв в нижнем регистре\n* `vowelUpperCase` - количество гласных букв в верхнем регистре\n* `others` - количество остальных символов и/или согласных букв\n\nПример запуска функции:\n```javascript\ncountLetters('aAbcde') // { vowelLowerCase: 2, vowelUpperCase: 1, others: 3 }\ncountLetters('HI there! 123') // { vowelLowerCase: 2, vowelUpperCase: 1, others: 10 }\n```",
-  "instructions": {}
-}

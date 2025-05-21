@@ -1,5 +1,0 @@
-{
-  "name": "Составитель аббревиатур",
-  "instruction": "Аббревиатура — это сокращение слова или словосочетания, образованное из первых букв слов, из которых оно состоит. Например, BMW — это аббревиатура, образованная из первых букв слов «Bayerische Motoren Werke»\n\nНапишите функцию `makeAcronym`, которая принимает три строки и возвращает аббревиатуру, составленную из первых букв этих строк.\n\nПример запуска функции:\n```javascript\nmakeAcronym('   Kentucky', ' Fried', 'Chicken'); // 'KFC'\nmakeAcronym('  node',    package', '    Manager'); // 'NPM'\nmakeAcronym('    national', ' hockey', 'League'); // 'NHL'\n```",
-  "instructions": {}
-}

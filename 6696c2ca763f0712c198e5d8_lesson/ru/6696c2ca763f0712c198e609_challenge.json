@@ -1,5 +1,0 @@
-{
-  "name": "Цена игрушек",
-  "instruction": "Напишите функцию `totalPrice`, которая принимает два объекта:\n* `toysQuantity` - количество каждой игрушки,\n* `toysPrice` - цена каждой игрушки.\n\nОба объекта имеют три свойства: `legos`, `cars` и `puzzles`.\n\nФункция должна вернуть объект, в котором будет 5 свойств:\n* `totalPriceLegos` - общая цена за лего,\n* `totalPriceCars` - общая цена за машинки,\n* `totalPricePuzzles` - общая цена за пазлы,\n* `totalToysQuantity` - общее количество игрушек,\n* `totalPrice` - общая цена за все игрушки.\n\nПример запуска функции:\n```javascript\ntotalPrice({legos: 5, cars: 7, puzzles: 15}, {legos: 40, cars: 15, puzzles: 26});\n// { totalPriceLegos: 200, totalPriceCars: 105, totalPricePuzzles: 390, totalToysQuantity: 27, totalPrice: 695 }\n\ntotalPrice({legos: 8, cars: 12, puzzles: 25}, {legos: 35, cars: 5, puzzles: 25});\n// { totalPriceLegos: 280, totalPriceCars: 60, totalPricePuzzles: 625, totalToysQuantity: 45, totalPrice: 965 }\n```",
-  "instructions": {}
-}

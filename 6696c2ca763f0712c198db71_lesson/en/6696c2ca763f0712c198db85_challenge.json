@@ -1,6 +1,0 @@
-{
-  "name": "Correct errors in the code. The isCorrect Boolean variable",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-2.png)\n\nI need to write a command that assigns to the `isCorrect` variable the logical value `true` using the `const` keyword.\nboolean value `true` using the `const` keyword.\n\nCorrect the errors in the given code.",
-  "instructions": {},
-  "hint": "```javascript\nconst isCorrect = true;\n```"
-}

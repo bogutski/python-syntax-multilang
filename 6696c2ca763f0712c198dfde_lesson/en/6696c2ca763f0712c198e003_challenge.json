@@ -1,5 +1,0 @@
-{
-  "name": "Creating the first variables",
-  "instruction": "Create the first variable `name` with the keyword const and assign it the value 'PASV'.\n\nCreate the second variable `age` with the keyword const and give it the value 11.",
-  "instructions": {}
-}

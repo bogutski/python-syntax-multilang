@@ -1,5 +1,0 @@
-{
-  "name": "The function returns the address of the PASV site",
-  "instruction": "Write a function `getPasvWebsite` that returns a string with the PASV website address: `https://pasv.us`.",
-  "instructions": {}
-}

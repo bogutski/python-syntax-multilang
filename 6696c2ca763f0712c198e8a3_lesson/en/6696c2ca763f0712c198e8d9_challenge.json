@@ -1,4 +1,0 @@
-{
-  "name": "Filling the array with negative integers from -n to -1.",
-  "instruction": "We need to create a function `negativeArray` that takes a single positive integer `n` and returns an array filled with consecutive integers from `-n` to `-1`.\n\nExamples of running the function:\n\n```javascript\nnegativeArray(5); // [-5, -4, -3, -2, -1]\nnegativeArray(10); // [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1]\nnegativeArray(1); // [-1]\nnegativeArray(0); // []\n```"
-}

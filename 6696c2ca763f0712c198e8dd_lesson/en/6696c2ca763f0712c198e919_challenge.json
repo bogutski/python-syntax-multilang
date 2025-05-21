@@ -1,4 +1,0 @@
-{
-  "name": "The index of the first 'null' in the array",
-  "instruction": "Find and correct errors in the code.\n\nThe `findNull` function should take the `arr` array and return the index of the first `null` or the string `'null not\n found'` if `null` is not found.\n\nExamples of running the function:\n```javascript\nfindNull([1,2,3,null,5,6,7,8,9]); // 3\nfindNull([1,2,3,4,5,6,7,8,9]); // 'null not found'\n```"
-}

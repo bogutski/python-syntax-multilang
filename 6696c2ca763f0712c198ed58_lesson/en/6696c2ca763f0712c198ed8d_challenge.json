@@ -1,4 +1,0 @@
-{
-  "name": "Find the same elements in an array",
-  "instruction": "Write a function `doubleElement` that takes an array of strings and returns `true` if there are two identical elements in the array and returns `false` if there are no such elements.\n\nIf the array is empty, the function should return ``\"No array - no work\"`\n\nStrings in the array are written in lowercase and have no spaces.\n\nYou can use the `indexOf()` method to solve this.\n\nExamples of running the function:\n```javascript\ndoubleElement(['str', 'str']); // true\ndoubleElement(['one', 'two', 'three']); // false\ndoubleElement([]); // 'No array - no work'\n```"
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Find and correct errors in the function",
-  "instruction": "Fix the `countWords` function, which accepts a string and should return the number of words in it.\n\nThe string may contain spaces at the beginning and at the end.\n\nNumbers and characters count as words too.\n\nIf the string is empty or contains only spaces, the function should return - 0.\n\nExamples of how to execute the function:\n```javascript\ncountWords('Hello') // 1\ncountWords(' Hello ') // 1\ncountWords('Hello World') // 2\ncountWords('') // 0\n```"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "What do you get if you add a number to null?",
-  "instruction": "\"Null is emptiness. And if you add something to emptiness, you will get what you added...\" (from \"Tales about numbers\")\n\nCreate a variable named `empty` and assign it the value `null`.\nCreate a variable named `number` and assign it a random number.\nCreate a variable named `sum` and assign it the sum of variables `empty` and `number`.\nCreate a variable named `typeOfSum` and assign it the type of variable `sum`.\n\nLet's provide an example that is fundamentally similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst money = null;\nconst extra = 1000;\nconst result = money + extra;\nconst type = typeof result;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst empty = null;\nconst number = 1;\nconst sum = empty + number;\nconst typeOfSum = typeof sum;\n```"
-}

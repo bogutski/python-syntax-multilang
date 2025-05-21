@@ -1,6 +1,0 @@
-{
-  "name": "Дата в американском формате",
-  "instruction": "Создайте переменную `month` и присвойте ей любое число от 1 до 12.\n\nСоздайте вторую переменную `day` и присвойте ей любое число от 1 до 31.\n\nСоздайте третью переменную `year` и присвойте ей любое четырехзначное число.\n\nСоздайте четвертую переменную `date`, который объединит первые три переменные в одну строку\n(убедитесь, что все переменные отделены друг от друга символом «/»).\n\nПример даты в американском формате: `mm/dd/yyyy` (месяц/день/год).\n\nСоздайте пятую переменную `dateLength`, которая покажет длину переменной `date`.\n\nПриведем пример, который принципиально похож на то что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst hours = 5;\nconst minutes = 30;\nconst seconds = 50;\nconst combinedString = hours + ':' + minutes + ':' + seconds;\nconst lengthOfCombinedString = combinedString.length;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst month = 1;\nconst day = 24;\nconst year = 2020;\nconst date = month + '/' + day + '/' + year;\nconst dateLength = date.length;\n```"
-}

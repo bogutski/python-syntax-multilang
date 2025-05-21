@@ -1,6 +1,0 @@
-{
-  "name": "Присвойте переменной значение undefined",
-  "instruction": "Переменную со значением `undefined` можно создать, присвоив ей значение `undefined`.\nСоздайте переменную с именем `name` и присвойте ей значение `undefined`.\nСоздайте переменную с именем `typeOfName` и присвойте ей значение типа переменной `name`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать, но адаптируйте его к требованиям задачи:\n```javascript\nlet salary = undefined;\nconst typeOfSalary = typeof salary;\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet name = undefined;\nconst typeOfName = typeof name;\n```"
-}

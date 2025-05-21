@@ -1,5 +1,0 @@
-{
-  "name": "Функция возвращает склеенные строки c and между ними",
-  "instruction": "Если использовать знак `+` между двумя строками, то они склеиваются в одну строку.\nЭто называется конкатенация. Мы еще не проходили эту тему, но давайте попробуем.\nМожно склеить несколько строк в одну, используя `+` между ними.\n\n\nВ этом примере мы склеиваем три строки:\n```javascript\nconsole.log('String1' + ' and ' + 'String2') // 'String1 and String2'\n```\n\nНапиши функцию `glueAndString`, которая принимает два аргумента `str1` и `str2` и возвращает их склеенные в одну строку и добавляет строку ` and `между ними.\n\nПример склеивания строк:\n```javascript\nfunction connection(string1, string2) {\n  return string1 + ' something ' +string2;\n}\n\nconsole.log(connection('Hello', 'World')); // 'Hello something World'\n```\n\nСделайте аналогично.",
-  "instructions": {}
-}

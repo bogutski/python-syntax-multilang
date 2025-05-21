@@ -1,6 +1,0 @@
-{
-  "name": "Последняя буква строки",
-  "instruction": "Создайте переменную с именем `str` и присвойте ей значение произвольной непустой строки.\nСоздайте переменную `lastSymbol` и присвойте ей значение последнего символа строки.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst name = 'Jonh';\nconst last = name[name.length - 1];\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst str = 'hello';\nconst lastSymbol = str[str.length - 1];\n```"
-}

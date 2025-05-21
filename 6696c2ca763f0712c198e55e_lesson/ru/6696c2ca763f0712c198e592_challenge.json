@@ -1,5 +1,0 @@
-{
-  "name": "Есть ли свойство в объекте, оператор 'in'",
-  "instruction": "Напишите функцию `objectHasProperty`, которая принимает два параметра:\n* `object` – объект, может иметь любое количество свойств\n* `property` – свойство, которое нужно проверить на наличие в объекте, строка.\n\nВ решении используйте оператор `in`.\n\nЕсли свойство `property` присутствует в объекте `object`, то функция должна вернуть `true`, иначе `false`.\n\nПример запуска функции:\n```javascript\nobjectHasProperty({ name: 'John', age: 20 }, 'name') // true\nobjectHasProperty({ type: 'car', color: 'red' }, 'age') // false\n```",
-  "instructions": {}
-}

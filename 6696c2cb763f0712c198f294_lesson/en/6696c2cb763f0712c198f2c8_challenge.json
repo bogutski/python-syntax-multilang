@@ -1,5 +1,0 @@
-{
-  "name": "Counting the number of occurrences of elements in the array",
-  "instruction": "The `countEachEl` function takes an array and returns an object in which the keys are the elements of the array and the values are the number of times those elements are repeated in the array.\n\nYou need to correct the code so that the function works correctly.\n\nExamples of how to run the function:\n```javascript\ncountEachEl([1, 2, 3, 4, 5]) // {1: 1, 2: 1, 3: 1, 4: 1, 5: 1}\ncountEachEl([1, 1, 1, 1, 1]) // {1: 5}\n```",
-  "instructions": {}
-}

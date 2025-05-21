@@ -1,4 +1,0 @@
-{
-  "name": "Find the middle of the word",
-  "instruction": "Create a function `findMiddle`.\n\nThe function takes a string, returns the character or characters that are in the middle of the string.\n\nIf the length of the string is even, it returns two characters that are in the middle of the string.\n\nIf the length of the string is odd, it returns one character that is in the middle of the string.\n\nExamples of running the function:\n```javascript.\nfindMiddle('test') // 'es'\nfindMiddle('testing') // 't'\nfindMiddle('middle') // 'dd'\nfindMiddle('abc') // 'b'\nfindMiddle('A') // 'A'\nfindMiddle('of') // 'of'\nfindMiddle('') // ''\n```"
-}

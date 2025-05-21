@@ -1,4 +1,0 @@
-{
-  "name": "Is there a property in the object, the 'in' operator",
-  "instruction": "Write a function `objectHasProperty` that takes two parameters:\n* `object` - object, can have any number of properties\n* `property` - the property you want to check for in the object, string.\n\nIn the solution use the operator `in`.\n\nIf the property `property` is present in the object `object`, the function should return `true`, otherwise `false`.\n\nAn example of running the function:\n```javascript\nobjectHasProperty({ name: 'John', age: 20 }, 'name') // true\nobjectHasProperty({ type: 'car', color: 'red' }, 'age') // false\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Посчитать количество квартир и сумму платежей. Массив с объектами",
-  "instruction": "В данной задаче необходимо посчитать сколько квартир находится в квартале и какую сумму платежей они платят.\n\nФункция `countFees` принимает массив объектов, содержащих информацию о доме.\nНас интересуют объекты, имеющие следующую структуру (в функцию могут приходить и другие объекты):\n* `apartment` - номер квартиры\n* `condoFee` - сумма платежа\n\nНеобходимо вернуть объект со следующими свойствами:\n* `overallApartments` - количество квартир в квартале\n* `sumOfPayments` - сумма платежей всех квартир\n\nПример запуска функции:\n```javascript\ncountFees([{apartment: 1, condoFee: 100}, {apartment: 2, condoFee: 200}, {apartment: 3, condoFee: 100}, {apartment: 4, condoFee: 200}])\n// {overallApartments: 4, sumOfPayments: 600}\n\ncountFees([{room: 1, name: \"Utility room\"},{apartment: 2, condoFee: 200}, {apartment: 3, condoFee: 200}])\n// {overallApartments: 2, sumOfPayments: 400}\n```",
-  "instructions": {}
-}

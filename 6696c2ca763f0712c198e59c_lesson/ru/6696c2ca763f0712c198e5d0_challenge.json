@@ -1,5 +1,0 @@
-{
-  "name": "Поменяй свойства в объекте",
-  "instruction": "Напиши функцию `person`, которая принимает параметры:\n* `obj` – объект,\n* `newAge` – число,\n* `newCity` – строка.\n\nОбъект должен иметь свойства:\n* `name` – имя человека, строка,\n* `age` – возраст, число,\n* `city` – город, строка\n\nФункция должна изменить значения свойств в объекте `obj`:\n* свойству `age` присвоить значение `newAge`,\n* свойству `city` присвоить значение `newCity`.\n\nФункция должна вернуть объект с новыми значениями.\n\nПример запуска функции:\n```javascript\nperson({ name: 'John', age: 20, city: 'London' }, 30,'New York') // { name: 'John', age: 30, city: 'New York' }\nperson({ name: 'Pavel', age: 10, city: 'Grodno' }, 13,'Boston') // { name: 'Pavel', age: 13, city: 'Boston' }\n```\n\nПохожий пример:\n```javascript\nfunction changeCarRegion(car, newLicensePlate, newRegion) {\n  car.lenLicensePlate = newLicensePlate;\n  car.region = newRegion;\n  return car;\n}\n```",
-  "instructions": {}
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Приходите позже",
-  "instruction": "Есть привычки откладывать дела и встречи на потом.\n\nНапиши функцию `meetingProposal`, которая принимает один аргумент `date` - дату встречи.\n\nЕсли `date` равна 'today', то функция должна вернуть строку 'Let's meet tomorrow'.\n\nЕсли `date` равна 'tomorrow', то функция должна вернуть строку 'Let's meet after tomorrow'.\n\nЕсли `date` равна 'after tomorrow', то функция должна вернуть строку 'Let's meet after after tomorrow'.\n\nЕсли `date` не равна 'today', 'tomorrow' или 'after tomorrow', то функция должна вернуть строку 'Let's meet next week'.\n\n\nПохожий пример сравнения:\n```javascript\nfunction compare(x) {\n  if (x === 10) {\n    return 11\n  } else if (x === 11) {\n    return 12\n  } else {\n    return 13\n  }\n}\n```\n\nНаверное вы думаете как вывести апостроф (одиночную кавычку) в строке? Вот так:\n\n```javascript\nconsole.log('Let\\'s meet tomorrow');\n```\n\nИспользуете обратный слеш `\\` перед апострофом `'` и он не будет считаться концом строки.",
-  "instructions": {}
-}

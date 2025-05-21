@@ -1,6 +1,0 @@
-{
-  "name": "Define and display in the console the type of expression '100' + 100",
-  "instruction": "Only one line.\n\nWrite the command `console.log(typeof ('100' + 100));`\n\nObserve spaces and punctuation marks.\n\nA semicolon at the end.",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log(typeof ('100' + 100));\n```"
-}

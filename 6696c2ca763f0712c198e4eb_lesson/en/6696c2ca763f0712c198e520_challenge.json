@@ -1,4 +1,0 @@
-{
-  "name": "The arithmetic mean of the four numbers in the object",
-  "instruction": "Write a function `avgObject` that takes four parameters: `param1`, `param2`, `param3`, `param4`. All parameters are numbers.\n\nThe function must return an object with properties `param1`, `param2`, `param3`, `param4` which will be equal to the corresponding arguments and `result`\n\nThe `result` is the arithmetic mean of the four numbers.\n\nExamples of running a function:\n```javascript\navgObject(1, 2, 3, 4); // { param1: 1, param2: 2, param3: 3, param4: 4, result: 2.5 }\navgObject(10, 20, 30, 40); // { param1: 10, param2: 20, param3: 30, param4: 40, result: 25 }\n```"
-}

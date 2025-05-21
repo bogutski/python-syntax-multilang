@@ -1,5 +1,0 @@
-{
-  "name": "Проверяем, что пользователь админ с правильным паролем",
-  "instruction": "Напишите функцию `isAdmin`, которая принимает два параметра, строки: `user`, `password`.\n\nФункция должна возвращать `true`, если `user` равен `admin` и `password` равен `12345`.\n\nВо всех остальных случаях функция должна возвращать `false`.\n\nПримеры запуска функции:\n```javascript\nisAdmin('admin', '12345'); // true\nisAdmin('admin', '123'); // false\nisAdmin('superadmin', '12345'); // false\nisAdmin('superadmin', '123'); // false\n```",
-  "instructions": {}
-}

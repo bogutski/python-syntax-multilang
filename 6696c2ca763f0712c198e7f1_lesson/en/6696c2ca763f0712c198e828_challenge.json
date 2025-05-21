@@ -1,4 +1,0 @@
-{
-  "name": "If there is an element, double it",
-  "instruction": "The `findAndDouble` function takes three arrays and the number `number`.\n\nIf the number `number` is in the array, double it.\n\nIf the number `number` occurs more than once, double only the first occurrence.\n\nIf the number `number` does not occur, add its doubled value to the end of the array.\n\nThese conditions apply to all three arrays.\n\nReturn the array of three arrays.\n\nExamples of running a function:\n```javascript\nfindAndDouble([1, 2, 3], [2, 5, 1], [7, 8, 9], 2) // [[1, 4, 3], [4, 5, 1], [7, 8, 9, 4]]\nfindAndDouble([1, 2, 1], [0, 2, 0], [1, 2, 3], 1) // [[2, 2, 1], [0, 2, 0, 2], [2, 2, 3]]\n```"
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Counting strings with length equal to 3 is interrupted when encountering a given string",
-  "instruction": "Write a function `noMoreThan3Char` that takes two parameters, an array of strings and a string.\n\nThe function should return the number of strings in the array whose length is 3.\n\nIf a given string is found in the array, the string counting should stop.\n\nHint: To count strings, you need to create a counter, in which the number of strings found will be written.\n\nAn example of function start:\n```javascript\nnoMoreThan3Char(['dog', 'map', 'CAP', '-12'], 'CAP') // 2\nnoMoreThan3Char(['tag', 'CAT', 'pet', 'clouds', '-12', '120', 'go', 'K'], 'go') // 5\nnoMoreThan3Char(['12', '12345', 'umbrella', '12', '123888', '-123'], 'umbrella') // 0\nnoMoreThan3Char(['VAN', 'map', '1234', '19', 'true', 'ZIP', 'web'], 'one') // 4\n```"
-}

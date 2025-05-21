@@ -1,6 +1,0 @@
-{
-  "name": "Laboratory work. Division of students into groups",
-  "instruction": "To perform the laboratory work, you need to do: documentation description, program writing, test creation, testing.\n\nThe teacher divided the students into groups. How many students will be in each group?\n\nCreate a variable `students` and assign it a value of 32.\n\nCreate a variable `groups` and assign it a value of 4 (number of groups).\n\nCreate a variable `oneGroup` and return the result: how many students will be in each group?\n\nLet's provide an example that is essentially similar to what needs to be done, but adapt it to the task requirements\n\n```javascript\nconst participants = 90;\nconst oneTable = 10;\nconst tables = participants / oneTable;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst students = 32;\nconst groups = 4;\nconst oneGroup = students / groups;\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Калькулятор суммы и умножения",
-  "instruction": "Напишите функцию `simpleCalculator`, которая принимает три параметра:\n`n1` – первое число,\n`n2` – второе число,\n`operator` – оператор, который нужно применить к числам.\n\nФункция должна возвращать строку вида `n1 operator n2 = result`, где `result` – результат применения оператора к числам.\n\nЕсли оператор не является `+`, `*`, то функция должна возвращать строку `Incorrect operator`.\n\nПримеры запуска функции:\n```javascript\nsimpleCalculator(1, 2, '+'); // '1 + 2 = 3'\nsimpleCalculator(10, 20, '+'); // '10 + 20 = 30'\nsimpleCalculator(-10, 10, '+'); // '-10 + 10 = 0'\n\nsimpleCalculator(1, 2, '*'); // '1 * 2 = 2'\nsimpleCalculator(10, 20, '*'); // '10 * 20 = 200'\nsimpleCalculator(-10, 10, '*'); // '-10 * 10 = -100'\n\nsimpleCalculator(-10, 10, '/'); // 'Incorrect operator'\n```",
-  "instructions": {}
-}

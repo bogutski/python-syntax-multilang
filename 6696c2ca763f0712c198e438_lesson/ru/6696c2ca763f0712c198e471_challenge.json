@@ -1,5 +1,0 @@
-{
-  "name": "Проставить точки между словами",
-  "instruction": "Напиши функцию `insertDots`, которая принимает 3 параметра:\n\n- `string1` - строка 1\n- `string2` - строка 2\n- `length` - общая длина строки\n\nНапример, `string1 = 'abc'`, `string2 = 'def'`, `length = 10`.\n\nНадо чтобы функция вернула строку `abc....def`, где `....` - это точки, которые нужно поставить между словами `abc` и `def`, чтобы длина строки была равна `length`.\n\nЕсли длина строки `string1 + string2` больше или равна `length`, то функция должна вернуть строку `string1 + string2`.\n\nПримеры запуска функции:\n```javascript\ninsertDots('abc', 'def', 10); // 'abc....def'\ninsertDots('abc', 'def', 9); // 'abc...def'\ninsertDots('abc', 'def', 8); // 'abc..def'\ninsertDots('abc', 'def', 7); // 'abc.def'\n\ninsertDots('ab', 'ef', 6); // 'ab..ef'\ninsertDots('ab', 'ef', 5); // 'ab.ef'\ninsertDots('ab', 'ef', 4); // 'abef'\n```",
-  "instructions": {}
-}

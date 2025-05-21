@@ -1,5 +1,0 @@
-{
-  "name": "Лучший студент",
-  "instruction": "Напишите функцию `bestStudent`, которая принимает четыре объекта.\n\nПервые два объекта: `student1` и `student2`, включают имена студентов\n\n* `{ firstName: 'John', lastName: 'Smith' }`\n* `{ firstName: 'Mike', lastName: 'Williams' }`\n\nВторые два объекта: `scoreOfStudent1` и `scoreOfStudent2`, включают заработанные баллы студентов:\n\n* `{ score1: 89, score2: 44 }`\n* `{ score1: 75, score2: 77 }`\n\nФункция должна вернуть строку с полным именем студента, который, по сумме своих баллов, набрал большее количество.\n* `Student Mike Williams has the score of 152`\n\nЕсли количество баллов одинаковое, вернуть следующую строку:\n* `Both students have the same score of 100`, где 100 - сумма баллов одного из студентов\n\nПример запуска функции:\n```javascript\nbestStudent(\n  { firstName: \"John\", lastName: \"Smith\" },\n  { firstName: \"Mike\", lastName: \"Williams\" },\n  { score1: 25, score2: 35 },\n  { score1: 40, score2: 30 }\n);  // Student Mike Williams has the score of 70\n```",
-  "instructions": {}
-}

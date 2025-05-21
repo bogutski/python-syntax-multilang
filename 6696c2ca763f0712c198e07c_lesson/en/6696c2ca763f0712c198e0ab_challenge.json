@@ -1,5 +1,0 @@
-{
-  "name": "Convert feet to meters",
-  "instruction": "Write a function `footToMeter` that takes as its argument the number of feet and returns the number of meters.\n\nThere are `0.3048` meters in one foot.\n\nExamples:\n```javascript\nfootToMeter(1); // 0.3048\nfootToMeter(2); // 0.6096\nfootToMeter(3); // 0.9144000000000001\n```",
-  "instructions": {}
-}

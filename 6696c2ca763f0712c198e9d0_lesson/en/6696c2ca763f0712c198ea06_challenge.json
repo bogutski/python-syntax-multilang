@@ -1,4 +1,0 @@
-{
-  "name": "The sum of even numbers from n1 to n2",
-  "instruction": "Write a function `sumOfEvenNumbers` that takes two numbers `n1` and `n2` and returns the sum of all even numbers between `n1` and `n2` inclusive.\n\n`n1` will always be less than or equal to `n2`.\n\nExamples of running the function:\n```javascript\nsumOfEvenNumbers(1, 10); // 30\nsumOfEvenNumbers(1, 11); // 30\nsumOfEvenNumbers(15, 37); // 286\n```"
-}

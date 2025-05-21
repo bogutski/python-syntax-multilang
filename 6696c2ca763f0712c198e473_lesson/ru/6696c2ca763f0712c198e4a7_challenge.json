@@ -1,5 +1,0 @@
-{
-  "name": "Сделать только один пробел между словами",
-  "instruction": "Напишите функцию `separator`, которая принимает две строки и возвращает их соединенные через один пробел, но без пробелов в начале и в конце.\n\nПример запуска функции:\n```javascript\nseparator('  abc', '  def '); // 'abc def'\nseparator('abc  ', '  def'); // 'abc def'\nseparator('  hello', '  world       '); // 'hello world'\nseparator('  hello', '  world'); // 'hello world'\n```",
-  "instructions": {}
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Sum of numbers divisible by 5",
-  "instruction": "Write a function `divisibleByFive` that takes two numbers `n1` and `n2`.\n\nThe function should return the sum of all numbers that are divisible by 5 without a remainder, in the range `n1` to `n2`, not including `n1` and `n2`.\n\n`n1` will always be less than `n2`.\n\nExamples of running a function:\n```javascript\ndivisibleByFive(1, 11); // 15\ndivisibleByFive(5, 15); // 10\ndivisibleByFive(4, 14); // 15\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Найти дубликат последнего слова в строке",
-  "instruction": "Напишите функцию `lastDuplicate`, которая принимает строку и возвращает `true` если есть дубликат последнего слова в строке `str`, `false` в противном случае.\n\nМежду словами есть лишь один пробел.\n\nЕсли строка пустая или в ней одно слово (иными словами нет пробелов), то функция должна вернуть `false`.\n\n\nПримеры запуска функции:\n```javascript\nlastDuplicate('Little A from Column A'); // true\nlastDuplicate('Fight Fire With Fire') // true\nlastDuplicate('a wolf, Lone Wolf'); // false\nlastDuplicate('Raining Cats and Dogs') // false\nlastDuplicate('Little Art from Column Ar') // false\n```",
-  "instructions": {}
-}

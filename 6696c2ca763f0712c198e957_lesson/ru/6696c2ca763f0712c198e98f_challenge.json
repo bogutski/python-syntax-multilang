@@ -1,5 +1,0 @@
-{
-  "name": "Исправьте ошибку в коде",
-  "instruction": "Функция `stopCountAtEl` принимает 2 параметра: строку `str` и символ `el`.\n\nФункция возвращает количество символов в строке `str`.\n\nЕсли в строке `str` встречается символ `el` в верхнем или нижнем регистре, подсчёт прекращается.\n\nИсправьте ошибки в коде, чтобы функция работала правильно.\n\nПример запуска функции:\n```javascript\nstopCountAtEl('ftgjkfdttfjRhKl', 'r') // 11\nstopCountAtEl('rftgjkffjR', 'R') // 0\nstopCountAtEl('rftgjkffjR', 'W') // 10\n```",
-  "instructions": {}
-}

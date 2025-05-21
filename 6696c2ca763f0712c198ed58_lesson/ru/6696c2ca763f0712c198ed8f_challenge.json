@@ -1,5 +1,0 @@
-{
-  "name": "Найти дубликат первого слова в строке",
-  "instruction": "Напишите функцию `firstDuplicate`, которая принимает строку и возвращает `true` если есть дубликат первого слова в строке `str`, `false` в противном случае.\n\nМежду словами есть лишь один пробел.\n\nЕсли строка пустая или в ней одно слово (иными словами нет пробелов), то функция должна вернуть `false`.\n\nПримеры запуска функции:\n```javascript\nfirstDuplicate('chery chery'); // true\nfirstDuplicate('red chery'); // false\nfirstDuplicate('red'); // false\n```",
-  "instructions": {}
-}

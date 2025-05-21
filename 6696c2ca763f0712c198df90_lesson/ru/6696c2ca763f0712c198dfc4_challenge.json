@@ -1,5 +1,0 @@
-{
-  "name": "Добро пожаловать в PASV!",
-  "instruction": "Напишите функцию `greeting`, которая принимает аргумент `name` и возвращает строку `Hello, name! Welcome to PASV!`. Задайте значение по умолчанию для аргумента `name` равное `friend`.\n\nПримеры\n```javascript\ngreeting('Alice'); // 'Hello, Alice! Welcome to PASV!'\ngreeting('Bob'); // 'Hello, Bob! Welcome to PASV!'\ngreeting(); // 'Hello, friend! Welcome to PASV!'\n```",
-  "instructions": {}
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Copying an array using the slice() method",
-  "instruction": "Write a function `shallowCopy` that takes an array and returns a copy of it using the `slice` method.\n\nThe function will receive an array with only primitive values.",
-  "instructions": {}
-}

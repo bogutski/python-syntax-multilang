@@ -1,5 +1,0 @@
-{
-  "name": "Удалить дубликаты из строки",
-  "instruction": "Функция `deleteDuplicate` принимает строку и возвращает строку без дубликатов слов.\n\nСлова в новой строке должны быть разделены пробелом.\n\nВ конце строки пробела быть не должно.\n\nПримеры запуска функции:\n```javascript\ndeleteDuplicate(\"i like to like learn i javascript\") // \"i like to learn javascript\"\n```",
-  "instructions": {}
-}

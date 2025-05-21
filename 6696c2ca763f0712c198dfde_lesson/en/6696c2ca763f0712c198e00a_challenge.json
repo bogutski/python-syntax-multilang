@@ -1,4 +1,0 @@
-{
-  "name": "The function and the problem about buses",
-  "instruction": "Two buses left the same point at the same time and are moving in opposite directions.\n\nThe speed of the buses is the same.\n\nCreate a function `busDistance` that takes two parameters: `bus1` and `bus2`.\n\nThe function should return the distance between the buses.\n\nThe `bus1` and `bus2` are numbers, the distance that each bus has traveled since leaving."
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Конвертер футы в дюймы и наоборот",
-  "instruction": "В одном футе 12 дюймов.\n\nНапишите функцию `convertUnits`, которая принимает три параметра:\n* `value` - число,\n* `from` - единица измерения `value`,\n* `to` - единица измерения, в которую необходимо перевести.\n\nФункция должна возвращать число, которое является результатом перевода `value` из `from` в `to`.\n\nДопустимые значения для `from` и `to`: `foot` и `inch`.\n\nПримеры запуска функции:\n```javascript\nconvertUnits(1, 'foot', 'inch'); // 12\nconvertUnits(12, 'inch', 'foot'); // 1\nconvertUnits(10, 'foot', 'inch'); // 120\nconvertUnits(120, 'inch', 'foot'); // 10\n\nconvertUnits(120, 'inch', 'inch'); // 120\nconvertUnits(120, 'foot', 'foot'); // 120\n\nconvertUnits(120, 'inch', 'cm'); // Wrong units\nconvertUnits(120, 'cm', 'foot'); // Wrong units\n```\n\nЕсли переданы неверные значения для `from` или `to`, функция должна возвращать строку `Wrong units`.\n\nЛогика расчета очень проста: 1 фут = 12 дюймов, 1 дюйм = 1/12 фута.",
-  "instructions": {}
-}

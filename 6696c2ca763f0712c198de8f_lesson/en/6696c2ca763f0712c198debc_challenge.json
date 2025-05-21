@@ -1,4 +1,0 @@
-{
-  "name": "How many books on the fifth shelf?",
-  "instruction": "There are 5 shelves in the library. The first shelf has 3 books, the second shelf has 3 times more books than the first shelf,\nthe third shelf has three times more books than the second shelf, the fourth shelf has three times more books than the third shelf,\non the fifth shelf, there are three times more books than on the fourth shelf.  How many books are on the 5th shelf in the library?\n\nUse the operation of exponentiation to solve the problem.\n\nCreate a variable `bookQuantity` and assign value 3 to it.\n\nCreate a variable `shelves` and assign value 5 to it.\n\nCreate a variable `result` and assign to it the value of `bookQuantity` to the extent of `shelves`.\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the task:\n\n```\nconst quantity = 10;\nconst stepen = 3;\nconst result = quantity ** stepen;\n ```"
-}

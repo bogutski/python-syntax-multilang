@@ -1,4 +1,0 @@
-{
-  "name": "Array of number squares",
-  "instruction": "The `arrayOfSquares` function takes one parameter `n1` - a number.\n\nThe function must return an array consisting of the squares of numbers from `n1` to `1` inclusive in descending order.\n\nIf `n1` is less than `1`, the function should return an empty array.\n\nExamples of running the function:\n```javascript\narrayOfSquares(5) // [ 25, 16, 9, 4, 1 ]\narrayOfSquares(-5) // []\n```"
-}

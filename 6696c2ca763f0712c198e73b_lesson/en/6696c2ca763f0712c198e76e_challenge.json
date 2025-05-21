@@ -1,4 +1,0 @@
-{
-  "name": "Name check. Arrays",
-  "instruction": "The `list` function takes two parameters:\n* `names` - array of strings\n* `key` - string\n\nYou need to check if `key` is in the `names` array. It is necessary to delete spaces at the beginning and at the end of the string `key` and to convert it to lower case.\n\nThe function should return `true` if `key` is contained in the `names` array, otherwise `false`.\n\nAn example of running the function:\n```javascript\nlist([\"john\", \"alice\", \"tom\", \"eric\", \"helga\"], \" Helga\") // true\nlist([\"alice\", \"john\", \"eric\", \"tom\", \"helga\"], \"nathan \") // false\n```"
-}

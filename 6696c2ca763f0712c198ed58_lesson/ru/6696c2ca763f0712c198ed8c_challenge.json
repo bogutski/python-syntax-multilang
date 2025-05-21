@@ -1,5 +1,0 @@
-{
-  "name": "Удалить пробелы в строке",
-  "instruction": "Напишите функцию `deleteSpace` которая принимает строку `str` и возвращает новую строку с тем же текстом что в `str`, но без пробелов.\n\n\nПримеры запуска функции:\n```javascript\ndeleteSpace('two strings'); // 'twostrings'\ndeleteSpace(' a very  long word'); // 'averylongword'\ndeleteSpace(' '); // ''\n```",
-  "instructions": {}
-}

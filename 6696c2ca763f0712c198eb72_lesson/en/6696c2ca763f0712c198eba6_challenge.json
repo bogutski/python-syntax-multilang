@@ -1,4 +1,0 @@
-{
-  "name": "Palindrome or not?",
-  "instruction": "A palindrome is a word or phrase that reads equally from left to right and right to left. For example, the word \"madam\" is a palindrome, but the word \"hello\" is not.\n\nThe `checkTheString` function accepts the string `str`.\n\nThe string `str` is written with a lowercase letter, does not contain spaces, but can contain numbers.\n\nYou need to check if the string is a palindrome.\n\nThe function should return true if the string is a palindrome, and false if it is not.\n\nAn example of running the function:\n``javascript\ncheckTheString(\"abba\") // true\nCheckTheString(\"hello\") // false\n```"
-}

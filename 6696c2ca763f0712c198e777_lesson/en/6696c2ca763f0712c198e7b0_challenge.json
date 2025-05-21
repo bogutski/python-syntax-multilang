@@ -1,4 +1,0 @@
-{
-  "name": "Replacing an element in a nested array with the lastIndexOf() method",
-  "instruction": "Write a function `changeColor` that takes one parameter, an array.\n\nThe array contains two nested arrays with an arbitrary number of lines.\n\nIf the second nested array contains the string `green`, replace it with `yellow`.\n\nIf there is more than one `green` string in the nested object, only the last one will be replaced.\n\nUse the `lastIndexOf()` method to search for the `green` string.\n\nThe function should return the modified array.\n\nAn example of running the function:\n```javascript\nchangeColor([['red', 'green', 'blue'], ['black', 'green', 'white']])\n// [['red', 'green', 'blue'], ['black', 'yellow', 'white']]\nchangeColor([['pink', 'green', 'red'], ['orange', 'green', 'blue', 'green']])\n// [['pink', 'green', 'red'], ['orange', 'green', 'blue', 'yellow']]\n```"
-}

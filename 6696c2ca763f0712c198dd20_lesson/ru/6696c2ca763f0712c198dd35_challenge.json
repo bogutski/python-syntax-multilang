@@ -1,6 +1,0 @@
-{
-  "name": "Сравните null с нулем",
-  "instruction": "Создайте переменную с именем `empty` и присвойте ей значение `null`.\nСоздайте переменную с именем `strictEqualToZero` и присвойте ей результат строгого сравнения (===) переменной `empty` и 0.\nСоздайте переменную с именем `equalToZero` и присвойте ей результат нестрогого сравнения (==) переменной `empty` и 0.\n(Проверьте результат в консоли).\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst money = null;\nconst comparison = money === 0;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst empty = null;\nconst strictEqualToZero = empty === 0;\nconst equalToZero = empty == 0;\n```"
-}

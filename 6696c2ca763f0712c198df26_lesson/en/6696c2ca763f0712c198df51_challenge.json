@@ -1,5 +1,0 @@
-{
-  "name": "Correct the error in the function",
-  "instruction": "Find an error in the `message` function and correct it.\n\nThe function should return the string `'I love JS'`.",
-  "instructions": {}
-}

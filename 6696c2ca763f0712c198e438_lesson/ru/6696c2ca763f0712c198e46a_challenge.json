@@ -1,5 +1,0 @@
-{
-  "name": "Функция повторяет строку согласно своей длине",
-  "instruction": "Напиши функцию `repeatString`, которая принимает строку и возвращает ее повторенную столько раз, сколько длина этой строки.\n\nПример запуска функции:\n```javascript\nrepeatString('abc1'); // 'abc1abc1abc1abc1'\nrepeatString('abc'); // 'abcabcabc'\nrepeatString('qw'); // 'qwqw'\nrepeatString('q'); // 'q'\n```",
-  "instructions": {}
-}

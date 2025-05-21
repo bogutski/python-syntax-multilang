@@ -1,6 +1,0 @@
-{
-  "name": "Robinson Crusoe",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-16.png)\n\nRobinson Crusoe marked each day he lived on the island with an 'I' notch on a tree.\n\nHe already had a string of `days' consisting of many 'sticks': \"IIIIIII....III\".\n\nToday Robinson added another one.\n\n\nCreate a `days` variable with the value `IIIIIIIIIIIIIIIIIIIIIIII` (24 days).\n\nWrite a command that modifies the string `days` by adding another letter `'I'` to it.\n\n\nA similar example:\n```javascript\nlet cars = 'III';\ncars = cars + 'I';\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet days = 'IIIIIIIIIIIIIIIIIIIIIIII'\ndays = days + 'I';\n```"
-}

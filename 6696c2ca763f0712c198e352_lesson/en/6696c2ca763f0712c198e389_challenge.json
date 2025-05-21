@@ -1,4 +1,0 @@
-{
-  "name": "Sum and multiplication calculator",
-  "instruction": "Write a function `simpleCalculator` that takes three parameters:\n`n1` - first number,\n`n2` - second number,\n`operator` - operator to apply to the numbers.\n\nThe function should return a string of the form `n1 operator n2 = result` where `result` is the result of applying the operator to the numbers.\n\nIf the operator is not `+`, `*`, the function should return a string of the form `Incorrect operator`.\n\nExamples of running a function:\n```javascript\nsimpleCalculator(1, 2, '+'); // '1 + 2 = 3'\nsimpleCalculator(10, 20, '+'); // '10 + 20 = 30'\nsimpleCalculator(-10, 10, '+'); // '-10 + 10 = 0'\n\nsimpleCalculator(1, 2, '*'); // '1 * 2 = 2'\nsimpleCalculator(10, 20, '*'); // '10 * 20 = 200'\nsimpleCalculator(-10, 10, '*'); // '-10 * 10 = -100'\n\nsimpleCalculator(-10, 10, '/'); // 'Incorrect operator'\n```"
-}

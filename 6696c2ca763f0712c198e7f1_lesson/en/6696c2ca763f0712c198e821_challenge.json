@@ -1,4 +1,0 @@
-{
-  "name": "Swap the first and the last element of the array",
-  "instruction": "The `witchFirstAndLast` function takes one parameter:\n* `array` - array of numbers\n\nYou need to swap the first and the last element of the array.\n\nThe function should return the changed array.\n\nExamples of running the function:\n```javascript\nswitchFirstAndLast([1, 2, 3, 4]) // [4, 2, 3, 1]\n\nswitchFirstAndLast([5, 2, 3, 4]) // [4, 2, 3, 5]\n```"
-}

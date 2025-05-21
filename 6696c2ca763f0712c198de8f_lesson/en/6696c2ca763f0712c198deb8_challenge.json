@@ -1,6 +1,0 @@
-{
-  "name": "Is it true that the number a is a multiple of the number b?",
-  "instruction": "Given numbers a and b. Is it true that number a is divisible by number b without a remainder (i.e. number a is a multiple of number b)?\nTo solve the problem, you need to find the remainder of dividing number a by number b and compare it with zero.\n\nCreate variables `a` and `b` and assign them values of arbitrary non-zero numbers.\n\nCreate variable `remainder` and assign it an expression to find the remainder of dividing `a` by `b`.\n\nCreate variable `isMultiple` and assign it the result of comparing variable `remainder` with zero.\n\nHere is an example that is essentially similar to what needs to be done, but adapt it to the requirements of the problem:\n```javascript\nconst x = 6;\nconst y = 2;\nconst rest = x % y;\nconst isRepeat = rest === 0;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst a = 5;\nconst b = 4;\nconst remainder = a % b;\nconst isMultiple = remainder === 0;\n```"
-}

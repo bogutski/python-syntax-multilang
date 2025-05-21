@@ -1,6 +1,0 @@
-{
-  "name": "Triangle perimeter",
-  "instruction": "Given sides of a triangle `a`, `b`, `c`.\nMake a program that calculates its perimeter `p`.\n\nCreate variables named `a`, `b`, `c` and assign them values of arbitrary positive numbers.\nCreate a variable `p` and assign to it the value of the expression to calculate the perimeter of the triangle.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst num1 = 4;\nconst num2 = 9;\nconst num3 = 9;\nconst sum = num1 + num2 + num3;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst a = 7;\nconst b = 8;\nconst c = 9;\nconst p = a + b + c;\n```"
-}

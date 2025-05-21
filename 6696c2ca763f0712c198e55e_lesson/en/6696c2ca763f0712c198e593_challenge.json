@@ -1,4 +1,0 @@
-{
-  "name": "The function returns an object with one property",
-  "instruction": "Write a function `createPerson` that takes one parameter: `name` (string).\n\nThe function should return an object with one property, where `userName` is the key and the resulting string `name` is the value.\n\nExamples of running the function are:\n```javascript\ncreatePerson('Alice'); // {userName: 'Alice'}\ncreatePerson('George'); // {userName: 'George'}\ncreatePerson('Mary Alice'); // {userName: 'Mary Alice'}\n```"
-}

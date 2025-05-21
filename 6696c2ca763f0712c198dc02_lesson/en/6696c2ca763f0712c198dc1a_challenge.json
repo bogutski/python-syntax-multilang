@@ -1,6 +1,0 @@
-{
-  "name": "Variable with a numeric value",
-  "instruction": "Create a `age` variable and assign it the value of an arbitrary number between 0 and 120.\n\nCreate a `typeOfAge` variable and assign it the value of the `age` variable type.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst phoneNumber = 911;\nconst typeOfPhoneNumber = typeof (phoneNumber);\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst age = 35;\nconst typeOfAge = typeof (age);\n```"
-}

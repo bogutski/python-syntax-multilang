@@ -1,6 +1,0 @@
-{
-  "name": "Help a farmer to find the area of the plot",
-  "instruction": "A farmer has a square plot of land. He has built a fence around the plot and measured its length.\nThe farmer wants to buy seeds for planting, but he needs to know the area of the plot to calculate the number of seeds needed.\nHelp the farmer find the area of the square plot if the length of the fence around the plot is known.\n\nCreate a variable `length` and assign it an arbitrary number from 1 to 1000 (the length of the fence).\n\nCreate a `side` variable and assign it an expression to calculate the side of the square.\n\nCreate a variable ``square` and assign it an expression to calculate the area of a square with side `side`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst x = 2;\nconst y = x ** 2;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst length = 600;\nconst side = length / 4;\nconst square = side ** 2;\n```"
-}

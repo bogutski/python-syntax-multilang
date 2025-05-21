@@ -1,4 +1,0 @@
-{
-  "name": "Find a duplicate of the first word in the string",
-  "instruction": "Write a function `firstDuplicate` that takes a string and returns `true` if there is a duplicate of the first word in the string `str`, `false` otherwise.\n\nThere is only one space between words.\n\nIf the string is empty or has one word in it (in other words, no spaces), the function should return `false`.\n\nExamples of running the function:\n```javascript\nfirstDuplicate('chery chery'); // true\nfirstDuplicate('red chery'); // false\nfirstDuplicate('red'); // false\n```"
-}

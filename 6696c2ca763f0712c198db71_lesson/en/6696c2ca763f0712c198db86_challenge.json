@@ -1,6 +1,0 @@
-{
-  "name": "Correct errors in the code. Variable weather",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-3.png)\nYou need to write a command that assigns the value of string `'Sunny day'` to the `weather` variable using the `const` keyword.\n\nCorrect the errors in the above code.",
-  "instructions": {},
-  "hint": "```javascript\nconst weather = 'Sunny day';\n```"
-}

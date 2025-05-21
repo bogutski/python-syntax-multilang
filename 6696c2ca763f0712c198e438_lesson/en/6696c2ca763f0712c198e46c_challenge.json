@@ -1,4 +1,0 @@
-{
-  "name": "Repetition depending on the case of the last letter",
-  "instruction": "Write a function `repeatString` that takes a string.\n\nHave the function take the last character of the string and repeat it.\n\nIf the last character is written in upper case, repeat it 3 times, if in lower case, repeat it 2 times.\n\nAn example of how to execute the function:\n```javascript\nrepeatString('abc'); // 'cc'\nrepeatString('abc'); // 'CCC'\n```"
-}

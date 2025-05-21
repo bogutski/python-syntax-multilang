@@ -1,5 +1,0 @@
-{
-  "name": "Конкатенация элементов массива",
-  "instruction": "Напишите функцию `compoundWord`, которая принимает один параметр - массив.\n\nМассив содержит 2 элемента - строки.\nНапример: `['foot', 'ball']`\n\nФункция должна вернуть объединение элементов массива.\n\nПример запуска функции:\n```javascript\ncompoundWord(['make', 'up']); // 'makeup'\n```\n\nПохожий пример c числами:\n```javascript\nfunction addNum(numbers) {\n  return numbers[0] + numbers[1] + numbers[2];\n}\n\nconsole.log(addNum([1, 12, 23])); // 36\nconsole.log(addNum([10, 20, 30])); // 60\n```",
-  "instructions": {}
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Double digits in an array of strings",
-  "instruction": "The function `doubleNumbers` takes an array of strings.\n\nReturn an array in which all the numbers in the strings are multiplied by 2. If the element is not a number, leave it as it is.\n\nMultiply the numbers from 0 to 9.\n\nFix the errors in the code to make it work correctly.\n\nThere are no errors in the loop. Analyze the code and try to repeat.\n\nExample function call:\n```javascript\ndoubleNumbers([\"hello\", \"hello 123\", \"0234\"]) // [\"hello\", \"hello 246\", \"0468\"]\n```",
-  "instructions": {}
-}

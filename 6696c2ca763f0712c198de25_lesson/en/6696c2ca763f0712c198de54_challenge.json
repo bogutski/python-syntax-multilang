@@ -1,6 +1,0 @@
-{
-  "name": "Adding numbers written as strings",
-  "instruction": "Set variables `a` and `b` and assign them values as strings containing arbitrary numbers.\n\nSet variable `sum` and assign it the result of adding these numbers, after converting the strings to numbers.\n\nThat is, for example, the result of '4' + '7' should be equal to 11.\n\nHere is an example that is essentially similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst num1 = '13';\nconst num2 = '15';\nconst result = +num1 + +num2;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst a = '20';\nconst b = '22';\nconst sum = +a + +b;\n```"
-}

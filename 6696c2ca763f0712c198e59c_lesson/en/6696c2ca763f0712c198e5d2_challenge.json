@@ -1,4 +1,0 @@
-{
-  "name": "Correct the addresses",
-  "instruction": "Write a `fixAddress` function that takes one parameter:\n* an `address` object with information about the address to be corrected.\n\nThe `address` object stores information about the address:\n* `state` - state, written in lower case, e.g. `ma`, string\n* `zip` - zip code, written with spaces at the beginning and/or end of the line, eg ` 03456 `.\n\nThe function should return an `address` object in which:\n* `state` - state, written in uppercase, for example `MA`\n* `zip` - zip code, written without spaces at the beginning and/or end of the line, for example `03456`.\n\nFunction launch example:\n```javascript\nfixAddress({ state: 'ma', zip: ' 03456 ' })\n// { state: 'MA', zip: '03456' }\n```\nSimilar example:\n```javascript\nfixPerson({ name: 'john', age: ' 20 ' })\n// { name: 'JOHN', age: '20' }\n```"
-}

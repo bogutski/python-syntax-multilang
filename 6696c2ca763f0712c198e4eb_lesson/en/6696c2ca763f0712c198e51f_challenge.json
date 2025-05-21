@@ -1,4 +1,0 @@
-{
-  "name": "Multiplication in an object",
-  "instruction": "Write a function `multiObject` that takes two parameters: `param1`, `param2`. Both parameters are numbers.\n\nThe function should return an object with properties `param1`, `param2` which will be equal to the corresponding arguments and `result`.\n\nThe `result` is the product of `param1` and `param2`.\n\nExamples of running a function:\n```javascript\nmultiObject(2, 3); // { param1: 2, param2: 3, result: 6 }\nmultiObject(10, 10); // { param1: 10, param2: 10, result: 100 }\n```"
-}

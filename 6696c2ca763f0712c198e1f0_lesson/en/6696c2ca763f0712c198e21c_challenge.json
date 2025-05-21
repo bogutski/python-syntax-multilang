@@ -1,4 +1,0 @@
-{
-  "name": "Function for determining an arithmetic operation",
-  "instruction": "Write a function `evalNumbers()` that takes three arguments: `num1, num2` (two numbers) and `operation` (arithmetic operation: \"add\" or \"subtract\" or \"multiply\" or \"divide\").\n\nIf `operation` is given, the function must return the result of an arithmetic operation between the two numbers `num1, num2`.\nIf `operation` is given but it is not an arithmetic operation, the function should return `Invalid operation`.\nIf `operation` is not given, the function should return `Please, pass the operation`.\n\nExamples:\n- The function `evalNumbers(1, 23, \"add\")` should return 24;\n- The function `evalNumbers(1, 3)` should return `Please, pass the operation`.\n- The function `evalNumbers(1, 2, 'hello')` should return `Invalid operation'.\n- The function `evalNumbers(22, 11, \"divide\")` must return 2."
-}

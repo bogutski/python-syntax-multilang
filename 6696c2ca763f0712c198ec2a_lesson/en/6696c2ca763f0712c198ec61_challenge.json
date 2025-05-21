@@ -1,5 +1,0 @@
-{
-  "name": "Number of 1st element from the beginning to the middle of the line and 2nd element from the middle to the end of the line",
-  "instruction": "The `countElFromEndToMiddle` function takes 1 parameter - a string.\n\nThe string `str` is of arbitrary length and contains letters/words in upper and lower case.\n\nThe function should return an object where the keys are letters and the values are the number of occurrences of these letters in the string.\n\nThe counting is performed from the end of the string to the middle.\n\nCalculation of the middle of the string is rounded down.\n\nCorrect the errors in the code to make the function work correctly.\n\nExample of running the function:\n```javascript\ncountElFromEndToMiddle('REPAPER'); // {E: 1, P: 1, R: 1}\ncountElFromEndToMiddle('Yada Yada'); // {a: 2, d: 1, Y: 1}\ncountElFromEndToMiddle('Madam'); // {a: 1, m: 1}\ncountElFromEndToMiddle(''); // {}\n```",
-  "instructions": {}
-}

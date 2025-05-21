@@ -1,5 +1,0 @@
-{
-  "name": "Функция приветствует двух людей",
-  "instruction": "Напиши функцию `greetingMessage`, которая принимает два параметра `firstName` и `lastName` и возвращает строку вида `Welcome, firstName lastName!`.\n\nСоздайте переменную `person1FirstName` и присвойте ей значение 'John'.\nСоздайте переменную `person1LastName` и присвойте ей значение 'Doe'.\nСоздайте переменную `person2FirstName` и присвойте ей значение 'Jane'.\nСоздайте переменную `person2LastName` и присвойте ей значение 'Tailor'.\n\nСоздайте переменную `greetingMessage1` и присвойте ей результат вызова функции `greetingMessage`.\nВ качестве аргумента передайте значения переменных `person1FirstName` и `person1LastName`.\n\nСоздайте переменную `greetingMessage2` и присвойте ей результат вызова функции `greetingMessage`.\nВ качестве аргумента передайте значения переменных `person2FirstName` и `person2LastName`.\n\nПохожий пример:\n```javascript\nfunction fun(p1, p2) {\n  return 'Go ' + firstName + ' ' + lastName;\n}\n\nconst p1Fn = 'A';\nconst p1Ln = 'B';\nconst p2Fn = 'C';\nconst p2Ln = 'D';\n\nconst res1 = fun(p1Fn, p1Ln);\nconst res2 = fun(p2Fn, p2Ln);\n```",
-  "instructions": {}
-}

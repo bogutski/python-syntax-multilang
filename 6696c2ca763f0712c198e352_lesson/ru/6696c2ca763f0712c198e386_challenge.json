@@ -1,5 +1,0 @@
-{
-  "name": "Конкатенация трех строк",
-  "instruction": "Напишите функцию `concat`, которая принимает три параметра: `first`, `second`, `third` - строки.\nПусть функция возвращает конкатенацию трех строк.\n\nПримеры запуска функции:\n```javascript\nconcat('a', 'b', 'c'); // 'abc'\nconcat('hello', ' ', 'world'); // 'hello world'\nconcat('qwe', 'rty', 'uio'); // 'qwertyuio'\n```",
-  "instructions": {}
-}

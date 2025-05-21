@@ -1,5 +1,0 @@
-{
-  "name": "Поменять порядок слов в строке на обратный",
-  "instruction": "Напишите функцию `reverseLocationOfWords`, которая принимает строку слов, разделенных одним пробелом.\n\nФункция должна вернуть строку, в которой слова будут расположены в обратном порядке.\n\nНапример, если строка `one two three`, то функция должна вернуть строку `three two one`.\n\nВ начале и в конце строки пробелов быть не должно.\n\n\nПримеры запуска функции:\n```javascript\nreverseLocationOfWords('one two three four') // 'four three two one'\nreverseLocationOfWords('1 2 3 4 5')          // '5 4 3 2 1'\nreverseLocationOfWords('123 456')            // '456 123'\nreverseLocationOfWords('OneWord')            // 'OneWord'\nreverseLocationOfWords('')                   // ''\n```",
-  "instructions": {}
-}

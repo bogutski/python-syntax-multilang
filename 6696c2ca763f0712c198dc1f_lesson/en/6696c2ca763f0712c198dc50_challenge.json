@@ -1,6 +1,0 @@
-{
-  "name": "Create a variable named `age` and assign a value of 20 to it",
-  "instruction": "This task requires creating a variable named `age` and assigning it the value of `20`.\nCorrect the errors in the code.",
-  "instructions": {},
-  "hint": "```javascript\nconst age = 20;\n```"
-}

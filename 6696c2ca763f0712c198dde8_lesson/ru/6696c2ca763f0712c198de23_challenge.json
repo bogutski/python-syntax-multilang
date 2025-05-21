@@ -1,6 +1,0 @@
-{
-  "name": "Сколько собрано яблок?",
-  "instruction": "Лена и Мария собирали яблоки. Лена собрала 2 корзинки яблок, а Мария собрала на 3 корзинки больше.\nСколько корзинок яблок собрала Мария? Сколько корзинок собрали девушки вместе?\n\nСоздайте переменную `applesLena` и присвойте ей значение 2.\n\nСоздайте переменную `applesMaria` и посчитайте ее значение.\n\nСоздайте переменную `applesTotal` и присвойте в нее сумму переменных `applesLena` и `applesMaria`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать.\nАдаптируйте его к требованиям задачи.\n\n```javascript\nconst bananasPeter = 5;\nconst bananasNick = bananasPeter + 3;\nconst bananasTotal = bananasPeter + bananasNick;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst applesLena = 2;\nconst applesMaria = applesLena + 3;\nconst applesTotal = applesLena + applesMaria;\n```"
-}

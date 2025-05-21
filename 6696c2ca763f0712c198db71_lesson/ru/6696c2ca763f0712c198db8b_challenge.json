@@ -1,6 +1,0 @@
-{
-  "name": "Название известной сказки",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-8.png)\n\nВ 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.\n\nСоздайте переменную `nameOfBook` и присвойте ей значение `'Alice in Wonderland'`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst nameOfNewspaper = 'The New York Times';\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst nameOfBook = 'Alice in Wonderland';\n```"
-}

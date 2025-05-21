@@ -1,6 +1,0 @@
-{
-  "name": "Given the known perimeter P of an equilateral triangle, determine its side",
-  "instruction": "Given perimeter of an equilateral triangle. Find the length of its side.\n\nSet the variable `perimeter` and assign it a value of an arbitrary non-negative number (the perimeter of the triangle).\n\nSet the variable `side`, in which you calculate the length of the triangle's side (the side of the triangle is equal to 1/3 of the perimeter).\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst s = 1000;\nconst a = s / 4;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst perimeter = 99;\nconst side = perimeter / 3;\n```"
-}

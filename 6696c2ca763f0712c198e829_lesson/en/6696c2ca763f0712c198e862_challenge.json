@@ -1,4 +1,0 @@
-{
-  "name": "How do I copy an array?",
-  "instruction": "Write a function `waysToCopy` that takes an array with one element and returns a copy of that array.\n\nThe array will come in two kinds:\n\n* An array with a primitive data type\n```javascript\narray = [ 10 ]\narray = [ 'HI' ]\narray = [ false ]\n```\n* Array with object\n```javascript\narray = [ {name: 'John'} ]\n```\n\n\nIf the data type of the first element of the array is primitive:\n* Create a new array by copying the old one using the `slice` method\n\nIf the data type of the first array element is an object:\n* Create a new array by copying the old one with the `JSON.stringify` and `JSON.parse` methods.\n\n\nYou cannot return the original array because array references will be checked for equality.\n\nAn example of running the function:\n```javascript\nwaysToCopy([ 10 ]); // => use slice method\nwaysToCopy([ {name: 'John'} ]); // => use JSON.stringify and JSON.parse\n```"
-}

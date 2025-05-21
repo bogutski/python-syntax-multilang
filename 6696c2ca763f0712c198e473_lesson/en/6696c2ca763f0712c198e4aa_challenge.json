@@ -1,4 +1,0 @@
-{
-  "name": "Format a contact in the directory",
-  "instruction": "The length of the notebook line is 50 characters.\n\nWrite a function `formatContact` that takes two parameters: `name`, and `phone`.\n\nThe function should return a string that contains name and phone number separated by dots.\n\nAn example of running the function:\n```javascript\nformatContact(' John ', ' 12345678901 '); // 'JOHN............................+1 (234) 567 89-01'\n```\n\nSpaces at the beginning and end of both parameters must be removed.\nThe name must be in uppercase.\n\nTo format the phone, refer to each phone character by an index. Use string concatenation.\n\nThe returned string must be 50 characters long.\n\nThere must be dots between the name and the phone number.\n\nDetermine how many dots you need to put to make the string 50 characters long, based on the length of the name and phone number."
-}

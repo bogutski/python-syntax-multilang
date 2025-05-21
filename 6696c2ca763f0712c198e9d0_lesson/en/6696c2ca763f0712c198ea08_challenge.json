@@ -1,4 +1,0 @@
-{
-  "name": "Which is bigger, n1 or n2?",
-  "instruction": "Write a function `addToArray` that takes two numbers `n1` and `n2` and returns an array.\n\nIf `n1` is less than `n2`, the function should return an array containing numbers from `n1` to `n2` inclusive.\n\nIf `n1` is greater than `n2`, the function should return an array containing numbers from `n2` to `n1` inclusive.\n\nEqual numbers `n1` and `n2` will not be passed to the function.\n\nExamples of running the function:\n```javascript\naddToArray(0, 5) // [0, 1, 2, 3, 4, 5]\naddToArray(7, 2) // [2, 3, 4, 5, 6, 7]\n```"
-}

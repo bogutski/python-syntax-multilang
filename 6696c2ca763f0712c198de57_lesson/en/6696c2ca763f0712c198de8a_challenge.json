@@ -1,6 +1,0 @@
-{
-  "name": "Salary for the first working day",
-  "instruction": "When you start working, you were offered a salary of `N` dollars per hour.\nHow much will you earn on your first working day if you work for 8 hours?\n\nCreate a variable `hourRate` and assign it the value you would like to earn per hour.\n\nCreate a variable `dayHours` and assign it the value of hours you would like to work per day, but not more than 8.\n\nCreate a variable `daySalary` and calculate the result of the money you earned for the day.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements\n\n```javascript\nconst months = 12;\nconst years = 25;\nconst myAgeInMonths = months * years;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst hourRate = 70;\nconst dayHours = 8;\nconst daySalary = hourRate * dayHours;\n```"
-}

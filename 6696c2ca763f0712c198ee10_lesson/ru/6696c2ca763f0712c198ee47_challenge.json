@@ -1,5 +1,0 @@
-{
-  "name": "Поменяйте слова местами и сделайте буквы заглавными",
-  "instruction": "Фукция `switchAndCapital` принимает строку и меняет местами первое и последнее слово, а также делает буквы в этих славах заглавными.\n\nПервое слово может отделяться пробелом, запятой, восклицательным знаком или вопросительным знаком `' ', ',', '!', '?'`.\n\nПопробуйте решить данную задачу с помощью метода `substring`.\n\nПримеры запуска функции:\n```javascript\nswitchAndCapital(\"JS! I will learn you\") // \"YOU! I will learn JS\"\nswitchAndCapital(\"JavaScript? I know it already\") // \"ALREADY? I know it JAVASCRIPT\"\n```",
-  "instructions": {}
-}

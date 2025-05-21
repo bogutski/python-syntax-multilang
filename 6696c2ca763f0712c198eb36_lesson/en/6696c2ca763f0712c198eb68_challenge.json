@@ -1,4 +1,0 @@
-{
-  "name": "Flip the line",
-  "instruction": "Write a function `reverseString` that takes a string and returns it in reverse order.\n\nIf the string is empty, return an empty string.\n\nAn example of running the function:\n```javascript\nreverseString('hello'); // 'olleh'\nreverseString('Howdy'); // 'ydwoH'\nreverseString('Greetings from California'); // 'ainrofilaC morf sgniteerG'\n```"
-}

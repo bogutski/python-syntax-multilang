@@ -1,4 +1,0 @@
-{
-  "name": "Calculate the perimeter of a rectangle",
-  "instruction": "Create a function `perimeter` whose parameters are the lengths of the two sides of the rectangle.\n\nThe function should return the perimeter of this rectangle.\n\nExamples:\n\n* the perimeter(8, 12) function should return 40;\n* function perimeter(5, 8) should return 26;\n* function perimeter(31, 55) should return 172;"
-}

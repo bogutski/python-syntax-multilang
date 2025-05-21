@@ -1,5 +1,0 @@
-{
-  "name": "Determine array element types",
-  "instruction": "Write a function `typesOfElements` that takes an array of elements of any type.\n\nThe function should return an array of strings that lists the types of elements in the original array.\n\nFor example, the array `[1, 'a', true]` should return `['number', 'string', 'boolean']`.\n\nIf the array is empty, the function should return the string `'Array is empty'`.\n\n\nExample function calls:\n```javascript\ntypesOfElements([123, 'test', true, null, undefined]); // ['number', 'string', 'boolean', 'object', 'undefined']\ntypesOfElements([[1, 2, 3], {a: 1, b: 2, c: 3}]);      // ['object', 'object']\ntypesOfElements([123, 'abc', false]);                  // ['number', 'string', 'boolean']\ntypesOfElements([true, false, true]);                  // ['boolean', 'boolean', 'boolean']\ntypesOfElements([]);                                   // 'Array is empty'\n```",
-  "instructions": {}
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Is an array a palindrome",
-  "instruction": "The `isArrayPalindrome` function takes an array `arr` as a parameter. The array cannot be empty.\n\nThe function must return `true` if the array is a palindrome, and `false` otherwise.\n\nExamples of running the function:\n```javascript\nisArrayPalindrome([1, 2, 3, 2, 1]) // true\nisArrayPalindrome([1, 2, 3, 4, 5]) // false\nisArrayPalindrome([\"m\", \"a\", \"d\", \"a\", \"m\"]) // true\n```"
-}

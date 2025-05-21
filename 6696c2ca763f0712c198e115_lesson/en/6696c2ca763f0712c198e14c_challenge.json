@@ -1,5 +1,0 @@
-{
-  "name": "All numbers except zero",
-  "instruction": "Write a function `numberToOppositeBoolean` that takes a number and returns `false` if the number is not zero, and `true` if it is zero.",
-  "instructions": {}
-}

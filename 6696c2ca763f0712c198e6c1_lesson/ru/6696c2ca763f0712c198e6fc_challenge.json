@@ -1,5 +1,0 @@
-{
-  "name": "Найди сумму, разницу и произведение длин массивов",
-  "instruction": "Напиши функцию `operationLength`, которая принимает два параметра:\n* `arr1` - массив элементов,\n* `arr2` - массив элементов.\n\nФункция должна возвращать массив, в котором первым элементом будет сумма длин массивов,\nвторым - разница длин массивов, третьим - произведение длин массивов.\n\nПример запуска функции:\n```javascript\noperationLength([14, 12, 35], [12, 22, 23, 43]);\n// [7, -1, 12]\n```\n\nПохожий пример со строками:\n```javascript\nfunction operationLength(str1, str2) {\n  const sum = str1.length + str2.length;\n  const difference = str1.length - str2.length;\n  const multiplication = str1.length * str2.length;\n  return [sum, difference, multiplication];\n}\n```",
-  "instructions": {}
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Разделение строки на буквы и символы",
-  "instruction": "Напишите функцию `lettersAndSymbols`, которая принимает строку и возвращает массив из двух строк.\n\nПервая строка содержит только буквы, вторая - только символы, включая пробелы.\n\nБуквы могут быть в любом регистре.\n\n\nПримеры запуска функции:\n```javascript\nlettersAndSymbols('Hello World!') // ['HelloWorld', ' !']\nlettersAndSymbols('!J%a^Va') // ['JaVa', '!%^']\nlettersAndSymbols('banana') // ['banana', '']\nlettersAndSymbols('') // ['', '']\n```",
-  "instructions": {}
-}

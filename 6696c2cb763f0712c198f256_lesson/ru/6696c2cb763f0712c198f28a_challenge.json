@@ -1,5 +1,0 @@
-{
-  "name": "Проверка типов элементов массива",
-  "instruction": "Напишите функцию `areAllElTypesTheSame`, которая принимает массив с элементами одного и/или разных типов данных.\n\nФункция должна вернуть `true`, если все элементы массива имеют один и тот же тип данных, и `false` - если разные.\n\nЕсли массив пустой, то вернуть строку `'Array is empty'`.\n\n\nПримеры запуска функции:\n```javascript\nareAllElTypesTheSame([1, 2, 3]);                // true\nareAllElTypesTheSame(['3', '4', '5']);          // true\nareAllElTypesTheSame(['2', 3, '4', 5]);         // false\nareAllElTypesTheSame([undefined, false, null]); // false\nareAllElTypesTheSame([]);                       // 'Array is empty'\n```",
-  "instructions": {}
-}

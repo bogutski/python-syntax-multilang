@@ -1,4 +1,0 @@
-{
-  "name": "Select a longer line",
-  "instruction": "Fix a function that takes two strings and returns an array.\n\nThe `biggerString` function should determine which string is longer and return an array of characters from that string.\n\nIf the strings are the same length, return an array consisting of characters from either string.\n\nThe string must be inverted.\n\nExamples of running the function:\n```js\nbiggerString('abc', 'abc') // ['c', 'b', 'a']\nbiggerString('12345', 'abc') // ['5', '4', '3', '2', '1']\nbiggerString('abc', '') // ['c', 'b', 'a']\n```"
-}

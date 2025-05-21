@@ -1,1 +1,0 @@
-# Array.prototype.some() – хотя бы один элемент массива удовлетворяет условию language: es

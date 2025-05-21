@@ -1,5 +1,0 @@
-{
-  "name": "Reverse the words in a string of two words",
-  "instruction": "The `switchWords` function takes a string and returns a string in which the first and last words are swapped.\n\nThe string consists of only two words separated by one space.\n\nDo not use the `substring` method for this task.\n\nExamples of how to run the function:\n```javascript\nswitchWords(\"Hello World\") // \"World Hello\"\nswitchWords(\"PASV school\") // \"school PASV\"\n```",
-  "instructions": {}
-}

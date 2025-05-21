@@ -1,4 +1,0 @@
-{
-  "name": "Number of letters and other characters",
-  "instruction": "Write a function `numOfLettersAndOther` that takes a string and returns the number of `letters` and the number of `other characters` in the string.\n\nThe function should return:\n* `String is empty` - if the string is empty\n* `Letters: ${count}, other symbols: ${count}` - if string is not empty\n\n\nExamples of function start:\n```javascript\nnumOfLettersAndOther('') // 'String is empty'\nnumOfLettersAndOther('Hello World!') // 'Letters: 10, other symbols: 2'\nnumOfLettersAndOther(' 123 !@# {[()]} ') // 'Letters: 0, other symbols: 16'\n```"
-}

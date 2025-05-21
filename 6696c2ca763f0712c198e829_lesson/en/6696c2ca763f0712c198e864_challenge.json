@@ -1,5 +1,0 @@
-{
-  "name": "Correct the 'deepCopyOfArray' function",
-  "instruction": "Fix the 'deepCopyOfArray' function so that it returns a deep copy of the array.",
-  "instructions": {}
-}

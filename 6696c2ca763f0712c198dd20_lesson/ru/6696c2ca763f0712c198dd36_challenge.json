@@ -1,6 +1,0 @@
-{
-  "name": "Определите тип специального значения null",
-  "instruction": "Создайте переменную с именем `empty` и присвойте ей значение `null`.\nСоздайте переменную с именем `typeOfEmpty` и присвойте ей значение типа переменной `empty`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst money = null;\nconst type = typeof money;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst empty = null;\nconst typeOfEmpty = typeof empty;\n```"
-}

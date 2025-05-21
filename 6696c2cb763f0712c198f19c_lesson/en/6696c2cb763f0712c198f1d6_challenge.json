@@ -1,5 +1,0 @@
-{
-  "name": "Reverse the elements of a string array",
-  "instruction": "Write a function `reverseArrayOfStrings` that takes an array of strings.\n\nThe function should return a new array with the elements of the strings reversed.\n\nIf a string contains numbers, it should remain unchanged.\n\nThere will be no mixed strings (characters and numbers) in the array.\n\nFor example: `['123', 'hello', 'false']` => `['123', 'olleh', 'eslaf']`\n\nIf the array is empty, return the string `'Array is empty'`.\n\nThe `reverse` method cannot be used.\n\nExample function call:\n```javascript\nreverseArrayOfStrings(['123', 'test', 'abc']); // ['123', 'tset', 'cba']\nreverseArrayOfStrings(['12345']);             // ['12345']\nreverseArrayOfStrings(['dlrow', 'olleh']);    // ['world', 'hello']\nreverseArrayOfStrings([]);                    // 'Array is empty'\n```",
-  "instructions": {}
-}

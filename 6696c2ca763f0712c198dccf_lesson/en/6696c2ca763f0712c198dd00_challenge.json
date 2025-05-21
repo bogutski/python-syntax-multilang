@@ -1,6 +1,0 @@
-{
-  "name": "A non-strict equality of two numbers (==). Can a string be equal to a number?",
-  "instruction": "When comparing values of different types, JavaScript converts each of them to a number.\nThe loose equality operator `==` checks for value equality.\nIf `a` and `b` have the same value but different types, the result of `a == b` comparison is `true`.\nFor example, `'25' == 25; (true)`.\n\nCreate a variable named `a` and assign it the value of the string `'100'`.\nCreate a variable named `b` and assign it the value of the number `100`.\nCreate a variable named `isAEqualsB` and assign it the result of the loose equality comparison of variables `a` and `b`.\nThe variable `isAEqualsB` should have the value `true` if `a == b`, and `false` otherwise.\n\nHere is an example that is conceptually similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst x = '2';\nconst y = 2;\nconst comparison = x == y;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst a = '100';\nconst b = 100;\nconst isAEqualsB = a == b;\n```"
-}

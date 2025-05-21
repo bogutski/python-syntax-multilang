@@ -1,4 +1,0 @@
-{
-  "name": "Add an inverted string to the array",
-  "instruction": "Write a function `reverseString` that takes a string - `string` and a character - `breakPoint`.\n\nCreate a loop that will go from the end of the string and add characters to the array, using the `push` method.\n\nThe loop should stop if it encounters a symbol `breakPoint`.\n\nReturn the array.\n\n\nAn example of running a function:\n```js\nreverseString('hello', 'l') // ['o']\nreverseString('hello', 'w') // ['o', 'l', 'l', 'e', 'h']\nreverseString('javascript', 'a') // ['t', 'p', 'i', 'r', 'c', 's']\nreverseString('', 'p') // []\n```"
-}

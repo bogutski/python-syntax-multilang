@@ -1,6 +1,0 @@
-{
-  "name": "Сколько стало грибов?",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-13.png)\n\nМаша собрала в лесу `mushroomCount` грибов. Возвращаясь домой, она нашла еще 15 грибов.\n\nСоздайте переменную `mushroomCount` со значением `12`.\n\nЗапишите команду, которая увеличивает имеющееся значение переменной `mushroomCount` на `15`.",
-  "instructions": {},
-  "hint": "```javascript\nlet mushroomCount = 12\nmushroomCount = mushroomCount + 15;\n```"
-}

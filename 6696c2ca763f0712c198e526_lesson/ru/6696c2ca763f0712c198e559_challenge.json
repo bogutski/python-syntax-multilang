@@ -1,5 +1,0 @@
-{
-  "name": "Итоговая сумма покупок. Товары, цены и скидки",
-  "instruction": "Напишите функцию `totalProductPrice`, которая принимает четыре параметра:\n* `product1`\n* `product2`\n* `product3`\n* `product4`\n\nКаждый параметр – это объект, который описывает товар.\n\nКаждый объект имеет четыре свойства:\n* `name` – название товара, строка\n* `price` – цена товара, число\n* `quantity` – количество товара, число\n* `discount` – скидка на товар в процентах, число\n\nФункция должна вернуть строку вида: `Total price is: $123`, где 123 – это итоговая сумма покупок.\n\nПример запуска функции:\n```javascript\ntotalProductPrice(\n  { name: 'product1', price: 100, quantity: 2, discount: 12 }, // Subtotal $176\n  { name: 'product2', price: 200, quantity: 1, discount: 0 }, // Subtotal $200\n  { name: 'product3', price: 300, quantity: 4, discount: 15 }, // Subtotal $1020\n  { name: 'product4', price: 400, quantity: 5, discount: 25 }, // Subtotal $1500\n); // Total price is: $2896\n```",
-  "instructions": {}
-}

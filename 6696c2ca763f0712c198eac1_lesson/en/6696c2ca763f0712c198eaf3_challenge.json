@@ -1,4 +1,0 @@
-{
-  "name": "Connecting rows by index",
-  "instruction": "Write a function `twoStrings` that takes two strings and returns an array of connected strings by index.\n\nFor example: `twoStrings('abc', 'def')` should return `['ad', 'be', 'cf']`\n\n* `str1[0] + str2[0] = 'ad'`\n* `str1[1] + str2[1] = 'be'`\n* `str1[2] + str2[2] = 'cf'\n\nThe two strings will have the same length.\n\nAn example of running a function:\n```js\ntwoStrings('abc', 'def'); // ['ad', 'be', 'cf']\ntwoStrings('123', '456'); // ['14', '25', '36']\ntwoStrings('a', 'b'); // ['ab']\ntwoStrings('', ''); // []\n```"
-}

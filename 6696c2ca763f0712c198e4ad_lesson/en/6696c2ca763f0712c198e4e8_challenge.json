@@ -1,4 +1,0 @@
-{
-  "name": "Two words in a line are separated by one space",
-  "instruction": "We need to determine that there is only one space between two words in the string.\n\nWrite a function `isOneSpace` that takes a string and returns `true` if there is only one space between two words in the string.\n\nThe function always passes a string that has two words separated by a space or several spaces.\n\nExamples:\n```javascript\nisOneSpace('a b'); // true\nisOneSpace('a b'); // false\nisOneSpace('a b'); // false\nisOneSpace('a b'); // false\n\nisOneSpace('hello world'); // true\nisOneSpace('hello world'); // false\n```"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "The variable with the name of the movie",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-5.png)\n\nCreate a variable named `nameOfMovie` using the `const` keyword and assign the string `'Titanic'` to it.",
-  "instructions": {},
-  "hint": "```javascript\nconst nameOfMovie = 'Titanic';\n```"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Output the string '100 + 100 + 100' to the console",
-  "instruction": "Only one line. Write the command `console.log('100 + 100 + 100');` Observe spaces and punctuation marks. There are single quotes, not double quotes. There is a semicolon at the end.",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log('100 + 100 + 100');\n```"
-}

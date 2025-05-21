@@ -1,4 +1,0 @@
-{
-  "name": "Flip the big line",
-  "instruction": "Write a function `reverseBigger` that takes an array of two strings.\n\nDetermine which one of the strings is longer and reverse it.\n\nIf the strings are the same length, invert the second string.\n\nThe function should return an updated array with `first line`, `second line` and `inverted line`.\n\n\nExamples of running the function:\n```js\nreverseBigger(['Hello', 'World']) // => [ 'Hello', 'World', 'dlroW' ]\nreverseBigger(['blue', 'red']) // => [ 'blue', 'red', 'eulb' ]\nreverseBigger(['Hello', 'JS']) // => [ 'Hello', 'JS', 'olleH' ]\nreverseBigger(['', '']) // => [ '', '', '' ]\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Исправление багов",
-  "instruction": "Напишите функцию `bugFixer`, которая принимает один параметр:\n* `array` - массив, может содержать любое количество строк и чисел.\n\nМассив `array` имеет следующую структуру (пример):\n```javascript\n[1, 2, \"bug\", \"One\", \"Two\", \"Three\", \"bug\", \"bug\"]\n```\n\nФункция должна вернуть исправленный массив `array`, в котором строки `bug` заменены на строки `FIX`.\n\nУсловия:\n* Массив `array` содержит не более трех строк `bug`.\n\nПримеры запуска функции:\n```javascript\nbugFixer([1, 2, \"bug\", \"One\", \"Two\", \"Three\", \"bug\", \"bug\"]);  // [1, 2, \"FIX\", \"One\", \"Two\", \"Three\", \"FIX\", \"FIX\"]\nbugFixer([\"Cat\", \"Dog\", \"bug\", \"Turtle\"]);  // [\"Cat\", \"Dog\", \"FIX\", \"Turtle\"]\nbugFixer([\"Flower\", \"Cactus\", \"Mushroom\"]);  // [\"Flower\", \"Cactus\", \"Mushroom\"]\n```",
-  "instructions": {}
-}

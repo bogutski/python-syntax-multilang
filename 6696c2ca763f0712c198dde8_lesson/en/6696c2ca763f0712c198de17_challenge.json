@@ -1,6 +1,0 @@
-{
-  "name": "Increasing the number by a factor of 2",
-  "instruction": "Everyone is familiar with the 5-point grading system: numbers from 1 to 5.\nBut with the introduction of the 10-point system, all grades doubled.\nFor example, 5 became a ten, 4 became an eight, and so on.\n\nSet the variable `score` and assign it the value 5.\nThen write the command that doubles the value of the variable `score`.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nlet number = 3;\nnumber *= 2;\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet score = 5;\nscore *= 2;\n```"
-}

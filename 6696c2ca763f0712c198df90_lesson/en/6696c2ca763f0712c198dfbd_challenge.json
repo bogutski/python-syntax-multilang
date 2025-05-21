@@ -1,4 +1,0 @@
-{
-  "name": "Sum of three numbers with default parameters",
-  "instruction": "Correct and complete the code so that the `sum` function takes three numbers and returns their sum.\n\nIf any of the numbers is not specified, it is considered to be zero.\n\nExamples:\n```\nsum(1, 2, 3) will return 6\nsum(1, 2) will return 3\nsum(1) will return 1\nsum() will return 0\n```"
-}

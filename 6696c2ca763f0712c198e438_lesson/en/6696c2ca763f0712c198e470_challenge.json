@@ -1,4 +1,0 @@
-{
-  "name": "Very nice to see you.",
-  "instruction": "Write a function `veryHappy` that takes two parameters:\n`name` - the name of the person\n`count` - number of times to repeat the word `very`\n\nExamples of running the function:\n```javascript\nveryHappy('John', 1); // 'I\\'m very happy to see you, John!'\nveryHappy('John', 3); // 'I\\'m very very very happy to see you, John!'\nveryHappy('John', 5); // 'I\\'m very very very very very happy to see you, John!'\n```\n\nIf there is a single quotation mark inside a string, it must be escaped with a `\\` symbol.\n\n```javascript\nconsole.log('I\\'m very happy to see you, John!'); // I'm very happy to see you, John!\nconsole.log('I\\'m \\'very\\' happy to see you, John!'); // I'm 'very' happy to see you, John!\n```"
-}

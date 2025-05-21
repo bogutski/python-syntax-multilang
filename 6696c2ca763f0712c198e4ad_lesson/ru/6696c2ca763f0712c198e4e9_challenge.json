@@ -1,5 +1,0 @@
-{
-  "name": "Проверить, что в конце строки есть точка",
-  "instruction": "Напишите функцию `isSentenceClosed`, которая принимает строку и возвращает `true`, если строка заканчивается на точку, восклицательный знак или вопросительный знак.\n\nНе учитывайте пробелы в начале и конце строки.\n\nПримеры:\n```javascript\nisSentenceClosed(' Hello. How are you?   '); // true\nisSentenceClosed('Hello! How are you     '); // false\nisSentenceClosed('  Hello. Ok!   '); // true\nisSentenceClosed('Hello? Ok,   '); // false\nisSentenceClosed(' Hello. Ok  '); // false\n```",
-  "instructions": {}
-}

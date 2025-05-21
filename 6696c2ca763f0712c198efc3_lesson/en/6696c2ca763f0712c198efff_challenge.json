@@ -1,5 +1,0 @@
-{
-  "name": "Find the arithmetic mean of all numbers in the subarrays",
-  "instruction": "The function `averageInSubArr` takes one parameter - an array `arr`.\n\nThe array `arr` consists of an arbitrary number of subarrays that contain only integers or can be empty.\n\nThe function calculates the total number of all numbers and their sum in all subarrays and returns the arithmetic mean.\n\nThe result is rounded to the nearest integer.\n\nIf all subarrays are empty, the function returns the string `'Arrays are empty'`.\n\nFix the errors in the code for the function to work correctly.\n\nExample function calls:\n```javascript\naverageInSubArr([[2, 2], [3, 3, 5]]); // (2 + 2 + 3 + 3 + 5) / 5 = 3\naverageInSubArr([[12, -3, 474], [], [-9, -474]]); // (12 + (-3) + 474 + (-9) + (-474)) / 5 = 0\naverageInSubArr([[], [3, 3, 5], []]); // (3 + 3 + 5) / 3 = 4\naverageInSubArr([[], [], [], []]); // 'Arrays are empty'\n```",
-  "instructions": {}
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Исправьте ошибки в коде. Переменная weather",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-3.png)\n\nТребуется написать команду, которая присваивает переменной `weather` значение строки `'Sunny day'` с использованием ключевого слова `const`.\n\nИсправьте ошибки в приведенном коде.",
-  "instructions": {},
-  "hint": "```javascript\nconst weather = 'Sunny day';\n```"
-}

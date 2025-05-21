@@ -1,5 +1,0 @@
-{
-  "name": "Remove duplicates from the array",
-  "instruction": "The `cleanDuplicates` function takes an array and returns an array with no duplicates.\n\nExamples of how to run the function:\n```javascript\ncleanDuplicates([1, 2, 3, 3, 3, 2, 2, 1, 4]) // [1, 2, 3, 4]\ncleanDuplicates([1]) // [1]\n```",
-  "instructions": {}
-}

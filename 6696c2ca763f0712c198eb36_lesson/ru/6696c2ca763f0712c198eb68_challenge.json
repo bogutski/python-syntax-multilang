@@ -1,5 +1,0 @@
-{
-  "name": "Перевернуть строку",
-  "instruction": "Напишите функцию `reverseString`, которая принимает строку и возвращает ее в обратном порядке.\n\nЕсли строка пустая, верните пустую строку.\n\nПример запуска функции:\n```javascript\nreverseString('hello'); // 'olleh'\nreverseString('Howdy'); // 'ydwoH'\nreverseString('Greetings from California'); // 'ainrofilaC morf sgniteerG'\n```",
-  "instructions": {}
-}

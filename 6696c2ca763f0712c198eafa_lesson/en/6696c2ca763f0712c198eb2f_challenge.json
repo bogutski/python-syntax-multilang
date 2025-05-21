@@ -1,5 +1,0 @@
-{
-  "name": "Shopping list",
-  "instruction": "You need to write a function `shoppingList` that takes an array of `items`.\n\nEach element of the array is a string with the name of the product you want to buy.\n\nThe function should return a formatted string with a list of products separated by `\\n` line break characters.\n\nThe string must start with the phrase - `Shopping list:`.\n\nEach item in the list must be preceded by a line break character `\\n` and a hyphen `-`.\n\nThe line \"Shopping list:\\n-milk\\n-eggs\\n-bread\" is an example of a formatted string.\n\nIt will be output to the console in the following form:\n\n\"Shopping list:\n-milk\n-eggs\n-bread\"\n\nExamples of function calls:\n\n```javascript\nshoppingList(['milk', 'eggs', 'bread']); // \"Shopping list:\\n-milk\\n-eggs\\n-bread\"\nshoppingList(['apples']); // \"Shopping list:\\n-apples\"\nshoppingList([]); // \"Shopping list:\"\n```",
-  "instructions": {}
-}

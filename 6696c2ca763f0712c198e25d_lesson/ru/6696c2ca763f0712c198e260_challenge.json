@@ -1,5 +1,0 @@
-{
-  "name": "Цена автомобиля в зависимости от комплектации",
-  "instruction": "Напишите функцию `carPrice`, которая принимает параметры:\n* `basePrice` - базовая цена автомобиля\n* `panoramicRoof` - наличие панорамной крыши, boolean\n* `parkingSensors` - наличие датчиков парковки, boolean\n* `leatherInterior` - наличие кожаного салона, boolean\n* `navigation` - наличие навигации, boolean\n* `multimedia` - наличие мультимедиа, boolean\n* `climateControl` - наличие климат-контроля, boolean\n* `heatedSeats` - наличие подогрева сидений, boolean\n\nНаличие каждой опции увеличивает цену автомобиля на 10% от базовой цены.\n\nФункция должна возвращать цену автомобиля с учетом всех опций.\n\nПример запуска функции:\n```javascript\ncarPrice(10000, true, true, true, true, true, true, true); // 17000\ncarPrice(10000, false, false, false, false, false, false, false); // 10000\ncarPrice(10000, true, false, false, false, false, false, false); // 11000\n```\n\nДля расчета общей цены сначала сложите все опции и только потом рассчитайте размер наценки.\n\nПрибавьте к базовой цене наценку.",
-  "instructions": {}
-}

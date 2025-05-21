@@ -1,5 +1,0 @@
-{
-  "name": "Write a function that returns the same as the value passed to it",
-  "instruction": "The `nonsense` function takes one parameter as input and returns it unchanged.\n\nExample:\n```javascript\nnonsense('Hello') // 'Hello'\nnonsense(42) // 42\n```",
-  "instructions": {}
-}

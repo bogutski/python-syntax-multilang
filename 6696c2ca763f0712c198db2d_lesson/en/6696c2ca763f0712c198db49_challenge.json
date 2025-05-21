@@ -1,6 +1,0 @@
-{
-  "name": "Assign an empty string to the str variable",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-8.png)\n\nCreate a variable named `str`.\nUse the `const` keyword.\nAssign the value of the empty string `''`.\n\nA fundamentally similar example:\n```javascript\nconst string = '';\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst str = '';\n```"
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Changing the first or last element of an array",
-  "instruction": "Write a function `changeElement` that takes one parameter, an array of numbers.\n\nIf the length of the array is even, add to the value of the last element the value of the penultimate one.\nIf the length of the array is odd, cube the value of the first element.\n\nThe function should return the naked array.\n\nAn example of running the function:\n```javascript\nchangeElement([1, 2, 3, 4, 5, 6]); // [1, 2, 3, 4, 5, 11]\nchangeElement([2, 3, 4, 5, 6]); // [8, 3, 4, 5, 6]\n```"
-}

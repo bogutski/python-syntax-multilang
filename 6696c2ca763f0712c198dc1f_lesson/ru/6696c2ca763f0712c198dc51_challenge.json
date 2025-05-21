@@ -1,6 +1,0 @@
-{
-  "name": "Создайте переменную с именем `distanceToSun` и присвойте ей значение 92960000",
-  "instruction": "Создайте переменную с именем `distanceToSun` и присвойте ей значение `92960000` числом.",
-  "instructions": {},
-  "hint": "```javascript\nconst distanceToSun = 92960000;\n```"
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Which line contains more consonants?",
-  "instruction": "The function `whatWin` takes 2 parameters - strings.\n\nThe strings can contain words consisting only of lowercase letters and spaces.\n\nIt is necessary to determine which of the strings contains more consonants.\n\nThe function must return the string:\n* \"First word wins!\" if the first string contains more consonants\n* \"Second word wins!\" if the second line has more consonants\n* \"It's a draw!\" if the number of consonants in both lines is the same\n\nAn example of function call:\n```javascript\nwhatWin(\"b\", \"a\") // \"First word wins!\"\nwhatWin(\"run\", \"late\") // \"It's a draw!\"\nwhatWin(\"time\", \"is over\") // \"Second word wins!\"\n```"
-}

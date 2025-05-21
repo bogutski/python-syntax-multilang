@@ -1,6 +1,0 @@
-{
-  "name": "Number of squats",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-1.png)\nEvery day Bob does exactly 50 squats in the morning, a number he never changes.\nHow many squats will Bob do in `days`?\n\nCreate a constant named `squats` (number of squats per day) and give it a value of 50.\n\nCreate a variable named `days` (number of days) and give it an arbitrary number from 1 to 365.\n\nCreate a variable named `numberOfSquats` (total number of squats) and give it a value equal to the product of the variables `quats` and `days`.\n\nHere is an example, which is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the problem:\n```javascript\nconst pencil = 10;\nlet boxes = 140;\nlet amount = pencil * boxes;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst squats = 50;\nlet days = 15;\nlet numberOfSquats = squats * days;\n```"
-}

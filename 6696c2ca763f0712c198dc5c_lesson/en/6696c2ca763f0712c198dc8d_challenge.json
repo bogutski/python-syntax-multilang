@@ -1,6 +1,0 @@
-{
-  "name": "First letter",
-  "instruction": "Create a variable named `str` and assign it the value of an arbitrary non-empty string.\nCreate a variable named `firstSymbol` and assign it the value of the first character of the string (i.e. character with index 0).\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst name = 'Jonh';\nconst begin = name[0];\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst str = 'hello';\nconst firstSymbol = str[0];\n```"
-}

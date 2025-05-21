@@ -1,4 +1,0 @@
-{
-  "name": "Find the shortest array",
-  "instruction": "Write a function `shortArray` that takes three parameters:\n* `arr1` - array of elements,\n* `arr2` - array of elements,\n* `arr3` - array of elements.\n\nThe function should return the shortest array.\n\nAn example of running the function:\n```javascript\nshortArray([1, 2, 3], [7, 8, 9, 0], [11, 45, 34, 67, 90]);\n// [1, 2, 3]\n```\n\nCompare the lengths of the arrays with each other."
-}

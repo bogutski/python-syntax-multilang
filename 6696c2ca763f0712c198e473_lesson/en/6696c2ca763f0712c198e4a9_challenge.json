@@ -1,4 +1,0 @@
-{
-  "name": "Count the letters in the string without spaces",
-  "instruction": "Write a function `countLetters` that takes a string and returns a string like `String hello has 5 symbols`.\n\nAn example of running the function:\n`\n```javascript\ncountLetters('hello'); // 'String hello has 5 symbols'\ncountLetters(' hello '); // 'String hello has 5 symbols'\ncountLetters(' hello world'); // 'String hello world has 12 symbols'\n```\n\nTo count, remove the spaces at the beginning and end of the string, and then count the length of the string.\n\nThere is no need to remove spaces inside the string, just think of them as characters."
-}

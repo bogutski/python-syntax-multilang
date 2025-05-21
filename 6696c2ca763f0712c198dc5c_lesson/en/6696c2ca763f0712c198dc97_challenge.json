@@ -1,6 +1,0 @@
-{
-  "name": "A Christmas present.",
-  "instruction": "December has arrived, the time of the first snow and preparations for Christmas.\nWe bought the lights, the decorations too. We even baked cookies for Santa. Now we have to write\nto write a letter to Santa. So what do we want most?\n\nCreate a `gift` variable and assign it the value `'Job offer'`.\n\nHere's an example that's fundamentally similar to what we need to do,\nbut adapt it to the requirements of the task:\n\n```javascript\nconst gift = 'MacBook Pro';\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst gift = 'Job offer';\n```"
-}

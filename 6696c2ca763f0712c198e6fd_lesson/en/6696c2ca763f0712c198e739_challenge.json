@@ -1,4 +1,0 @@
-{
-  "name": "Array with a \"hole\"",
-  "instruction": "Write a function `arrWithHole` that takes one parameter, an array.\n\nThe array consists of numbers in which the second element can be `undefined`.\n\nThe function returns the value of the second element of the array.\n\nIf the second element of the array is `undefined` - assign to it the value of the sum of the first and the last element of the array.\n\nOtherwise, raise the second element of the array to the power of the third element of the array.\n\nAn example of running a function:\n```javascript\narrWithHole([11, 2, 5, 13, 3]) // 2 ** 5 = 32\narrWithHole([13, undefined, 3, 51, 87]) // 13 + 87 = 100\n```"
-}

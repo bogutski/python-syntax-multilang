@@ -1,5 +1,0 @@
-{
-  "name": "Сравнение строки и массива",
-  "instruction": "Напишите функцию `stringAndArray`, которая принимает строку и массив в качестве аргументов.\n\nСоздайте цикл, который будет проходить по каждому символу строки и сравнивать его с элементами массива.\n\nЕсли один из символов не совпадает, то функция должна вернуть строку `Elements are not equal`.\n\nЕсли все символы совпадают, то функция должна вернуть строку `Elements are equal`.\n\nПеред циклом проверьте, что длина строки и массива совпадают. Если нет, то функция должна вернуть строку `Elements are not equal`.\n\nПример запуска функции:\n```javascript\nstringAndArray('abc', ['A', 'b', 'c']); // 'Elements are not equal'\nstringAndArray('123', ['1', '2', '3']); // 'Elements are equal'\nstringAndArray('qwerty', ['a', 's', 'd']); // 'Elements are not equal'\nstringAndArray('', ['']); // 'Elements are equal'\n```",
-  "instructions": {}
-}

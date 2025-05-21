@@ -1,5 +1,0 @@
-{
-  "name": "Count the number of elements of each type in the array",
-  "instruction": "The `countEachType` function takes an array and returns an object with the number of elements of each type in the array.\n\nThere can be elements of three types in the array: `number`, `string` and `boolean`.\n\nThe object that the function returns must have three properties: `number`, `string`, and `boolean`.\nThe values of these properties must be numbers that correspond to the number of elements of each type in the array.\n\nIf the array is empty, the function must return the string \"Array is empty\".\n\nExamples of how to run the function:\n```javascript\ncountEachType([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // {number: 10, string: 0, boolean: 0}\ncountEachType([1, \"a\"]) // {number: 1, string: 1, boolean: 0}\ncountEachType([true, false, true, false]) // {number: 0, string: 0, boolean: 4}\ncountEachType([]) // \"Array is empty\"",
-  "instructions": {}
-}

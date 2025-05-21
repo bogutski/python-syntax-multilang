@@ -1,4 +1,0 @@
-{
-  "name": "Identical object references",
-  "instruction": "Create a function `isSameReference`.\n\nFunction parameters:\n* `obj1` - object\n* `obj2` - object\n\nIf `obj1` and `obj2` refer to the same object, the function must return `true`, otherwise `false`.\n\nAn example of running the function:\n```javascript\nconst obj = { a: 1 };\nisSameReference(obj, obj); // true\n\nconst obj1 = { a: 1 };\nconst obj2 = { a: 1 };\nisSameReference(obj1, obj2); // false\n\nconst obj1 = { a: 1 };\nconst obj2 = obj1;\nisSameReference(obj1, obj2); // true\n```\n\nThese examples will help you:\n```javascript\nconst obj1 = { a: 1 };\nconst obj2 = { a: 1 };\nconsole.log(obj1 === obj2); // false\n\nconst obj1 = { a: 1 };\nconst obj2 = obj1;\nconsole.log(obj1 === obj2); // true\n\nconst obj1 = { a: 1 };\nconst obj2 = obj1;\nconsole.log(obj1 === obj2); // true\n```"
-}

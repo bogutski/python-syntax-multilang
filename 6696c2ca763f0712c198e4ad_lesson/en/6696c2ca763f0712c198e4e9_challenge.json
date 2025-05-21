@@ -1,4 +1,0 @@
-{
-  "name": "Check that there is a dot at the end of the line",
-  "instruction": "Write a function `isSentenceClosed` that accepts a string and returns `true` if the string ends with a period, exclamation mark or question mark.\n\nIgnore spaces at the beginning and end of the string.\n\nExamples:\n```javascript\nisSentenceClosed(' Hello. How are you? '); // true\nisSentenceClosed('Hello! How are you '); // false\nisSentenceClosed(' Hello. Ok! '); // true\nisSentenceClosed('Hello? Ok, '); // false\nisSentenceClosed(' Hello. Ok '); // false\n```"
-}

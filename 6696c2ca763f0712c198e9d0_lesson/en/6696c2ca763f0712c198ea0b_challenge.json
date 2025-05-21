@@ -1,5 +1,0 @@
-{
-  "name": "The sum of digits in the line",
-  "instruction": "Fix the `stringOfNumbers` function so that it returns the sum of the digits in the string.\n\nThe string will contain only digits.\n\nExamples of running the function:\n```javascript\nstringOfNumbers(\"123\") // 6\nstringOfNumbers(\"1234\") // 10\n```",
-  "instructions": {}
-}

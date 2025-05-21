@@ -1,6 +1,0 @@
-{
-  "name": "Assign undefined value to the variable",
-  "instruction": "You can create a variable with the value `undefined` by assigning it the value `undefined`.\nCreate a variable named `name` and assign it the value `undefined`.\nCreate a variable named `typeOfName` and assign it the type of the variable `name`.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nlet salary = undefined;\nconst typeOfSalary = typeof salary;\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet name = undefined;\nconst typeOfName = typeof name;\n```"
-}

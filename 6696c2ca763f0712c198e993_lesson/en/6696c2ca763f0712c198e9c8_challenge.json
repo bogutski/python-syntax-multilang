@@ -1,4 +1,0 @@
-{
-  "name": "Correct the error in the code. Method continue",
-  "instruction": "The `onlyNegative` function takes an array of numbers.\n\nThe function should return an array with negative numbers only.\n\nCorrect the error in the code so that the function works correctly.\n\nUse the `continue` method to skip loop iteration.\n\nThe solution will be tested on the application of the `continue` method.\n\nAn example of running a function:\n```javascript\nonlyNegative([1, 2, 3, -1, -2, -3]); // [-1, -2, -3];\nonlyNegative([1, 2, 3]); // [];\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "True если первый символ строки равен последнему",
-  "instruction": "Напишите функцию `firstAndLastEqual`, которая принимает строку и возвращает `true`, если первый символ строки равен последнему, и `false` в противном случае.\n\nПримеры запуска функции:\n```javascript\nfirstAndLastEqual('abc'); // false\nfirstAndLastEqual('a'); // true\nfirstAndLastEqual('aa'); // true\nfirstAndLastEqual('JS'); // false\nfirstAndLastEqual('J-SJ'); // true\n```",
-  "instructions": {}
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Implement fair rounding",
-  "instruction": "In this problem we implement almost fair rounding - if the fractional part of the number is greater than or equal to 0.6, then the number is rounded up, otherwise it is rounded down.\n\nThe `round` function accepts only positive numbers and returns rounded values.\n\nExamples of running the function:\n```javascript\nround(1.1) // 1\nround(1.5) // 1\nround(1.55) // 1\nround(1.6) // 2\nround(1.9) // 2\n```"
-}

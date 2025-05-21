@@ -1,6 +1,0 @@
-{
-  "name": "Binary plus - merging of lines",
-  "instruction": "Set the variable `century` and assign it the value of the string `'20'`.\n\nSet the variable `years` and assign it the value of the string `'22'`.\n\nSet the variable `date` and assign it the result of merging the variables `century` and `years`.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst redBalls = '13';\nconst greenBalls = '15';\nconst balls = redBalls + greenBalls;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst century = '20';\nconst years = '22';\nconst date = century + years;\n```"
-}

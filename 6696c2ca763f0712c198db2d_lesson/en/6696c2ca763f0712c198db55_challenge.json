@@ -1,6 +1,0 @@
-{
-  "name": "Correct errors in the code. Variable line and empty string",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-20.png)\n\nNeed to write a command that assigns the `line` variable\nthe value of the empty string `''` using the\n`let` keyword.\n\nCorrect the errors in the given code.",
-  "instructions": {},
-  "hint": "```javascript\nlet line = '';\n```"
-}

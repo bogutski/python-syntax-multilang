@@ -1,5 +1,0 @@
-{
-  "name": "Функция возвращает адрес сайта PASV",
-  "instruction": "Напиши функцию `getPasvWebsite`, которая возвращает строку с адресом сайта PASV: `https://pasv.us`.",
-  "instructions": {}
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Finding a duplicate of the last element in an array",
-  "instruction": "The `searchDuplicate` function takes the `arr` array as a parameter.\n\nYou need to check whether the last element of the array is a duplicate of any of the previous elements.\n\nTo check, find the last element of the array and then use the `lastIndexOf` method to find the previous occurrence of this element in the array.\n\nThe function should return the string:\n`Last element is duplicate` if the last element is a duplicate\n`Last element is not duplicate` if the last element is not duplicate\n\nAn example of running the function:\n```javascript\nsearchDuplicate(['a', 'b', 'c', 'd', 'a']); // Last element is duplicate\nsearchDuplicate([35, 25, 15, 55, 45]); // Last element is not duplicate\n```"
-}

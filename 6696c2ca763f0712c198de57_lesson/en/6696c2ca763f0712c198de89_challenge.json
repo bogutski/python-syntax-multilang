@@ -1,6 +1,0 @@
-{
-  "name": "Pies for Grandma.",
-  "instruction": "Grey Wolf took away the pies from Little Red Riding Hood, which she was carrying for her grandmother.\nHe ate 5 pies per day for 3 days.\nHow many pies were there initially?\n\nCreate a variable `cakesPerDay` and assign it a value of 5.\n\nCreate a variable `days` and assign it a value of 3.\n\nCreate a variable `originalCakes` and calculate how many pies there were initially.\n\nHere is an example that is essentially similar to what needs to be done.\nAdapt it to the task requirements.\n\n```javascript\nconst dumplingsPerDay = 7;\nconst days = 4;\nconst originalDumplings = dumplingsPerDay * days;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst cakesPerDay = 5;\nconst days = 3;\nconst originalCakes = cakesPerDay * days;\n```"
-}

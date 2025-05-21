@@ -1,4 +1,0 @@
-{
-  "name": "Number of positive and negative numbers",
-  "instruction": "Fix the `positiveAndNegative` function so that it returns an array of two elements.\n\n * The first element is the number of positive numbers in the range from `n1` to `n2`,\n * second element - the number of negative numbers in the same range.\n\nZero is considered neither a positive nor a negative number.\n\nExamples of running the function:\n```javascript\npositiveAndNegative(-10, 5) // [ 5, 10 ]\npositiveAndNegative(-5, 10) // [ 10, 5 ]\n```"
-}

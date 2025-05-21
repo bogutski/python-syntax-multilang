@@ -1,4 +1,0 @@
-{
-  "name": "The shortest line of the three",
-  "instruction": "Write a function `shortestString` that takes three strings and returns the shortest of them.\n\nIf the lengths are equal, the first string is returned.\n\nExamples of running the function:\n```javascript\nshortestString('aaa', 'aa', 'a'); // 'a'\nshortestString('aaa', 'bbbb', 'c'); // 'c'\nshortestString('aaa', 'qqq', 'zzz'); // 'aaa'\n````\n\nTo solve, you will need to compare the length of each string with the length of the other two.\n\nUse comparison operators and logical operators."
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Checking types in the first and last subarray",
-  "instruction": "Write a function `firstAndLast` that takes an array of arrays.\n\nThe function should return `true` if all elements of the first and last subarrays have the same data type.\nOtherwise, the function should return `false`.\n\nThere will either be more than two subarrays or the outer array will be empty.\n\nThe first and last subarrays will always contain at least one element.\n\nIf the array is empty, the function should return the string 'Array is empty'.\n\n\nExamples of function calls:\n```javascript\nfirstAndLast([ [1, 2], ['555'], [true], [5, 6] ]);          // true\nfirstAndLast([ ['a', 'b', 'c'], [true], [true] ]);          // false\nfirstAndLast([ ['undefined', 'Hello'], ['world', '123'] ]); // true\nfirstAndLast([ [5 > 3, false], [], ['test'], [5, 3] ]);     // false\nfirstAndLast([ ]);                                          // 'Array is empty'\n```",
-  "instructions": {}
-}

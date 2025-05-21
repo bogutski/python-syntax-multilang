@@ -1,6 +1,0 @@
-{
-  "name": "Assign the value 'Alice' to the name variable",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-11.png)\n\nCreate a variable named `name`. Use the `const` keyword. Assign a value - the string `Alice`.\n\nRelated example:\n```javascript\nconst name = 'Tom';\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst name = 'Alice';\n```"
-}

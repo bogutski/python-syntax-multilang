@@ -1,5 +1,0 @@
-{
-  "name": "Результат в виде строки",
-  "instruction": "Напишите функцию `stringResult`, которая принимает два числа `n1` и `n2`.\n\nФункция должна посчитать сумму чисел от `n1` до `n2` включительно и вернуть строку вида:\n\n * `Sum of numbers from ${n1} to ${n2} is ${sum}`, где `sum` - сумма чисел от `n1` до `n2` включительно.\n\nПримеры запуска функции:\n```javascript\nstringResult(1, 5) // \"Sum of numbers from 1 to 5 is 15\"\nstringResult(5, 25) // \"Sum of numbers from 5 to 25 is 315\"\nstringResult(-5, 10) // \"Sum of numbers from -5 to 10 is 40\"\n```",
-  "instructions": {}
-}

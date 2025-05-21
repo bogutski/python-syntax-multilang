@@ -1,6 +1,0 @@
-{
-  "name": "Название журнала",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-9.png)\n\nНазвание этого американского журнала дословно переводится \"перекати-поле\" или \"катящийся камень\".\n\nСоздайте переменную `americanMagazine` и присвойте ей значение `'Rolling Stone'`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst popularAuthor = 'Stephen King';\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst americanMagazine = 'Rolling Stone';\n```"
-}

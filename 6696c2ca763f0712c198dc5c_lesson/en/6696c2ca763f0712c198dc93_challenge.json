@@ -1,6 +1,0 @@
-{
-  "name": "Mr. and Mrs. Smith",
-  "instruction": "Create a variable `abbreviation` and assign it the value `'Mr. & Mrs.'`\n\nCreate a second variable `lastName` and assign it the value `'Smith'`.\n\nCreate a third variable `familyName` and assign to it the value resulting from the addition of the variables `abbreviation`, space and `lastName`\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the task:\n```javascript\nconst firstName = 'Ivan';\nconst lastName = 'Ivanov';\nconst name = firstName + ' ' + lastName;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst abbreviation = 'Mr. & Mrs.';\nconst lastName = 'Smith';\nconst familyName = abbreviation + ' ' + lastName;\n```"
-}

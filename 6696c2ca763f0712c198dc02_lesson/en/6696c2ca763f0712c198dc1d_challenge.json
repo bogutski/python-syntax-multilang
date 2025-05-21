@@ -1,6 +1,0 @@
-{
-  "name": "What type is null?",
-  "instruction": "JavaScript has a special value of `undefined`.\n\nIf you create a variable and do not assign a value to it, it will have the value `undefined`.\n\nLet's see what type this value will be.\n\nCreate a variable named `noValue` using the `let` keyword and do not assign a value to it.\n\nCreate a `typeOfNoValue` variable and assign it a value of the `noValue` variable type.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nlet nothing;\nconst typeOfNothing = typeof nothing;\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet noValue;\nconst typeOfNoValue = typeof noValue;\n```"
-}

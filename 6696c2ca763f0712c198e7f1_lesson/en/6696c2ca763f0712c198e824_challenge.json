@@ -1,4 +1,0 @@
-{
-  "name": "Deleting the last elements of an array",
-  "instruction": "The `modifyArray` function takes the `arr` array as an argument.\n\nThe function returns a modified array with the last elements of the `arr` array removed until the length of the array is a multiple of 3.\n\nIf the length of the `arr` array is a multiple of 3, then the last 3 elements of the array must be deleted.\n\nExamples of running the function:\n```javascript\nmodifyArray([1, 2, 3, 4, 5, 6, 7, 8, 9]) // [1, 2, 3, 4, 5, 6]\nmodifyArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) // [1, 2, 3, 4, 5, 6, 7, 8, 9]\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Перевернуть массив строк",
-  "instruction": "Напишите функцию `reverseArrayOfStrings`, которая принимает массив строк.\n\nФункция должна вернуть новый массив, в котором массив перевернут в обратном порядке, и каждая строка внутри массива\n перевернута в обратном порядке.\n\nНапример: `['abc', '123', 'false']` => `['eslaf', '321', 'cba']`\n\nЕсли массив пустой, то вернуть строку `'Array is empty'`.\n\nМетод `reverse` использовать нельзя.\n\n\nПример запуска функции:\n```javascript\nreverseArrayOfStrings(['123', 'test', abc']); // ['cba', 'tset', '321']\nreverseArrayOfStrings(['12345']);             // ['54321']\nreverseArrayOfStrings(['dlrow', 'olleh']);    // ['hello', 'world']\nreverseArrayOfStrings([]);                    // 'Array is empty'\n```",
-  "instructions": {}
-}

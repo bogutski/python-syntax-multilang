@@ -1,6 +1,0 @@
-{
-  "name": "Area of an equilateral triangle",
-  "instruction": "A side of an equilateral triangle is given. Find its area.\n\nDefine the `side` variable and assign it the value of an arbitrary non-negative number (side of an equilateral triangle).\n\nDefine a variable `area` in which to calculate the area of the triangle (the area of the triangle is equal to the square of the side multiplied by the square root of 3 and divided by 4).\n\nDirections.\nThe square root of a number is a number to the power of 0.5. That is, the square root of 3 can be written as 3 ** 0.5.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the problem:\n\n```javascript\nconst a = 10;\nconst s = (a ** 2 * 3 ** 0.5) / 4;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst side = 10;\nconst area = (side ** 2 * 3 ** 0.5) / 4;\n```"
-}

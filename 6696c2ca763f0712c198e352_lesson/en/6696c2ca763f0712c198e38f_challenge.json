@@ -1,4 +1,0 @@
-{
-  "name": "Kelvin Color Temperature",
-  "instruction": "Light has a temperature, which is measured in Kelvin. The higher the temperature, the bluer the glow.\n\nWrite a function `kelvinToColor` that takes one parameter, the temperature in Kelvin.\n\nThe function should return a string that describes the color of the glow.\n\nExamples of running the function:\n```javascript\nkelvinToColor(2000); // '2000K - Warm'\nkelvinToColor(3000); // '3000K - Soft white'\nkelvinToColor(4500); // '4500K - White'\nkelvinToColor(6500); // '6500K - Cool white'\nkelvinToColor(8000); // '8000K - Cold'\n```\n\n* Up to 2000 Kelvin - `Warm`\n* 2000 - 2999 Kelvin - `Soft white`\n* 3000 - 4499 Kelvin - `White`\n* 4500 - 6499 Kelvin - `Cool white`\n* From 6500 - `Cold`"
-}

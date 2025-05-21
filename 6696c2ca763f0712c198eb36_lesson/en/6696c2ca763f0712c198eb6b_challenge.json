@@ -1,4 +1,0 @@
-{
-  "name": "Reverse a string in an array",
-  "instruction": "Write a function `reverseStrInArray` that takes an array with one string.\n\nThe function should return an array in which the first element is the original string and the second element is the reversed string.\n\nFor example: `array = ['apple']`.\n* create a variable and assign it an empty string\n* the `for` loop will access the item with index `0` => `array[0]`\n* write an inverted string to the new variable\n* add an inverted string to the end of the array\n* return the updated array => `['apple', 'elppa' ]`\n\n\nAn example of running a function:\n```js\nreverseStrInArray(['apple']) // => [ 'apple', 'elppa' ]\nreverseStrInArray(['hello']) // => [ 'hello', 'olleh' ]\nreverseStrInArray(['123']) // => [ '123', '321' ]\n```"
-}

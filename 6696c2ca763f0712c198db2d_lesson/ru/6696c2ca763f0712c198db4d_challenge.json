@@ -1,6 +1,0 @@
-{
-  "name": "Присвойте переменной `age` значение 25",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-12.png)\n\nСоздайте переменную с именем `age`. Используйте ключевое слово `const`. Присвойте значение - число `25`.\n\nПохожий пример:\n```javascript\nconst number = 10;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst age = 25;\n```"
-}

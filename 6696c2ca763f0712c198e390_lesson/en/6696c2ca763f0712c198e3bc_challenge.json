@@ -1,4 +1,0 @@
-{
-  "name": "The longest line of two",
-  "instruction": "Write a function `longestString` that takes two strings and returns the longest string.\n\nIf the lengths are equal, the first string is returned.\n\nExamples of running the function:\n```javascript\nlongestString('aaa', 'aa'); // 'aaa'\nlongestString('aaa', 'bbbb'); // 'bbbb'\nlongestString('aaa', 'qqq'); // 'aaa'\n```"
-}

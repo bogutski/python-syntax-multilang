@@ -1,5 +1,0 @@
-{
-  "name": "Increase by 2",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-1.png)\n\nCreate a `count` variable and assign it a value of 100.\n\n```javascript\nlet count = 100;\n```\n\nThen write a command that increments the existing value of the `count` variable by 2.\nTo do this, type the command:\n```javascript\ncount = count + 2;\n```\n\nThe total should end up like this:\n```javascript\nlet count = 100;\ncount = count + 2;\n```",
-  "instructions": {}
-}

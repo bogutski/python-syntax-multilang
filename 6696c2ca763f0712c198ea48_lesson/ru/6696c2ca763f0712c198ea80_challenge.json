@@ -1,5 +1,0 @@
-{
-  "name": "Сумма однозначных и двузначных чисел",
-  "instruction": "Напишите функцию `oneAndTwoDigits`, которая принимает два числа `n1` и `n2`.\n\nФункция должна посчитать сумму всех чисел в диапазоне от `n1` до `n2`, не включая `n1` и `n2`.\n\nСоздайте две переменные `sumOfOne` и `sumOfTwo`, в которых будут храниться суммы однозначных и двузначных чисел соответственно.\n\nВерните строку в формате `Sum of one digit: sumOfOne, sum of two digits: sumOfTwo`.\n\nВ функцию будут передаваться негативные и положительные числа, однозначные и двузначные.\n\n\nПримеры запуска функции:\n```javascript\noneAndTwoDigits(1, 15); // \"Sum of one digit: 44, sum of two digits: 60\"\noneAndTwoDigits(-10, 10); // \"Sum of one digit: 0, sum of two digits: 0\"\noneAndTwoDigits(-25, 30); // \"Sum of one digit: 0, sum of two digits: 135\"\n```",
-  "instructions": {}
-}

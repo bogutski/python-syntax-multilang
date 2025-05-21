@@ -1,1 +1,0 @@
-# Array.prototype.findLastIndex() – индекс последнего элемента по условию language: es

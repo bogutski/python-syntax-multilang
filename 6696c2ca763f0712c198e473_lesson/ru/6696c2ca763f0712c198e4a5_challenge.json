@@ -1,5 +1,0 @@
-{
-  "name": "Удаление пробелов только в конце строки",
-  "instruction": "Напишите функцию `clearString`, которая принимает строку и возвращает ее без пробелов только в конце строки.\n\nПример запуска функции:\n```javascript\nclearString('  abc'); // '  abc'\nclearString('abc  '); // 'abc'\nclearString('  abc  '); // '  abc'\nclearString('  a b c  '); // '  a b c'\nclearString(' a b c '); // ' a b c'\nclearString(' a b c'); // ' a b c'\n```",
-  "instructions": {}
-}

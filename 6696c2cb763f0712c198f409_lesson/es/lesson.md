@@ -1,1 +1,0 @@
-# Array.prototype.toSpliced() – возвращает массив с добавленными или удаленными элементами language: es

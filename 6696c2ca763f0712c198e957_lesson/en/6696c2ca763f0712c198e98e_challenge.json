@@ -1,4 +1,0 @@
-{
-  "name": "Interrupt the character count in the string at the letter R",
-  "instruction": "Write a function `stopAtR` that takes a single parameter - a string of arbitrary length.\n\nThe function should return the number of characters in the string.\n\nThe character count should stop at the first encounter with the letter `R`.\n\nAn example of running the function:\n```javascript\nstopAtR('R') // 0\nstopAtR('rftgjkfdttfjRhZKlbgf') // 12\nstopAtR('rf7 jkfd') // 8\n```"
-}

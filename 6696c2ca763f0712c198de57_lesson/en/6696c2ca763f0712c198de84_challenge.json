@@ -1,6 +1,0 @@
-{
-  "name": "Circle area",
-  "instruction": "Given radius of a circle. Find its area.\n\nSet variable `radius` and assign it a value of any non-negative number (radius of the circle).\n\nSet variable `pi` and assign it a value of 3.14 (approximate value of Pi).\n\nSet variable `area`, in which you calculate the area of the circle (area of the circle is equal to Pi multiplied by the square of the radius).\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst a = 10;\nconst pi = 3.14;\nconst s = pi * a ** 2;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst radius = 10;\nconst pi = 3.14;\nconst area = pi * radius ** 2;\n```"
-}

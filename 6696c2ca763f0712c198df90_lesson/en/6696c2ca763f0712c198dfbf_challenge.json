@@ -1,5 +1,0 @@
-{
-  "name": "Multiplying two numbers with default parameters",
-  "instruction": "Create a function `multi` that takes 2 parameters `a`, `b` and returns the result of multiplication.\n\nSet the parameters to the default value of `1`.",
-  "instructions": {}
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Is it true that the first number is greater than the second number?",
-  "instruction": "Create variables with names `a` and `b` and assign them values of arbitrary numbers.\nCreate a variable with the name `isABiggerThanB` and assign it the result of comparing variables `a` and `b`.\nThe variable `isABiggerThanB` should take the value `true` if `a > b`, and `false` if `a <= b`.\n\nHere is an example that is essentially similar to what needs to be done,\nbut adapt it to the requirements of the task:\n```javascript\nconst x = 2;\nconst y = 6;\nconst comparison = x > y;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst a = 18;\nconst b = 160;\nconst isABiggerThanB = a > b;\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "Converting to a Boolean value using double negation",
-  "instruction": "Write a function `toBoolean` that takes one value and converts it to `boolean`.\n\nUse: `!!`.\n\nExample function call:\n```javascript\ntoBoolean(1);    // true\ntoBoolean(0);    // false\ntoBoolean('');   // false\ntoBoolean(' ');  // true\ntoBoolean(true); // true\n```",
-  "instructions": {}
-}

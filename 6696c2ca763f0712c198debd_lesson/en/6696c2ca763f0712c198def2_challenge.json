@@ -1,4 +1,0 @@
-{
-  "name": "Decrement, prefix form",
-  "instruction": "Assign a value of 16 to the `number` variable, then write a command that decrements the value of the variable by 1\n(decrement, prefix form).\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n```\nlet x = 2;\n--x;\n```"
-}

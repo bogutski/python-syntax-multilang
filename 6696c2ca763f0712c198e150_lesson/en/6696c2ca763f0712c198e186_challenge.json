@@ -1,4 +1,0 @@
-{
-  "name": "Will there be enough gas to get to the gas station?",
-  "instruction": "Write a function `isEnoughFuel` that takes three parameters:\n\n* `distance` - distance to the filling station,\n* `fuel` - the amount of gasoline in the tank, gallons,\n* `mpg` - (miles per gallon) - how many miles the car will travel on one gallon of gasoline. Optional parameter, default is `25`.\n\nThe function should return `true` if the car can reach the gas station, and `false` if not.\n\nA similar problem:\n```javascript\nfunction isEnoughMoney(money, price, count) {\nreturn money >= price * count;\n}\n```"
-}

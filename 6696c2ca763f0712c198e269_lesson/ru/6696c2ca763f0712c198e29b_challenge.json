@@ -1,5 +1,0 @@
-{
-  "name": "Оплата покупки банкнотами по $5",
-  "instruction": "У покупателя в магазине есть только банкноты по $5.\nНапишем функцию, которая принимает сумму покупки и возвращает минимальное количество банкнот для оплаты.\n\nНазвание функции: `numberOfBanknotes`. Название параметра определите сами.\n\n\nПримеры вызова функции:\n```javascript\nnumberOfBanknotes(5) // 1\nnumberOfBanknotes(5.10) // 2\nnumberOfBanknotes(5.80) // 2\nnumberOfBanknotes(10) // 2\nnumberOfBanknotes(10.10) // 3\nnumberOfBanknotes(12.75) // 3\n```",
-  "instructions": {}
-}

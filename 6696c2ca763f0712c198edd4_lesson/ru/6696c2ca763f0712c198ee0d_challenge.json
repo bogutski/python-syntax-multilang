@@ -1,5 +1,0 @@
-{
-  "name": "Расшифровать строку с закодированными цветами радуги",
-  "instruction": "Как мы все знаем, радуга состоит из 7 цветов. Каждый цвет имеет свой номер:\n1 - красный - red\n2 - оранжевый - orange\n3 - желтый - yellow\n4 - зеленый - green\n5 - голубой - blue\n6 - синий - indigo\n7 - фиолетовый  - violet\n\nФункция `colorDecoder` принимает строку, в которой закодированы цвета радуги - вместо названий цветов в строке используются их коды (порядковые номера).\nНужно расшифровать строку, заменив номера цветов на их названия, и вернуть получившуюся строку.\nДля решения задачи используйте массив `rainbow`, который уже создан в коде.\nНе забывайте, что нумерация в массиве начинается с 0, а порядковые номера цветов - с 1.\n\nПримеры использования функции:\ncolorDecoder('1-2-3') // 'red-orange-yellow'\ncolorDecoder('Grass is 4. Skies are 5.') // 'Grass is green. Skies are blue.'\ncolorDecoder('1, 2, 3, 4, 5, 6 and 7 are the colors of the rainbow') // 'red, orange, yellow, green, blue, indigo and violet are the colors of the rainbow'\ncolorDecoder('1') // 'red'\ncolorDecoder('') // ''",
-  "instructions": {}
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Multiplication from 1 to n",
-  "instruction": "Write a function `multiplication` that takes a number `n` and returns the product of numbers from `1` to `n` inclusive.\n\nIn the loop `for` use iteration step `2`.\n\nAn example loop `for` with iteration step `5`:\n```javascript\nfor (let i = 0; i <= 50; i += 5) {\nconsole.log(i);\n}\n```\n\nExamples of running a function:\n```javascript\nmultiplication(1) // 1\nmultiplication(5) // 15\nmultiplication(7) // 105\nmultiplication(9) // 945\n```"
-}

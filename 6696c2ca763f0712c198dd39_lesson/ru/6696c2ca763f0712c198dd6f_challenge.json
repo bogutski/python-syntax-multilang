@@ -1,6 +1,0 @@
-{
-  "name": "Возводим null в степень 2",
-  "instruction": "\"Нуль, в степень возведенный,\nНулем и остается...\" ( поэт Станислав Ежи Лец)\n\nСоздайте переменную с именем `zero` и присвойте ей значение `null`.\nСоздайте переменную с именем `power` и присвойте ей значение переменной `zero` в степени 2.\nСоздайте переменную с именем `type` и присвойте ей тип переменной `power`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst money = null;\nconst extraMoney = money ** 2;\nconst type = typeof extraMoney;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst zero = null;\nconst power = zero ** 2;\nconst type = typeof power;\n```"
-}

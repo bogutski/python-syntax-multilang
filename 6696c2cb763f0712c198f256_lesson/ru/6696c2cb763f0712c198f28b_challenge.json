@@ -1,5 +1,0 @@
-{
-  "name": "Булевые значения",
-  "instruction": "Напишите функцию `allBoolean`, которая принимает массив с элементами одного и/или разных типов данных.\n\nФункция должна вернуть `true`, если все элементы массива имеют тип `boolean`, иначе вернуть `false`.\n\nЕсли массив пустой, то вернуть строку `'Array is empty'`.\n\n\nПримеры запуска функции:\n```javascript\nallBoolean([1, true, 3, false, 5]); // false\nallBoolean([true, false, true]);    // true\nallBoolean([true, undefined, NaN]); // false\nallBoolean([0 < 5, false, 9 <= 1]); // true\nallBoolean([]);                     // 'Array is empty'\n```",
-  "instructions": {}
-}

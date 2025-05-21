@@ -1,5 +1,0 @@
-{
-  "name": "Найти последнее вхождение подстроки в строку",
-  "instruction": "Напишите функцию `findLastIndexOf`, которая принимает два параметра: строку и подстроку.\n\nФункция должна возвращать индекс последнего вхождения подстроки в строку.\n\nЕсли подстрока не найдена, функция должна возвращать `-1`.\n\nПоиск должен быть нечувствителен к регистру.\n\nПримеры:\n```javascript\nfindLastIndexOf('HeLlo', 'll'); // 2\nfindLastIndexOf('HeLlo new heLLo', 'lL'); // 12\nfindLastIndexOf('HeLlo heLLo', 'll'); // 8\nfindLastIndexOf('HeLlo heLLo', 'LL'); // 8\n```",
-  "instructions": {}
-}

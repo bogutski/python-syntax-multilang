@@ -1,6 +1,0 @@
-{
-  "name": "Sunny day!",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-2-task-8.png)\n\nCreate a variable named `weather` and assign it the value `'Sunny day!'`, use the `const` keyword.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst season = 'Winter';\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst weather = 'Sunny day!';\n```"
-}

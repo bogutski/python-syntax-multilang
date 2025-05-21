@@ -1,5 +1,0 @@
-{
-  "name": "Buses for schoolchildren",
-  "instruction": "The capacity of the bus for schoolchildren is 40 people.\n\nWrite a function `busForSchool` that takes one parameter - the number of schoolchildren - and returns the number of buses needed to transport schoolchildren.\n\nExamples of running the function:\n```javascript.\nbusForSchool(1) // 1\nbusForSchool(40) // 1\nbusForSchool(41) // 2\nbusForSchool(80) // 2\nbusForSchool(805) // 21\n```",
-  "instructions": {}
-}

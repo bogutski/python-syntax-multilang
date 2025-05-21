@@ -1,1 +1,0 @@
-# Array.prototype.unshift() – добавляет элемент в начала массива language: es

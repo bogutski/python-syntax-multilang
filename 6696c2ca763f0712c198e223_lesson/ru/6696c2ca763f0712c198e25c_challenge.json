@@ -1,5 +1,0 @@
-{
-  "name": "Среди трех чисел есть одно четное",
-  "instruction": "Напиши функцию `isEvenFromThree`, которая принимает три числа `n1`, `n2`, `n3` и возвращает `true`, если среди них есть хотя бы одно четное, и `false` - если нет.\n\nЧетное число - это число, которое делится на 2 без остатка.\n\nПримеры запуска:\n```javascript\nisEvenFromThree(1, 2, 3); // true\nisEvenFromThree(1, 3, 5); // false\nisEvenFromThree(2, 4, 6); // true\nisEvenFromThree(1, 3, 7); // false\n```",
-  "instructions": {}
-}

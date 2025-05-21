@@ -1,4 +1,0 @@
-{
-  "name": "Does the number end in 0?",
-  "instruction": "A number num is given. Is it true that the number ends with 0?\n\nCreate a variable `num` and assign to it the value of an arbitrary positive number.\n\nCreate a variable `lastDigit` and assign it an expression to find the last digit of `num` using the operation\nFind the remainder of division by 10.\n\nCreate a variable `isLastDigitIsZero` and give it the result of comparing the last digit to zero.\n\nHere is an example, which is fundamentally similar to what you need to do, but adapt it to the requirements of the task:\n```\nconst x = 90;\nconst rest = x % 10;\nconst isEqualZero = rest === 0;\n```"
-}

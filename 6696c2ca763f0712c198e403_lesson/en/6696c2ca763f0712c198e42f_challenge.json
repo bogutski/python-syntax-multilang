@@ -1,4 +1,0 @@
-{
-  "name": "Translate line to lower case",
-  "instruction": "Write a function `allLower` that takes a string and returns the same string, but in lower case.\n\n```javascript\nallLower('Hello') // 'hello'\nallLower('Hello World') // 'hello world'\nallLower('AAA') // 'aaa'\nallLower('AAA aaa') // 'aaa aaa'\n```"
-}

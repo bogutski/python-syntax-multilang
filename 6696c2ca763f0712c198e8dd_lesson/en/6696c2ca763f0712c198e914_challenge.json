@@ -1,4 +1,0 @@
-{
-  "name": "Dividing an array into positive and negative numbers",
-  "instruction": "Write a function `positiveAndNegative` that takes an array of numbers and returns an array of two arrays:\n\n* first - the array contains positive numbers,\n* the second one contains negative numbers.\n\nAn example of running the function:\n```javascript\npositiveAndNegative([1, 2, 3, -1, -2, -3]); // [[1, 2, 3], [-1, -2, -3]]\npositiveAndNegative([-5, 5, 0, -10, 10]); // [[5, 0, 10], [-5, -10]]\n```"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "True if the second argument is larger than the first",
-  "instruction": "Write a function `secondIsBigger` that takes two numbers `first` and `second`\nand returns `true` if the second number `second` is greater than the first `first`, and `false` if less than or equal to it.",
-  "instructions": {}
-}

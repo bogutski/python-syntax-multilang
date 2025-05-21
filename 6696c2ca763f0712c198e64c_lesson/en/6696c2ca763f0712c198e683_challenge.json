@@ -1,4 +1,0 @@
-{
-  "name": "Average hotel rating",
-  "instruction": "Write a function `getAverageRating` that takes a `hotel` object and returns the average rating for reviews by category.\n\nThe object `hotel` has the following structure:\n* `name` - name of the hotel, string\n* `cleanliness` - rating of cleanliness, number\n* `service` - service score, a number\n* `location` - evaluation of the location, a number\n* `value` - evaluation of price/quality ratio, a number\n\nThe function should return the average rating for reviews by category.\n\nAn example of running the function:\n```javascript\nconst hotel = {\nname: 'Hotel 1',\ncleanliness: 4,\nservice: 5,\nlocation: 3,\nvalue: 4,\n};\n\ngetAverageRating(hotel); // 4\n```\n\nAdd up all the ratings by category and divide by the number of categories."
-}

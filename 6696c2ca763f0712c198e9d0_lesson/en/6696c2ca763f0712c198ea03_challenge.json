@@ -1,4 +1,0 @@
-{
-  "name": "Sum of numbers from n1 to n2",
-  "instruction": "Write a function `sumFromN1ToN2` that takes two numbers num1 and num2 and returns the sum of all numbers from num1 to num2 inclusive.\n\nExamples of running the function:\n```javascript\nsumFromN1ToN2(0, 0) // 0\nsumFromN1ToN2(1, 10) // 55\nsumFromN1ToN2(10, 50) // 1230\n```"
-}

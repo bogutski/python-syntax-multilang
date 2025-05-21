@@ -1,4 +1,0 @@
-{
-  "name": "The sum of even positive and odd negative numbers of the array",
-  "instruction": "Write a function `sumEvenPositiveOddNegative` that takes one parameter - an array.\n\nThe array is of arbitrary length and consists of positive and negative integers.\n\nThe function should return the sum of even positive and odd negative integers in the array.\n\nAn example of running the function:\n```javascript\nsumEvenPositiveOddNegative([-21, 24, -25, 28]) // (-21) + 24 + (-25) + 28 = 6\nsumEvenPositiveOddNegative([-17, -18, -19, -20]) // (-17) + (-19) = -36\nsumEvenPositiveOddNegative([-2, -4, 5, 7]) // 0\n```"
-}

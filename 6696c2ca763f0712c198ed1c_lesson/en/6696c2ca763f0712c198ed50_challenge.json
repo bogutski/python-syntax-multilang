@@ -1,5 +1,0 @@
-{
-  "name": "Count the number of spaces",
-  "instruction": "Write a function `numberOfSpaces` that takes a string and returns the number of spaces in it.\n\n```javascript\nnumberOfSpaces('Hello, World!'); // 1;\nnumberOfSpaces(' You look young. How old are you?'); // 8;\nnumberOfSpaces('end'); // 0\n```",
-  "instructions": {}
-}

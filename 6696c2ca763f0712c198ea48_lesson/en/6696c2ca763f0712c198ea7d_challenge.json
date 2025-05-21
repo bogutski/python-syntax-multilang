@@ -1,5 +1,0 @@
-{
-  "name": "Result as a string",
-  "instruction": "Write a function `stringResult` that takes two numbers `n1` and `n2`.\n\nThe function should calculate the sum of numbers from `n1` to `n2` inclusive and return a string in the following format:\n\n * `Sum of numbers from ${n1} to ${n2} is ${sum}`, where `sum` is the sum of numbers from `n1` to `n2` inclusive.\n\nExamples of function calls:\n```javascript\nstringResult(1, 5) // \"Sum of numbers from 1 to 5 is 15\"\nstringResult(5, 25) // \"Sum of numbers from 5 to 25 is 315\"\nstringResult(-5, 10) // \"Sum of numbers from -5 to 10 is 40\"\n```",
-  "instructions": {}
-}

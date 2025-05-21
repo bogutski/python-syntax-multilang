@@ -1,5 +1,0 @@
-{
-  "name": "Фильтрация пользователей по электронной почте",
-  "instruction": "Напишите функцию `usersFilter`.\n\nФункция принимает объект с пользователем `user`.\n\nОбъект `user` имеет свойства:\n\n* `name` - имя пользователя, строка;\n* `city` - город, строка;\n* `phone` - номер телефона, строка;\n* `email` - электронная почта, строка. Может отсутствовать.\n\nЕсли свойство `email` присутствует в объекте `user` и оно не  равно пустой строке, то  функция должна вернуть `true`, иначе `false`.\n\nПример запуска функции:\n```javascript\nusersFilter({name: 'Marcus', city: 'Tel Aviv', phone: '5641234567', email: 'marcuscus2@bien.org'}); // true\nusersFilter({name: 'Lola', city: 'Paris', phone: '123456-7890', email: ''}); // false\nusersFilter({name: 'Garry', city: 'San Francisco', phone: '987-654-3210'}); // false\n```",
-  "instructions": {}
-}

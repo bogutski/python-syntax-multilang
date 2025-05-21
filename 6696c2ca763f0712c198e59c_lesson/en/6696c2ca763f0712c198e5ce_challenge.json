@@ -1,4 +1,0 @@
-{
-  "name": "Modify the object. Calculate the sum of the properties",
-  "instruction": "Write a function `calculateSumObject` that takes an object.\n\nThe object has three properties:\n* `n1` - number\n* `n2` - number\n* `sum` - number zero\n\nAn example of an object that will be passed to the function:\n```javascript\n{\n  n1: 10,\n  n2: 20,\n  sum: 0\n}\n```\n\nThe function should return an object in which the `sum` property is equal to the sum of the `n1` and `n2` properties of the object.\n\nAn example of running the function:\n```javascript\ncalculateSumObject({n1: 10, n2: 20, sum: 0}) // { n1: 10, n2: 20, sum: 30 }\n```"
-}

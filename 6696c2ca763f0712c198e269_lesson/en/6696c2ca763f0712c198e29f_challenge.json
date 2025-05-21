@@ -1,4 +1,0 @@
-{
-  "name": "Rounding the average value upwards.",
-  "instruction": "Write a function `roundAverageUp` that takes three numbers and returns their average, rounded up.\n\nThe numbers can be integers or fractions.\n\nExamples of running the function:\n```javascript\nroundAverageUp(1, 2, 3) // 2\nroundAverageUp(1, 2, 4) // 3\nroundAverageUp(1, 2, 5) // 3\nroundAverageUp(1, 2, 6) // 3\n```"
-}

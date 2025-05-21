@@ -1,6 +1,0 @@
-{
-  "name": "Sum of digits of a two-digit number",
-  "instruction": "Given a two-digit number. Find the sum of its digits.\n\nTo solve the problem:\nCreate a variable `num` and assign it a value of any positive two-digit number from 10 to 99.\n\nCreate a variable `secondDigit` and assign it an expression that allows you to get the second digit of the number `num` (use the remainder operation %).\n\nCreate a variable `firstDigit` and assign it an expression that allows you to get the first digit of the number `num`.\nCreate a variable `sum` and assign it the value of the sum of the digits.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\n// Find the last digit of a three-digit number\nconst number = 456;    // three-digit number\nconst a = number % 10; // the last digit of the number is equal to the remainder of dividing the number by 10\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst num = 34;\nconst secondDigit = num % 10;\nconst firstDigit = (num - secondDigit) / 10;\nconst sum = secondDigit + firstDigit;\n```"
-}

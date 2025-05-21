@@ -1,6 +1,0 @@
-{
-  "name": "Golden Ratio",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-3-task-5.png)\n\nThe most popular number in the world is the \"golden ratio\", which is a proportion obtained by dividing a quantity\n(for example, the length of a segment) into two parts in such a way that the ratio of the larger part to the smaller part is equal to the ratio\nof the whole to the greater part. The golden ratio is equal to about 1.618.\n\nCreate a variable named `gold` and assign it the value `1.618`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the problem:\n```\nconst silver = 3.878323;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst gold = 1.618;\n```"
-}

@@ -1,4 +1,0 @@
-{
-  "name": "The amount in the object",
-  "instruction": "Write a function `sumObject` that takes two parameters: `n1`, `n2`. Both parameters are numbers.\n\nThe function should return an object with properties `n1`, `n2`, which will be equal to the corresponding arguments and `sum`.\n\nThe `sum` property must be equal to the sum of `n1` and `n2`.\n\nExamples of running a function:\n```javascript\nsumObject(10, 20); // { n1: 10, n2: 20, sum: 30 }\nsumObject(5, 10); // { n1: 5, n2: 10, sum: 15 }\n```"
-}

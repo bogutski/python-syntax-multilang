@@ -1,5 +1,0 @@
-{
-  "name": "Correct the errors in the code",
-  "instruction": "The function `stopAt10Element` takes 3 parameters:\n\n* An empty array `arr`\n\n* Initial value `num1` - this is the number from which the array filling starts.\n\n* Final value `num2` - this is the number with which the array filling ends.\n\nThe initial value will always be less than the final value.\n\nThe array is filled with numbers from the initial value to the final value inclusive.\n\nArray filling is interrupted at the 10th element.\n\nThe function returns the filled array.\n\nFix the errors in the code to make it comply with the task conditions.",
-  "instructions": {}
-}

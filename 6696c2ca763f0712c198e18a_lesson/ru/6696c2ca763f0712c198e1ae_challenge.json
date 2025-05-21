@@ -1,5 +1,0 @@
-{
-  "name": "Охранник в ночном клубе",
-  "instruction": "Напиши функцию `clubGuard`, которая принимает возраст посетителя клуба.\n\n* Если посетителю  21 год и старше, то возвращаем строку `Welcome to the club!`\n* Иначе возвращаем строку `You are not allowed to enter the club!`",
-  "instructions": {}
-}

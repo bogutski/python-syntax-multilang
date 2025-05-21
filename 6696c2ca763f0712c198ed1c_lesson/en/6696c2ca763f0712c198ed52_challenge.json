@@ -1,4 +1,0 @@
-{
-  "name": "Count the number of words behind the parentheses",
-  "instruction": "Write a function `outsideBrackets` that takes a string and returns the number of words behind the brackets.\n\nThere is one space after each word.\n\nA closing parenthesis cannot be in front of an opening one.\n\nA pair of parentheses is always present in the string.\n\nSolution algorithm:\n\n* Use the `indexOf` method to find the first bracket and write it to the `firstBracket` variable.\n\n* Using the `indexOf` method find the first bracket and write it into the `secondBracket` variable.\n\n* Run the first loop that starts with 0 and ends at the index `firstBracket` counting words.\n\n* Run the second loop which starts with `secondBracket` and ends with the last index of the string.\n\nExample of running a function:\n\n```javascript\noutsideBrackets('one (two) three') // 2\noutsideBrackets('everything () is fine') // 3\noutsideBrackets('()') // 0\n```"
-}

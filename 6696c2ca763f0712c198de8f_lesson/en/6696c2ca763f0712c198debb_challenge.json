@@ -1,4 +1,0 @@
-{
-  "name": "Raising to the power of zero",
-  "instruction": "Any number raised to power of 0 is equal to 1. Find the result of raising 101 to the power of zero.\n\nCreate a variable `number` and assign value 101 to it.\n\nCreate a variable `power` and give it a value 0.\n\nCreate a variable `result` and give it a value of `number` to the extent of `power`.\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n\n```\nconst number = 5;\nconst power = 1;\nconst result = number ** power;\n ```"
-}

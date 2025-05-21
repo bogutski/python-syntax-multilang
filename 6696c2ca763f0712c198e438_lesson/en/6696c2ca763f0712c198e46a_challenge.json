@@ -1,4 +1,0 @@
-{
-  "name": "The function repeats the string according to its length",
-  "instruction": "Write a function `repeatString` that takes a string and returns it repeated as many times as its length.\n\nAn example of running the function:\n```javascript\nrepeatString('abc1'); // 'abc1abc1abc1abc1'\nrepeatString('abc'); // 'abcabcabc'\nrepeatString('qw'); // 'qwqw'\nrepeatString('q'); // 'q'\n```"
-}

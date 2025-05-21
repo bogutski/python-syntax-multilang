@@ -1,4 +1,0 @@
-{
-  "name": "Multiplication of array elements",
-  "instruction": "Write a function `mult` that takes one parameter, an array.\n\nThe array contains only positive or negative integers.\n\nThe function should return the product of the first and the last element of the array.\n\nAn example of running the function:\n```javascript\nmult([1, 2, 3, 4, 5]); // 5\nmult([1, 2, 3, 4, 5, 6]); // 6\n```\n\nUse the example `arr[arr.length - 1]` to get the last element of the array."
-}

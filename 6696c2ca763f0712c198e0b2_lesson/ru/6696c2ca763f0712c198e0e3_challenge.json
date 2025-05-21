@@ -1,5 +1,0 @@
-{
-  "name": "Функция profitCalculation с расчетом по формуле",
-  "instruction": "Создайте функцию `profitCalculation`, которая принимает три аргумента: `income`, `cost`, `taxPercent`.\n\nФункция должна вести расчет прибыли по формуле: `income - cost - (income - cost) * (taxPercent / 100)`.\n\nПо возможности в функции используйте переменные для хранения промежуточных значений.\n\nСоздайте переменные `client1` и `client2` и присвойте им результаты вызова функции `profitCalculation` с разными аргументами.\n\n```javascript\nconst client1 = profitCalculation(1000, 500, 10);\nconst client2 = profitCalculation(1000, 500, 20);\n```",
-  "instructions": {}
-}

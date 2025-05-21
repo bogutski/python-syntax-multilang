@@ -1,6 +1,0 @@
-{
-  "name": "Weird McDonald's signature.",
-  "instruction": "Farmer Benjamin McDonald disliked his long name and signed his name only with the first letter,\nfollowed by an exclamation point.\n\nCreate a `name` variable and assign it the value of any name.\nCreate a variable `sign` and assign it the value of the first letter of the name, after which add an exclamation mark.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst name = 'Moscow';\nconst shortName = name[0] + '.';\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst name = 'Benjamin McDonald';\nconst sign = name[0] + '!';\n```"
-}

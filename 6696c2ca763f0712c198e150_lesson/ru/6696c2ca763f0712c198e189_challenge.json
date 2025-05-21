@@ -1,5 +1,0 @@
-{
-  "name": "True если числа равны",
-  "instruction": "Напишите функцию `isEqual`, которая принимает два параметра `num1` и `num2`.\n\nВозвращает `true`, если `num1` равно `num2`, и false, если `num1` не равно `num2`.\n\n\nПримеры:\n```javascript\nisEqual(1, 1); // true\nisEqual(1, 2); // false\nisEqual(1, -1); // false\n```",
-  "instructions": {}
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Computing the radius of a circle",
-  "instruction": "Given the length of a circumference. Find the radius of this circumference.\n\nSet the variable `length` and assign it a value of an arbitrary non-negative number (the length of the circumference).\n\nSet the variable `pi` and assign it a value of 3.14 (an approximate value of Pi).\n\nSet the variable `radius`, in which you calculate the radius (to find the radius, divide the length of the circumference by 2 * Pi).\n\nHere is an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:\n```javascript\nconst l = 10;\nconst a = 3;\nconst r = l / (2 * a);\n\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst length = 10;\nconst pi = 3.14;\nconst radius = length / (2 * pi);\n```"
-}

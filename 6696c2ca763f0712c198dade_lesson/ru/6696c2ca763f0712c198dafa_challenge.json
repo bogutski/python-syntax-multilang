@@ -1,6 +1,0 @@
-{
-  "name": "Console PASV",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-5.png)\n\nНапишите команду, которая выводит в консоль слово `'PASV'`.",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log('PASV');\n```"
-}

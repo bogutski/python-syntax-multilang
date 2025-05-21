@@ -1,6 +1,0 @@
-{
-  "name": "Assign the variable salary to null",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-9.png)\n\nCreate a variable named `salary`.\nUse the `const` keyword.\nAssign the value `null` to it.\n\nA fundamentally similar example:\n```javascript\nconst price = null;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst salary = null;\n```"
-}

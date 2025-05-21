@@ -1,4 +1,0 @@
-{
-  "name": "Is there a property in the object, method `hasOwnProperty`",
-  "instruction": "Write a function `hasProperty` that takes two parameters:\n\n* `object` - object\n* `property` - the property that will be checked for in the object, string\n\nIn the solution, use the method `hasOwnProperty`.\n\nIf the property `property` is present in the object `object`, the function should return `true`, otherwise `false`.\n\nAn example of running the function:\n```javascript\nhasProperty({ name: 'Alice' }, 'name') // true\nhasProperty({ name: 'Toshiba', model: 'Satellite', year: 2015 }, 'color') // false\n```"
-}

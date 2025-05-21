@@ -1,5 +1,0 @@
-{
-  "name": "Массив целых чисел от 0 до n",
-  "instruction": "Функция `consecutiveNumbers` принимает один параметр – число `n`.\n\nФункция должна вернуть массив целых чисел от 0 до `n` включительно.\n\nЕсли переданное число `n` меньше нуля, то функция должна вернуть пустой массив.\n\nПример заполнения массива числами от 1 до 5:\n\n```javascript\nconst arr = [];\nfor (let i = 1; i <= 5; i++) {\n  arr.push(i);\n}\nconsole.log(arr); // [1, 2, 3, 4, 5]\n```\n\nПримеры запуска функции:\n\n```javascript\nconsecutiveNumbers(5);  // [0, 1, 2, 3, 4, 5]\nconsecutiveNumbers(10); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nconsecutiveNumbers(0);  // [0]\n```",
-  "instructions": {}
-}

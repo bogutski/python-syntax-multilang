@@ -1,4 +1,0 @@
-{
-  "name": "First and last element",
-  "instruction": "Write a function `firsAndLastElement` that takes a string.\n\nThe function should count the number of elements equal to the first and last elements of the string, including the elements themselves.\n\nReturn the string in the format `Count of first element:  <countOfFirst> , count of last element: <countOfLast> `.\n\nIf the string is empty, return `String is empty`.\n\n\nExamples of running a function:\n```javascript\nfirsAndLastElement('abracadabra'); // \"Count of first element: 5, count of last element: 5\"\nfirsAndLastElement('aaaaaab'); // \"Count of first element: 6, count of last element: 1\"\nfirsAndLastElement(''); // \"String is empty\"\n```"
-}

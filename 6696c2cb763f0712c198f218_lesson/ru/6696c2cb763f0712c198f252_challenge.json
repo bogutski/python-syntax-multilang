@@ -1,5 +1,0 @@
-{
-  "name": "Сравнение массивов на повторяющиеся элементы",
-  "instruction": "Функция `checkArrays` должна принимать два массива, в котором могут содержаться строки и числа.\n\nФункция должна возвращать строку:\n* `Array 1 includes all elements of array 2`, если первый массив содержит все элементы второго массива\n* `Array 2 has unique elements`, если второй массив содержит уникальные элементы\n* `false`, если хоть один из массивов пустой\n\nПримеры запуска функции:\n```javascript\ncheckArrays([1, 2, 3], [3, 2]) // \"Array 1 includes all elements of array 2\"\ncheckArrays([\"hello\", \"hello\", \"js\"], [\"js\", \"practice\") // \"Array 2 has unique elements\"\ncheckArrays([1, 2, 3], []) // false\n```",
-  "instructions": {}
-}

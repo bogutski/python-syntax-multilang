@@ -1,5 +1,0 @@
-{
-  "name": "Reverse each word from the string and add it to the array",
-  "instruction": "Write a function reverseAndPush that takes a string and returns an array.\n\nThe array should contain the reversed words from the string. The words should remain in the same order as in the string.\n\nWords in the string are always separated by a single space.\n\n\nFunction execution examples:\n```javascript\nreverseAndPush('sihT si a tset') // ['This', 'is', 'a', 'test']\nreverseAndPush('123 456')        // ['321', '654']\nreverseAndPush('B')              // ['B']\nreverseAndPush('')               // ['']\n```",
-  "instructions": {}
-}

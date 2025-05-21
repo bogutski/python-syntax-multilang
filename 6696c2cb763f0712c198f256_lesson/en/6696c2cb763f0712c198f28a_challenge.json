@@ -1,5 +1,0 @@
-{
-  "name": "Checking array element types",
-  "instruction": "Write a `areAllElTypesTheSame` function that accepts an array with elements of the same and/or different data types.\n\nThe function should return `true` if all elements of the array have the same data type, and `false` if different.\n\nIf the array is empty, return the string `'Array is empty'`.\n\n\nExamples of how to run the function:\n```javascript\nareAllElTypesTheSame([1, 2, 3]); // true\nareAllElTypesTheSame(['3', '4', '5']); // true\nareAllElTypesTheSame(['2', 3, '4', 5]); // false\nareAllElTypesTheSame([undefined, false, null]); // false\nareAllElTypesTheSame([]); // 'Array is empty'\n```",
-  "instructions": {}
-}

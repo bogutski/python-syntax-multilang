@@ -1,4 +1,0 @@
-{
-  "name": "Find the last occurrence of a substring in a string",
-  "instruction": "Write a function `findLastIndexOf` that takes two parameters: a string and a substring.\n\nThe function should return the index of the last occurrence of the substring in the string.\n\nIf no substring is found, the function should return `-1`.\n\nThe search must be case insensitive.\n\nExamples:\n```javascript\nfindLastIndexOf('HeLlo', 'll'); // 2\nfindLastIndexOf('HeLlo new heLLo', 'lL'); // 12\nfindLastIndexOf('HeLlo heLLo', 'll'); // 8\nfindLastIndexOf('HeLlo heLLo', 'LL'); // 8\n```"
-}

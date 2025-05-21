@@ -1,4 +1,0 @@
-{
-  "name": "Is the string a palindrome?",
-  "instruction": "Write a function `palindrome` that takes a string and returns `true` if the string is a palindrome, and `false` if it is not.\n\nA `palindrome' is a string that reads equally from left to right and right to left.\n\nAn empty string will not be checked.\n\nExamples of palindromes:\n* `racecar\n* `kayak`\n* `level`.\n\nExamples of running a function:\n```javascript\npalindrome('racecar'); // true\npalindrome('kayak'); // true\npalindrome('hello'); // false\npalindrome('apple'); // false\n```"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Increasing the number by 3",
-  "instruction": "Samantha was 13 years old, but she really wanted to go to the cinema, where only 16-year-olds were allowed, so she added 3 to her age.\n\nSet the variable `age` and assign it the value of 13.\nThen write the command that increases the value of the variable `age` by 3.\n\nHere is an example that is essentially similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nlet number = 8;\nnumber += 5;\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet age = 13;\nage += 3;\n```"
-}

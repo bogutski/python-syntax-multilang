@@ -1,6 +1,0 @@
-{
-  "name": "Number output to the console",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-6.png)\n\nWrite a command that outputs the number 2020 to the console.\nThe number must be without quotation marks.",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log(2020);\n```"
-}

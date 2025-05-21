@@ -1,5 +1,0 @@
-{
-  "name": "My favorite city",
-  "instruction": "Write a function `myFavoriteCity` that takes one parameter `city` and returns the string `I love San Francisco!`.\n\nInstead of `San Francisco` it must be the value of the `city` parameter.",
-  "instructions": {}
-}

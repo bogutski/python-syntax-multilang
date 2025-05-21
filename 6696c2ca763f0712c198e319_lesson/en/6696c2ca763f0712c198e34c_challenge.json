@@ -1,4 +1,0 @@
-{
-  "name": "Rounding when exchanging currencies",
-  "instruction": "Write a function `exchangeRound` that takes the amount to exchange and the exchange rate and returns the amount rounded to two decimal places.\n\nThe function should return a string like `Amount: $20, exchange rate: 2.47, final amount: $49.40`.\n\nExamples of function execution:\n```javascript\nexchangeRound(20, 2.47); // 'Amount: $20, exchange rate: 2.47, final amount: $49.40'\nexchangeRound(14, 4,78); // 'Amount: $14, exchange rate: 4.78, final amount: $67.12'\n```"
-}

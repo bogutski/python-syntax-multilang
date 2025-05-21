@@ -1,6 +1,0 @@
-{
-  "name": "Compare undefined and null",
-  "instruction": "Usually `undefined` is used for checks whether a variable has been assigned.\nThe special value `null` means \"nothing\", \"empty\" or \"value intentionally missing\".\n\nCreate a variable named `home` and assign it the value `undefined`.\nCreate a variable named `money` and assign it the value `null`.\nCreate a variable named `isNullEqualsUndefined` and assign it the result of strict equality between variables `home` and `money`.\n\nHere is an example that is essentially similar to what needs to be done,\nbut adapt it to the task requirements:\n```javascript\nlet salary = undefined;\nlet job = null;\nlet comparison = salary === job;\n```",
-  "instructions": {},
-  "hint": "```javascript\nlet home = undefined;\nlet money = null;\nconst isNullEqualsUndefined = home === money;\n```"
-}

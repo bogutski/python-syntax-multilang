@@ -1,4 +1,0 @@
-{
-  "name": "Even and odd index division",
-  "instruction": "Write a function `oddAndEven` that takes a string and returns an array of two strings: `[odd, even]`.\n\nThe function must divide by even and odd characters indices in the string.\n\nExample:\n```javascript\nlet str = 'abc';\n// 'a' - 0 index, even\n// 'b' - 1 index, odd\n// 'c' - 2 index, even\n```\n\nExamples of running the function:\n```javascript\noddAndEven('0123456'); // ['135', '0246']\noddAndEven('abcdef'); // ['bdf', 'ace']\noddAndEven(''); // ['', '']\n```"
-}

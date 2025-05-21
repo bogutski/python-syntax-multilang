@@ -1,1 +1,0 @@
-# Array.prototype.every() – каждый элемент массива удовлетворяет условию language: es

@@ -1,4 +1,0 @@
-{
-  "name": "Figures equal to their indices",
-  "instruction": "Write a function `strOfNum` that accepts a string consisting only of numbers.\n\nThe function should return an array consisting of digits that are equal to their indices in the string.\n\nFor example, for string '0423' the function should return ['0', '2', '3']\n* +str[0] === 0 - true\n* +str[1] === 1 - false\n* +str[2] === 2 - true\n* +str[3] === 3 - true\n\nAn example of function execution:\n```js\nstrOfNum('052446'); // [ '0', '2', '4' ]\nstrOfNum('012345'); // ['0', '1', '2', '3', '4', '5']\nstrOfNum('1234567890'); // []\n```"
-}

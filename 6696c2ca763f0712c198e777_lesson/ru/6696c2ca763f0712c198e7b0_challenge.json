@@ -1,5 +1,0 @@
-{
-  "name": "Замена элемента во вложенном массиве с помощью метода lastIndexOf()",
-  "instruction": "Напишите функцию `changeColor`, которая принимает  один параметр - массив.\n\nМассив содержит в себе два вложенных массива с произвольным колличеством строк.\n\nЕсли во втором вложенном массиве есть строка `green`, то замените ее на `yellow`.\n\nЕсли строк `green` во вложенном объекте больше одной, то заменится только последняя.\n\nДля поиска строки `green` используйте метод `lastIndexOf()`.\n\nФункция должна вернуть измененный массив.\n\nПример запуска функции:\n```javascript\nchangeColor([['red', 'green', 'blue'], ['black', 'green', 'white']])\n         // [['red', 'green', 'blue'], ['black', 'yellow', 'white']]\nchangeColor([['pink', 'green', 'red'], ['orange', 'green', 'blue', 'green']])\n         // [['pink', 'green', 'red'], ['orange', 'green', 'blue', 'yellow']]\n```",
-  "instructions": {}
-}

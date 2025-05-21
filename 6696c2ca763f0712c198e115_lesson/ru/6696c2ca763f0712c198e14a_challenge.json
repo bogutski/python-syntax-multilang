@@ -1,5 +1,0 @@
-{
-  "name": "Преобразование в булево значение с помощью двойного отрицания",
-  "instruction": "Напишите функцию `toBoolean`, которая принимает одно значение и преобразует его в `boolean`.\n\nИспользуйте: `!!`.\n\nПример запуска функции:\n```javascript\ntoBoolean(1);    // true\ntoBoolean(0);    // false\ntoBoolean('');   // false\ntoBoolean(' ');  // true\ntoBoolean(true); // true\n```",
-  "instructions": {}
-}

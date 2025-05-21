@@ -1,6 +1,0 @@
-{
-  "name": "Выведите в консоли строку с наклонными кавычками `Hello JavaScript`",
-  "instruction": "Только одна строка.\n\nСоблюдайте пробелы и знаки пунктуации. В конце точка с запятой. Наклонные кавычки.\n\n```javascript\nconsole.log(`Hello JavaScript`);\n```",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log(`Hello JavaScript`);\n```"
-}

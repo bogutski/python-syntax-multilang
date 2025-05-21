@@ -1,6 +1,0 @@
-{
-  "name": "The product of numbers written as strings",
-  "instruction": "Set variables `a` and `b` and assign them values of strings containing arbitrary numbers.\n\nSet variable `product` and assign it the result of multiplying these numbers, after converting the strings to numbers.\n\nThat is, for example, the result of '5' * '3' should be equal to 15.\n\nHere is an example that is essentially similar to what needs to be done, but adapt it to the task requirements:\n```javascript\nconst num1 = '4';\nconst num2 = '5';\nconst result = +num1 * +num2;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst a = '20';\nconst b = '22';\nconst product = +a * +b;\n```"
-}

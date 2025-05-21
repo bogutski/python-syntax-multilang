@@ -1,5 +1,0 @@
-{
-  "name": "Округление при обмене валют",
-  "instruction": "Напишите функцию `exchangeRound`, которая принимает сумму для обмена и курс обмена и возвращает сумму, округленную до двух знаков после запятой.\n\nФункция должна возвращать строку вида `Amount: $20, exchange rate: 2.47, final amount: $49.40`.\n\nПримеры запуска функции:\n```javascript\nexchangeRound(20, 2.47); // 'Amount: $20, exchange rate: 2.47, final amount: $49.40'\nexchangeRound(14, 4.78); // 'Amount: $14, exchange rate: 4.78, final amount: $67.12'\n```",
-  "instructions": {}
-}

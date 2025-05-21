@@ -1,4 +1,0 @@
-{
-  "name": "How many vowel and consonant letters are there in the string? Correct the code",
-  "instruction": "The `checkStr` function takes the string `str` as a parameter. The string can contain lowercase vowels and consonants.\n\nThe function must return an object with two properties: `vowel` and `consonant`.\n\nThe values of these properties must be numbers that correspond to the number of vowels and consonants in the string.\n\nFix the bug in the code to make it work correctly.\n\nExamples of running the function:\n```javascript\ncheckStr('hello'); // { vowel: 2, consonant: 3 }\ncheckStr('world'); // { vowel: 1, consonant: 4 }\n```"
-}

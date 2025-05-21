@@ -1,1 +1,0 @@
-# Удаление пробелов. Методы trim, trimStart, trimEnd language: es

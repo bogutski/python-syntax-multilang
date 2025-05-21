@@ -1,4 +1,0 @@
-{
-  "name": "Translating an array into a string",
-  "instruction": "Write a function `stringify` that takes an array and returns a string containing a JSON representation of the array.\n\nUse the `JSON.stringify` method to solve this problem.\n\nAn example of running the function:\n```javascript\nstringify([555, 666, 777]); // '[555,666,777]'\nstringify([true, true, true]); // '[true,true,true]'\n```"
-}

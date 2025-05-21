@@ -1,4 +1,0 @@
-{
-  "name": "Line concatenation. Commas between words",
-  "instruction": "Write a function `concat` that takes three parameters: `str1`, `str2`, `str3`.\n\nWhen called, the function must return a string consisting of three lines separated by a comma and a space. A dot at the end of the string.\n\nExamples of running a function:\n```javascript\nconcat('Hello', 'world', 'JavaScript'); // 'Hello, world, JavaScript.'\nconcat('I', 'love', 'JS'); // 'I, love, JS.'\n```"
-}

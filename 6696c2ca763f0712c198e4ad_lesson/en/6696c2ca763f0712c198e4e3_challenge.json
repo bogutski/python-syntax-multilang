@@ -1,4 +1,0 @@
-{
-  "name": "Search for an occurrence starting with the third word",
-  "instruction": "Write a function `search` that takes two strings and returns the index of the occurrence of the second string in the first, starting the search from the third word.\n\nWords are separated by spaces.\n\nFind the index of the first space in the string and use it as the start of the search to find the index of the second space.\n\nThen use the found index of the second space as the start of the search for the substring.\n\nIt is not necessary to convert strings to a single case.\n\nExamples of running the function:\n```javascript\nsearch('Hello wonderful world', 'o'); // 17\nsearch('Hello wonderful world', 'l'); // 19\nsearch('Hello wonderful world', 'e'); // -1\n```\nIf no string is found, the function should return `-1`."
-}

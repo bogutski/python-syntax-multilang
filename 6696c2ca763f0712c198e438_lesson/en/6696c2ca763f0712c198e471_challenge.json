@@ -1,4 +1,0 @@
-{
-  "name": "Put dots between the words",
-  "instruction": "Write a function `insertDots` that takes 3 parameters:\n\n- `string1` - string 1\n- `string2` - string 2\n- `length` - total length of the string\n\nFor example, `string1 = 'abc'`, `string2 = 'def'`, `length = 10`.\n\nWe need the function to return the string `abc....def`, where `....` are dots to put between the words `abc` and `def` to make the length of the string equal to `length`.\n\nIf the length of the string `string1 + string2` is greater than or equal to `length`, the function should return the string `string1 + string2`.\n\nExamples of running the function:\n```javascript\ninsertDots('abc', 'def', 10); // 'abc....def'\ninsertDots('abc', 'def', 9); // 'abc...def'\ninsertDots('abc', 'def', 8); // 'abc..def'\ninsertDots('abc', 'def', 7); // 'abc.def'\n\ninsertDots('ab', 'ef', 6); // 'ab..ef'\ninsertDots('ab', 'ef', 5); // 'ab.ef'\ninsertDots('ab', 'ef', 4); // 'abef'\n```"
-}

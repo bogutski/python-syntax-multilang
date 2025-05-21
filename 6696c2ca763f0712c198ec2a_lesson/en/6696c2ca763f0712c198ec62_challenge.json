@@ -1,5 +1,0 @@
-{
-  "name": "Number of occurrences of two given letters in a string in upper and lower case",
-  "instruction": "Write a function `objectKeys` takes 1 parameter, a string.\n\nThe string is of arbitrary length and contains upper and/or lower case letters.\n\nThe function should return an array of object keys, where the keys are the letters of the string.\n\nUse the `Object.keys()` method to solve the problem.\n\nExample of how to run the function:\n```javascript\nobjectKeys('A Piece of Cake'); // [\"A\", \" \", \"P\", \"i\", \"e\", \"c\", \"o\", \"f\", \"C\", \"a\", \"k\"]\nobjectKeys('Anna'); // [\"A\", \"n\", \"a\"]\nobjectKeys('level'); // [\"l\", \"e\", \"v\"]\nobjectKeys(''); // []\n```",
-  "instructions": {}
-}

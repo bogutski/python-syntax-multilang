@@ -1,5 +1,0 @@
-{
-  "name": "Reverse the elements of internal arrays",
-  "instruction": "Write a function `reverseInnerArrays` that takes an array of arrays with different data types.\n\nThe function should return a new array where the elements in the inner arrays are reversed.\n\nFor example: `[[1, 2, 3], ['a', 'b', 'c']]` => `[[3, 2, 1], ['c', 'b', 'a']]`\n\nIf the outer array is empty, return the string `'Array is empty'`.\n\nThe use of the `reverse` method is prohibited.\n\n\nFunction execution examples:\n```javascript\nreverseInnerArrays([[1,2,3], [7,8,9]]);                  // [[3,2,1], [9,8,7]]\nreverseInnerArrays([['one', 'two'], ['three', 'four']]); // [['two', 'one'], ['four', 'three']]\nreverseInnerArrays([[true, false], [false, false]]);     // [[false, true], [false, false]]\nreverseInnerArrays([]);                                  // 'Array is empty'\n```",
-  "instructions": {}
-}

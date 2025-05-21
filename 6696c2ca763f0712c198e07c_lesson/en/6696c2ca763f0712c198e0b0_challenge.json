@@ -1,5 +1,0 @@
-{
-  "name": "Currency exchange office. Exchange margin",
-  "instruction": "The currency exchange point accepts two parameters:\n* `buyRate` - purchase rate\n* `sellRate` - selling rate\n\nFunction name: `exchangeRateMargin`\n\nWhen exchanging currency, the exchange point must pay a 2% tax on each transaction.\n\nThat is, the final exchange margin is 2% less.\n\nThe function should return the final currency exchange margin in percentage with the tax deducted.\n\nExamples:\n```javascript\nexchangeRateMargin(100, 110); // 7.090909090909092\nexchangeRateMargin(100, 120); // 14.666666666666664\nexchangeRateMargin(100, 130); // 21.076923076923077\nexchangeRateMargin(50, 70); // 26.57142857142857\n```\n\nUse the formula to calculate:\n`(sellRate - buyRate) / sellRate * 100 - 2`",
-  "instructions": {}
-}

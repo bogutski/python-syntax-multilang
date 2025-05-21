@@ -1,4 +1,0 @@
-{
-  "name": "The sum of positive numbers from n1 to n2",
-  "instruction": "Write a function `sumOfPositive` that takes two numbers `n1` and `n2` and returns the sum of all positive numbers from `n1` to `n2` inclusive.\n\n`n1` is always less than or equal to `n2`.\n\nExamples of running the function:\n```javascript\nsumOfPositive(1, 10) // 55\nsumOfPositive(-15, 15) // 120\nsumOfPositive(0, 0) // 0\n```"
-}

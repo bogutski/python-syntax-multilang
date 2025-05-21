@@ -1,5 +1,0 @@
-{
-  "name": "Длина всех строк в массиве",
-  "instruction": "Исправьте функцию `totalLength`, чтобы она возвращала сумму длин всех строк в массиве.\n\nПримеры запуска функции:\n```javascript\ntotalLength(['hello', 'hi', 'howdy']); // 12\ntotalLength(['orange', 'apple', 'pear']); // 15\ntotalLength([]); // 0\n```",
-  "instructions": {}
-}

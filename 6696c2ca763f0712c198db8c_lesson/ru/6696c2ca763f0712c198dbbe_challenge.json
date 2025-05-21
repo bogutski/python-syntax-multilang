@@ -1,6 +1,0 @@
-{
-  "name": "Наиболее удачное имя переменной",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-4.png)\n\nТребуется создать переменную для хранения количества дневных отчетов (number of daily reports).\nСоздайте переменную с использованием ключевого слова `let` без присваивания значения переменной.\nВыберите наиболее удачное имя для создания этой переменной:\n`chisloDnevnyhOtchetov`, `number_of_daily_reports`, `numberOfDailyReports`, `numberofdailyreports`, `number`, `a`.",
-  "instructions": {},
-  "hint": "```javascript\nlet numberOfDailyReports;\n```"
-}

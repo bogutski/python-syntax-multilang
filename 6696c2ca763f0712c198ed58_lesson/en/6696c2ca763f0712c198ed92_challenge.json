@@ -1,4 +1,0 @@
-{
-  "name": "Delete repeated letters",
-  "instruction": "Write a function `removeDuplicates` that takes a string.\n\nThe function should return a new string in which repeated characters have been removed.\n\nSpaces between words should remain.\n\nStart the loop from the beginning of the string, for example: the string `123 145 156` should return `123 45 6`.\n\nAn example of running a function:\n```javascript\nremoveDuplicates('hello world'); // 'helo wrd'\nremoveDuplicates('a leg up'); // 'a leg up'\nremoveDuplicates('hands down'); // 'hands ow'\n```"
-}

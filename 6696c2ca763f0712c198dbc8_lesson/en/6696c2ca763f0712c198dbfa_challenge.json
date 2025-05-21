@@ -1,6 +1,0 @@
-{
-  "name": "Bacterial growth",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-10.png)\n\nA scientific laboratory is studying the behavior of a certain species of bacteria.\nEvery 24 hours their number doubles.\n\nCreate a variable `bacteriaCount` and assign it the value `10000`.\n\nWrite the following command that doubles the existing value of the `bacteriaCount` variable.",
-  "instructions": {},
-  "hint": "```javascript\nlet bacteriaCount = 10000;\nbacteriaCount = bacteriaCount * 2;\n```"
-}

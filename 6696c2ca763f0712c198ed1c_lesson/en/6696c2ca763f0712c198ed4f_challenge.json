@@ -1,4 +1,0 @@
-{
-  "name": "Count the number of characters in the string",
-  "instruction": "Write a function `countSigns` that takes two strings:\n\n* `str` is a string with text.\n\n* `sign` - the sign to be found. The signs can be:  `'!', '?', '.', ','`.\n\nThe function should return the number of found `sign` in the string.\n\nExamples of running the function:\n\n```javascript\ncountSigns('Hello, World!', ','); // 1\ncountSigns('What is your name? Alice?', '?'); // 2\ncountSigns('Omg! The food is terrible!', '!') // 2\n``"
-}

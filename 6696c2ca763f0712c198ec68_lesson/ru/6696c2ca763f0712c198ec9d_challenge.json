@@ -1,5 +1,0 @@
-{
-  "name": "Количество гласных и согласных букв",
-  "instruction": "Функция `countLetters` принимает строку и возвращает объект с количеством гласных и согласных букв в строке:\n\n```javascript\n{\nvowel: countVowel,\nconsonant: countConsonant\n}\n```\n\nгде `countVowel` - количество гласных букв в строке, `countConsonant` - количество согласных букв в строке.\n\nСтрока может содержать буквы латинского алфавита и пробелы. Буквы в строке могут быть в разном регистре.\n\nПримеры запуска функции:\n```javascript\ncountLetters('Hello') // {vowel: 2, consonant: 3}\ncountLetters('Why') // {vowel: 0, consonant: 3}\n```",
-  "instructions": {}
-}

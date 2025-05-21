@@ -1,5 +1,0 @@
-{
-  "name": "Верните объект с первым и последним словом в строке",
-  "instruction": "Функция `updateString` принимает строку.\n\nНеобходимо вернуть объект с тремя свойствами:\n* `firstWord` - первое слово в строке\n* `lastWord` - последнее слово в строке\n* `updatedString` - строка, в которой первое и последнее слово поменяны местами\n\nСлова в строке разделены пробелами и приходит более одного слова\n\nНе используйте метод `substring` для получения подстроки.\n\nПримеры запуска функции:\n```javascript\nupdateString(\"sense makes position\") // {firstWord: \"sense\", lastWord: \"position\", updatedString: \"position makes sense\"}\nupdateString(\"Hello world\") // {firstWord: \"Hello\", lastWord: \"world\", updatedString: \"world Hello\"}\nupdateString(\"\") // {firstWord: \"\", lastWord: \"\", updatedString: \"\"}\n```",
-  "instructions": {}
-}

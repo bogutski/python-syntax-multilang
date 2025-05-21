@@ -1,4 +1,0 @@
-{
-  "name": "The sum of the odd numbers in the array. Instruction continue",
-  "instruction": "The `oddSum` function takes an array of numbers `arr` as a parameter.\n\nThe function should return the sum of odd numbers in the array.\n\nThe initial solution shows how to do this task using the `if` method.\n\nFix the code using the `continue` operator in the loop.\n\nAn example of running a function:\n```javascript\noddSum([1, 2, 3, 4, 5]) // 9\noddSum([0, 1, 2, 4, 6, 8]) // 1\n```\n\nThe task will be checked for the `continue` method.\n\nIf the array is empty, the function should return 0."
-}

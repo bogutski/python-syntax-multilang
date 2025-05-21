@@ -1,5 +1,0 @@
-{
-  "name": "Повторить первую и последнюю букву строки",
-  "instruction": "Напиши функцию `repeatString`, которая принимает 2 параметра:\n\n1. `string` - строка\n2. `count` - число\n\nПусть функция возьмет первый символ строки и последний символ строки и повторит их `count` раз.\n\nПример запуска функции:\n```javascript\nrepeatString('abc', 3); // 'acacac'\nrepeatString('abcde', 2); // 'aeae'\n```",
-  "instructions": {}
-}

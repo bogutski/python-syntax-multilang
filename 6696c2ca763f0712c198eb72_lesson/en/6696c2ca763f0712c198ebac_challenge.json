@@ -1,4 +1,0 @@
-{
-  "name": "Check the string for a palindrome",
-  "instruction": "The `checkStr` function takes the string `str` as a parameter and checks if the string is a palindrome.\n\nThe string `str` cannot be empty and all letters are lowercase.\n\nThe function must return a string of the form: `str is palindrome` or `str is not palindrome`, where `str` is the value of the function parameter.\n\nExamples of running the function:\n```javascript\ncheckStr(\"abba\") // \"abba is palindrome\"\ncheckStr(\"car\") // \"car is not palindrome\"\n```"
-}

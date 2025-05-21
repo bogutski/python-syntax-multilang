@@ -1,4 +1,0 @@
-{
-  "name": "Correct errors in the function code",
-  "instruction": "The `fixStr` function takes a string `str` and returns `true` if the string is a palindrome and `false` if not.\n\nYou need to fix errors in the code of the `fixStr` function to make it work properly.\n\nThere are no errors in the code, but there are syntax errors that prevent the function from working correctly.\n\nAn example of running the function:\n```javascript\nfixStr('abba'); // true\nfixStr('abca'); // false\n```"
-}

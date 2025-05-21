@@ -1,5 +1,0 @@
-{
-  "name": "Frame from the dollar symbol",
-  "instruction": "Write a function `dollarFrame` that takes a string and returns it in uppercase surrounded by a frame of dollar symbols.\n\nThe result should contain 3 lines.\n\nFunction execution examples:\n```javascript\ndollarFrame('  hello  '); // '$$$$$$$$$/n$ HELLO $/n$$$$$$$$$'\n\n$$$$$$$$$\n$ HELLO $\n$$$$$$$$$\n\ndollarFrame('A    '); // '$$$$$/n$ A $/n$$$$$'\n\n$$$$$\n$ A $\n$$$$$\n```\n\nUse the `\\n` symbol for line breaks.",
-  "instructions": {}
-}

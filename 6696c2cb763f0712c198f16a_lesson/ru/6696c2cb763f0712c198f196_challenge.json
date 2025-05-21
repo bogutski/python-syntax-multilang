@@ -1,5 +1,0 @@
-{
-  "name": "Симметричны ли массивы?",
-  "instruction": "Напишите функцию `areTwoArraysSymmetrical`, которая принимает два массива и возвращает `true`, если они симметричны, и `false` в противном случае.\n\nЧто бы два массива были симметричны, их длина должна быть одинаковой, а элементы расположены в обратном порядке.\n\nНапример: `[1, 2, 3]` и `[3, 2, 1]` - симметричны. `[1, 2, 3]` и `[3, 2, 4]` - не симметричны.\n\n\nПример запуска функции:\n```javascript\nareTwoArraysSymmetrical([10, 20, 30], [30, 20, 10]);       // true\nareTwoArraysSymmetrical(['a', 'b', 'c'], ['c', 'b', 'd']); // false\nareTwoArraysSymmetrical([1, 2, 3, 4, 5], [5, 4, 3]);       // false\nareTwoArraysSymmetrical([], []);                           // true\n```",
-  "instructions": {}
-}

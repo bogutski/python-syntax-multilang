@@ -1,6 +1,0 @@
-{
-  "name": "Переменная с названием компании.",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-10.png)\n\nВ 1997 г. основатели компании Ларри Пейдж и Сергей Брин обратились в Yahoo,\nчтобы продать свою разработку, но получили отказ.\n\nСоздайте переменную `nameOfCompany` и присвойте ей значение `'Google'`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst biggestOnlineShop = 'Amazon';\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst nameOfCompany = 'Google';\n```"
-}

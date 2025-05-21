@@ -1,6 +1,0 @@
-{
-  "name": "Присвойте переменной salary значение null",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-9.png)\n\nСоздайте переменную с именем `salary`.\nИспользуйте ключевое слово `const`.\nПрисвойте ей значение `null`.\n\nПринципиально похожий пример:\n```javascript\nconst price = null;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst salary = null;\n```"
-}

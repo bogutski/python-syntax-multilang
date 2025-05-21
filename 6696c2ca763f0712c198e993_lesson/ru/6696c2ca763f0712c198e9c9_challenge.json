@@ -1,5 +1,0 @@
-{
-  "name": "Очистить массив от boolean",
-  "instruction": "Функция `cleanFromBoolean` принимает массив `arr` в качестве параметра.\n\nМассив может содержать типы: string, number, boolean..\n\nФункция должна вернуть новый массив, состоящий только из строк и чисел. Если массив `arr` содержит только `boolean`, то новый массив будет пустым.\n\nИспользуйте инструкцию `continue` для решения этой задачи.\n\nРешение будет проверяться на использование `continue`.\n\nПример запуска функции:\n``` javascript\ncleanFromBoolean([1, 2, 'a', 'b', false, 5]) // [1, 2, 'a', 'b', 5]\ncleanFromBoolean([1, 2, 3, 4]) // [1, 2, 3, 4]\ncleanFromBoolean([true, true]) // []\n```",
-  "instructions": {}
-}

@@ -1,6 +1,0 @@
-{
-  "name": "Fix bugs in the code",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-21.png)\n\nI need to write a command that assigns to the variable `number`\nnegative number `-12` using the `let` keyword.\n\nCorrect the errors in the given code.",
-  "instructions": {},
-  "hint": "```javascript\nlet number = -12;\n```"
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Residue from dividing an odd number by 2",
-  "instruction": "An odd number 'b' is given. Find the residue from dividing 'b' by 2.\n\nCreate a variable `b` and assign to it the value of an arbitrary odd positive number.\nCreate a variable `remainder` and assign to it an expression to find the remainder of division of `b` by 2.\n\nHere is an example, which is fundamentally similar to what you need to do, but adapt it to the requirements of the problem:\n```\nconst x = 5;\nconst rest = x % 2;\n```"
-}

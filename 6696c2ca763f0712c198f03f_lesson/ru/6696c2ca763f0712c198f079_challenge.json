@@ -1,5 +1,0 @@
-{
-  "name": "Найти вторую минимальную цифру",
-  "instruction": "Исправьте функцию `secondMinNumber`, которая принимает массив с одной строкой.\n\nВ строке находятся цифры без разделения. Например: `['12345']`.\n\nФункция должна вернуть вторую минимальную цифру, которая будет переведена в тип данных `number`.\n\n* Если массив либо строка пустая, то вернуть `'There are no numbers'`.\n* Если в строке нет второй минимальной цифры, то вернуть `'There is no second min number'`.\n\nВ коде три ошибки.\n\nРазберитесь как работает код, исправьте ошибки и перепишите код самостоятельно.\n\n\nПример запуска функции:\n```javascript\nsecondMinNumber(['123']);  // 2\nsecondMinNumber(['98']);   // 9\nsecondMinNumber(['555']);  // 'There is no second min number' \nsecondMinNumber(['']);     // 'There are no numbers'\nsecondMinNumber([]);       // 'There are no numbers'\n```",
-  "instructions": {}
-}

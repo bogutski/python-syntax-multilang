@@ -1,4 +1,0 @@
-{
-  "name": "Return the specified index from the string",
-  "instruction": "Write a function `getByIndex` that takes a string and an index and returns the character that is in that string at the specified index.\n\nExamples of running the function:\n```javascript\ngetByIndex('abc', 0); // 'a'\ngetByIndex('JS', 1); // 'S'\ngetByIndex('JS', 0); // 'J'\n```\n\n\nA similar example:\n```javascript\nconst i = 2;\nconst str = 'abc';\nconsole.log(str[i]); // 'c'\n```"
-}

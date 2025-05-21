@@ -1,5 +1,0 @@
-{
-  "name": "Сумма всех чисел из массива",
-  "instruction": "Напишите функцию `sumAllNumbers`, которая принимает массив из численных и строковых значений.\n\nФункция должна вернуть новый массив, в который будут добавлены все числовые значения из исходного массива и последним элементом будет добавлена строка, следующего вида:\n\n * `'Sum of all numbers is 15'`, где 15 - это сумма всех числовых значений.\n\nЕсли массив пустой, то функция должна вернуть строку `'Array is empty'`.\n\n\nПримеры запуска функции:\n```javascript\nsumAllNumbers([]);                  // 'Array is empty'\nsumAllNumbers([1, 2, 3]);           // [1, 2, 3, 'Sum of all numbers is 6']\nsumAllNumbers(['1', '2', '3']);     // ['Sum of all numbers is 0']\nsumAllNumbers([0, 0, 0]);           // [0, 0, 0, 'Sum of all numbers is 0']\nsumAllNumbers([1, '2', 3, 'a', 5]); // [1, 3, 5, 'Sum of all numbers is 9']\n```",
-  "instructions": {}
-}

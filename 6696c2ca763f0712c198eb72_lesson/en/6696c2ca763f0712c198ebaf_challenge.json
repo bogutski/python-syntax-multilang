@@ -1,4 +1,0 @@
-{
-  "name": "What letter prevents a palindrome from being a palindrome?",
-  "instruction": "The `findWrongLetter` function takes a string.\n\nThis string is almost a palindrome, but one letter in it is wrong.\n\nYou need to find the index of this letter and return a string of the following form:\n\n`${str} is not palindrome because of wrong letter at position ${wrongLetter}`, where `str` - original string, `wrongLetter` - index of wrong letter.\n\nThe string contains only one wrong letter.\n\nExample:\n```javascript\nfindWrongLetter('alba') // 'alba is not palindrome because of wrong letter at position 1'\nfindWrongLetter('midam') // 'midam is not palindrome because of wrong letter at position 1'\n```"
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Compiler of abbreviations",
-  "instruction": "An abbreviation is an abbreviation of a word or phrase formed from the first letters of the words that make it up. For example, BMW is an abbreviation formed from the first letters of the words \"Bayerische Motoren Werke\"\n\nWrite a function `makeAcronym` that takes three strings and returns an abbreviation formed from the first letters of those strings.\n\nAn example of running the function:\n```javascript\nmakeAcronym(' Kentucky', ' Fried', 'Chicken'); // 'KFC'\nmakeAcronym(' node', package', ' Manager'); // 'NPM'\nmakeAcronym(' national', ' hockey', 'League'); // 'NHL'\n```"
-}

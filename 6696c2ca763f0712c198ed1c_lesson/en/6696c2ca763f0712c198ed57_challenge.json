@@ -1,4 +1,0 @@
-{
-  "name": "The object of the lines and their number",
-  "instruction": "Write a function `objectCount` that takes an array and returns an object where the keys are the words in the array and the value of the key is the number of those words in the array.\n\nAll strings in the array are written without spaces and in lowercase.\n\nIf the array is empty, the function should return `\"No words - no object\"`.\n\nYou can use the `hasOwnProperty` method to check if there is a key in the object.\n\n\nExamples of running the function:\n```javascript\nobjectCount(['hello', 'hello', 'hello', 'bob', 'bob']); // {hello: 3, bob: 2}\nobjectCount(['a', 'b', 'b', 'k', 'a']); // {a: 2, b: 2, k: 1}\nobjectCount([]); // 'No words - no object'\n```"
-}

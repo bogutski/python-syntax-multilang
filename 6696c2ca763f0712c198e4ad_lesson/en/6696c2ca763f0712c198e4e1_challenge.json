@@ -1,4 +1,0 @@
-{
-  "name": "Remove spaces and convert to lowercase",
-  "instruction": "Write a function `cleanAndLower` that takes a string and returns it without spaces at the beginning and end, and in lower case.\n\nExample:\n```javascript.\ncleanAndLower(' Hello World ') // 'hello world'\ncleanAndLower(' tESt ') // 'test'\n```"
-}

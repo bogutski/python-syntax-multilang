@@ -1,4 +1,0 @@
-{
-  "name": "Email cleanup",
-  "instruction": "Site users enter their email into the form. But sometimes they enter it with spaces at the beginning and at the end. For example, `' SomeEmail@GmAiL.COM '`\n\nWe need to run the email through a function that removes spaces at the beginning and end of the string and causes it to be lowercase - `someemail@gmail.com`\n\nWrite a function `clearEmail` that takes a string and returns it without spaces at the beginning and end and lowercase.\n\nIf the string is empty after removing spaces, the function should return `Empty email`.\n\nAn example of running the function:\n```javascript\nclearEmail(' exaMPLe@emaIl.COM '); // 'example@email.com'\nclearEmail(' '); // 'Empty email'\n```"
-}

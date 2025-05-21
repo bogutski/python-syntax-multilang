@@ -1,4 +1,0 @@
-{
-  "name": "An array of degrees of two",
-  "instruction": "The function `powerOfTwo` takes the number `num` and returns an array containing degrees of two from 2^num to 2^0.\n\nIf `num` is less than 0, the function should return an empty array.\n\nAn example of running the function:\n```javascript\npowerOfTwo(2) // [4, 2, 1]\npowerOfTwo(-1) // []\n```"
-}

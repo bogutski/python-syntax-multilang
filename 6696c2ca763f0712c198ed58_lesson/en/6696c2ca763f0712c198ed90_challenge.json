@@ -1,4 +1,0 @@
-{
-  "name": "Duplicate letter",
-  "instruction": "Fix the `findDuplicate` function, which takes a string `str` and returns `true` if the string `str` has the same letters, returns `false` otherwise.\n\nNote that a capital letter is not a duplicate of a small letter or vice versa.\n\nExamples of this function:\n```javascript\nfindDuplicate('a b c d d'); // true\nfindDuplicate('a b c d e'); // false\nfindDuplicate('A b C d a'); // false\nfindDuplicate('A b C d A'); // true\n```"
-}

@@ -1,4 +1,0 @@
-{
-  "name": "Finding the sum of negative numbers divisible by 3",
-  "instruction": "Write a function `negativeAndDivisibleBy3` that takes two numbers `n1` and `n2` and returns the sum of all negative numbers divisible by 3 in the range `n1` to `n2` inclusive.\n\n`n1` will always be less than or equal to `n2`.\n\nTo check that `n` is a multiple of 3, use the operator `%` (remainder of division).\nA number `n` is a multiple of 3 if the remainder of division by 3 is 0.\n\nExamples of running a function:\n```javascript\nnegativeAndDivisibleBy3(-10, 10); // -9\nnegativeAndDivisibleBy3(-25, -10); // -18\nnegativeAndDivisibleBy3(0, 0); // 0\n```"
-}

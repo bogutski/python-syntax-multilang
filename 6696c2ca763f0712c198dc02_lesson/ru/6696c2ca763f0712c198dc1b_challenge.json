@@ -1,6 +1,0 @@
-{
-  "name": "Какой тип имеет строка?",
-  "instruction": "Создайте переменную с именем `message` и присвойте ей значение `'hello world'`.\nСоздайте переменную `typeOfMessage` и присвойте ей значение типа переменной `message`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst hi = 'good morning';\nconst typeOfHi = typeof(hi);\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst message = 'hello world';\nconst typeOfMessage = typeof (message);\n```"
-}

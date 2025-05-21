@@ -1,5 +1,0 @@
-{
-  "name": "Fill array elements up to 5 characters",
-  "instruction": "Write a function `fillThemUp` that takes an array of strings of different lengths.\n\nThe function should iterate through the array and check the length of each element.\n\n* If the length of the string is less than `5`, then the string should have `#` characters added to the end until the length of the string becomes `5`.\n* If the length of the string is greater than or equal to `5`, the string should remain unchanged.\n\nThe function should return a new array with all the strings.\n\nIf the array is empty, the function should return `false`.\n\n\nExamples of function calls:\n```javascript\nfillThemUp(['1', '22', '333', '4444', '55555']) // ['1####', '22###', '333##', '4444#', '55555']\nfillThemUp(['abc', 'ab', 'a', 'abcd'])          // ['abc##', 'ab###', 'a####', 'abcd#']\nfillThemUp(['a', 'b', 'c'])                     // ['a####', 'b####', 'c####']\nfillThemUp(['', '', ''])                        // ['#####', '#####', '#####']\nfillThemUp([])                                  // false\n```",
-  "instructions": {}
-}

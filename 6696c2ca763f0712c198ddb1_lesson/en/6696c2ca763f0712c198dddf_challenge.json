@@ -1,6 +1,0 @@
-{
-  "name": "Calculate and output to the console. Multiply",
-  "instruction": "Only one line.\n\nWrite the command `console.log(2.2 * 3.14);`\n\nObserve spaces and punctuation marks.",
-  "instructions": {},
-  "hint": "```javascript\nconsole.log(2.2 * 3.14);\n```"
-}

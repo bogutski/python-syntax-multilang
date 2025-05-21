@@ -1,6 +1,0 @@
-{
-  "name": "\"Stylish\" variables",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-2.png)\n\n`Camel case` is the practice of writing phrases in such a way that each word or abbreviation in the middle of a phrase\n begins with a capital letter, with no intervening spaces or punctuation. For example, `camelCase`.\nThe `camelCase` style is used for variable names in programming.\n\nFor the assignment, select variables from the list whose names are written in the camelCase style,\ncreate variables with these names, and assign values to the variables in the form of a string corresponding to the name.\n\nThe list of names:\n`eBay`; `dayReport`; `number_of_tasks`; `dayOfWeek`; `redbook`; `userLogin`.\n\nHere is an example that is fundamentally similar to what you need to do,\nbut adapt it to the requirements of the task:\n```javascript\nconst iPhone = 'iPhone';\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst eBay = 'eBay';\nconst dayReport = 'dayReport';\nconst dayOfWeek = 'dayOfWeek';\nconst userLogin = 'userLogin';\n```"
-}

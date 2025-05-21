@@ -1,1 +1,0 @@
-# Поиска индекса. Методы indexOf, lastIndexOf language: es

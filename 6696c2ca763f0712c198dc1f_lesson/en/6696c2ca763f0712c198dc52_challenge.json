@@ -1,6 +1,0 @@
-{
-  "name": "More than the previous one by a factor of 7",
-  "instruction": "Create a `level1` variable and assign any number between 1 and 10 to it.\n\nCreate a second variable `levelUp`, which will be 7 times larger than `level1`.\n\nHere is an example that is fundamentally similar to what you need to do, but adapt it to the requirements of the task:\n\n```javascript\nconst before = 2;\nconst after = before * 4;\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst level1 = 8;\nconst levelUp = level1 * 7;\n```"
-}

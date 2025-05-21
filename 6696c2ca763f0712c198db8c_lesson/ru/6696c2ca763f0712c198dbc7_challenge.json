@@ -1,6 +1,0 @@
-{
-  "name": "Переменная с именем победителя Оскара",
-  "instruction": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-4-task-13.png)\n\nСоздайте переменную `oscarWinner` с именем победителя Оскара и присвойте ей значение `'Leonardo Di Caprio'`.\n\nПриведем пример, который принципиально похож на то, что нужно сделать,\nно адаптируйте его к требованиям задачи:\n```javascript\nconst grammyWinner = 'Lady Gaga';\n```",
-  "instructions": {},
-  "hint": "```javascript\nconst oscarWinner = 'Leonardo Di Caprio';\n```"
-}
