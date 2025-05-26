@@ -28,11 +28,21 @@
             "en": "First Lesson",
             "es": ""
           },
-          "challenges": [
-            "682b9481ee3f7eb5776d4d7f"
-          ],
+          "challenges": [],
           "questionGroups": [
             "682dd24075569a802b11bf75"
+          ]
+        },
+        {
+          "_id": "6696c2ca763f0712c198dade",
+          "name": {
+            "ru": "Программисты и программы. Консоль",
+            "en": "Programmers and programs. Console",
+            "es": ""
+          },
+          "challenges": [],
+          "questionGroups": [
+            "6696c2ca763f0712c198dadf"
           ]
         }
       ]
