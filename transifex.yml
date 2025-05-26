@@ -15,3 +15,18 @@ git:
      source_file_dir: 682b93c7114ad1e4982f4bc5_lesson/ru
      translation_files_expression: '682b93c7114ad1e4982f4bc5_lesson/<lang>'
 
+   # Lesson Программисты и программы. Консоль
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 6696c2ca763f0712c198dade_lesson/ru
+     translation_files_expression: '6696c2ca763f0712c198dade_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 6696c2ca763f0712c198dade_lesson/ru
+     translation_files_expression: '6696c2ca763f0712c198dade_lesson/<lang>'
+
