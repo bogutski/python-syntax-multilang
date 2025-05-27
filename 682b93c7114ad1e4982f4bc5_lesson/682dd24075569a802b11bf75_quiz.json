@@ -12,7 +12,7 @@
         {
           "_id": "682dd7f2d01082bac9e9254b",
           "name": {
-            "en": "Learning the basics of programming",
+            "en": "Learning the basics of programming with Python",
             "ru": "Изучение основ программирования с использованием языка Python"
           },
           "correct": true
@@ -29,7 +29,7 @@
     {
       "_id": "682dd804b3f5b3719f7443d2",
       "name": {
-        "en": "To go to the next lesson",
+        "en": "What needs to be done to move on to the next lesson?",
         "ru": "Что нужно сделать, чтобы перейти к следующему уроку?"
       },
       "answerType": "single",
@@ -45,8 +45,8 @@
         {
           "_id": "682dd80e524225fd77e3a3a7",
           "name": {
-            "en": "You can skip the test ",
-            "ru": "Прочитать лекцию и нажать «далее»"
+            "en": "Read the lecture and click “Next”",
+            "ru": "Прочитать лекцию и нажать «Далее»"
           }
         }
       ]
@@ -62,14 +62,14 @@
         {
           "_id": "682dd81a1c0f25b9d1fb3bfc",
           "name": {
-            "en": "Only once.",
+            "en": "Only once",
             "ru": "Только один раз"
           }
         },
         {
           "_id": "682dd81f316743aee65e7720",
           "name": {
-            "en": "Twice.",
+            "en": "Twice",
             "ru": "Два раза"
           }
         },
@@ -86,15 +86,15 @@
     {
       "_id": "682dd82cb45839541b69e512",
       "name": {
-        "en": "I understand that during the lecture it is desirable: to repeat the code shown on the screen, to pay attention to the code of errors that occur during the execution of programs",
-        "ru": "Во время прохождения лекции желательно"
+        "en": "While going through the lecture, it is recommended to:",
+        "ru": "Во время прохождения лекции желательно:"
       },
       "answerType": "multi",
       "variants": [
         {
           "_id": "682dd838c35086bc793de61b",
           "name": {
-            "en": "Yes",
+            "en": "Repeat the code from the lecture",
             "ru": "Повторять код из лекции"
           },
           "correct": true
@@ -102,7 +102,7 @@
         {
           "_id": "682dd83e40796de66911a619",
           "name": {
-            "en": "No",
+            "en": "Pay attention to errors",
             "ru": "Обращать внимание на ошибки"
           },
           "correct": true
@@ -112,15 +112,15 @@
     {
       "_id": "682dd845a326ac260324da87",
       "name": {
-        "en": "After passing the test ",
-        "ru": "После прохождения теста можно"
+        "en": "After completing the quiz, you can:",
+        "ru": "После прохождения теста, можно:"
       },
       "answerType": "multi",
       "variants": [
         {
           "_id": "682dd84be3cce756275db940",
           "name": {
-            "en": "you can see the mistakes you've made",
+            "en": "View your mistakes",
             "ru": "Посмотреть ошибки"
           },
           "correct": true
@@ -128,7 +128,7 @@
         {
           "_id": "682dd851b6be89084cb3fc5d",
           "name": {
-            "en": "retest",
+            "en": "Retake the quiz",
             "ru": "Повторить тест"
           },
           "correct": true
@@ -136,7 +136,7 @@
         {
           "_id": "682dd8581809e20992ef5608",
           "name": {
-            "en": "you can read more information and perform the test again",
+            "en": "Read the additional information and take the quiz again",
             "ru": "Прочитать дополнительную информацию и выполнить тест еще раз"
           },
           "correct": true
@@ -144,7 +144,7 @@
         {
           "_id": "682dd85df48a0c13766874be",
           "name": {
-            "en": "revise the lecture for a better understanding of the material and perform the test again",
+            "en": "Read the lecture again for better understanding of the material and take the quiz again",
             "ru": "Прочитать лекцию еще раз для лучшего понимания материала и выполнить тест снова"
           },
           "correct": true
@@ -152,7 +152,7 @@
         {
           "_id": "682dd8684ad431d53bc07770",
           "name": {
-            "en": "nothing can be fixed",
+            "en": "Nothing can be changed",
             "ru": "Нельзя ничего изменить"
           }
         }

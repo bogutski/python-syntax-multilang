@@ -44,6 +44,20 @@
           "questionGroups": [
             "6696c2ca763f0712c198dadf"
           ]
+        },
+        {
+          "_id": "6696c2ca763f0712c198db00",
+          "name": {
+            "ru": "Первая программа Hello World",
+            "en": "First program Hello World",
+            "es": ""
+          },
+          "challenges": [
+            "6696c2ca763f0712c198daf6"
+          ],
+          "questionGroups": [
+            "6696c2ca763f0712c198db01"
+          ]
         }
       ]
     }

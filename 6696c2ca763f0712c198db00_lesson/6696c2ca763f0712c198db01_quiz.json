@@ -1,0 +1,204 @@
+{
+  "_id": "6696c2ca763f0712c198db01",
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198db02",
+      "name": {
+        "en": "",
+        "ru": "Что делает команда `print(\"Hello, world!\")`?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db03",
+          "name": {
+            "en": "",
+            "ru": "Включает принтер"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db04",
+          "name": {
+            "en": "",
+            "ru": "Показывает текст в консоли (в Output)"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db05",
+      "name": {
+        "en": "",
+        "ru": "Где мы будем писать первые строки кода?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db06",
+          "name": {
+            "en": "",
+            "ru": "В текстовом редакторе Word"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db07",
+          "name": {
+            "en": "",
+            "ru": "В специальной онлайн-песочнице"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db08",
+      "name": {
+        "en": "",
+        "ru": " Что нужно сделать, чтобы запустить код в песочнице?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db09",
+          "name": {
+            "en": "",
+            "ru": "Нажать `Enter` на клавиатуре"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db0a",
+          "name": {
+            "en": "",
+            "ru": "Нажать на кнопку `Run`"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db0b",
+      "name": {
+        "en": "",
+        "ru": "Что выведет эта программа?\n\n```python\nprint(2 + 5)\n```"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db09",
+          "name": {
+            "en": "",
+            "ru": "25"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db0a",
+          "name": {
+            "en": "",
+            "ru": "\"2 + 5\""
+          }
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db0b",
+      "name": {
+        "en": "",
+        "ru": "Что делать, если код не работает и появляется ошибка?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db0c",
+          "name": {
+            "en": "",
+            "ru": " Игнорировать и идти дальше"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db0d",
+          "name": {
+            "en": "",
+            "ru": "Внимательно прочитать сообщение и сравнить код с примером"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db0f",
+      "name": {
+        "en": "",
+        "ru": "Что из этого является правильным синтаксисом команды вывода в Python?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db10",
+          "name": {
+            "en": "",
+            "ru": "```python\nPrint('Hello')\n```"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db11",
+          "name": {
+            "en": "",
+            "ru": "```python\nprint('Hello')\n```"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db12",
+      "name": {
+        "en": "",
+        "ru": "Что будет результатом выполнения этого кода?\n\n```python\nprint(\"3 + 4\")\n```"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db13",
+          "name": {
+            "en": "",
+            "ru": "7"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db14",
+          "name": {
+            "en": "",
+            "ru": "Ошибка"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db15",
+          "name": {
+            "en": "",
+            "ru": "Ничего не произойдёт"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db16",
+          "name": {
+            "en": "",
+            "ru": "\"3 + 4\""
+          },
+          "correct": true
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": true,
+  "description": {
+    "en": "Summary of the Python Syntax course",
+    "ru": "Краткая информация о курсе Python Syntax"
+  },
+  "name": {
+    "en": "Python Syntax. First program Hello World",
+    "ru": "Python Syntax. Первая программа Hello World"
+  }
+}
