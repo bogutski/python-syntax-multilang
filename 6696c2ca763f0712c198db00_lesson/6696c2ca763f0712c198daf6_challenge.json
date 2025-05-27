@@ -1,0 +1,22 @@
+{
+  "completedSolution": "print(\"Hello world\")",
+  "initialSolution": "",
+  "openTest": "print(\"Hello world\")",
+  "name": {
+    "en": "First program \"Hello World\"",
+    "ru": "Первая программа \"Hello world\""
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-course1-task-1.png)\r\nOutput the phrase \"Hello world\" to the console.\r\n\r\nTo do this, type the command:\r\n```\r\nprint(\"Hello world\")\r\n```\r\nAfter that, click the - `Validate solution` button.\r\n\r\nIf error messages appear in the window on the right, correct them.\r\n\r\nIf the green mark `passed` appears in the window on the right, then you have done everything correctly.\r\n\r\nThen click the `Submit solution` button.\r\n\r\nThe task is considered completed when a green marking `Completed` will appear next to the task name.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-course1-task-1.png)\r\n\r\nВыведите в консоль фразу \"Hello world\".\r\n\r\nДля этого напечатайте команду:\r\n```\r\nprint(\"Hello world\")\r\n```\r\nПосле этого нажмите кнопку - `Проверить решение`.\r\n\r\nЕсли в появившемся справа окне появились сообщения об ошибках, исправьте их.\r\n\r\nЕсли в окне справа появилась зеленая отметка `passed`, значит, вы все сделали правильно.\r\n\r\nПосле этого нажмите кнопку - `Отправить решение`.\r\n\r\nПри этом задание считается выполненным, если около названия задачи появится зеленая отметка - `Completed`."
+  },
+  "hint": {
+    "en": "",
+    "ru": ""
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198daf6"
+}
