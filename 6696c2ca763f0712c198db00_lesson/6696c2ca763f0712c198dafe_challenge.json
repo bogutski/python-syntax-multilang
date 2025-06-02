@@ -1,0 +1,22 @@
+{
+  "completedSolution": "print(\"Coding\")",
+  "initialSolution": "print ( \" Coding \" )",
+  "openTest": "print(\"Coding\")",
+  "name": {
+    "en": "Remove any extra spaces",
+    "ru": "Удалите лишние пробелы"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-9.png)\r\n\r\nYou need to write a command that outputs the word \"Coding\" to the console.\r\n\r\nRemove unnecessary spaces in the code.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-9.png)\r\n\r\nТребуется написать команду, которая выводит в консоль слово \"Coding\".\r\n\r\nУдалите лишние пробелы в приведенном коде."
+  },
+  "hint": {
+    "en": "",
+    "ru": ""
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dafe"
+}

@@ -1,0 +1,22 @@
+{
+  "completedSolution": "print(2025)",
+  "initialSolution": "",
+  "openTest": "print(2025)",
+  "name": {
+    "en": "Output a number to the console",
+    "ru": "Вывод числа в консоль"
+  },
+  "instruction": {
+    "en": "Write a command that outputs the number 2025 to the console.",
+    "ru": "Напишите команду, которая выводит в консоль число 2025.\r\n\r\nЧисло должно быть без кавычек."
+  },
+  "hint": {
+    "en": "```python\r\nprint(2030)\r\n```",
+    "ru": "```python\r\nprint(2030)\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dafb"
+}

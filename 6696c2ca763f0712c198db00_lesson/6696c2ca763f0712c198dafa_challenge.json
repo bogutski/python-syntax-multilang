@@ -1,0 +1,22 @@
+{
+  "completedSolution": "print(\"PASV\")",
+  "initialSolution": "",
+  "openTest": "print(\"PASV\")",
+  "name": {
+    "en": "Console PASV",
+    "ru": "Console PASV"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-5.png)\r\n\r\nWrite a command that outputs the word `\"PASV\"` to the console.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-5.png)\r\n\r\nНапишите команду, которая выводит в консоль слово `\"PASV\"`."
+  },
+  "hint": {
+    "en": "",
+    "ru": ""
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dafa"
+}

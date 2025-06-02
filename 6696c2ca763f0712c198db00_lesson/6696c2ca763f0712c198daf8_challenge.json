@@ -1,0 +1,22 @@
+{
+  "completedSolution": "print(\"Have a good day!\")",
+  "initialSolution": "print(Have a good day!)",
+  "openTest": "print(\"Have a good day!\")",
+  "name": {
+    "en": "Correct errors in the code",
+    "ru": "Исправить ошибки в коде. Следим за кавычками"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-3.png)\r\nYou need to output to the console the phrase: \"Have a good day!\"\r\n\r\nCorrect the errors in the code.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-3.png)\r\n\r\nТребуется вывести в консоль фразу: \"Have a good day!\".\r\n\r\nУбедитесь, что фраза обрамлена в кавычки.\r\n\r\nИсправьте ошибки в приведенном коде."
+  },
+  "hint": {
+    "en": "```python\r\nprint(\"Have a good day!')\r\n```",
+    "ru": "```python\r\nprint(\"Have a good day!\")\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198daf8"
+}
