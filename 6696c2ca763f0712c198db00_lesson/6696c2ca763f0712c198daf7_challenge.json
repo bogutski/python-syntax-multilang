@@ -1,0 +1,22 @@
+{
+  "completedSolution": "print(\"I am studying Python programming\")",
+  "initialSolution": "",
+  "openTest": "print(\"I am studying Python programming\")",
+  "name": {
+    "en": "\"I am studying Python programming\"",
+    "ru": "\"I am studying Python programming\""
+  },
+  "instruction": {
+    "en": "Output the phrase \"I am studying Python programming\" to console.\r\n\r\nTo do this, type the command:\r\n```\r\nprint(\"I am studying Python programming\")\r\n```",
+    "ru": "Выведите в консоль фразу \"I am studying Python programming\".\r\n\r\nДля этого напечатайте команду:\r\n```\r\nprint(\"I am studying Python programming\")\r\n```"
+  },
+  "hint": {
+    "en": "",
+    "ru": ""
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198daf7"
+}

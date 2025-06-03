@@ -1,0 +1,22 @@
+{
+  "completedSolution": "#print(\"Testing\")",
+  "initialSolution": "",
+  "openTest": "#print(\"Testing\")",
+  "name": {
+    "en": "Commentary in the program",
+    "ru": "Комментарий в программе"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-8.png)\r\n\r\nWrite a command to output the word \"Testing\" to the console and comment out that line.\r\n\r\nSimilar solution is:\r\n```python\r\n#print(\"Hello Python\")\r\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-8.png)\r\n\r\nНапишите команду вывода в консоль слова \"Testing\" и закомментируйте эту строку.\r\n\r\nПохожий пример решения:\r\n```python\r\n#print(\"Hello Python\")\r\n```"
+  },
+  "hint": {
+    "en": "",
+    "ru": ""
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dafd"
+}

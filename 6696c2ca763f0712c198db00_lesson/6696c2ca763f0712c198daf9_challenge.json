@@ -1,0 +1,22 @@
+{
+  "completedSolution": "print(\"Happy New Year!\")",
+  "initialSolution": "Print['Happy New Year!']:",
+  "openTest": "print(\"Happy New Year!\")",
+  "name": {
+    "en": "Correct errors in the code - 2",
+    "ru": "Исправьте ошибки в коде - 2"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-4.png)\r\n\r\nYou need to display the following phrase in the console: \"Happy New Year!\"\r\n\r\nCorrect the errors in the given code.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-4.png)\r\n\r\nТребуется вывести в консоль фразу: 'Happy New Year!'.\r\n\r\nИсправьте ошибки в приведенном коде."
+  },
+  "hint": {
+    "en": "",
+    "ru": ""
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198daf9"
+}

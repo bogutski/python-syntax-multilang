@@ -49,7 +49,16 @@ module.exports = {
             es: ''
           },
           challenges: [
-            '6696c2ca763f0712c198daf6'
+            '6696c2ca763f0712c198daf6',
+            '6696c2ca763f0712c198daf7',
+            '6696c2ca763f0712c198daf8',
+            '6696c2ca763f0712c198daf9',
+            '6696c2ca763f0712c198dafa',
+            '6696c2ca763f0712c198dafb',
+            '6696c2ca763f0712c198dafc',
+            '6696c2ca763f0712c198dafd',
+            '6696c2ca763f0712c198dafe',
+            '6696c2ca763f0712c198db29'
           ],
           questionGroups: ['6696c2ca763f0712c198db01']
         }

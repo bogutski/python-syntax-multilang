@@ -1,0 +1,22 @@
+{
+  "completedSolution": "print(5 + 7)",
+  "initialSolution": "",
+  "openTest": "print(5 + 7)",
+  "name": {
+    "en": "Display the sum of numbers",
+    "ru": "Выведите в консоль сумму чисел"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-course-2-task-1-.png)\r\n\r\nDisplay the sum of the numbers 5 and 7 in the console.\r\n\r\nSimilar example:\r\n```python\r\nprint(10 + 25)\r\n```",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-course-2-task-1-.png)\r\n\r\nВыведите в консоль сумму чисел 5 и 7.\r\n\r\nПохожий пример:\r\n```python\r\nprint(10 + 25)\r\n```"
+  },
+  "hint": {
+    "en": "",
+    "ru": ""
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db29"
+}

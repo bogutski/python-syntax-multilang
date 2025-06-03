@@ -1,0 +1,22 @@
+{
+  "completedSolution": "print(125)",
+  "initialSolution": "print(\"135\");",
+  "openTest": "print(125)",
+  "name": {
+    "en": "Correct errors in the code - 3",
+    "ru": "Исправьте ошибки в коде. Вывод числа в консоль"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-7.png)\r\n\r\nYou need to write a command that outputs the number 125 to the console.\r\n\r\nCorrect the errors in the code.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-1-task-7.png)\r\n\r\nТребуется написать команду, которая выводит в консоль число 125.\r\n\r\nИсправьте ошибки в приведенном коде."
+  },
+  "hint": {
+    "en": "```python\r\nprint(521)\r\n```",
+    "ru": "```python\r\nprint(521)\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dafc"
+}

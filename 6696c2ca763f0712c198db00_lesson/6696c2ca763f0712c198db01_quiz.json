@@ -5,7 +5,7 @@
       "_id": "6696c2ca763f0712c198db02",
       "name": {
         "en": "",
-        "ru": "Что делает команда \n\n```python\nprint(\"Hello, world!\")\n```?"
+        "ru": "Что делает команда: \"print(\"Hello, world!\")\" ?"
       },
       "answerType": "single",
       "variants": [
@@ -80,7 +80,7 @@
       "_id": "6696c2ca763f0712c198db0b",
       "name": {
         "en": "",
-        "ru": "Что выведет эта программа?\n\n```python\nprint(2 + 5)\n```"
+        "ru": "Что выведет эта программа: \"print(2 + 5)\" ?"
       },
       "answerType": "single",
       "variants": [
@@ -88,7 +88,7 @@
           "_id": "6696c2ca763f0712c198db0c",
           "name": {
             "en": "",
-            "ru": "25"
+            "ru": "7"
           },
           "correct": true
         },
@@ -138,14 +138,14 @@
           "_id": "6696c2ca763f0712c198db13",
           "name": {
             "en": "",
-            "ru": "Print('Hello')"
+            "ru": "Print(\"Hello\")"
           }
         },
         {
           "_id": "6696c2ca763f0712c198db14",
           "name": {
             "en": "",
-            "ru": "print('Hello')"
+            "ru": "print(\"Hello\")"
           },
           "correct": true
         }
@@ -155,7 +155,7 @@
       "_id": "6696c2ca763f0712c198db17",
       "name": {
         "en": "",
-        "ru": "Что будет результатом выполнения этого кода?\n\n```python\nprint(\"3 + 4\")\n```"
+        "ru": "Что будет результатом выполнения этого кода: \"print(\"3 + 4\")\" ?"
       },
       "answerType": "single",
       "variants": [
