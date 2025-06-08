@@ -1,0 +1,22 @@
+{
+  "completedSolution": "price = 123",
+  "initialSolution": "",
+  "openTest": "class TestClass(object):\r\n  def test_1(self):\r\n    assert 'price' in globals(), \"The variable 'price' should be defined\"\r\n\r\n  def test_2(self):\r\n    assert price == 123, \"The value of 'price' should be 123\"",
+  "name": {
+    "en": "The first variable. The number",
+    "ru": "Первая переменная. Число"
+  },
+  "instruction": {
+    "en": "Create a variable named `price` and assign the number `123` to it.",
+    "ru": "Создайте переменную с именем `price` и присвойте ей число `123`."
+  },
+  "hint": {
+    "en": "```python\r\nprice = 123\r\n```",
+    "ru": "```python\r\nprice = 123\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db42"
+}

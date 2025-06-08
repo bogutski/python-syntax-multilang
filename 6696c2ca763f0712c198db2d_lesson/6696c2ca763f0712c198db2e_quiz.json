@@ -1,0 +1,168 @@
+{
+  "_id": "6696c2ca763f0712c198db2e",
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198db2f",
+      "name": {
+        "ru": "Какое значение можно использовать для обозначения 'пустой' переменной в Python?",
+        "en": "What value can be used to indicate an 'empty' variable in Python?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db30",
+          "name": {
+            "ru": "None",
+            "en": "None"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db31",
+          "name": {
+            "ru": "Empty",
+            "en": "Empty"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db32",
+          "name": {
+            "ru": "Null",
+            "en": "Null"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db33",
+          "name": {
+            "ru": "Zero",
+            "en": "Zero"
+          }
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db34",
+      "name": {
+        "ru": "В ходе выполнения программы переменные используются для:",
+        "en": "During program execution, variables are used:"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db35",
+          "name": {
+            "ru": "Вывода значений в консоль",
+            "en": "To output values to the console"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db36",
+          "name": {
+            "ru": "Хранения данных",
+            "en": "For data storage"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db37",
+          "name": {
+            "ru": "Проверки корректности программы",
+            "en": "For checking program correctness"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db38",
+          "name": {
+            "ru": "Красоты",
+            "en": "For aesthetics"
+          }
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db39",
+      "name": {
+        "ru": "При создании переменной в Python нужно обязательно указать её имя.",
+        "en": "When creating a variable in Python, you must specify its name."
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db3a",
+          "name": {
+            "ru": "Да",
+            "en": "Yes"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db3b",
+          "name": {
+            "ru": "Нет",
+            "en": "No"
+          }
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db3c",
+      "name": {
+        "ru": "Можно ли создать переменную в Python и сразу не задавать ей конкретного значения (например, числа или текста)?",
+        "en": "Can you create a variable in Python without immediately assigning it a specific value (like a number or text)?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db3d",
+          "name": {
+            "ru": "Нет, всегда нужно указывать значение",
+            "en": "No, you must always assign a value"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db3e",
+          "name": {
+            "ru": "Да, можно присвоить значение None",
+            "en": "Yes, you can assign the value None"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db3f",
+      "name": {
+        "ru": "В Python при создании переменной нужно обязательно указывать её тип (например: int, str).",
+        "en": "In Python, do you need to specify the variable type (like int, str) when creating it?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db40",
+          "name": {
+            "ru": "Да",
+            "en": "Yes"
+          }
+        },
+        {
+          "_id": "6696c2ca763f0712c198db41",
+          "name": {
+            "ru": "Нет",
+            "en": "No"
+          },
+          "correct": true
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": true,
+  "description": {
+    "ru": "Вопросы по теме переменных в Python",
+    "en": "Quiz on Python variables"
+  },
+  "name": {
+    "ru": "Python Syntax. Что такое переменная?",
+    "en": "Python Syntax. What is a variable?"
+  }
+}
