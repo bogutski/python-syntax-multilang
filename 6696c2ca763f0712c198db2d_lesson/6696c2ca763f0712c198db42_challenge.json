@@ -1,7 +1,7 @@
 {
   "completedSolution": "price = 123",
   "initialSolution": "",
-  "openTest": "class TestClass(object):\r\n  def test_1(self):\r\n    assert 'price' in globals() or 'price' in locals(), \"The variable 'price' should be defined\"\r\n\r\n  def test_2(self):\r\n    assert globals().get('price', None) == 123 or locals().get('price', None) == 123, \"The value of 'price' should be 123\"",
+  "openTest": "price = 123",
   "name": {
     "en": "The first variable. The number",
     "ru": "Первая переменная. Число"
@@ -14,7 +14,7 @@
     "en": "```python\r\nprice = 123\r\n```",
     "ru": "```python\r\nprice = 123\r\n```"
   },
-  "checker": "unit",
+  "checker": "equal",
   "programmingLang": "Python",
   "status": "new",
   "level": "Easy",
