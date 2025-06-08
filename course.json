@@ -69,6 +69,30 @@
           ]
         }
       ]
+    },
+    {
+      "_id": "",
+      "name": {
+        "ru": "Переменные",
+        "en": "Variables",
+        "es": ""
+      },
+      "lessons": [
+        {
+          "_id": "6696c2ca763f0712c198db2d",
+          "name": {
+            "ru": "Что такое переменная?",
+            "en": "What is a variable?",
+            "es": ""
+          },
+          "challenges": [
+            "6696c2ca763f0712c198db42"
+          ],
+          "questionGroups": [
+            "6696c2ca763f0712c198db2e"
+          ]
+        }
+      ]
     }
   ]
 }
