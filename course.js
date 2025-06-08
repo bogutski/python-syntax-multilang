@@ -65,7 +65,7 @@ module.exports = {
       ]
     },
     {
-      _id: '',
+      _id: '6696c2ca763f0712c198db2f',
       name: {
         ru: 'Переменные',
         en: 'Variables',
