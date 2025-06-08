@@ -14,7 +14,7 @@
     "en": "```python\r\nprice = 123\r\n```",
     "ru": "```python\r\nprice = 123\r\n```"
   },
-  "checker": "equal",
+  "checker": "unit",
   "programmingLang": "Python",
   "status": "new",
   "level": "Easy",
