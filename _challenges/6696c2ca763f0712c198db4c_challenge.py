@@ -53,9 +53,9 @@ name = "Alice"
 
 
 // OPENTESTSSTART
-name = "Alice"
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+name = "Alice"
 // HIDDENTESTSEND

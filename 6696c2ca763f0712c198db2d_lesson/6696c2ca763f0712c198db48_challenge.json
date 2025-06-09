@@ -1,7 +1,7 @@
 {
   "completedSolution": "is_child = False",
   "initialSolution": "",
-  "openTest": "is_child = False",
+  "openTest": "",
   "name": {
     "en": "Assign false value to the is_child variable",
     "ru": "Присвойте переменной is_child значение false"

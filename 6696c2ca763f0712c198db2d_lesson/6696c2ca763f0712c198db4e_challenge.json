@@ -1,7 +1,7 @@
 {
   "completedSolution": "string_value = \"Hello\"",
   "initialSolution": "",
-  "openTest": "string_value = \"Hello\"",
+  "openTest": "",
   "name": {
     "en": "Assign value \"Hello\" to the \"string_value\" variable",
     "ru": "Присвойте переменной \"string_value\" значение \"Hello\""

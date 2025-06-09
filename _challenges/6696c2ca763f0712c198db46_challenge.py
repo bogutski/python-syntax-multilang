@@ -49,9 +49,9 @@ future_profit = None
 
 
 // OPENTESTSSTART
-future_profit = None
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+future_profit = None
 // HIDDENTESTSEND

@@ -1,7 +1,7 @@
 {
   "completedSolution": "future_profit = None",
   "initialSolution": "",
-  "openTest": "future_profit = None",
+  "openTest": "",
   "name": {
     "en": "Null or deliberate absence of any value",
     "ru": "Null или намеренное отсутствие какого-либо значения"

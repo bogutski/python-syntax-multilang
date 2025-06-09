@@ -51,9 +51,9 @@ name_of_company = "Google"
 
 
 // OPENTESTSSTART
-name_of_company = "Google"
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+name_of_company = "Google"
 // HIDDENTESTSEND

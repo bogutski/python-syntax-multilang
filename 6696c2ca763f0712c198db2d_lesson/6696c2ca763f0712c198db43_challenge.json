@@ -1,7 +1,7 @@
 {
   "completedSolution": "name_of_company = \"Google\"",
   "initialSolution": "",
-  "openTest": "name_of_company = \"Google\"",
+  "openTest": "",
   "name": {
     "en": "Company's name",
     "ru": "Название компании"

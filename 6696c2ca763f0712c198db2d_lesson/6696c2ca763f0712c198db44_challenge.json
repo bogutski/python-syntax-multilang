@@ -1,7 +1,7 @@
 {
   "completedSolution": "is_row_12 = True\r\nis_row_13 = False",
   "initialSolution": "",
-  "openTest": "is_row_12 = True\r\nis_row_13 = False",
+  "openTest": "",
   "name": {
     "en": "Thirteenth row on the plane",
     "ru": "Тринадцатый ряд в самолете"
