@@ -45,9 +45,9 @@ print("Happy New Year!")
 
 
 // OPENTESTSSTART
-print("Happy New Year!")
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+print("Happy New Year!")
 // HIDDENTESTSEND

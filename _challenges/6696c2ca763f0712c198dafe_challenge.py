@@ -45,9 +45,9 @@ print("Coding")
 
 
 // OPENTESTSSTART
-print("Coding")
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+print("Coding")
 // HIDDENTESTSEND

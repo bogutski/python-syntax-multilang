@@ -1,5 +1,5 @@
 {
-  "completedSolution": "is_row_12 = True\r\nis_row_13 = False",
+  "completedSolution": "is_row_13 = False",
   "initialSolution": "",
   "openTest": "",
   "name": {
@@ -7,12 +7,12 @@
     "ru": "Тринадцатый ряд в самолете"
   },
   "instruction": {
-    "en": "The number 13 is considered unlucky in many countries, and the fear of the number 13 is called triskaidekaphobia.\r\nFor example, many passenger planes do not have a thirteenth row.\r\n\r\nCreate a variable named `is_row_12` and set it to `True`.\r\n\r\nCreate a variable named `is_row_13` and set it to `False`.\r\n\r\nYou can find a similar example in the hint below — click the \"Show Hint\" button to see it.",
-    "ru": "Число 13 во многих странах считается несчастливым, а боязнь числа 13 называется трискаидекафобией.\r\nНапример, во многих пассажирских самолётах отсутствует тринадцатый ряд.\r\n\r\nСоздайте переменную с именем `is_row_12` и присвойте ей значение `True`.\r\n\r\nСоздайте переменную с именем `is_row_13` и присвойте ей значение `False`.\r\n\r\nПохожий пример вы найдете в подсказке ниже — нажмите кнопку \"Показать подсказку\"."
+    "en": "The number 13 is considered unlucky in many countries, and the fear of the number 13 is called triskaidekaphobia.\r\nFor example, many passenger planes do not have a thirteenth row.\r\n\r\nCreate a variable named `is_row_13` and set it to `False`.\r\n\r\nYou can find a similar example in the hint below — click the \"Show Hint\" button to see it.",
+    "ru": "Число 13 во многих странах считается несчастливым, а боязнь числа 13 называется трискаидекафобией.\r\nНапример, во многих пассажирских самолётах отсутствует тринадцатый ряд.\r\n\r\nСоздайте переменную с именем `is_row_13` и присвойте ей значение `False`.\r\n\r\nПохожий пример вы найдете в подсказке ниже — нажмите кнопку \"Показать подсказку\"."
   },
   "hint": {
-    "en": "```python\r\nis_silver = False\r\nis_gold = True\r\n```",
-    "ru": "```python\r\nis_silver = False\r\nis_gold = True\r\n```"
+    "en": "```python\r\nis_silver = False\r\n```",
+    "ru": "```python\r\nis_silver = False\r\n```"
   },
   "checker": "equal",
   "programmingLang": "Python",

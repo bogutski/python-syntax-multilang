@@ -1,7 +1,7 @@
 {
   "completedSolution": "print(\"PASV\")",
   "initialSolution": "",
-  "openTest": "print(\"PASV\")",
+  "openTest": "",
   "name": {
     "en": "Console PASV",
     "ru": "Console PASV"

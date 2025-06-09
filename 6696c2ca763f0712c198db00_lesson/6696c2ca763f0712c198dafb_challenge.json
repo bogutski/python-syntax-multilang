@@ -1,7 +1,7 @@
 {
   "completedSolution": "print(2025)",
   "initialSolution": "",
-  "openTest": "print(2025)",
+  "openTest": "",
   "name": {
     "en": "Output a number to the console",
     "ru": "Вывод числа в консоль"

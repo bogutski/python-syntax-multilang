@@ -1,7 +1,7 @@
 {
   "completedSolution": "print(125)",
   "initialSolution": "print(\"135\");",
-  "openTest": "print(125)",
+  "openTest": "",
   "name": {
     "en": "Correct errors in the code - 3",
     "ru": "Исправьте ошибки в коде. Вывод числа в консоль"

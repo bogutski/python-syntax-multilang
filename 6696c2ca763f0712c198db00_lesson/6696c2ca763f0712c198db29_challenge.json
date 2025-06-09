@@ -1,7 +1,7 @@
 {
   "completedSolution": "print(5 + 7)",
   "initialSolution": "",
-  "openTest": "print(5 + 7)",
+  "openTest": "",
   "name": {
     "en": "Display the sum of numbers",
     "ru": "Выведите в консоль сумму чисел"

@@ -41,9 +41,9 @@ print("PASV")
 
 
 // OPENTESTSSTART
-print("PASV")
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+print("PASV")
 // HIDDENTESTSEND

@@ -50,9 +50,9 @@ print("Have a good day!")
 
 
 // OPENTESTSSTART
-print("Have a good day!")
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+print("Have a good day!")
 // HIDDENTESTSEND

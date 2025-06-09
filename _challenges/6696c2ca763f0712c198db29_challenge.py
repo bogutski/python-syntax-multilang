@@ -39,9 +39,9 @@ print(5 + 7)
 
 
 // OPENTESTSSTART
-print(5 + 7)
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+print(5 + 7)
 // HIDDENTESTSEND

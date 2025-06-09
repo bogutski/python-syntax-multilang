@@ -47,9 +47,9 @@ print("I am studying Python programming")
 
 
 // OPENTESTSSTART
-print("I am studying Python programming")
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+print("I am studying Python programming")
 // HIDDENTESTSEND

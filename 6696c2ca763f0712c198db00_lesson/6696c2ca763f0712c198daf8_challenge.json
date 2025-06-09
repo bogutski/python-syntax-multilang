@@ -1,7 +1,7 @@
 {
   "completedSolution": "print(\"Have a good day!\")",
   "initialSolution": "print(Have a good day!)",
-  "openTest": "print(\"Have a good day!\")",
+  "openTest": "",
   "name": {
     "en": "Correct errors in the code",
     "ru": "Исправить ошибки в коде. Следим за кавычками"

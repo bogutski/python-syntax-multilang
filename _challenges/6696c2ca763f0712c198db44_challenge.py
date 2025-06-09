@@ -6,8 +6,6 @@ INSTRUCTIONENSTART
 The number 13 is considered unlucky in many countries, and the fear of the number 13 is called triskaidekaphobia.
 For example, many passenger planes do not have a thirteenth row.
 
-Create a variable named `is_row_12` and set it to `True`.
-
 Create a variable named `is_row_13` and set it to `False`.
 
 You can find a similar example in the hint below — click the "Show Hint" button to see it.
@@ -19,8 +17,6 @@ INSTRUCTIONRUSTART
 Число 13 во многих странах считается несчастливым, а боязнь числа 13 называется трискаидекафобией.
 Например, во многих пассажирских самолётах отсутствует тринадцатый ряд.
 
-Создайте переменную с именем `is_row_12` и присвойте ей значение `True`.
-
 Создайте переменную с именем `is_row_13` и присвойте ей значение `False`.
 
 Похожий пример вы найдете в подсказке ниже — нажмите кнопку "Показать подсказку".
@@ -31,7 +27,6 @@ INSTRUCTIONRUEND
 HINTENSTART
 ```python
 is_silver = False
-is_gold = True
 ```
 HINTENEND
 */
@@ -40,7 +35,6 @@ HINTENEND
 HINTRUSTART
 ```python
 is_silver = False
-is_gold = True
 ```
 HINTRUEND
 */
@@ -52,7 +46,6 @@ INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-is_row_12 = True
 is_row_13 = False
 // SOLUTIONEND
 
@@ -62,6 +55,5 @@ is_row_13 = False
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-is_row_12 = True
 is_row_13 = False
 // HIDDENTESTSEND

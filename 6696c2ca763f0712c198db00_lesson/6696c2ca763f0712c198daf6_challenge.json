@@ -1,7 +1,7 @@
 {
   "completedSolution": "print(\"Hello world\")",
   "initialSolution": "",
-  "openTest": "print(\"Hello world\")",
+  "openTest": "",
   "name": {
     "en": "First program \"Hello World\"",
     "ru": "Первая программа \"Hello world\""

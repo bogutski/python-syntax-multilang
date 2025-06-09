@@ -68,9 +68,9 @@ print("Hello world")
 
 
 // OPENTESTSSTART
-print("Hello world")
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+print("Hello world")
 // HIDDENTESTSEND
