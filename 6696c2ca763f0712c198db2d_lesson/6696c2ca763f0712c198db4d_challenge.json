@@ -1,0 +1,22 @@
+{
+  "completedSolution": "age = 25",
+  "initialSolution": "",
+  "openTest": "age = 25",
+  "name": {
+    "en": "Assign a value of 25 to the \"age\" variable",
+    "ru": "Присвойте переменной \"age\" значение 25"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-12.png)\r\n\r\nCreate a variable named `age`.\r\n\r\nAssign it the number `25`.\r\n\r\nYou can find a similar example in the hint below — click the \"Show Hint\" button to see it.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-12.png)\r\n\r\nСоздайте переменную с именем `age`.\r\n\r\nПрисвойте ей число `25`.\r\n\r\nПохожий пример вы найдете в подсказке ниже — нажмите кнопку \"Показать подсказку\"."
+  },
+  "hint": {
+    "en": "```python\r\nage = 55\r\n```",
+    "ru": "```python\r\nage = 55\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db4d"
+}

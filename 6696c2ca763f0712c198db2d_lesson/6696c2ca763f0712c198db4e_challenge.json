@@ -1,0 +1,22 @@
+{
+  "completedSolution": "string_value = \"Hello\"",
+  "initialSolution": "",
+  "openTest": "string_value = \"Hello\"",
+  "name": {
+    "en": "Assign value \"Hello\" to the \"string_value\" variable",
+    "ru": "Присвойте переменной \"string_value\" значение \"Hello\""
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-13.png)\r\n\r\nCreate a variable named `string_value`.\r\n\r\nAssign it the string `\"Hello\"`.\r\n\r\nYou can find a similar example in the hint below — click the \"Show Hint\" button to see it.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-13.png)\r\n\r\nСоздайте переменную с именем `string_value`.\r\n\r\nПрисвойте ей строку `\"Hello\"`.\r\n\r\nПохожий пример вы найдете в подсказке ниже — нажмите кнопку \"Показать подсказку\"."
+  },
+  "hint": {
+    "en": "```python\r\ntext = \"World\"\r\n```",
+    "ru": "```python\r\ntext = \"World\"\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db4e"
+}

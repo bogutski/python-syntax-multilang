@@ -1,0 +1,22 @@
+{
+  "completedSolution": "name = \"Alice\"",
+  "initialSolution": "",
+  "openTest": "name = \"Alice\"",
+  "name": {
+    "en": "Assign the value \"Alice\" to the \"name\" variable",
+    "ru": "Присвойте переменной \"name\" значение \"Alice\""
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-11.png)\r\n\r\nCreate a variable named `name`.\r\n\r\nAssign the string value `\"Alice\"` to it.\r\n\r\nYou can find a similar example in the hint below — click the \"Show Hint\" button to see it.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-11.png)\r\n\r\nСоздайте переменную с именем `name`.\r\n\r\nПрисвойте ей строковое значение `\"Alice\"`.\r\n\r\nПохожий пример вы найдете в подсказке ниже — нажмите кнопку \"Показать подсказку\"."
+  },
+  "hint": {
+    "en": "```python\r\nname = \"Tom\"\r\n```",
+    "ru": "```python\r\nname = \"Tom\"\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db4c"
+}

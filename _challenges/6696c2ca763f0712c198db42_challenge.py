@@ -41,12 +41,7 @@ price = 123
 
 
 // OPENTESTSSTART
-class TestClass(object):
-  def test_1(self):
-    assert 'price' in globals() or 'price' in locals(), "The variable 'price' should be defined"
-
-  def test_2(self):
-    assert globals().get('price', None) == 123 or locals().get('price', None) == 123, "The value of 'price' should be 123"
+price = 123
 // OPENTESTSEND
 
 

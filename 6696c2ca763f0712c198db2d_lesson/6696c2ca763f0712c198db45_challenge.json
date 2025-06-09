@@ -1,0 +1,22 @@
+{
+  "completedSolution": "empty = \"\"",
+  "initialSolution": "",
+  "openTest": "empty == \"\"",
+  "name": {
+    "en": "What is emptiness?",
+    "ru": "Что такое пустота?"
+  },
+  "instruction": {
+    "en": "\"*The word is the emptiness lined on all sides with letters*\" (Yuri Hanon).\r\n\r\nCreate a variable named `empty` and assign to it the value of the empty string.\r\n\r\nYou can find a similar example in the hint below — click the \"Show Hint\" button to see it.",
+    "ru": "\"*Слово - это пустота, со всех сторон облепленная буквами*\" (Юрий Ханон).\r\n\r\nСоздайте переменную с именем `empty` и присвойте ей значение пустой строки.\r\n\r\nПохожий пример вы найдете в подсказке ниже — нажмите кнопку \"Показать подсказку\"."
+  },
+  "hint": {
+    "en": "```python\r\nword = \"\"\r\n```",
+    "ru": "```python\r\nword = \"\"\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db45"
+}

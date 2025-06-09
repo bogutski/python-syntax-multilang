@@ -1,0 +1,22 @@
+{
+  "completedSolution": "a = 3.125",
+  "initialSolution": "c = 3,125",
+  "openTest": "a = 3.125",
+  "name": {
+    "en": "Correct the errors in the code. Number 3.125",
+    "ru": "Исправьте ошибки в коде. Число 3.125"
+  },
+  "instruction": {
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-14.png)\r\n\r\nIt is required to write a command that assigns the number 3.125 to the variable `a`.\r\n\r\nCorrect the errors in the given code.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-1-task-14.png)\r\n\r\nТребуется написать команду, которая присваивает переменной `a` число 3.125.\r\n\r\nИсправьте ошибки в приведенном коде."
+  },
+  "hint": {
+    "en": "```python\r\nb = 10.555\r\n```",
+    "ru": "```python\r\nb = 10.555\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db4f"
+}
