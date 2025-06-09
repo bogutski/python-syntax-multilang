@@ -1,0 +1,22 @@
+{
+  "completedSolution": "future_profit = None",
+  "initialSolution": "",
+  "openTest": "future_profit = None",
+  "name": {
+    "en": "Null or deliberate absence of any value",
+    "ru": "Null или намеренное отсутствие какого-либо значения"
+  },
+  "instruction": {
+    "en": "`Null` is a special value that has the meaning `value is intentionally absent`.\r\n\r\nCreate a variable named `future_profit` and assign a special value `None` to it.\r\n\r\nYou can find a similar example in the hint below — click the \"Show Hint\" button to see it.",
+    "ru": "`Null` — специальное значение, которое означает `значение намеренно отсутствует`.\r\n\r\nСоздайте переменную с именем `future_profit` и присвойте ей специальное значение `None`.\r\n\r\nПохожий пример вы найдете в подсказке ниже — нажмите кнопку \"Показать подсказку\"."
+  },
+  "hint": {
+    "en": "```python\r\nnext_winner = None\r\n```",
+    "ru": "```python\r\nnext_winner = None\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db46"
+}

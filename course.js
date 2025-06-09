@@ -80,7 +80,16 @@ module.exports = {
             es: ''
           },
           challenges: [
-            '6696c2ca763f0712c198db42'
+            '6696c2ca763f0712c198db42',
+            '6696c2ca763f0712c198db43',
+            '6696c2ca763f0712c198db44',
+            '6696c2ca763f0712c198db45',
+            '6696c2ca763f0712c198db46',
+            '6696c2ca763f0712c198db48',
+            '6696c2ca763f0712c198db4c',
+            '6696c2ca763f0712c198db4d',
+            '6696c2ca763f0712c198db4e',
+            '6696c2ca763f0712c198db4f'
           ],
           questionGroups: ['6696c2ca763f0712c198db2e']
         }

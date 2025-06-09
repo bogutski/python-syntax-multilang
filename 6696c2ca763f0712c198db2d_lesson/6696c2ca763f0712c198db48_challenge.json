@@ -1,0 +1,22 @@
+{
+  "completedSolution": "is_child = False",
+  "initialSolution": "",
+  "openTest": "is_child = False",
+  "name": {
+    "en": "Assign false value to the is_child variable",
+    "ru": "Присвойте переменной is_child значение false"
+  },
+  "instruction": {
+    "en": "Create a variable named `is_child`.\r\n\r\nAssign a boolean value `False` to it.\r\n\r\nYou can find a similar example in the hint below — click the \"Show Hint\" button to see it.",
+    "ru": "Создайте переменную с именем `is_child`.\r\n\r\nПрисвойте ей логическое значение `False`.\r\n\r\nПохожий пример вы найдете в подсказке ниже — нажмите кнопку \"Показать подсказку\"."
+  },
+  "hint": {
+    "en": "```python\r\nis_adult = True\r\n```",
+    "ru": "```python\r\nis_adult = True\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db48"
+}
