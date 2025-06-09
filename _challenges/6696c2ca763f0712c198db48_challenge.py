@@ -49,9 +49,9 @@ is_child = False
 
 
 // OPENTESTSSTART
-is_child = False
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+is_child = False
 // HIDDENTESTSEND

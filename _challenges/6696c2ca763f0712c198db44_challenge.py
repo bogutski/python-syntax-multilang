@@ -58,10 +58,10 @@ is_row_13 = False
 
 
 // OPENTESTSSTART
-is_row_12 = True
-is_row_13 = False
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+is_row_12 = True
+is_row_13 = False
 // HIDDENTESTSEND

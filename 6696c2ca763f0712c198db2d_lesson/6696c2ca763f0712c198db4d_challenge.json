@@ -1,7 +1,7 @@
 {
   "completedSolution": "age = 25",
   "initialSolution": "",
-  "openTest": "age = 25",
+  "openTest": "",
   "name": {
     "en": "Assign a value of 25 to the \"age\" variable",
     "ru": "Присвойте переменной \"age\" значение 25"

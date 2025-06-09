@@ -1,7 +1,7 @@
 {
   "completedSolution": "a = 3.125",
   "initialSolution": "c = 3,125",
-  "openTest": "a = 3.125",
+  "openTest": "",
   "name": {
     "en": "Correct the errors in the code. Number 3.125",
     "ru": "Исправьте ошибки в коде. Число 3.125"

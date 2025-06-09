@@ -49,9 +49,9 @@ empty = ""
 
 
 // OPENTESTSSTART
-empty == ""
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+empty == ""
 // HIDDENTESTSEND

@@ -1,7 +1,7 @@
 {
   "completedSolution": "name = \"Alice\"",
   "initialSolution": "",
-  "openTest": "name = \"Alice\"",
+  "openTest": "",
   "name": {
     "en": "Assign the value \"Alice\" to the \"name\" variable",
     "ru": "Присвойте переменной \"name\" значение \"Alice\""

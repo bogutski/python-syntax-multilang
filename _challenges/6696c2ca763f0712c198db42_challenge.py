@@ -41,10 +41,10 @@ price = 123
 
 
 // OPENTESTSSTART
-price = 123
+
 // OPENTESTSEND
 
 
 // HIDDENTESTSSTART
-
+price = 123
 // HIDDENTESTSEND

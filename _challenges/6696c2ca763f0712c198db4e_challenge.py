@@ -53,9 +53,9 @@ string_value = "Hello"
 
 
 // OPENTESTSSTART
-string_value = "Hello"
+
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-
+string_value = "Hello"
 // HIDDENTESTSEND
