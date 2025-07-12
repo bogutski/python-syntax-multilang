@@ -1,0 +1,22 @@
+{
+  "completedSolution": "message = \"Hello\"\r\n\r\ndef greet():\r\n    global message\r\n    message = \"Python\"\r\n\r\ngreet()\r\nprint(message)",
+  "initialSolution": "message = \"Hello\"\r\n\r\ndef greet():\r\n    message = \"Python\"\r\n\r\ngreet()\r\nprint(message)",
+  "openTest": "",
+  "name": {
+    "en": "Make the function change the global variable",
+    "ru": "Сделайте так, чтобы функция изменила глобальную переменную"
+  },
+  "instruction": {
+    "en": "The variable `message` is defined outside the function.\r\n\r\nInside the function, you assign a new value to `message`, but it doesn’t affect the global one.\r\n\r\nFix the code so that the final `print()` shows `Python`.",
+    "ru": "Переменная `message` определена вне функции.\r\n\r\nВнутри функции вы присваиваете новое значение переменной `message`, но это не влияет на глобальную.\r\n\r\nИсправьте код так, чтобы финальный `print()` вывел `Python`."
+  },
+  "hint": {
+    "en": "Use the `global` keyword to modify the global variable inside the function.",
+    "ru": "Используйте ключевое слово `global`, чтобы изменить глобальную переменную внутри функции."
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db86"
+}

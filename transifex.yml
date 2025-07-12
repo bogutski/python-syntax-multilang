@@ -60,3 +60,18 @@ git:
      source_file_dir: 6696c2ca763f0712c198db2d_lesson/ru
      translation_files_expression: '6696c2ca763f0712c198db2d_lesson/<lang>'
 
+   # Lesson Область видимости переменных
+   - filter_type: dir
+     file_format: GITHUBMARKDOWN
+     source_file_extension: md
+     source_language: ru
+     source_file_dir: 6696c2ca763f0712c198db71_lesson/ru
+     translation_files_expression: '6696c2ca763f0712c198db71_lesson/<lang>'
+
+   - filter_type: dir
+     file_format: KEYVALUEJSON
+     source_file_extension: json
+     source_language: ru
+     source_file_dir: 6696c2ca763f0712c198db71_lesson/ru
+     translation_files_expression: '6696c2ca763f0712c198db71_lesson/<lang>'
+

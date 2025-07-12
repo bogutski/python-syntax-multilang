@@ -1,0 +1,22 @@
+{
+  "completedSolution": "a = 10\r\ndef show():\r\n    pass\r\n\r\nshow()\r\nprint(a)",
+  "initialSolution": "def show():\r\n    a = 10\r\n    pass\r\n\r\nshow()\r\nprint(a)",
+  "openTest": "",
+  "name": {
+    "en": "Fix the scope error",
+    "ru": "Исправьте ошибку области видимости"
+  },
+  "instruction": {
+    "en": "There is a variable `a` declared inside a function.\r\n\r\nYou need to make sure that the `print(a)` outside the function does not throw an error.\r\n\r\nFix the code so that the value of `a` can be printed after the function is called.",
+    "ru": "Переменная `a` была объявлена внутри функции.\r\n\r\nНужно сделать так, чтобы команда `print(a)` вне функции не вызывала ошибку.\r\n\r\nИсправьте код так, чтобы значение `a` можно было вывести после вызова функции."
+  },
+  "hint": {
+    "en": "Try moving the variable `a` outside the function.\r\n```python\r\na = 10\r\ndef show():\r\n    pass\r\n\r\nshow()\r\nprint(a)\r\n```",
+    "ru": "Попробуйте переместить переменную `a` за пределы функции.\r\n```python\r\na = 10\r\ndef show():\r\n    pass\r\n\r\nshow()\r\nprint(a)\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db84"
+}

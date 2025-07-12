@@ -2,7 +2,7 @@
   "_id": "6696c2ca763f0712c198db2e",
   "questions": [
     {
-      "_id": "6696c2ca763f0712c198db2f",
+      "_id": "6696c2ca763f0712c198db7f",
       "name": {
         "ru": "Какое значение можно использовать для обозначения 'пустой' переменной в Python?",
         "en": "What value can be used to indicate an 'empty' variable in Python?"

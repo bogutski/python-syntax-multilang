@@ -1,0 +1,22 @@
+{
+  "completedSolution": "a = 5\r\n\r\ndef demo():\r\n    a = 100\r\n\r\ndemo()\r\nprint(a)",
+  "initialSolution": "a = 5\r\n\r\ndef demo():\r\n    global a\r\n    a = 100\r\n\r\ndemo()\r\nprint(a)",
+  "openTest": "",
+  "name": {
+    "en": "Fix the print to output 5",
+    "ru": "Сделайте так, чтобы в выводе было число 5"
+  },
+  "instruction": {
+    "en": "The function `demo()` changes the value of variable `a`.\r\n\r\nFix the code so that the print outside the function shows the global `a`, which equals 5.\r\n\r\nYou can rename the local variable to avoid overwriting the global one.",
+    "ru": "Функция `demo()` изменяет значение переменной `a`.\r\n\r\nСделайте так, чтобы `print()` вне функции показывал глобальное значение переменной `a`, равное 5.\r\n\r\nВы можете переименовать локальную переменную, чтобы избежать перезаписи глобальной."
+  },
+  "hint": {
+    "en": "```python\r\na = 5\r\n\r\ndef demo():\r\n    a = 100\r\n\r\ndemo()\r\nprint(a)\r\n```",
+    "ru": "```python\r\na = 5\r\n\r\ndef demo():\r\n    a = 100\r\n\r\ndemo()\r\nprint(a)\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db85"
+}

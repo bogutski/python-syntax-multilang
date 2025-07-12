@@ -92,6 +92,22 @@ module.exports = {
             '6696c2ca763f0712c198db4f'
           ],
           questionGroups: ['6696c2ca763f0712c198db2e']
+        },
+        {
+          _id: '6696c2ca763f0712c198db71',
+          name: {
+            ru: 'Область видимости переменных',
+            en: 'Variable scope',
+            es: ''
+          },
+          challenges: [
+            '6696c2ca763f0712c198db84',
+            '6696c2ca763f0712c198db85',
+            '6696c2ca763f0712c198db86',
+            '6696c2ca763f0712c198db87',
+            '6696c2ca763f0712c198db88',
+          ],
+          questionGroups: ['6696c2ca763f0712c198db72']
         }
       ]
     }
