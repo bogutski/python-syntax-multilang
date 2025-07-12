@@ -1,0 +1,22 @@
+{
+  "completedSolution": "def demo():\r\n    language = \"Python\"\r\n\r\ndemo()",
+  "initialSolution": "def demo():\r\n\r\n\r\ndemo()",
+  "openTest": "",
+  "name": {
+    "en": "Create a new variable inside the function",
+    "ru": "Создайте новую переменную внутри функции"
+  },
+  "instruction": {
+    "en": "Inside the function `demo()`, create a new variable called `language`.\r\n\r\nAssign it the value `\"Python\"`.",
+    "ru": "Внутри функции `demo()` создайте новую переменную с именем `language`.\r\n\r\nПрисвойте ей значение `\"Python\"`."
+  },
+  "hint": {
+    "en": "```python\r\ndef demo():\r\n    language = \"Python\"\r\n\r\ndemo()\r\n```",
+    "ru": "```python\r\ndef demo():\r\n    language = \"Python\"\r\n\r\ndemo()\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db88"
+}

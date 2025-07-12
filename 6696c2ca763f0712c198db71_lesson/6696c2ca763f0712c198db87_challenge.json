@@ -1,0 +1,22 @@
+{
+  "completedSolution": "message = \"Hello Python\"\r\n\r\ndef demo():\r\npass\r\n\r\ndemo()",
+  "initialSolution": "def demo():\r\npass\r\n\r\ndemo()",
+  "openTest": "",
+  "name": {
+    "en": "Create a variable outside the function",
+    "ru": "Создайте переменную вне функции"
+  },
+  "instruction": {
+    "en": "Create a variable named `message` before the function `demo()`.\r\n\r\nAssign it the value `\"Hello Python\"`.\r\n\r\nDo not change the function itself.",
+    "ru": "Создайте переменную с именем `message` перед функцией `demo()`.\r\n\r\nПрисвойте ей значение `\"Hello Python\"`.\r\n\r\nФункцию менять не нужно."
+  },
+  "hint": {
+    "en": "```python\r\nmessage = \"Hello Python\"\r\n\r\ndef demo():\r\npass\r\n\r\ndemo()\r\n```",
+    "ru": "```python\r\nmessage = \"Hello Python\"\r\n\r\ndef demo():\r\npass\r\n\r\ndemo()\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198db87"
+}
