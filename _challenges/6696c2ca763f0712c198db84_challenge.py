@@ -1,35 +1,26 @@
-// NAMEEN:Fix the scope error
-// NAMERU:Исправьте ошибку области видимости
+// NAMEEN:Create variable with value 10
+// NAMERU:Создайте переменную со значением 10
 
 /*
 INSTRUCTIONENSTART
-There is a variable `a` declared inside a function.
+Create a variable named `age`.
 
-You need to make sure that the `print(a)` outside the function does not throw an error.
-
-Fix the code so that the value of `a` can be printed after the function is called.
+Assign the number `10` to it.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-Переменная `a` была объявлена внутри функции.
+Создайте переменную с именем `age`.
 
-Нужно сделать так, чтобы команда `print(a)` вне функции не вызывала ошибку.
-
-Исправьте код так, чтобы значение `a` можно было вывести после вызова функции.
+Присвойте ей число `10`.
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
-Try moving the variable `a` outside the function.
 ```python
-a = 10
-def show():
-    pass
-show()
-print(a)
+age = 10
 ```
 HINTENEND
 */
@@ -38,31 +29,19 @@ HINTENEND
 HINTRUSTART
 Попробуйте переместить переменную `a` за пределы функции.
 ```python
-a = 10
-def show():
-    pass
-show()
-print(a)
+age = 10
 ```
 HINTRUEND
 */
 
 /*
 INITIALSOLUTIONSTART
-def show():
-    a = 10
-    pass
-show()
-print(a)
+
 INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-a = 10
-def show():
-    pass
-show()
-print(a)
+age = 10
 // SOLUTIONEND
 
 // OPENTESTSSTART
@@ -70,9 +49,5 @@ print(a)
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-a = 10
-def show():
-    pass
-show()
-print(a)
+age = 10
 // HIDDENTESTSEND

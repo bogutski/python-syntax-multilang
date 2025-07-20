@@ -1,35 +1,26 @@
-// NAMEEN:Create a variable outside the function
-// NAMERU:Создайте переменную вне функции
+// NAMEEN:Create a variable with value True
+// NAMERU:Создайте переменную со значением True
 
 /*
 INSTRUCTIONENSTART
-Create a variable named `message` before the function `demo()`.
+Create a variable named `is_online`.
 
-Assign it the value `"Hello Python"`.
-
-Do not change the function itself.
+Assign it the boolean value `True`.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-Создайте переменную с именем `message` перед функцией `demo()`.
+Создайте переменную с именем `is_online`.
 
-Присвойте ей значение `"Hello Python"`.
-
-Функцию менять не нужно.
+Присвойте ей логическое значение `True`.
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
 ```python
-message = "Hello Python"
-
-def demo():
-pass
-
-demo()
+is_online = True
 ```
 HINTENEND
 */
@@ -37,32 +28,19 @@ HINTENEND
 /*
 HINTRUSTART
 ```python
-message = "Hello Python"
-
-def demo():
-pass
-
-demo()
+is_online = True
 ```
 HINTRUEND
 */
 
 /*
 INITIALSOLUTIONSTART
-def demo():
-pass
 
-demo()
 INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-message = "Hello Python"
-
-def demo():
-pass
-
-demo()
+is_online = True
 // SOLUTIONEND
 
 // OPENTESTSSTART
@@ -70,10 +48,5 @@ demo()
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-message = "Hello Python"
-
-def demo():
-pass
-
-demo()
+is_online = True
 // HIDDENTESTSEND

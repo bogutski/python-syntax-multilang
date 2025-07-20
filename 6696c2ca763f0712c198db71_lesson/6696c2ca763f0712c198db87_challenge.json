@@ -1,18 +1,18 @@
 {
-  "completedSolution": "message = \"Hello Python\"\r\n\r\ndef demo():\r\npass\r\n\r\ndemo()",
-  "initialSolution": "def demo():\r\npass\r\n\r\ndemo()",
+  "completedSolution": "is_online = True",
+  "initialSolution": "",
   "openTest": "",
   "name": {
-    "en": "Create a variable outside the function",
-    "ru": "Создайте переменную вне функции"
+    "en": "Create a variable with value True",
+    "ru": "Создайте переменную со значением True"
   },
   "instruction": {
-    "en": "Create a variable named `message` before the function `demo()`.\r\n\r\nAssign it the value `\"Hello Python\"`.\r\n\r\nDo not change the function itself.",
-    "ru": "Создайте переменную с именем `message` перед функцией `demo()`.\r\n\r\nПрисвойте ей значение `\"Hello Python\"`.\r\n\r\nФункцию менять не нужно."
+    "en": "Create a variable named `is_online`.\r\n\r\nAssign it the boolean value `True`.",
+    "ru": "Создайте переменную с именем `is_online`.\r\n\r\nПрисвойте ей логическое значение `True`."
   },
   "hint": {
-    "en": "```python\r\nmessage = \"Hello Python\"\r\n\r\ndef demo():\r\npass\r\n\r\ndemo()\r\n```",
-    "ru": "```python\r\nmessage = \"Hello Python\"\r\n\r\ndef demo():\r\npass\r\n\r\ndemo()\r\n```"
+    "en": "```python\r\nis_online = True\r\n```",
+    "ru": "```python\r\nis_online = True\r\n```"
   },
   "checker": "equal",
   "programmingLang": "Python",

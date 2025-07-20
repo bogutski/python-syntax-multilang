@@ -1,18 +1,18 @@
 {
-  "completedSolution": "def demo():\r\n    language = \"Python\"\r\n\r\ndemo()",
-  "initialSolution": "def demo():\r\n\r\n\r\ndemo()",
+  "completedSolution": "price = 19.99",
+  "initialSolution": "",
   "openTest": "",
   "name": {
-    "en": "Create a new variable inside the function",
-    "ru": "Создайте новую переменную внутри функции"
+    "en": "Assign a float to price",
+    "ru": "Присвойте переменной price дробное число"
   },
   "instruction": {
-    "en": "Inside the function `demo()`, create a new variable called `language`.\r\n\r\nAssign it the value `\"Python\"`.",
-    "ru": "Внутри функции `demo()` создайте новую переменную с именем `language`.\r\n\r\nПрисвойте ей значение `\"Python\"`."
+    "en": "Create a variable named `price`.\r\n\r\nAssign it a float number, such as `19.99`.",
+    "ru": "Создайте переменную с именем `price`.\r\n\r\nПрисвойте ей дробное число, например `19.99`."
   },
   "hint": {
-    "en": "```python\r\ndef demo():\r\n    language = \"Python\"\r\n\r\ndemo()\r\n```",
-    "ru": "```python\r\ndef demo():\r\n    language = \"Python\"\r\n\r\ndemo()\r\n```"
+    "en": "```python\r\nprice = 19.99\r\n```",
+    "ru": "```python\r\nprice = 19.99\r\n```"
   },
   "checker": "equal",
   "programmingLang": "Python",
