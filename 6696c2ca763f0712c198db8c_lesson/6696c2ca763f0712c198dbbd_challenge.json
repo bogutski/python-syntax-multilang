@@ -1,0 +1,17 @@
+{
+  "completedSolution": "score_1 = \"valid\"",
+  "initialSolution": "",
+  "openTest": "",
+  "name": {
+    "en": "Choose the valid Python variable name",
+    "ru": "Выберите допустимое имя переменной в Python"
+  },
+  "instruction": {
+    "en": "You're given a list of potential variable names.\r\n\r\nOnly **one** of them is a valid Python identifier.\r\n\r\nCreate **one** variable with the valid name and assign it the string `\"valid\"`.\r\n\r\nList of names:\r\n\r\n- `class`\r\n- `final_score!`\r\n- `player-1`\r\n- `score_1`\r\n- `9lives`\r\n\r\nOnly use the valid one.",
+    "ru": "Вам дан список возможных имён переменных.\r\n\r\nТолько **одно** из них является допустимым идентификатором в Python.\r\n\r\nСоздайте **одну** переменную с допустимым именем и присвойте ей строку `\"valid\"`.\r\n\r\nСписок имён:\r\n- `class`\r\n- `final_score!`\r\n- `player-1`\r\n- `score_1`\r\n- `9lives`\r\n\r\nИспользуйте только допустимое имя."
+  },
+  "hint": {
+    "en": "`class` is a reserved word. Identifiers can't include `!`, `-`, or start with a digit.\r\n`score_1` is the only valid name.",
+    "ru": "`class` — это ключевое слово. Имена переменных не могут содержать `!`, `-` или начинаться с цифры.\r\nТолько `score_1` — допустимое имя."
+  }
+}

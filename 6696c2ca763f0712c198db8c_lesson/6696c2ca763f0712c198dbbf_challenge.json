@@ -1,0 +1,17 @@
+{
+  "completedSolution": "total_number_of_7up_consumers = None",
+  "initialSolution": "",
+  "openTest": "",
+  "name": {
+    "en": "Create a variable for 7 Up consumers",
+    "ru": "Создайте переменную для потребителей 7 Up"
+  },
+  "instruction": {
+    "en": "Create a variable to store the number of people who consume the drink \"7 Up\".\r\n\r\nAssign `None` value to this variable.\r\n\r\nChoose the most descriptive and valid name from the following options:\r\n`kolichestvo`, `number`, `7Up`, `7UpTotal`, `totalNumberOf7UpConsumers`, `7UpConsumersTotal`.",
+    "ru": "Создайте переменную для хранения количества людей, потребляющих напиток \"7 Up\".\r\n\r\nПрисваивайте переменной значение - `None`.\r\n\r\nВыберите наиболее описательное и допустимое имя из следующих вариантов:\r\n`kolichestvo`, `number`, `7Up`, `7UpTotal`, `totalNumberOf7UpConsumers`, `7UpConsumersTotal`."
+  },
+  "hint": {
+    "en": "- Use snake_case.\r\n- Do not start a variable name with a number.\r\n- Be descriptive but concise.",
+    "ru": "- Используйте snake_case.\r\n- Не начинайте имя переменной с числа.\r\n- Имя должно быть описательным и понятным."
+  }
+}

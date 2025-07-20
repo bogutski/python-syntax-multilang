@@ -1,0 +1,17 @@
+{
+  "completedSolution": "toy_price = None",
+  "initialSolution": "toyPrice = None",
+  "openTest": "",
+  "name": {
+    "en": "Correct the variable name style",
+    "ru": "Исправьте стиль имени переменной"
+  },
+  "instruction": {
+    "en": "You need to create a variable to store the price of a toy.\r\n\r\nThe variable name is currently in camelCase: `toyPrice`.\r\n\r\nCorrect the variable name to follow Python's snake_case style and assign it the value `None`.",
+    "ru": "Требуется создать переменную для хранения цены игрушки.\r\n\r\nИмя переменной сейчас записано в camelCase: `toyPrice`.\r\n\r\nИсправьте имя переменной, чтобы оно было в стиле snake_case, принятом в Python, и присвойте ей значение `None`."
+  },
+  "hint": {
+    "en": "In Python, use snake_case and assign None:\r\n```python\r\ntoy_price = None\r\n```",
+    "ru": "В Python используется стиль snake_case, и переменной присваивается None:\r\n```python\r\ntoy_price = None\r\n```"
+  }
+}

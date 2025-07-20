@@ -1,0 +1,203 @@
+{
+  "_id": "6696c2ca763f0712c198db8d",
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198db8e",
+      "name": {
+        "ru": "Можно ли в Python назвать переменную словом, которое зарезервировано языком (например, def или None)?",
+        "en": "Can you name a variable in Python using a reserved keyword (like def or None)?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db8f",
+          "name": {
+            "ru": "Да",
+            "en": "Yes"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db90",
+          "name": {
+            "ru": "Нет",
+            "en": "No"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db91",
+      "name": {
+        "ru": "Можно ли начинать имя переменной с цифры?",
+        "en": "Can a variable name start with a digit?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db92",
+          "name": {
+            "ru": "Да",
+            "en": "Yes"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db93",
+          "name": {
+            "ru": "Нет",
+            "en": "No"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db94",
+      "name": {
+        "ru": "Какие символы можно использовать в имени переменной?",
+        "en": "Which characters can be used in a variable name?"
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db95",
+          "name": {
+            "ru": "Буквы латинского алфавита",
+            "en": "Latin alphabet letters"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db96",
+          "name": {
+            "ru": "Цифры (но не в начале имени)",
+            "en": "Digits (but not at the start)"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db97",
+          "name": {
+            "ru": "Пробелы",
+            "en": "Spaces"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db98",
+          "name": {
+            "ru": "Подчеркивание _",
+            "en": "Underscore _"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db10b",
+          "name": {
+            "ru": "Дефис -",
+            "en": "Hyphen -"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db99",
+      "name": {
+        "ru": "Можно ли в имени переменной использовать кириллицу?",
+        "en": "Is it allowed to use Cyrillic letters in variable names?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db9a",
+          "name": {
+            "ru": "Да, технически можно, но это не рекомендуется",
+            "en": "Yes, technically allowed, but not recommended"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db9b",
+          "name": {
+            "ru": "Нет, нельзя",
+            "en": "No, not allowed"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db9e",
+      "name": {
+        "ru": "Какой стиль именования переменных в Python предпочтителен?",
+        "en": "What naming style is preferred for variables in Python?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db9f",
+          "name": {
+            "ru": "camelCase",
+            "en": "camelCase"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dba0",
+          "name": {
+            "ru": "snake_case",
+            "en": "snake_case"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db112",
+          "name": {
+            "ru": "PascalCase",
+            "en": "PascalCase"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dba1",
+      "name": {
+        "ru": "Можно ли использовать знак $ в имени переменной в Python?",
+        "en": "Can you use the $ sign in a Python variable name?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dba2",
+          "name": {
+            "ru": "Да",
+            "en": "Yes"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dba3",
+          "name": {
+            "ru": "Нет",
+            "en": "No"
+          },
+          "correct": true
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": true,
+  "description": {
+    "ru": "Тест по теме правил именования переменных в Python",
+    "en": "Quiz on Python variable naming rules"
+  },
+  "name": {
+    "ru": "Python Syntax. Правила именования переменных",
+    "en": "Python Syntax. Variable naming rules"
+  }
+}

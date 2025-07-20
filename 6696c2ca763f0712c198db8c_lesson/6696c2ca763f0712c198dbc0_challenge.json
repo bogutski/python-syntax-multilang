@@ -1,0 +1,17 @@
+{
+  "completedSolution": "number_of_weekly_workouts = 5",
+  "initialSolution": "",
+  "openTest": "",
+  "name": {
+    "en": "Declare a variable for the number of weekly workouts",
+    "ru": "Объявите переменную для количества еженедельных тренировок"
+  },
+  "instruction": {
+    "en": "You need to create a variable to store the number of weekly workouts.\r\n\r\nDeclare the variable and assign `5` to it.\r\n\r\nChoose the **best** name for this variable from the list:\r\n`chisloTrenirovok`, `number_of_weekly_workouts`, `numberOfWeeklyWorkouts`, `numberofweeklyworkouts`, `number`, `x`.",
+    "ru": "Требуется создать переменную для хранения количества еженедельных тренировок.\r\n\r\nОбъявите переменную и присвойте переменной значение - `5`.\r\n\r\nВыберите **наиболее удачное** имя для этой переменной из списка:\r\n`chisloTrenirovok`, `number_of_weekly_workouts`, `numberOfWeeklyWorkouts`, `numberofweeklyworkouts`, `number`, `x`."
+  },
+  "hint": {
+    "en": "Use snake_case for Python.\r\n```python\r\nnumber_of_weekly_workouts = 5\r\n```",
+    "ru": "В Python используется стиль snake_case.\r\n```python\r\nnumber_of_weekly_workouts = 5\r\n```"
+  }
+}
