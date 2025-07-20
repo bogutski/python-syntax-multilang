@@ -28,7 +28,6 @@ Try moving the variable `a` outside the function.
 a = 10
 def show():
     pass
-
 show()
 print(a)
 ```
@@ -42,7 +41,6 @@ HINTRUSTART
 a = 10
 def show():
     pass
-
 show()
 print(a)
 ```
@@ -54,7 +52,6 @@ INITIALSOLUTIONSTART
 def show():
     a = 10
     pass
-
 show()
 print(a)
 INITIALSOLUTIONEND
@@ -64,7 +61,6 @@ INITIALSOLUTIONEND
 a = 10
 def show():
     pass
-
 show()
 print(a)
 // SOLUTIONEND
@@ -77,7 +73,6 @@ print(a)
 a = 10
 def show():
     pass
-
 show()
 print(a)
 // HIDDENTESTSEND
