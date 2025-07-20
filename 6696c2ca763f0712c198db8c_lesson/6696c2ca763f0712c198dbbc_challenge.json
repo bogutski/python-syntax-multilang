@@ -1,0 +1,17 @@
+{
+  "completedSolution": "_result2 = \"done\"",
+  "initialSolution": "",
+  "openTest": "",
+  "name": {
+    "en": "Select the correct variable name",
+    "ru": "Выберите правильное имя переменной"
+  },
+  "instruction": {
+    "en": "Below are several options for variable names.\r\n\r\nOnly **one** of them is valid in Python.\r\n\r\nCreate **only one** variable using the correct name and assign it the value `\"done\"`.\r\n\r\nHere is the list:\r\n\r\n- `my-variable`\r\n- `def`\r\n- `2nd_result`\r\n- `_result2`\r\n- `total$`\r\n\r\nOnly use the valid one.",
+    "ru": "Ниже приведены варианты имён переменных.\r\n\r\nТолько **одно** из них допустимо в Python.\r\n\r\nСоздайте **одну** переменную, используя правильное имя, и присвойте ей значение `\"done\"`.\r\n\r\nВот список:\r\n\r\n- `my-variable`\r\n- `def`\r\n- `2nd_result`\r\n- `_result2`\r\n- `total$`\r\n\r\nИспользуйте только допустимый вариант."
+  },
+  "hint": {
+    "en": "Variable names can't contain dashes or start with numbers.\r\n`def` is a keyword. `$` is not allowed in names.\r\nOnly `_result2` is valid.",
+    "ru": "Имена переменных не могут содержать дефис, начинаться с цифры или содержать знак `$`.\r\n`def` — это ключевое слово.\r\nТолько `_result2` — допустимое имя."
+  }
+}

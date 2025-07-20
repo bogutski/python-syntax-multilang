@@ -1,0 +1,17 @@
+{
+  "completedSolution": "user_login = \"valid\"",
+  "initialSolution": "",
+  "openTest": "",
+  "name": {
+    "en": "Choose the Pythonic variable name",
+    "ru": "Выберите \"питоничное\" имя переменной"
+  },
+  "instruction": {
+    "en": "In Python, the naming convention for variables usually follows specific style.\r\n\r\nYou're given a list of possible variable names.\r\nOnly **one** of them follows the Python naming style.\r\n\r\nCreate a variable with the valid name and assign it the string `\"valid\"`.\r\n\r\nThe list of names:\r\n- `UserLogin`\r\n- `userLogin`\r\n- `user_login`\r\n- `user-login`\r\n- `user login`",
+    "ru": "В Python для именования переменных обычно используется определенный стиль.\r\n\r\nВам дан список возможных имён переменных.\r\nТолько **одно** из них соответствует стилю Python.\r\n\r\nСоздайте переменную с допустимым именем и присвойте ей строку `\"valid\"`.\r\n\r\nСписок имён:\r\n- `UserLogin`\r\n- `userLogin`\r\n- `user_login`\r\n- `user-login`\r\n- `user login`"
+  },
+  "hint": {
+    "en": "Only `user_login` is written in proper snake_case style.",
+    "ru": "Только `user_login` записано в правильном стиле snake_case."
+  }
+}

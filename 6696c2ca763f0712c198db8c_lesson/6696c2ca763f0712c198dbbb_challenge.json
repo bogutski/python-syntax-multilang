@@ -1,0 +1,17 @@
+{
+  "completedSolution": "user_name = 1",
+  "initialSolution": "",
+  "openTest": "",
+  "name": {
+    "en": "Select a valid Python variable name",
+    "ru": "Выберите допустимое имя переменной в Python"
+  },
+  "instruction": {
+    "en": "Below are several options for variable names.\r\n\r\nOnly **one** of them is a valid Python variable name.\r\n\r\nCreate **only one** variable using the correct name and assign it the value `1`.\r\n\r\nHere is the list:\r\n\r\n- `1user`\r\n- `user-name`\r\n- `user_name`\r\n- `class`\r\n- `@price`\r\n\r\nOnly use the correct one.",
+    "ru": "Ниже приведены варианты имён переменных.\r\n\r\nТолько **одно** из них — допустимое имя переменной в Python.\r\n\r\nСоздайте **одну** переменную, используя правильное имя, и присвойте ей значение `1`.\r\n\r\nВот список:\r\n- `1user`\r\n- `user-name`\r\n- `user_name`\r\n- `class`\r\n- `@price`\r\n\r\nИспользуйте только корректный вариант."
+  },
+  "hint": {
+    "en": "Only `user_name` follows all naming rules and is not a reserved keyword.",
+    "ru": "Только `user_name` соответствует всем правилам и не является зарезервированным словом."
+  }
+}

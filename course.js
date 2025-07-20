@@ -108,6 +108,27 @@ module.exports = {
             '6696c2ca763f0712c198db88',
           ],
           questionGroups: ['6696c2ca763f0712c198db72']
+        },
+        {
+          _id: '6696c2ca763f0712c198db8c',
+          name: {
+            ru: 'Правила именования переменных',
+            en: 'Variable naming rules',
+            es: ''
+          },
+          challenges: [
+            '6696c2ca763f0712c198dbbb',
+            '6696c2ca763f0712c198dbbc',
+            '6696c2ca763f0712c198dbbd',
+            '6696c2ca763f0712c198dbbe',
+            '6696c2ca763f0712c198dbbf',
+            '6696c2ca763f0712c198dbc0',
+            '6696c2ca763f0712c198dbc1',
+            '6696c2ca763f0712c198dbc2',
+            '6696c2ca763f0712c198dbc3',
+            '6696c2ca763f0712c198dbc4',
+          ],
+          questionGroups: ['6696c2ca763f0712c198db8d']
         }
       ]
     }

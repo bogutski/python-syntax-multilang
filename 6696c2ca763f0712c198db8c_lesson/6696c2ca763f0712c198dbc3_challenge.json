@@ -1,0 +1,17 @@
+{
+  "completedSolution": "company_name = \"Google\"",
+  "initialSolution": "",
+  "openTest": "",
+  "name": {
+    "en": "Create a variable and assign it the name of the company.",
+    "ru": "Создайте переменную и присвойте ей имя компании."
+  },
+  "instruction": {
+    "en": "In 1997, the future founders of a well-known tech company, Larry Page and Sergey Brin, tried to sell their idea to Yahoo, but were rejected.\r\n\r\nCreate a variable `company name` and assign the string `\"Google\"` to it.\r\n\r\nFollow Python's naming conventions.",
+    "ru": "В 1997 году будущие основатели известной технологической компании Ларри Пейдж и Сергей Брин попытались продать свою идею Yahoo, но получили отказ.\r\n\r\nСоздайте переменную с именем `company name` и присвойте ей строку `\"Google\"`.\r\n\r\nСледуйте правилам именования переменных в Python."
+  },
+  "hint": {
+    "en": "Use snake_case and assign the company name as a string:\r\n```python\r\ncompany_name = \"Google\"\r\n```",
+    "ru": "Используйте snake_case и присвойте имя компании в виде строки:\r\n```python\r\ncompany_name = \"Google\"\r\n```"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "completedSolution": "right_border_color = \"red\"",
+  "initialSolution": "Rightbordercolor = \"red\"",
+  "openTest": "",
+  "name": {
+    "en": "Correct the variable name to match Python style and assign it a color value.",
+    "ru": "Исправьте имя переменной в соответствии со стилем Python и присвойте ей значение цвета."
+  },
+  "instruction": {
+    "en": "It is required to create a variable which will store the color of the right border of the element.\r\nAssign the value `\"red\"` to it.\r\n\r\nCorrect the variable name so that it follows Python's snake_case style.",
+    "ru": "Требуется создать переменную, в которой будет храниться цвет правой границы элемента.\r\nПрисвойте ей значение `\"red\"`.\r\n\r\nИсправьте имя переменной, чтобы оно соответствовало стилю `snake_case`, принятому в Python."
+  },
+  "hint": {
+    "en": "```python\r\nright_border_color = \"red\"\r\n```",
+    "ru": "```python\r\nright_border_color = \"red\"\r\n```"
+  }
+}
