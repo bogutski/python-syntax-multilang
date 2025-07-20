@@ -1,29 +1,26 @@
-// NAMEEN:Create a new variable inside the function
-// NAMERU:Создайте новую переменную внутри функции
+// NAMEEN:Assign a float to price
+// NAMERU:Присвойте переменной price дробное число
 
 /*
 INSTRUCTIONENSTART
-Inside the function `demo()`, create a new variable called `language`.
+Create a variable named `price`.
 
-Assign it the value `"Python"`.
+Assign it a float number, such as `19.99`.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-Внутри функции `demo()` создайте новую переменную с именем `language`.
+Создайте переменную с именем `price`.
 
-Присвойте ей значение `"Python"`.
+Присвойте ей дробное число, например `19.99`.
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
 ```python
-def demo():
-    language = "Python"
-
-demo()
+price = 19.99
 ```
 HINTENEND
 */
@@ -31,28 +28,19 @@ HINTENEND
 /*
 HINTRUSTART
 ```python
-def demo():
-    language = "Python"
-
-demo()
+price = 19.99
 ```
 HINTRUEND
 */
 
 /*
 INITIALSOLUTIONSTART
-def demo():
 
-
-demo()
 INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-def demo():
-    language = "Python"
-
-demo()
+price = 19.99
 // SOLUTIONEND
 
 // OPENTESTSSTART
@@ -60,8 +48,5 @@ demo()
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-def demo():
-    language = "Python"
-
-demo()
+price = 19.99
 // HIDDENTESTSEND

@@ -1,36 +1,26 @@
-// NAMEEN:Fix the print to output 5
-// NAMERU:Сделайте так, чтобы в выводе было число 5
+// NAMEEN:Assign False to is_ready
+// NAMERU:Присвойте переменной is_ready значение False
 
 /*
 INSTRUCTIONENSTART
-The function `demo()` changes the value of variable `a`.
+Create a variable named `is_ready`.
 
-Fix the code so that the print outside the function shows the global `a`, which equals 5.
-
-You can rename the local variable to avoid overwriting the global one.
+Assign it the boolean value `False`.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-Функция `demo()` изменяет значение переменной `a`.
+Создайте переменную с именем `is_ready`.
 
-Сделайте так, чтобы `print()` вне функции показывал глобальное значение переменной `a`, равное 5.
-
-Вы можете переименовать локальную переменную, чтобы избежать перезаписи глобальной.
+Присвойте ей логическое значение `False`.
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
 ```python
-a = 5
-
-def demo():
-    a = 100
-
-demo()
-print(a)
+is_ready = False
 ```
 HINTENEND
 */
@@ -38,38 +28,19 @@ HINTENEND
 /*
 HINTRUSTART
 ```python
-a = 5
-
-def demo():
-    a = 100
-
-demo()
-print(a)
+is_ready = False
 ```
 HINTRUEND
 */
 
 /*
 INITIALSOLUTIONSTART
-a = 5
 
-def demo():
-    global a
-    a = 100
-
-demo()
-print(a)
 INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-a = 5
-
-def demo():
-    a = 100
-
-demo()
-print(a)
+is_ready = False
 // SOLUTIONEND
 
 // OPENTESTSSTART
@@ -77,11 +48,5 @@ print(a)
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-a = 5
-
-def demo():
-    a = 100
-
-demo()
-print(a)
+is_ready = False
 // HIDDENTESTSEND

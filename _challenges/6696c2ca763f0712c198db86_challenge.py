@@ -1,59 +1,42 @@
-// NAMEEN:Make the function change the global variable
-// NAMERU:Сделайте так, чтобы функция изменила глобальную переменную
+// NAMEEN:Assign a name to user_name
+// NAMERU:Присвойте строку с именем переменной user_name
 
 /*
 INSTRUCTIONENSTART
-The variable `message` is defined outside the function.
+Create a variable named `user_name`.
 
-Inside the function, you assign a new value to `message`, but it doesn’t affect the global one.
-
-Fix the code so that the final `print()` shows `Python`.
+Assign it any string value, such as `"Anna"`.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-Переменная `message` определена вне функции.
+Создайте переменную с именем `user_name`.
 
-Внутри функции вы присваиваете новое значение переменной `message`, но это не влияет на глобальную.
-
-Исправьте код так, чтобы финальный `print()` вывел `Python`.
+Присвойте ей любую строку, например `"Anna"`.
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
-Use the `global` keyword to modify the global variable inside the function.
+user_name = "Anna"
 HINTENEND
 */
 
 /*
 HINTRUSTART
-Используйте ключевое слово `global`, чтобы изменить глобальную переменную внутри функции.
+user_name = "Anna"
 HINTRUEND
 */
 
 /*
 INITIALSOLUTIONSTART
-message = "Hello"
 
-def greet():
-    message = "Python"
-
-greet()
-print(message)
 INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-message = "Hello"
-
-def greet():
-    global message
-    message = "Python"
-
-greet()
-print(message)
+user_name = "Anna"
 // SOLUTIONEND
 
 // OPENTESTSSTART
@@ -61,12 +44,5 @@ print(message)
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-message = "Hello"
-
-def greet():
-    global message
-    message = "Python"
-
-greet()
-print(message)
+user_name = "Anna"
 // HIDDENTESTSEND

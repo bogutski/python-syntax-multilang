@@ -1,18 +1,18 @@
 {
-  "completedSolution": "message = \"Hello\"\r\n\r\ndef greet():\r\n    global message\r\n    message = \"Python\"\r\n\r\ngreet()\r\nprint(message)",
-  "initialSolution": "message = \"Hello\"\r\n\r\ndef greet():\r\n    message = \"Python\"\r\n\r\ngreet()\r\nprint(message)",
+  "completedSolution": "user_name = \"Anna\"",
+  "initialSolution": "",
   "openTest": "",
   "name": {
-    "en": "Make the function change the global variable",
-    "ru": "Сделайте так, чтобы функция изменила глобальную переменную"
+    "en": "Assign a name to user_name",
+    "ru": "Присвойте строку с именем переменной user_name"
   },
   "instruction": {
-    "en": "The variable `message` is defined outside the function.\r\n\r\nInside the function, you assign a new value to `message`, but it doesn’t affect the global one.\r\n\r\nFix the code so that the final `print()` shows `Python`.",
-    "ru": "Переменная `message` определена вне функции.\r\n\r\nВнутри функции вы присваиваете новое значение переменной `message`, но это не влияет на глобальную.\r\n\r\nИсправьте код так, чтобы финальный `print()` вывел `Python`."
+    "en": "Create a variable named `user_name`.\r\n\r\nAssign it any string value, such as `\"Anna\"`.",
+    "ru": "Создайте переменную с именем `user_name`.\r\n\r\nПрисвойте ей любую строку, например `\"Anna\"`."
   },
   "hint": {
-    "en": "Use the `global` keyword to modify the global variable inside the function.",
-    "ru": "Используйте ключевое слово `global`, чтобы изменить глобальную переменную внутри функции."
+    "en": "user_name = \"Anna\"",
+    "ru": "user_name = \"Anna\""
   },
   "checker": "equal",
   "programmingLang": "Python",
