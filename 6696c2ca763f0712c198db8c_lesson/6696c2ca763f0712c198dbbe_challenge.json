@@ -13,5 +13,10 @@
   "hint": {
     "en": "Only `user_login` is written in proper snake_case style.",
     "ru": "Только `user_login` записано в правильном стиле snake_case."
-  }
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbbe"
 }

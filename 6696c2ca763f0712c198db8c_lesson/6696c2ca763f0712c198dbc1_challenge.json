@@ -13,5 +13,10 @@
   "hint": {
     "en": "In Python, use snake_case and assign None:\r\n```python\r\ntoy_price = None\r\n```",
     "ru": "В Python используется стиль snake_case, и переменной присваивается None:\r\n```python\r\ntoy_price = None\r\n```"
-  }
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbc1"
 }

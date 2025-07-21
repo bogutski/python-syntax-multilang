@@ -13,5 +13,10 @@
   "hint": {
     "en": "- Use snake_case.\r\n- Do not start a variable name with a number.\r\n- Be descriptive but concise.",
     "ru": "- Используйте snake_case.\r\n- Не начинайте имя переменной с числа.\r\n- Имя должно быть описательным и понятным."
-  }
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbbf"
 }
