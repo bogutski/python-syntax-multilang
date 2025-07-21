@@ -13,5 +13,10 @@
   "hint": {
     "en": "Only `user_name` follows all naming rules and is not a reserved keyword.",
     "ru": "Только `user_name` соответствует всем правилам и не является зарезервированным словом."
-  }
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbbb"
 }

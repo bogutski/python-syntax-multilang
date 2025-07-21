@@ -13,5 +13,10 @@
   "hint": {
     "en": "Use snake_case and assign the company name as a string:\r\n```python\r\ncompany_name = \"Google\"\r\n```",
     "ru": "Используйте snake_case и присвойте имя компании в виде строки:\r\n```python\r\ncompany_name = \"Google\"\r\n```"
-  }
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbc3"
 }

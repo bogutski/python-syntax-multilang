@@ -13,5 +13,10 @@
   "hint": {
     "en": "Use snake_case for Python.\r\n```python\r\nnumber_of_weekly_workouts = 5\r\n```",
     "ru": "В Python используется стиль snake_case.\r\n```python\r\nnumber_of_weekly_workouts = 5\r\n```"
-  }
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbc0"
 }

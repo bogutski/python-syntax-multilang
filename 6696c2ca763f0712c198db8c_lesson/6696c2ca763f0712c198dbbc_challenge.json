@@ -13,5 +13,10 @@
   "hint": {
     "en": "Variable names can't contain dashes or start with numbers.\r\n`def` is a keyword. `$` is not allowed in names.\r\nOnly `_result2` is valid.",
     "ru": "Имена переменных не могут содержать дефис, начинаться с цифры или содержать знак `$`.\r\n`def` — это ключевое слово.\r\nТолько `_result2` — допустимое имя."
-  }
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbbc"
 }

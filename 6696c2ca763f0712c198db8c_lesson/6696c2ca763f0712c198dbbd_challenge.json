@@ -13,5 +13,10 @@
   "hint": {
     "en": "`class` is a reserved word. Identifiers can't include `!`, `-`, or start with a digit.\r\n`score_1` is the only valid name.",
     "ru": "`class` — это ключевое слово. Имена переменных не могут содержать `!`, `-` или начинаться с цифры.\r\nТолько `score_1` — допустимое имя."
-  }
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbbd"
 }
