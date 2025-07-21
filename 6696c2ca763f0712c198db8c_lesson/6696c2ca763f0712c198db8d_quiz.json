@@ -94,7 +94,7 @@
           "correct": true
         },
         {
-          "_id": "6696c2ca763f0712c198db10b",
+          "_id": "6696c2ca763f0712c198db9c",
           "name": {
             "ru": "Дефис -",
             "en": "Hyphen -"
@@ -154,7 +154,7 @@
           "correct": true
         },
         {
-          "_id": "6696c2ca763f0712c198db112",
+          "_id": "6696c2ca763f0712c198dba4",
           "name": {
             "ru": "PascalCase",
             "en": "PascalCase"
