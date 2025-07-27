@@ -149,7 +149,18 @@
             "en": "The wonders of assignment",
             "es": ""
           },
-          "challenges": [],
+          "challenges": [
+            "6696c2ca763f0712c198dbf1",
+            "6696c2ca763f0712c198dbf2",
+            "6696c2ca763f0712c198dbf3",
+            "6696c2ca763f0712c198dbf4",
+            "6696c2ca763f0712c198dbf5",
+            "6696c2ca763f0712c198dbf6",
+            "6696c2ca763f0712c198dbf7",
+            "6696c2ca763f0712c198dbf8",
+            "6696c2ca763f0712c198dbf9",
+            "6696c2ca763f0712c198dbfa"
+          ],
           "questionGroups": [
             "6696c2ca763f0712c198dbc9"
           ]

@@ -1,0 +1,17 @@
+{
+  "completedSolution": "count = 20\r\ncount = count + 5",
+  "initialSolution": "",
+  "openTest": "",
+  "name": {
+    "en": "Increase by 5",
+    "ru": "Увеличение на 5"
+  },
+  "instruction": {
+    "en": "Create a variable `count` and assign it the value `20`.\r\nThen increment the existing value of the `count` variable by `5`.\r\nTo do this, write the command:\r\n\r\n```python\r\ncount = 20\r\ncount = count + 5\r\n```",
+    "ru": "Создайте переменную `count` и присвойте ей значение `20`:\r\n\r\n```python\r\ncount = 20\r\n```\r\n\r\nЗатем запишите команду, увеличивающую имеющееся значение переменной count на `5`:\r\n```python\r\ncount = count + 5\r\n```\r\n\r\nИтого, в итоге должно получиться так:\r\n```python\r\ncount = 20\r\ncount = count + 5\r\n```"
+  },
+  "hint": {
+    "en": "",
+    "ru": ""
+  }
+}

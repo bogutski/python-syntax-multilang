@@ -9,158 +9,460 @@
       },
       "description": {
         "ru": "```python\nx = 3\nx = x + 4\nprint(x)\n```",
-        "en": "```python\nx = 3\nx = x + 4\nprint(x)\n```",
-        "es": ""
+        "en": ""
       },
-      "answerType": "multi",
+      "answerType": "single",
       "variants": [
         {
-          "_id": "6696c2ca763f0712c198db74",
+          "_id": "6696c2ca763f0712c198dbcb",
           "name": {
-            "ru": "Просто указать имя и значение, например: a = 5",
-            "en": "Just assign a name and value, e.g., a = 5"
+            "ru": "3",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dbcc",
+          "name": {
+            "ru": "4",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dbcd",
+          "name": {
+            "ru": "7",
+            "en": ""
           },
           "correct": true
         },
         {
-          "_id": "6696c2ca763f0712c198db75",
+          "_id": "6696c2ca763f0712c198dbce",
           "name": {
-            "ru": "Через ключевое слово var",
-            "en": "Using the keyword var"
-          },
-          "correct": false
-        },
-        {
-          "_id": "6696c2ca763f0712c198db76",
-          "name": {
-            "ru": "С помощью ключевого слова let",
-            "en": "With the let keyword"
-          },
-          "correct": false
-        },
-        {
-          "_id": "6696c2ca763f0712c198db77",
-          "name": {
-            "ru": "С помощью ключевого слова const",
-            "en": "Using the keyword const"
+            "ru": "Ошибка",
+            "en": ""
           },
           "correct": false
         }
       ]
     },
     {
-      "_id": "6696c2ca763f0712c198db78",
+      "_id": "6696c2ca763f0712c198dbcf",
       "name": {
-        "ru": "Можно ли изменить значение переменной, объявленной в Python?",
-        "en": "Can you change the value of a variable declared in Python?"
+        "ru": "Как Python обрабатывает выражение 'a = a + 2' ?",
+        "en": ""
+      },
+      "description": {
+        "ru": "",
+        "en": ""
       },
       "answerType": "single",
       "variants": [
         {
-          "_id": "6696c2ca763f0712c198db79",
+          "_id": "6696c2ca763f0712c198dbd0",
+          "name": {
+            "ru": "Сначала выполняется левая часть",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dbd1",
+          "name": {
+            "ru": "Сначала выполняется правая часть",
+            "en": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbd1",
+          "name": {
+            "ru": "Сначала обе части сравниваются",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbd2",
+          "name": {
+            "ru": "Сначала изменяется значение переменной, потом выполняются арифметические действия",
+            "en": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbd2",
+      "name": {
+        "ru": "Что будет выведено на экран?",
+        "en": ""
+      },
+      "description": {
+        "ru": "```python\na = 10\na = 20 + a / 2\nprint(a)\n```",
+        "en": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dbd3",
+          "name": {
+            "ru": "8.5",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dbd4",
+          "name": {
+            "ru": "12",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbd4",
+          "name": {
+            "ru": "10",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbd5",
+          "name": {
+            "ru": "25",
+            "en": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbd5",
+      "name": {
+        "ru": "Что произойдёт после выполнения кода?",
+        "en": ""
+      },
+      "description": {
+        "ru": "```python\nname = \"Alice\"\nname = name + \" Smith\"\nprint(name)\n```",
+        "en": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dbd6",
+          "name": {
+            "ru": "Ошибка сложения строк",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dbd7",
+          "name": {
+            "ru": "'name' станет 'Alice Smith'",
+            "en": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbd7",
+          "name": {
+            "ru": "'name' станет 'Smith Alice'",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbd8",
+          "name": {
+            "ru": "Ничего не изменится",
+            "en": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbd8",
+      "name": {
+        "ru": "Какое значение будет у переменной 'b' ?",
+        "en": ""
+      },
+      "description": {
+        "ru": "```python\nb = 8\nb = b * b\n```",
+        "en": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dbd9",
+          "name": {
+            "ru": "64",
+            "en": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dbda",
+          "name": {
+            "ru": "16",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dbdb",
+          "name": {
+            "ru": "0",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dbdc",
+          "name": {
+            "ru": "Ошибка",
+            "en": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbe0",
+      "name": {
+        "ru": "Что делает следующий код?",
+        "en": ""
+      },
+      "description": {
+        "ru": "```python\ntext = \"Hi\"\ntext = text + \" there\"\n```",
+        "en": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dbe1",
+          "name": {
+            "ru": "Добавляет пробел между словами",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dbe2",
+          "name": {
+            "ru": "Заменяет \"Hi\" на \"there\"",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbe2",
+          "name": {
+            "ru": "Соединяет строки в одну",
+            "en": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbe3",
+          "name": {
+            "ru": "Вызывает ошибку",
+            "en": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbe3",
+      "name": {
+        "ru": "Что будет выведено в консоль?",
+        "en": ""
+      },
+      "description": {
+        "ru": "```python\nx = 5\nx = x + 1\nx = x * 2\nprint(x)\n```",
+        "en": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dbe4",
+          "name": {
+            "ru": "6",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dbe5",
+          "name": {
+            "ru": "10",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbe5",
+          "name": {
+            "ru": "11",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbe6",
+          "name": {
+            "ru": "12",
+            "en": ""
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbe6",
+      "name": {
+        "ru": "Какой результат?",
+        "en": ""
+      },
+      "description": {
+        "ru": "```python\na = 4\na = (a + 2) * 3\nprint(a)\n```",
+        "en": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dbe7",
+          "name": {
+            "ru": "18",
+            "en": ""
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dbe8",
+          "name": {
+            "ru": "14",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbe8",
+          "name": {
+            "ru": "12",
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbe9",
+          "name": {
+            "ru": "6",
+            "en": ""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dbe9",
+      "name": {
+        "ru": "Сможет ли такой код работать без ошибок?",
+        "en": ""
+      },
+      "description": {
+        "ru": "```python\na = 2\na = a - a\n```",
+        "en": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dbea",
           "name": {
             "ru": "Да",
-            "en": "Yes"
+            "en": ""
           },
           "correct": true
         },
         {
-          "_id": "6696c2ca763f0712c198db7a",
+          "_id": "6696c2ca763f0712c198dbeb",
           "name": {
             "ru": "Нет",
-            "en": "No"
+            "en": ""
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c199dbeb",
+          "name": {
+            "ru": "Да, но только нужно добавить 'print()'",
+            "en": ""
           },
           "correct": false
         }
       ]
     },
     {
-      "_id": "6696c2ca763f0712c198db7b",
+      "_id": "6696c2ca763f0712c198dbec",
       "name": {
-        "ru": "Можно ли изменить значение переменной, созданной внутри функции, снаружи этой функции?",
-        "en": "Can you change the value of a variable created inside a function from outside the function?"
+        "ru": "Какой будет результат?",
+        "en": ""
+      },
+      "description": {
+        "ru": "```python\na = 8\na = 5\na = a + 5 - 3 * a\nprint(a)\n```",
+        "en": ""
       },
       "answerType": "single",
       "variants": [
         {
-          "_id": "6696c2ca763f0712c198db7c",
+          "_id": "6696c2ca763f0712c198dbed",
           "name": {
-            "ru": "Да",
-            "en": "Yes"
+            "ru": "15",
+            "en": ""
           },
           "correct": false
         },
         {
-          "_id": "6696c2ca763f0712c198db7d",
+          "_id": "6696c2ca763f0712c198dbee",
           "name": {
-            "ru": "Нет",
-            "en": "No"
-          },
-          "correct": true
-        }
-      ]
-    },
-    {
-      "_id": "6696c2ca763f0712c198db7e",
-      "name": {
-        "ru": "У переменных внутри функции и вне функции разная область видимости.",
-        "en": "Variables inside and outside a function have different scopes."
-      },
-      "answerType": "single",
-      "variants": [
-        {
-          "_id": "6696c2ca763f0712c198db7f",
-          "name": {
-            "ru": "Да",
-            "en": "Yes"
-          },
-          "correct": true
-        },
-        {
-          "_id": "6696c2ca763f0712c198db80",
-          "name": {
-            "ru": "Нет",
-            "en": "No"
+            "ru": "-11",
+            "en": ""
           },
           "correct": false
-        }
-      ]
-    },
-    {
-      "_id": "6696c2ca763f0712c198db81",
-      "name": {
-        "ru": "Нужно ли в Python использовать ключевые слова (например, global), чтобы изменить глобальную переменную внутри функции?",
-        "en": "In Python, do you need to use keywords (like global) to modify a global variable inside a function?"
-      },
-      "answerType": "single",
-      "variants": [
-        {
-          "_id": "6696c2ca763f0712c198db82",
-          "name": {
-            "ru": "Данное утверждение верно",
-            "en": "This statement is true"
-          },
-          "correct": true
         },
         {
-          "_id": "6696c2ca763f0712c198db83",
+          "_id": "6696c2ca763f0712c198dbef",
           "name": {
-            "ru": "Неверно",
-            "en": "This statement is false"
+            "ru": "-15",
+            "en": ""
           },
           "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dbf0",
+          "name": {
+            "ru": "-5",
+            "en": ""
+          },
+          "correct": true
         }
       ]
     }
+
   ],
   "acceptableMistakes": 1,
   "active": true,
   "description": {
-    "ru": "Вопросы по теме \"Область видимости переменных\" в Python",
-    "en": "Quiz on Python variable scope"
+    "ru": "Вопросы по теме \"Особенности присваивания\" в Python",
+    "en": "Quiz on The wonders of assignment"
   },
   "name": {
-    "ru": "Python Syntax. Область видимости переменной",
-    "en": "Python Syntax. Variable scope"
+    "ru": "Python Syntax. Особенности присваивания",
+    "en": "Python Syntax. The wonders of assignment"
   }
 }
