@@ -13,5 +13,10 @@
   "hint": {
     "en": "",
     "ru": ""
-  }
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbf1"
 }
