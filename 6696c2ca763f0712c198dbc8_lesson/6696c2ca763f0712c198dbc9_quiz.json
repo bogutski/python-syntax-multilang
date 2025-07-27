@@ -1,0 +1,166 @@
+{
+  "_id": "6696c2ca763f0712c198dbc9",
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198dbca",
+      "name": {
+        "ru": "Что произойдёт в результате выполнения этого кода?",
+        "en": ""
+      },
+      "description": {
+        "ru": "```python\nx = 3\nx = x + 4\nprint(x)\n```",
+        "en": "```python\nx = 3\nx = x + 4\nprint(x)\n```",
+        "es": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db74",
+          "name": {
+            "ru": "Просто указать имя и значение, например: a = 5",
+            "en": "Just assign a name and value, e.g., a = 5"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db75",
+          "name": {
+            "ru": "Через ключевое слово var",
+            "en": "Using the keyword var"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db76",
+          "name": {
+            "ru": "С помощью ключевого слова let",
+            "en": "With the let keyword"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db77",
+          "name": {
+            "ru": "С помощью ключевого слова const",
+            "en": "Using the keyword const"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db78",
+      "name": {
+        "ru": "Можно ли изменить значение переменной, объявленной в Python?",
+        "en": "Can you change the value of a variable declared in Python?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db79",
+          "name": {
+            "ru": "Да",
+            "en": "Yes"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db7a",
+          "name": {
+            "ru": "Нет",
+            "en": "No"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db7b",
+      "name": {
+        "ru": "Можно ли изменить значение переменной, созданной внутри функции, снаружи этой функции?",
+        "en": "Can you change the value of a variable created inside a function from outside the function?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db7c",
+          "name": {
+            "ru": "Да",
+            "en": "Yes"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198db7d",
+          "name": {
+            "ru": "Нет",
+            "en": "No"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db7e",
+      "name": {
+        "ru": "У переменных внутри функции и вне функции разная область видимости.",
+        "en": "Variables inside and outside a function have different scopes."
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db7f",
+          "name": {
+            "ru": "Да",
+            "en": "Yes"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db80",
+          "name": {
+            "ru": "Нет",
+            "en": "No"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198db81",
+      "name": {
+        "ru": "Нужно ли в Python использовать ключевые слова (например, global), чтобы изменить глобальную переменную внутри функции?",
+        "en": "In Python, do you need to use keywords (like global) to modify a global variable inside a function?"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198db82",
+          "name": {
+            "ru": "Данное утверждение верно",
+            "en": "This statement is true"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198db83",
+          "name": {
+            "ru": "Неверно",
+            "en": "This statement is false"
+          },
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": true,
+  "description": {
+    "ru": "Вопросы по теме \"Область видимости переменных\" в Python",
+    "en": "Quiz on Python variable scope"
+  },
+  "name": {
+    "ru": "Python Syntax. Область видимости переменной",
+    "en": "Python Syntax. Variable scope"
+  }
+}

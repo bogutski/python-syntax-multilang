@@ -129,6 +129,16 @@ module.exports = {
             '6696c2ca763f0712c198dbc4',
           ],
           questionGroups: ['6696c2ca763f0712c198db8d']
+        },
+        {
+          _id: '6696c2ca763f0712c198dbc8',
+          name: {
+            ru: 'Особенности присваивания',
+            en: 'The wonders of assignment',
+            es: ''
+          },
+          challenges: [],
+          questionGroups: ['6696c2ca763f0712c198dbc9']
         }
       ]
     }
