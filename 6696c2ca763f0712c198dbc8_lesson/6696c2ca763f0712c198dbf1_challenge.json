@@ -1,7 +1,7 @@
 {
   "completedSolution": "count = 20\r\ncount = count + 5",
   "initialSolution": "",
-  "openTest": "it(`'count' variable contains a value`, () => {\r\n  expect(count).not.undefined;\r\n});\r\n\r\nit(`The data type of the 'count' variable is number`, () => {\r\n  expect(count).a('number');\r\n});\r\n\r\nit(`The 'count' variable contains 25`, () => {\r\n  expect(count).eq(25);\r\n});",
+  "openTest": "class TestClass(object):\r\n    def test_1(self):\r\n        \"\"\"'count' variable contains a value\"\"\"\r\n        assert count is not None, \"Expected 'count' to not be None\"\r\n\r\n    def test_2(self):\r\n        \"\"\"The data type of the 'count' variable is number\"\"\"\r\n        assert isinstance(count, (int, float)), \"Expected 'count' to be a number\"\r\n\r\n    def test_3(self):\r\n        \"\"\"The 'count' variable contains 25\"\"\"\r\n        assert count == 25, \"Expected 'count' to be 25\"",
   "name": {
     "en": "Increase by 5",
     "ru": "Увеличение на 5"
