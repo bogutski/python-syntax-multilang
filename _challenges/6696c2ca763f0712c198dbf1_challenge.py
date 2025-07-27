@@ -59,10 +59,19 @@ count = count + 5
 // SOLUTIONEND
 
 // OPENTESTSSTART
+it(`'count' variable contains a value`, () => {
+  expect(count).not.undefined;
+});
 
+it(`The data type of the 'count' variable is number`, () => {
+  expect(count).a('number');
+});
+
+it(`The 'count' variable contains 25`, () => {
+  expect(count).eq(25);
+});
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-count = 20
-count = count + 5
+
 // HIDDENTESTSEND

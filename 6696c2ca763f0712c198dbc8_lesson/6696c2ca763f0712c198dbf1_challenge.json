@@ -1,7 +1,7 @@
 {
   "completedSolution": "count = 20\r\ncount = count + 5",
   "initialSolution": "",
-  "openTest": "",
+  "openTest": "it(`'count' variable contains a value`, () => {\r\n  expect(count).not.undefined;\r\n});\r\n\r\nit(`The data type of the 'count' variable is number`, () => {\r\n  expect(count).a('number');\r\n});\r\n\r\nit(`The 'count' variable contains 25`, () => {\r\n  expect(count).eq(25);\r\n});",
   "name": {
     "en": "Increase by 5",
     "ru": "Увеличение на 5"
@@ -14,7 +14,7 @@
     "en": "",
     "ru": ""
   },
-  "checker": "equal",
+  "checker": "unit",
   "programmingLang": "Python",
   "status": "new",
   "level": "Easy",
