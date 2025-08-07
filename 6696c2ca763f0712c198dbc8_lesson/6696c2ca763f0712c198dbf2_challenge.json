@@ -1,5 +1,5 @@
 {
-  "completedSolution": "book_title = \"Alice in Wonderland\"",
+  "completedSolution": "def isAllLower(str):\r\n    return str == str..lower()",
   "initialSolution": "",
   "openTest": "",
   "name": {
@@ -12,6 +12,11 @@
   },
   "hint": {
     "en": "Use a variable name like `book_title`, and assign the string:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```",
-    "ru": "Используйте имя переменной, например `book_title`, и присвойте ей строку:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```"
-  }
+    "ru": "Используйте имя переменной, например `book_title`, и присвойте ей строку:\r\n```python\r\nfunction isAllLower(str) {\r\n  return str === str.toLowerCase();\r\n}\r\n```"
+  },
+  "checker": "unit",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbf2"
 }

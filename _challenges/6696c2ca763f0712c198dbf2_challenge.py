@@ -34,7 +34,9 @@ HINTENEND
 HINTRUSTART
 Используйте имя переменной, например `book_title`, и присвойте ей строку:
 ```python
-book_title = "Alice in Wonderland"
+function isAllLower(str) {
+  return str === str.toLowerCase();
+}
 ```
 HINTRUEND
 */
@@ -46,7 +48,8 @@ INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-book_title = "Alice in Wonderland"
+def isAllLower(str):
+    return str == str..lower()
 // SOLUTIONEND
 
 // OPENTESTSSTART
@@ -54,5 +57,27 @@ book_title = "Alice in Wonderland"
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-book_title = "Alice in Wonderland"
+it('Created function isAllLower', () => {
+  expect(isAllLower).to.be.a('function');
+});
+
+it('isAllLower("abc") should return true', () => {
+  expect(isAllLower('abc')).to.equal(true);
+});
+
+it('isAllLower("aBc") should return false', () => {
+  expect(isAllLower('aBc')).to.equal(false);
+});
+
+it('isAllLower("abc123") should return true', () => {
+  expect(isAllLower('abc123')).to.equal(true);
+});
+
+it('isAllLower("abc 123") should return true', () => {
+  expect(isAllLower('abc 123')).to.equal(true);
+});
+
+it('isAllLower("") should return true', () => {
+  expect(isAllLower('')).to.equal(true);
+});
 // HIDDENTESTSEND
