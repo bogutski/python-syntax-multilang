@@ -59,18 +59,17 @@ count = count + 5
 // SOLUTIONEND
 
 // OPENTESTSSTART
-class TestClass(object):
-    def test_1(self):
-        """'count' variable contains a value"""
-        assert count is not None, "Expected 'count' to not be None"
+it(`'count' variable contains a value`, () => {
+  expect(count).not.undefined;
+});
 
-    def test_2(self):
-        """The data type of the 'count' variable is number"""
-        assert isinstance(count, (int, float)), "Expected 'count' to be a number"
+it(`The data type of the 'count' variable is number`, () => {
+  expect(count).a('number');
+});
 
-    def test_3(self):
-        """The 'count' variable contains 25"""
-        assert count == 25, "Expected 'count' to be 25"
+it(`The 'count' variable contains 25`, () => {
+  expect(count).eq(25);
+});
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
