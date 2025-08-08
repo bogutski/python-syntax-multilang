@@ -1,17 +1,22 @@
 {
-  "completedSolution": "book_title = \"Alice in Wonderland\"",
+  "completedSolution": "start_money = 150\r\nlost_money = 60\r\nend_money = start_money - lost_money",
   "initialSolution": "",
-  "openTest": "",
+  "openTest": "it('The \"start_money\" variable contains a value more or equal 100', () => {\r\n  expect(start_money).gte(100);\r\n});\r\n\r\nit('The \"lost_money\" variable contains a value between 50 and 80', () => {\r\n  expect(lost_money).gte(50).lte(80);\r\n});\r\n\r\nit('The \"end_money\" variable contains the difference between \"start_money\" and \"lost_money\"', () => {\r\n  expect(end_money).equal(start_money - lost_money);",
   "name": {
-    "en": "Assign a famous book title to a variable.",
-    "ru": "Присвойте название известной книги переменной."
+    "en": "The unpredictability of the game",
+    "ru": "Непредсказуемость игры"
   },
   "instruction": {
-    "en": "In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.\r\n\r\nCreate a variable and assign the title `\"Alice in Wonderland\"` to it.\r\n\r\nUse an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.",
-    "ru": "В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.\r\n\r\nСоздайте переменную и присвойте ей значение `\"Alice in Wonderland\"`.\r\n\r\nИспользуйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги»."
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-8.png)\r\n\r\nA tourist in Las Vegas started a game with some amount of money.\r\n\r\nCreate a variable `start_money` and assign it a value greater than or equal to `100`.\r\n\r\nAt the end of the game, he lost some amount of money.\r\n\r\nCreate a variable `lost_money` and assign it a value between `50` and `80`.\r\n\r\nCreate a variable `end_money` and assign it the calculated value of the remaining money,\r\n\r\nwhich is the difference between `start_money` and `lost_money`.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-8.png)\r\n\r\nТурист в Лас-Вегасе начал игру со какой-то суммой денег.\r\n\r\nСоздайте переменную `start_money` и присвойте ей значение большее либо равное `100`.\r\n\r\nВ конце игры он проиграл какую-то сумму денег.\r\n\r\nСоздайте переменную `lost_money` и присвойте ей значение от `50` до `80`.\r\n\r\nСоздайте переменную `end_money` и присвойте ей вычисленное значение оставшихся денег, как разницу между `start_money` и `lost_money`."
   },
   "hint": {
-    "en": "Use a variable name like `book_title`, and assign the string:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```",
-    "ru": "Используйте имя переменной, например `book_title`, и присвойте ей строку:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```"
-  }
+    "en": "Here is a similar example:\r\n```python\r\nstart_money = 150\r\nlost_money = 60\r\nend_money = start_money - lost_money\r\n```",
+    "ru": "Похожий пример:\r\n```python\r\nstart_money = 150\r\nlost_money = 60\r\nend_money = start_money - lost_money\r\n```"
+  },
+  "checker": "unit",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbf7"
 }

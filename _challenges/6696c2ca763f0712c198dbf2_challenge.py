@@ -1,42 +1,52 @@
-// NAMEEN:Assign a famous book title to a variable.
-// NAMERU:Присвойте название известной книги переменной.
+// NAMEEN:Increase by 1
+// NAMERU:Увеличение на 1
 
 /*
 INSTRUCTIONENSTART
-In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-2.png)
 
-Create a variable and assign the title `"Alice in Wonderland"` to it.
+When we count something, we sometimes add one to a number that is already there.
+For example, you counted the number of chairs in all the rooms, and the number of chairs is `11`.
+But when you went to the balcony, you saw one more chair. Then you add `1` to the number of chairs you have,
+and the result becomes `12`.
 
-Use an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.
+Create a variable `count` and give it a value of `11`.
+
+Then write a command that increments the value of the `count` variable by `1`.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-2.png)
 
-Создайте переменную и присвойте ей значение `"Alice in Wonderland"`.
+Когда мы считаем что-то, мы иногда прибавляем единицу к уже имеющемуся числу.
+Например, вы посчитали количество стульев во всех комнатах, и количество стульев равно `11`.
+Но когда вы вышли на балкон, вы увидели ещё один стул. Тогда вы прибавляете `1` к имеющемуся количеству,
+и результат становится равным `12`.
 
-Используйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги».
+Создайте переменную `count` и присвойте ей значение `11`.
+
+Затем запишите команду, увеличивающую значение переменной `count` на `1`.
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
-Use a variable name like `book_title`, and assign the string:
+Similar example:
 ```python
-book_title = "Alice in Wonderland"
+a = 5
+a = a + 1
 ```
 HINTENEND
 */
 
 /*
 HINTRUSTART
-Используйте имя переменной, например `book_title`, и присвойте ей строку:
+Похожий пример:
 ```python
-function isAllLower(str) {
-  return str === str.toLowerCase();
-}
+a = 5
+a = a + 1
 ```
 HINTRUEND
 */
@@ -48,36 +58,28 @@ INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-def isAllLower(str):
-    return str == str..lower()
+count = 11
+count = count + 1
 // SOLUTIONEND
 
 // OPENTESTSSTART
+it('the variable "count" exists and has a value', () => {
+  expect(count).not.undefined;
+});
 
+it('the variable "count" is not NaN', () => {
+  expect(isNaN(count)).false;
+});
+
+it('the variable "count" is of type number', () => {
+  expect(count).a('number');
+});
+
+it('the variable "count" is equal to 12', () => {
+  expect(count).equal(12);
+});
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-it('Created function isAllLower', () => {
-  expect(isAllLower).to.be.a('function');
-});
 
-it('isAllLower("abc") should return true', () => {
-  expect(isAllLower('abc')).to.equal(true);
-});
-
-it('isAllLower("aBc") should return false', () => {
-  expect(isAllLower('aBc')).to.equal(false);
-});
-
-it('isAllLower("abc123") should return true', () => {
-  expect(isAllLower('abc123')).to.equal(true);
-});
-
-it('isAllLower("abc 123") should return true', () => {
-  expect(isAllLower('abc 123')).to.equal(true);
-});
-
-it('isAllLower("") should return true', () => {
-  expect(isAllLower('')).to.equal(true);
-});
 // HIDDENTESTSEND

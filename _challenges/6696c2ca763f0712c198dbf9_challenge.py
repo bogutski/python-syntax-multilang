@@ -1,40 +1,48 @@
-// NAMEEN:Assign a famous book title to a variable.
-// NAMERU:Присвойте название известной книги переменной.
+// NAMEEN:How much money is left over from shopping?
+// NAMERU:Сколько денег осталось после покупок?
 
 /*
 INSTRUCTIONENSTART
-In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-12.png)
 
-Create a variable and assign the title `"Alice in Wonderland"` to it.
+After the purchases were made in the store, the amount of money available decreased by $48.
 
-Use an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.
+Suppose that the variable `cash` stores some number.
+
+Create a variable `cash` with value `200`.
+
+Write a command that reduces the existing value of the `cash` variable by `48`.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-12.png)
 
-Создайте переменную и присвойте ей значение `"Alice in Wonderland"`.
+После сделанных в магазине покупок количество имеющихся денег уменьшилось на 48 долларов.
 
-Используйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги».
+Создайте переменную `cash` со значением `200`.
+
+Запишите команду, которая уменьшает имеющееся значение переменной `cash` на `48`.
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
-Use a variable name like `book_title`, and assign the string:
+Similar example:
 ```python
-book_title = "Alice in Wonderland"
+cash = 100
+cash = cash - 25
 ```
 HINTENEND
 */
 
 /*
 HINTRUSTART
-Используйте имя переменной, например `book_title`, и присвойте ей строку:
+Похожий пример:
 ```python
-book_title = "Alice in Wonderland"
+cash = 100
+cash = cash - 25
 ```
 HINTRUEND
 */
@@ -46,13 +54,24 @@ INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-book_title = "Alice in Wonderland"
+cash = 200
+cash = cash - 48
 // SOLUTIONEND
 
 // OPENTESTSSTART
+it('The "cash" variable should be defined', () => {
+    expect(cash).not.undefined;
+});
 
+it('The "cash" variable should be a number', () => {
+    expect(typeof cash).eq('number');
+});
+
+it('The "cash" variable should be equal to 152', () => {
+    expect(cash).eq(152);
+});
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-book_title = "Alice in Wonderland"
+
 // HIDDENTESTSEND

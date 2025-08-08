@@ -1,17 +1,22 @@
 {
-  "completedSolution": "book_title = \"Alice in Wonderland\"",
+  "completedSolution": "pie_weight = 1400\r\npie_weight = pie_weight / 8",
   "initialSolution": "",
-  "openTest": "",
+  "openTest": "it('the variable \"pie_weight\" exists and has a value', () => {\r\n  expect(pie_weight).not.undefined;\r\n});\r\n\r\nit('the variable \"pie_weight\" is not NaN', () => {\r\n  expect(isNaN(pie_weight)).false;\r\n});\r\n\r\nit('the variable \"pie_weight\" is of type number', () => {\r\n  expect(pie_weight).a('number');\r\n});\r\n\r\nit('the \"pie_weight\" variable is 175', () => {\r\n  expect(pie_weight).equal(175);\r\n});",
   "name": {
-    "en": "Assign a famous book title to a variable.",
-    "ru": "Присвойте название известной книги переменной."
+    "en": "Delicious cake",
+    "ru": "Вкусный пирог"
   },
   "instruction": {
-    "en": "In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.\r\n\r\nCreate a variable and assign the title `\"Alice in Wonderland\"` to it.\r\n\r\nUse an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.",
-    "ru": "В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.\r\n\r\nСоздайте переменную и присвойте ей значение `\"Alice in Wonderland\"`.\r\n\r\nИспользуйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги»."
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-4.png)\r\n\r\nThe hostess baked a pie weighing 1400 g and left it on the table.\r\nWhen she returned, only 1/8 of the pie was on the plate.\r\nFind the weight of the rest of the pie.\r\n\r\nCreate a variable `pie_weight` and assign a value of `1400` to it.\r\nThen write a command that decreases the value of the `pie_weight` variable by a factor of `8`.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-4.png)\r\n\r\nХозяйка испекла пирог весом 1400 г и оставила на столе.\r\nКогда она вернулась, на блюде лежала только 1/8 часть пирога.\r\nНайдите вес оставшейся части пирога.\r\n\r\nСоздайте переменную `pie_weight` и присвойте ей значение `1400`.\r\nЗатем запишите команду, уменьшающую значение переменной `pie_weight` в `8` раз.\r\n\r\nПример на Python, принципиально похожий на то, что нужно сделать:"
   },
   "hint": {
-    "en": "Use a variable name like `book_title`, and assign the string:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```",
-    "ru": "Используйте имя переменной, например `book_title`, и присвойте ей строку:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```"
-  }
+    "en": "Here is an example, which is fundamentally similar to what you need to do,\r\nbut adapt it to the needs of the task:\r\n```python\r\na = 100\r\na = a / 5\r\n```",
+    "ru": "Приведенный пример, принципиально похож на то, что нужно сделать,\r\nно адаптируйте его к требованиям задачи:\r\n```python\r\na = 100\r\na = a / 5\r\n```"
+  },
+  "checker": "unit",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbf4"
 }

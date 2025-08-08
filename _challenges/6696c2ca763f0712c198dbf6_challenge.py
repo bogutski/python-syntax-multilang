@@ -1,58 +1,72 @@
-// NAMEEN:Assign a famous book title to a variable.
-// NAMERU:Присвойте название известной книги переменной.
+// NAMEEN:Reduced by two times
+// NAMERU:Уменьшение в 2 раза
 
 /*
 INSTRUCTIONENSTART
-In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-7.png)
 
-Create a variable and assign the title `"Alice in Wonderland"` to it.
-
-Use an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.
+Variable `sum` is created and has a value.
+Write a command that reduces the existing value of `sum` variable by a factor of `2`.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-7.png)
 
-Создайте переменную и присвойте ей значение `"Alice in Wonderland"`.
-
-Используйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги».
+Переменная `sum` уже создана со значением `20`.
+В следующей строке нужно записать команду, уменьшающую имеющееся значение переменной `sum` в `2` раза.
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
-Use a variable name like `book_title`, and assign the string:
+Here is an example that is fundamentally similar to what needs to be done,
+but adapt it to the requirements of the task.
 ```python
-book_title = "Alice in Wonderland"
+count = count / 3
 ```
 HINTENEND
 */
 
 /*
 HINTRUSTART
-Используйте имя переменной, например `book_title`, и присвойте ей строку:
+Приведенный пример принципиально похож на то, что нужно сделать,
+но адаптируйте его к требованиям задачи.
 ```python
-book_title = "Alice in Wonderland"
+count = count / 3
 ```
 HINTRUEND
 */
 
 /*
 INITIALSOLUTIONSTART
-
+sum = 20
 INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-book_title = "Alice in Wonderland"
+sum = 20
+sum = sum / 2
 // SOLUTIONEND
 
 // OPENTESTSSTART
+it('variable "sum" exists and has a value', () => {
+    expect(sum).not.undefined;
+});
 
+it('variable "sum" is not NaN', () => {
+    expect(isNaN(sum)).false;
+});
+
+it('variable "sum" has the correct value', () => {
+    expect(sum).equal(10);
+});
+it('variable "sum" is of type number', () => {
+    expect(sum).a('number');
+});
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-book_title = "Alice in Wonderland"
+
 // HIDDENTESTSEND

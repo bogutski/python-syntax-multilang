@@ -1,17 +1,22 @@
 {
-  "completedSolution": "book_title = \"Alice in Wonderland\"",
+  "completedSolution": "people_count = 180000\r\npeople_count = people_count + people_count * 0.03",
   "initialSolution": "",
-  "openTest": "",
+  "openTest": "it('the variable \"people_count\" exists and has a value', () => {\r\n  expect(people_count).not.undefined;\r\n});\r\n\r\nit('the variable \"people_count\" is not NaN', () => {\r\n  expect(isNaN(people_count)).false;\r\n});\r\n\r\nit('the variable \"people_count\" is of type number', () => {\r\n  expect(people_count).a('number');\r\n});\r\n\r\nit('the variable \"people_count\" is equal to 185400', () => {\r\n  expect(people_count).equal(185400);\r\n});",
   "name": {
-    "en": "Assign a famous book title to a variable.",
-    "ru": "Присвойте название известной книги переменной."
+    "en": "Population growth in the city",
+    "ru": "Рост населения города"
   },
   "instruction": {
-    "en": "In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.\r\n\r\nCreate a variable and assign the title `\"Alice in Wonderland\"` to it.\r\n\r\nUse an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.",
-    "ru": "В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.\r\n\r\nСоздайте переменную и присвойте ей значение `\"Alice in Wonderland\"`.\r\n\r\nИспользуйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги»."
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-5.png)\r\n\r\nThe city has a population of 180,000 people. Due to natural increase the population increases by 3% per year.\r\nWhat will be the population of the city in a year?\r\n\r\nCreate a variable `people_count` and give it a value of `180000`.\r\nThen write a command that increases the value of variable `people_count` by 3%.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-5.png)\r\n\r\nВ городе проживает 180000 человек. За счет естественного прироста количество населения увеличивается на 3% в год.\r\nКаким будет население города через год?\r\n\r\nСоздайте переменную `people_count` и присвойте ей значение `180000`.\r\nЗатем запишите команду, увеличивающую значение переменной `people_count` на 3%."
   },
   "hint": {
-    "en": "Use a variable name like `book_title`, and assign the string:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```",
-    "ru": "Используйте имя переменной, например `book_title`, и присвойте ей строку:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```"
-  }
+    "en": "Here is an example, which is fundamentally similar to what you need to do,\r\nbut adapt it to the requirements of the task:\r\n```python\r\na = 100\r\na = a + a * 0.05 # the command increments the value of variable a by 5%\r\n```",
+    "ru": "Приведенный пример, принципиально похож на то, что нужно сделать,\r\nно адаптируйте его к требованиям задачи:\r\n```python\r\na = 100\r\na = a + a * 0.05 # команда увеличивает значение переменной a на 5 процентов\r\n```"
+  },
+  "checker": "unit",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbf5"
 }

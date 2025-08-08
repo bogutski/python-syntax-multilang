@@ -1,40 +1,52 @@
-// NAMEEN:Assign a famous book title to a variable.
-// NAMERU:Присвойте название известной книги переменной.
+// NAMEEN:Delicious cake
+// NAMERU:Вкусный пирог
 
 /*
 INSTRUCTIONENSTART
-In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-4.png)
 
-Create a variable and assign the title `"Alice in Wonderland"` to it.
+The hostess baked a pie weighing 1400 g and left it on the table.
+When she returned, only 1/8 of the pie was on the plate.
+Find the weight of the rest of the pie.
 
-Use an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.
+Create a variable `pie_weight` and assign a value of `1400` to it.
+Then write a command that decreases the value of the `pie_weight` variable by a factor of `8`.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-4.png)
 
-Создайте переменную и присвойте ей значение `"Alice in Wonderland"`.
+Хозяйка испекла пирог весом 1400 г и оставила на столе.
+Когда она вернулась, на блюде лежала только 1/8 часть пирога.
+Найдите вес оставшейся части пирога.
 
-Используйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги».
+Создайте переменную `pie_weight` и присвойте ей значение `1400`.
+Затем запишите команду, уменьшающую значение переменной `pie_weight` в `8` раз.
+
+Пример на Python, принципиально похожий на то, что нужно сделать:
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
-Use a variable name like `book_title`, and assign the string:
+Here is an example, which is fundamentally similar to what you need to do,
+but adapt it to the needs of the task:
 ```python
-book_title = "Alice in Wonderland"
+a = 100
+a = a / 5
 ```
 HINTENEND
 */
 
 /*
 HINTRUSTART
-Используйте имя переменной, например `book_title`, и присвойте ей строку:
+Приведенный пример, принципиально похож на то, что нужно сделать,
+но адаптируйте его к требованиям задачи:
 ```python
-book_title = "Alice in Wonderland"
+a = 100
+a = a / 5
 ```
 HINTRUEND
 */
@@ -46,13 +58,28 @@ INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-book_title = "Alice in Wonderland"
+pie_weight = 1400
+pie_weight = pie_weight / 8
 // SOLUTIONEND
 
 // OPENTESTSSTART
+it('the variable "pie_weight" exists and has a value', () => {
+  expect(pie_weight).not.undefined;
+});
 
+it('the variable "pie_weight" is not NaN', () => {
+  expect(isNaN(pie_weight)).false;
+});
+
+it('the variable "pie_weight" is of type number', () => {
+  expect(pie_weight).a('number');
+});
+
+it('the "pie_weight" variable is 175', () => {
+  expect(pie_weight).equal(175);
+});
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-book_title = "Alice in Wonderland"
+
 // HIDDENTESTSEND

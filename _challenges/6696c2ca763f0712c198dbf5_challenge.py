@@ -1,40 +1,48 @@
-// NAMEEN:Assign a famous book title to a variable.
-// NAMERU:Присвойте название известной книги переменной.
+// NAMEEN:Population growth in the city
+// NAMERU:Рост населения города
 
 /*
 INSTRUCTIONENSTART
-In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-5.png)
 
-Create a variable and assign the title `"Alice in Wonderland"` to it.
+The city has a population of 180,000 people. Due to natural increase the population increases by 3% per year.
+What will be the population of the city in a year?
 
-Use an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.
+Create a variable `people_count` and give it a value of `180000`.
+Then write a command that increases the value of variable `people_count` by 3%.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-5.png)
 
-Создайте переменную и присвойте ей значение `"Alice in Wonderland"`.
+В городе проживает 180000 человек. За счет естественного прироста количество населения увеличивается на 3% в год.
+Каким будет население города через год?
 
-Используйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги».
+Создайте переменную `people_count` и присвойте ей значение `180000`.
+Затем запишите команду, увеличивающую значение переменной `people_count` на 3%.
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
-Use a variable name like `book_title`, and assign the string:
+Here is an example, which is fundamentally similar to what you need to do,
+but adapt it to the requirements of the task:
 ```python
-book_title = "Alice in Wonderland"
+a = 100
+a = a + a * 0.05 # the command increments the value of variable a by 5%
 ```
 HINTENEND
 */
 
 /*
 HINTRUSTART
-Используйте имя переменной, например `book_title`, и присвойте ей строку:
+Приведенный пример, принципиально похож на то, что нужно сделать,
+но адаптируйте его к требованиям задачи:
 ```python
-book_title = "Alice in Wonderland"
+a = 100
+a = a + a * 0.05 # команда увеличивает значение переменной a на 5 процентов
 ```
 HINTRUEND
 */
@@ -46,13 +54,28 @@ INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-book_title = "Alice in Wonderland"
+people_count = 180000
+people_count = people_count + people_count * 0.03
 // SOLUTIONEND
 
 // OPENTESTSSTART
+it('the variable "people_count" exists and has a value', () => {
+  expect(people_count).not.undefined;
+});
 
+it('the variable "people_count" is not NaN', () => {
+  expect(isNaN(people_count)).false;
+});
+
+it('the variable "people_count" is of type number', () => {
+  expect(people_count).a('number');
+});
+
+it('the variable "people_count" is equal to 185400', () => {
+  expect(people_count).equal(185400);
+});
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-book_title = "Alice in Wonderland"
+
 // HIDDENTESTSEND
