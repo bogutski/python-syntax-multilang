@@ -1,58 +1,75 @@
-// NAMEEN:Assign a famous book title to a variable.
-// NAMERU:Присвойте название известной книги переменной.
+// NAMEEN:Double name
+// NAMERU:Двойное имя
 
 /*
 INSTRUCTIONENSTART
-In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-9.png)
 
-Create a variable and assign the title `"Alice in Wonderland"` to it.
+Often Americans have two personal names.
 
-Use an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.
+Suppose the variable `name` stores the first name `Emma`.
+
+The variable `name` needs to get the first two names separated by a space.
+
+Write a command that changes the existing value of the `name` variable by concatenating it with the name 'Kate' with a space.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-9.png)
 
-Создайте переменную и присвойте ей значение `"Alice in Wonderland"`.
+Часто американцы имеют два личных имени.
 
-Используйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги».
+Предположим, что в переменной `name` уже хранится первое имя `Emma`.
+
+Требуется в переменной `name` получить два первых имени через пробел.
+
+Запишите команду, которая изменяет имеющееся значение переменной `name`, соединяя его с именем 'Kate' через пробел.
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
-Use a variable name like `book_title`, and assign the string:
+Similar example:
 ```python
-book_title = "Alice in Wonderland"
+name = "Alice"
+name = name + ' ' + "Marie"
 ```
 HINTENEND
 */
 
 /*
 HINTRUSTART
-Используйте имя переменной, например `book_title`, и присвойте ей строку:
+Похожий пример:
 ```python
-book_title = "Alice in Wonderland"
+name = "Alice"
+name = name + ' ' + "Marie"
 ```
 HINTRUEND
 */
 
 /*
 INITIALSOLUTIONSTART
-
+name = "Emma"
 INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-book_title = "Alice in Wonderland"
+name = "Emma"
+name = name + ' ' + "Kate"
 // SOLUTIONEND
 
 // OPENTESTSSTART
+it('The "name" variable contains a value Emma Kate', () => {
+    expect(name).eq('Emma Kate');
+});
 
+it('The "name" is type of string', () => {
+    expect(typeof name).eq('string');
+});
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-book_title = "Alice in Wonderland"
+
 // HIDDENTESTSEND

@@ -1,40 +1,48 @@
-// NAMEEN:Assign a famous book title to a variable.
-// NAMERU:Присвойте название известной книги переменной.
+// NAMEEN:How many mushrooms are there?
+// NAMERU:Сколько стало грибов?
 
 /*
 INSTRUCTIONENSTART
-In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-13.png)
 
-Create a variable and assign the title `"Alice in Wonderland"` to it.
+Masha collected `mushroom_count` of mushrooms in the forest. Returning home, she found another 15 mushrooms.
 
-Use an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.
+Suppose that the variable `mushroom_count` stores some number.
+
+Create a variable `mushroom_count` with a value of `22:
+
+Write a command that increments the existing value of the variable `mushroom_count` by 15.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-13.png)
 
-Создайте переменную и присвойте ей значение `"Alice in Wonderland"`.
+Маша собрала в лесу `mushroom_count` грибов. Возвращаясь домой, она нашла еще 15 грибов.
 
-Используйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги».
+Создайте переменную `mushroom_count` со значением `22`.
+
+Запишите команду, которая увеличивает имеющееся значение переменной `mushroom_count` на `15`.
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
-Use a variable name like `book_title`, and assign the string:
+Similar example:
 ```python
-book_title = "Alice in Wonderland"
+books = 5
+books = books + 9
 ```
 HINTENEND
 */
 
 /*
 HINTRUSTART
-Используйте имя переменной, например `book_title`, и присвойте ей строку:
+Похожий пример:
 ```python
-book_title = "Alice in Wonderland"
+books = 5
+books = books + 9
 ```
 HINTRUEND
 */
@@ -46,13 +54,24 @@ INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-book_title = "Alice in Wonderland"
+mushroom_count = 22
+mushroom_count = mushroom_count + 15
 // SOLUTIONEND
 
 // OPENTESTSSTART
+it('The "mushroom_count" variable should be defined', () => {
+    expect(mushroom_count).not.undefined;
+});
 
+it('The "mushroom_count" variable should be equal to 37', () => {
+    expect(mushroom_count).to.equal(37);
+});
+
+it('The "mushroom_count" variable should be a number', () => {
+    expect(mushroom_count).to.be.a('number');
+});
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-book_title = "Alice in Wonderland"
+
 // HIDDENTESTSEND

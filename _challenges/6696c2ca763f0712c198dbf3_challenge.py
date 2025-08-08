@@ -1,40 +1,52 @@
-// NAMEEN:Assign a famous book title to a variable.
-// NAMERU:Присвойте название известной книги переменной.
+// NAMEEN:Big win
+// NAMERU:Крупный выигрыш
 
 /*
 INSTRUCTIONENSTART
-In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-3.png)
 
-Create a variable and assign the title `"Alice in Wonderland"` to it.
+In 2013 a British man managed to win more than £200,000 from the minimum bet of one penny.
+That is, the amount available to him increased by 20,000,000 times!
 
-Use an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.
+Create a variable `money` and give it a value of `1`.
+
+Then write a command to increase the value of the `money` variable by `20000000` times.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-3.png)
 
-Создайте переменную и присвойте ей значение `"Alice in Wonderland"`.
+В 2013 году одному британцу удалось выиграть более 200 000 фунтов с минимальной ставки в один пенни.
+То есть имеющаяся у него сумма увеличилась в 20000000 раз!
 
-Используйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги».
+Создайте переменную `money` и присвойте ей значение `1`.
+
+Затем запишите команду, увеличивающую значение переменной `money` в `20000000` раз.
+
+Пример на Python, принципиально похожий на то, что нужно сделать:
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
-Use a variable name like `book_title`, and assign the string:
+Here's an example, which is fundamentally similar to what you need to do,
+but adapt it to the requirements of the problem:
 ```python
-book_title = "Alice in Wonderland"
+a = 5
+a = a * 1000
 ```
 HINTENEND
 */
 
 /*
 HINTRUSTART
-Используйте имя переменной, например `book_title`, и присвойте ей строку:
+Это пример, который принципиально похож на то, что нужно сделать,
+но адаптируйте его к требованиям задачи:
 ```python
-book_title = "Alice in Wonderland"
+a = 5
+a = a * 1000
 ```
 HINTRUEND
 */
@@ -46,13 +58,28 @@ INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-book_title = "Alice in Wonderland"
+money = 1
+money = money * 20000000
 // SOLUTIONEND
 
 // OPENTESTSSTART
+it('the variable "money" exists and has a value', () => {
+  expect(money).not.undefined;
+});
 
+it('the variable "money" is not NaN', () => {
+  expect(isNaN(money)).false;
+});
+
+it('the variable "money" is of type number', () => {
+  expect(money).a('number');
+});
+
+it('the variable "money" is equal to 20000000', () => {
+  expect(money).equal(20000000);
+});
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-book_title = "Alice in Wonderland"
+
 // HIDDENTESTSEND

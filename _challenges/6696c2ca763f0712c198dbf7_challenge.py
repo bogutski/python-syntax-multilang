@@ -1,40 +1,58 @@
-// NAMEEN:Assign a famous book title to a variable.
-// NAMERU:Присвойте название известной книги переменной.
+// NAMEEN:The unpredictability of the game
+// NAMERU:Непредсказуемость игры
 
 /*
 INSTRUCTIONENSTART
-In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-8.png)
 
-Create a variable and assign the title `"Alice in Wonderland"` to it.
+A tourist in Las Vegas started a game with some amount of money.
 
-Use an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.
+Create a variable `start_money` and assign it a value greater than or equal to `100`.
+
+At the end of the game, he lost some amount of money.
+
+Create a variable `lost_money` and assign it a value between `50` and `80`.
+
+Create a variable `end_money` and assign it the calculated value of the remaining money,
+
+which is the difference between `start_money` and `lost_money`.
 INSTRUCTIONENEND
 */
 
 /*
 INSTRUCTIONRUSTART
-В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.
+![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-8.png)
 
-Создайте переменную и присвойте ей значение `"Alice in Wonderland"`.
+Турист в Лас-Вегасе начал игру со какой-то суммой денег.
 
-Используйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги».
+Создайте переменную `start_money` и присвойте ей значение большее либо равное `100`.
+
+В конце игры он проиграл какую-то сумму денег.
+
+Создайте переменную `lost_money` и присвойте ей значение от `50` до `80`.
+
+Создайте переменную `end_money` и присвойте ей вычисленное значение оставшихся денег, как разницу между `start_money` и `lost_money`.
 INSTRUCTIONRUEND
 */
 
 /*
 HINTENSTART
-Use a variable name like `book_title`, and assign the string:
+Here is a similar example:
 ```python
-book_title = "Alice in Wonderland"
+start_money = 150
+lost_money = 60
+end_money = start_money - lost_money
 ```
 HINTENEND
 */
 
 /*
 HINTRUSTART
-Используйте имя переменной, например `book_title`, и присвойте ей строку:
+Похожий пример:
 ```python
-book_title = "Alice in Wonderland"
+start_money = 150
+lost_money = 60
+end_money = start_money - lost_money
 ```
 HINTRUEND
 */
@@ -46,13 +64,24 @@ INITIALSOLUTIONEND
 */
 
 // SOLUTIONSTART
-book_title = "Alice in Wonderland"
+start_money = 150
+lost_money = 60
+end_money = start_money - lost_money
 // SOLUTIONEND
 
 // OPENTESTSSTART
+it('The "start_money" variable contains a value more or equal 100', () => {
+  expect(start_money).gte(100);
+});
 
+it('The "lost_money" variable contains a value between 50 and 80', () => {
+  expect(lost_money).gte(50).lte(80);
+});
+
+it('The "end_money" variable contains the difference between "start_money" and "lost_money"', () => {
+  expect(end_money).equal(start_money - lost_money);
 // OPENTESTSEND
 
 // HIDDENTESTSSTART
-book_title = "Alice in Wonderland"
+
 // HIDDENTESTSEND

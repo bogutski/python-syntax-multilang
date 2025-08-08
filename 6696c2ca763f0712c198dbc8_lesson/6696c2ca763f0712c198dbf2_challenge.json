@@ -1,18 +1,18 @@
 {
-  "completedSolution": "def isAllLower(str):\r\n    return str == str..lower()",
+  "completedSolution": "count = 11\r\ncount = count + 1",
   "initialSolution": "",
-  "openTest": "",
+  "openTest": "it('the variable \"count\" exists and has a value', () => {\r\n  expect(count).not.undefined;\r\n});\r\n\r\nit('the variable \"count\" is not NaN', () => {\r\n  expect(isNaN(count)).false;\r\n});\r\n\r\nit('the variable \"count\" is of type number', () => {\r\n  expect(count).a('number');\r\n});\r\n\r\nit('the variable \"count\" is equal to 12', () => {\r\n  expect(count).equal(12);\r\n});",
   "name": {
-    "en": "Assign a famous book title to a variable.",
-    "ru": "Присвойте название известной книги переменной."
+    "en": "Increase by 1",
+    "ru": "Увеличение на 1"
   },
   "instruction": {
-    "en": "In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.\r\n\r\nCreate a variable and assign the title `\"Alice in Wonderland\"` to it.\r\n\r\nUse an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.",
-    "ru": "В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.\r\n\r\nСоздайте переменную и присвойте ей значение `\"Alice in Wonderland\"`.\r\n\r\nИспользуйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги»."
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-2.png)\r\n\r\nWhen we count something, we sometimes add one to a number that is already there.\r\nFor example, you counted the number of chairs in all the rooms, and the number of chairs is `11`.\r\nBut when you went to the balcony, you saw one more chair. Then you add `1` to the number of chairs you have,\r\nand the result becomes `12`.\r\n\r\nCreate a variable `count` and give it a value of `11`.\r\n\r\nThen write a command that increments the value of the `count` variable by `1`.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-2.png)\r\n\r\nКогда мы считаем что-то, мы иногда прибавляем единицу к уже имеющемуся числу.\r\nНапример, вы посчитали количество стульев во всех комнатах, и количество стульев равно `11`.\r\nНо когда вы вышли на балкон, вы увидели ещё один стул. Тогда вы прибавляете `1` к имеющемуся количеству,\r\nи результат становится равным `12`.\r\n\r\nСоздайте переменную `count` и присвойте ей значение `11`.\r\n\r\nЗатем запишите команду, увеличивающую значение переменной `count` на `1`."
   },
   "hint": {
-    "en": "Use a variable name like `book_title`, and assign the string:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```",
-    "ru": "Используйте имя переменной, например `book_title`, и присвойте ей строку:\r\n```python\r\nfunction isAllLower(str) {\r\n  return str === str.toLowerCase();\r\n}\r\n```"
+    "en": "Similar example:\r\n```python\r\na = 5\r\na = a + 1\r\n```",
+    "ru": "Похожий пример:\r\n```python\r\na = 5\r\na = a + 1\r\n```"
   },
   "checker": "unit",
   "programmingLang": "JavaScript",

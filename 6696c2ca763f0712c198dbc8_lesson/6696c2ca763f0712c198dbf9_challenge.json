@@ -1,17 +1,22 @@
 {
-  "completedSolution": "book_title = \"Alice in Wonderland\"",
+  "completedSolution": "cash = 200\r\ncash = cash - 48",
   "initialSolution": "",
-  "openTest": "",
+  "openTest": "it('The \"cash\" variable should be defined', () => {\r\n    expect(cash).not.undefined;\r\n});\r\n\r\nit('The \"cash\" variable should be a number', () => {\r\n    expect(typeof cash).eq('number');\r\n});\r\n\r\nit('The \"cash\" variable should be equal to 152', () => {\r\n    expect(cash).eq(152);\r\n});",
   "name": {
-    "en": "Assign a famous book title to a variable.",
-    "ru": "Присвойте название известной книги переменной."
+    "en": "How much money is left over from shopping?",
+    "ru": "Сколько денег осталось после покупок?"
   },
   "instruction": {
-    "en": "In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.\r\n\r\nCreate a variable and assign the title `\"Alice in Wonderland\"` to it.\r\n\r\nUse an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.",
-    "ru": "В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.\r\n\r\nСоздайте переменную и присвойте ей значение `\"Alice in Wonderland\"`.\r\n\r\nИспользуйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги»."
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-12.png)\r\n\r\nAfter the purchases were made in the store, the amount of money available decreased by $48.\r\n\r\nSuppose that the variable `cash` stores some number.\r\n\r\nCreate a variable `cash` with value `200`.\r\n\r\nWrite a command that reduces the existing value of the `cash` variable by `48`.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-12.png)\r\n\r\nПосле сделанных в магазине покупок количество имеющихся денег уменьшилось на 48 долларов.\r\n\r\nСоздайте переменную `cash` со значением `200`.\r\n\r\nЗапишите команду, которая уменьшает имеющееся значение переменной `cash` на `48`."
   },
   "hint": {
-    "en": "Use a variable name like `book_title`, and assign the string:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```",
-    "ru": "Используйте имя переменной, например `book_title`, и присвойте ей строку:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```"
-  }
+    "en": "Similar example:\r\n```python\r\ncash = 100\r\ncash = cash - 25\r\n```",
+    "ru": "Похожий пример:\r\n```python\r\ncash = 100\r\ncash = cash - 25\r\n```"
+  },
+  "checker": "unit",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbf9"
 }

@@ -59,15 +59,15 @@ count = count + 5
 // SOLUTIONEND
 
 // OPENTESTSSTART
-it(`'count' variable contains a value`, () => {
+it('"count" variable contains a value', () => {
   expect(count).not.undefined;
 });
 
-it(`The data type of the 'count' variable is number`, () => {
+it('The data type of the "count" variable is number', () => {
   expect(count).a('number');
 });
 
-it(`The 'count' variable contains 25`, () => {
+it('The "count" variable contains 25', () => {
   expect(count).eq(25);
 });
 // OPENTESTSEND

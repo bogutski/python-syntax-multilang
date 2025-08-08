@@ -1,17 +1,22 @@
 {
-  "completedSolution": "book_title = \"Alice in Wonderland\"",
+  "completedSolution": "money = 1\r\nmoney = money * 20000000",
   "initialSolution": "",
-  "openTest": "",
+  "openTest": "it('the variable \"money\" exists and has a value', () => {\r\n  expect(money).not.undefined;\r\n});\r\n\r\nit('the variable \"money\" is not NaN', () => {\r\n  expect(isNaN(money)).false;\r\n});\r\n\r\nit('the variable \"money\" is of type number', () => {\r\n  expect(money).a('number');\r\n});\r\n\r\nit('the variable \"money\" is equal to 20000000', () => {\r\n  expect(money).equal(20000000);\r\n});",
   "name": {
-    "en": "Assign a famous book title to a variable.",
-    "ru": "Присвойте название известной книги переменной."
+    "en": "Big win",
+    "ru": "Крупный выигрыш"
   },
   "instruction": {
-    "en": "In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.\r\n\r\nCreate a variable and assign the title `\"Alice in Wonderland\"` to it.\r\n\r\nUse an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.",
-    "ru": "В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.\r\n\r\nСоздайте переменную и присвойте ей значение `\"Alice in Wonderland\"`.\r\n\r\nИспользуйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги»."
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-3.png)\r\n\r\nIn 2013 a British man managed to win more than £200,000 from the minimum bet of one penny.\r\nThat is, the amount available to him increased by 20,000,000 times!\r\n\r\nCreate a variable `money` and give it a value of `1`.\r\n\r\nThen write a command to increase the value of the `money` variable by `20000000` times.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-3.png)\r\n\r\nВ 2013 году одному британцу удалось выиграть более 200 000 фунтов с минимальной ставки в один пенни.\r\nТо есть имеющаяся у него сумма увеличилась в 20000000 раз!\r\n\r\nСоздайте переменную `money` и присвойте ей значение `1`.\r\n\r\nЗатем запишите команду, увеличивающую значение переменной `money` в `20000000` раз.\r\n\r\nПример на Python, принципиально похожий на то, что нужно сделать:"
   },
   "hint": {
-    "en": "Use a variable name like `book_title`, and assign the string:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```",
-    "ru": "Используйте имя переменной, например `book_title`, и присвойте ей строку:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```"
-  }
+    "en": "Here's an example, which is fundamentally similar to what you need to do,\r\nbut adapt it to the requirements of the problem:\r\n```python\r\na = 5\r\na = a * 1000\r\n```",
+    "ru": "Это пример, который принципиально похож на то, что нужно сделать,\r\nно адаптируйте его к требованиям задачи:\r\n```python\r\na = 5\r\na = a * 1000\r\n```"
+  },
+  "checker": "unit",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbf3"
 }

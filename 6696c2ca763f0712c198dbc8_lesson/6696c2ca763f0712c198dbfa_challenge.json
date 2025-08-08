@@ -1,17 +1,22 @@
 {
-  "completedSolution": "book_title = \"Alice in Wonderland\"",
+  "completedSolution": "mushroom_count = 22\r\nmushroom_count = mushroom_count + 15",
   "initialSolution": "",
-  "openTest": "",
+  "openTest": "it('The \"mushroom_count\" variable should be defined', () => {\r\n    expect(mushroom_count).not.undefined;\r\n});\r\n\r\nit('The \"mushroom_count\" variable should be equal to 37', () => {\r\n    expect(mushroom_count).to.equal(37);\r\n});\r\n\r\nit('The \"mushroom_count\" variable should be a number', () => {\r\n    expect(mushroom_count).to.be.a('number');\r\n});",
   "name": {
-    "en": "Assign a famous book title to a variable.",
-    "ru": "Присвойте название известной книги переменной."
+    "en": "How many mushrooms are there?",
+    "ru": "Сколько стало грибов?"
   },
   "instruction": {
-    "en": "In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.\r\n\r\nCreate a variable and assign the title `\"Alice in Wonderland\"` to it.\r\n\r\nUse an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.",
-    "ru": "В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.\r\n\r\nСоздайте переменную и присвойте ей значение `\"Alice in Wonderland\"`.\r\n\r\nИспользуйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги»."
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-13.png)\r\n\r\nMasha collected `mushroom_count` of mushrooms in the forest. Returning home, she found another 15 mushrooms.\r\n\r\nSuppose that the variable `mushroom_count` stores some number.\r\n\r\nCreate a variable `mushroom_count` with a value of `22:\r\n\r\nWrite a command that increments the existing value of the variable `mushroom_count` by 15.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-13.png)\r\n\r\nМаша собрала в лесу `mushroom_count` грибов. Возвращаясь домой, она нашла еще 15 грибов.\r\n\r\nСоздайте переменную `mushroom_count` со значением `22`.\r\n\r\nЗапишите команду, которая увеличивает имеющееся значение переменной `mushroom_count` на `15`."
   },
   "hint": {
-    "en": "Use a variable name like `book_title`, and assign the string:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```",
-    "ru": "Используйте имя переменной, например `book_title`, и присвойте ей строку:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```"
-  }
+    "en": "Similar example:\r\n```python\r\nbooks = 5\r\nbooks = books + 9\r\n```",
+    "ru": "Похожий пример:\r\n```python\r\nbooks = 5\r\nbooks = books + 9\r\n```"
+  },
+  "checker": "unit",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbfa"
 }

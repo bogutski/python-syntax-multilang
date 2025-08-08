@@ -1,17 +1,22 @@
 {
-  "completedSolution": "book_title = \"Alice in Wonderland\"",
-  "initialSolution": "",
-  "openTest": "",
+  "completedSolution": "sum = 20\r\nsum = sum / 2",
+  "initialSolution": "sum = 20",
+  "openTest": "it('variable \"sum\" exists and has a value', () => {\r\n    expect(sum).not.undefined;\r\n});\r\n\r\nit('variable \"sum\" is not NaN', () => {\r\n    expect(isNaN(sum)).false;\r\n});\r\n\r\nit('variable \"sum\" has the correct value', () => {\r\n    expect(sum).equal(10);\r\n});\r\nit('variable \"sum\" is of type number', () => {\r\n    expect(sum).a('number');\r\n});",
   "name": {
-    "en": "Assign a famous book title to a variable.",
-    "ru": "Присвойте название известной книги переменной."
+    "en": "Reduced by two times",
+    "ru": "Уменьшение в 2 раза"
   },
   "instruction": {
-    "en": "In 1865, the English mathematician Lewis Carroll wrote a famous children’s book.\r\n\r\nCreate a variable and assign the title `\"Alice in Wonderland\"` to it.\r\n\r\nUse an appropriate variable name in Python following the snake_case convention. The name should reflect the concept of a book title.",
-    "ru": "В 1865 году английский математик Льюис Кэрролл написал знаменитую детскую сказку.\r\n\r\nСоздайте переменную и присвойте ей значение `\"Alice in Wonderland\"`.\r\n\r\nИспользуйте подходящее имя переменной по правилам Python (snake_case), отражающее идею «название книги»."
+    "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-7.png)\r\n\r\nVariable `sum` is created and has a value.\r\nWrite a command that reduces the existing value of `sum` variable by a factor of `2`.",
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-7.png)\r\n\r\nПеременная `sum` уже создана со значением `20`.\r\nВ следующей строке нужно записать команду, уменьшающую имеющееся значение переменной `sum` в `2` раза."
   },
   "hint": {
-    "en": "Use a variable name like `book_title`, and assign the string:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```",
-    "ru": "Используйте имя переменной, например `book_title`, и присвойте ей строку:\r\n```python\r\nbook_title = \"Alice in Wonderland\"\r\n```"
-  }
+    "en": "Here is an example that is fundamentally similar to what needs to be done,\r\nbut adapt it to the requirements of the task.\r\n```python\r\ncount = count / 3\r\n```",
+    "ru": "Приведенный пример принципиально похож на то, что нужно сделать,\r\nно адаптируйте его к требованиям задачи.\r\n```python\r\ncount = count / 3\r\n```"
+  },
+  "checker": "unit",
+  "programmingLang": "JavaScript",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dbf6"
 }
