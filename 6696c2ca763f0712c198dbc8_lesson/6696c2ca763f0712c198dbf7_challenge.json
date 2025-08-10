@@ -1,7 +1,7 @@
 {
   "completedSolution": "start_money = 150\r\nlost_money = 60\r\nend_money = start_money - lost_money",
   "initialSolution": "",
-  "openTest": "it('The \"start_money\" variable contains a value more or equal 100', () => {\r\n  expect(start_money).gte(100);\r\n});\r\n\r\nit('The \"lost_money\" variable contains a value between 50 and 80', () => {\r\n  expect(lost_money).gte(50).lte(80);\r\n});\r\n\r\nit('The \"end_money\" variable contains the difference between \"start_money\" and \"lost_money\"', () => {\r\n  expect(end_money).equal(start_money - lost_money);",
+  "openTest": "it('The \"start_money\" variable contains a value more or equal 100', () => {\r\n  expect(start_money).gte(100);\r\n});\r\n\r\nit('The \"lost_money\" variable contains a value between 50 and 80', () => {\r\n  expect(lost_money).gte(50).lte(80);\r\n});\r\n\r\nit('The \"end_money\" variable contains the difference between \"start_money\" and \"lost_money\"', () => {\r\n  expect(end_money).equal(start_money - lost_money);\r\n});",
   "name": {
     "en": "The unpredictability of the game",
     "ru": "Непредсказуемость игры"

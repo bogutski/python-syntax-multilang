@@ -1,5 +1,5 @@
 {
-  "completedSolution": "name = \"Emma\"\r\nname = name + ' ' + \"Kate\"",
+  "completedSolution": "name = \"Emma\"\r\nname = name + \" \" + \"Kate\"",
   "initialSolution": "name = \"Emma\"",
   "openTest": "it('The \"name\" variable contains a value Emma Kate', () => {\r\n    expect(name).eq('Emma Kate');\r\n});\r\n\r\nit('The \"name\" is type of string', () => {\r\n    expect(typeof name).eq('string');\r\n});",
   "name": {
@@ -11,8 +11,8 @@
     "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-9.png)\r\n\r\nЧасто американцы имеют два личных имени.\r\n\r\nПредположим, что в переменной `name` уже хранится первое имя `Emma`.\r\n\r\nТребуется в переменной `name` получить два первых имени через пробел.\r\n\r\nЗапишите команду, которая изменяет имеющееся значение переменной `name`, соединяя его с именем 'Kate' через пробел."
   },
   "hint": {
-    "en": "Similar example:\r\n```python\r\nname = \"Alice\"\r\nname = name + ' ' + \"Marie\"\r\n```",
-    "ru": "Похожий пример:\r\n```python\r\nname = \"Alice\"\r\nname = name + ' ' + \"Marie\"\r\n```"
+    "en": "Similar example:\r\n```python\r\nname = \"Alice\"\r\nname = name + \" \" + \"Marie\"\r\n```",
+    "ru": "Похожий пример:\r\n```python\r\nname = \"Alice\"\r\nname = name + \" \" + \"Marie\"\r\n```"
   },
   "checker": "unit",
   "programmingLang": "JavaScript",

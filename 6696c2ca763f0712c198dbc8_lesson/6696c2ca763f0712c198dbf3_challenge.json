@@ -8,7 +8,7 @@
   },
   "instruction": {
     "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-3.png)\r\n\r\nIn 2013 a British man managed to win more than £200,000 from the minimum bet of one penny.\r\nThat is, the amount available to him increased by 20,000,000 times!\r\n\r\nCreate a variable `money` and give it a value of `1`.\r\n\r\nThen write a command to increase the value of the `money` variable by `20000000` times.",
-    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-3.png)\r\n\r\nВ 2013 году одному британцу удалось выиграть более 200 000 фунтов с минимальной ставки в один пенни.\r\nТо есть имеющаяся у него сумма увеличилась в 20000000 раз!\r\n\r\nСоздайте переменную `money` и присвойте ей значение `1`.\r\n\r\nЗатем запишите команду, увеличивающую значение переменной `money` в `20000000` раз.\r\n\r\nПример на Python, принципиально похожий на то, что нужно сделать:"
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-3.png)\r\n\r\nВ 2013 году одному британцу удалось выиграть более 200 000 фунтов с минимальной ставки в один пенни.\r\nТо есть имеющаяся у него сумма увеличилась в 20000000 раз!\r\n\r\nСоздайте переменную `money` и присвойте ей значение `1`.\r\n\r\nЗатем запишите команду, увеличивающую значение переменной `money` в `20000000` раз."
   },
   "hint": {
     "en": "Here's an example, which is fundamentally similar to what you need to do,\r\nbut adapt it to the requirements of the problem:\r\n```python\r\na = 5\r\na = a * 1000\r\n```",

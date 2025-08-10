@@ -34,7 +34,7 @@ HINTENSTART
 Similar example:
 ```python
 name = "Alice"
-name = name + ' ' + "Marie"
+name = name + " " + "Marie"
 ```
 HINTENEND
 */
@@ -44,7 +44,7 @@ HINTRUSTART
 Похожий пример:
 ```python
 name = "Alice"
-name = name + ' ' + "Marie"
+name = name + " " + "Marie"
 ```
 HINTRUEND
 */
@@ -57,7 +57,7 @@ INITIALSOLUTIONEND
 
 // SOLUTIONSTART
 name = "Emma"
-name = name + ' ' + "Kate"
+name = name + " " + "Kate"
 // SOLUTIONEND
 
 // OPENTESTSSTART
