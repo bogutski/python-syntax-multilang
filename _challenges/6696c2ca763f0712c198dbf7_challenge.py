@@ -80,6 +80,7 @@ it('The "lost_money" variable contains a value between 50 and 80', () => {
 
 it('The "end_money" variable contains the difference between "start_money" and "lost_money"', () => {
   expect(end_money).equal(start_money - lost_money);
+});
 // OPENTESTSEND
 
 // HIDDENTESTSSTART

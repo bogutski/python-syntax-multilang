@@ -8,7 +8,7 @@
   },
   "instruction": {
     "en": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-4.png)\r\n\r\nThe hostess baked a pie weighing 1400 g and left it on the table.\r\nWhen she returned, only 1/8 of the pie was on the plate.\r\nFind the weight of the rest of the pie.\r\n\r\nCreate a variable `pie_weight` and assign a value of `1400` to it.\r\nThen write a command that decreases the value of the `pie_weight` variable by a factor of `8`.",
-    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-4.png)\r\n\r\nХозяйка испекла пирог весом 1400 г и оставила на столе.\r\nКогда она вернулась, на блюде лежала только 1/8 часть пирога.\r\nНайдите вес оставшейся части пирога.\r\n\r\nСоздайте переменную `pie_weight` и присвойте ей значение `1400`.\r\nЗатем запишите команду, уменьшающую значение переменной `pie_weight` в `8` раз.\r\n\r\nПример на Python, принципиально похожий на то, что нужно сделать:"
+    "ru": "![](https://course-qa-basics.s3.us-west-1.amazonaws.com/section-2-course-5-task-4.png)\r\n\r\nХозяйка испекла пирог весом 1400 г и оставила на столе.\r\nКогда она вернулась, на блюде лежала только 1/8 часть пирога.\r\nНайдите вес оставшейся части пирога.\r\n\r\nСоздайте переменную `pie_weight` и присвойте ей значение `1400`.\r\nЗатем запишите команду, уменьшающую значение переменной `pie_weight` в `8` раз."
   },
   "hint": {
     "en": "Here is an example, which is fundamentally similar to what you need to do,\r\nbut adapt it to the needs of the task:\r\n```python\r\na = 100\r\na = a / 5\r\n```",
