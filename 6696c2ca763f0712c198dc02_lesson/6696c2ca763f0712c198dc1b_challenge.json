@@ -1,0 +1,22 @@
+{
+  "completedSolution": "type_of_float = type(78.5)",
+  "initialSolution": "",
+  "openTest": "",
+  "name": {
+    "en": "Type of float number",
+    "ru": "Тип числа с плавающей точкой"
+  },
+  "instruction": {
+    "en": "Create a variable `type_of_float` and assign it the type of the floating point number `78.5`.",
+    "ru": "Создайте переменную `type_of_float` и присвойте ей тип числа с плавающей точкой `78.5`."
+  },
+  "hint": {
+    "en": "Similar example:\r\n```python\r\ntemperature_type = type(101.8)\r\n```",
+    "ru": "Похожий пример:\r\n```python\r\ntemperature_type = type(101.8)\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dc1b"
+}

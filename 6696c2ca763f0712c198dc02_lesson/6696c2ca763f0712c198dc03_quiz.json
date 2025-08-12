@@ -1,0 +1,451 @@
+{
+  "_id": "6696c2ca763f0712c198dc03",
+  "questions": [
+    {
+      "_id": "6696c2ca763f0712c198dc04",
+      "name": {
+        "ru": "Python — это",
+        "en": "Python is"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc05",
+          "name": {
+            "ru": "строго типизированный язык",
+            "en": "strictly typed language"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc06",
+          "name": {
+            "ru": "динамически типизированный язык",
+            "en": "dynamically typed language"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc07",
+          "name": {
+            "ru": "не типизированный язык",
+            "en": "non-typed language"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc08",
+      "name": {
+        "ru": "Какие типы данных есть в Python?",
+        "en": "What types of data are in Python?"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc09",
+          "name": {
+            "ru": "string",
+            "en": "string"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc0a",
+          "name": {
+            "ru": "number",
+            "en": "number"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc0b",
+          "name": {
+            "ru": "int",
+            "en": "int"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc0c",
+          "name": {
+            "ru": "float",
+            "en": "float"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc0d",
+      "name": {
+        "ru": "Для получения типа данных, присвоенных в переменную 'x', можно использовать",
+        "en": "To get the type of data assigned to the variable 'x', you can use"
+      },
+      "description": {
+        "ru": "```\nx = \"string\"\n```",
+        "en": "```\nx = \"string\"\n```"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc0e",
+          "name": {
+            "ru": "type(x)",
+            "en": "type(x)"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc0f",
+          "name": {
+            "ru": "typeof(x)",
+            "en": "typeof(x)"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc10",
+          "name": {
+            "ru": "x.type",
+            "en": "x.type"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc11",
+          "name": {
+            "ru": "get_type(x)",
+            "en": "get_type(x)"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc12",
+      "name": {
+        "ru": "Выберите верные утверждения о функции type() в Python.",
+        "en": "Select the correct statements about the type() function in Python."
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "answerType": "multi",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc13",
+          "name": {
+            "ru": "type() возвращает объект, описывающий тип данных переменной.",
+            "en": "type() returns an object describing the data type of the variable."
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc14",
+          "name": {
+            "ru": "type() может использоваться для проверки типов переменных, значений и выражений.",
+            "en": "type() can be used to check the types of variables, values, and expressions."
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc15",
+          "name": {
+            "ru": "После использования type() тип переменной нельзя изменить.",
+            "en": "Once type() is used, the type of the variable cannot be changed."
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc16",
+          "name": {
+            "ru": "type() можно использовать один раз, для одной переменной",
+            "en": "type() can be used only once, for one variable."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc17",
+      "name": {
+        "ru": "В Python при создании переменной не нужно указывать ее тип. В ходе выполнения программы тип переменной может меняться.",
+        "en": "In Python you do not need to specify the type of a variable when you create it. During the execution of a program, the type of the variable may change."
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dc18",
+          "name": {
+            "ru": "Это утверждение неверно",
+            "en": "This statement is false"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dc19",
+          "name": {
+            "ru": "Это утверждение верно",
+            "en": "This statement is true"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dt20",
+      "name": {
+        "ru": "Что означает термин «динамическая типизация»?",
+        "en": "What does the term 'dynamic typing' mean?"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dt21",
+          "name": {
+            "ru": "Тип переменной указывается при её создании",
+            "en": "The variable type is specified when it is created"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt22",
+          "name": {
+            "ru": "Тип переменной можно менять в процессе работы программы",
+            "en": "The variable type can change during the program execution"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt23",
+          "name": {
+            "ru": "Переменная всегда хранит только числа",
+            "en": "The variable always stores only numbers"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt24",
+          "name": {
+            "ru": "Типы данных в языке отсутствуют",
+            "en": "The language has no data types"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dt25",
+      "name": {
+        "ru": "Что выведет следующая команда?",
+        "en": "What will be the output?"
+      },
+      "description": {
+        "ru": "```\nprint(type(123))\n```",
+        "en": "```\nprint(type(123))\n```"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dt26",
+          "name": {
+            "ru": "<class 'str'>",
+            "en": "<class 'str'>"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt27",
+          "name": {
+            "ru": "<class 'int'>",
+            "en": "<class 'int'>"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt28",
+          "name": {
+            "ru": "<class 'float'>",
+            "en": "<class 'float'>"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt29",
+          "name": {
+            "ru": "int",
+            "en": "int"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dt30",
+      "name": {
+        "ru": "Какой тип данных будет у переменной 'a', если выполнить код: 'a = None'?",
+        "en": "What will be the type of variable 'a' after running: 'a = None'?"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dt31",
+          "name": {
+            "ru": "<class 'str'>",
+            "en": "<class 'str'>"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt32",
+          "name": {
+            "ru": "<class 'bool'>",
+            "en": "<class 'bool'>"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt33",
+          "name": {
+            "ru": "<class 'object'>",
+            "en": "<class 'object'>"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt34",
+          "name": {
+            "ru": "<class 'NoneType'>",
+            "en": "<class 'NoneType'>"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dt35",
+      "name": {
+        "ru": "Что выведет следующий код?",
+        "en": "What will be the output?"
+      },
+      "description": {
+        "ru": "```\na = 5\nb = 10\nprint(a < b)\n```",
+        "en": "```\na = 5\nb = 10\nprint(a < b)\n```"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dt36",
+          "name": {
+            "ru": "True",
+            "en": "True"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt37",
+          "name": {
+            "ru": "False",
+            "en": "False"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt38",
+          "name": {
+            "ru": "5",
+            "en": "5"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt39",
+          "name": {
+            "ru": "10",
+            "en": "10"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dt40",
+      "name": {
+        "ru": "Какой тип данных будет у переменной 'y' после выполнения кода?",
+        "en": "What will be the data type of the variable y after executing the code?"
+      },
+      "description": {
+        "ru": "```\ny = 3.14\n```",
+        "en": "```\ny = 3.14\n```"
+      },
+      "answerType": "single",
+      "variants": [
+        {
+          "_id": "6696c2ca763f0712c198dt41",
+          "name": {
+            "ru": "int",
+            "en": "int"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt42",
+          "name": {
+            "ru": "float",
+            "en": "float"
+          },
+          "correct": true
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt43",
+          "name": {
+            "ru": "decimal",
+            "en": "decimal"
+          },
+          "correct": false
+        },
+        {
+          "_id": "6696c2ca763f0712c198dt44",
+          "name": {
+            "ru": "number",
+            "en": "number"
+          },
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "acceptableMistakes": 1,
+  "active": true,
+  "description": {
+    "ru": "Вопросы по теме \"Динамически типизированные переменные\" в Python",
+    "en": "Quiz on 'Dynamically typed variables' in Python"
+  },
+  "name": {
+    "ru": "Python Syntax. Динамически типизированные переменные",
+    "en": "Python Syntax. Dynamically typed variables"
+  }
+}

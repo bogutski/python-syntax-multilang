@@ -1,0 +1,22 @@
+{
+  "completedSolution": "type_of_integer = type(age)",
+  "initialSolution": "",
+  "openTest": "",
+  "name": {
+    "en": "Type of integer number",
+    "ru": "Тип целого числа"
+  },
+  "instruction": {
+    "en": "Create a variable `type_of_integer` and assign it the type of the integer number `55`.",
+    "ru": "Создайте переменную `type_of_integer` и присвойте ей тип числа `55`."
+  },
+  "hint": {
+    "en": "Similar example:\r\n```python\r\ntype_of_phone_number = type(911)\r\n```",
+    "ru": "Похожий пример:\r\n```python\r\ntype_of_phone_number = type(911)\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dc1a"
+}

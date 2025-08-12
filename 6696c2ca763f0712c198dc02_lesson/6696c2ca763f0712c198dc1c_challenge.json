@@ -1,0 +1,22 @@
+{
+  "completedSolution": "type_of_comparison = type(5 > 10)",
+  "initialSolution": "",
+  "openTest": "",
+  "name": {
+    "en": "Type of comparison result",
+    "ru": "Тип результата сравнения"
+  },
+  "instruction": {
+    "en": "Create a variable `type_of_comparison` and assign it the type of the expression `5 > 10`.\r\n\r\nNote that the expression `5 > 10` evaluates to `False`.",
+    "ru": "Создайте переменную `type_of_comparison` и присвойте ей тип выражения `5 > 10`.\r\n\r\nОбратите внимание, что выражение `5 > 10` возвращает `False`."
+  },
+  "hint": {
+    "en": "Similar example:\r\n```python\r\ntype_of_var = type(5 > 10)\r\n```",
+    "ru": "Похожий пример:\r\n```python\r\ntype_of_var = type(5 > 10)\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dc1c"
+}

@@ -166,6 +166,34 @@
           ]
         }
       ]
+    },
+    {
+      "_id": "6696c2ca763f0712c198dc01",
+      "name": {
+        "ru": "Примитивные типы данных",
+        "en": "Primitive data types",
+        "es": ""
+      },
+      "lessons": [
+        {
+          "_id": "6696c2ca763f0712c198dc02",
+          "name": {
+            "ru": "Динамически типизированные переменные",
+            "en": "Dynamically typed variables",
+            "es": ""
+          },
+          "challenges": [
+            "6696c2ca763f0712c198dc1a",
+            "6696c2ca763f0712c198dc1b",
+            "6696c2ca763f0712c198dc1c",
+            "6696c2ca763f0712c198dc1d",
+            "6696c2ca763f0712c198dc1e"
+          ],
+          "questionGroups": [
+            "6696c2ca763f0712c198dc03"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "completedSolution": "type_of_string = type(\"Hello Python!!!\")",
+  "initialSolution": "",
+  "openTest": "",
+  "name": {
+    "en": "Type of string value",
+    "ru": "Тип строкового значения"
+  },
+  "instruction": {
+    "en": "Create a variable `type_of_string` and assign it the type of the string `\"Hello Python!!!\"`.",
+    "ru": "Создайте переменную `type_of_string` и присвойте ей тип строкового значения `\"Hello Python!!!\"`."
+  },
+  "hint": {
+    "en": "Similar example:\r\n```python\r\ntype_of_var = type(\"example\")\r\n```",
+    "ru": "Похожий пример:\r\n```python\r\ntype_of_var = type(\"example\")\r\n```"
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dc1d"
+}
