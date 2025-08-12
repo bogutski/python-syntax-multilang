@@ -1,0 +1,22 @@
+{
+  "completedSolution": "type_of_none = type(None)",
+  "initialSolution": "type_of_none == Type none",
+  "openTest": "",
+  "name": {
+    "en": "Fix the code to assign the type of None value",
+    "ru": "Исправьте код для присвоения типа значения None"
+  },
+  "instruction": {
+    "en": "The following code contains a syntax error.\r\n\r\nFix the code so that the variable `type_of_none` is assigned the type of the value `None`.",
+    "ru": "В приведенном ниже коде есть синтаксическая ошибка.\r\n\r\nИсправьте код так, чтобы переменной `type_of_none` было присвоено значение типа `None`."
+  },
+  "hint": {
+    "en": "",
+    "ru": ""
+  },
+  "checker": "equal",
+  "programmingLang": "Python",
+  "status": "new",
+  "level": "Easy",
+  "_id": "6696c2ca763f0712c198dc1e"
+}
